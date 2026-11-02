@@ -1,0 +1,240 @@
+{
+ "format": "ordinary-ac-elementary-v1",
+ "start": [
+  "xxxYYYY",
+  "xyxYXY"
+ ],
+ "target": [
+  "yyyXXXX",
+  "yxyXYX"
+ ],
+ "moves": [
+  {
+   "op": "invert",
+   "i": 1
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "X"
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "X"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "X"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "y"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "y"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "Y"
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "y"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "X"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "Y"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "X"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "y"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "x"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "Y"
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "y"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "X"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "Y"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "X"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "y"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "x"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "Y"
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "y"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "X"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "Y"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "x"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "x"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "Y"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "X"
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "x"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "y"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "X"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "x"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "y"
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "X"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "Y"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "x"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "x"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "x"
+  }
+ ],
+ "description": "AK(3) -> phi(AK(3)) exactly, phi = swap (generator of Aut(F2)); realizes phi on AK(3)",
+ "cyclic_steps": 7,
+ "peak_total_length_elementary": 21
+}
