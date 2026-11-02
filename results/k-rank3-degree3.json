@@ -1,0 +1,17 @@
+{
+  "degree": 3,
+  "coefficient_field": 2,
+  "fiber_rank": 3,
+  "vector_size": 40,
+  "alpha_order_on_fiber_image": 28,
+  "complete_twisted_orbit": true,
+  "orbit_states": 32768,
+  "states_processed": 32768,
+  "candidate_order": 4,
+  "candidate_k_residues_seen": [
+    0,
+    1
+  ],
+  "orbit_sha256": "544009d9f7fbc712ffe5be4515b838b88117941c63097df007dc551d5483c182",
+  "scope": "One rank3 deletion-quotient primitive test; no global AC conclusion"
+}
