@@ -3,12 +3,21 @@
   "command": "python3 experiments/reproduce.py --cpp",
   "status": "PASS",
   "ordinary_AC_goal_solved": false,
-  "raw_AK3_peak_lower_bound": 19,
+  "published_raw_AK3_peak_lower_bound": 22,
+  "raw_cap_replayed": 18,
   "cyclic_AK3_peak_lower_bound": 15,
   "MS3_to_AK3_strict_moves": 32,
   "braid_quotient_distance": 10,
+  "torus_quotient_distance": 8,
+  "product_strict_certificate_moves": 191,
+  "minimal_braid_lifting_areas": [
+    5,
+    13
+  ],
+  "first_order_quotient_word_operations": 205,
+  "first_order_quotient_strict_expansion": 531377,
   "independent_Cpp_exhaustion_replayed": true,
-  "raw_ordered_oriented_states": 2014992,
-  "projected_states": 251874,
-  "scope": "Replays bounded checks and explicit certificates. No proof of AK(3) triviality/nontriviality or the full conjecture."
+  "first_order_endpoint_fold_replayed": true,
+  "separate_completed_cap21_evidence": "results/packed_peak_extension.json",
+  "scope": "This combined command replays the cap18 baseline and all current quotient/word-certificate checks, including the long free endpoint fold. The complete cap21 search, closure audit and primitive scan were executed separately and are recorded in packed_peak_extension.json. No ordinary free-group goal has been solved."
 }
