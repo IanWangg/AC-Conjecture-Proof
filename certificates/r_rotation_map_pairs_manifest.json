@@ -1,0 +1,22 @@
+{
+  "format": "f2-primitive-map-pair-jsonl-gzip-base64-parts-v1",
+  "parts": [
+    "r_rotation_map_pairs_compact.part1.b64",
+    "r_rotation_map_pairs_compact.part2.b64",
+    "r_rotation_map_pairs_compact.part3.b64",
+    "r_rotation_map_pairs_compact.part4.b64"
+  ],
+  "part_sha256": {
+    "r_rotation_map_pairs_compact.part1.b64": "47d780233d114c7d477976bea8183239cb07053bd35b5242277ff468a6a54006",
+    "r_rotation_map_pairs_compact.part2.b64": "f6dfe408e5d886f43ecc765e474f9ebdd3a86d6075af6eb169bc560cc2a1fa77",
+    "r_rotation_map_pairs_compact.part3.b64": "08347625f3697db211bb40584b0b6e2e159763e0fac74ef637aecf619109197d",
+    "r_rotation_map_pairs_compact.part4.b64": "1a0d3a056511787b2392c5d163cf83b1a3323e99f10cbb26fc2fd9875a0f7914"
+  },
+  "encoded_bytes": 1936073,
+  "encoded_sha256": "44e6b38de12459bd395d7bbafae6e5806a5a1f3962e67bd63ed6b3e4e5bd68b5",
+  "decoded_jsonl_bytes": 13278100,
+  "decoded_jsonl_sha256": "ea42d3d352f441f9939631ec28fce7d2a5d0a6bc8a7e61e7b8ace804a43a7f5c",
+  "candidate_records": 6568,
+  "candidate_jsonl_sha256": "d530e68cab069aabac841a1082bf5624d657a920001a72a77a3b39365bf167a5",
+  "finite_map_pair_states": 735712
+}
