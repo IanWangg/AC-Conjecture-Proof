@@ -1,0 +1,138 @@
+{
+ "format": "ordinary-ac-elementary-v1",
+ "start": [
+  "xyxyxY",
+  "xyxYxyyxY"
+ ],
+ "target": [
+  "x",
+  "y"
+ ],
+ "moves": [
+  {
+   "op": "invert",
+   "i": 0
+  },
+  {
+   "op": "multiply",
+   "i": 1,
+   "j": 0
+  },
+  {
+   "op": "invert",
+   "i": 0
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "X"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "Y"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "X"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "y"
+  },
+  {
+   "op": "invert",
+   "i": 1
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "invert",
+   "i": 1
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "X"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "Y"
+  },
+  {
+   "op": "invert",
+   "i": 1
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "invert",
+   "i": 1
+  },
+  {
+   "op": "invert",
+   "i": 1
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "invert",
+   "i": 1
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "X"
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "invert",
+   "i": 1
+  },
+  {
+   "op": "multiply",
+   "i": 1,
+   "j": 0
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "x"
+  },
+  {
+   "op": "invert",
+   "i": 1
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "Y"
+  },
+  {
+   "op": "invert",
+   "i": 1
+  }
+ ],
+ "description": "AC trivialization of (xyxyxY, xyxYxyyxY) found by strictly length-decreasing ACM descent (|c|<=3), 4 ACM steps, compiled to elementary moves"
+}

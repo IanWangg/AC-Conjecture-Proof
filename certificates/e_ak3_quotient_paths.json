@@ -1,0 +1,104 @@
+{
+ "format": "e-quotient-path-v1",
+ "WARNING": "Quotient certificates only. Each path maps AK(3) to (x,y) modulo gamma_{c+1}(F); none is an ordinary AC trivialization in F.",
+ "alphabet": [
+  "inv a",
+  "inv b",
+  "swap",
+  "a<-ab",
+  "a<-aB",
+  "b<-ba",
+  "b<-bA",
+  "a<-X a x",
+  "a<-x a X",
+  "a<-Y a y",
+  "a<-y a Y",
+  "b<-X b x",
+  "b<-x b X",
+  "b<-Y b y",
+  "b<-y b Y"
+ ],
+ "start": [
+  "xxxYYYY",
+  "xyxYXY"
+ ],
+ "paths": [
+  {
+   "class": 1,
+   "length": 5,
+   "moves_15_alphabet": [
+    4,
+    4,
+    6,
+    3,
+    3
+   ],
+   "free_endpoint": [
+    "xxxYYYYxyxYXyyyXXyxYXYxyxYXYxyxYXyyyXXX",
+    "xyxYXYxyxYXYxyxYXyyyXXX"
+   ],
+   "endpoint_equals_xy_in_F": false
+  },
+  {
+   "class": 2,
+   "length": 6,
+   "moves_15_alphabet": [
+    9,
+    4,
+    4,
+    6,
+    3,
+    3
+   ],
+   "free_endpoint": [
+    "YxxxYYYxyxYXyyXXXyxyxYXYxyxYXYxyxYXyyXXXy",
+    "xyxYXYxyxYXYxyxYXyyXXXy"
+   ],
+   "endpoint_equals_xy_in_F": false
+  },
+  {
+   "class": 3,
+   "length": 10,
+   "moves_15_alphabet": [
+    4,
+    9,
+    4,
+    10,
+    6,
+    11,
+    14,
+    3,
+    3,
+    11
+   ],
+   "free_endpoint": [
+    "xxxYYYxyXYXyyxyXYXyxxYXYYxyxYXyyyXXyxxYXYYxyxYXyyyXXY",
+    "XyyxxYXYYxyxYXyyyXXYx"
+   ],
+   "endpoint_equals_xy_in_F": false
+  },
+  {
+   "class": 4,
+   "length": 11,
+   "moves_15_alphabet": [
+    11,
+    14,
+    4,
+    7,
+    4,
+    6,
+    11,
+    13,
+    12,
+    3,
+    3
+   ],
+   "free_endpoint": [
+    "xxYYYXyxyXYYxyXyxyXYYxYXyyxYXYxyxYXYxYXyyxYXYxyyyXXyyxYXYxyxYXYxYXyyxYXYxyyyXyX",
+    "xYXyyxYXYxyxYXYxYXyyxYXYxyyyXyX"
+   ],
+   "endpoint_equals_xy_in_F": false
+  }
+ ],
+ "check": "python3 experiments/e_nilpotent_tables.py --check-quotient-certs"
+}

@@ -1,0 +1,70 @@
+{
+ "format": "ordinary-ac-elementary-v1",
+ "start": [
+  "xYY",
+  "xyxYXY"
+ ],
+ "target": [
+  "x",
+  "y"
+ ],
+ "moves": [
+  {
+   "op": "invert",
+   "i": 0
+  },
+  {
+   "op": "multiply",
+   "i": 1,
+   "j": 0
+  },
+  {
+   "op": "invert",
+   "i": 0
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "X"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "Y"
+  },
+  {
+   "op": "multiply",
+   "i": 1,
+   "j": 0
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "y"
+  },
+  {
+   "op": "invert",
+   "i": 0
+  },
+  {
+   "op": "multiply",
+   "i": 1,
+   "j": 0
+  },
+  {
+   "op": "invert",
+   "i": 0
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  }
+ ],
+ "description": "AK(1) = <x,y | x y^-2, xyx y^-1 x^-1 y^-1> to (x,y). Expanded from a shortest 8-instruction path in the 15-instruction alphabet found by exhaustive BFS (e_acdist.cpp)."
+}

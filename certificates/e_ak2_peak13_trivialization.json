@@ -1,0 +1,146 @@
+{
+ "format": "ordinary-ac-elementary-v1",
+ "start": [
+  "xxYYY",
+  "xyxYXY"
+ ],
+ "target": [
+  "x",
+  "y"
+ ],
+ "moves": [
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "X"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "X"
+  },
+  {
+   "op": "invert",
+   "i": 0
+  },
+  {
+   "op": "multiply",
+   "i": 1,
+   "j": 0
+  },
+  {
+   "op": "invert",
+   "i": 0
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "Y"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "X"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "y"
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "Y"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "x"
+  },
+  {
+   "op": "invert",
+   "i": 0
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "y"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "X"
+  },
+  {
+   "op": "invert",
+   "i": 0
+  },
+  {
+   "op": "multiply",
+   "i": 1,
+   "j": 0
+  },
+  {
+   "op": "invert",
+   "i": 0
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "x"
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "multiply",
+   "i": 1,
+   "j": 0
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "invert",
+   "i": 0
+  },
+  {
+   "op": "multiply",
+   "i": 1,
+   "j": 0
+  },
+  {
+   "op": "invert",
+   "i": 1
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "invert",
+   "i": 0
+  }
+ ],
+ "description": "AK(2) = <x,y | x^2 y^-3, xyx y^-1 x^-1 y^-1> to (x,y). Expanded from a shortest 19-instruction path inside G_13 (all intermediate pairs of total length <= 13) found by e_peak.cpp --path; G_12 contains no such path. Control for research-e.md; AK(2) triviality is classical."
+}
