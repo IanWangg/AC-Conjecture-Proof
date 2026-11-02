@@ -150,7 +150,8 @@ def catalogue():
         S[f"A5xC{m}xC{k}"] = [direct(A5[0], cyc(m, tuple(range(m))), tuple(range(k))),
                               direct(A5[1], tuple(range(m)), cyc(k, tuple(range(k))))]
     for m in (2, 3, 4, 6):
-        S[f"S5xC{m}"] = [direct(S5[0], cyc(m, tuple(range(m)))), direct(S5[1], tuple(range(m)))]
+        c = cyc(m, tuple(range(m)))
+        S[f"S5xC{m}"] = [direct(S5[0], c), direct(S5[1], c)]          # full direct product
     for m in (4, 6, 8, 10):
         # fibre product S5 x_{C2} C_m : odd permutations paired with odd powers of an m-cycle
         S[f"S5fibC{m}"] = [direct(S5[0], cyc(m, tuple(range(m)))), direct(S5[1], tuple(range(m)))]
@@ -162,7 +163,8 @@ def catalogue():
         S[f"PSL2_7xC{m}"] = [direct(P7[0], cyc(m, tuple(range(m)))), direct(P7[1], tuple(range(m)))]
     S["A5xA5"] = [direct(A5[0], A5[1]), direct(A5[1], A5[0])]
     S["A5xS5"] = [direct(A5[0], S5[0]), direct(A5[1], S5[1])]
-    S["A5wrC2"] = [direct(A5[0], tuple(range(5))), cyc(10, (0, 5), (1, 6), (2, 7), (3, 8), (4, 9))]
+    S["A5wrC2"] = [direct(A5[0], tuple(range(5))), direct(A5[1], tuple(range(5))),
+                   cyc(10, (0, 5), (1, 6), (2, 7), (3, 8), (4, 9))]   # 3 gens; random 2-gen pairs used
     S["2^4:A5"] = affine_2_4(False)
     S["2^4:S5"] = affine_2_4(True)
     return S
@@ -208,8 +210,49 @@ def selftest():
         if got != order:
             print("order mismatch", name, got, order)
             bad += 1
+    bad += lemma21_check()
     print("selftest passed" if not bad else f"selftest FAILED ({bad})")
     return 0 if not bad else 1
+
+def inv(p):
+    q = [0] * len(p)
+    for i, j in enumerate(p):
+        q[j] = i
+    return tuple(q)
+
+def lemma21_check(trials=300):
+    """Numerical check of the identities in Lemma 2.1 of research-h.md inside 2^4:A5,
+    N = translation subgroup (abelian normal).  Notation m^g := g^-1 m g.
+      conj:     m^-1 (a n0) m            == a * n0 * m * (m^a)^-1
+      multiply: ((a n0 b n1)^m)(b n1)^-1 == a * n0 * m^(b^-1) * (m^a)^-1
+    (products left to right, as in compose).  Returns number of failures."""
+    gens = affine_2_4(False)
+    G = sorted(closure(gens))
+    n = len(gens[0])
+    e = tuple(range(n))
+    # translations = elements fixing no point or identity whose square is identity and that commute
+    # with all translations: take the normal closure of the generator translation gens[2]
+    N = closure([gens[2]] + [compose(compose(inv(g), gens[2]), g) for g in G])
+    assert len(N) == 16
+    rng = random.Random(7)
+    mul = lambda *ps: __import__("functools").reduce(compose, ps, e)
+    conj = lambda m, g: mul(inv(g), m, g)
+    fails = 0
+    Nl = sorted(N)
+    for _ in range(trials):
+        a, b = rng.choice(G), rng.choice(G)
+        n0, n1, m = rng.choice(Nl), rng.choice(Nl), rng.choice(Nl)
+        u0, u1 = mul(a, n0), mul(b, n1)
+        lhs1 = mul(inv(m), u0, m)
+        rhs1 = mul(a, n0, m, inv(conj(m, a)))
+        lhs2 = mul(mul(inv(m), mul(u0, u1), m), inv(u1))
+        rhs2 = mul(a, n0, conj(m, inv(b)), inv(conj(m, a)))
+        fails += (lhs1 != rhs1) + (lhs2 != rhs2)
+    if fails:
+        print("lemma 2.1 identity check FAILED", fails)
+    else:
+        print(f"lemma 2.1 identities verified in 2^4:A5 ({trials} random instances)")
+    return fails
 
 def main():
     ap = argparse.ArgumentParser()
@@ -224,7 +267,7 @@ def main():
     S = catalogue()
     names = args.only or list(S)
     for name in names:
-        order, pairs = two_generating_pairs(S[name], args.pairs, seed=hash(name) & 0xffff)
+        order, pairs = two_generating_pairs(S[name], args.pairs, seed=sum(map(ord, name)))
         if order > args.max_order:
             print(json.dumps({"group": name, "order": order, "skipped": "order"}))
             continue
