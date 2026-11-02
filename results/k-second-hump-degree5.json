@@ -1,0 +1,18 @@
+{
+  "degree": 5,
+  "coefficient_field": 2,
+  "fixed_relator": "YxYXyyx",
+  "target_original_word": "yXXyXYxx",
+  "target_fiber_word": "BAbb",
+  "primitive_candidate": "a^k*t",
+  "complete_twisted_orbit": true,
+  "orbit_states": 65536,
+  "candidate_order": 8,
+  "candidate_k_residues_seen": [
+    2
+  ],
+  "alpha_order": 24,
+  "orbit_sha256": "265b52b9bff9c46c4b86c5f08b30287beee0c4aef1d62d4a29d530d420e38ce6",
+  "original_relation_and_target_checked": true,
+  "free_group_AC_goal_solved": false
+}
