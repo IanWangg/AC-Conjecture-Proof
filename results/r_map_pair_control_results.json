@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "positive_signed_Christoffel_cycle_graphs": 372,
+  "negative_proper_square_cycle_graphs": 372,
+  "all_initial_AK3_relative_tails_through_length6": 1457,
+  "budget_stop_correctly_INCOMPLETE": true,
+  "tampered_closed_certificate_rejected": true,
+  "maximum_pair_states_in_proper_square_controls": 52
+}
