@@ -12,8 +12,8 @@ The repository was initially empty. Sixteen research agents have worked with up 
 
 ## Current strongest checked results
 
-- **Raw peak at least 22:** a complete cap-21 component has 27,380,372 inversion/permutation orbit states, no total length below 13, and no primitive relators. A separate string-based checker verifies its closure, including 112,696,624 allowed-neighbor checks. See the [packed extension](research/packed-peak-extension.md), [results](results/packed_peak_extension.json), and [independent source review](research/packed-audit-review.md).
-- **Cyclic peak at least 15:** an analytic all-n theorem gives cyclic peak at least 2n+9 for AK(n), n>=3. This is a different energy from the raw bound above.
+- **Direct raw cap-21 audit:** a complete cap-21 component has 27,380,372 inversion/permutation orbit states, no total length below 13, and no primitive relators. A separate string-based checker verifies its closure, including 112,696,624 allowed-neighbor checks. See the [packed extension](research/packed-peak-extension.md), [results](results/packed_peak_extension.json), and [independent source review](research/packed-audit-review.md).
+- **Cyclic peak at least 23 for AK(3):** the complete cap-22 component contains 258,032 cyclic states and no primitive coordinate. A separate checker verifies closure and connectedness with 193,140,064 candidate products, including every permitted nonempty bridge. The Cayley-tree axes proof covers arbitrary conjugating tails. Thus any ordinary trivialization must reach cyclic total length at least 23, and therefore raw total length at least 23. See [N's full search](research/research-n-cyclic-search.md), [P's independent proof and audit](research/research-p-cyclic21-review.md), and the [explicit certificate manifest](certificates/cyclic22_component_manifest.json). The earlier all-n analytic bound 2n+9 remains valid for n>=3.
 - **No initial primitive replacement, at any length:** neither one-relator deletion quotient permits a primitive free relator as a single quotient-conjugacy replacement for AK(n), n>=3. This unbounded one-step theorem is not preserved after both coordinates change.
 - **Constructive infinite-quotient paths:** AK(3)'s image has exact instruction distances 10 in the braid quotient and 8 in the torus quotient. A synchronized 191-strict-move path works in their combined product. An optimized path works in the nonsolvable braid relation-module extension F/[N,N] in 533 fully replayed strict moves, improving the earlier 531,377-move expansion. Its actual free endpoint remains nontrivial, and greedy shortening gives an exact loop back to AK(3).
 
@@ -39,11 +39,13 @@ All these results leave the original four breakthrough objectives unachieved.
 | [K](research/research-k.md) | Explicit finite conjugacy obstructions after selected first departures | Three verified finite-group certificates exclude all primitive parameters in the specified frozen-coordinate quotients; they are not global AC obstructions |
 | [L](research/research-l.md) | Small aligned prefix, 533-move first-order lift, exact free loop and next-central defect | Independent alternate-Schreier-basis review reproduces every coefficient of the nonzero next-central classes |
 | [M](research/research-m.md) | Uniform primitive-free subgroup theorem and direct free-group search | Exact 246-move AK(2) control; [new reachable states and 5,632 literal-pair certificates](research/research-m-hump-transitions.md) |
-| [N](research/research-n.md) | Entire cyclic braid-quotient preimages are primitive-free for every n>=2 | Unbounded matrix determinant argument covers all powers and arbitrary conjugating tails |
+| [N](research/research-n.md) | Primitive-free cyclic braid preimages and [complete cyclic cap-22 exclusion](research/research-n-cyclic-search.md) | Uniform n>=2 subgroup theorem; AK(3) cyclic peak at least 23 after independent audit |
 | [O](research/research-o.md) | Finite reduction for arbitrary relative tails in rank two | Proved shortest-double-coset bridge lemma and explicit 1,457-tail graph certificate |
-| [P](research/research-p.md) | Arbitrary-tail exclusion for all first departures and both later waypoints | 29 families, 123,901 short tails and 950,416 signed line-DAG checks; every fold independently compared |
+| [P](research/research-p.md) | Arbitrary-tail exclusion and [independent full cap-21/22 audit](research/research-p-cyclic21-review.md) | Independent word arithmetic, complete bridge menu, connectedness, and Euclidean scan of 179,630 nonprimitive coordinates |
 
 Further research:
+
+- [N's complete cyclic searches](research/research-n-cyclic-search.md) and [P's full independent audit](research/research-p-cyclic21-review.md) strengthen the ordinary cyclic peak bound from 15 to 23. The coordinating agent's [separate Python cap-20 audit](research/independent-cyclic-review.md) checks 25,895,168 rotation products. All are finite-energy exclusions with proved coverage of arbitrary tails, not unbounded AC obstructions.
 
 - [O's Nielsen-prelude extension](research/research-o-nielsen-tails.md) excludes primitive elements after the specified seven short-prelude families and arbitrary subsequent independent conjugating tails: 561,323 finite tail checks with an unbounded reduction. Its AK(2) calibration gives an exact 131-move basis path.
 - [P's length-14 discovery](research/research-p-length14.md) and [the coordinating agent's checkpoint lifts](research/short-waypoint-paths.md) provide compact ordinary paths of 32 and 43 moves, both at raw peak 18. Their endpoint subgroups remain proper; these paths do not improve the previously exhausted search region.
@@ -74,7 +76,13 @@ python3 experiments/reproduce.py --tails-only
 
 The [saved new replay](results/tail_reproduction.json) independently recomputes all 123,901 folds; [publication audit](results/tail_publication_integrity.json) matches all thirteen new theorem artifacts byte for byte. Earlier baseline replay is recorded separately in [results/reproduction.json](results/reproduction.json).
 
-Add the independent original-state C++ cap-18 exhaustion and the long endpoint's subgroup fold:
+Audit the strongest full cyclic certificate, independent primitive scan, and the short strict paths (requires a C++17 compiler):
+
+```sh
+python3 experiments/reproduce.py --cyclic-only
+```
+
+Add the independent original-state C++ cap-18 exhaustion, long endpoint's subgroup fold, and full cyclic audit:
 
 ```sh
 python3 experiments/reproduce.py --cpp
@@ -94,7 +102,7 @@ The dependency-free [strict elementary verifier](experiments/elementary_verify.p
 
 A positive ordinary-AC result needs a complete proof or replayable path to the standard **free** basis. An obstruction must be invariant under all permitted moves at unbounded length. Group triviality, success in a quotient, and finite search failure do not meet either standard. Computations here are checked programs and explicit certificates, not proof-assistant formalizations.
 
-The full cap-21 region has now been classified; cap 22 and higher remain outside the exclusion. The frozen-coordinate theorems and primitive-free subgroup results have their stated restricted scopes. Three power-departure symmetry classes still lack their particular frozen-coordinate primitive-replacement exclusions. Arbitrary tails for the stated catalogue and later waypoints are now covered; arbitrary Nielsen mixing before fresh conjugations and later interspersed changes of both coordinates remain open research directions. The quotient paths leave nontrivial free errors, even after the first-order module correction. A finite termination argument or a global invariant remains missing. The original goal therefore stays active.
+The raw cap-21 component has been directly classified, and the full cyclic cap-22 component is now independently closed and connected. Every ordinary trivialization must therefore attain cyclic length at least 23, which also implies raw length at least 23. Cyclic cap 23 and higher remain outside the certified exclusion. The frozen-coordinate theorems and primitive-free subgroup results have their stated restricted scopes. Three power-departure symmetry classes still lack their particular frozen-coordinate primitive-replacement exclusions. Arbitrary tails for the stated catalogue and later waypoints are now covered; arbitrary Nielsen mixing before fresh conjugations and later interspersed changes of both coordinates remain open research directions. The quotient paths leave nontrivial free errors, even after the first-order module correction. A finite termination argument or a global invariant remains missing. The original goal therefore stays active.
 
 ## Primary-literature cautions
 
