@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "cap": 20,
+  "states": 39840,
+  "minimum_cyclic_sum": 13,
+  "minimum_cyclic_word_length": 5,
+  "minimum_disjoint_axis_neighbor_energy": 21,
+  "rotated_signed_product_checks": 25895168,
+  "accepted_directed_product_checks": 1394672,
+  "independently_verified_closed_and_connected": true,
+  "independent_string_arithmetic": true,
+  "proof_of_all_conjugates_required": "intersecting/disjoint Cayley-tree axes lemma"
+}
