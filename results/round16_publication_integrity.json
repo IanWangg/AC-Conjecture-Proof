@@ -1,0 +1,379 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "artifacts": 74,
+  "verification": "Every listed local UTF-8 artifact has exactly the Git blob SHA returned by GitHub on main.",
+  "researchers_total": 16,
+  "files": [
+    {
+      "path": "certificates/arbitrary_tail_graphs.json.gz.b64",
+      "bytes": 68181,
+      "blob_sha": "f094f6a7daa809ed483f9b265ce1baf890efe2f7"
+    },
+    {
+      "path": "certificates/cyclic20_component.json.gz.b64",
+      "bytes": 182629,
+      "blob_sha": "4946124eaa4fa07bfc733dc1874dd57e21d97896"
+    },
+    {
+      "path": "certificates/cyclic21_component.json.gz.b64",
+      "bytes": 669981,
+      "blob_sha": "f0bc2d08e9a1b57b54ff4f648fb10969012aecb7"
+    },
+    {
+      "path": "certificates/cyclic22_component.part1.b64",
+      "bytes": 600000,
+      "blob_sha": "4a3135ca08ff5d9c7f1efc25bafd0eb8e2f71421"
+    },
+    {
+      "path": "certificates/cyclic22_component.part2.b64",
+      "bytes": 597837,
+      "blob_sha": "9556b7bb026141adedf492d9a6f37ba173451b9d"
+    },
+    {
+      "path": "certificates/cyclic22_component_manifest.json",
+      "bytes": 742,
+      "blob_sha": "e5527dd367bf6246bb0e5eedccb0658dc7023963"
+    },
+    {
+      "path": "certificates/length13_cap18.json",
+      "bytes": 2879,
+      "blob_sha": "90e0ff55bd8b9a911d9c4aa7811b1db8a1005fd7"
+    },
+    {
+      "path": "certificates/length14_cap18.json",
+      "bytes": 2155,
+      "blob_sha": "fc7ca1354a1a2d162437454342c93973a339c3c8"
+    },
+    {
+      "path": "certificates/length14_low_peak.json",
+      "bytes": 12182,
+      "blob_sha": "fc2d48d64be177769402490685ae8bbbb8e63a64"
+    },
+    {
+      "path": "certificates/n_ak2_cyclic13.json",
+      "bytes": 2863,
+      "blob_sha": "67fb42886f23cc6d1908bb31cb90594aaacd3ff8"
+    },
+    {
+      "path": "certificates/o_ak2_tail_full.json",
+      "bytes": 9180,
+      "blob_sha": "c2b754f4a1fc1f250d2e63086481b31e3bea652b"
+    },
+    {
+      "path": "certificates/o_ak2_tail_waypoint.json",
+      "bytes": 1235,
+      "blob_sha": "8f947250006016add4c9bb02b0467c8012b1d4f8"
+    },
+    {
+      "path": "certificates/p_length14_waypoint.json",
+      "bytes": 14686,
+      "blob_sha": "b7c8354effd3965e2a8bfa40db6086734ff3f776"
+    },
+    {
+      "path": "experiments/ak2_tail_control.py",
+      "bytes": 2749,
+      "blob_sha": "b5659510b5a93a0018787bb50a6e495b642f3c9a"
+    },
+    {
+      "path": "experiments/arbitrary_tail_catalogue.py",
+      "bytes": 8198,
+      "blob_sha": "121ce3fe9619d530095203950c45e78352ab5848"
+    },
+    {
+      "path": "experiments/arbitrary_tail_certificate.py",
+      "bytes": 7731,
+      "blob_sha": "3b9467fcd1023f014875f35e3bb314528087a8ee"
+    },
+    {
+      "path": "experiments/audit_cyclic_component.py",
+      "bytes": 3652,
+      "blob_sha": "5176d9f124959e85996370ec2447c5df65c5ca2f"
+    },
+    {
+      "path": "experiments/audit_cyclic_subgroups.py",
+      "bytes": 3267,
+      "blob_sha": "4db05ac1c2e3560f32deda3e457da2b7e706ec62"
+    },
+    {
+      "path": "experiments/balanced_run_certificate.py",
+      "bytes": 2734,
+      "blob_sha": "2bbda8c99a581aa64ca5f1175693fc973ebd53ca"
+    },
+    {
+      "path": "experiments/bridge_menu_controls.py",
+      "bytes": 3316,
+      "blob_sha": "a680b94054eef04ac6359936e9b1cdec3ff28894"
+    },
+    {
+      "path": "experiments/cyclic_braid_preimage.py",
+      "bytes": 6765,
+      "blob_sha": "019d539947542a87d5a42f0deb00fb7eb61868fe"
+    },
+    {
+      "path": "experiments/cyclic_catalogue_to_tsv.py",
+      "bytes": 2077,
+      "blob_sha": "687e624f5b124322b55b9bda7d31307583655f05"
+    },
+    {
+      "path": "experiments/cyclic_component.cpp",
+      "bytes": 4372,
+      "blob_sha": "a5b7d7b9be4934abc42d940c903c65c47d601ac8"
+    },
+    {
+      "path": "experiments/euclidean_primitive_audit.py",
+      "bytes": 3569,
+      "blob_sha": "2e720a284d914d32c5477c76acd0ddc8d49f7cf6"
+    },
+    {
+      "path": "experiments/free_waypoint_search.py",
+      "bytes": 8437,
+      "blob_sha": "ab2c177df0f6230f774bf9c81c541fac2a3cd876"
+    },
+    {
+      "path": "experiments/nielsen_tail_probe.py",
+      "bytes": 3632,
+      "blob_sha": "d8e057ad5ad1522b51ca6cfad0fdd02bea3124a9"
+    },
+    {
+      "path": "experiments/p_short_waypoint.py",
+      "bytes": 3808,
+      "blob_sha": "1a50364c945f9e4543218424d1d9f9c9b295c147"
+    },
+    {
+      "path": "experiments/packed_waypoint_paths.py",
+      "bytes": 6311,
+      "blob_sha": "c906291a53a111f53a345a2b8db208d34ca73719"
+    },
+    {
+      "path": "experiments/refine_primitive_cycles.py",
+      "bytes": 6123,
+      "blob_sha": "cfbcbdf14dab98b692ca80fc8de8344a1fc4bf42"
+    },
+    {
+      "path": "experiments/reproduce.py",
+      "bytes": 18830,
+      "blob_sha": "e5f447b844985fff6690f3e254d63f5b59dff4dc"
+    },
+    {
+      "path": "experiments/scan_cyclic_primitives.py",
+      "bytes": 3756,
+      "blob_sha": "16810bf105c2bcc980bf935069987e23f8e6ee6a"
+    },
+    {
+      "path": "experiments/torus_cyclic_preimage.py",
+      "bytes": 4590,
+      "blob_sha": "54e4ef141349c24405e116931d0a1e5d6a79448c"
+    },
+    {
+      "path": "experiments/verify_full_cyclic_component.cpp",
+      "bytes": 10543,
+      "blob_sha": "5e0f6b988d20d632f2611707e97a3829fda88e84"
+    },
+    {
+      "path": "experiments/verify_subgroup_refinements.py",
+      "bytes": 2614,
+      "blob_sha": "7ce9c51bf04c3830d570b470eb980a45c555e64c"
+    },
+    {
+      "path": "research/independent-cyclic-review.md",
+      "bytes": 3410,
+      "blob_sha": "a13ac9644d1652db7908eec09a1b3ff9207ec2cd"
+    },
+    {
+      "path": "research/research-n-cyclic-search.md",
+      "bytes": 13567,
+      "blob_sha": "121e791015579b4d0506c9ee5561ceeca2d13114"
+    },
+    {
+      "path": "research/research-n.md",
+      "bytes": 10355,
+      "blob_sha": "5509323df495559df45ad7b9fc3fcc1734cca653"
+    },
+    {
+      "path": "research/research-o-cyclic-review.md",
+      "bytes": 14795,
+      "blob_sha": "f35ce9a561e93e8f3a70eecfaaa6df335e387674"
+    },
+    {
+      "path": "research/research-o-nielsen-tails.md",
+      "bytes": 7339,
+      "blob_sha": "c0ea20fcf1e9c06f28e36d147edf3e8acf4e40b5"
+    },
+    {
+      "path": "research/research-o.md",
+      "bytes": 10547,
+      "blob_sha": "120e83ead8b01752cc17c737bd237fe1c6294a8a"
+    },
+    {
+      "path": "research/research-p-cyclic21-review.md",
+      "bytes": 12277,
+      "blob_sha": "3d41ddb7b3dd6ba39ac67942239296bafdcb1244"
+    },
+    {
+      "path": "research/research-p-length14.md",
+      "bytes": 6008,
+      "blob_sha": "d932e755aee908a7e769600f693f9c7b0178d4e5"
+    },
+    {
+      "path": "research/research-p.md",
+      "bytes": 9521,
+      "blob_sha": "d2e429a64416f46a5ca15ec955caaaa8642deb03"
+    },
+    {
+      "path": "research/short-waypoint-paths.md",
+      "bytes": 4301,
+      "blob_sha": "0660f0e11e7103736317781c6b71ebeb54cc3ec6"
+    },
+    {
+      "path": "research/torus-cyclic-preimage.md",
+      "bytes": 5932,
+      "blob_sha": "f5c2325bd2ee4e57838e91d2e4b9f1706fe2225a"
+    },
+    {
+      "path": "results/arbitrary_tail_results.json",
+      "bytes": 514,
+      "blob_sha": "44e0694737a79b4cb04c6430b8c59d90e42cbab3"
+    },
+    {
+      "path": "results/bridge_menu_control_results.json",
+      "bytes": 467,
+      "blob_sha": "e0e6643fb497f851547910743ff24b0cf216eb97"
+    },
+    {
+      "path": "results/cyclic18_root_independent_review.json",
+      "bytes": 471,
+      "blob_sha": "2aa784b377a6aaec07d1a4990bc81f1c4a6dd621"
+    },
+    {
+      "path": "results/cyclic20_canonical_subgroup_review.json.gz.b64",
+      "bytes": 6017,
+      "blob_sha": "a15342ed21bcb35601aeb41b5442dc5851a8d58a"
+    },
+    {
+      "path": "results/cyclic20_euclidean_primitive_results.json",
+      "bytes": 666,
+      "blob_sha": "f8e6872b3270d76063d5a3f0bebf7dffa7b4f246"
+    },
+    {
+      "path": "results/cyclic20_independent_review.json",
+      "bytes": 475,
+      "blob_sha": "e21d5b30f24ecece6681304cc550a6205683094f"
+    },
+    {
+      "path": "results/cyclic21_canonical_subgroup_review.json.gz.b64",
+      "bytes": 18561,
+      "blob_sha": "d4f7c1aa2ed43e307361627eb07f0ab46a5aae31"
+    },
+    {
+      "path": "results/cyclic21_component_results.json",
+      "bytes": 402,
+      "blob_sha": "8f5a061d5caa29c40bcd01f7e162145526b63ba4"
+    },
+    {
+      "path": "results/cyclic21_euclidean_primitive_results.json",
+      "bytes": 667,
+      "blob_sha": "4edfe74343a9a13d9267fd910a011b8b0d4a6202"
+    },
+    {
+      "path": "results/cyclic21_independent_review.json",
+      "bytes": 785,
+      "blob_sha": "a127a7094cd83f06af743bc52bde215bcb6eb9f5"
+    },
+    {
+      "path": "results/cyclic21_primitive_independent_review.json",
+      "bytes": 713,
+      "blob_sha": "27accdfec7bb8197ea90a20810fc84e2db8fe327"
+    },
+    {
+      "path": "results/cyclic22_canonical_subgroup_review.json.gz.b64",
+      "bytes": 24333,
+      "blob_sha": "e6835c414cc2753c96f4aff85a3d022c86a93863"
+    },
+    {
+      "path": "results/cyclic22_component_results.json",
+      "bytes": 415,
+      "blob_sha": "25173aaf437de96dea45634e40b0b1dbadf0efce"
+    },
+    {
+      "path": "results/cyclic22_independent_review.json",
+      "bytes": 800,
+      "blob_sha": "02995f3444795188babaedb4b041b330f1dee490"
+    },
+    {
+      "path": "results/cyclic22_primitive_independent_review.json",
+      "bytes": 628,
+      "blob_sha": "07a821ebcb9678c85fe583cc0f18b787340a2c91"
+    },
+    {
+      "path": "results/cyclic_braid_preimage_results.json",
+      "bytes": 833,
+      "blob_sha": "63b4f5f906f47ed7f6f261b08ed6f7ed32c83044"
+    },
+    {
+      "path": "results/cyclic_reproduction.json",
+      "bytes": 483,
+      "blob_sha": "c77833e9aa86ca7bc1b56edff4f67902ba110da5"
+    },
+    {
+      "path": "results/length13_cap18_results.json",
+      "bytes": 377,
+      "blob_sha": "bfa851d0c8e8ae965c1ce34a07d964655040064d"
+    },
+    {
+      "path": "results/length14_cap18_results.json",
+      "bytes": 378,
+      "blob_sha": "cccca8d203654975092230ae2f424872f01d1081"
+    },
+    {
+      "path": "results/n_ak2_cyclic_control_results.json",
+      "bytes": 201,
+      "blob_sha": "197a5671cbaf07a93a23f91d748aa3b07465fbc1"
+    },
+    {
+      "path": "results/n_cyclic21_primitive_scan.json",
+      "bytes": 279,
+      "blob_sha": "f902e79f9922d8b28d979cc560ff121129b67137"
+    },
+    {
+      "path": "results/n_cyclic22_euclidean_primitive_results.json",
+      "bytes": 669,
+      "blob_sha": "54aff7cd1c3795c289c8f9885c5ea74e4e261adb"
+    },
+    {
+      "path": "results/nielsen_depth1_tail_results.json",
+      "bytes": 2466,
+      "blob_sha": "16df0abaa3b20034be08fffcdc1b8a179fa927f2"
+    },
+    {
+      "path": "results/nielsen_depth3_tail5_results.json",
+      "bytes": 21660,
+      "blob_sha": "c97f72509d751dfca56737e696a5b6144cc6af4c"
+    },
+    {
+      "path": "results/nielsen_depth3_tail_results.json",
+      "bytes": 4081,
+      "blob_sha": "7936bb5f9b24bf54f10d76f7e4c833852bc09e9e"
+    },
+    {
+      "path": "results/p_arbitrary_tail_results.json",
+      "bytes": 12804,
+      "blob_sha": "0fc1afe7fd8be23c5eacb620216f0015c93b23c2"
+    },
+    {
+      "path": "results/p_length14_results.json",
+      "bytes": 1089,
+      "blob_sha": "11b456c3aa4ddc83278cf94bf79375edee8fb495"
+    },
+    {
+      "path": "results/subgroup_refinement_review.json",
+      "bytes": 564,
+      "blob_sha": "150719995aa31a60f2902f58e71b6e5f617ca096"
+    },
+    {
+      "path": "results/torus_cyclic_preimage_results.json",
+      "bytes": 1045,
+      "blob_sha": "a60e07804a2e448397b5a91d120cb998c994f327"
+    }
+  ]
+}
