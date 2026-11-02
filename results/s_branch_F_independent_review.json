@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "model": "F",
+  "algebra_dimension": 16,
+  "prime": 5,
+  "alpha_order": 20,
+  "associativity_basis_checks": 4096,
+  "original_relator_and_braid_images_checked": true,
+  "closed_orbit_superset_states": 3125,
+  "closure_edges_checked": 12500,
+  "all_candidate_residues_excluded": 5,
+  "independent_literal_monomial_arithmetic": true,
+  "orbit_sha256": "7b74832dc97b28b5d50cc3fc5d84606823eefef5f85f6e6dcc38cdf4434657ce",
+  "ordinary_AC_goal_solved": false
+}
