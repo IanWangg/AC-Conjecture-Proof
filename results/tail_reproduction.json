@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "braid_cyclic_preimage_all_n_at_least_2": true,
+  "torus_cyclic_preimage_n_mod12": [
+    3,
+    8
+  ],
+  "arbitrary_tail_representative_families": 29,
+  "short_tails_recomputed_and_independently_folded": 123901,
+  "signed_line_DAG_checks": 950416,
+  "unbounded_extension_proved_in_reports": true,
+  "arbitrary_interspersed_AC_moves_covered": false
+}
