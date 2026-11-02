@@ -1,0 +1,20 @@
+{
+  "BS_family_formula_checks": "n=2..50, candidate exponents -20..20",
+  "BS_braid_cyclic_stable_length": 3,
+  "BS_primitive_candidate_stable_length": 1,
+  "BS_n1_exception": "(XY) b (yx) = x^2 Y",
+  "classA_relator": "XXXXYxxxy",
+  "classC_relator": "XXXyXYxxy",
+  "both_relators_conjugate_to_original_power_in_B3": true,
+  "classC_fiber_alpha": {
+    "a": "b",
+    "b": "aB"
+  },
+  "classC_braid_inverse_normal_form": [
+    "abbAbA",
+    1
+  ],
+  "classC_primitive_kernel": "aba",
+  "classC_transfer_identity": "aba = alpha^-4((bA)^-1)",
+  "scope": "Analytic single-coordinate primitive exclusions; not a global AC obstruction"
+}
