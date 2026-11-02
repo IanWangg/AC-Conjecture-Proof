@@ -10,6 +10,7 @@
 #include <stdexcept>
 #include <string>
 #include <unordered_set>
+#include <unordered_map>
 #include <utility>
 #include <vector>
 
@@ -85,8 +86,34 @@ bool proves_primitive_absence(const Graph&g){
 }
 void graph_json(std::ostream&out,const Graph&g){out<<'[';bool first=true;for(const auto&row:g.out)for(int end:row){if(!first)out<<',';first=false;out<<end;}out<<']';}
 
+int match_pairs(const char*reverse_path,const char*forward_path,const char*result_path,uint64_t limit){
+    struct Reverse {std::string first,second;Graph graph;uint64_t index;};
+    std::unordered_map<std::string,Reverse> targets;
+    std::ifstream reverse(reverse_path),forward(forward_path);if(!reverse||!forward)throw std::runtime_error("matching input missing");
+    std::string line;uint64_t reverse_pairs=0,forward_pairs=0,rotated=0;
+    auto pair=[](const std::string&line){auto at=line.find('\t');if(at==std::string::npos)throw std::runtime_error("bad matching row");return std::make_pair(line.substr(0,at),line.substr(at+1));};
+    while(std::getline(reverse,line)){auto words=pair(line);auto key=unbased_key(fold(words.first,words.second));targets.emplace(key.first,Reverse{words.first,words.second,key.second,reverse_pairs++});}
+    bool complete=true;
+    while(std::getline(forward,line)){
+        if(forward_pairs>=limit){complete=false;break;}
+        auto words=pair(line);
+        for(const auto&a:rotations(words.first))for(const auto&b:rotations(words.second)){
+            ++rotated;auto key=unbased_key(fold(a,b));auto found=targets.find(key.first);if(found==targets.end())continue;
+            const auto&back=found->second;std::ofstream result(result_path);
+            result<<"{\n\"status\":\"MATCH\",\n\"ordinary_AC_goal_solved\":false,\n\"forward_source_index\":"<<forward_pairs<<",\n\"forward_source_pair\":[\""<<words.first<<"\",\""<<words.second<<"\"],\n\"forward_rotated_pair\":[\""<<a<<"\",\""<<b<<"\"],\n\"forward_original_base\":"<<key.second.original_base<<",\n\"reverse_index\":"<<back.index<<",\n\"reverse_pair\":[\""<<back.first<<"\",\""<<back.second<<"\"],\n\"reverse_original_base\":"<<back.graph.original_base<<",\n\"canonical_unbased_graph\":";graph_json(result,key.second);result<<",\n\"forward_rotation_pairs_tested\":"<<rotated<<",\n\"reverse_pairs\":"<<reverse_pairs<<",\n\"distinct_reverse_core_keys\":"<<targets.size()<<"\n}\n";
+            std::cout<<"MATCH forward "<<forward_pairs<<" reverse "<<back.index<<" after "<<rotated<<" rotationpairs\n";return 0;
+        }
+        ++forward_pairs;
+        if(forward_pairs%10000==0)std::cout<<"match scan sourcepairs "<<forward_pairs<<" rotations "<<rotated<<std::endl;
+    }
+    std::ofstream result(result_path);result<<"{\n\"status\":\""<<(complete?"COMPLETE_NO_MATCH":"INCOMPLETE_NO_MATCH")<<"\",\n\"ordinary_AC_goal_solved\":false,\n\"forward_source_pairs\":"<<forward_pairs<<",\n\"forward_rotation_pairs_tested\":"<<rotated<<",\n\"reverse_pairs\":"<<reverse_pairs<<",\n\"distinct_reverse_core_keys\":"<<targets.size()<<"\n}\n";
+    std::cout<<"no match "<<forward_pairs<<" sourcepairs "<<rotated<<" rotationpairs "<<targets.size()<<" reversekeys\n";return 0;
+}
+
+#ifndef Q_ROTATION_SUBGROUPS_LIBRARY
 int main(int argc,char**argv){
     try{
+        if((argc==5||argc==6)&&std::string(argv[1])=="--match-pairs")return match_pairs(argv[2],argv[3],argv[4],argc==6?std::stoull(argv[5]):UINT64_MAX);
         if(argc==4&&std::string(argv[1])=="--folds"){
             std::ifstream input(argv[2]);std::ofstream output(argv[3]);std::string line;
             while(std::getline(input,line)){auto tab=line.find('\t');if(tab==std::string::npos)throw std::runtime_error("bad row");auto g=unbased_key(fold(line.substr(0,tab),line.substr(tab+1))).second;output<<"{\"original_base\":"<<g.original_base<<",\"DAG_proves_primitive_absence\":"<<(proves_primitive_absence(g)?"true":"false")<<",\"graph\":";graph_json(output,g);output<<"}\n";}
@@ -114,5 +141,7 @@ int main(int argc,char**argv){
         candidate.close();double seconds=std::chrono::duration<double>(std::chrono::steady_clock::now()-start).count();
         std::ofstream result(argv[3]);result<<"{\n\"status\":\""<<(complete?"COMPLETE":"INCOMPLETE")<<"\",\n\"ordinary_AC_goal_solved\":false,\n\"literal_source_pairs\":"<<pairs<<",\n\"independent_rotation_pairs\":"<<rotations_tested<<",\n\"distinct_unbased_labelled_core_graphs\":"<<graphs<<",\n\"direct_DAG_primitive_absence_graphs\":"<<dag<<",\n\"inconclusive_graphs\":"<<inconclusive<<",\n\"seconds\":"<<seconds<<"\n}\n";
         std::cout<<"finished "<<pairs<<" pairs "<<graphs<<" graphs "<<inconclusive<<" candidates "<<seconds<<" seconds\n";
+        return 0;
     }catch(const std::exception&e){std::cerr<<e.what()<<'\n';return 1;}
 }
+#endif
