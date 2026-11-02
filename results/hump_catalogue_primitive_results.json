@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "original_literal_pairs": 464,
+  "expanded_literal_pairs": 5632,
+  "unique_based_subgroup_graphs": 1340,
+  "certified_acyclic_line_graphs": 10720,
+  "all_stored_graphs_refolded": true,
+  "all_word_lengths_within_each_subgroup_covered": true,
+  "independent_conjugating_tails_covered": false,
+  "ordinary_AC_goal_solved": false
+}
