@@ -2,6 +2,7 @@
 import argparse
 import base64
 import gzip
+import hashlib
 import json
 from pathlib import Path
 import subprocess
@@ -95,6 +96,69 @@ def cyclic_checks():
             'primitive_coordinate_scan_replayed': True,
             'AK3_short_waypoint_moves': [32, 43], 'AK3_waypoint_raw_peaks': [18, 18],
             'AK2_basis_control_strict_moves': 46}
+
+
+def subgroup_checks(full_rotations=False):
+    """Replay Q/R's all-tail subgroup proof and S's three branch certificates."""
+    py = sys.executable
+    with tempfile.TemporaryDirectory(prefix='ac-round19-') as directory:
+        folder = Path(directory)
+        output = folder / 'result.json'
+        binary = str(folder / 'rotations')
+        run('c++', '-std=c++17', '-O3', 'experiments/rotation_subgroups.cpp',
+            '-o', binary, json_output=False)
+        folded = run(py, 'experiments/rotation_fold_controls.py',
+                     'certificates/cyclic22_component_manifest.json', binary,
+                     '--output', str(output))
+        assert folded['independently_folded_pairs'] == 5002
+        assert folded['C++_fold_and_unbased_key_match_M_fold']
+        assert folded['C++_DAG_matches_O_topological_test']
+        if full_rotations:
+            tsv = str(folder / 'states.tsv')
+            run(py, 'experiments/cyclic_catalogue_to_tsv.py',
+                'certificates/cyclic22_component_manifest.json', tsv)
+            candidates = folder / 'candidates.jsonl'
+            run(binary, tsv, str(candidates), str(output), json_output=False)
+            complete = json.loads(output.read_text())
+            assert complete['status'] == 'COMPLETE'
+            assert complete['literal_source_pairs'] == 258032
+            assert complete['independent_rotation_pairs'] == 24136172
+            assert complete['distinct_unbased_labelled_core_graphs'] == 11431368
+            assert complete['inconclusive_graphs'] == 6568
+            assert hashlib.sha256(candidates.read_bytes()).hexdigest() == 'd530e68cab069aabac841a1082bf5624d657a920001a72a77a3b39365bf167a5'
+        certificates = run(py, 'experiments/analyse_rotation_candidates.py',
+                           'certificates/q_rotation_candidates.jsonl.gz.b64',
+                           '--verify-certificates', 'certificates/r_rotation_map_pairs_manifest.json',
+                           '--output', str(output))
+        assert certificates['complete_candidate_absence_certificates_checked'] == 6568
+        assert certificates['closed_map_pair_states_checked'] == 735712
+        controls = run(py, 'experiments/r_map_pair_controls.py', '--output', str(output))
+        assert controls['positive_signed_Christoffel_cycle_graphs'] == 372
+        assert controls['negative_proper_square_cycle_graphs'] == 372
+        assert controls['tampered_closed_certificate_rejected']
+        model = run(py, 'experiments/s_branch_models.py')
+        assert model['status'] == 'PASS'
+        for branch in 'DEF':
+            name = ('s_branch_D_linear.json' if branch == 'D' else
+                    's_branch_'+branch+'_orbit.json.gz.b64')
+            verification = run(py, 'experiments/verify_s_branch_certificates.py',
+                               'certificates/'+name, '--output', str(output))
+            assert verification['status'] == 'PASS'
+            assert verification['all_candidate_residues_excluded'] == (17 if branch == 'D' else 5)
+            entry = run(py, 'experiments/elementary_verify.py',
+                        'certificates/s_branch_'+branch+'_entry.json')
+            assert entry['moves'] == {'D':21,'E':10,'F':13}[branch]
+        basis = run(py, 'experiments/elementary_verify.py', 'certificates/r_ak2_map_full.json')
+        assert basis['endpoint'] == ['x', 'y'] and basis['moves'] == 337
+    return {'status':'PASS', 'ordinary_AC_goal_solved':False,
+            'full_24136172_rotation_enumeration_replayed':full_rotations,
+            'source_cyclic_cap22_pairs':258032,
+            'closed_primitive_absence_certificates_checked':6568,
+            'closed_partial_map_pair_states_checked':735712,
+            'independent_folding_control_pairs':5002,
+            'new_frozen_power9_branches_verified':['D','E','F'],
+            'AK2_detector_to_basis_strict_moves':337,
+            'arbitrary_interspersed_AC_moves_covered':False}
 
 
 def main(cpp=False, packed=False):
@@ -203,6 +267,7 @@ def main(cpp=False, packed=False):
         assert loop['endpoint'] == ['xxxYYYY', 'xyxYXY'] and loop['moves'] == 4734
     if cpp:
         cyclic_checks()
+        subgroup_checks()
         with tempfile.TemporaryDirectory(prefix='ac-replay-') as directory:
             binary = str(Path(directory) / 'raw_peak')
             run('c++', '-std=c++17', '-O2', 'experiments/raw_peak_independent.cpp',
@@ -275,8 +340,12 @@ if __name__ == '__main__':
     parser.add_argument('--packed', action='store_true', help='also regenerate, audit and scan the full cap-21 component')
     parser.add_argument('--tails-only', action='store_true', help='replay only the new arbitrary-tail theorem controls')
     parser.add_argument('--cyclic-only', action='store_true', help='audit the full cyclic cap-22 certificate and short strict paths; needs C++17')
+    parser.add_argument('--subgroups-only', action='store_true', help='replay Q/R map certificates, folding controls, and S branch proofs; needs C++17')
+    parser.add_argument('--full-rotations', action='store_true', help='with --subgroups-only, regenerate all 24 million rotation pairs (about 2 GB memory)')
     args = parser.parse_args()
-    if args.cyclic_only:
+    if args.subgroups_only:
+        print(json.dumps(subgroup_checks(args.full_rotations), indent=2))
+    elif args.cyclic_only:
         print(json.dumps(cyclic_checks(), indent=2))
     elif args.tails_only:
         print(json.dumps(tail_checks(), indent=2))
