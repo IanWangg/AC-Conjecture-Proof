@@ -1,0 +1,1112 @@
+{
+  "central_search": {
+    "group": "F/[F,N] = B3 x Z, N=<<xyxYXY>>",
+    "depth": 6,
+    "forward_layer_sizes": [
+      1,
+      10,
+      73,
+      519,
+      4002,
+      32833,
+      277798
+    ],
+    "backward_layer_sizes": [
+      1,
+      10,
+      75,
+      528,
+      3574,
+      23418,
+      156401
+    ],
+    "forward_states": 315236,
+    "backward_states": 184007,
+    "complete": true,
+    "seconds": 5.699,
+    "path_found": true,
+    "move_ids": [
+      3,
+      5,
+      8,
+      2,
+      9,
+      7,
+      4,
+      7,
+      2,
+      7,
+      7,
+      8
+    ],
+    "moves": [
+      [
+        "multiply",
+        0,
+        -1
+      ],
+      [
+        "multiply",
+        1,
+        -1
+      ],
+      [
+        "conjugate",
+        0,
+        "y"
+      ],
+      [
+        "multiply",
+        0,
+        1
+      ],
+      [
+        "conjugate",
+        0,
+        "Y"
+      ],
+      [
+        "conjugate",
+        0,
+        "X"
+      ],
+      [
+        "multiply",
+        1,
+        1
+      ],
+      [
+        "conjugate",
+        0,
+        "X"
+      ],
+      [
+        "multiply",
+        0,
+        1
+      ],
+      [
+        "conjugate",
+        0,
+        "X"
+      ],
+      [
+        "conjugate",
+        0,
+        "X"
+      ],
+      [
+        "conjugate",
+        0,
+        "y"
+      ]
+    ],
+    "distance": 12,
+    "n": 3,
+    "start_words": [
+      "xxxYYYY",
+      "xyxYXY"
+    ]
+  },
+  "optimization": {
+    "status": "PASS",
+    "quotient": "F/[N,N], N=<<xyxYXY>>",
+    "word_operations": 33,
+    "expanded_single_generator_move_count": 533,
+    "expanded_raw_peak_upper_bound": 2502,
+    "final_free_lengths": [
+      635,
+      1867
+    ],
+    "free_group_goal_solved": false,
+    "variants": [
+      {
+        "prefix": "work/research_l/aligned_prefix_19.json",
+        "coordinate_order": [
+          0,
+          1
+        ],
+        "own_first": [
+          false,
+          false
+        ],
+        "expanded_moves": 533,
+        "free_lengths": [
+          635,
+          1871
+        ]
+      },
+      {
+        "prefix": "work/research_l/aligned_prefix_19.json",
+        "coordinate_order": [
+          0,
+          1
+        ],
+        "own_first": [
+          false,
+          true
+        ],
+        "expanded_moves": 533,
+        "free_lengths": [
+          635,
+          1873
+        ]
+      },
+      {
+        "prefix": "work/research_l/aligned_prefix_19.json",
+        "coordinate_order": [
+          0,
+          1
+        ],
+        "own_first": [
+          true,
+          false
+        ],
+        "expanded_moves": 533,
+        "free_lengths": [
+          635,
+          1867
+        ]
+      },
+      {
+        "prefix": "work/research_l/aligned_prefix_19.json",
+        "coordinate_order": [
+          0,
+          1
+        ],
+        "own_first": [
+          true,
+          true
+        ],
+        "expanded_moves": 533,
+        "free_lengths": [
+          635,
+          1869
+        ]
+      },
+      {
+        "prefix": "work/research_l/aligned_prefix_19.json",
+        "coordinate_order": [
+          1,
+          0
+        ],
+        "own_first": [
+          false,
+          false
+        ],
+        "expanded_moves": 533,
+        "free_lengths": [
+          1855,
+          739
+        ]
+      },
+      {
+        "prefix": "work/research_l/aligned_prefix_19.json",
+        "coordinate_order": [
+          1,
+          0
+        ],
+        "own_first": [
+          false,
+          true
+        ],
+        "expanded_moves": 533,
+        "free_lengths": [
+          1863,
+          743
+        ]
+      },
+      {
+        "prefix": "work/research_l/aligned_prefix_19.json",
+        "coordinate_order": [
+          1,
+          0
+        ],
+        "own_first": [
+          true,
+          false
+        ],
+        "expanded_moves": 533,
+        "free_lengths": [
+          1855,
+          739
+        ]
+      },
+      {
+        "prefix": "work/research_l/aligned_prefix_19.json",
+        "coordinate_order": [
+          1,
+          0
+        ],
+        "own_first": [
+          true,
+          true
+        ],
+        "expanded_moves": 533,
+        "free_lengths": [
+          1863,
+          743
+        ]
+      }
+    ]
+  },
+  "free_remainders": {
+    "variants": [
+      {
+        "prefix": "aligned_prefix_19.json",
+        "coordinate_order": [
+          0,
+          1
+        ],
+        "own_first": [
+          false,
+          false
+        ],
+        "initial_lengths": [
+          635,
+          1871
+        ],
+        "final_lengths": [
+          7,
+          6
+        ],
+        "final_words": [
+          "xxYYYYx",
+          "YxyxYX"
+        ],
+        "shortening_steps": 11,
+        "returns_to_initial_cyclic_orbit": true,
+        "free_basis_reached": false
+      },
+      {
+        "prefix": "aligned_prefix_19.json",
+        "coordinate_order": [
+          0,
+          1
+        ],
+        "own_first": [
+          false,
+          true
+        ],
+        "initial_lengths": [
+          635,
+          1873
+        ],
+        "final_lengths": [
+          7,
+          6
+        ],
+        "final_words": [
+          "xxYYYYx",
+          "YxyxYX"
+        ],
+        "shortening_steps": 11,
+        "returns_to_initial_cyclic_orbit": true,
+        "free_basis_reached": false
+      },
+      {
+        "prefix": "aligned_prefix_19.json",
+        "coordinate_order": [
+          0,
+          1
+        ],
+        "own_first": [
+          true,
+          false
+        ],
+        "initial_lengths": [
+          635,
+          1867
+        ],
+        "final_lengths": [
+          7,
+          6
+        ],
+        "final_words": [
+          "xxYYYYx",
+          "YxyxYX"
+        ],
+        "shortening_steps": 11,
+        "returns_to_initial_cyclic_orbit": true,
+        "free_basis_reached": false
+      },
+      {
+        "prefix": "aligned_prefix_19.json",
+        "coordinate_order": [
+          0,
+          1
+        ],
+        "own_first": [
+          true,
+          true
+        ],
+        "initial_lengths": [
+          635,
+          1869
+        ],
+        "final_lengths": [
+          7,
+          6
+        ],
+        "final_words": [
+          "xxYYYYx",
+          "YxyxYX"
+        ],
+        "shortening_steps": 11,
+        "returns_to_initial_cyclic_orbit": true,
+        "free_basis_reached": false
+      },
+      {
+        "prefix": "aligned_prefix_19.json",
+        "coordinate_order": [
+          1,
+          0
+        ],
+        "own_first": [
+          false,
+          false
+        ],
+        "initial_lengths": [
+          1855,
+          739
+        ],
+        "final_lengths": [
+          7,
+          6
+        ],
+        "final_words": [
+          "xxYYYYx",
+          "YxyxYX"
+        ],
+        "shortening_steps": 11,
+        "returns_to_initial_cyclic_orbit": true,
+        "free_basis_reached": false
+      },
+      {
+        "prefix": "aligned_prefix_19.json",
+        "coordinate_order": [
+          1,
+          0
+        ],
+        "own_first": [
+          false,
+          true
+        ],
+        "initial_lengths": [
+          1863,
+          743
+        ],
+        "final_lengths": [
+          7,
+          6
+        ],
+        "final_words": [
+          "xxYYYYx",
+          "YxyxYX"
+        ],
+        "shortening_steps": 11,
+        "returns_to_initial_cyclic_orbit": true,
+        "free_basis_reached": false
+      },
+      {
+        "prefix": "aligned_prefix_19.json",
+        "coordinate_order": [
+          1,
+          0
+        ],
+        "own_first": [
+          true,
+          false
+        ],
+        "initial_lengths": [
+          1855,
+          739
+        ],
+        "final_lengths": [
+          7,
+          6
+        ],
+        "final_words": [
+          "xxYYYYx",
+          "YxyxYX"
+        ],
+        "shortening_steps": 11,
+        "returns_to_initial_cyclic_orbit": true,
+        "free_basis_reached": false
+      },
+      {
+        "prefix": "aligned_prefix_19.json",
+        "coordinate_order": [
+          1,
+          0
+        ],
+        "own_first": [
+          true,
+          true
+        ],
+        "initial_lengths": [
+          1863,
+          743
+        ],
+        "final_lengths": [
+          7,
+          6
+        ],
+        "final_words": [
+          "xxYYYYx",
+          "YxyxYX"
+        ],
+        "shortening_steps": 11,
+        "returns_to_initial_cyclic_orbit": true,
+        "free_basis_reached": false
+      },
+      {
+        "prefix": "central_short_prefix.json",
+        "coordinate_order": [
+          0,
+          1
+        ],
+        "own_first": [
+          false,
+          false
+        ],
+        "initial_lengths": [
+          1021,
+          2549
+        ],
+        "final_lengths": [
+          7,
+          6
+        ],
+        "final_words": [
+          "xxYYYYx",
+          "YxyxYX"
+        ],
+        "shortening_steps": 9,
+        "returns_to_initial_cyclic_orbit": true,
+        "free_basis_reached": false
+      },
+      {
+        "prefix": "central_short_prefix.json",
+        "coordinate_order": [
+          0,
+          1
+        ],
+        "own_first": [
+          false,
+          true
+        ],
+        "initial_lengths": [
+          1021,
+          2551
+        ],
+        "final_lengths": [
+          7,
+          6
+        ],
+        "final_words": [
+          "xxYYYYx",
+          "YxyxYX"
+        ],
+        "shortening_steps": 9,
+        "returns_to_initial_cyclic_orbit": true,
+        "free_basis_reached": false
+      },
+      {
+        "prefix": "central_short_prefix.json",
+        "coordinate_order": [
+          0,
+          1
+        ],
+        "own_first": [
+          true,
+          false
+        ],
+        "initial_lengths": [
+          1019,
+          2561
+        ],
+        "final_lengths": [
+          7,
+          6
+        ],
+        "final_words": [
+          "xxYYYYx",
+          "YxyxYX"
+        ],
+        "shortening_steps": 9,
+        "returns_to_initial_cyclic_orbit": true,
+        "free_basis_reached": false
+      },
+      {
+        "prefix": "central_short_prefix.json",
+        "coordinate_order": [
+          0,
+          1
+        ],
+        "own_first": [
+          true,
+          true
+        ],
+        "initial_lengths": [
+          1019,
+          2563
+        ],
+        "final_lengths": [
+          7,
+          6
+        ],
+        "final_words": [
+          "xxYYYYx",
+          "YxyxYX"
+        ],
+        "shortening_steps": 9,
+        "returns_to_initial_cyclic_orbit": true,
+        "free_basis_reached": false
+      },
+      {
+        "prefix": "central_short_prefix.json",
+        "coordinate_order": [
+          1,
+          0
+        ],
+        "own_first": [
+          false,
+          false
+        ],
+        "initial_lengths": [
+          2291,
+          685
+        ],
+        "final_lengths": [
+          7,
+          6
+        ],
+        "final_words": [
+          "xxYYYYx",
+          "YxyxYX"
+        ],
+        "shortening_steps": 9,
+        "returns_to_initial_cyclic_orbit": true,
+        "free_basis_reached": false
+      },
+      {
+        "prefix": "central_short_prefix.json",
+        "coordinate_order": [
+          1,
+          0
+        ],
+        "own_first": [
+          false,
+          true
+        ],
+        "initial_lengths": [
+          2313,
+          697
+        ],
+        "final_lengths": [
+          7,
+          6
+        ],
+        "final_words": [
+          "xxYYYYx",
+          "YxyxYX"
+        ],
+        "shortening_steps": 9,
+        "returns_to_initial_cyclic_orbit": true,
+        "free_basis_reached": false
+      },
+      {
+        "prefix": "central_short_prefix.json",
+        "coordinate_order": [
+          1,
+          0
+        ],
+        "own_first": [
+          true,
+          false
+        ],
+        "initial_lengths": [
+          2297,
+          685
+        ],
+        "final_lengths": [
+          7,
+          6
+        ],
+        "final_words": [
+          "xxYYYYx",
+          "YxyxYX"
+        ],
+        "shortening_steps": 9,
+        "returns_to_initial_cyclic_orbit": true,
+        "free_basis_reached": false
+      },
+      {
+        "prefix": "central_short_prefix.json",
+        "coordinate_order": [
+          1,
+          0
+        ],
+        "own_first": [
+          true,
+          true
+        ],
+        "initial_lengths": [
+          2319,
+          697
+        ],
+        "final_lengths": [
+          7,
+          6
+        ],
+        "final_words": [
+          "xxYYYYx",
+          "YxyxYX"
+        ],
+        "shortening_steps": 9,
+        "returns_to_initial_cyclic_orbit": true,
+        "free_basis_reached": false
+      }
+    ],
+    "variant_count": 16,
+    "all_returned_to_initial_cyclic_orbit": true,
+    "any_free_basis": false,
+    "scope": "Finite construction variants and greedy free-group probe only; not a global obstruction",
+    "prefix_update_control": "19strictand21strictprefixeshaveidenticalactualfreeendpoints; tracesunchanged"
+  },
+  "shortening": {
+    "initial_free_lengths": [
+      635,
+      1867
+    ],
+    "final_free_lengths": [
+      7,
+      6
+    ],
+    "final_free_words": [
+      "xxYYYYx",
+      "YxyxYX"
+    ],
+    "shortening_steps": 11,
+    "added_word_operations": 49,
+    "ordinary_free_goal_solved": false,
+    "trace": [
+      {
+        "step": 1,
+        "recipient": 1,
+        "cancelled_letters": 635,
+        "old_total": 2158,
+        "new_total": 1523,
+        "lengths": [
+          635,
+          888
+        ]
+      },
+      {
+        "step": 2,
+        "recipient": 1,
+        "cancelled_letters": 635,
+        "old_total": 1523,
+        "new_total": 764,
+        "lengths": [
+          635,
+          129
+        ]
+      },
+      {
+        "step": 3,
+        "recipient": 0,
+        "cancelled_letters": 129,
+        "old_total": 764,
+        "new_total": 633,
+        "lengths": [
+          504,
+          129
+        ]
+      },
+      {
+        "step": 4,
+        "recipient": 0,
+        "cancelled_letters": 129,
+        "old_total": 633,
+        "new_total": 202,
+        "lengths": [
+          73,
+          129
+        ]
+      },
+      {
+        "step": 5,
+        "recipient": 1,
+        "cancelled_letters": 73,
+        "old_total": 202,
+        "new_total": 129,
+        "lengths": [
+          73,
+          56
+        ]
+      },
+      {
+        "step": 6,
+        "recipient": 0,
+        "cancelled_letters": 54,
+        "old_total": 129,
+        "new_total": 77,
+        "lengths": [
+          21,
+          56
+        ]
+      },
+      {
+        "step": 7,
+        "recipient": 1,
+        "cancelled_letters": 21,
+        "old_total": 77,
+        "new_total": 48,
+        "lengths": [
+          21,
+          27
+        ]
+      },
+      {
+        "step": 8,
+        "recipient": 1,
+        "cancelled_letters": 21,
+        "old_total": 48,
+        "new_total": 27,
+        "lengths": [
+          21,
+          6
+        ]
+      },
+      {
+        "step": 9,
+        "recipient": 0,
+        "cancelled_letters": 6,
+        "old_total": 27,
+        "new_total": 21,
+        "lengths": [
+          15,
+          6
+        ]
+      },
+      {
+        "step": 10,
+        "recipient": 0,
+        "cancelled_letters": 6,
+        "old_total": 21,
+        "new_total": 15,
+        "lengths": [
+          9,
+          6
+        ]
+      },
+      {
+        "step": 11,
+        "recipient": 0,
+        "cancelled_letters": 4,
+        "old_total": 15,
+        "new_total": 13,
+        "lengths": [
+          7,
+          6
+        ]
+      }
+    ]
+  },
+  "strict_replays": {
+    "optimized_first_order_strict": {
+      "moves": 533,
+      "peak_total_length": 2502,
+      "endpoint_lengths": [
+        635,
+        1867
+      ]
+    },
+    "closed_loop_strict": {
+      "moves": 4734,
+      "peak_total_length": 2502,
+      "endpoint_lengths": [
+        7,
+        6
+      ]
+    }
+  },
+  "independent_first_order_review": {
+    "status": "PASS",
+    "independent_free_and_Fox_replay": true,
+    "quotient": "F/[N,N], N=normal closure of xyxYXY",
+    "word_operations": 33,
+    "expanded_single_generator_moves": 533,
+    "boundary_raw_peak": 2502,
+    "expanded_raw_peak_upper_bound": 2502,
+    "actual_free_endpoint_lengths": [
+      635,
+      1867
+    ],
+    "free_group_goal_solved": false
+  },
+  "second_central": {
+    "transversal_depth": 11,
+    "transversal_vertices": 22579,
+    "needed_prefix_vertices": 105,
+    "nonempty_schreier_generators_used": 34,
+    "schreier_module_rank_mod101": 34,
+    "residuals": [
+      {
+        "schreier_length": 166,
+        "schreier_abelianization_zero": true,
+        "next_central_support": 67,
+        "next_central_l1": 322
+      },
+      {
+        "schreier_length": 472,
+        "schreier_abelianization_zero": true,
+        "next_central_support": 148,
+        "next_central_l1": 469
+      }
+    ],
+    "scope": "Next-central defect of this actual endpoint, not a global AC invariant",
+    "full_coefficient_file": "results/second_central_results.json.gz.b64"
+  },
+  "known_trivial_AK2_probe": {
+    "target": [
+      "xxYYY",
+      "yxYXYx"
+    ],
+    "trace": [
+      {
+        "step": 1,
+        "recipient": 1,
+        "cancelled_letters": 437,
+        "old_total": 1486,
+        "new_total": 897,
+        "lengths": [
+          437,
+          460
+        ]
+      },
+      {
+        "step": 2,
+        "recipient": 1,
+        "cancelled_letters": 437,
+        "old_total": 897,
+        "new_total": 460,
+        "lengths": [
+          437,
+          23
+        ]
+      },
+      {
+        "step": 3,
+        "recipient": 0,
+        "cancelled_letters": 23,
+        "old_total": 460,
+        "new_total": 437,
+        "lengths": [
+          414,
+          23
+        ]
+      },
+      {
+        "step": 4,
+        "recipient": 0,
+        "cancelled_letters": 23,
+        "old_total": 437,
+        "new_total": 222,
+        "lengths": [
+          199,
+          23
+        ]
+      },
+      {
+        "step": 5,
+        "recipient": 0,
+        "cancelled_letters": 23,
+        "old_total": 222,
+        "new_total": 39,
+        "lengths": [
+          16,
+          23
+        ]
+      },
+      {
+        "step": 6,
+        "recipient": 1,
+        "cancelled_letters": 16,
+        "old_total": 39,
+        "new_total": 23,
+        "lengths": [
+          16,
+          7
+        ]
+      },
+      {
+        "step": 7,
+        "recipient": 0,
+        "cancelled_letters": 7,
+        "old_total": 23,
+        "new_total": 12,
+        "lengths": [
+          5,
+          7
+        ]
+      },
+      {
+        "step": 8,
+        "recipient": 1,
+        "cancelled_letters": 3,
+        "old_total": 12,
+        "new_total": 11,
+        "lengths": [
+          5,
+          6
+        ]
+      }
+    ]
+  },
+  "ordinary_free_group_goal_solved": false,
+  "closed_loop": {
+    "initial_free_lengths": [
+      635,
+      1867
+    ],
+    "final_free_lengths": [
+      7,
+      6
+    ],
+    "final_free_words": [
+      "xxxYYYY",
+      "xyxYXY"
+    ],
+    "shortening_steps": 11,
+    "added_word_operations": 51,
+    "ordinary_free_goal_solved": false,
+    "closing_word_operations": 2,
+    "closed_loop": true,
+    "trace": [
+      {
+        "step": 1,
+        "recipient": 1,
+        "cancelled_letters": 635,
+        "old_total": 2158,
+        "new_total": 1523,
+        "lengths": [
+          635,
+          888
+        ]
+      },
+      {
+        "step": 2,
+        "recipient": 1,
+        "cancelled_letters": 635,
+        "old_total": 1523,
+        "new_total": 764,
+        "lengths": [
+          635,
+          129
+        ]
+      },
+      {
+        "step": 3,
+        "recipient": 0,
+        "cancelled_letters": 129,
+        "old_total": 764,
+        "new_total": 633,
+        "lengths": [
+          504,
+          129
+        ]
+      },
+      {
+        "step": 4,
+        "recipient": 0,
+        "cancelled_letters": 129,
+        "old_total": 633,
+        "new_total": 202,
+        "lengths": [
+          73,
+          129
+        ]
+      },
+      {
+        "step": 5,
+        "recipient": 1,
+        "cancelled_letters": 73,
+        "old_total": 202,
+        "new_total": 129,
+        "lengths": [
+          73,
+          56
+        ]
+      },
+      {
+        "step": 6,
+        "recipient": 0,
+        "cancelled_letters": 54,
+        "old_total": 129,
+        "new_total": 77,
+        "lengths": [
+          21,
+          56
+        ]
+      },
+      {
+        "step": 7,
+        "recipient": 1,
+        "cancelled_letters": 21,
+        "old_total": 77,
+        "new_total": 48,
+        "lengths": [
+          21,
+          27
+        ]
+      },
+      {
+        "step": 8,
+        "recipient": 1,
+        "cancelled_letters": 21,
+        "old_total": 48,
+        "new_total": 27,
+        "lengths": [
+          21,
+          6
+        ]
+      },
+      {
+        "step": 9,
+        "recipient": 0,
+        "cancelled_letters": 6,
+        "old_total": 27,
+        "new_total": 21,
+        "lengths": [
+          15,
+          6
+        ]
+      },
+      {
+        "step": 10,
+        "recipient": 0,
+        "cancelled_letters": 6,
+        "old_total": 21,
+        "new_total": 15,
+        "lengths": [
+          9,
+          6
+        ]
+      },
+      {
+        "step": 11,
+        "recipient": 0,
+        "cancelled_letters": 4,
+        "old_total": 15,
+        "new_total": 13,
+        "lengths": [
+          7,
+          6
+        ]
+      }
+    ]
+  }
+}
