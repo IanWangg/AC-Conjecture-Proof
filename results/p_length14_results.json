@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "strict_replay": {
+    "moves": 227,
+    "peak_total_length": 31,
+    "endpoint": [
+      "yXYXyxx",
+      "YxYXyyx"
+    ]
+  },
+  "extra_strict_moves": 5,
+  "endpoint_raw_and_cyclic_total_length": 14,
+  "endpoint_folded_graph_vertices": 12,
+  "endpoint_folded_graph_rank": 2,
+  "arbitrary_tail_subgroup_audit": {
+    "u": "yXYXyxx",
+    "v": "YxYXyyx",
+    "tail_bound": 6,
+    "tails_tested": 1457,
+    "unique_based_graphs": 1404,
+    "vertex_histogram": {
+      "10": 3,
+      "11": 2,
+      "12": 11,
+      "13": 9,
+      "14": 46,
+      "15": 111,
+      "16": 222,
+      "17": 352,
+      "18": 405,
+      "19": 243
+    },
+    "signed_criterion_failures": []
+  },
+  "arbitrary_independent_conjugates_primitive_free_by_bridge_lemma": true,
+  "scope": "Genuine reachable free-group tuple; not a free basis or global AC invariant",
+  "preferred_root_improvement_strict_replay": {
+    "moves": 189,
+    "peak_total_length": 25,
+    "endpoint": [
+      "YxYXyyx",
+      "yXYXyxx"
+    ]
+  },
+  "preferred_extra_strict_moves": 10
+}
