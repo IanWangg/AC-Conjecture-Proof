@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-02",
+  "command": "python3 experiments/reproduce.py --cpp",
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "raw_AK3_peak_lower_bound": 19,
+  "cyclic_AK3_peak_lower_bound": 15,
+  "MS3_to_AK3_strict_moves": 32,
+  "braid_quotient_distance": 10,
+  "independent_Cpp_exhaustion_replayed": true,
+  "raw_ordered_oriented_states": 2014992,
+  "projected_states": 251874,
+  "scope": "Replays bounded checks and explicit certificates. No proof of AK(3) triviality/nontriviality or the full conjecture."
+}
