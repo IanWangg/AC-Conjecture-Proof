@@ -1,0 +1,32 @@
+[
+  {
+    "name": "entry",
+    "rewrite_cells": 4,
+    "moves": 44,
+    "peak_total_length": 18,
+    "endpoint": [
+      "xxxYYYY",
+      "XXyxYxxY"
+    ]
+  },
+  {
+    "name": "u1",
+    "rewrite_cells": 7,
+    "moves": 222,
+    "peak_total_length": 31,
+    "endpoint": [
+      "yXYXyxx",
+      "XXyxYxxY"
+    ]
+  },
+  {
+    "name": "u2",
+    "rewrite_cells": 6,
+    "moves": 179,
+    "peak_total_length": 25,
+    "endpoint": [
+      "YxYXyyx",
+      "XXyxYxxY"
+    ]
+  }
+]
