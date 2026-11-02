@@ -1,0 +1,16 @@
+{
+  "degree": 5,
+  "coefficient_field": 2,
+  "magnus_vector_size": 63,
+  "complete_twisted_orbit": true,
+  "orbit_states": 65536,
+  "states_processed": 65536,
+  "candidate_order": 8,
+  "alpha_order_on_fiber_image": 24,
+  "original_word_checks": "bprime=1; a=X^2 yx; b=Xy; p^-1=W*t; xY=C",
+  "candidate_k_residues_seen": [],
+  "orbit_sha256": "7a4eccec658ad9c31c5121ae71c53a3d7c1ddcd1515c130737058fb774862011",
+  "scope": "One primitive-replacement twisted conjugacy test; not an AC obstruction",
+  "finite_fiber_group_order": 524288,
+  "finite_semidirect_quotient_order": 12582912
+}
