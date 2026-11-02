@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "coefficient_field": 5,
+  "algebra_dimension": 16,
+  "associativity_basis_triples_checked": 4096,
+  "alpha_basis_product_checks": 256,
+  "finite_fiber_group_order": 15625,
+  "alpha_order": 20,
+  "finite_semidirect_group_order": 312500,
+  "complete_twisted_orbit": true,
+  "twisted_orbit_states": 3125,
+  "candidate_order": 5,
+  "candidate_k_residues_seen": [],
+  "orbit_sha256": "076cab7ba520fb03d90c4f28cc7abcadbebdcd69104065a0b6678656107c4fb9",
+  "original_relation_and_target_images_checked": true,
+  "free_group_AC_goal_solved": false
+}
