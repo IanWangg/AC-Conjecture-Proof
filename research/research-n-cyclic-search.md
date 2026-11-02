@@ -156,27 +156,35 @@ It reproduces both counts exactly, including 13,824 positive-tail checks.
 No stored boolean claiming completeness is trusted.
 
 **Theorem (computer-assisted finite component):** any ordinary AK(3)
-path to the standard tuple `(x,y)` must attain cyclic energy at
-least **22**.
-Indeed, the stored finite set contains the initial tuple and is closed
-under every ordinary move under cap 21, while every stored tuple has
-energy at least thirteen. A free basis reached as the standard tuple
-`(x,y)` has energy two, so such a path must leave the cap.
+path reaching a primitive coordinate, and hence any free basis, must
+attain cyclic energy at least **22**.
 
-This is a bound on cyclic energy. It strengthens the prior raw-energy
-bound of 22 because cyclic energy is never larger than raw energy. It
-does not assert that an arbitrary target free basis has energy two;
-the lower bound concerns a complete path to the standard trivial tuple,
-as required for ordinary AC triviality. One can alternatively continue
-any basis by Nielsen operations, but no monotonicity assertion for that
-continuation is needed here.
+The stored finite set contains the initial tuple and is closed under
+every ordinary move under cap 21. There are 99,546 distinct stored
+cyclic/inverse coordinate classes. None is primitive, as verified by
+two different algorithms: M's rank-two Whitehead descent and O's
+[independent Euclidean/Nielsen classification](../experiments/euclidean_primitive_audit.py).
+The latter uses no M word or primitive-test routines. Its
+[exact result](../results/cyclic21_euclidean_primitive_results.json)
+rejects 99,102 mixed-sign cyclic words and 444 words differing from the
+required signed primitive representative; 3,208 positive controls pass.
+Thus a first primitive coordinate cannot occur inside this closed set.
+Primitive status is preserved by cyclic rotation, conjugation and
+inversion, so this also excludes the actual unnormalized relators.
 
-The finite coordinate scan finds no primitive word among the 99,546
-distinct stored cyclic/inverse word classes. That scan uses M's shared
-rank-two Whitehead routine and is separately labeled as such. The
-minimum-energy closure argument alone proves the stated standard-basis
-lower bound, without relying on this scan or on a global primitivity
-criterion.
+O's method uses Nielsen's rank-two uniqueness theorem and a positive
+Euclidean construction of the primitive representative for a coprime
+exponent vector; see [Clay–Conant–Ramasubramanian, Corollary 4.4](https://msp.org/involve/2014/7-4/involve-v7-n4-p01-p.pdf).
+A primitive cyclic word uses only one sign of each generator. For such
+a word, its signed Euclidean representative must agree up to cyclic
+rotation. This supplies an exact alternative to Whitehead descent.
+
+This bound concerns cyclic energy, which is never larger than raw
+energy, and therefore strengthens the prior raw-energy bound of 22.
+Even without the primitive scans, the closed-set minimum energy of
+thirteen alone proves the bound for a path to the standard tuple
+`(x,y)`, whose energy is two. No claim that every free basis has energy
+two is needed.
 
 ## Independent checks and positive control
 
