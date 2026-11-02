@@ -1,0 +1,113 @@
+{
+  "format": "ordinary-ac-elementary-v1",
+  "scope": "Prefix to the free basis only in F/[F,N]; actual free endpoint recorded",
+  "start": [
+    "xxxYYYY",
+    "xyxYXY"
+  ],
+  "target": [
+    "YYxyXYXyxyXYXyxyXYXYxyxYXYxyxYXYxyxYXYxyxYXyyyXXXyxxyxYXYxyxYXYxyxYXyyyXY",
+    "XYxyxYXYxyxYXYxyxYXYxyxYXyyyXXXyxxyxYXYxyxYXYxyxYXyyyXXXyxYYYxyXYXyxyXYXyxyXYXXYxxxYYYxyXYXyxyXYXyxyXYXyxyXYXyxyxYXYxyxYXYxyxYXyy"
+  ],
+  "moves": [
+    {
+      "op": "invert",
+      "i": 1
+    },
+    {
+      "op": "multiply",
+      "i": 0,
+      "j": 1
+    },
+    {
+      "op": "multiply",
+      "i": 0,
+      "j": 1
+    },
+    {
+      "op": "multiply",
+      "i": 0,
+      "j": 1
+    },
+    {
+      "op": "invert",
+      "i": 1
+    },
+    {
+      "op": "invert",
+      "i": 0
+    },
+    {
+      "op": "multiply",
+      "i": 1,
+      "j": 0
+    },
+    {
+      "op": "conjugate",
+      "i": 1,
+      "g": "Y"
+    },
+    {
+      "op": "conjugate",
+      "i": 1,
+      "g": "X"
+    },
+    {
+      "op": "multiply",
+      "i": 1,
+      "j": 0
+    },
+    {
+      "op": "invert",
+      "i": 0
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "X"
+    },
+    {
+      "op": "multiply",
+      "i": 0,
+      "j": 1
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "X"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "X"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "y"
+    },
+    {
+      "op": "invert",
+      "i": 0
+    },
+    {
+      "op": "multiply",
+      "i": 1,
+      "j": 0
+    },
+    {
+      "op": "invert",
+      "i": 0
+    }
+  ],
+  "free_exponent_vectors": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ]
+}
