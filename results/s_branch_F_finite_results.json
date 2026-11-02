@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "model": "F",
+  "coefficient_prime": 5,
+  "degree": 4,
+  "algebra_dimension": 16,
+  "functional": {
+    "abaa": 1,
+    "abab": 4,
+    "abbb": 4,
+    "baaa": 4,
+    "baab": 1,
+    "babb": 1
+  },
+  "associativity_checks": 4096,
+  "automorphism_basis_product_checks": 256,
+  "alpha_order": 20,
+  "complete_twisted_orbit": true,
+  "orbit_states": 3125,
+  "candidate_order": 5,
+  "candidate_residues_seen": [],
+  "finite_fiber_group_order": 15625,
+  "original_relation_and_braid_images_checked": true,
+  "orbit_sha256": "7b74832dc97b28b5d50cc3fc5d84606823eefef5f85f6e6dcc38cdf4434657ce",
+  "ordinary_AC_goal_solved": false
+}
