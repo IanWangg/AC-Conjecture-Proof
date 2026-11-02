@@ -47,6 +47,7 @@ Further research:
 
 - [N's complete cyclic searches](research/research-n-cyclic-search.md) and [P's full independent audit](research/research-p-cyclic21-review.md) strengthen the ordinary cyclic peak bound from 15 to 23. The coordinating agent's [separate Python cap-20 audit](research/independent-cyclic-review.md) checks 25,895,168 rotation products. All are finite-energy exclusions with proved coverage of arbitrary tails, not unbounded AC obstructions.
 
+- [O's full-subgroup refinement](research/research-o-cyclic-review.md) proves that all 258,032 literal canonical cap-22 pairs generate primitive-free subgroups, using DAG, simple-cycle and balanced-run certificates. This particular subgroup statement excludes independently conjugated representatives from its scope. The coordinating agent [rechecks all 416 exceptional graphs with M's separate folding routine](results/subgroup_refinement_review.json).
 - [O's Nielsen-prelude extension](research/research-o-nielsen-tails.md) excludes primitive elements after the specified seven short-prelude families and arbitrary subsequent independent conjugating tails: 561,323 finite tail checks with an unbounded reduction. Its AK(2) calibration gives an exact 131-move basis path.
 - [P's length-14 discovery](research/research-p-length14.md) and [the coordinating agent's checkpoint lifts](research/short-waypoint-paths.md) provide compact ordinary paths of 32 and 43 moves, both at raw peak 18. Their endpoint subgroups remain proper; these paths do not improve the previously exhausted search region.
 - [N's cyclic-preimage theorem](research/research-n.md) and the coordinating agent's [complementary torus theorem](research/torus-cyclic-preimage.md) remove the old arbitrary-tail limitation for first-departure pairs. The torus representation also works for n=3 or 8 modulo 12. [O's finite-tail lemma](research/research-o.md) and [P's full independent computation](research/research-p.md) supply a different proof, including both later waypoints. These are subgroup theorems, not invariants under later interspersed AC operations.
@@ -81,6 +82,8 @@ Audit the strongest full cyclic certificate, independent primitive scan, and the
 ```sh
 python3 experiments/reproduce.py --cyclic-only
 ```
+
+The [combined replay passed](results/cyclic_reproduction.json), including the full 193,140,064-candidate cap-22 audit, 179,630-coordinate primitive scan, and strict path controls. A [publication integrity audit](results/round16_publication_integrity.json) matches all 74 new researcher/coordinator artifacts against their published Git blob SHAs.
 
 Add the independent original-state C++ cap-18 exhaustion, long endpoint's subgroup fold, and full cyclic audit:
 
