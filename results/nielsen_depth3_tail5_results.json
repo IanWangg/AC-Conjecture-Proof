@@ -1,0 +1,1080 @@
+{
+  "depth": 3,
+  "families": [
+    {
+      "u": "XXXyyyy",
+      "v": "XYXyxy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 459,
+      "inconclusive_graphs": [],
+      "seconds": 0.06276091700419784,
+      "prelude_endpoint": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "prelude_strict_moves": []
+    },
+    {
+      "u": "XXyxYXyyy",
+      "v": "XYXyxy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 465,
+      "inconclusive_graphs": [],
+      "seconds": 0.06912195892073214,
+      "prelude_endpoint": [
+        "xxxYYYxyXYX",
+        "xyxYXY"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "invert",
+          "i": 1
+        }
+      ]
+    },
+    {
+      "u": "XXXyyyy",
+      "v": "XXyxYXyyy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 475,
+      "inconclusive_graphs": [],
+      "seconds": 0.0736766658956185,
+      "prelude_endpoint": [
+        "xxxYYYY",
+        "xyxYXyyyXXX"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "invert",
+          "i": 0
+        }
+      ]
+    },
+    {
+      "u": "XXXyxyXYXyyyy",
+      "v": "XYXyxy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 467,
+      "inconclusive_graphs": [],
+      "seconds": 0.08274604100733995,
+      "prelude_endpoint": [
+        "xxxYYYYxyxYXY",
+        "xyxYXY"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        }
+      ]
+    },
+    {
+      "u": "XXXyxyXYXyyyy",
+      "v": "XXXyyyy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 477,
+      "inconclusive_graphs": [],
+      "seconds": 0.08710504206828773,
+      "prelude_endpoint": [
+        "xxxYYYY",
+        "xyxYXYxxxYYYY"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        }
+      ]
+    },
+    {
+      "u": "XXyxYXYxyxYXyyy",
+      "v": "XYXyxy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 467,
+      "inconclusive_graphs": [],
+      "seconds": 0.0888154999120161,
+      "prelude_endpoint": [
+        "xxxYYYxyXYXyxyXYX",
+        "xyxYXY"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "invert",
+          "i": 1
+        }
+      ]
+    },
+    {
+      "u": "XXXyyyy",
+      "v": "XXXyyyyXXyxYXyyy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 477,
+      "inconclusive_graphs": [],
+      "seconds": 0.0972728340420872,
+      "prelude_endpoint": [
+        "xxxYYYY",
+        "xyxYXyyyXXXyyyyXXX"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "invert",
+          "i": 0
+        }
+      ]
+    },
+    {
+      "u": "XXyxYXYxyxYXyyy",
+      "v": "XXyxYXyyy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 483,
+      "inconclusive_graphs": [],
+      "seconds": 0.10051445802673697,
+      "prelude_endpoint": [
+        "xxxYYYxyXYX",
+        "xyxYXYxyxYXyyyXXX"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "invert",
+          "i": 0
+        }
+      ]
+    },
+    {
+      "u": "XXXyxyXYXyxyXYXyyyy",
+      "v": "XYXyxy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 467,
+      "inconclusive_graphs": [],
+      "seconds": 0.1021870420081541,
+      "prelude_endpoint": [
+        "xxxYYYYxyxYXYxyxYXY",
+        "xyxYXY"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        }
+      ]
+    },
+    {
+      "u": "XXXyyyyXXyxYXyyy",
+      "v": "XXyxYXyyy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 483,
+      "inconclusive_graphs": [],
+      "seconds": 0.10426187503617257,
+      "prelude_endpoint": [
+        "xxxYYYYxxxYYYxyXYX",
+        "xyxYXyyyXXX"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "invert",
+          "i": 1
+        }
+      ]
+    },
+    {
+      "u": "XXXyxyXYXyyyyXXXyyyy",
+      "v": "XXXyyyy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 477,
+      "inconclusive_graphs": [],
+      "seconds": 0.10960016609169543,
+      "prelude_endpoint": [
+        "xxxYYYY",
+        "xyxYXYxxxYYYYxxxYYYY"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        }
+      ]
+    },
+    {
+      "u": "XXyxYXYxyxYXYxyxYXyyy",
+      "v": "XYXyxy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 467,
+      "inconclusive_graphs": [],
+      "seconds": 0.1082461669575423,
+      "prelude_endpoint": [
+        "xxxYYYxyXYXyxyXYXyxyXYX",
+        "xyxYXY"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "invert",
+          "i": 1
+        }
+      ]
+    },
+    {
+      "u": "XXXyyyy",
+      "v": "XXXyyyyXXXyyyyXXyxYXyyy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 477,
+      "inconclusive_graphs": [],
+      "seconds": 0.1203812079038471,
+      "prelude_endpoint": [
+        "xxxYYYY",
+        "xyxYXyyyXXXyyyyXXXyyyyXXX"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "invert",
+          "i": 0
+        }
+      ]
+    },
+    {
+      "u": "XXXyxyXYXyxyXYXyxyXYXyyyy",
+      "v": "XYXyxy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 467,
+      "inconclusive_graphs": [],
+      "seconds": 0.12142412504181266,
+      "prelude_endpoint": [
+        "xxxYYYYxyxYXYxyxYXYxyxYXY",
+        "xyxYXY"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        }
+      ]
+    },
+    {
+      "u": "XXXyxyXYXyxyXYXyyyy",
+      "v": "XXXyxyXYXyyyy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 485,
+      "inconclusive_graphs": [],
+      "seconds": 0.1281332919606939,
+      "prelude_endpoint": [
+        "xxxYYYYxyxYXY",
+        "xyxYXYxxxYYYYxyxYXY"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        }
+      ]
+    },
+    {
+      "u": "XXXyxyXYXyyyy",
+      "v": "XXXyxyXYXyyyyXXXyyyy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 485,
+      "inconclusive_graphs": [],
+      "seconds": 0.1316254580160603,
+      "prelude_endpoint": [
+        "xxxYYYYxyxYXYxxxYYYY",
+        "xyxYXYxxxYYYY"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        }
+      ]
+    },
+    {
+      "u": "XXyxYXYxyxYXyyyXXyxYXyyy",
+      "v": "XXyxYXyyy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 483,
+      "inconclusive_graphs": [],
+      "seconds": 0.131116583943367,
+      "prelude_endpoint": [
+        "xxxYYYxyXYX",
+        "xyxYXYxyxYXyyyXXyxYXyyyXXX"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "invert",
+          "i": 0
+        }
+      ]
+    },
+    {
+      "u": "XXXyxyXYXyyyyXXXyyyyXXXyyyy",
+      "v": "XXXyyyy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 477,
+      "inconclusive_graphs": [],
+      "seconds": 0.13216766703408211,
+      "prelude_endpoint": [
+        "xxxYYYY",
+        "xyxYXYxxxYYYYxxxYYYYxxxYYYY"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        }
+      ]
+    },
+    {
+      "u": "XXXyyyyXXyxYXyyyXXyxYXyyy",
+      "v": "XXyxYXyyy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 483,
+      "inconclusive_graphs": [],
+      "seconds": 0.13424858392681926,
+      "prelude_endpoint": [
+        "xxxYYYYxxxYYYxyXYxxYYYxyXYX",
+        "xyxYXyyyXXX"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "invert",
+          "i": 1
+        }
+      ]
+    },
+    {
+      "u": "XXyxYXYxyxYXYxyxYXyyy",
+      "v": "XXyxYXYxyxYXyyy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 485,
+      "inconclusive_graphs": [],
+      "seconds": 0.14165266591589898,
+      "prelude_endpoint": [
+        "xxxYYYxyXYXyxyXYX",
+        "xyxYXYxyxYXYxyxYXyyyXXX"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "invert",
+          "i": 0
+        }
+      ]
+    },
+    {
+      "u": "XXXyyyyXXXyyyyXXyxYXyyy",
+      "v": "XXXyyyyXXyxYXyyy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 485,
+      "inconclusive_graphs": [],
+      "seconds": 0.15347558399662375,
+      "prelude_endpoint": [
+        "xxxYYYYxxxYYYYxxxYYYxyXYX",
+        "xyxYXyyyXXXyyyyXXX"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "invert",
+          "i": 1
+        }
+      ]
+    },
+    {
+      "u": "XXyxYXYxyxYXyyy",
+      "v": "XXyxYXYxyxYXyyyXXyxYXyyy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 485,
+      "inconclusive_graphs": [],
+      "seconds": 0.15165770903695375,
+      "prelude_endpoint": [
+        "xxxYYYxyXYxxYYYxyXYXyxyXYX",
+        "xyxYXYxyxYXyyyXXX"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "invert",
+          "i": 1
+        }
+      ]
+    },
+    {
+      "u": "XXXyyyyXXyxYXyyy",
+      "v": "XXXyyyyXXyxYXyyyXXyxYXyyy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 485,
+      "inconclusive_graphs": [],
+      "seconds": 0.15952312503941357,
+      "prelude_endpoint": [
+        "xxxYYYYxxxYYYxyXYX",
+        "xyxYXyyyXXyxYXyyyXXXyyyyXXX"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "invert",
+          "i": 0
+        }
+      ]
+    },
+    {
+      "u": "XXXyxyXYXyxyXYXyxyXYXyyyy",
+      "v": "XXXyxyXYXyxyXYXyyyy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 485,
+      "inconclusive_graphs": [],
+      "seconds": 0.16803262499161065,
+      "prelude_endpoint": [
+        "xxxYYYYxyxYXYxyxYXY",
+        "xyxYXYxxxYYYYxyxYXYxyxYXY"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        }
+      ]
+    },
+    {
+      "u": "XXXyxyXYXyxyXYXyyyyXXXyxyXYXyyyy",
+      "v": "XXXyxyXYXyyyy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 485,
+      "inconclusive_graphs": [],
+      "seconds": 0.17252529202960432,
+      "prelude_endpoint": [
+        "xxxYYYYxyxYXY",
+        "xyxYXYxxxYYYYxyxYXYxxxYYYYxyxYXY"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        }
+      ]
+    },
+    {
+      "u": "XXXyxyXYXyyyy",
+      "v": "XXXyxyXYXyyyyXXXyxyXYXyyyyXXXyyyy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 485,
+      "inconclusive_graphs": [],
+      "seconds": 0.17629604192916304,
+      "prelude_endpoint": [
+        "xxxYYYYxyxYXYxxxYYYYxyxYXYxxxYYYY",
+        "xyxYXYxxxYYYY"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        }
+      ]
+    },
+    {
+      "u": "XXXyxyXYXyyyyXXXyyyy",
+      "v": "XXXyxyXYXyyyyXXXyyyyXXXyyyy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 485,
+      "inconclusive_graphs": [],
+      "seconds": 0.1792168749962002,
+      "prelude_endpoint": [
+        "xxxYYYYxyxYXYxxxYYYYxxxYYYY",
+        "xyxYXYxxxYYYYxxxYYYY"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        }
+      ]
+    },
+    {
+      "u": "XXXyxyXYXyxyXYXyyyy",
+      "v": "XXXyxyXYXyxyXYXyyyyXXXyxyXYXyyyy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 485,
+      "inconclusive_graphs": [],
+      "seconds": 0.19729800010100007,
+      "prelude_endpoint": [
+        "xxxYYYYxyxYXYxyxYXYxxxYYYYxyxYXY",
+        "xyxYXYxxxYYYYxyxYXY"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        }
+      ]
+    },
+    {
+      "u": "XXXyxyXYXyyyyXXXyxyXYXyyyyXXXyyyy",
+      "v": "XXXyxyXYXyyyyXXXyyyy",
+      "tail_bound": 5,
+      "complete_finite_reduction": false,
+      "reduced_tails": 485,
+      "unique_graphs": 485,
+      "inconclusive_graphs": [],
+      "seconds": 0.20180416596122086,
+      "prelude_endpoint": [
+        "xxxYYYYxyxYXYxxxYYYY",
+        "xyxYXYxxxYYYYxxxYYYYxyxYXYxxxYYYY"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        }
+      ]
+    }
+  ]
+}
