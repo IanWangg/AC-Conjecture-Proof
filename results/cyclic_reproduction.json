@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "cyclic_cap_replayed": 22,
+  "minimum_required_cyclic_peak": 23,
+  "canonical_states": 258032,
+  "all_menu_candidates_checked": 193140064,
+  "admitted_neighbor_checks": 10204280,
+  "independent_canonicalizer_and_connectedness": true,
+  "primitive_coordinate_scan_replayed": true,
+  "AK3_short_waypoint_moves": [
+    32,
+    43
+  ],
+  "AK3_waypoint_raw_peaks": [
+    18,
+    18
+  ],
+  "AK2_basis_control_strict_moves": 46
+}
