@@ -1,0 +1,226 @@
+{
+  "coefficient_field": 5,
+  "fiber_rank": 2,
+  "low_degree": 3,
+  "high_degree": 4,
+  "complete_fiber_enumeration": true,
+  "fiber_degree3_states": 3125,
+  "states_processed": 3125,
+  "full_tensor_central_dimension": 16,
+  "image_I_minus_alpha_rank": 10,
+  "candidate_order_high": 5,
+  "matching_lower_conjugators": [
+    {
+      "k": 1,
+      "linear_lift_possible": false,
+      "remainder": [
+        [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          2
+        ]
+      ]
+    },
+    {
+      "k": 0,
+      "linear_lift_possible": false,
+      "remainder": [
+        [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          2
+        ]
+      ]
+    },
+    {
+      "k": 2,
+      "linear_lift_possible": false,
+      "remainder": [
+        [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          2
+        ],
+        [
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          3
+        ],
+        [
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          4
+        ]
+      ]
+    },
+    {
+      "k": 4,
+      "linear_lift_possible": false,
+      "remainder": [
+        [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          2
+        ]
+      ]
+    },
+    {
+      "k": 3,
+      "linear_lift_possible": false,
+      "remainder": [
+        [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          4
+        ],
+        [
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          2
+        ]
+      ]
+    }
+  ],
+  "candidate_residues_not_excluded": [],
+  "scope": "Full central tensor overapproximation: rejection rigorous, acceptance inconclusive"
+}
