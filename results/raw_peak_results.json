@@ -1,0 +1,152 @@
+[
+  {
+    "n": 2,
+    "cap": 12,
+    "start": [
+      "xxYYY",
+      "xyxYXY"
+    ],
+    "complete_component_exhaustion": true,
+    "target_reached": false,
+    "states_discovered": 335,
+    "states_processed": 335,
+    "minimum_total_length": 11,
+    "minimum_pair": [
+      "xxYYY",
+      "xyxYXY"
+    ],
+    "energy_counts": {
+      "11": 90,
+      "12": 245
+    },
+    "seconds": 0.0131
+  },
+  {
+    "n": 2,
+    "cap": 13,
+    "start": [
+      "xxYYY",
+      "xyxYXY"
+    ],
+    "complete_component_exhaustion": false,
+    "target_reached": true,
+    "states_discovered": 19619,
+    "states_processed": 9787,
+    "minimum_total_length": 2,
+    "minimum_pair": [
+      "X",
+      "Y"
+    ],
+    "energy_counts": {
+      "2": 1,
+      "3": 6,
+      "4": 9,
+      "5": 31,
+      "6": 29,
+      "7": 163,
+      "8": 165,
+      "9": 729,
+      "10": 567,
+      "11": 3023,
+      "12": 2512,
+      "13": 12384
+    },
+    "seconds": 0.276
+  },
+  {
+    "n": 3,
+    "cap": 15,
+    "start": [
+      "xxxYYYY",
+      "xyxYXY"
+    ],
+    "complete_component_exhaustion": true,
+    "target_reached": false,
+    "states_discovered": 1716,
+    "states_processed": 1716,
+    "minimum_total_length": 13,
+    "minimum_pair": [
+      "xxxYYYY",
+      "xyxYXY"
+    ],
+    "energy_counts": {
+      "13": 84,
+      "15": 1632
+    },
+    "seconds": 0.0453
+  },
+  {
+    "n": 3,
+    "cap": 16,
+    "start": [
+      "xxxYYYY",
+      "xyxYXY"
+    ],
+    "complete_component_exhaustion": true,
+    "target_reached": false,
+    "states_discovered": 2570,
+    "states_processed": 2570,
+    "minimum_total_length": 13,
+    "minimum_pair": [
+      "xxxYYYY",
+      "xyxYXY"
+    ],
+    "energy_counts": {
+      "13": 84,
+      "15": 1856,
+      "16": 630
+    },
+    "seconds": 0.0709
+  },
+  {
+    "n": 3,
+    "cap": 17,
+    "start": [
+      "xxxYYYY",
+      "xyxYXY"
+    ],
+    "complete_component_exhaustion": true,
+    "target_reached": false,
+    "states_discovered": 107226,
+    "states_processed": 107226,
+    "minimum_total_length": 13,
+    "minimum_pair": [
+      "xxxYYYY",
+      "xyxYXY"
+    ],
+    "energy_counts": {
+      "13": 252,
+      "14": 588,
+      "15": 9600,
+      "16": 11802,
+      "17": 84984
+    },
+    "seconds": 2.5632
+  },
+  {
+    "n": 3,
+    "cap": 18,
+    "start": [
+      "xxxYYYY",
+      "xyxYXY"
+    ],
+    "complete_component_exhaustion": true,
+    "target_reached": false,
+    "states_discovered": 251874,
+    "states_processed": 251874,
+    "minimum_total_length": 13,
+    "minimum_pair": [
+      "xxxYYYY",
+      "xyxYXY"
+    ],
+    "energy_counts": {
+      "13": 252,
+      "14": 588,
+      "15": 11984,
+      "16": 12810,
+      "17": 114440,
+      "18": 111800
+    },
+    "seconds": 5.6769
+  }
+]
