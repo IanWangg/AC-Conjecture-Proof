@@ -1,0 +1,109 @@
+{
+  "group": "F/[F,N] = B3 x Z, N=<<xyxYXY>>",
+  "depth": 6,
+  "forward_layer_sizes": [
+    1,
+    10,
+    73,
+    519,
+    4002,
+    32833,
+    277798
+  ],
+  "backward_layer_sizes": [
+    1,
+    10,
+    75,
+    528,
+    3574,
+    23418,
+    156401
+  ],
+  "forward_states": 315236,
+  "backward_states": 184007,
+  "complete": true,
+  "seconds": 5.699,
+  "path_found": true,
+  "move_ids": [
+    3,
+    5,
+    8,
+    2,
+    9,
+    7,
+    4,
+    7,
+    2,
+    7,
+    7,
+    8
+  ],
+  "moves": [
+    [
+      "multiply",
+      0,
+      -1
+    ],
+    [
+      "multiply",
+      1,
+      -1
+    ],
+    [
+      "conjugate",
+      0,
+      "y"
+    ],
+    [
+      "multiply",
+      0,
+      1
+    ],
+    [
+      "conjugate",
+      0,
+      "Y"
+    ],
+    [
+      "conjugate",
+      0,
+      "X"
+    ],
+    [
+      "multiply",
+      1,
+      1
+    ],
+    [
+      "conjugate",
+      0,
+      "X"
+    ],
+    [
+      "multiply",
+      0,
+      1
+    ],
+    [
+      "conjugate",
+      0,
+      "X"
+    ],
+    [
+      "conjugate",
+      0,
+      "X"
+    ],
+    [
+      "conjugate",
+      0,
+      "y"
+    ]
+  ],
+  "distance": 12,
+  "n": 3,
+  "start_words": [
+    "xxxYYYY",
+    "xyxYXY"
+  ]
+}
