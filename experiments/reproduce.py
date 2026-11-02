@@ -52,6 +52,51 @@ def tail_checks():
             'arbitrary_interspersed_AC_moves_covered': False}
 
 
+def cyclic_checks():
+    """Audit the explicit full cap-22 certificate with independent code."""
+    py = sys.executable
+    with tempfile.TemporaryDirectory(prefix='ac-cyclic-checks-') as directory:
+        tsv = str(Path(directory) / 'states.tsv')
+        output = Path(directory) / 'review.json'
+        certificate = 'certificates/cyclic22_component_manifest.json'
+        conversion = run(py, 'experiments/cyclic_catalogue_to_tsv.py', certificate, tsv)
+        assert conversion['rows'] == 258032
+        binary = str(Path(directory) / 'verify_cyclic')
+        run('c++', '-std=c++17', '-O3', 'experiments/verify_full_cyclic_component.cpp',
+            '-o', binary, json_output=False)
+        run(binary, tsv, '22', str(output), json_output=False)
+        audit = json.loads(output.read_text())
+        assert audit['status'] == 'PASS' and audit['canonical_states'] == 258032
+        assert audit['all_menu_candidates_checked'] == 193140064
+        assert audit['admitted_neighbor_checks'] == 10204280
+        assert audit['positive_tail_candidates_checked'] == 50688
+        assert audit['minimum_cyclic_sum'] == 13
+        assert audit['all_states_reachable_from_original_AK3']
+        assert audit['closed_under_full_geometric_neighbor_menu']
+        run(py, 'experiments/scan_cyclic_primitives.py', certificate,
+            '--output', str(output), json_output=False)
+        primitive = json.loads(output.read_text())
+        assert primitive['status'] == 'PASS'
+        assert primitive['catalogue_states'] == 258032
+        assert primitive['distinct_cyclic_coordinates_tested'] == 179630
+        assert primitive['primitive_coordinates'] == []
+        assert primitive['catalogue_sha256'] == '2c8d0ac4c58f590de7151eae3dd09577d2365bf0e858887d801ce24c5c609c8e'
+        for name, expected_moves in (('length14_cap18', 32), ('length13_cap18', 43),
+                                     ('n_ak2_cyclic13', 46)):
+            replay = run(py, 'experiments/elementary_verify.py', 'certificates/'+name+'.json')
+            assert replay['moves'] == expected_moves and replay['peak_total_length'] == 18
+            if name == 'n_ak2_cyclic13':
+                assert replay['endpoint'] == ['x', 'y']
+    return {'status': 'PASS', 'ordinary_AC_goal_solved': False,
+            'cyclic_cap_replayed': 22, 'minimum_required_cyclic_peak': 23,
+            'canonical_states': 258032, 'all_menu_candidates_checked': 193140064,
+            'admitted_neighbor_checks': 10204280,
+            'independent_canonicalizer_and_connectedness': True,
+            'primitive_coordinate_scan_replayed': True,
+            'AK3_short_waypoint_moves': [32, 43], 'AK3_waypoint_raw_peaks': [18, 18],
+            'AK2_basis_control_strict_moves': 46}
+
+
 def main(cpp=False, packed=False):
     py = sys.executable
     tail_audit = tail_checks()
@@ -157,6 +202,7 @@ def main(cpp=False, packed=False):
         loop = run(py, 'experiments/elementary_verify.py', loop_path)
         assert loop['endpoint'] == ['xxxYYYY', 'xyxYXY'] and loop['moves'] == 4734
     if cpp:
+        cyclic_checks()
         with tempfile.TemporaryDirectory(prefix='ac-replay-') as directory:
             binary = str(Path(directory) / 'raw_peak')
             run('c++', '-std=c++17', '-O2', 'experiments/raw_peak_independent.cpp',
@@ -205,7 +251,8 @@ def main(cpp=False, packed=False):
             assert primitive['primitive_raw_relators'] == 0 and primitive['unique_cyclic_inverse_orbits'] == 99546
     print(json.dumps({'status': 'PASS', 'ordinary_AC_goal_solved': False,
                       'published_raw_AK3_peak_lower_bound': 22, 'raw_cap_replayed': 21 if packed else 18,
-                      'cyclic_AK3_peak_lower_bound': 15,
+                      'cyclic_AK3_peak_lower_bound': 23,
+                      'cyclic_cap_replayed': 22 if cpp else None,
                       'MS3_to_AK3_strict_moves': 32, 'braid_quotient_distance': 10,
                       'torus_quotient_distance': 8, 'product_strict_certificate_moves': 191,
                       'minimal_braid_lifting_areas': [5, 13],
@@ -227,8 +274,11 @@ if __name__ == '__main__':
     parser.add_argument('--cpp', action='store_true', help='also compile and run the original-state C++ search')
     parser.add_argument('--packed', action='store_true', help='also regenerate, audit and scan the full cap-21 component')
     parser.add_argument('--tails-only', action='store_true', help='replay only the new arbitrary-tail theorem controls')
+    parser.add_argument('--cyclic-only', action='store_true', help='audit the full cyclic cap-22 certificate and short strict paths; needs C++17')
     args = parser.parse_args()
-    if args.tails_only:
+    if args.cyclic_only:
+        print(json.dumps(cyclic_checks(), indent=2))
+    elif args.tails_only:
         print(json.dumps(tail_checks(), indent=2))
     else:
         main(args.cpp, args.packed)
