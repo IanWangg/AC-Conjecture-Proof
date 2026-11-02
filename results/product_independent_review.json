@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "reviewer": "H",
+  "certificate_sha256": "cd1b40c6a9bd858c4d4d9a9ccd86f3a7273ad9d5c74683e4257a7906029661e2",
+  "scope": "Independent upper-certificate and synchronization-proof review; finite-ball lower bound not independently re-enumerated here",
+  "G_implementation_imported": false,
+  "torus_implementation": "H Torus(3)",
+  "braid_implementation": "independent C2*C3 normal forms plus total exponent",
+  "pure_factor_word_checks": [
+    {
+      "factor": "B3",
+      "generator": "x",
+      "word_length": 11,
+      "passed": true
+    },
+    {
+      "factor": "B3",
+      "generator": "y",
+      "word_length": 27,
+      "passed": true
+    },
+    {
+      "factor": "T_3",
+      "generator": "x",
+      "word_length": 16,
+      "passed": true
+    },
+    {
+      "factor": "T_3",
+      "generator": "y",
+      "word_length": 10,
+      "passed": true
+    }
+  ],
+  "exact_common_bare_Nielsen_images": [
+    "xyXyyyX",
+    "yyyX"
+  ],
+  "bare_inverse_and_cancellation_passed": true,
+  "phase_checks": [
+    {
+      "moves_so_far": 117,
+      "exact_phase_endpoint_passed": true
+    },
+    {
+      "moves_so_far": 126,
+      "exact_phase_endpoint_passed": true
+    },
+    {
+      "moves_so_far": 191,
+      "exact_phase_endpoint_passed": true
+    }
+  ],
+  "primitive_counts": {
+    "invert": 16,
+    "multiply": 19,
+    "conjugate": 156
+  },
+  "quotient_endpoint": "diagonal (x,y) in B3 times T_3",
+  "free_endpoint_lengths": [
+    2539,
+    2159
+  ],
+  "peak_free_total_length": 4698,
+  "ordinary_free_group_goal_solved": false,
+  "synchronization_proof_issue_found": false
+}
