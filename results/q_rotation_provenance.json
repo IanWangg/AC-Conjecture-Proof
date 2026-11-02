@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "source_manifest": "certificates/cyclic22_component_manifest.json",
+  "source_decoded_json_sha256": "2c8d0ac4c58f590de7151eae3dd09577d2365bf0e858887d801ce24c5c609c8e",
+  "source_TSV_sha256": "cd9ba5781a1efcb1bf1b8a72c9a392b79de1cd915da6a520b8f33a4390787fa3",
+  "source_pairs": 258032,
+  "all_rotation_pair_count_recomputed_from_lengths": 24136172,
+  "candidates": 6568,
+  "candidate_decoded_bytes": 2118346,
+  "candidate_decoded_sha256": "d530e68cab069aabac841a1082bf5624d657a920001a72a77a3b39365bf167a5",
+  "candidate_encoded_bytes": 235473,
+  "candidate_encoded_sha256": "9f7a688f0612e062a71cc7139d95add16e07846163b5cf567bd82341fe0c42e3",
+  "source_coordinates_nonprimitive_evidence": "results/cyclic22_primitive_independent_review.json"
+}
