@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "original_relators": {
+    "D": "XXXyxYXyy",
+    "E": "XXYxxYYxy",
+    "F": "XXyXYxYxy"
+  },
+  "D_free_basis": {
+    "a": "xxYxY",
+    "t": "yX"
+  },
+  "D_inverse_basis": {
+    "x": "att",
+    "y": "tatt"
+  },
+  "D_relation_conjugator": "TTATTTT",
+  "D_relation_in_a_t": "ttATTAtaTAtaT",
+  "D_endomorphism": {
+    "a": "b",
+    "b": "AbAb"
+  },
+  "D_braid_inverse_coefficient": "baBabAbA",
+  "E_free_basis": {
+    "a": "xYY",
+    "t": "y"
+  },
+  "E_inverse_basis": {
+    "x": "att",
+    "y": "t"
+  },
+  "E_relation_in_a_t": "tttATTATattaaTT",
+  "E_alpha": {
+    "a": "b",
+    "b": "c",
+    "c": "Bacc"
+  },
+  "E_alpha_inverse": {
+    "a": "acBB",
+    "b": "a",
+    "c": "b"
+  },
+  "E_braid_coefficient": "aBac",
+  "F_generators_in_original_words": {
+    "a": "Yxy",
+    "b": "x",
+    "t": "Xy"
+  },
+  "F_alpha": {
+    "a": "b",
+    "b": "aB"
+  },
+  "F_alpha_inverse": {
+    "a": "ba",
+    "b": "a"
+  },
+  "F_braid_inverse_coefficient": "baBaBaBAbA",
+  "F_transfer_conjugator": "BAbbbABB",
+  "F_transferred_coefficient": "BAbb",
+  "primitive_character_vectors": {
+    "D": [
+      2,
+      3
+    ],
+    "E": [
+      2,
+      1
+    ],
+    "F": [
+      0,
+      1
+    ]
+  }
+}
