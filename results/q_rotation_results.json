@@ -1,0 +1,10 @@
+{
+"status":"COMPLETE",
+"ordinary_AC_goal_solved":false,
+"literal_source_pairs":258032,
+"independent_rotation_pairs":24136172,
+"distinct_unbased_labelled_core_graphs":11431368,
+"direct_DAG_primitive_absence_graphs":11424800,
+"inconclusive_graphs":6568,
+"seconds":109.757
+}
