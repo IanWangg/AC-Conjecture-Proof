@@ -1,0 +1,122 @@
+{
+  "format": "ordinary-ac-elementary-v1",
+  "scope": "Torus quotient certificate lifted to its actual free-group endpoint, not the basis",
+  "start": [
+    "xxxYYYY",
+    "xyxYXY"
+  ],
+  "target": [
+    "xxxYYYYxyxYXYxxxyxYXYxxYYYYxyxYXYxxYYYYxyxYXY",
+    "XYxxxyxYXYxxYYYYxyxYXYxxYYYYxyxY"
+  ],
+  "moves": [
+    {
+      "op": "multiply",
+      "i": 0,
+      "j": 1
+    },
+    {
+      "op": "conjugate",
+      "i": 1,
+      "g": "x"
+    },
+    {
+      "op": "multiply",
+      "i": 1,
+      "j": 0
+    },
+    {
+      "op": "conjugate",
+      "i": 1,
+      "g": "x"
+    },
+    {
+      "op": "multiply",
+      "i": 1,
+      "j": 0
+    },
+    {
+      "op": "multiply",
+      "i": 0,
+      "j": 1
+    },
+    {
+      "op": "conjugate",
+      "i": 1,
+      "g": "Y"
+    },
+    {
+      "op": "conjugate",
+      "i": 1,
+      "g": "X"
+    }
+  ],
+  "quotient_target": [
+    "x",
+    "y"
+  ],
+  "quotient_group": "<x,y | x^3=y^4>",
+  "free_endpoint_lengths": [
+    45,
+    32
+  ],
+  "free_basis_residuals": [
+    "xxxYYYYxyxYXYxxxyxYXYxxYYYYxyxYXYxxYYYYxyxYXYX",
+    "XYxxxyxYXYxxYYYYxyxYXYxxYYYYxyxYY"
+  ],
+  "residual_factorization_relator": "xxxYYYY",
+  "residual_factorizations": [
+    [
+      {
+        "conjugator": "",
+        "sign": 1
+      },
+      {
+        "conjugator": "xyxYXYxxxyxYXYX",
+        "sign": 1
+      },
+      {
+        "conjugator": "xyxYXYxxxyxYYXYX",
+        "sign": 1
+      },
+      {
+        "conjugator": "xyxYXY",
+        "sign": 1
+      },
+      {
+        "conjugator": "xyxYX",
+        "sign": -1
+      },
+      {
+        "conjugator": "xyxY",
+        "sign": 1
+      }
+    ],
+    [
+      {
+        "conjugator": "XYxxxyxYXYX",
+        "sign": 1
+      },
+      {
+        "conjugator": "XYxxxyxYYXYX",
+        "sign": 1
+      },
+      {
+        "conjugator": "XY",
+        "sign": 1
+      },
+      {
+        "conjugator": "X",
+        "sign": -1
+      },
+      {
+        "conjugator": "",
+        "sign": 1
+      }
+    ]
+  ],
+  "zero_start_replay_endpoint": [
+    "xyxYXYxxxyxYYYXY",
+    "XYxxxyxYYY"
+  ]
+}
