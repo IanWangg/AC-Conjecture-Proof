@@ -74,6 +74,54 @@ def main(cpp=False, packed=False):
                                   'certificates/first_order_correction.json.gz.b64')
     assert first_order_independent['independent_free_and_Fox_replay']
     assert first_order_independent['actual_free_endpoint_lengths'] == [230627, 946303]
+    finite_k = run(py, 'experiments/twisted_magnus.py', '--degree', '5', '--group-order')
+    assert finite_k['complete_twisted_orbit'] and finite_k['orbit_states'] == 65536
+    assert finite_k['finite_semidirect_quotient_order'] == 12582912
+    assert finite_k['candidate_k_residues_seen'] == []
+    rank3 = run(py, 'experiments/rank3_compact_quotient.py')
+    assert rank3['finite_semidirect_group_order'] == 2421875 and rank3['candidate_k_residues_seen'] == []
+    rank3_check = run(py, 'experiments/rank3_mod5_independent.py')
+    assert rank3_check['all_parameters_excluded'] and rank3_check['central_normal_forms_checked'] == 625
+    further = run(py, 'experiments/second_hump_compact.py')
+    assert further['finite_semidirect_group_order'] == 312500 and further['candidate_k_residues_seen'] == []
+    further_check = run(py, 'experiments/second_hump_mod5_independent.py')
+    assert further_check['all_parameters_excluded'] and further_check['normal_forms_checked'] == 625
+    branches = run(py, 'experiments/remaining_branch_obstructions.py')
+    assert branches['both_relators_conjugate_to_original_power_in_B3']
+    signed = run(py, 'experiments/signed_cycle_obstruction.py', '--verify', 'results/signed_cycle_results.json')
+    assert signed['saved_AK3_signed_cycle_certificate_verified']
+    m_control = run(py, 'experiments/elementary_verify.py', 'certificates/m_ak2_full.json')
+    assert m_control['endpoint'] == ['x', 'y'] and m_control['moves'] == 246
+    atlas = run(py, 'experiments/first_hump.py')
+    assert atlas['enumeration']['braid8_in_torus']['raw_candidates'] == 32
+    assert atlas['enumeration']['power9_in_braid']['raw_candidates'] == 432
+    assert len(atlas['enumeration']['power9_signed_symmetry_classes']) == 6
+    independent_catalogue = run(py, 'experiments/audit_hump_subgroups.py')
+    assert independent_catalogue['literal_pairs_with_frozen_rotations_and_inverses'] == 5632
+    central = run(py, 'experiments/central_search.py', '--depth', '6', '--budget', '1000000')
+    assert central['complete'] and central['distance'] == 12
+    optimized = run(py, 'experiments/elementary_verify.py', 'certificates/optimized_first_order_strict.json')
+    assert optimized['moves'] == 533 and optimized['peak_total_length'] == 2502
+    optimized_fox = run(py, 'experiments/verify_first_order.py', 'certificates/optimized_first_order.json.gz.b64')
+    assert optimized_fox['expanded_single_generator_moves'] == 533
+    with tempfile.TemporaryDirectory(prefix='ac-current-checks-') as directory:
+        result_path = str(Path(directory) / 'result.json')
+        catalogue = run(py, 'experiments/hump_catalogue_obstruction.py', '--verify',
+                        'certificates/hump_catalogue_dag_certificate.json.gz.b64', '--output', result_path)
+        assert catalogue['expanded_literal_pairs'] == 5632 and catalogue['certified_acyclic_line_graphs'] == 10720
+        waypoint = run(py, 'experiments/verify_hump_waypoints.py', 'certificates/hump_low_peak_u1.json',
+                       'certificates/hump_low_peak_u2.json', '--output', result_path)
+        assert [entry['strict_moves'] for entry in waypoint['waypoints']] == [222, 179]
+        expected = Path(directory) / 'second-central.json'
+        expected.write_bytes(gzip.decompress(base64.b64decode((ROOT / 'results/second_central_results.json.gz.b64').read_bytes())))
+        audit = run(py, 'experiments/review_second_central.py', 'certificates/optimized_first_order.json.gz.b64',
+                    str(expected), '--strict', 'certificates/optimized_first_order_strict.json', '--output', result_path)
+        assert [entry['next_central_l1'] for entry in audit['residuals']] == [322, 469]
+        loop_path = str(Path(directory) / 'loop-strict.json')
+        expanded_loop = run(py, 'experiments/expand_lift.py', 'certificates/central_lift_closed_loop.json.gz.b64', '--output', loop_path)
+        assert expanded_loop['strict_moves'] == 4734
+        loop = run(py, 'experiments/elementary_verify.py', loop_path)
+        assert loop['endpoint'] == ['xxxYYYY', 'xyxYXY'] and loop['moves'] == 4734
     if cpp:
         with tempfile.TemporaryDirectory(prefix='ac-replay-') as directory:
             binary = str(Path(directory) / 'raw_peak')
@@ -85,6 +133,11 @@ def main(cpp=False, packed=False):
             assert independent['minimum_total_length'] == 13
             assert not independent['target_reached']
             assert independent['energy_counts'] == peak['energy_counts']
+            finite_binary = str(Path(directory) / 'twisted_magnus')
+            run('c++', '-std=c++17', '-O3', 'experiments/twisted_magnus_independent.cpp',
+                '-o', finite_binary, json_output=False)
+            finite_independent = run(finite_binary, '5')
+            assert finite_independent['orbit_states'] == 65536 and finite_independent['candidate_k_residues_seen'] == []
             folded_binary = str(Path(directory) / 'fold_endpoint')
             run('c++', '-std=c++17', '-O2', 'experiments/fold_endpoint.cpp',
                 '-o', folded_binary, json_output=False)
@@ -124,6 +177,11 @@ def main(cpp=False, packed=False):
                       'minimal_braid_lifting_areas': [5, 13],
                       'first_order_quotient_word_operations': 205,
                       'first_order_quotient_strict_expansion': 531377,
+                      'optimized_first_order_strict_moves': 533,
+                      'optimized_lift_returns_to_AK3_loop_moves': 4734,
+                      'next_central_defect_norms': [322, 469],
+                      'literal_primitive_free_catalogue_pairs': 5632,
+                      'new_actual_free_waypoint_strict_moves': [222, 179],
                       'independent_Cpp_exhaustion_replayed': cpp,
                       'first_order_endpoint_fold_replayed': cpp}, indent=2))
 
