@@ -218,8 +218,10 @@ comparison, which had already agreed on every cap-21 coordinate.
 ## Reproduce
 
 Use N's [compressed explicit catalogue](../certificates/cyclic21_component.json.gz.b64).
-The adapter accepts decoded JSON or gzip/base64 and prints both source
-and TSV hashes. All Python tools use only the standard library.
+The adapter and primitive scanner accept decoded JSON, gzip/base64, or
+N's split-part manifest directly. Manifest loading verifies every part
+hash and both assembled/decoded hashes and byte counts. The adapter prints
+both source and TSV hashes. All Python tools use only the standard library.
 
 ```sh
 python3 experiments/cyclic_catalogue_to_tsv.py \
@@ -236,11 +238,10 @@ python3 experiments/scan_cyclic_primitives.py \
 The checked results are [closure/connectivity](../results/cyclic21_independent_review.json),
 [bridge controls](../results/bridge_menu_control_results.json), and
 [primitive coordinates](../results/cyclic21_primitive_independent_review.json).
-For cap 22, assemble N's split compressed catalogue using the
+For cap 22, pass N's
 [cap-22 manifest](../certificates/cyclic22_component_manifest.json)
-and the decoding instructions in [N's report](research-n-cyclic-search.md).
-Pass the resulting decoded JSON or concatenated `.gz.b64` to the adapter,
-pass 22 to the C++ checker, and compare the
+directly to the adapter and primitive scanner, pass 22 to the C++ checker,
+and compare the
 [cap-22 closure result](../results/cyclic22_independent_review.json) and
 [primitive scan](../results/cyclic22_primitive_independent_review.json).
 Both catalogues are N's output; this report supplies an independent
