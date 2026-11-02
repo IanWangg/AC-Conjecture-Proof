@@ -1,0 +1,71 @@
+{
+  "format": "ordinary-ac-elementary-v1",
+  "scope": "Actual free lift of a torus-quotient path; endpoint is not the free basis",
+  "n": 3,
+  "start": [
+    "xxxYYYY",
+    "xyxYXY"
+  ],
+  "target": [
+    "xxxYYYYxyxYXYxxxyxYXYxxYYYYxyxYXYxxYYYYxyxYXY",
+    "XYxxxyxYXYxxYYYYxyxYXYxxYYYYxyxY"
+  ],
+  "moves": [
+    {
+      "op": "multiply",
+      "i": 0,
+      "j": 1
+    },
+    {
+      "op": "conjugate",
+      "i": 1,
+      "g": "x"
+    },
+    {
+      "op": "multiply",
+      "i": 1,
+      "j": 0
+    },
+    {
+      "op": "conjugate",
+      "i": 1,
+      "g": "x"
+    },
+    {
+      "op": "multiply",
+      "i": 1,
+      "j": 0
+    },
+    {
+      "op": "multiply",
+      "i": 0,
+      "j": 1
+    },
+    {
+      "op": "conjugate",
+      "i": 1,
+      "g": "Y"
+    },
+    {
+      "op": "conjugate",
+      "i": 1,
+      "g": "X"
+    }
+  ],
+  "quotient": "<x,y | x^3=y^4>",
+  "quotient_target": [
+    "x",
+    "y"
+  ],
+  "free_peak_total_length": 77,
+  "endpoint_exponent_vectors": [
+    [
+      13,
+      -16
+    ],
+    [
+      9,
+      -11
+    ]
+  ]
+}
