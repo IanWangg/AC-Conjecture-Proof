@@ -1,0 +1,413 @@
+{
+  "status": "PASS",
+  "waypoints": [
+    {
+      "target": [
+        "yXYXyxx",
+        "XXyxYxxY"
+      ],
+      "strict_replay": {
+        "moves": 222,
+        "peak_total_length": 31,
+        "endpoint": [
+          "yXYXyxx",
+          "XXyxYxxY"
+        ]
+      },
+      "fixed_donor_factor_count": 7,
+      "free_difference_factorization_verified": true,
+      "subgroup_vertices": 10,
+      "subgroup_unoriented_edges": 11,
+      "subgroup_rank": 2,
+      "arcs": [
+        [
+          0,
+          "X",
+          1
+        ],
+        [
+          0,
+          "y",
+          2
+        ],
+        [
+          1,
+          "x",
+          0
+        ],
+        [
+          1,
+          "X",
+          3
+        ],
+        [
+          2,
+          "X",
+          4
+        ],
+        [
+          2,
+          "Y",
+          0
+        ],
+        [
+          3,
+          "x",
+          1
+        ],
+        [
+          3,
+          "y",
+          5
+        ],
+        [
+          3,
+          "Y",
+          6
+        ],
+        [
+          4,
+          "x",
+          2
+        ],
+        [
+          4,
+          "X",
+          7
+        ],
+        [
+          4,
+          "Y",
+          8
+        ],
+        [
+          5,
+          "x",
+          9
+        ],
+        [
+          5,
+          "Y",
+          3
+        ],
+        [
+          6,
+          "x",
+          8
+        ],
+        [
+          6,
+          "y",
+          3
+        ],
+        [
+          7,
+          "x",
+          4
+        ],
+        [
+          7,
+          "y",
+          9
+        ],
+        [
+          8,
+          "X",
+          6
+        ],
+        [
+          8,
+          "y",
+          4
+        ],
+        [
+          9,
+          "X",
+          5
+        ],
+        [
+          9,
+          "Y",
+          7
+        ]
+      ],
+      "signed_topological_orders": {
+        "xy": [
+          6,
+          3,
+          1,
+          0,
+          5,
+          7,
+          8,
+          4,
+          2,
+          9
+        ],
+        "xY": [
+          5,
+          3,
+          1,
+          6,
+          9,
+          7,
+          4,
+          2,
+          0,
+          8
+        ],
+        "Xy": [
+          0,
+          1,
+          2,
+          8,
+          4,
+          6,
+          3,
+          7,
+          9,
+          5
+        ],
+        "XY": [
+          2,
+          0,
+          1,
+          4,
+          8,
+          9,
+          5,
+          3,
+          6,
+          7
+        ]
+      },
+      "whole_subgroup_contains_no_primitive_F2_element": true,
+      "scope": "Exact reachable waypoint and unbounded subgroup-specific primitive obstruction; no global AC result"
+    },
+    {
+      "target": [
+        "YxYXyyx",
+        "XXyxYxxY"
+      ],
+      "strict_replay": {
+        "moves": 179,
+        "peak_total_length": 25,
+        "endpoint": [
+          "YxYXyyx",
+          "XXyxYxxY"
+        ]
+      },
+      "fixed_donor_factor_count": 6,
+      "free_difference_factorization_verified": true,
+      "subgroup_vertices": 13,
+      "subgroup_unoriented_edges": 14,
+      "subgroup_rank": 2,
+      "arcs": [
+        [
+          0,
+          "X",
+          1
+        ],
+        [
+          0,
+          "y",
+          2
+        ],
+        [
+          0,
+          "Y",
+          3
+        ],
+        [
+          1,
+          "x",
+          0
+        ],
+        [
+          1,
+          "X",
+          4
+        ],
+        [
+          1,
+          "Y",
+          5
+        ],
+        [
+          2,
+          "X",
+          6
+        ],
+        [
+          2,
+          "Y",
+          0
+        ],
+        [
+          3,
+          "x",
+          7
+        ],
+        [
+          3,
+          "y",
+          0
+        ],
+        [
+          4,
+          "x",
+          1
+        ],
+        [
+          4,
+          "y",
+          8
+        ],
+        [
+          5,
+          "y",
+          1
+        ],
+        [
+          5,
+          "Y",
+          9
+        ],
+        [
+          6,
+          "x",
+          2
+        ],
+        [
+          6,
+          "X",
+          10
+        ],
+        [
+          7,
+          "X",
+          3
+        ],
+        [
+          7,
+          "Y",
+          11
+        ],
+        [
+          8,
+          "x",
+          12
+        ],
+        [
+          8,
+          "Y",
+          4
+        ],
+        [
+          9,
+          "x",
+          11
+        ],
+        [
+          9,
+          "y",
+          5
+        ],
+        [
+          10,
+          "x",
+          6
+        ],
+        [
+          10,
+          "y",
+          12
+        ],
+        [
+          11,
+          "X",
+          9
+        ],
+        [
+          11,
+          "y",
+          7
+        ],
+        [
+          12,
+          "X",
+          8
+        ],
+        [
+          12,
+          "Y",
+          10
+        ]
+      ],
+      "signed_topological_orders": {
+        "xy": [
+          3,
+          4,
+          8,
+          9,
+          5,
+          1,
+          0,
+          10,
+          6,
+          2,
+          11,
+          7,
+          12
+        ],
+        "xY": [
+          8,
+          4,
+          1,
+          5,
+          9,
+          12,
+          10,
+          6,
+          2,
+          0,
+          3,
+          7,
+          11
+        ],
+        "Xy": [
+          11,
+          7,
+          3,
+          0,
+          2,
+          6,
+          9,
+          5,
+          1,
+          4,
+          10,
+          12,
+          8
+        ],
+        "XY": [
+          2,
+          0,
+          1,
+          5,
+          6,
+          7,
+          3,
+          11,
+          9,
+          12,
+          8,
+          4,
+          10
+        ]
+      },
+      "whole_subgroup_contains_no_primitive_F2_element": true,
+      "scope": "Exact reachable waypoint and unbounded subgroup-specific primitive obstruction; no global AC result"
+    }
+  ]
+}
