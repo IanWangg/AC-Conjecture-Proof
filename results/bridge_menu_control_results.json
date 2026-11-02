@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "tail_length_test_bound": 6,
+  "control_pairs": 8,
+  "literal_signed_products_tested": 46624,
+  "intersecting_axes_products": 1528,
+  "disjoint_axes_products": 45096,
+  "maximum_axis_distance_tested": 6,
+  "all_products_exactly_reconstructed_from_rotations_and_geodesic_bridges": true,
+  "all_disjoint_cyclic_lengths_equal_sum_plus_twice_distance": true,
+  "unbounded_completeness_depends_on_proof": true
+}
