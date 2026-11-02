@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "distinct_cyclic_words": 99546,
+  "primitive_words": [],
+  "maximum_bridge_length_needed": 1,
+  "oriented_source_recipients_allowing_nonempty_bridge": 20,
+  "primitive_test": "Shared M rank2 Whitehead descent; finite positivecontrol verified elsewhere"
+}
