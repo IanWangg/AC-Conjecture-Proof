@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "catalogue_sha256": "f4d8bc02bc5066397b9f885d81828296799cae886b14329407c87347078a1ae9",
+  "states": 39840,
+  "distinct_cyclic_coordinate_orbits": 25452,
+  "primitive_coordinates": [],
+  "rejections": {
+    "mixed_signs": 25316,
+    "noncoprime_exponents": 0,
+    "wrong_cyclic_word": 136
+  },
+  "positive_signed_rotation_controls": 3208,
+  "method": "Nielsen uniqueness plus exact positive Euclidean representatives and cyclic rotations; no Whitehead descent",
+  "scope": "Displayed cyclic coordinate classes and every free conjugate/inverse of them; not arbitrary elements of their generated subgroups"
+}
