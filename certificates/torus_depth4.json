@@ -1,0 +1,76 @@
+{
+  "group": "<x,y | x^3=y^4>",
+  "depth_per_side": 4,
+  "forward_layer_sizes": [
+    1,
+    7,
+    45,
+    302,
+    2249
+  ],
+  "backward_layer_sizes": [
+    1,
+    10,
+    74,
+    505,
+    3556
+  ],
+  "forward_states": 2604,
+  "backward_states": 4146,
+  "complete": true,
+  "seconds": 0.0298,
+  "path_found": true,
+  "move_ids": [
+    2,
+    10,
+    4,
+    10,
+    4,
+    2,
+    13,
+    11
+  ],
+  "moves": [
+    [
+      "multiply",
+      0,
+      1
+    ],
+    [
+      "conjugate",
+      1,
+      "x"
+    ],
+    [
+      "multiply",
+      1,
+      1
+    ],
+    [
+      "conjugate",
+      1,
+      "x"
+    ],
+    [
+      "multiply",
+      1,
+      1
+    ],
+    [
+      "multiply",
+      0,
+      1
+    ],
+    [
+      "conjugate",
+      1,
+      "Y"
+    ],
+    [
+      "conjugate",
+      1,
+      "X"
+    ]
+  ],
+  "distance": 8
+}
