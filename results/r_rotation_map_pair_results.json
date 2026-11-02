@@ -1,0 +1,15 @@
+{
+  "status": "ABSENT",
+  "ordinary_AC_goal_solved": false,
+  "input_sha256": "d530e68cab069aabac841a1082bf5624d657a920001a72a77a3b39365bf167a5",
+  "input_candidate_records": 6568,
+  "candidate_records_tested": 6568,
+  "independent_refolding_matches_Q_all_tested": true,
+  "complete_absence_records": 6568,
+  "incomplete_records": 0,
+  "primitive_records": 0,
+  "finite_map_pair_states_total": 735712,
+  "maximum_states_for_one_graph_alphabet": 76,
+  "primitive_witnesses": [],
+  "incomplete_witnesses": []
+}
