@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "catalogue_sha256": "2c8d0ac4c58f590de7151eae3dd09577d2365bf0e858887d801ce24c5c609c8e",
+  "catalogue_states": 258032,
+  "distinct_cyclic_coordinates_tested": 179630,
+  "primitive_coordinates": [],
+  "method": "positive Euclidean construction and rank-two Nielsen conjugacy uniqueness",
+  "primitive_decision_uses_Whitehead_descent": false,
+  "optional_Whitehead_comparison": false,
+  "exhaustive_literal_primitive_counts_through_length_nine": {
+    "1": 4,
+    "2": 8,
+    "3": 24,
+    "4": 32,
+    "5": 80,
+    "6": 48,
+    "7": 168,
+    "8": 128,
+    "9": 216
+  }
+}
