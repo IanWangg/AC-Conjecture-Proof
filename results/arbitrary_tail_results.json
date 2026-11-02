@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "theorem_scope": "<a p a^-1,c b c^-1> contains no primitive for every a,c in F2; no arbitrary interspersed Nielsen/AC moves",
+  "finite_reduced_tails": 1457,
+  "finite_unique_based_graphs": 1378,
+  "checked_acyclic_line_graphs": 11024,
+  "unbounded_extension": "shortest-double-coset/barbell lemma proved in research-o.md",
+  "independent_folding_implementation": true,
+  "long_tail_cycle_factors_checked": 2,
+  "basis_positive_control_rejected": true
+}
