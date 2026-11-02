@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "invalid_proof_controls_rejected": [
+    "zeroed_D_dual_witness",
+    "E_orbit_contains_candidate_identity"
+  ],
+  "ordinary_AC_goal_solved": false
+}
