@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "start": [
+    "xxYYY",
+    "xyxYXY"
+  ],
+  "target": [
+    "x",
+    "y"
+  ],
+  "strict_moves": 46,
+  "raw_peak": 18,
+  "cyclic_peak": 13,
+  "ordinary_AK3_goal_solved": false
+}
