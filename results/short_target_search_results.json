@@ -1,0 +1,304 @@
+[
+  {
+    "target": "baaaB",
+    "result": {
+      "fiber_rank": 2,
+      "maximum_conjugator_length": 14,
+      "source_kernel": "abbAbA",
+      "fixed_kernel_target": "baaaB",
+      "fixed_required_exponents": [
+        5,
+        1
+      ],
+      "nodes_by_length": [
+        1,
+        4,
+        12,
+        36,
+        108,
+        324,
+        876,
+        2169,
+        5214,
+        11997,
+        26670,
+        56211,
+        108522,
+        183720,
+        245022
+      ],
+      "candidate_tests_by_length": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        0,
+        92,
+        0,
+        766,
+        0,
+        6948,
+        0,
+        60830
+      ],
+      "hits": [],
+      "scope": "bounded exact conjugator search, not a global obstruction"
+    }
+  },
+  {
+    "target": "baabaB",
+    "result": {
+      "fiber_rank": 2,
+      "maximum_conjugator_length": 14,
+      "source_kernel": "abbAbA",
+      "fixed_kernel_target": "baabaB",
+      "fixed_required_exponents": [
+        6,
+        2
+      ],
+      "nodes_by_length": [
+        1,
+        4,
+        12,
+        36,
+        108,
+        276,
+        708,
+        1650,
+        3750,
+        8199,
+        17301,
+        34878,
+        66342,
+        112026,
+        150438
+      ],
+      "candidate_tests_by_length": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        28,
+        0,
+        416,
+        0,
+        3966,
+        0,
+        38248
+      ],
+      "hits": [],
+      "scope": "bounded exact conjugator search, not a global obstruction"
+    }
+  },
+  {
+    "target": "aBBa",
+    "result": {
+      "fiber_rank": 2,
+      "maximum_conjugator_length": 14,
+      "source_kernel": "abbAbA",
+      "fixed_kernel_target": "aBBa",
+      "fixed_required_exponents": [
+        1,
+        -2
+      ],
+      "nodes_by_length": [
+        1,
+        4,
+        12,
+        36,
+        108,
+        324,
+        972,
+        2724,
+        7140,
+        17388,
+        38475,
+        76248,
+        129600,
+        170208,
+        123309
+      ],
+      "candidate_tests_by_length": [
+        0,
+        0,
+        0,
+        3,
+        0,
+        11,
+        0,
+        91,
+        0,
+        669,
+        0,
+        5211,
+        0,
+        41103,
+        0
+      ],
+      "hits": [
+        {
+          "q": "aBB"
+        }
+      ],
+      "scope": "bounded exact conjugator search, not a global obstruction"
+    }
+  },
+  {
+    "target": "BAbaab",
+    "result": {
+      "fiber_rank": 2,
+      "maximum_conjugator_length": 14,
+      "source_kernel": "abbAbA",
+      "fixed_kernel_target": "BAbaab",
+      "fixed_required_exponents": [
+        2,
+        0
+      ],
+      "nodes_by_length": [
+        1,
+        4,
+        12,
+        36,
+        108,
+        324,
+        972,
+        2916,
+        7983,
+        21045,
+        50652,
+        111930,
+        221688,
+        376866,
+        495180
+      ],
+      "candidate_tests_by_length": [
+        0,
+        0,
+        1,
+        0,
+        6,
+        0,
+        32,
+        0,
+        262,
+        0,
+        1922,
+        0,
+        15138,
+        0,
+        119646
+      ],
+      "hits": [],
+      "scope": "bounded exact conjugator search, not a global obstruction"
+    }
+  },
+  {
+    "target": "BBab",
+    "result": {
+      "fiber_rank": 2,
+      "maximum_conjugator_length": 14,
+      "source_kernel": "abbAbA",
+      "fixed_kernel_target": "BBab",
+      "fixed_required_exponents": [
+        0,
+        -2
+      ],
+      "nodes_by_length": [
+        1,
+        4,
+        12,
+        36,
+        108,
+        324,
+        972,
+        2916,
+        7983,
+        21045,
+        50652,
+        111930,
+        221688,
+        376866,
+        495180
+      ],
+      "candidate_tests_by_length": [
+        0,
+        0,
+        1,
+        0,
+        6,
+        0,
+        32,
+        0,
+        262,
+        0,
+        1922,
+        0,
+        15138,
+        0,
+        119646
+      ],
+      "hits": [
+        {
+          "q": "BB"
+        }
+      ],
+      "scope": "bounded exact conjugator search, not a global obstruction"
+    }
+  },
+  {
+    "target": "Babb",
+    "result": {
+      "fiber_rank": 2,
+      "maximum_conjugator_length": 14,
+      "source_kernel": "abbAbA",
+      "fixed_kernel_target": "Babb",
+      "fixed_required_exponents": [
+        2,
+        0
+      ],
+      "nodes_by_length": [
+        1,
+        4,
+        12,
+        36,
+        108,
+        324,
+        972,
+        2916,
+        7983,
+        21045,
+        50652,
+        111930,
+        221688,
+        376866,
+        495180
+      ],
+      "candidate_tests_by_length": [
+        0,
+        0,
+        1,
+        0,
+        6,
+        0,
+        32,
+        0,
+        262,
+        0,
+        1922,
+        0,
+        15138,
+        0,
+        119646
+      ],
+      "hits": [],
+      "scope": "bounded exact conjugator search, not a global obstruction"
+    }
+  }
+]
