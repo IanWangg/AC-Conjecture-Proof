@@ -1,0 +1,395 @@
+{
+  "format": "ordinary-ac-elementary-v1",
+  "scope": "Free-word lift of a B3 quotient certificate; target is NOT the free basis",
+  "start": [
+    "xxxYYYY",
+    "xyxYXY"
+  ],
+  "target": [
+    "YYYYxyxYXyyyXXXyxyyyyXY",
+    "XYxyxYXyyyXXXyxyyyyXXXyxYYYYXYxxxYYYxyXYXyyyy"
+  ],
+  "quotient_target": [
+    "x",
+    "y"
+  ],
+  "moves": [
+    {
+      "op": "invert",
+      "i": 0
+    },
+    {
+      "op": "multiply",
+      "i": 1,
+      "j": 0
+    },
+    {
+      "op": "invert",
+      "i": 0
+    },
+    {
+      "op": "conjugate",
+      "i": 1,
+      "g": "Y"
+    },
+    {
+      "op": "conjugate",
+      "i": 1,
+      "g": "X"
+    },
+    {
+      "op": "invert",
+      "i": 0
+    },
+    {
+      "op": "multiply",
+      "i": 1,
+      "j": 0
+    },
+    {
+      "op": "invert",
+      "i": 0
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "X"
+    },
+    {
+      "op": "multiply",
+      "i": 0,
+      "j": 1
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "X"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "X"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "y"
+    },
+    {
+      "op": "invert",
+      "i": 0
+    },
+    {
+      "op": "multiply",
+      "i": 1,
+      "j": 0
+    },
+    {
+      "op": "invert",
+      "i": 0
+    }
+  ],
+  "quotient_signed_moves": [
+    [
+      "multiply",
+      1,
+      -1
+    ],
+    [
+      "conjugate",
+      1,
+      "Y"
+    ],
+    [
+      "conjugate",
+      1,
+      "X"
+    ],
+    [
+      "multiply",
+      1,
+      -1
+    ],
+    [
+      "conjugate",
+      0,
+      "X"
+    ],
+    [
+      "multiply",
+      0,
+      1
+    ],
+    [
+      "conjugate",
+      0,
+      "X"
+    ],
+    [
+      "conjugate",
+      0,
+      "X"
+    ],
+    [
+      "conjugate",
+      0,
+      "y"
+    ],
+    [
+      "multiply",
+      1,
+      -1
+    ]
+  ],
+  "matrix_table": [
+    {
+      "step": 0,
+      "matrices": [
+        [
+          13,
+          3,
+          4,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "step": 1,
+      "move": [
+        "multiply",
+        1,
+        -1
+      ],
+      "matrices": [
+        [
+          13,
+          3,
+          4,
+          1
+        ],
+        [
+          1,
+          -3,
+          -4,
+          13
+        ]
+      ]
+    },
+    {
+      "step": 2,
+      "move": [
+        "conjugate",
+        1,
+        "Y"
+      ],
+      "matrices": [
+        [
+          13,
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          -3,
+          -13,
+          10
+        ]
+      ]
+    },
+    {
+      "step": 3,
+      "move": [
+        "conjugate",
+        1,
+        "X"
+      ],
+      "matrices": [
+        [
+          13,
+          3,
+          4,
+          1
+        ],
+        [
+          17,
+          4,
+          -13,
+          -3
+        ]
+      ]
+    },
+    {
+      "step": 4,
+      "move": [
+        "multiply",
+        1,
+        -1
+      ],
+      "matrices": [
+        [
+          13,
+          3,
+          4,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          0
+        ]
+      ]
+    },
+    {
+      "step": 5,
+      "move": [
+        "conjugate",
+        0,
+        "X"
+      ],
+      "matrices": [
+        [
+          9,
+          11,
+          4,
+          5
+        ],
+        [
+          1,
+          1,
+          -1,
+          0
+        ]
+      ]
+    },
+    {
+      "step": 6,
+      "move": [
+        "multiply",
+        0,
+        1
+      ],
+      "matrices": [
+        [
+          2,
+          -9,
+          1,
+          -4
+        ],
+        [
+          1,
+          1,
+          -1,
+          0
+        ]
+      ]
+    },
+    {
+      "step": 7,
+      "move": [
+        "conjugate",
+        0,
+        "X"
+      ],
+      "matrices": [
+        [
+          1,
+          -4,
+          1,
+          -3
+        ],
+        [
+          1,
+          1,
+          -1,
+          0
+        ]
+      ]
+    },
+    {
+      "step": 8,
+      "move": [
+        "conjugate",
+        0,
+        "X"
+      ],
+      "matrices": [
+        [
+          0,
+          1,
+          -1,
+          2
+        ],
+        [
+          1,
+          1,
+          -1,
+          0
+        ]
+      ]
+    },
+    {
+      "step": 9,
+      "move": [
+        "conjugate",
+        0,
+        "y"
+      ],
+      "matrices": [
+        [
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          0
+        ]
+      ]
+    },
+    {
+      "step": 10,
+      "move": [
+        "multiply",
+        1,
+        -1
+      ],
+      "matrices": [
+        [
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1,
+          1
+        ]
+      ]
+    }
+  ],
+  "free_endpoint_lengths": [
+    23,
+    45
+  ],
+  "endpoint_braid_exponent_sums": [
+    1,
+    1
+  ],
+  "free_basis_residuals": [
+    "YYYYxyxYXyyyXXXyxyyyyXYX",
+    "XYxyxYXyyyXXXyxyyyyXXXyxYYYYXYxxxYYYxyXYXyyy"
+  ]
+}
