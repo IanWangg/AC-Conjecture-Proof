@@ -194,7 +194,7 @@ So **835 of the 838 residual classes carry an Aut(F₂)-invariant certificate of
 | P1 | 24 | 17,600 | 0 | **17** | 160 |
 | C4 | 26 | 19,275 | 0 | 465 | 151 |
 | C6 | 26 | 18,873 | 0 | 342 | 140 |
-AK3_DEEP_ROW
+| AK3 | 24 | not completed (killed at the 20-min timeout; no result is claimed) | – | – | >1200 |
 
 **Meridian defect along the components** (`f_landscape.meridian_defect`: smallest syllable length of a partner relator over the relators admitting a torus-knot form; Proposition F3 requires 2 for thickenability). Distribution over the Alexander-symmetric classes found by `--dump`:
 
