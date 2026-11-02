@@ -2,7 +2,7 @@
 
 Date: 2026-11-02. Independent research agent E (round 2).
 
-**Status:** obstruction-side partial results. **No proof that AK(3) is or is not AC-trivial, and no counterexample.** Proved here: (i) AK(3) is AC-trivial if and only if its AC distances along one explicit chain of finite 2-groups (equivalently, along the free-nilpotent quotients) are bounded, with an explicit stabilization class; (ii) no simple quotient, and no quotient of either one-relator group F/<<x^3y^-4>> or B_3 = F/<<xyxY XY>>, can carry an AC obstruction for AK(3). Exhaustive computations (finite, exact, reproducible) give: every trivialization of AK(3) by the 15 standard instructions has **at least 15 instructions**, and **passes through a pair of total freely reduced length at least 21**. AK(3), AK(2), MS(3) and all 145 complex classes of total length at most 16 in the explored AC class of AK(3) are **not thickenable**, so Lackenby's 2026 theorem on thickenable presentations does not apply to any of them. Novelty is not established for any item.
+**Status:** obstruction-side partial results. **No proof that AK(3) is or is not AC-trivial, and no counterexample.** Proved here: (i) AK(3) is AC-trivial if and only if its AC distances along one explicit chain of finite 2-groups (equivalently, along the free-nilpotent quotients) are bounded, with an explicit stabilization class; (ii) no simple quotient, and no quotient of either one-relator group F/<<x^3y^-4>> or B_3 = F/<<xyxY XY>>, can carry an AC obstruction for AK(3). Exhaustive computations (finite, exact, reproducible) give: every trivialization of AK(3) by the 15 standard instructions has **at least 15 instructions**, and **passes through a pair of total freely reduced length at least 21**. AK(3), AK(2), MS(3) and all 917 complex classes of (cyclically reduced) total length at most 18 in the explored AC class of AK(3) are **not thickenable**, so Lackenby's 2026 theorem on thickenable presentations does not apply to any of them. The 145 classes of length ≤ 16 were checked exhaustively by two independent programs; the 772 of length 17–18 by agent F's polynomial algorithm, with a partial brute-force cross-check. Novelty is not established for any item.
 
 ## 1. Previous work read, and choice of direction
 
@@ -23,7 +23,7 @@ I read `README.md`, `research/research-{a,b,c}.md`, every file in `experiments/`
 4. Add two exhaustive, certificate-relevant computations: a lower bound on instruction count, and a lower bound on peak length (the quantity `elementary_verify.py` reports).
 5. Test thickenability, the hypothesis of Lackenby's theorem, across the explored AC class.
 
-This differs from D (constructive search) and F (other families). Item 5 also gives D a cheap filter.
+This differs from D (constructive search) and F (other families). Item 5 also gives D a cheap filter; F independently built a thickenability tool in parallel, which I used as a cross-check in Section 5.4.
 
 ## 2. Conventions
 
@@ -206,6 +206,18 @@ Two consistency checks:
 
 So **all 145 complex classes of total length ≤ 16 in the explored class are non-thickenable.**
 
+A "complex class" is formed by first cyclically reducing both relators; the cyclically reduced pair is AC-equivalent to the original by conjugation, which is all the Lackenby route needs. Classes are then taken up to rotation and inversion of each relator, relator order, and the 8 signed permutations of {x,y}, all of which preserve the presentation complex up to homeomorphism. Lengths in the table are cyclically reduced total lengths.
+
+**Third-party cross-check.** Agent F, working in parallel, independently wrote `experiments/f_thicken.py`, which uses a different, polynomial-time "band graph" decision procedure. Imported read-only, it also returns non-thickenable for all 145 classes and for AK(1), AK(2), AK(3), MS(3), and thickenable for the controls (x,y) and (xy,y).
+
+**Extended survey to total length ≤ 18.** `e_peak --L 20 --canon 18` reduces all 6,398,528 pairs of total length ≤ 18 in AK(3)'s G_20 component to **917 complex classes**. By cyclically reduced total length 13/14/15/16/17/18 these number 2/5/66/72/362/410. The C++ class computation reproduces exactly the 145 Python classes at T = 16.
+
+Results:
+- F's polynomial procedure, run on all 917 classes: **none thickenable**.
+- The 70 classes with brute-force cost ≤ 2·10^7, tested with `e_thicken`: none thickenable, and no disagreement with F's procedure.
+
+Classes of length 17–18 therefore rest on F's algorithm, with this partial brute-force agreement. Classes of length ≤ 16 rest on both algorithms in full.
+
 ## 6. The thickenability criterion (proved here in outline; classical)
 
 For a one-vertex complex K = K⟨x,y | r_1, r_2⟩, a regular neighbourhood in a 3-manifold is a 0-handle, two 1-handles and two 2-handles. Hence **K thickens iff** there exist:
@@ -219,6 +231,10 @@ such that
 2. each relator passes through non-orientable handles an even number of times, so its attaching curve has an annular neighbourhood.
 
 The two cyclic orders at the ends of a handle are mirror images exactly when the handle is attached orientably (reflection through the core arc). This is the one-vertex case of the classical Osborne–Stevens and Neuwirth criteria, cited from memory.
+
+**The convention is pinned down by a known example (checked by hand).** Take P_3 = K⟨x | x^3⟩: V = 2, E = 3, and planarity needs F = 3. With the reversed order at x− the face permutation has three 2-cycles (F = 3, planar). With the equal order it is a single 6-cycle (F = 1). The equal (non-orientable) option is also excluded by condition 2, since x occurs 3 times. P_3 is a spine of the punctured lens space L(3,1), so it does thicken. Hence "reversed" must be the orientable case, as used.
+
+For a presentation of the trivial group, a thickening is simply connected and hence orientable (F's note makes the same observation). Allowing non-orientable handles, as my code does, therefore only enlarges the search and cannot change a "not thickenable" verdict.
 
 `e_thicken.cpp` enumerates all ((d_x−1)!·(d_y−1)!·4) choices. An independent Python implementation agrees on 47 cases: positive controls (wedge of discs, torus, Klein bottle, RP^2, pseudo-projective planes of orders 3 and 5, dunce hat), AK(1), AK(2), AK(3), and 38 random small presentations, 4 of which are non-thickenable.
 
@@ -247,6 +263,8 @@ for c in 1 2 3 4 5 6; do $B/e_acdist --mode nil --class $c --mod 2 --start xxxYY
 for L in 13 14 15 16 17 18 19 20; do $B/e_peak --L $L --cap 125000000; done   # L=20: 51.4M states, 1.6 GB, 170 s
 $B/e_peak --L 13 --start xxYYY xyxYXY --path                                  # AK(2) peak 13
 $B/e_peak --L 20 --dump 16 2> dump.txt; python3 experiments/e_thicken_check.py --survey-file dump.txt
+$B/e_peak --L 20 --canon 18 2> cls18.txt   # complex classes of all pairs of total length <= 18
+PYTHONDONTWRITEBYTECODE=1 python3 experiments/e_thicken_check.py --survey-classes cls18.txt
 ```
 
 Executed outputs from this session agree with the tables above. All self-tests and cross-checks reported "passed".
@@ -255,14 +273,14 @@ Executed outputs from this session agree with the tables above. All self-tests a
 
 - The bounds 15 (instructions) and 21 (peak) are finite exhaustive results. They are not evidence that AK(3) is non-trivial. AK(2) is trivial yet needs at least 15 instructions, and its trivial component is reachable only from L = 13.
 - Corollary 4 is a reformulation, not progress toward a growth proof. The computed chain distances do not separate AK(3) from AK(2).
-- The thickenability survey covers only the explored low-length slice of the class, not the whole AC class.
+- The thickenability survey covers only the explored low-length slice of the class (cyclic length ≤ 18 inside G_20), not the whole AC class. For lengths 17–18 it relies on F's algorithm, brute-force cross-checked on 70 classes.
 - I rely on Lackenby's abstract (via search) for the unstable statement, and on memory for the Osborne–Stevens/Neuwirth criterion; the outline in Section 6 is mine.
 - Literature access was limited to search snippets; earlier BFS literature may already contain the 15/21-type bounds in another normalization. Novelty is not claimed.
 
 ## 9. Insight and recommended next directions
 
 1. **Uniformity is the only quotient route left.** Corollary 4 together with Section 4 shows that any quotient-based proof of non-triviality must exhibit Lipschitz functions f_c on pairs in P_c^{(2)} (|f_c(sA) − f_c(A)| ≤ 1 for each instruction s) with f_c(AK3) − f_c(x,y) → ∞. Such f_c cannot factor through bounded class, and cannot factor through quotients of T or B_3. A concrete next step is a graded "correction-cost" lower bound: how many instructions are needed to remove a nonzero degree-c Lie error, uniformly in c.
-2. **Thickenability is a cheap global filter for D and F.** By Lackenby, a thickenable presentation in AK(3)'s class finishes the problem, and a thickenable candidate counterexample is ruled out. The current brute force costs (d_x−1)!(d_y−1)!; an incremental planarity search would scale to the 51M-state G_20 component and to D's search frontier.
+2. **Thickenability is a cheap global filter for D and F.** By Lackenby (as reported), a thickenable presentation anywhere in AK(3)'s class finishes the problem, and a thickenable candidate counterexample is ruled out. My brute force costs (d_x−1)!(d_y−1)!, but F's polynomial procedure classified 917 classes in about 90 s. Running it over the whole 51M-state G_20 component (and over D's search frontier, with `e_peak --canon` for class reduction) is the obvious next run. The negative answer so far (917/917) slightly suggests that the low-length part of the class is "far from 3-dimensional".
 3. **Push the peak bound** to L = 21–22 with a disk-backed or bit-packed state set (estimated ≥ 5·10^8 states). Also characterize the small AK(3) components (they grow about 10× per odd L and stay above total length 13), compared with the trivial component, which is already 58M states at L = 15.
 
 ## 10. Files written
@@ -270,7 +288,7 @@ Executed outputs from this session agree with the tables above. All self-tests a
 - `research/research-e.md` (this note).
 - `experiments/e_acdist.cpp`: free and nilpotent/mod-p bidirectional BFS, with a self-test.
 - `experiments/e_nilpotent_tables.py`: driver, independent Heisenberg/Magnus checks, certificate writer.
-- `experiments/e_peak.cpp` and `experiments/e_peak_check.py`: G_L components and independent check.
+- `experiments/e_peak.cpp` and `experiments/e_peak_check.py`: G_L components (`--path`, `--dump T`, `--canon T`) and independent check.
 - `experiments/e_thicken.cpp` and `experiments/e_thicken_check.py`: thickenability test, independent check and survey.
 - `certificates/e_ak1_trivialization.json` (ordinary AC, 12 moves).
 - `certificates/e_ak2_peak13_trivialization.json` (ordinary AC, 28 moves, peak 13).

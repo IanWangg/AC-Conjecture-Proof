@@ -12,6 +12,7 @@ the 8 signed permutations of {x,y}), and every class is tested with e_thicken.
   python3 experiments/e_thicken_check.py --selftest
   python3 experiments/e_thicken_check.py --survey 17 14     # L=17, lengths <= 14
   e_peak --L 20 --dump 16 2> dump.txt; python3 experiments/e_thicken_check.py --survey-file dump.txt
+  e_peak --L 20 --canon 18 2> cls.txt; python3 experiments/e_thicken_check.py --survey-classes cls.txt
 """
 import itertools
 import json
@@ -205,6 +206,51 @@ def survey_file(path, max_cost=2 * 10**8):
     return out
 
 
+def survey_classes(path, max_cost=2 * 10**7):
+    """Test complex classes listed one per line ("u v", output of e_peak --canon T).
+
+    Every class is tested with agent F's polynomial procedure experiments/f_thicken.py
+    (imported read-only, if present); classes whose brute-force cost
+    4 (d_x-1)! (d_y-1)! is <= max_cost are also tested with e_thicken, and the two
+    verdicts are compared."""
+    import math
+    sys.dont_write_bytecode = True
+    classes = [tuple(l.split()) for l in open(path) if l.strip()]
+    try:
+        import f_thicken
+    except ImportError:
+        f_thicken = None
+    f_res = {}
+    if f_thicken is not None:
+        for u, v in classes:
+            r = f_thicken.thickenable(f_thicken.parse(u), f_thicken.parse(v))
+            f_res[(u, v)] = bool(r[0] if isinstance(r, tuple) else r)
+    cheap = []
+    for u, v in classes:
+        dx = sum(ch in "xX" for ch in u + v)
+        dy = len(u) + len(v) - dx
+        if 4 * math.factorial(max(dx - 1, 0)) * math.factorial(max(dy - 1, 0)) <= max_cost:
+            cheap.append((u, v))
+    e_res = {}
+    if cheap:
+        for (u, v), r in zip(cheap, run_bin([f"{u} {v}" for u, v in cheap])):
+            e_res[(u, v)] = r["thickenable"]
+    by_len = {}
+    for u, v in classes:
+        by_len[str(len(u) + len(v))] = by_len.get(str(len(u) + len(v)), 0) + 1
+    both = [c for c in e_res if c in f_res]
+    out = {"classes_file": os.path.basename(path), "classes": len(classes),
+           "classes_by_cyclic_total_length": by_len,
+           "f_thicken_available": f_thicken is not None,
+           "f_thickenable": [list(c) for c, t in f_res.items() if t],
+           "e_thicken_tested": len(e_res),
+           "e_thickenable": [list(c) for c, t in e_res.items() if t],
+           "tested_by_both": len(both),
+           "disagreements": [list(c) for c in both if e_res[c] != f_res[c]]}
+    print(json.dumps(out))
+    return out
+
+
 def selftest():
     fails = 0
     controls = [(["x", "y"], True), (["xyXY"], True), (["xyxY"], True), (["xx"], True),
@@ -235,6 +281,8 @@ def selftest():
 if __name__ == "__main__":
     if sys.argv[1:2] == ["--selftest"]:
         sys.exit(1 if selftest() else 0)
+    if sys.argv[1:2] == ["--survey-classes"]:
+        survey_classes(sys.argv[2])
     if sys.argv[1:2] == ["--survey-file"]:
         survey_file(sys.argv[2])
     if sys.argv[1:2] == ["--survey"]:
