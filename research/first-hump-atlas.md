@@ -4,6 +4,8 @@ Date: 2026-11-02. Coordinating-agent investigation, developed with K, L and
 M. **No AK(3) trivialization or global AC invariant is claimed.** Novelty
 is not established.
 
+Subsequent work resolves the historical scope gaps below: [Q/R](research-q.md) prove primitive-free subgroups for every independently conjugated representative throughout the cap-22 component, and [S](research-s.md) completes all six power-nine frozen-coordinate primitive exclusions. The original literal catalogue and exact paths below remain valid. These later results do not settle unrestricted AC triviality.
+
 Write X=x^-1, Y=y^-1 and
 
     p=xxxYYYY, b=xyxYXY, r=XXyxYxxY, s=XXXyxYxxY.
