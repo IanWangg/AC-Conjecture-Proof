@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "actual_detector_witness": {
+    "alphabet": "xY",
+    "positive_basis_program": "RLRL",
+    "component": 1,
+    "loop_vertex": 3,
+    "word_length": 8,
+    "base_to_loop_path": "XX",
+    "cyclic_primitive_word": "xYxYYxYY",
+    "based_primitive_word": "XYxYYxYYxx"
+  },
+  "basis_expression_for_based_witness": "B*A^-1",
+  "strict_primitive_waypoint": {
+    "moves": 17,
+    "peak_total_length": 15,
+    "endpoint": [
+      "XXyyy",
+      "XYxYYxYYxx"
+    ]
+  },
+  "strict_AK2_completion": {
+    "moves": 337,
+    "peak_total_length": 33,
+    "endpoint": [
+      "x",
+      "y"
+    ]
+  },
+  "completion_compiler_shared_with_M": true,
+  "not_an_AK3_solution": true
+}
