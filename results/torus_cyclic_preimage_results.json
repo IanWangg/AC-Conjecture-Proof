@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "x_image": [
+    0,
+    -1,
+    1,
+    -1
+  ],
+  "y_image": [
+    0,
+    -1,
+    1,
+    0
+  ],
+  "x_order": 3,
+  "y_order": 4,
+  "commutator_image": [
+    1,
+    1,
+    1,
+    2
+  ],
+  "commutator_trace": 3,
+  "braid_image": [
+    1,
+    1,
+    2,
+    3
+  ],
+  "braid_trace": 4,
+  "matrix_ball_size": 68,
+  "determinant_identity_pairs": 4624,
+  "chebyshev_prefix_trace4": [
+    0,
+    1,
+    4,
+    15,
+    56,
+    209,
+    780,
+    2911
+  ],
+  "positive_power_identities_checked": [
+    1,
+    12
+  ],
+  "uniform_congruence_classes": [
+    3,
+    8
+  ],
+  "modulus": 12,
+  "formula_control_n_values": [
+    3,
+    8,
+    15,
+    20,
+    27,
+    32,
+    39,
+    44,
+    51,
+    56,
+    63,
+    68,
+    75,
+    80,
+    87,
+    92,
+    99,
+    104,
+    111,
+    116,
+    123,
+    128,
+    135,
+    140,
+    147,
+    152,
+    159,
+    164,
+    171,
+    176,
+    183,
+    188,
+    195,
+    200
+  ],
+  "formula_control_k_range": [
+    -30,
+    30
+  ],
+  "unbounded_proof_in_report": true,
+  "ordinary_AC_goal_solved": false
+}
