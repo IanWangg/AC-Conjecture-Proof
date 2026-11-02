@@ -1,6 +1,6 @@
 # N follow-up: complete ordinary-AC components for cyclic length
 
-Date: 2026-11-02. **Full cap-21 independent audit passed.**
+Date: 2026-11-02. **Full cap-22 independent audit passed: cyclic peak at least 23.**
 No novelty claim is made. This is a finite-energy exclusion, not an
 unrestricted AC obstruction or an AK(3) trivialization.
 
@@ -31,7 +31,7 @@ component. The new paths do not escape that component or solve AK(3).
 The useful further development was an exact completeness criterion for
 the cyclic search. The coordinating agent and O independently reviewed
 the axes argument below; the coordinating agent independently checked
-the cap-18 and cap-20 closed sets. P wrote a separate full cap-21 checker.
+the cap-18 and cap-20 closed sets. P wrote a separate full cap-21/cap-22 checker.
 The reports and checker results identify which portions are independent.
 
 ## Energy and exact move graph
@@ -126,9 +126,10 @@ normalization.
 For the rotation-only cap-18, cap-19 and cap-20 components, the exact
 minimum of `E+min(cl(r0),cl(r1))+2` over the stored states is 21.
 Thus no nonempty bridge can occur under those caps, and their rotation
-menus are already complete. For cap 21 the full menu is used. Its
-maximum required bridge length is one; only twenty oriented
-source/recipient choices require nonempty bridge words. These controls
+menus are already complete. For caps 21 and 22 the full menu is used.
+The maximum required bridge length is one. At cap 21, twenty oriented
+source/recipient choices require nonempty bridge words; at cap 22 there
+are sixty-eight. These controls
 are checked from every stored state, not inferred from initial lengths.
 
 ## Finite results and resulting lower bound
@@ -143,30 +144,32 @@ All calculations start with the actual AK(3) tuple
 | 19 | 20,024 | 13 | 5 |
 | 20 | 39,840 | 13 | 5 |
 | 21, full bridge menu | 144,292 | 13 | 5 |
+| 22, full bridge menu | 258,032 | 13 | 5 |
 
-The cap-21 histogram by cyclic energy is
+The strongest cap-22 histogram by cyclic energy is
 
-    13:12, 14:40, 15:548, 16:572, 17:3108,
-    18:3488, 19:17688, 20:18792, 21:100044.
+    13:12, 14:40, 15:548, 16:572, 17:3132, 18:3592,
+    19:18176, 20:19472, 21:103432, 22:109056.
 
-The generator tests 103,553,312 signed rotation/bridge products, of which
-5,544,208 stay within the cap. The separately written saved-state checker
+At cap 22 the generator tests 193,140,064 signed rotation/bridge products,
+of which 10,204,280 stay within the cap. The separately written saved-state checker
 verifies closure, actual canonical words, the start state, and connectivity.
-It reproduces both counts exactly, including 13,824 positive-tail checks.
+It reproduces both counts exactly, including 50,688 positive-tail checks.
+The prior cap-21 audit independently passes 103,553,312 product checks,
+5,544,208 admitted neighbors and 13,824 positive-tail checks.
 No stored boolean claiming completeness is trusted.
 
 **Theorem (computer-assisted finite component):** any ordinary AK(3)
 path reaching a primitive coordinate, and hence any free basis, must
-attain cyclic energy at least **22**.
+attain cyclic energy at least **23**.
 
 The stored finite set contains the initial tuple and is closed under
-every ordinary move under cap 21. There are 99,546 distinct stored
+every ordinary move under cap 22. There are 179,630 distinct stored
 cyclic/inverse coordinate classes. None is primitive, as verified by
-two different algorithms: M's rank-two Whitehead descent and O's
-[independent Euclidean/Nielsen classification](../experiments/euclidean_primitive_audit.py).
-The latter uses no M word or primitive-test routines. Its
-[exact result](../results/cyclic21_euclidean_primitive_results.json)
-rejects 99,102 mixed-sign cyclic words and 444 words differing from the
+O's [independent Euclidean/Nielsen classification](../experiments/euclidean_primitive_audit.py).
+This uses no M word or primitive-test routines. Its
+[exact cap-22 result](../results/n_cyclic22_euclidean_primitive_results.json)
+rejects 179,086 mixed-sign cyclic words and 544 words differing from the
 required signed primitive representative; 3,208 positive controls pass.
 Thus a first primitive coordinate cannot occur inside this closed set.
 Primitive status is preserved by cyclic rotation, conjugation and
@@ -181,6 +184,9 @@ rotation. This supplies an exact alternative to Whitehead descent.
 
 This bound concerns cyclic energy, which is never larger than raw
 energy, and therefore strengthens the prior raw-energy bound of 22.
+It also implies a raw-energy lower bound of 23.
+On the prior cap-21 set, M's Whitehead descent and O's different
+Euclidean method also agree on all 99,546 words.
 Even without the primitive scans, the closed-set minimum energy of
 thirteen alone proves the bound for a path to the standard tuple
 `(x,y)`, whose energy is two. No claim that every free basis has energy
@@ -194,10 +200,10 @@ literal free strings, without bit-packed raw-state checkpoints or any
 quotient evaluator. The [independent cap-18/cap-20 Python checker](../experiments/audit_cyclic_component.py)
 uses its own reduction and canonicalization code and checks connectivity;
 the [cap-20 review](independent-cyclic-review.md) records 25,895,168
-candidate checks. [P's cap-21 review](research-p-cyclic21-review.md) uses a
+candidate checks. [P's cap-21/cap-22 review](research-p-cyclic21-review.md) uses a
 separately written [C++ checker](../experiments/verify_full_cyclic_component.cpp),
 with independent word routines, and tests the full bridge menu. Its
-[machine-readable result](../results/cyclic21_independent_review.json)
+[machine-readable cap-22 result](../results/cyclic22_independent_review.json)
 reproduces the counts above.
 
 As a positive ordinary-AC control, the same Python cyclic-menu search
@@ -214,22 +220,29 @@ strict expansion, not one of the requested AK(3)/general breakthroughs.
 
 ## Certificate and reproduction
 
-The cap-21 certificate stores all 144,292 actual canonical word pairs,
-as a JSON list compressed with gzip and base64. It decodes to 4,100,882
-bytes; the ASCII file has 669,981 bytes including its final newline.
-The compression is solely an artifact transport format.
+The [cap-22 manifest](../certificates/cyclic22_component_manifest.json)
+names two ASCII parts storing the gzip/base64 encoding of all 258,032
+actual canonical word pairs. Concatenating the parts gives 1,197,837
+ASCII bytes; decoding gives 7,506,334 JSON bytes with SHA256
+`2c8d0ac4c58f590de7151eae3dd09577d2365bf0e858887d801ce24c5c609c8e`.
+Both published parts were fetched back and compared byte for byte.
+The split keeps each artifact below one megabyte and permits complete
+contents readback. The compression and split are solely transport formats.
+The earlier [cap-21 single-file certificate](../certificates/cyclic21_component.json.gz.b64)
+is retained: 144,292 states, 4,100,882 decoded bytes and 669,981 ASCII bytes.
 
 ```sh
 c++ -std=c++17 -O3 experiments/cyclic_component.cpp -o /tmp/ac_cyclic
-/tmp/ac_cyclic 21 /tmp/cyclic21.json /tmp/cyclic21_results.json 1000000 1
+/tmp/ac_cyclic 22 /tmp/cyclic22.json /tmp/cyclic22_results.json 1000000 1
 
 # Decode the published state certificate with the Python standard library.
-python3 -c 'import base64,gzip,pathlib; p=pathlib.Path("certificates/cyclic21_component.json.gz.b64"); pathlib.Path("/tmp/cyclic21_saved.json").write_bytes(gzip.decompress(base64.b64decode(p.read_text())))'
+python3 -c 'import base64,gzip,json,pathlib,hashlib; p=pathlib.Path("certificates/cyclic22_component_manifest.json"); m=json.loads(p.read_text()); s="".join((p.parent/n).read_text() for n in m["parts"]); b=gzip.decompress(base64.b64decode(s)); assert hashlib.sha256(b).hexdigest()==m["decoded_json_sha256"]; pathlib.Path("/tmp/cyclic22_saved.json").write_bytes(b)'
 
 # Independently audit every ordinary cyclic neighbor and connectivity.
-python3 experiments/cyclic_catalogue_to_tsv.py certificates/cyclic21_component.json.gz.b64 /tmp/cyclic21.tsv
+python3 experiments/cyclic_catalogue_to_tsv.py /tmp/cyclic22_saved.json /tmp/cyclic22.tsv
 c++ -std=c++17 -O3 experiments/verify_full_cyclic_component.cpp -o /tmp/ac_cyclic_review
-/tmp/ac_cyclic_review /tmp/cyclic21.tsv 21 /tmp/cyclic21_review.json
+/tmp/ac_cyclic_review /tmp/cyclic22.tsv 22 /tmp/cyclic22_review.json
+python3 experiments/euclidean_primitive_audit.py /tmp/cyclic22_saved.json
 
 # Replay the exact positive control.
 python3 experiments/elementary_verify.py certificates/n_ak2_cyclic13.json
