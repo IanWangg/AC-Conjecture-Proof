@@ -1,0 +1,28 @@
+{
+  "group": "B3 times T(3,4)",
+  "depth_per_side": 6,
+  "forward_layer_sizes": [
+    1,
+    14,
+    138,
+    1226,
+    10609,
+    91840,
+    800777
+  ],
+  "backward_layer_sizes": [
+    1,
+    10,
+    77,
+    574,
+    4445,
+    35390,
+    291197
+  ],
+  "forward_states": 904605,
+  "backward_states": 331694,
+  "complete": true,
+  "seconds": 21.863,
+  "path_found": false,
+  "distance_lower_bound": 13
+}
