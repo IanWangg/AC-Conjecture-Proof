@@ -47,12 +47,15 @@ can be used in reverse: conjugate u2 by `g^-1=XXyx` to obtain `r u1`,
 invert r and positively right multiply it by `r u1` to obtain u1, then
 restore the first coordinate by conjugation with g. This gives the same
 two relators in reversed order `(u2,u1)` with ten added strict moves.
-Both expansions are saved and checked; the 189-move version is preferred.
+Both expansions are saved and checked. Subsequently the coordinating
+agent recovered a substantially shorter path from the existing cap-18
+checkpoint: **32 strict moves with raw peak 18** to `(u2,u1)`. That path
+is now preferred; see the [separate recovery report](short-waypoint-paths.md).
 
 The endpoint has raw and cyclic total length **14**. This tuple is newly
 explicitly recorded here relative to the earlier two displayed waypoints,
 each of cyclic total length 15. The coordinating agent subsequently checked
-all 49 pairs of cyclic rotations of `(u1,u2)` against the saved raw cap-21
+all 49 pairs of cyclic rotations of `(u1,u2)` against the saved raw cap-18
 checkpoint: every key was already in that earlier component. Thus this
 explicit ledger does not escape the previously searched region, and its
 raw peak is a property of the supplied path, not a minimum required peak.
@@ -60,7 +63,8 @@ No novelty claim concerning the literature is made.
 
 | Verified quantity | Value |
 |---|---:|
-| Preferred strict moves / exact raw peak (coordinating agent) | 189 / 25 |
+| Preferred checkpoint path, strict moves / exact raw peak | 32 / 18 |
+| Earlier coordinating-agent path, strict moves / exact raw peak | 189 / 25 |
 | First strict moves / exact raw peak (P) | 227 / 31 |
 | Endpoint raw/cyclic total length | 14 |
 | Folded endpoint graph vertices | 12 |
@@ -100,7 +104,8 @@ from this new pair.
 
 ## Artifacts and replay
 
-- [Preferred full strict ledger](../certificates/length14_low_peak.json).
+- [Preferred checkpoint strict ledger](../certificates/length14_cap18.json).
+- [Earlier 189-move strict ledger](../certificates/length14_low_peak.json).
 - [First full strict ledger](../certificates/p_length14_waypoint.json).
 - [Compiler](../experiments/p_short_waypoint.py).
 - [Exact replay and arbitrary-tail counts](../results/p_length14_results.json).
