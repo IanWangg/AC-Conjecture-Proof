@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "independent_free_and_Fox_replay": true,
+  "quotient": "F/[N,N], N=normal closure of xyxYXY",
+  "word_operations": 205,
+  "expanded_single_generator_moves": 531377,
+  "boundary_raw_peak": 1176950,
+  "expanded_raw_peak_upper_bound": 1423410,
+  "actual_free_endpoint_lengths": [
+    230627,
+    946303
+  ],
+  "free_group_goal_solved": false
+}
