@@ -1,0 +1,149 @@
+{
+  "date": "2026-11-02",
+  "ordinary_AC_goal_solved": false,
+  "raw_peak_lower_bound": 22,
+  "caps": {
+    "19": {
+      "n": 3,
+      "cap": 19,
+      "complete": true,
+      "target_reached": false,
+      "states_discovered": 2951248,
+      "states_processed": 2951248,
+      "minimum_processed_length": 13,
+      "energy_counts": {
+        "13": 504,
+        "14": 1928,
+        "15": 28456,
+        "16": 37500,
+        "17": 284560,
+        "18": 365516,
+        "19": 2232784
+      },
+      "best_path": [
+        {
+          "words": [
+            "yxyXYX",
+            "yyyyXXX"
+          ],
+          "edge": 255
+        }
+      ]
+    },
+    "20": {
+      "n": 3,
+      "cap": 20,
+      "complete": true,
+      "target_reached": false,
+      "states_discovered": 6426432,
+      "states_processed": 6426432,
+      "minimum_processed_length": 13,
+      "energy_counts": {
+        "13": 504,
+        "14": 1928,
+        "15": 30232,
+        "16": 42036,
+        "17": 315104,
+        "18": 410012,
+        "19": 2523144,
+        "20": 3103472
+      },
+      "best_path": [
+        {
+          "words": [
+            "yxyXYX",
+            "yyyyXXX"
+          ],
+          "edge": 255
+        }
+      ]
+    },
+    "21": {
+      "n": 3,
+      "cap": 21,
+      "complete": true,
+      "target_reached": false,
+      "states_discovered": 27380372,
+      "states_processed": 27380372,
+      "minimum_processed_length": 13,
+      "energy_counts": {
+        "13": 504,
+        "14": 1928,
+        "15": 31976,
+        "16": 43044,
+        "17": 340000,
+        "18": 434512,
+        "19": 2792936,
+        "20": 3368920,
+        "21": 20366552
+      },
+      "best_path": [
+        {
+          "words": [
+            "yxyXYX",
+            "yyyyXXX"
+          ],
+          "edge": 255
+        }
+      ]
+    }
+  },
+  "independent_closure_audits": {
+    "20": {
+      "closed": true,
+      "start_present": true,
+      "n": 3,
+      "cap": 20,
+      "states_checked": 6426432,
+      "allowed_neighbor_checks": 26443904,
+      "minimum_total_length": 13,
+      "energy_counts": {
+        "13": 504,
+        "14": 1928,
+        "15": 30232,
+        "16": 42036,
+        "17": 315104,
+        "18": 410012,
+        "19": 2523144,
+        "20": 3103472
+      }
+    },
+    "21": {
+      "closed": true,
+      "start_present": true,
+      "n": 3,
+      "cap": 21,
+      "states_checked": 27380372,
+      "allowed_neighbor_checks": 112696624,
+      "minimum_total_length": 13,
+      "energy_counts": {
+        "13": 504,
+        "14": 1928,
+        "15": 31976,
+        "16": 43044,
+        "17": 340000,
+        "18": 434512,
+        "19": 2792936,
+        "20": 3368920,
+        "21": 20366552
+      }
+    }
+  },
+  "primitive_scan": {
+    "n": 3,
+    "cap": 21,
+    "checkpoint_states": 27380372,
+    "unique_oriented_raw_relators": 2018904,
+    "unique_cyclic_inverse_orbits": 99546,
+    "minimum_individual_relator_length": 5,
+    "primitive_raw_relators": 0,
+    "primitive_example": ""
+  },
+  "primitive_census_selftest": "PASS for lengths1..9; four at1, 4 L phi(L) otherwise",
+  "source_sha256": {
+    "experiments/packed_peak_search.cpp": "438a1bcedcd9c329c373fa971c6d2e1c21d48cbe36f1f9816e8a664897cbaeec",
+    "experiments/verify_packed_closure.cpp": "dcaa296640ac4ad40bf5c406af1661607153b9c8daa339d18d8eb289c3ed8d90",
+    "experiments/scan_primitive_relators.cpp": "5a10e4a7104ad8cbe7e4378c177e6e45b525755a6ac297ac1363b2cbafa54c46",
+    "experiments/packed_path_certificate.py": "488a54eb8c60a0e70235acba27ca8076659cd6aa6772dcebfb6af25efe913d58"
+  }
+}
