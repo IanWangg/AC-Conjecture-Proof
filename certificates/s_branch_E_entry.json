@@ -1,0 +1,62 @@
+{
+  "format": "ordinary-ac-elementary-v1",
+  "start": [
+    "xxxYYYY",
+    "xyxYXY"
+  ],
+  "target": [
+    "XXYxxYYxy",
+    "xyxYXY"
+  ],
+  "moves": [
+    {
+      "op": "conjugate",
+      "i": 1,
+      "g": "Y"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "Y"
+    },
+    {
+      "op": "invert",
+      "i": 0
+    },
+    {
+      "op": "multiply",
+      "i": 0,
+      "j": 1
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "Y"
+    },
+    {
+      "op": "multiply",
+      "i": 0,
+      "j": 1
+    },
+    {
+      "op": "invert",
+      "i": 0
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "X"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "Y"
+    },
+    {
+      "op": "conjugate",
+      "i": 1,
+      "g": "y"
+    }
+  ],
+  "scope": "Explicit packed-checkpoint lift; no free-basis claim"
+}
