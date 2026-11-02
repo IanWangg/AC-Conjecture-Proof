@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "theorem_scope": "For n>=2, the full B3-preimage of any conjugate of <x^n y^(-n-1)> contains no F2-primitive word.",
+  "unbounded_proof": "research/research-n.md",
+  "commutator_trace": 3,
+  "determinant_commutator_constant": -1,
+  "coefficient_identity_cases": 1225,
+  "matrix_divisibility_cases": 19481,
+  "primitive_Nielsen_basis_checks": 2000,
+  "AK3_power_matrix": [
+    13,
+    3,
+    4,
+    1
+  ],
+  "AK3_f_m_for_m_0_through_5": [
+    0,
+    1,
+    14,
+    195,
+    2716,
+    37829
+  ],
+  "n1_exception_primitive": "xYY",
+  "AK2_compatibility": "The arbitrary-tail initial subgroup theorem also holds for n=2, which has ordinary AC certificates elsewhere; it is not AC-invariant.",
+  "trace_collision_control_n": 56,
+  "trace_collision_control_primitive_index": 8
+}
