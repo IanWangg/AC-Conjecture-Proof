@@ -1,0 +1,116 @@
+{
+  "status": "TERMINAL_NO_MATCH_IN_STATED_SAMPLES",
+  "ordinary_AC_goal_solved": false,
+  "cross_corpus_keys_deduplicated": false,
+  "corpora": [
+    {
+      "label": "AK2",
+      "heuristic_run": {
+        "status": "HEURISTIC_REVERSE_RUN",
+        "ordinary_AC_goal_solved": false,
+        "start": [
+          "xxYYY",
+          "xyxYXY"
+        ],
+        "seed": 918273,
+        "attempts": 1000000,
+        "stored_cyclic_states": 61864,
+        "accepted_steps": 66165,
+        "discarded_for_energy": 906391,
+        "maximum_accepted_cyclic_sum": 48,
+        "heuristic_energy_cap": 48,
+        "reverse_candidate_energy_cap": 26,
+        "reverse_candidate_source_states": 798,
+        "reverse_rotated_pairs_tested": 75458,
+        "distinct_reverse_unbased_core_keys": 20985,
+        "direct_DAG_absence_keys": 20979,
+        "inconclusive_keys": 6,
+        "exact_forward_cyclic_pair_match": false,
+        "saved_path_edges": 20,
+        "seconds": 1.96659
+      },
+      "comparisons": {
+        "cap22": {
+          "status": "COMPLETE_NO_MATCH",
+          "ordinary_AC_goal_solved": false,
+          "forward_source_pairs": 258032,
+          "forward_rotation_pairs_tested": 24136172,
+          "reverse_pairs": 20985,
+          "distinct_reverse_core_keys": 20985
+        },
+        "bridge2": {
+          "status": "COMPLETE_NO_MATCH",
+          "ordinary_AC_goal_solved": false,
+          "forward_source_pairs": 5264,
+          "forward_rotation_pairs_tested": 510048,
+          "reverse_pairs": 20985,
+          "distinct_reverse_core_keys": 20985
+        },
+        "elites": {
+          "status": "COMPLETE_NO_MATCH",
+          "ordinary_AC_goal_solved": false,
+          "forward_source_pairs": 763,
+          "forward_rotation_pairs_tested": 160479,
+          "reverse_pairs": 20985,
+          "distinct_reverse_core_keys": 20985
+        }
+      },
+      "reverse_candidate_tsv_sha256": "c0d198a18924290743a35189f95fccd28c83b130be9457bae3488199bb637945"
+    },
+    {
+      "label": "power_meridian",
+      "heuristic_run": {
+        "status": "HEURISTIC_REVERSE_RUN",
+        "ordinary_AC_goal_solved": false,
+        "start": [
+          "xxxYYYY",
+          "xY"
+        ],
+        "seed": 918274,
+        "attempts": 2000000,
+        "stored_cyclic_states": 112344,
+        "accepted_steps": 119608,
+        "discarded_for_energy": 1823986,
+        "maximum_accepted_cyclic_sum": 56,
+        "heuristic_energy_cap": 56,
+        "reverse_candidate_energy_cap": 30,
+        "reverse_candidate_source_states": 2122,
+        "reverse_rotated_pairs_tested": 230958,
+        "distinct_reverse_unbased_core_keys": 35814,
+        "direct_DAG_absence_keys": 35711,
+        "inconclusive_keys": 103,
+        "exact_forward_cyclic_pair_match": false,
+        "saved_path_edges": 11,
+        "seconds": 4.57202
+      },
+      "comparisons": {
+        "cap22": {
+          "status": "COMPLETE_NO_MATCH",
+          "ordinary_AC_goal_solved": false,
+          "forward_source_pairs": 258032,
+          "forward_rotation_pairs_tested": 24136172,
+          "reverse_pairs": 35814,
+          "distinct_reverse_core_keys": 35814
+        },
+        "bridge2": {
+          "status": "COMPLETE_NO_MATCH",
+          "ordinary_AC_goal_solved": false,
+          "forward_source_pairs": 5264,
+          "forward_rotation_pairs_tested": 510048,
+          "reverse_pairs": 35814,
+          "distinct_reverse_core_keys": 35814
+        },
+        "elites": {
+          "status": "COMPLETE_NO_MATCH",
+          "ordinary_AC_goal_solved": false,
+          "forward_source_pairs": 763,
+          "forward_rotation_pairs_tested": 160479,
+          "reverse_pairs": 35814,
+          "distinct_reverse_core_keys": 35814
+        }
+      },
+      "reverse_candidate_tsv_sha256": "721c34938f5fc61d6c21960ddccaca7747c8c064acaaa14477cd94f5a0886346"
+    }
+  ],
+  "scope": "Sampled reverse corpora only; complete forward comparisons are finite, not a global obstruction"
+}
