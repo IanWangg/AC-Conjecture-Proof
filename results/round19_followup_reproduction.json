@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "independent_integer_map_exception_records": 6568,
+  "independent_integer_map_pair_states": 735712,
+  "all_source_indices_and_rotations_verified": true,
+  "strict_new_frontier_macros": 5264,
+  "strict_frontier_instructions": 115441,
+  "AK3_energy23_example": {
+    "moves": 47,
+    "peak_total_length": 27,
+    "endpoint": [
+      "XXXXXXXYXyxyxxyyy",
+      "XYXyxy"
+    ],
+    "cyclic_peak_total_length": 23
+  },
+  "source_catalogue_sha256": "2c8d0ac4c58f590de7151eae3dd09577d2365bf0e858887d801ce24c5c609c8e"
+}
