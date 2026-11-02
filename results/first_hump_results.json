@@ -1,0 +1,143 @@
+{
+  "entry_replay": {
+    "moves": 56,
+    "peak_total_length": 42,
+    "endpoint": [
+      "xxxYYYY",
+      "XXyxYxxY"
+    ]
+  },
+  "new_deletion_quotient": "F(a,b) semidirect_alpha Z",
+  "alpha": {
+    "a": "b",
+    "b": "aB"
+  },
+  "power_inverse_normal_form": [
+    "abbAbA",
+    1
+  ],
+  "primitive_candidate_kernel": "(bA)^k",
+  "enumeration": {
+    "braid8_in_torus": {
+      "raw_candidates": 32,
+      "cyclic_inverse_representatives": [
+        "XXYxxYxy",
+        "XXyXYxxy"
+      ]
+    },
+    "power9_in_braid": {
+      "raw_candidates": 432,
+      "cyclic_inverse_representatives": [
+        "XXXXYxxxy",
+        "XXXXyxxxY",
+        "XXXYxxYxy",
+        "XXXyXYxxy",
+        "XXXyxYXyy",
+        "XXXyxYxxY",
+        "XXXyxxYXy",
+        "XXXyyXYxy",
+        "XXYxxYYxy",
+        "XXyXYxYxy",
+        "XXyxYXyyy",
+        "XXyxYYXyy",
+        "XXyxYYxxY",
+        "XXyxYxYXy",
+        "XXyyXYYxy",
+        "XXyyyXYxy",
+        "XYYYYxyyy",
+        "XYYYxyXyy",
+        "XYYYxyyyy",
+        "XYYxyXyyy",
+        "XYxYYYxyy",
+        "XYxYYxyXy",
+        "XYxYYxyyy",
+        "XYxYxyXyy"
+      ]
+    },
+    "braid8_two_orbit_claim": true,
+    "power9_signed_symmetry_classes": [
+      [
+        "XXXXYxxxy",
+        "XXXXyxxxY",
+        "XYYYYxyyy",
+        "XYYYxyyyy"
+      ],
+      [
+        "XXXYxxYxy",
+        "XXXyxYxxY",
+        "XYYYxyXyy",
+        "XYxYYxyyy"
+      ],
+      [
+        "XXXyXYxxy",
+        "XXXyxxYXy",
+        "XYYxyXyyy",
+        "XYxYYYxyy"
+      ],
+      [
+        "XXXyxYXyy",
+        "XXXyyXYxy",
+        "XXyxYXyyy",
+        "XXyyyXYxy"
+      ],
+      [
+        "XXYxxYYxy",
+        "XXyxYYXyy",
+        "XXyxYYxxY",
+        "XXyyXYYxy"
+      ],
+      [
+        "XXyXYxYxy",
+        "XXyxYxYXy",
+        "XYxYYxyXy",
+        "XYxYxyXyy"
+      ]
+    ]
+  },
+  "power9_entry_replay": {
+    "moves": 48,
+    "peak_total_length": 19,
+    "endpoint": [
+      "XXXyxYxxY",
+      "xyxYXY"
+    ]
+  },
+  "power9_deletion_quotient": {
+    "fiber_rank": 3,
+    "alpha": {
+      "a": "b",
+      "b": "c",
+      "c": "aB"
+    },
+    "braid_normal_form": [
+      "bCB",
+      1
+    ],
+    "primitive_candidate_kernel": "a^k"
+  },
+  "actual_twisted_edges": [
+    {
+      "fiber_conjugator": "aBB",
+      "target": "yXYXyxx"
+    },
+    {
+      "fiber_conjugator": "BB",
+      "target": "YxYXyyx"
+    }
+  ],
+  "u1_braid_model": {
+    "images": {
+      "x": "U^-1",
+      "y": "V^-1 U"
+    },
+    "bprime_image": "UU V^-1 U^-1 V U^-3 V",
+    "bprime_trace_absolute": 14
+  },
+  "u2_free_by_cyclic_model": {
+    "stable": "y",
+    "fiber_a": "x",
+    "bprime_inverse_kernel": "BAbb",
+    "primitive_kernel": "a^k"
+  },
+  "scope": "Exact reachable waypoint and finite classifications; no free-group solution"
+}
