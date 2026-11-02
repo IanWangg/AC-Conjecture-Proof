@@ -1,0 +1,131 @@
+{
+  "coefficient_field": 2,
+  "fiber_rank": 3,
+  "low_degree": 3,
+  "high_degree": 4,
+  "complete_fiber_enumeration": true,
+  "fiber_degree3_states": 131072,
+  "states_processed": 131072,
+  "full_tensor_central_dimension": 81,
+  "image_I_minus_alpha_rank": 69,
+  "candidate_order_high": 8,
+  "matching_lower_conjugators": [
+    {
+      "k": 1,
+      "q_degree3_hex": "0x4000603097",
+      "defect_hex": "0x100d80037bb5d80176bb0000000000",
+      "remainder_hex": "0x1ab0000000000",
+      "linear_lift_possible": false
+    },
+    {
+      "k": 5,
+      "q_degree3_hex": "0x4000603097",
+      "defect_hex": "0x100d80037bb5d80176ba0000000000",
+      "remainder_hex": "0x1aa0000000000",
+      "linear_lift_possible": false
+    },
+    {
+      "k": 0,
+      "q_degree3_hex": "0x1109600eb",
+      "defect_hex": "0x273909c005539154000000000000",
+      "remainder_hex": "0x0",
+      "linear_lift_possible": true
+    },
+    {
+      "k": 4,
+      "q_degree3_hex": "0x1109600eb",
+      "defect_hex": "0x273909c005539154010000000000",
+      "remainder_hex": "0x10000000000",
+      "linear_lift_possible": false
+    },
+    {
+      "k": 0,
+      "q_degree3_hex": "0x45c28080eb",
+      "defect_hex": "0x1055801570b5800160b00000000000",
+      "remainder_hex": "0x1ab0000000000",
+      "linear_lift_possible": false
+    },
+    {
+      "k": 4,
+      "q_degree3_hex": "0x45c28080eb",
+      "defect_hex": "0x1055801570b5800160b10000000000",
+      "remainder_hex": "0x1aa0000000000",
+      "linear_lift_possible": false
+    },
+    {
+      "k": 1,
+      "q_degree3_hex": "0x680a027097",
+      "defect_hex": "0x10904000805a0824261000000000000",
+      "remainder_hex": "0xff0000000000",
+      "linear_lift_possible": false
+    },
+    {
+      "k": 5,
+      "q_degree3_hex": "0x680a027097",
+      "defect_hex": "0x10904000805a0824261010000000000",
+      "remainder_hex": "0xfe0000000000",
+      "linear_lift_possible": false
+    },
+    {
+      "k": 0,
+      "q_degree3_hex": "0x6dc8e2c0eb",
+      "defect_hex": "0x1b88c02ea1f022a6eca4e0000000000",
+      "remainder_hex": "0xff0000000000",
+      "linear_lift_possible": false
+    },
+    {
+      "k": 4,
+      "q_degree3_hex": "0x6dc8e2c0eb",
+      "defect_hex": "0x1b88c02ea1f022a6eca4f0000000000",
+      "remainder_hex": "0xfe0000000000",
+      "linear_lift_possible": false
+    },
+    {
+      "k": 1,
+      "q_degree3_hex": "0x4d276b097",
+      "defect_hex": "0xe4f7ec7de4e5d6c574e40000000000",
+      "remainder_hex": "0x0",
+      "linear_lift_possible": true
+    },
+    {
+      "k": 5,
+      "q_degree3_hex": "0x4d276b097",
+      "defect_hex": "0xe4f7ec7de4e5d6c574e50000000000",
+      "remainder_hex": "0x10000000000",
+      "linear_lift_possible": false
+    },
+    {
+      "k": 1,
+      "q_degree3_hex": "0x2cd814f097",
+      "defect_hex": "0xfdddc0ff5a05260741640000000000",
+      "remainder_hex": "0x1540000000000",
+      "linear_lift_possible": false
+    },
+    {
+      "k": 5,
+      "q_degree3_hex": "0x2cd814f097",
+      "defect_hex": "0xfdddc0ff5a05260741650000000000",
+      "remainder_hex": "0x1550000000000",
+      "linear_lift_possible": false
+    },
+    {
+      "k": 0,
+      "q_degree3_hex": "0x291af440eb",
+      "defect_hex": "0x15776ee94b1faaca8ebba0000000000",
+      "remainder_hex": "0x1540000000000",
+      "linear_lift_possible": false
+    },
+    {
+      "k": 4,
+      "q_degree3_hex": "0x291af440eb",
+      "defect_hex": "0x15776ee94b1faaca8ebbb0000000000",
+      "remainder_hex": "0x1550000000000",
+      "linear_lift_possible": false
+    }
+  ],
+  "candidate_residues_not_excluded": [
+    0,
+    1
+  ],
+  "scope": "Overapproximate all central degree4 corrections; rejection is rigorous, acceptance is inconclusive"
+}
