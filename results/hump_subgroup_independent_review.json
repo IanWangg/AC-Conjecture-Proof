@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "independent_folding": "I graph implementation",
+  "independent_cycle_algorithm": "directed-edge DFS avoiding each repeated letter",
+  "raw_power_words": 432,
+  "raw_braid_words": 32,
+  "literal_pairs_with_frozen_rotations_and_inverses": 5632,
+  "all_forced_doubles_checks_pass": true,
+  "graph_vertex_counts": {
+    "10": 80,
+    "11": 1184,
+    "12": 576,
+    "13": 2944,
+    "14": 848
+  },
+  "two_additional_strict_waypoint_subgroups_checked": true,
+  "scope": "Literal cyclically reduced catalogue; arbitrary independent conjugating tails and later AC moves excluded",
+  "ordinary_AC_goal_solved": false
+}
