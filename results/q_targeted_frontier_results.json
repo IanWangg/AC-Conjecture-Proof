@@ -1,0 +1,123 @@
+{
+  "status": "PASS_STATED_TARGETED_SEARCHES",
+  "ordinary_AC_goal_solved": false,
+  "no_new_global_cyclic_peak_bound": true,
+  "elite_input_sha256": "3dc9da8012f74eef4aa2d1b32bdff5492ab5011e79d2b52dfac9175a9a88fcc7",
+  "elite_input_pairs": 763,
+  "elite_rotation_scan": {
+    "status": "COMPLETE",
+    "ordinary_AC_goal_solved": false,
+    "literal_source_pairs": 763,
+    "independent_rotation_pairs": 160479,
+    "distinct_unbased_labelled_core_graphs": 78712,
+    "direct_DAG_primitive_absence_graphs": 78710,
+    "inconclusive_graphs": 2,
+    "seconds": 1.57082
+  },
+  "elite_complete_candidate_decision": {
+    "status": "ABSENT",
+    "ordinary_AC_goal_solved": false,
+    "input_sha256": "3fa227724f230d81cb02e49fb9840b72a8a10c9165be25bf889032fb2b3c7324",
+    "input_candidate_records": 2,
+    "candidate_records_tested": 2,
+    "independent_refolding_matches_Q_all_tested": true,
+    "complete_absence_records": 2,
+    "incomplete_records": 0,
+    "primitive_records": 0,
+    "finite_map_pair_states_total": 232,
+    "maximum_states_for_one_graph_alphabet": 48,
+    "primitive_witnesses": [],
+    "incomplete_witnesses": [],
+    "analyses": [
+      {
+        "candidate_index": 0,
+        "source_index": 117,
+        "pair": [
+          "XYXyy",
+          "YYXXyXyXyXyXyxYYxyx"
+        ],
+        "status": "ABSENT",
+        "vertices": 14,
+        "map_pair_states_per_alphabet": [
+          20,
+          36,
+          40,
+          8
+        ]
+      },
+      {
+        "candidate_index": 1,
+        "source_index": 306,
+        "pair": [
+          "XXXXYXYYYYYXYxxyxxy",
+          "YXXYx"
+        ],
+        "status": "ABSENT",
+        "vertices": 16,
+        "map_pair_states_per_alphabet": [
+          44,
+          20,
+          16,
+          48
+        ]
+      }
+    ]
+  },
+  "elite_map_certificates": {
+    "decoded_bytes": 3801,
+    "decoded_sha256": "576fd95f3439c4cceb10df8c14297bf0ed5c82d07d93da7b822a5be0ac035e5a",
+    "encoded_bytes": 1533,
+    "encoded_sha256": "d5833d413b2157b43fbd4c7371866544f96ba5bb517526aa40659a7df96dcda1"
+  },
+  "bridge_two_frontier": {
+    "status": "COMPLETE_STATED_FRONTIER",
+    "ordinary_AC_goal_solved": false,
+    "source_pairs": 258032,
+    "eligible_oriented_sources": 20,
+    "signed_rotation_bridge_candidates": 41472,
+    "admitted_energy23_candidates": 10528,
+    "distinct_frontier_states": 5264,
+    "bridge_length": 2,
+    "target_cyclic_energy": 23
+  },
+  "bridge_two_rotation_scan": {
+    "status": "COMPLETE",
+    "ordinary_AC_goal_solved": false,
+    "literal_source_pairs": 5264,
+    "independent_rotation_pairs": 510048,
+    "distinct_unbased_labelled_core_graphs": 256360,
+    "direct_DAG_primitive_absence_graphs": 256360,
+    "inconclusive_graphs": 0,
+    "seconds": 2.32518
+  },
+  "bridge_two_strict_macro_controls": {
+    "status": "PASS",
+    "ordinary_AC_goal_solved": false,
+    "source_decoded_json_sha256": "2c8d0ac4c58f590de7151eae3dd09577d2365bf0e858887d801ce24c5c609c8e",
+    "frontier_jsonl_sha256": "bdcc0ff56ccedb5c9a4917bec6d9d0d8eb3e38614cf82c641a511dced11238ec",
+    "strict_bridge_macros_replayed": 5264,
+    "total_strict_macro_moves_replayed": 115441,
+    "every_macro_raw_peak": 27,
+    "every_endpoint_cyclic_energy": 23,
+    "first_source": [
+      "XXXXyyy",
+      "XYXyxy"
+    ],
+    "full_AK3_example_replay": {
+      "moves": 47,
+      "peak_total_length": 27,
+      "endpoint": [
+        "XXXXXXXYXyxyxxyyy",
+        "XYXyxy"
+      ],
+      "cyclic_peak_total_length": 23
+    }
+  },
+  "bridge_two_provenance_certificate": {
+    "decoded_bytes": 1033592,
+    "decoded_sha256": "bdcc0ff56ccedb5c9a4917bec6d9d0d8eb3e38614cf82c641a511dced11238ec",
+    "encoded_bytes": 66185,
+    "encoded_sha256": "608e6e7afbcb29e9e48c3b8b21db18619656be6d704438c06dc3a6f6d4b8e300"
+  },
+  "scope": "All independent conjugates of the 763 listed elite pairs and 5,264 stated bridge-frontier pairs are primitive-free; this is not a full cap-23 component or an unrestricted AC invariant."
+}
