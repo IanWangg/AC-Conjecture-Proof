@@ -1,0 +1,101 @@
+{
+  "status": "HEURISTIC_RUNS_RECORDED",
+  "ordinary_AC_goal_solved": false,
+  "source_catalogue_sha256": "2c8d0ac4c58f590de7151eae3dd09577d2365bf0e858887d801ce24c5c609c8e",
+  "attempts_total": 19647745,
+  "stored_states_summed_per_run": 1368811,
+  "outside_C22_states_summed_per_run": 1368804,
+  "cross_run_states_not_deduplicated": true,
+  "primitive_coordinate_found": false,
+  "length_cap_is_cyclic": 90,
+  "node_budget_per_run": 400000,
+  "selected_subgroup_pairs": 763,
+  "selected_subgroups_with_primitive": 0,
+  "selected_incomplete_decisions": 0,
+  "runs": [
+    {
+      "status": "HEURISTIC_RUN",
+      "ordinary_AC_goal_solved": false,
+      "primitive_coordinate_found": false,
+      "seed": 271828,
+      "attempts": 4743626,
+      "accepted_steps": 409887,
+      "stored_states": 400000,
+      "outside_known_cap22_states": 399998,
+      "discarded_for_length": 4083918,
+      "minimum_coordinate_length": 5,
+      "minimum_cyclic_sum": 14,
+      "maximum_accepted_cyclic_sum": 90,
+      "heuristic_length_cap": 90,
+      "saved_path_edges": 24,
+      "saved_endpoint": [
+        "XYXyy",
+        "XXXXYYYYYxyxyyxxxy"
+      ],
+      "seconds": 10.1127
+    },
+    {
+      "status": "HEURISTIC_RUN",
+      "ordinary_AC_goal_solved": false,
+      "primitive_coordinate_found": false,
+      "seed": 271829,
+      "attempts": 4904119,
+      "accepted_steps": 410496,
+      "stored_states": 400000,
+      "outside_known_cap22_states": 399999,
+      "discarded_for_length": 4240719,
+      "minimum_coordinate_length": 5,
+      "minimum_cyclic_sum": 14,
+      "maximum_accepted_cyclic_sum": 90,
+      "heuristic_length_cap": 90,
+      "saved_path_edges": 54,
+      "saved_endpoint": [
+        "XXYxYYxxyyyXYYYYXy",
+        "XXYxY"
+      ],
+      "seconds": 10.3933
+    },
+    {
+      "status": "HEURISTIC_RUN",
+      "ordinary_AC_goal_solved": false,
+      "primitive_coordinate_found": false,
+      "seed": 271830,
+      "attempts": 5000000,
+      "accepted_steps": 239293,
+      "stored_states": 229112,
+      "outside_known_cap22_states": 229111,
+      "discarded_for_length": 4400074,
+      "minimum_coordinate_length": 5,
+      "minimum_cyclic_sum": 14,
+      "maximum_accepted_cyclic_sum": 90,
+      "heuristic_length_cap": 90,
+      "saved_path_edges": 81,
+      "saved_endpoint": [
+        "XYxYXy",
+        "XXXyxYxyxxYXYYYYXXy"
+      ],
+      "seconds": 9.74153
+    },
+    {
+      "status": "HEURISTIC_RUN",
+      "ordinary_AC_goal_solved": false,
+      "primitive_coordinate_found": false,
+      "seed": 271831,
+      "attempts": 5000000,
+      "accepted_steps": 349749,
+      "stored_states": 339699,
+      "outside_known_cap22_states": 339696,
+      "discarded_for_length": 4389544,
+      "minimum_coordinate_length": 6,
+      "minimum_cyclic_sum": 13,
+      "maximum_accepted_cyclic_sum": 90,
+      "heuristic_length_cap": 90,
+      "saved_path_edges": 44,
+      "saved_endpoint": [
+        "XYXyxy",
+        "XXXXyxyXYXYxxyxyy"
+      ],
+      "seconds": 10.4142
+    }
+  ]
+}
