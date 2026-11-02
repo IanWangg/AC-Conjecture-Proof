@@ -1,0 +1,302 @@
+{
+  "format": "ordinary-ac-elementary-v1",
+  "start": [
+    "xxxYYYY",
+    "xyxYXY"
+  ],
+  "target": [
+    "xxxYYYY",
+    "XXyxYxxY"
+  ],
+  "moves": [
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "y"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "X"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "X"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "X"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "Y"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "x"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "y"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "x"
+    },
+    {
+      "op": "invert",
+      "i": 1
+    },
+    {
+      "op": "multiply",
+      "i": 1,
+      "j": 0
+    },
+    {
+      "op": "invert",
+      "i": 1
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "X"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "Y"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "X"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "y"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "x"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "x"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "x"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "Y"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "X"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "X"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "X"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "Y"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "x"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "y"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "x"
+    },
+    {
+      "op": "invert",
+      "i": 0
+    },
+    {
+      "op": "invert",
+      "i": 1
+    },
+    {
+      "op": "multiply",
+      "i": 1,
+      "j": 0
+    },
+    {
+      "op": "invert",
+      "i": 1
+    },
+    {
+      "op": "invert",
+      "i": 0
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "X"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "Y"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "X"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "y"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "x"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "x"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "x"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "X"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "X"
+    },
+    {
+      "op": "invert",
+      "i": 1
+    },
+    {
+      "op": "multiply",
+      "i": 1,
+      "j": 0
+    },
+    {
+      "op": "invert",
+      "i": 1
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "x"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "x"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "y"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "X"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "X"
+    },
+    {
+      "op": "invert",
+      "i": 0
+    },
+    {
+      "op": "invert",
+      "i": 1
+    },
+    {
+      "op": "multiply",
+      "i": 1,
+      "j": 0
+    },
+    {
+      "op": "invert",
+      "i": 1
+    },
+    {
+      "op": "invert",
+      "i": 0
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "x"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "x"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "Y"
+    }
+  ],
+  "scope": "Reachable cyclic15 state; not a trivialization",
+  "recipient": 1,
+  "initial_conjugator": "",
+  "fixed_donor_factors": [
+    {
+      "sign": 1,
+      "conjugator": "XXy"
+    },
+    {
+      "sign": -1,
+      "conjugator": "XX"
+    },
+    {
+      "sign": 1,
+      "conjugator": "xyxYXXX"
+    },
+    {
+      "sign": -1,
+      "conjugator": "xyxYXXXy"
+    }
+  ]
+}
