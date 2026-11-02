@@ -49,10 +49,14 @@ restore the first coordinate by conjugation with g. This gives the same
 two relators in reversed order `(u2,u1)` with ten added strict moves.
 Both expansions are saved and checked; the 189-move version is preferred.
 
-The endpoint has raw and cyclic total length **14**. This is a new tuple
-relative to the earlier two displayed waypoints, each of cyclic total
-length 15; no claim is made that it has not occurred elsewhere in the
-literature or a prior large search component.
+The endpoint has raw and cyclic total length **14**. This tuple is newly
+explicitly recorded here relative to the earlier two displayed waypoints,
+each of cyclic total length 15. The coordinating agent subsequently checked
+all 49 pairs of cyclic rotations of `(u1,u2)` against the saved raw cap-21
+checkpoint: every key was already in that earlier component. Thus this
+explicit ledger does not escape the previously searched region, and its
+raw peak is a property of the supplied path, not a minimum required peak.
+No novelty claim concerning the literature is made.
 
 | Verified quantity | Value |
 |---|---:|
