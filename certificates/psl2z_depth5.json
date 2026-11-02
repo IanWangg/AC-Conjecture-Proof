@@ -1,0 +1,117 @@
+{
+  "depth_per_side": 5,
+  "start": [
+    [
+      13,
+      3,
+      4,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      1
+    ]
+  ],
+  "target": [
+    [
+      1,
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      -1,
+      1
+    ]
+  ],
+  "forward_layer_sizes": [
+    1,
+    7,
+    48,
+    337,
+    2625,
+    21521
+  ],
+  "backward_layer_sizes": [
+    1,
+    10,
+    73,
+    446,
+    2500,
+    14506
+  ],
+  "forward_states": 24539,
+  "backward_states": 17536,
+  "complete": true,
+  "seconds": 0.075,
+  "path_found": true,
+  "move_ids": [
+    5,
+    13,
+    11,
+    5,
+    7,
+    2,
+    7,
+    7,
+    8,
+    5
+  ],
+  "shortest_distance_within_complete_search": 10,
+  "moves": [
+    [
+      "multiply",
+      1,
+      -1
+    ],
+    [
+      "conjugate",
+      1,
+      "Y"
+    ],
+    [
+      "conjugate",
+      1,
+      "X"
+    ],
+    [
+      "multiply",
+      1,
+      -1
+    ],
+    [
+      "conjugate",
+      0,
+      "X"
+    ],
+    [
+      "multiply",
+      0,
+      1
+    ],
+    [
+      "conjugate",
+      0,
+      "X"
+    ],
+    [
+      "conjugate",
+      0,
+      "X"
+    ],
+    [
+      "conjugate",
+      0,
+      "y"
+    ],
+    [
+      "multiply",
+      1,
+      -1
+    ]
+  ]
+}
