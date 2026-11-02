@@ -1,0 +1,164 @@
+{
+  "status": "PASS",
+  "method": "independent string polynomials + class3 basic-commutator forms",
+  "coefficient_field": 5,
+  "central_I_minus_alpha_rank": 10,
+  "candidate_order": 5,
+  "normal_forms_checked": 625,
+  "checks": [
+    {
+      "k": 0,
+      "conjugator_word": "aABabABabABabABAbaaABabABAbaaABabABAbaaABabABAbaaABabBBAbabABabBBAbabABabBBAbabABabBBAbabABab",
+      "normal_coordinates": [
+        3,
+        4,
+        4
+      ],
+      "defect": {
+        "aabb": 4,
+        "aaab": 1,
+        "baaa": 4,
+        "bbaa": 1,
+        "baba": 3,
+        "abaa": 3,
+        "abab": 2,
+        "aaba": 2
+      },
+      "quotient_functionals": [
+        0,
+        2,
+        0,
+        4,
+        1,
+        4
+      ],
+      "separating_functional_value": 2
+    },
+    {
+      "k": 1,
+      "conjugator_word": "aaabABabBBAbabABabBBAbabABabBBAbabABabBBAbabABab",
+      "normal_coordinates": [
+        1,
+        0,
+        4
+      ],
+      "defect": {
+        "baaa": 4,
+        "bbaa": 1,
+        "abaa": 3,
+        "aabb": 4,
+        "abab": 2,
+        "baba": 3,
+        "aaba": 2,
+        "aaab": 1
+      },
+      "quotient_functionals": [
+        0,
+        2,
+        0,
+        4,
+        1,
+        4
+      ],
+      "separating_functional_value": 2
+    },
+    {
+      "k": 2,
+      "conjugator_word": "bbABAbaaABabABAbaaABabABAbaaABabABAbaaABab",
+      "normal_coordinates": [
+        0,
+        4,
+        0
+      ],
+      "defect": {
+        "bbaa": 4,
+        "bbba": 3,
+        "abbb": 2,
+        "babb": 4,
+        "aabb": 1,
+        "abab": 3,
+        "bbab": 1,
+        "baba": 2
+      },
+      "quotient_functionals": [
+        0,
+        4,
+        0,
+        3,
+        2,
+        3
+      ],
+      "separating_functional_value": 4
+    },
+    {
+      "k": 3,
+      "conjugator_word": "aabbbABAbaaABabABAbaaABabABAbaaABab",
+      "normal_coordinates": [
+        0,
+        3,
+        0
+      ],
+      "defect": {
+        "abbb": 4,
+        "aaab": 2,
+        "baaa": 3,
+        "abaa": 1,
+        "aaba": 4,
+        "babb": 3,
+        "bbab": 2,
+        "bbba": 1
+      },
+      "quotient_functionals": [
+        0,
+        2,
+        0,
+        4,
+        1,
+        4
+      ],
+      "separating_functional_value": 2
+    },
+    {
+      "k": 4,
+      "conjugator_word": "aaaabbbbABabABAbaaABabABAbaaABabABAbaaABabABAbaaABabBBAbabABabBBAbabABab",
+      "normal_coordinates": [
+        1,
+        4,
+        2
+      ],
+      "defect": {
+        "abbb": 4,
+        "aabb": 3,
+        "aaab": 3,
+        "baaa": 2,
+        "bbaa": 2,
+        "abaa": 4,
+        "abab": 4,
+        "bbba": 1,
+        "bbab": 2,
+        "babb": 3,
+        "baba": 1,
+        "aaba": 1
+      },
+      "quotient_functionals": [
+        0,
+        2,
+        0,
+        4,
+        1,
+        4
+      ],
+      "separating_functional_value": 2
+    }
+  ],
+  "separating_functional": {
+    "abaa": 1,
+    "abab": 4,
+    "abbb": 4,
+    "baaa": 4,
+    "baab": 1,
+    "babb": 1
+  },
+  "all_parameters_excluded": true,
+  "free_group_AC_goal_solved": false
+}
