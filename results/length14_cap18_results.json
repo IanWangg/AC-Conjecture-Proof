@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "checkpoint_states": 251874,
+  "checkpoint_cap": 18,
+  "rotation_orbit_keys_found": 49,
+  "selected_checkpoint_index": 22179,
+  "orbit_path_edges": 18,
+  "strict_replay": {
+    "moves": 32,
+    "peak_total_length": 18,
+    "endpoint": [
+      "YxYXyyx",
+      "yXYXyxx"
+    ]
+  },
+  "normalization_swaps_emitted": 0
+}
