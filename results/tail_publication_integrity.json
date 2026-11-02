@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "artifacts": 13,
+  "verification": "Exact local Git blob SHA matches published GitHub file SHA for every listed artifact.",
+  "files": [
+    {
+      "path": "research/research-n.md",
+      "bytes": 10355,
+      "blob_sha": "5509323df495559df45ad7b9fc3fcc1734cca653"
+    },
+    {
+      "path": "experiments/cyclic_braid_preimage.py",
+      "bytes": 6765,
+      "blob_sha": "019d539947542a87d5a42f0deb00fb7eb61868fe"
+    },
+    {
+      "path": "results/cyclic_braid_preimage_results.json",
+      "bytes": 833,
+      "blob_sha": "63b4f5f906f47ed7f6f261b08ed6f7ed32c83044"
+    },
+    {
+      "path": "research/research-o.md",
+      "bytes": 10547,
+      "blob_sha": "120e83ead8b01752cc17c737bd237fe1c6294a8a"
+    },
+    {
+      "path": "experiments/arbitrary_tail_certificate.py",
+      "bytes": 7731,
+      "blob_sha": "3b9467fcd1023f014875f35e3bb314528087a8ee"
+    },
+    {
+      "path": "certificates/arbitrary_tail_graphs.json.gz.b64",
+      "bytes": 68181,
+      "blob_sha": "f094f6a7daa809ed483f9b265ce1baf890efe2f7"
+    },
+    {
+      "path": "results/arbitrary_tail_results.json",
+      "bytes": 514,
+      "blob_sha": "44e0694737a79b4cb04c6430b8c59d90e42cbab3"
+    },
+    {
+      "path": "experiments/arbitrary_tail_catalogue.py",
+      "bytes": 8198,
+      "blob_sha": "121ce3fe9619d530095203950c45e78352ab5848"
+    },
+    {
+      "path": "results/p_arbitrary_tail_results.json",
+      "bytes": 12804,
+      "blob_sha": "0fc1afe7fd8be23c5eacb620216f0015c93b23c2"
+    },
+    {
+      "path": "research/research-p.md",
+      "bytes": 9521,
+      "blob_sha": "d2e429a64416f46a5ca15ec955caaaa8642deb03"
+    },
+    {
+      "path": "research/torus-cyclic-preimage.md",
+      "bytes": 5932,
+      "blob_sha": "f5c2325bd2ee4e57838e91d2e4b9f1706fe2225a"
+    },
+    {
+      "path": "experiments/torus_cyclic_preimage.py",
+      "bytes": 4590,
+      "blob_sha": "54e4ef141349c24405e116931d0a1e5d6a79448c"
+    },
+    {
+      "path": "results/torus_cyclic_preimage_results.json",
+      "bytes": 1045,
+      "blob_sha": "a60e07804a2e448397b5a91d120cb998c994f327"
+    }
+  ]
+}
