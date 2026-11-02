@@ -1,0 +1,120 @@
+{
+  "depth": 1,
+  "families": [
+    {
+      "u": "XXXyyyy",
+      "v": "XYXyxy",
+      "tail_bound": 6,
+      "complete_finite_reduction": true,
+      "reduced_tails": 1457,
+      "unique_graphs": 1378,
+      "inconclusive_graphs": [],
+      "seconds": 0.19964004203211516,
+      "prelude_endpoint": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "prelude_strict_moves": []
+    },
+    {
+      "u": "XXyxYXyyy",
+      "v": "XYXyxy",
+      "tail_bound": 7,
+      "complete_finite_reduction": true,
+      "reduced_tails": 4373,
+      "unique_graphs": 4186,
+      "inconclusive_graphs": [],
+      "seconds": 0.7387825000332668,
+      "prelude_endpoint": [
+        "xxxYYYxyXYX",
+        "xyxYXY"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "invert",
+          "i": 1
+        }
+      ]
+    },
+    {
+      "u": "XXXyyyy",
+      "v": "XXyxYXyyy",
+      "tail_bound": 7,
+      "complete_finite_reduction": true,
+      "reduced_tails": 4373,
+      "unique_graphs": 4266,
+      "inconclusive_graphs": [],
+      "seconds": 0.7746060419594869,
+      "prelude_endpoint": [
+        "xxxYYYY",
+        "xyxYXyyyXXX"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "invert",
+          "i": 0
+        }
+      ]
+    },
+    {
+      "u": "XXXyxyXYXyyyy",
+      "v": "XYXyxy",
+      "tail_bound": 9,
+      "complete_finite_reduction": true,
+      "reduced_tails": 39365,
+      "unique_graphs": 37882,
+      "inconclusive_graphs": [],
+      "seconds": 9.324402290978469,
+      "prelude_endpoint": [
+        "xxxYYYYxyxYXY",
+        "xyxYXY"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        }
+      ]
+    },
+    {
+      "u": "XXXyxyXYXyyyy",
+      "v": "XXXyyyy",
+      "tail_bound": 9,
+      "complete_finite_reduction": true,
+      "reduced_tails": 39365,
+      "unique_graphs": 38611,
+      "inconclusive_graphs": [],
+      "seconds": 9.722652167081833,
+      "prelude_endpoint": [
+        "xxxYYYY",
+        "xyxYXYxxxYYYY"
+      ],
+      "prelude_strict_moves": [
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        }
+      ]
+    }
+  ]
+}
