@@ -1,0 +1,15 @@
+{
+"status":"MATCH",
+"ordinary_AC_goal_solved":false,
+"forward_source_index":0,
+"forward_source_pair":["xxYYY","xyxYXY"],
+"forward_rotated_pair":["YxxYY","YxyxYX"],
+"forward_original_base":0,
+"reverse_index":0,
+"reverse_pair":["xYYYxyxYXYx","yxYXYx"],
+"reverse_original_base":6,
+"canonical_unbased_graph":[1,-1,2,3,-1,0,4,-1,-1,-1,5,0,6,-1,0,-1,-1,7,-1,1,-1,6,-1,2,5,3,7,-1,4,-1,-1,6],
+"forward_rotation_pairs_tested":15,
+"reverse_pairs":1,
+"distinct_reverse_core_keys":1
+}
