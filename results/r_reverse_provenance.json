@@ -1,0 +1,20 @@
+{
+  "ordinary_AC_goal_solved": false,
+  "forward_TSV_sha256": {
+    "cap22": "cd9ba5781a1efcb1bf1b8a72c9a392b79de1cd915da6a520b8f33a4390787fa3",
+    "bridge2": "ab18c1f7df6feeb5cc704f491bb5616a483dad9a4246978f9d20125b393907ed",
+    "elites": "6e4c1321692e1fb49fb6c26bdba696dd349795fa7edd771f310ac4d836b821de"
+  },
+  "journals": {
+    "AK2": {
+      "file": "r_reverse_ak2_journal.json.gz.b64",
+      "encoded_bytes": 456309,
+      "encoded_sha256": "6ee61c8c495e6c983cef7d42f4301d144f98ec3ca879237696043c5cec0ce422"
+    },
+    "power_meridian": {
+      "file": "r_reverse_power_journal.json.gz.b64",
+      "encoded_bytes": 837521,
+      "encoded_sha256": "c6da66b13db2a09c59a12c98e6ce09ccfea345178bb6e0b4305fcaadc5d3d5d1"
+    }
+  }
+}
