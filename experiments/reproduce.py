@@ -19,8 +19,42 @@ def run(*arguments, json_output=True):
     return result.stdout
 
 
+def tail_checks():
+    """New unbounded theorems have finite exact arithmetic/graph controls."""
+    py = sys.executable
+    braid = run(py, 'experiments/cyclic_braid_preimage.py')
+    assert braid['status'] == 'PASS' and braid['determinant_commutator_constant'] == -1
+    torus = run(py, 'experiments/torus_cyclic_preimage.py')
+    assert torus['status'] == 'PASS' and torus['braid_trace'] == 4
+    with tempfile.TemporaryDirectory(prefix='ac-tail-checks-') as directory:
+        path = Path(directory) / 'result.json'
+        initial = run(py, 'experiments/arbitrary_tail_certificate.py', '--verify',
+                      'certificates/arbitrary_tail_graphs.json.gz.b64', '--output', str(path))
+        assert initial['finite_reduced_tails'] == 1457
+        assert initial['checked_acyclic_line_graphs'] == 11024
+        run(py, 'experiments/arbitrary_tail_catalogue.py', '--source',
+            'results/first_hump_results.json', '--crosscheck-directory', 'experiments',
+            '--output', str(path), json_output=False)
+        catalogue = json.loads(path.read_text())
+        assert catalogue['status'] == 'PASS'
+        assert catalogue['representative_pairs'] == 29
+        assert catalogue['total_short_tails_tested'] == 123901
+        assert catalogue['distinct_graphs_counted_within_each_pair_family'] == 118802
+        assert catalogue['signed_acyclic_line_graphs_checked'] == 950416
+        assert catalogue['crosschecked_against_prior_fold']
+    return {'status': 'PASS', 'ordinary_AC_goal_solved': False,
+            'braid_cyclic_preimage_all_n_at_least_2': True,
+            'torus_cyclic_preimage_n_mod12': [3, 8],
+            'arbitrary_tail_representative_families': 29,
+            'short_tails_recomputed_and_independently_folded': 123901,
+            'signed_line_DAG_checks': 950416,
+            'unbounded_extension_proved_in_reports': True,
+            'arbitrary_interspersed_AC_moves_covered': False}
+
+
 def main(cpp=False, packed=False):
     py = sys.executable
+    tail_audit = tail_checks()
     run(py, 'experiments/elementary_verify.py', '--selftest', json_output=False)
     exact = run(py, 'experiments/elementary_verify.py', 'certificates/ms3_to_ak3_exact.json')
     assert exact['endpoint'] == ['xyxYXY', 'xxxYYYY'] and exact['moves'] == 32
@@ -182,6 +216,8 @@ def main(cpp=False, packed=False):
                       'next_central_defect_norms': [322, 469],
                       'literal_primitive_free_catalogue_pairs': 5632,
                       'new_actual_free_waypoint_strict_moves': [222, 179],
+                      'arbitrary_tail_representative_families': tail_audit['arbitrary_tail_representative_families'],
+                      'short_tails_recomputed_and_independently_folded': 123901,
                       'independent_Cpp_exhaustion_replayed': cpp,
                       'first_order_endpoint_fold_replayed': cpp}, indent=2))
 
@@ -190,5 +226,9 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--cpp', action='store_true', help='also compile and run the original-state C++ search')
     parser.add_argument('--packed', action='store_true', help='also regenerate, audit and scan the full cap-21 component')
+    parser.add_argument('--tails-only', action='store_true', help='replay only the new arbitrary-tail theorem controls')
     args = parser.parse_args()
-    main(args.cpp, args.packed)
+    if args.tails_only:
+        print(json.dumps(tail_checks(), indent=2))
+    else:
+        main(args.cpp, args.packed)
