@@ -1,0 +1,11 @@
+{
+  "moves": 2159,
+  "peak_total_length": 67,
+  "endpoint": [
+    "XYXyxy",
+    "XXXXyxyXYXYxxyxyy"
+  ],
+  "cyclic_total_peak": 63,
+  "cyclic_product_edges": 44,
+  "ordinary_AC_goal_solved": false
+}
