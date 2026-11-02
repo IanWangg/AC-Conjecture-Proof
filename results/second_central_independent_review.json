@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "independent_algorithm": "degree-two Magnus tensors in alternate Schreier basis",
+  "shared_arithmetic": "I exact B3 group and Fox coefficient functions; no L audit code imported",
+  "transversal_order": "yYxX",
+  "transversal_depth": 11,
+  "transversal_vertices": 22579,
+  "needed_prefix_vertices": 105,
+  "free_basis_generators_used": 31,
+  "free_basis_module_rank_mod101": 31,
+  "prefix_closed_tree_checked": true,
+  "exact_free_reconstruction_checked": true,
+  "strict_free_ledger": {
+    "moves": 533,
+    "peak_total_length": 2502,
+    "endpoint_lengths": [
+      635,
+      1867
+    ]
+  },
+  "residuals": [
+    {
+      "Schreier_word_length_alternate_tree": 122,
+      "degree_two_tensor_support": 154,
+      "all_coefficients_match_L": true,
+      "next_central_support": 67,
+      "next_central_l1": 322
+    },
+    {
+      "Schreier_word_length_alternate_tree": 350,
+      "degree_two_tensor_support": 166,
+      "all_coefficients_match_L": true,
+      "next_central_support": 148,
+      "next_central_l1": 469
+    }
+  ],
+  "ordinary_AC_goal_solved": false,
+  "source_sha256": {
+    "work/research_l/optimized_first_order.json.gz.b64": "c57f756e367fec54881a269874fc205a64a375c4f880986b87029abbdaff750b",
+    "work/research_l/second_central_results.json": "30b2bf37a4986a54009622140d03e564d51a885aa7dbc97d23b2089b718d8f1c"
+  }
+}
