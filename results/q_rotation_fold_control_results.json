@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "source_pairs": 258032,
+  "independently_folded_pairs": 5002,
+  "deterministic_random_seed": 749821,
+  "C++_fold_and_unbased_key_match_M_fold": true,
+  "C++_DAG_matches_O_topological_test": true,
+  "DAG_primitive_absence_controls": 4995,
+  "primitive_containing_positive_controls_rejected": 2,
+  "every_actual_pair_accepted_at_recorded_original_base": true
+}
