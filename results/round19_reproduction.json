@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "full_24136172_rotation_enumeration_replayed": true,
+  "source_cyclic_cap22_pairs": 258032,
+  "closed_primitive_absence_certificates_checked": 6568,
+  "closed_partial_map_pair_states_checked": 735712,
+  "independent_folding_control_pairs": 5002,
+  "new_frozen_power9_branches_verified": [
+    "D",
+    "E",
+    "F"
+  ],
+  "AK2_detector_to_basis_strict_moves": 337,
+  "arbitrary_interspersed_AC_moves_covered": false
+}
