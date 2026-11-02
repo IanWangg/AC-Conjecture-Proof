@@ -1,0 +1,63 @@
+{
+  "format": "ordinary-ac-elementary-v1",
+  "start": [
+    "xYYYxyxYXYx",
+    "yxYXYx"
+  ],
+  "target": [
+    "YxxYY",
+    "YxyxYX"
+  ],
+  "moves": [
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "x"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "Y"
+    },
+    {
+      "op": "conjugate",
+      "i": 1,
+      "g": "x"
+    },
+    {
+      "op": "conjugate",
+      "i": 1,
+      "g": "Y"
+    },
+    {
+      "op": "invert",
+      "i": 0
+    },
+    {
+      "op": "invert",
+      "i": 0
+    },
+    {
+      "op": "invert",
+      "i": 1
+    },
+    {
+      "op": "multiply",
+      "i": 0,
+      "j": 1
+    },
+    {
+      "op": "invert",
+      "i": 0
+    },
+    {
+      "op": "invert",
+      "i": 1
+    },
+    {
+      "op": "invert",
+      "i": 0
+    }
+  ],
+  "scope": "Exact basis bridge between matched subgroup pairs; no full AK3 path asserted"
+}
