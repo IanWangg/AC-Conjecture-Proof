@@ -1,0 +1,18 @@
+{
+  "format": "ac-cyclic-component-gzip-base64-parts-v1",
+  "encoding": "Concatenate parts in order, base64-decode, then gzip-decompress",
+  "parts": [
+    "cyclic22_component.part1.b64",
+    "cyclic22_component.part2.b64"
+  ],
+  "part_sha256": {
+    "cyclic22_component.part1.b64": "53f466a3e7f68a912a39fccde0c58f36d3c5de0061ddd0a27b96ff4e060d2aa6",
+    "cyclic22_component.part2.b64": "44e1cee9c9d5290d077319c38c0c24319e183c369cc7aabd208e9606ef47042b"
+  },
+  "encoded_bytes": 1197837,
+  "encoded_sha256": "8a62f5566cc74cddffe75427567a0b853f28cfd204c58d2e6188721f95e48a35",
+  "decoded_json_bytes": 7506334,
+  "decoded_json_sha256": "2c8d0ac4c58f590de7151eae3dd09577d2365bf0e858887d801ce24c5c609c8e",
+  "states": 258032,
+  "cyclic_cap": 22
+}
