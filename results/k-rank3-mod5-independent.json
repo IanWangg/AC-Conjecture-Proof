@@ -1,0 +1,222 @@
+{
+  "status": "PASS",
+  "method": "independent string polynomials + complete class2 Malcev enumeration",
+  "coefficient_field": 5,
+  "central_I_minus_alpha_rank": 21,
+  "candidate_order": 5,
+  "central_normal_forms_checked": 625,
+  "checks": [
+    {
+      "k": 0,
+      "conjugator_word": "acABabABabABabABab",
+      "central_normal_coordinates": [
+        4,
+        0,
+        0
+      ],
+      "defect": {
+        "bbc": 4,
+        "cbb": 4,
+        "ccb": 1,
+        "bcc": 1,
+        "bcb": 2,
+        "cbc": 3,
+        "abb": 4,
+        "abc": 1,
+        "bab": 2,
+        "bac": 4,
+        "bba": 4,
+        "cba": 1,
+        "cab": 4
+      },
+      "quotient_functionals": [
+        0,
+        3,
+        0,
+        3,
+        2,
+        0
+      ],
+      "separating_functional_value": 3
+    },
+    {
+      "k": 1,
+      "conjugator_word": "aaabccABabABabACacACacACac",
+      "central_normal_coordinates": [
+        2,
+        3,
+        0
+      ],
+      "defect": {
+        "abb": 3,
+        "acc": 2,
+        "bcc": 1,
+        "baa": 2,
+        "abc": 4,
+        "aba": 1,
+        "aab": 2,
+        "bbc": 1,
+        "bba": 3,
+        "bab": 4,
+        "caa": 4,
+        "cbb": 1,
+        "cba": 4,
+        "bca": 1,
+        "bcb": 3,
+        "cbc": 3,
+        "aca": 2,
+        "acb": 1,
+        "aac": 4,
+        "cac": 1,
+        "ccb": 1,
+        "cca": 2
+      },
+      "quotient_functionals": [
+        0,
+        3,
+        0,
+        3,
+        2,
+        0
+      ],
+      "separating_functional_value": 3
+    },
+    {
+      "k": 2,
+      "conjugator_word": "bbcccABabABabABabBCbcBCbcBCbcBCbc",
+      "central_normal_coordinates": [
+        3,
+        0,
+        4
+      ],
+      "defect": {
+        "acc": 3,
+        "aac": 4,
+        "aab": 1,
+        "baa": 1,
+        "abb": 3,
+        "aba": 3,
+        "bba": 3,
+        "bab": 4,
+        "caa": 4,
+        "cbb": 3,
+        "cba": 2,
+        "cca": 3,
+        "ccb": 4,
+        "cbc": 2,
+        "bcc": 4,
+        "bcb": 4,
+        "bbc": 3,
+        "cac": 4,
+        "aca": 2,
+        "acb": 3,
+        "bca": 3,
+        "abc": 2
+      },
+      "quotient_functionals": [
+        0,
+        0,
+        3,
+        0,
+        0,
+        4
+      ],
+      "separating_functional_value": 3
+    },
+    {
+      "k": 3,
+      "conjugator_word": "aabbbccccABabABabACacBCbcBCbc",
+      "central_normal_coordinates": [
+        2,
+        1,
+        2
+      ],
+      "defect": {
+        "abb": 1,
+        "acc": 1,
+        "aab": 2,
+        "aac": 2,
+        "bcc": 2,
+        "baa": 2,
+        "abc": 2,
+        "aba": 1,
+        "bbc": 2,
+        "bba": 1,
+        "bab": 3,
+        "caa": 2,
+        "cab": 3,
+        "cbb": 2,
+        "cba": 2,
+        "bcb": 1,
+        "cca": 1,
+        "ccb": 2,
+        "cbc": 1,
+        "aca": 1,
+        "bac": 3,
+        "cac": 3
+      },
+      "quotient_functionals": [
+        0,
+        2,
+        2,
+        2,
+        3,
+        1
+      ],
+      "separating_functional_value": 4
+    },
+    {
+      "k": 4,
+      "conjugator_word": "aaaabbbbABabABabABabABabACacBCbcBCbcBCbcBCbc",
+      "central_normal_coordinates": [
+        4,
+        1,
+        4
+      ],
+      "defect": {
+        "bcc": 2,
+        "ccb": 2,
+        "cbc": 1,
+        "abb": 4,
+        "acc": 4,
+        "abc": 1,
+        "acb": 1,
+        "bba": 4,
+        "cba": 1,
+        "cab": 3,
+        "cca": 4,
+        "cac": 2,
+        "bca": 1,
+        "bab": 2,
+        "bac": 3
+      },
+      "quotient_functionals": [
+        0,
+        2,
+        0,
+        2,
+        3,
+        0
+      ],
+      "separating_functional_value": 2
+    }
+  ],
+  "separating_functional": {
+    "aba": 4,
+    "abb": 4,
+    "abc": 1,
+    "aca": 1,
+    "acb": 4,
+    "baa": 1,
+    "bab": 1,
+    "bac": 4,
+    "bcb": 4,
+    "bcc": 4,
+    "caa": 4,
+    "cab": 1,
+    "cbb": 1,
+    "cbc": 1
+  },
+  "all_parameters_excluded": true,
+  "free_group_AC_goal_solved": false
+}
