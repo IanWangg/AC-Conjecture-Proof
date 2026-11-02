@@ -1,0 +1,61 @@
+{
+  "scope": "Heuristic ordinary free-group searches with exact recorded positive control; no exhaustive AK3 exclusion",
+  "AK3": {
+    "n": 3,
+    "seed": 314159,
+    "attempted_macro_moves": 100000,
+    "unique_based_subgroups": 47671,
+    "stored_waypoints": 47671,
+    "max_retained_macro_boundary_total": 200,
+    "maximum_random_Nielsen_prelude": 12,
+    "discarded_over_length": 50496,
+    "temperature_acceptance_base": 0.9,
+    "restart_uniform_probability": 0.5,
+    "initial_vertices": 10,
+    "minimum_vertices_found": 10,
+    "minimum_normalized_total_length": 13,
+    "minimum_normalized_coordinate_length": 6,
+    "primitive_waypoint_found": false,
+    "best_endpoint": [
+      "xxxYYYY",
+      "xyxYXY"
+    ],
+    "best_strict_moves": 0,
+    "best_strict_peak": 13,
+    "seconds": 59.5426,
+    "scope": "Heuristic finite free-group search; no exhaustive AC exclusion"
+  },
+  "AK2": {
+    "n": 2,
+    "seed": 137,
+    "attempted_macro_moves": 5509,
+    "unique_based_subgroups": 4516,
+    "stored_waypoints": 4516,
+    "max_retained_macro_boundary_total": 100,
+    "maximum_random_Nielsen_prelude": 7,
+    "discarded_over_length": 692,
+    "temperature_acceptance_base": 0.55,
+    "restart_uniform_probability": 0.0,
+    "initial_vertices": 8,
+    "minimum_vertices_found": 8,
+    "minimum_normalized_total_length": 11,
+    "minimum_normalized_coordinate_length": 5,
+    "primitive_waypoint_found": true,
+    "best_endpoint": [
+      "YYxxY",
+      "xYYxYxY"
+    ],
+    "best_strict_moves": 139,
+    "best_strict_peak": 29,
+    "seconds": 1.816,
+    "scope": "Heuristic finite free-group search; no exhaustive AC exclusion"
+  },
+  "AK2_exact_replay": {
+    "strict_moves": 246,
+    "peak_total_length": 31,
+    "endpoint": [
+      "x",
+      "y"
+    ]
+  }
+}
