@@ -1,0 +1,14 @@
+{
+"status":"PASS",
+"ordinary_AC_goal_solved":false,
+"cyclic_cap":21,
+"full_bridge_menu":true,
+"states":144292,
+"rotation_product_candidates":103553312,
+"admitted_neighbors":5544208,
+"minimum_cyclic_sum":13,
+"minimum_cyclic_coordinate":5,
+"minimum_disjoint_axes_neighbor_sum":21,
+"seconds":80.7151,
+"histogram":{"13":12,"14":40,"15":548,"16":572,"17":3108,"18":3488,"19":17688,"20":18792,"21":100044}
+}
