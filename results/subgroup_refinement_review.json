@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "catalogue_sha256": "2c8d0ac4c58f590de7151eae3dd09577d2365bf0e858887d801ce24c5c609c8e",
+  "literal_canonical_pairs": 258032,
+  "exceptional_graphs_rechecked": 416,
+  "simple_cycle_graphs": 410,
+  "balanced_run_graphs": 6,
+  "independent_folding_implementation": "M versus O",
+  "SCC_and_run_criteria_shared_with_O": true,
+  "actual_primitive_control_graphs_correctly_rejected": 364,
+  "all_direct_DAG_graphs_recomputed_in_this_review": false,
+  "arbitrary_independent_conjugating_tails_covered": false
+}
