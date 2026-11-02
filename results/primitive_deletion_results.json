@@ -1,0 +1,174 @@
+{
+  "status": "PASS",
+  "braid_trace_sequence_prefix": [
+    2,
+    4,
+    10,
+    26,
+    68,
+    178,
+    466,
+    1220
+  ],
+  "AK3_power_trace": 14,
+  "trace_gap": [
+    10,
+    26
+  ],
+  "torus_checks": [
+    {
+      "n": 3,
+      "parameters_checked": [
+        -12,
+        12
+      ],
+      "six_syllable_parameters": []
+    },
+    {
+      "n": 4,
+      "parameters_checked": [
+        -12,
+        12
+      ],
+      "six_syllable_parameters": [
+        -1
+      ]
+    },
+    {
+      "n": 5,
+      "parameters_checked": [
+        -12,
+        12
+      ],
+      "six_syllable_parameters": []
+    },
+    {
+      "n": 6,
+      "parameters_checked": [
+        -12,
+        12
+      ],
+      "six_syllable_parameters": []
+    },
+    {
+      "n": 7,
+      "parameters_checked": [
+        -12,
+        12
+      ],
+      "six_syllable_parameters": []
+    },
+    {
+      "n": 8,
+      "parameters_checked": [
+        -12,
+        12
+      ],
+      "six_syllable_parameters": []
+    },
+    {
+      "n": 9,
+      "parameters_checked": [
+        -12,
+        12
+      ],
+      "six_syllable_parameters": []
+    },
+    {
+      "n": 10,
+      "parameters_checked": [
+        -12,
+        12
+      ],
+      "six_syllable_parameters": []
+    },
+    {
+      "n": 11,
+      "parameters_checked": [
+        -12,
+        12
+      ],
+      "six_syllable_parameters": []
+    },
+    {
+      "n": 12,
+      "parameters_checked": [
+        -12,
+        12
+      ],
+      "six_syllable_parameters": []
+    },
+    {
+      "n": 13,
+      "parameters_checked": [
+        -12,
+        12
+      ],
+      "six_syllable_parameters": []
+    },
+    {
+      "n": 14,
+      "parameters_checked": [
+        -12,
+        12
+      ],
+      "six_syllable_parameters": []
+    },
+    {
+      "n": 15,
+      "parameters_checked": [
+        -12,
+        12
+      ],
+      "six_syllable_parameters": []
+    }
+  ],
+  "AK2_exception_control": {
+    "primitive_word": "yyXyXyyX",
+    "exponent_vector": [
+      -3,
+      5
+    ],
+    "conjugator_g": "Y",
+    "exact_identity_in_T2": "u = g b g^-1",
+    "normal_form": [
+      -3,
+      [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    ],
+    "primitive_basis_partner": "xYxYY"
+  },
+  "trace_alone_incomplete_control": {
+    "n": 56,
+    "k": 8,
+    "common_trace": 3194,
+    "power_syllables": 226,
+    "primitive_syllables": 34
+  },
+  "uniform_braid_formula_check": "n=2..20; all-n proof in report",
+  "scope": "Formula checks for unbounded primitive-deletion theorem; not an AC solution"
+}
