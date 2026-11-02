@@ -4,6 +4,20 @@ Date: 2026-11-02. Independent research agent F (round 2).
 
 **Status:** partial structural results with verified code and certificates. **No AK(3) trivialization, no counterexample, no proof or disproof of the AC conjecture.** The main theorems below say that every presentation in the Aut(F₂)-orbits of AK(n) (all n ≥ 1), of every Miller–Schupp presentation MS(n,w) (n ≥ 1), and of all six known residual length-14 classes, is **not** thickenable, so the recent theorem "thickenable ⇒ AC-trivial" can never be applied to them directly; and that, conversely, every thickenable presentation of the trivial group of total length ≤ 16 (relative to a published complete class enumeration) is trivialized by a short, strictly length-decreasing descent whose compiled elementary certificates replay with peak ≤ 25. Novelty of all statements is **not established**.
 
+**Summary of results, with labels.**
+
+| # | statement | label |
+|---|---|---|
+| 1 | Thickenable balanced presentations of the trivial group are (unstably) AC-trivial | externally reported (Lackenby 2026); classical sketch in §2 |
+| 2 | Link criterion for orientable thickenability; two decision procedures, cross-validated | proved here (§1) + experiment (validation) |
+| 3 | Thickenable ⇒ both one-relator quotients have symmetric Alexander polynomial (F2); hence every Aut(F₂)-image of every MS(n,w), n ≥ 1, and of Johnson's P(m,n), is non-thickenable | proved here, using Perelman/Seifert (or Milnor duality) |
+| 4 | Torus-knot meridian obstruction (F3); hence every Aut(F₂)-image of AK(n), all n ≥ 1, is non-thickenable | proved here, using classical 3-manifold theorems (§3) |
+| 5 | All six length-14 residual classes and 835 of the 838 residual classes of length 13–16 carry Aut-invariant non-thickenability certificates | computer-assisted (§3, §4.5) |
+| 6 | Every thickenable trivial-group class of length ≤ 16 (312 classes) is trivialized by strict ACM descent; all 312 certificates replay with peak ≤ 25; all 32 thickenable non-AC-trivial-flagged classes are nontrivial groups | experiment with replayable certificates (§4.3–4.4) |
+| 7 | No presentation with thickenable cyclic reduction of length ≤ 16 lies in AK(3)'s cap-25 component | conditional on an external exhaustive search (§5) |
+| 8 | Bounded GS-class explorations of AK3, C3, C4, C6, P1 contain no thickenable state; AK(3)'s never improves the "meridian defect" below its own value 6, C3's and C4's do (to 4) | experiment (§4.6) |
+| 9 | Whether the meridian defect is ≥ 6 on the whole AC class of AK(3) | open question |
+
 ---
 
 ## 0. Previous work read and choice of direction
