@@ -56,3 +56,7 @@ conjugation or to arbitrary changes of generators. The displayed values do
 not prove asymptotic growth. A single path valid in PSL(2,Z) would give a
 uniform upper bound in every one of these congruence quotients, and is a
 useful next question investigated separately by Research E.
+
+## Follow-up resolved during this investigation
+
+[Research E](research-e.md) supplies an explicit ten-instruction path in B3 itself and proves its distance is exactly ten under the same fourteen-instruction alphabet. Every congruence quotient above therefore has distance at most ten, and the value at p=19 attains this uniform ceiling. This entire fixed-braid representation family cannot yield unbounded quotient distances. The certificate's free-group lift is explicitly not a trivialization.
