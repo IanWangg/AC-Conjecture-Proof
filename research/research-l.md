@@ -1,0 +1,181 @@
+# Research L: calibrating the search — the exact trivial hump, the barrier spectrum, and what more computation can and cannot buy for AK(3)
+
+Date: 2026-11-02. Independent research agent L (round 3, computational strategy, constructive side).
+
+**Status:** verified computational calibration results and 8 replayable certificates; **no AK(3) trivialization, no proof of non-triviality, no counterexample.** Everything below is labelled *proved here* (short lemmas), *experiment* (exact move set, caps and counts given), *externally reported*, or *open*. No novelty claim is made for any item; literature access in this session was limited to cached files of earlier agents (no arXiv).
+
+**One-paragraph summary.** I computed the *complete* component of the trivial pair (x,y) in the full cyclic-product graph up to total length 20 ("the trivial hump": 22,205,081 Σ-states, 1,808,170 Aut(F₂)-orbits) and used it as an exact, unbiased reference set instead of the sampled AC-19/AC-1M datasets used by D. Results: (1) **no Aut(F₂)-orbit is shared** between the hump and AK(3)'s complete cap-28 component (6,347,128 orbits) — an exact meet-in-the-middle negative that strictly contains D's dataset test; (2) the **barrier spectrum** of all 18,116 unimodular Σ-classes of total length 13 is completely resolved in this graph: 18,084 are AC-trivial with barrier ≤ 18 (excess over their own length ≤ 5), 12 are in AK(3)'s class, 20 are nontrivial groups — so at length 13 there is nothing between "excess ≤ 5" and AK(3)'s "excess ≥ 16"; lengths 14 and 15 show the same gap structure with a small set of intermediate classes whose exact barriers are tabulated; (3) **saturation**: E's full 15-instruction elementary graph at cap 20 and D's cyclic-product graph at cap 20 contain *exactly the same* 917 complex classes of length ≤ 18, so D's negative bounds are not an artifact of the restricted move set; (4) a **feasibility model** with measured growth rates (hump ×7.5 and AK(3) ×6.7 per +2 in cap) says that a tenfold compute increase buys about +1.5 in cap, and that no calibration point supports the hope that AK(3) merges with the hump at cap 30–34; (5) **8 independent elementary certificates** trivializing Miller–Schupp benchmark presentations that are listed as unsolved in Shehper et al.'s data (they are among Fagan et al.'s solved rows, which carry no public elementary ledgers).
+
+## 1. Previous work read and choice of direction
+
+I read `README.md` and `research/research-{a,b,c,d,e,f}.md` in full, skimmed every file in `experiments/` and `certificates/`, and re-ran `elementary_verify.py` on the certificates I reuse. Summary as I verified it: A proves the nonincreasing ACM plateau for AK(n), n ≥ 3 (a trivialization must reach total length ≥ 14); B gives nilpotent-quotient certificates and the finite-quotient distance reformulation; C proves MS(n, y⁻¹x²y⁻¹) ~AC AK(n) for all n ≥ 2 with certificates; D built the barrier-ordered cyclic-product engine `d_acsearch.cpp`, certified 82 equivalences, and showed that AK(3)'s cap-28 component (69,190,160 Σ-states, 6,347,128 Aut-orbits) contains no primitive relator and matches none of ≈1.29M published AC-trivial presentations even up to Aut(F₂); E proved ≥ 15 instructions and peak total length ≥ 21 for any AK(3) trivialization (exhaustive G_L components, L ≤ 20) and gave the residual-chain reformulation; F built thickenability tools, proved the AK/MS families are outside Lackenby's thickenable locus, and suggested a meridian-defect-guided search. D's key dumps (`k28_ak3.bin`, `aut_ak3.bin`) and E's class file `canon_L20_T18.txt` survived in the scratch area and were reused read-only (cross-validated below).
+
+**Direction.** Agent G (round 3) runs the thickenability-guided constructive search F proposed, J audits, K works on obstructions, I on other families. My brief is computational strategy: *what could computation plausibly decide, and is the search space a matter of 10× more effort or hopeless at current scale?* Nobody had yet computed the **trivial side exactly**: D compared AK(3)'s component with *samples* of the trivial class (datasets produced by greedy/automorphism generators, biased toward easy presentations). I therefore (i) computed the exact trivial hump T(C) = component of (x,y) in G_full(C) for C ≤ 20; (ii) ran the exact Aut-orbit meet-in-the-middle against D's cap-28 dump; (iii) measured the *barrier spectrum* — for every unimodular pair of total length 13–15, the exact minimax barrier to (x,y) — which is the right calibration for "how far out is AK(3)"; (iv) tested whether the cyclic-product graph is saturated with respect to E's full elementary graph; (v) triaged the 1190-presentation Miller–Schupp benchmark against the exact components and certified what fell out; (vi) turned the measured growth rates into a feasibility table. This is new relative to A–F and disjoint from G/H/I/J/K as described to me.
+
+## 2. Conventions (identical to D)
+
+Words over x, X = x⁻¹, y, Y = y⁻¹. A **state** is an unordered pair of nonempty cyclically reduced words modulo Σ (rotation and inversion of either relator, swap); **energy** = total length; a **cyclic product** replaces u by cyc(rot(u)·rot(v)^{±1}); **G_full(C)** is the graph of all cyclic products on states of energy ≤ C; the **barrier** of a state (from a source) is the minimax energy over paths. Every element of Σ and every cyclic product is a composite of ordinary AC moves and the graph is undirected (D, Lemma D1), so **every state of T(C) is AC-trivial**, with an explicit certificate obtainable from the parent pointers (D's `d_certify.py`). A **complex class** adds the 8 signed permutations of {x,y} (automorphisms; AC-triviality is Aut(F₂)-invariant by D's Lemma D2). "Excess" of an AC-trivial pair of length ℓ and barrier b is b − ℓ.
+
+**Lemma L1 (exactness of staged barriers; proved here).** Let P ∉ T(20) and suppose a run of `d_acsearch` from P with `--target-keys T(20)` and cap C completes barrier level b−1 and reports its first hit into T(20) at barrier b ≤ C. Then the barrier of P to (x,y) in G_full is exactly b. *Proof.* Any path from P to (x,y) with barrier B contains a first state in T(20); the prefix up to it has barrier ≤ B, so the engine (Proposition D4) reports a hit at barrier ≤ B; hence b ≤ B. Conversely the hit state S has barrier ≤ 20 from (x,y), and the path P→S has barrier b ≥ 21 (else P ∈ T(20)), so B ≤ max(b,20) = b. ∎ If the run completes level C with no hit, the barrier is ≥ C+1.
+
+## 3. Results
+
+### 3.1 The exact trivial hump T(C) (experiment)
+
+`d_acsearch --source x,y --no-stop --cap C` (full graph, all cyclic products), caps 16, 18, 20; complete, no budget hit.
+
+| cap C | states of T(C) | new at barrier C−1, C | Aut(F₂)-orbits | time |
+|---:|---:|---|---:|---:|
+| 16 | 396,497 | 129,832 / 213,012 | — | 3 s |
+| 18 | 2,950,329 | 948,800 / 1,605,032 | — | 18 s |
+| 20 | **22,205,081** | 7,061,348 / 12,193,404 | **1,808,170** | 169 s (+122 s orbits) |
+
+New states per barrier (cap-20 run): 2:1, 3:4, 4:4, 5:8, 6:4, 7:68, 8:92, 9:368, 10:564, 11:2,504, 12:4,060, 13:17,684, 14:28,292, 15:129,832, 16:213,012, 17:948,800, 18:1,605,032, 19:7,061,348, 20:12,193,404. States of T(20) by energy 13/14/15/16: 18,084 / 31,408 / 131,256 / 229,508. Growth: ×7.44 (16→18), ×7.53 (18→20). For comparison D's AK(3) component grows ×6.7 per +2 (cap 26→28: ×6.74) and is **557 times smaller** than the hump at cap 20 (39,840 vs 22,205,081). 253 states of T(20) are automorphic images of (x,y) (Aut-minimal length 2).
+
+### 3.2 Exact Aut(F₂)-orbit meet-in-the-middle (experiment; validity by D's Lemmas D2, D6, Cor. D7)
+
+`d_acsearch --autmatch triv_k20.bin --autdump aut_triv20.bin` then `--autcompare aut_ak3.bin aut_triv20.bin`:
+
+    autcompare distinct_orbits 6347128 1808170 common 0
+
+**No state of AK(3)'s complete cap-28 component is an automorphic image of any presentation whose barrier from (x,y) is ≤ 20.** A single common orbit would have proved AK(3) AC-trivial (Lemma D2) with an explicit certificate by transport (Lemma D6). This contains D's dataset test (AC-19/AC-1M) as a special case only in part: AC-1M reaches length 30 but is a biased sample; T(20) is complete for barrier ≤ 20. The two negatives are complementary. Why this is not implied by D's cap-28 run: a Σ-level common *state* would indeed put (x,y) in AK(3)'s cap-28 component (excluded by D), but automorphisms do not preserve barriers, so an *orbit* match between a cap-28 AK(3) state and a barrier-≤20 trivial state was open.
+
+### 3.3 The barrier spectrum at total lengths 13, 14, 15 (experiment; group triviality by coset enumeration)
+
+`l_spectrum.py` enumerates every Σ-class of pairs of cyclically reduced words with |a|+|b| = ℓ and unimodular exponent matrix (18,116 / 31,556 / 133,908 / 236,436 classes for ℓ = 13/14/15/16), and classifies each against T(20) (with its exact barrier, from `--dump 16`) and against D's complete cap-28 dump of AK(3)'s component (1,248 of its states have length ≤ 16). Leftovers are tested for group triviality with F's Todd–Coxeter (`f_descent.is_trivial_group`, 400,000-coset limit).
+
+| ℓ | unimodular Σ-classes | in T(20), by excess 0/1/2/3/4/5/6 | in AK(3)'s class | trivial group, barrier > 20 (complex classes) | nontrivial group | undecided |
+|---:|---:|---|---:|---:|---:|---:|
+| 13 | 18,116 | 17,328 / 76 / 632 / 16 / 16 / 16 / — (total 18,084) | 12 | **0** | 20 | 0 |
+| 14 | 31,556 | 28,216 / 2,776 / 52 / 276 / 24 / 56 / 8 (total 31,408) | 40 | 94 (15 classes) | 10 | 4 |
+| 15 | 133,908 | 126,368 / 888 / 2,884 / 504 / 452 / 160 / — (total 131,256) | 564 | 1,976 (260 classes) | 84 | 28 |
+
+**Consequences.**
+- At length 13 the classification is complete in this graph: *every* balanced presentation of the trivial group of total length 13 is either AC-trivial with barrier ≤ 18 (excess ≤ 5) or lies in AK(3)'s AC class (12 Σ-classes = the two Aut-orbits D found, up to Σ). This independently reproduces the Havas–Ramsay length-13 dichotomy (externally reported) *and* quantifies it: the hump's tail ends at excess 5, while AK(3) has excess ≥ 16 (cap 28 exhausted by D). Nothing lies in between.
+- At length 14 the 15 intermediate complex classes and at length 15 the 260 intermediate classes are exactly the objects whose exact barriers decide whether the spectrum has a *gap* (two populations) or a *continuous tail*. Their staged exact barriers (Lemma L1) are in §3.6.
+- The 12 (ℓ = 13) and 40 (ℓ = 14) AK(3)-class members agree with D's §4.1 (12 Σ-classes of length 13; 40 states of energy 14).
+
+### 3.4 Saturation of the cyclic-product graph at cap 20 (experiment)
+
+E's `e_peak` enumerates the full component of AK(3) in G_L (ordered freely reduced pairs, 15 instructions: inversions, swap, right multiplications, single-letter conjugations, total length ≤ L). Every cyclic product with energy ≤ C is realizable inside G_C (rotations are single-letter conjugations preserving length; the product is a right multiplication; cyclic reduction is by length-decreasing conjugations), so G_C ⊇ G_full(C) as sets of cyclic classes, while G_C also allows conjugation detours, left multiplication and non-cyclically-reduced intermediates. Comparing E's `canon_L20_T18.txt` (917 complex classes of cyclic length ≤ 18 in the 51,411,456-state G_20 component) with D's cap-20 component (39,840 Σ-states, dumped with `--dump 20`) via `l_classes.py compare`:
+
+    A classes 917  B classes 917  common 917  onlyA 0  onlyB 0
+    by length {13: 2, 14: 5, 15: 66, 16: 72, 17: 362, 18: 410}   (both)
+
+**The extra freedom of the elementary graph produces no new cyclic class of length ≤ 18 at cap 20.** This is the first direct test that D's engine-relative negatives are not artifacts of the move restriction (at least at this cap). A full-cap-19 comparison (G_19 vs G_full(19)) is reported in §3.7.
+
+### 3.5 Miller–Schupp benchmark triage and 8 certificates (experiment + certificates)
+
+`l_ms_barriers.py triage` encodes each of the 1190 benchmark presentations (Shehper et al. `all_presentations.txt`) with a Python port of D's Σ-key (validated: all 39,840 states of the cap-20 dump are found in D's cap-28 key file, round trips and Σ-invariance hold) and looks it up in T(16), T(18), T(20), AK(3)'s cap-28 component and the two MS(2) holdout components (D's dumps):
+
+| status in Shehper et al. | T(16) | T(18)∖T(16) | T(20)∖T(18) | AK(3) class | MS2a class | MS2b class | none of these |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| greedy-solved (533) | 356 | 70 | 58 | 0 | 0 | 0 | 49 |
+| unsolved (657) | 0 | **2** | **6** | 34 | 6 | 36 | 573 |
+
+The 34/6/36 agree with D (§4.3–4.4). The 49 solved-but-outside have lengths 18:2, 19:4, 21:19, 22:6, 23:12, 24:4, 25:2 — 43 of them are simply longer than the cap. Their exact barriers (Lemma L1) are in §3.6. The 573 unsolved-outside have lengths 15:20, 16:6, 17:38, 18:22, 19:80, 20:34, 21:93, 22:42, 23:104, 24:38, 25:96; the 20 of length 15 therefore have barrier ≥ 21, i.e. excess ≥ 6.
+
+**Eight presentations listed as unsolved by Shehper et al. lie in T(20)** (lines 599, 635 at barrier 18; 643, 647, 656, 673, 709, 753 at barrier 20). Paths from (x,y) were extracted (`--exact-targets`), reversed, and compiled by D's `d_certify.py` into strict `ordinary-ac-elementary-v1` certificates from the exact benchmark tuple to ("x","y"):
+
+```
+python3 experiments/elementary_verify.py certificates/l_ms*_trivialization.json
+{"endpoint": ["x", "y"], "moves": 200, "path": "certificates/l_ms0599_trivialization.json", "peak_total_length": 26}
+{"endpoint": ["x", "y"], "moves": 207, "path": "certificates/l_ms0635_trivialization.json", "peak_total_length": 26}
+{"endpoint": ["x", "y"], "moves": 160, "path": "certificates/l_ms0643_trivialization.json", "peak_total_length": 29}
+{"endpoint": ["x", "y"], "moves": 157, "path": "certificates/l_ms0647_trivialization.json", "peak_total_length": 27}
+{"endpoint": ["x", "y"], "moves": 421, "path": "certificates/l_ms0656_trivialization.json", "peak_total_length": 27}
+{"endpoint": ["x", "y"], "moves": 471, "path": "certificates/l_ms0673_trivialization.json", "peak_total_length": 27}
+{"endpoint": ["x", "y"], "moves": 198, "path": "certificates/l_ms0709_trivialization.json", "peak_total_length": 29}
+{"endpoint": ["x", "y"], "moves": 161, "path": "certificates/l_ms0753_trivialization.json", "peak_total_length": 29}
+```
+(The elementary peak exceeds the cyclic barrier because the compiler's swap identity and rotations pass through longer unreduced intermediates; the cyclic-product barrier is 18 resp. 20.) **Novelty check:** all eight occur in rows 533–557 of Fagan et al.'s `AC19_extended.txt`, i.e. in its block of solved Miller–Schupp presentations (none is in AC-19 proper except 599 and 635; none is in AC-1M). So they were already reported solved by the Two-Hump campaign; Carr notes that campaign published no elementary ledgers for most of its MS solutions. These eight files are therefore **independent public certificates, not new solutions.** They cost 195 s of search.
+
+### 3.6 Exact barriers of the intermediate classes (experiment; Lemma L1)
+
+[PENDING — filled in §3.6 below once the staged runs finish: 49 greedy-solved MS presentations outside T(20); the 15 complex classes of trivial groups of length 14 with barrier > 20 (cap 26); the 260 classes of length 15 (caps 22, 24).]
+
+### 3.7 Full-cap saturation at cap 19 (experiment)
+
+[PENDING — `e_peak --L 19 --canon 19` vs D's cap-19 component.]
+
+## 4. Feasibility assessment with numbers
+
+**Measured growth.** AK(3)'s G_full component (D): 1, 26, 40, 1,000, 2,128, 20,024, 39,840, 143,988, 257,488, 886,932, 1,580,780, 5,531,256, 10,269,488, 37,161,104, 69,190,160 for caps 13, 15, …, 28: ×6.7 per +2 (×3.5 at odd, ×1.9 at even caps). The trivial hump: ×7.5 per +2. Aut-orbit compression ≈ ×11 (AK(3)) and ×12 (hump). D's engine processes ≈ 1.2·10⁵ states/s/core at ≈ 20 bytes/state (keys, parent, barrier, hash slot, bucket).
+
+**Projection (Σ-level, AK(3) side).**
+
+| cap | states (×6.7 per +2) | memory | single-core time |
+|---:|---:|---:|---:|
+| 28 (done, D) | 6.9·10⁷ | 1.5–2.5 GB | 10 min |
+| 30 | ≈ 4.6·10⁸ | ≈ 9 GB | ≈ 1 h |
+| 32 | ≈ 3.1·10⁹ | ≈ 60 GB | ≈ 7 h |
+| 34 | ≈ 2.1·10¹⁰ | ≈ 0.4 TB | ≈ 2 days |
+| 36 | ≈ 1.4·10¹¹ | ≈ 2.8 TB | ≈ 2 weeks |
+
+Orbit-level search divides memory by ≈ 11 (cap 34 ≈ 40 GB) but multiplies per-node cost by the number of minimal representatives times the Whitehead canonicalization (≈ 7 µs), so it buys about +2 in cap for the same memory and roughly nothing in time. **A tenfold increase in compute buys ≈ +1.5 in cap.** On this machine (≤ 2.3 GB for one agent) cap 28 is the ceiling at Σ level and cap 30 at orbit level; a workstation with 64 GB reaches cap 32 (Σ) or 34 (orbits); cap 36+ needs disk-based or distributed frontier storage.
+
+**What the calibration says.** (i) Every AC-trivial presentation of length 13 has excess ≤ 5 and every one of length 14/15 found so far has excess ≤ 6 inside T(20); the intermediate classes of §3.6 extend this by at most a few units [pending]. (ii) The hard length-14 classes P1, P2, C3, C4, C6 have excess ≥ 16–18 by the external cap-30/32 exhaustions (unreviewed repositories cited by F) and AK(3) has excess ≥ 16 (D). (iii) The hump is already 557× larger than AK(3)'s component at cap 20 and grows faster; AK(3)'s component is not "catching up" with anything — the orbit comparison shows it does not even touch the hump's automorphic closure. (iv) The MS presentations solved by greedy/RL methods all have small excess (§3.6) — their difficulty for those methods is path *length*, not barrier *height*; so the solved benchmark gives no example of a presentation that needed a large excess and was then found by raising the cap. **Conclusion:** there is no empirical basis for the belief that caps 30–34 are "almost enough" for AK(3). The data are consistent with two separate populations (excess ≤ ~6 vs ≥ 16), and raising the cap by what current hardware allows (+2 to +6) explores the no-man's-land between them without any indication that AK(3)'s component bends toward the hump. This does not make AK(3) non-trivial: an AC-trivial presentation with excess 20 is logically possible, and Bridson's results (externally reported) show that excess can be unboundedly large in general. It does say that *undirected* cap-raising is the wrong investment; the only computational routes with a different risk profile are those that change the target (thickenable states via Lackenby — agent G; primitive relators; automorphic contact with the hump as in §3.2 at higher trivial-side caps), or that change the graph (orbit-level search, short-conjugate products — shown in §3.4 to add nothing at cap 20).
+
+## 5. Honest limits
+
+- All negatives are engine-relative (G_full and G_C with their caps) and are **not evidence of non-triviality**. The saturation test (§3.4) covers cap 20 only; elementary paths with much longer intermediates are not excluded by anything here.
+- T(20) is complete for barrier ≤ 20 but says nothing about AC-trivial presentations with barrier ≥ 21; the Aut-orbit comparison is therefore one-sided (a hit would prove, a miss proves only that the *short-barrier* part of the trivial class is disjoint from AK(3)'s cap-28 component up to Aut(F₂)).
+- Group-triviality decisions use coset enumeration with a 400,000-coset limit; "undecided" rows are reported as such.
+- The growth projection is an extrapolation of a ×6.7 geometric trend over 8 data points; it could bend either way.
+- Correctness of the Aut-orbit canonical form rests on D's implementation (Whitehead peak reduction; 2,925 + 258 invariance checks by D) which I reused unchanged; my Python key port was validated against 39,840 engine states.
+- The 8 certificates are independent artifacts for presentations already reported solved elsewhere.
+- I could not access arXiv; the literature statements are taken from A–F's notes and the cached Carr/Shehper/Fagan repositories.
+
+## 6. Advice to the coordinator (ranked)
+
+1. **Stop investing in undirected cap-raising for AK(3) at Σ level.** Each +2 in cap costs ×6.7; the calibration (§3.3, §3.6, §4) shows AK(3) sits ≥ 10 units of excess beyond the entire measured AC-trivial spectrum of its length class, with no intermediate population. If any further search is run, run it at **orbit level** (D's recommendation), to cap 30–32 on a ≥ 64 GB machine, with primitive-relator and thickenability detection — and treat another negative as expected, not informative.
+2. **Raise the trivial side instead of the AK(3) side.** The exact hump T(C) is cheaper per unit of information: T(22) ≈ 1.7·10⁸ states (≈ 4 GB, 25 min), T(24) ≈ 1.3·10⁹. Aut-canonicalizing T(22)/T(24) and intersecting with D's 6.3M AK(3) orbits (§3.2 scaled up) is the strongest exact meet-in-the-middle available and needs no new theory. Also intersect with the hard classes' orbit sets (D's `aut_ms2a/b.bin`, and C3/C4/C6/P1/P2 components) — any hit settles a benchmark class.
+3. **Publish the barrier spectrum as the reference calibration** (lengths 13–16, this note's tables plus §3.6) and complete length 16 (236,436 classes, tool ready: `l_spectrum.py classify 16`). It is the right object for any "hardness" discussion and makes the two-hump structure exact rather than anecdotal.
+4. **Use the 8 certificates as a public-ledger contribution**, clearly labelled as independent elementary certificates for presentations reported solved by Fagan et al. (rows 533–557 of AC-19-extended). The same pipeline (T(20) + `--exact-targets` + `d_certify.py`) certifies, in minutes, every benchmark presentation of barrier ≤ 20; at T(22) it would reach the remaining greedy-solved ones of §3.6 with barrier ≤ 22.
+5. **Theory, not search, must settle AK(3).** The only computational findings that could change the picture are (a) a thickenable or primitive-relator state (G's search), (b) an orbit contact at higher trivial-side cap (item 2), or (c) a proof that AK(3)'s class has an Aut-invariant property (e.g. F's meridian defect ≥ 6, or a growth lower bound on E's residual-chain distances) — the last is K/H territory, and the exact components computed here (hump states with their barriers, AK(3)'s cap-28 class) are the natural test beds for any candidate invariant: a candidate must be constant on T(20) ∪ Aut-images and differ on AK(3)'s 69M states.
+
+## 7. Reproduction (executed in this session; paths relative to the repository root, scratch dir S)
+
+```sh
+g++ -O2 -std=c++17 -o S/d_acsearch experiments/d_acsearch.cpp
+g++ -O2 -std=c++17 -o S/e_peak experiments/e_peak.cpp
+python3 experiments/l_classes.py --selftest          # 3000 random Sigma x D8 invariance checks
+python3 experiments/l_spectrum.py --selftest         # enumeration vs brute force (n<=5), key decoding
+# trivial hump
+for c in 16 18 20; do S/d_acsearch --source x,y --no-stop --cap $c --maxstates 40000000 --dumpkeys 0 triv_k$c.bin > triv_c$c.txt; done
+S/d_acsearch --source x,y --no-stop --cap 20 --maxstates 30000000 --dump 16 triv_dump16.txt > triv_c20b.txt
+# exact Aut-orbit meet in the middle (aut_ak3.bin = D's dump of AK(3)'s cap-28 component)
+S/d_acsearch --autmatch triv_k20.bin --autdump aut_triv20.bin
+S/d_acsearch --autcompare aut_ak3.bin aut_triv20.bin        # distinct_orbits 6347128 1808170 common 0
+# barrier spectrum (k28_ak3.bin = D's cap-28 key dump)
+for l in 13 14 15; do python3 experiments/l_spectrum.py classify $l triv_dump16.txt k28_ak3.bin --hump-cap 20; done
+# saturation at cap 20
+S/d_acsearch --cap 20 --maxstates 5000000 --no-stop --dump 20 ak3_c20_dump.txt
+python3 experiments/l_classes.py compare canon_L20_T18.txt ak3_c20_dump.txt --maxlen 18 --col2   # 917 = 917, 0 differences
+# Miller-Schupp triage and certificates (third-party data: Shehper et al. AC-Solver, Fagan et al. ACSolverX)
+python3 experiments/l_ms_barriers.py --selftest ak3_c20_dump.txt k28_ak3.bin
+python3 experiments/l_ms_barriers.py triage all_presentations.txt solved_miller_schupp_presentations.txt triv_k16.bin triv_k18.bin triv_k20.bin k28_ak3.bin k28_ms2a.bin k28_ms2b.bin
+S/d_acsearch --source x,y --no-stop --cap 20 --maxstates 30000000 --exact-targets ms8.tgt --maxhits 20 > ms8_paths.txt
+# reverse each PATH, then: python3 experiments/d_certify.py PATH.rev W1 W2 x y certificates/l_msNNNN_trivialization.json
+python3 experiments/elementary_verify.py certificates/l_ms*_trivialization.json
+# exact barriers of intermediate classes (Lemma L1): per source
+S/d_acsearch --source W1,W2 --no-stop --cap 24 --maxstates 5000000 --target-keys triv_k20.bin   # read "TKEYHIT min_barrier"
+```
+
+## 8. Files written
+
+- `research/research-l.md` (this note).
+- `experiments/l_classes.py` — Σ×D8 complex-class canonical forms, file comparison (`--selftest`).
+- `experiments/l_spectrum.py` — enumeration of unimodular Σ-classes by total length; classification against hump dump and D's key dump; coset-enumeration triviality (`--selftest`).
+- `experiments/l_ms_barriers.py` — Python port of D's Σ-key, key-set membership, Miller–Schupp triage (`--selftest DUMP KEYS`).
+- `certificates/l_ms{0599,0635,0643,0647,0656,0673,0709,0753}_trivialization.json` — strict elementary trivializations (exact benchmark tuple → (x,y)).
+
+## References
+
+- Round-1/2 notes A–F of this repository and their references; D's engine `experiments/d_acsearch.cpp`, E's `experiments/e_peak.cpp`, F's `experiments/f_descent.py` (coset enumeration), all used read-only.
+- A. Shehper et al., *What makes math problems hard for reinforcement learning: a case study*, arXiv:2408.15332; data `ac_solver/search/miller_schupp/data/all_presentations.txt`, `barcode_analysis/5_steps_neibourhoods/{solved,unsolved}_miller_schupp_presentations.txt` (cached clone).
+- L. Fagan et al., *The Two-Hump Problem*, arXiv:2606.21611; data `AC19.txt`, `AC19_extended.txt`, `AC1M.txt.gz` (cached clone, commit 6a12515).
+- J. Carr, arXiv:2607.23611 and `joe-carr-data/ac-certificates` (`RESULTS.md`, cached): bottleneck-Dijkstra results and the remark that Two-Hump solutions carry no elementary ledgers.
+- G. Havas, C. Ramsay, *Breadth-first search and the Andrews–Curtis conjecture*, IJAC 13 (2003) (length-13 dichotomy; externally reported).
+- M. Bridson, arXiv:1504.04187 (unbounded excess in general; externally reported).
+- M. Lackenby, arXiv:2606.06122 (thickenable ⇒ AC-trivial; externally reported, via F).

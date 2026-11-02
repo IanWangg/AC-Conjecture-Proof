@@ -1,32 +1,32 @@
 #!/usr/bin/env python3
 """Agent J (round 3): finite checks for Theorem J1 of research/research-j.md.
 
-Setting (research-a): quotient-conjugacy (ACM) moves on AK(3) = (p, b) with
-    p = x^3 Y^4,  q = y^3 X^4,  b = x y x Y X Y   (X = x^-1, Y = y^-1).
+Setting (research-a): quotient-conjugacy (ACM) moves on AK(n) = (p_n, b) with
+    p_n = x^n Y^(n+1),  q_n = y^n X^(n+1),  b = x y x Y X Y   (X = x^-1, Y = y^-1).
 Research-a proves that every non-increasing ACM path stays on the plateau
-(Orb(p) u Orb(q)) x Orb(b), so the first increasing move lands at total cyclic
-length >= 14.  Theorem J1 sharpens this to >= 15 by two facts:
+(Orb(p_n) u Orb(q_n)) x Orb(b), so the first increasing move lands at total
+cyclic length >= 2n+8.  Theorem J1 sharpens this to >= 2n+9 (15 for AK(3)):
 
-  (I)  No cyclically reduced word of length 8 is conjugate to p^{+-1} in
+  (I)  No cyclically reduced word of length 2n+2 is conjugate to p_n^{+-1} in
        B = <x,y | xyx = yxy>: its image in B/Z(B) = C_2 * C_3 has cyclic
-       syllable length 16 (no orientation change) or <= 12, never 14.
+       syllable length 2(2n+2) (no orientation change) or <= 4n, never 4n+2.
   (II) No cyclically reduced word of length 7 is conjugate to b^{+-1} in
-       G = <x,y | x^3 = y^4> (or in G' = <x,y | y^3 = x^4>): conjugacy in
-       these torus-knot groups is equivalent to conjugacy in the quotient
-       C_3 * C_4 (resp. C_4 * C_3) PLUS equality of the abelianization
-       exponent (Lemma J0), and the quotient-conjugate candidates of length 7
-       all have the wrong abelianization.
+       G = <x,y | x^n = y^(n+1)> (or in G' = <x,y | y^n = x^(n+1)>).  For n >= 4
+       already the quotient C_n * C_(n+1) excludes it; for n = 3 one needs
+       Lemma J0: conjugacy in these torus-knot groups is equivalent to conjugacy
+       in the quotient C_n * C_(n+1) PLUS equality of the abelianization
+       exponent, and the 42 quotient-conjugate candidates of length 7 all have
+       the wrong abelianization.
 
 This script enumerates all cyclically reduced words of the relevant lengths
-and verifies (I) and (II) exactly, and reports the length-9 and length-8
-counts (the first states at total length 15 and 16).  Standard library only.
+and verifies (I) and (II) exactly for n = 3 and n = 4, and reports the counts
+one length higher (the first off-plateau states).  Standard library only.
+Run: python3 experiments/j_first_increase.py        (about 1 s)
 """
 from itertools import chain
 import json
 
 ALPHABET = (1, -1, 2, -2)  # x, X, y, Y
-P3 = (1, 1, 1, -2, -2, -2, -2)
-Q3 = (2, 2, 2, -1, -1, -1, -1)
 BRAID = (1, 2, 1, -2, -1, -2)
 # images in C_2 * C_3 = <S | S^2> * <T | T^3>, factor 0 = S, factor 1 = T:
 # x -> T^2 S, X -> S T, y -> S T^2, Y -> T S   (research-a, Lemma 1)
@@ -77,8 +77,8 @@ def sig_CpCq(word, orders):
 
 
 def exps(word):
-    return sum(1 for a in word if a == 1) - sum(1 for a in word if a == -1), \
-        sum(1 for a in word if a == 2) - sum(1 for a in word if a == -2)
+    return (sum(1 for a in word if a == 1) - sum(1 for a in word if a == -1),
+            sum(1 for a in word if a == 2) - sum(1 for a in word if a == -2))
 
 
 def cyclically_reduced_words(length):
@@ -93,10 +93,11 @@ def cyclically_reduced_words(length):
     yield from extend(())
 
 
-def power_side(length):
-    """Words of the given length whose image is conjugate to p^{+-1} in C_2*C_3,
-    and the subset with the right abelianization in B (x,y -> t; p -> t^-1)."""
-    targets = {sig_C2C3(P3): -1, sig_C2C3(inverse(P3)): 1}
+def power_side(n, length):
+    """Words of the given length whose C_2*C_3 image is conjugate to that of
+    p_n^{+-1}, and the subset with the right abelianization in B (x,y -> t)."""
+    p = (1,) * n + (-2,) * (n + 1)
+    targets = {sig_C2C3(p): -1, sig_C2C3(inverse(p)): 1}
     quot, exact = [], []
     for w in cyclically_reduced_words(length):
         s = sig_C2C3(w)
@@ -108,12 +109,12 @@ def power_side(length):
     return quot, exact
 
 
-def braid_side(length, swapped):
-    """Words of the given length conjugate to b^{+-1} in C_3*C_4 (orders (3,4),
-    frozen p) or C_4*C_3 (orders (4,3), frozen q), and the subset with the right
-    abelianization in the torus-knot group."""
-    orders = (4, 3) if swapped else (3, 4)
-    ax, ay = (3, 4) if swapped else (4, 3)   # x -> t^ax, y -> t^ay kills the frozen relator
+def braid_side(n, length, swapped):
+    """Words of the given length conjugate to b^{+-1} in C_n*C_(n+1) (frozen p_n)
+    or C_(n+1)*C_n (frozen q_n), and the subset with the right abelianization in
+    the torus-knot group (Lemma J0)."""
+    orders = (n + 1, n) if swapped else (n, n + 1)
+    ax, ay = (n, n + 1) if swapped else (n + 1, n)   # x -> t^ax, y -> t^ay kills the frozen relator
     bx, by = exps(BRAID)
     ab_b = ax * bx + ay * by
     assert ab_b in (1, -1), ab_b
@@ -133,42 +134,44 @@ def wstr(word):
     return "".join({1: "x", -1: "X", 2: "y", -2: "Y"}[a] for a in word)
 
 
-def main():
-    out = {"scope": "finite checks of Theorem J1 (first increasing ACM move from the "
-                    "AK(3) plateau lands at total cyclic length >= 15); not an AC solution"}
-    # sanity: the braid relator dies in C_2*C_3 and the torus relators die in C_3*C_4
+def check_n(n):
+    p = (1,) * n + (-2,) * (n + 1)
+    q = (2,) * n + (-1,) * (n + 1)
     assert sig_C2C3(BRAID) == ()
-    assert sig_CpCq(P3, (3, 4)) == () and sig_CpCq(Q3, (4, 3)) == ()
-    # (I) power relator updated, braid relator frozen
+    assert sig_CpCq(p, (n, n + 1)) == () and sig_CpCq(q, (n + 1, n)) == ()
     res = {}
-    for L in (7, 8, 9):
-        quot, exact = power_side(L)
+    for L in (2 * n + 1, 2 * n + 2, 2 * n + 3):
+        quot, exact = power_side(n, L)
         res[L] = {"quotient_conjugate_candidates": len(quot),
                   "with_correct_abelianization": len(exact)}
-        if L == 7:
-            assert set(quot) == orbit(P3) | orbit(Q3)
-            assert set(exact) == orbit(P3) | orbit(Q3)
-        if L == 8:
+        if L == 2 * n + 1:
+            assert set(quot) == orbit(p) | orbit(q) == set(exact)
+        if L == 2 * n + 2:
             assert not quot, [wstr(w) for w in quot]
-    # which of the length-9 B-conjugates lie in Orb(P3) * Orb(b) shifted? just report
-    res[9]["examples"] = [wstr(w) for w in power_side(9)[1][:6]]
-    out["power_relator_updated_braid_frozen"] = res
-    # (II) braid relator updated, power relator frozen
     res2 = {}
     for swapped in (False, True):
         r = {}
         for L in (6, 7, 8):
-            quot, exact = braid_side(L, swapped)
+            quot, exact = braid_side(n, L, swapped)
             r[L] = {"quotient_conjugate_candidates": len(quot),
                     "with_correct_abelianization": len(exact)}
             if L == 6:
-                assert set(quot) == orbit(BRAID) and set(exact) == orbit(BRAID)
+                assert set(quot) == orbit(BRAID) == set(exact)
             if L == 7:
-                r[L]["quotient_candidates_examples"] = [wstr(w) for w in quot[:4]]
+                r[L]["quotient_candidates_examples"] = [wstr(w) for w in quot[:3]]
                 assert not exact, [wstr(w) for w in exact]
-        res2["frozen " + ("q=yyyXXXX" if swapped else "p=xxxYYYY")] = r
-    out["braid_relator_updated_power_frozen"] = res2
-    out["theorem_J1_finite_part_verified"] = True
+        res2["frozen " + ("q_n" if swapped else "p_n")] = r
+    return {"n": n, "power_relator_updated_braid_frozen": res,
+            "braid_relator_updated_power_frozen": res2,
+            "first_exit_total_cyclic_length_at_least": 2 * n + 9}
+
+
+def main():
+    out = {"scope": "finite checks of Theorem J1 (first increasing ACM move from the "
+                    "AK(n) plateau lands at total cyclic length >= 2n+9, n = 3, 4); "
+                    "not an AC solution",
+           "checks": [check_n(3), check_n(4)],
+           "theorem_J1_finite_part_verified": True}
     print(json.dumps(out, indent=1))
 
 

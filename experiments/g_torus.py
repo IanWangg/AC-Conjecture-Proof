@@ -423,12 +423,25 @@ def selftest():
     # meridian defect of AK(3) relators (research-f: 6 and 14)
     assert syllables("xyxYXY", 3, -4) == 6
     assert syllables(cyc(apply(("xY", "yyX"), "xxxYYYY")), 2, -3) == 14
-    print("g_torus self-test passed: %d matrices, conjugacy invariants checked" % len(mats))
+    # Christoffel words represent theta_M(x) (primitive classes <-> primitive vectors)
+    for M in gl2_matrices(5):
+        assert min_rot(cyc(aut_from_matrix(M)[0])) == min_rot(christoffel(M[0][0], M[1][0]))
+    check_lemma_g4(40)
+    # Theorem G1: W_n ~ phi(x^n y^-(n+1))^-1 in <x,y | x^2 = y^3>, n = 1..30
+    phi = ("xY", "yyX")
+    for n in range(1, 31):
+        Wn = red("xy" * n + "x" + inv("yx" * n + "y"))
+        Un = cyc(apply(phi, "x" * n + "Y" * (n + 1)))
+        assert torus_class(Wn, 2, -3) == torus_class(inv(Un), 2, -3)
+    # Proposition G2 via the complete finite test, n = 3..8 (and AK(2) has hits)
+    for n in range(3, 9):
+        assert not primitive_complete("xyxYXY", n, -(n + 1))
+    for n in range(2, 9):
+        assert not primitive_complete(cyc(apply(phi, "x" * n + "Y" * (n + 1))), 2, -3)
+    assert primitive_complete("xyxYXY", 2, -3)
+    print("g_torus self-test passed: %d matrices, conjugacy invariants, Lemma G4 premises, G1 (n<=30), G2 (n<=8)" % len(mats))
 
 
-if __name__ == "__main__":
-    if sys.argv[1:] == ["--selftest"]:
-        selftest()
 
 
 # ------------------------------------------------------------- torus BFS
@@ -452,7 +465,7 @@ def node_info(p, q, W, MW, p2, q2):
     return d1, d2, prim, Vn
 
 
-def bfs(start, K=8, P=12, maxlen=60, depth=4, max_nodes=20000, log=print):
+def bfs(start, K=8, P=12, maxlen=60, depth=4, max_nodes=20000, log=print, complete=False):
     """start = (p, q, W, MW, p2, q2).  Returns (nodes, parent, winners)."""
     WH = _wh()
     mats = gl2_matrices(K)
@@ -485,7 +498,7 @@ def bfs(start, K=8, P=12, maxlen=60, depth=4, max_nodes=20000, log=print):
                 e1, e2, pr, _ = node_info(*c)
                 dm = min([d for d in (e1, e2) if d is not None] + [99])
                 hist[dm] = hist.get(dm, 0) + 1
-                if pr or e1 == 2 or e2 == 2:
+                if pr or e1 == 2 or e2 == 2 or (complete and complete_primitive_neighbours(c)):
                     winners.append(k)
                 nxt.append(k)
                 if len(nodes) >= max_nodes:
@@ -544,3 +557,117 @@ def primitive_hits(U, p, q, Lmax):
             if c == cU or c == cUi:
                 hits.append((m, n, w))
     return hits
+
+
+def torus_type(W, K=10, P=16):
+    """Find (M, p, q) with cyc(theta_M(x^p y^q)) = W as cyclic words (|p|,|q|>=1)."""
+    target = cyc_canon(W)
+    e = expvec(W)
+    for M in gl2_matrices(K):
+        Mi = mat_inv(M)
+        # (p, q) = M^-1 e   or  -M^-1 e (inverse class)
+        for s in (1, -1):
+            p = s * (Mi[0][0] * e[0] + Mi[0][1] * e[1])
+            q = s * (Mi[1][0] * e[0] + Mi[1][1] * e[1])
+            if p == 0 or q == 0 or abs(p) > P or abs(q) > P or math.gcd(p, q) != 1:
+                continue
+            if cyc_canon(torus_word(M, p, q)) == target:
+                return M, p, q
+    return None
+
+
+def start_node(r_frozen, r_other, K=10, P=16):
+    """Normalised BFS node from an actual torus pair."""
+    tf = torus_type(r_frozen, K, P)
+    assert tf, "frozen relator not of torus type within bounds"
+    M, p, q = tf
+    W = cyc(apply(aut_cached(mat_inv(M)), r_other))
+    to = torus_type(W, K, P)
+    assert to, "other relator not of torus type within bounds"
+    return (p, q, W, to[0], to[1], to[2])
+
+
+def primitive_complete(U, p, q):
+    """COMPLETE list of primitive cyclic words conjugate to U^{+-1} in
+    G = <x,y | x^p y^q>, 2 <= |p| != |q|, gcd = 1 (research-g.md, Lemma G4).
+    Abelianisation forces q*m - p*k = +-ab(U) for the exponent vector (m,k);
+    the less frequent letter of a primitive cyclic word is isolated and the
+    other letter's runs are shorter than its order, so no syllable vanishes
+    and the image has exactly 2*min(|m|,|k|) syllables (for min >= 1).
+    Hence min(|m|,|k|) <= max(1, L/2), L = syllable length of U: finite."""
+    assert abs(p) >= 2 and abs(q) >= 2 and abs(p) != abs(q) and math.gcd(p, q) == 1
+    L = syllables(U, p, q)
+    B = max(1, L // 2)
+    abU = ab_value(U, p, q)
+    cU, cUi = torus_class(U, p, q), torus_class(inv(U), p, q)
+    hits = []
+    seen = set()
+    for t in (abU, -abU):
+        # q*m - p*k = t ; enumerate the smaller coordinate up to B
+        for s in range(-B, B + 1):
+            for (m, k) in ((s, None), (None, s)):
+                if m is not None:
+                    num = q * m - t
+                    if num % p:
+                        continue
+                    k = num // p
+                else:
+                    num = t + p * k
+                    if num % q:
+                        continue
+                    m = num // q
+                if (m, k) in seen or (m == 0 and k == 0) or math.gcd(m, k) != 1:
+                    continue
+                seen.add((m, k))
+                w = christoffel(m, k)
+                c = torus_class(w, p, q)
+                if c == cU or c == cUi:
+                    hits.append((m, k, w))
+    return hits
+
+
+def check_lemma_g4(maxlen=60):
+    """Numerical check of the two facts used in Lemma G4."""
+    # (1) Christoffel words: one letter isolated, runs of the other balanced
+    #     with two consecutive lengths; they are primitive (Whitehead check in d_whitehead).
+    for a in range(1, maxlen):
+        for b in range(1, maxlen - a):
+            if math.gcd(a, b) != 1:
+                continue
+            w = christoffel(a, b)
+            rs = [len(r) for r in w.replace("x", " ").split()]  # y-runs
+            xs = [len(r) for r in w.replace("y", " ").split()]
+            if a <= b:
+                assert max(xs) == 1 and max(rs) - min(rs) <= 1
+    # (2) syllable count of primitive images under the ab-constraint
+    for (p, q) in ((3, -4), (2, -3), (-2, 3), (2, 7), (-2, 7), (4, -5), (2, 5), (3, 5)):
+        for m in range(-25, 26):
+            for t in (1, -1):
+                num = q * m - t
+                if m == 0 or num % p:
+                    continue
+                k = num // p
+                if k == 0 or math.gcd(m, k) != 1:
+                    continue
+                w = christoffel(m, k)
+                assert syllables(w, p, q) == 2 * min(abs(m), abs(k)) or min(abs(m), abs(k)) <= 1, (p, q, m, k)
+    return True
+
+
+def complete_primitive_neighbours(node):
+    """Exact (unbounded) test: can ONE further ACM move (either relator) from
+    this normalised torus node produce a primitive relator?  Lemma G4."""
+    p, q, W, MW, p2, q2 = node
+    out = []
+    if abs(p) >= 2 and abs(q) >= 2 and abs(p) != abs(q):
+        out += [("move-other", h) for h in primitive_complete(W, p, q)]
+    if abs(p2) >= 2 and abs(q2) >= 2 and abs(p2) != abs(q2):
+        R = cyc(power("x", p) + power("y", q))
+        Vn = cyc(apply(aut_cached(mat_inv(MW)), R))
+        out += [("move-frozen", h) for h in primitive_complete(Vn, p2, q2)]
+    return out
+
+
+if __name__ == "__main__":
+    if sys.argv[1:] == ["--selftest"]:
+        selftest()
