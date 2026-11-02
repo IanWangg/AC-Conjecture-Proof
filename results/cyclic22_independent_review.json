@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "cyclic_cap": 22,
+  "canonical_states": 258032,
+  "minimum_cyclic_sum": 13,
+  "minimum_cyclic_coordinate": 5,
+  "minimum_disjoint_axes_neighbor_sum": 21,
+  "all_menu_candidates_checked": 193140064,
+  "admitted_neighbor_checks": 10204280,
+  "positive_tail_candidates_checked": 50688,
+  "positive_tail_admitted_checks": 50688,
+  "maximum_geodesic_bridge_length_needed": 1,
+  "all_states_reachable_from_original_AK3": true,
+  "closed_under_full_geometric_neighbor_menu": true,
+  "independent_free_reduction_and_Booth_canonicalizer": true,
+  "minimum_required_cyclic_peak": 23,
+  "seconds": 82.7132,
+  "state_histogram": {"13": 12, "14": 40, "15": 548, "16": 572, "17": 3132, "18": 3592, "19": 18176, "20": 19472, "21": 103432, "22": 109056}
+}
