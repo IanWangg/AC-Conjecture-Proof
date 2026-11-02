@@ -4,13 +4,12 @@ This does not use Whitehead descent or the cyclic-component generator.
 The report supplies the mathematical equivalence used by this test.
 """
 import argparse
-import base64
 from functools import lru_cache
-import gzip
 import hashlib
 import json
 from math import gcd
 from pathlib import Path
+from cyclic_catalogue_to_tsv import load_catalogue_bytes
 
 
 def inverse(word):
@@ -68,9 +67,7 @@ def self_test():
 
 def run(source,crosscheck=None):
     controls=self_test()
-    raw=Path(source).read_bytes()
-    if source.endswith('.gz.b64'):
-        raw=gzip.decompress(base64.b64decode(raw))
+    raw=load_catalogue_bytes(source)
     states=json.loads(raw)
     words={w for state in states for w in state}
     hits=[]
