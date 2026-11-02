@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "candidate_jsonl_sha256": "d530e68cab069aabac841a1082bf5624d657a920001a72a77a3b39365bf167a5",
+  "proof_jsonl_sha256": "ea42d3d352f441f9939631ec28fce7d2a5d0a6bc8a7e61e7b8ace804a43a7f5c",
+  "complete_candidate_absence_certificates_checked": 6568,
+  "closed_map_pair_states_checked": 735712,
+  "all_candidates_independently_refolded": true,
+  "all_closed_sets_contain_initial_maps_and_no_fixed_points": true,
+  "all_closed_sets_closed_under_both_positive_Nielsen_updates": true
+}
