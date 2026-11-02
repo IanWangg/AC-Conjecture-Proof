@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "AK2_candidate": {
+    "moves": 39,
+    "peak_total_length": 29,
+    "endpoint": [
+      "XXyyXyyyxyXYXYYxy",
+      "XYXyxy"
+    ],
+    "cyclic_total_peak": 23,
+    "cyclic_product_edges": 1,
+    "candidate_index": 1190,
+    "candidate_node": 10077,
+    "ordinary_AC_goal_solved": false
+  },
+  "power_meridian_candidate": {
+    "moves": 32,
+    "peak_total_length": 29,
+    "endpoint": [
+      "XXXyyyy",
+      "XXXXXXXyyyyxyxyy"
+    ],
+    "cyclic_total_peak": 23,
+    "cyclic_product_edges": 2,
+    "candidate_index": 5764,
+    "candidate_node": 50152,
+    "ordinary_AC_goal_solved": false
+  },
+  "power_meridian_anchor": {
+    "moves": 51,
+    "peak_total_length": 15,
+    "endpoint": [
+      "x",
+      "y"
+    ]
+  },
+  "nontrivial_basis_bridge": {
+    "status": "PASS",
+    "ordinary_AC_goal_solved": false,
+    "base_change_word": "Yx",
+    "spanning_tree_basis_words": [
+      "yyXXy",
+      "YxyxYX"
+    ],
+    "reverse_formal_basis": [
+      "Xy",
+      "y"
+    ],
+    "forward_formal_basis": [
+      "X",
+      "y"
+    ],
+    "formal_reverse_to_tree_strict_moves": 6,
+    "formal_forward_to_tree_strict_moves": 1,
+    "strict_subgroup_basis_bridge": {
+      "moves": 11,
+      "peak_total_length": 17,
+      "endpoint": [
+        "YxxYY",
+        "YxyxYX"
+      ]
+    },
+    "formal_completion_compiler_shared_with_M": true
+  }
+}
