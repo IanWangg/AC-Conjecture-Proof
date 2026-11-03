@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "ambient_primitive_word": "XYxYYxYYxx",
+  "formal_witness_in_tree_basis": "yX",
+  "tree_basis_words": [
+    "XXyyy",
+    "XYxYYxy"
+  ],
+  "formal_complement": "y",
+  "actual_complement": "XYxYYxy",
+  "parent_strict_moves": 1305,
+  "exposure_bridge_strict_moves": 4,
+  "waypoint_replay": {
+    "moves": 1309,
+    "peak_total_length": 153,
+    "endpoint": [
+      "XYxYYxYYxx",
+      "XYxYYxy"
+    ]
+  },
+  "full_replay": {
+    "moves": 1521,
+    "peak_total_length": 153,
+    "endpoint": [
+      "x",
+      "y"
+    ]
+  },
+  "heuristic_engine": {
+    "status": "HEURISTIC_H_SEARCH",
+    "ordinary_AC_goal_solved": false,
+    "hit": "PRIMITIVE",
+    "seed": 20261103,
+    "attempts": 138768,
+    "admitted_boundary_graphs": 59052,
+    "stored_nodes": 16220,
+    "distinct_classified_graphs": 56277,
+    "known_catalogue_absence": 0,
+    "DAG_absence": 56277,
+    "native_complete_absence": 0,
+    "native_incomplete": 0,
+    "native_pair_states": 32,
+    "known_trivial_H_union_keys": 0,
+    "min_vertices": 8,
+    "maximum_boundary_cyclic_sum": 100,
+    "discarded_by_sampling_limits": 79716,
+    "saved_path_stages": 27,
+    "seconds": 4.84303
+  },
+  "phase_path_replay": {
+    "moves": 1305,
+    "peak_total_length": 153,
+    "endpoint": [
+      "XXyyy",
+      "XYxYYxy"
+    ]
+  }
+}
