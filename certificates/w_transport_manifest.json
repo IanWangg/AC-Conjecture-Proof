@@ -1,0 +1,23 @@
+{
+  "format": "gzip-base64-text-v1",
+  "artifacts": {
+    "w_root_AK3_entry.json.gz.b64": {
+      "decoded_bytes": 134536,
+      "decoded_sha256": "25b541acda2de6c524dae171ed772bdc3c2b6eaa0440cdb47c937aa63d244dfa",
+      "transport_bytes": 2529,
+      "transport_sha256": "b619794107bd4f80e98a0df0060eeaa8f20db0ca81b1886c44a8c061d6612b5f"
+    },
+    "w_root_low25_words.tsv.gz.b64": {
+      "decoded_bytes": 352014,
+      "decoded_sha256": "b78f860f665b881fef1691d8cbef45c76deccd9d3d9125b53ae0892534378ee1",
+      "transport_bytes": 105921,
+      "transport_sha256": "bd049cfa88c0fc0a4582813f21bbdc91cc71f9d0abc337e20824339adab0e721"
+    },
+    "w_root_low25_indices.json.gz.b64": {
+      "decoded_bytes": 103031,
+      "decoded_sha256": "b4d74aaea019489cb601046c3191625df706ddb3821cb526c4968d21b6de0326",
+      "transport_bytes": 42813,
+      "transport_sha256": "466ac7b04a0fe1c6a4e136eaa0c4cf3bb5bd94c5df341ea28012acc1c43fb071"
+    }
+  }
+}
