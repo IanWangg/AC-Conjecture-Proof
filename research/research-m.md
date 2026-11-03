@@ -60,6 +60,16 @@ Run: `m_acsearch --cap 30 --maxstates 500000000 --logtable 30 --threads 2` from 
 - **Detectors over all 5·10⁸ inserted states** (each is a genuine member of AK(3)'s AC class with barrier ≤ 30; the set contains Fwd(AK3, 28) and large parts of the barrier-29/30 layers): **0 primitive relators, 0 Σ-contacts with T(20), 0 Aut-orbit contacts with T(20)** (among states of Aut-minimal length ≤ 20); the 34 benchmark presentations of D §4.3 are the only exact target hits (verified paths). A single hit of any kind would have trivialized AK(3).
 - Side product: Aut-canonical orbits of the cap-28 set restricted to Aut-minimal length ≤ 22: 1,245,860 states (of 69,190,160) have Whitehead-minimal length ≤ 22 (`aut28_ak3_le22.bin`), used in §3.5 against T(22).
 
+### 3.3 AK(3) at cap 29: complete (experiment)
+
+Run: `m_acsearch --cap 29 --maxstates 420000000 --logtable 29 --threads 2` from AK(3), all cyclic products, same detectors as §3.2. **Completed: `budget_hit 0 last_complete_barrier 29 total_states 286729520`** (28 min, 6.7 GB RSS). New states at barrier 29: 217,539,360 (ratio 69.2M → 286.7M = ×4.14, above the ×3.5 odd-step factor D/L measured; together with §3.2, |Fwd(AK3, 30)| > 5·10⁸, so the per-+2 growth is now ≥ ×7.2 rather than ×6.7).
+
+Fwd(AK3, 29) by total length (cap-28 counts of D in parentheses where they differ): 13: 12 · 14: 40 · 15: 564 · 16: 632 · 17: 3,576 (3,568) · 18: 4,000 · 19: 21,312 (21,044) · 20: 23,376 (22,492) · 21: 125,400 (121,740) · 22: 139,504 (128,512) · 23: 750,144 (711,228) · 24: 890,004 (777,136) · 25: 4,667,808 (4,301,608) · 26: 5,957,044 (4,879,156) · 27: 30,330,820 (26,755,156) · 28: 41,672,972 (31,463,272) · 29: 202,142,312. So **no new state of total length ≤ 16 appears at barrier 29** (the class's known short members stay 12 / 40 / 564 / 632), while 8 states of length 17 and 268 of length 19 need an excursion to total length exactly 29 (§3.3.1).
+
+**Detectors (complete over Fwd(AK3, 29)):** 0 primitive relators (Lemma D3); 0 Σ-states of T(20) (so no cyclic-product path AK(3) → (x,y) of peak ≤ 29, extending D's bound from 28 to **29**, in the directed reading); **0 Aut(F₂)-orbits shared with T(20)** among the states of Aut-minimal length ≤ 20 (which is complete for a comparison with T(20), all of whose orbits have Aut-minimal length ≤ 20) — this extends L's exact meet-in-the-middle (cap 28 vs T(20)) to cap 29; exact target hits: the 34 benchmark presentations of D §4.3 and nothing else (all PATHs verified). Any single hit would have been an AC trivialization of AK(3) with a certificate by `d_certify.py` (+ transport for orbit hits).
+
+**Thickenability (experiment):** `m_lowenergy_thicken.py m29_ak3_keys.bin 20`: all 53,512 states of total length ≤ 20 in Fwd(AK3, 29) (by length 13…20: 12 / 40 / 564 / 632 / 3,576 / 4,000 / 21,312 / 23,376) fall into **6,741 complex classes, none thickenable** (extends E's 917 classes at cap 20 and §3.1's 1,075 at cap 26).
+
 (further results filled in below as runs complete)
 
 ## 4. Honest limits
