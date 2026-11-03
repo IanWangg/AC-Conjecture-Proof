@@ -1,0 +1,4973 @@
+{
+  "status": "PARTIAL",
+  "ordinary_AC_goal_solved": false,
+  "rank3_cases": 28,
+  "fully_certified_cases": 25,
+  "unresolved_cases": 3,
+  "results": [
+    {
+      "identified_vertices": [
+        0,
+        1
+      ],
+      "status": "PASS",
+      "checks": [
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                3,
+                5
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                -1,
+                -2,
+                0
+              ]
+            },
+            {
+              "states": [
+                7
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                3,
+                5
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                -6,
+                0,
+                -7
+              ]
+            },
+            {
+              "states": [
+                7
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                7
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            },
+            {
+              "states": [
+                0,
+                1,
+                3,
+                5
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                -6,
+                -7,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                7
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            },
+            {
+              "states": [
+                0,
+                1,
+                3,
+                5
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                -1,
+                0,
+                -2
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identified_vertices": [
+        0,
+        2
+      ],
+      "status": "PASS",
+      "checks": [
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                2
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0,
+                0,
+                -1
+              ]
+            },
+            {
+              "states": [
+                4
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                4
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            },
+            {
+              "states": [
+                0,
+                1,
+                2
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -4,
+                0,
+                -5
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                2
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -5,
+                -1,
+                0
+              ]
+            },
+            {
+              "states": [
+                4
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                4
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            },
+            {
+              "states": [
+                0,
+                1,
+                2
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                -1,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identified_vertices": [
+        0,
+        3
+      ],
+      "status": "PASS",
+      "checks": [
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                5,
+                7
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                -2,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                2
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0,
+                -1
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                5,
+                7
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0,
+                -2
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                2
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0,
+                -1
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                5,
+                7
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                -2,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                2
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                5,
+                7
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0,
+                -2
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                2
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identified_vertices": [
+        0,
+        4
+      ],
+      "status": "PASS",
+      "checks": [
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                3,
+                4,
+                9
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0,
+                0,
+                -1,
+                -1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                3
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0,
+                -1
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                2,
+                5,
+                7,
+                11
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -4,
+                0,
+                -3,
+                -1,
+                -2
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                3,
+                5,
+                6,
+                11
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0,
+                -4,
+                -1,
+                -3,
+                -2
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                2,
+                3,
+                5,
+                8
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0,
+                0,
+                0,
+                -1
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                2
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identified_vertices": [
+        0,
+        5
+      ],
+      "status": "PASS",
+      "checks": [
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                4
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                3,
+                4,
+                8
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                -1,
+                -2,
+                0,
+                -3
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                5
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0,
+                -1
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                2,
+                4,
+                5,
+                9
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -2,
+                -1,
+                -3,
+                -3,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identified_vertices": [
+        0,
+        6
+      ],
+      "status": "PASS",
+      "checks": [
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                5
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0,
+                -1
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                2,
+                5
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0,
+                -1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                5
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                2,
+                5
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                -2,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                5
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0,
+                -1
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                2,
+                4
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0,
+                -2
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                5
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                2,
+                4
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identified_vertices": [
+        0,
+        7
+      ],
+      "status": "PASS",
+      "checks": [
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                3,
+                4,
+                6,
+                9
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                -1,
+                -2,
+                0,
+                -2,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                3,
+                4,
+                6,
+                9
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                -1,
+                -2,
+                0,
+                -2,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                2,
+                5,
+                7,
+                8
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                -1,
+                0,
+                -2,
+                0,
+                -2
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                2,
+                5,
+                7,
+                8
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                -1,
+                0,
+                -2,
+                0,
+                -2
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identified_vertices": [
+        1,
+        2
+      ],
+      "status": "PASS",
+      "checks": [
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                2,
+                5,
+                6,
+                7,
+                9
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                -2,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "states": [
+                0,
+                3
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0,
+                -1
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                3
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0,
+                -1
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                2
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                0
+              ]
+            },
+            {
+              "states": [
+                3,
+                4,
+                5,
+                7,
+                8
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0,
+                0,
+                -2,
+                -1
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                2
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": []
+        }
+      ]
+    },
+    {
+      "identified_vertices": [
+        1,
+        3
+      ],
+      "status": "PASS",
+      "checks": [
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                3,
+                5
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                -1,
+                -2,
+                0
+              ]
+            },
+            {
+              "states": [
+                7
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                3,
+                5
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                -6,
+                0,
+                -7
+              ]
+            },
+            {
+              "states": [
+                7
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                7
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            },
+            {
+              "states": [
+                0,
+                1,
+                3,
+                5
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                -6,
+                -7,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                7
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            },
+            {
+              "states": [
+                0,
+                1,
+                3,
+                5
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                -1,
+                0,
+                -2
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identified_vertices": [
+        1,
+        4
+      ],
+      "status": "UNRESOLVED",
+      "checks": [
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                3
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "UNRESOLVED",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                2,
+                3,
+                4,
+                5,
+                7,
+                9
+              ],
+              "strict_cycle_voltage_sign": 0,
+              "potential": null
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                4,
+                9
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0,
+                -1
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "UNRESOLVED",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                2,
+                3,
+                5,
+                6,
+                8,
+                9
+              ],
+              "strict_cycle_voltage_sign": 0,
+              "potential": null
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                5,
+                8
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                3
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": []
+        }
+      ]
+    },
+    {
+      "identified_vertices": [
+        1,
+        5
+      ],
+      "status": "PASS",
+      "checks": [
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                2
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0,
+                0,
+                -1
+              ]
+            },
+            {
+              "states": [
+                4
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                4
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            },
+            {
+              "states": [
+                0,
+                1,
+                2
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -4,
+                0,
+                -5
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                2
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -5,
+                -1,
+                0
+              ]
+            },
+            {
+              "states": [
+                4
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                4
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            },
+            {
+              "states": [
+                0,
+                1,
+                2
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                -1,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identified_vertices": [
+        1,
+        6
+      ],
+      "status": "PASS",
+      "checks": [
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                2,
+                7
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0,
+                -1
+              ]
+            },
+            {
+              "states": [
+                0,
+                3,
+                5
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                -2,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                2,
+                7
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0,
+                -1
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                2,
+                5
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                0,
+                -2
+              ]
+            },
+            {
+              "states": [
+                3,
+                6
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                3,
+                6
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": []
+        }
+      ]
+    },
+    {
+      "identified_vertices": [
+        1,
+        7
+      ],
+      "status": "PASS",
+      "checks": [
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                3,
+                4,
+                9
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0,
+                0,
+                -1,
+                -1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                3
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0,
+                -1
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                2,
+                5,
+                7,
+                11
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -4,
+                0,
+                -3,
+                -1,
+                -2
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                3,
+                5,
+                6,
+                11
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0,
+                -4,
+                -1,
+                -3,
+                -2
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                2,
+                3,
+                5,
+                8
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0,
+                0,
+                0,
+                -1
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                2
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identified_vertices": [
+        2,
+        3
+      ],
+      "status": "PASS",
+      "checks": [
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                5
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0,
+                -1
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                2,
+                5
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0,
+                -1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                5
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                2,
+                5
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                -2,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                5
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0,
+                -1
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                2,
+                4
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0,
+                -2
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                5
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                2,
+                4
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identified_vertices": [
+        2,
+        4
+      ],
+      "status": "PASS",
+      "checks": [
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                3,
+                5
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                -1,
+                -2,
+                0
+              ]
+            },
+            {
+              "states": [
+                7
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                3,
+                5
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                -6,
+                0,
+                -7
+              ]
+            },
+            {
+              "states": [
+                7
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                7
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            },
+            {
+              "states": [
+                0,
+                1,
+                3,
+                5
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                -6,
+                -7,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                7
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            },
+            {
+              "states": [
+                0,
+                1,
+                3,
+                5
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                -1,
+                0,
+                -2
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identified_vertices": [
+        2,
+        5
+      ],
+      "status": "PASS",
+      "checks": [
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                4
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                4
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                4
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                4
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identified_vertices": [
+        2,
+        6
+      ],
+      "status": "PASS",
+      "checks": [
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                2
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0,
+                0,
+                -1
+              ]
+            },
+            {
+              "states": [
+                4
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                4
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            },
+            {
+              "states": [
+                0,
+                1,
+                2
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -4,
+                0,
+                -5
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                2
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -5,
+                -1,
+                0
+              ]
+            },
+            {
+              "states": [
+                4
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                4
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            },
+            {
+              "states": [
+                0,
+                1,
+                2
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                -1,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identified_vertices": [
+        2,
+        7
+      ],
+      "status": "PASS",
+      "checks": [
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                4
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                3,
+                4,
+                8
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                -1,
+                -2,
+                0,
+                -3
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                5
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0,
+                -1
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                2,
+                4,
+                5,
+                9
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -2,
+                -1,
+                -3,
+                -3,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identified_vertices": [
+        3,
+        4
+      ],
+      "status": "PASS",
+      "checks": [
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                2,
+                7
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0,
+                -1
+              ]
+            },
+            {
+              "states": [
+                0,
+                3,
+                5
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                -2,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                2,
+                7
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0,
+                -1
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                2,
+                5
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0,
+                -2
+              ]
+            },
+            {
+              "states": [
+                3,
+                6
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                3,
+                6
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": []
+        }
+      ]
+    },
+    {
+      "identified_vertices": [
+        3,
+        5
+      ],
+      "status": "PASS",
+      "checks": [
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                2,
+                5,
+                6,
+                7,
+                9
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                -2,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "states": [
+                0,
+                3
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0,
+                -1
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                3
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0,
+                -1
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                2
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                0
+              ]
+            },
+            {
+              "states": [
+                3,
+                4,
+                5,
+                7,
+                8
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0,
+                0,
+                -2,
+                -1
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                2
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": []
+        }
+      ]
+    },
+    {
+      "identified_vertices": [
+        3,
+        6
+      ],
+      "status": "PASS",
+      "checks": [
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                2
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0,
+                0,
+                -1
+              ]
+            },
+            {
+              "states": [
+                4
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                4
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            },
+            {
+              "states": [
+                0,
+                1,
+                2
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -4,
+                0,
+                -5
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                2
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -5,
+                -1,
+                0
+              ]
+            },
+            {
+              "states": [
+                4
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                4
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            },
+            {
+              "states": [
+                0,
+                1,
+                2
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                -1,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identified_vertices": [
+        3,
+        7
+      ],
+      "status": "UNRESOLVED",
+      "checks": [
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                3
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "UNRESOLVED",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                2,
+                3,
+                4,
+                5,
+                7,
+                9
+              ],
+              "strict_cycle_voltage_sign": 0,
+              "potential": null
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                4,
+                9
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0,
+                -1
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "UNRESOLVED",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                2,
+                3,
+                5,
+                6,
+                8,
+                9
+              ],
+              "strict_cycle_voltage_sign": 0,
+              "potential": null
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                5,
+                8
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                3
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": []
+        }
+      ]
+    },
+    {
+      "identified_vertices": [
+        4,
+        5
+      ],
+      "status": "PASS",
+      "checks": [
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                8,
+                13
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0,
+                -1
+              ]
+            },
+            {
+              "states": [
+                2,
+                4,
+                7,
+                9,
+                11
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                -4,
+                -2,
+                0,
+                -3
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                8,
+                13
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0,
+                -1
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                3,
+                5,
+                6,
+                8,
+                11
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -3,
+                0,
+                -2,
+                -4,
+                -1
+              ]
+            },
+            {
+              "states": [
+                9,
+                12
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                9,
+                12
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": []
+        }
+      ]
+    },
+    {
+      "identified_vertices": [
+        4,
+        6
+      ],
+      "status": "PASS",
+      "checks": [
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                2,
+                5,
+                6,
+                7,
+                9
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                -2,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "states": [
+                0,
+                3
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0,
+                -1
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                3
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0,
+                -1
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                2
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                0
+              ]
+            },
+            {
+              "states": [
+                3,
+                4,
+                5,
+                7,
+                8
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0,
+                0,
+                -2,
+                -1
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                2
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": []
+        }
+      ]
+    },
+    {
+      "identified_vertices": [
+        4,
+        7
+      ],
+      "status": "PASS",
+      "checks": [
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                2
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0,
+                0,
+                -1
+              ]
+            },
+            {
+              "states": [
+                4
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                4
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            },
+            {
+              "states": [
+                0,
+                1,
+                2
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -4,
+                0,
+                -5
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                2
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -5,
+                -1,
+                0
+              ]
+            },
+            {
+              "states": [
+                4
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                4
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            },
+            {
+              "states": [
+                0,
+                1,
+                2
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                -1,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identified_vertices": [
+        5,
+        6
+      ],
+      "status": "UNRESOLVED",
+      "checks": [
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                3
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "UNRESOLVED",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                2,
+                3,
+                4,
+                5,
+                7,
+                9
+              ],
+              "strict_cycle_voltage_sign": 0,
+              "potential": null
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                4,
+                9
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0,
+                -1
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "UNRESOLVED",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                2,
+                3,
+                5,
+                6,
+                8,
+                9
+              ],
+              "strict_cycle_voltage_sign": 0,
+              "potential": null
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                5,
+                8
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                3
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": []
+        }
+      ]
+    },
+    {
+      "identified_vertices": [
+        5,
+        7
+      ],
+      "status": "PASS",
+      "checks": [
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                3,
+                5
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                -1,
+                -2,
+                0
+              ]
+            },
+            {
+              "states": [
+                7
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                3,
+                5
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                -6,
+                0,
+                -7
+              ]
+            },
+            {
+              "states": [
+                7
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                7
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            },
+            {
+              "states": [
+                0,
+                1,
+                3,
+                5
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                -6,
+                -7,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                7
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            },
+            {
+              "states": [
+                0,
+                1,
+                3,
+                5
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                -1,
+                0,
+                -2
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identified_vertices": [
+        6,
+        7
+      ],
+      "status": "PASS",
+      "checks": [
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                4
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                4
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                4
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": []
+        },
+        {
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                4
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
