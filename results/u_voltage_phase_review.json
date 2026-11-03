@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "original_vertices": 10,
+  "independent_initial_absence_states_checked": 72,
+  "all_unordered_vertex_pairs_checked": 45,
+  "rank_three_quotients_checked": 45,
+  "character_pullback_edge_equalities_checked": 990,
+  "normalizations_character_of_extra_generator_equals_one": 45,
+  "signed_forbidden_double_automata_checked": 360,
+  "cyclic_components_checked": 302,
+  "integer_potential_inequalities_checked": 822,
+  "AK2_positive_control": {
+    "status": "PASS",
+    "original_vertices": 8,
+    "positive_phase_pair": [
+      "XXyyy",
+      "YXyyXyx"
+    ],
+    "matching_cut_pairs": [
+      {
+        "cut_vertices": [
+          3,
+          7
+        ],
+        "quotient_rank": 3,
+        "extra_generator": "xYX",
+        "zero_voltage_primitive": "xYxYYxYY",
+        "signed_primitive_basis_program": "xY:RLRL:component1",
+        "loop_vertices": [
+          0
+        ]
+      }
+    ],
+    "scope": "Known AK(2) positive phase has a rank-three character but an explicit zero-voltage primitive; strict cycle-sign exclusion fails"
+  },
+  "input_sha256": {
+    "v_vertex_identification_results.json": "6adc8444b8002d0c761630da341e8531ad91c53217adb76831d68451046e8f1d",
+    "v_voltage_cycle_results.json": "28f39277e014018eee5eb5cf8ce8cf897de193bb9f49e8dfb03005265cf45014",
+    "AK3_relative_tail.json": "8870d42c48f382906b5316d9a0ba1fa1744d8577e896398086f197396bbf89e4"
+  },
+  "scope": "Finite certificates for unrestricted-length one-phase primitive exclusion; no global AC invariant"
+}
