@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "original_graph_vertices": 10,
+  "vertex_identifications_independently_refolded": 45,
+  "rank_three_cases": 45,
+  "character_values_on_p_b_t": [
+    0,
+    0,
+    1
+  ],
+  "signed_double_free_graphs_independently_reconstructed": 360,
+  "cyclic_components_independently_recognized": 302,
+  "integer_potential_inequalities_checked": 822,
+  "constructor_or_Bellman_Ford_solver_imported": false,
+  "scope": "Finite certificate audit for the unbounded restricted kernel theorem; no global AC invariant",
+  "input_sha256": [
+    "6adc8444b8002d0c761630da341e8531ad91c53217adb76831d68451046e8f1d",
+    "28f39277e014018eee5eb5cf8ce8cf897de193bb9f49e8dfb03005265cf45014"
+  ]
+}
