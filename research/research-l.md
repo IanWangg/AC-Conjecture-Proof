@@ -245,3 +245,10 @@ S/d_acsearch --source W1,W2 --no-stop --cap 24 --maxstates 12000000 --target-key
 - G. Havas, C. Ramsay, *Breadth-first search and the Andrews–Curtis conjecture*, IJAC 13 (2003) (length-13 dichotomy; externally reported).
 - M. Bridson, arXiv:1504.04187 (unbounded excess in general; externally reported).
 - M. Lackenby, arXiv:2606.06122 (thickenable ⇒ AC-trivial; externally reported, via F).
+
+## Coordinator's review (second reader, 2026-11-03)
+
+- Re-ran `python3 experiments/elementary_verify.py certificates/l_ms*_trivialization.json`: all eight certificates replay from the exact benchmark tuples to (x,y) (157–471 moves, peaks 26–29). `l_classes.py --selftest` and `l_spectrum.py --selftest` pass. `l_ms_barriers.py` has no stand-alone self-test: its `--selftest` needs a state dump and a key file from the engine runs (`--selftest DUMP.txt KEYS.bin`); coordinator run with the scratch-directory files: not run (data files not located).
+- Lemma L2's counterexample was re-checked with independent code: (xyxYxyxYYYxyyxY, x) → (xxYxyxYYYxyy, x) is a cyclic-product edge and no cyclic product of xxYxyxYYYxyy with x^{±1} returns to the original word. Agent J found the same error in D's Lemma D1(c) independently with a different counterexample; both are recorded in the coordinator's review appended to research-d.md and in the README. L's consequence (ii), that forward sets from (x,y) consist of AC-trivial presentations with elementary peak ≤ cap, and (iii), that absence from T(C) does not bound the elementary barrier, are correct and important for reading all engine-relative negatives in this repository.
+- Lemma L1 is Proposition D4 applied to a forward BFS with a target set; correct in the directed reading.
+- All negative results in this note are engine-relative and cap-relative, as §5 says; the growth projections of §4 are extrapolations. The eight certificates are independent public ledgers for presentations already reported solved, as the note itself states.
