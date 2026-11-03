@@ -134,7 +134,7 @@ def iota(p):
     return tuple(W.cycred(w.swapcase()) for w in p)
 
 
-def analyse(states, source=None, max_pairs=50, verbose=True):
+def analyse(states, source=None, max_pairs=50, verbose=True, bfs=300000):
     groups = defaultdict(list)
     for i, p in enumerate(states):
         groups[W.aut_canon(p)].append(i)
@@ -158,7 +158,7 @@ def analyse(states, source=None, max_pairs=50, verbose=True):
         for j in idx[1:]:
             if canon(states[j]) == ib:
                 continue
-            names = find_aut(base, states[j])
+            names = find_aut(base, states[j], max_states=bfs)
             if names is None:
                 result.setdefault("unrecovered", 0)
                 result["unrecovered"] += 1
@@ -170,6 +170,7 @@ def analyse(states, source=None, max_pairs=50, verbose=True):
             if n_pairs < max_pairs:
                 result["examples"].append({"from": list(base), "to": list(states[j]), "aut": names, "matrix": M})
                 n_pairs += 1
+    result["_groups"] = groups
     return result
 
 
@@ -177,11 +178,14 @@ def matmul(A, B):
     return tuple(tuple(sum(A[i][k] * B[k][j] for k in range(2)) for j in range(2)) for i in range(2))
 
 
-def group_closure(gen_names, limit=200):
-    """Closure of the matrices (mod +-I) of the given automorphisms, with a
-    representative name-list for each matrix class.  Returns dict mat->names
-    or None if the closure exceeds `limit` elements (infinite group suspected)."""
+def group_closure(gen_names, limit=200, mod_sign=False):
+    """Closure of the matrices of the given automorphisms (exact matrices, i.e.
+    elements of Out(F2) = GL2(Z); mod +-I if mod_sign), with a representative
+    name-list for each element.  Returns dict mat->names, or None if the
+    closure exceeds `limit` elements (infinite group suspected)."""
     def key(M):
+        if not mod_sign:
+            return M
         Mn = tuple(tuple(-v for v in row) for row in M)
         return min(M, Mn)
     I = ((1, 0), (0, 1))
@@ -216,10 +220,11 @@ def explain(states, result, extra_gens=(("invx", "invy"),)):
             gens.append(list(g))
     reps = group_closure(gens)
     if reps is None:
-        return {"group_order_mod_pm": None}
-    groups = defaultdict(list)
-    for i, p in enumerate(states):
-        groups[W.aut_canon(p)].append(i)
+        return {"group_order": None}
+    groups = result.get("_groups") or defaultdict(list)
+    if not groups:
+        for i, p in enumerate(states):
+            groups[W.aut_canon(p)].append(i)
     explained = unexplained = 0
     bad = []
     for key, idx in groups.items():
@@ -234,7 +239,7 @@ def explain(states, result, extra_gens=(("invx", "invy"),)):
                 unexplained += 1
                 if len(bad) < 10:
                     bad.append([list(base), list(states[j])])
-    return {"group_order_mod_pm": len(reps), "group_matrices": sorted(reps),
+    return {"group_order": len(reps), "group_matrices": sorted(reps),
             "members_of_multi_orbits_explained": explained, "unexplained": unexplained, "unexplained_examples": bad}
 
 
@@ -261,9 +266,11 @@ def selftest():
     # iota pairing on a small synthetic forward set
     states = [("xxxxyXy", "xyyyxYY"), ("XXXXYxY", "XYYYXyy"), ("x", "y")]
     r = analyse(states, verbose=False)
+    r.pop("_groups", None)
     assert r["orbits"] == 2 and r["iota_closed"] == 3
     reps = group_closure([["invx", "invy"], ["x_xy", "invx"], ["y_yx", "y_yx", "y_yx", "invx"]])
-    assert reps is not None and len(reps) == 6, reps and len(reps)
+    assert reps is not None and len(reps) == 12, reps and len(reps)       # D6 of order 12 in GL2(Z)
+    assert len(group_closure([["x_xy", "invx"], ["y_yx", "y_yx", "y_yx", "invx"]], mod_sign=True)) == 6
     assert group_closure([["x_xy"]]) is None            # infinite cyclic
     print(f"n_autstab self-test passed: {n} planted automorphisms recovered; D6 closure ok")
 
@@ -276,6 +283,7 @@ def main():
     maxn = None
     out = None
     do_explain = False
+    bfs = 300000
     args = sys.argv[2:]
     while args:
         a = args.pop(0)
@@ -285,6 +293,8 @@ def main():
             out = args.pop(0)
         elif a == "--explain":
             do_explain = True
+        elif a == "--bfs":
+            bfs = int(args.pop(0))
         else:
             raise SystemExit("unknown option " + a)
     states = []
@@ -296,9 +306,10 @@ def main():
             states.append((parts[0], parts[1]))
             if maxn and len(states) >= maxn:
                 break
-    r = analyse(states)
+    r = analyse(states, bfs=bfs)
     if do_explain:
         r["explain"] = explain(states, r)
+    r.pop("_groups", None)
     if out:
         with open(out, "w") as f:
             json.dump(r, f, indent=1)

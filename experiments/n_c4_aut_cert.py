@@ -71,7 +71,7 @@ def selftest():
     # the two matrices generate, with -I, a group of order 12 (D6)
     from n_autstab import group_closure
     reps = group_closure([["invx", "invy"]] + [PATHS[n]["aut"] for n in PATHS])
-    assert reps is not None and len(reps) == 6
+    assert reps is not None and len(reps) == 12          # D6 of order 12 in GL2(Z)
     print("n_c4_aut_cert self-test passed:", {n: (len(build(n)[0]["moves"]), build(n)[1]["peak_total_length"]) for n in PATHS})
 
 
