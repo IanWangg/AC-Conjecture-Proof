@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "independently_refolded_rotation_pairs": 3333,
+  "maximum_graph_vertices": 249,
+  "source_jsonl_sha256": "4de92fdc35db0dd2011580bf3994407a59c348bc06806c0a98ca36b2ed6395db",
+  "sample_graph_jsonl_sha256": "b73e30eb1d408ac45400b1da322cd7f8243c929865060bedf5908d5975b0616e",
+  "scope": "Independent R batch-identification folds agree exactly with extended Q folds on three deterministic rotations per source; sample only."
+}
