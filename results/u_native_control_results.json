@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "control_records": 2205,
+  "control_kinds": {
+    "primitive_cycle": 372,
+    "proper_square_cycle": 372,
+    "AK3_relative_tail": 1457,
+    "standard_basis": 1,
+    "conjugated_basis": 1,
+    "AK2_phase": 1,
+    "branching_negative": 1
+  },
+  "closed_total_map_pairs_independently_checked": 170968,
+  "R_fold_and_exact_decision_comparisons": 2205,
+  "M_independent_rank2_fold_comparisons": 1461,
+  "additional_wide_integer_map_controls": {
+    "primitive_cycle_vertices": 257,
+    "proper_power_cycle_vertices": 300,
+    "status": "PASS"
+  },
+  "budget_stop_correctly_INCOMPLETE": true,
+  "tampered_initial_pair_rejected": true,
+  "native_summary": {
+    "records": 2205,
+    "ABSENT": 1830,
+    "PRIMITIVE": 375,
+    "INCOMPLETE": 0,
+    "map_pair_states": 181026,
+    "maximum_one_alphabet": 52,
+    "ordinary_AC_goal_solved": false
+  }
+}
