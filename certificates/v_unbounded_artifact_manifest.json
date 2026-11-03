@@ -1,0 +1,55 @@
+{
+  "status": "PUBLISHED_EXACT_READBACK_VERIFIED",
+  "ordinary_AC_goal_solved": false,
+  "artifacts": [
+    {
+      "local_path": "work/research_v/unbounded-one-phase.md",
+      "repository_path": "research/research-v-unbounded.md",
+      "bytes": 14441,
+      "sha256": "111ee9fde7c227f989bf6d61fc448f9e7797a6989bc296264ace60a66ca37f5c",
+      "git_blob_sha1": "bdfc09ac41bce21f1bbd802ff2624d59f690618f"
+    },
+    {
+      "local_path": "work/research_v/vertex_identification.py",
+      "repository_path": "experiments/v_vertex_identification.py",
+      "bytes": 6606,
+      "sha256": "3c04e5347e10068a98344b8ba187ae64275321cad654e5ebab053add1ea66602",
+      "git_blob_sha1": "bb4d1742bb492617bd4319c37ed5a2215ca0bfd4"
+    },
+    {
+      "local_path": "work/research_v/voltage_cycle_review.py",
+      "repository_path": "experiments/v_voltage_cycle_review.py",
+      "bytes": 3871,
+      "sha256": "e45c3bfcf98f48f68a4d03b5cc1e3a68d8711ec9197572ababbfa0443586bd57",
+      "git_blob_sha1": "b9e87948475d3142a245c1ef1ad23933b121d2a8"
+    },
+    {
+      "local_path": "work/research_v/v_vertex_identification_results.json",
+      "repository_path": "certificates/v_vertex_identification_results.json",
+      "bytes": 49170,
+      "sha256": "6adc8444b8002d0c761630da341e8531ad91c53217adb76831d68451046e8f1d",
+      "git_blob_sha1": "9ee98820ce2154d699603c4b31a11cd641aa7def"
+    },
+    {
+      "local_path": "work/research_v/v_voltage_cycle_results.json",
+      "repository_path": "certificates/v_voltage_cycle_results.json",
+      "bytes": 152055,
+      "sha256": "28f39277e014018eee5eb5cf8ce8cf897de193bb9f49e8dfb03005265cf45014",
+      "git_blob_sha1": "89cf8a9f1b320235403c9a4da285eb92084df976"
+    },
+    {
+      "local_path": "work/research_v/v_ak2_vertex_identification_results.json",
+      "repository_path": "certificates/v_ak2_vertex_identification_results.json",
+      "bytes": 25627,
+      "sha256": "a48796c393c43e34fe10cca2e883c054ba00287b32c2bb614b465245f2c61826",
+      "git_blob_sha1": "ab6f887a286d5c69e7f9c5f151a5f9781e497f37"
+    },
+    {
+      "local_path": "work/research_v/v_ak2_voltage_cycle_results.json",
+      "repository_path": "certificates/v_ak2_voltage_cycle_results.json",
+      "bytes": 100620,
+      "sha256": "b5316c18d3c7d4ff9812c66e871e99c595ffdebaf107bd3cd9cc75a27c4f3952",
+      "git_blob_sha1": "b8f643bbcac959e7b6059b0868e54f1f48e2e8d2"
+    }
+  ]
+}
