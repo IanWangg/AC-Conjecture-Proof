@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "independence": "No W imports; corner and sheet reconstruction, reference chart and genus calculation independent",
+  "uniform_index_control_n": [
+    2,
+    256
+  ],
+  "uniform_equation_masks": [
+    1,
+    2,
+    3
+  ],
+  "uniform_rhs": [
+    0,
+    0,
+    1
+  ],
+  "uniform_reference_orientations": [
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "exhaustive_initial_controls": [
+    {
+      "n": 2,
+      "compatible_rotation_systems": 2880,
+      "minimum_genus": 1,
+      "genus_histogram": {
+        "1": 2,
+        "2": 372,
+        "3": 1866,
+        "4": 640
+      }
+    },
+    {
+      "n": 3,
+      "compatible_rotation_systems": 86400,
+      "minimum_genus": 2,
+      "genus_histogram": {
+        "2": 724,
+        "3": 14882,
+        "4": 55438,
+        "5": 15356
+      }
+    }
+  ],
+  "scope": "Finite index/exhaustive controls; the uniform all-n claim uses the symbolic proof in the review"
+}
