@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "n": 3,
+  "endpoint_cyclic_cap": 200,
+  "source_jsonl_sha256": "e92064f268edfdc85bb61dbd1c1b9faedc74d0d0c89de5df53c4e9fe963116c1",
+  "actual_raw_basis_programs_independently_regenerated": 706,
+  "strict_Nielsen_only_source_moves_replayed": 18730,
+  "maximum_strict_raw_source_peak": 204,
+  "maximum_cyclic_source_peak": 200,
+  "all_source_family_keys_equal_independent_matrix_enumeration": true,
+  "source_corpus_contains_no_intermediate_independent_conjugations": true,
+  "matrix_enumeration": {
+    "status": "COMPLETE_BOUNDED_BASIS_CLASSES",
+    "ordinary_AC_goal_solved": false,
+    "n": 3,
+    "cyclic_endpoint_cap": 200,
+    "shortest_primitive_H_coordinate": 6,
+    "absolute_vector_coordinate_bounds": [
+      38,
+      48
+    ],
+    "projective_primitive_vectors_tested": 666,
+    "unimodular_projective_pairs": 706,
+    "distinct_cyclic_basis_pair_classes": 706,
+    "all_vector_length_formulas_checked_by_literal_substitution": true,
+    "scope": "All initial-H Nielsen basis cyclic classes with stated endpoint energy; no primitive absence conclusion"
+  },
+  "scope": "Source coverage and actual initial-H basis provenance only; downstream primitive exclusions belong to V/U"
+}
