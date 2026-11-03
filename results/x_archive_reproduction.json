@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "hash_checked_transports": 4,
+  "character_audit": {
+    "status": "PASS",
+    "second_identifications": 1015,
+    "counts": {
+      "NO_CHARACTER_EXTENSION": 551,
+      "CERTIFIED_EXTENSION_KERNEL": 353,
+      "AFFINE_CYCLE_FAMILY_INFEASIBLE": 111
+    },
+    "integer_potential_inequalities": 15586,
+    "actual_affine_cycle_witnesses": 2954,
+    "uniform_affine_primitive_witnesses": 58,
+    "ordinary_AC_goal_solved": false
+  },
+  "literal_rotation_successors": 42,
+  "vertex_identifications": 2272,
+  "rotation_kernel_potential_inequalities": 42876,
+  "strict_rotation_entry_moves": 231,
+  "AK3_saved_walk_strict_moves": 26130,
+  "AK2_full_control": {
+    "moves": 1954,
+    "peak_total_length": 149,
+    "endpoint": [
+      "x",
+      "y"
+    ]
+  },
+  "saved_H1_source_records": 985
+}
