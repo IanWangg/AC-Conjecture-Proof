@@ -606,42 +606,6 @@ def selftest():
     print("g_cert self-test passed; AK(2) one-ACM-move certificate:", out["moves"], "moves, peak", out["peak_total_length"])
 
 
-if __name__ == "__main__":
-    if sys.argv[1:] == ["--selftest"]:
-        selftest()
-    elif sys.argv[1:2] == ["--write-g5"]:
-        outdir = sys.argv[2]
-        jobs = [
-            ("g_r327_to_c3_via_aut.json", aut_equivalence_certificate,
-             ("xxyXYXy", "xyXyyyyXy"), (0, ((-1, -1), (3, 4)), -2, 3, "YxYxYxYxYxYXyX"),
-             ("xxyXy", "xyyyyyxYY"), (1, ((-2, -1), (-1, 0)), -2, 3, "YxYxYxYxYxYXyX")),
-            ("g_r74_to_r62_via_aut.json", aut_equivalence_certificate_general,
-             ("xxyXy", "xyyyyyyyxYY"), (0, ((-1, 0), (-7, -1)), -2, 9, "YxYYxYX"),
-             ("xxyxyXy", "xyXYYYYXy"), (0, ((-2, -1), (-7, -4)), 2, -3, "YxYxYxYxYxYxYxYXyX")),
-        ]
-        for name, fn, A, la, B, lb in jobs:
-            phi, cj = fn(A, la, B, lb)
-            r = replay(cj)
-            out = {"format": cj["format"], "start": cj["start"], "target": cj["target"], "moves": cj["moves"],
-                   "note": "agent G: phi(A) -> B with phi = %s, A = %s, B = %s" % (list(phi), list(A), list(B))}
-            with open(os.path.join(outdir, name), "w") as f:
-                json.dump(out, f, separators=(",", ":"))
-            print(name, "phi =", phi, r["moves"], "moves, peak", r["peak_total_length"])
-    elif sys.argv[1:2] == ["--write"]:
-        outdir = sys.argv[2]
-        c2 = ak2_trivial()
-        j2 = c2.to_json(["x", "y"])
-        print("ak2:", replay(j2))
-        with open(os.path.join(outdir, "g_ak2_torus_acm_trivialization.json"), "w") as f:
-            json.dump(j2, f)
-        for n in (3,):
-            c, tgt = ak_to_trefoil_t2(n)
-            j = c.to_json(tgt)
-            print("ak%d -> trefoil+T(2,%d):" % (n, 2 * n + 1), replay(j), "target", tgt)
-            with open(os.path.join(outdir, "g_ak%d_to_trefoil_t2_%d.json" % (n, 2 * n + 1)), "w") as f:
-                json.dump(j, f)
-
-
 # ------------------------------------------------- certificate algebra
 
 def reverse_certificate(cj):
@@ -806,3 +770,39 @@ def aut_equivalence_certificate_general(A, landA, B, landB):
     sigma_match(c, cB["target"])
     tA = concat_certificates(tA, c.to_json(list(c.s)))
     return phi, concat_certificates(tA, reverse_certificate(cB))
+
+
+if __name__ == "__main__":
+    if sys.argv[1:] == ["--selftest"]:
+        selftest()
+    elif sys.argv[1:2] == ["--write-g5"]:
+        outdir = sys.argv[2]
+        jobs = [
+            ("g_r327_to_c3_via_aut.json", aut_equivalence_certificate,
+             ("xxyXYXy", "xyXyyyyXy"), (0, ((-1, -1), (3, 4)), -2, 3, "YxYxYxYxYxYXyX"),
+             ("xxyXy", "xyyyyyxYY"), (1, ((-2, -1), (-1, 0)), -2, 3, "YxYxYxYxYxYXyX")),
+            ("g_r74_to_r62_via_aut.json", aut_equivalence_certificate_general,
+             ("xxyXy", "xyyyyyyyxYY"), (0, ((-1, 0), (-7, -1)), -2, 9, "YxYYxYX"),
+             ("xxyxyXy", "xyXYYYYXy"), (0, ((-2, -1), (-7, -4)), 2, -3, "YxYxYxYxYxYxYxYXyX")),
+        ]
+        for name, fn, A, la, B, lb in jobs:
+            phi, cj = fn(A, la, B, lb)
+            r = replay(cj)
+            out = {"format": cj["format"], "start": cj["start"], "target": cj["target"], "moves": cj["moves"],
+                   "note": "agent G: phi(A) -> B with phi = %s, A = %s, B = %s" % (list(phi), list(A), list(B))}
+            with open(os.path.join(outdir, name), "w") as f:
+                json.dump(out, f, separators=(",", ":"))
+            print(name, "phi =", phi, r["moves"], "moves, peak", r["peak_total_length"])
+    elif sys.argv[1:2] == ["--write"]:
+        outdir = sys.argv[2]
+        c2 = ak2_trivial()
+        j2 = c2.to_json(["x", "y"])
+        print("ak2:", replay(j2))
+        with open(os.path.join(outdir, "g_ak2_torus_acm_trivialization.json"), "w") as f:
+            json.dump(j2, f)
+        for n in (3,):
+            c, tgt = ak_to_trefoil_t2(n)
+            j = c.to_json(tgt)
+            print("ak%d -> trefoil+T(2,%d):" % (n, 2 * n + 1), replay(j), "target", tgt)
+            with open(os.path.join(outdir, "g_ak%d_to_trefoil_t2_%d.json" % (n, 2 * n + 1)), "w") as f:
+                json.dump(j, f)

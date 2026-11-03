@@ -2,7 +2,7 @@
 
 Date: 2026-11-02. Independent research agent G (round 3).
 
-**Status:** partial results, all verified. **No AC trivialization of AK(3), no proof that AK(3) is not AC-trivial, and no counterexample.** Everything below concerns the ordinary (unstable) AC relation. No stabilization is used anywhere.
+**Status:** final for this round. Partial results, all verified. **No AC trivialization of AK(3), no proof that AK(3) is not AC-trivial, and no counterexample.** Everything below concerns the ordinary (unstable) AC relation. No stabilization is used anywhere.
 
 **Summary, with labels.**
 
@@ -12,7 +12,7 @@ Date: 2026-11-02. Independent research agent G (round 3).
 | G1 | For every n ≥ 1, AK(n) ~AC (w_n, xyxy⁻¹x⁻¹y⁻¹), where w_n = cyc ψ((xy)ⁿx((yx)ⁿy)⁻¹) is a T(2,2n+1) relator and ψ: x↦xyx, y↦yx. Hence, up to Aut(F₂), AK(n) ~ ⟨x,y \| (xy)ⁿx = y(xy)ⁿ, x² = y³⟩ | proved (uniform normal-form proof); certificate for n = 3 |
 | G2 | For n ≥ 3, no presentation with a primitive relator is one ACM move away from AK(n), even with arbitrary conjugators and with Aut(F₂) applied freely. AK(2) is one such move away from a primitive relator | proved (abelianization plus Christoffel structure); AK(2) certificate |
 | G3 | Primitive neighbours of any torus node reduce to a finite check (Lemma G4). Neither of AK(3)'s two other torus nodes has a primitive neighbour | proved + exact finite computation |
-| G4 | Torus graph (bounded: \|M\| ≤ 16, exponents ≤ 24, length ≤ 160): AK(3), AK(4) and AK(5) each have exactly 3 Aut-orbits, none with a meridian, a primitive relator, or (exact test) a primitive neighbour. AK(2) reaches a primitive relator in one move. All 14 of D's 34 MS(3,·) members whose short relator is of torus type land on exactly these 3 orbits. C3 and C4 reach meridian defect 4, not 2. The torus graphs of AK(3), AK(2), C3 and C4 are pairwise disjoint. Holdout #2 = MS(2,x⁻²y⁻¹x²y⁻¹) has no torus-type or primitive landing | experiment (exact bounds below) |
+| G4 | Torus graph (bounded: \|M\| ≤ 16, exponents ≤ 24, length ≤ 160): AK(3), AK(4) and AK(5) each have exactly 3 Aut-orbits, none with a meridian, a primitive relator, or (exact test) a primitive neighbour. AK(2) reaches a primitive relator in one move. **All 34** of D's certified MS(3,·) members reach the torus locus only at these 3 orbits: 14 directly (their short relator is of torus type), and 20 through exact BS(3,4)-conjugates of their short relator that are of torus type. C3 and C4 reach meridian defect 4, not 2. The torus graphs of AK(3), AK(2), C3 and C4 are pairwise disjoint. Holdout #2 = MS(2,x⁻²y⁻¹x²y⁻¹) has no torus-type or primitive landing | experiment (exact bounds below) |
 | G5 | Two reductions of the residual list (838 classes of length 13–16, third-party, unreviewed): the R327 representative is AC-equivalent, after an explicit automorphism φ, to C3 = (x²yx⁻¹y, xy⁵xy⁻²); a member of the list's R74 class is AC-equivalent, after an explicit automorphism, to a member of its R62 class. So R327 is AC-trivial iff C3 is (Lemma D2), and likewise for those two members of R62 and R74. The source lists these as separate components at cap 28 | proved by certificates (verified) |
 
 Certificates (all replayed by `experiments/elementary_verify.py`):
@@ -209,6 +209,8 @@ AK(4) and AK(5) show the same pattern with T(2,9) and T(2,11). **Landing MS pres
 - 14 of D's 34 certified MS(3,·) members of AK(3)'s class have a short relator of trefoil type (`torus_type`, |M| ≤ 12, exponents ≤ 20). **Every one of them lands on exactly the three island orbits and on no other torus node**, and none has a primitive neighbour.
 - Holdout #2 = (XyyxYYY, XXXYxxY): its short relator is T(2,5)-type. No torus-type word (within bounds) and no primitive word (exact) is conjugate to XyyxYYY^{±1} in that T(2,5) group, so it does not land in any torus graph.
 - Holdout #1 = (XyyxYYY, XXXYxxy) is a BS/BS pair (= P1) and cannot be landed this way. (93 s, one core.)
+- **The other 20 MS(3) members** (short relator not of torus type). `g_bs.py` decides normal forms in BS(3,4) = ⟨x,y \| x⁻¹y³x = y⁴⟩ exactly and searches for conjugators (Collins' lemma, conjugating elements y^s with \|s\| ≤ 30; every positive is checked by exact normal-form equality). For each member, 10–16 distinct torus-type words (|M| ≤ 8, exponents ≤ 12, length ≤ 100) are exactly conjugate to its short relator in BS(3,4). Freezing such a word and moving the BS relator to torus-type words always lands on 2 nodes, **both in AK(3)'s island**; no torus node outside the island was found (244 s, one core).
+- So, within these bounds, the island is the whole torus locus reachable from AK(3), its Aut-images and all 34 certified MS(3) members by one exact move. This is evidence of rigidity, not a proof.
 
 The node sets of AK(3), C3, C4 and AK(2) are pairwise disjoint, so the torus graphs give no new equivalence among the length-14 residual classes. The defect-4 states of C3 and C4 agree with F's §4.6.
 
@@ -219,6 +221,16 @@ python3 -c "import sys; sys.path.insert(0,'experiments'); import g_torus as G; \
 # -> 3 0   (AK(3); 19 s)
 ```
 (AK(4)/AK(5): replace the first word by xxxxYYYYY / xxxxxYYYYYY; C3: 'xxyXy','xyyyyyxYY'; C4: 'xxxxyXy','xyyyxYY'; AK(2): 'xxYYY'.)
+
+**MS(3) landing (repository data only).**
+```
+python3 experiments/g_landing_ms.py            # K=8, P=12, L=100, conjugator window 30
+#  AK(3) torus island: 3 Aut-orbits
+#  34 lines "... landing orbits 2, in island 2, primitive neighbours 0" (14 "direct", 20 "via 10-16 BS(3,4)-conjugate torus words")
+#  holdout #2 (XyyxYYY, XXXYxxY): landing orbits 0, primitive neighbours 0
+#  landing orbits outside the island: 0   (174 s)
+```
+At K = 8 a direct landing reaches 2 of the 3 island orbits; the earlier scratch run at K = 16 reached all 3.
 
 **Residual-list survey and G5 certificates.**
 ```
@@ -245,7 +257,7 @@ The survey numbers above come from the scratch driver this survey function is co
 ## 6. Insight and recommended next direction
 
 1. **AK(2) versus AK(n≥3) is visible in exact ACM moves.** For AK(2), the braid relator is conjugate in ⟨x,y \| x² = y³⟩ to a primitive word, because in C₂ the syllables ā and ā⁻¹ coincide. For n ≥ 3 two mechanisms block every primitive or meridian exit near AK(n): the sign mixing (ā, ā, ā⁻¹) of the braid relator in C_n * C_{n+1}, and *unbalanced block necklaces* (2ⁿ1^{n+1}; 3,3,4,4,4) in the trefoil and T(2,7) groups. Primitive and meridian images are always balanced. A natural candidate quantity for H's obstruction work is the "balance defect" of the partner's necklace over the torus-type states of the class. It is not an AC invariant, and I have no proof that it persists.
-2. **Constructive next step: exact moves beyond torus groups.** The same machinery works for any frozen relator with a computable conjugacy invariant. The next targets are Baumslag–Solitar-type relators (HNN normal forms with Collins' lemma), which would join the torus island to D's 34 MS(3,w) members, and two-bridge knot relators. A meridian (defect 2) or primitive state reachable through such moves would trivialize AK(3) with a certificate, through `g_cert.py` and the Euclid exit §2.4. A combined torus/BS graph is the cheapest experiment not yet done.
+2. **Constructive next step: exact moves beyond torus groups.** The same machinery works for any frozen relator with a computable conjugacy invariant. I began this with Baumslag–Solitar relators (`g_bs.py`). It joins all 34 MS(3,w) members to the torus island, and so far it only confirms the island. The remaining step is a full BS-frozen move (moving the torus relator inside BS(3,4)) plus a BS rewriting compiler for certificates. Two-bridge knot relators are the other natural target. A meridian (defect 2) or primitive state reachable through such moves would trivialize AK(3) with a certificate, through `g_cert.py` and the Euclid exit §2.4. A combined torus/BS graph is the cheapest experiment not yet done.
 3. **For H and I.** Lemma G4 turns "one-move-to-primitive" into a finite computation at every torus-type state, and it can be run on torus-type states found by any search. The residual survey (G5) shows that exact long-conjugator landings plus Aut-orbit matching connect classes that a cap-28 exhaustive search keeps apart: C3 with R327, and R62 with R74.
    - The cheapest follow-up is the same survey with larger K, P, L and with BFS from the landing nodes. It may merge more residual classes up to Aut.
    - The family (x²yx⁻¹y, xy^{2k+1}xy⁻²) has k = 2 (C3), k = 3 (the R74 member in G5), and so on. Its torus landings suggest a uniform statement analogous to G1.
@@ -258,6 +270,7 @@ The survey numbers above come from the scratch driver this survey function is co
 - `experiments/g_bs.py`: HNN normal form for BS(m,n) = ⟨x,y | x⁻¹yᵐx = yⁿ⟩ and a conjugacy *search*. Positives are exact; negatives are bounded, except that unequal t-length or H₁ image proves non-conjugacy. Self-test included.
 - `experiments/g_cert.py` also provides `reverse_certificate`, `concat_certificates`, `transport_certificate` (apply an automorphism letterwise), `aut_canon_tracked` (Whitehead canonical form with the automorphism recorded), `sigma_match`, `--write` (G1/AK(2) certificates) and `--write-g5`.
 - `experiments/g_torus.py --survey FILE` runs the residual-list survey of §3.4.
+- `experiments/g_landing_ms.py`: the MS(3)/holdout landing experiment of §4 (reads D's certificates).
 - `certificates/g_ak3_to_trefoil_t2_7.json`, `certificates/g_ak2_torus_acm_trivialization.json`, `certificates/g_r327_to_c3_via_aut.json`, `certificates/g_r74_to_r62_via_aut.json` (each < 2 MB).
 
 ## References
@@ -270,3 +283,10 @@ The survey numbers above come from the scratch driver this survey function is co
 - E. Romary, A. Zupan, Geom. Dedicata (2024), https://link.springer.com/10.1007/s10711-024-00891-6 (snippet).
 - D. Panteleev, A. Ushakov, arXiv:1609.00325.
 - Repository notes research-a … research-f (Lemma D3, Lemma D6, Proposition F3 are used as stated there).
+
+## Coordinator's review (second reader, 2026-11-03)
+
+- Re-ran `g_torus.py --selftest`, `g_cert.py --selftest`, `g_bs.py --selftest` and `python3 experiments/elementary_verify.py certificates/g_*.json`: all pass; the four certificates start and end exactly at the stated tuples (AK(2) → (x,y) in 606 moves; AK(3) → (ψ(W₃), b) in 4,055 moves; φ(R327) → C3; ψ(R74 member) → R62 member).
+- Re-derived by hand: φ(b) = xxYYY exactly; the H = ⟨x,y | x² = y³⟩ normal forms U_n = (st²)ⁿ(st)ⁿ⁺¹z⁻⁽²ⁿ⁺¹⁾, U_n⁻¹ = (t²s)ⁿ⁺¹(ts)ⁿz⁻⁽²ⁿ⁺¹⁾ and W_n = (st)ⁿ(st²)ⁿ⁺¹z⁻⁽²ⁿ⁺¹⁾, hence Theorem G1 for all n ≥ 1; Proposition G2(a) (the braid relator's x-syllables (ā, ā, ā⁻¹) are sign-mixed in C_n for n ≥ 3, while a primitive's are all equal) and G2(b) (the necklaces 2ⁿ1ⁿ⁺¹ and 2ⁿ⁺¹1ⁿ are unbalanced for n ≥ 2, while a primitive's run-length necklace is balanced); Lemma G4 (the run-length bound keeps every y-run nontrivial in C_|q| for all coprime |q| > |p| ≥ 2); and the Euclid exit of §2.4(b). All correct.
+- Presentation: §5 refers to a "G3" that is not a heading; it means the torus-node computation of §3.3. Theorem G1's interpretation "AK(n) ≅_AC ⟨(xy)ⁿx = y(xy)ⁿ, x² = y³⟩" is up to Aut(F₂) and, for n ≠ 3, rests on Panteleev–Ushakov's externally reported theorem, as the note says; the displayed equivalence (w_n, b) ~AC AK(n) itself needs neither.
+- The "3-orbit island" and the G5 survey are bounded observations, as stated in §5; G2 and Lemma G4 are the only unbounded statements, and they concern single ACM moves.
