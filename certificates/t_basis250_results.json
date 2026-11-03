@@ -1,0 +1,23 @@
+{
+  "status": "COMPLETE_BOUNDED_BASIS_CLASSES",
+  "ordinary_AC_goal_solved": false,
+  "n": 3,
+  "cyclic_endpoint_cap": 250,
+  "shortest_primitive_H_coordinate": 6,
+  "absolute_vector_coordinate_bounds": [
+    48,
+    61
+  ],
+  "projective_primitive_vectors_tested": 1059,
+  "unimodular_projective_pairs": 1111,
+  "distinct_cyclic_basis_pair_classes": 1111,
+  "all_vector_length_formulas_checked_by_literal_substitution": true,
+  "scope": "All initial-H Nielsen basis cyclic classes with stated endpoint energy; no primitive absence conclusion",
+  "independent_Farey_comparison": {
+    "status": "PASS",
+    "compared_source_sha256": "4de92fdc35db0dd2011580bf3994407a59c348bc06806c0a98ca36b2ed6395db",
+    "exact_cyclic_family_sets_equal": true,
+    "compared_distinct_classes": 1111
+  },
+  "family_tsv_sha256": "e8372ab7cecace8a3194470723742bc826b77c336b42dc31902d244a7563baff"
+}
