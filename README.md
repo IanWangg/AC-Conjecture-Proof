@@ -2,13 +2,13 @@
 
 ## Status: no free-group solution established
 
-This repository records a twenty-five-agent investigation begun on 2026-11-02. It does **not** prove AK(3) AC-trivial or non-AC-trivial, and does **not** prove or disprove the Andrews–Curtis conjecture. No novelty or priority claim is made for the partial results.
+This repository records a twenty-six-agent investigation begun on 2026-11-02. It does **not** prove AK(3) AC-trivial or non-AC-trivial, and does **not** prove or disprove the Andrews–Curtis conjecture. No novelty or priority claim is made for the partial results.
 
 The target is ordinary, unstabilized AC triviality of
 
     AK(3) = <x,y | x^3 y^-4, xyx y^-1 x^-1 y^-1>.
 
-The repository was initially empty. Twenty-five research agents have worked with up to three researchers concurrently, the maximum available alongside the coordinating agent. Each read previous work before independently choosing a direction. Reports record sources, rationale, exact proofs or computations, and limitations. Overlapping directions were coordinated explicitly; later reports credit shared discoveries. The researchers independently reviewed the arguments and replayed the artifacts before publication; individual reports record the reviewer roles.
+The repository was initially empty. Twenty-six research agents have worked with up to three researchers concurrently, the maximum available alongside the coordinating agent. Each read previous work before independently choosing a direction. Reports record sources, rationale, exact proofs or computations, and limitations. Overlapping directions were coordinated explicitly; later reports credit shared discoveries. The researchers independently reviewed the arguments and replayed the artifacts before publication; individual reports record the reviewer roles.
 
 ## Current strongest checked results
 
@@ -57,6 +57,8 @@ All these results leave the original four breakthrough objectives unachieved.
 | [Y](research/research-y-rotation-scope-review.md) | Independent rotation coverage, actual entries and phase-scope proof | All 42 sources and 2,272 indices; 135-move total ordinary entry controls, raw peak 13 |
 
 Further research:
+
+- The [computability and proof-translation note](research/computability-and-proof-translation.md) distinguishes semidecision, promised triviality, and recursive bounds. Ordinary AC is equivalent to a total computable compiler from finite triviality certificates to AC paths; a recursive bound based only on presentation size additionally requires decidability of balanced triviality. These are elementary reformulations, not an undecidability or AC-resolution theorem.
 
 - [X's exact character audit](research/research-x.md) classifies 1,015 second vertex identifications of V's coarse kernel graphs. All 551 rank-two quotients are the ambient rose and cannot extend the specified nonzero character. Another 353 extension kernels have unbounded primitive-free certificates; 111 affine families fail the sufficient cycle-sign criterion for every real parameter. In 58 of those, actual primitives lie in every coarse extension kernel, without implying an eligible rank-two successor basis. T independently checks the real-parameter and primitive-witness arguments.
 - [X's explicit barbell entries](research/research-x.md) retain long conjugating bridges before later raw Nielsen mixing. Six heuristic AK(3) runs make 15,000,000 proposals without a completion or saved reverse join; 26,130 instructions replay their selected actual paths. The same pipeline finishes an AK(2) control in 1,954 strict moves. These failed walks are not completeness arguments.
