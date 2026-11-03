@@ -18,6 +18,8 @@ Usage:
   python3 experiments/i_transport.py --selftest
   python3 experiments/i_transport.py merge P0_1 P0_2 S_CERT.json REAL_DIR PREFIX R1 R2 OUT.json
      S_CERT: certificate P0 -> s; REAL_DIR/PREFIX_aut_<g>.json for g in swap,invx,x_xy
+  python3 experiments/i_transport.py concat A.json B.json OUT.json
+     A: S -> T, B: T -> U (exact), writes S -> U
 """
 import json
 import os
@@ -233,10 +235,26 @@ def selftest():
     print("i_transport self-test passed (%d moves in synthetic merge, automorphism %s)" % (len(back["moves"]), nm))
 
 
+def concat(a, b):
+    ra = ev.replay(a)
+    if ra["endpoint"] != list(b["start"]):
+        raise ValueError("concat: %r != %r" % (ra["endpoint"], b["start"]))
+    c = {"format": "ordinary-ac-elementary-v1", "start": list(a["start"]), "target": list(b["target"]),
+         "moves": list(a["moves"]) + list(b["moves"])}
+    ev.replay(c)
+    return c
+
+
 if __name__ == "__main__":
     a = sys.argv[1:]
     if a == ["--selftest"]:
         selftest()
+    elif a[:1] == ["concat"]:
+        c = concat(json.load(open(a[1])), json.load(open(a[2])))
+        c["description"] = "concatenation of %s and %s (experiments/i_transport.py concat)" % (
+            os.path.basename(a[1]), os.path.basename(a[2]))
+        json.dump(c, open(a[3], "w"), indent=0)
+        print(json.dumps({"path": a[3], **ev.replay(c)}))
     elif a[:1] == ["merge"]:
         P0 = (a[1], a[2])
         s_cert = json.load(open(a[3]))

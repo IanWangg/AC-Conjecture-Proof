@@ -102,9 +102,9 @@ Each presentation P below was run as a single source (`--no-stop --target-keys t
 | length | 18 | 19 | 21 | 22 | 23 | 24 | 25 |
 |---|---|---|---|---|---|---|---|
 | count | 2 | 4 | 19 | 6 | 12 | 4 | 2 |
-| forward barrier (excess) | 23, 23 (5, 5) | 21, 21, 23, 23 (2, 2, 4, 4) | 18 × 21 (0), 1 × 23 (2) | 6 × 22 (0) | 12 × 23 (0) | [see run log] | [see run log] |
+| forward barrier (excess) | 23, 23 (5, 5) | 21, 21, 23, 23 (2, 2, 4, 4) | 18 × 21 (0), 1 × 23 (2) | 6 × 22 (0) | 12 × 23 (0) | 4 × 24 (0) | 2 × 25 (0; cap-26 runs) |
 
-So **every greedy-solved benchmark presentation has excess ≤ 5**; 43 of the 49 are outside T(20) only because they are longer than 20, and 37 of those have excess 0 (they never need to grow at all). Together with the 8 "unsolved" presentations found inside T(20) (lengths 17–19, barriers 18–20, excess 1–3: lines 599, 635 → excess 1; 643, 647 → 3; 656, 673 → 2; 709, 753 → 1), this says that the difficulty of these presentations for greedy/RL search is about path *length* and plateaus, not about barrier *height* — consistent with Carr's observation (cached `RESULTS.md`) that Two-Hump's 167/178-move certificates have peak relator length 11.
+So **every greedy-solved benchmark presentation has excess ≤ 5**; 43 of the 49 are outside T(20) only because they are longer than 20, and 42 of those have excess 0 (they never need to grow at all). Together with the 8 "unsolved" presentations found inside T(20) (lengths 17–19, barriers 18–20, excess 1–3: lines 599, 635 → excess 1; 643, 647 → 3; 656, 673 → 2; 709, 753 → 1), this says that the difficulty of these presentations for greedy/RL search is about path *length* and plateaus, not about barrier *height* — consistent with Carr's observation (cached `RESULTS.md`) that Two-Hump's 167/178-move certificates have peak relator length 11.
 
 **(b) The 15 complex classes of trivial groups of length 14 outside T(20)** (one Σ-representative each, cap 24 then 26, budgets 5·10⁶ / 12·10⁶ states; plus the 4 classes that coset enumeration left undecided and which turned out to be nontrivial groups, included as controls):
 
@@ -113,6 +113,15 @@ So **every greedy-solved benchmark presentation has excess ≤ 5**; 43 of the 49
 **(c) A stride sample (every 7th of the 280 representatives) of the 260 trivial-group classes of length 15 outside T(20)** (caps 22 then 24):
 
 [L15 TABLE PENDING]
+
+**(d) Cross-check against the published (unreviewed) length-≤16 classification.** The repository `nahomar/andrews-curtis-solver` (cached by F) lists 838 "residual" complex classes of lengths 13–16 — trivial-group presentations outside *its* cap-22 component of (x,y) — each labelled by the cap-28 component it falls into: the named classes AK3 (161 residual classes), P1 (11), P2 (37), C3 (62), C4 (5), C6 (6), and about 230 further labels R8…R334 for components that reach neither (x,y) nor a named class at cap 28 (externally reported, unreviewed; different engine). Matching by complex class:
+
+| my leftovers (trivial groups outside T(20)) | in nahomar's cap-22 trivial component | labelled C3 / C4 / C6 / P1 / P2 | labelled R… (unresolved there) |
+|---|---:|---|---:|
+| length 14: 15 classes | 6 (L14c1, c4, c5, c6, c10, c11) | 4 / 1 / 1 / 1 / 2 (c2, c12, c14, c15 / c3 / c9 / c8 / c7, c13) | 0 |
+| length 15: 260 classes | 100 | 31 / 0 / 2 / 2 / 12 | 113 |
+
+(The 4 + 20 nontrivial-group controls are, correctly, absent from their list of trivial groups.) Two consequences. (i) My measured forward barriers agree with their flags wherever both exist so far (the "cap-22 trivial" classes have forward barrier 21 in every completed case; the named classes have none ≤ 26). (ii) **The intermediate population is thin and the hard population is large.** At length 14 the whole spectrum is: excess 0–6 (31,408 Σ-classes in T(20)), excess 7–8 (6 classes), then nothing until the five named hard classes (excess ≥ 13 by my cap-26 runs, ≥ 16–18 by the external cap-30/32 exhaustions) and AK(3)'s own 40 length-14 members (excess ≥ 15, from D's cap-28 set containing no trivial state). At length 15 the same shape appears with 100 classes at excess 6–7 and then 160 classes (47 in named hard classes, 113 in the unresolved R-classes) with nothing known below excess 13. The "second hump" is therefore not a handful of famous examples: already at length 15–16 it contains hundreds of complex classes, none of which has ever been trivialized, and no presentation anywhere in the data has a measured excess strictly between 8 and 13.
 
 ### 3.7 Full-cap saturation at cap 19 (experiment)
 
