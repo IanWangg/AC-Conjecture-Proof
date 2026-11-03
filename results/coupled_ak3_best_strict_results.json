@@ -1,0 +1,334 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "strict_replay": {
+    "moves": 2152,
+    "peak_total_length": 233,
+    "endpoint": [
+      "XyyyyXXXyxYxxYX",
+      "xyXXyXYx"
+    ]
+  },
+  "stages": [
+    {
+      "bridge_strict_moves": 20,
+      "raw_source": [
+        "yxyXYxxYYYY",
+        "xxxYYYxyXYxxYYYY"
+      ],
+      "source_cyclic_energy": 25
+    },
+    {
+      "bridge_strict_moves": 1,
+      "raw_source": [
+        "XXyxYXyyy",
+        "yXYxxYYYYxxxYYYx"
+      ],
+      "source_cyclic_energy": 25
+    },
+    {
+      "bridge_strict_moves": 1,
+      "raw_source": [
+        "yyXXyxYXy",
+        "yXYxxYYYYxxxYYYx"
+      ],
+      "source_cyclic_energy": 25
+    },
+    {
+      "bridge_strict_moves": 1,
+      "raw_source": [
+        "XyyyXXyxY",
+        "YxyXYxxYYYYxxxYY"
+      ],
+      "source_cyclic_energy": 25
+    },
+    {
+      "bridge_strict_moves": 0,
+      "raw_source": [
+        "xYXyyyXXy",
+        "YxxYYYxyXXyxYXyyyXXXyyyXyyyXXy"
+      ],
+      "source_cyclic_energy": 25
+    },
+    {
+      "bridge_strict_moves": 0,
+      "raw_source": [
+        "XXyxYXyyy",
+        "YYxyXYxxYYYYxxxY"
+      ],
+      "source_cyclic_energy": 25
+    },
+    {
+      "bridge_strict_moves": 1,
+      "raw_source": [
+        "xxYYYxyXY",
+        "XXyyyyXXyxYXyyyX"
+      ],
+      "source_cyclic_energy": 25
+    },
+    {
+      "bridge_strict_moves": 1,
+      "raw_source": [
+        "yyXXyxYXyxxYYYYxxxYYYxyXyXXyxYXyyxYXyyyXXXyyyyXXYxyXYxxYY",
+        "yxYXyyyXXXyyyyXXYxyXYxxYY"
+      ],
+      "source_cyclic_energy": 32
+    },
+    {
+      "bridge_strict_moves": 43,
+      "raw_source": [
+        "yXYXyyyyXXYxyXYxxYxYXyyyXXyyXXyxYXyxxYYYYxyxY",
+        "yXYXyyyyXXYxyXYxxYxY"
+      ],
+      "source_cyclic_energy": 25
+    },
+    {
+      "bridge_strict_moves": 1,
+      "raw_source": [
+        "yyyXXYxyXYxxYXYxxYYYxyyXXyxYXyxxYXXyxyXXyxYXyxxYYY",
+        "yyyXXYxyXYxxYXYxxYYYxyyXXyxYXyxxYYY"
+      ],
+      "source_cyclic_energy": 25
+    },
+    {
+      "bridge_strict_moves": 28,
+      "raw_source": [
+        "YYxxYYYYxYxyXYxxYYYxyXYxxYYXyyyyXXyyXXyxYXyXyyyyXXyy",
+        "YYxxYYYYxyyXXyxYXyXyyyyXXyy"
+      ],
+      "source_cyclic_energy": 25
+    },
+    {
+      "bridge_strict_moves": 32,
+      "raw_source": [
+        "xYYYxyXYx",
+        "yxxYYYYxyyXXyxYX"
+      ],
+      "source_cyclic_energy": 25
+    },
+    {
+      "bridge_strict_moves": 1,
+      "raw_source": [
+        "XYxxYYYxy",
+        "YXyyyXXyxYxyXYxxYYXyyyyXX"
+      ],
+      "source_cyclic_energy": 34
+    },
+    {
+      "bridge_strict_moves": 2,
+      "raw_source": [
+        "yXXyxYXyXyyyyXXYXyyyXXyxYxyXYxxY",
+        "yXXyxYXyy"
+      ],
+      "source_cyclic_energy": 23
+    },
+    {
+      "bridge_strict_moves": 30,
+      "raw_source": [
+        "xxYYYxyXY",
+        "YxyxxYYYYYxxYY"
+      ],
+      "source_cyclic_energy": 23
+    },
+    {
+      "bridge_strict_moves": 1,
+      "raw_source": [
+        "YxyXYxxYYXyyyyyXXYXyyyXyyXXyxYXyxYYYxyxxYYYYYxyyXXyxYXy",
+        "YxyXYxxYYXyyyyyXXYXyyyXyyXXyxYXy"
+      ],
+      "source_cyclic_energy": 23
+    },
+    {
+      "bridge_strict_moves": 2,
+      "raw_source": [
+        "xyXYxxYYYxYYYYYxxYYYxyxxyXYxxYYYXYXyyyXXyyyyyXyyyXXyxYX",
+        "xyXYxxYYYXYXyyyXXyyyyyXyyyXXyxYX"
+      ],
+      "source_cyclic_energy": 23
+    },
+    {
+      "bridge_strict_moves": 0,
+      "raw_source": [
+        "yXXyxYXyy",
+        "yyyyyXXYXyyyXX"
+      ],
+      "source_cyclic_energy": 23
+    },
+    {
+      "bridge_strict_moves": 0,
+      "raw_source": [
+        "XXYXyyyXXyyyyyyyXXyxYXYYYYxxYYYxyxxYxyXYxxYYYYYYYxxYYYxyxx",
+        "XXYXyyyXXyyyyxyXYxxYYYYYYYxxYYYxyxx"
+      ],
+      "source_cyclic_energy": 23
+    },
+    {
+      "bridge_strict_moves": 30,
+      "raw_source": [
+        "xyXYxxYYYXXYXyyyXXyyyyyxyXYxxYYYYYYYYxxYYYxyxxyyyXXyxYX",
+        "xyXYxxYYYXXYXyyyXXyyyyyyyyXXyxYXYYYYYxxYYYxyxxYYYYYxxYYYxyxxyyyXXyxYX"
+      ],
+      "source_cyclic_energy": 32
+    },
+    {
+      "bridge_strict_moves": 43,
+      "raw_source": [
+        "xYYYxyXYx",
+        "xYYYxyXyyyyxyXYxxYYYXXYXyyyX"
+      ],
+      "source_cyclic_energy": 25
+    },
+    {
+      "bridge_strict_moves": 1,
+      "raw_source": [
+        "xyXYxxyxyXYxxYYYXXXyyyXXyxYX",
+        "yyyXXyxYX"
+      ],
+      "source_cyclic_energy": 25
+    },
+    {
+      "bridge_strict_moves": 31,
+      "raw_source": [
+        "XyyyXXyxY",
+        "XyyyXXyxYYXXXyyyyxyXYxxYXYxxYYYx"
+      ],
+      "source_cyclic_energy": 25
+    },
+    {
+      "bridge_strict_moves": 1,
+      "raw_source": [
+        "YXYYYYxxxyyyXXyxxYXyyyXXyXYxxYYYXXXyyyyxy",
+        "YXYYYYxxxyyyXXyx"
+      ],
+      "source_cyclic_energy": 25
+    },
+    {
+      "bridge_strict_moves": 1,
+      "raw_source": [
+        "xYYYxyXYx",
+        "yxYXYYYYxxxyyyXYYYxyXYx"
+      ],
+      "source_cyclic_energy": 32
+    },
+    {
+      "bridge_strict_moves": 1,
+      "raw_source": [
+        "xYYYxyXYxyxYXyyyxYYYXXXyyyyxyXYXXyxYXyyyX",
+        "xYYYxyXYx"
+      ],
+      "source_cyclic_energy": 32
+    },
+    {
+      "bridge_strict_moves": 39,
+      "raw_source": [
+        "xyXYxxYYY",
+        "xyXYxxYYYxxyyyXYYYxyXYxyxYXYYYYxyyyXXyxYX"
+      ],
+      "source_cyclic_energy": 32
+    },
+    {
+      "bridge_strict_moves": 1,
+      "raw_source": [
+        "XyyyXXyxY",
+        "yyxYYYXXXyyyyxyXYXyxYXy"
+      ],
+      "source_cyclic_energy": 32
+    },
+    {
+      "bridge_strict_moves": 1,
+      "raw_source": [
+        "YYXXXyyyyxyXYXyxYXyyyxY",
+        "yXYYYxyXYxyxYXYYYYxxxyyyXYYYxyXYxyxYXYYYYxxxyyXYxxYYYxYXXXyyyyxyXYXyxYXyyyxYYYXXXyyyyxyXYXyxYXyyyxY"
+      ],
+      "source_cyclic_energy": 32
+    },
+    {
+      "bridge_strict_moves": 39,
+      "raw_source": [
+        "XyyyXXyxY",
+        "yXYxxYYYYYYYxxxyyyXYYYxyXYxyxY"
+      ],
+      "source_cyclic_energy": 33
+    },
+    {
+      "bridge_strict_moves": 1,
+      "raw_source": [
+        "XyyyXXyxY",
+        "yXYxxyyyyXXXyxYXyyyxYYYXX"
+      ],
+      "source_cyclic_energy": 34
+    },
+    {
+      "bridge_strict_moves": 5,
+      "raw_source": [
+        "xyXYxxxYYYYXXyxYxxyyyXXXyxYXyyyxYYYXXyXYxxyyyyXXXyxYX",
+        "xyXYxxxYYYXXyXYxxyyyyXXXyxYX"
+      ],
+      "source_cyclic_energy": 17
+    },
+    {
+      "bridge_strict_moves": 24,
+      "raw_source": [
+        "yXXyXYxx",
+        "XyyyXXyxYXXyxYxxY"
+      ],
+      "source_cyclic_energy": 25
+    },
+    {
+      "bridge_strict_moves": 1,
+      "raw_source": [
+        "xYxxYYYYxyXXyXYxxyXYxxyXXXXyxYxxYXyyyyXXyX",
+        "xYXXyxYxxYXyyyyXXyX"
+      ],
+      "source_cyclic_energy": 23
+    },
+    {
+      "bridge_strict_moves": 0,
+      "raw_source": [
+        "YXXyxYxx",
+        "XYxxxxYYYYxyXXy"
+      ],
+      "source_cyclic_energy": 23
+    },
+    {
+      "bridge_strict_moves": 0,
+      "raw_source": [
+        "yXYxxyXYYYYxyXXyXYxxxyXYxxyXXXXXyxYxxYXyyyyxYXXyxYXXXyxYxxYXyyyyxYXXyxY",
+        "yXYxxyXYYYYxyXXyXYxxxyXYxxyXXXXXyxYxxYXyyyyxYXXyxY"
+      ],
+      "source_cyclic_energy": 23
+    },
+    {
+      "bridge_strict_moves": 31,
+      "raw_source": [
+        "XyXYxxyX",
+        "xxxYYYYxyXXyXYx"
+      ],
+      "source_cyclic_energy": 23
+    },
+    {
+      "bridge_strict_moves": 1,
+      "raw_source": [
+        "yXXyXYxx",
+        "yXXyXYxxxYYYYxyXXyXYxxx"
+      ],
+      "source_cyclic_energy": 31
+    },
+    {
+      "bridge_strict_moves": 1,
+      "raw_source": [
+        "XYxxxyXXyXYxxxYYYYXyxYxxYXXyxYxxYxyXXyXYxxxYYYYXyxYxxYxyXXyXYxxxYYYYxyXXyXYxyyyyXXXyxYxxYXyXXyXYxxyXXyXYxyyyyXXXyxYxxYXXXyx",
+        "XYxxxyXXyXYxxxYYYYXyxYxxYXXyxYxxYxyXXyXYxxxYYYYxyXXyXYxyyyyXXXyxYxxYXyXXyXYxxyXXyXYxyyyyXXXyxYxxYXXXyx"
+      ],
+      "source_cyclic_energy": 23
+    },
+    {
+      "bridge_strict_moves": 29,
+      "raw_source": [
+        "xyXXyXYYxxxYYYYxxyXXyXyxYxxYX",
+        "xyXXyXYYxxxYYYYxxyXXyxyXXyXYxYxxYXXyyyyXXXyyxYxxYX"
+      ],
+      "source_cyclic_energy": 23
+    }
+  ]
+}
