@@ -471,7 +471,7 @@ static int run_search(int argc, char** argv) {
   int cap = 25; long long maxstates = 50000000; int logtable = 0, threads = 1; bool stop_on_trivial = false;
   string src1 = "xxxYYYY", src2 = "xyxYXY";
   vector<pair<string, int>> target_files; string tkeyfile, orbitfile; int orbit_maxlen = 20;
-  string dumpkeys, checkpoint, resume; int maxhits_print = 50; int dumpmax = -1; string dumpfile;
+  string dumpkeys, checkpoint, resume; int maxhits_print = 50; int dumpmax = -1; string dumpfile; int stop_level = 999;
   for (int i = 1; i < argc; i++) {
     string a = argv[i];
     auto next = [&]() { if (i + 1 >= argc) { fprintf(stderr, "missing arg for %s\n", a.c_str()); exit(2); } return string(argv[++i]); };
@@ -490,6 +490,7 @@ static int run_search(int argc, char** argv) {
     else if (a == "--dump") { dumpmax = stoi(next()); dumpfile = next(); }
     else if (a == "--checkpoint") checkpoint = next();
     else if (a == "--resume") resume = next();
+    else if (a == "--stop-level") stop_level = stoi(next());   // complete this barrier level, then stop (write checkpoint/dumps)
     else if (a == "--maxhits") maxhits_print = stoi(next());
     else if (a == "--stop-on-trivial") stop_on_trivial = true;
     else if (a == "--no-stop") stop_on_trivial = false;
@@ -534,12 +535,18 @@ static int run_search(int argc, char** argv) {
     if (hdr[0] != W || hdr[1] != cap) { fprintf(stderr, "checkpoint width/cap mismatch\n"); return 2; }
     long long n = hdr[2]; start_level = (int)hdr[3] + 1; resumed = n;
     if (n > maxstates) { fprintf(stderr, "checkpoint larger than maxstates\n"); return 2; }
-    vector<u64> kb((size_t)n * W); vector<u8> bb((size_t)n);
-    if (fread(kb.data(), 8, (size_t)n * W, f) != (size_t)n * W) return 2;
-    if (fread(bb.data(), 1, (size_t)n, f) != (size_t)n) return 2;
+    // barriers are stored after the keys: read them first, then stream the keys (no 8n-byte temporary)
+    vector<u8> bb((size_t)n);
+    if (fseek(f, 32 + (long long)n * 8 * W, SEEK_SET) != 0 || fread(bb.data(), 1, (size_t)n, f) != (size_t)n) { fprintf(stderr, "checkpoint read error (barriers)\n"); return 2; }
+    fseek(f, 32, SEEK_SET);
+    const size_t CHK = 1 << 20; vector<u64> kb(CHK * W);
+    for (long long i = 0; i < n; ) {
+      size_t m = (size_t)min<long long>(CHK, n - i);
+      if (fread(kb.data(), 8, m * W, f) != m * W) { fprintf(stderr, "checkpoint read error (keys)\n"); return 2; }
+      for (size_t j = 0; j < m; j++) { Key k; k.w[0] = kb[j * W]; k.w[1] = W == 2 ? kb[j * W + 1] : 0; long long r = S.insert(k, bb[i + j]); if (r != i + (long long)j) { fprintf(stderr, "checkpoint reinsertion failed at %lld (%lld)\n", i + (long long)j, r); return 2; } }
+      i += m;
+    }
     fclose(f);
-    // reinsert in original order (indices preserved)
-    for (long long i = 0; i < n; i++) { Key k; k.w[0] = kb[(size_t)i * W]; k.w[1] = W == 2 ? kb[(size_t)i * W + 1] : 0; long long r = S.insert(k, bb[i]); if (r != i) { fprintf(stderr, "checkpoint reinsertion failed at %lld (%lld)\n", i, r); return 2; } }
     fprintf(stderr, "resumed %lld states, continuing from barrier level %d\n", n, start_level);
     // detection on the resumed states is NOT redone here (it was reported by the earlier phase)
   } else {
@@ -556,6 +563,7 @@ static int run_search(int argc, char** argv) {
   auto t0 = chrono::steady_clock::now();
   int last_full = start_level - 1; long long expanded_total = 0;
   for (int b = start_level; b <= cap && !S.budget.load(); b++) {
+    if (b > stop_level) { fprintf(stderr, "stopping after level %d as requested\n", stop_level); break; }
     long long startidx = 0; long long passes = 0; long long expanded_level = 0;
     while (true) {
       long long endidx = S.n.load();

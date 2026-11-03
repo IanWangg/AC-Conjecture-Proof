@@ -53,11 +53,31 @@ K showed P_3 = (xyxYYXy, xxxYXyy) ∈ Fwd(AK3, 17) (barrier 17). If S ∈ Fwd(P_
 - Thickenability sweeps cover only the low-energy slice stated; the detector relies on F's `thickenable_fast` and on the externally reported theorem (Lackenby; J's classical sketch) that thickenable ⇒ AC-trivial.
 - Literature access was blocked (arXiv); no novelty is claimed for anything, and all literature statements are inherited from A–L.
 
-## 5. Advice to the coordinator (ranked)
+## 5. Reproduction (executed in this session; S = scratch dir of agent M, D/L/I = scratch dirs of those agents)
+
+```sh
+g++ -O2 -std=c++17 -pthread -o S/m_acsearch experiments/m_acsearch.cpp
+S/m_acsearch --self-test                                   # counts 39840 / 257488 / 396497, 360 paths verified
+python3 experiments/m_lowenergy_thicken.py --selftest
+# byte-exact regression against D's engine at cap 26
+D/d_acsearch_final --cap 26 --maxstates 12000000 --no-stop --dumpkeys 0 S/d26.bin
+S/m_acsearch --cap 26 --maxstates 12000000 --threads 2 --exact-targets D/targets/MS.tgt \
+  --target-keys L/runs/triv_k20.bin --target-orbits L/runs/aut_triv20.bin --orbit-maxlen 20 --dumpkeys S/m26.bin
+# (sorted key files identical; 34 MS hits with verified PATHs; PATH MS:898 -> d_certify.py -> 59 moves, peak 33)
+# AK(3) cap 30 (one job, 2 threads, <= 9.5 GB)
+S/m_acsearch --cap 30 --maxstates 500000000 --logtable 30 --threads 2 --exact-targets D/targets/MS.tgt \
+  --target-keys L/runs/triv_k20.bin --target-orbits L/runs/aut_triv20.bin --orbit-maxlen 20 \
+  --dumpkeys S/m30_ak3_keys.bin --checkpoint S/m30_ak3.ckpt --maxhits 40 > S/m30_ak3.txt
+python3 experiments/m_lowenergy_thicken.py S/m30_ak3_keys.bin 20 defect
+S/m_acsearch --autdump S/m30_ak3_keys.bin S/aut30_ak3_le22.bin --threads 2 --maxlen 22
+# C4 cap 34 and C6 cap 32 (128-bit keys), T(22), P_2, orbit dumps and comparisons: see S/queue.sh (listed in §3)
+```
+
+## 6. Advice to the coordinator (ranked)
 
 (see end)
 
-## 6. Files written
+## 7. Files written
 
 - `research/research-m.md` (this note).
 - `experiments/m_acsearch.cpp` — the engine (`--self-test`).
@@ -67,3 +87,4 @@ K showed P_3 = (xyxYYXy, xxxYXyy) ∈ Fwd(AK3, 17) (barrier 17). If S ∈ Fwd(P_
 
 - 00:50 engine written, self-test passed; 00:55 cap-26 byte-exact regression against D's engine passed.
 - 00:57 launched AK(3) cap-30 run (2 threads, budget 5·10⁸ states, ≈ 9.3 GB, 50-min timeout) with detectors: primitive, MS exact targets, Σ-contact with T(20), Aut-orbit contact with T(20) orbits (Aut-min length ≤ 20).
+- 01:12 states present after completing barrier 25/26/27: 218.5M / 260.3M / 400.7M (at 359 s / 460 s / 879 s); by D's cap-28 profile (81% of the final set present after cap−3) the final count projects to ≈ 4.9–5.0·10⁸, i.e. at the budget. Added `--stop-level` and a streaming `--resume` to the engine (two-phase test at cap 24: resumed set byte-identical to D's dump) as a fallback.
