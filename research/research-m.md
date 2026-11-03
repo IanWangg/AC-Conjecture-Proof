@@ -47,6 +47,19 @@ K showed P_3 = (xyxYYXy, xxxYXyy) ∈ Fwd(AK3, 17) (barrier 17). If S ∈ Fwd(P_
 
 `python3 experiments/m_lowenergy_thicken.py S/m26.bin 18 defect` on the complete cap-26 forward set of AK(3) (10,269,488 states): 8,448 states of total length ≤ 18 (by length 13/14/15/16/17/18: 12 / 40 / 564 / 616 / 3,320 / 3,896) in **1,075 complex classes** (Σ × signed permutations), **none thickenable** (F's polynomial test). This extends E's check (917 classes of length ≤ 18 inside the cap-20 component: none thickenable) to every length-≤18 state reachable with excursions up to total length 26. Meridian defect (F's `meridian_defect`, Nielsen depth 5) over the 1,075 classes: defect 6 for 34 classes (e.g. AK(3) itself), 10 for 2 classes (e.g. (x⁴YxY, xy³xY⁴)), 14 for 264 classes (e.g. (x²yXYXy, xyXyXYY)), and no torus-type relator found for 775 classes. **No class has defect < 6**, in agreement with F's §4.6 (cap 20/22, smaller move set) and G's rigid 3-orbit island; so no state in this slice is one Prop.-M move from a primitive relator. (7.7 min single core.)
 
+### 3.2 AK(3) at cap 30: inconclusive at a 5·10⁸-state budget; cap 28 reproduced exactly (experiment)
+
+Run: `m_acsearch --cap 30 --maxstates 500000000 --logtable 30 --threads 2` from AK(3) = (xxxYYYY, xyxYXY), all cyclic products, with detectors: primitive relator; 1,190 Miller–Schupp exact targets; Σ-contact with T(20) (L's 22,205,081 keys); Aut-orbit contact with T(20)'s 1,808,170 orbits for every state of Whitehead-minimal length ≤ 20. **Outcome: budget hit during barrier level 29** (37 min, 9.5 GB RSS): `budget_hit 1 last_complete_barrier 28 total_states 500000000 expanded 255098276`.
+
+| barrier ≤ b | 24 | 25 | 26 | 27 | 28 | 29 | 30 |
+|---|---|---|---|---|---|---|---|
+| states | 1,580,780 | 5,531,256 | 10,269,488 | 37,161,104 | **69,190,160** | ≥ 261,815,212 (incomplete) | ≥ 500,000,000 (incomplete) |
+
+- The barrier ≤ 28 layer reproduces D's complete cap-28 forward set **exactly** (69,190,160 states; every per-barrier count 13…28 equals D's table), an independent-engine confirmation of research-d §4.6.
+- States present after completing level 25 / 26 / 27 / 28: 218.5M / 260.3M / 400.7M / 417.7M. During level 29 the engine had expanded 185,908,116 barrier-29 states and discovered 192.6M barrier-29 and 238.2M barrier-30 states when the 5·10⁸ budget was reached. So **|Fwd(AK3, 30)| > 5·10⁸** (L's projection was 4.6·10⁸); at ≥ 9 bytes/state plus a 4.3 GB slot table this does not fit the 9.5 GB available to me, so cap 30 remains **inconclusive** here. (Cap 30 needs ≈ 10–11 GB with this engine and ≈ 60 min on two cores.)
+- **Detectors over all 5·10⁸ inserted states** (each is a genuine member of AK(3)'s AC class with barrier ≤ 30; the set contains Fwd(AK3, 28) and large parts of the barrier-29/30 layers): **0 primitive relators, 0 Σ-contacts with T(20), 0 Aut-orbit contacts with T(20)** (among states of Aut-minimal length ≤ 20); the 34 benchmark presentations of D §4.3 are the only exact target hits (verified paths). A single hit of any kind would have trivialized AK(3).
+- Side product: Aut-canonical orbits of the cap-28 set restricted to Aut-minimal length ≤ 22: 1,245,860 states (of 69,190,160) have Whitehead-minimal length ≤ 22 (`aut28_ak3_le22.bin`), used in §3.5 against T(22).
+
 (further results filled in below as runs complete)
 
 ## 4. Honest limits
@@ -92,3 +105,4 @@ S/m_acsearch --autdump S/m30_ak3_keys.bin S/aut30_ak3_le22.bin --threads 2 --max
 - 00:50 engine written, self-test passed; 00:55 cap-26 byte-exact regression against D's engine passed.
 - 00:57 launched AK(3) cap-30 run (2 threads, budget 5·10⁸ states, ≈ 9.3 GB, 50-min timeout) with detectors: primitive, MS exact targets, Σ-contact with T(20), Aut-orbit contact with T(20) orbits (Aut-min length ≤ 20).
 - 01:12 states present after completing barrier 25/26/27: 218.5M / 260.3M / 400.7M (at 359 s / 460 s / 879 s); by D's cap-28 profile (81% of the final set present after cap−3) the final count projects to ≈ 4.9–5.0·10⁸, i.e. at the budget. Added `--stop-level` and a streaming `--resume` to the engine (two-phase test at cap 24: resumed set byte-identical to D's dump) as a fallback.
+- 01:35 cap-30 run ended: budget hit during level 29 (§3.2); cap 30 does not fit in memory. 01:38 launched the complete cap-29 run (budget 4.2·10⁸, ≈ 6 GB) with the same detectors; C4/C6/T(22)/P_2 queued after it.
