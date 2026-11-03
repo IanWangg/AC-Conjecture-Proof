@@ -2,7 +2,7 @@
 
 Date: 2026-11-02. Independent research agent I (round 3).
 
-**Status:** partial results. Every positive claim is either proved symbolically or backed by a replayable certificate. **No AC trivialization of AK(3), no proof of non-triviality, no counterexample, no resolution of the AC conjecture.** Novelty is **not established** for any item.
+**Status:** final for this round; partial results. Every positive claim is either proved symbolically or backed by a replayable certificate. **No AC trivialization of AK(3), no proof of non-triviality, no counterexample, no resolution of the AC conjecture.** Novelty is **not established** for any item.
 
 | # | statement | label |
 |---|---|---|
@@ -11,14 +11,14 @@ Date: 2026-11-02. Independent research agent I (round 3).
 | 3 | **Lemma S**: T(a; 1+mk, q) ~AC T(a; mk+m−1, q+2) for all integers a, q and all k ≥ 0, where m = a+1 and T(a;p,q) := (x^p y^q, x^a y x⁻¹ y) | proved here (§4); 2,898 generated certificates replayed |
 | 4 | **Prop. G**: if \|2p−(a−1)q\| = 1, then T(a;p,q) presents 1 iff gcd(p,a+1) = 1 or \|q\| = 1; otherwise it maps onto a von Dyck group ≠ 1 | proved here (§2) |
 | 5 | **Lemma E**: (x^m y^n, x^p y^q) with mq−np = ±1 is AC-trivial | proved here (§2); 744 certificates replayed |
-| 6 | **Aut(F₂) is AC-realized on the AC classes of C3, P1 (= C6) and P2** | proved here: 9 certificates + the argument of research-d Lemma D6 (§5) |
+| 6 | **Aut(F₂) is AC-realized on the AC classes of C3, P1 (= C6), P2 and R9** | proved here: 12 certificates + the argument of research-d Lemma D6 (§5, §7) |
 | 7 | **P1 ~AC C6** | external ledger, converted and re-verified here (§5) |
-| 8 | **Five published residual components (nahomar, cap-28 search, `trivial=0`) merged into frontier classes: R212 ~AC AK(3); R327 ~AC C3; R28 ~AC P1 = C6; R82, R86 ~AC P2** | proved here by composite certificates (Aut-orbit match + automorphism transport), §5, §7 |
+| 8 | **Ten published residual components (nahomar, cap-28 search, `trivial=0`) certified into fewer classes.** Into frontier classes: R212 ~AC AK(3); R327 ~AC C3; R28 ~AC P1 = C6; R82, R86 ~AC P2. Among themselves: R22, R69, R111, R114, R223 ~AC R9, so these six components form one AC class | proved here by composite certificates (Aut-orbit match + automorphism transport), §5, §7 |
 | 8b | Modulo Aut(F₂), the 287 published non-trivialized residual components fall into 167 groups at cap 25; with the certificates, at most 166 independent AC-triviality questions remain | experiment (§7) |
 | 9 | Certified family members: C3 ~ T(2;4,7) ~ T(2;5,9) ~ T(6;8,3); C4 ~ T(4;8,5); T(2;4,9) ~ T(2;5,11) ~ σT(8;10,3); T(4;4,3), T(−4;7,−3), T(−4;8,−3) and T(−6;11,−3) are AC-trivial | certificates (§1, §3, §5) |
 | 10 | Bounded Aut-orbit separation of AK3, P1=C6, P2, C3, C4, X = [T(2;4,9)] and Y = [T(4;7,5)]; none of them meets 1.43M published AC-trivial presentations up to Aut(F₂) | experiment (§6) |
 | 11 | Up to Aut(F₂): R62, R74 and X have the same AC-triviality status; so do R32, R134 and Y | experiment + Lemma D2 (§7) |
-| 12 | **Prop. C**: an AC-trivial class is closed under Aut(F₂). C4, X and Y show no automorphic image of themselves up to caps 29–30, while AK3, C3, P1 and P2 do by cap 27. So C4 ≁AC σ(C4) for one signed permutation σ would make C4 a counterexample | Prop. C proved; data experimental (§5) |
+| 12 | **Prop. C**: an AC-trivial class is closed under Aut(F₂). C4, X and Y show no automorphic image of themselves up to caps 31, 29 and 31, while AK3, C3, P1 and P2 show all generator images at barrier ≤ 23. So C4 ≁AC σ(C4) for one signed permutation σ would make C4 a counterexample | Prop. C proved; data experimental (§5) |
 
 
 ## 0. Previous work read and choice of direction
@@ -162,13 +162,13 @@ Moreover, Aut-orbit links compose. Suppose A ~ φ₁(C₁), C₁ ~ φ₂(C₂), 
 
 `experiments/i_transport.py` makes this explicit. It recovers an automorphism by Whitehead reduction and a BFS through minimal pairs, builds the realization P₀ → φ(P₀) from the transported generator certificates, appends the transported engine path φ(P₀) → φ(s), glues to the exact residual words, and reverses the result. Its self-test runs a synthetic merge on AK(3) using D's certificates.
 
-For C4 and Y, none of the seven automorphic images of the representative occurs in its own component even at cap 30 (1,246,365 and 799,224 states). For X none occurs even at cap 29 (11,358,907 states). C6's own component contains no image by cap 28, but C6 inherits Aut-realization from P1. So for C4, X and Y an Aut-orbit match only shows that the two presentations have the same AC-triviality status (Lemma D2). The contrast with AK3, C3, P1 and P2, where every generator image appears by cap 27, is itself an observation worth testing further; it is not an obstruction.
+For C4 and Y, none of the seven automorphic images of the representative occurs in its own component even at cap 31, the engine's encoding limit (3,054,469 and 2,045,223 states). For X none occurs even at cap 29 (11,358,907 states). C6's own component contains no image by cap 28, but C6 inherits Aut-realization from P1. So for C4, X and Y an Aut-orbit match only shows that the two presentations have the same AC-triviality status (Lemma D2). The contrast with AK3, C3, P1 and P2, where every generator image appears at barrier ≤ 23, is itself an observation worth testing further; it is not an obstruction.
 
-**Prop. C (proved here; elementary) and a chirality target for the counterexample side.** If P is AC-trivial, then P ~AC φ(P) for every φ ∈ Aut(F₂): P ~ (x,y) gives φ(P) ~ (φ(x), φ(y)), which is a basis and hence ~ (x,y) by Nielsen moves. So **closure of the AC class under Aut(F₂) is a necessary condition for AC-triviality.** For instance, a single proof that C4 ≁AC σ(C4) for one signed permutation σ (x↔y, x↦x⁻¹ or y↦y⁻¹) would show that C4 is a counterexample to the AC conjecture.
+**Prop. C (proved here; elementary) and a chirality target for the counterexample side.** If P is AC-trivial, then P ~AC φ(P) for every φ ∈ Aut(F₂): P ~ (x,y) gives φ(P) ~ (φ(x), φ(y)), which is a basis and hence ~ (x,y) by Nielsen moves. So **closure of the AC class under Aut(F₂) is a necessary condition for AC-triviality.** For instance, a single proof that C4 ≁AC σ(C4) for one signed permutation σ (x↔y, x↦x⁻¹ or y↦y⁻¹) would show that C4 is a counterexample to the AC conjecture. C4, X, Y and R9 all present the trivial group: by Prop. G for X and Y, and by coset enumeration for C4 and R9.
 
 The data separate the frontier classes on exactly this point (experiment):
-- AK3, C3, P1 and P2 contain the images under all three Nielsen generators by cap 27; the swap image of P1 appears already at barrier 14.
-- C4, X and Y contain none of the seven images of research-d §4.5 up to caps 30, 29 and 30 (1.25M, 11.4M and 0.80M states).
+- AK3, C3, P1 and P2 contain the images under all three Nielsen generators at barrier ≤ 23. The barriers of swap / invx / x_xy are: AK3 15/19/17 (research-d), C3 19/19/20, P1 14/21/18, P2 23/23/19.
+- C4, X and Y contain none of the seven images of research-d §4.5 up to caps 31, 29 and 31 (3.05M, 11.4M and 2.05M states).
 
 This is not evidence of non-triviality: C4's component is very thin, and the images may simply lie higher. It does give the obstruction side (agent H) a sharper target than "distinguish from (x,y)": an AC invariant that is sensitive to orientation or chirality and separates C4 (or X, or Y) from one automorphic image. Any invariant of that kind must vanish on Aut-closed classes such as AK(3)'s, and it cannot factor through the group or through finite quotients (research-b).
 
@@ -204,7 +204,17 @@ Each component was reduced to Whitehead-canonical Aut(F₂)-orbits with `d_acsea
 - **Published AC-trivial presentations.** These are AC-19, AC-19-ext (non-MS rows) and AC-1M, 1,432,816 presentations in total, Whitehead-reduced. **There are 0 matches** for C3, C4, C6, X and Y. Any match would have trivialized the class (Lemma D2).
 - **Pairwise comparison** with `--autcompare`: 25 pairs here, plus D's 3 pairs among AK3, P1 and P2. **There are 0 common orbits, except for C6–P1 (4,923)**, which is the certified equivalence P1 ~ C6.
 
-Interpretation. No state of C3's cap-26 component is an automorphic image of a state in the cap-28 component of AK3, P1 or P2, and the same holds for the other pairs. Because Aut(F₂) is AC-realized on AK3 (D), C3, P1 and P2, any such match would have proved an AC equivalence; none occurs at these caps. This is a bounded search result, not an invariant.
+- **Higher caps** (`experiments/i_hicap_compare.txt`):
+
+  | class | cap | states | Aut-orbits |
+  |---|---:|---:|---:|
+  | C4 | 31 | 3,054,469 | 1,451,137 |
+  | Y | 31 | 2,045,223 | 1,015,056 |
+  | X | 29 | 11,358,907 | 4,803,344 |
+
+  Cap 31 is the engine's encoding limit. Against the datasets there are 0 matches. Against AK3 (28), C3 (26), P1 (28), P2 (28) and each other there are 0 common orbits. As positive controls, every cap-28 orbit of each class is recovered at the higher cap. The minimal Aut-length stays 14 for C4 and 15 for X and Y.
+
+Interpretation. No state of C3's cap-26 component is an automorphic image of a state in the cap-28 component of AK3, P1 or P2, and the same holds for the other pairs. Because Aut(F₂) is AC-realized on AK3 (D), C3, P1 and P2, any such match would have proved an AC equivalence; none occurs at these caps. In particular, C4, X and Y are not linked to the Aut-realized classes AK3, C3, P1 or P2 by any cyclic-product path whose peak is ≤ 31 (≤ 29 for X) on their side and ≤ 26–28 on the other side, even after an automorphism. This is a bounded search result, not an invariant.
 
 ## 7. The published residual landscape modulo Aut(F₂) (experiment, plus certificates for the genuine merges)
 
@@ -239,7 +249,30 @@ So R212 is one more published residual class that lies in AK(3)'s AC class. The 
 - C4 meets only C4; C6 meets C6 and R28; X meets R62 and R74; Y meets R32 and R134.
 - AK3 (D's cap-28 dump, 69,190,160 states) meets only the labels AK3 and R212. So, up to Aut(F₂) and within these caps, R212 is the only published residual class outside nahomar's AK3 component that falls into AK(3)'s class.
 
-**Meaning.** X and Y only join existing groups, so the 287 published non-trivialized components fall into 167 groups modulo Aut(F₂) at cap 25. The certificates add {R82, R86} = P2, which leaves **at most 166 distinct AC-triviality questions**. Five published components (R28, R82, R86, R212 and R327) are certified ordinary-AC-equivalent to frontier classes. The "same-status" groups become genuine AC classes as soon as Aut(F₂) is AC-realized on one member, for example by repeating §5's search for φ(seed) in the seed's component.
+**Which published seeds are Aut-closed (cap 25).** `experiments/i_autreal_sweep.py` asks, for each of the 287 seeds, whether the exact cyclic reductions of swap(P), invx(P) and x_xy(P) lie in P's own cap-25 component (`experiments/i_autreal_sweep_cap25.txt`).
+- **All three are found for 6 seeds: AK3, C3, P1, P2, R9 and R24.** R24 = (xyxYXY, x⁵y⁻⁴) is an image of AK(4); this agrees with Panteleev–Ushakov's theorem for AK(n).
+- 13 further seeds have one or two of the three images (9 only swap, 1 swap and x_xy, 3 only x_xy).
+- 268 seeds have none at cap 25. With only 9–12 letters of excursion above the seed length, this is weak information.
+
+Combined with the cap-25 groups, four multi-member groups contain an Aut-closed seed, and are therefore single AC classes: {P1, C6, R28}, {AK3, R212}, {C3, R327} and **{R9, R22, R69, R111, R114, R223}**. All five members of the last group share Aut-orbits *directly* with R9's cap-25 component (744,424 states; 249, 57, 6, 5,299 and 40 common orbits). I certified every link:
+
+| certificate | published seed | → | moves | peak |
+|---|---|---|---:|---:|
+| `i_r9_aut_{swap,invx,x_xy}.json` | R9 (xxyxYY, xxxxYXYXy) | cyc φ(R9) | 475 / 593 / 470 | 33 / 36 / 33 |
+| `i_R22_to_r9.json` | R22 (xxyXYY, xxxYYXYxY) | R9 | 47,437 | 144 |
+| `i_R69_to_r9.json` | R69 (xxyxyXY, xyyyxYxY) | R9 | 23,139 | 101 |
+| `i_R111_to_r9.json` | R111 (xxxxyyy, xxyxyXYxy) | R9 | 37,269 | 167 |
+| `i_R114_to_r9.json` | R114 (xxxyxyy, xxyXyxyxY) | R9 | 8,161 | 50 |
+| `i_R223_to_r9.json` | R223 (xxyxyXY, xyyxyyxYY) | R9 | 26,376 | 113 |
+
+Each R_i → R9 certificate is built in three steps:
+1. an engine path R_i → r (cap 25);
+2. the transport r = φ(s) → R9, produced by `i_transport.py merge` from an engine path R9 → s and the three R9 realization certificates;
+3. a concatenation (`i_transport.py concat`).
+
+So **six published components (one of length 15, five of length 16) are a single ordinary AC class.** Whether that class is AC-trivial is unknown: no primitive relator and no dataset match occurs in R9's cap-25 component.
+
+**Meaning.** X and Y only join existing groups, so the 287 published non-trivialized components fall into 167 groups modulo Aut(F₂) at cap 25. The certificates add {R82, R86} = P2, which leaves **at most 166 distinct AC-triviality questions**. Certified ordinary AC equivalences cover 13 published components: R28, R82, R86, R212 and R327 into frontier classes, and R22, R69, R111, R114 and R223 into R9's class. The "same-status" groups become genuine AC classes as soon as Aut(F₂) is AC-realized on one member, for example by repeating §5's search for φ(seed) in the seed's component.
 
 ## 8. Reproduction (executed in this session)
 
@@ -290,10 +323,15 @@ $DACS --cap 22 --maxstates 3000000 --maxhits 1 --source xxxYYYY,xyxYXY --exact-t
 python3 experiments/i_certify.py path s212_run.txt s212 xxxYYYY xyxYXY xyXyXYY xyyXyyyxYYxYY ak3_to_s212.json
 python3 experiments/i_transport.py merge xxxYYYY xyxYXY ak3_to_s212.json certificates d_ak3 xxyxyXY xxxyyyxxY \
   certificates/i_R212_to_ak3.json             # likewise R327 (C3, i_c3), R28 (P1, i_p1), R82/R86 (P2, i_p2)
-python3 experiments/elementary_verify.py certificates/i_*.json     # 25 lines, exit 0
+python3 experiments/elementary_verify.py certificates/i_*.json     # 33 lines, exit 0
+# R9 group: components with --dumpkeys/--dump 25, --autmatch k_R9.bin vs states of R_i -> pair (s, r),
+# engine paths R9->s and R_i->r (i_certify.py path), then
+python3 experiments/i_transport.py merge xxyxYY xxxxYXYXy R9_to_s.json <dir with R9_aut_*.json> R9 r1 r2 r_to_R9.json
+python3 experiments/i_transport.py concat R22_to_r.json r_to_R9.json certificates/i_R22_to_r9.json
+python3 experiments/i_autreal_sweep.py $NAHOMAR/.../residual_components16_c28.txt 25 land25.log   # aut_realized_seeds 6 of 287
 ```
 
-Verifier output (`python3 experiments/elementary_verify.py certificates/i_*.json`, exit 0). Columns: moves, peak, endpoint.
+Verifier output (`python3 experiments/elementary_verify.py certificates/i_*.json`, exit 0; the R9-group files are listed in §7). Columns: moves, peak, endpoint.
 
 | file | moves | peak | endpoint |
 |---|---:|---:|---|
@@ -317,9 +355,9 @@ Verifier output (`python3 experiments/elementary_verify.py certificates/i_*.json
 ## 9. Honest limits
 
 - **Prop. M.** It needs a meridional partner through a torus relator of the stated congruence type. It says nothing about classes in which no state reaches defect 2, and that is exactly the open situation for AK(3), C3 and C4.
-- **Lemma S and Prop. G.** Both are uniform but leave the frontier unchanged, since Lemma S stays inside a single class. I did not test whether the level-k classes of T(2;·) for k ≥ 2 (total length ≥ 25) coincide with C3 or X, or are new: their components do not fit the shared machine at caps ≥ 30.
+- **Lemma S and Prop. G.** Both are uniform but leave the frontier unchanged, since Lemma S stays inside a single class. Whether the level-k classes of T(2;·) for k ≥ 2 coincide with C3 or X was tested only at cap 28 (§4: no shared Aut-orbit), which is far from conclusive.
 - **Separation results** (§6, §7) are cap-relative statements about the cyclic-product graph, which does not contain every elementary path (research-d §6).
-- **"Same-status" groups.** These are equalities of AC-triviality status, not ordinary AC equivalences, until Aut(F₂) is realized on one member. The 173-group count also depends on the cap.
+- **"Same-status" groups.** These are equalities of AC-triviality status, not ordinary AC equivalences, until Aut(F₂) is realized on one member. The 173- and 167-group counts depend on the cap.
 - **External inputs.** P1 ~ C6 rests on an external, AI-produced ledger; what is verified here is the replay of its conversion by the repository's strict verifier. The residual lists are nahomar's unreviewed data. They are used only as a source of seeds: every merge certificate starts at the published seed and is checked here, and nothing depends on that repository's completeness claims.
 - **Correctness of the Aut-orbit computations.** This rests on Whitehead's peak-reduction theorem and on D's implementation (research-d §6). Every merge that I call genuine was turned into an explicit certificate whose replay does not depend on that code.
 - **Novelty.** Literature access was limited to the public repositories above and the earlier notes, so novelty is not established for any item. Prop. M and Lemma E are likely folklore in some form.
@@ -327,9 +365,9 @@ Verifier output (`python3 experiments/elementary_verify.py certificates/i_*.json
 ## 10. Insight and recommended next directions
 
 1. **Make Prop. M the stopping rule on the meridian route.** Every torus relator in sight in AK(3)'s class has type T(2,3), T(3,4), T(2,k) or T(k,k±1). G's meridian-guided search can therefore stop at the first defect-2 state, because the ACM step to a primitive word is explicit. In the other direction, a proof that AK(3)'s class never reaches defect 2 through such a relator would give a necessary condition for a counterexample that can be checked state by state.
-2. **Aut-realize the remaining classes.** Search for φ(seed) in the seed's component for C4, X, Y and the large same-status groups (e.g. {R14, R59, R68, R108, R172, R272, R277}). Each success turns its group into a single certified AC class, and `i_transport.py` produces the certificates mechanically. The pipeline costs seconds per small component.
+2. **Aut-realize the remaining classes.** At cap 25 only 6 of the 287 seeds are Aut-closed (§7). Rerun `i_autreal_sweep.py` at caps 27–29 on the same-status groups, e.g. {R14, R59, R68, R108, R172, R272, R277} and {R16, R64, R90, R184, R211, R303}. Each success turns its group into a single certified AC class, and `i_transport.py` produces the certificates mechanically. The pipeline costs seconds per small component.
 3. **Rerun §7 at larger caps** (AK3, C3, P1, P2 at caps 28–30 against the whole residual list; all 287 seeds at caps 25–26). Each merge into an Aut-realized class is a new certified member, and each other merge reduces the number of independent open questions.
-4. **Chirality route on the counterexample side (Prop. C).** C4, X and Y are the tested classes whose components contain no automorphic image of themselves (caps 29–30). Two concrete tasks follow. First, push the search for σ(C4) in C4's component to caps 32–34; that component is small enough (1.25M states at cap 30). Second, look for an AC invariant that is sensitive to orientation or chirality; one that separated C4 from σ(C4) would disprove the AC conjecture.
+4. **Chirality route on the counterexample side (Prop. C).** C4, X and Y are the tested classes whose components contain no automorphic image of themselves (caps 29–31). Two concrete tasks follow. First, push the search for σ(C4) in C4's component beyond cap 31; this needs a wider state encoding than D's 64-bit keys, and the component is small enough (3.05M states at cap 31). Second, look for an AC invariant that is sensitive to orientation or chirality; one that separated C4 from σ(C4) would disprove the AC conjecture.
 5. **Level-shift question in T(2;·).** Is T(2;7,13) ~ C3? A symbolic step T(2;3k+1,6k+1) → T(2;3k+4,6k+7) would place an infinite family in C3's class. A proof that the levels are AC-distinct would instead give infinitely many AC-inequivalent candidates on the counterexample side. Moves that keep the second relator fixed are exhausted by Lemma S, so any level shift has to change both relators.
 
 ## 11. Files written
@@ -341,8 +379,10 @@ Verifier output (`python3 experiments/elementary_verify.py certificates/i_*.json
 - `experiments/i_certify.py`: turns engine PATH/COLLISION/TRIVIAL output into strict certificates (via `d_certify`, `f_descent`).
 - `experiments/i_transport.py`: automorphism recovery, letterwise transport, glueing, reversal, and composite certificates from Aut-orbit matches; self-test.
 - `experiments/i_residual_merge.py`: matches residual labels by Aut-orbit, with iteration past the engine's 50-hit print limit; self-test.
-- `experiments/i_landscape.py`: union-find of residual components modulo Aut(F₂); self-test. `experiments/i_landscape_cap22.txt`, `experiments/i_landscape_cap25.txt`: its outputs at caps 22 and 25.
-- Certificates (`ordinary-ac-elementary-v1`, 25 files, 1.6 MB): `i_R212_to_ak3`, `i_R327_to_c3`, `i_R28_to_p1`, `i_R82_to_p2`, `i_R86_to_p2`, `i_p1_to_c6`, `i_c3_to_T2_4_7`, `i_T6_8_3_to_c3`, `i_c4_to_T4_8_5`, `i_T2_5_11_to_sigmaT8_10_3`, `i_lemmaS_T2_4_7_to_T2_5_9`, `i_lemmaS_T2_4_9_to_T2_5_11`, `i_triv_{T4_4_3,Tm4_7_m3,Tm4_8_m3,Tm6_11_m3}`, `i_{c3,p1,p2}_aut_{swap,invx,x_xy}`.
+- `experiments/i_landscape.py`: union-find of residual components modulo Aut(F₂); self-test. Its outputs at caps 22 and 25: `experiments/i_landscape_cap22.txt`, `experiments/i_landscape_cap25.txt`.
+- `experiments/i_autreal_sweep.py`: tests which seeds are closed under the Nielsen generators, and lists the genuine groups; self-test. Output: `experiments/i_autreal_sweep_cap25.txt`.
+- `experiments/i_hicap_compare.txt`: the higher-cap Aut-orbit comparisons of §6.
+- Certificates (`ordinary-ac-elementary-v1`, 33 files, 7.0 MB, each < 2 MB): `i_R22_to_r9`, `i_R69_to_r9`, `i_R111_to_r9`, `i_R114_to_r9`, `i_R223_to_r9`, `i_r9_aut_{swap,invx,x_xy}`, `i_R212_to_ak3`, `i_R327_to_c3`, `i_R28_to_p1`, `i_R82_to_p2`, `i_R86_to_p2`, `i_p1_to_c6`, `i_c3_to_T2_4_7`, `i_T6_8_3_to_c3`, `i_c4_to_T4_8_5`, `i_T2_5_11_to_sigmaT8_10_3`, `i_lemmaS_T2_4_7_to_T2_5_9`, `i_lemmaS_T2_4_9_to_T2_5_11`, `i_triv_{T4_4_3,Tm4_7_m3,Tm4_8_m3,Tm6_11_m3}`, `i_{c3,p1,p2}_aut_{swap,invx,x_xy}`.
 
 ## References
 

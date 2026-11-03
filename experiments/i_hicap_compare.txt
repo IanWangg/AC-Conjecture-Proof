@@ -1,0 +1,25 @@
+c4 cap 31: budget_hit 0 last_complete_barrier 31 total_states 3054469 expanded 3054469 trivializing_states 0  | autmatch states 3054469 closure_fail 0 targets 1432816 target_fail 1 hits 0 min_aut_length 14
+   vs aut_ak3.bin: autcompare distinct_orbits 6347128 1451137 common 0
+   vs aut26_c3.bin: autcompare distinct_orbits 627696 1451137 common 0
+   vs aut_ms2a.bin: autcompare distinct_orbits 464015 1451137 common 0
+   vs aut_ms2b.bin: autcompare distinct_orbits 1255335 1451137 common 0
+   vs aut28_X.bin: autcompare distinct_orbits 1392756 1451137 common 0
+   vs aut28_t475.bin: autcompare distinct_orbits 67499 1451137 common 0
+   vs aut28_c4.bin: autcompare distinct_orbits 101941 1451137 common 101941
+t475 cap 31: budget_hit 0 last_complete_barrier 31 total_states 2045223 expanded 2045223 trivializing_states 0  | autmatch states 2045223 closure_fail 0 targets 1432816 target_fail 1 hits 0 min_aut_length 15
+   vs aut_ak3.bin: autcompare distinct_orbits 6347128 1015056 common 0
+   vs aut26_c3.bin: autcompare distinct_orbits 627696 1015056 common 0
+   vs aut_ms2a.bin: autcompare distinct_orbits 464015 1015056 common 0
+   vs aut_ms2b.bin: autcompare distinct_orbits 1255335 1015056 common 0
+   vs aut28_X.bin: autcompare distinct_orbits 1392756 1015056 common 0
+   vs aut28_t475.bin: autcompare distinct_orbits 67499 1015056 common 67499
+   vs aut28_c4.bin: autcompare distinct_orbits 101941 1015056 common 0
+X cap 29: budget_hit 0 last_complete_barrier 29 total_states 11358907 expanded 11358907 trivializing_states 0  | autmatch states 11358907 closure_fail 0 targets 1432816 target_fail 1 hits 0 min_aut_length 15
+   vs aut_ak3.bin: autcompare distinct_orbits 6347128 4803344 common 0
+   vs aut26_c3.bin: autcompare distinct_orbits 627696 4803344 common 0
+   vs aut_ms2a.bin: autcompare distinct_orbits 464015 4803344 common 0
+   vs aut_ms2b.bin: autcompare distinct_orbits 1255335 4803344 common 0
+   vs aut28_X.bin: autcompare distinct_orbits 1392756 4803344 common 1392756
+   vs aut28_t475.bin: autcompare distinct_orbits 67499 4803344 common 0
+   vs aut28_c4.bin: autcompare distinct_orbits 101941 4803344 common 0
+DONE
