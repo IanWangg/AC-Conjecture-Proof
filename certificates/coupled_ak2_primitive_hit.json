@@ -1,0 +1,1 @@
+{"status":"PRIMITIVE","alphabet":"xY","program":"RLRL","component":1,"vertex":3,"expanded":true,"cyclic_word":"xYxYYxYY","based_word":"XYxYYxYYxx","pair":["XXyyy","XYxYYxy"],"encoded_graph":[-1,1,-1,2,0,3,-1,4,-1,5,0,6,1,-1,6,-1,7,-1,1,-1,2,-1,8,-1,-1,-1,2,3,-1,4,-1,8,-1,-1,7,5]}
