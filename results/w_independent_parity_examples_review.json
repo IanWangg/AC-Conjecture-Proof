@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "status": "PASS",
+      "kind": "K4",
+      "equations": 3,
+      "literal_words": [
+        "xxxYYYY",
+        "xyxYXY"
+      ]
+    },
+    {
+      "status": "PASS",
+      "kind": "K4",
+      "equations": 2,
+      "literal_words": [
+        "XyyyyXXXyxYxxYX",
+        "xyXXyXYx"
+      ]
+    },
+    {
+      "status": "PASS",
+      "kind": "DIAMOND",
+      "equations": 10,
+      "literal_words": [
+        "XXXXXXXXYXYxy",
+        "XXXXyxxxY"
+      ]
+    }
+  ]
+}
