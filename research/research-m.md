@@ -80,18 +80,57 @@ Exactly 1,160 Σ-states of total length ≤ 20 lie in Fwd(AK3, 29) but not in Fw
 
 **C6 = (xxyxxYY, xyXYYXy), cap 32** (`--source xxyxxYY,xyXYYXy --cap 32 --width 2 --threads 2`, budget 1.5·10⁸): **budget hit during level 30**; `last_complete_barrier 29`. Cumulative states by barrier 26/28/29 = 37,648 / 201,183 / **499,140** (caps 26 and 28 reproduce L's and I's counts), and then an explosion: at the budget the engine had already discovered 28,722,610 barrier-30, 52,047,197 barrier-31 and 68,731,053 barrier-32 states (all incomplete). So C6's forward set, tiny up to cap 29, grows by a factor ≳ 60 at cap 30 (consistent with the externally reported 5,307,099 D8-classes at cap 30, research-l §4) — the "tiny forward set + late expansion" pattern of L's §3.6c. Caps 30–31 for C6 are therefore no cheaper than AK(3) at caps 27–28 and cap 32 is out of reach here. Detectors over the 1.5·10⁸ inserted states (all AC-equivalent to C6, barriers ≤ 32): 0 primitive relators, 0 Σ-contacts and 0 Aut-orbit contacts with T(20); **one exact target hit: the image of C6 under x ↦ xy, cyc φ(C6) = (xyxyyxyxY, xyXYYYXy), at barrier 30**, with a verified path, compiled by `d_certify.py` into `certificates/m_c6_aut_x_xy.json` (verifier output in §7). That Aut(F₂) is AC-realized on C6's class was already known indirectly (P1 ~AC C6 and `i_p1_aut_*`, research-i); this is the first *direct* cyclic-product realization from C6 itself and it needed an excursion to total length 30, which explains why I's cap-28 search did not see it. The other six generator images were not found below the budget.
 
-### 3.5 The exact meet-in-the-middle at (29, 22): T(22) versus the low-Aut-length slices of AK(3)'s forward sets (experiment)
+### 3.5 Orbit comparisons of the C4 cap-34 and C6 cap-29 forward sets (experiment)
+
+`--autdump` of the C4 cap-34 dump: 42,912,295 states, of which 6,331,626 have Whitehead-minimal total length ≤ 31 (the range D's 64-bit canonical key encodes) and give **2,786,726 distinct Aut-orbits**; the other 36,580,669 states have Aut-minimal length ≥ 32 and are omitted (`closure_fail`). Since two states in one Aut-orbit have the same minimal length, the omission does not affect any comparison with a set whose orbits all have minimal length ≤ 31 (every set below). C6's complete cap-29 set (499,140 states) gives 210,151 orbits.
+
+| A | B | common orbits |
+|---|---|---:|
+| C4 cap 34 (2,786,726) | T(20) / **T(22)** (14,661,736) | 0 / **0** |
+| C4 cap 34 | AK3 cap 28 (6,347,128) / AK3 cap-29 ≤ 22 slice (24,706) | 0 / 0 |
+| C4 cap 34 | C4 cap 28 (I; 101,941) | 101,941 (all; positive control) |
+| C4 cap 34 | C6 cap 28 / P1 cap 28 / P2 cap 28 / Y cap 28 | 0 / 0 / 0 / 0 |
+| C6 cap 29 (210,151) | T(20) / T(22) | 0 / 0 |
+| C6 cap 29 | AK3 cap 28 / AK3 cap-29 ≤ 22 slice | 0 / 0 |
+| C6 cap 29 | C6 cap 28 (84,767) | 84,767 (all; control) |
+| C6 cap 29 | P1 cap 28 (464,015) | **5,750** (P1 ~AC C6, research-i: 4,923 at cap 28) |
+| C6 cap 29 | P2 cap 28 / C4 cap 34 | 0 / 0 |
+
+So within these caps C4 stays Aut-orbit-disjoint from the trivial side (T(22)), from AK(3), from P1 = C6, P2 and Y, and contains no automorphic image of itself (§3.4); the only merges seen are the known ones (C6–P1). All of this is bounded and directed; none of it is an obstruction.
+
+### 3.6 The exact meet-in-the-middle at (29, 22): T(22) versus the low-Aut-length slices of AK(3)'s forward sets (experiment)
 
 **T(22) = Fwd((x,y), 22)** (`m_acsearch --source x,y --cap 22 --threads 2`, budget 2.3·10⁸; complete, 16 min, 4.2 GB): **169,404,865 states** (new at barrier 21 / 22: 53,682,480 / 93,517,304; growth 22,205,081 → 169,404,865 = ×7.63 per +2, as L projected), 158,248,301 of them (93.4 %) with a primitive relator. Every state of T(22) is AC-trivial with an elementary trivialization of peak ≤ 22 (L Lemma L2(ii)).
 
 **Low-Aut-length orbit slices of AK(3)'s forward sets** (`--autdump --maxlen 22`): Fwd(AK3, 28) has 1,245,860 states of Whitehead-minimal length ≤ 22 in **24,385 Aut-orbits** (by Aut-minimal length 13…22: 2 / 5 / 35 / 43 / 229 / 295 / 1,560 / 1,633 / 9,398 / 11,185); Fwd(AK3, 29) has 1,624,208 such states in **24,706 orbits** (2 / 5 / 35 / 43 / 229 / 295 / 1,583 / 1,647 / 9,563 / 11,304) — barrier 29 adds only 321 orbits below Aut-length 23, 304 of them of length 21–22. Since every orbit of T(22) has Aut-minimal length ≤ 22, a comparison of these slices with the full orbit set of T(22) is **complete**: it decides whether any state of Fwd(AK3, 29) is an automorphic image of any state of T(22).
 
-(comparison results filled in below)
+**Orbit comparisons** (`d_acsearch --autcompare`, D-compatible canonical keys; T(22) has **14,661,736 distinct Aut(F₂)-orbits**, Aut-minimal lengths 2…22: 297 states of length 2, 1,284 of 6, 12,788 of 10, …, 56,960,828 of 21, 68,476,484 of 22):
+
+| orbit set A | orbits | vs T(22) orbits: common | completeness |
+|---|---:|---:|---|
+| Fwd(AK3, 29), Aut-min length ≤ 22 | 24,706 | **0** | complete for cap 29 vs T(22) |
+| Fwd(AK3, 28), Aut-min length ≤ 22 | 24,385 | 0 | complete |
+| Fwd(AK3, 28), all (D's `aut_ak3.bin`) | 6,347,128 | 0 | complete (contains the previous row) |
+| Fwd(AK3, 29), Aut-min length ≤ 22 vs **T(20)** | 24,706 vs 1,808,170 | 0 | complete; re-confirms the in-run detector of §3.3 |
+| Fwd(P1, 28) = MS2a (D) | 464,015 | 0 | complete for cap 28 vs T(22) |
+| Fwd(P2, 28) = MS2b (D) | 1,255,335 | 0 | idem |
+| Fwd(C4, 28) (I) | 101,941 | 0 | idem (cap-34 set in §3.5) |
+| Fwd(C6, 28) (I) | 84,767 | 0 | idem |
+| Fwd(Y, 28), Y = T(4;7,5) (I) | 67,499 | 0 | idem |
+
+**Consequence (experiment; validity by D Lemmas D2/D6/Cor. D7 and I §5):** no state of AK(3)'s complete cap-29 forward set is an automorphic image of a presentation forward-reachable from (x,y) within total length 22; the same holds for the cap-28 forward sets of P1 = C6, P2, C4 and Y. A single common orbit would have been an AC trivialization with an explicit certificate (transport through `i_transport.py`). This extends L's exact (28, 20) meet-in-the-middle to **(29, 22)** for AK(3) and to (28, 22) for the other frontier classes. The two sides now have 2.9·10⁸ and 1.7·10⁸ states; the next step on the trivial side, T(24) ≈ 1.3·10⁹ states (≈ 12 GB with this engine, or disk-based), is the last that could be compared exactly with the ≤ 24 slice of Fwd(AK3, 29) (which is cheap: the ≤ 22 slice is 1.6M states).
+
+### 3.7 P_2's forward set (experiment; consistency check only)
+
+K's P_2 = (xyxYYXy, xxYXyy) is AC-trivial. `m_acsearch --source xyxYYXy,xxYXyy --cap 24 --maxstates 80000000` hit its budget during level 19 (`last_complete_barrier 18`): the trivial class seen from P_2 grows like the hump itself, and the complete part, Fwd(P_2, 18), has 2,950,329 states — **the same number as T(18)** (research-l §3.1); the two key sets were compared and are identical (§3.7 check), so the first eighteen levels of the trivial class look the same from P_2 and from (x,y) (P_2 ∈ T(18) and (x,y) ∈ Fwd(P_2, 18), hence Fwd(P_2, 18) = T(18)). Its 229,404 Aut-orbits meet none of: AK3 cap 28, AK3 cap-29 ≤ 22 slice, C4 cap 34, C6 cap 29, P1 cap 28, P2 cap 28 — all implied by the T(22) comparisons of §3.6 since T(18) ⊆ T(22). Nothing new; recorded because the brief asked for the P_3-vs-P_2 comparison, which is thereby covered through §3.6 (P_3's forward sets are inside AK(3)'s, §3.0).
 
 ## 4. Honest limits
 
 - Every negative here is a statement about **directed cyclic-product paths from the source within a total-length cap**, in the sense of research-d §6 and research-l Lemma L2: not a lower bound for arbitrary elementary AC paths (long conjugators are not single cyclic products; L's saturation tests cover caps ≤ 20 only), not evidence of non-triviality, and not comparable with per-relator-length bounds (Bowman–McCaul, Panteleev–Ushakov).
-- Orbit comparisons are complete only for the stated Aut-minimal-length ranges and caps; "no common orbit" says nothing about states outside the caps.
+- Orbit comparisons are complete only for the stated Aut-minimal-length ranges and caps; "no common orbit" says nothing about states outside the caps. D's canonical key encodes orbits of Aut-minimal length ≤ 31 only; for the C4 cap-34 set 36.6M states of Aut-minimal length ≥ 32 were therefore left out, which cannot affect comparisons with sets whose orbits all have minimal length ≤ 31 (all sets used here).
+- Cap 30 for AK(3) is **inconclusive** (budget hit at 5·10⁸ states during level 29); the complete cap-30 count is unknown except that it exceeds 5·10⁸. C6 at caps ≥ 30 is likewise inconclusive (budget hit during level 30). The P_2 run is inconclusive beyond cap 18 and was only a consistency check.
+- The detector for Aut-orbit contact is complete for states whose Whitehead-minimal length is ≤ the orbit file's maximal Aut-minimal length (20 for T(20), 22 for T(22)); states of larger minimal length cannot be automorphic images of those sets, so nothing is lost, but no statement is made about contacts with trivial presentations outside T(22).
+- The C6 → φ(C6) certificate adds no new class-level fact (Aut-realization on C6's class was known via P1 ~ C6); it is a direct, replayable confirmation.
 - The engine was validated against D's by exact count and byte-exact key-set equality at caps ≤ 26 and by L's/D's counts at caps 16–22; the cap-29/30 counts themselves cannot be cross-checked against an independent engine on this machine.
 - Thickenability sweeps cover only the low-energy slice stated; the detector relies on F's `thickenable_fast` and on the externally reported theorem (Lackenby; J's classical sketch) that thickenable ⇒ AC-trivial.
 - Literature access was blocked (arXiv); no novelty is claimed for anything, and all literature statements are inherited from A–L.
@@ -120,16 +159,23 @@ S/m_acsearch --autdump S/m30_ak3_keys.bin S/aut30_ak3_le22.bin --threads 2 --max
 
 1. **Stop raising the Σ-level cap on AK(3).** Cap 29 is now complete (2.87·10⁸ states, nothing found); cap 30 has > 5·10⁸ states (≈ 10–11 GB with this engine, ≈ 1 h on two cores) and would be the last feasible step even on a 16 GB machine; cap 32 ≈ 4·10⁹ states (≈ 70 GB). The measured growth (×4.14 at 28→29, > ×7.2 per +2) is slightly worse than L's ×6.7. If a 32–64 GB machine becomes available, the engine's `--checkpoint/--resume` and `--threads` make cap 30/31 a one-hour job; beyond that an orbit-level or disk-based (sort/merge) engine is needed, and the expected information gain is small (§3.3.1: barrier 29 added 2 new Aut-orbits below length 21).
 2. **The exact meet-in-the-middle is the right place to spend remaining compute, not the AK(3) side.** T(22) and the cap-29 orbit set restricted to Aut-minimal length ≤ 22 give a *complete* orbit comparison at (29, 22) (§3.5). Raising the trivial side to T(24) (≈ 1.3·10⁹ states, disk-backed) and comparing with the ≤ 24 slice of Fwd(AK3, 29) is the cheapest remaining exact test; the ≤ M slices are tiny (1.6M states at M = 22) so the AK(3) side costs nothing extra.
-3. (C4/C6 advice, see §3.4.)
+3. **C4 and C6 as frontier diagnostics: C4 is cheap up to cap 36, C6 is not.** C4's forward set grows ×2.4 per +1 (42.9M at cap 34; ≈ 250M at cap 36 ≈ 6.5 GB with 128-bit keys, ≈ 30 min) and has shown nothing (no primitive relator, no trivial-side contact, no self-image) through cap 34; one more run to cap 36 is affordable and would push I's chirality observation to excess 22, but a positive answer there would be surprising. C6's set jumps from 5·10⁵ at cap 29 to ≳ 3·10⁷ at cap 30 (§3.4), so C6 is no cheaper than AK(3) from cap 30 on; use P1's coordinates for that class instead. The direct realization `m_c6_aut_x_xy.json` shows that Aut-realization can need an excursion of +16 over the presentation length even in a class where it is known to hold.
 4. **Keep the detectors cheap and exact.** Primitive relators, Σ-contact with a trivial-side key set, and Aut-orbit contact restricted by Aut-minimal length cost < 1 µs/state and are complete for their ranges; thickenability and meridian-defect sweeps are only affordable on low-energy slices (≤ 20 letters), where they find nothing new (defect ≥ 6 everywhere, §3.1). Any future search should include the first three and skip the last two unless a torus-type state is reached.
 5. **Theory, not search, must settle AK(3)** (as J, K, L already said): the exact data now available — Fwd(AK3, 29) with per-state barriers, T(20)/T(22) with theirs — are the test beds for any candidate invariant (it must be constant on T(22) and differ on Fwd(AK3, 29)).
 
 ## 7. Files written
 
 - `research/research-m.md` (this note).
-- `experiments/m_acsearch.cpp` — the engine (`--self-test`).
+- `experiments/m_acsearch.cpp` — the engine (`--self-test`; modes: search with `--cap/--width/--threads/--maxstates/--logtable/--source/--exact-targets/--trivial-targets/--target-keys/--target-orbits/--orbit-maxlen/--dumpkeys/--dump/--checkpoint/--resume/--stop-level/--maxhits/--stop-on-trivial`, and `--autdump KEYS OUT [--threads T] [--width W] [--maxlen M]`).
 - `certificates/m_c6_aut_x_xy.json` — C6 = (xxyxxYY, xyXYYXy) → cyc((x ↦ xy)(C6)) = (xyxyyxyxY, xyXYYYXy), 1,220 elementary moves, peak 43; `python3 experiments/elementary_verify.py certificates/m_c6_aut_x_xy.json` → `{"endpoint": ["xyxyyxyxY", "xyXYYYXy"], "moves": 1220, "peak_total_length": 43}`.
 - `experiments/m_lowenergy_thicken.py` — thickenability sweep (F's `thickenable_fast`) of all states of total length ≤ E in a key dump, one test per complex class (`--selftest`; control on the cap-26 dump: 8,448 states of length ≤ 18 in 1,075 complex classes, none thickenable, consistent with E's 917 classes at cap 20).
+
+Scratch data left for the coordinator (untrusted data, read with care; `S` = `scratchpad/agent-m`): `m29_ak3_keys.bin` (complete Fwd(AK3, 29), 286,729,520 D-format keys, 2.3 GB), `aut29_ak3_le22.bin` / `aut28_ak3_le22.bin` (orbit slices), `triv_k22.bin` and `aut_triv22.bin` (T(22) keys and orbits, 1.36 GB each), `kc4_34.bin` / `aut34_c4.bin` (C4 cap 34, 128-bit keys / orbits), `kc6_32.bin` / `aut32_c6.bin` (C6 cap 29) (the budget-limited cap-30 checkpoint, 4.5 GB, was deleted because the container's disk reached 95 %; a cap-30 run on a ≥ 12 GB machine takes ≈ 1 h from scratch with `--checkpoint`), run logs `m29_ak3.txt`, `m30_ak3.txt`, `c4_34.txt`, `c6_32.txt`, `triv_c22.txt`, `compare.txt`, and the scripts `run29.sh`, `run30.sh`, `queue3.sh`.
+
+## References
+
+- Research notes A–L of this repository and the tools used read-only: `d_acsearch.cpp`, `d_certify.py`, `d_whitehead.py` (D), `f_thicken.py`, `f_landscape.py`, `f_knotlike.py` (F), `i_transport.py` (I), `elementary_verify.py`; D's and L's binary dumps `k28_ak3.bin`, `aut_ak3.bin`, `aut_ms2a.bin`, `aut_ms2b.bin`, `triv_k18.bin`, `triv_k20.bin`, `aut_triv20.bin`; I's `aut28_c4.bin`, `aut28_c6.bin`, `aut28_t475.bin`, `phi_c4.tgt`, `phi_c6.tgt`.
+- Externally reported facts used only through the earlier notes: Lackenby, arXiv:2606.06122 (thickenable ⇒ AC-trivial; J §3.7 gives the classical sketch); Panteleev–Ushakov, arXiv:1609.00325; Miasnikov–Myasnikov, arXiv:math/0304305; Havas–Ramsay, IJAC 13 (2003); nahomar/andrews-curtis-solver (cap-30 counts for C4/C6, unreviewed).
 
 ## Progress log (UTC, 2026-11-03)
 
@@ -138,3 +184,4 @@ S/m_acsearch --autdump S/m30_ak3_keys.bin S/aut30_ak3_le22.bin --threads 2 --max
 - 01:12 states present after completing barrier 25/26/27: 218.5M / 260.3M / 400.7M (at 359 s / 460 s / 879 s); by D's cap-28 profile (81% of the final set present after cap−3) the final count projects to ≈ 4.9–5.0·10⁸, i.e. at the budget. Added `--stop-level` and a streaming `--resume` to the engine (two-phase test at cap 24: resumed set byte-identical to D's dump) as a fallback.
 - 01:35 cap-30 run ended: budget hit during level 29 (§3.2); cap 30 does not fit in memory. 01:38 launched the complete cap-29 run (budget 4.2·10⁸, ≈ 6 GB) with the same detectors; C4/C6/T(22)/P_2 queued after it.
 - 02:07 cap-29 run complete (§3.3); 02:10 orbit dump of its ≤ 22 slice (1,624,208 states); 02:13 corrected a mis-specified C4 job (it had no `--source` and was running AK(3)); queue restarted: C4 cap 34, C6 cap 32, T(22), orbit dumps, comparisons, P_2.
+- 02:18 C4 cap 34 complete (§3.4); 02:25 C6 cap 32 budget-hit, certificate `m_c6_aut_x_xy.json` written and verified; 02:42 T(22) complete; 02:52 T(22) orbits; 02:55–02:57 all comparisons zero except the known C6–P1 overlap and the positive controls (§3.5, §3.6); 03:00 P_2 consistency check (§3.7); 03:00 queue done. Total compute of this note ≈ 2 h on two cores, peak 9.5 GB.

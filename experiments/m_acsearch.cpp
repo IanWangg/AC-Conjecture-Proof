@@ -606,8 +606,11 @@ static int run_search(int argc, char** argv) {
   for (int e = 0; e <= cap; e++) if (ecnt[e]) printf("src 0 energy %d states %lld (within complete barrier<=%d)\n", e, ecnt[e], last_full);
   printf("trivializing_states %lld\ntarget_key_hits %lld\norbit_hits %lld\ntarget_hits %lld\n", ntriv.load(), nkeyhit.load(), norbhit.load(), ntgt.load());
   sort(hits.begin(), hits.end(), [](const Hit& x, const Hit& y) { return x.idx < y.idx; });
-  int printed = 0;
+  // HIT lines are printed for at most maxhits_print hits per kind (the counts above are complete); a run from a
+  // trivial-class source would otherwise print one line per primitive state (10^8 lines).
+  int printed = 0; long long printed_kind[4] = {0, 0, 0, 0};
   for (auto& h : hits) {
+    if (printed_kind[h.kind]++ >= max(maxhits_print, 1)) continue;
     const char* kindname = h.kind == 0 ? (T.tkind[h.tgt] ? "aut8-trivial" : "exact") : h.kind == 1 ? "PRIMITIVE" : h.kind == 2 ? "KEYFILE" : "ORBIT";
     string tag = h.kind == 0 ? T.tid[h.tgt] : h.kind == 1 ? "TRIVIAL" : h.kind == 2 ? "TKEYHIT" : "ORBITHIT";
     Key k = S.key_at(h.idx);
