@@ -1,0 +1,474 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "researchers_total": 19,
+  "artifacts": 93,
+  "verification": "Each listed local UTF-8 artifact exactly matches its published Git blob SHA on main at this audit.",
+  "files": [
+    {
+      "path": "certificates/outside_ak3_ledger.json.gz.b64",
+      "bytes": 2253,
+      "blob_sha": "49d1b4531abd1934e142cc704a8a3b26f76d8f1b"
+    },
+    {
+      "path": "certificates/outside_ak3_macro_path.json",
+      "bytes": 3300,
+      "blob_sha": "c9da827f149180fe9313680c593afc86955affd2"
+    },
+    {
+      "path": "certificates/outside_elite_pairs.json.gz.b64",
+      "bytes": 10557,
+      "blob_sha": "8c8108ca0f6d6ab7dfeb01a5fd3c0049b3fb78ce"
+    },
+    {
+      "path": "certificates/q_bridge_two_example_AK3.json",
+      "bytes": 3245,
+      "blob_sha": "4b7bb34d942b82760c9f9d21a035fd489e6d89a9"
+    },
+    {
+      "path": "certificates/q_bridge_two_example_entry.json",
+      "bytes": 1617,
+      "blob_sha": "7fb1c8ead511c218a85293752bcef8f304b14ea3"
+    },
+    {
+      "path": "certificates/q_bridge_two_frontier.jsonl.gz.b64",
+      "bytes": 66185,
+      "blob_sha": "271a469b50fc5f8f64f0fb12e9e8602bdcaa8179"
+    },
+    {
+      "path": "certificates/q_elite_rotation_candidates.jsonl",
+      "bytes": 574,
+      "blob_sha": "e5f99b132ed11b20cb1ba4e9fde952e82483be7c"
+    },
+    {
+      "path": "certificates/q_elite_rotation_map_certificates.jsonl.gz.b64",
+      "bytes": 1533,
+      "blob_sha": "c699d7e191651849b1df05b5457b5c018ccbac06"
+    },
+    {
+      "path": "certificates/q_rotation_candidates.jsonl.gz.b64",
+      "bytes": 235473,
+      "blob_sha": "8c9f3b239ee2fff1f21eb7fe1d88601cbe8cd1f5"
+    },
+    {
+      "path": "certificates/r_ak2_map_full.json",
+      "bytes": 23287,
+      "blob_sha": "4674a141d76dded2c406277ff7e64bcae7d6ff1d"
+    },
+    {
+      "path": "certificates/r_ak2_map_waypoint.json",
+      "bytes": 1246,
+      "blob_sha": "11d76be445e2cbd918416bf4af07a5c8769db6e1"
+    },
+    {
+      "path": "certificates/r_h_basis_bridge_control.json",
+      "bytes": 867,
+      "blob_sha": "c4c987043f98a332eabab31bdf812be0f9f7b23c"
+    },
+    {
+      "path": "certificates/r_h_match_positive_control.json",
+      "bytes": 473,
+      "blob_sha": "7f225b13878e2b21f7a888864fcadeaa56cc4ea5"
+    },
+    {
+      "path": "certificates/r_initial_map_pair_certificate.json",
+      "bytes": 7676,
+      "blob_sha": "9124d38ddd04410d34fdc18965ce1863b0f7c88e"
+    },
+    {
+      "path": "certificates/r_power_meridian_basis.json",
+      "bytes": 3791,
+      "blob_sha": "5998ae8b8d6486b653a4c15da7ce3e14f6d7eb09"
+    },
+    {
+      "path": "certificates/r_reverse_ak2_candidate.json",
+      "bytes": 2729,
+      "blob_sha": "45e73c6727edb19ef20511f1d780f231b70c43c8"
+    },
+    {
+      "path": "certificates/r_reverse_ak2_journal.json.gz.b64",
+      "bytes": 456309,
+      "blob_sha": "dcbb115a112457a3bb0135fed9aba5000ec4c49d"
+    },
+    {
+      "path": "certificates/r_reverse_power_candidate.json",
+      "bytes": 2312,
+      "blob_sha": "5b3e13f77282c86f131898703d44a7fafcbde5db"
+    },
+    {
+      "path": "certificates/r_reverse_power_journal.json.gz.b64",
+      "bytes": 837521,
+      "blob_sha": "2ef8c12533bd1c31232c0fe1465a93148c5e8dff"
+    },
+    {
+      "path": "certificates/r_rotation_map_pairs_compact.part1.b64",
+      "bytes": 600000,
+      "blob_sha": "5c9e039d361fcd1e1fc0fa9e61dabf22bcd6b080"
+    },
+    {
+      "path": "certificates/r_rotation_map_pairs_compact.part2.b64",
+      "bytes": 600000,
+      "blob_sha": "a62f266461e0c3157f8407f3fd09f7893fb7717b"
+    },
+    {
+      "path": "certificates/r_rotation_map_pairs_compact.part3.b64",
+      "bytes": 600000,
+      "blob_sha": "c2347ad06324664074c63604234675ecbc4946cf"
+    },
+    {
+      "path": "certificates/r_rotation_map_pairs_compact.part4.b64",
+      "bytes": 136073,
+      "blob_sha": "d43e94d4a6062999ab9b495ceb8196a981b2c6d4"
+    },
+    {
+      "path": "certificates/r_rotation_map_pairs_manifest.json",
+      "bytes": 1153,
+      "blob_sha": "c3a32b0199cdf359f8bd639bd8d5b0466040a784"
+    },
+    {
+      "path": "certificates/s_branch_D_entry.json",
+      "bytes": 1574,
+      "blob_sha": "0f92b5384664cb49e1bb1c72d7208b7310504bed"
+    },
+    {
+      "path": "certificates/s_branch_D_linear.json",
+      "bytes": 4739,
+      "blob_sha": "5c8b077536e462f87ff66c445aad376b3b7f6d05"
+    },
+    {
+      "path": "certificates/s_branch_E_entry.json",
+      "bytes": 849,
+      "blob_sha": "e8771f8d8476c68dffd0abc83909346292a7c465"
+    },
+    {
+      "path": "certificates/s_branch_E_orbit.json.gz.b64",
+      "bytes": 91405,
+      "blob_sha": "1d6afdc71832caf0f4968060bc778559be8e55ac"
+    },
+    {
+      "path": "certificates/s_branch_F_entry.json",
+      "bytes": 1044,
+      "blob_sha": "4016bd82f8afaf7ca251d6a9b3d4d9c2b37e1c46"
+    },
+    {
+      "path": "certificates/s_branch_F_orbit.json.gz.b64",
+      "bytes": 19525,
+      "blob_sha": "87343367b01fa5344f103ffb9ad09c450701d1f8"
+    },
+    {
+      "path": "experiments/analyse_rotation_candidates.py",
+      "bytes": 6900,
+      "blob_sha": "5fe26bb013c4cf6804c6fb8295fca1ea61baeb7c"
+    },
+    {
+      "path": "experiments/audit_escape_elites.py",
+      "bytes": 1999,
+      "blob_sha": "19597e607117bbd697bbda0f4b98b7acaf334163"
+    },
+    {
+      "path": "experiments/bridge_two_frontier.cpp",
+      "bytes": 3998,
+      "blob_sha": "6d1c1cca8a4a9291c5e0ef8f35f528a68fb53298"
+    },
+    {
+      "path": "experiments/compile_cyclic_edge_path.py",
+      "bytes": 1765,
+      "blob_sha": "5f111b95ddfd2a9644f15341bf5cdaec5e952128"
+    },
+    {
+      "path": "experiments/h_basis_bridge.py",
+      "bytes": 5484,
+      "blob_sha": "03fad3ccac32c37b0580d5758fe083492fffbb59"
+    },
+    {
+      "path": "experiments/nielsen_tree_peak_controls.py",
+      "bytes": 4522,
+      "blob_sha": "02ac72d56b03ea81a0939fc93be3d49895036749"
+    },
+    {
+      "path": "experiments/pack_reverse_journal.py",
+      "bytes": 2850,
+      "blob_sha": "95cba3babdf32291b5f96d46435320872d7ff86a"
+    },
+    {
+      "path": "experiments/primitive_map_pairs.py",
+      "bytes": 12992,
+      "blob_sha": "2a94f2777a7c9f08c92d265fa1e79c7eafc96669"
+    },
+    {
+      "path": "experiments/q_frontier_controls.py",
+      "bytes": 5403,
+      "blob_sha": "3690b1bd55647a2bbbf35361ea02aef655b933f3"
+    },
+    {
+      "path": "experiments/r_map_pair_controls.py",
+      "bytes": 4930,
+      "blob_sha": "1e46201f6a72aa80c5e3ec212fcf3146d4d26909"
+    },
+    {
+      "path": "experiments/random_cyclic_escape.cpp",
+      "bytes": 9020,
+      "blob_sha": "ed9e2c54726fc0abf5f4bdfdb7ab221b4ca9af72"
+    },
+    {
+      "path": "experiments/reproduce.py",
+      "bytes": 23227,
+      "blob_sha": "83863021bcab45e462a32f2d64958809250fb471"
+    },
+    {
+      "path": "experiments/reverse_journal.py",
+      "bytes": 6823,
+      "blob_sha": "b9e8f0a2c22c7c1652f8c616e2868fa14374dbdd"
+    },
+    {
+      "path": "experiments/reverse_subgroup_walk.cpp",
+      "bytes": 9747,
+      "blob_sha": "4380f29ebf5514941b74e9c370d29e1f12a218b5"
+    },
+    {
+      "path": "experiments/rotation_fold_controls.py",
+      "bytes": 3515,
+      "blob_sha": "823d25c0785c16f68735d7c1ff44313370a6df64"
+    },
+    {
+      "path": "experiments/rotation_subgroups.cpp",
+      "bytes": 11235,
+      "blob_sha": "5aeaeb82766dbb9621380a51c516855c5033b5d6"
+    },
+    {
+      "path": "experiments/s_branch_finite_filters.py",
+      "bytes": 13839,
+      "blob_sha": "6a6c0f24dccb0c24753d0206ac835944ad5b25d0"
+    },
+    {
+      "path": "experiments/s_branch_models.py",
+      "bytes": 4663,
+      "blob_sha": "e950e1c301f6df225fc60ee95c52e3d122ea23f2"
+    },
+    {
+      "path": "experiments/s_nielsen_length_controls.py",
+      "bytes": 5931,
+      "blob_sha": "53e8ff99cdcb0d1dd3dcc973622fad189627029a"
+    },
+    {
+      "path": "experiments/s_review_rotation_maps.py",
+      "bytes": 6971,
+      "blob_sha": "218129717ef8ae548b7c26d67e928bcacb885d9a"
+    },
+    {
+      "path": "experiments/verify_s_branch_certificates.py",
+      "bytes": 9416,
+      "blob_sha": "6593a287362cb213c9f7ce80432fdc6409f571d8"
+    },
+    {
+      "path": "research/first-hump-atlas.md",
+      "bytes": 9679,
+      "blob_sha": "318a16f30f0bc2f07114e64e3c036e07574f4946"
+    },
+    {
+      "path": "research/nielsen-cyclic-sublevels.md",
+      "bytes": 10626,
+      "blob_sha": "efe99f7e5eb5bb986f05c7bc84c9d5d73deaf2a2"
+    },
+    {
+      "path": "research/outside-cyclic-search.md",
+      "bytes": 5316,
+      "blob_sha": "578698ad52a9e1600ca7a37e297c67309ef481a4"
+    },
+    {
+      "path": "research/research-q-frontier.md",
+      "bytes": 7658,
+      "blob_sha": "560fac9c2e46d69f420f50373c5c16142b6070d5"
+    },
+    {
+      "path": "research/research-q.md",
+      "bytes": 12252,
+      "blob_sha": "9d4d8a8c1bd27612aa73bc1bf38506cc4e9c38cb"
+    },
+    {
+      "path": "research/research-r-reverse.md",
+      "bytes": 11078,
+      "blob_sha": "f5676fe616b1a10f2574c35fb7a5c7a0ef77720e"
+    },
+    {
+      "path": "research/research-r.md",
+      "bytes": 13056,
+      "blob_sha": "baaf9b901eb542757e52df5939a396015f334406"
+    },
+    {
+      "path": "research/research-s-nielsen-sublevels-review.md",
+      "bytes": 7692,
+      "blob_sha": "14d46c6087c6db17a3556f5fd470c02a0b2932a2"
+    },
+    {
+      "path": "research/research-s-rotation-review.md",
+      "bytes": 10495,
+      "blob_sha": "a2cf5a1b39d03dd6af2bab47ea7effaddc483462"
+    },
+    {
+      "path": "research/research-s.md",
+      "bytes": 15043,
+      "blob_sha": "a8fcfce42b66f26f6db64c19d097afb5644201f4"
+    },
+    {
+      "path": "results/nielsen_tree_peak_controls.json",
+      "bytes": 713,
+      "blob_sha": "d237a176e8659b69c16ca7a09c8fb2ca7e55cae5"
+    },
+    {
+      "path": "results/outside_ak3_replay.json",
+      "bytes": 199,
+      "blob_sha": "2f9207966b9e6501cd9e1754a5540c3f83e19c80"
+    },
+    {
+      "path": "results/outside_cyclic_search_results.json",
+      "bytes": 2995,
+      "blob_sha": "cd6639a962854bb3654ba5993e15a765829d0d44"
+    },
+    {
+      "path": "results/outside_elite_audit.json.gz.b64",
+      "bytes": 14305,
+      "blob_sha": "4892ac4729b5bacf44b851492faf5ec9a1b0fbc8"
+    },
+    {
+      "path": "results/q_outside_elite_pairs.json",
+      "bytes": 101702,
+      "blob_sha": "44123a43dfc42a34bbaecf8da88c1b02518c83db"
+    },
+    {
+      "path": "results/q_rotation_fold_control_results.json",
+      "bytes": 419,
+      "blob_sha": "fd0b6a6da1a8f35dea1f58cdc5001446ac5a9692"
+    },
+    {
+      "path": "results/q_rotation_provenance.json",
+      "bytes": 802,
+      "blob_sha": "f1a87486625947a04324698057b39f65efb1c0b8"
+    },
+    {
+      "path": "results/q_rotation_results.json",
+      "bytes": 272,
+      "blob_sha": "77cf7446347ebb7ac8b251ac35b1b14e83ce709a"
+    },
+    {
+      "path": "results/q_targeted_frontier_results.json",
+      "bytes": 3966,
+      "blob_sha": "4a309848550d822a156c899ea825207c23d192e2"
+    },
+    {
+      "path": "results/r_ak2_map_pipeline_results.json",
+      "bytes": 726,
+      "blob_sha": "22d0c980b4eef003fa6f966f3dd2855afa478575"
+    },
+    {
+      "path": "results/r_map_pair_control_results.json",
+      "bytes": 361,
+      "blob_sha": "c1c1ec43c60fbd3a01a93004fa826f421d9514e6"
+    },
+    {
+      "path": "results/r_reverse_journal_reviews.json",
+      "bytes": 1392,
+      "blob_sha": "cb006862374efa140bf68684a70889341bf7c736"
+    },
+    {
+      "path": "results/r_reverse_pipeline_controls.json",
+      "bytes": 1400,
+      "blob_sha": "2e975d5b6d56af1233c85b3dd4fd1b5c9dfc1cbc"
+    },
+    {
+      "path": "results/r_reverse_provenance.json",
+      "bytes": 734,
+      "blob_sha": "861e5908dad80df2fbfb84f248b81632a1d74054"
+    },
+    {
+      "path": "results/r_reverse_search_results.json",
+      "bytes": 3960,
+      "blob_sha": "e32d9f7bdf94de0b0d25ef4ae705b45627c3ab30"
+    },
+    {
+      "path": "results/r_rotation_map_pair_results.json",
+      "bytes": 509,
+      "blob_sha": "7e70f9020a36f5bac6ec4cc9806fd598b1e6c5ab"
+    },
+    {
+      "path": "results/r_rotation_map_pair_verification.json",
+      "bytes": 537,
+      "blob_sha": "acae86bbc29ee55809014afd1a3976bb94ffefbb"
+    },
+    {
+      "path": "results/reverse_journal_reproduction.json",
+      "bytes": 1804,
+      "blob_sha": "f7ede031be4732b8390704e69bdc4c93920f0b30"
+    },
+    {
+      "path": "results/round19_followup_reproduction.json",
+      "bytes": 572,
+      "blob_sha": "a8073df29f46c8fc00def8ebdac5cebaf9300cb5"
+    },
+    {
+      "path": "results/round19_reproduction.json",
+      "bytes": 478,
+      "blob_sha": "e4ea273b000570fcb64132128d9643e2d5366054"
+    },
+    {
+      "path": "results/s_branch_D_entry_results.json",
+      "bytes": 379,
+      "blob_sha": "18229bf69f5b763c440f6dddea180fddbd048f58"
+    },
+    {
+      "path": "results/s_branch_D_independent_review.json",
+      "bytes": 458,
+      "blob_sha": "13754b66186985bb5fe0dcb0b14ae8e673797f26"
+    },
+    {
+      "path": "results/s_branch_E_entry_results.json",
+      "bytes": 377,
+      "blob_sha": "6d6335f6fb19f52ec3261c3bfdbacd16687dbe34"
+    },
+    {
+      "path": "results/s_branch_E_finite_results.json",
+      "bytes": 751,
+      "blob_sha": "40cc6ee5689b86e59b1256ec5eb64180704df959"
+    },
+    {
+      "path": "results/s_branch_E_independent_review.json",
+      "bytes": 480,
+      "blob_sha": "3f0d74f8f87f55889aa2c16cbb22146c4aa1e8ec"
+    },
+    {
+      "path": "results/s_branch_F_entry_results.json",
+      "bytes": 377,
+      "blob_sha": "ce4ef08c37f4d09b7a82d3d00c1aeadea83153b7"
+    },
+    {
+      "path": "results/s_branch_F_finite_results.json",
+      "bytes": 644,
+      "blob_sha": "c59741f62041691125abba668d1299602ed06b5f"
+    },
+    {
+      "path": "results/s_branch_F_independent_review.json",
+      "bytes": 479,
+      "blob_sha": "b509ba469c327e517a9c338cb7f40e680a777c1b"
+    },
+    {
+      "path": "results/s_branch_model_results.json",
+      "bytes": 1233,
+      "blob_sha": "42d8bb4af79ecfad611a28dbd3404bf314dcace4"
+    },
+    {
+      "path": "results/s_branch_negative_controls.json",
+      "bytes": 174,
+      "blob_sha": "56b74298bcd523067c541a862ca04a0495d85845"
+    },
+    {
+      "path": "results/s_nielsen_length_control_results.json",
+      "bytes": 592,
+      "blob_sha": "d13ceb67511c1e1f87722725417809a2df4457c8"
+    },
+    {
+      "path": "results/s_rotation_map_review_results.json",
+      "bytes": 811,
+      "blob_sha": "5b2b923c53024ad553a2b84fd2748e814c443cc2"
+    }
+  ]
+}
