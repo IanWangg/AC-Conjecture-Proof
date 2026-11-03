@@ -80,7 +80,13 @@ Exactly 1,160 Σ-states of total length ≤ 20 lie in Fwd(AK3, 29) but not in Fw
 
 **C6 = (xxyxxYY, xyXYYXy), cap 32** (`--source xxyxxYY,xyXYYXy --cap 32 --width 2 --threads 2`, budget 1.5·10⁸): **budget hit during level 30**; `last_complete_barrier 29`. Cumulative states by barrier 26/28/29 = 37,648 / 201,183 / **499,140** (caps 26 and 28 reproduce L's and I's counts), and then an explosion: at the budget the engine had already discovered 28,722,610 barrier-30, 52,047,197 barrier-31 and 68,731,053 barrier-32 states (all incomplete). So C6's forward set, tiny up to cap 29, grows by a factor ≳ 60 at cap 30 (consistent with the externally reported 5,307,099 D8-classes at cap 30, research-l §4) — the "tiny forward set + late expansion" pattern of L's §3.6c. Caps 30–31 for C6 are therefore no cheaper than AK(3) at caps 27–28 and cap 32 is out of reach here. Detectors over the 1.5·10⁸ inserted states (all AC-equivalent to C6, barriers ≤ 32): 0 primitive relators, 0 Σ-contacts and 0 Aut-orbit contacts with T(20); **one exact target hit: the image of C6 under x ↦ xy, cyc φ(C6) = (xyxyyxyxY, xyXYYYXy), at barrier 30**, with a verified path, compiled by `d_certify.py` into `certificates/m_c6_aut_x_xy.json` (verifier output in §7). That Aut(F₂) is AC-realized on C6's class was already known indirectly (P1 ~AC C6 and `i_p1_aut_*`, research-i); this is the first *direct* cyclic-product realization from C6 itself and it needed an excursion to total length 30, which explains why I's cap-28 search did not see it. The other six generator images were not found below the budget.
 
-(further results filled in below as runs complete)
+### 3.5 The exact meet-in-the-middle at (29, 22): T(22) versus the low-Aut-length slices of AK(3)'s forward sets (experiment)
+
+**T(22) = Fwd((x,y), 22)** (`m_acsearch --source x,y --cap 22 --threads 2`, budget 2.3·10⁸; complete, 16 min, 4.2 GB): **169,404,865 states** (new at barrier 21 / 22: 53,682,480 / 93,517,304; growth 22,205,081 → 169,404,865 = ×7.63 per +2, as L projected), 158,248,301 of them (93.4 %) with a primitive relator. Every state of T(22) is AC-trivial with an elementary trivialization of peak ≤ 22 (L Lemma L2(ii)).
+
+**Low-Aut-length orbit slices of AK(3)'s forward sets** (`--autdump --maxlen 22`): Fwd(AK3, 28) has 1,245,860 states of Whitehead-minimal length ≤ 22 in **24,385 Aut-orbits** (by Aut-minimal length 13…22: 2 / 5 / 35 / 43 / 229 / 295 / 1,560 / 1,633 / 9,398 / 11,185); Fwd(AK3, 29) has 1,624,208 such states in **24,706 orbits** (2 / 5 / 35 / 43 / 229 / 295 / 1,583 / 1,647 / 9,563 / 11,304) — barrier 29 adds only 321 orbits below Aut-length 23, 304 of them of length 21–22. Since every orbit of T(22) has Aut-minimal length ≤ 22, a comparison of these slices with the full orbit set of T(22) is **complete**: it decides whether any state of Fwd(AK3, 29) is an automorphic image of any state of T(22).
+
+(comparison results filled in below)
 
 ## 4. Honest limits
 

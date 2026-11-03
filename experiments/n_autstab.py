@@ -82,6 +82,37 @@ def canon(p):
     return W.canon_pair(p)
 
 
+def aut_canon_capped(p, cap=20000):
+    """D's Whitehead canonical form (d_whitehead.aut_canon) with a cap on the
+    closure over minimal pairs.  On overflow a key unique to the input is
+    returned, so coincidences can only be missed, never invented."""
+    p = tuple(W.cycred(w) for w in p)
+    improved = True
+    while improved:
+        improved = False
+        for m in W.MAPS:
+            q = W.apply(m, p)
+            if all(q) and sum(map(len, q)) < sum(map(len, p)):
+                p, improved = q, True
+                break
+    L = sum(map(len, p))
+    seen = {W.canon_pair(p)}
+    stack = [p]
+    while stack:
+        cur = stack.pop()
+        for m in W.MAPS:
+            q = W.apply(m, cur)
+            if all(q) and sum(map(len, q)) == L:
+                c = W.canon_pair(q)
+                if c not in seen:
+                    seen.add(c)
+                    stack.append(q)
+                    if len(seen) > cap:
+                        return ("overflow", W.canon_pair(p))
+    best = min(W.canon_pair(g) for s in seen for g in W.signed_perms(s))
+    return L, best
+
+
 def find_aut(s, r, max_states=300000):
     """Return names with compose(names)(s) Sigma-equal to r, or None.
     Greedy Whitehead reduction of both, then BFS through minimal pairs with the
@@ -137,7 +168,7 @@ def iota(p):
 def analyse(states, source=None, max_pairs=50, verbose=True, bfs=300000):
     groups = defaultdict(list)
     for i, p in enumerate(states):
-        groups[W.aut_canon(p)].append(i)
+        groups[aut_canon_capped(p)].append(i)
         if verbose and (i + 1) % 20000 == 0:
             print(f"  canonicalized {i+1}/{len(states)}", file=sys.stderr, flush=True)
     sizes = defaultdict(int)
@@ -146,7 +177,8 @@ def analyse(states, source=None, max_pairs=50, verbose=True, bfs=300000):
     keyset = {canon(p): i for i, p in enumerate(states)}
     iota_closed = sum(1 for p in states if canon(iota(p)) in keyset)
     iota_fixed = sum(1 for p in states if canon(iota(p)) == canon(p))
-    result = {"states": len(states), "orbits": len(groups), "orbit_size_histogram": dict(sorted(sizes.items())),
+    overflow = sum(1 for k in groups if k[0] == "overflow")
+    result = {"states": len(states), "orbits": len(groups), "closure_overflows": overflow, "orbit_size_histogram": dict(sorted(sizes.items())),
               "iota_closed": iota_closed, "iota_fixed": iota_fixed, "matrices": {}, "examples": []}
     # coincidences not explained by iota: orbits containing a state not in {S, iota S} for a chosen S
     n_pairs = 0
@@ -224,7 +256,7 @@ def explain(states, result, extra_gens=(("invx", "invy"),)):
     groups = result.get("_groups") or defaultdict(list)
     if not groups:
         for i, p in enumerate(states):
-            groups[W.aut_canon(p)].append(i)
+            groups[aut_canon_capped(p)].append(i)
     explained = unexplained = 0
     bad = []
     for key, idx in groups.items():

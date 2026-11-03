@@ -104,7 +104,7 @@ Fwd(C4, 28): 216,640 Σ-states (D's engine, `--dump 28`; agrees with I), 101,941
 | M₂ = [[−1,3],[0,1]] | φ₂: x ↦ x⁻¹, y ↦ yx³ | 1,728 |
 | M₁M₂ (mod −I) | order 3 | 94 |
 
-Already C4 itself is involved: φ₁(C4) ≡_Σ (xyyyxYY, xyxyxyxYXY), a state of energy 17 and **barrier 18**, and φ₂(C4) ≡_Σ (xxxxyXy, xxxyxxxyXYXXXYXy), energy 23, barrier 23. Both are reached from C4 by six cyclic products.
+Already C4 itself is involved: φ₁(C4) ≡_Σ (xyyyxYY, xyxyxyxYXY), a state of energy 17 and **barrier 18**, and φ₂(C4) ≡_Σ (xxxxyXy, xxxyxxxyXYXXXYXy), energy 23, barrier 23. Both are reached from C4 by five cyclic products (engine PATH lines of six states).
 
 **Proposition N3 (proved here by certificate).** φ₁(C4) ~AC C4 and φ₂(C4) ~AC C4, hence
     Ŝ(C4) ⊇ D := ⟨−I, M₁, M₂⟩,
