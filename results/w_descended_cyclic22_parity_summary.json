@@ -1,0 +1,12 @@
+{
+  "status": "COMPLETE_SPECIFIED_ROWS",
+  "input_rows": 178907,
+  "counts": {
+    "PARITY_OBSTRUCTION": 178907
+  },
+  "source_sha256": "488cb2076af0da3adcbcd0f4425c991362c4d565c542d2bce84692b482be1af7",
+  "logical_result_stream_sha256": "d1cdcb4905ba91d57868693a268f4bbced0996df220cf89021bbbeecce5cb821",
+  "contradiction_equations_total": 407840,
+  "seconds": 169.15455095795915,
+  "ordinary_AC_goal_solved": false
+}
