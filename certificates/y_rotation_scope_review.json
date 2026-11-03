@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "ordinary_AC_goal_solved": false,
-  "source_decoded_sha256": "cf9e4a304fec9e0d24ea0e7c420dab113f20c8fb1a058f568ac996d8efd97ffc",
+  "source_decoded_sha256": "28609afd04ed5e732542a6d12fee5a1fd2c0b5815bb013feb8e3c930221fb7df",
   "literal_rotation_pairs": 42,
   "all_offsets_exactly_once": true,
   "source_graphs_independently_folded": 42,
