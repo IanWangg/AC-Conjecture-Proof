@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "literal_start": [
+    "xxYYY",
+    "xyxYXY"
+  ],
+  "AK_parameter": 2,
+  "phase_count": 27,
+  "search_attempts": 138768,
+  "search_incomplete_graphs": 0,
+  "independent_strict_phase_path": {
+    "moves": 1305,
+    "peak_total_length": 153,
+    "endpoint": [
+      "XXyyy",
+      "XYxYYxy"
+    ],
+    "move_counts": {
+      "invert": 260,
+      "multiply": 115,
+      "conjugate": 930
+    }
+  },
+  "independent_strict_exposed_path": {
+    "moves": 1309,
+    "peak_total_length": 153,
+    "endpoint": [
+      "XYxYYxYYxx",
+      "XYxYYxy"
+    ],
+    "move_counts": {
+      "invert": 263,
+      "multiply": 116,
+      "conjugate": 930
+    }
+  },
+  "independent_strict_complete_path": {
+    "moves": 1521,
+    "peak_total_length": 153,
+    "endpoint": [
+      "x",
+      "y"
+    ],
+    "move_counts": {
+      "invert": 272,
+      "multiply": 126,
+      "conjugate": 1123
+    }
+  },
+  "independent_refolding_matches_recorded_hit_graph": true,
+  "independently_verified_native_witness": {
+    "alphabet": "xY",
+    "program": "RLRL",
+    "component": 1,
+    "vertex": 3,
+    "base_path": "XX",
+    "expanded": true,
+    "cyclic_word": "xYxYYxYY",
+    "based_word": "XYxYYxYYxx"
+  },
+  "native_summary": {
+    "records": 1,
+    "ABSENT": 0,
+    "PRIMITIVE": 1,
+    "INCOMPLETE": 0,
+    "map_pair_states": 32,
+    "maximum_one_alphabet": 24,
+    "ordinary_AC_goal_solved": false
+  },
+  "source_files": [
+    {
+      "filename": "coupled_ak2_strict.json",
+      "sha256": "38d42096fb56c5e8acb5be2718014807b0a73f189be404fa8989108f8279f5f5"
+    },
+    {
+      "filename": "coupled_ak2_exposed.json",
+      "sha256": "0e6ad3aaeb84103613c11ef70aebdadfa5ddf0f0c429ce3b6e6c0638eb3be0db"
+    },
+    {
+      "filename": "coupled_ak2_full.json",
+      "sha256": "d548c988f9d1d9ddd97b7feafdc30f772e4ab4fac447eeb180ae968434294274"
+    },
+    {
+      "filename": "coupled_ak2_primitive_hit.json",
+      "sha256": "5e10d4e8f37b06d980491238ad9e09a86a2abdc3ed0785bf00ed90705a2ece91"
+    },
+    {
+      "filename": "coupled_ak2_phase_path.json",
+      "sha256": "7bd70213a558ce84eaccf45435786715b9d062af2365b7bac0e8f3c482928478"
+    },
+    {
+      "filename": "coupled_ak2_control_results.json",
+      "sha256": "d922bdddf3c24f162978c8c140320f415a41944b5ace11006e24d02c6234b739"
+    },
+    {
+      "filename": "coupled_h_search.cpp",
+      "sha256": "a1b02a854c12695ff2a94e45ad188e9166e34e3ef9c94107de6966acd84462c6"
+    }
+  ],
+  "scope": "A complete AK(2) positive calibration; no AK(3) or unrestricted AC conclusion"
+}
