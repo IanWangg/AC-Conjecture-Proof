@@ -1,0 +1,90 @@
+{
+  "status": "ABSENT",
+  "ordinary_AC_goal_solved": false,
+  "detector": {
+    "format": "f2-primitive-map-pairs-v1",
+    "status": "ABSENT",
+    "vertices": 10,
+    "encoded_graph": [
+      1,
+      -1,
+      2,
+      -1,
+      3,
+      0,
+      4,
+      -1,
+      5,
+      -1,
+      6,
+      0,
+      7,
+      1,
+      -1,
+      -1,
+      8,
+      -1,
+      -1,
+      1,
+      -1,
+      2,
+      8,
+      -1,
+      -1,
+      -1,
+      9,
+      2,
+      -1,
+      3,
+      -1,
+      9,
+      -1,
+      4,
+      -1,
+      5,
+      -1,
+      -1,
+      7,
+      6
+    ],
+    "alphabets": [
+      {
+        "status": "ABSENT",
+        "alphabet": "xy",
+        "pair_states_discovered": 8,
+        "pair_states_processed": 8,
+        "complete_finite_map_pair_exhaustion": true
+      },
+      {
+        "status": "ABSENT",
+        "alphabet": "xY",
+        "pair_states_discovered": 28,
+        "pair_states_processed": 28,
+        "complete_finite_map_pair_exhaustion": true
+      },
+      {
+        "status": "ABSENT",
+        "alphabet": "Xy",
+        "pair_states_discovered": 28,
+        "pair_states_processed": 28,
+        "complete_finite_map_pair_exhaustion": true
+      },
+      {
+        "status": "ABSENT",
+        "alphabet": "XY",
+        "pair_states_discovered": 8,
+        "pair_states_processed": 8,
+        "complete_finite_map_pair_exhaustion": true
+      }
+    ],
+    "ordinary_AC_goal_solved": false
+  },
+  "prefix_replay": {
+    "moves": 0,
+    "peak_total_length": 13,
+    "endpoint": [
+      "xxxYYYY",
+      "xyxYXY"
+    ]
+  }
+}
