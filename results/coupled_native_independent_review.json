@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "independent_R_refolds_and_complete_absence_decisions": 2288,
+  "closed_map_pair_states_independently_verified": 277992,
+  "decoded_log_sha256": "86cbce7dc14086f3cf5d555441877ea1d6f824438691715c87ec9e77b2261e1b",
+  "scope": "Logged exceptions from one heuristic search; no global search completeness claimed"
+}
