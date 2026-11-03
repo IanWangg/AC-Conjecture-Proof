@@ -668,6 +668,49 @@ def complete_primitive_neighbours(node):
     return out
 
 
+def survey(path, K=8, P=16, L=100):
+    """Residual-list survey (Prop. G5): land every class with a torus-type
+    relator; report exits to triviality and torus nodes shared by labels.
+    `path`: lines 'len r1 r2 label' (third-party data, read as data only)."""
+    import collections
+    WH = _wh()
+    mats = gl2_matrices(K)
+    owners = collections.defaultdict(set)
+    trivial, ntorus, rows = [], 0, 0
+    for line in open(path):
+        parts = line.split()
+        if len(parts) < 4 or not parts[0].isdigit():
+            continue
+        r1, r2, lab = parts[1], parts[2], parts[3]
+        if not (set(r1) | set(r2)) <= set("xXyY"):
+            continue
+        rows += 1
+        hit = False
+        for (a, b) in ((r1, r2), (r2, r1)):
+            tf = torus_type(a, 8, 16)
+            if not tf:
+                continue
+            hit = True
+            M, p, q = tf
+            U = cyc(apply(aut_cached(mat_inv(M)), b))
+            if syllables(U, p, q) == 2 or (abs(p) != abs(q) and primitive_complete(U, p, q)):
+                trivial.append((r1, r2, lab))
+            for (M2, a2, b2, w) in edges(U, p, q, mats, P=P, maxlen=L):
+                if abs(a2) >= 2 and abs(b2) >= 2:
+                    node = (p, q, w, M2, a2, b2)
+                    R = cyc(power("x", p) + power("y", q))
+                    owners[WH.aut_canon((R, w))].add(lab)
+                    if complete_primitive_neighbours(node) or 2 in node_info(*node)[:2]:
+                        trivial.append((r1, r2, lab, "node"))
+        ntorus += hit
+    shared = {k: v for k, v in owners.items() if len(v) > 1}
+    print("classes %d, with torus-type relator %d, trivial exits %d, torus nodes %d, shared %d"
+          % (rows, ntorus, len(trivial), len(owners), len(shared)))
+    print("label sets sharing nodes:", sorted(set(tuple(sorted(v)) for v in shared.values())))
+
+
 if __name__ == "__main__":
     if sys.argv[1:] == ["--selftest"]:
         selftest()
+    elif sys.argv[1:2] == ["--survey"]:
+        survey(sys.argv[2])

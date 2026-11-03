@@ -609,6 +609,24 @@ def selftest():
 if __name__ == "__main__":
     if sys.argv[1:] == ["--selftest"]:
         selftest()
+    elif sys.argv[1:2] == ["--write-g5"]:
+        outdir = sys.argv[2]
+        jobs = [
+            ("g_r327_to_c3_via_aut.json", aut_equivalence_certificate,
+             ("xxyXYXy", "xyXyyyyXy"), (0, ((-1, -1), (3, 4)), -2, 3, "YxYxYxYxYxYXyX"),
+             ("xxyXy", "xyyyyyxYY"), (1, ((-2, -1), (-1, 0)), -2, 3, "YxYxYxYxYxYXyX")),
+            ("g_r74_to_r62_via_aut.json", aut_equivalence_certificate_general,
+             ("xxyXy", "xyyyyyyyxYY"), (0, ((-1, 0), (-7, -1)), -2, 9, "YxYYxYX"),
+             ("xxyxyXy", "xyXYYYYXy"), (0, ((-2, -1), (-7, -4)), 2, -3, "YxYxYxYxYxYxYxYXyX")),
+        ]
+        for name, fn, A, la, B, lb in jobs:
+            phi, cj = fn(A, la, B, lb)
+            r = replay(cj)
+            out = {"format": cj["format"], "start": cj["start"], "target": cj["target"], "moves": cj["moves"],
+                   "note": "agent G: phi(A) -> B with phi = %s, A = %s, B = %s" % (list(phi), list(A), list(B))}
+            with open(os.path.join(outdir, name), "w") as f:
+                json.dump(out, f, separators=(",", ":"))
+            print(name, "phi =", phi, r["moves"], "moves, peak", r["peak_total_length"])
     elif sys.argv[1:2] == ["--write"]:
         outdir = sys.argv[2]
         c2 = ak2_trivial()
@@ -649,3 +667,142 @@ def concat_certificates(a, b):
     assert [red(w) for w in a["target"]] == [red(w) for w in b["start"]]
     return {"format": "ordinary-ac-elementary-v1", "start": list(a["start"]),
             "target": list(b["target"]), "moves": a["moves"] + b["moves"]}
+
+
+def transport_certificate(cj, phi):
+    """Apply the automorphism phi letterwise to a certificate (Lemma D2):
+    invert/multiply unchanged, conjugate(i,g) -> conjugation by the word phi(g)."""
+    start = [apply(phi, w) for w in cj["start"]]
+    c = Cert(*start)
+    for mv in cj["moves"]:
+        if mv["op"] == "invert":
+            c.invert(mv["i"])
+        elif mv["op"] == "multiply":
+            c.multiply(mv["i"])
+        else:
+            c.conj_word(mv["i"], apply(phi, mv["g"]))
+    return c.to_json([apply(phi, w) for w in cj["target"]])
+
+
+def landing_certificate(r1, r2, moved, M, p, q, target):
+    """Certificate (r1, r2) -> (theta(target), theta(x^p y^q)) exactly, where
+    theta = aut_from_matrix(M) and the frozen relator is cyc theta(x^p y^q)."""
+    theta = T.aut_from_matrix(M)
+    cert = Cert(r1, r2)
+    acm_edge(cert, moved, theta, p, q, target)
+    return cert.to_json(list(cert.s)), theta
+
+
+def aut_equivalence_certificate(A, landA, B, landB):
+    """A, B rank-2 presentations; landX = (moved, M, p, q, target) with the
+    SAME (p, q, target).  Returns (phi, certificate phi(A) -> B)."""
+    cA, thA = landing_certificate(A[0], A[1], *landA)
+    cB, thB = landing_certificate(B[0], B[1], *landB)
+    phi = compose(thB, exact_inverse(thA))
+    tA = transport_certificate(cA, phi)
+    endA = [red(w) for w in tA["target"]]
+    endB = [red(w) for w in cB["target"]]
+    if endA != endB:
+        assert endA == endB[::-1], (endA, endB)
+        sw = Cert(*endA)
+        swap(sw)
+        tA = concat_certificates(tA, sw.to_json(list(sw.s)))
+    return phi, concat_certificates(tA, reverse_certificate(cB))
+
+
+# ------------------------------------- Whitehead with tracked automorphisms
+
+_WH_MAPS = [("xy", "y"), ("xY", "y"), ("x", "yx"), ("x", "yX")]   # x->xy, x->xY, y->yx, y->yX
+
+
+def _signed_perm_auts():
+    out = []
+    for swap_ in (False, True):
+        for sx in (1, -1):
+            for sy in (1, -1):
+                a = ("x" if sx > 0 else "X", "y" if sy > 0 else "Y")
+                out.append((a[1], a[0]) if swap_ else a)
+    return out
+
+
+def _canon_word(w):
+    return min(u[k:] + u[:k] for u in (w, inv(w)) for k in range(len(w)))
+
+
+def _canon_pair(p):
+    return tuple(sorted(_canon_word(w) for w in p))
+
+
+def aut_canon_tracked(p):
+    """Like d_whitehead.aut_canon, but also returns an automorphism alpha with
+    _canon_pair(cyc alpha(p)) == canonical form.  Positives are sound."""
+    alpha = ("x", "y")
+    p = tuple(cyc(w) for w in p)
+    improved = True
+    while improved:
+        improved = False
+        for m in _WH_MAPS:
+            q = tuple(cyc(apply(m, w)) for w in p)
+            if all(q) and sum(map(len, q)) < sum(map(len, p)):
+                p, alpha, improved = q, compose(m, alpha), True
+                break
+    L = sum(map(len, p))
+    seen = {_canon_pair(p): (p, alpha)}
+    stack = [(p, alpha)]
+    while stack:
+        cur, al = stack.pop()
+        for m in _WH_MAPS:
+            q = tuple(cyc(apply(m, w)) for w in cur)
+            if all(q) and sum(map(len, q)) == L:
+                c = _canon_pair(q)
+                if c not in seen:
+                    seen[c] = (q, compose(m, al))
+                    stack.append(seen[c])
+    best = None
+    for c, (q, al) in seen.items():
+        for s in _signed_perm_auts():
+            r = tuple(cyc(apply(s, w)) for w in q)
+            cr = _canon_pair(r)
+            if best is None or cr < best[0]:
+                best = (cr, compose(s, al))
+    return best
+
+
+def sigma_match(cert, target):
+    """Transform cert's current state into the exact pair `target`, assuming
+    the two pairs agree up to cyclic rotation, inversion and order."""
+    for i in (0, 1):
+        cert.cyclically_reduce(i)
+    tc = [cyc(w) for w in target]
+    if _canon_word(cert.s[0]) != _canon_word(tc[0]):
+        swap(cert)
+    for i in (0, 1):
+        if T.min_rot(cert.s[i]) != T.min_rot(tc[i]):
+            cert.invert(i)
+        cert.rotate_to(i, tc[i])
+    # undo cyclic reduction of the target (target may not be cyclically reduced)
+    for i in (0, 1):
+        if target[i] != tc[i]:
+            w = red(target[i])
+            k = (len(w) - len(tc[i])) // 2
+            cert.conj_word(i, w[:k])
+            assert cert.s[i] == w
+    assert cert.s == [red(w) for w in target], (cert.s, target)
+
+
+def aut_equivalence_certificate_general(A, landA, B, landB):
+    """Like aut_equivalence_certificate, but the two normalised landing pairs
+    need only lie in the same Aut(F_2)-orbit (found by tracked Whitehead)."""
+    cA, thA = landing_certificate(A[0], A[1], *landA)
+    cB, thB = landing_certificate(B[0], B[1], *landB)
+    RA = red(power("x", landA[2]) + power("y", landA[3]))
+    RB = red(power("x", landB[2]) + power("y", landB[3]))
+    canA, alA = aut_canon_tracked((RA, landA[4]))
+    canB, alB = aut_canon_tracked((RB, landB[4]))
+    assert canA == canB, (canA, canB)
+    phi = compose(thB, compose(exact_inverse(alB), compose(alA, exact_inverse(thA))))
+    tA = transport_certificate(cA, phi)
+    c = Cert(*tA["target"])
+    sigma_match(c, cB["target"])
+    tA = concat_certificates(tA, c.to_json(list(c.s)))
+    return phi, concat_certificates(tA, reverse_certificate(cB))

@@ -1,0 +1,358 @@
+comp 0 AK3 xxxYYYY,xyxYXY states 257488 orbits 20062 trivial 0
+comp 1 P1 XyyxYYY,YxxyXXX states 21900 orbits 1760 trivial 0
+comp 2 P2 XyyxYYY,XyxxyXX states 6372 orbits 2108 trivial 0
+comp 3 C3 xxyXy,xyyyyyxYY states 127850 orbits 11166 trivial 0
+comp 4 C4 xxxxyXy,xyyyxYY states 1244 orbits 568 trivial 0
+comp 5 C6 xxyxxYY,xyXYYXy states 1432 orbits 582 trivial 0
+comp 6 R8 xxyxYY,xxxxYxYXy states 740 orbits 740 trivial 0
+comp 7 R9 xxyxYY,xxxxYXYXy states 14292 orbits 2587 trivial 0
+comp 8 R13 xxyxYY,xxYXYxyXy states 733 orbits 733 trivial 0
+comp 9 R14 xxyXYY,xxxxxYYXY states 1126 orbits 1095 trivial 0
+comp 10 R16 xxyXYY,xxxxYXYXy states 874 orbits 874 trivial 0
+comp 11 R17 xxyXYY,xxxxYYYXy states 599 orbits 599 trivial 0
+comp 12 R18 xxyXYY,xxxYxYYXy states 670 orbits 670 trivial 0
+comp 13 R20 xxyXYY,xxxYYXyXy states 669 orbits 669 trivial 0
+comp 14 R21 xxyXYY,xxxYYXYxy states 478 orbits 478 trivial 0
+comp 15 R22 xxyXYY,xxxYYXYxY states 728 orbits 728 trivial 0
+comp 16 R23 xxyXYY,xxxYYXYXy states 539 orbits 539 trivial 0
+comp 17 R24 xyxYXY,xxxxxYYYY states 9100 orbits 1541 trivial 0
+comp 18 R25 xyxYXY,xxxxYxYYY states 1758 orbits 879 trivial 0
+comp 19 R26 xyxYXY,xxxxYYxYY states 1772 orbits 449 trivial 0
+comp 20 R27 xyxYXY,xxxYxxYYY states 1768 orbits 884 trivial 0
+comp 21 R28 xyxYXY,xxxYxYYxY states 1738 orbits 441 trivial 0
+comp 22 R30 xxxxyXy,xxyyyXYY states 723 orbits 705 trivial 0
+comp 23 R31 xxxxyXy,xyxyyXYY states 568 orbits 280 trivial 0
+comp 24 R32 xxxxyXy,xyXYYYXy states 781 orbits 392 trivial 0
+comp 25 R35 xxxyxyy,xyyyXYxY states 367 orbits 367 trivial 0
+comp 26 R36 xxxyxYY,xxxYxYxy states 355 orbits 355 trivial 0
+comp 27 R37 xxxyxYY,xxxYxYXy states 299 orbits 299 trivial 0
+comp 28 R38 xxxyxYY,xxxYXYxy states 474 orbits 474 trivial 0
+comp 29 R40 xxxyXXy,xyxyyXYY states 404 orbits 320 trivial 0
+comp 30 R41 xxxyXXy,xyxyyyXY states 431 orbits 343 trivial 0
+comp 31 R42 xxxyXXy,xyXyXYYY states 413 orbits 352 trivial 0
+comp 32 R43 xxxyXXy,xyXyyxYY states 436 orbits 362 trivial 0
+comp 33 R44 xxxyXXy,xyXyyyxY states 460 orbits 203 trivial 0
+comp 34 R46 xxxyXXy,xyXYYxyy states 462 orbits 377 trivial 0
+comp 35 R47 xxxyXXy,xyXYYXYY states 478 orbits 387 trivial 0
+comp 36 R48 xxxyXXy,xyXYYYXy states 483 orbits 209 trivial 0
+comp 37 R49 xxxyXXy,xyyXyyxY states 398 orbits 167 trivial 0
+comp 38 R50 xxxyXXY,xxyyxYYY states 2733 orbits 1750 trivial 0
+comp 39 R51 xxxyXXY,xxyyXYYY states 2715 orbits 1736 trivial 0
+comp 40 R52 xxxyXXY,xyxYYYXy states 2694 orbits 1715 trivial 0
+comp 41 R53 xxxyXXY,xyXyxYYY states 2685 orbits 1702 trivial 0
+comp 42 R54 xxxyXyy,xyXYYYXy states 686 orbits 343 trivial 0
+comp 43 R55 xxxyXYY,xxxYxYXy states 365 orbits 365 trivial 0
+comp 44 R56 xxxyXYY,xxxYXYxy states 307 orbits 307 trivial 0
+comp 45 R57 xxxyXYY,xxxYXYXy states 323 orbits 323 trivial 0
+comp 46 R58 xxxyXYY,xxxYYXXy states 1784 orbits 1346 trivial 0
+comp 47 R59 xxxyXYY,xyxyxYYY states 788 orbits 783 trivial 0
+comp 48 R60 xxxyXYY,xyxYYYXy states 286 orbits 286 trivial 0
+comp 49 R61 xxyxyxY,xxYYxyyy states 418 orbits 418 trivial 0
+comp 50 R62 xxyxyXy,xxxyyyyy states 3940 orbits 915 trivial 0
+comp 51 R64 xxyxyXY,xxxxYXyy states 429 orbits 429 trivial 0
+comp 52 R65 xxyxyXY,xxYYxyyy states 237 orbits 237 trivial 0
+comp 53 R66 xxyxyXY,xxYYXyyy states 287 orbits 287 trivial 0
+comp 54 R68 xxyxyXY,xyXyXYYY states 504 orbits 504 trivial 0
+comp 55 R69 xxyxyXY,xyyyxYxY states 348 orbits 348 trivial 0
+comp 56 R72 xxyxYXY,xxYYYxyy states 223 orbits 223 trivial 0
+comp 57 R73 xxyxYXY,xxYYYXyy states 261 orbits 261 trivial 0
+comp 58 R74 xxyxYXY,xyXyxYYY states 1938 orbits 746 trivial 0
+comp 59 R75 xxyxYXY,xyyxYxYY states 306 orbits 306 trivial 0
+comp 60 R77 xxyXXYY,xyxyyyXY states 200 orbits 200 trivial 0
+comp 61 R78 xxyXXYY,xyxYYYXy states 204 orbits 204 trivial 0
+comp 62 R79 xxyXXYY,xyxYYYXY states 205 orbits 205 trivial 0
+comp 63 R80 xxyXXYY,xyXyxYYY states 2035 orbits 1463 trivial 0
+comp 64 R82 xxyXyXY,xxyyyXyy states 313 orbits 313 trivial 0
+comp 65 R85 xxyXyXY,xxYYXyyy states 241 orbits 241 trivial 0
+comp 66 R86 xxyXyXY,xxYYXYYY states 274 orbits 274 trivial 0
+comp 67 R87 xxyXyXY,xxYYYXyy states 247 orbits 247 trivial 0
+comp 68 R88 xxyXyXY,xyxYXYYY states 393 orbits 393 trivial 0
+comp 69 R89 xxyXyXY,xyxYYXyy states 359 orbits 359 trivial 0
+comp 70 R90 xxyXyXY,xyxYYXYY states 425 orbits 425 trivial 0
+comp 71 R91 xxyXyXY,xyxYYYXy states 429 orbits 429 trivial 0
+comp 72 R92 xxyXyXY,xyXYYXyy states 440 orbits 435 trivial 0
+comp 73 R93 xxyXYXy,xxYYXYYY states 584 orbits 467 trivial 0
+comp 74 R94 xxyXYXy,xyXyxYYY states 1223 orbits 488 trivial 0
+comp 75 R96 xxyXYXy,xyyXyXyy states 563 orbits 222 trivial 0
+comp 76 R97 xxyXYXy,xyyXyyxY states 860 orbits 355 trivial 0
+comp 77 R101 xxxxyXy,xxyxyyXYY states 370 orbits 350 trivial 0
+comp 78 R102 xxxxyXy,xxyxyyyxY states 494 orbits 241 trivial 0
+comp 79 R103 xxxxyXy,xxyxYYXyy states 450 orbits 220 trivial 0
+comp 80 R104 xxxxyXy,xxyyxyyxY states 498 orbits 242 trivial 0
+comp 81 R105 xxxxyXy,xxyyyxYXY states 408 orbits 390 trivial 0
+comp 82 R106 xxxxyXy,xyxyyxYXY states 394 orbits 375 trivial 0
+comp 83 R107 xxxxyXy,xyyyyxYYY states 195 orbits 97 trivial 0
+comp 84 R108 xxxxyyy,xxyxyxyXY states 281 orbits 281 trivial 0
+comp 85 R110 xxxxyyy,xxyxyXyxY states 264 orbits 264 trivial 0
+comp 86 R111 xxxxyyy,xxyxyXYxy states 264 orbits 264 trivial 0
+comp 87 R112 xxxxyyy,xxyxYxyXy states 263 orbits 263 trivial 0
+comp 88 R113 xxxxyyy,xxyXyxyxY states 268 orbits 268 trivial 0
+comp 89 R114 xxxyxyy,xxyXyxyxY states 577 orbits 577 trivial 0
+comp 90 R117 xxxyxyy,xyxYYxyyy states 289 orbits 289 trivial 0
+comp 91 R118 xxxyxYY,xxxYXYXyy states 207 orbits 207 trivial 0
+comp 92 R119 xxxyxYY,xxyXXYYxy states 200 orbits 200 trivial 0
+comp 93 R120 xxxyxYY,xxyXXYYXy states 154 orbits 154 trivial 0
+comp 94 R121 xxxyxYY,xxyXYxYXy states 155 orbits 155 trivial 0
+comp 95 R122 xxxyxYY,xxyXYYXXy states 230 orbits 230 trivial 0
+comp 96 R123 xxxyxYY,xxYxYXyXy states 118 orbits 118 trivial 0
+comp 97 R124 xxxyxYY,xxYXyXyxY states 166 orbits 166 trivial 0
+comp 98 R125 xxxyxYY,xxYXyXyXY states 423 orbits 213 trivial 0
+comp 99 R126 xxxyxYY,xxYXYxyXy states 123 orbits 123 trivial 0
+comp 100 R128 xxxyxYY,xxYXYXyXy states 149 orbits 149 trivial 0
+comp 101 R131 xxxyXXy,xyxyyXyxY states 348 orbits 270 trivial 0
+comp 102 R132 xxxyXXy,xyxYXyXYY states 335 orbits 274 trivial 0
+comp 103 R133 xxxyXXy,xyxYXyyXY states 290 orbits 122 trivial 0
+comp 104 R134 xxxyXXy,xyXyXyxYY states 306 orbits 129 trivial 0
+comp 105 R135 xxxyXXy,xyXyXYYxY states 342 orbits 143 trivial 0
+comp 106 R136 xxxyXXy,xyyyXYYYY states 106 orbits 88 trivial 0
+comp 107 R137 xxxyXXy,xyyyyyxYY states 103 orbits 48 trivial 0
+comp 108 R138 xxxyXXy,xyyyyyyxY states 128 orbits 62 trivial 0
+comp 109 R139 xxxyXXY,xyyyxYYYY states 246 orbits 178 trivial 0
+comp 110 R140 xxxyXXY,xyyyXYYYY states 272 orbits 193 trivial 0
+comp 111 R141 xxxyXyy,xxyxyXYXy states 215 orbits 215 trivial 0
+comp 112 R142 xxxyXyy,xxyxyyXXY states 173 orbits 173 trivial 0
+comp 113 R143 xxxyXyy,xxyyXXyxY states 154 orbits 154 trivial 0
+comp 114 R144 xxxyXyy,xxyyXXYxy states 246 orbits 246 trivial 0
+comp 115 R145 xxxyXyy,xxyyyyyxY states 190 orbits 190 trivial 0
+comp 116 R146 xxxyXyy,xxYxyyXXy states 150 orbits 150 trivial 0
+comp 117 R147 xxxyXyy,xxYXyXYXY states 175 orbits 175 trivial 0
+comp 118 R148 xxxyXyy,xxYXYXyXY states 156 orbits 156 trivial 0
+comp 119 R149 xxxyXyy,xyxyyyyxY states 145 orbits 145 trivial 0
+comp 120 R150 xxxyXyy,xyxYxyyyy states 134 orbits 134 trivial 0
+comp 121 R151 xxxyXyy,xyxYYXyyy states 128 orbits 128 trivial 0
+comp 122 R152 xxxyXyy,xyXYYYYXy states 315 orbits 158 trivial 0
+comp 123 R153 xxxyXyy,xyyxyyyxY states 155 orbits 155 trivial 0
+comp 124 R154 xxxyXyy,xyyyXyxYY states 243 orbits 243 trivial 0
+comp 125 R155 xxxyXYY,xxxxYYYxy states 264 orbits 264 trivial 0
+comp 126 R156 xxxyXYY,xxxxYYYXy states 182 orbits 182 trivial 0
+comp 127 R157 xxxyXYY,xxxYxYYxy states 253 orbits 253 trivial 0
+comp 128 R158 xxxyXYY,xxxYxYYXy states 222 orbits 222 trivial 0
+comp 129 R159 xxxyXYY,xxxYYxYxy states 169 orbits 169 trivial 0
+comp 130 R160 xxxyXYY,xxxYYxYXy states 186 orbits 186 trivial 0
+comp 131 R161 xxxyXYY,xxxYYXyXy states 160 orbits 160 trivial 0
+comp 132 R162 xxxyXYY,xxxYYXYxy states 130 orbits 130 trivial 0
+comp 133 R163 xxxyXYY,xxyxxYYxY states 198 orbits 198 trivial 0
+comp 134 R164 xxxyXYY,xxyxxYYXY states 151 orbits 151 trivial 0
+comp 135 R166 xxxyXYY,xxyxYYXXy states 285 orbits 285 trivial 0
+comp 136 R167 xxxyXYY,xxyyXXYxY states 189 orbits 189 trivial 0
+comp 137 R168 xxxyXYY,xxyyXXYXY states 178 orbits 178 trivial 0
+comp 138 R169 xxxyXYY,xxYxxYYXy states 189 orbits 189 trivial 0
+comp 139 R170 xxxyXYY,xxYxyyXXY states 168 orbits 168 trivial 0
+comp 140 R171 xxxyXYY,xxYxYxYXy states 140 orbits 140 trivial 0
+comp 141 R172 xxxyXYY,xxYxYXyxY states 200 orbits 200 trivial 0
+comp 142 R173 xxxyXYY,xxYxYXYxy states 116 orbits 116 trivial 0
+comp 143 R175 xxxyXYY,xxYXyyXXY states 224 orbits 224 trivial 0
+comp 144 R176 xxxyXYY,xxYXYxyxY states 197 orbits 197 trivial 0
+comp 145 R177 xxxyXYY,xxYXYxYxy states 147 orbits 147 trivial 0
+comp 146 R178 xxxyXYY,xxYXYXyxy states 157 orbits 157 trivial 0
+comp 147 R179 xxxyXYY,xyxyxYYYY states 188 orbits 188 trivial 0
+comp 148 R180 xxyxxYY,xxxyXYYXy states 162 orbits 85 trivial 0
+comp 149 R182 xxyxxYY,xxyXYxYXy states 190 orbits 97 trivial 0
+comp 150 R183 xxyxxYY,xxyXYXYXy states 345 orbits 175 trivial 0
+comp 151 R184 xxyxxYY,xxYxyXyXY states 138 orbits 138 trivial 0
+comp 152 R185 xxyxxYY,xxYXyxyXY states 128 orbits 67 trivial 0
+comp 153 R186 xxyxxYY,xxYXyXyXY states 200 orbits 96 trivial 0
+comp 154 R187 xxyxxYY,xyxyyXYYY states 494 orbits 213 trivial 0
+comp 155 R188 xxyxxYY,xyXYYYXyy states 238 orbits 121 trivial 0
+comp 156 R189 xxyxyxY,xxxYXyyXY states 375 orbits 375 trivial 0
+comp 157 R190 xxyxyxY,xxxYYXyXy states 214 orbits 214 trivial 0
+comp 158 R191 xxyxyxY,xxyXXYYXy states 393 orbits 393 trivial 0
+comp 159 R192 xxyxyxY,xxYxyyXXY states 271 orbits 271 trivial 0
+comp 160 R194 xxyxyxY,xxYXyyXXY states 239 orbits 239 trivial 0
+comp 161 R196 xxyxyxY,xyyyXYxYY states 269 orbits 269 trivial 0
+comp 162 R198 xxyxyXy,xxyyyyyxY states 170 orbits 170 trivial 0
+comp 163 R199 xxyxyXy,xxYxyXXyy states 357 orbits 357 trivial 0
+comp 164 R200 xxyxyXy,xxYxyyyyy states 169 orbits 169 trivial 0
+comp 165 R201 xxyxyXy,xxYYXyyyy states 150 orbits 150 trivial 0
+comp 166 R202 xxyxyXy,xyxYxyyyy states 163 orbits 163 trivial 0
+comp 167 R203 xxyxyXy,xyxYYXyyy states 161 orbits 161 trivial 0
+comp 168 R204 xxyxyXy,xyyxyyXYY states 292 orbits 292 trivial 0
+comp 169 R205 xxyxyXy,xyyxyyyxY states 231 orbits 231 trivial 0
+comp 170 R206 xxyxyXy,xyyxYxyyy states 191 orbits 191 trivial 0
+comp 171 R207 xxyxyXy,xyyxYYXyy states 195 orbits 195 trivial 0
+comp 172 R208 xxyxyXy,xyyXYYYXY states 212 orbits 212 trivial 0
+comp 173 R209 xxyxyXY,xxxxYxyyy states 151 orbits 151 trivial 0
+comp 174 R210 xxyxyXY,xxxxYXyyy states 183 orbits 183 trivial 0
+comp 175 R211 xxyxyXY,xxxyyXXYY states 347 orbits 347 trivial 0
+comp 176 R212 xxyxyXY,xxxyyyxxY states 207 orbits 207 trivial 0
+comp 177 R213 xxyxyXY,xxxYxyyxy states 211 orbits 211 trivial 0
+comp 178 R214 xxyxyXY,xxxYxyyXy states 210 orbits 210 trivial 0
+comp 179 R215 xxyxyXY,xxxYXyyxy states 244 orbits 244 trivial 0
+comp 180 R216 xxyxyXY,xxxYYXyXy states 238 orbits 238 trivial 0
+comp 181 R218 xxyxyXY,xxYYxyyyy states 114 orbits 114 trivial 0
+comp 182 R219 xxyxyXY,xxYYYXyyy states 122 orbits 122 trivial 0
+comp 183 R220 xxyxyXY,xyxYYxyyy states 212 orbits 212 trivial 0
+comp 184 R221 xxyxyXY,xyxYYYXyy states 259 orbits 259 trivial 0
+comp 185 R222 xxyxyXY,xyXyyXYYY states 246 orbits 246 trivial 0
+comp 186 R223 xxyxyXY,xyyxyyxYY states 284 orbits 284 trivial 0
+comp 187 R224 xxyxyXY,xyyXyXYYY states 168 orbits 168 trivial 0
+comp 188 R225 xxyxyXY,xyyyyxYxY states 146 orbits 146 trivial 0
+comp 189 R228 xxyxYXY,xxxxYYYxy states 255 orbits 232 trivial 0
+comp 190 R229 xxyxYXY,xxxxYYYXy states 165 orbits 165 trivial 0
+comp 191 R230 xxyxYXY,xxxYxYYxy states 202 orbits 202 trivial 0
+comp 192 R231 xxyxYXY,xxxYxYYXy states 185 orbits 185 trivial 0
+comp 193 R232 xxyxYXY,xxxYYxYXy states 183 orbits 183 trivial 0
+comp 194 R233 xxyxYXY,xxxYYXyxY states 268 orbits 268 trivial 0
+comp 195 R237 xxyxYXY,xxYXyxxYY states 208 orbits 208 trivial 0
+comp 196 R238 xxyxYXY,xxYYYXyyy states 111 orbits 111 trivial 0
+comp 197 R239 xxyxYXY,xxYYYYxyy states 99 orbits 99 trivial 0
+comp 198 R240 xxyxYXY,xyXyyxYYY states 178 orbits 178 trivial 0
+comp 199 R241 xxyxYXY,xyXyyXYYY states 157 orbits 157 trivial 0
+comp 200 R242 xxyxYXY,xyyxYxYYY states 120 orbits 120 trivial 0
+comp 201 R243 xxyxYXY,xyyxYYxYY states 144 orbits 144 trivial 0
+comp 202 R244 xxyxYXY,xyyxYYYxY states 154 orbits 154 trivial 0
+comp 203 R245 xxyxYXY,xyyXyxYYY states 179 orbits 179 trivial 0
+comp 204 R246 xxyxYXY,xyyXyXYYY states 126 orbits 126 trivial 0
+comp 205 R247 xxyxYXY,xyyyXYxYY states 209 orbits 209 trivial 0
+comp 206 R248 xxyxYXY,xyyyXYYxY states 188 orbits 188 trivial 0
+comp 207 R249 xxyXXYY,xxxyyXyXy states 219 orbits 219 trivial 0
+comp 208 R252 xxyXXYY,xxxyyXYXY states 211 orbits 211 trivial 0
+comp 209 R254 xxyXXYY,xxyxYXYXy states 267 orbits 267 trivial 0
+comp 210 R255 xxyXXYY,xyxyyXyyy states 175 orbits 175 trivial 0
+comp 211 R256 xxyXXYY,xyxyyXYYY states 161 orbits 161 trivial 0
+comp 212 R257 xxyXXYY,xyxyyyyXy states 117 orbits 117 trivial 0
+comp 213 R258 xxyXXYY,xyxyyyyXY states 114 orbits 114 trivial 0
+comp 214 R259 xxyXXYY,xyxYYXyyy states 163 orbits 163 trivial 0
+comp 215 R260 xxyXXYY,xyxYYXYYY states 159 orbits 159 trivial 0
+comp 216 R261 xxyXXYY,xyxYYYYXy states 114 orbits 114 trivial 0
+comp 217 R262 xxyXXYY,xyxYYYYXY states 115 orbits 115 trivial 0
+comp 218 R263 xxyXXYY,xyyxyyyXy states 151 orbits 151 trivial 0
+comp 219 R264 xxyXXYY,xyyxyyyXY states 142 orbits 142 trivial 0
+comp 220 R265 xxyXXYY,xyyxYYYXy states 146 orbits 146 trivial 0
+comp 221 R266 xxyXXYY,xyyxYYYXY states 146 orbits 146 trivial 0
+comp 222 R267 xxyXXYY,xyyXyxyyy states 157 orbits 157 trivial 0
+comp 223 R268 xxyXXYY,xyyXyxYYY states 139 orbits 139 trivial 0
+comp 224 R269 xxyXXYY,xyyXyyyXY states 135 orbits 135 trivial 0
+comp 225 R270 xxyXXYY,xyyXYxYYY states 139 orbits 139 trivial 0
+comp 226 R271 xxyXyXY,xxxyyXXyy states 196 orbits 196 trivial 0
+comp 227 R272 xxyXyXY,xxxyyXYXy states 663 orbits 560 trivial 0
+comp 228 R273 xxyXyXY,xxxYXYYXy states 359 orbits 359 trivial 0
+comp 229 R274 xxyXyXY,xxyyXXYXy states 301 orbits 301 trivial 0
+comp 230 R275 xxyXyXY,xxyyyXyyy states 132 orbits 132 trivial 0
+comp 231 R276 xxyXyXY,xxyyyyXyy states 132 orbits 132 trivial 0
+comp 232 R277 xxyXyXY,xxYxyXXYY states 388 orbits 388 trivial 0
+comp 233 R278 xxyXyXY,xxYXyyyyy states 136 orbits 136 trivial 0
+comp 234 R279 xxyXyXY,xxYXYYYYY states 162 orbits 162 trivial 0
+comp 235 R280 xxyXyXY,xxYYXyyyy states 101 orbits 101 trivial 0
+comp 236 R281 xxyXyXY,xxYYXYYYY states 108 orbits 108 trivial 0
+comp 237 R282 xxyXyXY,xxYYYXyyy states 97 orbits 97 trivial 0
+comp 238 R283 xxyXyXY,xxYYYXYYY states 110 orbits 110 trivial 0
+comp 239 R284 xxyXyXY,xxYYYYXyy states 97 orbits 97 trivial 0
+comp 240 R285 xxyXyXY,xxYYYYYXy states 287 orbits 249 trivial 0
+comp 241 R286 xxyXyXY,xyxyyXyyy states 247 orbits 247 trivial 0
+comp 242 R287 xxyXyXY,xyxyyXYYY states 143 orbits 143 trivial 0
+comp 243 R288 xxyXyXY,xyxyyyXyy states 226 orbits 226 trivial 0
+comp 244 R289 xxyXyXY,xyxyyyXYY states 164 orbits 164 trivial 0
+comp 245 R290 xxyXyXY,xyxyyyyXy states 182 orbits 182 trivial 0
+comp 246 R291 xxyXyXY,xyxYXyyyy states 133 orbits 133 trivial 0
+comp 247 R292 xxyXyXY,xyxYXYYYY states 164 orbits 164 trivial 0
+comp 248 R293 xxyXyXY,xyxYYXyyy states 121 orbits 121 trivial 0
+comp 249 R294 xxyXyXY,xyxYYXYYY states 156 orbits 156 trivial 0
+comp 250 R295 xxyXyXY,xyxYYYXyy states 126 orbits 126 trivial 0
+comp 251 R296 xxyXyXY,xyxYYYXYY states 158 orbits 158 trivial 0
+comp 252 R297 xxyXyXY,xyxYYYYXy states 146 orbits 146 trivial 0
+comp 253 R298 xxyXyXY,xyXYYxyyy states 148 orbits 148 trivial 0
+comp 254 R299 xxyXyXY,xyXYYXyyy states 139 orbits 139 trivial 0
+comp 255 R300 xxyXyXY,xyXYYXYYY states 149 orbits 149 trivial 0
+comp 256 R301 xxyXyXY,xyXYYYxyy states 140 orbits 140 trivial 0
+comp 257 R302 xxyXyXY,xyXYYYXyy states 137 orbits 137 trivial 0
+comp 258 R303 xxyXyXY,xyXYYYXYY states 150 orbits 150 trivial 0
+comp 259 R304 xxyXyXY,xyyxyyXyy states 426 orbits 214 trivial 0
+comp 260 R305 xxyXyXY,xyyxyyXYY states 150 orbits 150 trivial 0
+comp 261 R306 xxyXyXY,xyyxyyyXy states 183 orbits 183 trivial 0
+comp 262 R307 xxyXyXY,xyyxYYXyy states 139 orbits 139 trivial 0
+comp 263 R308 xxyXyXY,xyyxYYXYY states 135 orbits 135 trivial 0
+comp 264 R309 xxyXyXY,xyyxYYYXY states 166 orbits 166 trivial 0
+comp 265 R311 xxyXyXY,xyyXYYxYY states 259 orbits 259 trivial 0
+comp 266 R312 xxyXyXY,xyyXYYYxY states 222 orbits 222 trivial 0
+comp 267 R313 xxyXyXY,xyyXYYYXy states 153 orbits 153 trivial 0
+comp 268 R314 xxyXyXY,xyyXYYYXY states 175 orbits 175 trivial 0
+comp 269 R315 xxyXyXY,xyyyXYYxY states 235 orbits 235 trivial 0
+comp 270 R316 xxyXYXy,xxxyyXyXY states 729 orbits 296 trivial 0
+comp 271 R318 xxyXYXy,xxYYXYYYY states 250 orbits 200 trivial 0
+comp 272 R319 xxyXYXy,xxYYYXYYY states 249 orbits 104 trivial 0
+comp 273 R320 xxyXYXy,xyXyxYYYY states 500 orbits 206 trivial 0
+comp 274 R321 xxyXYXy,xyXyXyyyy states 227 orbits 185 trivial 0
+comp 275 R322 xxyXYXy,xyXyXYYYY states 446 orbits 364 trivial 0
+comp 276 R323 xxyXYXy,xyXyyxYYY states 435 orbits 361 trivial 0
+comp 277 R324 xxyXYXy,xyXyyXyyy states 252 orbits 208 trivial 0
+comp 278 R325 xxyXYXy,xyXyyXYYY states 441 orbits 183 trivial 0
+comp 279 R327 xxyXYXy,xyXyyyyXy states 267 orbits 108 trivial 0
+comp 280 R328 xxyXYXy,xyyXyXyyy states 208 orbits 172 trivial 0
+comp 281 R329 xxyXYXy,xyyXyXYYY states 375 orbits 303 trivial 0
+comp 282 R330 xxyXYXy,xyyXyyxYY states 380 orbits 161 trivial 0
+comp 283 R331 xxyXYXy,xyyXyyXyy states 245 orbits 106 trivial 0
+comp 284 R332 xxyXYXy,xyyXyyXYY states 376 orbits 306 trivial 0
+comp 285 R333 xxyXYXy,xyyXyyyxY states 401 orbits 334 trivial 0
+comp 286 R334 xxyXYXy,xyyXYYYxY states 373 orbits 300 trivial 0
+comp 287 X xxxxyyyyyyyyy,xxyXy states 4358 orbits 2074 trivial 0
+comp 288 Y xxxxxxxyyyyy,xxxxyXy states 781 orbits 392 trivial 0
+components 289 groups 173 merged_groups 68
+GROUP size 7 same-status :: R14(xxyXYY,xxxxxYYXY) R59(xxxyXYY,xyxyxYYY) R68(xxyxyXY,xyXyXYYY) R108(xxxxyyy,xxyxyxyXY) R172(xxxyXYY,xxYxYXyxY) R272(xxyXyXY,xxxyyXYXy) R277(xxyXyXY,xxYxyXXYY)
+GROUP size 6 same-status :: R9(xxyxYY,xxxxYXYXy) R22(xxyXYY,xxxYYXYxY) R69(xxyxyXY,xyyyxYxY) R111(xxxxyyy,xxyxyXYxy) R114(xxxyxyy,xxyXyxyxY) R223(xxyxyXY,xyyxyyxYY)
+GROUP size 6 same-status :: R16(xxyXYY,xxxxYXYXy) R64(xxyxyXY,xxxxYXyy) R90(xxyXyXY,xyxYYXYY) R184(xxyxxYY,xxYxyXyXY) R211(xxyxyXY,xxxyyXXYY) R303(xxyXyXY,xyXYYYXYY)
+GROUP size 6 same-status :: R21(xxyXYY,xxxYYXYxy) R164(xxxyXYY,xxyxxYYXY) R213(xxyxyXY,xxxYxyyxy) R214(xxyxyXY,xxxYxyyXy) R288(xxyXyXY,xyxyyyXyy) R321(xxyXYXy,xyXyXyyyy)
+GROUP size 5 same-status :: R8(xxyxYY,xxxxYxYXy) R189(xxyxyxY,xxxYXyyXY) R194(xxyxyxY,xxYXyyXXY) R199(xxyxyXy,xxYxyXXyy) R231(xxyxYXY,xxxYxYYXy)
+GROUP size 5 same-status :: R65(xxyxyXY,xxYYxyyy) R79(xxyXXYY,xyxYYYXY) R123(xxxyxYY,xxYxYXyXy) R220(xxyxyXY,xyxYYxyyy) R271(xxyXyXY,xxxyyXXyy)
+GROUP size 4 same-status :: R17(xxyXYY,xxxxYYYXy) R89(xxyXyXY,xyxYYXyy) R254(xxyXXYY,xxyxYXYXy) R311(xxyXyXY,xyyXYYxYY)
+GROUP size 4 same-status :: R18(xxyXYY,xxxYxYYXy) R88(xxyXyXY,xyxYXYYY) R124(xxxyxYY,xxYXyXyxY) R208(xxyxyXy,xyyXYYYXY)
+GROUP size 4 same-status :: R20(xxyXYY,xxxYYXyXy) R30(xxxxyXy,xxyyyXYY) R118(xxxyxYY,xxxYXYXyy) R132(xxxyXXy,xyxYXyXYY)
+GROUP size 4 same-status :: R23(xxyXYY,xxxYYXYXy) R215(xxyxyXY,xxxYXyyxy) R216(xxyxyXY,xxxYYXyXy) R291(xxyXyXY,xyxYXyyyy)
+GROUP size 4 same-status :: R75(xxyxYXY,xyyxYxYY) R141(xxxyXyy,xxyxyXYXy) R145(xxxyXyy,xxyyyyyxY) R206(xxyxyXy,xyyxYxyyy)
+GROUP size 3 same-status :: R13(xxyxYY,xxYXYxyXy) R35(xxxyxyy,xyyyXYxY) R191(xxyxyxY,xxyXXYYXy)
+GROUP size 3 same-status :: R25(xyxYXY,xxxxYxYYY) R80(xxyXXYY,xyXyxYYY) R273(xxyXyXY,xxxYXYYXy)
+GROUP size 3 same-status :: R32(xxxxyXy,xyXYYYXy) R134(xxxyXXy,xyXyXyxYY) Y(xxxxxxxyyyyy,xxxxyXy)
+GROUP size 3 same-status :: R36(xxxyxYY,xxxYxYxy) R38(xxxyxYY,xxxYXYxy) R306(xxyXyXY,xyyxyyyXy)
+GROUP size 3 same-status :: R37(xxxyxYY,xxxYxYXy) R56(xxxyXYY,xxxYXYxy) R324(xxyXYXy,xyXyyXyyy)
+GROUP size 3 same-status :: R42(xxxyXXy,xyXyXYYY) R101(xxxxyXy,xxyxyyXYY) R155(xxxyXYY,xxxxYYYxy)
+GROUP size 3 same-status :: R55(xxxyXYY,xxxYxYXy) R57(xxxyXYY,xxxYXYXy) R300(xxyXyXY,xyXYYXYYY)
+GROUP size 3 same-status :: R61(xxyxyxY,xxYYxyyy) R117(xxxyxyy,xyxYYxyyy) R122(xxxyxYY,xxyXYYXXy)
+GROUP size 3 same-status :: R62(xxyxyXy,xxxyyyyy) R74(xxyxYXY,xyXyxYYY) X(xxxxyyyyyyyyy,xxyXy)
+GROUP size 3 same-status :: R72(xxyxYXY,xxYYYxyy) R202(xxyxyXy,xyxYxyyyy) R240(xxyxYXY,xyXyyxYYY)
+GROUP size 3 same-status :: R73(xxyxYXY,xxYYYXyy) R128(xxxyxYY,xxYXYXyXy) R203(xxyxyXy,xyxYYXyyy)
+GROUP size 3 same-status :: R77(xxyXXYY,xyxyyyXY) R178(xxxyXYY,xxYXYXyxy) R222(xxyxyXY,xyXyyXYYY)
+GROUP size 3 same-status :: R87(xxyXyXY,xxYYYXyy) R270(xxyXXYY,xyyXYxYYY) R315(xxyXyXY,xyyyXYYxY)
+GROUP size 3 same-status :: R163(xxxyXYY,xxyxxYYxY) R196(xxyxyxY,xyyyXYxYY) R233(xxyxYXY,xxxYYXyxY)
+GROUP size 3 same-status :: R169(xxxyXYY,xxYxxYYXy) R201(xxyxyXy,xxYYXyyyy) R247(xxyxYXY,xyyyXYxYY)
+GROUP size 2 AC-class(Aut-realized) :: AK3(xxxYYYY,xyxYXY) R212(xxyxyXY,xxxyyyxxY)
+GROUP size 2 AC-class(Aut-realized) :: C3(xxyXy,xyyyyyxYY) R327(xxyXYXy,xyXyyyyXy)
+GROUP size 2 same-status :: C6(xxyxxYY,xyXYYXy) R28(xyxYXY,xxxYxYYxY)
+GROUP size 2 same-status :: R26(xyxYXY,xxxxYYxYY) R316(xxyXYXy,xxxyyXyXY)
+GROUP size 2 same-status :: R27(xyxYXY,xxxYxxYYY) R58(xxxyXYY,xxxYYXXy)
+GROUP size 2 same-status :: R31(xxxxyXy,xyxyyXYY) R135(xxxyXXy,xyXyXYYxY)
+GROUP size 2 same-status :: R41(xxxyXXy,xyxyyyXY) R176(xxxyXYY,xxYXYxyxY)
+GROUP size 2 same-status :: R43(xxxyXXy,xyXyyxYY) R106(xxxxyXy,xyxyyxYXY)
+GROUP size 2 same-status :: R44(xxxyXXy,xyXyyyxY) R102(xxxxyXy,xxyxyyyxY)
+GROUP size 2 same-status :: R47(xxxyXXy,xyXYYXYY) R121(xxxyxYY,xxyXYxYXy)
+GROUP size 2 same-status :: R49(xxxyXXy,xyyXyyxY) R104(xxxxyXy,xxyyxyyxY)
+GROUP size 2 same-status :: R51(xxxyXXY,xxyyXYYY) R175(xxxyXYY,xxYXyyXXY)
+GROUP size 2 same-status :: R52(xxxyXXY,xyxYYYXy) R156(xxxyXYY,xxxxYYYXy)
+GROUP size 2 same-status :: R54(xxxyXyy,xyXYYYXy) R205(xxyxyXy,xyyxyyyxY)
+GROUP size 2 same-status :: R60(xxxyXYY,xyxYYYXy) R171(xxxyXYY,xxYxYxYXy)
+GROUP size 2 same-status :: R66(xxyxyXY,xxYYXyyy) R221(xxyxyXY,xyxYYYXyy)
+GROUP size 2 same-status :: R82(xxyXyXY,xxyyyXyy) R86(xxyXyXY,xxYYXYYY)
+GROUP size 2 same-status :: R85(xxyXyXY,xxYYXyyy) R312(xxyXyXY,xyyXYYYxY)
+GROUP size 2 same-status :: R91(xxyXyXY,xyxYYYXy) R92(xxyXyXY,xyXYYXyy)
+GROUP size 2 same-status :: R94(xxyXYXy,xyXyxYYY) R125(xxxyxYY,xxYXyXyXY)
+GROUP size 2 same-status :: R96(xxyXYXy,xyyXyXyy) R183(xxyxxYY,xxyXYXYXy)
+GROUP size 2 same-status :: R97(xxyXYXy,xyyXyyxY) R186(xxyxxYY,xxYXyXyXY)
+GROUP size 2 same-status :: R103(xxxxyXy,xxyxYYXyy) R133(xxxyXXy,xyxYXyyXY)
+GROUP size 2 same-status :: R105(xxxxyXy,xxyyyxYXY) R131(xxxyXXy,xyxyyXyxY)
+GROUP size 2 same-status :: R120(xxxyxYY,xxyXXYYXy) R162(xxxyXYY,xxxYYXYxy)
+GROUP size 2 same-status :: R149(xxxyXyy,xyxyyyyxY) R153(xxxyXyy,xyyxyyyxY)
+GROUP size 2 same-status :: R158(xxxyXYY,xxxYxYYXy) R241(xxyxYXY,xyXyyXYYY)
+GROUP size 2 same-status :: R160(xxxyXYY,xxxYYxYXy) R168(xxxyXYY,xxyyXXYXY)
+GROUP size 2 same-status :: R187(xxyxxYY,xyxyyXYYY) R304(xxyXyXY,xyyxyyXyy)
+GROUP size 2 same-status :: R188(xxyxxYY,xyXYYYXyy) R331(xxyXYXy,xyyXyyXyy)
+GROUP size 2 same-status :: R192(xxyxyxY,xxYxyyXXY) R230(xxyxYXY,xxxYxYYxy)
+GROUP size 2 same-status :: R200(xxyxyXy,xxYxyyyyy) R245(xxyxYXY,xyyXyxYYY)
+GROUP size 2 same-status :: R256(xxyXXYY,xyxyyXYYY) R305(xxyXyXY,xyyxyyXYY)
+GROUP size 2 same-status :: R265(xxyXXYY,xyyxYYYXy) R307(xxyXyXY,xyyxYYXyy)
+GROUP size 2 same-status :: R268(xxyXXYY,xyyXyxYYY) R332(xxyXYXy,xyyXyyXYY)
+GROUP size 2 same-status :: R269(xxyXXYY,xyyXyyyXY) R294(xxyXyXY,xyxYYXYYY)
+GROUP size 2 same-status :: R275(xxyXyXY,xxyyyXyyy) R281(xxyXyXY,xxYYXYYYY)
+GROUP size 2 same-status :: R276(xxyXyXY,xxyyyyXyy) R283(xxyXyXY,xxYYYXYYY)
+GROUP size 2 same-status :: R292(xxyXyXY,xyxYXYYYY) R314(xxyXyXY,xyyXYYYXY)
+GROUP size 2 same-status :: R297(xxyXyXY,xyxYYYYXy) R302(xxyXyXY,xyXYYYXyy)
+GROUP size 2 same-status :: R298(xxyXyXY,xyXYYxyyy) R309(xxyXyXY,xyyxYYYXY)
+GROUP size 2 same-status :: R301(xxyXyXY,xyXYYYxyy) R313(xxyXyXY,xyyXYYYXy)

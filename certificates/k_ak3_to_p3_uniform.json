@@ -1,0 +1,445 @@
+{
+ "format": "ordinary-ac-elementary-v1",
+ "start": [
+  "xyxYXY",
+  "xxxYYYY"
+ ],
+ "target": [
+  "xyxYYXy",
+  "xxxYXyy"
+ ],
+ "moves": [
+  {
+   "op": "invert",
+   "i": 1
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "X"
+  },
+  {
+   "op": "invert",
+   "i": 0
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "Y"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "X"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "y"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "x"
+  },
+  {
+   "op": "multiply",
+   "i": 1,
+   "j": 0
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "Y"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "Y"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "Y"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "X"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "Y"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "x"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "Y"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "x"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "x"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "Y"
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "y"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "X"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "X"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "y"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "y"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "X"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "X"
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "y"
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "y"
+  },
+  {
+   "op": "invert",
+   "i": 0
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "X"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "Y"
+  },
+  {
+   "op": "multiply",
+   "i": 1,
+   "j": 0
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "x"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "x"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "y"
+  },
+  {
+   "op": "multiply",
+   "i": 1,
+   "j": 0
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "Y"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "x"
+  },
+  {
+   "op": "invert",
+   "i": 0
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "Y"
+  },
+  {
+   "op": "multiply",
+   "i": 1,
+   "j": 0
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "y"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "x"
+  },
+  {
+   "op": "invert",
+   "i": 0
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "y"
+  },
+  {
+   "op": "multiply",
+   "i": 1,
+   "j": 0
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "Y"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "x"
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "x"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "x"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "x"
+  },
+  {
+   "op": "invert",
+   "i": 0
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "y"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "X"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "Y"
+  },
+  {
+   "op": "multiply",
+   "i": 1,
+   "j": 0
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "invert",
+   "i": 1
+  },
+  {
+   "op": "multiply",
+   "i": 1,
+   "j": 0
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "y"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "x"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "Y"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "X"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "Y"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "X"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "y"
+  },
+  {
+   "op": "invert",
+   "i": 1
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "x"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "x"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "x"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "y"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "y"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "X"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "Y"
+  },
+  {
+   "op": "invert",
+   "i": 1
+  },
+  {
+   "op": "invert",
+   "i": 0
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "y"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "x"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "Y"
+  },
+  {
+   "op": "invert",
+   "i": 1
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "x"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "x"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "x"
+  }
+ ],
+ "description": "AK(3) = (xyxYXY, x^3 Y^4) -> P_3 = (xyxYYXy, x^3 YXyy): uniform closed-form path of research-k.md (4n-1 cyclic products, packaged peak 4n+5), compiled to strict elementary moves.",
+ "cyclic_steps": 11,
+ "peak_total_length_elementary": 35
+}

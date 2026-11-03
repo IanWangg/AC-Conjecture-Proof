@@ -46,11 +46,7 @@ IN_GENS = {"swap": ["swap"], "invx": ["invx"], "x_xy": ["x_xy"],
 
 def compose(names):
     """names = [g1,...,gk] -> images of g1 o g2 o ... o gk."""
-    img = {"x": "x", "y": "y"}
-    for g in reversed(names):            # apply gk first
-        img = {v: subst(img[v], MAPS[g]) for v in "xy"} if False else img
-    # direct: phi(w) = g1(g2(...gk(w)))
-    def phi(w):
+    def phi(w):                          # phi(w) = g1(g2(...gk(w)))
         for g in reversed(names):
             w = subst(w, MAPS[g])
         return w

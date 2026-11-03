@@ -5,9 +5,14 @@ either relator, swap) of pairs of cyclically reduced words with |a|+|b| = ell
 and unimodular exponent matrix (necessary for presenting the trivial group).
 Classify each class against
 
-  * the exact component of (x,y) in the full cyclic-product graph at cap C
-    ("trivial hump", d_acsearch --source x,y --no-stop --cap C --dump 16),
-    which gives the exact barrier of every AC-trivial pair of barrier <= C;
+  * the exact forward-reachable set of (x,y) in the full cyclic-product graph
+    at cap C ("trivial hump", d_acsearch --source x,y --no-stop --cap C
+    --dump 16); every member is AC-trivial with an elementary trivialization
+    of peak <= C.  NOTE (research-l, Lemma L2): cyclic products with a fully
+    cancelled donor are not always reversible by one cyclic product, so
+    "not in the hump" means "not forward-reachable from (x,y) within cap C",
+    not "barrier > C"; exact forward barriers of leftovers are measured
+    separately (d_acsearch --target-keys).
   * the exact component of AK(3) at cap 28 (D's key dump k28_ak3.bin).
 
 Leftover classes are tested for group triviality by coset enumeration
@@ -155,7 +160,7 @@ def classify(ell, hump_path, k28_path, hump_cap):
             n_ak3 += 1
         else:
             left.append(k)
-    print(f"  in trivial hump (barrier <= {hump_cap}): {sum(hist.values())}")
+    print(f"  in trivial hump T({hump_cap}) (forward-reachable from (x,y); barrier of the (x,y)->P path):" f" {sum(hist.values())}")
     for bar in sorted(hist):
         print(f"    barrier {bar:2d} (excess {bar - ell:2d}): {hist[bar]}")
     print(f"  in AK(3)'s cap-28 component: {n_ak3}")
@@ -163,8 +168,10 @@ def classify(ell, hump_path, k28_path, hump_cap):
     trivial, nontrivial, undecided = [], [], []
     for a, b in left:
         r = f_descent.is_trivial_group(to_ints(a), to_ints(b), limit=400000)
+        if r is None and f_descent.nontrivial_hom(to_ints(a), to_ints(b)):
+            r = False  # nontrivial permutation image (A5/A6/A7): the group is nontrivial
         (trivial if r is True else nontrivial if r is False else undecided).append((a, b))
-    print(f"    coset enumeration: trivial group {len(trivial)}, nontrivial {len(nontrivial)}, undecided {len(undecided)}")
+    print(f"    coset enumeration + permutation images: trivial group {len(trivial)}, nontrivial {len(nontrivial)}, undecided {len(undecided)}")
     # complex classes (Sigma x D8) of the leftovers that present the trivial group
     cc = {}
     for a, b in trivial:
@@ -172,7 +179,7 @@ def classify(ell, hump_path, k28_path, hump_cap):
     print(f"    trivial-group leftovers form {len(cc)} complex classes (Sigma x D8):")
     for key in sorted(cc):
         print("      ", key[0], key[1], f"({len(cc[key])} Sigma-classes)")
-    for a, b in undecided[:20]:
+    for a, b in undecided:
         print("    undecided", a, b)
     return 0
 
