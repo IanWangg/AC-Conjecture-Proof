@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "actual_source_pair": [
+    "xxxYYYY",
+    "XYxyxY"
+  ],
+  "geometric_basis": [
+    "yXYXyx",
+    "yyyyXXX"
+  ],
+  "theta_path_lengths": [
+    1,
+    5,
+    6
+  ],
+  "strict_AK3_entry": {
+    "format": "ordinary-ac-elementary-v1",
+    "start": [
+      "xxxYYYY",
+      "xyxYXY"
+    ],
+    "target": [
+      "xxxYYYY",
+      "XYxyxY"
+    ],
+    "moves": [
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "X"
+      }
+    ]
+  },
+  "complete_vertex_identifications": 55,
+  "signed_double_free_automata": 440,
+  "cyclic_SCCs": 340,
+  "integer_potential_inequalities": 1178,
+  "directed_pullback_equalities": 1320,
+  "original_graph_vertices": 11,
+  "input_sha256": [
+    "28609afd04ed5e732542a6d12fee5a1fd2c0b5815bb013feb8e3c930221fb7df"
+  ],
+  "independence": "No V/X imports; T literal fold, quotient, coboundary and Tarjan/potential audit",
+  "scope": "One specified reachable H1 and its arbitrary two-conjugate family; not every successor or unrestricted AC path"
+}
