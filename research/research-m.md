@@ -4,7 +4,7 @@ Date: 2026-11-03. Independent research agent M (round 4, Fable cohort; search ag
 
 **Status:** verified computational results; **no AK(3) trivialization, no proof of non-triviality, no counterexample, nothing on the full conjecture.** Every statement is labelled *proved here*, *experiment* (exact move set, caps, counts, completed or budget-hit), *externally reported*, or *open*. All negatives are engine-relative (directed cyclic-product graph, total-length cap) and are **not** evidence of non-triviality (research-d §6, research-l Lemma L2).
 
-(Results sections are filled in as the runs complete; see the progress log at the end.)
+**One-paragraph summary.** With a new lean, two-threaded, 64/128-bit-key re-implementation of D's engine (byte-exact agreement with D's key sets at cap ≤ 26; §2), I ran the last affordable searches advised by J, K, L: (i) **AK(3) to cap 29 is complete** — Fwd(AK3, 29) has 286,729,520 states, no primitive relator, no Σ-state of T(20), no Aut(F₂)-orbit shared with T(20), and only the 34 known benchmark members (§3.3); (ii) **cap 30 is inconclusive**: the forward set exceeds 5·10⁸ states and does not fit in 9.5 GB, but the 5·10⁸ states examined contain no trivializing state either, and barrier ≤ 28 reproduces D's 69,190,160 exactly (§3.2); (iii) the trivial side was raised to **T(22) = 169,404,865 states / 14,661,736 Aut-orbits**, and the **exact meet-in-the-middle at (29, 22)** has no common orbit, nor do P1 = C6, P2, C4, Y at (28, 22) (§3.6); (iv) **C4 to cap 34** (42,912,295 states, complete) has no primitive relator, no trivial-side contact and still no automorphic image of itself, while **C6's forward set explodes at cap 30** (5·10⁵ → ≳ 3·10⁷) and yields a direct 1,220-move certificate C6 → (x ↦ xy)(C6) (§3.4, §3.5); (v) all 6,741 complex classes of total length ≤ 20 in Fwd(AK3, 29) are non-thickenable and the meridian defect never drops below 6 on the length-≤18 slice of Fwd(AK3, 26) (§3.1, §3.3). Nothing here bears on whether AK(3) is AC-trivial.
 
 ## 1. Previous work read and choice of direction
 
@@ -41,7 +41,7 @@ Let (u', v) be a state with discovery index i, obtained by replacing u by u' = c
 
 ### 3.0 P_3 is subsumed by AK(3) (proved here, trivial)
 
-K showed P_3 = (xyxYYXy, xxxYXyy) ∈ Fwd(AK3, 17) (barrier 17). If S ∈ Fwd(P_3, C) with C ≥ 17, concatenating a path AK3 → P_3 of peak 17 with a path P_3 → S of peak ≤ C gives a forward path of peak ≤ C, so **Fwd(P_3, C) ⊆ Fwd(AK3, C) for every C ≥ 17**. Hence every detector applied to Fwd(AK3, 29/30) also covers everything a search from P_3 at the same cap could reach; a separate P_3 run would be redundant (the brief's item 2). The directed graph may make the inclusion strict (AK3 need not lie in Fwd(P_3, C)), which only strengthens the point. What is *not* subsumed is the trivial-side comparison with P_2's forward set, done in §3.4. ∎
+K showed P_3 = (xyxYYXy, xxxYXyy) ∈ Fwd(AK3, 17) (barrier 17). If S ∈ Fwd(P_3, C) with C ≥ 17, concatenating a path AK3 → P_3 of peak 17 with a path P_3 → S of peak ≤ C gives a forward path of peak ≤ C, so **Fwd(P_3, C) ⊆ Fwd(AK3, C) for every C ≥ 17**. Hence every detector applied to Fwd(AK3, 29/30) also covers everything a search from P_3 at the same cap could reach; a separate P_3 run would be redundant (the brief's item 2). The directed graph may make the inclusion strict (AK3 need not lie in Fwd(P_3, C)), which only strengthens the point. What is *not* subsumed is the trivial-side comparison with P_2's forward set (§3.7, covered through §3.6). ∎
 
 ### 3.1 Low-energy slice of Fwd(AK3, 26): thickenability and meridian defect (experiment)
 
@@ -58,7 +58,7 @@ Run: `m_acsearch --cap 30 --maxstates 500000000 --logtable 30 --threads 2` from 
 - The barrier ≤ 28 layer reproduces D's complete cap-28 forward set **exactly** (69,190,160 states; every per-barrier count 13…28 equals D's table), an independent-engine confirmation of research-d §4.6.
 - States present after completing level 25 / 26 / 27 / 28: 218.5M / 260.3M / 400.7M / 417.7M. During level 29 the engine had expanded 185,908,116 barrier-29 states and discovered 192.6M barrier-29 and 238.2M barrier-30 states when the 5·10⁸ budget was reached. So **|Fwd(AK3, 30)| > 5·10⁸** (L's projection was 4.6·10⁸); at ≥ 9 bytes/state plus a 4.3 GB slot table this does not fit the 9.5 GB available to me, so cap 30 remains **inconclusive** here. (Cap 30 needs ≈ 10–11 GB with this engine and ≈ 60 min on two cores.)
 - **Detectors over all 5·10⁸ inserted states** (each is a genuine member of AK(3)'s AC class with barrier ≤ 30; the set contains Fwd(AK3, 28) and large parts of the barrier-29/30 layers): **0 primitive relators, 0 Σ-contacts with T(20), 0 Aut-orbit contacts with T(20)** (among states of Aut-minimal length ≤ 20); the 34 benchmark presentations of D §4.3 are the only exact target hits (verified paths). A single hit of any kind would have trivialized AK(3).
-- Side product: Aut-canonical orbits of the cap-28 set restricted to Aut-minimal length ≤ 22: 1,245,860 states (of 69,190,160) have Whitehead-minimal length ≤ 22 (`aut28_ak3_le22.bin`), used in §3.5 against T(22).
+- Side product: Aut-canonical orbits of the cap-28 set restricted to Aut-minimal length ≤ 22: 1,245,860 states (of 69,190,160) have Whitehead-minimal length ≤ 22 (`aut28_ak3_le22.bin`), used in §3.6 against T(22).
 
 ### 3.3 AK(3) at cap 29: complete (experiment)
 
@@ -122,7 +122,7 @@ So within these caps C4 stays Aut-orbit-disjoint from the trivial side (T(22)), 
 
 ### 3.7 P_2's forward set (experiment; consistency check only)
 
-K's P_2 = (xyxYYXy, xxYXyy) is AC-trivial. `m_acsearch --source xyxYYXy,xxYXyy --cap 24 --maxstates 80000000` hit its budget during level 19 (`last_complete_barrier 18`): the trivial class seen from P_2 grows like the hump itself, and the complete part, Fwd(P_2, 18), has 2,950,329 states — **the same number as T(18)** (research-l §3.1); the two key sets were compared and are identical (§3.7 check), so the first eighteen levels of the trivial class look the same from P_2 and from (x,y) (P_2 ∈ T(18) and (x,y) ∈ Fwd(P_2, 18), hence Fwd(P_2, 18) = T(18)). Its 229,404 Aut-orbits meet none of: AK3 cap 28, AK3 cap-29 ≤ 22 slice, C4 cap 34, C6 cap 29, P1 cap 28, P2 cap 28 — all implied by the T(22) comparisons of §3.6 since T(18) ⊆ T(22). Nothing new; recorded because the brief asked for the P_3-vs-P_2 comparison, which is thereby covered through §3.6 (P_3's forward sets are inside AK(3)'s, §3.0).
+K's P_2 = (xyxYYXy, xxYXyy) is AC-trivial. `m_acsearch --source xyxYYXy,xxYXyy --cap 24 --maxstates 80000000` hit its budget during level 19 (`last_complete_barrier 18`): the trivial class seen from P_2 grows like the hump itself, and the complete part, Fwd(P_2, 18), has 2,950,329 states — **the same number as T(18)** (research-l §3.1); the two sorted key files are identical, so the first eighteen levels of the trivial class look the same from P_2 and from (x,y) (P_2 ∈ T(18) and (x,y) ∈ Fwd(P_2, 18), hence Fwd(P_2, 18) = T(18)). Its 229,404 Aut-orbits meet none of: AK3 cap 28, AK3 cap-29 ≤ 22 slice, C4 cap 34, C6 cap 29, P1 cap 28, P2 cap 28 — all implied by the T(22) comparisons of §3.6 since T(18) ⊆ T(22). Nothing new; recorded because the brief asked for the P_3-vs-P_2 comparison, which is thereby covered through §3.6 (P_3's forward sets are inside AK(3)'s, §3.0).
 
 ## 4. Honest limits
 
@@ -146,19 +146,33 @@ D/d_acsearch_final --cap 26 --maxstates 12000000 --no-stop --dumpkeys 0 S/d26.bi
 S/m_acsearch --cap 26 --maxstates 12000000 --threads 2 --exact-targets D/targets/MS.tgt \
   --target-keys L/runs/triv_k20.bin --target-orbits L/runs/aut_triv20.bin --orbit-maxlen 20 --dumpkeys S/m26.bin
 # (sorted key files identical; 34 MS hits with verified PATHs; PATH MS:898 -> d_certify.py -> 59 moves, peak 33)
-# AK(3) cap 30 (one job, 2 threads, <= 9.5 GB)
+# AK(3) cap 30 (one job, 2 threads, 9.5 GB; budget hit, section 3.2) and cap 29 (complete, section 3.3)
 S/m_acsearch --cap 30 --maxstates 500000000 --logtable 30 --threads 2 --exact-targets D/targets/MS.tgt \
   --target-keys L/runs/triv_k20.bin --target-orbits L/runs/aut_triv20.bin --orbit-maxlen 20 \
   --dumpkeys S/m30_ak3_keys.bin --checkpoint S/m30_ak3.ckpt --maxhits 40 > S/m30_ak3.txt
-python3 experiments/m_lowenergy_thicken.py S/m30_ak3_keys.bin 20 defect
-S/m_acsearch --autdump S/m30_ak3_keys.bin S/aut30_ak3_le22.bin --threads 2 --maxlen 22
-# C4 cap 34 and C6 cap 32 (128-bit keys), T(22), P_2, orbit dumps and comparisons: see S/queue.sh (listed in §3)
+S/m_acsearch --cap 29 --maxstates 420000000 --logtable 29 --threads 2 --exact-targets D/targets/MS.tgt \
+  --target-keys L/runs/triv_k20.bin --target-orbits L/runs/aut_triv20.bin --orbit-maxlen 20 \
+  --dumpkeys S/m29_ak3_keys.bin --maxhits 40 > S/m29_ak3.txt
+python3 experiments/m_lowenergy_thicken.py S/m26.bin 18 defect           # section 3.1 (7.7 min)
+python3 experiments/m_lowenergy_thicken.py S/m29_ak3_keys.bin 20         # section 3.3 (20 s)
+S/m_acsearch --autdump S/m29_ak3_keys.bin S/aut29_ak3_le22.bin --threads 2 --maxlen 22
+# C4 cap 34, C6 cap 32 (128-bit keys), T(22) and its orbits, P_2, comparisons (S/queue3.sh):
+S/m_acsearch --source xxxxyXy,xyyyxYY --cap 34 --width 2 --maxstates 120000000 --threads 2 --exact-targets S/phi_c4.tgt \
+  --target-keys L/runs/triv_k20.bin --target-orbits L/runs/aut_triv20.bin --orbit-maxlen 20 --dumpkeys S/kc4_34.bin > S/c4_34.txt
+S/m_acsearch --source xxyxxYY,xyXYYXy --cap 32 --width 2 --maxstates 150000000 --threads 2 --exact-targets S/phi_c6.tgt \
+  --target-keys L/runs/triv_k20.bin --target-orbits L/runs/aut_triv20.bin --orbit-maxlen 20 --dumpkeys S/kc6_32.bin > S/c6_32.txt
+python3 experiments/d_certify.py S/path_c6_xxy.txt xxyxxYY xyXYYXy xyxyyxyxY xyXYYYXy certificates/m_c6_aut_x_xy.json
+S/m_acsearch --source x,y --cap 22 --maxstates 230000000 --threads 2 --dumpkeys S/triv_k22.bin --maxhits 0 > S/triv_c22.txt
+S/m_acsearch --autdump S/triv_k22.bin S/aut_triv22.bin --threads 2
+S/m_acsearch --autdump S/kc4_34.bin S/aut34_c4.bin --threads 2 --width 2; S/m_acsearch --autdump S/kc6_32.bin S/aut32_c6.bin --threads 2 --width 2
+D/d_acsearch_final --autcompare S/aut29_ak3_le22.bin S/aut_triv22.bin      # ... and the other pairs of sections 3.5-3.6 (S/compare.txt)
+python3 experiments/elementary_verify.py certificates/m_c6_aut_x_xy.json
 ```
 
 ## 6. Advice to the coordinator (ranked)
 
 1. **Stop raising the Σ-level cap on AK(3).** Cap 29 is now complete (2.87·10⁸ states, nothing found); cap 30 has > 5·10⁸ states (≈ 10–11 GB with this engine, ≈ 1 h on two cores) and would be the last feasible step even on a 16 GB machine; cap 32 ≈ 4·10⁹ states (≈ 70 GB). The measured growth (×4.14 at 28→29, > ×7.2 per +2) is slightly worse than L's ×6.7. If a 32–64 GB machine becomes available, the engine's `--checkpoint/--resume` and `--threads` make cap 30/31 a one-hour job; beyond that an orbit-level or disk-based (sort/merge) engine is needed, and the expected information gain is small (§3.3.1: barrier 29 added 2 new Aut-orbits below length 21).
-2. **The exact meet-in-the-middle is the right place to spend remaining compute, not the AK(3) side.** T(22) and the cap-29 orbit set restricted to Aut-minimal length ≤ 22 give a *complete* orbit comparison at (29, 22) (§3.5). Raising the trivial side to T(24) (≈ 1.3·10⁹ states, disk-backed) and comparing with the ≤ 24 slice of Fwd(AK3, 29) is the cheapest remaining exact test; the ≤ M slices are tiny (1.6M states at M = 22) so the AK(3) side costs nothing extra.
+2. **The exact meet-in-the-middle is the right place to spend remaining compute, not the AK(3) side.** T(22) and the cap-29 orbit set restricted to Aut-minimal length ≤ 22 give a *complete* orbit comparison at (29, 22) (§3.6). Raising the trivial side to T(24) (≈ 1.3·10⁹ states, disk-backed) and comparing with the ≤ 24 slice of Fwd(AK3, 29) is the cheapest remaining exact test; the ≤ M slices are tiny (1.6M states at M = 22) so the AK(3) side costs nothing extra.
 3. **C4 and C6 as frontier diagnostics: C4 is cheap up to cap 36, C6 is not.** C4's forward set grows ×2.4 per +1 (42.9M at cap 34; ≈ 250M at cap 36 ≈ 6.5 GB with 128-bit keys, ≈ 30 min) and has shown nothing (no primitive relator, no trivial-side contact, no self-image) through cap 34; one more run to cap 36 is affordable and would push I's chirality observation to excess 22, but a positive answer there would be surprising. C6's set jumps from 5·10⁵ at cap 29 to ≳ 3·10⁷ at cap 30 (§3.4), so C6 is no cheaper than AK(3) from cap 30 on; use P1's coordinates for that class instead. The direct realization `m_c6_aut_x_xy.json` shows that Aut-realization can need an excursion of +16 over the presentation length even in a class where it is known to hold.
 4. **Keep the detectors cheap and exact.** Primitive relators, Σ-contact with a trivial-side key set, and Aut-orbit contact restricted by Aut-minimal length cost < 1 µs/state and are complete for their ranges; thickenability and meridian-defect sweeps are only affordable on low-energy slices (≤ 20 letters), where they find nothing new (defect ≥ 6 everywhere, §3.1). Any future search should include the first three and skip the last two unless a torus-type state is reached.
 5. **Theory, not search, must settle AK(3)** (as J, K, L already said): the exact data now available — Fwd(AK3, 29) with per-state barriers, T(20)/T(22) with theirs — are the test beds for any candidate invariant (it must be constant on T(22) and differ on Fwd(AK3, 29)).
@@ -185,3 +199,9 @@ Scratch data left for the coordinator (untrusted data, read with care; `S` = `sc
 - 01:35 cap-30 run ended: budget hit during level 29 (§3.2); cap 30 does not fit in memory. 01:38 launched the complete cap-29 run (budget 4.2·10⁸, ≈ 6 GB) with the same detectors; C4/C6/T(22)/P_2 queued after it.
 - 02:07 cap-29 run complete (§3.3); 02:10 orbit dump of its ≤ 22 slice (1,624,208 states); 02:13 corrected a mis-specified C4 job (it had no `--source` and was running AK(3)); queue restarted: C4 cap 34, C6 cap 32, T(22), orbit dumps, comparisons, P_2.
 - 02:18 C4 cap 34 complete (§3.4); 02:25 C6 cap 32 budget-hit, certificate `m_c6_aut_x_xy.json` written and verified; 02:42 T(22) complete; 02:52 T(22) orbits; 02:55–02:57 all comparisons zero except the known C6–P1 overlap and the positive controls (§3.5, §3.6); 03:00 P_2 consistency check (§3.7); 03:00 queue done. Total compute of this note ≈ 2 h on two cores, peak 9.5 GB.
+
+## Coordinator's review (second reader, 2026-11-03)
+
+- Rebuilt `m_acsearch.cpp` and ran `--self-test` (passes; reproduces L's T(16) count 396,497 and re-verifies reconstructed paths), `m_lowenergy_thicken.py --selftest` (passes) and `python3 experiments/elementary_verify.py certificates/m_c6_aut_x_xy.json` (1,220 moves, peak 43). The coordinator recomputed by hand that the certificate's target is exactly the freely reduced image of C6 = (xxyxxYY, xyXYYXy) under x ↦ xy.
+- Logic re-checked: §3.0 (Fwd(P₃,C) ⊆ Fwd(AK3,C) for C ≥ 17, from K's barrier-17 path) and the completeness argument of §3.6 (any Aut-orbit shared with T(22) has Whitehead-minimal length ≤ 22, so the ≤ 22 slice of AK(3)'s side is complete for that comparison) are correct. Lemma 2.1 (parent-free path reconstruction) was accepted on the strength of its proof sketch and the 360 re-verified paths in the self-test.
+- All results are correctly labelled as experiments relative to the directed cyclic-product graph and the stated caps; cap 30 for AK(3) and caps ≥ 30 for C6 are correctly reported as inconclusive. The cap-29 and cap-34 counts could not be cross-checked by an independent engine on this machine, as §4 says.
