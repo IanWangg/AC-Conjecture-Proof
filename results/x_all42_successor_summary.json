@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "literal_initial_rotation_successors": 42,
+  "fully_certified_successors": 42,
+  "unresolved_successors": 0,
+  "vertex_identifications": 2272,
+  "integer_potential_inequalities": 42876
+}
