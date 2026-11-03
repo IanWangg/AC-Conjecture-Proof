@@ -159,16 +159,16 @@ I found no gap in the restricted endpoint-intersection statement above.
 
 ## Reproduction
 
-The source JSON may be plain, gzip, or base64-wrapped gzip. After decoding
-X's all-42 result into a local JSON file, run:
+The source JSON may be plain, gzip, or base64-wrapped gzip. From the
+repository root, use X's published transport directly:
 
 ```sh
-python3 experiments/y_rotation_scope_review.py /tmp/x_all42.json --output /tmp/y_rotation_scope.json --entries /tmp/y_rotation_entries.json
+python3 experiments/y_rotation_scope_review.py certificates/x_rotation_successors.json.gz.b64 --output /tmp/y_rotation_scope.json --entries /tmp/y_rotation_entries.json
 ```
 
 Saved results are
 `certificates/y_rotation_scope_review.json` and
 `certificates/y_rotation_entry_ledgers.json`. The decoded input SHA256 is
-`cf9e4a304fec9e0d24ea0e7c420dab113f20c8fb1a058f568ac996d8efd97ffc`.
+`28609afd04ed5e732542a6d12fee5a1fd2c0b5815bb013feb8e3c930221fb7df`.
 All mathematical conclusions remain restricted as stated; no requested
 unrestricted breakthrough outcome has been achieved.
