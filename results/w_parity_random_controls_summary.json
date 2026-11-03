@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "seed": 20261102,
+  "cases": 1005,
+  "verified_native_positive_witnesses": 640,
+  "outcome_counts": [
+    {
+      "native": "NO_PLANAR_COMPATIBLE",
+      "parity": "NOT_SUPPORTED",
+      "count": 40
+    },
+    {
+      "native": "NO_PLANAR_COMPATIBLE",
+      "parity": "PARITY_CONSISTENT",
+      "count": 28
+    },
+    {
+      "native": "NO_PLANAR_COMPATIBLE",
+      "parity": "PARITY_OBSTRUCTION",
+      "count": 297
+    },
+    {
+      "native": "PLANAR_COMPATIBLE",
+      "parity": "NOT_SUPPORTED",
+      "count": 325
+    },
+    {
+      "native": "PLANAR_COMPATIBLE",
+      "parity": "PARITY_CONSISTENT",
+      "count": 315
+    }
+  ],
+  "model_counts": [
+    {
+      "model": "C4",
+      "native": "NO_PLANAR_COMPATIBLE",
+      "count": 99
+    },
+    {
+      "model": "C4",
+      "native": "PLANAR_COMPATIBLE",
+      "count": 133
+    },
+    {
+      "model": "DIAMOND",
+      "native": "NO_PLANAR_COMPATIBLE",
+      "count": 133
+    },
+    {
+      "model": "DIAMOND",
+      "native": "PLANAR_COMPATIBLE",
+      "count": 123
+    },
+    {
+      "model": "K4",
+      "native": "NO_PLANAR_COMPATIBLE",
+      "count": 93
+    },
+    {
+      "model": "K4",
+      "native": "PLANAR_COMPATIBLE",
+      "count": 59
+    }
+  ]
+}
