@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "signed_coprime_vectors_checked": 1024,
+  "symbolic_graph_word_checks": 3072,
+  "vector_coordinate_bound": 20,
+  "unimodular_matrices_checked": 2920,
+  "matrix_entry_bound": 12,
+  "matrix_classification": {
+    "strict_symbolic_descent": 2880,
+    "boundary_pair": 32,
+    "axis_exception": 8
+  },
+  "positive_edge_weight_bound": 8,
+  "finite_core_sublevels_checked": 5232,
+  "actual_Nielsen_only_energy2_counterexample_verified": true,
+  "unbounded_lemma_requires_mathematical_proof": true,
+  "raw_peak_reduction_claimed": false
+}
