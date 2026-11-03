@@ -93,7 +93,7 @@ Replay the new unbounded rotation-successor kernels, exact character-family cert
 python3 experiments/verify_x_archives.py --certificates certificates --directory /tmp/x-review --output /tmp/x-review.json
 ```
 
-The [combined archive replay passes](results/x_archive_reproduction.json). [T's independent audit](research/research-t-x-character-review.md) and [Y's separate scope review](research/research-y-rotation-scope-review.md) give standalone commands. [W's report](research/research-w.md) gives the complete literal-topology replay and its exact scope. The earlier reproduction modes below retain their original certified scopes.
+The [combined archive replay passes](results/x_archive_reproduction.json). A [publication integrity audit](results/x_publication_integrity.json) verifies X's 24 research artifacts, the two restored control files and this README. [T's independent audit](research/research-t-x-character-review.md) and [Y's separate scope review](research/research-y-rotation-scope-review.md) give standalone commands. [W's report](research/research-w.md) gives the complete literal-topology replay and its exact scope. The earlier reproduction modes below retain their original certified scopes.
 
 Python 3 and its standard library replay the main certificates, formula tests, the cap-18 baseline, selected complete instruction balls, finite conjugacy tests, the optimized free loop, and the catalogue/next-central audits:
 
