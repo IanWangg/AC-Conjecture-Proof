@@ -278,3 +278,10 @@ constructive positive witness and a verified route from such a witness
 to ordinary elementary moves. It does not provide an unbounded AC
 invariant, an AK(3) primitive waypoint, or any of the four unrestricted
 outcomes requested in the goal.
+
+Subsequently V established an unrestricted-length theorem for any two
+independently conjugated elements of the original `H0`. U's
+[independent geometric and finite-certificate review](u-voltage-phase-review.md)
+checks that theorem and its AK(2) positive control. It still permits
+later alternating subgroup changes. U also published a
+[review of the root's repeated-phase engine and successful AK(2) calibration](u-coupled-engine-review.md).
