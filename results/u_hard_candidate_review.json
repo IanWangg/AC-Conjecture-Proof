@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "records": 6568,
+  "source_sha256": "d530e68cab069aabac841a1082bf5624d657a920001a72a77a3b39365bf167a5",
+  "tsv_sha256": "8750eb920d266044487bfab79534058fe866c27be21f47fd1c3089d8f52748ed",
+  "complete_decision_counts": {
+    "ABSENT": 6568,
+    "PRIMITIVE": 0,
+    "INCOMPLETE": 0
+  },
+  "independent_input_refolding_matches_expected_graph": true,
+  "closed_total_map_pairs_independently_checked": 735712,
+  "entire_closed_pair_sets_equal_R_compact_certificates": 6568,
+  "maximum_one_alphabet": 76,
+  "native_summary": {
+    "records": 6568,
+    "ABSENT": 6568,
+    "PRIMITIVE": 0,
+    "INCOMPLETE": 0,
+    "map_pair_states": 735712,
+    "maximum_one_alphabet": 76,
+    "ordinary_AC_goal_solved": false
+  }
+}
