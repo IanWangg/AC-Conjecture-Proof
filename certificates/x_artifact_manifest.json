@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "all42_entry_moves": 231,
+  "all42_largest_raw_peak": 13,
+  "h1_geometric_entry": {
+    "moves": 23,
+    "peak_total_length": 28,
+    "endpoint": [
+      "yXYXyx",
+      "yyyyXXX"
+    ]
+  },
+  "AK3_heuristic_proposals_sum": 15000000,
+  "AK3_classified_graphs_per_run_sum": 5213582,
+  "AK3_stored_nodes_per_run_sum": 848942,
+  "AK3_native_incomplete_sum": 0,
+  "AK3_strict_saved_path_moves_sum": 26130,
+  "AK2_full_replay": {
+    "moves": 1954,
+    "peak_total_length": 149,
+    "endpoint": [
+      "x",
+      "y"
+    ]
+  },
+  "transports": [
+    {
+      "file": "x_second_phase_data.json.gz.b64",
+      "encoded_bytes": 126811,
+      "decoded_bytes": 2586185,
+      "encoded_sha256": "c6977d40de4939df67db98d2c074cf1403b376f454ba6898e0f7717033a0f053",
+      "decoded_sha256": "03a84bda040c2484c5d3d574b8816001da3a4b12944e1d753fb7fb1eb2dd7609"
+    },
+    {
+      "file": "x_rotation_successors.json.gz.b64",
+      "encoded_bytes": 203475,
+      "decoded_bytes": 3345151,
+      "encoded_sha256": "d3302b59618e7484e180caa9691c66ddf02974922d7f36b80f27f9069467a6ae",
+      "decoded_sha256": "28609afd04ed5e732542a6d12fee5a1fd2c0b5815bb013feb8e3c930221fb7df"
+    },
+    {
+      "file": "x_barbell_walks.json.gz.b64",
+      "encoded_bytes": 38687,
+      "decoded_bytes": 1013842,
+      "encoded_sha256": "3efce342c9132e233e406c1b8cbd64962f56fedc2648c8ac6fd67a05d14ba324",
+      "decoded_sha256": "7a6b9e53560e182e1cb96f827395d6e9c3ebb2a106b82ec7f5aec65ae62398e9"
+    },
+    {
+      "file": "x_h1_cap250_sources.jsonl.gz.b64",
+      "encoded_bytes": 27088,
+      "decoded_bytes": 489767,
+      "encoded_sha256": "46a76174bbe40c50e46272ca1cf1d0a5f856457a6f55e017cde89580a1b7a85a",
+      "decoded_sha256": "d7def373ffd53041d23b2b867eccba7bea4cb49fd6389a16199eb2e4cf6d6d05"
+    }
+  ]
+}
