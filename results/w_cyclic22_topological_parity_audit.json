@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "literal_cyclic_tuples": 258032,
+  "model_counts": {
+    "K4": 222292,
+    "DIAMOND": 35692,
+    "C4": 48
+  },
+  "independently_verified_XOR_equations": 662591,
+  "source_tsv_sha256": "cd9ba5781a1efcb1bf1b8a72c9a392b79de1cd915da6a520b8f33a4390787fa3",
+  "certificate_stream_sha256": "0025cbe64ea82b7e6700dd4d0d358cbea8b05ebad9b7800e3b6312cb62008ec8",
+  "seconds": 273.02807474997826,
+  "ordinary_AC_goal_solved": false,
+  "scope": "No orientable compatible planar link for these literal cyclic tuples; no all-tail or global AC invariant asserted"
+}
