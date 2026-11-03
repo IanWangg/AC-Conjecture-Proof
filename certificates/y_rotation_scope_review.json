@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "source_decoded_sha256": "cf9e4a304fec9e0d24ea0e7c420dab113f20c8fb1a058f568ac996d8efd97ffc",
+  "literal_rotation_pairs": 42,
+  "all_offsets_exactly_once": true,
+  "source_graphs_independently_folded": 42,
+  "source_graph_vertex_histogram": {
+    "10": 6,
+    "11": 34,
+    "12": 2
+  },
+  "complete_vertex_pair_index_coverage": 2272,
+  "actual_strict_entry_ledgers": 42,
+  "total_entry_conjugations": 135,
+  "maximum_entry_moves": 6,
+  "maximum_raw_entry_peak": 13,
+  "entry_move_histogram": {
+    "0": 1,
+    "1": 4,
+    "2": 8,
+    "3": 11,
+    "4": 10,
+    "5": 6,
+    "6": 2
+  },
+  "weighted_kernel_inequalities_rechecked_here": false,
+  "independence": "No imports from X/V/T graph or AC code; exact literal folds and conjugation-only replay",
+  "scope": "Finite source/entry coverage and restricted endpoint-intersection phase proof; no unrestricted AC invariant"
+}
