@@ -1,0 +1,3 @@
+{
+"status":"COMPLETE","ordinary_AC_goal_solved":false,
+"AK_parameter":2,"prelude_cyclic_energy_cap":12,"signed_Farey_nodes":6,"distinct_final_cyclic_pair_families":2,"rotation_pairs":65,"distinct_unbased_core_graphs":31,"direct_DAG_absence_graphs":30,"exception_graphs":1,"maximum_graph_vertices":11,"maximum_raw_Nielsen_basis_sum":14,"seconds":0.00223617,"source_energy_histogram":{"11":1,"12":1}}
