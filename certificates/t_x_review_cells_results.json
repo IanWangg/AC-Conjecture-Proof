@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "first_parent_graphs": 45,
+  "complete_second_vertex_pair_coverage": 1015,
+  "counts": {
+    "NO_CHARACTER_EXTENSION": 551,
+    "CERTIFIED_EXTENSION_KERNEL": 353,
+    "AFFINE_STRICT_CYCLE_FAMILY_INFEASIBLE": 111
+  },
+  "full_affine_dimensions": {
+    "0": 94,
+    "1": 370
+  },
+  "no_extension_graph_rank_counts": {
+    "2": 551
+  },
+  "integer_potential_inequalities": 15586,
+  "actual_affine_cycle_witnesses": 2954,
+  "parameter_roots_tested": 476,
+  "parameter_root_and_open_cell_samples": 1063,
+  "uniform_affine_primitive_witnesses": 58,
+  "input_sha256": [
+    "6adc8444b8002d0c761630da341e8531ad91c53217adb76831d68451046e8f1d",
+    "dd0244bcf9a61cf732ed620b097b6acfe0671846db66664b6b108a946d8f2c1b",
+    "a95a1142906f52650db1b5606c640aa767b10e1e0046ee6ab89ce7ecf609e27e",
+    "68f76befcba915e76f8b03b8866af818e799e376f32868fc5eefa311f1feb3c7",
+    "41d5d820ef09130d30897d3a8ab009300d3ad8f6395989ded6f9182fc8b8db2c"
+  ],
+  "input_container_sha256": [
+    "6adc8444b8002d0c761630da341e8531ad91c53217adb76831d68451046e8f1d",
+    "03a84bda040c2484c5d3d574b8816001da3a4b12944e1d753fb7fb1eb2dd7609"
+  ],
+  "independence": "No V/X imports; quotient folding, Tarjan SCCs, exact sign-cell partition; T Euclidean primitive routine reused",
+  "scope": "Specified quotient/character families only; neither actual AC successor reachability nor a global obstruction"
+}
