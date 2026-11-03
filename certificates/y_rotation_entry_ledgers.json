@@ -1,0 +1,1558 @@
+[
+  {
+    "rotation_offsets": [
+      0,
+      0
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "moves": []
+    },
+    "moves": 0,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      0,
+      1
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xxxYYYY",
+        "yxYXYx"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "moves": 1,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      0,
+      2
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xxxYYYY",
+        "xYXYxy"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        }
+      ]
+    },
+    "moves": 2,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      0,
+      3
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xxxYYYY",
+        "YXYxyx"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "moves": 3,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      0,
+      4
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xxxYYYY",
+        "XYxyxY"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "moves": 2,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      0,
+      5
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xxxYYYY",
+        "YxyxYX"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        }
+      ]
+    },
+    "moves": 1,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      1,
+      0
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xxYYYYx",
+        "xyxYXY"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        }
+      ]
+    },
+    "moves": 1,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      1,
+      1
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xxYYYYx",
+        "yxYXYx"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "moves": 2,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      1,
+      2
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xxYYYYx",
+        "xYXYxy"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        }
+      ]
+    },
+    "moves": 3,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      1,
+      3
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xxYYYYx",
+        "YXYxyx"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "moves": 4,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      1,
+      4
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xxYYYYx",
+        "XYxyxY"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "moves": 3,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      1,
+      5
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xxYYYYx",
+        "YxyxYX"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        }
+      ]
+    },
+    "moves": 2,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      2,
+      0
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xYYYYxx",
+        "xyxYXY"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        }
+      ]
+    },
+    "moves": 2,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      2,
+      1
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xYYYYxx",
+        "yxYXYx"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "moves": 3,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      2,
+      2
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xYYYYxx",
+        "xYXYxy"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        }
+      ]
+    },
+    "moves": 4,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      2,
+      3
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xYYYYxx",
+        "YXYxyx"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "moves": 5,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      2,
+      4
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xYYYYxx",
+        "XYxyxY"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "moves": 4,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      2,
+      5
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xYYYYxx",
+        "YxyxYX"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        }
+      ]
+    },
+    "moves": 3,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      3,
+      0
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYYYxxx",
+        "xyxYXY"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        }
+      ]
+    },
+    "moves": 3,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      3,
+      1
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYYYxxx",
+        "yxYXYx"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "moves": 4,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      3,
+      2
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYYYxxx",
+        "xYXYxy"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        }
+      ]
+    },
+    "moves": 5,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      3,
+      3
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYYYxxx",
+        "YXYxyx"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "moves": 6,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      3,
+      4
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYYYxxx",
+        "XYxyxY"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "moves": 5,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      3,
+      5
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYYYxxx",
+        "YxyxYX"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        }
+      ]
+    },
+    "moves": 4,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      4,
+      0
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYYxxxY",
+        "xyxYXY"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        }
+      ]
+    },
+    "moves": 3,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      4,
+      1
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYYxxxY",
+        "yxYXYx"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "moves": 4,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      4,
+      2
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYYxxxY",
+        "xYXYxy"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        }
+      ]
+    },
+    "moves": 5,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      4,
+      3
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYYxxxY",
+        "YXYxyx"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "moves": 6,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      4,
+      4
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYYxxxY",
+        "XYxyxY"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "moves": 5,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      4,
+      5
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYYxxxY",
+        "YxyxYX"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        }
+      ]
+    },
+    "moves": 4,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      5,
+      0
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYxxxYY",
+        "xyxYXY"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        }
+      ]
+    },
+    "moves": 2,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      5,
+      1
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYxxxYY",
+        "yxYXYx"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "moves": 3,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      5,
+      2
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYxxxYY",
+        "xYXYxy"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        }
+      ]
+    },
+    "moves": 4,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      5,
+      3
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYxxxYY",
+        "YXYxyx"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "moves": 5,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      5,
+      4
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYxxxYY",
+        "XYxyxY"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "moves": 4,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      5,
+      5
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYxxxYY",
+        "YxyxYX"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        }
+      ]
+    },
+    "moves": 3,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      6,
+      0
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YxxxYYY",
+        "xyxYXY"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        }
+      ]
+    },
+    "moves": 1,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      6,
+      1
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YxxxYYY",
+        "yxYXYx"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "moves": 2,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      6,
+      2
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YxxxYYY",
+        "xYXYxy"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        }
+      ]
+    },
+    "moves": 3,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      6,
+      3
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YxxxYYY",
+        "YXYxyx"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "moves": 4,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      6,
+      4
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YxxxYYY",
+        "XYxyxY"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "moves": 3,
+    "raw_peak": 13
+  },
+  {
+    "rotation_offsets": [
+      6,
+      5
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YxxxYYY",
+        "YxyxYX"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        }
+      ]
+    },
+    "moves": 2,
+    "raw_peak": 13
+  }
+]
