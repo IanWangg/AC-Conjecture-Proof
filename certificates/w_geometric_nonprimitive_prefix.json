@@ -1,0 +1,36 @@
+{
+  "format": "ordinary-ac-elementary-v1",
+  "start": [
+    "xxYYY",
+    "xxxYYYY"
+  ],
+  "target": [
+    "xxYYY",
+    "xY"
+  ],
+  "moves": [
+    {
+      "op": "invert",
+      "i": 0
+    },
+    {
+      "op": "multiply",
+      "i": 1,
+      "j": 0
+    },
+    {
+      "op": "invert",
+      "i": 0
+    },
+    {
+      "op": "conjugate",
+      "i": 1,
+      "g": "X"
+    },
+    {
+      "op": "conjugate",
+      "i": 1,
+      "g": "X"
+    }
+  ]
+}
