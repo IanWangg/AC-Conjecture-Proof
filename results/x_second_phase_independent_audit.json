@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "second_identifications": 1015,
+  "counts": {
+    "NO_CHARACTER_EXTENSION": 551,
+    "CERTIFIED_EXTENSION_KERNEL": 353,
+    "AFFINE_CYCLE_FAMILY_INFEASIBLE": 111
+  },
+  "integer_potential_inequalities": 15586,
+  "actual_affine_cycle_witnesses": 2954,
+  "uniform_affine_primitive_witnesses": 58,
+  "ordinary_AC_goal_solved": false
+}
