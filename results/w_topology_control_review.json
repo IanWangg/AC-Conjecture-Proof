@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "geometric_control_has_nonprimitive_displayed_coordinates": true,
+  "geometric_control_prefix": {
+    "moves": 5,
+    "peak_total_length": 12,
+    "endpoint": [
+      "xxYYY",
+      "xY"
+    ]
+  },
+  "geometric_control_full": {
+    "moves": 35,
+    "peak_total_length": 12,
+    "endpoint": [
+      "x",
+      "y"
+    ]
+  },
+  "independent_planar_rotation_witness": {
+    "total_genus": 0,
+    "faces": [
+      [
+        0,
+        11
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        2,
+        17,
+        22,
+        13
+      ],
+      [
+        3,
+        14
+      ],
+      [
+        4,
+        19
+      ],
+      [
+        5,
+        16
+      ],
+      [
+        6,
+        21
+      ],
+      [
+        7,
+        18
+      ],
+      [
+        8,
+        23
+      ],
+      [
+        9,
+        20,
+        15,
+        10
+      ]
+    ],
+    "nonempty_components": 1,
+    "nonempty_vertices": 4,
+    "edges": 12
+  },
+  "root_AK3_actual_entry_replay": {
+    "moves": 2152,
+    "peak_total_length": 233,
+    "endpoint": [
+      "XyyyyXXXyxYxxYX",
+      "xyXXyXYx"
+    ]
+  },
+  "ordinary_AC_goal_solved": false
+}
