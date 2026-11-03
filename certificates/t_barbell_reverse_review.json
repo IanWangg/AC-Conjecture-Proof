@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "input_reverse_rows": 56799,
+  "reverse_tsv_sha256": [
+    "c0d198a18924290743a35189f95fccd28c83b130be9457bae3488199bb637945",
+    "721c34938f5fc61d6c21960ddccaca7747c8c064acaaa14477cd94f5a0886346"
+  ],
+  "independently_detected_barbell_rows": 549,
+  "distinct_collapsed_cycle_families": 338,
+  "maximum_collapsed_cycle_energy": 21,
+  "exact_anchor_keys_equal_V": true,
+  "matched_initial_H_cap40_matrix_classes": 0,
+  "classification": "Independent per-edge connectivity deletion; R batch folding reused",
+  "scope": "Finite specified reverse corpora only; no unrestricted AC invariant"
+}
