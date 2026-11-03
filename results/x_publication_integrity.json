@@ -1,0 +1,253 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "verified_artifacts": 27,
+  "research_x_artifacts": 24,
+  "restored_shared_controls": 2,
+  "readme_researcher_count": 25,
+  "scope": "Exact current-main UTF8 readbacks and Git blob SHAs for files listed; this manifest itself is verified separately.",
+  "files": [
+    {
+      "remote": "research/research-x.md",
+      "bytes": 17821,
+      "sha256": "9bd5be2f1dccc4a62cda95743a8556ef4f02a9b91c9afe3aa2a33deea8ded5ff",
+      "commit_sha": "43f70d74081cfbc8ad85ed17db5fe17c94eaf3b2",
+      "blob_sha": "31b3d7e3c7e24c2dfb76e8ddc0f624c294fb70bf",
+      "url": "https://github.com/IanWangg/AC-Conjecture-Proof/blob/main/research/research-x.md",
+      "exact_readback": true
+    },
+    {
+      "remote": "experiments/kernel_second_phase.py",
+      "bytes": 6519,
+      "sha256": "65fd79e696e93df677816160e4c2a72024574e350652d693ee053707dd8f9984",
+      "commit_sha": "92a6caed425411fdbac229d6fa8a472dd9b950bb",
+      "blob_sha": "7e96948287e381ed549761b066a2c8b18017eea3",
+      "url": "https://github.com/IanWangg/AC-Conjecture-Proof/blob/main/experiments/kernel_second_phase.py",
+      "exact_readback": true
+    },
+    {
+      "remote": "experiments/exact_extension_intervals.py",
+      "bytes": 6009,
+      "sha256": "11111fb41b03eab057509541f0cf99bb74d3c0710a00b45693c7b336d439fc8a",
+      "commit_sha": "37aa5ab7d7796a5b7855306130d02a051ff74aa8",
+      "blob_sha": "fb10326da7b650e1aed1fe23a72840e3092d8c4e",
+      "url": "https://github.com/IanWangg/AC-Conjecture-Proof/blob/main/experiments/exact_extension_intervals.py",
+      "exact_readback": true
+    },
+    {
+      "remote": "experiments/affine_primitive_witnesses.py",
+      "bytes": 3453,
+      "sha256": "952b9456b259b9ac1f75e6cce1e219d593aac5693cac490a4ee5a4552680dedd",
+      "commit_sha": "c9282f87980118ad973a05177ae6f91378a67d77",
+      "blob_sha": "4fa45770c859aa9a858ec4354f3d17d62e740fda",
+      "url": "https://github.com/IanWangg/AC-Conjecture-Proof/blob/main/experiments/affine_primitive_witnesses.py",
+      "exact_readback": true
+    },
+    {
+      "remote": "experiments/linear_extension_obstructions.py",
+      "bytes": 1828,
+      "sha256": "ef14083fc8ed30b5d059882a8dbacd5a146bd48e533531c5f7afa5220c07949c",
+      "commit_sha": "b2241ffe3e5558974025a6512f126a1effc1f7c1",
+      "blob_sha": "18aac1cf12b30b78747dc851d8d2dee4c267286a",
+      "url": "https://github.com/IanWangg/AC-Conjecture-Proof/blob/main/experiments/linear_extension_obstructions.py",
+      "exact_readback": true
+    },
+    {
+      "remote": "experiments/verify_second_phase.py",
+      "bytes": 12178,
+      "sha256": "791d074903d9f751f4a4270065ec241b6cc27b519fb21ac6ccaad18c7ce2a078",
+      "commit_sha": "69fd774a88c003ce8ed6d726d0e105c29beb82b6",
+      "blob_sha": "7029c2b5f3c13af080d3de16536e86ed055e32bc",
+      "url": "https://github.com/IanWangg/AC-Conjecture-Proof/blob/main/experiments/verify_second_phase.py",
+      "exact_readback": true
+    },
+    {
+      "remote": "experiments/rotation_successor_kernels.py",
+      "bytes": 3542,
+      "sha256": "f0f296da2fc5a99077e18a28c7cb14de85df8989d9c6cd3c23bcefbe39d50860",
+      "commit_sha": "b0d659a5b9888c9a4743cab8602adafad9320a45",
+      "blob_sha": "63e50a495908792b815d40dedafa27f725378add",
+      "url": "https://github.com/IanWangg/AC-Conjecture-Proof/blob/main/experiments/rotation_successor_kernels.py",
+      "exact_readback": true
+    },
+    {
+      "remote": "experiments/verify_x_archives.py",
+      "bytes": 4470,
+      "sha256": "b938322777c5dcd848ad063272ce6ff02874b945bac806ae42f95ee6dbab2a03",
+      "commit_sha": "8302156fb9a511768986a812cf71fa6edd1cb683",
+      "blob_sha": "996c1b7620a54d779acc459a90daec3cbb00d97c",
+      "url": "https://github.com/IanWangg/AC-Conjecture-Proof/blob/main/experiments/verify_x_archives.py",
+      "exact_readback": true
+    },
+    {
+      "remote": "experiments/barbell_h_search.cpp",
+      "bytes": 11250,
+      "sha256": "540988b6788aa6d2ab77a51c618106a781e5951db2472ccd4377a7b8bdbf0b92",
+      "commit_sha": "bf95e43c53474c146f8c11a196a9822971761fb7",
+      "blob_sha": "f8d8187e94e349328826aefe279a2c78902a7a3c",
+      "url": "https://github.com/IanWangg/AC-Conjecture-Proof/blob/main/experiments/barbell_h_search.cpp",
+      "exact_readback": true
+    },
+    {
+      "remote": "experiments/compile_barbell_paths.py",
+      "bytes": 1947,
+      "sha256": "be5bf3ce02710d910f9394283d60c5eee2479e8f2568681b9a497b4e6f0d76b6",
+      "commit_sha": "632f20c18eff9bce2c0bc2af83292fd224b5fd4b",
+      "blob_sha": "5ea3976fa4c769860e83ff78eb1c8dddb324a659",
+      "url": "https://github.com/IanWangg/AC-Conjecture-Proof/blob/main/experiments/compile_barbell_paths.py",
+      "exact_readback": true
+    },
+    {
+      "remote": "experiments/successor_basis_scan.cpp",
+      "bytes": 9620,
+      "sha256": "013ebe10c9e88a0e997809244e3181e7af45dff8c567b2afc467cd996afbe6df",
+      "commit_sha": "d77f0f255de52e9e240b7b821e4402abc08db3e0",
+      "blob_sha": "f8b7650e3575350a7c2a5bf32f031c6ded972b7d",
+      "url": "https://github.com/IanWangg/AC-Conjecture-Proof/blob/main/experiments/successor_basis_scan.cpp",
+      "exact_readback": true
+    },
+    {
+      "remote": "certificates/x_artifact_manifest.json",
+      "bytes": 1835,
+      "sha256": "e4239c4ab2f9c477620705b4bfcce4e00b48419262ae8fea81ea59b947f9568d",
+      "commit_sha": "2f895149980ab486b2263c2cc158fab1fcfa8749",
+      "blob_sha": "0e8459ef2ebea7243ad2c33e1209da375dcb71ce",
+      "url": "https://github.com/IanWangg/AC-Conjecture-Proof/blob/main/certificates/x_artifact_manifest.json",
+      "exact_readback": true
+    },
+    {
+      "remote": "certificates/x_second_phase_data.json.gz.b64",
+      "bytes": 126811,
+      "sha256": "c6977d40de4939df67db98d2c074cf1403b376f454ba6898e0f7717033a0f053",
+      "commit_sha": "c59b4a1bc8dbaba92d1013edc5f51e75aabba338",
+      "blob_sha": "ed636ae5dc32effcd1491e9e08c297d1fe2a9195",
+      "url": "https://github.com/IanWangg/AC-Conjecture-Proof/blob/main/certificates/x_second_phase_data.json.gz.b64",
+      "exact_readback": true
+    },
+    {
+      "remote": "certificates/x_rotation_successors.json.gz.b64",
+      "bytes": 203475,
+      "sha256": "d3302b59618e7484e180caa9691c66ddf02974922d7f36b80f27f9069467a6ae",
+      "commit_sha": "466eb8cb3e204a9a6468046dc46f26b08e58e35b",
+      "blob_sha": "ff1171c7dc77ef0219414fc11a7bc062f045a875",
+      "url": "https://github.com/IanWangg/AC-Conjecture-Proof/blob/main/certificates/x_rotation_successors.json.gz.b64",
+      "exact_readback": true
+    },
+    {
+      "remote": "certificates/x_barbell_walks.json.gz.b64",
+      "bytes": 38687,
+      "sha256": "3efce342c9132e233e406c1b8cbd64962f56fedc2648c8ac6fd67a05d14ba324",
+      "commit_sha": "68a3c1331bb18f6cd6e701679fc28c1c78250bb1",
+      "blob_sha": "52ed965098db946619d96287a6d9940231541e7e",
+      "url": "https://github.com/IanWangg/AC-Conjecture-Proof/blob/main/certificates/x_barbell_walks.json.gz.b64",
+      "exact_readback": true
+    },
+    {
+      "remote": "certificates/x_h1_cap250_sources.jsonl.gz.b64",
+      "bytes": 27088,
+      "sha256": "46a76174bbe40c50e46272ca1cf1d0a5f856457a6f55e017cde89580a1b7a85a",
+      "commit_sha": "13a3111a24ec2ffa52031a5948ad666c828617a2",
+      "blob_sha": "e13399742df0a1ccde02913979af7b25c5edc480",
+      "url": "https://github.com/IanWangg/AC-Conjecture-Proof/blob/main/certificates/x_h1_cap250_sources.jsonl.gz.b64",
+      "exact_readback": true
+    },
+    {
+      "remote": "certificates/x_all42_actual_entries.json",
+      "bytes": 37863,
+      "sha256": "c8a9c58e475d16da56613afa0bb9746f99d87caab6668798f04f51d37a0f2d39",
+      "commit_sha": "850c0d054bdeb34bb85ca330288f1e7ffc077b6d",
+      "blob_sha": "caf82fc9ffe74d365ba2967ad7f18413c9f0c563",
+      "url": "https://github.com/IanWangg/AC-Conjecture-Proof/blob/main/certificates/x_all42_actual_entries.json",
+      "exact_readback": true
+    },
+    {
+      "remote": "certificates/x_h1_geometric_entry.json",
+      "bytes": 1591,
+      "sha256": "f9293a77dce64471c86a320d0e36213ec2a68d09820f0297aa209b10f641ee71",
+      "commit_sha": "5709713f089d0d5b5f99a528129120792fde3511",
+      "blob_sha": "1a01fab30372d45d91dc036b69168d38c699e128",
+      "url": "https://github.com/IanWangg/AC-Conjecture-Proof/blob/main/certificates/x_h1_geometric_entry.json",
+      "exact_readback": true
+    },
+    {
+      "remote": "results/x_second_phase_independent_audit.json",
+      "bytes": 356,
+      "sha256": "edc9b76e80b76fcedd8c1e79a944ef891456a23ebf1e9cdd3b9b9b7d80f7bcc4",
+      "commit_sha": "0d87bedcb84cc61e37867e1da9a4c6115244f270",
+      "blob_sha": "4f322275c487783e5bfb6210155e95fc76eec754",
+      "url": "https://github.com/IanWangg/AC-Conjecture-Proof/blob/main/results/x_second_phase_independent_audit.json",
+      "exact_readback": true
+    },
+    {
+      "remote": "results/x_archive_reproduction.json",
+      "bytes": 850,
+      "sha256": "645e3d92fd808f326bfc911b547f3a448337cb534f6c8dc649516d7166b78d47",
+      "commit_sha": "ab9cfbf3a5893e524b6e33e76563ef31af6556e4",
+      "blob_sha": "26fd2df15da1e5cea6e0a47f4bb76276dbdf020d",
+      "url": "https://github.com/IanWangg/AC-Conjecture-Proof/blob/main/results/x_archive_reproduction.json",
+      "exact_readback": true
+    },
+    {
+      "remote": "results/x_h1_cap100_results.json",
+      "bytes": 1005,
+      "sha256": "2f59e24d5a9e85aa947dfee9cb52a50f61fae227cc36dd376a1c487b5fb3b30d",
+      "commit_sha": "6443f345c8b09d5e1827a1a6326b10504c124cf7",
+      "blob_sha": "24d0d77eb52b8fce89721fe50ced833dfb6231b7",
+      "url": "https://github.com/IanWangg/AC-Conjecture-Proof/blob/main/results/x_h1_cap100_results.json",
+      "exact_readback": true
+    },
+    {
+      "remote": "results/x_h1_cap250_results.json",
+      "bytes": 2227,
+      "sha256": "71a366c3e836ad25aaea90b05d402dfe66377c84fee58fbd47a6409eae75e9a3",
+      "commit_sha": "85e09ceafd78bf4f5e4bc9cb7afce45a75c24868",
+      "blob_sha": "349a2ac54e70de4e5c0c4b5e1032f81db352fd51",
+      "url": "https://github.com/IanWangg/AC-Conjecture-Proof/blob/main/results/x_h1_cap250_results.json",
+      "exact_readback": true
+    },
+    {
+      "remote": "results/x_h1_independent_voltage_review.json",
+      "bytes": 729,
+      "sha256": "654c130c57006d38b1fe48a0157dd867f3055efbcddac1d887039ed632ededd6",
+      "commit_sha": "aa456b5a3a1ffc225ff252a2b2aea72e7ddf4c57",
+      "blob_sha": "b444877d561706baf116721c62f8abfdce0c1959",
+      "url": "https://github.com/IanWangg/AC-Conjecture-Proof/blob/main/results/x_h1_independent_voltage_review.json",
+      "exact_readback": true
+    },
+    {
+      "remote": "results/x_all42_successor_summary.json",
+      "bytes": 247,
+      "sha256": "366f886ee5cc88eb9800095901793121ddf46ab987e4d827e2fd21fd91df4ea0",
+      "commit_sha": "e563c08240fcd5de508a6cd374b8e85cbb159b54",
+      "blob_sha": "e40578f0f677c4785bcffbbddd7fd56f8d07d959",
+      "url": "https://github.com/IanWangg/AC-Conjecture-Proof/blob/main/results/x_all42_successor_summary.json",
+      "exact_readback": true
+    },
+    {
+      "remote": "certificates/coupled_ak2_strict.json",
+      "bytes": 82374,
+      "sha256": "38d42096fb56c5e8acb5be2718014807b0a73f189be404fa8989108f8279f5f5",
+      "commit_sha": "ff0cdfdeb243dc52cb4d0f99acdf1b4096da6cbf",
+      "blob_sha": "ae6cff2b88314f23b2fae331721d11d77ed0519c",
+      "url": "https://github.com/IanWangg/AC-Conjecture-Proof/blob/main/certificates/coupled_ak2_strict.json",
+      "exact_readback": true
+    },
+    {
+      "remote": "certificates/coupled_ak2_exposed.json",
+      "bytes": 82594,
+      "sha256": "0e6ad3aaeb84103613c11ef70aebdadfa5ddf0f0c429ce3b6e6c0638eb3be0db",
+      "commit_sha": "3e7d50813f8d811922d9f1e1f24da7384e2e1c7b",
+      "blob_sha": "ebfd264f562e405a9623155e1adf568bb8a7a2c9",
+      "url": "https://github.com/IanWangg/AC-Conjecture-Proof/blob/main/certificates/coupled_ak2_exposed.json",
+      "exact_readback": true
+    },
+    {
+      "remote": "README.md",
+      "commit_sha": "87dcc83b3c670f343e18fbba09dc66e1cae3ebaa",
+      "content_sha": "b29ada5066cac7a12f3314a42cdbfd937c007e16",
+      "blob_sha": "b29ada5066cac7a12f3314a42cdbfd937c007e16",
+      "url": "https://github.com/IanWangg/AC-Conjecture-Proof/blob/main/README.md",
+      "exact_readback": true
+    }
+  ]
+}
