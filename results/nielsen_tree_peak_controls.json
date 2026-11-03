@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "geometric_primitive_length_formula_checks": 4416,
+  "unimodular_matrix_descent_controls": 16608,
+  "maximum_strict_descent_steps_in_controls": 9,
+  "vector_entry_bound": 12,
+  "matrix_entry_bound": 8,
+  "geometric_shapes": [
+    "rose",
+    "theta",
+    "barbell"
+  ],
+  "weight_triples": [
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      2,
+      5
+    ],
+    [
+      7,
+      3,
+      2
+    ],
+    [
+      3,
+      3,
+      9
+    ]
+  ],
+  "finite_core_minimum_connectedness_checked": true,
+  "actual_Nielsen_only_sublevel_connectivity_claimed": false,
+  "scope": "Finite controls for the separate unbounded cyclic-state quotient proof"
+}
