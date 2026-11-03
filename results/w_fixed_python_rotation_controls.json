@@ -1,0 +1,413 @@
+[
+  {
+    "status": "PLANAR_COMPATIBLE",
+    "words": [
+      "x",
+      "y"
+    ],
+    "full_order_count": 1,
+    "checked": 1,
+    "genus_histogram": {
+      "0": 1
+    },
+    "best": {
+      "total_genus": 0,
+      "faces": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "nonempty_components": 2,
+      "nonempty_vertices": 4,
+      "edges": 2,
+      "orders": [
+        [
+          1
+        ],
+        [
+          0
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ]
+      ]
+    }
+  },
+  {
+    "status": "PLANAR_COMPATIBLE",
+    "words": [
+      "xyXY"
+    ],
+    "full_order_count": 1,
+    "checked": 1,
+    "genus_histogram": {
+      "0": 1
+    },
+    "best": {
+      "total_genus": 0,
+      "faces": [
+        [
+          0,
+          6,
+          4,
+          2
+        ],
+        [
+          1,
+          3,
+          5,
+          7
+        ]
+      ],
+      "nonempty_components": 1,
+      "nonempty_vertices": 4,
+      "edges": 4,
+      "orders": [
+        [
+          4,
+          7
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          5,
+          2
+        ]
+      ]
+    }
+  },
+  {
+    "status": "PLANAR_COMPATIBLE",
+    "words": [
+      "xx"
+    ],
+    "full_order_count": 1,
+    "checked": 1,
+    "genus_histogram": {
+      "0": 1
+    },
+    "best": {
+      "total_genus": 0,
+      "faces": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "nonempty_components": 1,
+      "nonempty_vertices": 2,
+      "edges": 2,
+      "orders": [
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [],
+        []
+      ]
+    }
+  },
+  {
+    "status": "PLANAR_COMPATIBLE",
+    "words": [
+      "xxyy"
+    ],
+    "full_order_count": 1,
+    "checked": 1,
+    "genus_histogram": {
+      "0": 1
+    },
+    "best": {
+      "total_genus": 0,
+      "faces": [
+        [
+          0,
+          7,
+          4,
+          3
+        ],
+        [
+          1,
+          2,
+          5,
+          6
+        ]
+      ],
+      "nonempty_components": 1,
+      "nonempty_vertices": 4,
+      "edges": 4,
+      "orders": [
+        [
+          1,
+          7
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          6,
+          4
+        ]
+      ]
+    }
+  },
+  {
+    "status": "PLANAR_COMPATIBLE",
+    "words": [
+      "x",
+      "xy"
+    ],
+    "full_order_count": 1,
+    "checked": 1,
+    "genus_histogram": {
+      "0": 1
+    },
+    "best": {
+      "total_genus": 0,
+      "faces": [
+        [
+          0,
+          5,
+          4,
+          1,
+          2,
+          3
+        ]
+      ],
+      "nonempty_components": 1,
+      "nonempty_vertices": 4,
+      "edges": 3,
+      "orders": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ]
+    }
+  },
+  {
+    "status": "NO_PLANAR_COMPATIBLE",
+    "words": [
+      "xxYYY",
+      "xyxYXY"
+    ],
+    "full_order_count": 2880,
+    "checked": 2880,
+    "genus_histogram": {
+      "3": 1866,
+      "2": 372,
+      "4": 640,
+      "1": 2
+    },
+    "best": {
+      "total_genus": 1,
+      "faces": [
+        [
+          0,
+          13,
+          19,
+          1,
+          10,
+          16
+        ],
+        [
+          2,
+          15
+        ],
+        [
+          3,
+          17,
+          4
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          7,
+          8,
+          18
+        ],
+        [
+          9,
+          20
+        ],
+        [
+          11,
+          14,
+          12,
+          21
+        ]
+      ],
+      "nonempty_components": 1,
+      "nonempty_vertices": 4,
+      "edges": 11,
+      "orders": [
+        [
+          1,
+          13,
+          21,
+          9,
+          18
+        ],
+        [
+          17,
+          0,
+          10,
+          14,
+          2
+        ],
+        [
+          4,
+          6,
+          8,
+          20,
+          11,
+          16
+        ],
+        [
+          15,
+          12,
+          19,
+          7,
+          5,
+          3
+        ]
+      ]
+    }
+  },
+  {
+    "status": "NO_PLANAR_COMPATIBLE",
+    "words": [
+      "XXyyy",
+      "XYxYYxy"
+    ],
+    "full_order_count": 17280,
+    "checked": 17280,
+    "genus_histogram": {
+      "3": 7012,
+      "2": 664,
+      "4": 9594,
+      "1": 10
+    },
+    "best": {
+      "total_genus": 1,
+      "faces": [
+        [
+          0,
+          23,
+          11,
+          2,
+          12
+        ],
+        [
+          1,
+          10,
+          4,
+          18,
+          13,
+          21
+        ],
+        [
+          3,
+          19
+        ],
+        [
+          5,
+          17
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          7,
+          15,
+          20
+        ],
+        [
+          8,
+          14
+        ],
+        [
+          9,
+          22
+        ]
+      ],
+      "nonempty_components": 1,
+      "nonempty_vertices": 4,
+      "edges": 12,
+      "orders": [
+        [
+          0,
+          10,
+          2,
+          19,
+          13
+        ],
+        [
+          14,
+          20,
+          1,
+          23,
+          9
+        ],
+        [
+          3,
+          12,
+          21,
+          7,
+          16,
+          5,
+          18
+        ],
+        [
+          17,
+          6,
+          15,
+          8,
+          22,
+          11,
+          4
+        ]
+      ]
+    }
+  }
+]
