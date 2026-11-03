@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "ordinary_AC_goal_solved": false,
+  "independence": "No W imports; all vertex cyclic orders, no sheet constraints",
+  "scope": "Finite chart-completeness controls only; geometric proof remains mathematical",
+  "checks": [
+    {
+      "kind": "K4",
+      "multigraphs": 42,
+      "all_rotation_systems_checked": 488608,
+      "spherical_rotation_systems": 466,
+      "all_spherical_orders_fit_chart": true,
+      "maximum_bundle_multiplicity": 2,
+      "maximum_total_edges": 9
+    },
+    {
+      "kind": "C4",
+      "multigraphs": 50,
+      "all_rotation_systems_checked": 47953,
+      "spherical_rotation_systems": 753,
+      "all_spherical_orders_fit_chart": true,
+      "maximum_bundle_multiplicity": 3,
+      "maximum_total_edges": 8
+    },
+    {
+      "kind": "DIAMOND",
+      "multigraphs": 26,
+      "all_rotation_systems_checked": 26584,
+      "spherical_rotation_systems": 328,
+      "all_spherical_orders_fit_chart": true,
+      "maximum_bundle_multiplicity": 2,
+      "maximum_total_edges": 8
+    }
+  ]
+}
