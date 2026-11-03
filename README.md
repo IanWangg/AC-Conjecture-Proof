@@ -110,7 +110,7 @@ Also regenerate the complete 24,136,172-rotation enumeration (C++17 and about 2 
 python3 experiments/reproduce.py --subgroups-only --full-rotations
 ```
 
-The [full combined replay passed](results/round19_reproduction.json), including the complete rotation enumeration, all 6,568 closed primitive-absence certificates, the three new finite branch obstructions, and positive AK(2) calibration. A [further replay](results/round19_followup_reproduction.json) checks S's separate integer-map implementation and every energy-23 frontier macro. The geometric basis-sublevel theorem has its own mathematical proof and independent finite controls; no proof-assistant formalization is claimed.
+The [full combined replay passed](results/round19_reproduction.json), including the complete rotation enumeration, all 6,568 closed primitive-absence certificates, the three new finite branch obstructions, and positive AK(2) calibration. The [final publication audit](results/round19_publication_integrity.json) matches all 93 new researcher/coordinator artifacts to their Git blob SHAs. Both reverse-search journals also [replay completely](results/reverse_journal_reproduction.json), covering 174,206 parent edges and 20,985/35,814 independently folded candidate cores respectively. A [further replay](results/round19_followup_reproduction.json) checks S's separate integer-map implementation and every energy-23 frontier macro. The geometric basis-sublevel theorem has its own mathematical proof and independent finite controls; no proof-assistant formalization is claimed.
 
 Add the independent original-state C++ cap-18 exhaustion, long endpoint's subgroup fold, full cyclic audit, and saved subgroup certificates:
 
