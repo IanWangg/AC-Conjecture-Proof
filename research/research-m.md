@@ -43,6 +43,10 @@ Let (u', v) be a state with discovery index i, obtained by replacing u by u' = c
 
 K showed P_3 = (xyxYYXy, xxxYXyy) ∈ Fwd(AK3, 17) (barrier 17). If S ∈ Fwd(P_3, C) with C ≥ 17, concatenating a path AK3 → P_3 of peak 17 with a path P_3 → S of peak ≤ C gives a forward path of peak ≤ C, so **Fwd(P_3, C) ⊆ Fwd(AK3, C) for every C ≥ 17**. Hence every detector applied to Fwd(AK3, 29/30) also covers everything a search from P_3 at the same cap could reach; a separate P_3 run would be redundant (the brief's item 2). The directed graph may make the inclusion strict (AK3 need not lie in Fwd(P_3, C)), which only strengthens the point. What is *not* subsumed is the trivial-side comparison with P_2's forward set, done in §3.4. ∎
 
+### 3.1 Low-energy slice of Fwd(AK3, 26): thickenability and meridian defect (experiment)
+
+`python3 experiments/m_lowenergy_thicken.py S/m26.bin 18 defect` on the complete cap-26 forward set of AK(3) (10,269,488 states): 8,448 states of total length ≤ 18 (by length 13/14/15/16/17/18: 12 / 40 / 564 / 616 / 3,320 / 3,896) in **1,075 complex classes** (Σ × signed permutations), **none thickenable** (F's polynomial test). This extends E's check (917 classes of length ≤ 18 inside the cap-20 component: none thickenable) to every length-≤18 state reachable with excursions up to total length 26. Meridian defect (F's `meridian_defect`, Nielsen depth 5) over the 1,075 classes: defect 6 for 34 classes (e.g. AK(3) itself), 10 for 2 classes (e.g. (x⁴YxY, xy³xY⁴)), 14 for 264 classes (e.g. (x²yXYXy, xyXyXYY)), and no torus-type relator found for 775 classes. **No class has defect < 6**, in agreement with F's §4.6 (cap 20/22, smaller move set) and G's rigid 3-orbit island; so no state in this slice is one Prop.-M move from a primitive relator. (7.7 min single core.)
+
 (further results filled in below as runs complete)
 
 ## 4. Honest limits
