@@ -396,3 +396,11 @@ Verifier output (`python3 experiments/elementary_verify.py certificates/i_*.json
 - alejandrozarco/andrews-curtis-ms14: P1 ~ C6 ledger, AI-produced, unreviewed, commit a6c67b9.
 - M. Lackenby, arXiv:2606.06122: thickenable ⇒ AC-trivial (as reported in research-e/f).
 - L. Fagan et al., arXiv:2606.21611: AC-19 / AC-1M datasets (via research-d).
+
+## Coordinator's review (second reader, 2026-11-03)
+
+- All 33 certificates in `certificates/i_*.json` replay under `python3 experiments/elementary_verify.py` (exit 0); the coordinator checked every start/target tuple against the stated presentations. `i_R327_to_c3.json` makes R327 ~AC C3 a plain ordinary-AC equivalence (agent G independently obtained it up to an explicit automorphism). `i_p1_to_c6.json` is self-verifying, so P1 ~AC C6 is established by this repository's verifier whatever the provenance of the external ledger it was converted from.
+- Proofs re-derived by hand and correct: Prop. G (xᵖ and xᵐ = z⁻² are central; the von Dyck quotient for gcd(p,m) > 1), Lemma E (Euclid on exponent rows), Prop. M (the congruence n ≡ ±1 mod m turns n·i′ − m·j = ±1 into a representative with x-exponent ±1), and all five steps of Lemma S (each inserted word is freely equal to a product of conjugates of A^{±1}, with A = c z² as free words).
+- Naming: the tuple called P2 here, (XyyxYYY, XXXYxxY), is the image of research-f's P2 = (x⁻¹y²xy⁻³, x⁻¹yx²yx⁻²) under y ↦ y⁻¹ (first relator then inverted and rotated); since Aut(F₂) is AC-realized on this class (`i_p2_aut_*.json`), both tuples lie in one AC class. Likewise (XyyxYYY, XXXYxxy) is a rotation of P1.
+- Scripts: `i_words`, `i_torus`, `i_family`, `i_transport`, `i_residual_merge`, `i_landscape`, `i_autreal_sweep` pass `--selftest`; `i_certify.py` has no self-test mode (`--selftest` prints its usage and exits 1), contrary to the agent's summary. Its outputs are the certificates, which are verified independently.
+- The "proof sketch" remark after Lemma S (that Lemma S exhausts the conjugacies with A fixed for q ≥ 3) is a sketch and nothing else in the note depends on it. All separation and "same-status" statements are cap-relative, as §9 says.
