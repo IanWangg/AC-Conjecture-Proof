@@ -1,0 +1,2290 @@
+[
+  {
+    "rotation_offsets": [
+      0,
+      0
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "moves": []
+    },
+    "strict_replay": {
+      "moves": 0,
+      "peak_total_length": 13,
+      "endpoint": [
+        "xxxYYYY",
+        "xyxYXY"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      0,
+      1
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xxxYYYY",
+        "yxYXYx"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 1,
+      "peak_total_length": 13,
+      "endpoint": [
+        "xxxYYYY",
+        "yxYXYx"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      0,
+      2
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xxxYYYY",
+        "xYXYxy"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 2,
+      "peak_total_length": 13,
+      "endpoint": [
+        "xxxYYYY",
+        "xYXYxy"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      0,
+      3
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xxxYYYY",
+        "YXYxyx"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 3,
+      "peak_total_length": 13,
+      "endpoint": [
+        "xxxYYYY",
+        "YXYxyx"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      0,
+      4
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xxxYYYY",
+        "XYxyxY"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 4,
+      "peak_total_length": 13,
+      "endpoint": [
+        "xxxYYYY",
+        "XYxyxY"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      0,
+      5
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xxxYYYY",
+        "YxyxYX"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 5,
+      "peak_total_length": 13,
+      "endpoint": [
+        "xxxYYYY",
+        "YxyxYX"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      1,
+      0
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xxYYYYx",
+        "xyxYXY"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 1,
+      "peak_total_length": 13,
+      "endpoint": [
+        "xxYYYYx",
+        "xyxYXY"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      1,
+      1
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xxYYYYx",
+        "yxYXYx"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 2,
+      "peak_total_length": 13,
+      "endpoint": [
+        "xxYYYYx",
+        "yxYXYx"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      1,
+      2
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xxYYYYx",
+        "xYXYxy"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 3,
+      "peak_total_length": 13,
+      "endpoint": [
+        "xxYYYYx",
+        "xYXYxy"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      1,
+      3
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xxYYYYx",
+        "YXYxyx"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 4,
+      "peak_total_length": 13,
+      "endpoint": [
+        "xxYYYYx",
+        "YXYxyx"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      1,
+      4
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xxYYYYx",
+        "XYxyxY"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 5,
+      "peak_total_length": 13,
+      "endpoint": [
+        "xxYYYYx",
+        "XYxyxY"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      1,
+      5
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xxYYYYx",
+        "YxyxYX"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 6,
+      "peak_total_length": 13,
+      "endpoint": [
+        "xxYYYYx",
+        "YxyxYX"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      2,
+      0
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xYYYYxx",
+        "xyxYXY"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 2,
+      "peak_total_length": 13,
+      "endpoint": [
+        "xYYYYxx",
+        "xyxYXY"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      2,
+      1
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xYYYYxx",
+        "yxYXYx"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 3,
+      "peak_total_length": 13,
+      "endpoint": [
+        "xYYYYxx",
+        "yxYXYx"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      2,
+      2
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xYYYYxx",
+        "xYXYxy"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 4,
+      "peak_total_length": 13,
+      "endpoint": [
+        "xYYYYxx",
+        "xYXYxy"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      2,
+      3
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xYYYYxx",
+        "YXYxyx"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 5,
+      "peak_total_length": 13,
+      "endpoint": [
+        "xYYYYxx",
+        "YXYxyx"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      2,
+      4
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xYYYYxx",
+        "XYxyxY"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 6,
+      "peak_total_length": 13,
+      "endpoint": [
+        "xYYYYxx",
+        "XYxyxY"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      2,
+      5
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "xYYYYxx",
+        "YxyxYX"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 7,
+      "peak_total_length": 13,
+      "endpoint": [
+        "xYYYYxx",
+        "YxyxYX"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      3,
+      0
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYYYxxx",
+        "xyxYXY"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 3,
+      "peak_total_length": 13,
+      "endpoint": [
+        "YYYYxxx",
+        "xyxYXY"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      3,
+      1
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYYYxxx",
+        "yxYXYx"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 4,
+      "peak_total_length": 13,
+      "endpoint": [
+        "YYYYxxx",
+        "yxYXYx"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      3,
+      2
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYYYxxx",
+        "xYXYxy"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 5,
+      "peak_total_length": 13,
+      "endpoint": [
+        "YYYYxxx",
+        "xYXYxy"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      3,
+      3
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYYYxxx",
+        "YXYxyx"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 6,
+      "peak_total_length": 13,
+      "endpoint": [
+        "YYYYxxx",
+        "YXYxyx"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      3,
+      4
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYYYxxx",
+        "XYxyxY"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 7,
+      "peak_total_length": 13,
+      "endpoint": [
+        "YYYYxxx",
+        "XYxyxY"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      3,
+      5
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYYYxxx",
+        "YxyxYX"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 8,
+      "peak_total_length": 13,
+      "endpoint": [
+        "YYYYxxx",
+        "YxyxYX"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      4,
+      0
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYYxxxY",
+        "xyxYXY"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 4,
+      "peak_total_length": 13,
+      "endpoint": [
+        "YYYxxxY",
+        "xyxYXY"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      4,
+      1
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYYxxxY",
+        "yxYXYx"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 5,
+      "peak_total_length": 13,
+      "endpoint": [
+        "YYYxxxY",
+        "yxYXYx"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      4,
+      2
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYYxxxY",
+        "xYXYxy"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 6,
+      "peak_total_length": 13,
+      "endpoint": [
+        "YYYxxxY",
+        "xYXYxy"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      4,
+      3
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYYxxxY",
+        "YXYxyx"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 7,
+      "peak_total_length": 13,
+      "endpoint": [
+        "YYYxxxY",
+        "YXYxyx"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      4,
+      4
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYYxxxY",
+        "XYxyxY"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 8,
+      "peak_total_length": 13,
+      "endpoint": [
+        "YYYxxxY",
+        "XYxyxY"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      4,
+      5
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYYxxxY",
+        "YxyxYX"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 9,
+      "peak_total_length": 13,
+      "endpoint": [
+        "YYYxxxY",
+        "YxyxYX"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      5,
+      0
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYxxxYY",
+        "xyxYXY"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 5,
+      "peak_total_length": 13,
+      "endpoint": [
+        "YYxxxYY",
+        "xyxYXY"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      5,
+      1
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYxxxYY",
+        "yxYXYx"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 6,
+      "peak_total_length": 13,
+      "endpoint": [
+        "YYxxxYY",
+        "yxYXYx"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      5,
+      2
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYxxxYY",
+        "xYXYxy"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 7,
+      "peak_total_length": 13,
+      "endpoint": [
+        "YYxxxYY",
+        "xYXYxy"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      5,
+      3
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYxxxYY",
+        "YXYxyx"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 8,
+      "peak_total_length": 13,
+      "endpoint": [
+        "YYxxxYY",
+        "YXYxyx"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      5,
+      4
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYxxxYY",
+        "XYxyxY"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 9,
+      "peak_total_length": 13,
+      "endpoint": [
+        "YYxxxYY",
+        "XYxyxY"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      5,
+      5
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YYxxxYY",
+        "YxyxYX"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 10,
+      "peak_total_length": 13,
+      "endpoint": [
+        "YYxxxYY",
+        "YxyxYX"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      6,
+      0
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YxxxYYY",
+        "xyxYXY"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 6,
+      "peak_total_length": 13,
+      "endpoint": [
+        "YxxxYYY",
+        "xyxYXY"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      6,
+      1
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YxxxYYY",
+        "yxYXYx"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 7,
+      "peak_total_length": 13,
+      "endpoint": [
+        "YxxxYYY",
+        "yxYXYx"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      6,
+      2
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YxxxYYY",
+        "xYXYxy"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 8,
+      "peak_total_length": 13,
+      "endpoint": [
+        "YxxxYYY",
+        "xYXYxy"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      6,
+      3
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YxxxYYY",
+        "YXYxyx"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 9,
+      "peak_total_length": 13,
+      "endpoint": [
+        "YxxxYYY",
+        "YXYxyx"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      6,
+      4
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YxxxYYY",
+        "XYxyxY"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 10,
+      "peak_total_length": 13,
+      "endpoint": [
+        "YxxxYYY",
+        "XYxyxY"
+      ]
+    }
+  },
+  {
+    "rotation_offsets": [
+      6,
+      5
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "YxxxYYY",
+        "YxyxYX"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        }
+      ]
+    },
+    "strict_replay": {
+      "moves": 11,
+      "peak_total_length": 13,
+      "endpoint": [
+        "YxxxYYY",
+        "YxyxYX"
+      ]
+    }
+  }
+]
