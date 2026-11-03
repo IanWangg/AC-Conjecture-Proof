@@ -17,7 +17,7 @@ Before choosing a direction I fetched the private repository README
 [the cyclic-sublevel lemma](nielsen-cyclic-sublevels.md),
 [Q's arbitrary-conjugation work](research-q.md),
 [R's exact detector](research-r.md), and
-[R's reverse-search follow-up](reverse-search-followup.md).
+[R's reverse-search follow-up](research-r-reverse.md).
 The earlier work excludes ambient primitives from every independently
 conjugated subgroup attached to the complete cyclic-cap-22 component.
 It does not exclude later alternating subgroup changes.
