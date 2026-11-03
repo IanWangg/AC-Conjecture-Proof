@@ -222,18 +222,17 @@ def group_closure(gen_names, limit=200, mod_sign=False):
         return min(M, Mn)
     I = ((1, 0), (0, 1))
     reps = {key(I): []}
-    frontier = [[]]
+    frontier = [([], I)]
     gens = [(list(n), matrix(compose(n))) for n in gen_names]
     while frontier:
         new = []
-        for names in frontier:
-            M = matrix(compose(names)) if names else I
+        for names, M in frontier:
             for gn, gM in gens:
-                P = matmul(gM, M)          # g o (names)
+                P = matmul(gM, M)          # matrix of g o (names); matrices only, no word recomposition
                 k = key(P)
                 if k not in reps:
                     reps[k] = gn + names
-                    new.append(gn + names)
+                    new.append((gn + names, P))
                     if len(reps) > limit:
                         return None
         frontier = new
