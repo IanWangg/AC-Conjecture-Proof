@@ -69,6 +69,8 @@ Round 5 (the "theory round", 2026-11-09 Los Angeles time: twenty agents TH01–T
 - [TH09](research/research-th09.md): the **BS(1,2) exit**: a presentation with a relator whose one-relator group is BS(1,2) is AC-trivial by one generalized move (coordinator re-derived the proof); a census of the killers of the trefoil group in which AK(3) and C3 are the only undecided classes at the first undecided length; and a verified AC trivialization (37,631 moves, replayed by the coordinator) of the length-16 presentation R249 = (x²yx⁻²y⁻², x³y²x⁻¹yx⁻¹y), which the published third-party classification used in rounds 2–4 lists as unresolved.
 - [TH14](research/research-th14.md), **stable** results only: after one stabilization every AC class is invariant under all automorphisms (so "chirality" is invisible stably), a stable substitution theorem and a composition formula; no stable trivialization of AK(3).
 
+- [TH21](research/research-th21.md), a decisive check added during the round: since a single state with a BS(1,2)-type relator would trivialize AK(3) (TH09), all 286,729,520 states of AK(3)'s cap-29 forward set were scanned with an exact Whitehead test cross-checked against TH09's: **no hit** (coordinator reproduced the cap-28 part, 69,190,160 states). Bounded and directed; not evidence of non-triviality.
+
 *Audit and refereeing*
 
 - [TH08](research/research-th08.md): proof-check of the theory in notes G, H, I, K, N, O: no new false theorem; twelve wording or hypothesis findings, three of them sentences of this README (corrected above).
