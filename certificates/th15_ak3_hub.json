@@ -1,0 +1,64 @@
+{
+ "format": "ordinary-ac-elementary-v1",
+ "start": [
+  "xxxYYYY",
+  "xyxYXY"
+ ],
+ "target": [
+  "XYYYYxyyy",
+  "xyxYXY"
+ ],
+ "moves": [
+  {
+   "op": "invert",
+   "i": 1
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "X"
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "X"
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "X"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "Y"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "X"
+  },
+  {
+   "op": "invert",
+   "i": 1
+  }
+ ],
+ "description": "AK(3) = (x^3 Y^4, xyxYXY) -> (beta_n, b), beta_n = x^-1 y^-(n+1) x y^n (Baumslag-Solitar hub): uniform closed-form path of research-th15.md (3 cyclic products), compiled to strict elementary moves.",
+ "cyclic_steps": 3,
+ "peak_total_length_elementary": 17
+}

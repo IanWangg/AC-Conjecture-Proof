@@ -58,3 +58,33 @@ Checked independently before the proof sections of the note existed (words typed
 ```
 Hand proofs (mine): (i) ⟨x,y | xᵖ = y^{p+1}, W_k⟩ = 1 for all k, p ≥ 1 (z = xᵖ = y^{p+1} is central; modulo z, x and y are conjugate with xᵖ = 1 = x^{p+1}); (ii) duality: in C₂*C_{2k+1} = ⟨s⟩*⟨t⟩, φ_k(p_p) ↦ (st^{k+1})^{p−1}·st^k·s(t^ks)^p t^{k+1} and V_{k,p} ↦ (t^ks)^p t^k s (t^{k+1}s)^p, both with t-necklace (k+1)^p k^{p+1}; the abelianization x ↦ 2k+1, y ↦ 2 gives −1 for both, so the central exponents agree and φ_k(p_p) ~ V_{k,p} in ⟨x² = y^{2k+1}⟩ (not its inverse).
 
+## 4. TH14 (STABLE theory: one stabilization)
+
+*Preliminary (04:18 UTC draft, claims table + proof of Theorem A).* All statements here are about (U, z) in rank n+1, i.e. **stable**; the note labels them so.
+
+| claim | verdict | reasoning |
+|---|---|---|
+| A (class of (U,z) is Aut(F_{n+1})-invariant; costs 2A_i+\|U\|_{x_i}, 1, A_i macro moves) | VERIFIED (proof read line by line) | (ii) one inversion; (iii) x_i ∈ ⟨⟨U⟩⟩; (i): the two free identities u x_i v·v⁻¹x_i⁻¹(z x_i⁻¹)x_i v = u z v and u x_i⁻¹ v·v⁻¹(z x_i⁻¹)⁻¹v = u z⁻¹ v are correct, then z ∈ ⟨⟨σ_i U⟩⟩; star transpositions, one inversion, one transvection generate Aut(F_{n+1}) (Nielsen); the realized set is a subgroup (D2 transport, valid in any rank). Classical in content, as the note says. |
+| B (stable substitution: ⟨⟨p,q⟩⟩ = F₂ and ⟨p,q,t⟩ = F₂ ⇒ (U∘(p,q), z) ~ (U, z) in rank 3) | VERIFIED (own proof, written before TH14's proof was available) | Nielsen: the generating triple (p,q,t) of F₂ is Nielsen-equivalent to (x,y,1), so there is θ ∈ Aut(F₃) with θ(x) ≡ p, θ(y) ≡ q mod ⟨⟨z⟩⟩. Put k = θ⁻¹(z). ⟨⟨U,k⟩⟩ = θ⁻¹⟨⟨U∘(p,q), z⟩⟩ = F₃ (U∘(p,q) normally generates F₂ because p, q die in F₂/⟨⟨U∘(p,q)⟩⟩), so k has z-exponent sum ±1 and (U,z) ~ (U,k) (delete/insert x,y-letters). Transport by θ: θ(U,z) ~ θ(U,k) = (U(θx,θy), z) ~ (U∘(p,q), z) (delete z-letters), and θ(U,z) ~ (U,z) by A. |
+| B2 (composition formula (U∘P, z₁..z_n) ~ U ⊔ P) | PLAUSIBLE, sketch re-derived | z_j ↦ z_j⁻¹p_j(x) (p_j ∈ ⟨⟨U∘P⟩⟩), substitute p_j → z_j inside U∘P, then z_j ∈ ⟨⟨U(z)⟩⟩ turns z_j⁻¹p_j into p_j: (U(z), P(x)); the renaming x ↔ z needs the transvection argument of A. To be compared with TH14's text. |
+| C (w(p,q) primitive in F₂ ⇒ w primitive) | VERIFIED **under the hypothesis that (p,q) is a basis of ⟨p,q⟩** (true when (p,q) normally generates F₂) | an element of H ≤ F that is primitive in F is primitive in H (Kurosh). Without the hypothesis the statement is false: p = x, q = 1, w = u·[u,v]. |
+
+## 5. TH12 (generator area of AK(n); linear lower bounds on the number of moves)
+
+Version read: 187 lines (04:30 UTC). `python3 experiments/th20_th12_check.py` (own code):
+```
+(1) identities OK, n = 1..30
+(2) trace(r) = n^2+n+2 in SL2(Z), braid relation holds
+(3) n <= 6: mu <= n+1 forces mu = n+1 and count matrix [[1,n+1],[1,n]]  (so mu >= n+2 by c_r >= 3)
+(4) permutation model OK, n = 4..40
+```
+
+| claim | verdict | what I checked |
+|---|---|---|
+| Thm 1 (count-matrix calculus; A(U₀) ≤ F_{μ+2}, radius ≤ κ) | VERIFIED (proof read) | downward induction step for each instruction type; Fibonacci bound for products of L, R. |
+| Thm 2 (Area_{AK(n)}(x) = n+4, Area(y) = n+3; every expression has c_r ≥ 3 odd, c_s ≥ n+1 resp. n) | VERIFIED | upper bound: identities (I_x), (I_y) re-typed and freely reduced, n ≤ 30; lower bound: E⁻¹ = [[−1,n+1],[−1,n]] gives the signed counts, and c_r = 1 would make x or y conjugate to r⁻¹ in B₃, impossible since tr = 2 ≠ n²+n+2 in SL₂(ℤ) (matrices and braid relation recomputed). |
+| Thm 3 (every instruction path AK(n) → (x,y) has μ ≥ n+2 multiplications) | VERIFIED (proof read step by step + exhaustive check n ≤ 6) | Σ = d·t₁⋯t_μ with d ∈ {±I, ±S}; L = ab, R = ab⁻¹ in ℤ/2*ℤ/3; class of Σ has length 2n+3, of S⁻¹Σ 2n+2; the loss analysis (0, 1, never 2) is correct; loss 0 forces C₀ = \|Σ\| with first column (1,1), contradicting c_r ≥ 3. |
+| Thm 4 (n ≥ 4: κ ≥ n−3 conjugations) | VERIFIED (proof read; Lemma 4.1 re-checked by script and by hand) | conjugators are products over distinct conjugation instructions, so prefix displacements lie in [−κ⁻, κ⁺]; if κ ≤ n−4 the point v = κ⁻+1 is fixed by every factor but moved by x. |
+| Cor. 5 (d_F(AK(n)) ≥ 2n−1 for n ≥ 4, every elementary-v1 certificate has ≥ 2n−1 moves) | VERIFIED given Thm 3, 4 (μ + κ ≤ number of moves). Correctly labelled as a complexity statement, not an obstruction (it holds for the AC-trivial AK(1), AK(2) too). |
+| §5 (P_n: μ ≥ n; area bounds 3 ≤ Area_{P₃}(x) ≤ 593) | PLAUSIBLE-UNCHECKED (the μ ≥ n argument is the same loss lemma; the numerical upper bounds were not recomputed). |
+

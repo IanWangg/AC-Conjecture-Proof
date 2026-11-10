@@ -304,7 +304,30 @@ def exhaustive_p3_mod2():
     assert got == {key(alg.mul(x, e)) for e in der.values()}
     return len(G), len(der)
 
+def witt_margin(cmax=60):
+    """Witt ranks r_c, Hirsch lengths n_c; Proposition 6 needs 3 r_c - n_c - 1 >= 1 for c >= 5."""
+    def mob(n):
+        r, p = 1, 2
+        while p * p <= n:
+            if n % p == 0:
+                n //= p
+                if n % p == 0:
+                    return 0
+                r = -r
+            p += 1
+        return -r if n > 1 else r
+    out, n = [], 0
+    for c in range(1, cmax + 1):
+        r = sum(mob(d) * 2 ** (c // d) for d in range(1, c + 1) if c % d == 0) // c
+        n += r
+        out.append((c, r, n, 3 * r - n - 1))
+    return out
+
 def selftest():
+    W = witt_margin()
+    assert [w[1] for w in W[:8]] == [2, 1, 2, 3, 6, 9, 18, 30]
+    assert all(w[3] >= 1 for w in W if w[0] >= 5)
+    print("selftest: Witt ranks; 3r_c - n_c - 1 =", [w[3] for w in W[4:11]], "for c = 5..11, >= 1 for 5 <= c <= 60")
     for m in range(1, 7):                            # leading terms of C(w) are Lie brackets
         alg, cache = Alg(m), {}
         L = lyndon(m)

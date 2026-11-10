@@ -124,10 +124,15 @@ def rule_step(C, i, j, pos):
     assert C.s[i] == G.red(A + be + B), (C.s[i], A, be, B)
 
 
+MAXLEN = [10 ** 6]
+
+
 def bs_push(C, i, j, limit=20000):
     """Rewrite relator i to the form x^a y^b X^c using the rules (frozen j)."""
     for _ in range(limit):
         s = C.s[i]
+        if len(s) > MAXLEN[0]:
+            raise RuntimeError("length guard")
         pos = next((p for p in range(len(s) - 1) if s[p:p + 2] in RULES), None)
         if pos is None:
             return
@@ -470,47 +475,185 @@ def two_step_certificate(r0, r1, K=6, P=14, maxlen=70):
     return None
 
 
-def bs_exit_certificate(r0, r1, mmax=12):
+def bs_trial_cost(sprime, limit=250, maxlen=120):
+    """Number of moves of Theorem 1's compiler on (XyxYY, sprime), or None."""
+    MAXLEN[0] = maxlen
+    try:
+        C = Cert(R_BS, sprime)
+        _bs12_core(C, limit)
+        return len(C.moves)
+    except (RuntimeError, AssertionError):
+        return None
+    finally:
+        MAXLEN[0] = 10 ** 6
+
+
+def bs_exit_certificate(r0, r1, mmax=6, swap_first=False):
     """(r0, r1) with r1 of torus type x^p y^q (up to Aut).  If r0 is conjugate
-    modulo r1 to a BS(1,2)-type word v, move r0 to v (r1 frozen), then apply
-    Theorem 1 in coordinates adapted to v, then Nielsen-finish.  Strict
-    certificate (r0, r1) -> (x, y), or None if no BS(1,2)-type word with
-    |m| <= mmax lies in the class."""
+    modulo r1 to a BS(1,2)-type word v = P^-1 Q P Q^-2, move r0 to v (r1 frozen),
+    apply Theorem 1 in the coordinates (P, Q), Nielsen-finish.  Among the
+    BS(1,2)-type words found (|m| <= mmax) and the complements P Q^i (|i| <= 3)
+    the cheapest one (trial run of the Theorem 1 compiler) is used.  Returns a
+    strict certificate to (x, y) or None.  With swap_first the certificate
+    starts at (r1, r0) and begins with the AC swap."""
     import g_cert as GC
-    cert = GC.Cert(r0, r1)
+    if swap_first:
+        cert = GC.Cert(r1, r0)
+        GC.swap(cert)
+    else:
+        cert = GC.Cert(r0, r1)
+    start = list(cert.start)
     M, p, q = G.torus_type(r1)
     theta = G.aut_cached(M)
+    R = G.red(G.power("x", p) + G.power("y", q))
     U0 = G.cyc(G.apply(GC.exact_inverse(theta), r0))
     tc = {G.torus_class(U0, p, q), G.torus_class(G.inv(U0), p, q)}
+    best = None
     for m in range(-mmax, mmax + 1):
         for k in range(-8 * mmax, 8 * mmax + 1):
             if math.gcd(m, k) != 1 or abs(q * m - p * k) != 1:
                 continue
             for d in (1, -1):
                 g, u, v = _egcd(k, -m)
-                th = G.aut_from_matrix(((u * g * d, m), (v * g * d, k)))
-                w = G.cyc(G.apply(th, R_BS))
-                if G.torus_class(w, p, q) not in tc:
+                th0 = G.aut_from_matrix(((u * g * d, m), (v * g * d, k)))
+                if G.torus_class(G.cyc(G.apply(th0, R_BS)), p, q) not in tc:
                     continue
-                GC.acm_edge(cert, 0, theta, p, q, w)
-                mid = list(cert.s)
-                eta = GC.compose(theta, th)
-                view = GC.View(cert, eta, GC.exact_inverse(eta))
-                h, eps = GC.conj_rep(view.U[0], R_BS)
+                for i in range(-3, 4):
+                    th = (G.red(th0[0] + G.power(th0[1], i)), th0[1])
+                    for Rv in (R, G.inv(R)):
+                        cost = bs_trial_cost(G.apply(GC.exact_inverse(th), Rv))
+                        if cost is not None and (best is None or cost < best[0]):
+                            best = (cost, th)
+    if best is None:
+        return None
+    th = best[1]
+    w = G.cyc(G.apply(th, R_BS))
+    GC.acm_edge(cert, 0, theta, p, q, w)
+    mid = list(cert.s)
+    eta = GC.compose(theta, th)
+    view = GC.View(cert, eta, GC.exact_inverse(eta))
+    h, eps = GC.conj_rep(view.U[0], R_BS)
+    if eps < 0:
+        view.invert(0)
+        h, eps = GC.conj_rep(view.U[0], R_BS)
+    view.conj_word(0, G.inv(h))
+    assert view.U[0] == R_BS
+    _bs12_core(ViewState(view))
+    view.check()
+    GC.nielsen_finish(cert)
+    return {"format": "ordinary-ac-elementary-v1", "start": start, "target": ["x", "y"],
+            "moves": cert.moves,
+            "description": "TH09 BS(1,2) exit: relator 0 moved (relator 1 frozen) to the BS(1,2)-type "
+                           "word %s = P^-1 Q P Q^-2 with (P, Q) = %s; then Theorem 1 in the "
+                           "coordinates (P, Q); Nielsen finish" % (mid[0], eta)}
+
+
+def transport_certificate(r0, r1, base_cert):
+    """(r0, r1) with r1 trefoil-type (torus type in general); base_cert a strict
+    certificate (a, b) -> (x, y) with b of the same torus type.  If r0 and a lie
+    in the same killer class up to the symmetries of Corollary 8.1, i.e. if for
+    some alpha in Aut(F) alpha(b) ~ r1^{+-1} and alpha(a) ~ r0^{+-1} modulo r1,
+    return a strict certificate (r0, r1) -> (x, y): one generalized move
+    r0 -> alpha(a) (r1 frozen), the base certificate transported by alpha
+    (Lemma D2), Nielsen finish.  Otherwise None."""
+    import g_cert as GC
+    a, b = base_cert["start"]
+    MR, pR, qR = G.torus_type(r1)
+    MB, pB, qB = G.torus_type(b)
+    thR, thB = G.aut_cached(MR), G.aut_cached(MB)
+    thBi = GC.exact_inverse(thB)
+    RR = G.red(G.power("x", pR) + G.power("y", qR))
+    RB = G.red(G.power("x", pB) + G.power("y", qB))
+    U0 = G.cyc(G.apply(GC.exact_inverse(thR), r0))
+    tc = {G.torus_class(U0, pR, qR), G.torus_class(G.inv(U0), pR, qR)}
+    for sw in (False, True):
+        for sx in ("x", "X"):
+            for sy in ("y", "Y"):
+                sig = (sy, sx) if sw else (sx, sy)
+                if G.cyc_canon(G.apply(sig, RB)) != G.cyc_canon(RR):
+                    continue
+                tw = G.apply(sig, G.apply(thBi, a))
+                if G.torus_class(tw, pR, qR) not in tc:
+                    continue
+                alpha = GC.compose(thR, GC.compose(sig, thBi))
+                cert = GC.Cert(r0, r1)
+                GC.acm_edge(cert, 0, thR, pR, qR, tw)
+                assert cert.s[0] == G.apply(alpha, a)
+                T1 = G.apply(alpha, b)
+                h, eps = GC.conj_rep(cert.s[1], T1)
                 if eps < 0:
-                    view.invert(0)
-                    h, eps = GC.conj_rep(view.U[0], R_BS)
-                view.conj_word(0, G.inv(h))
-                assert view.U[0] == R_BS
-                _bs12_core(ViewState(view))
-                view.check()
+                    cert.invert(1)
+                    h, eps = GC.conj_rep(cert.s[1], T1)
+                cert.conj_word(1, G.inv(h))
+                assert cert.s == [G.apply(alpha, a), T1]
+                img = {"x": alpha[0], "X": G.inv(alpha[0]), "y": alpha[1], "Y": G.inv(alpha[1])}
+                st = [a, b]                       # shadow state in base coordinates
+                for mv in base_cert["moves"]:
+                    i = mv["i"]
+                    if mv["op"] == "invert":
+                        cert.invert(i); st[i] = G.inv(st[i])
+                    elif mv["op"] == "multiply":
+                        cert.multiply(i); st[i] = G.red(st[i] + st[1 - i])
+                    else:
+                        cert.conj_word(i, img[mv["g"]])
+                        st[i] = G.red(mv["g"] + st[i] + mv["g"].swapcase())
+                    assert cert.s[i] == G.apply(alpha, st[i])
+                assert st == ["x", "y"]
                 GC.nielsen_finish(cert)
                 return {"format": "ordinary-ac-elementary-v1", "start": [G.red(r0), G.red(r1)],
                         "target": ["x", "y"], "moves": cert.moves,
-                        "description": "TH09 BS(1,2) exit: relator 0 moved (relator 1 frozen) to the "
-                                       "BS(1,2)-type word %s = P^-1 Q P Q^-2 with (P, Q) = %s; then "
-                                       "Theorem 1 in the coordinates (P, Q); Nielsen finish" % (mid[0], eta)}
+                        "description": "TH09: one generalized move to alpha(%s, %s), alpha = %s, then the "
+                                       "transported base certificate and a Nielsen finish" % (a, b, alpha)}
     return None
+
+
+def frozen_path_certificate(a, s1, s2, maxlen=16, depth=3):
+    """Strict certificate (a, s1) -> (a, s2) by at most `depth` cyclic products
+    of the second relator with rotations of a^{+-1} (breadth-first), or None."""
+    import g_cert as GC
+
+    def rots(w):
+        return [w[i:] + w[:i] for i in range(len(w))]
+
+    par = {G.cyc_canon(s1): None}
+    front = [G.cyc(s1)]
+    for _ in range(depth):
+        nxt = []
+        for w in front:
+            for u in rots(w) + rots(G.inv(w)):
+                for v in rots(a) + rots(G.inv(a)):
+                    c = G.cyc(u + v)
+                    k = G.cyc_canon(c)
+                    if c and len(c) <= maxlen and k not in par:
+                        par[k] = (w, u, v, c)
+                        nxt.append(c)
+        front = nxt
+        if G.cyc_canon(s2) in par:
+            break
+    if G.cyc_canon(s2) not in par:
+        return None
+    steps, k = [], G.cyc_canon(s2)
+    while par[k] is not None:
+        steps.append(par[k])
+        k = G.cyc_canon(par[k][0])
+    cert = GC.Cert(a, s1)
+
+    def set_to(i, target):          # relator i -> exactly `target` (a rotation of it or its inverse)
+        if G.min_rot(cert.s[i]) != G.min_rot(target):
+            cert.invert(i)
+        cert.rotate_to(i, target)
+
+    for (w, u, v, c) in reversed(steps):
+        set_to(1, u)
+        set_to(0, v)
+        cert.multiply(1)
+        cert.cyclically_reduce(1)
+        assert cert.s[1] == c
+    set_to(0, a)
+    set_to(1, s2)
+    return {"format": "ordinary-ac-elementary-v1", "start": [a, s1], "target": [a, s2],
+            "moves": cert.moves,
+            "description": "TH09: %d cyclic products with the first relator frozen" % len(steps)}
 
 
 X7 = ("XXXYXXYxxy", "XYYXy")     # killer class 1121122 of the trefoil group

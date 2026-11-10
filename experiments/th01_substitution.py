@@ -168,7 +168,28 @@ def selftest():
         elif m[0] == "multiply": c[m[1]] = gmul(c[m[1]], c[m[2]])
         else: c[m[1]] = conj(c[m[1]], GENS[m[2]])
     assert c == [gmul(gk(Z), w), t]
-    print("selftest passed: |K|=24, normal form checks (3000 random triples), Lemma 2.3 identity, replay of", len(log), "moves")
+    identities_s4(rnd)
+    print("selftest passed: |K|=24, normal form checks (3000 random triples), Lemma 2.3 identity, replay of", len(log),
+          "moves, S4 identities for Lemma 3.4 / Theorem 3.5(b)")
+
+def identities_s4(rnd):
+    """the two algebraic identities behind Lemma 3.4 and Theorem 3.5(b), tested in S4 with N = V4."""
+    def pm(a, b): return tuple(a[b[i]] for i in range(4))          # (a*b)(i) = a(b(i))
+    def pi(a):
+        r = [0] * 4
+        for i, x in enumerate(a): r[x] = i
+        return tuple(r)
+    def cm(a, b): return pm(pm(pi(a), pi(b)), pm(a, b))
+    S4 = list(itertools.permutations(range(4)))
+    V4 = [(0, 1, 2, 3), (1, 0, 3, 2), (2, 3, 0, 1), (3, 2, 1, 0)]
+    for _ in range(2000):
+        g, h, s_, t_ = (rnd.choice(S4) for _ in range(4))
+        m, nu0, nu1, n = (rnd.choice(V4) for _ in range(4))
+        gh = pm(pm(pi(h), g), h); gnh = pm(pm(pi(h), pm(g, nu0)), h)
+        assert cm(m, gnh) == cm(m, gh)                              # Lemma 3.4
+        lhs = pm(pm(pm(t_, nu1), pm(pm(s_, nu0), n)), pi(pm(s_, nu0)))
+        assert lhs == pm(pm(t_, nu1), pm(pm(s_, n), pi(s_)))        # Theorem 3.5(b), last step
+    return True
 
 if __name__ == "__main__":
     if "--selftest" in sys.argv: selftest()

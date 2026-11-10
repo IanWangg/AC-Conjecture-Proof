@@ -114,15 +114,16 @@ def corank1(g):
     return None
 
 
-def quotients(g, limit=200000):
-    """All folded quotients of g (closure under single identifications)."""
+def quotients(g, limit=200000, maxrank=None):
+    """All folded quotients of g (closure under single identifications).  With maxrank, only quotients
+    reachable through graphs of rank <= maxrank are explored (a subset; used for large graphs)."""
     seen, todo = {g}, [g]
     while todo:
         E, n = todo.pop()
         for u in range(n):
             for v in range(u + 1, n):
                 h = fold(n, E, [(u, v)])
-                if h not in seen:
+                if h not in seen and (maxrank is None or rank(h) <= maxrank):
                     seen.add(h)
                     todo.append(h)
                     if len(seen) > limit:

@@ -1,0 +1,5882 @@
+{
+"format": "ordinary-ac-elementary-v1",
+"start": [
+"xyxYYXy",
+"xxxYXyy"
+],
+"target": [
+"xyxYYXy",
+"XXXYxyxy"
+],
+"moves": [
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 1,
+"j": 0
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "invert",
+"i": 0
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "x"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+}
+],
+"description": "TH11: P_3 = (c,k_3) -> (c, cyc theta0(k_3)), theta0 = (x->X, y->yx); the two killers are not conjugate in <x,y|c> (kappa invariant); built by experiments/th11_cert.py from k_ak3_to_p3.json and d_ak3_aut_{swap,invx,x_xy}.json"
+}

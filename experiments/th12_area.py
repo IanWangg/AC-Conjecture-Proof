@@ -6,7 +6,8 @@ Standard library only.  `python3 experiments/th12_area.py --selftest` checks:
  (2) the permutation model of Theorem 4 (r acts trivially, Fix(s) = [1,n-3]);
  (3) the SL_2(Z) facts used in Theorem 3 (exhaustive over transvection words);
  (4) the Fibonacci bound of Theorem 1 (exhaustive over L/R words);
- (5) the backward bookkeeping of Theorem 1 on the repository's AK(2) certificate.
+ (5) the backward bookkeeping of Theorem 1 on the repository's AK(1), AK(2) certificates
+     and on 200 random reversed instruction paths; (6) verified area bounds over P_3.
 Words: x,y and X,Y (uppercase = inverse).
 """
 import itertools, json, os, sys
@@ -154,6 +155,84 @@ def bookkeeping(cert):
     assert all(out[w]["radius"] <= kappa for w in out)
     return {"start": start, "moves": len(moves), "mu": mu, "kappa": kappa, "x": out["x"], "y": out["y"]}
 
+def transport(cert):
+    """Expressions of the TARGET relators over the START relators of a certificate
+    (Theorem 1 for an arbitrary target).  Returns (factor lists, count matrix)."""
+    start = [red(w) for w in cert["start"]]; target = [red(w) for w in cert["target"]]
+    expr = [[("", 0, 1)], [("", 1, 1)]]
+    for mv in reversed(cert["moves"]):
+        op, i = mv["op"], mv["i"]
+        for t in (0, 1):
+            new = []
+            for g, c, e in expr[t]:
+                if c != i: new.append((g, c, e)); continue
+                if op == "invert": new.append((g, c, -e))
+                elif op == "conjugate": new.append((red(g + mv["g"]), c, e))
+                else:
+                    j = mv["j"]
+                    new += [(g, i, 1), (g, j, 1)] if e > 0 else [(g, j, -1), (g, i, -1)]
+            expr[t] = new
+    for t in (0, 1):
+        w = ""
+        for g, c, e in expr[t]:
+            w = red(w + conj(g, start[c] if e > 0 else inv(start[c])))
+        assert w == target[t], "transport failed"
+    cnt = [[sum(1 for f in expr[t] if f[1] == c) for c in (0, 1)] for t in (0, 1)]
+    return expr, cnt
+
+def reverse_cert(cert):
+    mv2 = []
+    for mv in reversed(cert["moves"]):
+        if mv["op"] == "invert": mv2.append(dict(mv))
+        elif mv["op"] == "conjugate": mv2.append({"op": "conjugate", "i": mv["i"], "g": mv["g"].swapcase()})
+        else:
+            j = mv["j"]
+            mv2 += [{"op": "invert", "i": j}, {"op": "multiply", "i": mv["i"], "j": j}, {"op": "invert", "i": j}]
+    return {"format": cert["format"], "start": cert["target"], "target": cert["start"], "moves": mv2}
+
+def area_over_p3(certpath):
+    """Verified upper bounds for Area_{P_3}(x), Area_{P_3}(y): compose (I_x),(I_y)
+    with the expressions of r, s over P_3 = (c,k) read off K's certificate."""
+    cert = json.load(open(certpath))
+    start = [red(w) for w in cert["start"]]
+    idx = {"r": start.index("xxxYYYY"), "s": start.index("xyxYXY")}
+    rexpr, cnt = transport(reverse_cert(cert))       # AK(3) relators over P_3
+    P = [red(w) for w in cert["target"]]
+    out = {}
+    for wname, fac in (("x", x_factors(3)), ("y", y_factors(3))):
+        w = ""; c = [0, 0]
+        for g, nm, e in fac:
+            sub = rexpr[idx[nm]]
+            sub = sub if e > 0 else [(f, j, -d) for f, j, d in reversed(sub)]
+            for f, j, d in sub:
+                w = red(w + conj(red(g + f), P[j] if d > 0 else inv(P[j]))); c[j] += 1
+        assert w == wname
+        out[wname] = c
+    return {"AK3 relators over P3 (count matrix, rows in certificate start order)": cnt, "x": out["x"], "y": out["y"]}
+
+def random_paths(trials=200, length=30, seed=12):
+    """Theorem 1 stress test: random instruction paths from (x,y) outwards, reversed
+    into trivialization certificates, then pushed through bookkeeping()."""
+    import random
+    rnd = random.Random(seed); worst = (0, 0)
+    for _ in range(trials):
+        moves = []
+        for _ in range(length):
+            q = rnd.random(); i = rnd.randrange(2)
+            if q < 0.2: moves.append({"op": "invert", "i": i})
+            elif q < 0.45: moves.append({"op": "multiply", "i": i, "j": 1 - i})
+            else: moves.append({"op": "conjugate", "i": i, "g": rnd.choice("xXyY")})
+        st = ["x", "y"]
+        for mv in moves:
+            i = mv["i"]
+            if mv["op"] == "invert": st[i] = inv(st[i])
+            elif mv["op"] == "multiply": st[i] = red(st[i] + st[mv["j"]])
+            else: st[i] = conj(mv["g"], st[i])
+        fwd = {"format": "ordinary-ac-elementary-v1", "start": ["x", "y"], "target": st, "moves": moves}
+        res = bookkeeping(reverse_cert(fwd))          # asserts identities, Fibonacci, radius <= kappa
+        worst = max(worst, (res["mu"], res["x"]["count"][0] + res["x"]["count"][1]))
+    return trials, worst
+
 def main(argv):
     here = os.path.dirname(os.path.abspath(__file__))
     if "--cert" in argv:
@@ -170,6 +249,11 @@ def main(argv):
             p = os.path.join(here, "..", "certificates", name)
             if os.path.exists(p):
                 print(name, json.dumps(bookkeeping(json.load(open(p)))))
+        for name in ("k_ak3_to_p3.json", "k_ak3_to_p3_uniform.json"):
+            p = os.path.join(here, "..", "certificates", name)
+            if os.path.exists(p):
+                print("P_3 transport via", name, json.dumps(area_over_p3(p)))
+        print("random reversed paths through bookkeeping (trials, (max mu, its x-area)):", random_paths())
         print("TH12 selftest OK")
         return
     print(__doc__)

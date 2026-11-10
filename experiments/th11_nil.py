@@ -164,6 +164,79 @@ def ser_theta(m):                                    # mu(iota(u) b) from mu(u)
         for q, cc in t.items(): r[q] = r.get(q, 0) + cc
     return mul({q: c for q, c in r.items() if c}, _MB)
 
+def binom(n, k):                                     # integer-valued for all integers n
+    r = 1
+    for i in range(k): r = r * (n - i)
+    f = 1
+    for i in range(1, k + 1): f *= i
+    assert r % f == 0
+    return r // f
+def Jhat_k(n): 
+    v = n * (n + 1) * (n * n - 11 * n + 22); assert v % 24 == 0
+    return -v // 24
+def Jhat_x(s): return -binom(s + 1, 4)
+def kappa_tri(n): return binom(n + 1, 2) % 2
+
+def theorems(NR=range(-40, 81), SR=range(-400, 401)):
+    """exact checks behind T4-T6 of research-th11 (closed forms on >= 30 points per residue class
+    mod 4, then the two finite Diophantine enumerations)."""
+    for n in NR:
+        m = ser_killer(n); k, J = KJ_ser(m); k2, J2 = KJ_ser(ser_theta(m))
+        assert k == kappa_tri(n) and J - k == Jhat_k(n), n
+        assert k2 == 1 - k and J2 - k2 == J - k, n          # theta0 flips kappa, preserves J-hat
+    for s in SR:
+        k, J = KJ_ser(ser_pow(_MA, s))
+        assert k == kappa_tri(s) and J - k == Jhat_x(s), s
+    print("closed forms verified: k_n for n in [%d,%d], x^s y for s in [%d,%d]" % (NR[0], NR[-1], SR[0], SR[-1]))
+    # T5: Jhat_k(n) = Jhat_x(s)  <=>  W^2 = G^2 - 48(n+1), G = n^2-5n-7, W = s^2-s-1; forces -6 <= n <= 18
+    sol = []
+    for n in range(-6, 19):
+        for s in range(-40, 42):
+            G, Wv = n * n - 5 * n - 7, s * s - s - 1
+            assert (Jhat_k(n) == Jhat_x(s)) == (Wv * Wv == G * G - 48 * (n + 1))
+            if Jhat_k(n) == Jhat_x(s): sol.append((n, s, kappa_tri(n) == kappa_tri(s)))
+    print("T5: solutions (n, s, kappa equal?) of Jhat(k_n) = Jhat(x^s y):", sol)
+    for n in list(range(-400, -6)) + list(range(19, 400)):        # the Runge bound, re-checked
+        G = n * n - 5 * n - 7
+        assert 48 * abs(n + 1) < 4 * abs(G) - 4
+    # T6: Jhat_k(n) = Jhat_k(m), n != m  <=>  (n+m-5)(G(n)+G(m)) = 48
+    pairs = [(n, m) for n in range(-300, 301) for m in range(n + 1, 301) if Jhat_k(n) == Jhat_k(m)]
+    print("T6: pairs n < m with Jhat(k_n) = Jhat(k_m), |n|,|m| <= 300:", pairs,
+          " kappa:", [(kappa_tri(n), kappa_tri(m)) for n, m in pairs])
+    print("th11_nil theorem checks passed")
+
+def check_order32():
+    """Independent brute-force check of Theorem T3 in the quotient F/gamma_3 F^4 of order 32:
+    elements (i,j,k) = a^i b^j z^k, i,j mod 4, k mod 2, with b^j a^i = a^i b^j z^(-ij)."""
+    def m(p, q): return ((p[0] + q[0]) % 4, (p[1] + q[1]) % 4, (p[2] + q[2] - p[1] * q[0]) % 2)
+    E = (0, 0, 0)
+    def pw(p, n):
+        r = E
+        for _ in range(n % 8): r = m(r, p)
+        return r
+    def inv_(p): return pw(p, 7)
+    a, b, z = (1, 0, 0), (0, 1, 0), (0, 0, 1)
+    assert m(m(a, b), m(inv_(a), inv_(b))) == z                    # z = [a,b]
+    def hom(ia, ib):                                               # the endomorphism a->ia, b->ib
+        iz = m(m(ia, ib), m(inv_(ia), inv_(ib)))
+        return lambda p: m(m(pw(ia, p[0]), pw(ib, p[1])), pw(iz, p[2]))
+    ph = hom(b, m(inv_(b), a)); io = hom(inv_(a), inv_(b))
+    G = [(i, j, k) for i in range(4) for j in range(4) for k in range(2)]
+    for p in G:
+        for q in G: assert ph(m(p, q)) == m(ph(p), ph(q)) and io(m(p, q)) == m(io(p), io(q))
+    cls = {}
+    for u in G:
+        cls[u] = min(m(m(v, u), inv_(ph(v))) for v in G)
+    classes = sorted(set(cls.values()))
+    assert len(classes) == 2 and cls[E] != cls[z]
+    kap = lambda u: classes.index(cls[u]) if cls[E] == classes[0] else 1 - classes.index(cls[u])
+    for u in G:
+        assert kap(m(io(u), b)) == 1 - kap(u)                      # theta0 flips kappa
+    for n in range(-8, 9):
+        assert kap(pw(a, n)) == kappa_tri(n)                       # x^n y
+        assert kap(m(pw(a, n), m(inv_(b), inv_(a)))) == kappa_tri(n)   # k_n = a^n B A
+    print("order-32 quotient: exactly 2 twisted classes, swapped by theta0; kappa(x^s y), kappa(k_n) = C(.+1,2) mod 2")
+
 def selftest():
     rnd = random.Random(11)
     assert [sum(ELL[i] * MAT4[i][j] for i in range(3)) for j in range(3)] == [0, 0, 0]
@@ -179,6 +252,7 @@ def selftest():
     print("th11_nil self-test passed: (kappa,J) invariant on 300 random twisted conjugations; theta0 flips kappa")
 
 if __name__ == "__main__":
-    if "--selftest" in sys.argv: selftest()
+    if "--selftest" in sys.argv: selftest(); check_order32(); theorems(range(-12, 21), range(-60, 61))
+    elif "--theorems" in sys.argv: theorems()
     else:
         for u in sys.argv[1:]: print(u, KJ(u))

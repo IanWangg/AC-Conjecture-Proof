@@ -4,6 +4,9 @@
   python3 experiments/th07_exits.py --selftest          # all checks below, about 1 minute
   python3 experiments/th07_exits.py --cert 3 de OUT     # AK(3) -> (d_3, e_3) elementary certificate
   python3 experiments/th07_exits.py --cert 3 v0 OUT     # AK(3) -> (w_3, yyXYX)
+  python3 experiments/th07_exits.py --cert 5 F OUT      # AK(5) -> F_5 (frame state, length 16); also route P
+  python3 experiments/th07_exits.py --whitehead 3 8     # Aut(F2)-minimal lengths of first-exit states
+  python3 experiments/th07_exits.py --frames 4 11 -3 7  # least lengths in the frame classes theta_m(C_n)
 
 Checked: (A) Theorem A closed forms against exhaustive enumeration (n <= 4);
 (B) Theorem B against enumeration (n <= 5, both frozen power relators);
@@ -211,6 +214,9 @@ def acm_ok(old, new, n):
         return in_C(r1, n) and in_C(r2, n)
     if same_pm(f1, W['w']):
         return any(bs_conj(x, r2, n) for x in (r1, inv(r1)))
+    for j in range(-n - 2, n + 3):          # frozen frame word v_j: exact test theta_j^-1(r) in C_n
+        if same_pm(f1, v(j)):
+            return in_C(theta(2 - j, r1), n) and in_C(theta(2 - j, r2), n)
     # triangle(u, f1, u') means u' is conjugate to u^{+-1} modulo f1; chain through the hubs w_n, a_n
     seen, todo = [r1], [r1]
     while todo:
@@ -227,6 +233,8 @@ def acm_path(n, route, m=None):
     st = [(W['p'], B), (W['w'], B)]
     if route == 'v0':
         return st + [(W['w'], v(0))]
+    if route == 'F':                        # frame state F_n = theta_{n-1}(U2(n-2,1), b^-1)
+        return st + [(W['w'], v(n - 1)), (FWORD, v(n - 1))]
     if route in ('de', 'P'):
         st += [(W['w'], W['e']), (W['d'], W['e'])]
     else:                                   # balanced chain entering at frame m
@@ -250,7 +258,75 @@ def product_path(n, route):
     return st
 
 
+FWORD = 'XyXyxYY'
+
+
+def theta_raw(j, w):
+    m = {'x': 'x', 'X': 'X', 'y': P('x', j - 1) + 'y', 'Y': 'Y' + P('x', 1 - j)}
+    return red(''.join(m[ch] for ch in w))
+
+
+def chain_in_C(n, src, dst):
+    """cyclic products with rotations of b^{+-1}, inside C_n at lengths <= 2n+5, from src to dst^{+-1};
+    returns the list of factor pairs (A, Bs) with next = cyc(A + Bs)."""
+    key = lambda w: min(rots(w))
+    prev, todo = {key(src): None}, [key(src)]
+    goal = {key(dst), key(inv(dst))}
+    while todo:
+        u = todo.pop(0)
+        if u in goal:
+            out = []
+            while prev[u] is not None:
+                u, A, Bs = prev[u]
+                out.append((A, Bs))
+            return out[::-1]
+        for A in sorted(rots(u)):
+            for Bs in sorted(rots(B) | rots(BI)):
+                w = cyc(A + Bs)
+                if len(w) <= 2 * n + 5 and key(w) not in prev:
+                    prev[key(w)] = (u, A, Bs)
+                    todo.append(key(w))
+    raise RuntimeError('no chain')
+
+
+def set_literal(bld, i, word):
+    """conjugate/invert relator i until it is literally the reduced word `word`."""
+    word = red(word)
+    k = 0
+    while len(word) - 2 * k >= 2 and word[k] == word[len(word) - 1 - k].swapcase():
+        k += 1
+    bld.cyclic_reduce(i)
+    assert d_certify.orient(bld, i, word[k:len(word) - k])
+    bld.conj_word(i, word[:k])
+    assert bld.state[i] == word
+
+
+def certificate_F(n):
+    """AK(n) -> F_n: cyclic products to (w_n, v_{n-1}), then the theta_{n-1}-image of a chain in C_n."""
+    W = words(n)
+    st = [(W['z'][i], B) for i in range(n + 1, -1, -1)]
+    st += [(W['w'], triple_word(j)) for j in transfer_path(n, (n - 1, -1, -1))[1:]]
+    bld = d_certify.build(st, (W['p'], B), (W['w'], v(n - 1)))
+    for A, Bs in chain_in_C(n, W['w'], U2(n, n - 2, 1)):
+        set_literal(bld, 0, theta_raw(n - 1, A))
+        set_literal(bld, 1, theta_raw(n - 1, Bs))
+        bld.multiply(0)
+        bld.cyclic_reduce(0)
+    target = (FWORD, v(n - 1))
+    bld.cyclic_reduce(1)
+    assert d_certify.orient(bld, 0, target[0]) and d_certify.orient(bld, 1, target[1])
+    cert = {'format': 'ordinary-ac-elementary-v1', 'start': [W['p'], B], 'target': list(target), 'moves': bld.moves,
+            'description': f"AK({n}) -> F_{n} = (XyXyxYY, y x^{n - 1} y XYX) of research-th07.md: cyclic products to "
+                           f"(w_n, v_(n-1)), then the image under theta_(n-1): y -> x^(n-2) y of a chain of cyclic "
+                           f"products inside C_n from w_n to U2(n-2,1); compiled to strict elementary moves."}
+    r = elementary_verify.replay(cert)
+    assert r['endpoint'] == list(target)
+    return cert, r, None
+
+
 def certificate(n, route):
+    if route == 'F':
+        return certificate_F(n)
     W = words(n)
     target = {'v0': (W['w'], 'yyXYX'), 'de': (W['d'], W['e']), 'P': (W['d'], W['c'])}[route]
     st = product_path(n, route)
@@ -297,6 +373,10 @@ def selftest(full=False):
         assert all(same(v(j), theta(j, BI)) and same(theta(j, W['w']), W['w']) for j in range(-n, n + 1))
         assert all(same(W['a'][m], v(m)) and same_pm(W['b'][m], theta(m, U1(n, n - 1, 1))) for m in range(1, n + 1))
         assert same(W['e'], W['cc'][n]) and same(W['d'], W['b'][n]) and same(W['w'], U1(n, n - 1, 0))
+        assert all(same(W['cc'][m], theta(m, W['cc'][1])) for m in range(1, n + 1))
+        for m in range(2, n + 1):           # automorphic images Q_m of P_n (remark in section 5)
+            cm = theta(1 - (n - m), W['c'])
+            assert len(cm) == 2 * (n - m) + 5 + (2 if m == n else 0) and triangle(W['b'][m], W['a'][m], cm)
         if n <= (8 if full else 6):
             for t in [v(j) for j in range(-2, n + 1)] + [W['e'], W['d']]:
                 assert bs_conj(BI, t, n), (n, t)
@@ -319,25 +399,77 @@ def selftest(full=False):
     # (D) ACM paths
     for n in range(3, 9 if full else 7):
         W = words(n)
-        for route, m in [('v0', None), ('de', None), ('P', None)] + [('chain', m) for m in range(2, n)]:
+        assert same_pm(theta(n - 1, U2(n, n - 2, 1)), FWORD)
+        piv = {(nm, a, c) for nm, U in (('U1', U1), ('U2', U2)) for a in range(n) for c in range(n + 1)
+               if in_C(theta(0, U(n, a, c)), n) or in_C(theta(2, U(n, a, c)), n)}
+        assert piv == {('U1', n - 1, 0), ('U2', n - 1, 0)}      # only the BS words lie in C_n and tau^{+-1}(C_n)
+        assert all(len(theta(m, U2(n, n - 2, 1))) == 2 * n + 5 - 2 * m for m in range(1, n))
+        for route, m in [('v0', None), ('de', None), ('P', None), ('F', None)] + [('chain', m) for m in range(2, n)]:
             st = acm_path(n, route, m)
             assert all(acm_ok(st[i], st[i + 1], n) for i in range(len(st) - 1)), (n, route, m)
             peak = max(len(a) + len(b) for a, b in st)
-            want = {'v0': 2 * n + 9, 'de': 3 * n + 6, 'P': 3 * n + 6}.get(route) or max(2 * n + 9, 2 * n + 8 + m, 4 * n + 7 - 2 * m)
+            want = {'v0': 2 * n + 9, 'de': 3 * n + 6, 'P': 3 * n + 6, 'F': 3 * n + 7}.get(route) or max(2 * n + 9, 2 * n + 8 + m, 4 * n + 7 - 2 * m)
             assert peak == want, (n, route, m, peak)
         best = min(max(2 * n + 9, 2 * n + 8 + m, 4 * n + 7 - 2 * m) for m in range(2, n))
         assert best == 2 * n + 8 + (2 * n + 1) // 3
         print(f'D  n={n}: ACM paths verified; peaks 2n+9={2 * n + 9} (to (w_n,yyXYX)), 3n+6={3 * n + 6} (to (d_n,e_n) and P_n), '
               f'balanced chain to P_n: {best}')
-    for route in ('v0', 'de', 'P'):
+    for route in ('v0', 'de', 'P', 'F'):
         cert, r, cp = certificate(3, route)
         print(f"E  n=3 route {route}: certificate replays, {r['moves']} moves, elementary peak {r['peak_total_length']}, "
               f"cyclic-product peak {cp}, endpoint {r['endpoint']}")
     print('selftest passed')
 
 
+def whitehead_table(lo, hi):
+    """experiment: Aut(F2)-minimal total length (research-d's d_whitehead.aut_canon) of every
+    first-exit state (U, b), U in the list of Theorem A, and of AK(n), S_n, P_n, F_n."""
+    import d_whitehead
+    for n in range(lo, hi + 1):
+        W, res = words(n), {}
+        for nm, U in (('U1', U1), ('U2', U2)):
+            for a in range(n):
+                for c in range(n + 1):
+                    L, cp = d_whitehead.aut_canon((U(n, a, c), B))
+                    res.setdefault(L, []).append((f'{nm}({a},{c})', cp))
+        named = {k: d_whitehead.aut_canon(pair) for k, pair in
+                 (('AK', (W['p'], B)), ('S', (W['d'], W['e'])), ('P', (W['d'], W['c'])), ('F', (FWORD, v(n - 1))))}
+        print(f'n={n}: Aut-minimal lengths of the {2 * n * (n + 1)} first-exit states (U,b) up to inversion: '
+              f'{ {L: len(x) for L, x in sorted(res.items())} };  2n+9={2 * n + 9}, 2n+8={2 * n + 8}, n+11={n + 11}')
+        Lmin = min(res)
+        print(f'   shortest orbit: {[x[0] for x in res[Lmin]]} -> {res[Lmin][0][1]};  same orbit as F_n: '
+              f'{res[Lmin][0][1] == named["F"][1]}')
+        print('   ' + '; '.join(f'{k}_n: {val[0]} {val[1]}' for k, val in named.items()))
+
+
+def frame_scan(n, lmax, lo, hi):
+    """experiment: least length of a cyclically reduced word u (|u| <= lmax) in theta_m(C_n), i.e. conjugate
+    to w_n^{+-1} modulo the frame word v_m (exact test), and the total length with v_m."""
+    cand = []
+    for L in range(1, lmax + 1):
+        for u in J.cyclically_reduced_words(L):
+            s = ''.join('xXyY'[(abs(a) - 1) * 2 + (a < 0)] for a in u)
+            if s == min(rots(s) | rots(inv(s))):
+                cand.append(s)
+    for m in range(lo, hi + 1):
+        best, ex = None, []
+        for s in cand:
+            if best is not None and len(s) > best:
+                break
+            if in_C(theta(2 - m, s), n):
+                best = len(s)
+                ex.append(s)
+        tot = None if best is None else best + len(v(m))
+        print(f'n={n} frame m={m}: |v_m|={len(v(m))}, least length in theta_m(C_n) = {best} '
+              f'({len(ex)} words up to rotation/inversion, e.g. {ex[:2]}), total {tot}')
+
+
 def main():
     a = sys.argv[1:]
+    if a[:1] == ['--frames']:
+        return frame_scan(*map(int, a[1:5]))
+    if a[:1] == ['--whitehead']:
+        return whitehead_table(int(a[1]), int(a[2]))
     if a[:1] == ['--selftest']:
         selftest(full='--full' in a)
     elif a[:1] == ['--cert']:

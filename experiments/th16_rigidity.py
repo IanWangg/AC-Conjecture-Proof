@@ -252,3 +252,183 @@ def sieve(r, s, maxlen, degrees=(4, 5, 6, 7), ab=None):
             for L in cand: cand[L] = [w for w in cand[L] if cycle_type(ev(w, *h, e)) == ts]
     return cand
 MW2 = TorusQuotient({"a": 3, "s": 2}, {"x": [("a", 1)], "y": [("s", 1), ("a", 1)]}, (2, -1))            # F/<<YXXYx>>
+
+# ---------- named words ----------
+B_ = "xyxYXY"; P3_ = "xxxYYYY"; C_ = "xyxYYXy"; K3_ = "xxxYXyy"; Q1_ = "xxyXYY"; Q2_ = "xxxYYXy"
+W1_ = "XYxxY"; W2_ = "YXXYx"
+def ms(n): return "X" + "y" * n + "x" + "Y" * (n + 1)          # x^-1 y^n x y^-(n+1)
+def msp(n): return "X" + "y" * (n + 1) + "x" + "Y" * n          # x^-1 y^(n+1) x y^-n
+D34 = ("YXYxx YXXYx YXYxyx YYxyXX YXyXYx YYxxyX YXYXYx YXYxYx YYxyXyX YYYXXyx YYXyxyX YYxyXYX YYxyxyX YYYXyxx "
+       "YYxyXyx YYxYxyX YYxYXYx YYXYxYX YYYXyXyx YYYXyxyX YYxYXyyx YYYXYXyx YYYXYYxx YYYXXYYx YYYXyxYx YYxYYxyX "
+       "YYXyyxYX YYYXyxyx YYYxyXyx YYXYYxyX YYYXYxYX YYYYxYXX YYYYxxYX YYYxYXYx").split()
+
+def c16_possible(L):
+    """is there a cyclically reduced non-power word of length L in F2 with all pieces < L/6 ?  (brute force)"""
+    for w in cyc_words(L):
+        if len(orb(w)) == 2 * L and 6 * max_piece([w]) < L: return w
+    return None
+
+def selftest():
+    import random
+    rnd = random.Random(16)
+    # (1) pieces: hand-checked values
+    assert max_piece([C_]) == 2 and min_pieces_cover(C_) == 4
+    assert max_piece(["xyXY"]) == 1 and min_pieces_cover("xyXY") == 4 and not whitehead_triangle("xyXY")
+    assert max_piece([P3_]) == 3          # y^3 inside y^4
+    # (2) Proposition 1 by brute force for 3 <= L <= 10: no C'(1/6) relator
+    for L in range(3, 11): assert c16_possible(L) is None, L
+    # (3) torus quotients reproduce research-a / research-j counts for AK(3)
+    d = AKB.short_conjugates(P3_, 9); assert [len(d[L]) for L in (7, 8, 9)] == [28, 0, 432]
+    assert set(d[7]) == orb(P3_) | orb("yyyXXXX")
+    d = torus_xy(3, 4).short_conjugates(B_, 8); assert [len(d[L]) for L in (6, 7, 8)] == [12, 0, 32]
+    # (4) class functions are invariant under conjugation and insertion of relator conjugates
+    def rw(k): return red("".join(rnd.choice("xXyY") for _ in range(k)))
+    for T, r in ((AKB, B_), (MW, W1_), (MW2, W2_), (torus_xy(3, 4), P3_)):
+        assert T.cls(r) == ((), 0)
+        for _ in range(300):
+            w, g, h = rw(8), rw(5), rw(4)
+            w2 = red(g + w[:3] + h + rnd.choice([r, inv(r)]) + inv(h) + w[3:] + inv(g))
+            assert T.cls(cyc(w)) == T.cls(cyc(w2))
+    # (5) BS slides: invariance of the minimal set under conjugation / relator insertion (odd x-exponent words)
+    for P, Q in ((3, 4), (4, 3)):
+        bs = BS(P, Q); r = "X" + "y" * P + "x" + "Y" * Q
+        assert bs.britton(r) == ([], [0])
+        done = 0
+        while done < 40:
+            w = cyc(rw(6))
+            if sum((c == "x") - (c == "X") for c in w) not in (1, -1): continue
+            if len(bs.britton(w)[0]) < 3: continue
+            g, h = rw(3), rw(2)
+            w2 = cyc(red(g + w[:2] + h + rnd.choice([r, inv(r)]) + inv(h) + w[2:] + inv(g)))
+            if len(bs.britton(w2)[0]) != len(bs.britton(w)[0]): raise AssertionError((w, w2))
+            assert bs.min_conjugates(w) == bs.min_conjugates(w2), (w, w2)
+            done += 1
+    # (6) sieve soundness on a known case
+    r = sieve(P3_, B_, 7, degrees=(4, 5), ab=(4, 3)); assert orb(B_) <= set(r[6])
+    print("th16_rigidity self-test passed")
+
+# ---------- PSL(2,p) sieve (necessary conditions for conjugacy in F/<<r>>) ----------
+def sl2(p):
+    out = []
+    for a in range(p):
+        for b in range(p):
+            for c in range(p):
+                if a:
+                    d = (1 + b * c) * pow(a, p - 2, p) % p; out.append((a, b, c, d))
+                elif (b * c) % p == p - 1:
+                    out.extend((0, b, c, d) for d in range(p))
+    return out
+def mm(A, B, p):
+    return ((A[0]*B[0] + A[1]*B[2]) % p, (A[0]*B[1] + A[1]*B[3]) % p,
+            (A[2]*B[0] + A[3]*B[2]) % p, (A[2]*B[1] + A[3]*B[3]) % p)
+def minv(A, p): return (A[3], (-A[1]) % p, (-A[2]) % p, A[0])
+def mev(w, g, p):
+    M = (1, 0, 0, 1)
+    for ch in w: M = mm(M, g[ch], p)
+    return M
+def psl_homs(r, p):
+    """lifts F -> SL(2,p) of all homs F/<<r>> -> PSL(2,p), x up to GL(2,p)-conjugacy.  Returns (g, sign)."""
+    I, J = (1, 0, 0, 1), (p - 1, 0, 0, p - 1)
+    xs = [I, J] + [(0, p - 1, 1, t) for t in range(p)]
+    out = []; G = sl2(p)
+    for gx in xs:
+        gX = minv(gx, p)
+        for gy in G:
+            g = {"x": gx, "X": gX, "y": gy, "Y": minv(gy, p)}
+            v = mev(r, g, p)
+            if v == I: out.append((g, 1))
+            elif v == J: out.append((g, -1))
+    return out
+def psl_inv(w, g, sign, p):
+    M = mev(w, g, p); t = (M[0] + M[3]) % p
+    scalar = M[1] == 0 and M[2] == 0 and M[0] == M[3]
+    return (t if sign == 1 else t * t % p, scalar)
+def psl_sieve(r, s, maxlen, primes, ab, cand=None, stats=None):
+    """words w (cyclically reduced, |w| <= maxlen, ab(w) = +-ab(s)) NOT separated from s^{+-1} by any
+    hom F/<<r>> -> PSL(2,p), p in primes.  A word not returned is PROVED non-conjugate to s^{+-1} in F/<<r>>."""
+    def abv(w): return sum((1 if c.islower() else -1) * ab["xy".index(c.lower())] for c in w)
+    if cand is None:
+        cand = [w for L in range(1, maxlen + 1) for w in cyc_words(L) if abs(abv(w)) == abs(abv(s))]
+    for p in primes:
+        hs = psl_homs(r, p)
+        for g, sign in hs:
+            ts = psl_inv(s, g, sign, p)
+            cand = [w for w in cand if psl_inv(w, g, sign, p) == ts]
+        if stats is not None: stats.append((p, len(hs), len(cand)))
+    return cand
+
+def piece_table():
+    rows = [("b", B_), ("p_3", P3_), ("c", C_), ("k_3", K3_), ("q_1", Q1_), ("q_2", Q2_), ("m_3", ms(3)),
+            ("w_1", W1_), ("w_2", W2_)]
+    print("relator  word        len  maxpiece  ratio   min#pieces  star-graph triangle")
+    for nm, r in rows:
+        print("%-8s %-11s %3d  %5d    %.3f  %6s      %s" % (nm, r, len(r), max_piece([r]), max_piece([r]) / len(r),
+              min_pieces_cover(r), whitehead_triangle(r)))
+    print("pairs (joint symmetrized set): max piece")
+    for nm, (r, s) in (("AK(3)", (P3_, B_)), ("P_3", (C_, K3_)), ("Q", (Q1_, Q2_)), ("MS(3,w1)", (ms(3), W1_)),
+                       ("MS(3,w2)", (ms(3), W2_))):
+        print("  %-9s %d  (shorter relator length %d)" % (nm, max_piece([r, s]), min(len(r), len(s))))
+
+def uniform_checks(nmax=8):
+    """Theorems A, B, D of research-th16 for n = 3..nmax, by exact computation"""
+    def yy(k): return "y" * k if k > 0 else "Y" * (-k)
+    for n in range(3, nmax + 1):
+        for T in (MW, MW2):          # Theorem B, the (2, 2n+1) case: all two-x-letter words of length 2n+3
+            good = set()
+            for e1 in "xX":
+                for e2 in "xX":
+                    for k1 in range(-(2 * n + 1), 2 * n + 2):
+                        for sg in (1, -1):
+                            w = e1 + yy(k1) + e2 + yy(sg * (2 * n + 1 - abs(k1)))
+                            if cyc(w) == w and len(w) == 2 * n + 3 and T.conj_pm(w, ms(n)): good |= set(rots(w))
+            assert good == orb(ms(n)) | orb(msp(n)), n
+        for w in (W1_, W2_):         # Theorem A
+            for P, Q in ((n, n + 1), (n + 1, n)):
+                mn, S = BS(P, Q).min_conjugates(w); assert mn == 5 and S == set(rots(w)), (n, w)
+        assert B_ in BS(n, n + 1).min_conjugates(W1_, slack=1)[1]                 # exit (m_n, b)
+        assert AKB.cls(ms(n)) == AKB.cls("x" * n + "Y" * (n + 1))                 # Proposition D
+    return True
+
+def report_ms():
+    m = ms(3); bs = BS(3, 4); classes = {}
+    assert orb("YYYYXyyyx") == orb(m)
+    for v in D34:
+        mn, S = bs.min_conjugates(v); key = min(S | {inv(u) for u in S}); classes.setdefault(key, []).append(v)
+        assert mn == 5
+    print("34 benchmark partners (research-d 4.3): minimal BS(3,4)-conjugate length 5 for all;",
+          len(classes), "classes up to inversion")
+    for key, vs in classes.items():
+        tag = "w1" if key in orb(W1_) else "w2" if key in orb(W2_) else "?"
+        print("  class of", tag, "(canonical", key + "):", len(vs), "partners; of length 5:", [v for v in vs if len(v) == 5])
+    for T, w, nm in ((MW, W1_, "w1"), (MW2, W2_, "w2")):
+        for n in (3, 4):
+            d = T.short_conjugates(ms(n), 2 * n + 4)
+            print("  m_%d in G_%s: conjugates by length" % (n, nm), {L: len(v) for L, v in d.items() if v},
+                  "| equality set == Orb(m) u Orb(m'):", set(d[2 * n + 3]) == orb(ms(n)) | orb(msp(n)))
+        mn, S = bs.min_conjugates(w, slack=1)
+        print("  %s in BS(3,4): min %d, #words of length 5: %d, of length 6: %d" % (nm, mn,
+              len({u for u in S | {inv(u) for u in S} if len(u) == 5}), len({u for u in S | {inv(u) for u in S} if len(u) == 6})))
+
+def report_sieve(primes=(5, 7, 11, 13), degrees=(5, 6, 7, 8)):
+    """cheap necessary-condition sieves for P_3 and Q (research-th16 section 5); inconclusive by design"""
+    jobs = (("P_3, c frozen, k_3 moved", C_, K3_, 6, (0, 1)), ("P_3, k_3 frozen, c moved", K3_, C_, 6, (1, -2)),
+            ("Q, q_1 frozen, q_2 moved", Q1_, Q2_, 6, (1, 1)), ("Q, q_2 frozen, q_1 moved", Q2_, Q1_, 5, (1, 2)))
+    for name, r, s, L, ab in jobs:
+        cand = psl_sieve(r, s, L, primes, ab)
+        for n in degrees:
+            e = tuple(range(n))
+            for h in homs(r, n):
+                if perm_mul(h[0], h[1]) == perm_mul(h[1], h[0]): continue
+                ts = cycle_type(ev(s, *h, e))
+                cand = [w for w in cand if cycle_type(ev(w, *h, e)) == ts]
+        by = {}
+        for w in cand: by[len(w)] = by.get(len(w), 0) + 1
+        print("%s: unseparated shorter words: %d, by length %s; shortest: %s" % (name, len(cand), by, sorted(cand, key=len)[:6]), flush=True)
+
+if __name__ == "__main__":
+    a = sys.argv[1:]
+    if "--selftest" in a or not a:
+        selftest(); assert uniform_checks(8); print("uniform checks n = 3..8 passed (Theorems A, B, D)")
+    if "--pieces" in a or "--all" in a: piece_table()
+    if "--ms" in a or "--all" in a: report_ms()
+    if "--sieve" in a: report_sieve()

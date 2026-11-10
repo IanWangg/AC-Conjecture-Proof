@@ -37,11 +37,22 @@ def members_from_certificates():
     return sorted(mem, key=lambda p: (len(p[0]) + len(p[1]), p))
 
 
-def scan(pair, L, verbose=True):
-    """Returns (number of subgroups tested, list of E1 hits, list of E2 hits)."""
-    e1, e2, n = [], [], 0
+def conjugators(a, b, L, rotations=True):
+    """Ball of radius L, plus the rotation family: g = (prefix of b)(prefix of a)^-1, so that
+    <g a g^-1, b> is conjugate to <rot_i(a), rot_j(b)> for all rotations."""
+    gs = set(words_upto(L))
+    for i in range(len(a) if rotations else 0):
+        for j in range(len(b)):
+            gs.add(red(b[:j] + inv(a[:i])))
+    return sorted(gs, key=lambda w: (len(w), w))
+
+
+def scan(pair, L, limit=1500, rotations=True):
+    """Returns (subgroups tested, E1 hits, E2 hits, number of subgroups whose quotient closure was pruned
+    to rank <= 3 because it exceeded `limit` graphs)."""
+    e1, e2, n, pruned = [], [], 0, 0
     for a, b in (pair, pair[::-1]):
-        for g in words_upto(L):
+        for g in conjugators(a, b, L, rotations):
             ga = red(g + a + inv(g))
             G = stallings([ga, b])
             n += 1
@@ -49,24 +60,29 @@ def scan(pair, L, verbose=True):
                 continue
             if corank1(G) is not None:
                 e1.append((ga, b))
-            for H in quotients(G):
+            try:
+                Q = quotients(G, limit=limit)
+            except RuntimeError:
+                Q = quotients(G, maxrank=3)
+                pruned += 1
+            for H in Q:
                 if rank(H) == 2 and not is_rose(H) and H != G:
                     basis, rw = basis_and_rewriter(H)
                     W = (rw(ga), rw(b))
                     assert subst(W[0], *basis) == ga and subst(W[1], *basis) == red(b)
                     e2.append((ga, b, tuple(basis), W, corank1(H) is not None))
-    return n, e1, e2
+    return n, e1, e2, pruned
 
 
 def report(pair, L):
-    n, e1, e2 = scan(pair, L)
+    n, e1, e2, pruned = scan(pair, L)
     best = None
     for ga, b, P, W, c1 in e2:
         lw = len(cyc(W[0])) + len(cyc(W[1]))
         lp = len(cyc(P[0])) + len(cyc(P[1]))
         if best is None or (lw, lp) < best[0]:
             best = ((lw, lp), ga, b, P, W, c1)
-    print(json.dumps({'pair': pair, 'len': len(pair[0]) + len(pair[1]), 'L': L, 'subgroups': n,
+    print(json.dumps({'pair': pair, 'len': len(pair[0]) + len(pair[1]), 'L': L, 'subgroups': n, 'pruned': pruned,
                       'E1_hits': len(e1), 'E2_hits': len(e2), 'E1_first': e1[:1],
                       'E2_best': best}))
     return e1, e2
@@ -74,18 +90,18 @@ def report(pair, L):
 
 def selftest():
     # E1 positive control: (x^-2 y^-1 x, y) is corank 1 (t = x) -- and has a primitive relator anyway
-    _, e1, _ = scan(('XXYx', 'y'), 0)
+    _, e1, _, _ = scan(('XXYx', 'y'), 0, rotations=False)
     assert e1
     # E2 positive control: U o (p,q) with U = AK(2)-like pair and (p,q) = (x, y x^2 y^-1 ... ) must be detected
     U = ('xxYYY', 'xyxYXY')
     p, q = 'xx', 'yXXX'           # <xx, yXXX>: unimodular, proper subgroup of rank 2
     V = (subst(U[0], p, q), subst(U[1], p, q))
-    _, _, e2 = scan(V, 0)
+    _, _, e2, _ = scan(V, 0, rotations=False)
     assert any(set(P) == {'xx', 'yx'} and c1 and (subst(W[0], *P), subst(W[1], *P)) == (ga, b)
                for (ga, b, P, W, c1) in e2), e2
     # negative control: the standard basis and AK(3) with L = 0
-    n, e1, e2 = scan(AK3, 0)
-    assert not e1 and not e2
+    n, e1, e2, pr = scan(AK3, 0, rotations=False)
+    assert not e1 and not e2 and pr == 0 and n == 2
     print('th14_exits self-test passed')
 
 
@@ -98,7 +114,8 @@ if __name__ == '__main__':
             i = sys.argv.index('--pair')
             mems = [(sys.argv[i + 1], sys.argv[i + 2])]
         else:
-            mems = members_from_certificates()
+            maxlen = int(sys.argv[sys.argv.index('--maxlen') + 1]) if '--maxlen' in sys.argv else 10**9
+            mems = [m for m in members_from_certificates() if len(m[0]) + len(m[1]) <= maxlen]
         tot1 = tot2 = 0
         for m in mems:
             e1, e2 = report(m, L)

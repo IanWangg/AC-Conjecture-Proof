@@ -391,3 +391,113 @@ different from it (tested for |m| ≤ 80).
 5. **Classification of 𝒦.** Not attempted beyond k ≤ 9. Which elements of C₂*C₃ are killers is the question
    "which one-relator quotients of the modular group are trivial"; all 15 perfect classes at k = 9 are killers,
    so 𝒦 is large and no pattern excluding AK-type necklaces is visible.
+
+## 9. Experiments and reproduction (executed in this session; one core, < 300 MB, each run < 2 min)
+
+`experiments/th09_killers.py` (standard library; imports `g_torus`, `g_cert`, `f_descent`, `o_gc`,
+`elementary_verify` read-only).
+
+```
+python3 experiments/th09_killers.py --selftest
+# th09 self-test passed: 40 random BS(1,2) certificates replayed; braid-side BS exits for n in [1, 2] only (n < 20);
+# torus-side hits (n: j) {2: [-1, 0], 3: [], 4: [], 5: [], 6: [], 7: [], 8: [], 9: []};
+# Gieseking side: candidate traces [({5},{3}), ({3},{5}), ({5},{3}), ({5},{0}), ({2},{2}), ({0},{5}), ({3},{5})],
+# k_n traces {1: [3], 2: [3], 3: [4], 4: [1], 5: [5], 6: [5], 7: [5], 8: [3]}, excluded n = [3, 4];
+# killers with k <= 7: 1, 112, 11122, 11212, 1111112, 1111222, 1112122, 1121122, 1121212 (with tags)
+```
+The self-test checks: (1) the four rewriting rules of the BS(1,2) compiler are free-group identities
+α⁻¹β = h R^{±1} h⁻¹; (2) Theorem 1 on 40 random words s of x-degree ±1 (each certificate replayed by
+`elementary_verify.replay`); (3) Prop. 4.1/4.2 for |j| ≤ 40: the explicit words equal P^{∓1}Q_jP^{±1}Q_j⁻²,
+they realize both classes θ(XyxYY) with [θ(y)] = (j+1,−j) and det θ = ±1 (`g_torus.aut_from_matrix`), their
+necklaces are α_j, β_j as stated, and N(Q_j) is as stated; the AK(n) necklace is BS(1,2)-type only for n = 1, 2
+(n < 20); (4) Prop. 5.1 for n = 2,…,9 and |j| ≤ 12 (words, syllable lengths, and conjugacy with b^{±1} only for
+n = 2); (5) Theorem 6 (relations of H under ρ, orders 7, periodicity for |j| ≤ 21, trace tables); (6) the census
+for k ≤ 7.
+
+```
+python3 experiments/th09_killers.py --census 9        # the table of §7.2 with words s_N and exit tags (about 20 s)
+python3 experiments/th09_killers.py --exchange 12 9 160   # the edges of §7.4 (about 2 min)
+python3 experiments/th09_killers.py --write certificates  # regenerates the certificates below
+for f in certificates/th09_*.json; do python3 experiments/elementary_verify.py $f; done
+```
+Verifier output (this session):
+```
+{"endpoint": ["x", "y"], "moves": 48,   "path": "certificates/th09_ms1_1.json", "peak_total_length": 19}
+{"endpoint": ["x", "y"], "moves": 24,   "path": "certificates/th09_ms1_2.json", "peak_total_length": 11}
+{"endpoint": ["x", "y"], "moves": 215,  "path": "certificates/th09_ms1_3.json", "peak_total_length": 39}
+{"endpoint": ["x", "y"], "moves": 170,  "path": "certificates/th09_ms1_4.json", "peak_total_length": 39}
+{"endpoint": ["x", "y"], "moves": 208,  "path": "certificates/th09_ms1_5.json", "peak_total_length": 35}
+{"endpoint": ["x", "y"], "moves": 52,   "path": "certificates/th09_ms1_6.json", "peak_total_length": 23}
+{"endpoint": ["x", "y"], "moves": 6998, "path": "certificates/th09_x7_trivialization.json", "peak_total_length": 364}
+{"endpoint": ["x", "y"], "moves": 7147, "path": "certificates/th09_k9_112121122_trivialization.json", "peak_total_length": 122}
+```
+(BS-exit certificates: see the addendum at the end of this section.)
+
+- `th09_ms1_*.json`: Theorem 1 for (XyxYY, s), s = XyxyX, XYxyyX, XyXYxxYxYXX, XXyxyyxYX, XyyXYYxxyXY, XYYxyXy.
+- `th09_x7_trivialization.json`: (x⁻³y⁻¹x⁻²y⁻¹x²y, x⁻¹y⁻²x⁻¹y) → (x,y), exchange exit (§7.4).
+- `th09_k9_112121122_trivialization.json`: (XyXyXYXyXYxyxyxYxY, xxYYY) → (x,y), exchange exit through a
+  trefoil-type word that is a meridian (conjugate to a primitive word of length 2 in adapted coordinates).
+
+Scratch scripts (not stored; they only call the functions above): identification of C3, C6, AK(n) necklaces;
+shortest representatives; the depth-2 scan of §7.4 (`d2.py`: C3 and AK(3) with |M| ≤ 6, exponents ≤ 14, length ≤ 70;
+the twelve undecided k = 9 classes with |M| ≤ 5, exponents ≤ 9, length ≤ 60: no P or BS exit at any torus node).
+
+## 10. Honest limits
+
+- **AK(3) is not trivialized and not obstructed.** Theorems 4–6 are *exclusions of one mechanism at distance one*;
+  they say nothing about longer paths and are not evidence of non-triviality (AK(2) is a reminder: its primitive
+  exit is closed on the trefoil side while its BS exit is open).
+- Theorem 1 for the standard marking (MS(1,w)) is reported to be known (Myasnikov–Myasnikov–Shpilrain 2002);
+  I could not read the paper here. I do not know whether the statements "any marking", Theorem 3, or the census
+  are in the literature; the triviality question for one-relator quotients of the modular group has been
+  studied (Conder–Havas–Newman, externally reported), so the list 𝒦 for small k is probably tabulated there.
+  **No novelty is claimed.**
+- "G_v ≅ BS(1,2), any marking": I do not know whether a two-generator one-relator presentation of BS(1,2) other
+  than the Aut(F)-images of XyxYY exists; Theorem 1 covers it if it does, but Theorems 3–6 concern
+  BS(1,2)-type words (Aut-images) only.
+- Theorem 6 is proved for n = 3, 4 only; for n ≥ 5 the single homomorphism does not decide (more quotients, as in
+  O's sieve, would be needed). The Gieseking-side statement uses O's normal form and O's witness homomorphism,
+  re-checked here (relations, orders).
+- The exchange graph and the depth-2 scans are **bounded** enumerations (matrix entries, exponents and word
+  lengths as stated). "No trefoil-type word in AK(3)'s class" is not proved here (TH04's topic).
+- "Undecided" in §7.3 means: none of the exits P, BS, X applies within the stated bounds, and I know no
+  trivialization. The ten unnamed classes at k = 9 were not compared with published residual lists.
+- The census uses Todd–Coxeter for triviality (exact when it terminates with index 1); the two non-killers are
+  justified separately (A₅; the (2,3,7) triangle group).
+- The certificates are long (thousands of moves) because the compilers go through normal forms; no minimality.
+
+## 11. Advice to the coordinator (ranked)
+
+1. **Add the BS(1,2)-type test to every search engine** (D's/M's cyclic-product engine, F's descent, G's torus
+   graph). By Corollary 1.2 a state with a BS(1,2)-type relator is an immediate trivialization, exactly like a
+   primitive relator, and the test costs one Whitehead reduction (minimal form of length 5). The cap-29 forward
+   set of AK(3) (2.9·10⁸ states) was only tested for primitive relators and contact with T(22); a BS(1,2)-type
+   relator with a long partner would not have been noticed. Same for C3, C4, C6, P2.
+2. **Treat AK(3) and C3 together.** They are the only two undecided killers of the trefoil group at the first
+   undecided syllable length; C3's class has 14+ torus nodes (types (2,7), (3,4), …) while AK(3)'s has 3. A proof
+   or trivialization technique should be tested on the three decided neighbours 1112122, 1121122, 1121212 first:
+   any proposed obstruction must vanish on them, and they have certificates.
+3. **Extend the exit list.** 𝒰 (universally trivializing relators) now contains primitives and BS(1,2)-type
+   words. Each new member closes the whole one-parameter family of its Aut-images in every G_r. Candidates:
+   relators whose group has finitely many killer classes each containing a member of 𝒰; a concrete test case
+   is whether the trefoil relator's ten undecided k = 9 classes reduce to shorter ones by exchange through
+   non-trefoil torus types (G's torus graph with the BS exit added).
+4. **Do not expect a strict-descent or length argument**: three of the five k = 7 classes are AC-trivial but
+   admit no strictly decreasing generalized move (§8.2).
+5. For the Gieseking coordinates, combine O's sieve with the families v_j^± of §6 to decide n = 5,…,8.
+
+## 12. Files written
+
+- `research/research-th09.md` (this note).
+- `experiments/th09_killers.py` (self-test: `--selftest`).
+- `certificates/th09_ms1_{1..6}.json`, `certificates/th09_x7_trivialization.json`,
+  `certificates/th09_k9_112121122_trivialization.json`, `certificates/th09_bs7_bs_exit.json` (see §9 addendum).
+
+## References
+
+- Repository notes A–O (this repository), in particular D (Lemmas D1–D3), F (§3), G (§2–3), I (§2–3), K (§4), O (§2–6).
+- A. D. Myasnikov, A. G. Myasnikov, V. Shpilrain, *On the Andrews–Curtis equivalence*, Contemp. Math. 296 (2002) — externally reported; not read here.
+- C. F. Miller III, P. E. Schupp, *Some presentations of the trivial group*, Contemp. Math. 250 (1999) — externally reported.
+- D. Silver, W. Whitten, S. Williams, *Knot groups with many killers*, Bull. Aust. Math. Soc. 81 (2010) — externally reported (via K §4).
+- M. Conder, G. Havas, M. Newman, *On one-relator quotients of the modular group*, in Groups St Andrews 2009 — externally reported; not read here.
+- W. Magnus, A. Karrass, D. Solitar, *Combinatorial Group Theory* (conjugacy in free products; Nielsen's theorems; Whitehead's theorem).

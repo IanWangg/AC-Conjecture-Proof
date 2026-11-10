@@ -102,10 +102,50 @@ def closure(gens, limit=2000):
 D6 = closure([((1, -3), (0, -1)), ((-1, 0), (-1, 1))])     # <beta_A, beta_w> for C4
 
 
+def _signed_perms():
+    out = []
+    for swap in (False, True):
+        for sx in (1, -1):
+            for sy in (1, -1):
+                a, b = ("y", "x") if swap else ("x", "y")
+                ia = a if sx == 1 else a.upper(); ib = b if sy == 1 else b.upper()
+                m = {"x": ia, "X": ia.swapcase(), "y": ib, "Y": ib.swapcase()}
+                cx = (0, sx) if swap else (sx, 0); cy = (sy, 0) if swap else (0, sy)
+                out.append((m, ((cx[0], cy[0]), (cx[1], cy[1]))))
+    return out
+
+
+def stab_order(w, limit=20000):
+    """order of the stabilizer in GL2(Z) of the cyclic word w up to inversion, by BFS through the
+    level set of its Whitehead-minimal form (peak reduction); None if more than `limit` states."""
+    inv = lambda u: "".join(INV[c] for c in reversed(u))
+    canon = lambda u: min(t[k:] + t[:k] for t in (u, inv(u)) for k in range(len(u)))
+    w0 = canon(reduce_word(w)[0]); L = len(w0); I = ((1, 0), (0, 1))   # stabilizers of w and its minimal form are conjugate
+    moves = MAPS + _signed_perms()
+    seen = {(w0, I)}; todo = [(w0, I)]
+    while todo:
+        c, M = todo.pop()
+        for m, mat in moves:
+            q = cycred("".join(m.get(ch, ch) for ch in c))
+            assert len(q) >= L, "word was not minimal"
+            if len(q) == L:
+                st = (canon(q), mmul(mat, M))
+                if st not in seen:
+                    seen.add(st); todo.append(st)
+                    if len(seen) > limit:
+                        return None
+    return len({M for c, M in seen if c == w0})
+
+
 def self_test():
     import random
     rnd = random.Random(5)
     assert len(D6) == 12
+    for p, q, order in ((3, 4, 2), (3, 5, 2), (4, 5, 2), (3, 7, 2), (5, 7, 2), (5, 8, 2),
+                        (2, 3, 4), (2, 5, 4), (2, 7, 4), (2, 9, 4)):
+        assert stab_order("x" * p + "y" * q) == order, (p, q, stab_order("x" * p + "y" * q))
+    assert stab_order("xyxYXY") == 4 and stab_order("xxxxyXy") == 4 and stab_order("xYYxyyy") == 4
+    assert stab_order("x") is None                      # primitive: infinite stabilizer
     assert hidden_reflection("xxxxyXy") == (((1, -3), (0, -1)), 5)
     assert hidden_reflection("xyyyxYY") == (((-1, 0), (-1, 1)), 5)
     assert hidden_reflection("xxyXy") == (((1, -1), (0, -1)), 3)
@@ -126,21 +166,23 @@ def self_test():
 
 
 def scan(path, d6):
-    found = {}; states = 0; with_t2 = 0
+    found = {}; states = 0; with_t2 = 0; cache = {}
     for line in open(path):
         p = line.split()
         if len(p) < 2:
             continue
         states += 1; hit = False
         for w in p[:2]:
-            h = hidden_reflection(w)
+            if w not in cache:
+                cache[w] = hidden_reflection(w)
+            h = cache[w]
             if h:
                 hit = True
                 rec = found.setdefault(h[0], [h[1], 0, p[0] + " " + p[1]])
                 rec[1] += 1
         with_t2 += hit
-    print("states %d, states with a T(2,n)-type relator %d, distinct reflections %d"
-          % (states, with_t2, len(found)))
+    print("states %d (distinct relator words %d), states with a T(2,n)-type relator %d, distinct reflections %d"
+          % (states, len(cache), with_t2, len(found)))
     for R, (n, cnt, ex) in sorted(found.items(), key=lambda t: -t[1][1]):
         tag = ("in D6" if R in D6 else "NOT in D6") if d6 else ""
         print(R, "n=%d" % n, "count=%d" % cnt, tag, "e.g.", ex)

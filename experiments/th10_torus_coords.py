@@ -208,17 +208,18 @@ def selftest():
 
 def scan():
     root = os.path.dirname(HERE)
-    res = {}
+    res, seen_by_key, ncert = {}, {}, [0]
     for f in sorted(glob.glob(os.path.join(root, "certificates", "*.json"))):
         cert = json.load(open(f))
         if cert.get("format") != "ordinary-ac-elementary-v1":
             continue
         key = tuple(ev.reduce(w) for w in cert["start"])
         types = res.setdefault(key, {})
-        seen = set()
+        seen = seen_by_key.setdefault(key, set())      # distinct cyclic words per start pair
+        ncert[0] += 1
         for st in states(cert):
             for w in st:
-                c = cyc(w)
+                c = canon(w)
                 if c in seen or len(c) > 60: continue
                 seen.add(c)
                 t = torus_type(c)
@@ -227,6 +228,8 @@ def scan():
                 b = bs_type(c)
                 if b:
                     types["BS%d" % b] = types.get("BS%d" % b, 0) + 1
+    print(f"{ncert[0]} certificates, {len(res)} start pairs; counts = distinct cyclic words "
+          f"(up to rotation and inversion, length <= 60) per start pair")
     for key, types in sorted(res.items(), key=lambda kv: kv[0]):
         print(",".join(key), dict(sorted(types.items(), key=str)))
 

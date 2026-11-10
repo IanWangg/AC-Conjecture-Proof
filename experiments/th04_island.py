@@ -7,6 +7,8 @@ conjugacy invariant (g_torus.torus_class) and certificate compiler (g_cert).
   python3 experiments/th04_island.py --selftest
   python3 experiments/th04_island.py --enumerate N K P L   (bounded listing, T5)
   python3 experiments/th04_island.py --write certificates  (certificate for T4, n = 3)
+  python3 experiments/th04_island.py --stabilizer K        (evidence for Missing Lemma M2)
+  python3 experiments/th04_island.py --check-t7 N K P      (consistency check of Prop. 6.2)
 """
 import itertools, json, os, random, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -155,9 +157,78 @@ def write_cert(outdir, n=3):
     with open(os.path.join(outdir, "th04_ak%d_to_kappa_node.json" % n), "w") as f:
         json.dump(j, f)
 
+def gamma_pm(p, q, big):
+    """All elements of Gamma^pm = <A, B, Dx, -I> with entries <= big (closure)."""
+    gens = [Apow(p, 1), Apow(p, -1), Bpow(q, 1), Bpow(q, -1), DX, ((-1, 0), (0, -1))]
+    seen = {I2}
+    fr = [I2]
+    while fr:
+        nx = []
+        for M in fr:
+            for g in gens:
+                Nn = mul(g, M)
+                if Nn not in seen and max(abs(Nn[0][0]), abs(Nn[0][1]), abs(Nn[1][0]), abs(Nn[1][1])) <= big:
+                    seen.add(Nn)
+                    nx.append(Nn)
+        fr = nx
+    return seen
+
+def preserves_kernel(M, p, q):
+    """Is (pi u, pi v), (u, v) = theta_M(x, y), conjugate to (s^+-1, t^+-1) in C_|p| * C_|q|?"""
+    u, v = G.aut_cached(M)
+    cu, cv = G.torus_class(u, p, q)[1], G.torus_class(v, p, q)[1]
+    if len(cu) != 1 or len(cv) != 1 or cu[0][0] != "x" or cv[0][0] != "y":
+        return False
+    if cu[0][1] not in (1, abs(p) - 1) or cv[0][1] not in (1, abs(q) - 1):
+        return False
+    return len(G.torus_class(u + v, p, q)[1]) == 2      # fixed vertices adjacent
+
+def stabilizer_experiment(K, pairs=((3, -4), (2, -3), (2, 5), (3, 5), (-2, 7))):
+    """Evidence for Missing Lemma M2: for |entries| <= K, theta_M preserves
+    <<x^p, y^q>> iff M is in Gamma^pm."""
+    ok = True
+    mats = G.gl2_matrices(K)
+    for (p, q) in pairs:
+        gam = gamma_pm(p, q, 60 * K)
+        S1 = set(M for M in mats if preserves_kernel(M, p, q))
+        S2 = set(M for M in mats if M in gam)
+        print((p, q), "K", K, "matrices", len(mats), "kernel-preserving", len(S1), "in Gamma^pm", len(S2), "equal", S1 == S2)
+        ok = ok and S1 == S2
+    return ok
+
+def check_t7(n, K, P):
+    """Consistency check of Proposition 6.2: every theta_M(x^a y^b), |M| <= K,
+    2 <= |a|,|b| <= P, whose image in C_n * C_(n+1) is the necklace of b^+-1
+    has two hyperbolic roots.  Returns (#hits, #hits with an elliptic root)."""
+    p, q = n, -(n + 1)
+    b = "xyxYXY"
+    target = (G.torus_class(b, p, q)[1], G.torus_class(G.inv(b), p, q)[1])
+    hits = bad = 0
+    for M in G.gl2_matrices(K):
+        u, v = G.aut_cached(M)
+        for a in range(-P, P + 1):
+            for c in range(2, P + 1):          # (a, c) and (-a, -c) give inverse words
+                if abs(a) < 2:
+                    continue
+                w = G.cyc(G.power(u, a) + G.power(v, c))
+                if G.torus_class(w, p, q)[1] in target:
+                    hits += 1
+                    if len(G.torus_class(u, p, q)[1]) < 2 or len(G.torus_class(v, p, q)[1]) < 2:
+                        bad += 1
+    return hits, bad
+
 if __name__ == "__main__":
     if sys.argv[1:] == ["--selftest"]:
         selftest()
+        assert stabilizer_experiment(5, pairs=((3, -4), (2, -3)))
+        h, bad = check_t7(3, 4, 5)
+        assert h > 0 and bad == 0, (h, bad)
+        print("th04 extra checks passed (M2 evidence K=5; T7 consistency n=3: %d hits, 0 with an elliptic root)" % h)
+    elif sys.argv[1:2] == ["--stabilizer"]:
+        print("all equal:", stabilizer_experiment(int(sys.argv[2])))
+    elif sys.argv[1:2] == ["--check-t7"]:
+        n, K, P = [int(a) for a in sys.argv[2:5]]
+        print("n=%d K=%d P=%d: hits, hits with an elliptic root =" % (n, K, P), check_t7(n, K, P))
     elif sys.argv[1:2] == ["--enumerate"]:
         enumerate_island(*[int(a) for a in sys.argv[2:6]])
     elif sys.argv[1:2] == ["--write"]:

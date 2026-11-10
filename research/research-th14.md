@@ -64,8 +64,73 @@ z x_i⁻¹ ↦ z⁻¹·z x_i⁻¹ = x_i⁻¹ by Fact 0; invert. Result (σ_i(U),
 
 **Corollary A1 (chirality is invisible after one stabilization; stable).** For every φ ∈ Aut(F_n),
 (φ(U), z) ~ (U, z) in F_{n+1}; the rank never exceeds n+1 along the sequence. For n = 2 the Nielsen generators
-cost: x↔y: three transpositions (x z)(y z)(x z); x ↦ x⁻¹: (x z) ε_z (x z); x ↦ xy: (x z) ρ_y (x z) followed by
-deleting... [explicit sequence and counts in §2.1].
+are, as automorphisms of F₃ fixing z: x↔y = σ_xσ_yσ_x; x ↦ x⁻¹ = σ_x ε_z σ_x; x ↦ xy = σ_x ρ_y σ_x
+(check: x ↦ z ↦ zy ↦ xy, z ↦ x ↦ x ↦ z). Counts in §2.1.
 Consequently N's question "is C4 ~AC φ(C4)?" is a purely *unstable* question: C4 ~₁ φ(C4) always. A proof of
 C4 ≁AC φ(C4) would disprove the ordinary conjecture and simultaneously exhibit two ordinary AC classes that
 merge after one stabilization; it would say nothing about the stable conjecture.
+
+### 2.1 Explicit sequences and move counts (proved here)
+
+If θ = θ₁θ₂⋯θ_k with every θ_j one of σ_i, ε_z, ρ_i, the proof gives θ(U⁺) → U⁺ as the concatenation of the
+image under θ₁⋯θ_{j−1} of the standard sequence for θ_j, j = k,…,1. Images of macro moves are macro moves
+(conjugators become their images), so macro counts add. With A_x = Area_U(x), A_y = Area_U(y), |U|_x, |U|_y the
+letter counts, for a rank-2 presentation U of the trivial group:
+
+| φ ∈ Aut(F₂) | as product in Aut(F₃) | macro moves for (U,z) ↔ (φU,z) | inversions |
+|---|---|---|---|
+| x ↔ y | σ_x σ_y σ_x | 4A_x + 2A_y + 2\|U\|_x + \|U\|_y | 3 |
+| x ↦ x⁻¹ | σ_x ε_z σ_x | 4A_x + 2\|U\|_x | 3 |
+| x ↦ xy | σ_x ρ_y σ_x | 4A_x + A_y + 2\|U\|_x | 2 |
+
+So realizing a Nielsen generator stably costs O(Area_U(x) + Area_U(y) + |U|) macro moves: the only non-explicit
+input is a pair of van Kampen diagrams for x and y over U, i.e. a proof that the group is trivial. No bound on
+A_x, A_y in terms of |U| is known (or claimed). A machine-checked instance for C4 is in §6.
+
+**Remark (what is and is not new).** That automorphism moves become redundant after stabilization is classical
+(Q**-equivalence = 3-deformation; N's Lemma 1.2 sketches it). The points made explicit here are: one
+stabilization always suffices and is never exceeded; the *whole* of Aut(F₃), not only Aut(F₂), fixes the
+class; and the cost is governed by the areas of the generators.
+
+## 3. Theorem B: the stable substitution theorem (stable; proved here)
+
+For U = (r₁,r₂) and a pair P = (p,q) of words write U∘P = (r₁(p,q), r₂(p,q)) (substitute x ↦ p, y ↦ q).
+
+**Theorem B.** Let U be a balanced presentation of the trivial group on (x,y). Let p,q ∈ F = F(x,y) satisfy
+(N) ⟨⟨p,q⟩⟩ = F and (G) ⟨p,q,t⟩ = F for some t ∈ F. Then U∘(p,q) is a balanced presentation of the trivial
+group and (U∘(p,q), z) ~ (U, z) in F₃, i.e. U∘(p,q) ~₁ U.
+
+*Proof.* Let π: F₃ → F, x ↦ p, y ↦ q, z ↦ t; it is onto by (G). By Nielsen's reduction theorem a generating
+triple of a free group of rank 2 is carried by Nielsen transformations to (x, y, 1) (Lyndon–Schupp I.2.2 and
+the fact that bases of F₂ are Nielsen-equivalent); Nielsen transformations of (π(x),π(y),π(z)) are
+precompositions of π with automorphisms of F₃. So there is α ∈ Aut(F₃) with π∘α = π₀, where π₀: x ↦ x,
+y ↦ y, z ↦ 1. Put γ = α(z); then ker π = α(ker π₀) = ⟨⟨γ⟩⟩.
+*Step 1: (U, z) ~ (U, γ).* F₃/⟨⟨U⟩⟩ = ⟨z⟩ ≅ ℤ; let γ ↦ z^k. Then ℤ/k = F₃/⟨⟨U,γ⟩⟩ ≅ F/⟨⟨π(U)⟩⟩ = F/⟨⟨U∘(p,q)⟩⟩.
+Since x, y ∈ ⟨⟨U⟩⟩_F, substituting gives p, q ∈ ⟨⟨U∘(p,q)⟩⟩, so ⟨⟨U∘(p,q)⟩⟩ = ⟨⟨p,q⟩⟩ = F by (N). Hence k = ±1,
+γ^{±1}z⁻¹ ∈ ⟨⟨U⟩⟩_{F₃}, and Fact 0 (plus possibly one inversion) gives the claim. This also shows that U∘(p,q)
+presents the trivial group.
+*Step 2.* Apply α⁻¹ letterwise (D2): α⁻¹(U, γ) ~ α⁻¹(U, z) ~ (U, z), the last by Theorem A.
+*Step 3.* α⁻¹(U,γ) = (α⁻¹r₁, α⁻¹r₂, z), and π₀(α⁻¹ r_i) = π(r_i) = r_i(p,q): deleting the letters z^{±1} from
+α⁻¹(r_i) leaves r_i(p,q). Each deletion is a macro move with the third relator z. So
+α⁻¹(U,γ) ~ (U∘(p,q), z). ∎
+
+**Corollary B′ (U = (x,y)).** If (p,q) satisfies (N) and (G), then (p, q, z) is AC-trivial in F₃.
+*Direct proof.* By the above there is a basis (A,B,C) of F₃ with A ≡ p, B ≡ q mod ⟨⟨z⟩⟩ (namely α⁻¹ applied to
+(x,y,z)... precisely (A,B,C) = (α⁻¹x, α⁻¹y, α⁻¹z)). Insert z-letters: (p,q,z) ~ (A,B,z). In F₃/⟨⟨A,B⟩⟩ = ⟨C⟩ ≅ ℤ
+the image of z is C^{±1} because F₃/⟨⟨A,B,z⟩⟩ = F/⟨⟨p,q⟩⟩ = 1; so (A,B,z) ~ (A,B,C^{±1}), a basis, which is
+AC-trivial by Nielsen moves. ∎
+Conversely (G) is *equivalent* to: p, q are obtained by deleting z from two elements A, B of a basis (A,B,C) of
+F₃ (if (A,B,C) is a basis, then (p, q, C|_{z=1}) generates F). So B′ says exactly: **a rank-3 tuple (p,q,z) into
+which z-letters can be inserted so that the first two relators become part of a basis is AC-trivial** — the
+rank-3 analogue of D3, and the cheapest way one stabilization can trivialize a rank-2 presentation.
+
+**Worked example (hand-checked).** (p,q) = (x²y, x³y²), t = x: γ = y⁻¹zxz⁻²x, basis (α(x),α(y),α(z)) =
+(z, z⁻²x, γ), α⁻¹: x ↦ x²y, y ↦ x³y²z⁻¹, z ↦ x; (A,B,C) = (x²y, x³y²z⁻¹, x) is a basis of F₃ and
+(x²y, x³y², z) ~ (A,B,z) ~ (A,B,x) since z ≡ x⁻¹ mod ⟨⟨A,B⟩⟩.
+
+**Lemma C (no new primitive exit).** Let H = ⟨p,q⟩ ≤ F be non-cyclic (so free on p,q). If w(p,q) is primitive
+in F, then w is primitive in F(x,y). Hence if U∘(p,q) has a primitive relator, U already has one.
+*Proof.* Let g = w(p,q), F = ⟨g⟩ * ⟨g′⟩. By the Kurosh subgroup theorem H is the free product of a free group
+and of subgroups H ∩ a⟨g⟩a⁻¹, H ∩ b⟨g′⟩b⁻¹ for double-coset representatives a, b, where the representative
+of the trivial double coset may be taken to be 1; so H ∩ ⟨g⟩ = ⟨g⟩ is a free factor of H and g is primitive
+in H. The isomorphism F(x,y) → H, x ↦ p, y ↦ q carries w to g. ∎

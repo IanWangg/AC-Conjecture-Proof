@@ -20,7 +20,7 @@ of r and g a rotation of the OTHER relator or of its inverse: an ordinary-AC com
 
     python3 experiments/th15_aut_family.py --selftest
     python3 experiments/th15_aut_family.py --check 2 200
-    python3 experiments/th15_aut_family.py --cert swap|a N OUT.json
+    python3 experiments/th15_aut_family.py --cert swap|a|hub|hubT|ms N OUT.json
     python3 experiments/th15_aut_family.py --batch 2 8
     python3 experiments/th15_aut_family.py --nielsen N [OUTDIR]   (see th15_transport.py)
 """
@@ -153,6 +153,70 @@ def a_path(n):
     return P
 
 
+def beta(n):
+    """The Baumslag-Solitar relator beta_n = x^-1 y^-(n+1) x y^n."""
+    return "X" + "Y" * (n + 1) + "x" + "y" * n
+
+
+def hub_path(n, twist=False):
+    """(p_n, b) -> (beta_n, b) by n cyclic products with b frozen (Lemma H); with twist=True
+    three more products with beta_n frozen take b to a(b) = xxYXY (Lemma T made explicit)."""
+    assert n >= 2
+    x, X, y, Y = "x", "X", "y", "Y"
+    u, _, v, _ = a_words(n)
+    P = Path(p(n), B)
+    for k in range(0, n):
+        r = x * (n - k - 1) + Y * n + x + y * k + "XYx" if k >= 1 else x * (n - 1) + Y * (n + 1) + x
+        P.step(0, "XyxyXY", r, u[k + 1] if k < n - 1 else beta(n), side="R")
+    if twist:
+        c1 = x + y * (n + 1) + "xYX" + Y * (n + 2)
+        P.step(1, Y * (n + 1) + x + y * n + X, B, c1)
+        P.step(1, x + y * n + X + Y * (n + 1), y * (n + 1) + "xYX" + Y * (n + 2) + x, v[0])
+        P.step(1, "YX" + y * (n + 1) + x + Y * (n - 1), y * (n - 1) + X + Y * (n + 2) + "xx", "xxYXY")
+    return P
+
+
+def betap(n):
+    """Miller-Schupp orientation beta'_n = x^-1 y^n x y^-(n+1)."""
+    return "X" + "y" * n + "x" + "Y" * (n + 1)
+
+
+def ms_path(n):
+    """(p_n, b) -> (beta'_n, b) by n cyclic products (b frozen), then three products with
+    beta'_n frozen take b to XYxxY: the endpoint is C's M_n = MS(n, y^-1 x^2 y^-1)."""
+    assert n >= 2
+    x, X, y, Y = "x", "X", "y", "Y"
+    f = {k: x * k + "YX" + y * (n - k) + x + Y * n for k in range(0, n)}       # f_0 ~ beta'_n
+    P = Path(p(n), B)
+    P.step(0, "YXyxyX", x + Y * (n + 1) + x * (n - 1), f[n - 1])
+    for k in range(n - 1, 0, -1):
+        P.step(0, "YXyxyX", "xYX" + y * (n - k) + x + Y * n + x * (k - 1), f[k - 1] if k > 1 else betap(n))
+    c1 = x + Y * n + "xYX" + y * (n - 1)
+    v0 = "xx" + Y * (n + 2) + X + y * (n - 1)
+    P.step(1, y * n + x + Y * (n + 1) + X, B, c1)
+    P.step(1, x + Y * (n + 1) + X + y * n, Y * n + "xYX" + y * (n - 1) + x, v0)
+    P.step(1, X + Y * n + x + y * (n + 1), Y * (n + 1) + X + y * (n - 1) + "xxY", "XYxxY")
+    assert len(P.steps) == n + 3
+    return P
+
+
+def mechanism_identities(n):
+    """Free-group identities behind Lemmas S and T (exact equalities of reduced words)."""
+    x, X, y, Y = "x", "X", "y", "Y"
+    bt, D = beta(n), "xyx"
+    # Lemma S: D x D^-1 = b y,  D y D^-1 = x b^-1,  swap(b) = b^-1
+    assert red(D + x + inv(D)) == red(B + y) and red(D + y + inv(D)) == red(x + inv(B))
+    assert "".join({"x": "y", "y": "x", "X": "Y", "Y": "X"}[c] for c in B) == inv(B)
+    # Lemma T: T = (x -> xy): T(beta) = Y beta y;  y^-(n+1) x y^(n+1) = (x beta X) T(x)
+    T = {"x": "xy", "X": "YX", "y": "y", "Y": "Y"}
+    assert red("".join(T[c] for c in bt)) == red(Y + bt + y)
+    assert red(Y * (n + 1) + x + y * (n + 1)) == red(x + bt + X + "xy")
+    # T(XYxxY) is a rotation of b (C's bridge word), a(b) = xxYXY
+    assert red("".join(T[c] for c in "XYxxY")) in rots(B)
+    assert red("".join({"x": "xY", "X": "yX", "y": "y", "Y": "Y"}[c] for c in B)) == "xxYXY"
+    return True
+
+
 def check(lo, hi):
     for n in range(lo, hi + 1):
         S = swap_path(n)
@@ -162,25 +226,41 @@ def check(lo, hi):
             A = a_path(n)
             assert A.states[-1] == ("xY" * n + "Y" * (n + 1), "yxyXX")
             assert A.peak() == 4 * n + 7, (n, A.peak())
+            H = hub_path(n, twist=True)
+            assert H.states[n] == (beta(n), B) and H.states[-1] == (beta(n), "xxYXY")
+            assert len(H.steps) == n + 3 and H.peak() == 4 * n + 10
+            M = ms_path(n)
+            assert M.states[n] == (betap(n), B) and M.states[-1] == (betap(n), "XYxxY")
+            assert M.peak() == 4 * n + 7, (n, M.peak())
+        mechanism_identities(n)
     print(f"closed-form paths verified for n = {lo}..{hi}: swap 2n+1 cyclic products (peak 2n+13); "
-          f"a = (x->xY) 2n+1 cyclic products (peak 4n+7); every multiplier is a rotation of the "
-          f"frozen relator or its inverse")
+          f"a = (x->xY) 2n+1 cyclic products (peak 4n+7); hub (p_n,b)->(beta_n,b)->(beta_n,xxYXY) "
+          f"n+3 products (peak 4n+10); (p_n,b)->(beta'_n,b)->M_n n+3 products (peak 4n+7); every multiplier is a rotation of the frozen relator or its "
+          f"inverse; Lemma S / Lemma T free-group identities hold")
 
 
 TARGETS = {
     "swap": lambda n: ("y" * n + "X" * (n + 1), "yxyXYX"),
     "a": lambda n: ("xY" * n + "Y" * (n + 1), "xxYXY"),
+    "hub": lambda n: (beta(n), B),
+    "hubT": lambda n: (beta(n), "xxYXY"),
+    "ms": lambda n: (betap(n), "XYxxY"),
 }
 
 
 def certificate(kind, n):
-    P = swap_path(n) if kind == "swap" else a_path(n)
+    P = {"swap": swap_path, "a": a_path, "hub": hub_path,
+         "hubT": lambda m: hub_path(m, twist=True), "ms": ms_path}[kind](n)
     start = (p(n), B)
     target = TARGETS[kind](n)
-    phi = "swap x<->y" if kind == "swap" else "a = (x -> x y^-1, y -> y)"
+    what = {"swap": "phi(AK(n)) exactly, phi = swap x<->y",
+            "a": "phi(AK(n)) exactly, phi = a = (x -> x y^-1, y -> y)",
+            "hub": "(beta_n, b), beta_n = x^-1 y^-(n+1) x y^n (Baumslag-Solitar hub)",
+            "hubT": "H_n = (beta_n, xxYXY) = a(beta_n, b) up to rotation (length 2n+8)",
+            "ms": "M_n = MS(n, y^-1 x^2 y^-1) = (x^-1 y^n x y^-(n+1), x^-1 y^-1 x^2 y^-1) (C's bridge)"}[kind]
     cert = d_certify.certificate(P.states, start, target,
-                                 f"AK({n}) = (x^{n} Y^{n + 1}, xyxYXY) -> phi(AK({n})) exactly, phi = {phi}: "
-                                 f"uniform closed-form path of research-th15.md ({2 * n + 1} cyclic "
+                                 f"AK({n}) = (x^{n} Y^{n + 1}, xyxYXY) -> {what}: "
+                                 f"uniform closed-form path of research-th15.md ({len(P.steps)} cyclic "
                                  f"products), compiled to strict elementary moves.")
     r = elementary_verify.replay(cert)
     assert r["endpoint"] == list(target)
@@ -200,7 +280,7 @@ def main():
                           "peak_total_length": r["peak_total_length"], "endpoint": r["endpoint"], "path": out}))
     elif args[:1] == ["--batch"]:
         for n in range(int(args[1]), int(args[2]) + 1):
-            for kind in ("swap", "a"):
+            for kind in ("swap", "a", "hub", "hubT", "ms"):
                 cert, r = certificate(kind, n)
                 print(f"n={n} {kind}: {r['moves']} elementary moves, peak {r['peak_total_length']}, "
                       f"endpoint {tuple(r['endpoint'])} verified")
