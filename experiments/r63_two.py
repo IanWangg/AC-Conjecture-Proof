@@ -60,14 +60,15 @@ def fam(kind, m, j):
     return {'prim': Q, 'bs+': Q + Q + Pi + Qi + P, 'bs-': Q + Q + P + Qi + Pi}[kind]
 KINDS = ('prim', 'bs+', 'bs-')
 
-def rational_test(st, D, moved=C):
+def rational_test(st, D, moved=C, NF=None):
+    NF = NF or tw.nf_general
     G = tw.Gen(st[3], D); m = st[0]
-    uc, kc = tw.nf_general(moved, st); assert kc == 1
+    uc, kc = NF(moved, st); assert kc == 1
     ic = G.Inv(uc); res = {}
     for kind in KINDS:
         vals = []
         for j in range(D + 1):
-            u, k = tw.nf_general(fam(kind, m, j), st); assert k == 1; vals.append(G.Inv(u))
+            u, k = NF(fam(kind, m, j), st); assert k == 1; vals.append(G.Inv(u))
         cand = None
         for rr in range(len(G.traces)):
             v = [vals[j][rr] for j in range(D + 1)]
@@ -79,31 +80,77 @@ def rational_test(st, D, moved=C):
         res[kind] = 'all' if cand is None else sorted(cand)
     return len(G.traces), res
 
-def modp_test(st, D, p, moved=C):
+def modp_test(st, D, p, moved=C, NF=None):
+    NF = NF or tw.nf_general
     G = tw.Gen(st[3], D, rational=False); m = st[0]
     B = tw.traces_modp(G, p)
     per = p
     while per <= D: per *= p
     ev = lambda u: tuple(sum(l[G.idx[mm]] * c for mm, c in G.magnus(u).items()) % p for l in B)
-    uc, kc = tw.nf_general(moved, st); assert kc == 1
+    uc, kc = NF(moved, st); assert kc == 1
     ic = ev(uc); res = {}
     for kind in KINDS:
-        res[kind] = [j for j in range(per) if ev(tw.nf_general(fam(kind, m, j), st)[0]) == ic]
+        res[kind] = [j for j in range(per) if ev(NF(fam(kind, m, j), st)[0]) == ic]
     return len(B), per, res
 
+def structure_asc(k):
+    """Brown fails but the top t-level occurs once: G_k is the mapping torus of the injective endomorphism
+    theta (t_i -> t_{i+1}, t_{r-1} -> solution for t_r) of F(t_0..t_{r-1}) (Magnus-Moldavanskii, Freiheitssatz)."""
+    m = k.count('x') - k.count('X')
+    sub = {'x': 'x', 'X': 'X', 'y': 't' + ('X' * m if m >= 0 else 'x' * (-m)),
+           'Y': ('x' * m if m >= 0 else 'X' * (-m)) + 'T'}
+    lev, seq = 0, []
+    for ch in "".join(sub[c] for c in k):
+        if ch == 'x': lev += 1
+        elif ch == 'X': lev -= 1
+        else: seq.append((1 if ch == 't' else -1, lev))
+    red = []
+    for g in seq:
+        if red and red[-1][1] == g[1] and red[-1][0] == -g[0]: red.pop()
+        else: red.append(g)
+    while len(red) >= 2 and red[0][1] == red[-1][1] and red[0][0] == -red[-1][0]: red = red[1:-1]
+    lo = min(i for _, i in red); r = max(i for _, i in red) - lo
+    seq = [(e, i - lo) for e, i in red]
+    if sum(i == r for _, i in seq) != 1: return None
+    p = next(a for a, (e, i) in enumerate(seq) if i == r); e = seq[p][0]
+    rest = tuple(s_ * (i + 1) for s_, i in seq[p + 1:] + seq[:p])
+    images = [(i + 2,) for i in range(r - 1)] + [q.inv(rest) if e == 1 else rest]
+    return m, lo, r, images, None, sub
+def nf_asc(word, st):
+    m, lo, r, images, _, sub = st
+    def ap(w):
+        out = []
+        for g in w:
+            im = images[abs(g) - 1]; out.extend(im if g > 0 else q.inv(im))
+        return q.red(out)
+    sh = -lo + len(word) + 2
+    pre = 'x' * sh if sh >= 0 else 'X' * (-sh)
+    u, k = (), 0
+    for ch in pre + "".join(sub[c] for c in word) + pre.swapcase():
+        if ch == 'x': k += 1
+        elif ch == 'X': k -= 1
+        else:
+            assert k >= 0
+            g = (1,) if ch == 't' else (-1,)
+            for _ in range(k): g = ap(g)
+            u = q.red(u + g)
+    return u, k
 def second(kp, log):
-    st = tw.structure(kp)
-    if st is None: log("  %s: Brown's criterion fails -> not handled here" % kp); return None
-    assert tw.nf_general(kp, st) == ((), 0)
+    st, NF = tw.structure(kp), tw.nf_general
+    if st is None:
+        st, NF = structure_asc(kp), nf_asc
+        if st is None: log("  %s: Brown fails, top level not unique -> not handled" % kp); return None
+        log("  %s: ascending HNN (top t-level once)" % kp)
+    assert NF(kp, st) == ((), 0)
     r = st[2]; open_ = set(KINDS); log("  %s: m=%d rank=%d" % (kp, st[0], r))
     for D in (3, 4):
         if r ** D > 700: break
-        nt, res = rational_test(st, D); log("    rational D=%d: %d traces, surviving j: %s" % (D, nt, res))
+        nt, res = rational_test(st, D, NF=NF); log("    rational D=%d: %d traces, surviving j: %s" % (D, nt, res))
         open_ = {k for k in open_ if res[k] != []}
         if not open_: return 'excluded'
     for p, D in [(2, 4), (2, 5), (2, 6), (3, 3), (5, 3), (7, 3), (3, 4), (2, 7)]:
         if r ** D > 1300: continue
-        nb, per, res = modp_test(st, D, p); res = {k: res[k] for k in open_}
+        nb, per, res = modp_test(st, D, p, NF=NF); res = {k: res[k] for k in open_}
         log("    F_%d D=%d: %d traces, surviving j mod %d: %s" % (p, D, nb, per, res))
         open_ = {k for k in open_ if res[k] != []}
         if not open_: return 'excluded'

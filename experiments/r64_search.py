@@ -93,19 +93,19 @@ def search(case, L, nmax, out=print):
                 if (c == cs and N == Ns) or (c == -cs and N == Nsi):
                     det = P[0][0] * P[1][1] - P[0][1] * P[1][0]
                     B = ((-1, 0), (-n, 1)); Pi = ((P[1][1] * det, -P[0][1] * det), (-P[1][0] * det, P[0][0] * det))
-                    R = mul(mul(P, B), Pi); hits.append(('T2', w, p, q, n, R, R in d6))
+                    R = mul(mul(P, B), Pi); hits.append(('T2', w, p, q, n, R, R in d6)); out(hits[-1])
             for m in range(-nmax, nmax + 1):  # BS: p^-1 q^m p q^-(m+e)
                 for e in (1, -1):
                     w = red(inv(p) + pw(q, m) + p + pw(q, -(m + e))); c = chi(w, sp)
                     if c not in (cs, -cs): continue
                     N = necklace(w, sp)
                     if (c == cs and N == Ns) or (c == -cs and N == Nsi):
-                        hits.append(('BS', w, p, q, m, e))
+                        hits.append(('BS', w, p, q, m, e)); out(hits[-1])
     seen = set(); res = []
     for h in hits:
         key = (h[0], h[1])
         if key in seen: continue
-        seen.add(key); res.append(h); out(h)
+        seen.add(key); res.append(h)
     return res
 
 def self_test():
@@ -129,6 +129,18 @@ if __name__ == '__main__':
     case = a[a.index('--case') + 1] if '--case' in a else 'A'
     L = int(a[a.index('--len') + 1]) if '--len' in a else 10
     nmax = int(a[a.index('--nmax') + 1]) if '--nmax' in a else 15
-    r = search(case, L, nmax)
+    r = search(case, L, nmax, out=lambda h: print(h, flush=True))
     print('case', case, 'L', L, 'nmax', nmax, 'hits', len(r), 'outside D6:',
           sum(1 for h in r if h[0] == 'T2' and not h[6]), 'BS:', sum(1 for h in r if h[0] == 'BS'))
+
+def torus_scan(B=40):
+    """Same-basis torus forms: all (p,q), |p|,|q| <= B, with x^p y^q ~ (x^8y^5)^{+-1} in G_A, and all a,
+    |a| <= B, with x^a yXy ~ (x^4yXy)^{+-1} in G_s (s = x^8y^5)."""
+    sp = SPECS['A']; s = sp['partner']; N1, N2 = necklace(s, sp), necklace(inv(s), sp)
+    resA = [(p, q) for p in range(-B, B + 1) for q in range(-B, B + 1)
+            for w in [red(pw('x', p) + pw('y', q))]
+            if (chi(w, sp) == 1 and necklace(w, sp) == N1) or (chi(w, sp) == -1 and necklace(w, sp) == N2)]
+    sp = SPECS['S']; A = sp['partner']; N1, N2 = necklace(A, sp), necklace(inv(A), sp); cA = chi(A, sp)
+    resS = [a for a in range(-B, B + 1) for w in [red(pw('x', a) + 'yXy')]
+            if (chi(w, sp) == cA and necklace(w, sp) == N1) or (chi(w, sp) == -cA and necklace(w, sp) == N2)]
+    return resA, resS
