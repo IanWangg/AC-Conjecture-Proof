@@ -23,7 +23,7 @@
 // theorem makes both steps exact).
 // Build: g++ -O2 -std=c++17 -pthread -o r61_scan128 experiments/r61_scan128.cpp
 // Usage: r61_scan128 --selftest | --words (stdin: one word per line)
-//        r61_scan128 KEYFILE128 CAP [--threads T] [--start I] [--end J] [--maxhits H] [--probe W1 W2]
+//        r61_scan128 KEYFILE128 CAP [--threads T] [--start I] [--end J] [--maxhits H] [--probe W1 W2] [--nocache 1]
 #include <bits/stdc++.h>
 #include <fcntl.h>
 #include <unistd.h>
@@ -249,7 +249,7 @@ static int selftest() {
 // ---- scan ----
 struct Res { long long states = 0, rels = 0, hits = 0, badlen = 0, badrt = 0, baddec = 0, ak3 = 0, ak3exact = 0, probe = 0, probeexact = 0, cachehit = 0; long long hist[64] = {0}, c5[4] = {0}; };
 static mutex pm; static atomic<long long> done_states(0), total_hits(0);
-static vector<K2> ak3keys; static int maxhits = 20;  // ak3keys[0..7]: AK(3) D8 images; [8..15]: --probe pair images
+static vector<K2> ak3keys; static int maxhits = 20; static bool nocache = false;  // --nocache 1: classify every relator afresh (cache cross-check)  // ak3keys[0..7]: AK(3) D8 images; [8..15]: --probe pair images
 static void worker(int fd, long long lo, long long hi, int cap, Res* Rp, int tid, const char* fname) {
   // relator cache keyed by the full word: k0 = letters 0..31, k1 = (n << 58) | letters 32..60 (n <= 61)
   Res& R = *Rp; const int LOG = 23; vector<u64> ck0(1u << LOG, 0), ck1(1u << LOG, 0); vector<uint16_t> cv(1u << LOG, 0);
@@ -267,7 +267,7 @@ static void worker(int fd, long long lo, long long hi, int cap, Res* Rp, int tid
       for (int j = 0; j < 2; j++) {
         R.rels++; int nn = n[j]; u64 k0 = 0, k1 = (u64)nn << 58;
         for (int t = 0; t < nn && t < 61; t++) { if (t < 32) k0 |= (u64)w[j][t] << (2 * t); else k1 |= (u64)w[j][t] << (2 * (t - 32)); }
-        bool cacheable = nn <= 61; u64 h = ((k0 ^ (k1 * 0xC2B2AE3D27D4EB4FULL)) * 0x9E3779B97F4A7C15ULL) >> (64 - LOG);
+        bool cacheable = nn <= 61 && !nocache; u64 h = ((k0 ^ (k1 * 0xC2B2AE3D27D4EB4FULL)) * 0x9E3779B97F4A7C15ULL) >> (64 - LOG);
         int ml, cls; bool bs;
         if (cacheable && ck0[h] == k0 && ck1[h] == k1) { R.cachehit++; ml = cv[h] & 255; cls = cv[h] >> 8; bs = cls == 1; }
         else { bs = classify(w[j], nn, ml); cls = last_cls; if (cacheable) { ck0[h] = k0; ck1[h] = k1; cv[h] = (uint16_t)(ml | (cls << 8)); } }
@@ -290,7 +290,7 @@ int main(int argc, char** argv) {
   if (argc < 3) { fprintf(stderr, "usage: see header\n"); return 2; }
   const char* fname = argv[1]; int cap = atoi(argv[2]); int T = 2; long long st = 0, en = -1;
   string pr1, pr2;
-  for (int i = 3; i + 1 < argc; i += 2) { string a = argv[i]; if (a == "--threads") T = atoi(argv[i + 1]); else if (a == "--start") st = atoll(argv[i + 1]); else if (a == "--end") en = atoll(argv[i + 1]); else if (a == "--maxhits") maxhits = atoi(argv[i + 1]); else if (a == "--probe" && i + 2 < argc) { pr1 = argv[i + 1]; pr2 = argv[i + 2]; i++; } }
+  for (int i = 3; i + 1 < argc; i += 2) { string a = argv[i]; if (a == "--threads") T = atoi(argv[i + 1]); else if (a == "--start") st = atoll(argv[i + 1]); else if (a == "--end") en = atoll(argv[i + 1]); else if (a == "--maxhits") maxhits = atoi(argv[i + 1]); else if (a == "--nocache") nocache = atoi(argv[i + 1]) != 0; else if (a == "--probe" && i + 2 < argc) { pr1 = argv[i + 1]; pr2 = argv[i + 2]; i++; } }
   int fd = open(fname, O_RDONLY); if (fd < 0) { fprintf(stderr, "cannot open %s\n", fname); return 2; }
   long long sz = lseek(fd, 0, SEEK_END), N = sz / 16;
   printf("file %s bytes %lld keys128 %lld (bytes%%16=%lld) cap %d threads %d\n", fname, sz, N, sz % 16, cap, T);
