@@ -2,7 +2,8 @@
 """TH17: x-shared torus-shaped pairs (Theorem 6) and the third torus form (Theorem 4).
 
 Vertex of the graph S: a pair (x^p (x^e y)^q , x^M (x^f y)^N).
-  --selftest   (1) Theorem 4: (x^2 y)^(2k+1) (xy)^-(6k+3-+1) is conjugate in H_A to x^(3k+1) y^(6k+2-+1);
+  --selftest   (0) at the end: the third-form graph of Theorem 6* (orbit conditions, two-sided brute force);
+               (1) Theorem 4: (x^2 y)^(2k+1) (xy)^-(6k+3-+1) is conjugate in H_A to x^(3k+1) y^(6k+2-+1);
                (2) brute force of the classification used in Theorem 6 at the start vertices and at all
                    vertices of the shear orbit up to word length 3 in the shears, for small (p,q);
                (3) ping-pong: |M| > 3 off the trivial start shears, no degenerate syllable in the orbit.
@@ -107,6 +108,60 @@ def orbit(p, q, depth):
     return out
 
 
+def orbit3(P0, Q, depth):
+    """N = 3: shear orbit of T*(P0,-Q), normalised start (p,e,M,f) = (-P0,0,2,-1) with exponent Q"""
+    out = {(-P0, 0, 2, -1): ""}
+    frontier = [((-P0, 0, 2, -1), "")]
+    for _ in range(depth):
+        new = []
+        for (pp, e, M, f), last in frontier:
+            for kind in "UV":
+                if kind == last:
+                    continue
+                for i in (-2, -1, 1, 2):
+                    v = (pp, e, M - 3 * i * pp, f + i * pp) if kind == "U" else (pp - i * Q * M, e + i * M, M, f)
+                    if v not in out:
+                        out[v] = kind
+                        new.append((v, kind))
+        frontier = new
+    return out
+
+
+def selftest3():
+    """third-form graph (Theorem 6*): orbit conditions and two-sided brute force of the shape conjugates"""
+    nv = 0
+    for (P0, Q) in ((3, 8), (3, 10), (5, 14), (5, 16), (7, 20)):
+        for (pp, e, M, f) in orbit3(P0, Q, 5):
+            c = e - f
+            nv += 1
+            assert abs(pp) >= 3 and M % 3 == 2 and abs(3 * pp - Q * (M - 3 * c)) == 1
+            assert c % pp and (M - c) % pp and M % pp
+            if abs(M) == 2:
+                assert M == 2 and (pp + P0) % (2 * Q) == 0
+            else:
+                assert abs(M) >= 7 and c % M and pp % M and (pp + c) % M
+    nb = 0
+    for (P0, Q, verts) in ((3, 8, ((-3, 0, 2, -1), (-3, 0, 11, -4), (-19, 2, 2, -1))), (3, 10, ((-3, 0, 2, -1),)),
+                           (5, 14, ((-5, 0, 2, -1),))):
+        orb = orbit3(P0, Q, 2)
+        ns = [sg * n for sg in (1, -1) for n in (1, 2, 3, 4, 5, Q - 2, Q - 1, Q, Q + 1, Q + 2)]
+        for (pp, e, M, f) in verts:
+            assert (pp, e, M, f) in orb
+            c = e - f
+            B = (min(abs(pp) + Q * abs(M) + 8, 60), abs(M) + abs(pp) + 4)
+            s1, s2 = brute_vertex(pp, e, Q, M, f, 3, B, ns)
+            inbox = lambda t: abs(t[0]) <= B[0] and abs(t[1]) <= B[1] and t[2] in ns
+            t1, t2 = set(), set()
+            for mu in range(-40, 41):
+                a, b = pp - mu * Q * M, c + mu * M + f
+                t1 |= {t for t in ((a, b, Q), (-a, b, -Q)) if inbox(t)}
+                M1, c1 = M + 3 * mu * pp, c + mu * pp
+                t2 |= {t for t in ((M1, e - c1, 3), (-M1, e - c1, -3)) if inbox(t)}
+            assert s1 == t1 and s2 == t2 and s1 and s2, (pp, e, M, f, sorted(s1 ^ t1)[:5], sorted(s2 ^ t2)[:5])
+            nb += 1
+    print("th17_shear third-form self-test passed: %d orbit vertices checked, %d vertices brute-forced" % (nv, nb))
+
+
 def selftest():
     # (1) Theorem 4
     for k in range(0, 8):
@@ -151,6 +206,7 @@ def selftest():
 if __name__ == "__main__":
     if "--selftest" in sys.argv:
         selftest()
+        selftest3()
     elif "--cert" in sys.argv:
         out = sys.argv[sys.argv.index("--cert") + 1]
         for k in (1, 2):

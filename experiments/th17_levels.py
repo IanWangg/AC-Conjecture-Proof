@@ -121,6 +121,19 @@ def selftest():
                 kc = cls(kword(a, b, c))
                 assert kc[0] == c and neck(kc) == (1,) * b + (2,) * a, (a, b, c, kc)
                 n3 += 1
+    # Theorem 3(2) against coset enumeration (research-f's f_descent)
+    import f_descent as FD
+    from math import gcd
+    cv = {"x": 1, "X": -1, "y": 2, "Y": -2}
+    n4 = 0
+    for a in range(1, 7):
+        for b in range(1, 13):
+            for c in (-1, 0, 1, 2):
+                if abs(a - b + 6 * c) == 1:
+                    triv = FD.is_trivial_group([cv[ch] for ch in A], [cv[ch] for ch in kword(a, b, c)])
+                    assert triv == (gcd(a, b) == 1), (a, b, c, triv)
+                    n4 += 1
+    assert n4 == 24
     print("th17_levels self-test passed: %d dictionary cases, %d members, %d coincidence groups, %d K-cases"
           % (n1, len(mem), len(multi), n3))
 
