@@ -72,7 +72,7 @@ Round 5 (the "theory round", 2026-11-09 Los Angeles time: twenty agents TH01–T
 *Audit and refereeing*
 
 - [TH08](research/research-th08.md): proof-check of the theory in notes G, H, I, K, N, O: no new false theorem; twelve wording or hypothesis findings, three of them sentences of this README (corrected above).
-- [TH19](research/research-th19.md), [TH20](research/research-th20.md): referee notes with per-claim verdicts for TH01–TH09 and TH10–TH18.
+- [TH19](research/research-th19.md), [TH20](research/research-th20.md): referee notes with per-claim verdicts for TH01–TH09 and TH10–TH18 (both resumed after the interruption). All shipped self-tests pass and all strict certificates replay with the stated endpoints; none goes from AK(3), P₃, Q or M₃ to (x,y). No errors were found in the final texts; most central claims are marked VERIFIED (re-derived or independently recomputed), a few PLAUSIBLE where they rest on cited external theorems or were not re-checked; one wording overclaim (TH18: P2's class contains a pair with a torus relator, not a "torus-knot pair") and one omitted hypothesis in a claims table (TH14) are recorded in those notes.
 
 Round-5 bottom line: still no trivialization of AK(3), no obstruction and no counterexample. New in this round: the lifting theorem in full strength (obstructions ignore all solvable and finite normal subgroups), a self-contained proof of Aut(F₂)-realization on every AK(n), uniform "no one-move exit" theorems in all three known coordinate systems, a linear lower bound on the number of moves for AK(n), and one new exit mechanism (BS(1,2)) that trivializes a previously unresolved length-16 presentation.
 
