@@ -128,3 +128,9 @@ Files:
 - `certificates/r62_p2_to_r4_w0.json`
 
 The R5 table came from an inline loop over m that used `r62_p2.aut`, `th03_uniform.nf` and `th03_uniform.I`. It was stopped after m = 30 because the words grow like the Fibonacci numbers.
+
+## Coordinator's check (2026-11-09, Los Angeles time)
+
+- `certificates/r62_p2_to_r4_w0.json` replays under `python3 experiments/elementary_verify.py`: from exactly P2 = (XyyxYYY, XXXYxxY) to (XyyyyxYYYYY, xxyyXY) in 762 moves, peak 37.
+- Independently checked by the coordinator: α = (x ↦ xy, y ↦ Y) is an involution; α(xxyyXY) = xyxYYXy = c exactly; α(XyyyyxYYYYY) = YXYYYYxyyyyyy, whose normal form in research-o's coordinates is (aababaabaab, 1) (`o_gc.nf`). With the coordinator's own exact holonomy code (written before this round for a different purpose, ℚ(ω) arithmetic) the invariant of its square is 1936 = 44², whereas the values for (xˢy)² are 4, 64, 676, 5476, 47524, 422500 for |s| ≤ 7 and grow with |s|; so I(u) = 44 is not of the form I(xˢy) in that range. The statement for all s rests on the note's monotonicity lemma from research-th03's recurrence and, independently, on the degree-4 trace L4(u) = 9 ≠ C(s+1,4); the coordinator checked neither line by line.
+- Conclusion, stated precisely: at this representative of P2's class, no generalized move with c (after α) frozen reaches a primitive relator; with r₄ frozen the same follows from research-th18's T3 (t-length 3), cited. This is a one-move statement, not an obstruction; P2's AC-triviality remains open.
