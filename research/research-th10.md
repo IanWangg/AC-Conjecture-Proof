@@ -169,6 +169,9 @@ By Corollary A1 the task has an exact form. Fix U (AK(3) against the standard pa
 ```sh
 python3 experiments/th10_torus_coords.py --selftest
 #  selftest passed (30821 instances of Theorem C's core, 27028 of Theorem B(a)'s core, 240 of Theorem A's step 4)
+python3 experiments/th10_torus_coords.py --mechanism # about 40 s
+#  S3: 18, A4: 96, S4: 150, A5: 252, D7: 126, 7:3: 302, 7:6: 245, S5: 185 generating pairs checked
+#  mechanism check passed on 1374 epimorphisms
 python3 experiments/th10_torus_coords.py --scan      # about 3 CPU-minutes
 ```
 The self-test (a) checks the word identities quoted in §3: the braid relator is conjugate to (xyx)²(xy)⁻³; the target of `g_ak3_to_trefoil_t2_7.json` (replayed) is (U²V⁻⁷ up to conjugacy, braid) for the explicit basis (U,V); `ms3_to_ak3_exact.json` (replayed) joins AK(3) to a pair containing a BS(3,4)-type relator; C4 and T(4;8,5) have torus types (2,5),(2,5),(2,5),(5,8); (b) checks the algebraic core of Theorem C (30,821 instances: generating pairs of S₃, A₄, S₄, A₅, D₇, 7:3, 7:6 and five types (p,q)) and of Theorem B(a) (27,028 instances: ⟨u⟩·⟨⟨c⟩⟩ is normal and contains [u,v] for c = v⁻¹u^p v u^{-(p+1)}, p ≤ 4); (c) checks step 4 of Theorem A on all 240 pairs (p̄,q̄) with p̄ ∈ E' generating one of the metabelian groups E = S₃, A₄, D₇, 7:3, 7:6: every element of q̄E' is conjugate to some q̄p̄ⁱ; (d) checks Proposition 5.2 in exact Eisenstein arithmetic: ρ kills the braid relator and (yx⁻¹)³, λ(xⁿy^{-(n+1)})² = (⌊3n/2⌋+1)² for n < 60, λ² ∈ {1,4} on primitive elements y⁻¹(xy⁻¹)^α and y⁻¹(yx⁻¹)^α, and conjugation invariance on 300 random conjugates of x³y⁻⁴. Type detection: Whitehead descent on cyclic words followed by a breadth-first search over the minimal level set; a positive answer exhibits an automorphism, so positives are sound.
@@ -178,6 +181,8 @@ The scan lists, for the states of all strict certificates present at run time (2
 - AK(4), AK(5), AK(6), AK(7), AK(8), AK(10) (K's certificates): BS4, BS5, BS6, BS7, BS8, BS10 respectively, plus (2,3) and (n,n+1);
 - C6 = (xxyxxYY, xyXYYXy): BS2: 2, (2,3): 2 (witness xyXyXYxYxY in `m_c6_aut_x_xy.json`); P1, P2: the BS(2,3) relator is a relator;
 - C4 = (xxxxyXy, xyyyxYY): (2,5): 4, (5,8): 1, no BS type; C3 = (x⁴y⁷, x²yx⁻¹y): (2,3), (2,7), (3,8), (4,7), (5,9), no BS type; X = T(2;4,9): (2,3), (2,9), (3,10), (4,9), (5,11), no BS type.
+**Mechanism replay (executed).** `--mechanism` takes the certified pair M₃ = (x⁻¹y³xy⁻⁴, x⁻¹y⁻¹x²y⁻¹) ~ AK(3) and 1,374 epimorphisms of F onto S₃, A₄, S₄, A₅, D₇, 7:3, 7:6, S₅ (all generating pairs for the small groups, a random sample of 400 pairs otherwise). In every case, with N = ⟨⟨π(c)⟩⟩: ⟨π(y)⟩N is normal with cyclic quotient (Theorem B(a)), and π(w) is conjugate modulo N to the image of a primitive element x·yʲ (step 4 of Theorem A). This is a consistency check of the proofs on the actual AK(3)-class pair, not new information (finite groups obstruct nothing).
+
 **Control for Theorem A with Q = F (executed).** 32 of the certificates pass through a coordinate of BS(1,2) type v⁻¹uvu⁻²; by Remark (iii) their classes must be AC-trivial. They are: 30 are trivialization certificates, and the other two (`o_p1_to_p2.json`, `th15_ak2_aut_x_xY.json`) join presentations known to be AC-trivial (K's P₁, P₂ by O; AK(2)). No certificate of an open class (AK(3), C3, C4, P1, P2, R9, X, Y) meets such a coordinate.
 
 So within the certified part of their classes, the "chiral" candidates C4 and X, and C3, show only torus coordinates, while AK(n), P1 = C6 and P2 have a Baumslag–Solitar coordinate. This is an observation about the certificates, not a theorem about the classes.
@@ -209,7 +214,7 @@ So within the certified part of their classes, the "chiral" candidates C4 and X,
 ## Files written
 
 - `research/research-th10.md` (this note).
-- `experiments/th10_torus_coords.py` (`--selftest`, `--scan`).
+- `experiments/th10_torus_coords.py` (`--selftest`, `--mechanism`, `--scan`).
 
 ## References
 

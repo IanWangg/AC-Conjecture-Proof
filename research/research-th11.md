@@ -4,7 +4,7 @@ Date: 2026-11-09 (Los Angeles). Independent research agent TH11 (round 5, theory
 
 **Status.** Partial, verified results. **No AC trivialization of AK(3), no proof of non-triviality, no counterexample, nothing on the full conjecture.** Everything below concerns (i) the symmetries of the relators c, b, p_n and (ii) *single* generalized (ACM) moves with c frozen. Nothing here bounds two or more moves. Labels: *proved here* (complete proof), *proved here by exact computation* (finite exact check by a script with self-test), *recalled*, *experiment*, *open*.
 
-**Overlap with parallel work of this round (read at 04:30 and 04:40 UTC).** TH03 proved, in parallel and by different means (length spectrum and twisted traces), the uniform O6, a "mirror theorem" (its T16, with an invariant ε that coincides with κ below) and the classification of the primitive classes; TH02 determined the stabilizers of torus relators. So T3, T5, T6, T7 and the p_n-part of T2 below are **independent second proofs**, not new statements. What is only in this note: T1 (Out(G_c) and the exact stabilizer of c), the structure theorem T4 (κ and Ĵ are the *complete* invariant modulo γ₅, Ĵ = −L4 is mirror-invariant, closed form of Ĵ(k_n) for all n, map of the nilpotent tower up to γ₉), the holonomy-free proof of O6 for all n ≠ 9 by a Runge argument, the reflection identity T8, and the certificate T9.
+**Overlap with parallel work of this round (read at 04:30 and 04:40 UTC).** TH03 proved, in parallel and by different means (length spectrum and twisted traces), the uniform O6, a "mirror theorem" (its T16, with an invariant ε that coincides with κ below) and the classification of the primitive classes; TH02 determined the stabilizers of torus relators. So T3, T5, T6, T7 and the p_n-part of T2 below are **independent second proofs**, not new statements. What is only in this note: T10 (three mirror pairs of c-frozen classes in AK(3)'s class — P₃, D's length-13 presentation Q, an R212 state — with two new certificates, none having a one-move primitive exit), T1 (Out(G_c) and the exact stabilizer of c), the structure theorem T4 (κ and Ĵ are the *complete* invariant modulo γ₅, Ĵ = −L4 is mirror-invariant, closed form of Ĵ(k_n) for all n, map of the nilpotent tower up to γ₉), the holonomy-free proof of O6 for all n ≠ 9 by a Runge argument, the reflection identity T8, and the certificate T9.
 
 Notation (research-k, research-o): X = x⁻¹, Y = y⁻¹; c = xyxYYXy, k_n = xⁿYXyy, P_n = (c, k_n) ~AC AK(n) (K1); b = xyxYXY, p_n = xⁿY^{n+1}; G_c = ⟨x,y | c⟩ = F ⋊_φ ℤ with F = F(a,b), a = x, b = yxY, φ(a) = b, φ(b) = b⁻¹a (O1); elements (u,k); "degree" = k; k_n = (aⁿb⁻¹a⁻¹, 1), xˢy = (aˢ, 1); (u,1) ~ (u′,1) in G_c iff u′ = v u φ(v)⁻¹ for some v ∈ F ("φ-twisted conjugacy", O §2.2). A = [[0,1],[1,−1]] is the matrix of φ on F^{ab} (columns = images). **θ₀ := (x ↦ x⁻¹, y ↦ yx)** ∈ Aut(F₂) (TH03's α); θ₀² = id. γ_k = γ_k(F) is the lower central series of the fibre.
 
@@ -182,17 +182,18 @@ So **(xyxYYXy, xxxYXyy) ~AC (xyxYYXy, XXXYxyxy)** (total lengths 14 and 15) by o
 | k₃ = xxxYXyy | (a³b⁻¹a⁻¹, 1) | (0, 1, 20) | K's P₃ | `k_ak3_to_p3.json` |
 | XXXYxyxy = θ₀(k₃) | (a⁻²ba, 1) | (1, 1, 20) | mirror of P₃ | `th11_p3_to_theta0_p3.json` |
 | **w₂ = yxxYXyX** (length 7, total length 14) | (b²a⁻¹b⁻¹, 1) ~ (a²b⁻¹a⁻², 1) | (0, −6, 32) | step 146 of `d_ak3_aut_invx.json`, pulled back by x ↦ xy⁻² | `th11_cw14_to_ak3.json` (2,359 moves, peak 53) |
-| w_Q = YYYxyxyX | inverse of a degree-(−1) form | (0, −6, 32) | **D's second length-13 presentation Q = (xxyXYY, xxxYYXy)**: its first relator is an automorphic image of c | `th11_cq_to_ak3.json` (1,398 moves, peak 39) |
+| w_Q = YYYxyxyX (degree −1) | w_Q⁻¹ = (ab⁻¹a⁻²b⁻¹a⁻¹, 1) | (0, −6, 32) | **D's second length-13 presentation Q = (xxyXYY, xxxYYXy)**: its first relator is an automorphic image of c | `th11_cq_to_ak3.json` (1,398 moves, peak 39) |
 | XyxYxxy | (a⁻¹ba², 1) | (1, −6, 32) | mirror of the previous class | by D2/D6 |
 | w₃ = xxxyXYxxy | (a³b⁻¹a², 1) | (0, −32, 110) | step 58 of `i_R212_to_ak3.json` | by D2/D6 (no separate file) |
 | XXyxYXXy | (a⁻²ba⁻², 1) | (1, −32, 110) | mirror | by D2/D6 |
 
-(b) These killers represent **six pairwise distinct conjugacy classes** of G_c (three mirror pairs), since their invariants differ. (c) **None of the six classes contains a primitive element**: Ĵ(xˢy) = −C(s+1,4) ∈ {0, −1, −5, −15, −35, −70, …} never equals 1, −6 or −32 (independently: N(xˢy) ∈ {2, 8, 26, 74, 218, …} never equals 20, 32 or 110). Hence no presentation with a primitive relator is one ACM move, with arbitrary conjugators and the c-type relator frozen, from any of these states; in particular **not from D's Q with its relator xxyXYY frozen**.
+(b) These killers represent **six pairwise distinct conjugacy classes** of G_c (three mirror pairs), since their invariants differ. (c) **None of the six classes contains a primitive element**: Ĵ(xˢy) = −C(s+1,4) ∈ {0, −1, −5, −15, −35, −70, …} never equals 1, −6 or −32 (independently, using TH03's monotonicity of N(xˢy) for s ≥ 2: N(xˢy) ∈ {2, 8, 26, 74, 218, …} never equals 20, 32 or 110). Hence no presentation with a primitive relator is one ACM move, with arbitrary conjugators and the c-type relator frozen, from any of these states; in particular **not from D's Q with its relator xxyXYY frozen**.
 
 *Proof.* (a) The two new certificates replay (below); the remaining rows follow from D6 and letterwise transport (Lemma D2), the pull-back automorphisms being computed and checked by the script. (b), (c): Theorems 5.1, 5.4 and the exact values of N; for Q, an ACM move freezing ψ(c) corresponds under ψ⁻¹ to a c-frozen move, and primitivity is Aut-invariant, so Prop. O2 applies to w_Q. ∎
 
 ```
 python3 experiments/th11_kc.py --selftest          # 47 certificates (48 with --all); 6 classes; no primitive match
+python3 experiments/th11_cert2.py --write certificates
 python3 experiments/elementary_verify.py certificates/th11_*.json
 {"endpoint": ["xxxYYYY", "xyxYXY"], "moves": 1398, "path": "certificates/th11_cq_to_ak3.json", "peak_total_length": 39}
 {"endpoint": ["xxxYYYY", "xyxYXY"], "moves": 2359, "path": "certificates/th11_cw14_to_ak3.json", "peak_total_length": 53}
@@ -248,7 +249,8 @@ What the scripts assert. `th11_nil`: the Lie-coordinate extraction (every differ
 
 ## 11. Honest limits
 
-- Nothing here bears on whether AK(3) is AC-trivial. All negative statements are about **one** ACM move with c frozen; T9 is a positive equivalence inside AK(3)'s class that was already implied (non-constructively at the level of this pair) by D6.
+- Nothing here bears on whether AK(3) is AC-trivial. All negative statements are about **one** ACM move with c (or an automorphic image of c) frozen; T9 and T10(a) are positive equivalences inside AK(3)'s class that were already implied (non-constructively at the level of these pairs) by D6.
+- T10 lists only the c-frozen classes visible in the 48 stored certificates; it is not a census of AK(3)'s class. Equality of invariants was not upgraded to conjugacy (w₂ vs w_Q).
 - T2 rests on Whitehead's peak-reduction theorem (recalled, classical); T1 does not. T1(b) uses Nielsen's theorem Out(F₂) = GL₂(ℤ) (recalled, classical).
 - The closed forms in T4 are proved through Lemma 5.3 and an exact finite computation, not by a hand calculation; T3 is proved by hand and re-checked by brute force in a group of order 32.
 - T6 duplicates the statement of TH03's uniform theorem (found in parallel); it is an independent proof, and the one pair (9,5) that the nilpotent invariants cannot exclude is removed with the same holonomy representation that TH03 and the coordinator use (here: one exact trace).
@@ -274,7 +276,8 @@ What the scripts assert. `th11_nil`: the Lie-coordinate extraction (every differ
 - `experiments/th11_trace.py` — exact holonomy traces in ℚ(ω) (matrices re-verified); pairs (9,5), (6,7); reflection identity; `--selftest`.
 - `experiments/th11_cert.py` — builds and replays the certificate; `--selftest` (no write) / `--write certificates`.
 - `experiments/th11_kc.py` — scan of stored certificates for states with a relator in the Aut-orbit of c; pull-back to (c, w); invariants (κ, Ĵ, N); `--selftest`.
-- `certificates/th11_p3_to_theta0_p3.json` (48 kB), `certificates/th11_cw14_to_ak3.json` (90 kB), `certificates/th11_cq_to_ak3.json` (53 kB), all `ordinary-ac-elementary-v1`; the last two were produced with `i_transport.merge` (driver in the scratch directory `agent-th11/mk2.py`; inputs: the prefix of length 146 of `d_ak3_aut_invx.json`, resp. `d_ak3_to_len13b.json`, and D's realization certificates).
+- `certificates/th11_p3_to_theta0_p3.json` (48 kB), `certificates/th11_cw14_to_ak3.json` (90 kB), `certificates/th11_cq_to_ak3.json` (53 kB), all `ordinary-ac-elementary-v1`.
+- `experiments/th11_cert2.py` — builds the last two certificates with `i_transport.merge` (inputs: the prefix of length 146 of `d_ak3_aut_invx.json`, resp. `d_ak3_to_len13b.json`, and D's realization certificates); `--selftest` / `--write certificates`.
 
 ## References
 

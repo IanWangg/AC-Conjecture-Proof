@@ -586,7 +586,8 @@ the twelve undecided k = 9 classes with |M| ≤ 5, exponents ≤ 9, length ≤ 6
 4. **Do not expect a strict-descent or length argument**: three of the five k = 7 classes are AC-trivial but
    admit no strictly decreasing generalized move (§8.2).
 5. For the Gieseking coordinates, n = 6, 7 remain undecided for the BS(1,2) exit (§6); more quotients
-   (PΓL(2,25) as in O §6.2, or PSL(2,p) for p = 19) would probably decide them.
+   (PΓL(2,25) as in O §6.2, or PSL(2,19)) may decide them; a run with p = 19 added did not finish within the
+   5-minute job limit of this round.
 
 ## 12. Files written
 
@@ -595,7 +596,7 @@ the twelve undecided k = 9 classes with |M| ≤ 5, exponents ≤ 9, length ≤ 6
 - `certificates/th09_ms1_{1..6}.json`, `certificates/th09_x7_trivialization.json`,
   `certificates/th09_k9_112121122_trivialization.json`, `certificates/th09_bs7_bs_exit.json`,
   `certificates/th09_ak2_bs_exit.json`, `certificates/th09_r249_trivialization.json`,
-  `certificates/th09_r249_seed_to_member.json` (11 files, each < 2 MB, all replayed by `elementary_verify.py`).
+  `certificates/th09_r249_seed_to_member.json` (12 files, each < 2 MB, all replayed by `elementary_verify.py`).
 
 ## References
 
@@ -604,4 +605,5 @@ the twelve undecided k = 9 classes with |M| ≤ 5, exponents ≤ 9, length ≤ 6
 - C. F. Miller III, P. E. Schupp, *Some presentations of the trivial group*, Contemp. Math. 250 (1999) — externally reported.
 - D. Silver, W. Whitten, S. Williams, *Knot groups with many killers*, Bull. Aust. Math. Soc. 81 (2010) — externally reported (via K §4).
 - M. Conder, G. Havas, M. Newman, *On one-relator quotients of the modular group*, in Groups St Andrews 2009 — externally reported; not read here.
+- nahomar/andrews-curtis-solver, `residual_classes16.txt` (third-party list of 838 unresolved presentations of length 13–16; unreviewed; used via the copy fetched by agent F).
 - W. Magnus, A. Karrass, D. Solitar, *Combinatorial Group Theory* (conjugacy in free products; Nielsen's theorems; Whitehead's theorem).

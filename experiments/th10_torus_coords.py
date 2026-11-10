@@ -10,7 +10,7 @@ explicit bases, (b) scans every state of the repository certificates that start 
 named presentation and lists the torus types met, (c) sanity-checks Theorem B's algebraic
 core in small permutation groups.  Standard library only; imports the verifier read-only.
 
-Usage: python3 experiments/th10_torus_coords.py --selftest | --scan
+Usage: python3 experiments/th10_torus_coords.py --selftest | --scan | --mechanism
 """
 import glob, json, os, sys
 from math import gcd
@@ -268,6 +268,50 @@ def selftest():
     print(f"selftest passed ({checked} instances of Theorem C's core, {bchecked} of Theorem B(a)'s core, "
           f"{achecked} of Theorem A's step 4)")
 
+def mechanism(samples=400, seed=7):
+    """Replay the mechanism of Theorems A/B on the certified pair M_3 = (X yyy x YYYY, X Y xx Y) ~ AK(3):
+    for epimorphisms F -> Q (Q finite), N = <<c(a,b)>>, check that Q/N is metacyclic-by-construction
+    (<b>N normal with cyclic quotient), and that w(a,b) is conjugate modulo N to the image of the
+    primitive element x y^j for some j, whose cokernel is then cyclic."""
+    import random
+    random.seed(seed)
+    groups = dict(GROUPS)
+    groups["S5"] = (5, [(1, 0, 2, 3, 4), (1, 2, 3, 4, 0)])
+    total = 0
+    for name, (n, gens) in groups.items():
+        G = sorted(closure(gens, n)); Gset = set(G); e = tuple(range(n))
+        pairs = [(a, b) for a in G for b in G]
+        if len(pairs) > samples:
+            pairs = random.sample(pairs, samples)
+        cnt = 0
+        for a, b in pairs:
+            if closure([a, b], n) != Gset:
+                continue
+            ev_ = lambda w: _eval(w, a, b, n)
+            c, w = ev_("XyyyxYYYY"), ev_("XYxxY")
+            N = closure([pmul(pmul(pinv(g), c), g) for g in G], n)
+            NW = closure(list(N) + [pmul(pmul(pinv(g), w), g) for g in G], n)
+            assert len(NW) == len(G)                                 # (c,w) normally generates Q
+            BN = closure(list(N) + [b], n)                           # <b>N
+            assert all(pmul(pmul(pinv(g), h), g) in BN for g in (a, b) for h in (b,)), name   # normal
+            assert pmul(pmul(pinv(a), pinv(b)), pmul(a, b)) in BN, name                        # Q/<b>N cyclic
+            ok = False
+            for j in range(order(b)):
+                y0 = pmul(a, ppow(b, j))                             # image of the primitive x y^j
+                if any(pmul(pinv(pmul(pmul(g, y0), pinv(g))), w) in N for g in G):
+                    ok = True; break
+            assert ok, (name, a, b)
+            cnt += 1
+        total += cnt
+        print(f"{name}: order {len(G)}, {cnt} generating pairs checked", flush=True)
+    print(f"mechanism check passed on {total} epimorphisms")
+
+def _eval(word, a, b, n):
+    r = tuple(range(n))
+    m = {"x": a, "y": b, "X": pinv(a), "Y": pinv(b)}
+    for ch in word: r = pmul(r, m[ch])
+    return r
+
 def scan():
     root = os.path.dirname(HERE)
     res, seen_by_key, ncert = {}, {}, [0]
@@ -298,4 +342,5 @@ def scan():
 if __name__ == "__main__":
     if "--selftest" in sys.argv: selftest()
     elif "--scan" in sys.argv: scan()
+    elif "--mechanism" in sys.argv: mechanism()
     else: print(__doc__)

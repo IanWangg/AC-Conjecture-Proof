@@ -2,19 +2,29 @@
 
 Date: 2026-11-09 (Los Angeles). Independent research agent TH14 (round 5, theory round).
 
-**Status (draft, being written incrementally).** Everything in this note is about **STABLE** AC equivalence
-(one or two extra generators z with relator z) unless a statement is explicitly marked *ordinary*.
-**No ordinary AC result on AK(3), no AK(3) trivialization (stable or ordinary), no obstruction, no counterexample.**
-Central claims (all *proved here*, complete proofs in §2–§4; novelty not established — Theorems A, B2 are
-classical in content):
+**Status: complete for this round.** Everything in this note is about **STABLE** AC equivalence (one extra
+generator z with relator z; rank 2n for B2) unless a statement is explicitly marked *ordinary*.
+**No ordinary AC result on AK(3) or C4, no AK(3) trivialization (stable or ordinary), no obstruction, no
+counterexample; the stable status of AK(3) remains open.** Central claims (all *proved here* with complete
+proofs unless labelled otherwise; novelty not established — A and B2 are classical in content):
 
 | # | statement | label |
 |---|---|---|
-| A | For every balanced presentation U of the trivial group (any rank n), the AC class of the once-stabilized tuple (U, z) in F_{n+1} is invariant under **all of Aut(F_{n+1})**; explicit macro-move counts. In particular (U,z) ~AC (φ(U),z) for every φ ∈ Aut(F_n): chirality (C4 vs φ(C4)) is invisible after ONE stabilization | proved here (stable) |
-| B | **Stable substitution theorem.** If (p,q) normally generates F₂ and ⟨p,q,t⟩ = F₂ for some t ("corank ≤ 1"), then (U∘(p,q), z) ~AC (U, z) in rank 3, where U∘(p,q) = (r₁(p,q), r₂(p,q)). Special case U = (x,y): every corank-≤1 normally generating pair is AC-trivial after one stabilization | proved here (stable) |
-| B2 | **Composition formula.** For balanced presentations U, P of the trivial group of rank n: (U∘P, z₁..z_n) ~AC U ⊔ P (disjoint union, rank 2n). Hence stably U∘P ~ P∘U, and U∘P ~ U whenever P is stably AC-trivial | proved here (stable) |
-| C | Substitution creates no new primitive-relator exit: w(p,q) primitive in F₂ ⇒ w primitive in F(x,y) | proved here |
-| D | Exits tested for AK(3) (corank-1 exit, factorizations W∘P of class members) | experiment, §5 |
+| A | For every balanced presentation U of the trivial group (any rank n), the AC class of the once-stabilized tuple (U, z) in F_{n+1} is invariant under **all of Aut(F_{n+1})**; explicit macro-move counts in terms of the areas of the generators. In particular (U,z) ~AC (φ(U),z) for every φ ∈ Aut(F_n): "chirality" (C4 vs φ(C4)) is invisible after ONE stabilization | proved (stable), §2 |
+| A-cert | (C4, z) → (ε_y(C4), z), ε_y: y ↦ y⁻¹ (not known to be realized in rank 2): 695-move rank-3 certificate, own verifier | proved by certificate (stable), §6 |
+| B | **Stable substitution theorem.** If (p,q) normally generates F₂ and ⟨p,q,t⟩ = F₂ for some t ("corank ≤ 1"), then (U∘(p,q), z) ~AC (U, z) in rank 3. Case U = (x,y): every corank-≤1 normally generating pair is AC-trivial after one stabilization (B′); rank-n version and rank reduction "corank k ⇒ stably of rank k" (B3) | proved (stable), §3, §7 |
+| B2 | **Composition formula.** For balanced presentations U, P of the trivial group of rank n: (U∘P, z₁..z_n) ~AC U ⊔ P in rank 2n. Hence stably U∘P ~ P∘U, and U∘P ~ U whenever P is stably AC-trivial | proved (stable), §4 |
+| C | Substitution creates no new primitive-relator exit: w(p,q) primitive in F₂ ⇒ w primitive | proved, §3 |
+| E1 | The two stable exits "relators extend to a generating triple" (E1) and "relators lie in a proper rank-2 subgroup" (E2) are finite Stallings-graph tests | proved, §5 |
+| E3 | For the standard AK(3) relators (and every ACM replacement of x³y⁻⁴ with the trefoil relator frozen), **no conjugates extend to a generating triple of F₂**: the cheapest stable exit is closed, for all conjugators (Grushko + trace descent in SL₂(ℤ) + a mod-8 obstruction) | proved, §5.1 |
+| E-exp | No E1 hit for 47 known members of AK(3)'s class (4,204 subgroups); no E2 factorization for the 18 members of length ≤ 15 (1,150 subgroups, 16 with pruned closure) | experiment, §5.2 |
+| F | **Generator exchange ("subgroup-ACM").** Exact conjugacy condition in the one-relator group F/⟨⟨r₂⟩⟩ under which "introduce z = w, eliminate y = v(x,z)" is a one-stabilization equivalence. Consequence: AK(3) ~₁ V_k = (x³zx⁻⁴z⁻¹, xzx^{4k+1}z⁻²) for all k ∈ ℤ (Miller–Schupp type, length 13 + \|4k+1\|) | proved (stable), §9 |
+| F-exp | V_k is already in AK(3)'s *ordinary* class for k ∈ {−2,…,2} (engine collisions at barriers 16–21, no certificates) | experiment, §9 |
+
+**What one stabilization buys, in one sentence:** all of Aut (hence all "chirality"), all substitutions by
+corank-≤1 pairs, and all generator exchanges satisfying one conjugacy condition — but for AK(3) none of the
+exits these open (primitive relator, generating triple, factorization into known-trivial pieces, a
+presentation of length ≤ 13 outside its class) was reached; one of them is rigorously closed (E3).
 
 Notation: F = F(x,y), X = x⁻¹, Y = y⁻¹; F₃ = F(x,y,z). "~" is ordinary AC equivalence of tuples **in the
 stated free group** (inversion, right multiplication by another relator, conjugation by a letter).
@@ -115,8 +125,8 @@ presents the trivial group.
 α⁻¹(U,γ) ~ (U∘(p,q), z). ∎
 
 **Corollary B′ (U = (x,y)).** If (p,q) satisfies (N) and (G), then (p, q, z) is AC-trivial in F₃.
-*Direct proof.* By the above there is a basis (A,B,C) of F₃ with A ≡ p, B ≡ q mod ⟨⟨z⟩⟩ (namely α⁻¹ applied to
-(x,y,z)... precisely (A,B,C) = (α⁻¹x, α⁻¹y, α⁻¹z)). Insert z-letters: (p,q,z) ~ (A,B,z). In F₃/⟨⟨A,B⟩⟩ = ⟨C⟩ ≅ ℤ
+*Direct proof.* With α as above, (A,B,C) = (α⁻¹x, α⁻¹y, α⁻¹z) is a basis of F₃ with A ≡ p, B ≡ q mod ⟨⟨z⟩⟩
+(because π₀∘α⁻¹ = π). Insert z-letters: (p,q,z) ~ (A,B,z). In F₃/⟨⟨A,B⟩⟩ = ⟨C⟩ ≅ ℤ
 the image of z is C^{±1} because F₃/⟨⟨A,B,z⟩⟩ = F/⟨⟨p,q⟩⟩ = 1; so (A,B,z) ~ (A,B,C^{±1}), a basis, which is
 AC-trivial by Nielsen moves. ∎
 Conversely (G) is *equivalent* to: p, q are obtained by deleting z from two elements A, B of a basis (A,B,C) of
@@ -239,7 +249,18 @@ rotations (g = (prefix of b)(prefix of a)⁻¹). E1: all vertex pairs of the Sta
 E2: the full closure of folded quotients (exact, Lemma E1(ii)) when it has ≤ 1,500 graphs; otherwise only
 quotients reachable through graphs of rank ≤ 3 ("pruned", incomplete for that subgroup).
 
-RESULTS_PLACEHOLDER
+| run (exact command, repository root) | members | subgroups K | E1 hits | E2 hits | pruned |
+|---|---:|---:|---:|---:|---:|
+| `th14_exits.py 2 --e1only --maxlen 17` (E1 only; ball radius 2 + rotations) | 47 (all of length ≤ 17) | 4,204 | **0** | — | — |
+| `th14_exits.py 1 --maxlen 14` (E1 + E2; ball radius 1 + rotations) | 10 (lengths 13, 14) | 606 | 0 | **0** | 0 |
+| `th14_exits.py 1 --maxlen 15 --skip 10` (timeout 290 s: 6 members done) | 6 (length 15) | 396 | 0 | **0** | 4 |
+| `th14_exits.py 1 --maxlen 15 --skip 16` (timeout 110 s: 1 member done) | 1 (length 15) | 74 | 0 | **0** | 8 |
+| `th14_exits.py 1 --maxlen 15 --skip 17` | 1 (length 15) | 74 | 0 | **0** | 4 |
+
+Totals: E1 — 47 members, 4,204 subgroups, 0 hits. E2 — all 18 members of length ≤ 15, 1,150 subgroups,
+0 hits, 16 subgroups with pruned closure (so E2 is exhaustive for 1,134 of them). The 48th member (G's T(2,7) form, length 35) was not tested. An earlier,
+unfiltered run of the same script (member list then including three round-5 pairs) covered 15 members and
+952 subgroups with the same outcome (0 / 0, 2 pruned).
 
 So within these bounds no member of AK(3)'s class is a corank-≤1 pair, and none factors through a proper
 rank-2 subgroup. **This is a bounded search over 48 known class members and short conjugators; it is not a
@@ -253,7 +274,8 @@ therefore more likely to be found among *long* members, which this light search 
 
 ## 6. A machine-checked instance of Theorem A for C4 (stable; proved here by certificate)
 
-C4 = (x⁴yx⁻¹y, xy³xy⁻²). N proved Ŝ(C4) ⊇ D₆ and that the matrix of ε_y: y ↦ y⁻¹ is *not* in D₆; whether
+C4 = (x⁴yx⁻¹y, xy³xy⁻²). N proved Ŝ(C4) ⊇ D₆ = ⟨−I, φ₁, φ₂⟩ and that the matrix of ε_y: y ↦ y⁻¹ is *not* in
+D₆ (re-checked here: the group generated by N's three matrices has 12 elements, none equal to diag(1,−1)); whether
 C4 ~AC ε_y(C4) in rank 2 is open (if not, C4 is a counterexample to the ordinary conjecture).
 `certificates/th14_c4_invy_stable1.json` is an explicit rank-3 sequence
 
@@ -295,3 +317,116 @@ P^∨_j is α(z_j) with the x-letters deleted; (x, P^∨(z)) is the n-fold stabi
 4. *Two stabilizations.* The same basis-completion trick with two new generators is a tautology
    (Proposition B3 with n = k = 2 returns P itself). I found no argument giving more from a second
    stabilization than B2.
+
+## 9. Proposition F: generator exchange — the "subgroup-ACM" move of the seed (stable; proved here)
+
+**Proposition F.** Let U = (r₁, r₂) be a balanced presentation of the trivial group on (x,y),
+G₂ = F(x,y)/⟨⟨r₂⟩⟩, w ∈ F(x,y), v ∈ F(x,z).
+(i) In the rank-3 triple (r₁, r₂, z⁻¹w) the first relator can be replaced by y⁻¹v(x,z) by AC moves on the
+first relator alone (conjugation, inversion, multiplication by conjugates of the other two) **iff**
+y⁻¹·v(x, w(x,y)) is conjugate to r₁^{±1} in the one-relator group G₂.
+(ii) In that case U ~₁ V := (r₂(x, v(x,z)), z⁻¹·w(x, v(x,z))), a balanced presentation of the trivial group
+on (x,z).
+
+*Proof.* (i) F₃/⟨⟨r₂, z⁻¹w⟩⟩ ≅ G₂ via z ↦ w. The moves in question preserve the conjugacy class of the image
+of the first relator up to inversion; conversely a word s′ with image conjugate to r̄₁^{±1} equals
+g r₁^{±1} g⁻¹·n with n ∈ ⟨⟨r₂, z⁻¹w⟩⟩ and is reached by conjugation, inversion and Fact 0.
+(ii) (r₁, r₂, z) ~ (r₁, r₂, z⁻¹w) (Fact 0, w ∈ ⟨⟨U⟩⟩, one inversion) ~ (y⁻¹v(x,z), r₂, z⁻¹w) by (i). Replace
+every y^{±1} in r₂ and in w by v(x,z)^{±1} (one macro move with the first relator per letter, as in the proof
+of B2): (y⁻¹v, V) with V ⊂ F(x,z). The triple presents the trivial group and y⁻¹v eliminates y, so V presents
+the trivial group; hence v ∈ ⟨⟨V⟩⟩, y⁻¹v ↦ y⁻¹ ↦ y (Fact 0, inversion), giving (y, V(x,z)); by Theorem A the
+permutation y ↔ z turns this into (V(x,y), z). ∎
+
+If (x,w) is a basis of F(x,y) with inverse substitution y = v₀(x,z), then V is one ACM move away from an
+automorphic image of U (ordinary, given Aut-closure). The genuinely stable instances are those where x and w
+generate only *modulo the relators* (with exactly one use of r₁, up to conjugacy in G₂).
+
+**Application to AK(3) (stable; proved).** Take r₁ = xyxy⁻¹x⁻¹y⁻¹, r₂ = x³y⁻⁴; in G₂ = ⟨x,y | x³ = y⁴⟩ the
+element x³ = y⁴ is central. For w = x^{3i+1}y^{4j+1} and v = zxz⁻¹: y⁻¹·wxw⁻¹ = y⁻¹(xy)x(xy)⁻¹ in G₂, a cyclic
+rotation of r₁. Hence for all i, j ∈ ℤ
+
+  AK(3) ~₁ V_{i,j} = (x³zx⁻⁴z⁻¹, x^{3i+1} z x^{4j+1} z⁻²),
+
+i.e. the Miller–Schupp-type presentations ⟨x,z | z⁻¹x³z = x⁴, z² = x^{3i+1}zx^{4j+1}⟩. Since x^{3i}z ≡ zx^{4i}
+modulo the first relator, V_{i,j} ~AC V_{0,i+j} by one *ordinary* ACM move, so this is a one-parameter
+family V_k = (x³zx⁻⁴z⁻¹, xzx^{4k+1}z⁻²), k ∈ ℤ, |V_k| ≥ 14. The same computation gives, for every n,
+AK(n) ~₁ (xⁿzx^{−(n+1)}z⁻¹, xzx^{(n+1)k+1}z⁻²).
+
+**Test (experiment, D's engine `d_acsearch`, full cyclic-product graph, several sources).** Forward sets of
+V_{0,0}, V_{−1,0}, V_{0,−1}, V_{−1,−1}, V_{1,0}, V_{2,0}, V_{−2,0} (y written for z) and of AK(3) share states
+at barriers 16–21 (caps 19–22; e.g. `d_acsearch --source xxxyXXXXY,xyxYY --source xxxYYYY,xyxYXY --cap 19`:
+"COLLISION 0-1 barrier 19"; no trivializing state in any run). A common forward state is an ordinary AC
+equivalence (every cyclic product is an AC composite), so **V_k is already in AK(3)'s ordinary AC class for
+k ∈ {−2,…,2}** (engine-level; no certificates were generated in this session). So this natural family gives
+no stable shortcut: it leads back into AK(3)'s ordinary class, at lengths ≥ 14. Whether V_k ~AC AK(3) for
+all k by a uniform ordinary argument is open here (stably it is Proposition F).
+
+## 10. Honest limits
+
+- Everything proved here is **stable** (rank 3, or rank 2n for B2) except Lemma C, Lemma E1 and the
+  SL₂(ℤ) part of Proposition E3, which are statements about subgroups of free groups / matrices. Nothing here
+  is an ordinary AC result about AK(3), C4 or the conjecture, and the stable status of AK(3) remains open.
+- Theorems A and B2 are classical in content (stable equivalence absorbs automorphisms; sums of
+  presentations); I could not consult the literature (Hog-Angeloni–Metzler, Metzler, Myasnikov) in this
+  session. Theorem B/B′, Proposition B3, E3 and F may also be known. No novelty is claimed.
+- §5.2 is a bounded search over 47 (E1) resp. 18 (E2) known class members with short conjugators; 16
+  subgroups had their quotient closure pruned. It does not show that AK(3)'s class has no corank-≤1 member or no composite member.
+- The V_k ~AC AK(3) statements of §9 rest on engine collisions (D's engine, J's directedness caveat does not
+  matter for a common forward state), not on stored certificates.
+- Externally recalled and not re-proved: Nielsen reduction of generating tuples, Grushko–Neumann, Kurosh,
+  Fricke's trace identity, PSL₂(ℤ) ≅ C₂ * C₃, the normal form of parabolics in SL₂(ℤ), Takahasi's theorem
+  (its two-line proof is included), Dunwoody–Pietrowski (used only in a remark).
+- The move counts of Theorem A depend on areas of the generators, for which no a-priori bound exists.
+
+## 11. Advice to the coordinator (ranked)
+
+1. **Record the dichotomy for the chirality programme (N).** By Corollary A1, C4 ~₁ φ(C4) for every φ, with
+   an explicit certificate for φ = ε_y. So any invariant separating C4 from φ(C4) must fail to be invariant
+   under one stabilization; in particular it cannot be a function of the stabilized tuple's AC class, of
+   the Q**-class, or of any rank-3 datum. This sharpens N1 and should be quoted wherever the C4 route is
+   described; a successful separation would be a *stable/unstable separation theorem*, not only a
+   counterexample.
+2. **Stable AK(3): the cheap exits are exhausted.** E1 is closed for the standard form (E3) and for all 47
+   short known members within the bounds; substitution creates no primitive exits (Lemma C); the natural
+   generator exchanges (Prop. F) return into AK(3)'s ordinary class. A serious stable attack now needs a
+   genuine rank-3 search engine (D's engine generalized to three relators with a primitive-in-F₃ exit and
+   elimination). Lemma E1 and Prop. F give the two exit tests such an engine should run at every state.
+3. **Possible follow-ups (theory, cheap):** (a) E3 for the mirror side (x³y⁻⁴ frozen; C₃ * C₄, traces in
+   ℤ[√2]) and for general n; (b) a uniform ordinary proof of V_k ~AC AK(n) (would turn §9 into an ordinary
+   one-parameter family, in the style of K1); (c) decide whether corank-≤1 normally generating pairs are
+   always *ordinarily* AC-trivial — if not, they are counterexamples that die after one stabilization.
+4. **Do not** use any statement of this note as an ordinary AC result; the verifier `th14_verify3.py` is for
+   rank-3 certificates only and reports `"stable1": true` exactly when the certificate proves a
+   one-stabilization equivalence of two rank-2 presentations.
+
+## 12. Files written and reproduction (all executed in this session; repository root)
+
+- `research/research-th14.md` (this note).
+- `experiments/th14_verify3.py` — strict rank-3 replayer. `python3 experiments/th14_verify3.py --selftest` →
+  "self-test: two exact replays and nine negative controls passed".
+- `experiments/th14_cert.py` — generator for Theorem A certificates (ε_y). `python3 experiments/th14_cert.py
+  --selftest` → "th14_cert self-test passed (AK(2): 193 moves)";
+  `cd experiments && python3 th14_cert.py invy xxxxyXy xyyyxYY ../certificates/th14_c4_invy_stable1.json`
+  (≈ 15 s) → "moves 695 macro 74 area_y 15".
+- `certificates/th14_c4_invy_stable1.json` (26 kB). `python3 experiments/th14_verify3.py
+  certificates/th14_c4_invy_stable1.json` → `{"endpoint": ["xxxxYXY", "xYYYxyy", "z"], "moves": 695, …,
+  "peak_total_length": 33, "stable1": true}`.
+- `experiments/th14_stallings.py`, `experiments/th14_exits.py` — Stallings-graph tools and the exit scan
+  (`--selftest` for both; scan commands in §5.2, each ≤ 290 s on one core, < 100 MB).
+- §9 engine runs (D's binary `d_acsearch`, built from `experiments/d_acsearch.cpp`; each < 5 s):
+  `d_acsearch --source xxxyXXXXY,xyxYY --source xxxYYYY,xyxYXY --cap 19` → "COLLISION 0-1 barrier 19";
+  `d_acsearch --source xxxyXXXXY,XXyxYY --source xxxyXXXXY,xyXXXYY --source xxxyXXXXY,XXyXXXYY --source
+  xxxYYYY,xyxYXY --cap 21 --no-stop` → collisions 0-1 (16), 0-2 (19), 1-3 (17);
+  `d_acsearch --source xxxyXXXXY,xxxxyxYY --source xxxyXXXXY,xxxxxxxyxYY --source xxxyXXXXY,XXXXXyxYY
+  --source xxxYYYY,xyxYXY --cap 22 --no-stop` → collisions 0-1 (21), 0-3 (20), 2-3 (19);
+  "trivializing_states 0" in all three.
+
+## References (all recalled from memory or via earlier notes; none consulted in this session)
+
+- J. Nielsen (1921/1924) and Lyndon–Schupp, *Combinatorial Group Theory*, I.2 (Nielsen reduction), III.3
+  (Grushko–Neumann, Kurosh).  M. Takahasi (1951), overgroups of f.g. subgroups of free groups; J. Stallings
+  (1983), foldings.
+- C. Hog-Angeloni, W. Metzler (eds.), *Two-dimensional homotopy and combinatorial group theory* (Q**-moves,
+  stabilization).  M. J. Dunwoody, A. Pietrowski, *Presentations of the trefoil group* (1973).
+- R. Fricke / F. Klein (trace identities in SL₂).  Earlier notes of this repository: D (D2, D3, D6), G (G2),
+  I (Prop. C), J (§7), L (§3.3), N (N1, Ŝ(C4) ⊇ D₆).

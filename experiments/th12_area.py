@@ -356,6 +356,58 @@ def check_s_nfree():
         assert red("X"*n + k + "X" + inv(k) + "x" + "x"*n) == com
     return True
 
+def _layers(start, depth):
+    def nbrs(st):
+        a, b = st
+        yield (inv(a), b), "I"; yield (a, inv(b)), "I"; yield (b, a), "S"
+        yield (red(a + b), b), "M"; yield (red(a + inv(b)), b), "M"
+        yield (a, red(b + a)), "M"; yield (a, red(b + inv(a))), "M"
+        for g in "xXyY":
+            yield (red(inv(g) + a + g), b), "C"; yield (a, red(inv(g) + b + g)), "C"
+    cur = {start: {(0, 0)}}; seen = {start: 0}; out = [cur]
+    for d in range(1, depth + 1):
+        nxt = {}
+        for st, pk in cur.items():
+            for st2, typ in nbrs(st):
+                if st2 in seen and seen[st2] < d: continue
+                s = nxt.setdefault(st2, set())
+                for mu, ka in pk: s.add((mu + (typ == "M"), ka + (typ == "C")))
+        for st2 in nxt: seen[st2] = d
+        cur = nxt; out.append(cur)
+    return out
+
+def window_calibration(ns=(2, 3, 4)):
+    """Sharpness of Propositions 6 and 7 on the AC-trivial family V_n = (x^n Y^(n+1), xY):
+    same Sigma as AK(n) (so mu >= n+1) and the model of Lemma 4.1 with window [1,n-1]
+    (so kappa >= n-1).  Exhaustive bidirectional BFS (5+5) over the 15 instructions."""
+    B = _layers(("x", "y"), 5); out = {}
+    for n in ns:
+        A = _layers(("x"*n + "Y"*(n+1), "xY"), 5); best = None
+        for total in range(0, 11):
+            pk = set()
+            for i in range(max(0, total - 5), min(5, total) + 1):
+                for st in set(A[i]) & set(B[total - i]):
+                    for m1, k1 in A[i][st]:
+                        for m2, k2 in B[total - i][st]: pk.add((m1 + m2, k1 + k2))
+            if pk: best = (total, sorted(pk)); break
+        assert best and best[0] == 2*n + 2, (n, best)
+        assert min(m for m, k in best[1]) == n + 1 and min(k for m, k in best[1]) == n - 1, (n, best)
+        out[n] = best
+    return out
+
+def vn_path(nmax):
+    """Explicit trivialization of V_n = (x^n Y^(n+1), xY) by 2n+2 instructions
+    (mu = n+2, kappa = n, no inversion or swap), for every n >= 2."""
+    for n in range(2, nmax+1):
+        u0, u1 = "x"*n + "Y"*(n+1), "xY"; steps = 0
+        for _ in range(n-1):
+            u0 = red(u0 + inv(u1)); u0 = red("X" + u0 + "x"); steps += 2      # x^j Y^(j+1) -> x^(j-1) Y^j
+        assert u0 == "xYY"
+        u1 = red(u1 + inv(u0)); u1 = red("X" + u1 + "x")                       # u1 = y
+        u0 = red(u0 + u1); u0 = red(u0 + u1); steps += 4                       # u0 = x
+        assert (u0, u1) == ("x", "y") and steps == 2*n + 2, n
+    return nmax
+
 def main(argv):
     here = os.path.dirname(os.path.abspath(__file__))
     if "--cert" in argv:
@@ -385,6 +437,8 @@ def main(argv):
         print("Proposition 8 (x over P_n with 4n+13 factors) verified for n = 2..%d; counts (c,k) for n=3: %s" % area_over_pn(30))
         print("Proposition 9 (x over P_n with 11 factors for every n; y with 11(n+2)+2) verified for n = 2..%d" % bounded_area_pn(30))
         print("n-independent form of (P2) verified:", check_s_nfree())
+        print("V_n = (x^n Y^(n+1), xY): d_F and (mu,kappa) of all shortest paths:", window_calibration())
+        print("explicit (2n+2)-instruction trivialization of V_n verified for n = 2..%d" % vn_path(40))
         cal = ak1_calibration()
         assert cal[0] == 8 and all(mu >= 4 and ka >= 1 for mu, ka in cal[1])
         print("AK(1): d_F = %d; (mu, kappa) of its shortest paths: %s" % cal)

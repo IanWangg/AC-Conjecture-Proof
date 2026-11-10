@@ -19,6 +19,7 @@ Notation: X = x⁻¹, Y = y⁻¹; G_n = BS(n,n+1) = ⟨x,y | r_n⟩, r_n = x⁻�
 | T7 | n = 2: the bridge class C_5 = C_{−1} **is** a divisor class (the Johnson class), so every MS(2,w) with ℓ(w) ≤ 3 is AC-trivial. n = 3: the six ℓ = 3 classes are C_{±1}, C_{±2} (AC-trivial) and C_{±5} (bridge, mirror), so **every MS(3,w) with ℓ(w) ≤ 3 is AC-trivial or AC-equivalent to AK(3)**. For n ≥ 3 the bridge class is never a divisor class | proved here (with C's and D's certificates) |
 | T8 | Half classes (2b ≡ 0 mod n or mod n+1) are one ACM move from a T(2,m) torus pair, m = n+1 or n, with a six-syllable partner; their triviality is open in general | proved here (reduction only) |
 | T9 | **Generalized AK pairs.** For β ≢ 0 (mod n+1) let P_β = xy^{−β}xy^{β}x⁻¹y⁻¹ and AK_β(n) = (xⁿy^{−(n+1)}, P_β); AK_{−1}(n) = AK(n). Then P_β ∈ C_b with b ≡ β (mod n+1), b ≡ 1 (mod n), and MS(n,w) ~AC AK_β(n) for all w ∈ C_b^{±1}, by two ACM moves and no automorphism (β = −1 is C's theorem). Symmetrically for the column b ≡ −1 (mod n+1) with AK′_γ(n) = (x^{n+1}y^{−n}, xy^{−γ}xy⁻¹x⁻¹y^{γ}). Consequences: AK_1(n) is AC-trivial for all n ≥ 2; AK_1(3), AK_2(3) are AC-trivial while AK_3(3) = AK(3); and **holdout P2 ~AC AK_2(4) = (x⁴y⁻⁵, xy⁻²xy²x⁻¹y⁻¹) ~AC AK_{−2}(5)**, a torus-knot pair | proved here; certificates |
+| T10 | α = (x ↦ xy, y ↦ y⁻¹) carries K's frozen relator c = xyxy⁻²x⁻¹y to w = x²y²x⁻¹y⁻¹, and P₂ is an automorphic image of w. Hence **AK(n) (killer (xy)ⁿx⁻¹y⁻²) and P2 (killer x⁻¹y⁴xy⁻⁵) are killer pairs of the same group ⟨x,y ∣ x²y² = yx⟩** (O's punctured-torus bundle group); P2 ~AC (x⁻¹y⁴xy⁻⁵, x²y²x⁻¹y⁻¹). Whether P2 has a one-move exit there is open (bounded search: none) | proved here (identities) + bounded experiment |
 | E1 | D's 34 certified MS(3,w) members of AK(3)'s class lie in exactly **two** BS(3,4)-classes, C_{−5} (17) and its mirror C_5 (17), and these are all benchmark presentations in those classes: all 34 are one r-frozen ACM move from C's bridge presentation or from MS(3, yx²y) | exact computation |
 | E2 | Of the 1190 benchmark presentations, 330 have ℓ = 1 and 244 lie in divisor classes: for all 574 a certificate was generated from the proofs and replayed by the strict verifier (67 of them are not in Shehper et al.'s greedy-solved list). All 212 with ℓ = 5 are unsolved there | exact computation + certificates |
 | E3 | Holdout P2's class contains the ℓ = 3 classes C_{±3} of BS(4,5) and C_{±14} of BS(5,6) (D's certificates + T2). For n = 4 the ℓ = 3 classes are: C_{±1}, C_{±2} trivial (T6), C_{±6} trivial (L's certificates + T2), C_{±3} ~ P2, C_{±9} ~ AK(4) or its mirror, C_{±7} open | exact computation on certified endpoints |
@@ -150,6 +151,28 @@ For β = −1 this is a two-line proof of C's theorem M_n ~AC AK(n) (`certificat
 
 So the holdout class P2 contains torus-knot pairs for T(4,5) and T(5,6) with the AK torus relator, and F's meridian-defect and G's torus machinery apply to it. (Earlier notes describe P2 through BS-type presentations and I's R82, R86; I did not check whether a torus-type member had been recorded.) One-move exits at these nodes with the torus relator frozen are excluded exactly as in G2(a): the image of P_β in C_n * C_{n+1} has the sign-mixed x-syllables (x, x, x⁻¹), while a primitive has all x-syllables equal; so for n ≥ 3 no primitive is conjugate to P_β^{±1} in ⟨x,y | xⁿ = y^{n+1}⟩ (G's argument, which uses only the x-syllables; not re-derived here).
 
+### 2.10 Proposition T10 (AK(n) and P2 are killers of one group) and the P₂-frozen direction
+
+Let w = x²y²x⁻¹y⁻¹, Γ = ⟨x,y | x²y² = yx⟩, c = xyxy⁻²x⁻¹y (K's frozen relator; ⟨x,y | c⟩ is O's punctured-torus bundle group), k_n = xⁿy⁻¹x⁻¹y² (K: (c, k_n) ~AC AK(n)).
+
+**(a)** *α = (x ↦ xy, y ↦ y⁻¹) satisfies α(c) = w exactly, and θ(P₂) = w for θ = (x ↦ xy², y ↦ y). So ⟨x,y | P₂⟩ ≅ Γ ≅ ⟨x,y | c⟩ by automorphisms of F₂.*
+**(b)** *α(k_n) = (xy)ⁿx⁻¹y⁻², so AK(n) is AC-trivial iff (w, (xy)ⁿx⁻¹y⁻²) is; and (r_m, w) = MS(m, w) ~AC AK₂(m) for every m ≥ 2 (T9, since w ∈ C_b with b ≡ 2 mod m+1, b ≡ 1 mod m). In particular* **P2 ~AC (x⁻¹y⁴xy⁻⁵, x²y²x⁻¹y⁻¹)** *(total length 17), while AK(3) is AC-trivial iff ((xy)³x⁻¹y⁻², x²y²x⁻¹y⁻¹) is: the AK series and the holdout P2 are killer pairs of the same one-relator group Γ, with killers (xy)ⁿx⁻¹y⁻² and x⁻¹yᵐxy^{−(m+1)} (m = 4 for P2; m = 2, 3 are AC-trivial).*
+
+*Proof.* (a) α(c) = (xy)(y⁻¹)(xy)(y²)(y⁻¹x⁻¹)(y⁻¹) = x·x·y·y·x⁻¹·y⁻¹ after free reduction; θ(P₂) = (xy²)y⁻²(xy²)y²(y⁻²x⁻¹)y⁻¹ = x²y²x⁻¹y⁻¹. (b) α(k_n) = (xy)ⁿ·y·(y⁻¹x⁻¹)·y⁻² = (xy)ⁿx⁻¹y⁻²; apply α letterwise to K's AC sequence (Lemma D2). The second statement is T9(a) with β = 2 together with E1 (P2 ~AC MS(4,·) in C_{−3} ∋ w). ∎ (`th18_gieseking.py --selftest` checks the two word identities.)
+
+**Coordinates.** With y = x⁻¹a and a_i = x^iax^{−i} the relator w reads a₂a₁ = a₀, so Γ = F(a,b) ⋊ ⟨x⟩, b = a₁, φ = conjugation by x: a ↦ b, b ↦ ab⁻¹. A height-one element is fx, and fx ~ f′x iff f′ = gφ^k(f)φ(g)⁻¹ (twisted conjugacy). Γ^{ab} = ℤ (x ↦ 1, y ↦ −1), so a primitive of F₂ conjugate to a killer^{±1} has exponent vector ±(j+1, j) and is conjugate to ((xy)^jx)^{±1} = (a^jx)^{±1}. Hence: *a w-frozen ACM move from (killer, w) to a primitive relator exists iff the twisted class of f contains a power of a.*
+
+**Experiment (bounded; `python3 experiments/th18_gieseking.py --table`, 13 s).** Best-first enumeration of twisted conjugates:
+
+| killer | explored | shortest f | powers of a found |
+|---|---:|---|---|
+| r₁, r₂, r₃ (AK₂(1..3)) | 2,000 each | ε, ab, ab | ε and a; a²; a² (exits exist; consistent with triviality) |
+| r₄ (**P2**), r₅, r₆ | 300,000 each, length ≤ 40 | b⁻²a², b⁻¹a²b, b⁻²a²ba² | none |
+| α(k₁), α(k₂) (AK(1), AK(2)) | 40,000, length ≤ 26 | b⁻¹a⁻¹ | a⁻³ (exits; agrees with O) |
+| α(k₃..k₆) (AK(3..6)) | 40,000, length ≤ 26 | b⁻¹a⁻¹b², … | none (O proved none for n = 3..8) |
+
+No ball of an AK(n) killer (n ≤ 6) meets a ball of an r_m (m ≤ 6). For P2 (m = 4) I could **not** turn "none found" into a proof: the cycle-type test in all quotients inside S_k, k ≤ 8, and the trace test in all PSL(2,p)-representations, p ≤ 37, do not separate r₄ from the primitives a^jx (scratch scripts; the same tests do separate AK(3)'s killer in S₇ and PSL(2,7)). So whether P2 has a one-move exit at this node is **open**; O's exact twisted-conjugacy method for this very group is the natural tool.
+
 ## 3. Experiments (exact commands and outputs)
 
 All runs: one niced core, < 100 MB, a few seconds each. `th18_bs.py` and `th18_survey.py` use the standard library and import `elementary_verify.py` and (self-test only) `g_bs.py`.
@@ -249,6 +272,7 @@ The trivialization certificates end exactly at ("x","y"); the three equivalence 
 
 - `research/research-th18.md` (this note).
 - `experiments/th18_bs.py`: exact class invariant (`cls`, `label3`, `tlen`), unique-conjugator solver, rewriting paths (`bs_path`, `div_path`, `half_path`), compiler to strict elementary moves (`compile_path`, `finish`), certificate builders (`cert_len1`, `cert_divisor`, `t9_moves`, `cert_ak_beta`), `--selftest`.
+- `experiments/th18_gieseking.py`: the coordinates of §2.10 (`--selftest`, `--table`).
 - `experiments/th18_survey.py`: `--selftest`, `--certs` (classes of D's and L's certified endpoints), `--write DIR` (the ten data-free certificates), `--bench`, `--triage`, `--certify` (third-party benchmark file).
 - `certificates/th18_*.json` (16 files, 2.6–454 KB), listed in §3: 13 trivializations and 3 equivalences.
 

@@ -523,6 +523,12 @@ def selftest_fbc():
             g = rw(5); w = cyc(g + rnd.choice([s0, inv(s0)]) + inv(g))
             assert all(G.tr2(w, h, 7) == G.tr2(s0, h, 7) for h in hs) or \
                    all(G.tr2(w, h, 7) == G.tr2(z + s0 + z.swapcase(), h, 7) for h in hs)
+    # controls against known results: k_1 ~ k_2 ~ x^-2 y in G_c (research-o section 4) must survive the sieve,
+    # and no x^s y is conjugate to k_3 (research-o section 6)
+    assert GC.sieve("xYXyy", "y", ["XXy", "xxYXyy"], (7, 13)) == ["XXy", "xxYXyy"]
+    assert GC.sieve(K3_, "y", [cyc("x" * t + "y") for t in range(6)] + [cyc("X" * t + "y") for t in range(1, 6)], (7, 13)) == []
+    # research-th03 T14: XYxxyXy is conjugate to k_3^{+-1} in G_c (non-trivial conjugator): it must survive
+    assert GC.sieve(K3_, "y", sorted(orb("XYxxyXy")), (7, 13)) == sorted(orb("XYxxyXy"), key=lambda w: (len(w), w))
     print("th16 free-by-cyclic self-test passed")
 
 def report_fbc(primes=(7, 13)):

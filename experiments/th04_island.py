@@ -10,6 +10,7 @@ conjugacy invariant (g_torus.torus_class) and certificate compiler (g_cert).
   python3 experiments/th04_island.py --check-t8 N L        (brute-force check of Theorem 6.4's case analysis)
   python3 experiments/th04_island.py --check-t2side N L    (same for Theorem 6.6)
   python3 experiments/th04_island.py --stabilizer K        (experiment for Proposition 6.5)
+  python3 experiments/th04_island.py --lemma-m N L E LW    (experiment for Missing Lemma M)
   python3 experiments/th04_island.py --check-t7 N K P      (consistency check of Prop. 6.2)
 """
 import itertools, json, os, random, sys
@@ -282,8 +283,113 @@ def check_t2side(n, maxlen):
         out.append(sorted(sols))
     return ok, out
 
+# ---------------------------------------------- experiment for Lemma M (trefoil side)
+_WH = [("xy", "y"), ("xY", "y"), ("x", "yx"), ("x", "yX")]
+
+def wh_min(w):
+    """Whitehead descent (rank 2: these four automorphisms realise every
+    Whitehead move on cyclic words up to conjugacy)."""
+    w = G.cyc(w)
+    while True:
+        best = w
+        for a in _WH:
+            v = G.cyc(G.apply(a, w))
+            if len(v) < len(best):
+                best = v
+        if best == w:
+            return w
+        w = best
+
+def _runs(w):
+    w = G.min_rot(w)
+    v = w
+    for i in range(len(w)):
+        v = w[i:] + w[:i]
+        if v[0] != v[-1]:
+            break
+    out = []
+    for c in v:
+        if out and out[-1][0] == c: out[-1][1] += 1
+        else: out.append([c, 1])
+    return out
+
+def word_type(w):
+    """'torus(a,c)', 'primitive' or 'other', by Whitehead's algorithm (minimise,
+    then search the level set for a word x^a y^c)."""
+    m = wh_min(w)
+    if len(m) == 1:
+        return "primitive"
+    seen = {G.cyc_canon(m)}
+    fr = [m]
+    while fr and len(seen) < 5000:
+        nx = []
+        for u in fr:
+            rr = _runs(u)
+            if len(rr) == 2 and min(rr[0][1], rr[1][1]) >= 2:
+                return "torus(%d,%d)" % tuple(sorted((rr[0][1], rr[1][1])))
+            for a in _WH:
+                v = G.cyc(G.apply(a, u))
+                if len(v) == len(u) and G.cyc_canon(v) not in seen:
+                    seen.add(G.cyc_canon(v))
+                    nx.append(v)
+        fr = nx
+    return "other"
+
+def lemma_m_experiment(n, L, E, Lw, log=print, partner=None):
+    """Trefoil side.  All cyclically reduced W0 = (pos)(neg) in A = xy, B = xyy
+    with r + t <= L whose image has the necklace family of U_n; all their
+    twists by reduced words in A, B (<= Lw syllables, |m| <= E, with or without
+    Dx) that are conjugate to U_n^+-1 in <x,y | x^2 = y^3>; Whitehead type of
+    each such word.  Lemma M predicts: the torus-type ones are exactly the six
+    words, and none is primitive."""
+    p, q = 2, -3
+    Un = partner if partner else U(n)      # `partner` given: positive control with another class
+    cU = (G.torus_class(Un, p, q), G.torus_class(G.inv(Un), p, q))
+    F = necklace_family(Un, p, q)
+    sub = {"a": "xy", "b": "xyy"}
+    red = set()
+    for r in range(0, L + 1):
+        for t in range(0, L + 1 - r):
+            for pos in itertools.product("ab", repeat=r):
+                for neg in itertools.product("ab", repeat=t):
+                    if r and t and (pos[-1] == neg[0] or neg[-1] == pos[0]):
+                        continue
+                    w = G.cyc("".join(sub[c] for c in pos) + "".join(G.inv(sub[c]) for c in neg))
+                    if w and G.torus_class(w, p, q)[1] in F:
+                        red.add(G.cyc_canon(w))
+    words = reduced_words(p, q, E, Lw)
+    xi = lambda v: q*v[0] - p*v[1]
+    hits = set()
+    for key in red:
+        e = G.expvec(key)
+        for D, dn in ((I2, "I"), (DX, "Dx")):
+            for M, d in words:
+                if xi(act(mul(M, D), e)) not in (1, -1):
+                    continue
+                w = G.apply(("X", "y"), key) if dn == "Dx" else key
+                for (g, m) in d:
+                    w = G.apply(("x", G.red(G.power("x", p*m) + "y")), w) if g == "A" else G.apply((G.red(G.power("y", q*m) + "x"), "y"), w)
+                w = G.cyc(w)
+                if len(w) <= 600 and G.torus_class(w, p, q) in cU:
+                    hits.add(G.cyc_canon(w))
+    six = {G.cyc_canon(w): k for k, w in six_words(n).items()} if not partner else {G.cyc_canon(partner): "partner"}
+    types = {}
+    for k in hits:
+        types.setdefault(word_type(k), []).append(six.get(k, "NEW"))
+    summary = {ty: sorted(v) if not ty == "other" else len(v) for ty, v in types.items()}
+    log("n=%d: reduced words %d, twists in the class of U_n^+-1: %d, by Whitehead type: %s" % (n, len(red), len(hits), summary))
+    good = all(("NEW" not in v) for ty, v in types.items() if ty != "other")
+    return good, summary
+
 if __name__ == "__main__":
-    if sys.argv[1:] == ["--selftest"]:
+    if sys.argv[1:2] == ["--lemma-m"]:
+        n, L, E, Lw = [int(a) for a in sys.argv[2:6]]
+        print("consistent with Lemma M:", lemma_m_experiment(n, L, E, Lw)[0])
+    elif sys.argv[1:2] == ["--lemma-m-control"]:
+        L, E, Lw = [int(a) for a in sys.argv[2:5]]
+        # AK(2) with x^2 Y^3 frozen and partner b: research-g found primitive words in this class
+        print("no torus-type/primitive word besides the partner:", lemma_m_experiment(2, L, E, Lw, partner="xyxYXY")[0])
+    elif sys.argv[1:] == ["--selftest"]:
         selftest()
         assert check_t8(3, 6)[0] and check_t8(4, 6)[0]
         assert check_t2side(2, 7)[0]

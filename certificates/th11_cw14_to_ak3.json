@@ -11337,5 +11337,5 @@
 "i": 1
 }
 ],
-"description": "TH11: (c, w) -> AK(3) for a killer w of <x,y|c> not conjugate to k_3 or its mirror (J-hat = -6, N = 32); automorphism x_xYox_xY; built with experiments/i_transport.merge"
+"description": "TH11: (c, w) -> AK(3) for a killer w of <x,y|c> not conjugate to k_3 or its mirror (J-hat = -6, N = 32); automorphism x_xYox_xY; experiments/th11_cert2.py"
 }

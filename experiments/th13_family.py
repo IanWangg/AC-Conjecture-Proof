@@ -8,6 +8,7 @@ Standard library only; imports G's exact torus-group tools read-only.
 
   python3 experiments/th13_family.py --selftest      (about 1 minute)
   python3 experiments/th13_family.py --write certificates
+  python3 experiments/th13_family.py --mirror certificates   (needs the two d_certify outputs, see the note)
   python3 experiments/th13_family.py --islands       (bounded experiment, ~40 s)
   python3 experiments/th13_family.py --exits         (exact brute force, ~2.5 min)
 """
@@ -209,6 +210,52 @@ def cert_sigma(k, p):
     return cert.to_json(tgt)
 
 
+def cert_mirror_23(certdir):
+    """AK(2;3) -> its mirror image (x -> X) = (XXXYYYY, XyXyXYxYxY) exactly, composed
+    from the two generator certificates R(t1): P -> t1(P), t1 = (x -> xy), and
+    R(sg): P -> sg(P), sg = (x <-> y) (both compiled by d_certify.py from engine
+    paths), using R(a o b) = R(a) + a(R(b)) and R(a^-1) = a^-1(reverse R(a))
+    (Lemma 6.1):  iota_x = Inn(X) o mu o sg,  mu = t2^-1 t1 t2^-1,  t2 = sg t1 sg."""
+    P = ["xxxYYYY", "xyxyxYXYXY"]
+
+    def comp(a, b):
+        return (red(apply(a, b[0])), red(apply(a, b[1])))
+
+    def img(th):
+        return [red(apply(th, w)) for w in P]
+
+    def prod(Ra, a, Rb):
+        return C.concat_certificates(Ra, C.transport_certificate(Rb, a))
+
+    t1, sg, t2i = ("xy", "y"), ("y", "x"), ("x", "yX")
+    R1 = json.load(open(os.path.join(certdir, "th13_ak_2_3_aut_x_xy.json")))
+    Rs = json.load(open(os.path.join(certdir, "th13_ak_2_3_aut_swap_short.json")))
+    assert R1["target"] == img(t1) and Rs["target"] == img(sg)
+    st1 = comp(sg, t1)
+    Rt2 = prod(prod(Rs, sg, R1), st1, Rs)
+    assert comp(st1, sg) == ("x", "yx") and comp(t2i, ("x", "yx")) == ("x", "y")
+    Rt2i = C.transport_certificate(C.reverse_certificate(Rt2), t2i)
+    a = comp(t2i, t1)
+    mu = comp(a, t2i)
+    Rmu = prod(prod(Rt2i, t2i, R1), a, Rt2i)
+    ms = comp(mu, sg)
+    assert ms == ("X", "xyX")
+    Rms = prod(Rmu, mu, Rs)
+    cert = C.Cert(*P)
+    _apply_moves(cert, Rms["moves"])
+    assert cert.s == img(ms)
+    cert.conj_letter(0, "X")
+    cert.conj_letter(1, "X")
+    tgt = img(("X", "y"))
+    assert cert.s == tgt == ["XXXYYYY", "XyXyXYxYxY"]
+    cj = cert.to_json(tgt)
+    cj["note"] = "AK(2;3) -> mirror image exactly; research-th13.md section 6; th13_family.py --mirror"
+    path = os.path.join(certdir, "th13_ak_2_3_mirror.json")
+    with open(path, "w") as fh:
+        json.dump(cj, fh, separators=(",", ":"))
+    print("th13_ak_2_3_mirror.json moves", len(cj["moves"]), "bytes", os.path.getsize(path))
+
+
 def write(outdir):
     jobs = [("th13_dual_k2_p2.json", cert_duality(2, 2)),
             ("th13_dual_k2_p3.json", cert_duality(2, 3)),
@@ -237,6 +284,13 @@ def selftest():
         R = "xx" + "Y" * (2 * k + 1)
         assert cyc(apply(psi(k), R)) in orb(W(k))
         assert cyc(apply(phi(k), W(k))) in orb(R)
+    # 1b. Corollary 3(a): V_{1,k} = W_k^-1;  remark of section 8: (x -> xY)(W_k) = x^(k+1) Y X^k Y
+    for k in range(1, 9):
+        assert V(1, k) == inv(W(k))
+        assert red(apply(("xY", "y"), W(k))) == "x" * (k + 1) + "Y" + "X" * k + "Y"
+        # Delta_k = (xy)^k x conjugates p_p to q_p modulo W_k (Lemma P)
+        for p in range(1, 6):
+            assert torus_class(apply(phi(k), pw(p)), 2, -(2 * k + 1)) == torus_class(apply(phi(k), qw(p)), 2, -(2 * k + 1))
     # 2. Theorem 2: phi_k(p_p) ~ V_{k,p} in <x^2 = y^(2k+1)>, necklace (k+1)^p k^(p+1)
     for k in range(1, 9):
         for p in range(1, 9):
@@ -323,6 +377,8 @@ if __name__ == "__main__":
         selftest()
     elif "--write" in sys.argv:
         write(sys.argv[sys.argv.index("--write") + 1])
+    elif "--mirror" in sys.argv:
+        cert_mirror_23(sys.argv[sys.argv.index("--mirror") + 1])
     elif "--islands" in sys.argv:
         islands()
     elif "--exits" in sys.argv:

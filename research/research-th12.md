@@ -2,9 +2,9 @@
 
 Date: 2026-11-09 (Los Angeles). Independent research agent TH12 (round 5, theory round; seed: area and Dehn-function lower bounds on AC complexity).
 
-**Status.** Complexity results only. **No AK(3) trivialization, no proof of non-triviality, no counterexample, nothing on the full conjecture.** Every statement is labelled *proved here*, *recalled*, *experiment*, or *open*. Nothing below is an obstruction: all quantities are finite for every balanced presentation of the trivial group, and by K2 no such quantity can separate AC classes.
+**Status.** Complexity results only: (i) the exact generator area of AK(n) (it is n+4, so the seed's area method is closed negatively); (ii) linear lower bounds on the numbers of multiplications and conjugations in any trivialization of AK(n); (iii) in K's coordinates P_n the generator x has area ≤ 11 for every n. **No AK(3) trivialization, no proof of non-triviality, no counterexample, nothing on the full conjecture.** Every statement is labelled *proved here*, *recalled*, *experiment*, or *open*. Nothing below is an obstruction: area, μ and κ are finite for every AC-trivial presentation, are not AC-invariant (Proposition 9) and are not monotone along moves (cf. K2); the bounds hold equally for the AC-trivial AK(1), AK(2).
 
-## 0. Central claims (all proved here; machine checks in §7)
+## 0. Central claims (proved here unless marked as experiment; machine checks in §7)
 
 Notation: F = F(x,y), X = x⁻¹, Y = y⁻¹; AK(n) = (r,s) with r = xⁿY^(n+1), s = xyxYXY, Δ = xyx. An *expression* of a word w over a pair U = (u₀,u₁) is a finite list of factors (gᵢ, jᵢ, εᵢ) with w = ∏ gᵢ u_{jᵢ}^{εᵢ} gᵢ⁻¹ in F. Its *count vector* is (c₀,c₁), c_j = number of factors with jᵢ = j; its *radius* is max |gᵢ|. Area_U(w) = min (c₀+c₁), A(U) = max(Area_U(x), Area_U(y)) ("generator area"). μ, κ denote the numbers of multiplication instructions (E's ids 3–6) and conjugation instructions (ids 7–14) of an instruction path.
 
@@ -14,6 +14,7 @@ Notation: F = F(x,y), X = x⁻¹, Y = y⁻¹; AK(n) = (r,s) with r = xⁿY^(n+1)
 - **Theorem 3.** Every instruction path from AK(n) to (x,y) has **μ ≥ n+2** multiplications (abelianization alone gives exactly n+1; the extra 1 uses Theorem 2).
 - **Theorem 4.** For n ≥ 4 every instruction path from AK(n) to (x,y) has **κ ≥ n−3** conjugations.
 - **Proposition 9 (K's coordinates).** Over P_n = (xyxYYXy, xⁿYXyy) the generator x is a product of 11 conjugates of the relators **for every n** (3 ≤ Area_{P_n}(x) ≤ 11), and n ≤ Area_{P_n}(y) ≤ 11n+24. So area is far from AC-invariant: it is n+4 for x over AK(n) and bounded over the AC-equivalent P_n. Every instruction path from AK(n) to P_n has ≥ 2n multiplications (Corollary 10; K1 uses 4n−1).
+- **Sharpness (§4.6).** On the AC-trivial family V_n = (xⁿY^(n+1), xY) the same two arguments give μ ≥ n+1, κ ≥ n−1, so 2n+1 ≤ d_F(V_n) ≤ 2n+2 for all n (explicit path); exhaustive BFS (n = 2, 3, 4) shows d_F(V_n) = 2n+2 with both bounds attained.
 - **Corollary 5.** d_F(AK(n)) ≥ 2n−1 for n ≥ 4: every AC trivialization of AK(n) by the 15 instructions, and every `ordinary-ac-elementary-v1` certificate, has at least 2n−1 moves. For n = 3 this method gives only ≥ 6 (≥ 7 with the exact radius computed in §7; E's exhaustive bound is 15); it exceeds 15 from n = 9 on. As far as I can see this is the repository's first lower bound on d_F(AK(n)) valid for all n and growing with n; it is a complexity statement, not an obstruction.
 
 ## 1. Previous work read and choice of direction
@@ -145,7 +146,11 @@ Nothing in §4.1–4.2 is special to AK(n) except the inputs. For reuse by other
 
 ### 4.5 ACM analogue (proved here)
 
-Split every ACM move of insertion number k (Remark (c) of §2) into its k signed transvections. Steps 1–5 of Theorem 3 use only Σ = d·t₁⋯t_μ, C₀ = |d||t₁|⋯|t_μ| and Theorem 2(ii); hence: **every sequence of ACM moves (with arbitrary conjugators) from AK(n) to (x,y) inserts in total at least n+2 conjugates of the frozen relators.** Theorem 4 has no ACM analogue in terms of the number of ACM moves, since one ACM move may conjugate by an arbitrary word; it bounds instead the total σ-variation of the conjugators used.
+Split every ACM move of insertion number k (Remark (c) of §2) into its k signed transvections. Steps 1–5 of Theorem 3 use only Σ = d·t₁⋯t_μ, C₀ = |d||t₁|⋯|t_μ| and Theorem 2(ii); hence: **every sequence of ACM moves (with arbitrary conjugators) from AK(n) to (x,y) inserts in total at least n+2 conjugates of the frozen relators**, in whatever way each move s' ≡ g s^δ g⁻¹ is written out as a product. Theorem 4 has no ACM analogue in terms of the number of ACM moves, since one ACM move may conjugate by an arbitrary word; it bounds instead the total σ-variation of the conjugators used.
+
+### 4.6 Sharpness test on an AC-trivial family (theory + exhaustive BFS)
+
+Let V_n = (xⁿY^(n+1), xY), n ≥ 2 — obviously AC-trivial, with the same exponent matrix as AK(n). Proposition 6 gives μ ≥ n+1, with μ = n+1 only if d = ±S (which costs at least one swap and one inversion). In the model of Lemma 4.1 (the action is defined, with (a) and (c), for every n ≥ 2) the second relator xY fixes exactly the points p with p·x = p·y, i.e. the window [1,n−1], so Proposition 7 gives κ ≥ n−1. Hence d_F(V_n) ≥ min((n+1)+(n−1)+2, (n+2)+(n−1)) = 2n+1. Conversely the following 2n+2 instructions trivialize V_n (*proved here*, checked for n ≤ 40): n−1 times [u₀ ← u₀u₁⁻¹; u₀ ← x⁻¹u₀x], which turns xʲY^(j+1) into x^(j−1)Yʲ and ends at u₀ = xYY; then u₁ ← u₁u₀⁻¹ = xyX; u₁ ← x⁻¹u₁x = y; u₀ ← u₀u₁; u₀ ← u₀u₁ = x. So **2n+1 ≤ d_F(V_n) ≤ 2n+2 for every n ≥ 2**: on this family the lower bound of this section is within 1 of the truth for all n. *Experiment (exhaustive bidirectional BFS over the 15 instructions, §7):* d_F(V_n) = 2n+2 for n = 2, 3, 4, and the shortest paths realize exactly (μ,κ) ∈ {(n+1, n−1), (n+2, n)}. So **both bounds, μ ≥ n+1 and κ ≥ n−1, are attained** on genuine trivializations: the two mechanisms of this section are sharp where they can be tested, and what they measure for AK(n) is the part of its complexity that it shares with the trivial presentation V_n.
 
 ## 5. K's coordinates P_n = (c, k_n), c = xyxYYXy, k_n = xⁿYXyy
 
@@ -177,9 +182,11 @@ in contrast with Area_{AK(n)}(x) = n+4, Area_{AK(n)}(y) = n+3 (Theorem 2).
 
 In words: conjugating the braid relation by y and using the bundle relations (1) gives aba⁻²b = 1; with the braid relation itself this gives b = 1. Only c and the braid relation s(a,b) are used, and (P2) has the n-independent form s(a,b) = (aba)·[u,x⁻¹]·(aba)⁻¹·c·(bc⁻¹b⁻¹) with u = YXyy and [u,x⁻¹] = uXu⁻¹x = x⁻ⁿ(k_nXk_n⁻¹x)xⁿ. So **x ∈ ⟨⟨c, [x,u]⟩⟩ by an 11-factor filling that does not depend on n**: modulo c, x dies as soon as it commutes with the killer k_n = xⁿu. Only y, whose signed count vector is (−(n−1),1), carries the n-dependence. *Experiment (exact, Stallings folding):* the least radius of an expression of x, and of y, over P_n is 2 for every 2 ≤ n ≤ 16 (over AK(n) it is ⌊n/2⌋+1); so no analogue of Theorem 4 with a bound growing in n can hold for P_n in that range.
 
+**Remark (count profiles versus single ACM moves).** For a primitive word w and U = (u₀,u₁): an expression of w with c₀ = 1 exists iff w is conjugate to u₀^{±1} modulo ⟨⟨u₁⟩⟩, i.e. iff one ACM move with u₁ frozen replaces u₀ by a conjugate of w — after which U is AC-trivial by D3. So "c_c = 1 for x over P_n" is exactly O's question Q2 for the primitive x. The parallel note research-th03 (T11; *reported by that note, not re-verified here*) proves that c is conjugate to no primitive in ⟨x,y | k_n⟩ for n = 3, 4, 5, 7, 8; granting this, every expression of x over P_n has c_c ≥ 3 and c_k ≥ 2 for these n, so 5 ≤ Area_{P_n}(x) ≤ 11. (My own quick tests are uninformative, as O already found for Q2: in all permutation representations of ⟨x,y | k_n⟩ on ≤ 6 points and all representations in SL₂(𝔽_p), p ≤ 11, n ≤ 5, the images of c and x have the same cycle type, resp. trace.) Likewise Theorem 2(ii) (c_r ≥ 3 over AK(n)) is the statement "x, y are not one s-frozen ACM move away" (for n ≥ 3 a special case of G2).
+
 **Corollary 10 (multiplications between AK(n) and P_n; proved here).** Every instruction path from AK(n) to P_n contains at least 2n multiplications (K1 uses 4n−1 cyclic products, each containing exactly one). *Proof.* By Theorem 1 and Lemma 0, g_m⋯g₁ = Σ_{P_n}⁻¹Σ_{AK(n)} = −RⁿL^(−n−1), whose class is (ab⁻¹)^(n−1)·a·b·a·(b⁻¹a)ⁿ of length 4n+1; multiplying by a on the left gives length 4n. Step 4 of Theorem 3 gives μ ≥ 2n. ∎ (Area alone gives only a logarithm here as well: n+4 ≤ 11·F_(μ+2).)
 
-Remarks. (a) (P1)–(P3) explain K1 conceptually: modulo c and k the elements a = x, b = yxy⁻¹ satisfy the two AK(n) relations at bounded cost, and y is the word aba⁻ⁿ in them. This is a statement about areas (and about the group), **not** a new AC-equivalence; K1 remains the certified one. (b) *Experiment, for contrast:* transporting (I_x), (I_y) along K's certificates (reversed) gives verified expressions over P₃ with 593 and 489 factors (68-move certificate) or 2543 and 2097 (88-move one); Proposition 9 gives 11 for x. Transport along a path is far from optimal because count matrices multiply. (c) *Experiment:* for n = 2, 3, 4 neither x nor y is a product of ≤ 3 conjugates of c^{±1}, k^{±1} with all conjugators of length ≤ 4 (`--pn-area3 4`, exhaustive meet-in-the-middle; no statement for longer conjugators). (d) *Open:* the exact values (3 ≤ Area_{P_n}(x) ≤ 11, n ≤ Area_{P_n}(y) ≤ 11n+24); a proof that the radius over P_n is 2 for all n. (I found no model with a long window; the AK model does not transfer because the permutations of a and b in Lemma 4.1 are not conjugate.)
+Remarks. (a) (P1)–(P3) explain K1 conceptually: modulo c and k the elements a = x, b = yxy⁻¹ satisfy the two AK(n) relations at bounded cost, and y is the word aba⁻ⁿ in them. This is a statement about areas (and about the group), **not** a new AC-equivalence; K1 remains the certified one. (b) *Experiment, for contrast:* transporting (I_x), (I_y) along K's certificates (reversed) gives verified expressions over P₃ with 593 and 489 factors (68-move certificate) or 2543 and 2097 (88-move one); Proposition 9 gives 11 for x. Transport along a path is far from optimal because count matrices multiply. (c) *Experiment:* for n = 2, 3, 4 neither x nor y is a product of ≤ 3 conjugates of c^{±1}, k^{±1} with all conjugators of length ≤ 4 (`--pn-area3 4`, exhaustive meet-in-the-middle; no statement for longer conjugators). (d) *Open:* the exact values (3 ≤ Area_{P_n}(x) ≤ 11, n ≤ Area_{P_n}(y) ≤ 11n+24); a proof that the radius over P_n is 2 for all n.
 
 ## 6. Failed attempts and negative results (with precise reasons)
 
@@ -191,7 +198,7 @@ Remarks. (a) (P1)–(P3) explain K1 conceptually: modulo c and k the elements a 
 
 ## 7. Experiments (exact commands and outputs)
 
-    $ PYTHONDONTWRITEBYTECODE=1 python3 experiments/th12_area.py --selftest      # < 5 s, < 50 MB
+    $ PYTHONDONTWRITEBYTECODE=1 python3 experiments/th12_area.py --selftest      # about 6 s, 150 MB
     identities x,y over AK(n) verified for n = 1..40
     permutation model verified for n = 4..60
     SL2(Z) word classification (n: #words mu=n+1, #words mu=n+2, #admissible): {1: (1, 2, 0), 2: (1, 3, 1), 3: (1, 4, 2), 4: (1, 5, 3), 5: (1, 6, 4)}
@@ -205,10 +212,12 @@ Remarks. (a) (P1)–(P3) explain K1 conceptually: modulo c and k the elements a 
     Proposition 8 (x over P_n with 4n+13 factors) verified for n = 2..30; counts (c,k) for n=3: (11, 14)
     Proposition 9 (x over P_n with 11 factors for every n; y with 11(n+2)+2) verified for n = 2..30
     n-independent form of (P2) verified: True
+    V_n = (x^n Y^(n+1), xY): d_F and (mu,kappa) of all shortest paths: {2: (6, [(3, 1), (4, 2)]), 3: (8, [(4, 2), (5, 3)]), 4: (10, [(5, 3), (6, 4)])}
+    explicit (2n+2)-instruction trivialization of V_n verified for n = 2..40
     AK(1): d_F = 8; (mu, kappa) of its shortest paths: [(5, 3)]
     TH12 selftest OK
 
-    $ PYTHONDONTWRITEBYTECODE=1 python3 experiments/th12_area.py --pn-area3 4     # about 6 s, < 300 MB
+    $ PYTHONDONTWRITEBYTECODE=1 python3 experiments/th12_area.py --pn-area3 4     # about 6 s, 150 MB
     area <= 3 over P_n with radius <= 4 (n: {x: found, y: found}): {2: {'x': False, 'y': False}, 3: {'x': False, 'y': False}, 4: {'x': False, 'y': False}}
 
     $ PYTHONDONTWRITEBYTECODE=1 python3 experiments/th12_radius.py --selftest 12 8     # about 3 s, < 100 MB
@@ -226,6 +235,11 @@ Remarks. (a) (P1)–(P3) explain K1 conceptually: modulo c and k the elements a 
     n=11  rho*(x)=6  rho*(y)=6  theorem: >= 4
     n=12  rho*(x)=7  rho*(y)=7  theorem: >= 5
 
+    $ PYTHONDONTWRITEBYTECODE=1 python3 experiments/th12_radius.py --pn 16 6        # K's coordinates; about 2 s
+    P_2  rho*(x)=2  rho*(y)=2
+    ... (identical for every n) ...
+    P_16  rho*(x)=2  rho*(y)=2
+
   (n = 13,…,16 were checked the same way at the two radii ⌊n/2⌋ and ⌊n/2⌋+1 only: x, y ∉ H_⌊n/2⌋ and x, y ∈ H_(⌊n/2⌋+1); 8 s.)
 
 What each line checks: (1) the factor lists of (I_x), (I_y) multiply to x, y by free reduction, with counts (3,n+1), (3,n) and r-conjugators of length ≤ 3; (2) Lemma 4.1 (and Fix(s) = [1,n−3] exactly); (3) for n ≤ 5, exhaustively over all words in L^{±1},R^{±1} of length ≤ n+2 and d ∈ {±I,±S}: the shortest have length n+1 (one word, count matrix |Σ|), those of length n+2 are the n+1 words of the Addendum, of which exactly the n−1 with j ≥ 3 satisfy Theorem 2(ii); (4) sharpness of the Fibonacci bounds; (5) Theorem 1 made executable: the script walks E's certificates backwards, builds the expressions of x and y over AK(1), AK(2), verifies them by free reduction and checks signed counts = E⁻¹, counts ≤ Fibonacci, radius ≤ κ; (6) §5; (7) Theorem 1 again on 200 random instruction paths of length 30 from (x,y), reversed into trivializations (all asserts of (5) pass). The second script decides membership of x, y in H_ρ = ⟨g r g⁻¹, g s g⁻¹ : |g| ≤ ρ⟩ exactly by Stallings folding (ball of radius ρ with a loop r and a loop s at every vertex, folded; x ∈ H_ρ iff x reads a loop at the base vertex); `theorem: >=` is the bound ⌊(n−2)/2⌋ of §4.2(c). `python3 experiments/th12_area.py --cert FILE` runs (5) on any elementary-v1 certificate ending at (x,y). No new AC-equivalence is claimed, so no certificate is written.
@@ -240,7 +254,7 @@ What each line checks: (1) the factor lists of (I_x), (I_y) multiply to x, y by 
 
 ## 9. Advice to the coordinator (ranked)
 
-0. **Proposition 9 may deserve a second look by a constructive agent**: over P_n, x has an 11-factor filling whose shape does not depend on n (x ∈ ⟨⟨c, [x,u]⟩⟩, u = YXyy), and the radius over P_n is 2 for n ≤ 16. It is not an AC move, but it says that in K's coordinates one generator is "almost a relator" uniformly in n, with short conjugators; an ACM-style search that tries to realize exactly these 11 insertions (7 of c, 4 of k) in some order is a concrete, finite experiment for P_2 (known trivial: calibration) and P_3.
+0. **Proposition 9 may deserve a second look by a constructive agent**: over P_n, x has an 11-factor filling whose shape does not depend on n (x ∈ ⟨⟨c, [x,u]⟩⟩, u = YXyy), and the radius over P_n is 2 for n ≤ 16. It is not an AC move, and a filling need not come from any path; but Theorem 1 says exactly when it can: its count matrix must be a product of elementary matrices with signed version Σ. A concrete, finite experiment (speculative): search for trivializations of P_2 (known trivial: calibration) and of P_3 whose x-row of counts is small, using the abelian words of Proposition 6 as skeletons.
 1. **Record Theorem 2 as closing the "area / Dehn function / stability" line for the AK family**: A(AK(n)) = n+4 exactly, r-conjugators of length ≤ 3. Nobody should look for large fillings, quasimorphism bounds or approximate-representation bounds on AK(n) again. A Bridson–Lishak-type argument needs relators that encode a group with large Dehn function; AK(n) has none.
 2. **Use Corollary 5 as the general-n complement of E's table** (d_F(AK(n)) ≥ 2n−1, with ≥ n+2 multiplications and ≥ n−3 conjugations), clearly labelled as complexity, not obstruction. If a referee wants it stronger, the natural targets are Theorem 3's Addendum (decide μ = n+2 for n ≥ 2).
 3. **The executable bookkeeping (`--cert`) is a cheap diagnostic for search agents**: for any found trivialization it returns the count matrix and radius; a search for AK(3) could be pruned or guided by the necessary conditions "count matrix ≥ [[3,4],[3,3]], Σ = [[−1,4],[−1,3]]" — e.g. meet-in-the-middle over abelian words of length μ first, since Theorem 3 lists exactly which abelian words of minimal length can occur.

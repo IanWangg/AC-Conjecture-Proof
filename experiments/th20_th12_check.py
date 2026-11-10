@@ -56,3 +56,20 @@ for n in range(4, 41):
         for h, d in (("x", 1), ("y", 1), ("X", -1), ("Y", -1)):
             if 1 <= p + d <= n: assert act[h][p] == p + d
 print("(4) permutation model OK, n = 4..40")
+# (5) Propositions 8-9 (added in the 04:45 version): identities over P_n = (c, k_n), a = x, b = yxY
+def w(*parts): return red("".join(parts))
+def pwr(u, e): return red(u * e) if e >= 0 else red(inv(u) * (-e))
+for n in range(2, 31):
+    a, b, c, k = "x", "yxY", "xyxYYXy", "x" * n + "YXyy"
+    assert w(inv(c), a, b, pwr(a, -n), k) == "y"                                             # (P1)
+    u = w(a, b, pwr(a, 1 - n))
+    s = w(a, b, a, inv(b), inv(a), inv(b))
+    assert s == w(u, k, inv(u), u, inv(a), inv(k), a, inv(u), c, b, inv(c), inv(b))            # (P2)
+    g = w(pwr(b, n), inv(a))
+    assert w(pwr(a, n), pwr(b, -n - 1)) == w(k, "y", inv(k), "Y", g, inv(c), inv(g))           # (P3)
+    C = w("y", c, "Y"); g1 = w(a, b, pwr(a, -2)); g2 = w(a, b, inv(a))
+    Psi = w(a, b, pwr(a, -2), b)
+    assert Psi == w(g1, C, inv(g1), g2, C, inv(g2), inv(C), "y", s, "Y")                       # Prop. 9 (2)
+    h = w(a, inv(b), inv(a))
+    assert b == w(inv(a), s, a, h, Psi, inv(h))                                                # Prop. 9 (3)
+print("(5) TH12 Prop. 8 (P1)-(P3) and Prop. 9 identities hold as free identities, n = 2..30; x = Y b y has 4 + 7 = 11 factors (4 on k, 7 on c)")

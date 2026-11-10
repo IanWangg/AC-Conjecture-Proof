@@ -2,6 +2,7 @@
 """TH16: search a short cyclic-product path (second relator frozen) and compile it to a strict
 ordinary-ac-elementary-v1 certificate.  Usage:
   python3 experiments/th16_cert.py R S TARGET_R OUT.json [cap]   # (R,S) -> (TARGET_R, S), S frozen, exact words
+  python3 experiments/th16_cert.py --selftest
 Standard library only; the output is checked by experiments/elementary_verify.py."""
 import sys, json, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -57,7 +58,21 @@ def compile_path(r, s, path, target_r):
     assert C.st == [target_r, red(s)]
     return {"format": "ordinary-ac-elementary-v1", "start": C.start, "target": C.st, "moves": C.moves}
 
+def selftest():
+    """recompute P_3 -> (yxYYXX, k_3), replay it with the repository verifier, and compare with the stored file"""
+    import elementary_verify as EV
+    r, s, tgt = "xyxYYXy", "xxxYXyy", "yxYYXX"
+    path = find_path(r, s, orb(tgt), 16); assert path is not None and len(path) == 3
+    cert = compile_path(r, s, path, tgt)
+    assert cert["start"] == [r, s] and cert["target"] == [tgt, s]
+    EV.replay(cert)                                   # raises on any invalid step or wrong endpoint
+    here = os.path.dirname(os.path.abspath(__file__))
+    stored = os.path.join(here, "..", "certificates", "th16_p3_to_len13.json")
+    if os.path.exists(stored): assert json.load(open(stored)) == cert
+    print("th16_cert self-test passed: 3 cyclic products, %d elementary moves" % len(cert["moves"]))
+
 if __name__ == "__main__":
+    if sys.argv[1:] == ["--selftest"]: selftest(); sys.exit(0)
     r, s, tgt, out = sys.argv[1:5]; cap = int(sys.argv[5]) if len(sys.argv) > 5 else 16
     path = find_path(r, s, orb(tgt), cap)
     assert path is not None, "no path within the bounds"

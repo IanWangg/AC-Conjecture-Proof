@@ -50,3 +50,22 @@ for n in range(2, 13):
         print("n=%d swap chain:" % n, " -> ".join(w for w, _ in s))
         print("n=%d a chain:" % n, " -> ".join("(%s,%s)" % st for st in t))
 print("TH15 closed-form chains: every step is one cyclic product, endpoints = sigma(AK(n)), a(AK(n)) up to rotation/inversion, n = 2..12")
+# --- Propositions C and D of the final note (hub path and C's bridge), words typed from the note
+def hub_states(n):
+    x, X, y, Y = "x", "X", "y", "Y"
+    u = lambda k: x * (n - k) + Y * n + x + y * k + "XY" if k else x * n + Y * (n + 1)
+    beta = X + Y * (n + 1) + x + y * n
+    st = [(u(k), B) for k in range(0, n)] + [(beta, B)]
+    st += [(beta, x + y * (n + 1) + x + "YX" + Y * (n + 2)), (beta, "xx" + y * (n - 1) + X + Y * (n + 2)), (beta, "xxYXY")]
+    return st
+def bridge_states(n):
+    x, X, y, Y = "x", "X", "y", "Y"
+    f = lambda k: red(x * k + "YX" + y * (n - k) + x + Y * n)
+    betap = X + y * n + x + Y * (n + 1)
+    st = [(cyc(f(k)), B) for k in range(n, 0, -1)] + [(betap, B)]
+    st += [(betap, x + Y * n + x + "YX" + y * (n - 1)), (betap, "xx" + Y * (n + 2) + X + y * (n - 1)), (betap, "XYxxY")]
+    return st
+for n in range(2, 11):
+    h = hub_states(n); assert chain_ok(h) == n + 3
+    d = bridge_states(n); assert chain_ok(d) == n + 3 and conj(d[n][0], "X" + "y" * n + "x" + "Y" * (n + 1))
+print("TH15 Prop. C (AK(n) -> H_n = (XY^(n+1)xy^n, xxYXY)) and Prop. D (AK(n) -> M_n = (Xy^nxY^(n+1), XYxxY)): n+3 cyclic products each, n = 2..10")
