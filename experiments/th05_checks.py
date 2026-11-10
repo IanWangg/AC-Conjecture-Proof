@@ -11,6 +11,8 @@
   B. Lemma 6.2, finite core: in SL_2(Z/m) (and SL_3(F_2)) an element has
      abelian cokernel iff it is non-scalar modulo every prime l | m.
   C. Lemma 6.3 (row lemma): the construction, for SL_3(Z) and SL_2(Z[1/p]).
+  D. Example 1.3: every homomorphism F -> S_4, S_5 killing (c,w) or (c',w')
+     has metabelian image (c = xyxYXY, w = [yX, xyXX]; c' = xyxYYXy, w' = [x, yxY]).
 
 Usage: python3 experiments/th05_checks.py --selftest      (about 2 s)
        python3 experiments/th05_checks.py --mods 16 18   (extra levels for check B)
@@ -272,7 +274,35 @@ def check_row(n, p, trials, rng):
     ring = "Z" if p == 1 else f"Z[1/{p}]"
     print(f"C SL_{n}({ring}): row lemma construction verified on {trials} random instances")
 
+# ---------- D. Example 1.3: B_3/<<w>> and G_c'/<<w'>> are metabelian ----------
+def check_example(n):
+    """All (X,Y) in S_n x S_n: relators (c,w) resp. (c',w') force a metabelian image."""
+    e = tuple(range(n)); G = [tuple(q) for q in itertools.permutations(range(n))]
+    def ev(word, X, Y):
+        tab = {"x": X, "y": Y, "X": pinv(X), "Y": pinv(Y)}; r = e
+        for ch in word: r = pmul(r, tab[ch])
+        return r
+    def metabelian(X, Y):
+        H = closure([X, Y], pmul, e)
+        D = normal_closure(comm(X, Y, pmul, pinv), [X, Y], pmul, pinv, e)
+        return all(pmul(d1, d2) == pmul(d2, d1) for d1 in D for d2 in D)
+    out = []
+    for c, w in (("xyxYXY", "xYxxYXyXxyXX"), ("xyxYYXy", "XyXYxyxY")):
+        both = bad = nonmeta_c = 0
+        for X in G:
+            for Y in G:
+                if ev(c, X, Y) != e: continue
+                if ev(w, X, Y) == e:
+                    both += 1
+                    if not metabelian(X, Y): bad += 1
+                elif not metabelian(X, Y): nonmeta_c += 1
+        assert bad == 0, (c, w)
+        out.append(f"relators ({c},{w}): {both} homs, all metabelian; "
+                   f"{nonmeta_c} homs killing only {c} have non-metabelian image")
+    print(f"D S_{n}: " + " | ".join(out))
+
 def selftest():
+    check_example(4); check_example(5)
     S = lambda *c: perm(5, *c)
     check_theorem1("S3", perm(3, (0, 1)), perm(3, (0, 1, 2)))
     check_theorem1("S4", perm(4, (0, 1)), perm(4, (0, 1, 2, 3)))
