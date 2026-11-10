@@ -187,3 +187,7 @@ Q/⟨⟨b⁴⟩⟩ ≅ ℤ/8); c_K kills B₃ (xy = y²x, then x = y, y = 1). I 
 `th19_th09_check.py`, `th19_th09_gieseking.py`, `th19_th09_gsieve.py`, `th19_th09_census.py`, `th19_th09_necklace.py`, `th19_th01_sl25.py`, `th19_th03_mirror.py` (also used for TH07)
 (run each as `python3 experiments/<name>`; `th19_replay.py` and `th19_th06_cert.py` take certificate paths as arguments).
 No certificate and no other file was written or modified.
+
+## Coordinator's note (2026-11-09, Los Angeles time)
+
+This referee was interrupted by the same usage-credit stop at about 04:57 UTC and was resumed on another model at 05:05 UTC with its saved transcript; it re-read the final versions of TH01–TH09 (TH02 and TH04 as last saved) and completed the verdicts above. The coordinator re-ran `experiments/th19_replay.py` (output quoted in the commit) and spot-checked that the verdicts agree with the coordinator's own checks appended to research-th01, -th03, -th05, -th06, -th07, -th08 and -th09 (no disagreement found). The verdict "VERIFIED" in this note means re-derived or independently recomputed by the referee, as defined at the top; it is the referee's judgement, not a formal proof check.
