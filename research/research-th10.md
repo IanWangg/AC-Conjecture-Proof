@@ -223,3 +223,11 @@ So within the certified part of their classes, the "chiral" candidates C4 and X,
 - A. D. Myasnikov, A. G. Myasnikov, V. Shpilrain, *On the Andrews–Curtis equivalence* (2002) — recalled for MS(1,w); not consulted.
 - S. I. Adian, *The Burnside problem and identities in groups*; A. Yu. Ol'shanskii, *Geometry of defining relations in groups*; E. Zelmanov (restricted Burnside problem); S. Ivanov, I. Lysenok (even exponents) — recalled, not consulted.
 - J. Nielsen (primitive elements and [x,y] under Aut(F₂)); J. H. C. Whitehead (minimal words); P. Hall, *The Eulerian functions of a group* (A₅¹⁹) — classical, recalled.
+
+## Coordinator's check (2026-11-09, Los Angeles time)
+
+**This agent stopped at about 04:56–04:57 UTC because the session's model ran out of usage credits, shortly before its deadline and before handing back a final report.** The text above is its last saved version; it already contained a status line, the honest-limits and advice sections, the list of files and the references, so it is published as written. The coordinator did not edit it.
+
+- Mechanical checks re-run by the coordinator: every self-test shipped with this note passes, and every certificate `certificates/<this agent's id>_*.json` in format `ordinary-ac-elementary-v1` replays under `python3 experiments/elementary_verify.py` (certificates in other formats, if any, are not AC trivializations and are labelled by the note itself).
+- The proofs were **not** re-derived by the coordinator except where stated below; for independent verdicts on the central claims see the referee notes research-th19.md (TH01–TH09) and research-th20.md (TH10–TH18), which were completed after the same interruption.
+- Claim A (metabelian-cokernel filter) is the same statement as research-th05's Theorem 1⁺, whose proof the coordinator re-derived; the two were found independently in this round.

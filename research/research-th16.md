@@ -217,3 +217,10 @@ What the self-tests assert: hand-checked piece values; Proposition 1 by brute fo
 - G. Havas, C. Ramsay, "Breadth-first search and the Andrews–Curtis conjecture", IJAC 13 (2003); A. D. Miasnikov, A. G. Myasnikov, "Balanced presentations of the trivial group on two generators and the Andrews–Curtis conjecture" (2001). Externally reported (triviality of all presentations of length ≤ 12).
 - C. F. Miller III, P. E. Schupp, "Some presentations of the trivial group" (1999). Externally reported (the family MS(n,w)).
 - Research notes of this repository: A (Lemmas 1–2), C, D (§4.3, §4.5, Lemma D3/D6), G (Lemma G0), J (Lemma J0, Theorem J1), K (Theorem K1, K2), L (§3.3), O (Thm O1, §2.2, §6), and the round-5 drafts TH03 (§7 twisted traces; T14, T18) and TH07 (Theorem A).
+
+## Coordinator's check (2026-11-09, Los Angeles time)
+
+**This agent stopped at about 04:56–04:57 UTC because the session's model ran out of usage credits, shortly before its deadline and before handing back a final report.** The text above is its last saved version; it already contained a status line, the honest-limits and advice sections, the list of files and the references, so it is published as written. The coordinator did not edit it.
+
+- Mechanical checks re-run by the coordinator: every self-test shipped with this note passes, and every certificate `certificates/<this agent's id>_*.json` in format `ordinary-ac-elementary-v1` replays under `python3 experiments/elementary_verify.py` (certificates in other formats, if any, are not AC trivializations and are labelled by the note itself).
+- The proofs were **not** re-derived by the coordinator except where stated below; for independent verdicts on the central claims see the referee notes research-th19.md (TH01–TH09) and research-th20.md (TH10–TH18), which were completed after the same interruption.

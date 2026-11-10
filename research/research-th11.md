@@ -304,3 +304,11 @@ What the scripts assert. `th11_nil`: the Lie-coordinate extraction (every differ
 - K. Reidemeister (1936); twisted conjugacy classes in nilpotent groups (e.g. V. Roman'kov; A. Fel'shtyn) — classical background, recalled, not consulted.
 - C. Runge (1887): integer points on w² = monic quartic by squeezing between consecutive squares — classical elementary method.
 - D. Panteleev, A. Ushakov (2019): automorphic moves are AC-realized on AK(n) — externally reported; used only in the last sentence of §8.
+
+## Coordinator's check (2026-11-09, Los Angeles time)
+
+**This agent stopped at about 04:56–04:57 UTC because the session's model ran out of usage credits, shortly before its deadline and before handing back a final report.** The text above is its last saved version; it already contained a status line, the honest-limits and advice sections, the list of files and the references, so it is published as written. The coordinator did not edit it.
+
+- Mechanical checks re-run by the coordinator: every self-test shipped with this note passes, and every certificate `certificates/<this agent's id>_*.json` in format `ordinary-ac-elementary-v1` replays under `python3 experiments/elementary_verify.py` (certificates in other formats, if any, are not AC trivializations and are labelled by the note itself).
+- The proofs were **not** re-derived by the coordinator except where stated below; for independent verdicts on the central claims see the referee notes research-th19.md (TH01–TH09) and research-th20.md (TH10–TH18), which were completed after the same interruption.
+- The coordinator supplied this agent with two facts it then re-proved: θ₀ = (x ↦ x⁻¹, y ↦ yx) sends c to a conjugate of c⁻¹ and xˢy to a conjugate of x^{1−s}y, and the exact list of holonomy-trace coincidences (n,s) ∈ {(1,−2),(1,3),(2,−2),(2,3),(4,−4),(4,5),(5,−5),(5,6)}; both agree with research-th03's integer invariant (I(k₄) = 74 = σ(5), I(k₅) = 218 = σ(6)), computed independently.

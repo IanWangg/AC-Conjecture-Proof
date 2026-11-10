@@ -312,3 +312,10 @@ In that case every AC trivialization of AK(n), viewed as an ACM path, would have
 - W. Magnus, A. Karrass, D. Solitar, *Combinatorial Group Theory* (free products, conjugacy).
 - M. Culler, J. Morgan, *Group actions on ℝ-trees*, Proc. LMS 55 (1987), §1 (translation lengths, ping-pong).
 - H. Zieschang, *Generators of the free product with amalgamation of two infinite cyclic groups*, Math. Ann. 227 (1977) (not consulted; cited as the likely source of Proposition 6.5).
+
+## Coordinator's check (2026-11-09, Los Angeles time)
+
+**This agent stopped at about 04:56–04:57 UTC because the session's model ran out of usage credits, shortly before its deadline and before handing back a final report.** The text above is its last saved version; it already contained a status line, the honest-limits and advice sections, the list of files and the references, so it is published as written. The coordinator did not edit it.
+
+- Mechanical checks re-run by the coordinator: every self-test shipped with this note passes, and every certificate `certificates/<this agent's id>_*.json` in format `ordinary-ac-elementary-v1` replays under `python3 experiments/elementary_verify.py` (certificates in other formats, if any, are not AC trivializations and are labelled by the note itself).
+- The proofs were **not** re-derived by the coordinator except where stated below; for independent verdicts on the central claims see the referee notes research-th19.md (TH01–TH09) and research-th20.md (TH10–TH18), which were completed after the same interruption.

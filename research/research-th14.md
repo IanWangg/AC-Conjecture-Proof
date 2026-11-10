@@ -435,3 +435,11 @@ all k by a uniform ordinary argument is open here (stably it is Proposition F).
   stabilization).  M. J. Dunwoody, A. Pietrowski, *Presentations of the trefoil group* (1973).
 - R. Fricke / F. Klein (trace identities in SL₂).  Earlier notes of this repository: D (D2, D3, D6), G (G2),
   I (Prop. C), J (§7), L (§3.3), N (N1, Ŝ(C4) ⊇ D₆).
+
+## Coordinator's check (2026-11-09, Los Angeles time)
+
+**This agent stopped at about 04:56–04:57 UTC because the session's model ran out of usage credits, shortly before its deadline and before handing back a final report.** The text above is its last saved version; it already contained a status line, the honest-limits and advice sections, the list of files and the references, so it is published as written. The coordinator did not edit it.
+
+- Mechanical checks re-run by the coordinator: every self-test shipped with this note passes, and every certificate `certificates/<this agent's id>_*.json` in format `ordinary-ac-elementary-v1` replays under `python3 experiments/elementary_verify.py` (certificates in other formats, if any, are not AC trivializations and are labelled by the note itself).
+- The proofs were **not** re-derived by the coordinator except where stated below; for independent verdicts on the central claims see the referee notes research-th19.md (TH01–TH09) and research-th20.md (TH10–TH18), which were completed after the same interruption.
+- All statements in this note are about **stable** AC equivalence (one or more extra generators) unless explicitly marked *ordinary*; the certificate `certificates/th14_c4_invy_stable1.json` is in the note's own rank-3 format `stable1-ac-elementary-rank3-v1`, replayed by `experiments/th14_verify3.py` (self-test passes), and is not an ordinary AC certificate. Theorem A (after one stabilization every AC class is invariant under all automorphisms) is classical in content, as the note says; it does not bear on the ordinary question for C4.
