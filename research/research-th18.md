@@ -285,3 +285,9 @@ The trivialization certificates end exactly at ("x","y"); the three equivalence 
 - G. Baumslag, D. Solitar, Bull. AMS 68 (1962); D. L. Johnson's presentations as quoted in note F.
 - A. Shehper et al., arXiv:2408.15332 and https://github.com/shehper/AC-Solver (benchmark and greedy-solved list); L. Fagan et al., arXiv:2606.21611 (as reported in notes D, L).
 - Repository notes C (bridge), D (Lemmas D2, D3, certificates), F (Prop. F2), G (Lemma G0, Prop. G2, Lemma G4, `g_bs.py`), I, L.
+
+## Coordinator's check (2026-11-09, Los Angeles time)
+
+- Re-ran `th18_bs.py`, `th18_survey.py`, `th18_gieseking.py`, `th18_quotient_tests.py` with `--selftest`: all pass. All 16 `certificates/th18_*.json` replay under `python3 experiments/elementary_verify.py`; e.g. `th18_p2_to_ak_4_beta2.json` goes from exactly (XyyxYYY, XXXYxxY) (research-i's P2) to AK₂(4) = (xxxxYYYYY, xYYxyyXY) in 914 moves.
+- Read: T1 (killers of BS(n,n+1) are the elements of x-exponent ±1; classical, proof included), T3 (a killer class contains a primitive element iff its t-length is 1, so MS(n,w) is then AC-trivial by one move and research-d's Lemma D3), T5 (C's bridge word lies in a t-length-3 class with no primitive element, for every n ≥ 2 — consistent with research-g's G2 and, for n = 2, not in conflict with AK(2) being AC-trivial, since that trivialization is not a single move), and T9. The conjugacy invariant T2 rests on Britton's lemma and Collins' lemma (classical, quoted). Not re-derived line by line; see the referee note research-th20.md.
+- New certified fact recorded for the README: the holdout class P2 of the length-14 frontier is AC-equivalent to AK₂(4) and to AK₋₂(5), members of a generalized Akbulut–Kirby family; its AC-triviality remains open.

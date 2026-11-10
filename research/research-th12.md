@@ -268,3 +268,10 @@ What each line checks: (1) the factor lists of (I_x), (I_y) multiply to x, y by 
 - B. Lishak, *Balanced finite presentations of the trivial group*, arXiv:1504.00418; J. Topol. Anal. 9 (2017) (recalled from memory; not accessed).
 - J.-P. Serre, *Trees* (PSL₂(ℤ) ≅ ℤ/2 * ℤ/3; recalled).
 - Files written: `research/research-th12.md`, `experiments/th12_area.py`, `experiments/th12_radius.py` (both with `--selftest`).
+
+## Coordinator's check (2026-11-09, Los Angeles time)
+
+- Re-ran `python3 experiments/th12_area.py --selftest` and `python3 experiments/th12_radius.py --selftest`: pass.
+- Re-derived by hand: Lemma 0 (signed counts are forced by the abelianization); **Theorem 2(ii)**: the signed counts for x are (−1, n+1), so c_s ≥ n+1 and c_r is odd, and c_r = 1 would make x conjugate to r^{∓1} modulo ⟨⟨s⟩⟩, which the homomorphism B₃ → SL₂(ℤ), x ↦ [[1,1],[0,1]], y ↦ [[1,0],[−1,1]] excludes (trace 2 against n²+n+2); the identity Δ x Δ⁻¹ = s·y behind (I_x), (I_y); and **Theorem 4**: in the permutation model x = (1 2 … n)(0), y = (0 1 … n) the relator r acts trivially and s fixes every point of [1, n−3], so an expression of x whose conjugator prefixes have σ-values in a window of fewer than n−3 integers would fix a point that x moves. Both arguments are correct. Hence the generator area of AK(n) is exactly n+4 and every trivialization by the 15 instructions has at least n−3 conjugations (n ≥ 4).
+- Read but not re-derived: Theorem 1 (count-matrix calculus), Theorem 3 (at least n+2 multiplications, via syllable length in PSL₂(ℤ) = ℤ/2 * ℤ/3; the note reports exhaustive confirmation for n ≤ 5), and Propositions 8–9 on P_n. Corollary 5 (d_F(AK(n)) ≥ 2n−1 for n ≥ 4) is the sum of Theorems 3 and 4. See research-th20.md for the referee's verdicts.
+- Scope: these are lower bounds on the number of moves of a trivialization, growing linearly in n; they are not obstructions and say nothing about whether AK(n) is AC-trivial. For n = 3 research-e's exhaustive bound (15 moves) is stronger.

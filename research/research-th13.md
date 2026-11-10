@@ -266,3 +266,9 @@ All searches are directed, engine-relative and bounded; "no trivializing state" 
 - D. Panteleev, A. Ushakov, *Conjugacy search problem and the Andrews–Curtis conjecture*, arXiv:1609.00325 (ACM moves; externally reported, not re-read in this session).
 - H. Schubert, *Über eine numerische Knoteninvariante* (1954): bridge number of torus knots; M. Rost, H. Zieschang, *Meridional generators and plat presentations of torus links* (1987) (both cited from memory, used only in Remark (iv) of §3).
 - H. Zieschang, *Generators of the free product with amalgamation of two infinite cyclic groups*, Math. Ann. 227 (1977): classification of generating pairs of ⟨s,t | s^p = t^q⟩ (context for Lemma 7, which is proved here directly and does not rely on it; citation from memory).
+
+## Coordinator's check (2026-11-09, Los Angeles time)
+
+- Re-ran `python3 experiments/th13_family.py --selftest`: pass. All 13 `certificates/th13_*.json` replay under `python3 experiments/elementary_verify.py`. In particular `th13_ak3_to_ak_3_2.json` goes from exactly AK(3) = (xxxYYYY, xyxYXY) to (xxYYY, xyxyxyxYXYXYXY) = AK(3;2) in 2,522 moves, so **AK(3) ~AC ⟨x,y | x² = y³, (xy)³x = y(xy)³⟩ by plain AC moves**, as stated in T3.
+- Re-derived by hand: T1 for AK(k;p) (the second relator makes x and y conjugate; x^p = y^{p+1} is central, hence so are y^p and then y; the group is abelian, so x = y and x = 1). Read but not re-derived: the duality T2 for k ≥ 2, the plateau bound T4, T5, and the Aut-realization T6 (certificates replayed: the transvection and swap on AK(2;3), AK(2;4)).
+- Scope: T6 shows that a class can be Aut(F₂)-closed although bounded forward searches do not find a given automorphic image (here the mirror image of AK(2;3) up to cap 34); this is a caution about reading research-i's and research-n's bounded "no Nielsen-generator image" observations for C4 as evidence of chirality.
