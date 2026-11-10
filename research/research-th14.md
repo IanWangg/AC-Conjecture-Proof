@@ -1,4 +1,4 @@
-# Research TH14: what one stabilization buys — Aut-invariance, the stable substitution theorem, and the composition formula
+# Research TH14: what one stabilization buys — Aut-invariance, stable substitution and generator exchange, the composition formula, and one closed exit for AK(3)
 
 Date: 2026-11-09 (Los Angeles). Independent research agent TH14 (round 5, theory round).
 
@@ -42,9 +42,12 @@ reaches a primitive relator).
 stabilization only as a sketch for 3-deformations. Nobody in A–O worked out *which rank-2 presentations become
 equivalent after one stabilization*. I make (a) fully explicit (Theorem A, stronger than asked: the whole of
 Aut(F₃) acts trivially on the class of (U,z)), and replace the vague "substitution move" of (b) by an exact
-theorem (Theorem B) plus a rank-free structural statement (B2: composition = disjoint union stably). (c) is then
-a finite, checkable question: is some member of AK(3)'s class a corank-≤1 pair, or a composite W∘P with W, P
-both known AC-trivial? §5 tests this; the answer within the bounds is no.
+theorem (Theorem B), a rank-free structural statement (B2: composition = disjoint union stably) and the
+exact generator-exchange criterion asked for in the seed (Proposition F, §9). (c) is then a finite, checkable
+question: is some member of AK(3)'s class a corank-≤1 pair, or a composite W∘P with W, P both known
+AC-trivial, or does a generator exchange lead to a short presentation? §5 and §9 test this; the answer within
+the bounds is no, and for the standard relators the first exit is closed by a proof (E3). Not duplicated by
+the other round-5 seeds as listed in the brief (TH09/TH18 study killers, TH13/TH15 ordinary families).
 
 ## 2. Theorem A: the class of (U, z) is Aut(F_{n+1})-invariant (stable; proved here)
 
@@ -212,10 +215,12 @@ SL₂(ℤ)-conjugation, sign change and inversion.
 *(a) R(ρ) fails:* f_ρ = 4X² − 12XY − 3Y² takes only the values 0, 4, 5 mod 8 (Y odd: 4X(X−3Y) ≡ 0 and −3Y² ≡ 5;
 Y even: ≡ 4X² + 4(Y/2)²).
 *(b) Reduction.* Suppose ⟨g s₁ g⁻¹, h r₂ h⁻¹, t⟩ = F. Passing to PSL₂(ℤ) = ⟨s⟩ * ⟨τ⟩ ≅ C₂ * C₃ (s, τ the images
-of S = [[0,−1],[1,0]] and ST = [[0,−1],[1,1]]), the images of g s₁ g⁻¹ and t generate. By the Grushko–Neumann
-theorem applied to F(a,b) → C₂ * C₃, there is a basis (P,Q) of F(a,b) with P ↦ s, Q ↦ τ^{±1}; hence the
-image of g s₁ g⁻¹ equals A(s,τ) for a primitive word A ∈ F(u,v). So p := A(S, ST) ∈ SL₂(ℤ) is ± an
-SL₂(ℤ)-conjugate of ρ^{±1}: |tr p| = 14 and R(p) fails by (a).
+of S = [[0,−1],[1,0]] and ST = [[0,−1],[1,1]]), the images of g s₁ g⁻¹ and t generate (r₂ ↦ 1). By the
+Grushko–Neumann theorem applied to the epimorphism F(a,b) → C₂ * C₃, a ↦ [g s₁ g⁻¹], b ↦ [t], there is a
+basis (P,Q) of F(a,b) with P ↦ s, Q ↦ τ^{±1}; writing a as a (primitive) word in P, Q shows that the image of
+g s₁ g⁻¹ equals A(s,τ) for a primitive word A ∈ F(u,v). Both A(S,ST) and Φ(g s₁ g⁻¹) lift this element, and
+Φ(s₁) is conjugate to ρ^{±1} (ker Φ ∋ r₂). So p := A(S, ST) ∈ SL₂(ℤ) is ± an SL₂(ℤ)-conjugate of ρ^{±1}:
+|tr p| = 14 and R(p) fails by (a).
 *(c) Every primitive image of trace ±14 satisfies R.* Complete A to a basis (A,A′), q = A′(S,ST). Since
 [A,A′] is conjugate to [u,v]^{±1} and tr[S,ST] = 3, Fricke's identity tr[p,q] = ξ² + η² + ζ² − ξηζ − 2 gives
 ξ² + η² + ζ² − ξηζ = 5 for (ξ,η,ζ) = (tr p, tr q, tr pq). With |ξ| = 14 this forces ξηζ > 0 (otherwise the left
@@ -263,7 +268,7 @@ unfiltered run of the same script (member list then including three round-5 pair
 952 subgroups with the same outcome (0 / 0, 2 pruned).
 
 So within these bounds no member of AK(3)'s class is a corank-≤1 pair, and none factors through a proper
-rank-2 subgroup. **This is a bounded search over 48 known class members and short conjugators; it is not a
+rank-2 subgroup. **This is a bounded search over 47 (E1) resp. 18 (E2) known class members and short conjugators; it is not a
 proof that the stable exits are closed for the class** (only Proposition E3 is a proof, and only for the
 standard relators).
 
@@ -292,8 +297,8 @@ and ε_y(C4) and gives no information on whether one exists.**
 ## 7. Remark: rank reduction by duality (stable; proved here, short)
 
 **Proposition B3.** Let P = (p₁..p_n) be a balanced presentation of the trivial group on x₁..x_n and suppose
-⟨p₁,…,p_n,t₁,…,t_k⟩ = F_n. Then P is stably AC-equivalent (k stabilizations) to a balanced presentation P^∨
-of rank k. For k = 1 this is Corollary B′ in every rank (rank-1 balanced presentations of the trivial group
+⟨p₁,…,p_n,t₁,…,t_k⟩ = F_n. Then P is stably AC-equivalent to a balanced presentation P^∨ of rank k; precisely
+(P, z₁..z_k) ~ (P^∨(z), x₁..x_n) in F_{n+k}. For k = 1 this is Corollary B′ in every rank (rank-1 balanced presentations of the trivial group
 are (c^{±1})).
 *Proof.* As in Theorem B there is α ∈ Aut(F_{n+k}) with π∘α = π₀ (π: x_i ↦ p_i, z_j ↦ t_j; π₀: x_i ↦ x_i,
 z_j ↦ 1). Put A_i = α⁻¹(x_i), C_j = α⁻¹(z_j): a basis with A_i ≡ p_i modulo ⟨⟨z⟩⟩, so (P, z) ~ (A, z) by
@@ -305,7 +310,7 @@ P^∨_j is α(z_j) with the x-letters deleted; (x, P^∨(z)) is the n-fold stabi
 ## 8. Failed attempts and what they show
 
 1. *AK(3) stably trivial via E1.* Closed rigorously for the standard relators and all conjugators
-   (Proposition E3); no hit for the 48 known class members within §5.2's bounds.
+   (Proposition E3); no hit for the 47 known class members of length ≤ 17 within §5.2's bounds.
 2. *A shorter rank-2 presentation stably equivalent to AK(3) via factorization (E2).* No factorization found
    (§5.2). Substitution U ↦ U∘(p,q) only lengthens, and by Lemma C it never creates a primitive relator; so
    Theorems B/B2 by themselves produce no presentation of length ≤ 13 stably equivalent to AK(3). The length

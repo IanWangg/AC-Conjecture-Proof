@@ -562,6 +562,33 @@ def report_fbc(primes=(7, 13)):
           " == Orb(theta q_1) u Orb(c): %s" % (len(G.traces), len(surv), set(surv) == orb(tq1) | orb(C_)))
     print("   explicit: nf(Y c y) == nf(yxYYXX) in G_{k3}:", GK3.nf("Y" + C_ + "y") == GK3.nf("yxYYXX"))
 
+def report_mirror():
+    """research-th16 Theorem H(a'): q_2' is not conjugate to q_2^{+-1} in G_{q1}.
+    beta: x -> xYX, y -> YX is an automorphism of F with cyc(beta(q_1)) in Orb(c), so G_{q1} = beta^-1(G_c);
+    research-th03's mod-2 twisted trace eps (its T16) separates beta(q_2) from beta(swap(q_2)) in G_c."""
+    import random
+    import th03_two as T2
+    bx, by = "xYX", "YX"
+    xx = red(bx + inv(by)); assert xx == "x" and inv(red(by + xx)) == "y"     # x = bx by^-1, y = (by x)^-1: a basis
+    beta = {"x": bx, "y": by, "X": inv(bx), "Y": inv(by)}
+    ap = lambda w: red("".join(beta[ch] for ch in w))
+    assert cyc(ap(Q1_)) in orb(C_)
+    swp = str.maketrans("xXyY", "yYxX")
+    assert Q2_.translate(swp) in orb(Q2P_)
+    def deg1(w):
+        u, k = GC.nf(w)
+        if k == -1: u, k = GC.nf(inv(w))
+        assert k == 1
+        return u
+    g1, g2 = ap(Q2_), ap(Q2_.translate(swp)); u1, u2 = deg1(g1), deg1(g2)
+    rnd = random.Random(2)
+    for _ in range(200):                      # eps is constant on conjugates (through my normal forms)
+        g = red("".join(rnd.choice("xXyY") for _ in range(6)))
+        assert T2.eps(deg1(red(g + g1 + inv(g)))) == T2.eps(u1) and T2.eps(deg1(red(g + g2 + inv(g)))) == T2.eps(u2)
+    print("beta(q_1) ->", cyc(ap(Q1_)), "; normal forms in G_c:", (u1, 1), (u2, 1), "; eps =", T2.eps(u1), T2.eps(u2))
+    assert T2.eps(u1) != T2.eps(u2)
+    print("   => q_2' is not conjugate to q_2^{+-1} in G_{q1}: the plateau of Q is Orb(q_1) x Orb(q_2)")
+
 if __name__ == "__main__":
     a = sys.argv[1:]
     if "--selftest" in a or not a:
@@ -569,5 +596,5 @@ if __name__ == "__main__":
         selftest_fbc()
     if "--pieces" in a or "--all" in a: piece_table()
     if "--ms" in a or "--all" in a: report_ms()
-    if "--fbc" in a or "--all" in a: report_fbc()
+    if "--fbc" in a or "--all" in a: report_fbc(); report_mirror()
     if "--sieve" in a: report_sieve()

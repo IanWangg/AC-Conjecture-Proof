@@ -153,7 +153,19 @@ a maximal subgroup of index 4. So Ŝ(C4) would be infinite, the Aut(F₂)-orbit 
 
 (`th02_candidates.collins_r2_check` re-verifies the free identities and the two matrices.) This also shows how weak the quotient tests are: h′ = ah⁻¹a⁻¹, every SL₂-representation of G restricts to a rigid representation of B₃ (tr(a) is a root of s² − s ∓ 1), and none of the 400 homomorphisms tried separates p from ε_x(p).
 
-**What remains open in §4.** The ε_x-symmetric relators of kind 2 (r₁ = xxxyXYYXXyyXY with partners s_w and xxxyXYYXyy, its mirror xxxYXyyXXYYXy, and six relators of length 15): F/⟨⟨r₁⟩⟩ = ⟨x, y | x₀³ = x₁x₋₁²x₁⟩ is not an HNN extension of a group with known normal forms, and I have no exact conjugacy test for it. **Neither these candidates nor their negations are claimed.**
+**Proposition 11 (Collins form of the open candidate; proved here, with a bounded exclusion).** Let r₁ = xxxyXYYXXyyXY and x_i = yⁱxy⁻ⁱ. Then r₁ = 1 ⟺ x₀³ = x₁x₋₁²x₁, and F/⟨⟨r₁⟩⟩ is the HNN extension of
+
+    H = ⟨x₀, x₁, x₂ | x₁³ = x₂x₀²x₂⟩ = ⟨x₁⟩ *_{x₁³ = x₂x₀²x₂} F(x₀, x₂)
+
+with stable letter t = y, tx₀t⁻¹ = x₁, tx₁t⁻¹ = x₂ (Magnus–Moldavanskii; the associated subgroups are free of rank 2 by the Freiheitssatz). As free words s_w = xy³xY² = x₀x₃y and ε_x(s_w) = x₀⁻¹x₃⁻¹y, so s_w ~ t·x₂x₀ and ε_x(s_w) ~ t·x₂⁻¹x₀⁻¹. By Collins' lemma, **ε_x(s_w) is conjugate to s_w in F/⟨⟨r₁⟩⟩ iff there is a word Z(p, q) with**
+
+    Z(x₀, x₁) · x₂⁻¹x₀⁻¹ · Z(x₁, x₂)⁻¹ = x₂x₀   in H.
+
+Abelianizing H forces the exponent sums of Z to be (−6, +6); in particular |Z| ≥ 12. **No reduced word Z of length ≤ 18 is a solution**: each of the 924 + 11,088 + 126,984 + 1,311,024 words of lengths 12, 14, 16, 18 with these exponent sums violates the equation in one of five random finite quotients of H (`th02_candidates.py r1 L`), which excludes it rigorously. Whether a longer Z exists is **open**; a solution would give ε_x ∈ Ŝ(C4) and Prop. 9, and a proof that none exists (a twisted-conjugacy problem in the amalgam H) would exclude this state too.
+
+*Proof of the reduction.* yXY = x₁⁻¹ and YX²y = x₋₁⁻², so r₁ = x₀³x₁⁻¹x₋₁⁻²x₁⁻¹; shifting by y gives the relator of H. In the HNN extension x₃ = tx₂t⁻¹, so x₀x₃t = x₀tx₂ ~ t·x₂x₀, and likewise for ε_x(s_w); both are cyclically reduced of t-length 1 and t-exponent +1. Collins' lemma: t·g ~ t·g′ iff g = z⁻¹g′φ(z) for some z in ⟨x₀,x₁⟩, φ the shift; put Z = z⁻¹. In H^{ab} = ℤ³/⟨(−2,3,−2)⟩ the equation reads (α−2, β−α, −β−2) = λ(−2,3,−2), whence λ = 4, (α,β) = (−6,6). ∎
+
+**What remains open in §4.** The ε_x-symmetric relators of kind 2: r₁ with partners s_w and xxxyXYYXyy (Prop. 11 is the exact form of the question for s_w), its mirror xxxYXyyXXYYXy, and six relators of length 15. **Neither these candidates nor their negations are claimed.**
 
 ## 5. Experiments (exact commands; all run in this session, single core, niced)
 
@@ -218,7 +230,7 @@ which together with Theorem 1 would give **Γ_τ ⊆ Ŝ(AK(n)) for every n ≥ 3
 
 ## 7. Advice to the coordinator (ranked)
 
-1. **Decide the remaining ε_x-candidates exactly.** Proposition 10 settles (negatively) the relator r₂ by Collins' lemma in an HNN extension of B₃; the same question for r₁ = xxxyXYYXXyyXY — is ε_x(s_w) conjugate to s_w in ⟨x, y | x³ = (yxY)(Yxy)²(yxY)⟩, s_w = xy³xY² — is open and is the cheapest route I see to "Ŝ(C4) is infinite": *yes* ⇒ Ŝ(C4) ⊇ Γ⁰(3)^± (index 4, Prop. 9); *no* ⇒ this state is excluded as well. It needs an exact conjugacy algorithm for this one-relator group (Magnus–Moldavanskii hierarchy: r₁ has y-exponent 0, the base is ⟨x₋₁, x₀, x₁ | x₀³ = x₁x₋₁²x₁⟩), or a non-metabelian finite quotient that separates the two elements (none of S₅–S₇, SL₂(7,11,13) does; all their homomorphisms are metabelian or uninformative).
+1. **Decide the equation of Proposition 11** (one agent; a twisted-conjugacy problem in the amalgam H = ⟨x₁⟩ *_{x₁³ = x₂x₀²x₂} F(x₀,x₂)): is there a word Z with Z(x₀,x₁)·x₂⁻¹x₀⁻¹·Z(x₁,x₂)⁻¹ = x₂x₀? *Yes* ⇒ ε_x ∈ Ŝ(C4), Ŝ(C4) ⊇ Γ⁰(3)^± of index 4 (Prop. 9), and the D₆-rigidity of C4 is gone; *no* ⇒ this state is excluded like r₂ (Prop. 10). No solution has length ≤ 18. Amalgam normal forms should decide it; the same routine then applies to the other symmetric relators that `th02_survey.py` lists at higher caps. Either answer is a theorem.
 2. **Run `th02_scan.py` and `th02_survey.py` on every existing large dump** (M's cap-34 set of C4 if it can be exported as words; P1, P2, C3). Each new T(2,n)-type relator outside the known group is an immediate, search-free certificate (`th02_auto.auto_reflect` plus the engine path); each symmetric relator is a new instance of item 1. For C4 the decisive event is any reflection outside D₆.
 3. **Uniform AK(n) theorem within reach:** prove the two conjectured forms of §5.6 symbolically (Lemma-S-style identities). With Theorem 1 this gives Γ_τ ⊆ Ŝ(AK(n)) for all n ≥ 3 without search; only one coset (x ↦ x⁻¹) would then separate the AK series from full Aut(F₂)-closure.
 4. **Classify T(2,n)-type words in a conjugacy class of a T(2,5) torus-knot group** (necklace [1,1,1,1,−1] in C₅ * C₂ for C4). If only the D₆-images occur, the hidden-reflection part of Ŝ(C4) from double-T(2,·) states is exactly D₆ — the "precise structural statement" asked for in the brief, which I could support only experimentally (§5.2).

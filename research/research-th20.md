@@ -107,3 +107,98 @@ braid side k=2 p=3 (G_p and G_p'): Orb(W_2) at L=10, nothing at L=11, L=12: 144 
 | T6: Aut(F₂) is AC-realized on AK(2;3) and AK(2;4) | VERIFIED (certificates for σ and τ = (x ↦ xy) replayed; targets recomputed: (yyyXXXX, yxyxyXYXYX), (xyxyxYYY, xyyxyyxYXYYXY), and the p = 4 analogues; σ, τ generate GL₂(ℤ); mirror certificate → (XXXYYYY, XyXyXYxYxY) replayed) |
 | T7 (Lemma 7), X8 and the "caution" about bounded mirror searches | PLAUSIBLE-UNCHECKED (Lemma 7 read; searches not re-run) |
 
+## 5. TH14 — **stable** theory (one stabilization)
+
+Every statement of this note is about tuples (U, z) in rank n+1 and is labelled *stable* there; nothing in it is an ordinary AC result. Self-tests re-run: `th14_verify3.py`, `th14_stallings.py --selftest` pass. The rank-3 certificate `th14_c4_invy_stable1.json` (format `stable1-ac-elementary-rank3-v1`, not readable by `elementary_verify.py`) was replayed with **my own** strict replayer `th20_macro.replay_strict`: 695 moves, (xxxxyXy, xyyyxYY, z) → (xxxxYXY, xYYYxyy, z) = (ε_y(C4), z), peak 33.
+
+| claim | verdict | what I did |
+|---|---|---|
+| A: the AC class of (U, z) is invariant under Aut(F_{n+1}) | VERIFIED (proof read line by line: the two letter-replacement identities, z ∈ ⟨⟨σ_iU⟩⟩, generation by star transpositions, one inversion, one transvection). Classical in content, as the note says. |
+| B: ⟨⟨p,q⟩⟩ = F₂ and ⟨p,q,t⟩ = F₂ ⇒ (U∘(p,q), z) ~ (U, z) in rank 3 | VERIFIED (I proved it independently before TH14's proof was written; same argument: Nielsen equivalence of the generating triple (p,q,t) to (x,y,1) gives α with ker π = ⟨⟨α(z)⟩⟩; exponent of z in α(z) is ±1; transport by α⁻¹; delete z-letters) |
+| B2: (U(x), P(z)) ~ (U(P(z)), x₁..x_n); for P trivial, (U∘P, z₁..z_n) ~ U ⊔ P | VERIFIED (proof read; both substitution identities checked) |
+| Lemma C: w(p,q) primitive in F ⇒ w primitive, **for ⟨p,q⟩ non-cyclic** | VERIFIED (Kurosh). The claims table omits the hypothesis; without it the statement fails (p = x, q = 1, w = u[u,v]); the lemma itself is stated correctly. |
+| Prop. E3: for s₁ ~ (x³y⁻⁴)^{±1} mod ⟨⟨b⟩⟩, no g, h, t with ⟨g s₁g⁻¹, h b h⁻¹, t⟩ = F | VERIFIED (read in full and recomputed: ρ = [[13,3],[4,1]], f_ρ = 4X² − 12XY − 3Y² ∈ {0,4,5} mod 8; Grushko step; Fricke identity with tr[S,ST] = 3; the Vieta descent γ ≤ 3, 48γ² − 191 a square only for γ = 2, neighbours 13 and 15; parabolic q* forces c = ±1) |
+| Prop. B3 (rank reduction by duality) | PLAUSIBLE-UNCHECKED (same technique as B; read once) |
+| §2.1 macro-move counts, §5.2 bounded search for exits | not checked (experiment / bookkeeping) |
+
+## 6. TH15 — Aut(F₂) is AC-realized on AK(n), all n (Panteleev–Ushakov's theorem, with a self-contained proof)
+
+Self-tests re-run: `th15_aut_family.py`, `th15_transport.py --selftest` pass. `python3 experiments/th20_th15_check.py` (words typed from the note's closed formulas, own cyclic-product test, TH15's code not imported):
+```
+TH15 closed-form chains: every step is one cyclic product, endpoints = sigma(AK(n)), a(AK(n)) up to rotation/inversion, n = 2..12   (n = 3 and 5 printed in full)
+TH15 Prop. C (AK(n) -> H_n = (XY^(n+1)xy^n, xxYXY)) and Prop. D (AK(n) -> M_n): n+3 cyclic products each, n = 2..10
+```
+Symbolic identities re-derived by hand for general n (free reduction): swap, b frozen: yxyXYX·(xy·x^{n−k+1}Y^{n+1}XYX·yᵏ) = yxy·x^{n−k}Y^{n+1}XYX·yᵏ ~ w_{k+1}; for k = n it is ~ w′₁ = y^{n+1}xYⁿXYX; XyxyXY·(yxY^{n+1−j}XYX·yⁿX^{j−1}) = XyxY^{n−j}XYX·yⁿX^{j−1} ~ w′_{j+1}; for j = n it is XXyⁿX^{n−1} ~ q_n. Transvection a = (x ↦ xY): (Xu_kx)·XyxyXY = u_{k+1}; for k = n−1 it gives YⁿxyⁿXY ~ b₁; (Y^{n+1}xyⁿX)·u_{n−1} ~ v₀; (xyⁿXY^{n+1})·(y^{n+1}xY^{n−1}XXy) = xyXXy ~ a(b)⁻¹; YxxYX·(xy^{n−1−m}XY^{n+2}x(Yx)ᵐ) ~ v_{m+1}, ending at (xY)ⁿY^{n+1} = a(p_n).
+
+| claim | verdict | what I did |
+|---|---|---|
+| Lemmas M, S, T, H, N | VERIFIED (each free identity recomputed: ΔxΔ⁻¹ = b·y, ΔyΔ⁻¹ = x·b⁻¹; T_k(β) = y^{−k}βyᵏ and T_k ≡ conjugation by y^{mi} mod ⟨⟨β⟩⟩; xyX ≡ Yxy mod ⟨⟨b⟩⟩ ⇒ β_n ~ p_n; σ and T generate GL₂(ℤ)) |
+| **Theorem 1** (short proof): S(AK(n)) = S((β_n, b)) ∋ σ (b frozen), T (β_n frozen) ⇒ Aut(F₂) | VERIFIED (complete, valid for all n ≥ 1). Not new as a theorem (Panteleev–Ushakov), as the note says; the proof and the "hub" (β_n, b) are explicit. |
+| Props A, B (2n+1 cyclic products each), C, D (n+3 each) | VERIFIED (A, B by hand for all n and by script n ≤ 12; C, D by script n ≤ 10) |
+| Prop. E (generalized-move distances 1 and 3) | VERIFIED (lower-bound case analysis read; syllable counts and abelianization values recomputed) |
+| Cor. 2–8 (Aut-invariance of the class for all n; G1 unconditional; ℤ-family (β_n, T^k(b)); every MS(n,w) has the hidden transvection T; Sym_n, P1 = C6 symbolically) | VERIFIED as consequences of Lemmas M, T (Sym₂ = P1 up to rotation checked) |
+| certificates `th15_*.json` (13 files) | VERIFIED: all replay; targets recomputed: σ(AK(n)) = (yⁿX^{n+1}, yxyXYX), a(AK(n)) = ((xY)ⁿY^{n+1}, xxYXY) for n = 2, 4, 8; ε_x(AK(4)), (x ↦ xy)(AK(4)); hub (XYYYYxyyy, xyxYXY); AK(3) → M₃ in 57 moves; the two hidden-transvection certificates. |
+
+## 7. TH16 — small cancellation; Miller–Schupp nodes as local minima of the ACM graph
+
+Self-test re-run: `th16_rigidity.py --selftest` passes. `python3 experiments/th20_th16_check.py` (own BS code, own torus invariant, own enumeration):
+```
+(A) BS(3,4), BS(4,3), BS(4,5), BS(5,4), w1 and w2: no conjugate of w_i^+-1 of length < 5; at L=5 exactly Orb(w_i) (10 words)
+(B) n=3 and n=4, G_w1 and G_w2: no conjugate of m_n^+-1 of length < 2n+3; at length 2n+3 exactly Orb(m_n) u Orb(m_n') (36, 44 words)
+(C) 34 benchmark targets (first relator ~ m_3^+-1 in F): {'w1': 17, 'w2': 17, 'other': 0} | w1 ~ w2^+-1 in BS(3,4): False
+(D) m_n ~ p_n in B (n <= 8); b ~ w_1 in BS(n,n+1) (2 <= n <= 8)
+```
+**Are the small-cancellation hypotheses verified for the words they are applied to?** They are verified to *fail*, and the note applies no small-cancellation theorem. I recomputed the pieces (`th20_lib.pieces`, star-graph triangle test): (max piece, min number of pieces, triangle) = b (2,4,no), p₃ (3,4,no), c (2,4,yes), k₃ (2,6,yes), q₁ (1,6,yes), q₂ (2,6,yes), m₃ (3,5,yes), w₁, w₂ (1,5,yes); joint maximal pieces AK(3) 3, P₃ 3, Q 2, MS(3,w_i) 3 — identical to TH16's table. Lyndon–Schupp is quoted only in Remark 2 (Dehn's algorithm V.4.4 with the bound (1−3λ)|r|, Britton IV.2.1, Collins IV.2.5, "numbering from memory", labelled externally reported), and the thin-annulus statement is explicitly *not* used.
+
+| claim | verdict | what I did |
+|---|---|---|
+| T1: C′(1/6) forces \|r\| ≤ 2 or ≥ 13; C′(1/8): ≤ 2, 17, 18 or ≥ 25 | VERIFIED (pigeonhole 2ℓ ≤ 4·3^μ re-derived; brute force ℓ ≤ 9) |
+| T2 (displacement lemma) | VERIFIED (two-line proof) |
+| T3 = Thm A: shortest conjugates of w_i^{±1} in BS(P,Q) are Orb(w_i); b ~ w₁ if Q = P+1 | VERIFIED (slide formula recomputed: a′ = (−1+P(k₁−k₂), Qk₂−Pk₃, −1+Q(k₃−k₁)); brute force (A)); rests on Britton/Collins (classical) |
+| T4 = Thm B: shortest conjugates of m_n^{±1} in G_{w_i} are Orb(m_n) ∪ Orb(m_n′), length 2n+3, all n ≥ 3 | VERIFIED (case analysis read: (n_x,n_y) list, loss table for the eight sign patterns, ε₁ = −ε₂; brute force (B)) |
+| T5 = Thm C + Prop. D: MS(n,w_i) are plateaus of the ACM graph; AK(n) → (m_n,b) → MS(n,w₁) | VERIFIED given A, B; Prop. D recomputed (in B: Xyⁿx = yxⁿY) |
+| T6: D's 34 benchmark members are two ACM nodes | VERIFIED (independent exact computation (C)) |
+| T7 (P₃, Q: method gives nothing) | PLAUSIBLE-UNCHECKED; the two certificates `th16_p3_to_len13.json` (P₃ → (yxYYXX, xxxYXyy), 23 moves) and `th16_ak3_to_len13_via_p3.json` (AK(3) → same, 91 moves) replay. |
+
+## 8. TH17 — T(2;p,q) as killers of the trefoil group; level shifts
+
+Self-test re-run: `th17_levels.py --selftest` passes. Certificates replayed with endpoints: `th17_c3_to_T2_4_7_one_move.json` (274 moves, (xxyXy, xy⁵xY²) → (x⁴y⁷, xxyXy)), `th17_r74member_to_T2_4_9.json` (374, (xxyXy, xy⁷xY²) → (x⁴y⁹, xxyXy)), `th17_T2_4_7_to_third_form.json` (189), `th17_T2_7_13_to_third_form.json` (574).
+
+| claim | verdict | what I did |
+|---|---|---|
+| 1: dictionary — class of xᵖy^q in H = ⟨x,z \| x³z²⟩ is (k;1^q), (k;2·1^{q−1}), (k;2·1^{q−3}) for p = 3k+0,1,2 | VERIFIED (re-derived by hand from xᵖ(xz)^q, x³ = ζ, z² = ζ⁻¹) |
+| 2: Lemma S (a = 2) is this necklace identity | VERIFIED |
+| 3: coincidences — only the Lemma S pairs; AK(n)'s killer class (0;2ⁿ1^{n+1}) is a T(2;·) class only for n = 1; xy^{2i+1}xY² ~ x⁴y^{2i+3} | VERIFIED ((c) recomputed: ζ(xz)^{2i+2}x²z; (a), (b) are necklace comparisons; "up to automorphisms" uses Out(H) = ℤ/2, classical, quoted) |
+| 4: (x²yXy, xy⁷xY²) ~AC T(2;4,9) = X — a plain AC equivalence | VERIFIED (certificate replay with endpoints + the conjugacy by hand) |
+| 5: family K(a,b,c), trivial iff \|a−b+6c\| = 1 and gcd(a,b) = 1; contains AK(n) and T(2;·) | VERIFIED (own proof of the criterion: modulo ζ, uᵃ = vᵇ and vᵃ = uᵇ are central; gcd = d > 1 gives a (2,3,d) triangle quotient) |
+| 6: third torus form x^{3k+1}y^q ~ (x²y)^{2k+1}(xy)^{−(q+1)} in H | VERIFIED (braid computation redone; ν(xyXyXy) = x²yXy by free reduction; two certificates replayed) |
+| 7: Theorem 6 — rigidity of each level in the restricted graph 𝔖 | **not checked** (Lemmas 6.1–6.3 not verified for lack of time) — PLAUSIBLE-UNCHECKED. Correctly labelled by the note as a statement about a restricted move class, not an AC invariant. |
+| 8: Prop. 5 — a uniform level shift is equivalent to AC-triviality of all members; inequivalence of two levels would disprove AC | VERIFIED (formal; level 0 has the primitive killers xy, xy³) |
+
+## 9. TH18 — killers of BS(n,n+1); Miller–Schupp classes; generalized AK pairs
+
+Self-test re-run: `th18_bs.py --selftest` passes. `python3 experiments/th20_th18_check.py` (own BS conjugacy code):
+```
+(1) n=2,3,4,5: t-length-3 killer classes with sigma=+1: 2, 6, 12, 20 (claimed n(n-1));  n=2, t-length 5: 12 + 4 = 16 classes (claimed 2n^3(n-1))
+(2) T4 class formula verified for n = 2,3,4 (all residues b', c'; a in [-2,2])
+(3) bridge word in C_{2n+1} and Q_gamma classes, n = 2..8;  P_beta ~ x^2 y^b X y^-b with b = beta (mod n+1), b = 1 (mod n), n = 2..7
+```
+All 16 `th18_*.json` certificates replay. **None is a trivialization of AK(3)**: `th18_ak3_beta1/beta2_trivialization.json` start at (xxxYYYY, xYxyXY) and (xxxYYYY, xYYxyyXY), i.e. at AK₁(3), AK₂(3) — the torus relator x³y⁻⁴ with a different partner; `th18_m3_to_ak3_via_t9.json` is M₃ → AK(3) (C's equivalence).
+
+| claim | verdict | what I did |
+|---|---|---|
+| T1: killers of BS(n,n+1) are the elements with σ = ±1 (Miller–Schupp) | VERIFIED (classical proof re-derived) |
+| T2: complete conjugacy invariant (sign necklace + exponents mod Λ_d), class counts | VERIFIED (lattice, determinant ∏q_i − ∏p_i, well-definedness of Britton-reducedness mod Λ_d re-derived; counts confirmed by (1)); rests on Britton/Collins (classical, quoted) |
+| T3: primitive in the class ⇔ ℓ = 1 ⇔ w ~ x^{±1} | VERIFIED (own proof) |
+| T4: the n(n−1) classes C_b of t-length 3 and the membership criterion | VERIFIED (own derivation: (a,b′,c′) ↦ (b′ mod n+1, c′ mod n) is a bijection on ℤ³/Λ; script (2)) |
+| T5: bridge word XYx²Y ∈ C_{2n+1}; no primitive relator one ACM move from M_n | VERIFIED (class by hand and script; other direction: (x ↦ xy)(r_n) = p_n in B, by hand, then G2(b) — or TH10 Cor. 5.3) |
+| T6, T6′: divisor classes are AC-trivial; sharpness for the representatives w_b | VERIFIED (both conjugations recomputed; amalgam length argument read) |
+| T7: MS(2,w), ℓ ≤ 3, AC-trivial; MS(3,w), ℓ ≤ 3, AC-trivial or ~AC AK(3) | VERIFIED (residue arithmetic redone; uses C's and D's certificates) |
+| T8: half classes are one ACM move from a T(2,m) pair | VERIFIED for (a) by hand; (b) read only |
+| T9: MS(n,w) ~AC AK_β(n) = (xⁿy^{−(n+1)}, xy^{−β}xy^{β}x⁻¹y⁻¹) for w ∈ C_b^{±1}; AK₁(n) AC-trivial; **P2 ~AC AK₂(4) ~AC AK₋₂(5)** | VERIFIED (own derivation: modulo P_β, x⁻¹yx = y^{−β}xy^{β}, so r_n = y^{−β}p_n y^{β}; `th18_p2_to_ak_4_beta2.json`: (XyyxYYY, XXXYxxY) → (xxxxYYYYY, xYYxyyXY), 914 moves; `th18_p2_to_ak_5_betam2.json`: → (xxxxxYYYYYY, xyyxYYXY), 1,547 moves). **OVERCLAIM in wording**: the note calls AK₂(4) "a torus-knot pair" and says "P2 is a torus-knot pair". In the repository's usage (F §9: "two torus-knot relators") this is not the case: only x⁴y⁻⁵ is of torus type; the Whitehead-minimal forms of P₂ = xy⁻²xy²x⁻¹y⁻¹ are x⁻²y⁻²xy and relatives (4 syllables; my level-graph computation). Suggested wording: "P2's class contains a presentation whose first relator is the torus relator x⁴y⁻⁵ (resp. x⁵y⁻⁶); the partner is not of torus type". The note is clear that P2 remains open. |
+| E3 and the survey of benchmark classes (C_{±6} of BS(4,5) trivial via L's certificates, C_{±7} open, …) | PLAUSIBLE-UNCHECKED (classes of the benchmark relators not recomputed, except D's 34 in §7) |
+
+## 10. Certificates
+
+52 files `certificates/th1x_*.json` existed at 04:54 UTC: TH11 3, TH13 12, TH14 1 (rank 3, stable), TH15 13, TH16 2, TH17 4, TH18 16 (+ the count is re-taken in §11). All 51 rank-two files pass `experiments/elementary_verify.py` (replayed through `th20_lib.cert_info`, which calls `elementary_verify.replay` and prints start, target, moves, peak); for each I compared start and target with the presentation named in the note (targets that are automorphic images were recomputed with `th20_lib.aut`). No certificate has start AK(3) (or P₃, Q, M₃) and target (x,y).
+

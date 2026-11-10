@@ -7,6 +7,7 @@ conjugacy invariant (g_torus.torus_class) and certificate compiler (g_cert).
   python3 experiments/th04_island.py --selftest
   python3 experiments/th04_island.py --enumerate N K P L   (bounded listing, T5)
   python3 experiments/th04_island.py --write certificates  (certificate for T4, n = 3)
+  python3 experiments/th04_island.py --normal-form K       (Lemma 6.3 at matrix level, all |entries| <= K)
   python3 experiments/th04_island.py --check-t8 N L        (brute-force check of Theorem 6.4's case analysis)
   python3 experiments/th04_island.py --check-t2side N L    (same for Theorem 6.6)
   python3 experiments/th04_island.py --stabilizer K        (experiment for Proposition 6.5)
@@ -283,6 +284,55 @@ def check_t2side(n, maxlen):
         out.append(sorted(sols))
     return ok, out
 
+def normal_form(M, p, q):
+    """Matrix-level version of the proof of Lemma 6.3.  Rows are changed only by
+    twists (negate a row; row2 -= j*row1 with |q| | j; row1 -= j*row2 with
+    |p| | j), columns only by sign.  Every claim of the proof is asserted.
+    Returns ('L', 0), ('Y', k) or ('X', j)."""
+    from fractions import Fraction
+    P, Q = abs(p), abs(q)
+    (a, b), (c, d) = M
+    for _ in range(500):
+        cand = [(s1*a, s2*b, s1*r2*c, s2*r2*d) for s1 in (1, -1) for s2 in (1, -1) for r2 in (1, -1)]
+        cand = [t for t in cand if min(t) >= 0]
+        assert cand, "columns not in one closed quadrant"
+        a, b, c, d = cand[0]
+        if (a, c) in ((1, 0), (0, 1)) or (b, d) in ((1, 0), (0, 1)):
+            return ("L", 0)
+        assert min(a, b, c, d) >= 1
+        s1, s2 = Fraction(c, a), Fraction(d, b)
+        size = a + b + c + d
+        if min(s1, s2) >= 1:
+            k = min(s1, s2).__floor__()
+            assert max(s1, s2) <= k + 1
+            k0 = k % Q
+            if 1 <= k0 <= Q - 2:
+                return ("Y", k0)
+            j = k if k0 == 0 else k + 1
+            c, d = c - j*a, d - j*b
+        else:
+            assert max(s1, s2) <= 1
+            r1, r2 = Fraction(a, c), Fraction(b, d)
+            k = min(r1, r2).__floor__()
+            assert k >= 1 and max(r1, r2) <= k + 1
+            k0 = k % P
+            if 1 <= k0 <= P - 2:
+                return ("X", k0)
+            j = k if k0 == 0 else k + 1
+            a, b = a - j*c, b - j*d
+        assert abs(a) + abs(b) + abs(c) + abs(d) < size
+    raise AssertionError("no termination")
+
+def normal_form_check(K, pairs=((3, -4), (4, -5), (2, -3), (-2, 7), (2, 5), (5, 7))):
+    out = {}
+    for (p, q) in pairs:
+        cnt = {}
+        for M in G.gl2_matrices(K):
+            f = normal_form(M, p, q)
+            cnt[f] = cnt.get(f, 0) + 1
+        out[(p, q)] = sorted(cnt.items())
+    return out
+
 # ---------------------------------------------- experiment for Lemma M (trefoil side)
 _WH = [("xy", "y"), ("xY", "y"), ("x", "yx"), ("x", "yX")]
 
@@ -391,12 +441,16 @@ if __name__ == "__main__":
         print("no torus-type/primitive word besides the partner:", lemma_m_experiment(2, L, E, Lw, partner="xyxYXY")[0])
     elif sys.argv[1:] == ["--selftest"]:
         selftest()
+        normal_form_check(6)
         assert check_t8(3, 6)[0] and check_t8(4, 6)[0]
         assert check_t2side(2, 7)[0]
         assert stabilizer_experiment(5, pairs=((3, -4), (2, -3)))
         h, bad = check_t7(3, 4, 5)
         assert h > 0 and bad == 0, (h, bad)
         print("th04 extra checks passed (M2 evidence K=5; T7 consistency n=3: %d hits, 0 with an elliptic root)" % h)
+    elif sys.argv[1:2] == ["--normal-form"]:
+        for k, v in normal_form_check(int(sys.argv[2])).items():
+            print(k, v)
     elif sys.argv[1:2] == ["--check-t8"]:
         n, L = int(sys.argv[2]), int(sys.argv[3])
         print("n=%d, r+t<=%d: case analysis of Theorem 6.4 confirmed:" % (n, L), check_t8(n, L))

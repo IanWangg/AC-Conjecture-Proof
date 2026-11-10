@@ -1,5 +1,5 @@
 """TH10: torus-type and Baumslag-Solitar-type class coordinates (research/research-th10.md,
-Theorems A, B, B').
+Theorems A, B, C and Proposition 5.2).
 
 A cyclic word c is of torus type {p,q} if it is conjugate to phi(x^p y^q)^{+-1} for some
 phi in Aut(F2).  By Whitehead's theorem (minimal words of an orbit are connected by
@@ -7,8 +7,9 @@ length-preserving Whitehead maps) this holds iff the set of minimal-length cycli
 by greedy descent under x->xy^{+-1}, y->yx^{+-1} and then level moves contains a 2-syllable word.
 The script (a) checks the three torus coordinates of AK(3) used in the note, including the
 explicit bases, (b) scans every state of the repository certificates that start or end at a
-named presentation and lists the torus types met, (c) sanity-checks Theorem B's algebraic
-core in small permutation groups.  Standard library only; imports the verifier read-only.
+named presentation and lists the torus and BS(p,p+1) types met, (c) sanity-checks the algebraic
+cores of Theorems A, B, C in small permutation groups and Proposition 5.2 (glide length) in exact
+Eisenstein arithmetic, (d) replays the mechanism of Theorems A/B on the pair M_3 ~ AK(3).  Standard library only; imports the verifier read-only.
 
 Usage: python3 experiments/th10_torus_coords.py --selftest | --scan | --mechanism
 """
