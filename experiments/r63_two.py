@@ -157,8 +157,8 @@ def second(kp, log):
         nt, res = rational_test(st, D, moved=mv, NF=NF); log("    rational D=%d: %d traces, surviving j: %s" % (D, nt, res))
         open_ = {k for k in open_ if res[k] != []}
         if not open_: return 'excluded'
-    for p, D in [(2, 4), (2, 5), (2, 6), (3, 3), (5, 3), (7, 3), (3, 4), (2, 7)]:
-        if r ** D > 1300: continue
+    for p, D in [(2, 4), (2, 5), (2, 6), (3, 3), (5, 3), (7, 3), (3, 4), (2, 7), (3, 5), (3, 6), (5, 5), (2, 8), (3, 8)]:
+        if r ** D > 3000: continue
         nb, per, res = modp_test(st, D, p, moved=mv, NF=NF); res = {k: res[k] for k in open_}
         log("    F_%d D=%d: %d traces, surviving j mod %d: %s" % (p, D, nb, per, res))
         open_ = {k for k in open_ if res[k] != []}

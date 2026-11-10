@@ -1,0 +1,246 @@
+selftest ok (family controls)
+class of k3: 4733 normal forms (cap)
+L=10: {'eps': 26, 'k3': 15, 'J': 11}  (0s)
+  k3: ['XXyxyxxxxY', 'XXyXYxYxyy', 'XXyXYYxxyy', 'XXYxxyyyXY', 'XyyxxyxYxY', 'XyyxYxxyxY', 'XyyyxxxxYY', 'XYxxYXyxyy', 'XYxyxyxYXy', 'XYxyxYxyXy', 'XYxyXyyxxY', 'XYxyyxxYXy', 'XYXyxYxyxy', 'XYYxxyxyXy', 'XYYYxyyyXy']
+  undecided: []
+  XXyxyxxxxY: m=3 rank=4
+    rational D=3: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    rational D=4: 13 traces, surviving j: {'prim': [], 'bs+': [], 'bs-': []}
+  second move XXyxyxxxxY -> excluded
+  XXyXYxYxyy: ascending HNN (top t-level once)
+  XXyXYxYxyy: m=-1 rank=2
+    rational D=3: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    rational D=4: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    F_2 D=4: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_2 D=5: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_2 D=6: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_3 D=3: 2 traces, surviving j mod 9: {'prim': [], 'bs+': [0, 3, 6], 'bs-': [0, 3, 6]}
+    F_5 D=3: 1 traces, surviving j mod 5: {'bs+': [0, 1, 2, 3, 4], 'bs-': [0, 1, 2, 3, 4]}
+    F_7 D=3: 1 traces, surviving j mod 7: {'bs+': [0, 1, 2, 3, 4, 5, 6], 'bs-': [0, 1, 2, 3, 4, 5, 6]}
+    F_3 D=4: 3 traces, surviving j mod 9: {'bs+': [0, 3, 6], 'bs-': [0, 3, 6]}
+    F_2 D=7: 1 traces, surviving j mod 8: {'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_3 D=5: 3 traces, surviving j mod 9: {'bs+': [0, 3, 6], 'bs-': [0, 3, 6]}
+    F_3 D=6: 5 traces, surviving j mod 9: {'bs+': [], 'bs-': []}
+  second move XXyXYxYxyy -> excluded
+  XXyXYYxxyy: m=-1 rank=3
+    rational D=3: 3 traces, surviving j: {'prim': [], 'bs+': [], 'bs-': []}
+  second move XXyXYYxxyy -> excluded
+  XXYxxyyyXY: m=-1 rank=4
+    rational D=3: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    rational D=4: 13 traces, surviving j: {'prim': [], 'bs+': [], 'bs-': []}
+  second move XXYxxyyyXY -> excluded
+  XyyxxyxYxY: m=3 rank=5
+    rational D=3: 4 traces, surviving j: {'prim': [], 'bs+': [], 'bs-': []}
+  second move XyyxxyxYxY -> excluded
+  XyyxYxxyxY: m=3 rank=4
+    rational D=3: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    rational D=4: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    F_2 D=4: 7 traces, surviving j mod 8: {'prim': [], 'bs+': [], 'bs-': []}
+  second move XyyxYxxyxY -> excluded
+  XyyyxxxxYY: m=3 rank=7
+    F_2 D=4: 18 traces, surviving j mod 8: {'prim': [], 'bs+': [], 'bs-': []}
+  second move XyyyxxxxYY -> excluded
+  XYxxYXyxyy: m=1 rank=3
+    rational D=3: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    rational D=4: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    F_2 D=4: 4 traces, surviving j mod 8: {'prim': [1, 5], 'bs+': [], 'bs-': []}
+    F_2 D=5: 7 traces, surviving j mod 8: {'prim': []}
+  second move XYxxYXyxyy -> excluded
+  XYxyxyxYXy: m=1 rank=2
+    rational D=3: 2 traces, surviving j: {'prim': [], 'bs+': [], 'bs-': []}
+  second move XYxyxyxYXy -> excluded
+  XYxyxYxyXy: m=1 rank=3
+    rational D=3: 3 traces, surviving j: {'prim': [], 'bs+': [], 'bs-': []}
+  second move XYxyxYxyXy -> excluded
+  XYxyXyyxxY: m=1 rank=3
+    rational D=3: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    rational D=4: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    F_2 D=4: 4 traces, surviving j mod 8: {'prim': [], 'bs+': [], 'bs-': [1, 3]}
+    F_2 D=5: 7 traces, surviving j mod 8: {'bs-': []}
+  second move XYxyXyyxxY -> excluded
+  XYxyyxxYXy: ascending HNN (top t-level once)
+  XYxyyxxYXy: m=1 rank=2
+    rational D=3: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    rational D=4: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    F_2 D=4: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_2 D=5: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_2 D=6: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_3 D=3: 1 traces, surviving j mod 9: {'prim': [0, 1, 2, 3, 4, 5, 6, 7, 8], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7, 8], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7, 8]}
+    F_5 D=3: 1 traces, surviving j mod 5: {'prim': [0, 1, 2, 3, 4], 'bs+': [0, 1, 2, 3, 4], 'bs-': [0, 1, 2, 3, 4]}
+    F_7 D=3: 1 traces, surviving j mod 7: {'prim': [0, 1, 2, 3, 4, 5, 6], 'bs+': [0, 1, 2, 3, 4, 5, 6], 'bs-': [0, 1, 2, 3, 4, 5, 6]}
+    F_3 D=4: 1 traces, surviving j mod 9: {'prim': [0, 1, 2, 3, 4, 5, 6, 7, 8], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7, 8], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7, 8]}
+    F_2 D=7: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_3 D=5: 1 traces, surviving j mod 9: {'prim': [0, 1, 2, 3, 4, 5, 6, 7, 8], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7, 8], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7, 8]}
+    F_3 D=6: 1 traces, surviving j mod 9: {'prim': [0, 1, 2, 3, 4, 5, 6, 7, 8], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7, 8], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7, 8]}
+    F_5 D=5: 1 traces, surviving j mod 25: {'prim': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]}
+    F_2 D=8: 1 traces, surviving j mod 16: {'prim': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]}
+    F_3 D=8: 1 traces, surviving j mod 9: {'prim': [0, 1, 2, 3, 4, 5, 6, 7, 8], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7, 8], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7, 8]}
+  second move XYxyyxxYXy -> open:bs+,bs-,prim
+  sigma(k') = xYxyXYXyXy, moved relator sigma(c)^-1 = YXyyxYx
+  xYxyXYXyXy: ascending HNN (top t-level once)
+  xYxyXYXyXy: m=-1 rank=2
+    rational D=3: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    rational D=4: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    F_2 D=4: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_2 D=5: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_2 D=6: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_3 D=3: 1 traces, surviving j mod 9: {'prim': [0, 1, 2, 3, 4, 5, 6, 7, 8], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7, 8], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7, 8]}
+    F_5 D=3: 2 traces, surviving j mod 5: {'prim': [3], 'bs+': [0, 2, 3], 'bs-': [4]}
+    F_7 D=3: 1 traces, surviving j mod 7: {'prim': [0, 1, 2, 3, 4, 5, 6], 'bs+': [0, 1, 2, 3, 4, 5, 6], 'bs-': [0, 1, 2, 3, 4, 5, 6]}
+    F_3 D=4: 2 traces, surviving j mod 9: {'prim': [4, 5], 'bs+': [5, 7], 'bs-': [2, 4]}
+    F_2 D=7: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_3 D=5: 2 traces, surviving j mod 9: {'prim': [4, 5], 'bs+': [5, 7], 'bs-': [2, 4]}
+    F_3 D=6: 3 traces, surviving j mod 9: {'prim': [], 'bs+': [7], 'bs-': [2]}
+    F_5 D=5: 3 traces, surviving j mod 25: {'bs+': [2, 7, 12, 17, 22], 'bs-': []}
+    F_2 D=8: 1 traces, surviving j mod 16: {'bs+': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]}
+    F_3 D=8: 10 traces, surviving j mod 9: {'bs+': []}
+  second move XYXyxYxyxy -> excluded
+  sigma(k') = xYYXXyXyxy, moved relator sigma(c)^-1 = YXyyxYx
+  xYYXXyXyxy: ascending HNN (top t-level once)
+  xYYXXyXyxy: m=-1 rank=3
+    rational D=3: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    rational D=4: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    F_2 D=4: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_2 D=5: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_2 D=6: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_3 D=3: 2 traces, surviving j mod 9: {'prim': [], 'bs+': [2, 5, 8], 'bs-': [2, 5, 8]}
+    F_5 D=3: 1 traces, surviving j mod 5: {'bs+': [0, 1, 2, 3, 4], 'bs-': [0, 1, 2, 3, 4]}
+    F_7 D=3: 4 traces, surviving j mod 7: {'bs+': [], 'bs-': []}
+  second move XYYxxyxyXy -> excluded
+  sigma(k') = xYYYXyyyxy, moved relator sigma(c)^-1 = YXyyxYx
+  xYYYXyyyxy: ascending HNN (top t-level once)
+  xYYYXyyyxy: m=1 rank=3
+    rational D=3: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    rational D=4: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    F_2 D=4: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_2 D=5: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_2 D=6: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_3 D=3: 2 traces, surviving j mod 9: {'prim': [2, 5, 8], 'bs+': [0, 1, 3, 4, 6, 7], 'bs-': [0, 1, 3, 4, 6, 7]}
+    F_5 D=3: 1 traces, surviving j mod 5: {'prim': [0, 1, 2, 3, 4], 'bs+': [0, 1, 2, 3, 4], 'bs-': [0, 1, 2, 3, 4]}
+    F_7 D=3: 4 traces, surviving j mod 7: {'prim': [], 'bs+': [], 'bs-': []}
+  second move XYYYxyyyXy -> excluded
+L=11: {'eps': 54, 'k3': 18, 'J': 31}  (25s)
+  k3: ['XXyxxxyyxYY', 'XXyxyxxYYxy', 'XXyXYYxxxyy', 'XXyyxYYYxyy', 'XXYxyxyxyXY', 'XXYxyyxxyXY', 'XXYXyxxYxyy', 'XXYXyxYxxyy', 'XyxyyyxYYxY', 'XYxyxxyxYXy', 'XYXyxxyxyxY', 'XYXyxxyxYxy', 'XYXyxxyyxxY', 'XYXyxYxxyxy', 'XYXyxYYxyyy', 'XYYxyyyxYXy', 'XYYxYxyyyXy', 'XYYYxyXyxyy']
+  undecided: []
+  XXyxxxyyxYY: m=2 rank=3
+    rational D=3: 3 traces, surviving j: {'prim': [], 'bs+': [], 'bs-': []}
+  second move XXyxxxyyxYY -> excluded
+  XXyxyxxYYxy: m=2 rank=5
+    rational D=3: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    F_2 D=4: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_3 D=3: 2 traces, surviving j mod 9: {'prim': [1, 4, 7], 'bs+': [0, 2, 3, 5, 6, 8], 'bs-': [0, 2, 3, 5, 6, 8]}
+    F_5 D=3: 3 traces, surviving j mod 5: {'prim': [], 'bs+': [2], 'bs-': []}
+    F_7 D=3: 1 traces, surviving j mod 7: {'bs+': [0, 1, 2, 3, 4, 5, 6]}
+    F_3 D=4: 9 traces, surviving j mod 9: {'bs+': []}
+  second move XXyxyxxYYxy -> excluded
+  xxyxYYXXXyy: Brown fails, no unique extreme level -> not handled
+  second move XXyXYYxxxyy -> None
+  xxyyXYYYXyy: Brown fails, no unique extreme level -> not handled
+  second move XXyyxYYYxyy -> None
+  XXYxyxyxyXY: m=0 rank=3
+    rational D=3: 3 traces, surviving j: {'prim': [], 'bs+': [], 'bs-': []}
+  second move XXYxyxyxyXY -> excluded
+  XXYxyyxxyXY: m=0 rank=3
+    rational D=3: 3 traces, surviving j: {'prim': [], 'bs+': [], 'bs-': []}
+  second move XXYxyyxxyXY -> excluded
+  sigma(k') = xxYxyXXYXyy, moved relator sigma(c)^-1 = YXyyxYx
+  xxYxyXXYXyy: ascending HNN (top t-level once)
+  xxYxyXXYXyy: m=0 rank=3
+    rational D=3: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    rational D=4: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    F_2 D=4: 3 traces, surviving j mod 8: {'prim': [3, 4], 'bs+': [2, 5], 'bs-': [2, 5]}
+    F_2 D=5: 5 traces, surviving j mod 8: {'prim': [], 'bs+': [2], 'bs-': []}
+    F_2 D=6: 7 traces, surviving j mod 8: {'bs+': [2]}
+    F_3 D=3: 3 traces, surviving j mod 9: {'bs+': [0]}
+    F_5 D=3: 1 traces, surviving j mod 5: {'bs+': [0, 1, 2, 3, 4]}
+    F_7 D=3: 1 traces, surviving j mod 7: {'bs+': [0, 1, 2, 3, 4, 5, 6]}
+    F_3 D=4: 3 traces, surviving j mod 9: {'bs+': [0]}
+    F_2 D=7: 11 traces, surviving j mod 8: {'bs+': []}
+  second move XXYXyxxYxyy -> excluded
+  sigma(k') = xxYxyXYXXyy, moved relator sigma(c)^-1 = YXyyxYx
+  xxYxyXYXXyy: ascending HNN (top t-level once)
+  xxYxyXYXXyy: m=0 rank=3
+    rational D=3: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    rational D=4: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    F_2 D=4: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_2 D=5: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_2 D=6: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_3 D=3: 3 traces, surviving j mod 9: {'prim': [6], 'bs+': [0], 'bs-': [3]}
+    F_5 D=3: 1 traces, surviving j mod 5: {'prim': [0, 1, 2, 3, 4], 'bs+': [0, 1, 2, 3, 4], 'bs-': [0, 1, 2, 3, 4]}
+    F_7 D=3: 2 traces, surviving j mod 7: {'prim': [], 'bs+': [], 'bs-': []}
+  second move XXYXyxYxxyy -> excluded
+  XyxyyyxYYxY: m=2 rank=6
+    rational D=3: 3 traces, surviving j: {'prim': [], 'bs+': [], 'bs-': []}
+  second move XyxyyyxYYxY -> excluded
+  XYxyxxyxYXy: m=2 rank=2
+    rational D=3: 2 traces, surviving j: {'prim': [], 'bs+': [], 'bs-': []}
+  second move XYxyxxyxYXy -> excluded
+  XYXyxxyxyxY: m=2 rank=2
+    rational D=3: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    rational D=4: 2 traces, surviving j: {'prim': [], 'bs+': [], 'bs-': []}
+  second move XYXyxxyxyxY -> excluded
+  XYXyxxyxYxy: ascending HNN (top t-level once)
+  XYXyxxyxYxy: m=2 rank=2
+    rational D=3: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    rational D=4: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    F_2 D=4: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_2 D=5: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_2 D=6: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_3 D=3: 1 traces, surviving j mod 9: {'prim': [0, 1, 2, 3, 4, 5, 6, 7, 8], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7, 8], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7, 8]}
+    F_5 D=3: 2 traces, surviving j mod 5: {'prim': [3], 'bs+': [0, 2, 3], 'bs-': [4]}
+    F_7 D=3: 1 traces, surviving j mod 7: {'prim': [0, 1, 2, 3, 4, 5, 6], 'bs+': [0, 1, 2, 3, 4, 5, 6], 'bs-': [0, 1, 2, 3, 4, 5, 6]}
+    F_3 D=4: 2 traces, surviving j mod 9: {'prim': [4, 5], 'bs+': [5, 7], 'bs-': [2, 4]}
+    F_2 D=7: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_3 D=5: 2 traces, surviving j mod 9: {'prim': [4, 5], 'bs+': [5, 7], 'bs-': [2, 4]}
+    F_3 D=6: 3 traces, surviving j mod 9: {'prim': [], 'bs+': [7], 'bs-': [2]}
+    F_5 D=5: 3 traces, surviving j mod 25: {'bs+': [2, 7, 12, 17, 22], 'bs-': []}
+    F_2 D=8: 1 traces, surviving j mod 16: {'bs+': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]}
+    F_3 D=8: 10 traces, surviving j mod 9: {'bs+': []}
+  second move XYXyxxyxYxy -> excluded
+  XYXyxxyyxxY: m=2 rank=3
+    rational D=3: 3 traces, surviving j: {'prim': [], 'bs+': [], 'bs-': []}
+  second move XYXyxxyyxxY -> excluded
+  XYXyxYxxyxy: m=2 rank=3
+    rational D=3: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    rational D=4: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    F_2 D=4: 4 traces, surviving j mod 8: {'prim': [3], 'bs+': [1], 'bs-': [3]}
+    F_2 D=5: 7 traces, surviving j mod 8: {'prim': [3], 'bs+': [], 'bs-': []}
+    F_2 D=6: 20 traces, surviving j mod 8: {'prim': []}
+  second move XYXyxYxxyxy -> excluded
+  sigma(k') = xYxyXYYXyyy, moved relator sigma(c)^-1 = YXyyxYx
+  xYxyXYYXyyy: ascending HNN (top t-level once)
+  xYxyXYYXyyy: m=0 rank=2
+    rational D=3: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    rational D=4: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    F_2 D=4: 3 traces, surviving j mod 8: {'prim': [3, 4], 'bs+': [2, 5], 'bs-': [1, 6]}
+    F_2 D=5: 4 traces, surviving j mod 8: {'prim': [3], 'bs+': [2, 5], 'bs-': [1]}
+    F_2 D=6: 6 traces, surviving j mod 8: {'prim': [], 'bs+': [5], 'bs-': [1]}
+    F_3 D=3: 1 traces, surviving j mod 9: {'bs+': [0, 1, 2, 3, 4, 5, 6, 7, 8], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7, 8]}
+    F_5 D=3: 1 traces, surviving j mod 5: {'bs+': [0, 1, 2, 3, 4], 'bs-': [0, 1, 2, 3, 4]}
+    F_7 D=3: 1 traces, surviving j mod 7: {'bs+': [0, 1, 2, 3, 4, 5, 6], 'bs-': [0, 1, 2, 3, 4, 5, 6]}
+    F_3 D=4: 1 traces, surviving j mod 9: {'bs+': [0, 1, 2, 3, 4, 5, 6, 7, 8], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7, 8]}
+    F_2 D=7: 9 traces, surviving j mod 8: {'bs+': [5], 'bs-': [1]}
+    F_3 D=5: 1 traces, surviving j mod 9: {'bs+': [0, 1, 2, 3, 4, 5, 6, 7, 8], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7, 8]}
+    F_3 D=6: 1 traces, surviving j mod 9: {'bs+': [0, 1, 2, 3, 4, 5, 6, 7, 8], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7, 8]}
+    F_5 D=5: 1 traces, surviving j mod 25: {'bs+': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]}
+    F_2 D=8: 15 traces, surviving j mod 16: {'bs+': [], 'bs-': []}
+  second move XYXyxYYxyyy -> excluded
+  XYYxyyyxYXy: ascending HNN (top t-level once)
+  XYYxyyyxYXy: m=0 rank=2
+    rational D=3: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    rational D=4: 1 traces, surviving j: {'prim': 'all', 'bs+': 'all', 'bs-': 'all'}
+    F_2 D=4: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_2 D=5: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_2 D=6: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_3 D=3: 1 traces, surviving j mod 9: {'prim': [0, 1, 2, 3, 4, 5, 6, 7, 8], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7, 8], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7, 8]}
+    F_5 D=3: 1 traces, surviving j mod 5: {'prim': [0, 1, 2, 3, 4], 'bs+': [0, 1, 2, 3, 4], 'bs-': [0, 1, 2, 3, 4]}
+    F_7 D=3: 1 traces, surviving j mod 7: {'prim': [0, 1, 2, 3, 4, 5, 6], 'bs+': [0, 1, 2, 3, 4, 5, 6], 'bs-': [0, 1, 2, 3, 4, 5, 6]}
+    F_3 D=4: 2 traces, surviving j mod 9: {'prim': [5, 6], 'bs+': [0, 8], 'bs-': [2, 3]}
+    F_2 D=7: 1 traces, surviving j mod 8: {'prim': [0, 1, 2, 3, 4, 5, 6, 7], 'bs+': [0, 1, 2, 3, 4, 5, 6, 7], 'bs-': [0, 1, 2, 3, 4, 5, 6, 7]}
+    F_3 D=5: 2 traces, surviving j mod 9: {'prim': [5, 6], 'bs+': [0, 8], 'bs-': [2, 3]}
+    F_3 D=6: 3 traces, surviving j mod 9: {'prim': [], 'bs+': [], 'bs-': []}
+  second move XYYxyyyxYXy -> excluded
+  xYYXYXyyyxy: Brown fails, no unique extreme level -> not handled
+  second move XYYxYxyyyXy -> None
+  xYYYXyxyXyy: Brown fails, no unique extreme level -> not handled
+  second move XYYYxyXyxyy -> None

@@ -1,6 +1,6 @@
 # Research R6-3: extending the exact two-move census of P₃ to intermediate relators of length 10–11
 
-Date: 2026-11-10 (UTC). Agent R6-3, round 6. **Status: in progress** (time-boxed, ~25 minutes).
+Date: 2026-11-10 (UTC). Agent R6-3, round 6. **Status: final for this time box.** No exit found. Exact results: (i) the c-frozen neighbours (c,k′) of P₃ with |k′| = 10, 11 are exactly 15 + 18 cyclic words (complete, all confirmed by explicit twisted conjugators); (ii) for 14 of 15 (length 10) and 14 of 18 (length 11) of them, no second (k′-frozen) move reaches a primitive **or** a BS(1,2)-type relator; (iii) for the 7 TH03 neighbours with |k′| ≤ 9 the BS(1,2)-type second move is now excluded too. Undecided: 1 target at length 10 (XYxyyxxYXy), 4 at length 11 (§2.2, §2.4). The k₃-frozen side at |c′| = 9 was not attempted. A bounded census is not an obstruction.
 
 Scope: P₃ = (c, k₃), c = xyxYYXy, k₃ = xxxYXyy (research-k). TH03 (T14, T15, T18) excluded two-move exits
 P₃ → (c,k′) → (exit, k′) with |k′| ≤ 9 (exit = primitive). Here: |k′| = 10 (then 11), and the second move is
@@ -24,7 +24,9 @@ only possibility; by Thm 3(a,b) this covers all BS(1,2)-type killers up to conju
 Test: twisted traces on the Magnus algebra (TH03 Lemma T11a) of the free-by-cyclic structure (Brown's criterion,
 `th03_two.structure`) or — new here — of the **ascending** structure when only the top t-level is unique
 (G_{k′} is then the mapping torus of the injective endomorphism θ of F(t₀..t_{r−1}); Freiheitssatz), with normal forms
-taken after conjugating all letters to levels ≥ 0 (`structure_asc`, `nf_asc`). Rational traces: the invariant of each
+taken after conjugating all letters to levels ≥ 0 (`structure_asc`, `nf_asc`). If only the bottom level is unique, the
+automorphism σ: x ↔ X is applied to k′, c and the families (σ(c)⁻¹ is tested; the union of the three families is
+σ-and-inversion stable by th09 Thm 3(a,b), with j ↦ −j). Rational traces: the invariant of each
 family is a polynomial of degree ≤ D in j (Newton interpolation at j = 0..D, exact), and its integer roots are
 computed exactly; 𝔽_p traces: all residues j mod p^e > D. Positive controls (self-test): a member of each family,
 used as the moved relator, is found by the corresponding test.
@@ -59,13 +61,13 @@ So (with TH03 T14) the c-frozen neighbours with |k′| ≤ 10 are exactly 7 + 15
 | XYXyxYxyxy | ascending (via x↔X), rank 2 | 𝔽₃, D=6 | 𝔽₃, D=8 | 𝔽₅, D=5 |
 | XYYxxyxyXy | ascending (via x↔X), rank 3 | 𝔽₃, D=3 | 𝔽₇, D=3 | 𝔽₇, D=3 |
 | XYYYxyyyXy | ascending (via x↔X), rank 3 | 𝔽₇, D=3 | 𝔽₇, D=3 | 𝔽₇, D=3 |
-| **XyyyxxxxYY** | F₇⋊ℤ (m=3) | **open** | **open** | **open** |
+| XyyyxxxxYY | F₇⋊ℤ (m=3) | 𝔽₂, D=4 | 𝔽₂, D=4 | 𝔽₂, D=4 |
 | **XYxyyxxYXy** | ascending, rank 2 | **open** | **open** | **open** |
 
 (Entry = coefficient ring and Magnus degree of the twisted traces that leave **no** j, resp. no residue j mod p^e.)
-**13 of the 15 length-10 neighbours admit no second-move exit to a primitive or BS(1,2)-type relator.**
-Two are undecided: for XyyyxxxxYY the only twisted traces found are constant (ℚ, D ≤ 3; 𝔽_p, D = 3, all p ≤ 31;
-𝔽₂, D ≤ 3); for XYxyyxxYXy only constant ones too (ℚ, D ≤ 4; 𝔽₂, D ≤ 9; 𝔽₃, D ≤ 8; 𝔽₅, 𝔽₇, 𝔽₁₁, 𝔽₁₃, D ≤ 8).
+**14 of the 15 length-10 neighbours admit no second-move exit to a primitive or BS(1,2)-type relator.**
+(XyyyxxxxYY: only constant traces in degree 3 for ℚ and all 𝔽_p, p ≤ 31; the 18 𝔽₂-valued traces of degree 4,
+2,801 monomials, exclude all residues mod 8.) One is undecided: for XYxyyxxYXy the only twisted traces found are constant (ℚ, D ≤ 4; 𝔽₂, D ≤ 9; 𝔽₃, D ≤ 8; 𝔽₅, 𝔽₇, 𝔽₁₁, 𝔽₁₃, D ≤ 8).
 
 ### 2.3 BS(1,2)-type second moves through the TH03 neighbours |k′| ≤ 9 (new; proved here)
 
@@ -76,7 +78,7 @@ ascending XYYxyxyXy (𝔽₃, D=3; for its primitive target TH03's 𝔽₃, D=8 
 Length 7: k₃ itself (F₃⋊ℤ; ℚ, D=3) and XYxxyXy (F₂⋊ℤ; ℚ, D=4) exclude all three families. **Hence no two-move
 exit P₃ → (c,k′) → (BS(1,2)-type or primitive, k′) with |k′| ≤ 9** (primitive part: TH03 T15; BS(1,2) part: here).
 
-### 2.4 First move at length 11 (proved here by exact enumeration); second move only partly run
+### 2.4 First move at length 11 (proved here by exact enumeration) and second move
 
 |k′| = 11: **103** cyclic words with I = 20; 54 have ε = 1, 31 have J ≠ J(k₃); the remaining **18 are all confirmed**
 c-frozen neighbours (explicit twisted BFS; no undecided case):
@@ -85,4 +87,45 @@ c-frozen neighbours (explicit twisted BFS; no undecided case):
     XYxyxxyxYXy XYXyxxyxyxY XYXyxxyxYxy XYXyxxyyxxY XYXyxYxxyxy XYXyxYYxyyy XYYxyyyxYXy XYYxYxyyyXy XYYYxyXyxyy
 
 So the c-frozen neighbours with |k′| ≤ 11 are exactly 7 + 15 + 18 = 40 cyclic words (lengths 7, 8, 9, 10, 11:
-2, 2, 3, 15, 18). Second move at length 11: see §3 (time-boxed; only partly run).
+2, 2, 3, 15, 18).
+
+**Second move at length 11** (same tests; coefficient ring, degree that leaves no j): excluded for **14 of 18** —
+XXyxxxyyxYY, XXyxyxxYYxy, XXYxyxyxyXY, XXYxyyxxyXY, XXYXyxYxxyy, XyxyyyxYYxY, XYxyxxyxYXy, XYXyxxyxyxY,
+XYXyxxyyxxY, XYXyxYxxyxy (default schedule: ℚ D ≤ 4, 𝔽₂ D ≤ 7, 𝔽₃/𝔽₅/𝔽₇ D = 3); XXYXyxxYxyy (ascending rank 3;
+bs+ needs 𝔽₃, D=5), XYXyxYYxyyy (ascending rank 2; bs± need 𝔽₂, D=8), XYXyxxyxYxy (ascending rank 2; prim 𝔽₃ D=6,
+bs− 𝔽₅ D=5, bs+ 𝔽₃ D=8), XYYxyyyxYXy (ascending rank 2; all three 𝔽₃, D=6).
+**Not handled (4):** XXyXYYxxxyy, XXyyxYYYxyy, XYYxYxyyyXy, XYYYxyXyxyy — Brown fails and neither extreme t-level is
+unique (also after x ↔ X), so G_{k′} is not a mapping torus of a free group endomorphism in either direction and the
+twisted-trace machinery does not apply as implemented; these are **undecided**.
+
+### 2.5 The undecided length-10 neighbour (experiment, bounded)
+
+For k′ = XYxyyxxYXy (G_{k′} ascending HNN of rank 2, θ: t₀ ↦ t₁, t₁ ↦ word in t₀, t₁) a BFS of the twisted class of c
+(moves u ↦ θ(u), u ↦ g·u·θ(g)⁻¹; length cap 14: 235 normal forms, cap 18: 1,142) meets none of the BFS classes of prim_j, bs±_j for
+|j| ≤ 6 (`scratch bfsasc.py`). Not a proof; it remains **undecided**.
+
+## 3. Commands (one core, each < 1 min except where noted; outputs in the scratch directory, not committed)
+
+```
+python3 experiments/r63_two.py --selftest 8 9     # family controls; reproduces TH03 T14 (8: 2+9, 9: 3+17) and T15
+python3 experiments/r63_two.py 10                 # census L=10 + second moves (Brown and ascending cases;
+                                                  #   XyyyxxxxYY via F_2, D=4, ~10 s); about 1 min
+python3 experiments/r63_two.py 7 11               # L=7 second moves (BS families); L=11 census
+```
+**Final check (05:41 UTC):** `python3 experiments/r63_two.py --selftest 10 11` (≈ 1 min, default schedule ℚ D ≤ 4;
+𝔽₂ D ≤ 8; 𝔽₃ D ≤ 8; 𝔽₅ D ≤ 5; 𝔽₇ D = 3) reproduces every verdict of §2.1–2.4 in one run (L=10: 14 excluded, XYxyyxxYXy
+open; L=11: 14 excluded, 4 not handled); log saved as `certificates/r63_run_10_11.log`.
+Earlier, the ascending targets, the deeper 𝔽_p scans and the L = 11 second moves were run through `r63_two.second`,
+`structure_asc`, `nf_asc`, `modp_test` from small drivers in the scratch directory (deep.py, deep2.py, asc.py).
+
+## 4. Honest limits
+
+- A bounded census is **not an obstruction**: two-move exits through c-frozen neighbours of length ≥ 12 (and through
+  the undecided ones below) are not excluded; the general two-move question stays open.
+- Undecided: second move for k′ = XYxyyxxYXy (length 10) — only constant twisted traces found; and for
+  the four length-11 targets of §2.4 with no unique extreme t-level (method not applicable).
+- The BS(1,2) families rely on research-th09 Thm 3(a,b,d) (read, not re-derived beyond the degree count above) and the
+  primitive family on Nielsen (recalled). The ascending-case soundness is TH03's §8 argument (Lemma T11a needs no
+  invertibility; the base group embeds by the Freiheitssatz) — checked here only by `NF(k′) = (1, 0)`.
+- The k₃-frozen side at |c′| = 9 was **not** attempted (time).
+- Exact arithmetic throughout (Fractions, integers mod p via numpy int64 with asserted nullspace checks).
