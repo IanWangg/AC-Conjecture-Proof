@@ -153,7 +153,7 @@ def second(kp, log):
     assert NF(kp, st) == ((), 0)
     r = st[2]; open_ = set(KINDS); log("  %s: m=%d rank=%d" % (kp, st[0], r))
     for D in (3, 4):
-        if r ** D > 700: break
+        if r ** D > 300: break
         nt, res = rational_test(st, D, moved=mv, NF=NF); log("    rational D=%d: %d traces, surviving j: %s" % (D, nt, res))
         open_ = {k for k in open_ if res[k] != []}
         if not open_: return 'excluded'
