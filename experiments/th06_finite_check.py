@@ -26,7 +26,14 @@ def mmul(p):                         # 2x2 matrices mod p
     return lambda A, B: ((A[0]*B[0]+A[1]*B[2]) % p, (A[0]*B[1]+A[1]*B[3]) % p,
                          (A[2]*B[0]+A[3]*B[2]) % p, (A[2]*B[1]+A[3]*B[3]) % p)
 
+def amul(A, B):                      # affine maps v -> vM + t over F_3, stored as (M, t)
+    M = mmul(3)(A[0], B[0])
+    t = ((A[1][0]*B[0][0] + A[1][1]*B[0][2] + B[1][0]) % 3, (A[1][0]*B[0][1] + A[1][1]*B[0][3] + B[1][1]) % 3)
+    return (M, t)
+
 GROUPS = {   # name: (a, b, multiplication, identity)
+    # C3^2:Q8 (order 72): abelian-by-nilpotent, derived length 3, neither nilpotent nor metabelian
+    "C3^2:Q8": (((0, 2, 1, 0), (1, 0)), ((1, 1, 1, 2), (0, 0)), amul, ((1, 0, 0, 1), (0, 0))),
     "S3":      (perm([(0, 1)], 3), perm([(0, 1, 2)], 3), pmul, tuple(range(3))),
     "A4":      (perm([(0, 1, 2)], 4), perm([(0, 1), (2, 3)], 4), pmul, tuple(range(4))),
     "F20":     (perm([(1, 2, 4, 3)], 5), perm([(0, 1, 2, 3, 4)], 5), pmul, tuple(range(5))),
@@ -123,15 +130,77 @@ def analyse(name):
     return {"group": name, "order": n, "kind": kind, "|Q'|": len(D1), "pairs": len(T),
             "max d* over pairs (a e0, b e1)": dmax, "two-conjugation lemma for (a,b)": lemma}
 
+def lemma_all_pairs(name, sample=None, seed=1):
+    """Lemma 1.1/1.2 for every (or `sample` random) generating pair (p,q) of the group."""
+    import random
+    a, b, mul, one = GROUPS[name]
+    elems, dq = [one], deque([one])
+    seen = {one}
+    while dq:
+        g = dq.popleft()
+        for s in (a, b):
+            h = mul(g, s)
+            if h not in seen:
+                seen.add(h); elems.append(h); dq.append(h)
+    idx = {g: i for i, g in enumerate(elems)}
+    n = len(elems)
+    M = [[idx[mul(g, h)] for h in elems] for g in elems]
+    inv = [row.index(0) for row in M]
+    conj = lambda u, g: M[M[inv[g]][u]][g]
+    def gen(S):
+        T, dq = {0}, deque([0])
+        while dq:
+            g = dq.popleft()
+            for s in S:
+                h = M[g][s]
+                if h not in T:
+                    T.add(h); dq.append(h)
+        return T
+    D1 = gen({M[M[inv[g]][inv[h]]][M[g][h]] for g in range(n) for h in range(n)})
+    pairs = [(p, q) for p in range(n) for q in range(n) if len(gen({p, q})) == n]
+    if sample:
+        pairs = random.Random(seed).sample(pairs, sample)
+    for p, q in pairs:
+        cls = {conj(p, g) for g in range(n)}
+        got = {M[conj(M[pg][q], h)][inv[q]] for pg in cls for h in range(n)}
+        assert got == {M[p][e] for e in D1}, (name, p, q)
+    return len(pairs)
+
+def congruence_check():
+    """Lemma 1.5 in SL_2(Z/27): two layers K_1 > K_2 > 1; Psi(m,m') covers a*K_1 for u_1 = b*k_1."""
+    mul = mmul(27)
+    def inv(A):
+        return (A[3] % 27, -A[1] % 27, -A[2] % 27, A[0] % 27)
+    cj = lambda u, g: mul(mul(inv(g), u), g)
+    K = [(1 + 3*i, 3*j, 3*k, d) for i in range(9) for j in range(9) for k in range(9)
+         for d in range(1, 27, 3) if ((1 + 3*i) * d - 9*j*k) % 27 == 1]
+    assert len(K) == 729
+    a, b = (1, 1, 0, 1), (1, 0, 1, 1)
+    target = {mul(a, k) for k in K}
+    for k1 in (K[0], K[100], K[500]):
+        u1 = mul(b, k1)
+        u1i = inv(u1)
+        cls = {cj(a, m) for m in K}
+        got = {mul(cj(mul(am, u1), m2), u1i) for am in cls for m2 in K}
+        assert got == target
+    return len(K)
+
 BOUND = {"nilpotent": 8, "metabelian": 8, "Q'' central": 24, "soluble, derived length 3": 32}
 
 if __name__ == "__main__":
-    names = ["S3", "A4", "F20", "D8xC3~", "S4", "SL(2,3)", "SL(2,3)b", "GL(2,3)"] if "--selftest" in sys.argv else list(GROUPS)
+    names = ["S3", "A4", "F20", "D8xC3~", "C3^2:Q8", "S4", "SL(2,3)", "SL(2,3)b", "GL(2,3)"] if "--selftest" in sys.argv else list(GROUPS)
     for nm in names:
         r = analyse(nm)
         print(r)
         if r["kind"] in BOUND:
             assert r["max d* over pairs (a e0, b e1)"] <= BOUND[r["kind"]]
+        if nm == "C3^2:Q8":                         # Lemma 1.2 beyond the metabelian case
+            assert r["order"] == 72 and r["max d* over pairs (a e0, b e1)"] <= 8
+            assert r["two-conjugation lemma for (a,b)"]
         if r["kind"] in ("nilpotent", "metabelian"):
             assert r["two-conjugation lemma for (a,b)"]
+    for nm in ("S3", "A4", "F20", "D8xC3~"):
+        print(f"two-conjugation lemma for all {lemma_all_pairs(nm)} generating pairs of {nm}: OK")
+    print(f"two-conjugation lemma for {lemma_all_pairs('C3^2:Q8', sample=12)} random generating pairs of C3^2:Q8: OK")
+    print(f"Lemma 1.5 in SL_2(Z/27), |K_1| = {congruence_check()}: four instructions with conjugators in K_1 cover a*K_1: OK")
     print("checks passed" if "--selftest" not in sys.argv else "selftest passed")
