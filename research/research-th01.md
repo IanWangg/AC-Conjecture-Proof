@@ -208,3 +208,10 @@ The `--sl25`/`--sl27` modes also assert that every non-central element of SL(2,5
 - A. V. Borovik, A. Lubotzky, A. G. Myasnikov, *The finitary Andrews–Curtis conjecture*, arXiv:1103.1295; L. Guyot, *On Andrews–Curtis conjectures for soluble groups*, arXiv:1612.06912 (externally reported, via B/E/H/N).
 - J. L. Britton (1963), normal form for HNN extensions; normal form theorem for amalgamated free products (classical; Lyndon–Schupp, *Combinatorial Group Theory*, Ch. IV).
 - A. A. Klyachko (1993), S. D. Brodskii (1984), J. Howie (1981–82) on equations over torsion-free / locally indicable groups (mentioned only as context in §6; not used in any proof).
+
+## Coordinator's check (2026-11-09, Los Angeles time)
+
+- Re-ran `python3 experiments/th01_substitution.py` with `--selftest`, `--replay`, `--sl25`, `--sl27`: all pass (the explicit path of Theorem 4.2 replays in 106 elementary moves in the finite model).
+- Re-derived by hand: the Substitution Lemma 2.1 (four applications of "multiply a coordinate by an element of the normal closure of the other") and Corollary 2.2. Correct.
+- Read but not re-derived: Lemma 2.3, the transfer-lattice results of §3 (Proposition 3.1, Theorems 3.2, 3.3, 3.5) and the example of §4, including its use of the externally reported Gerstenhaber–Rothaus theorem; the agent reports that the referee (research-th19.md) marks the main ones verified — see that note.
+- Status, stated plainly: the two-pair abelian lifting problem of research-n §2.3 remains **open**, even for central subgroups. All examples in this note live over bases of rank 3 and are not quotients of F(x,y). For a *single* presentation compared with the standard pair, the corresponding lifting statement is now a theorem (research-th05, research-th08); the open problem concerns two arbitrary normally generating pairs.
