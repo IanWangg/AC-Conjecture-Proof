@@ -2,10 +2,11 @@
 """TH20 check of TH16 Theorem H(a),(b): Q = (q1, q2) = (xxyXYY, xxxYYXy) is an ACM local minimum.
 (a) in G_{q1}: transport by beta = (x -> xYX, y -> YX) to G_c (beta(q1) ~ c); for every cyclically reduced W,
     |W| <= 6, degree +-1, separate W from q2^{+-1} by exact invariants of G_c: own holonomy (trace of squares,
-    both twists) and TH11's (kappa, Jhat).   (b) in G_{q2}: sieve by all homomorphisms G_{q2} -> S_5, S_6
+    both twists) and TH11's (kappa, Jhat).   (b) [--sn] in G_{q2}: sieve by all homomorphisms G_{q2} -> S_5, S_6 (too weak; the exact check is th20_k3_traces.py)
     (cycle type of W vs q1^{+-1}).  A word NOT separated is listed (no conclusion for it)."""
 import sys, itertools
 sys.dont_write_bytecode = True
+SN = "--sn" in sys.argv
 sys.argv = sys.argv[:1] + ["1", "1"]
 from th20_lib import red, inv, cyc, conj, aut
 import o_gc as O, th11_nil as T, th20_theta_holonomy as H
@@ -36,13 +37,14 @@ def inv_c(word):           # invariants in G_c of the element beta(word), normal
     kap, J = T.KJ(u)
     return taus, (kap, J)
 tq = inv_c(q2); left = []
-for L in range(1, 7):
+for L in range(1, 8):
     for w in words(L):
         e = sum((ch == "x") - (ch == "X") + (ch == "y") - (ch == "Y") for ch in w)
         if abs(e) != 1: continue
         ti = inv_c(w)
         if ti[0] & tq[0] and ti[1] == tq[1]: left.append(w)
-print("(a) words of length <= 6, degree +-1, not separated from q2^{+-1} in G_{q1}:", left)
+orb = lambda w: {u[i:] + u[:i] for u in (w, inv(w)) for i in range(len(u))}
+print("(a) words of length <= 7, degree +-1, not separated from q2^{+-1} in G_{q1}: %d; == Orb(q2): %s" % (len(left), set(left) == orb(q2)))
 # (b) homomorphisms G_{q2} -> S_n
 def perm_mul(p, q): return tuple(q[i] for i in p)          # apply p then q
 def perm_inv(p):
@@ -63,7 +65,7 @@ def ctype(p):
     return tuple(sorted(t))
 cand = [w for L in range(1, 6) for w in words(L) if abs(sum((ch == "x") - (ch == "X") + 2 * ((ch == "y") - (ch == "Y")) for ch in w)) == 1]
 alive = set(cand)
-for n in (5, 6):
+for n in ((5, 6) if SN else ()):
     perms = list(itertools.permutations(range(n))); idp = tuple(range(n))
     for X in perms:
         for Y in perms:

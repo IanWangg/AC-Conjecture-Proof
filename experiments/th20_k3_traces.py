@@ -101,8 +101,8 @@ def words(L):
             if not p or p[-1] != ch.swapcase(): yield from rec(p + ch)
     yield from rec("")
 left = []
-for L in range(1, 6):
+for L in range(1, 7):
     for w in words(L):
         tw = aut(TH, w); d = sum({"x": 1, "X": -1, "y": -2, "Y": 2}[ch] for ch in tw)
         if abs(d) == 1 and invariant(tw) == base: left.append(w)
-print("words W of length <= 5 (degree +-1 in G_{q2}) with theta(W) not separated from theta(q1)^{+-1}:", left)
+print("words W of length <= 6 (degree +-1 in G_{q2}) with theta(W) not separated from theta(q1)^{+-1}:", left)
