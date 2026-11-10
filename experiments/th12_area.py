@@ -1,0 +1,178 @@
+"""TH12: generator area of AK(n), count-matrix calculus, and linear move bounds.
+
+Standard library only.  `python3 experiments/th12_area.py --selftest` checks:
+ (1) the explicit free-group identities expressing x and y as products of
+     conjugates of r^{+-1}, s^{+-1} over AK(n) (Theorem 2), n = 1..NMAX;
+ (2) the permutation model of Theorem 4 (r acts trivially, Fix(s) = [1,n-3]);
+ (3) the SL_2(Z) facts used in Theorem 3 (exhaustive over transvection words);
+ (4) the Fibonacci bound of Theorem 1 (exhaustive over L/R words);
+ (5) the backward bookkeeping of Theorem 1 on the repository's AK(2) certificate.
+Words: x,y and X,Y (uppercase = inverse).
+"""
+import itertools, json, os, sys
+
+def red(w):
+    out = []
+    for c in w:
+        if out and out[-1] == c.swapcase(): out.pop()
+        else: out.append(c)
+    return "".join(out)
+def inv(w): return w.swapcase()[::-1]
+def conj(g, u): return red(g + u + inv(g))          # g u g^-1
+def prod(factors, rel):                              # factors: (g, name, sign)
+    w = ""
+    for g, name, e in factors:
+        u = rel[name] if e > 0 else inv(rel[name])
+        w = red(w + conj(g, u))
+    return w
+def ak(n): return {"r": "x"*n + "Y"*(n+1), "s": "xyxYXY"}
+
+def x_factors(n):
+    D = "xyx"
+    f = [(red(inv(D) + "y"*i), "s", +1) for i in range(n+1)]
+    return f + [(inv(D), "r", -1), ("XY", "r", +1), ("X", "r", -1)]
+def y_factors(n):
+    f = [("", "r", -1)] + [("y"*i, "s", +1) for i in range(n)]
+    return f + [(red("y"*n + "x" + "Y"*n), "r", -1), (red("y"*n + "x" + "Y"*(n+1)), "r", +1)]
+
+def check_identities(nmax):
+    for n in range(1, nmax+1):
+        rel = ak(n)
+        fx, fy = x_factors(n), y_factors(n)
+        assert prod(fx, rel) == "x", n
+        assert prod(fy, rel) == "y", n
+        cx = (sum(1 for f in fx if f[1] == "r"), sum(1 for f in fx if f[1] == "s"))
+        cy = (sum(1 for f in fy if f[1] == "r"), sum(1 for f in fy if f[1] == "s"))
+        assert cx == (3, n+1) and cy == (3, n), (n, cx, cy)
+        # the r-conjugators of the x-identity have length <= 3 for every n
+        assert max(len(g) for g, nm, e in fx if nm == "r") <= 3
+    return nmax
+
+def check_model(nmax):
+    for n in range(4, nmax+1):
+        px = {i: i+1 for i in range(1, n)}; px[n] = 1; px[0] = 0
+        py = {i: i+1 for i in range(0, n)}; py[n] = 0
+        act = {"x": px, "y": py, "X": {v: k for k, v in px.items()}, "Y": {v: k for k, v in py.items()}}
+        def ap(p, w):
+            for c in w: p = act[c][p]
+            return p
+        rel = ak(n)
+        assert all(ap(p, rel["r"]) == p for p in range(n+1))
+        fix = [p for p in range(n+1) if ap(p, rel["s"]) == p]
+        assert fix == list(range(1, n-2)), (n, fix)
+        for p in range(1, n+1):                      # +-1 behaviour inside [1,n]
+            for c, d in (("x", 1), ("y", 1), ("X", -1), ("Y", -1)):
+                if 1 <= p+d <= n: assert act[c][p] == p+d
+    return nmax
+
+def mul(A, B):
+    return ((A[0][0]*B[0][0]+A[0][1]*B[1][0], A[0][0]*B[0][1]+A[0][1]*B[1][1]),
+            (A[1][0]*B[0][0]+A[1][1]*B[1][0], A[1][0]*B[0][1]+A[1][1]*B[1][1]))
+I2 = ((1, 0), (0, 1)); L = ((1, 1), (0, 1)); R = ((1, 0), (1, 1))
+Li = ((1, -1), (0, 1)); Ri = ((1, 0), (-1, 1)); Sp = ((0, 1), (-1, 0))
+TV = {"L": L, "R": R, "l": Li, "r": Ri}
+ABS = {"L": L, "R": R, "l": L, "r": R}
+def neg(A): return tuple(tuple(-v for v in row) for row in A)
+
+def check_sl2(nmax):
+    """For Sigma0 = [[-1,n+1],[-1,n]]: all words d*t_1..t_mu (d in {+-I,+-S'})
+    of length mu <= n+2 equal to Sigma0, with their unsigned products."""
+    res = {}
+    for n in range(1, nmax+1):
+        S0 = ((-1, n+1), (-1, n))
+        found = {}
+        for mu in range(0, n+3):
+            for word in itertools.product("LRlr", repeat=mu):
+                M = I2; C = I2
+                for c in word: M = mul(M, TV[c]); C = mul(C, ABS[c])
+                for dn, d in (("I", I2), ("-I", neg(I2)), ("S", Sp), ("-S", neg(Sp))):
+                    if mul(d, M) == S0:
+                        Cd = C if dn in ("I", "-I") else mul(((0, 1), (1, 0)), C)
+                        found.setdefault(mu, []).append(("".join(word), dn, Cd))
+        mus = sorted(found)
+        assert mus[0] == n+1, (n, mus)
+        for w, dn, C in found[n+1]:                   # minimal words: C = |Sigma0|
+            assert C == ((1, n+1), (1, n)), (n, w, C)
+        ok = [(w, dn, C) for w, dn, C in found.get(n+2, []) if C[0][0] >= 3 and C[1][0] >= 3
+              and C[0][1] >= n+1 and C[1][1] >= n]
+        expect = sorted("L" + "R"*(j-2) + "L" + "r" + "l"*(n-j+1) for j in range(3, n+2))
+        assert sorted(w for w, dn, C in ok) == expect, (n, ok)
+        assert all(dn in ("I", "-I") for w, dn, C in found.get(n+2, []))
+        res[n] = (len(found[n+1]), len(found.get(n+2, [])), len(ok))
+    return res
+
+def check_fib(mmax):
+    F = [0, 1]
+    while len(F) < mmax+5: F.append(F[-1]+F[-2])
+    for mu in range(0, mmax+1):
+        best_sum = best_row = best_ent = 0
+        for word in itertools.product((L, R), repeat=mu):
+            M = I2
+            for t in word: M = mul(M, t)
+            best_sum = max(best_sum, sum(map(sum, M)))
+            best_row = max(best_row, sum(M[0]), sum(M[1]))
+            best_ent = max(best_ent, max(map(max, M)))
+        assert (best_ent, best_row, best_sum) == (F[mu+1], F[mu+2], F[mu+3]), mu
+    return mmax
+
+def bookkeeping(cert):
+    """Theorem 1 made executable: from an ordinary-ac-elementary-v1 certificate
+    ending at (x,y), build explicit expressions of x and y as products of
+    conjugates of the START relators and verify them by free reduction."""
+    assert cert["format"] == "ordinary-ac-elementary-v1"
+    assert [red(w) for w in cert["target"]] == ["x", "y"]
+    start = [red(w) for w in cert["start"]]
+    moves = cert["moves"]
+    expr = {"x": [("", 0, 1)], "y": [("", 1, 1)]}
+    for mv in reversed(moves):
+        op, i = mv["op"], mv["i"]
+        for wname in expr:
+            new = []
+            for g, c, e in expr[wname]:
+                if c != i: new.append((g, c, e)); continue
+                if op == "invert": new.append((g, c, -e))
+                elif op == "conjugate": new.append((red(g + mv["g"]), c, e))
+                elif op == "multiply":
+                    j = mv["j"]
+                    new += [(g, i, 1), (g, j, 1)] if e > 0 else [(g, j, -1), (g, i, -1)]
+            expr[wname] = new
+    out = {}
+    for wname in ("x", "y"):
+        w = ""
+        for g, c, e in expr[wname]:
+            w = red(w + conj(g, start[c] if e > 0 else inv(start[c])))
+        assert w == wname, "bookkeeping failed"
+        cnt = [sum(1 for f in expr[wname] if f[1] == c) for c in (0, 1)]
+        sgn = [sum(f[2] for f in expr[wname] if f[1] == c) for c in (0, 1)]
+        out[wname] = {"count": cnt, "signed": sgn, "radius": max(len(f[0]) for f in expr[wname])}
+    mu = sum(1 for mv in moves if mv["op"] == "multiply")
+    kappa = sum(1 for mv in moves if mv["op"] == "conjugate")
+    F = [0, 1]
+    while len(F) < mu+5: F.append(F[-1]+F[-2])
+    tot = sum(out[w]["count"][c] for w in out for c in (0, 1))
+    assert tot <= F[mu+3] and all(sum(out[w]["count"]) <= F[mu+2] for w in out)
+    assert all(out[w]["radius"] <= kappa for w in out)
+    return {"start": start, "moves": len(moves), "mu": mu, "kappa": kappa, "x": out["x"], "y": out["y"]}
+
+def main(argv):
+    here = os.path.dirname(os.path.abspath(__file__))
+    if "--cert" in argv:
+        path = argv[argv.index("--cert") + 1]
+        print(json.dumps(bookkeeping(json.load(open(path)))))
+        return
+    if "--selftest" in argv:
+        print("identities x,y over AK(n) verified for n = 1..%d" % check_identities(40))
+        print("permutation model verified for n = 4..%d" % check_model(60))
+        res = check_sl2(5)
+        print("SL2(Z) word classification (n: #words mu=n+1, #words mu=n+2, #admissible):", res)
+        print("Fibonacci bounds verified for mu <= %d" % check_fib(14))
+        for name in ("e_ak1_trivialization.json", "e_ak2_peak13_trivialization.json"):
+            p = os.path.join(here, "..", "certificates", name)
+            if os.path.exists(p):
+                print(name, json.dumps(bookkeeping(json.load(open(p)))))
+        print("TH12 selftest OK")
+        return
+    print(__doc__)
+
+if __name__ == "__main__":
+    main(sys.argv[1:])

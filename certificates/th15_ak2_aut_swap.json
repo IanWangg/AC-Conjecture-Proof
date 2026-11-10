@@ -1,0 +1,125 @@
+{
+ "format": "ordinary-ac-elementary-v1",
+ "start": [
+  "xxYYY",
+  "xyxYXY"
+ ],
+ "target": [
+  "yyXXX",
+  "yxyXYX"
+ ],
+ "moves": [
+  {
+   "op": "invert",
+   "i": 1
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "Y"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "X"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "Y"
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "x"
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "X"
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "X"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "y"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "X"
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "y"
+  },
+  {
+   "op": "multiply",
+   "i": 0,
+   "j": 1
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "y"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "x"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "y"
+  },
+  {
+   "op": "conjugate",
+   "i": 0,
+   "g": "x"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "x"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "y"
+  },
+  {
+   "op": "conjugate",
+   "i": 1,
+   "g": "x"
+  }
+ ],
+ "description": "AK(2) = (x^2 Y^3, xyxYXY) -> phi(AK(2)) exactly, phi = swap x<->y: uniform closed-form path of research-th15.md (5 cyclic products), compiled to strict elementary moves.",
+ "cyclic_steps": 5,
+ "peak_total_length_elementary": 19
+}

@@ -1,0 +1,280 @@
+#!/usr/bin/env python3
+"""TH05 light sanity checks (no search; all exact, tiny).
+
+  A. Pair-level Theorem 1 on small finite 2-generated groups: every pair (s,t)
+     with s co-abelian and abelianization Nielsen-equivalent to the standard
+     one lies in the AC orbit of the standard pair (a,b).
+  B. Lemma 6.2, finite core: in SL_2(Z/m) (and SL_3(F_2)) an element has
+     abelian cokernel iff it is non-scalar modulo every prime l | m.
+  C. Lemma 6.3 (row lemma): the construction, for SL_3(Z) and SL_2(Z[1/p]).
+
+Usage: python3 experiments/th05_checks.py --selftest      (about 2 s)
+       python3 experiments/th05_checks.py --mods 16 18   (extra levels for check B)
+"""
+import sys, random, itertools
+from fractions import Fraction
+from math import gcd
+
+# ---------- generic finite groups given by generators and a product ----------
+def closure(gens, mul, e):
+    seen = {e}; todo = [e]
+    while todo:
+        g = todo.pop()
+        for h in gens:
+            k = mul(g, h)
+            if k not in seen:
+                seen.add(k); todo.append(k)
+    return seen
+
+def normal_closure(g, ggens, mul, inv, e):
+    ngens = [g]; K = closure(ngens, mul, e); i = 0
+    while i < len(ngens):
+        for h in ggens:
+            c = mul(mul(inv(h), ngens[i]), h)
+            if c not in K:
+                ngens.append(c); K = closure(ngens, mul, e)
+        i += 1
+    return K
+
+def comm(a, b, mul, inv):
+    return mul(mul(inv(a), inv(b)), mul(a, b))
+
+# ---------- A. Theorem 1 at pair level ----------
+def pmul(p, q):            # apply p then q
+    return tuple(q[i] for i in p)
+def pinv(p):
+    r = [0] * len(p)
+    for i, j in enumerate(p): r[j] = i
+    return tuple(r)
+def perm(n, *cycles):
+    r = list(range(n))
+    for c in cycles:
+        for i in range(len(c)):
+            r[c[i]] = c[(i + 1) % len(c)]
+    return tuple(r)
+
+def check_theorem1(name, a, b):
+    e = tuple(range(len(a)))
+    G = closure([a, b], pmul, e)
+    D = normal_closure(comm(a, b, pmul, pinv), [a, b], pmul, pinv, e)   # [G,G]
+    ab = {g: min(pmul(g, d) for d in D) for g in G}                    # coset reps
+    conj = [a, b, pinv(a), pinv(b)]
+    def moves(s, t, with_conj=True):
+        yield pinv(s), t
+        yield s, pinv(t)
+        yield t, s
+        yield pmul(s, t), t
+        yield pmul(s, pinv(t)), t
+        yield s, pmul(t, s)
+        yield s, pmul(t, pinv(s))
+        if with_conj:
+            for h in conj:
+                yield pmul(pmul(pinv(h), s), h), t
+                yield s, pmul(pmul(pinv(h), t), h)
+    def orbit(start, with_conj, key=lambda x: x):
+        seen = {start}; todo = [start]
+        while todo:
+            s, t = todo.pop()
+            for u in moves(s, t, with_conj):
+                u = (key(u[0]), key(u[1]))
+                if u not in seen:
+                    seen.add(u); todo.append(u)
+        return seen
+    ac = orbit((a, b), True)
+    nielsen_ab = orbit((ab[a], ab[b]), False, key=lambda g: ab[g])
+    coab = {s for s in G if D <= normal_closure(s, [a, b], pmul, pinv, e)}
+    tested = 0
+    for s in coab:
+        for t in G:
+            if (ab[s], ab[t]) in nielsen_ab:
+                tested += 1
+                assert (s, t) in ac and (t, s) in ac, (name, s, t)
+    print(f"A {name}: |G|={len(G)} |G_ab|={len(G)//len(D)} co-abelian={len(coab)} "
+          f"pairs tested={tested} all in AC orbit of (a,b)")
+
+# ---------- B. co-abelian elements of SL_n(Z/m) ----------
+def mat_group(n, m):
+    I = tuple(tuple(int(i == j) for j in range(n)) for i in range(n))
+    def mul(A, B):
+        return tuple(tuple(sum(A[i][k] * B[k][j] for k in range(n)) % m
+                           for j in range(n)) for i in range(n))
+    gens = []
+    for i in range(n):
+        for j in range(n):
+            if i != j:
+                gens.append(tuple(tuple((int(r == c) + int(r == i and c == j)) % m
+                                        for c in range(n)) for r in range(n)))
+    G = closure(gens, mul, I)
+    invd = {}
+    for g in G:                      # inverse by order
+        h = g
+        while True:
+            k = mul(h, g)
+            if k == I: break
+            h = k
+        invd[g] = h if g != I else I
+    return G, gens, mul, invd.__getitem__, I
+
+def primes_of(m):
+    return [l for l in range(2, m + 1) if m % l == 0 and all(l % q for q in range(2, l))]
+
+def check_coabelian(n, m):
+    G, gens, mul, inv, I = mat_group(n, m)
+    comms = [comm(x, y, mul, inv) for x, y in itertools.combinations(gens, 2)]
+    seen = set(); classes = 0
+    for g in G:
+        if g in seen: continue
+        cl = {g}; todo = [g]
+        while todo:
+            x = todo.pop()
+            for h in gens:
+                y = mul(mul(inv(h), x), h)
+                if y not in cl:
+                    cl.add(y); todo.append(y)
+        seen |= cl; classes += 1
+        K = normal_closure(g, gens, mul, inv, I)
+        coab = all(c in K for c in comms)
+        nonscalar = all(any(g[i][j] % l for i in range(n) for j in range(n) if i != j)
+                        or any((g[i][i] - g[0][0]) % l for i in range(n))
+                        for l in primes_of(m))
+        assert coab == nonscalar, (n, m, g)
+    print(f"B SL_{n}(Z/{m}): |G|={len(G)} classes={classes}: "
+          "abelian cokernel <=> non-scalar mod every prime | m")
+
+# ---------- C. row lemma (Lemma 6.3), following the proof ----------
+def mmul(A, B):
+    n = len(A)
+    return [[sum(A[i][k] * B[k][j] for k in range(n)) for j in range(n)] for i in range(n)]
+
+def minv(A):                                   # Gauss-Jordan over Fractions
+    n = len(A); M = [list(map(Fraction, A[i])) + [Fraction(int(i == j)) for j in range(n)] for i in range(n)]
+    for c in range(n):
+        r = next(i for i in range(c, n) if M[i][c] != 0); M[c], M[r] = M[r], M[c]
+        M[c] = [x / M[c][c] for x in M[c]]
+        for i in range(n):
+            if i != c and M[i][c] != 0:
+                M[i] = [x - M[i][c] * y for x, y in zip(M[i], M[c])]
+    return [row[n:] for row in M]
+
+def mdet(A):
+    if len(A) == 2: return A[0][0] * A[1][1] - A[0][1] * A[1][0]
+    return sum(A[0][j] * (-1) ** j * mdet([[A[i][k] for k in range(3) if k != j] for i in (1, 2)]) for j in range(3))
+
+def complete_row(v):
+    """U in SL_n(Z) with first row v (v integer, gcd 1), by Euclid column operations."""
+    n = len(v); r = list(v); U = [[int(i == j) for j in range(n)] for i in range(n)]
+    def op(i, j, q):                           # r_j += q r_i ; U <- (I - q E_ij) U keeps v = r U
+        r[j] += q * r[i]
+        U[i] = [x - q * y for x, y in zip(U[i], U[j])]
+    while sum(1 for x in r if x) > 1:
+        i = min((k for k in range(n) if r[k]), key=lambda k: abs(r[k]))
+        for j in range(n):
+            if j != i and r[j]: op(i, j, -(r[j] // r[i]))
+    k = next(i for i in range(n) if r[i]); eps = r[k]
+    if k != 0: op(k, 0, eps); op(0, k, -eps)
+    elif eps == -1: op(0, 1, -1); op(1, 0, 2); op(0, 1, -1)
+    assert r == [1] + [0] * (n - 1) and U[0] == list(v)
+    return U
+
+def pfree(q, p):                               # |numerator| with factors p removed
+    x = abs(Fraction(q).numerator)
+    while p > 1 and x and x % p == 0: x //= p
+    return x
+
+def new_primes(x, m1, p):                      # primes l | x with l not dividing m1*p
+    out = []; q = 2
+    while q * q <= x:
+        if x % q == 0:
+            if m1 % q and q != p: out.append(q)
+            while x % q == 0: x //= q
+        q += 1
+    if x > 1 and m1 % x and x != p: out.append(x)
+    return out
+
+def red(q, l):
+    q = Fraction(q); return q.numerator * pow(q.denominator, -1, l) % l
+
+def avoid(P, bad):                             # integer k with k != bad[l] mod l for all l in P
+    k = 0
+    while any((k - bad[l]) % l == 0 for l in P): k += 1
+    return k
+
+def lift_sl2(A, m):                            # A in SL_2(Z/m) -> SL_2(Z)
+    (a, b), (c, d) = A
+    b1 = b % m or m
+    a1 = a % m
+    while gcd(a1, b1) != 1: a1 += m
+    U = complete_row([a1, b1]); c0, d0 = U[1]
+    lam = (c * d0 - d * c0) % m
+    return [[a1, b1], [c0 + lam * a1, d0 + lam * b1]]
+
+def row_lemma(tau, m1, p):
+    n = len(tau); v = list(tau[0])
+    w2 = v[1] if v[1] != 0 else Fraction(m1)
+    P = new_primes(pfree(w2, p), m1, p)
+    idx = 2 if n == 3 else 0                   # entry adjusted to be nonzero mod every l in P
+    k = avoid(P, {l: (-red(v[idx], l) * pow(m1, -1, l)) % l for l in P})
+    v[1] = w2; v[idx] = v[idx] + m1 * k
+    den = 1
+    for x in v: den = max(den, Fraction(x).denominator)
+    w = [int(x * den) for x in v]; g = 0
+    for x in w: g = gcd(g, x)
+    assert pfree(g, p) == 1, "v' not unimodular over R"
+    h0 = [list(map(Fraction, row)) for row in complete_row([x // g for x in w])]
+    h0[0] = [x * Fraction(g, den) for x in h0[0]]; h0[1] = [x * Fraction(den, g) for x in h0[1]]
+    X = mmul(h0, minv(tau)); Xm = [[red(x, m1) if m1 > 1 else 0 for x in row] for row in X]
+    assert m1 == 1 or Xm[0] == [1] + [0] * (n - 1)
+    if n == 2:
+        h1 = [[1, 0], [-Xm[1][0], 1]]
+    else:
+        (a, b), (c, d) = (Xm[1][1:], Xm[2][1:])
+        Ai = lift_sl2([[d, -b], [-c, a]], m1) if m1 > 1 else [[1, 0], [0, 1]]
+        col = [-(Ai[i][0] * Xm[1][0] + Ai[i][1] * Xm[2][0]) for i in range(2)]
+        h1 = [[1, 0, 0], [col[0]] + Ai[0], [col[1]] + Ai[1]]
+    t1 = mmul(h1, h0)
+    if n == 2:
+        k = avoid(P, {l: (-red(t1[1][0], l) * pow(red(m1 * t1[0][0], l), -1, l)) % l for l in P})
+        t1[1] = [x + m1 * k * y for x, y in zip(t1[1], t1[0])]
+    return t1
+
+def check_row(n, p, trials, rng):
+    for _ in range(trials):
+        tau = [[Fraction(int(i == j)) for j in range(n)] for i in range(n)]
+        for _ in range(3 * n):
+            i, j = rng.sample(range(n), 2); e = Fraction(rng.randint(-3, 3), p ** rng.randint(0, 2))
+            tau[i] = [x + e * y for x, y in zip(tau[i], tau[j])]
+        m1 = rng.choice([q for q in (1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 15, 35) if gcd(q, p) == 1])
+        t = row_lemma(tau, m1, p)
+        assert mdet(t) == 1 and t[0][1] != 0
+        for i in range(n):
+            for j in range(n):
+                assert Fraction((t[i][j] - tau[i][j]) / m1).denominator in {p ** e for e in range(200)}
+        other = t[0][2] if n == 3 else t[1][0]       # the two entries used in the proof
+        g = gcd(pfree(t[0][1], p), pfree(other, p))
+        assert g != 0 and not new_primes(g, m1, p), (tau, m1, t)
+    ring = "Z" if p == 1 else f"Z[1/{p}]"
+    print(f"C SL_{n}({ring}): row lemma construction verified on {trials} random instances")
+
+def selftest():
+    S = lambda *c: perm(5, *c)
+    check_theorem1("S3", perm(3, (0, 1)), perm(3, (0, 1, 2)))
+    check_theorem1("S4", perm(4, (0, 1)), perm(4, (0, 1, 2, 3)))
+    check_theorem1("A5", S((0, 1, 2, 3, 4)), S((0, 1, 2)))
+    check_theorem1("S5", S((0, 1)), S((0, 1, 2, 3, 4)))
+    check_theorem1("A5xC2", perm(7, (0, 1, 2, 3, 4), (5, 6)), perm(7, (0, 1, 2)))
+    check_theorem1("S3xC3", perm(6, (0, 1), (3, 4, 5)), perm(6, (0, 1, 2)))
+    check_theorem1("C4xC2", perm(6, (0, 1, 2, 3)), perm(6, (4, 5)))
+    check_theorem1("Dic3xC2-like", perm(9, (0, 1), (3, 4, 5, 6)), perm(9, (0, 1, 2), (7, 8)))
+    for m in (2, 3, 4, 5, 6, 8, 9, 10, 12):
+        check_coabelian(2, m)
+    check_coabelian(3, 2)
+    rng = random.Random(5)
+    check_row(3, 1, 80, rng); check_row(2, 2, 80, rng); check_row(2, 5, 80, rng); check_row(2, 1, 40, rng)
+    print("selftest passed")
+
+if __name__ == "__main__":
+    if "--mods" in sys.argv:                   # extra levels for check B, e.g. --mods 16 18
+        for m in map(int, sys.argv[sys.argv.index("--mods") + 1:]):
+            check_coabelian(2, m)
+    else:
+        selftest()

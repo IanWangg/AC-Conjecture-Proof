@@ -124,14 +124,18 @@ def partners(fr, s, rho_s, K, J, T):
         for k in range(-K, K + 1):
             rho = (sg * rho_s[0] + k * fr.rho[0], sg * rho_s[1] + k * fr.rho[1])
             # primitive v with det(v, rho) = +-2 and v = rho mod 2: v = v0 + 2 j rho
-            v0 = None
-            for a in range(-60, 61):
-                for b in range(-60, 61):
-                    if det((a, b), rho) == 2 and (a - rho[0]) % 2 == 0 and (b - rho[1]) % 2 == 0:
-                        if v0 is None or abs(a) + abs(b) < abs(v0[0]) + abs(v0[1]):
-                            v0 = (a, b)
-            if v0 is None:
+            # v0 = 2*(a0,b0) + rho with det((a0,b0), rho) = 1 (extended Euclid)
+            def egcd(m, n):
+                if n == 0:
+                    return (m, 1, 0)
+                g, s1, t1 = egcd(n, m % n)
+                return (g, t1, s1 - (m // n) * t1)
+            g, s1, t1 = egcd(rho[1], rho[0])          # s1*rho[1] + t1*rho[0] = g = +-1
+            if g not in (1, -1):
                 continue
+            a0, b0 = g * s1, -g * t1                   # a0*rho[1] - b0*rho[0] = 1
+            v0 = (2 * a0 + rho[0], 2 * b0 + rho[1])
+            assert det(v0, rho) == 2
             for j in range(-J, J + 1):
                 v = (v0[0] + 2 * j * rho[0], v0[1] + 2 * j * rho[1])
                 u = ((rho[0] - v[0]) // 2, (rho[1] - v[1]) // 2)

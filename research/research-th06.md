@@ -62,3 +62,145 @@ For AK(3): d*_{N_c}(AK(3)) ≤ 13 for **all** c, whereas the letter distance d_{
 2. *Area.* Reading the scheme backwards, b is a product of at most 3, and a of at most 7, conjugates of (a e_0)^{±1}, (b e_1)^{±1}. So in every nilpotent quotient of F the "area" of the generators with respect to U is bounded by a universal constant (after the ℓ(U) abelian moves): Dehn-function-type lower bounds on AC paths (Bridson; Lishak — externally reported) are invisible in all nilpotent quotients.
 3. *ACM moves.* For G/O's exact generalized moves (replace u_0 by anything conjugate to u_0^{±1} modulo ⟨⟨u_1⟩⟩) the nilpotent picture is even more degenerate: Q/⟨⟨u_1⟩⟩ is cyclic, so γ_2(Q) ⊆ ⟨⟨u_1⟩⟩ and two ACM moves suffice. Theorem 1 is the finer statement that boundedly many *single* conjugations and multiplications suffice.
 4. *n generators.* The same proof gives, for Q = ⟨a_1,…,a_n⟩ nilpotent and e_i ∈ γ_2(Q), a path from (a_i) to (a_ie_i) with n conjugations and 2(n−1) multiplications per coordinate: conjugate a_i, then for each j ≠ i multiply by a_j, conjugate, multiply by a_j⁻¹; the linear terms [ā_i,h_0] + Σ_j [ā_i+ā_j, h_j] exhaust L_{m+1}.
+
+**Lemma 1.2 (abelian-by-nilpotent groups; proved here).** Let Q be a group with an abelian normal subgroup K such that Q/K is nilpotent (e.g. Q metabelian, K = [Q,Q]; or Q = F/[γ_c(F),γ_c(F)]). Let p, q ∈ Q with Q = ⟨p,q⟩γ_2(Q). Then the conclusion of Lemma 1.1 holds: for every e ∈ γ_2(Q) there are g, g′ with (p^g q)^{g′} q⁻¹ = p e. Hence Theorem 1 (the 8-move scheme, and d*_Q(U) ≤ ℓ(U) + 8) holds for every abelian-by-nilpotent quotient Q of F.
+
+*Proof.* Q̃ = Q/[K,Q] is nilpotent (K/[K,Q] is central and Q/K is nilpotent), so Lemma 1.1 in Q̃ gives g, g′ ∈ Q with (p^g q)^{g′} q⁻¹ = p·e·κ, κ ∈ [K,Q]. For k, k′ ∈ K put w = p^g q; as in Lemma 1.1,
+
+    (p^{gk} q)^{g′k′} q⁻¹ = w^{g′}·[w^{g′},k′]·[p^g,k]^{q g′ k′}·q⁻¹ = p e κ · [ŵ, k_1]·[p̂, k_2],
+
+where ŵ = q w^{g′} q⁻¹, p̂ = t⁻¹ p^g t with t = q g′ q⁻¹, k_1 = q k′ q⁻¹, k_2 = t⁻¹kt (k′ acts trivially on K ∋ [p^g,k]^{qg′}; and [u,k]^s = [u^s,k^s]). For fixed u the map K → K, k ↦ [u,k] is a homomorphism, and [ŵ,K]·[p̂,K] = [K,H] for H = ⟨ŵ, p̂⟩ (the identity N(a−1)+N(b−1) = [N,⟨a,b⟩] of research-h, Lemma 2.1(2), whose proof works for any two elements acting on an abelian normal subgroup). One checks ŵ = t⁻¹(q p^g)t, so H = t⁻¹⟨p^g, q⟩t. Since Q/K is nilpotent and p^g, q generate it modulo commutators, ⟨p^g,q⟩K = Q, hence HK = Q and [K,H] = [K,HK] = [K,Q] (K is abelian). So k, k′ can be chosen with [ŵ,k_1][p̂,k_2] = κ⁻¹. For Theorem 1, the two pairs (a,b) and (b, a e_0) generate Q modulo γ_2(Q). ∎
+
+**Lemma 1.3 (bounded lifting through an abelian normal subgroup; proved here).** Let Q = ⟨a,b⟩ and K ⊴ Q abelian. If k_0, k_1 ∈ [K,Q], then (a k_0, b k_1) is carried to (a,b) by 8 generalized instructions.
+
+*Proof.* For m ∈ K, conjugating u_0 = a k_0 by m gives a k_0[a,m]. For m′ ∈ K the three instructions u_0 ← u_0u_1, u_0 ← u_0^{m′}, u_0 ← u_0u_1⁻¹ give a k_0·[ab,m′]^{b⁻¹} = a k_0 [ba, m″] with m″ = b m′ b⁻¹ (the factors k_0, k_1 act trivially on K). Since Q = ⟨a, ba⟩, [a,K]·[ba,K] = [K,Q] (research-h, Lemma 2.1(2)), so these 4 instructions can cancel k_0; then 4 symmetric instructions cancel k_1. ∎
+
+**Lemma 1.4 (centre-by-metabelian groups; proved here).** Let Q = ⟨a,b⟩ with Q″ central in Q. Then (i) every ζ ∈ Q″ has the form [c,μ] with c = [a,b] and μ ∈ Q′; (ii) for central ζ_0, ζ_1 ∈ Q″ the pair (aζ_0, bζ_1) is carried to (a,b) by 16 generalized instructions; (iii) every pair (a e_0, b e_1), e_i ∈ Q′, is within 24 generalized instructions of (a,b).
+
+*Proof.* (i) Q′ has class ≤ 2, so β(m,m′) = [m,m′] is bimultiplicative on Q′/Q″, and β(m^g, m′^g) = β(m,m′) because Q″ is central in Q; hence β(m^g,m′) = β(m, m′^{g⁻¹}). Q′ is the normal closure of c, so modulo Q″ every m is a product of conjugates (c^{±1})^{g_i}, and β(m,m′) = β(c, ∏(m′^{g_i⁻¹})^{±1}). As β(c,μ)β(c,μ′) = β(c,μμ′), the set {[c,μ]} is the whole group Q″. (ii) Since c = (b⁻¹)^a·b, we have [c,μ] = c⁻¹c^μ = b⁻¹·b^a·(b⁻¹)^{aμ}·b^μ, and the same product formed with u_1 = bζ_1 in place of b has the same value (ζ_1 is central and the exponents sum to 0). So the 8 instructions u_0 ← u_0u_1⁻¹; u_1 ← u_1^a; u_0 ← u_0u_1; u_1 ← u_1^μ; u_0 ← u_0u_1⁻¹; u_1 ← u_1^{μ⁻¹a⁻¹μ}; u_0 ← u_0u_1; u_1 ← u_1^{μ⁻¹} change (aζ_0, bζ_1) into (aζ_0[c,μ], bζ_1); choose μ with [c,μ] = ζ_0⁻¹ by (i). Symmetrically (with [b,a] and conjugates of a) 8 more instructions remove ζ_1. (iii) Q/Q″ is metabelian: by Lemma 1.2 eight instructions carry the image of (a e_0, b e_1) to that of (a,b); lifted to Q they end at some (aζ_0, bζ_1), ζ_i ∈ Q″; apply (ii). ∎
+
+**Theorem 1′ (summary of §2; proved here).** For every quotient Q of F and every pair U of F with unimodular exponent matrix, ℓ(U) ≤ d*_Q(U) ≤ ℓ(U) + C, where C = 8 if Q is nilpotent or abelian-by-nilpotent (in particular metabelian), C = 24 if Q″ is central, and **C = 32 if Q is soluble of derived length ≤ 3**.
+
+*Proof of the last case.* K = Q″ is abelian and Q/[K,Q] has central second derived subgroup, so 24 instructions (Lemma 1.4, lifted) carry the normalized pair to some (a k_0, b k_1) with k_i ∈ [K,Q]; Lemma 1.3 finishes with 8 more. ∎
+
+*Where the method stops (precise reason).* Lemma 1.3 reduces every abelian layer K to its central part K/[K,Q], and a central layer needs a bound on the number of conjugates of u_1^{±1} whose product is a given central element. For Q″ this is 4 (Lemma 1.4(i)) because Q′/Q″ is a cyclic module. For Q‴ the same computation gives ζ = ∏_i [γ_i, μ_i] over module generators γ_i of Q″/Q‴, and this module is not finitely generated in general (for F/F‴ it is the relation module of the free metabelian group, whose coinvariants F″/[F″,F] have infinite rank), so the number of factors is not bounded by this argument. A uniform bound for derived length ≥ 4, and for non-soluble finite groups, is **open** (§7, Question Q1).
+
+## 3. Theorem 2: the pro-p formulation (proved here)
+
+**Theorem 2.** Let G be a pro-p group topologically generated by a, b (for example the free pro-p group F̂_p on x, y), and let e_0, e_1 lie in the closed commutator subgroup of G. Then there are g_1,…,g_4 ∈ G such that the 8 instructions of Theorem 1 transform (a,b) into (a e_0, b e_1). Consequently:
+
+1. In F̂_p, a basis is reachable from (x,y) by finitely many generalized instructions with **pro-p conjugators** iff its exponent matrix (a priori in GL₂(ℤ_p)) lies in GL₂(ℤ), and then at most ℓ + 8 instructions are needed, ℓ being the Nielsen length of that matrix.
+2. For every pair U of F with unimodular exponent matrix, ℓ(U) ≤ d*_{F̂_p}(U) ≤ ℓ(U) + 8, for every prime p. This uses nothing about F except det M_U = ±1, so it is implied by, and implies, nothing about AC-triviality: **the pro-p completion with arbitrary conjugators sees exactly the exponent matrix.**
+3. (Structure.) Every automorphism of N_c, and every continuous automorphism of F̂_p, that is the identity on the abelianization is a product κ_1κ_2κ_3κ_4 of four *partial conjugations* — automorphisms fixing one element of a basis and conjugating the other — taken from the four fixed subgroups attached to (conjugated; fixed) = (x; y), (xy; y), (y; x), (yx; x).
+
+*Proof.* For each open normal subgroup N, G/N is a finite p-group generated by the images of a, b, and the images of e_0, e_1 lie in γ_2(G/N). By Theorem 1 the set S_N ⊆ (G/N)⁴ of solutions (g_1,…,g_4) is finite and non-empty, and solutions map to solutions under G/N → G/N′. An inverse limit of non-empty finite sets is non-empty; a point of lim S_N is a quadruple in G that solves the equations modulo every N, hence in G. (1): a basis (u_0,u_1) with integral exponent matrix is brought by ℓ Nielsen instructions to the form (x e_0, y e_1) with e_i in the closed commutator subgroup; conversely the instructions preserve integrality of the exponent matrix. (2) follows, the lower bound being read in ℤ_p² ⊇ ℤ². (3): in N_c or F̂_p every pair with unimodular exponent matrix is a basis (Frattini), so pairs correspond to automorphisms φ = (x ↦ u_0, y ↦ u_1); a Nielsen instruction is φ ↦ φ∘ν and the conjugation u_0 ← u_0^g is φ ↦ φ∘κ with κ: x ↦ x^{φ⁻¹(g)}, y ↦ y. The scheme of Theorem 1 therefore reads φ = κ^{(x;y)}∘(ν κ^{(x;y)} ν⁻¹)∘κ^{(y;x)}∘(ν′ κ^{(y;x)} ν′⁻¹) with ν: x ↦ xy and ν′: y ↦ yx, and ν κ^{(x;y)}_h ν⁻¹ is the partial conjugation of the basis (xy, y) that conjugates xy by ν(h). ∎
+
+**Remark (pronilpotent completion; the "local–global" reading).** In lim_c N_c the conjugators produced by the proof of Lemma 1.1 converge (step m multiplies them by elements of γ_m), so Theorem 2 also holds there. For a *type* τ (a finite sequence of instruction kinds with k conjugation slots) let Sol_τ(U) ⊆ F̂_p^k be the closed set of conjugator tuples for which τ carries U to (x,y). Because F is residually p, **U is AC-trivial iff Sol_τ(U) ∩ F^k ≠ ∅ for some τ**; Theorem 2 says Sol_τ(U) ≠ ∅ for one explicit τ of length ℓ(U)+8, for every prime p. So the equations defining AC-triviality are "everywhere locally soluble" with a bounded number of moves; the Andrews–Curtis problem for U is the question whether a *rational* (F-valued) solution exists for some longer type. I have no tool for the rational points (density of F in F̂_p does not help: Sol_τ(U) is closed, and nothing suggests it has interior).
+
+## 4. Theorem 4: families of conjugators with finitely many parameters stay faithful (proved here)
+
+Theorem 1 shows that the chain N_c is blind to the number of moves when conjugators are arbitrary. The next theorem shows that this is caused only by the unbounded *number of parameters* of an arbitrary conjugator, not by its length.
+
+**Syllable instructions.** E's 7 Nielsen instructions together with u_i ← z^{-k} u_i z^{k} for z ∈ {x,y} and **every k ∈ ℤ**, each counted as one move; distance d^syl. **Power instructions** additionally allow u_0 ← u_0u_1^k and u_1 ← u_1u_0^k for every k ∈ ℤ as single moves; distance d^pow. Clearly d^pow ≤ d^syl ≤ d (E's letter distance), d* ≤ d^syl, and all are finite in F exactly for AC-trivial pairs.
+
+**Theorem 4.** Let U be a pair of F of total syllable length σ.
+(a) (explicit) If D = d^syl_F(U) < ∞ then d^syl_{N_c}(U) = D for every c ≥ 2^{D−1}(σ+2) − 1. In general sup_c d^syl_{N_c}(U) = d^syl_F(U) in ℕ ∪ {∞}.
+(b) (Noetherian, ineffective) sup_c d^pow_{N_c}(U) = d^pow_F(U) in ℕ ∪ {∞}, and the supremum is attained from some class c_1(U) on if it is finite.
+In particular **U is AC-trivial iff sup_c d^syl_{N_c}(U) < ∞ iff sup_c d^pow_{N_c}(U) < ∞**: E's Corollary 4 survives when conjugation by an arbitrary power of a generator (and multiplication by an arbitrary power of the other relator) is a single move.
+
+*Proof.* (a) Let σ_r be the largest total syllable length after r instructions. Inversions and the swap preserve it, a multiplication at most doubles it, a conjugation by z^k adds at most 2: σ_r + 2 ≤ 2^r(σ + 2). If a sequence s of r ≤ D − 1 instructions (with any exponents) is applied to U, then s(U) ≠ (x,y) in F, so some ratio s(U)_i·t_i⁻¹ (t = (x,y)) is a non-trivial word with m ≤ σ_{D−1} + 1 ≤ 2^{D−1}(σ+2) − 1 syllables. By E's Lemma 2(a) the coefficient of Z_1⋯Z_m in its Magnus series is the product of its syllable exponents, hence non-zero: the word is non-trivial in N_c for c ≥ m, *whatever the exponents*. So no sequence of fewer than D instructions trivializes U in N_c for c ≥ 2^{D−1}(σ+2) − 1, while a sequence of D does. If d^syl_F(U) = ∞ the same argument with any L in place of D − 1 gives d^syl_{N_c}(U) > L for c ≥ 2^L(σ+2) − 1.
+(b) Fix a type τ: a sequence of r instruction kinds with m integer exponent slots. For k ∈ ℤ^m let τ_k(U) be the resulting pair. In the truncated Magnus algebra, (1+n)^k = Σ_j binom(k,j) n^j for nilpotent n and all k ∈ ℤ, so every Magnus coefficient of τ_k(U) is a polynomial in k_1,…,k_m with rational coefficients. Let J_c ⊆ ℚ[k_1,…,k_m] be the ideal generated by the coefficients of degree ≤ c of τ_k(U)_0 − (1+X) and τ_k(U)_1 − (1+Y). Then J_1 ⊆ J_2 ⊆ … and, by Magnus's theorem, τ_k(U) = (x,y) in N_c iff k is a zero of J_c. By Hilbert's basis theorem J_c = J_{c_0} for all c ≥ c_0 = c_0(U,τ). Hence an integer point k that trivializes U in N_{c_0} trivializes it in every N_c, i.e. in F (∩γ_c = 1). For each L there are finitely many types of length ≤ L; if d^pow_F(U) > L then for c ≥ max_τ c_0(U,τ) no type of length ≤ L has a trivializing exponent vector in N_c, so d^pow_{N_c}(U) > L. Together with d^pow_{N_c} ≤ d^pow_F this is (b). ∎
+
+*Remarks.* (1) The same proof covers conjugation by powers w^k of any fixed finite set of words w, and any polynomially parametrized family of conjugators. (2) No contradiction with Theorem 1: every element of N_c is a product of s(c) powers of x and y for some finite s(c) (bounded generation of f.g. nilpotent groups), so d^syl_{N_c}(U) ≤ ℓ(U) + 4 + 4s(c) < ∞ for every c; but s(c) → ∞ (a dimension count gives s(c) ≥ n_c, the Hirsch length of N_c, which grows like 2^{c+1}/c). (3) For the 𝔽_p-chain P_c^{(p)} part (a) fails as stated (x^{p^j} dies), and I did not look for a substitute.
+
+## 5. Corollary 5: AC-triviality as bounded conjugator complexity (proved here)
+
+For g ∈ N_c let |g|_c (resp. ‖g‖_c) be the least letter length (resp. number of syllables) of a word of F representing g. For K ≥ 1 let Λ_c(U;K) ∈ ℕ ∪ {∞} be the least B such that some generalized-instruction path of at most K moves from π_c(U) to (x,y) in N_c uses only conjugators with ‖g‖_c ≤ B (∞ if there is no path of ≤ K moves at all).
+
+**Corollary 5.** (i) Λ_c(U;K) is non-decreasing in c and non-increasing in K, and Λ_c(U;K) < ∞ for all c as soon as K ≥ ℓ(U) + 8. (ii) d^syl_{N_c}(U) ≤ K·max(1, Λ_c(U;K)), and Λ_c(U; d^syl_{N_c}(U)) ≤ 1. (iii) **U is AC-trivial iff there is K with sup_c Λ_c(U;K) < ∞.** The same holds with letter length |·|_c and E's d_{N_c} in place of ‖·‖_c and d^syl. Thus: AK(3) is not AC-trivial iff for every K ≥ 13 the conjugators needed by K-move paths in N_c have unbounded syllable length (equivalently unbounded letter length) as c → ∞; for K ≤ 12 I do not know whether K-move paths exist for all c.
+
+*Proof.* (i) Monotonicity is clear (project paths; allow more moves); finiteness is Theorem 1. (ii) A conjugation by g with ‖g‖_c = B is a composite of B syllable conjugations; a path realizing d^syl has conjugators with one syllable. (iii) If U is AC-trivial, project an F-path: K its length, B the largest syllable length of its conjugators. Conversely, by (ii) d^syl_{N_c}(U) ≤ K·max(1,B) for all c and Theorem 4(a) applies. For letters use E's Theorem 3 instead. ∎
+
+## 6. Proposition 6: four conjugations are necessary in general (proved here, by counting)
+
+Let r_j be the rank of the degree-j part of the free Lie ring on two generators (Witt: r_j = (1/j)Σ_{d|j} μ(d)2^{j/d}; r_1..r_8 = 2, 1, 2, 3, 6, 9, 18, 30) and n_c = r_1 + … + r_c the Hirsch length of N_c.
+
+**Proposition 6.** Let c ≥ 5. For every K there is a pair U_K = (x e_0, y e_1) of N_c, e_i ∈ γ_2(N_c), such that every generalized-instruction path of length ≤ K from (x,y) to U_K contains at least 4 conjugations. (By Theorem 1 there is a path with exactly 4 conjugations and 4 multiplications; and U_K is the image of an AC-trivial pair of F, obtained by lifting the four conjugators.)
+
+*Proof.* Fix a prime p > max(c, 9^{K+1}). By the Lazard correspondence (standard; valid for p > c) the Baker–Campbell–Hausdorff formula makes the free nilpotent Lie algebra of class c over 𝔽_p on X, Y into a group Γ of order p^{n_c}, of exponent p, generated by a = X, b = Y, with [Γ,Γ] = Φ(Γ) of order p^{n_c−2} and with the degree-c part (order p^{r_c}) central; Γ is a quotient of N_c. A coordinate u of a generating pair of Γ lies outside Φ(Γ), so its centralizer contains ⟨u⟩ × (degree-c part) and its conjugacy class has at most p^{n_c−1−r_c} elements. There are fewer than 9^{K+1} sequences of at most K instruction kinds (7 Nielsen kinds, 2 conjugation slots); a sequence with at most 3 conjugation slots has at most p^{3(n_c−1−r_c)} possible endpoints from (a,b). The number of pairs (a e_0, b e_1), e_i ∈ [Γ,Γ], is p^{2(n_c−2)}, and
+
+    2(n_c − 2) − 3(n_c − 1 − r_c) = 3r_c − n_c − 1 ≥ 1   for c ≥ 5
+
+(values 3, 3, 12, 18, 40, 70, 145 for c = 5,…,11; in general 3r_c − n_c − 1 = 2r_c − n_{c−1} − 1 > 0 because n_{c−1} ≤ (2^c/c)(1 + 4/c) + 2^{c/2+1} and r_c ≥ (2^c − 2^{c/2+1})/c, which gives the inequality for c ≥ 12; the script checks 5 ≤ c ≤ 60 from Witt's formula). Since 9^{K+1} < p, some pair (a e_0, b e_1) of Γ is not reached with ≤ 3 conjugations in ≤ K moves; any lift of it to N_c is the required U_K, because paths project. ∎
+
+So the number 4 of conjugations in Theorem 1 cannot be lowered for all pairs (classes 2, 3, 4 are not covered by the count). I did not determine whether the 4 multiplications are all necessary, nor the exact value of d*_{N_c}(AK(3)); for c ≥ 2 it lies in [6, 13]: a 5-move path would consist of Nielsen instructions only, contradicting E's exact value d_{N_2}(AK(3)) = 6.
+
+## 7. Lower-bound tools for generalized moves, and what is open
+
+1. *(proved here)* In nilpotent and abelian-by-nilpotent quotients there is **no** lower-bound tool beyond the abelianization: ℓ(U) ≤ d*_Q(U) ≤ ℓ(U) + 8.
+2. *(proved here, classical mechanism)* **Area.** If a path of K generalized instructions carries π(U) to (a,b) in Q, then a and b are products of at most 2^K conjugates of π(u_0)^{±1}, π(u_1)^{±1} (the count at most doubles at a multiplication and is unchanged otherwise). Hence d*_Q(U) ≥ log_2 Area_Q(U), where Area_Q(U) is the least such number of conjugates. In F this is the mechanism of the Dehn-function lower bounds for AC paths (Bridson, Lishak: externally reported), and those bounds therefore hold for arbitrary conjugators. But Area_Q(U) ≤ Area_F(U) < ∞ for every quotient Q of F, so area can never give growth over a family of quotients of a fixed U.
+3. *(open)* **Question Q1.** Is sup_Q d*_Q(U) < ∞ over all finite quotients Q of F, for every normally generating pair U (equivalently, by compactness, is U at finite generalized distance from (x,y) in the profinite completion of F, with profinite conjugators)? A negative answer for U = AK(3) would prove that AK(3) is not AC-trivial, since d*_Q ≤ d*_F; a positive answer for all U would show that finite quotients are blind to the number of generalized moves, as nilpotent ones are. By §2 the answer is yes (with the constant 32) on all quotients of derived length ≤ 3; the first undecided quotients are soluble of derived length 4 (e.g. F/[F‴,F] and its finite images) and non-soluble ones. For finite simple quotients, E's Proposition 5 gives finiteness but its move count is a covering number of a conjugacy class, which I did not bound uniformly.
+
+## 8. Failed attempts (precise reasons)
+
+- *A uniform bound for all soluble quotients.* The induction through the derived series stops at the central part of the fourth layer (Q‴/[Q‴,Q]): see "Where the method stops" in §2. Also, Lemma 1.1 itself (two conjugations per coordinate) does not extend beyond abelian-by-nilpotent groups by my argument: its correction step produces only [K, ⟨p^g,q⟩], and ⟨p^g,q⟩K = Q can fail when Q/K is not nilpotent; Lemmas 1.3–1.4 circumvent this at the cost of more moves.
+- *A lower bound for d*_{N_c}(AK(3)) growing with c.* Impossible: Theorem 1.
+- *Using density of F in F̂_p to produce F-valued solutions.* The solution sets Sol_τ(U) are closed and non-empty but I can prove nothing about their interior or their F-points; this is the original problem.
+- *An 𝔽_p-version of Theorem 4(a).* E's Lemma 2(b) detects a syllable x^{a} only in degree p^{v_p(a)}, which is not bounded independently of the exponents; no substitute found.
+- *Effective stabilization class in Theorem 4(b).* The Hilbert-basis argument is ineffective; I did not attempt degree bounds.
+
+## 9. Experiments (exact commands; light: < 10 s, < 100 MB each)
+
+`experiments/th06_proconj.py` implements the proof of Lemma 1.1 as an algorithm in N_c (exact integer Magnus series truncated at degree c; conjugators are products of powers of Lyndon-bracket commutators; the linear step (*) is solved over ℤ by column reduction) and an independent verifier (`--verify`) that rebuilds every conjugator from explicit free words and replays the 8 instructions.
+
+```
+python3 experiments/th06_proconj.py --selftest
+#  selftest: P_3^(2): |P|=128 |[P,P]|=8: two-conjugation lemma exhaustive OK
+#  selftest: 12 random pairs (x e0, y e1), classes 3-5: solved and verified
+#  selftest: AK1 AK2 AK3 AK4 MS3 P3, classes 2-4: solved and verified
+#  selftest passed
+python3 experiments/th06_proconj.py --solve AK3 --class 8 --out certificates/th06_ak3_8move_class8.json
+python3 experiments/th06_proconj.py --verify certificates/th06_ak3_8move_class7.json \
+        certificates/th06_ak3_8move_class8.json certificates/th06_ak2_8move_class8.json     # all OK
+```
+
+The first self-test line is independent of the solver: in the finite 2-group P_3^{(2)} (order 128) it enumerates all (g,g′) and checks that {(p^g q)^{g′}q⁻¹} = p·[P,P] for (p,q) = (x,y) and for (p,q) = (y, x e_0), all e_0 ∈ [P,P].
+
+**AK(3) (experiment; quotient-only, NOT trivializations in F).** ℓ(AK(3)) = 5 with Nielsen instructions 4,4,6,3,3 (E's numbering), giving the normalized pair V = (xxxYYYYxyxYXyyyXXyxYXYxyxYXYxyxYXyyyXXX, xyxYXYxyxYXYxyxYXyyyXXX) ≡ (x,y) mod [F,F]. The solver finds g_1,…,g_4 with the 8-move scheme carrying (x,y) to V modulo γ_{c+1}:
+
+| class c | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| largest commutator exponent | 3 | 8 | 10 | 11 | 78 | 305 | 5779 |
+| letter-length bound of g_1 | 3 | 35 | 185 | 677 | 5,799 | 47,225 | 793,975 |
+| letter-length bound of g_3 | 3 | 3 | 27 | 441 | 5,151 | 57,145 | 1,926,081 |
+
+So d*_{N_c}(AK(3)) ≤ 13 is certified for c ≤ 8 (Theorem 1 proves it for all c), while E's exact letter distances are 5, 6, 10, 11, ≥ 14 for c = 1,…,5. At class 4 the conjugators are g_1 = y³[x,y]⁸[x,[x,y]]¹⁰[[x,y],y]⁷, g_2 = [x,y]⁻¹[[x,y],y]⁻¹, g_3 = x⁻³[x,[x,y]]³, g_4 = [x,y]⁻¹[x,[x,y]]⁻³. The lengths in the table are those of one particular solution (not minimal); their growth is what Corollary 5 says must happen for *every* K-move scheme if AK(3) is not AC-trivial — but the same growth occurs for the AC-trivial AK(2) in this particular scheme (class 8: bounds 43,903 / 9,334 / 284,621 / 201,056), so the table is **not** evidence about AK(3). For P_3 (K's form), ℓ = 2 and d*_{N_c}(P_3) ≤ 10.
+
+## 10. Honest limits
+
+- Nothing here trivializes or obstructs AK(3). Theorems 1–2 are *negative* results about a class of approaches: they show that counting generalized moves in nilpotent, abelian-by-nilpotent or pro-p quotients can never obstruct anything.
+- Theorem 4 and Corollary 5 are reformulations (sharper than E's Corollary 4, with a larger move alphabet), not progress towards a growth proof; K's Proposition K3 warning applies unchanged.
+- Proposition 6 uses the Lazard correspondence as a cited standard fact; the general inequality 3r_c > n_c + 1 is proved for c ≥ 12 by the stated estimates and checked numerically for 5 ≤ c ≤ 60.
+- Literature: I could not search in this session. Bounded generation of IA-automorphism groups of free nilpotent / free pro-p groups by partial conjugations may well be known (I recall no reference); Bridson's and Lishak's area lower bounds are cited from memory. **No novelty is claimed.**
+- The certificates `certificates/th06_*.json` are quotient-only (mod γ_{c+1}); replayed on free words the scheme does not return AK(3).
+
+## 11. Advice to the coordinator (ranked)
+
+1. **Stop looking for obstructions that count moves in nilpotent / p-group / metabelian quotients, even with ACM-type or arbitrary-conjugator moves**: Theorem 1 and Lemma 1.2 bound that count by ℓ(U) + 8 for every pair. Any quotient-based non-triviality proof must control conjugator *complexity* (Corollary 5), or use quotients outside the abelian-by-nilpotent class.
+2. **Question Q1 is the sharp remaining "profinite" question**: is the number of generalized moves bounded over all finite quotients of a fixed U? The first test cases are centre-by-metabelian quotients and families of finite simple quotients (covering numbers). A proof of boundedness would close the finite-quotient route for the generalized metric; unboundedness for AK(3) would settle AK(3). TH05/TH10 may have relevant quotients.
+3. **Use the syllable metric in any future chain computation** (Theorem 4(a)): it is faithful with an explicit stabilization class, AK(n) has syllable length 8 for every n, and conjugation by x^k, y^k costs one move; a uniform-in-n statement (TH07) is more natural in this metric. Theorem 4(b)'s Noetherian argument also applies with n as an extra polynomial variable: for each fixed type τ there is one class c_0(τ) that decides, for all n at once, whether τ trivializes AK(n).
+4. Low priority: decide whether Lemma 1.1 holds in F/[F″,F] (would extend Theorem 1 to derived length 3); determine the exact d*_{N_c}(AK(3)).
+
+## 12. Files written
+
+- `research/research-th06.md` (this note).
+- `experiments/th06_proconj.py` (solver, verifier, self-test).
+- `certificates/th06_ak3_8move_class7.json`, `certificates/th06_ak3_8move_class8.json`, `certificates/th06_ak2_8move_class8.json` (quotient-only 8-move certificates, each < 3 kB).
+
+## References
+
+- Research notes B, E, H, K of this repository (conventions and results used: E Facts 0–1, Lemma 2, Theorems 1 and 3, Corollary 4; H Lemma 2.1; K Proposition K3).
+- W. Magnus, *Beziehungen zwischen Gruppen und Idealen in einem speziellen Ring*, Math. Ann. 111 (1935); E. Witt, *Treue Darstellung Liescher Ringe*, J. reine angew. Math. 177 (1937) (ranks r_j).
+- M. Lazard, *Sur les groupes nilpotents et les anneaux de Lie*, Ann. Sci. ENS 71 (1954) (correspondence for p > c); cited from memory.
+- A. Borovik, A. Lubotzky, A. Myasnikov, *The finitary Andrews–Curtis conjecture* (arXiv:1103.1295); L. Guyot, *On Andrews–Curtis conjectures for soluble groups* (arXiv:1612.06912).
+- M. Bridson, *The complexity of balanced presentations and the Andrews–Curtis conjecture* (arXiv:1504.04187); B. Lishak, *Balanced finite presentations of the trivial group* (J. Topol. Anal., 2017) — area-type lower bounds, cited from memory.

@@ -1,4 +1,5 @@
-"""TH10: torus-type class coordinates (research/research-th10.md, Theorems A/B).
+"""TH10: torus-type and Baumslag-Solitar-type class coordinates (research/research-th10.md,
+Theorems A, B, B').
 
 A cyclic word c is of torus type {p,q} if it is conjugate to phi(x^p y^q)^{+-1} for some
 phi in Aut(F2).  By Whitehead's theorem (minimal words of an orbit are connected by
@@ -77,6 +78,22 @@ def torus_type(w):
         if len(s) == 2:
             return tuple(sorted(s))
     return None
+
+_REP = {}
+def rep(w):
+    """canonical minimal representative of the Aut(F2)-orbit of the cyclic word w (up to inversion)"""
+    c = canon(w)
+    if c not in _REP:
+        _REP[c] = min(min_set(c))
+    return _REP[c]
+
+_BS = {}
+def bs_type(w):
+    """p >= 1 if w is an Aut-image (up to conjugacy/inversion) of v^-1 u^p v u^-(p+1); else None"""
+    if not _BS:
+        for p in range(1, 16):
+            _BS[rep("X" + "y" * p + "x" + "Y" * (p + 1))] = p
+    return _BS.get(rep(w))
 
 def same_cyclic(u, v):
     u, v = cyc(u), cyc(v)
@@ -162,13 +179,32 @@ def selftest():
                     c = pmul(ppow(g, p), ppow(h, -q))
                     assert quotient_abelian(H, g, h, c, n), (name, g, h, p, q)
                     checked += 1
+    # Theorem B' core: with c = V^-1 U^p V U^-(p+1) and N = <<c>> in H = <U,V>:
+    #   <U>N is normal in H and contains [U,V]  (so H/N is <u>-by-cyclic and w-bar lies in v^{+-1}<u>)
+    assert bs_type("XyyyxYYYY") == 3 and bs_type("xxxYYYY") is None and bs_type("XyxYY") == 1
+    ms = json.load(open(os.path.join(root, "certificates", "ms3_to_ak3_exact.json")))
+    ev.replay(ms)
+    assert any(bs_type(w) == 3 for w in ms["start"] + ms["target"])
+    assert sorted(ev.reduce(w) for w in ms["start"] + ms["target"]).count("xxxYYYY") == 1
+    bchecked = 0
+    for name, (n, gens) in GROUPS.items():
+        G = sorted(closure(gens, n))
+        for U, V in product(G, G):
+            H = closure([U, V], n)
+            for p in (1, 2, 3, 4):
+                c = pmul(pmul(pinv(V), ppow(U, p)), pmul(V, ppow(U, -p - 1)))
+                N = closure([pmul(pmul(pinv(g), c), g) for g in H], n)
+                CN = closure(list(N) + [U], n)          # <U>N (N normal in H)
+                assert pmul(pmul(pinv(V), U), V) in CN and pmul(pmul(V, U), pinv(V)) in CN, name
+                assert pmul(pmul(pinv(U), pinv(V)), pmul(U, V)) in CN, name
+                bchecked += 1
     # sharpness: exponent 42 does not make the three AK(3) torus quotients abelian
     n, gens = GROUPS["S3"]; t, r = gens
     assert not quotient_abelian(closure(gens, n), t, r, pmul(ppow(t, 2), ppow(r, -3)), n)
     assert not quotient_abelian(closure(gens, n), r, t, pmul(ppow(r, 3), ppow(t, -4)), n)
     n, gens = GROUPS["D7"]; r, t = gens
     assert not quotient_abelian(closure(gens, n), t, r, pmul(ppow(t, 2), ppow(r, -7)), n)
-    print(f"selftest passed ({checked} group-pair-type instances of Theorem B's core)")
+    print(f"selftest passed ({checked} instances of Theorem B's core, {bchecked} of Theorem B''s core)")
 
 def scan():
     root = os.path.dirname(HERE)
@@ -188,8 +224,11 @@ def scan():
                 t = torus_type(c)
                 if t and t[0] >= 2:
                     types[t] = types.get(t, 0) + 1
+                b = bs_type(c)
+                if b:
+                    types["BS%d" % b] = types.get("BS%d" % b, 0) + 1
     for key, types in sorted(res.items(), key=lambda kv: kv[0]):
-        print(",".join(key), dict(sorted(types.items())))
+        print(",".join(key), dict(sorted(types.items(), key=str)))
 
 if __name__ == "__main__":
     if "--selftest" in sys.argv: selftest()

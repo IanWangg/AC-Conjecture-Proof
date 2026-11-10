@@ -1,0 +1,245 @@
+#!/usr/bin/env python3
+"""Research agent TH13 (round 5): the two-parameter Akbulut-Kirby family
+
+    AK(k;p) = ( x^p y^-(p+1) ,  W_k ),   W_k = (xy)^k x ((yx)^k y)^-1,
+
+and its dual D(k;p) = ( (y^k x)^p y^k ((x y^k)^p x)^-1 , x^2 y^-(2k+1) ).
+Standard library only; imports G's exact torus-group tools read-only.
+
+  python3 experiments/th13_family.py --selftest      (about 1 minute)
+  python3 experiments/th13_family.py --write certificates
+"""
+import json
+import os
+import sys
+
+sys.dont_write_bytecode = True
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import g_torus as T  # noqa: E402
+import g_cert as C  # noqa: E402
+from g_torus import red, inv, cyc, apply, torus_class  # noqa: E402
+
+IDENT = ("x", "y")
+
+
+def W(k):
+    """Wirtinger/Artin relator of T(2,2k+1): (xy)^k x Y (XY)^k."""
+    return red("xy" * k + "x" + inv("yx" * k + "y"))
+
+
+def pw(p):
+    return "x" * p + "Y" * (p + 1)
+
+
+def qw(p):
+    return "y" * p + "X" * (p + 1)
+
+
+def AK(k, p):
+    return (pw(p), W(k))
+
+
+def psi(k):
+    """psi_k: x -> x(xy)^k, y -> xy; psi_k(x^2 y^-(2k+1)) is a rotation of W_k."""
+    return ("x" + "xy" * k, "xy")
+
+
+def phi(k):
+    """phi_k = psi_k^-1: x -> x y^-k, y -> y^k x^-1 y."""
+    return ("x" + "Y" * k, "y" * k + "Xy")
+
+
+def V(k, p):
+    """Artin relator of length 2p+1 in (x, y^k): (y^k x)^p y^k ((x y^k)^p x)^-1."""
+    c = "y" * k
+    return red((c + "x") * p + c + inv(("x" + c) * p + "x"))
+
+
+def dual(k, p):
+    return (V(k, p), "xx" + "Y" * (2 * k + 1))
+
+
+def artin(i, j, m):
+    """(x^i y^j)^m x^i ((y^j x^i)^m y^j)^-1 for integers i, j."""
+    a = T.power("x", i)
+    b = T.power("y", j)
+    return red((a + b) * m + a + inv((b + a) * m + b))
+
+
+def to_ints(w):
+    return tuple({"x": 1, "X": -1, "y": 2, "Y": -2}[c] for c in w)
+
+
+def is_trivial(r1, r2):
+    import f_descent
+    return f_descent.is_trivial_group(to_ints(r1), to_ints(r2))
+
+
+def orb(w):
+    w = cyc(w)
+    out = set()
+    for u in (w, inv(w)):
+        for r in range(len(u)):
+            out.add(u[r:] + u[:r])
+    return out
+
+
+def cyc_reduced_words(L):
+    """All cyclically reduced words of length exactly L."""
+    letters = "xXyY"
+    bad = {"x": "X", "X": "x", "y": "Y", "Y": "y"}
+    out = []
+
+    def rec(w):
+        if len(w) == L:
+            if bad[w[0]] != w[-1]:
+                out.append(w)
+            return
+        for c in letters:
+            if bad[w[-1]] != c:
+                rec(w + c)
+    for c in letters:
+        rec(c)
+    return out
+
+
+def classes_pm(u, p, q):
+    return {torus_class(u, p, q), torus_class(inv(u), p, q)}
+
+
+def power_side(k, p, L):
+    """Words of length L conjugate to p_p^{+-1} in F/<<W_k>> (exact, via phi_k)."""
+    f = phi(k)
+    tgt = classes_pm(apply(f, pw(p)), 2, -(2 * k + 1))
+    return [u for u in cyc_reduced_words(L) if torus_class(apply(f, u), 2, -(2 * k + 1)) in tgt]
+
+
+def braid_side(k, p, L, swapped=False):
+    """Words of length L conjugate to W_k^{+-1} in <x^p=y^(p+1)> (or <y^p=x^(p+1)>)."""
+    sw = ("y", "x")
+    Wk = apply(sw, W(k)) if swapped else W(k)
+    tgt = classes_pm(Wk, p, -(p + 1))
+    out = []
+    for u in cyc_reduced_words(L):
+        v = apply(sw, u) if swapped else u
+        if torus_class(v, p, -(p + 1)) in tgt:
+            out.append(u)
+    return out
+
+
+# ------------------------------------------------------------ certificates
+
+def cert_duality(k, p):
+    """AK(k;p) -> (red psi_k(V_{k,p}), W_k): one W_k-frozen ACM move (Theorem 2)."""
+    cert = C.Cert(pw(p), W(k))
+    C.acm_edge(cert, 0, psi(k), 2, -(2 * k + 1), V(k, p))
+    assert cert.s[0] == red(apply(psi(k), V(k, p)))
+    cert.cyclically_reduce(1)
+    cert.rotate_to(1, W(k))
+    return cert.to_json(list(cert.s))
+
+
+def cert_ak22():
+    """AK(2;2) = (xxYYY, W_2) -> (x, y) by two torus-frozen ACM moves and a
+    primitive finish: W_2 -> phi_1(x^2 Y^3)^-1 (Theorem G1 read backwards, xxYYY
+    frozen), then xxYYY = phi_1(b) -> phi_1(yXyXyXy) with phi_1(x^2 Y^3) frozen
+    (G's AK(2) move, transported), then the primitive relator is used."""
+    f = ("xY", "yyX")          # G's phi; phi(xyxYXY) = xxYYY
+    cert = C.Cert("xxYYY", W(2))
+    C.acm_edge(cert, 1, IDENT, 2, -3, inv(apply(f, "xxYYY")))
+    C.acm_edge(cert, 0, f, 2, -3, "yXyXyXy")
+    C.finish_primitive(cert, 0, f)
+    assert cert.s == ["x", "y"]
+    return cert.to_json(["x", "y"])
+
+
+def cert_p1(k):
+    """AK(k;1) = (xYY, W_k) -> (x, y): the first relator is primitive."""
+    cert = C.Cert("xYY", W(k))
+    C.finish_primitive(cert, 0, IDENT)
+    assert cert.s == ["x", "y"]
+    return cert.to_json(["x", "y"])
+
+
+def write(outdir):
+    jobs = [("th13_dual_k2_p2.json", cert_duality(2, 2)),
+            ("th13_dual_k2_p3.json", cert_duality(2, 3)),
+            ("th13_dual_k3_p3.json", cert_duality(3, 3)),
+            ("th13_ak_2_2_trivialization.json", cert_ak22()),
+            ("th13_ak_2_1_trivialization.json", cert_p1(2)),
+            ("th13_ak_3_1_trivialization.json", cert_p1(3))]
+    for name, cj in jobs:
+        cj["note"] = "research-th13.md; generated by experiments/th13_family.py --write"
+        path = os.path.join(outdir, name)
+        with open(path, "w") as fh:
+            json.dump(cj, fh, separators=(",", ":"))
+        print(name, "moves", len(cj["moves"]), "bytes", os.path.getsize(path))
+
+
+# ------------------------------------------------------------ self-test
+
+def selftest():
+    # 1. automorphisms and the frozen relator
+    for k in range(1, 9):
+        assert red(apply(phi(k), psi(k)[0])) == "x" and red(apply(phi(k), psi(k)[1])) == "y"
+        assert red(apply(psi(k), phi(k)[0])) == "x" and red(apply(psi(k), phi(k)[1])) == "y"
+        R = "xx" + "Y" * (2 * k + 1)
+        assert cyc(apply(psi(k), R)) in orb(W(k))
+        assert cyc(apply(phi(k), W(k))) in orb(R)
+    # 2. Theorem 2: phi_k(p_p) ~ V_{k,p} in <x^2 = y^(2k+1)>, necklace (k+1)^p k^(p+1)
+    for k in range(1, 9):
+        for p in range(1, 9):
+            cu = torus_class(apply(phi(k), pw(p)), 2, -(2 * k + 1))
+            assert cu == torus_class(V(k, p), 2, -(2 * k + 1))
+            assert cu[0] == -(2 * p + 1) and len(cu[1]) == 4 * p + 2
+            ts = sorted(e for g, e in cu[1] if g == "y")
+            assert ts == [k] * (p + 1) + [k + 1] * p
+            # image of W_k in C_p * C_(p+1): 4k+2 syllables (p >= 2)
+            if p >= 2:
+                assert len(torus_class(W(k), p, -(p + 1))[1]) == 4 * k + 2
+            # Delta_k = (xy)^k x swaps x and y modulo W_k
+            assert len(C.cyc(V(k, p))) == (2 * p + 1) * (k + 1)
+    # 3. group triviality (coset enumeration) for small parameters
+    for k in range(1, 5):
+        for p in range(1, 6):
+            assert is_trivial(*AK(k, p)) and is_trivial(*dual(k, p))
+    for (a, b, i, j) in [(3, 5, 2, 3), (5, 7, 3, 4), (4, 7, -1, -2), (5, 3, 2, 1)]:
+        assert abs(b * i - a * j) == 1
+        for m in (1, 2, 3):
+            assert is_trivial("x" * a + "Y" * b, artin(i, j, m))
+    assert not is_trivial("xxx" + "Y" * 5, artin(1, 1, 1))
+    # 4. Lemma 4 (b): F(a,b;i,j;m) relators are equal elements for (i,j)+l(a,b)
+    for (a, b, i, j) in [(3, 4, 1, 1), (2, 5, 1, 2), (3, 5, 2, 3)]:
+        for m in (1, 2):
+            c0 = torus_class(artin(i, j, m), a, -b)
+            for l in (-2, -1, 1, 2):
+                assert torus_class(artin(i + l * a, j + l * b, m), a, -b) == c0
+            assert torus_class(inv(artin(-i, -j, m)), a, -b) == c0
+    # 5. plateau lemmas, brute force (Theorem 3)
+    for (k, p) in [(1, 3), (2, 3), (3, 3), (2, 4)]:
+        for L in range(1, 2 * p + 3):
+            got = set(power_side(k, p, L))
+            want = (orb(pw(p)) | orb(qw(p))) if L == 2 * p + 1 else set()
+            assert got == want, (k, p, L, len(got))
+    for (k, p) in [(1, 3), (2, 3), (1, 4), (2, 4)]:
+        for sw in (False, True):
+            for L in range(1, 4 * k + 4):
+                got = set(braid_side(k, p, L, sw))
+                want = orb(W(k)) if L == 4 * k + 2 else set()
+                assert got == want, (k, p, L, sw, len(got))
+    # 6. Proposition 5: primitive words one ACM move away (exact, Lemma G4)
+    for k in range(1, 7):
+        for p in range(2, 8):
+            h1 = T.primitive_complete(apply(phi(k), pw(p)), 2, -(2 * k + 1))
+            h2 = T.primitive_complete(W(k), p, -(p + 1))
+            assert bool(h1 or h2) == ((k, p) == (1, 2)), (k, p, h1, h2)
+    print("th13_family self-test passed")
+
+
+if __name__ == "__main__":
+    if "--selftest" in sys.argv:
+        selftest()
+    elif "--write" in sys.argv:
+        write(sys.argv[sys.argv.index("--write") + 1])
+    else:
+        print(__doc__)

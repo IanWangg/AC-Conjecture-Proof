@@ -6,6 +6,7 @@ Standard library only; imports g_torus / f_descent / elementary_verify read-only
   python3 experiments/th09_killers.py --selftest          # all checks (about 1 min)
   python3 experiments/th09_killers.py --write certificates # MS(1,w) certificates
   python3 experiments/th09_killers.py --census 9           # killers of the trefoil group
+  python3 experiments/th09_killers.py --exchange 12 9 160  # exchange graph (bounded)
 
 Part 1  BS(1,2) = <x,y | x^-1 y x = y^2>: normal forms, and a compiler that turns
         "every element of x-degree -1 is conjugate to x^-1" into strict elementary
@@ -44,29 +45,10 @@ def bs_nf(w):
     return a, k
 
 
-class Cert:
-    """State (r0, r1) with recorded strict elementary moves."""
-
-    def __init__(self, r0, r1):
-        self.s = [G.red(r0), G.red(r1)]
-        self.start = list(self.s)
-        self.moves = []
-
-    def conj(self, i, g):
-        self.s[i] = G.red(g + self.s[i] + g.swapcase())
-        self.moves.append({"op": "conjugate", "i": i, "g": g})
-
+class _Ops:
     def conj_word(self, i, h):  # r_i <- h r_i h^-1
         for g in reversed(h):
             self.conj(i, g)
-
-    def inv(self, i):
-        self.s[i] = G.inv(self.s[i])
-        self.moves.append({"op": "invert", "i": i})
-
-    def mul(self, i, j):
-        self.s[i] = G.red(self.s[i] + self.s[j])
-        self.moves.append({"op": "multiply", "i": i, "j": j})
 
     def mul_conj(self, i, j, h, e):
         """r_i <- r_i * (h r_j^e h^-1), r_j restored afterwards."""
@@ -78,6 +60,48 @@ class Cert:
         if e < 0:
             self.inv(j)
         self.conj_word(j, G.inv(h))
+
+
+class ViewState(_Ops):
+    """The same primitives in theta-coordinates on top of a g_cert.View."""
+
+    def __init__(self, view):
+        self.v = view
+
+    @property
+    def s(self):
+        return self.v.U
+
+    def conj(self, i, g):
+        self.v.conj_word(i, g)
+
+    def inv(self, i):
+        self.v.invert(i)
+
+    def mul(self, i, j):
+        assert j == 1 - i
+        self.v.multiply(i)
+
+
+class Cert(_Ops):
+    """State (r0, r1) with recorded strict elementary moves."""
+
+    def __init__(self, r0, r1):
+        self.s = [G.red(r0), G.red(r1)]
+        self.start = list(self.s)
+        self.moves = []
+
+    def conj(self, i, g):
+        self.s[i] = G.red(g + self.s[i] + g.swapcase())
+        self.moves.append({"op": "conjugate", "i": i, "g": g})
+
+    def inv(self, i):
+        self.s[i] = G.inv(self.s[i])
+        self.moves.append({"op": "invert", "i": i})
+
+    def mul(self, i, j):
+        self.s[i] = G.red(self.s[i] + self.s[j])
+        self.moves.append({"op": "multiply", "i": i, "j": j})
 
     def json(self, target, description):
         assert self.s == list(target), (self.s, target)
@@ -114,6 +138,13 @@ def bs_push(C, i, j, limit=20000):
 def bs12_trivialize(s, limit=20000):
     """Certificate (XyxYY, s) -> (x, y) for any s of x-degree +-1 (Theorem 1)."""
     C = Cert(R_BS, s)
+    _bs12_core(C, limit)
+    return C.json(["x", "y"], "TH09 Theorem 1: (XyxYY, s) is AC-trivial; s is rewritten "
+                  "to x^-1 inside BS(1,2) by explicit conjugates of the frozen relator")
+
+
+def _bs12_core(C, limit=20000):
+    """C.s[0] == XyxYY exactly, C.s[1] of x-degree +-1; ends with C.s == [x, y]."""
     assert C.s[0] == R_BS
     if bs_nf(C.s[1])[1] == 1:
         C.inv(1)
@@ -131,11 +162,10 @@ def bs12_trivialize(s, limit=20000):
     C.inv(1); C.conj(0, "x"); C.mul(0, 1)         # r = yxYY
     C.conj(0, "Y"); C.inv(1); C.conj(0, "X"); C.mul(0, 1)   # r = Y
     C.inv(0); C.inv(1)
-    assert C.s == ["y", "x"]
+    assert list(C.s) == ["y", "x"]
     C.mul(0, 1); C.inv(1); C.mul(1, 0); C.conj(1, "x"); C.inv(1)
     C.conj(0, "Y"); C.mul(0, 1); C.inv(1)
-    return C.json(["x", "y"], "TH09 Theorem 1: (XyxYY, s) is AC-trivial; s is rewritten "
-                  "to x^-1 inside BS(1,2) by explicit conjugates of the frozen relator")
+    assert list(C.s) == ["x", "y"]
 
 
 # ----------------------------------------------------------------- Part 2
@@ -261,6 +291,74 @@ def check_torus_side(nmax=9, J=12):
     return out
 
 
+def check_gieseking(ns=range(1, 9), p=13):
+    """Theorem 6: traces (up to sign, mod 13) of rho(v^2), rho(y v^2 Y) for the
+    BS(1,2)-type killers v_j^+- of G_c against those of k_n, with O's witness
+    hom rho: H -> PSL(2,13) (H = even-degree subgroup of G_c, t = y^2)."""
+    import o_gc as O
+
+    def mm(A, B):
+        return (((A[0][0] * B[0][0] + A[0][1] * B[1][0]) % p, (A[0][0] * B[0][1] + A[0][1] * B[1][1]) % p),
+                ((A[1][0] * B[0][0] + A[1][1] * B[1][0]) % p, (A[1][0] * B[0][1] + A[1][1] * B[1][1]) % p))
+
+    def mi(A):
+        return ((A[1][1], -A[0][1] % p), (-A[1][0] % p, A[0][0]))
+
+    def neg(A):
+        return tuple(tuple((-e) % p for e in r) for r in A)
+
+    RA, RB, RT = ((0, 2), (6, 8)), ((1, 11), (6, 2)), ((0, 1), (12, 5))
+    M = {"a": RA, "A": mi(RA), "b": RB, "B": mi(RB)}
+    I2 = ((1, 0), (0, 1))
+
+    def ev(u):
+        R = I2
+        for ch in u:
+            R = mm(R, M[ch])
+        return R
+
+    for X in (RA, RB, RT):
+        assert (X[0][0] * X[1][1] - X[0][1] * X[1][0]) % p == 1
+    for lhs, rhs in ((mm(mm(RT, RA), mi(RT)), ev("Ba")), (mm(mm(RT, RB), mi(RT)), ev("Abb"))):
+        assert lhs in (rhs, neg(rhs))          # t a T = b^-1 a, t b T = a^-1 b^2
+    for X in (RA, RB):                          # order 7 in PSL(2,13)
+        Y = I2
+        for _ in range(7):
+            Y = mm(Y, X)
+        assert Y in (I2, neg(I2))
+    assert O.nf("xyxYYXy") == ("", 0)
+
+    def traces(w):
+        out = set()
+        for g in (w + w, "y" + w + w + "Y"):
+            u, k = O.nf(g)
+            assert k % 2 == 0
+            R = ev(u)
+            T = RT if k > 0 else mi(RT)
+            for _ in range(abs(k) // 2):
+                R = mm(R, T)
+            tr = (R[0][0] + R[1][1]) % p
+            out.add(min(tr, (-tr) % p))
+        return out
+
+    def fam(j):
+        Xj = G.power("X", j)
+        return "yxY" + Xj + "YX", "xyXY" + Xj + "Y"
+
+    for j in range(-6, 7):                      # the words are v(x^+-1, x^j y)
+        Q = G.red(G.power("x", j) + "y")
+        vp, vm = fam(j)
+        assert G.min_rot(G.cyc(vp)) == G.min_rot(bs_word("x", Q, 1))
+        assert G.min_rot(G.cyc(vm)) == G.min_rot(bs_word("x", Q, -1))
+    cand = [(traces(fam(j)[0]), traces(fam(j)[1])) for j in range(7)]
+    for j in range(-21, 22):
+        assert (traces(fam(j)[0]), traces(fam(j)[1])) == cand[j % 7]
+    allc = set().union(*[a | b for a, b in cand])
+    res = {n: sorted(traces(O.killer(n))) for n in ns}
+    excluded = [n for n in ns if not (set(res[n]) & allc)]
+    return cand, res, excluded
+
+
 # ----------------------------------------------------------------- Part 3
 
 def necklace_word(nk):
@@ -326,6 +424,98 @@ def print_census(kmax):
         print("k=%d necklace %-13s s=%-28s %s" % (k, c, w, st))
 
 
+# ------------------------------------------------- exchange exit (Lemma 2.2(ii))
+
+def exchange_neighbours(w, K=6, maxlen=90):
+    """Necklaces N' such that some trefoil-type word v (|matrix| <= K, length <=
+    maxlen) is conjugate to w^{+-1} in <x,y | xxYYY> and xxYYY has necklace N'
+    in G_v.  Bounded enumeration (g_torus.edges)."""
+    import g_cert as GC
+    nb = set()
+    for (M2, a, b, v) in G.edges(w, 2, -3, G.gl2_matrices(K), P=3, maxlen=maxlen):
+        if {abs(a), abs(b)} != {2, 3}:
+            continue
+        U1 = G.cyc(G.apply(GC.exact_inverse(G.aut_cached(M2)), "xxYYY"))
+        g3 = "y" if abs(b) == 3 else "x"
+        nb.add(canon_neck("".join(str(e) for g, e in G.torus_class(U1, a, b)[1] if g == g3)))
+    return sorted(nb, key=lambda t: (len(t), t))
+
+
+def two_step_certificate(r0, r1, K=6, P=14, maxlen=70):
+    """(r0, r1) with r1 of torus type.  Move r0 (r1 frozen) to a torus-type word
+    v such that r1 is conjugate in G_v to a primitive word; move r1 to it (v
+    frozen); finish.  Returns a strict certificate (r0, r1) -> (x, y) or None."""
+    import g_cert as GC
+    cert = GC.Cert(r0, r1)
+    M, p, q = G.torus_type(r1)
+    theta = G.aut_cached(M)
+    U0 = G.cyc(G.apply(GC.exact_inverse(theta), r0))
+    for (M2, a, b, v) in G.edges(U0, p, q, G.gl2_matrices(K), P=P, maxlen=maxlen):
+        if abs(a) < 2 or abs(b) < 2:
+            continue
+        th2 = GC.compose(theta, G.aut_cached(M2))
+        U1 = G.cyc(G.apply(GC.exact_inverse(th2), r1))
+        prims = G.primitive_complete(U1, a, b)
+        if not prims:
+            continue
+        GC.acm_edge(cert, 0, theta, p, q, v)
+        mid = list(cert.s)
+        GC.acm_edge(cert, 1, th2, a, b, prims[0][-1])
+        GC.finish_primitive(cert, 1, th2)
+        return {"format": "ordinary-ac-elementary-v1", "start": [G.red(r0), G.red(r1)],
+                "target": ["x", "y"], "moves": cert.moves,
+                "description": "TH09 exchange exit: relator 0 moved (relator 1 frozen) to the torus-type "
+                               "word %s of type (%d,%d); then relator 1 moved to a primitive word "
+                               "(%s in adapted coordinates); primitive finish" % (mid[0], a, b, prims[0][-1])}
+    return None
+
+
+def bs_exit_certificate(r0, r1, mmax=12):
+    """(r0, r1) with r1 of torus type x^p y^q (up to Aut).  If r0 is conjugate
+    modulo r1 to a BS(1,2)-type word v, move r0 to v (r1 frozen), then apply
+    Theorem 1 in coordinates adapted to v, then Nielsen-finish.  Strict
+    certificate (r0, r1) -> (x, y), or None if no BS(1,2)-type word with
+    |m| <= mmax lies in the class."""
+    import g_cert as GC
+    cert = GC.Cert(r0, r1)
+    M, p, q = G.torus_type(r1)
+    theta = G.aut_cached(M)
+    U0 = G.cyc(G.apply(GC.exact_inverse(theta), r0))
+    tc = {G.torus_class(U0, p, q), G.torus_class(G.inv(U0), p, q)}
+    for m in range(-mmax, mmax + 1):
+        for k in range(-8 * mmax, 8 * mmax + 1):
+            if math.gcd(m, k) != 1 or abs(q * m - p * k) != 1:
+                continue
+            for d in (1, -1):
+                g, u, v = _egcd(k, -m)
+                th = G.aut_from_matrix(((u * g * d, m), (v * g * d, k)))
+                w = G.cyc(G.apply(th, R_BS))
+                if G.torus_class(w, p, q) not in tc:
+                    continue
+                GC.acm_edge(cert, 0, theta, p, q, w)
+                mid = list(cert.s)
+                eta = GC.compose(theta, th)
+                view = GC.View(cert, eta, GC.exact_inverse(eta))
+                h, eps = GC.conj_rep(view.U[0], R_BS)
+                if eps < 0:
+                    view.invert(0)
+                    h, eps = GC.conj_rep(view.U[0], R_BS)
+                view.conj_word(0, G.inv(h))
+                assert view.U[0] == R_BS
+                _bs12_core(ViewState(view))
+                view.check()
+                GC.nielsen_finish(cert)
+                return {"format": "ordinary-ac-elementary-v1", "start": [G.red(r0), G.red(r1)],
+                        "target": ["x", "y"], "moves": cert.moves,
+                        "description": "TH09 BS(1,2) exit: relator 0 moved (relator 1 frozen) to the "
+                                       "BS(1,2)-type word %s = P^-1 Q P Q^-2 with (P, Q) = %s; then "
+                                       "Theorem 1 in the coordinates (P, Q); Nielsen finish" % (mid[0], eta)}
+    return None
+
+
+X7 = ("XXXYXXYxxy", "XYYXy")     # killer class 1121122 of the trefoil group
+
+
 def selftest():
     import elementary_verify as V
     for al, (be, h0, e) in RULES.items():       # rule identities in F2
@@ -344,11 +534,16 @@ def selftest():
         n += 1
     hits = check_braid_side(40)
     tor = check_torus_side(9, 12)
+    cand, res, excl = check_gieseking()
+    assert excl == [3, 4], excl
     rows = census(7)
     kill = [(c, tags) for k, c, w, triv, tags in rows if triv]
+    assert [c for c, _ in kill] == ["1", "112", "11122", "11212", "1111112", "1111222",
+                                    "1112122", "1121122", "1121212"], kill
     print("th09 self-test passed: 40 random BS(1,2) certificates replayed; "
-          "braid-side BS exits for n in %s only (n < 20); torus-side hits %s; "
-          "killers with k <= 7: %s" % (hits, tor, kill))
+          "braid-side BS exits for n in %s only (n < 20); torus-side hits (n: j) %s; "
+          "Gieseking side: candidate traces %s, k_n traces %s, excluded n = %s; "
+          "killers with k <= 7: %s" % (hits, tor, cand, res, excl, kill))
 
 
 MS1_EXAMPLES = ["XyxyX", "XYxyyX", "XyXYxxYxYXX", "XXyxyyxYX", "XyyXYYxxyXYxX", "XYYxyXyx" + "X"]
@@ -358,8 +553,22 @@ if __name__ == "__main__":
         selftest()
     elif "--census" in sys.argv:
         print_census(int(sys.argv[sys.argv.index("--census") + 1]))
+    elif "--exchange" in sys.argv:
+        i = sys.argv.index("--exchange")
+        K, kmax, ml = int(sys.argv[i + 1]), int(sys.argv[i + 2]), int(sys.argv[i + 3])
+        for k, c, w, triv, tags in census(kmax):
+            if triv:
+                print(k, c, tags, "trefoil-exchange neighbours:", exchange_neighbours(w, K, ml), flush=True)
     elif "--write" in sys.argv:
         d = sys.argv[sys.argv.index("--write") + 1]
+        c = two_step_certificate(*X7)
+        with open(os.path.join(d, "th09_x7_trivialization.json"), "w") as f:
+            json.dump(c, f)
+        print("th09_x7_trivialization.json", c["start"], len(c["moves"]))
+        c = two_step_certificate(necklace_word("112121122"), "xxYYY", K=12, P=3, maxlen=160)
+        with open(os.path.join(d, "th09_k9_112121122_trivialization.json"), "w") as f:
+            json.dump(c, f)
+        print("th09_k9_112121122_trivialization.json", c["start"], len(c["moves"]))
         for n, s in enumerate(MS1_EXAMPLES, 1):
             c = bs12_trivialize(s)
             path = os.path.join(d, "th09_ms1_%d.json" % n)
