@@ -29,3 +29,17 @@ for n in range(3, 11):
         L = (len(w)+len(a(m)) == 2*n+8+m, len(bm(m))+len(a(m)) == 2*n+9, len(bm(m))+len(cm(m)) == 4*n+7-2*m)
         okc = okc and t1 and t2 and t3 and all(L)
 print("Cor. C3: triangles (w,a_m,b_m), (w,b_m,c_m), (w,c_m,a_{m+1}) and the stated lengths, 3 <= n <= 10, 1 <= m <= n:", okc)
+# ---- Cor. C5/C6 (frames theta_m: x -> x, y -> x^(m-1) y; staircase X_m = (g_m, v_m))
+okf = True
+for n in range(3, 10):
+    w = "x"*n + "y" + "X"*(n+1) + "Y"; p = "x"*n + "Y"*(n+1); beta = "yxyXYX"
+    U = "x" + "Y" + "x"*(n-2) + "Y" + "X" + "y" + "X"*(n-1) + "y"            # U2(n-2,1)
+    okf = okf and (conj_in_B(U, p) or conj_in_B(U, inv(p)))
+    for m in range(1, n):
+        th = {"x": "x", "y": "x"*(m-1) + "y"}
+        g = "x" + "Y" + "x"*(n-1-m) + "Y" + "X" + "y" + "X"*(n-m) + "y"
+        v = "y" + "x"*m + "yXYX"
+        okf = okf and canon(subst(w, th)) == canon(w) and canon(subst(beta, th)) == canon(v) \
+                  and canon(subst(U, th)) == canon(g) and len(cyc(g)) == 2*n+5-2*m and len(g) + len(v) == 2*n+10-m
+    okf = okf and canon("x" + "YY" + "XyXy") == canon("XyXyxYY")              # g_{n-1} = f
+print("Cor. C5/C6: theta_m(w_n) ~ w_n, theta_m(beta) ~ v_m, theta_m(U2(n-2,1)) ~ g_m with the stated lengths, U2(n-2,1) in C_n; 3 <= n <= 9:", okf)

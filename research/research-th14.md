@@ -134,3 +134,164 @@ in F, then w is primitive in F(x,y). Hence if U∘(p,q) has a primitive relator,
 and of subgroups H ∩ a⟨g⟩a⁻¹, H ∩ b⟨g′⟩b⁻¹ for double-coset representatives a, b, where the representative
 of the trivial double coset may be taken to be 1; so H ∩ ⟨g⟩ = ⟨g⟩ is a free factor of H and g is primitive
 in H. The isomorphism F(x,y) → H, x ↦ p, y ↦ q carries w to g. ∎
+
+## 4. Theorem B2: composition is disjoint union, stably (stable; proved here)
+
+**Theorem B2.** Let U = (r₁,…,r_n) ⊂ F(x₁..x_n) be a balanced presentation of the trivial group and
+P = (p₁,…,p_n) ⊂ F(z₁..z_n) any n-tuple. Then in F_{2n} = F(x,z):
+(U(x), P(z)) ~ (U(P(z)), x₁,…,x_n), by 2ΣA_i + |U| macro moves and n inversions (A_i = Area_U(x_i)).
+If P also presents the trivial group, then (U∘P(x), z₁,…,z_n) ~ (U(x), P(z)) = U ⊔ P.
+
+*Proof.* (1) p_i(z) ↦ x_i⁻¹p_i(z) by Fact 0 (x_i⁻¹ ∈ ⟨⟨U⟩⟩). (2) Replace every letter x_i^{±1} of U by p_i(z)^{±1}:
+u x_i v ↦ u p_i v = (u x_i v)·v⁻¹(x_i⁻¹p_i)v, and u x_i⁻¹ v ↦ u p_i⁻¹ v = (u x_i⁻¹ v)·v⁻¹x_i (x_i⁻¹p_i)⁻¹ x_i⁻¹ v: one macro
+move per letter. Now the tuple is (U(P(z)), x_i⁻¹p_i(z)). (3) If x_i = ∏ g_k r_{j_k}^{ε_k} g_k⁻¹ in F(x), then
+p_i(z) = ∏ g_k(P) r_{j_k}(P)^{ε_k} g_k(P)⁻¹, so x_i⁻¹p_i ↦ x_i⁻¹ by A_i macro moves; invert. This proves the
+first claim (P arbitrary). If P presents the trivial group, so does U∘P (its normal closure in F(z) contains
+all p_i by (3)), and V = (U∘P(z), x₁..x_{n−1}) is a balanced presentation of the trivial group on 2n−1
+generators; by Theorem A the class of (V, x_n) is Aut(F_{2n})-invariant, in particular under the permutation
+x_i ↔ z_i. ∎
+
+**Corollaries (stable).** Let 𝔖 be the set of stable AC classes of balanced presentations of the trivial
+group (all ranks); ⊔ makes it a commutative monoid with unit the class of the standard presentation.
+(1) [U∘P] = [U] + [P]: composition of presentations of the same rank realizes the sum.
+(2) U∘P ~_st P∘U (n stabilizations; proof: (P∘U(x), z) ~ (P(x), U(z)) = s(U(x), P(z)) ~ s(U∘P(x), z) =
+(U∘P(z), x) ~ (U∘P(x), z), s the swap x ↔ z, the last step by Theorem A).
+(3) If P is stably AC-trivial then U∘P ~_st U for every U (run the trivialization of (P(z), w) inside
+F(x,z,w)); Theorem B is the sharp one-stabilization case P = (p,q) of corank ≤ 1.
+(4) The stably trivial presentations of rank n form a submonoid of (normally surjective endomorphisms of F_n,
+∘) containing Aut(F_n) and, for n = 2, every corank-≤1 pair. The stable AC conjecture in rank n says that
+this submonoid is everything.
+Consequence for AK(3): any factorization "member of the stable class of AK(3)" = W∘P gives [AK(3)] = [W] + [P];
+if W and P are both AC-trivial, AK(3) is stably AC-trivial. §5 looks for such factorizations.
+
+## 5. Exits for AK(3): what the theorems reduce the question to, one rigorous closure, and a bounded search
+
+Two finite tests on a rank-2 pair (a,b) with K = ⟨g a g⁻¹, b⟩ (g a conjugator; conjugating relators is AC):
+**E1** (Corollary B′): ⟨K, t⟩ = F for some t ⇒ (a,b) is AC-trivial after one stabilization.
+**E2** (Theorems B, B2): a proper rank-2 subgroup H = ⟨p,q⟩ ⊋ K ⇒ (gag⁻¹, b) = W∘(p,q), so
+[(a,b)] = [W] + [(p,q)] in 𝔖 provided W presents the trivial group.
+
+**Lemma E1 (both tests are finite; proved here).** Let Γ be the based Stallings graph of K ≠ F (rank 2,
+non-cyclic). (i) ⟨K,t⟩ = F for some t iff identifying some two vertices u ≠ v of Γ and folding gives the rose.
+(ii) Every rank-2 subgroup H ⊇ K is represented by a folded quotient of Γ (iterated identification of two
+vertices followed by folding).
+*Proof.* (i) ⇐: t = αβ⁻¹ with α, β labels of paths from the base to u, v. ⇒: write the reduced word t = α t″ β⁻¹
+with α the longest prefix readable in Γ from the base (ending at u) and β⁻¹ the longest remaining suffix
+readable backwards from the base (starting at v). If t″ ≠ 1, Γ plus an arc u → v labelled t″ is folded (no
+letter of the arc is readable at its ends, by maximality), is the Stallings graph of ⟨K,t⟩ and has rank 3,
+so ⟨K,t⟩ ≠ F. Hence t″ = 1 and the graph of ⟨K,t⟩ is fold(Γ/(u~v)); u ≠ v as t ∉ K.
+(ii) (Takahasi's argument.) The image Δ of Γ → Γ_H is a folded subgraph, so L = π₁(Δ) is a free factor of H
+containing K; rank L ≤ 2 and K ≤ L non-cyclic force rank L = 2, so L = H and Γ → Γ_H is onto; an onto
+morphism of folded graphs factors through successive single identifications + foldings. ∎
+
+**Lemma C** (§3) shows that E2 can never produce a new primitive relator; what E2 can produce is a
+decomposition into two *other* presentations.
+
+### 5.1 Proposition E3: E1 is closed for the standard AK(3) pair, for all conjugators (proved here)
+
+**Proposition E3.** Let r₂ = xyxy⁻¹x⁻¹y⁻¹ and let s₁ ∈ F be any word conjugate to (x³y⁻⁴)^{±1} modulo ⟨⟨r₂⟩⟩
+(for example s₁ = x³y⁻⁴, or any ACM replacement of it with the trefoil relator frozen). Then for no
+g, h, t ∈ F is ⟨g s₁ g⁻¹, h r₂ h⁻¹, t⟩ = F. So the cheapest stable exit E1 does not apply to AK(3) in standard
+form, whatever conjugates of the relators are used.
+
+*Proof.* Let Φ: F → SL₂(ℤ), x ↦ [[1,1],[0,1]], y ↦ [[1,0],[−1,1]]; Φ(xyx) = Φ(yxy) = [[0,1],[−1,0]], so Φ kills
+r₂, and Φ is onto. Put ρ = Φ(x³y⁻⁴) = [[13,3],[4,1]], trace 14. For M = [[a,b],[c,d]] let
+f_M(X,Y) = det(v, Mv) = cX² + (d−a)XY − bY² (v = (X,Y)ᵗ). Then f_{hMh⁻¹}(v) = f_M(h⁻¹v) for h ∈ SL₂(ℤ),
+f_{−M} = −f_M = f_{M⁻¹}; so the property R(M): "f_M represents 1 or −1 over ℤ" is invariant under
+SL₂(ℤ)-conjugation, sign change and inversion.
+*(a) R(ρ) fails:* f_ρ = 4X² − 12XY − 3Y² takes only the values 0, 4, 5 mod 8 (Y odd: 4X(X−3Y) ≡ 0 and −3Y² ≡ 5;
+Y even: ≡ 4X² + 4(Y/2)²).
+*(b) Reduction.* Suppose ⟨g s₁ g⁻¹, h r₂ h⁻¹, t⟩ = F. Passing to PSL₂(ℤ) = ⟨s⟩ * ⟨τ⟩ ≅ C₂ * C₃ (s, τ the images
+of S = [[0,−1],[1,0]] and ST = [[0,−1],[1,1]]), the images of g s₁ g⁻¹ and t generate. By the Grushko–Neumann
+theorem applied to F(a,b) → C₂ * C₃, there is a basis (P,Q) of F(a,b) with P ↦ s, Q ↦ τ^{±1}; hence the
+image of g s₁ g⁻¹ equals A(s,τ) for a primitive word A ∈ F(u,v). So p := A(S, ST) ∈ SL₂(ℤ) is ± an
+SL₂(ℤ)-conjugate of ρ^{±1}: |tr p| = 14 and R(p) fails by (a).
+*(c) Every primitive image of trace ±14 satisfies R.* Complete A to a basis (A,A′), q = A′(S,ST). Since
+[A,A′] is conjugate to [u,v]^{±1} and tr[S,ST] = 3, Fricke's identity tr[p,q] = ξ² + η² + ζ² − ξηζ − 2 gives
+ξ² + η² + ζ² − ξηζ = 5 for (ξ,η,ζ) = (tr p, tr q, tr pq). With |ξ| = 14 this forces ξηζ > 0 (otherwise the left
+side is ≥ 196), so |η|² + |ζ|² − 14|η||ζ| + 191 = 0. Apply this to all bases (p, pᵏq), k ∈ ℤ: with
+t_k = tr(pᵏq) the identity tr(pw) + tr(p⁻¹w) = tr p·tr w gives t_{k+1} + t_{k−1} = ξ t_k, and ξ t_k t_{k±1} > 0,
+so β_k = |t_k| ≥ 1 satisfies β_{k+1} + β_{k−1} = 14β_k and β_k² + β_{k+1}² − 14β_kβ_{k+1} + 191 = 0. Let γ = β_k be a
+minimum of the sequence and β its smaller neighbour: γ ≤ β ≤ 7γ, so β = 7γ − √(48γ² − 191) ≥ γ, i.e.
+12γ² ≤ 191, γ ≤ 3; and 48γ² − 191 is a nonnegative square only for γ = 2 (then β = 13 and the other
+neighbour is 15). So q* = pᵏq satisfies |tr q*| = 2 and {|tr pq*|, |tr p⁻¹q*|} = {13, 15}. As q* ≠ ±I it is
+parabolic: q* = ±hTᵐh⁻¹ with h ∈ SL₂(ℤ), T = [[1,1],[0,1]], m ≠ 0. Write h⁻¹ph = [[a,b],[c,d]]; then
+tr(pq*) = ±(tr p + mc) and tr(p⁻¹q*) = tr(pq*⁻¹) = ±(tr p − mc), so {|14 + mc|, |14 − mc|} = {13, 15} (replace
+mc by −mc if tr p = −14), hence |mc| = 1, c = ±1 = f_{h⁻¹ph}(1,0), and R(p) holds.
+(b) and (c) contradict each other. ∎
+
+*Remarks.* (1) The argument works modulo the centre of the trefoil group, so it also covers the exotic
+(non-standard) Nielsen classes of generating pairs of that group (Dunwoody–Pietrowski; recalled) — this is
+why E3 is not a formal consequence of G's Proposition G2(b). (2) It is the stable analogue of G2(b): G2 says
+no single ACM move from AK(3) reaches a primitive relator; E3 says no such move (with the trefoil relator
+frozen) reaches a pair whose relators extend to a generating triple. (3) Not done: the mirror statement with
+x³y⁻⁴ frozen (quotient C₃ * C₄), other n (a finite Vieta computation for each trace n²+n+2), and other
+members of the class (§5.2 is only a bounded search).
+
+### 5.2 Bounded search for E1 and E2 in AK(3)'s class (experiment)
+
+`experiments/th14_exits.py` (tools in `th14_stallings.py`; both self-tested, including a positive control: the
+composite AK(2)∘(x², yx⁻³) is detected and refactored). Members: the endpoints of all round-1–4
+certificates having AK(3) as one endpoint (48 pairs: AK(3) and its signed-permutation images, P₃, the second
+length-13 orbit, the Miller–Schupp members certified by D, G's T(2,7) form), taken in both orders. For each
+pair (a,b) the subgroups K = ⟨g a g⁻¹, b⟩ are formed for all g in the ball of radius L **and** for all relative
+rotations (g = (prefix of b)(prefix of a)⁻¹). E1: all vertex pairs of the Stallings graph (exact, Lemma E1(i)).
+E2: the full closure of folded quotients (exact, Lemma E1(ii)) when it has ≤ 1,500 graphs; otherwise only
+quotients reachable through graphs of rank ≤ 3 ("pruned", incomplete for that subgroup).
+
+RESULTS_PLACEHOLDER
+
+So within these bounds no member of AK(3)'s class is a corank-≤1 pair, and none factors through a proper
+rank-2 subgroup. **This is a bounded search over 48 known class members and short conjugators; it is not a
+proof that the stable exits are closed for the class** (only Proposition E3 is a proof, and only for the
+standard relators).
+
+**Why E2 hits are rare (heuristic, not a theorem).** A proper rank-2 overgroup H of K forces the two relator
+cycles to fold onto a rank-2 graph with more than one vertex, i.e. long common or periodic subwords in a
+suitable relative position; minimal-length class members have little overlap. Composite presentations are
+therefore more likely to be found among *long* members, which this light search does not reach.
+
+## 6. A machine-checked instance of Theorem A for C4 (stable; proved here by certificate)
+
+C4 = (x⁴yx⁻¹y, xy³xy⁻²). N proved Ŝ(C4) ⊇ D₆ and that the matrix of ε_y: y ↦ y⁻¹ is *not* in D₆; whether
+C4 ~AC ε_y(C4) in rank 2 is open (if not, C4 is a counterexample to the ordinary conjecture).
+`certificates/th14_c4_invy_stable1.json` is an explicit rank-3 sequence
+
+  (xxxxyXy, xyyyxYY, z) → (xxxxYXY, xYYYxyy, z) = (ε_y(C4), z),
+
+695 elementary moves (74 macro moves = 4A_y + 2|U|_y with the derivation of y found by the generator:
+area 15), peak total length 33, format `stable1-ac-elementary-rank3-v1`, checked by the independent strict
+replayer `experiments/th14_verify3.py` (self-test: two replays, nine negative controls). It is produced by
+`experiments/th14_cert.py` exactly as in the proof of Theorem A (ε_y = σ_y ε_z σ_y; the generator's best-first
+search supplies the expression of y⁻¹ as a product of 15 conjugates of the relators).
+**This certificate is a stable statement (one stabilization). It is not an ordinary AC equivalence between C4
+and ε_y(C4) and gives no information on whether one exists.**
+
+## 7. Remark: rank reduction by duality (stable; proved here, short)
+
+**Proposition B3.** Let P = (p₁..p_n) be a balanced presentation of the trivial group on x₁..x_n and suppose
+⟨p₁,…,p_n,t₁,…,t_k⟩ = F_n. Then P is stably AC-equivalent (k stabilizations) to a balanced presentation P^∨
+of rank k. For k = 1 this is Corollary B′ in every rank (rank-1 balanced presentations of the trivial group
+are (c^{±1})).
+*Proof.* As in Theorem B there is α ∈ Aut(F_{n+k}) with π∘α = π₀ (π: x_i ↦ p_i, z_j ↦ t_j; π₀: x_i ↦ x_i,
+z_j ↦ 1). Put A_i = α⁻¹(x_i), C_j = α⁻¹(z_j): a basis with A_i ≡ p_i modulo ⟨⟨z⟩⟩, so (P, z) ~ (A, z) by
+inserting z-letters. By Theorem A (applied to the presentation (P, z₁..z_{k−1}) and the generator z_k) the
+class of (P,z) is Aut(F_{n+k})-invariant, so (A, z) ~ α(A, z) = (x₁..x_n, α(z₁),…,α(z_k)) ~ (x, P^∨(z)) where
+P^∨_j is α(z_j) with the x-letters deleted; (x, P^∨(z)) is the n-fold stabilization of P^∨. ∎
+(For n = k = 2, t = (x,y), one finds P^∨ = P: no content. The content is for k < n.)
+
+## 8. Failed attempts and what they show
+
+1. *AK(3) stably trivial via E1.* Closed rigorously for the standard relators and all conjugators
+   (Proposition E3); no hit for the 48 known class members within §5.2's bounds.
+2. *A shorter rank-2 presentation stably equivalent to AK(3) via factorization (E2).* No factorization found
+   (§5.2). Substitution U ↦ U∘(p,q) only lengthens, and by Lemma C it never creates a primitive relator; so
+   Theorems B/B2 by themselves produce no presentation of length ≤ 13 stably equivalent to AK(3). The length
+   ≤ 13 exit of the seed was not reached.
+3. *Derivation of x over C4.* The best-first search found y (area ≤ 15) but not x within 1.2·10⁶ nodes at
+   length cap 28; x is then obtained from y (x = x³·x⁻² after deleting y's from the relators: area ≤ 107), so
+   certificates for automorphisms that need A_x (x ↔ y, x ↦ xy) were not generated — only ε_y, which needs
+   A_y alone. This is a cost issue, not an obstruction: Theorem A covers them.
+4. *Two stabilizations.* The same basis-completion trick with two new generators is a tautology
+   (Proposition B3 with n = k = 2 returns P itself). I found no argument giving more from a second
+   stabilization than B2.

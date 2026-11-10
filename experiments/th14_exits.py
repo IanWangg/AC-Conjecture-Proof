@@ -5,8 +5,9 @@ For a pair (a,b) and every conjugator g with |g| <= L (both orders of the pair),
           stabilization.
   exit E2 (Theorems B, B2): a proper rank-2 subgroup H = <p,q> > K, so (gag^-1, b) = W o (p,q); reported with
           the rewriting W, the basis P = (p,q), their cyclic lengths, and whether H has corank <= 1.
-Usage:  python3 experiments/th14_exits.py L [--members FILE | --pair a b]     (default: AK(3) class members
-        read from the certificates of this repository)
+Usage:  python3 experiments/th14_exits.py L [--e1only] [--pair a b | --maxlen N [--skip K]]   (default: the AK(3) class
+        members read from the certificates of this repository; conjugators = ball of radius L plus all
+        relative rotations)
         python3 experiments/th14_exits.py --selftest
 """
 import glob
@@ -27,8 +28,8 @@ def members_from_certificates():
             c = json.load(open(f))
         except Exception:
             continue
-        if c.get('format') != 'ordinary-ac-elementary-v1':
-            continue
+        if c.get('format') != 'ordinary-ac-elementary-v1' or os.path.basename(f).startswith('th'):
+            continue          # rounds 1-4 only, so that the member list does not depend on round-5 files
         s, t = tuple(cyc(w) for w in c['start']), tuple(cyc(w) for w in c['target'])
         key = lambda p: tuple(sorted(p))
         if key(s) == key(AK3) or key(t) == key(AK3):
@@ -47,6 +48,9 @@ def conjugators(a, b, L, rotations=True):
     return sorted(gs, key=lambda w: (len(w), w))
 
 
+E1_ONLY = False
+
+
 def scan(pair, L, limit=1500, rotations=True):
     """Returns (subgroups tested, E1 hits, E2 hits, number of subgroups whose quotient closure was pruned
     to rank <= 3 because it exceeded `limit` graphs)."""
@@ -60,6 +64,8 @@ def scan(pair, L, limit=1500, rotations=True):
                 continue
             if corank1(G) is not None:
                 e1.append((ga, b))
+            if E1_ONLY:
+                continue
             try:
                 Q = quotients(G, limit=limit)
             except RuntimeError:
@@ -110,12 +116,15 @@ if __name__ == '__main__':
         selftest()
     else:
         L = int(sys.argv[1])
+        E1_ONLY = '--e1only' in sys.argv
         if '--pair' in sys.argv:
             i = sys.argv.index('--pair')
             mems = [(sys.argv[i + 1], sys.argv[i + 2])]
         else:
             maxlen = int(sys.argv[sys.argv.index('--maxlen') + 1]) if '--maxlen' in sys.argv else 10**9
             mems = [m for m in members_from_certificates() if len(m[0]) + len(m[1]) <= maxlen]
+            if '--skip' in sys.argv:
+                mems = mems[int(sys.argv[sys.argv.index('--skip') + 1]):]
         tot1 = tot2 = 0
         for m in mems:
             e1, e2 = report(m, L)

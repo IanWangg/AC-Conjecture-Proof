@@ -95,6 +95,12 @@ def selftest():
     print("p_n = x^n Y^(n+1), n = 3..12: Stab(p_n) = {I}, to p_n^-1: {-I}, 8 minimal words")
     for n in range(2, 7):
         show(f"k_{n}", "x" * n + "YXyy")
+    for n in range(2, 30):          # type-II maps lengthen k_n: uniform proof that Stab(k_n^{+-1}) = 1, n >= 3
+        w = "x" * n + "YXyy"
+        assert [len(canon(apply(g, w))) for g in GENS[8:]] == [n + 5, n + 5, 2 * n + 3, 2 * n + 3]
+        if 3 <= n <= 12:
+            p, m, k = stabilizer(w); assert p == {I2} and m == set() and k == 8
+    print("k_n: type-II lengths n+5, n+5, 2n+3, 2n+3 (n = 2..29); Stab(k_n^{+-1}) trivial for n = 3..12")
     assert cyc(apply({"x": "X", "y": "yx"}, c)) in [inv(c)[i:] + inv(c)[:i] for i in range(7)]
     print("th11_stab self-test passed")
 

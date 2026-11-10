@@ -15,8 +15,10 @@ Notation: X = x⁻¹, Y = y⁻¹; G_n = BS(n,n+1) = ⟨x,y | r_n⟩, r_n = x⁻�
 | T3 | For σ(w) = ±1: the class of w contains a primitive element of F₂ ⇔ w ~ x^{±1} ⇔ ℓ(w) = 1. Hence MS(n,w) is AC-trivial whenever ℓ(w) = 1 (one ACM move + Lemma D3); every MS(1,w) is of this kind | proved here |
 | T4 | ℓ = 3 (n ≥ 2): the n(n−1) classes with σ = +1 are C_b = [x²y^bx⁻¹y^{−b}], b ∈ ℤ/n(n+1), n ∤ b, (n+1) ∤ b; x y^a x y^{b′} X y^{c′} ∈ C_b iff b ≡ b′ (mod n+1) and b ≡ −c′ (mod n); ι(C_b) = C_{−b} | proved here |
 | T5 | C's bridge word XYx²Y (the AK(n) partner) lies in C_{2n+1}, so ℓ = 3: **for every n ≥ 2, including n = 2, no primitive element is conjugate to it in G_n**, and no single ACM move from M_n = MS(n, XYx²Y) reaches a primitive relator | proved here (uses G2(b)) |
-| T6 | Divisor classes: if b | n or b | n+1, every MS(n,w) with w ∈ C_b^{±1} is AC-trivial by two ACM moves and D3, because in ⟨x,y | y^bxy^{−b} = x²⟩ the relator r_n is conjugate to the primitive y⁻¹x^{±(2^m−1)}. Sharp for these representatives: r_n is conjugate to a primitive in ⟨x,y | y^bxy^{−b} = x²⟩ iff b | n or b | n+1 | proved here; certificates |
+| T6 | Divisor classes: if b divides n or n+1, every MS(n,w) with w ∈ C_b^{±1} is AC-trivial by two ACM moves and D3, because in ⟨x,y ∣ y^bxy^{−b} = x²⟩ the relator r_n is conjugate to the primitive y⁻¹x^{±(2^m−1)}. Sharp for these representatives: r_n is conjugate to a primitive in ⟨x,y ∣ y^bxy^{−b} = x²⟩ iff b divides n or n+1 | proved here; certificates |
 | T7 | n = 2: the bridge class C_5 = C_{−1} **is** a divisor class (the Johnson class), so every MS(2,w) with ℓ(w) ≤ 3 is AC-trivial. n = 3: the six ℓ = 3 classes are C_{±1}, C_{±2} (AC-trivial) and C_{±5} (bridge, mirror), so **every MS(3,w) with ℓ(w) ≤ 3 is AC-trivial or AC-equivalent to AK(3)**. For n ≥ 3 the bridge class is never a divisor class | proved here (with C's and D's certificates) |
+| T8 | Half classes (2b ≡ 0 mod n or mod n+1) are one ACM move from a T(2,m) torus pair, m = n+1 or n, with a six-syllable partner; their triviality is open in general | proved here (reduction only) |
+| T9 | **Generalized AK pairs.** For β ≢ 0 (mod n+1) let P_β = xy^{−β}xy^{β}x⁻¹y⁻¹ and AK_β(n) = (xⁿy^{−(n+1)}, P_β); AK_{−1}(n) = AK(n). Then P_β ∈ C_b with b ≡ β (mod n+1), b ≡ 1 (mod n), and MS(n,w) ~AC AK_β(n) for all w ∈ C_b^{±1}, by two ACM moves and no automorphism (β = −1 is C's theorem). Symmetrically for the column b ≡ −1 (mod n+1) with AK′_γ(n) = (x^{n+1}y^{−n}, xy^{−γ}xy⁻¹x⁻¹y^{γ}). Consequences: AK_1(n) is AC-trivial for all n ≥ 2; AK_1(3), AK_2(3) are AC-trivial while AK_3(3) = AK(3); and **holdout P2 ~AC AK_2(4) = (x⁴y⁻⁵, xy⁻²xy²x⁻¹y⁻¹) ~AC AK_{−2}(5)**, a torus-knot pair | proved here; certificates |
 | E1 | D's 34 certified MS(3,w) members of AK(3)'s class lie in exactly **two** BS(3,4)-classes, C_{−5} (17) and its mirror C_5 (17), and these are all benchmark presentations in those classes: all 34 are one r-frozen ACM move from C's bridge presentation or from MS(3, yx²y) | exact computation |
 | E2 | Of the 1190 benchmark presentations, 330 have ℓ = 1 and 244 lie in divisor classes: for all 574 a certificate was generated from the proofs and replayed by the strict verifier (67 of them are not in Shehper et al.'s greedy-solved list). All 212 with ℓ = 5 are unsolved there | exact computation + certificates |
 | E3 | Holdout P2's class contains the ℓ = 3 classes C_{±3} of BS(4,5) and C_{±14} of BS(5,6) (D's certificates + T2). For n = 4 the ℓ = 3 classes are: C_{±1}, C_{±2} trivial (T6), C_{±6} trivial (L's certificates + T2), C_{±3} ~ P2, C_{±9} ~ AK(4) or its mirror, C_{±7} open | exact computation on certified endpoints |
@@ -25,7 +27,7 @@ Notation: X = x⁻¹, Y = y⁻¹; G_n = BS(n,n+1) = ⟨x,y | r_n⟩, r_n = x⁻�
 
 Read: `README.md` in full; status paragraphs and coordinator reviews of notes A–O; in full C, G §2–6, D §3 and §4.3–4.5, F §3 (Prop. F2); skimmed L §3.5, K, O; read `experiments/g_bs.py` and `elementary_verify.py`. What I use: Lemma G0 (ACM moves are AC composites), Lemma D2 (AC-triviality is Aut(F₂)-invariant), Lemma D3 (a primitive relator gives AC-triviality), C's theorem M_n ~AC AK(n) (`certificates/ms3_to_ak3_exact.json` for n = 3), D's certificates `d_ak3_to_ms*.json`, `d_ms2[ab]_to_ms*.json`, L's `l_ms*_trivialization.json`, Proposition G2(b).
 
-Direction: the seed. G's `g_bs.py` searched for conjugators yˢ in a window |s| ≤ 30–60, so its negatives were bounded; G asked for "the full theory of BS-frozen moves". The observation that makes this exact is that for x-exponent sum σ ≠ 0 the conjugator is *unique* (it is the solution of a rational fixed-point equation), and the classes are cosets of a lattice. This turns the Miller–Schupp family into finitely many classes per t-length and gives uniform trivialization theorems, which no earlier note has. Two corrections to the seed's expectations: (i) every element with σ = ±1 is a killer (T1), so there is nothing to characterize beyond σ; (ii) the bridge class contains no primitive element **for n = 2 either** (T5) — the difference between n = 2 and n ≥ 3 is instead the arithmetic coincidence of T7. TH09 covers n = 1 and the trefoil; I use n = 1 only through the one-line remark after T3.
+Direction: the seed. G's `g_bs.py` searched for conjugators yˢ in a window |s| ≤ 30–60, so its negatives were bounded; G asked for "the full theory of BS-frozen moves". The observation that makes this exact is that for x-exponent sum σ ≠ 0 the conjugator is *unique* (it is the solution of a rational fixed-point equation), and the classes are cosets of a lattice. This turns the Miller–Schupp family into finitely many classes per t-length and gives uniform trivialization theorems, which no earlier note has. It also yields (T9) a two-line proof and a generalization of C's bridge: the classes in the "row" b ≡ 1 (mod n) are exactly the pairs AK_β(n) with the AK torus relator, which places the holdout P2 on the torus-knot locus. Two corrections to the seed's expectations: (i) every element with σ = ±1 is a killer (T1), so there is nothing to characterize beyond σ; (ii) the bridge class contains no primitive element **for n = 2 either** (T5) — the difference between n = 2 and n ≥ 3 is instead the arithmetic coincidence of T7. TH09 covers n = 1 and the trefoil; I use n = 1 only through the one-line remark after T3.
 
 ## 2. Results with proofs
 
@@ -66,7 +68,7 @@ Both halves are pinch-free, so by Britton's lemma the junction x^{−d₁}y^{−
 
 (d) The last assertion is Collins' lemma (σ ≠ 0 excludes the base) plus a conjugation by a power of y. Let S be the set of sign-change positions i (d_{i+1} = −d_i); |S| = 2m. By (a), φ: ℤ^ℓ/Λ_d → ∏_{i∈S} ℤ/p_{i+1}, a ↦ (a_i mod p_{i+1}), is a well-defined homomorphism; it is onto, its target has order (n(n+1))^m, and the cyclically reduced cosets are the preimage of the n^m(n−1)^m tuples without zero entry. By (b), (c) distinct such cosets are distinct classes. ∎
 
-**Corollary (exact decision, unique conjugator).** For σ ≠ 0 the system a″ − a = Σk_iv_i has a unique rational solution (the recursion k_{i+1} = (k_iq_i − δ_i)/p_{i+1} closes up to the fixed-point equation k₁ = αk₁ + β with α = ∏q_i/∏p_i ≠ 1); the elements are conjugate iff it is integral for some shift. `experiments/th18_bs.py` implements this (`cls`, `solve`, `bs_path`); it replaces the bounded window of `g_bs.conjugate`. Geometrically, k₁p₁ = s is forced because in the affine quotient y ↦ (t ↦ t+1), x ↦ (t ↦ nt/(n+1)) an element with σ ≠ 0 has a unique fixed point.
+**Corollary (exact decision, unique conjugator).** For σ ≠ 0 the system a″ − a = Σk_iv_i has a unique rational solution (the recursion k_{i+1} = (k_iq_i − δ_i)/p_{i+1} closes up to the fixed-point equation k₁ = αk₁ + β with α = ∏q_i/∏p_i ≠ 1); the elements are conjugate iff it is integral for some shift. `experiments/th18_bs.py` implements this (`cls`, `solve`, `bs_path`); it replaces the bounded window of `g_bs.conjugate`. Geometrically, k₁p₁ = s is forced because in the affine quotient of G_n (y ↦ the translation t ↦ t+1, x ↦ a homothety of ratio (n/(n+1))^{±1}, the sign depending on the composition convention) an element with σ ≠ 0 has a unique fixed point.
 
 ### 2.3 Theorem T3 (the primitive class)
 
@@ -116,6 +118,38 @@ So for the representatives w_{b′}, b′ ≡ b (mod n(n+1)), of a class C_b the
 
 **(d)** *General n.* w ∈ C_{2n+1}^{±1} ⇒ MS(n,w) ~AC AK(n) (C + one ACM move); w ∈ C_{−(2n+1)}^{±1} ⇒ ι(MS(n,w)) ~AC AK(n), so MS(n,w) is AC-trivial iff AK(n) is (Lemma D2).
 
+### 2.8 Proposition T8 (half classes are T(2,m) torus pairs)
+
+Call C_b a *half class* if 2b ≡ 0 (mod n) (n even) or 2b ≡ 0 (mod n+1) (n odd).
+
+**(a)** *n = 2h even, k ≢ 0 (mod n+1), w = x²y^kx⁻¹y^h. Then w ∈ C_b with b ≡ k (mod n+1), b ≡ h (mod n); in ⟨x,y | w⟩, r_n = u⁻²y^{−(n+1)} with u = xy^k. So MS(n,w) is one ACM move from θ(T), T = (u²y^{n+1}, uy^{−k}uy^ku⁻¹y^h), θ = (u ↦ xy^k, y ↦ y), and MS(n,w) is AC-trivial iff the torus pair T is (Lemma D2).*
+**(b)** *n = 2h−1 odd, k ≢ 0 (mod n), w = x²y^hx⁻¹y^k. Then w ∈ C_b with b ≡ h (mod n+1), b ≡ −k (mod n); in ⟨x,y | w⟩, xr_nx⁻¹ = yⁿu⁻² with u = x⁻¹y^{−k}. So MS(n,w) is one ACM move from θ(T′), T′ = (u²y^{−n}, u⁻¹y^{−k}u⁻¹y^huy^k), θ = (u ↦ x⁻¹y^{−k}, y ↦ y).*
+*Every half class arises in (a) or (b).*
+
+*Proof.* (a) w = x·(xy^k)·x⁻¹y^h = 1 gives u = x⁻¹y^{−h}x, so x⁻¹yⁿx = u⁻² and r_n = u⁻²y^{−(n+1)}; θ⁻¹(x) = uy^{−k} gives θ⁻¹(w) = uy^{−k}uy^ku⁻¹y^h. (b) w = x·(xy^hx⁻¹)·y^k = 1 gives xy^hx⁻¹ = x⁻¹y^{−k} = u, so xy^{n+1}x⁻¹ = u² and xr_nx⁻¹ = yⁿu⁻²; θ⁻¹(x) = y^{−k}u⁻¹ gives θ⁻¹(w) = y^{−k}u⁻¹y^{−k}u⁻¹y^huy^{2k}, a rotation of u⁻¹y^{−k}u⁻¹y^huy^k. The class labels follow from T4, and k is arbitrary. ∎ (`half_path` in the self-test replays both identities as single relator applications for 2 ≤ n ≤ 9.)
+
+So the half classes are the Miller–Schupp classes with a T(2,m) torus-type neighbour (m = n+1 or n) whose partner has at most six syllables in C₂ * C_m. For k ≡ ±h the class is the divisor class C_{±h} (T6). For the other k I have **no proof of triviality**; what is known is in §3 (E1/E2): trivial for n = 4 (L's certificates), reported greedy-solved for n = 5, 6.
+
+### 2.9 Theorem T9 (the row and the column through the bridge class: generalized AK pairs)
+
+Let n ≥ 2. For β ≢ 0 (mod n+1) put **P_β = xy^{−β}xy^{β}x⁻¹y⁻¹** and **AK_β(n) = (xⁿy^{−(n+1)}, P_β)**; for γ ≢ 0 (mod n) put Q_γ = xy^{−γ}xy⁻¹x⁻¹y^{γ} and AK′_γ(n) = (x^{n+1}y^{−n}, Q_γ). Note P_{−1} = Q_{−1} = xyxy⁻¹x⁻¹y⁻¹, so AK_{−1}(n) = AK(n).
+
+**(a)** *P_β ∈ C_b with b ≡ β (mod n+1), b ≡ 1 (mod n), and MS(n,w) ~AC AK_β(n) for every w ∈ C_b^{±1}.*
+**(b)** *Q_γ ∈ C_b with b ≡ −1 (mod n+1), b ≡ −γ (mod n), and MS(n,w) ~AC AK′_γ(n) for every w ∈ C_b^{±1}.*
+Both are plain AC equivalences (two ACM moves, no automorphism).
+
+*Proof.* (a) P_β = U_{(+,+,−)}(−β, β, −1); T4 gives the class, so (r_n, w) → (r_n, P_β) is one r_n-frozen ACM move (after inverting w if σ(w) = −1). Modulo P_β: (xy^{−β})x(xy^{−β})⁻¹ = y, i.e. x⁻¹yx = y^{−β}xy^{β}; hence r_n = (x⁻¹yx)ⁿy^{−(n+1)} = y^{−β}·xⁿy^{−(n+1)}·y^{β}, and (r_n, P_β) → (xⁿy^{−(n+1)}, P_β) is one P_β-frozen ACM move. (b) Q_γ = U_{(+,+,−)}(−γ, −1, γ). Modulo Q_γ: xy⁻¹x⁻¹ = y^{γ}x⁻¹y^{−γ}, so xr_nx⁻¹ = yⁿ(xy⁻¹x⁻¹)^{n+1} = y^{γ}·yⁿx^{−(n+1)}·y^{−γ}, a conjugate of (x^{n+1}y^{−n})⁻¹. ∎
+
+For β = −1 this is a two-line proof of C's theorem M_n ~AC AK(n) (`certificates/th18_m3_to_ak3_via_t9.json`: 101 moves; C's table is shorter, 32 moves). In the T(n,n+1) group xⁿ = y^{n+1} the word P_β says "y is the conjugate of x by xy^{−β}"; it depends only on β mod n+1.
+
+**Corollaries.**
+1. *AK_1(n) = (xⁿy^{−(n+1)}, xy⁻¹xyx⁻¹y⁻¹) and AK′_1(n) are AC-trivial for every n ≥ 2* (classes C_1 and C_{−1}; T6). Certificates for AK_1(3), AK_1(4); the self-test replays n ≤ 7.
+2. *n = 3.* The row is β = 1, 2, 3 ↔ C_1, C_{−2}, C_7: **AK_1(3) and AK_2(3) = (x³y⁻⁴, xy⁻²xy²x⁻¹y⁻¹) are AC-trivial (certificates), AK_3(3) = AK(3).** So among the three pairs "x³ = y⁴, y = (xy^{−β})x(xy^{−β})⁻¹" exactly β ≡ −1 is open; in BS(3,4) the difference is whether b ∈ {1, −2, 7} divides 3 or 4.
+3. *n = 4.* Row: β = 1, 2, 3, 4 ↔ C_1, C_{−3}, C_{−7}, C_9; column: γ = 1, 2, 3 ↔ C_{−1}, C_{−6}, C_9. With E1: **P2 ~AC AK_2(4) = (x⁴y⁻⁵, xy⁻²xy²x⁻¹y⁻¹)** (`certificates/th18_p2_to_ak_4_beta2.json`: D's certificate from P2 = (XyyxYYY, XXXYxxY) to a benchmark member with short relator in C_{−3}, then T9); AK′_2(4) is AC-trivial (L's certificates); every ℓ = 3 class of BS(4,5) is trivial or the class of AK_2(4) ~ P2, AK_3(4) (open), AK_4(4) = AK(4), or a mirror of these.
+4. *n = 5.* C_{−14} is the row class with β ≡ −2 (mod 6): **P2 ~AC AK_{−2}(5) = (x⁵y⁻⁶, xy²xy⁻²x⁻¹y⁻¹)** (`certificates/th18_p2_to_ak_5_betam2.json`).
+
+So the holdout class P2 contains torus-knot pairs for T(4,5) and T(5,6) with the AK torus relator, and F's meridian-defect and G's torus machinery apply to it. (Earlier notes describe P2 through BS-type presentations and I's R82, R86; I did not check whether a torus-type member had been recorded.) One-move exits at these nodes with the torus relator frozen are excluded exactly as in G2(a): the image of P_β in C_n * C_{n+1} has the sign-mixed x-syllables (x, x, x⁻¹), while a primitive has all x-syllables equal; so for n ≥ 3 no primitive is conjugate to P_β^{±1} in ⟨x,y | xⁿ = y^{n+1}⟩ (G's argument, which uses only the x-syllables; not re-derived here).
+
 ## 3. Experiments (exact commands and outputs)
 
 All runs: one niced core, < 100 MB, a few seconds each. `th18_bs.py` and `th18_survey.py` use the standard library and import `elementary_verify.py` and (self-test only) `g_bs.py`.
@@ -126,7 +160,7 @@ python3 experiments/th18_bs.py --selftest
 # cross-checked against g_bs, class counts n(n-1) for n=2,3,4, 36 divisor-class certificates replayed
 python3 experiments/th18_survey.py --selftest        # th18_survey self-test passed
 ```
-The self-test checks: invariance of the class invariant under conjugation and insertion of conjugates of r_n^{±1} (n = 2,3,4); agreement with G's bounded search on 3,000 random short pairs (in both directions); T4's count and labels on all words of length ≤ 7; β_n ∈ C_{2n+1}; xy^k ~ x; T6 for all admissible divisors b, 2 ≤ n ≤ 8 (certificate generated and replayed by the strict verifier). A scratch run sampling 6,000 exponent vectors per necklace confirmed T2(d) for ℓ = 5: 12 and 4 classes (n = 2), 72 and 36 (n = 3), and 72 for (++++−−−), n = 2.
+The self-test checks: invariance of the class invariant under conjugation and insertion of conjugates of r_n^{±1} (n = 2,3,4); agreement, in both directions, with G's bounded search on the pairs with σ = ±1 among 3,000 random short pairs (526 conjugate pairs); T4's count and labels on all words of length ≤ 7; β_n ∈ C_{2n+1}; xy^k ~ x; T6 for all admissible divisors b, 2 ≤ n ≤ 8 (certificate generated and replayed by the strict verifier); T8 for 2 ≤ n ≤ 9; T9(a) for all β and T9(b) for all γ, 2 ≤ n ≤ 7 (replayed); AK_1(n) → (x,y) for n ≤ 7. A scratch run sampling 6,000 exponent vectors per necklace confirmed T2(d) for ℓ = 5: 12 and 4 classes (n = 2), 72 and 36 (n = 3), and 72 for (++++−−−), n = 2.
 
 **E1. Repository certificates (no third-party data).**
 ```
@@ -156,9 +190,17 @@ python3 -I experiments/th18_survey.py --certify all_presentations.txt
 - t-length by n: ℓ = 1: 170/66/34/18/14/14/14 for n = 1..7; ℓ = 5: 32 (n = 2) and 36 each (n = 3..7); the rest ℓ = 3.
 - n = 3: 34 (ℓ = 1) + 66 (C_{±1}, C_{±2}) + 34 (C_{±5}) + 36 (ℓ = 5) = 170. The benchmark members of AK(3)'s class found by D's cap-28 search are exactly the 34 presentations with short relator in C_{±5} — E1 explains D's list.
 - For n ≥ 4 the 66 presentations in bridge classes are AC-equivalent to AK(n) or its mirror (T7(d)); none is greedy-solved.
-- The 26 greedy-solved presentations in non-divisor ℓ = 3 classes lie in C_{±6} (n = 4), C_{±9} (n = 5), C_{±9} and C_{±15} (n = 6): exactly the non-divisor classes with 2b ≡ 0 (mod n) for n even, resp. 2b ≡ 0 (mod n+1) for n odd, that occur for n ≤ 6 ("half classes"; see §4, open).
+- The 26 greedy-solved presentations in non-divisor ℓ = 3 classes lie in C_{±6} (n = 4), C_{±9} (n = 5), C_{±9} and C_{±15} (n = 6): exactly the non-divisor classes with 2b ≡ 0 (mod n) for n even, resp. 2b ≡ 0 (mod n+1) for n odd, that occur for n ≤ 6 ("half classes"; see T8 and §4, open). For n = 7 the half classes C_{±20} occur (2 presentations each) and are not in the greedy-solved list.
 - n = 2, ℓ = 5: the 32 presentations fall in all 12 classes of the necklace (+++−−); P1 and P2 take two classes each, eight classes (20 presentations) are unresolved here; the 4 classes of (++−+−) do not occur in the benchmark.
 - No presentation with ℓ ≥ 5 is in the greedy-solved list: in this benchmark the t-length separates what greedy search solves (ℓ = 1, divisor and half classes) from what it does not.
+
+**E4. Torus landings of the generalized AK pairs (bounded experiment, G's exact tool).**
+```
+python3 -c "import sys; sys.path.insert(0,'experiments'); import g_torus as G; m=G.gl2_matrices(8); \
+ [print(w, len(list(G.edges(w,p,q,m,P=12,maxlen=80)))) for p,q,w in ((4,-5,'xYYxyyXY'),(4,-5,'xYYYxyyyXY'),(4,-5,'xyxYXY'),(5,-6,'xyyxYYXY'))]"
+# xYYxyyXY 0 | xYYYxyyyXY 0 | xyxYXY 1 | xyyxYYXY 0
+```
+With the torus relator frozen, the partners of AK_2(4) (~ P2), AK_3(4) and AK_{−2}(5) (~ P2) are conjugate in the torus group to **no** torus-type or primitive word within |M| ≤ 8, exponents ≤ 12, length ≤ 80, while AK(4)'s partner is conjugate only to the trefoil relator itself. So these nodes do not enter G's torus graph at these bounds (consistent with G's observation that holdout #2 has no torus landing); this is a bounded observation, not a theorem.
 
 **Certificates stored** (`python3 experiments/elementary_verify.py certificates/th18_*.json`, all pass):
 
@@ -169,5 +211,53 @@ python3 -I experiments/th18_survey.py --certify all_presentations.txt
 | th18_ms3_w2_trivialization | (XyyyxYYYY, xxyyXYY) | 80 | 22 |
 | th18_ms3_len1_trivialization | (XyyyxYYYY, XyyyxxxyyyyXy), ℓ = 1 | 259 | 98 |
 | th18_ms0318 / 0661 / 0707 / 0834 / 0891 / 1038 | benchmark lines (0-based) with n = 3,4,4,5,6,7 in C_{−2}, C_{−1}, C_{−2}, C_{−3}, C_1, C_{−1}; all but 318 absent from the greedy-solved list | 277 / 840 / 650 / 729 / 2138 / 13862 | 65 / 109 / 125 / 143 / 131 / 413 |
+| th18_ak3_beta1 / th18_ak3_beta2 / th18_ak4_beta1 _trivialization | AK_1(3) = (xxxYYYY, xYxyXY), AK_2(3) = (xxxYYYY, xYYxyyXY), AK_1(4) | 248 / 240 / 506 | 31 / 48 / 37 |
+| th18_m3_to_ak3_via_t9 | M₃ → (xxxYYYY, xyxYXY) = AK(3) (equivalence, not a trivialization) | 101 | 31 |
+| th18_p2_to_ak_4_beta2 | P2 = (XyyxYYY, XXXYxxY) → (xxxxYYYYY, xYYxyyXY) = AK_2(4) (equivalence) | 914 | 41 |
+| th18_p2_to_ak_5_betam2 | P2 → (xxxxxYYYYYY, xyyxYYXY) = AK_{−2}(5) (equivalence) | 1547 | 88 |
 
-All end exactly at ("x","y"). The other 564 certificates are regenerated and replayed by `--certify` (add an output directory and line numbers to store them).
+The trivialization certificates end exactly at ("x","y"); the three equivalence certificates end exactly at the displayed pairs. The ten certificates that need no third-party data are regenerated byte-identically by `python3 experiments/th18_survey.py --write DIR`; the six benchmark ones and the other 568 by `--certify FILE DIR 318 661 707 834 891 1038` (all 574 are replayed; only the listed lines are stored).
+
+## 4. Failed attempts and open points (precise)
+
+1. **Seed item (3) as stated is false for n = 2.** The seed expected the class of the bridge word to contain a primitive when n = 2. It does not (T5: ℓ = 3 for all n ≥ 2). The correct statement is T7(a): the bridge class is a divisor class iff n ≤ 2.
+2. **Half classes.** I tried to trivialize C_{±6} of BS(4,5) by two ACM moves through representatives x²y^{b′}Xy^{c′}. With c′ = ±n/2 (or b′ = ±(n+1)/2) the relator r_n becomes u^{∓2}y^{−(n+1)} (resp. yⁿu^{∓2}), which is never primitive: its two y-runs differ by n+1 (resp. n). At the resulting torus pair (T8) the partner's necklace (−k, k, h) in C₂ * C_m agrees with a primitive necklace (h, h, h+1) only for k ≡ ±h, i.e. only in the divisor classes (this uses the Christoffel description of note G, Lemma G4, quoted, not re-proved here). G's torus-graph code does not apply because the partner is not of torus type. So the mechanism that makes C_{±6} (n = 4) AC-trivial is not identified; **Question Q1:** is every torus pair (u²y^m, uy^{−k}uy^ku⁻¹y^{(m−1)/2}), m odd, m ∤ k, AC-trivial? (True for m = 5 by T6, L's certificates and T8.)
+3. **No sharpness beyond the representatives w_{b′}.** For x²y^{b′}Xy^{c′} with b′ + c′ ≠ 0 the group ⟨x,y | x²y^{b′} = y^{−c′}x⟩ is not an evident amalgam and I have no exact conjugacy test for it. So "the bridge class has no two-ACM-move exit" is **not** proved; only the representatives β_n (T5) and w_{b′} (T6′) are excluded. Words that are not HNN-reduced are not analysed at all.
+4. **ℓ ≥ 5.** Beyond the classification and count (T2) I have no trivialization theorem for ℓ = 5, where P1, P2 (n = 2) and 212 benchmark presentations live. The analogue of w_b, x^{k+1}y^bx^{−k}y^{−b} (y^bx^ky^{−b} = x^{k+1}), does not collapse r_n because only x^k moves across y^b.
+5. **n = 4: C_{±7} unresolved** (18 benchmark presentations, e.g. lines 639 and 646), neither trivialized nor identified with AK(4), P2 or anything else.
+
+## 5. Honest limits
+
+- Nothing here decides AK(3). T7(c) is a reformulation: AK(3) is AC-trivial iff the class C_7 of BS(3,4) is; it also shows that inside the Miller–Schupp family with n = 3 and ℓ ≤ 3 there is no other obstacle.
+- T5 and T6′ exclude single ACM moves through specific representatives; AC trivializations may be long.
+- T1, Britton's lemma, Collins' lemma, the amalgam conjugacy theorem and the solvability of conjugacy in Baumslag–Solitar groups are classical; the lattice formulation T2, T4 and the divisor classes T6 may be known. P(n,1) is one of Johnson's presentations. **No novelty is claimed.** The Lyndon–Schupp and Magnus–Karrass–Solitar theorem numbers are quoted from memory (no library access in this session).
+- E2 uses two third-party files (the benchmark and Shehper et al.'s greedy-solved list); "not in the greedy-solved list" does not mean previously unsolved (Fagan et al. report more). The statements "C_{±9} (n = 5), C_{±9}, C_{±15} (n = 6) contain solved presentations" rest on that list, not on certificates in this repository.
+- `cls` requires σ ≠ 0. The scripts are self-tested, not formally verified; every trivialization claimed with a certificate was replayed by `elementary_verify.py`.
+- The P2 equivalences of T9 (Cor. 3–4) contain D's certificates `d_ms2b_to_ms*.json` as their first segment (replayed again as part of the new files); "P2" means D's holdout #2 = (XyyxYYY, XXXYxxY). They are equivalences, not trivializations: P2 remains open.
+- T6 for negative b is proved through ι; the script handles b < 0 directly, and those certificates replay.
+
+## 6. Advice to the coordinator (ranked)
+
+0. **P2 is a torus-knot pair (T9, Cor. 3–4): P2 ~AC AK_2(4) = (x⁴y⁻⁵, xy⁻²xy²x⁻¹y⁻¹) ~AC AK_{−2}(5).** Study the one-parameter family AK_β(n), β = 1..n, inside the single group ⟨x,y | xⁿ = y^{n+1}⟩: β = 1 is trivial for all n, β = −1 is AK(n), for n = 3 the only non-trivial member is AK(3), and for n = 4 the members are trivial (β = 1), P2 (β = 2), open (β = 3) and AK(4) (β = 4). Concretely: (i) with the torus relator frozen no primitive is reachable in one move (sign-mixed x-syllables, as in G2(a)) and, within the bounds of E4, no torus-type word either, so the next exact step is the P_β-frozen direction: conjugacy in ⟨x,y | x⁻¹yx = y^{−β}xy^{β}⟩ ≅ ⟨x,y | x²y^{β} = yx⟩ (for β = 2, n = 4 this decides the one-move exits of P2); (ii) look for a structural reason why β = 1, 2 are easy and β = 3 is not when n = 3 — in BS coordinates it is "b ∈ {1, −2, 7} divides 3 or 4". (Possible overlap with TH13's generalized AK family: please cross-check.)
+1. **Use the class table as the index of the Miller–Schupp family.** For each n the ℓ = 3 classes are C_b, b mod n(n+1): divisor classes (trivial, T6), half classes (torus pairs, T8), the bridge pair C_{±(2n+1)} (= AK(n)), and the rest. The first unresolved non-AK classes are C_{±7} for n = 4. P2 is the ℓ = 3 class C_{±3} of BS(4,5) and C_{±14} of BS(5,6): attacking P2 in those coordinates (three stable letters) may be easier than in BS(2,3) (five).
+2. **Extend T6′ to all representatives x²y^{b′}Xy^{c′} of the bridge class** (b′ ≡ −1 mod n+1, c′ ≡ −1 mod n): decide when r_n is conjugate to a primitive in ⟨x,y | x²y^{b′} = y^{−c′}x⟩. This is an infinite two-parameter family of two-move exits for AK(3) that neither G2 nor O6 covers; a positive instance trivializes AK(3) through `th18_bs.compile_path` and `finish`. It needs conjugacy in these one-relator groups (Magnus HNN decomposition).
+3. **Settle Q1** (half classes) with the torus machinery of G and I; it would complete "divisor or half ⇒ trivial" and explain every greedy-solved ℓ = 3 benchmark presentation.
+4. **ℓ = 5 for n = 2:** 16 classes, 12 in the benchmark; P1 and P2 take two each; find the analogue of T6 for the necklace (+++−−).
+5. The 568 unstored certificates of E2 can be written by `--certify FILE DIR LINE…` if a public ledger is wanted.
+
+## 7. Files written
+
+- `research/research-th18.md` (this note).
+- `experiments/th18_bs.py`: exact class invariant (`cls`, `label3`, `tlen`), unique-conjugator solver, rewriting paths (`bs_path`, `div_path`, `half_path`), compiler to strict elementary moves (`compile_path`, `finish`), certificate builders (`cert_len1`, `cert_divisor`, `t9_moves`, `cert_ak_beta`), `--selftest`.
+- `experiments/th18_survey.py`: `--selftest`, `--certs` (classes of D's and L's certified endpoints), `--write DIR` (the ten data-free certificates), `--bench`, `--triage`, `--certify` (third-party benchmark file).
+- `certificates/th18_*.json` (16 files, 2.6–454 KB), listed in §3: 13 trivializations and 3 equivalences.
+
+## References
+
+- R. C. Lyndon, P. E. Schupp, *Combinatorial Group Theory*, Ch. IV §2 (Britton's lemma; Collins' lemma, after D. J. Collins 1969).
+- W. Magnus, A. Karrass, D. Solitar, *Combinatorial Group Theory*, §4.2 (conjugacy in amalgamated products).
+- C. F. Miller III, P. E. Schupp, *Some presentations of the trivial group*, Contemp. Math. 250 (1999).
+- R. P. Osborne, H. Zieschang, *Primitives in the free group on two generators*, Invent. Math. 63 (1981).
+- G. Baumslag, D. Solitar, Bull. AMS 68 (1962); D. L. Johnson's presentations as quoted in note F.
+- A. Shehper et al., arXiv:2408.15332 and https://github.com/shehper/AC-Solver (benchmark and greedy-solved list); L. Fagan et al., arXiv:2606.21611 (as reported in notes D, L).
+- Repository notes C (bridge), D (Lemmas D2, D3, certificates), F (Prop. F2), G (Lemma G0, Prop. G2, Lemma G4, `g_bs.py`), I, L.

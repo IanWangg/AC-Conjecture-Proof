@@ -88,3 +88,102 @@ Version read: 187 lines (04:30 UTC). `python3 experiments/th20_th12_check.py` (o
 | Cor. 5 (d_F(AK(n)) ≥ 2n−1 for n ≥ 4, every elementary-v1 certificate has ≥ 2n−1 moves) | VERIFIED given Thm 3, 4 (μ + κ ≤ number of moves). Correctly labelled as a complexity statement, not an obstruction (it holds for the AC-trivial AK(1), AK(2) too). |
 | §5 (P_n: μ ≥ n; area bounds 3 ≤ Area_{P₃}(x) ≤ 593) | PLAUSIBLE-UNCHECKED (the μ ≥ n argument is the same loss lemma; the numerical upper bounds were not recomputed). |
 
+## 6. TH11 (relator stabilizers; nilpotent Reidemeister invariants (κ, Ĵ) of G_c; one-move relations between the k_n)
+
+*Preliminary: claims table of the 04:24 UTC draft (sections not yet written) + `experiments/th11_nil.py`.* My checks: `experiments/th20_stab.py` (own Whitehead level-graph / McCool computation of stabilizers in GL₂(ℤ)), `experiments/th20_th11_check.py` (uses TH11's `KJ`, `KJ_ser` for the invariants — not independent for their definition — and my own exact holonomy invariant τ), §0 above.
+
+```
+c = xyxYYXy  Stab(w^+-1): [((-1, 1), (0, 1)), ((1, 0), (0, 1))] | Stab(w): [((1, 0), (0, 1))]
+b = xyxYXY   Stab(w^+-1): {+-I, +-swap}                          | Stab(w): {I, -swap}
+p_2          Stab(w^+-1): [((-1,0),(0,-1)), ((-1,0),(3,1)), ((1,0),(-3,-1)), ((1,0),(0,1))]   <-- order 4
+p_3 .. p_7   Stab(w^+-1): {+-I}
+(1) closed forms kappa, Jhat = J - kappa agree with th11_nil.KJ for n in [-40,60], s in [-40,40]
+(2) 250 random words: (kappa,J) twisted-conjugacy invariant; theta0 flips kappa and preserves Jhat
+(3) (n,s) with equal (kappa,Jhat), |n| <= 2000: [(-1,-1), (-1,0), (0,-1), (0,0), (1,-2), (2,-2), (9,5)];  tau(k_9^2) in tau-set of x^5 y: False
+(4) pairs n<m<=3000 with Jhat(k_n)=Jhat(k_m): [(1,2,'same kappa'), (6,7,'kappa differs')]; tau-sets of k_6 and theta0(k_7) (and of k_7, theta0(k_6)) are disjoint
+```
+
+| claim | verdict | reasoning |
+|---|---|---|
+| T1: Out(G_c) ≅ ℤ/2 = ⟨[θ₀]⟩; Stab(c^{±1}) = {1,[θ₀]}, Stab(c) = 1; θ₀(u,1) = (ι(u)b, 1) | VERIFIED | own proof of Out: the fibre F(a,b) = [G_c,G_c] is characteristic, so Out(G_c) = N_{GL₂(ℤ)}(⟨A⟩)/⟨A⟩ with A = [[0,1],[1,−1]]; tr A ≠ tr A⁻¹, the centralizer of A is the unit group {±Aᵏ} of ℤ[(1+√5)/2], hence Out = {±I}·⟨A⟩/⟨A⟩ ≅ ℤ/2, and θ₀ acts on the fibre by ι (class −I), y ↦ (b,1) (computed by hand). Stabilizers: independent level-graph computation (rests on Whitehead/McCool, recalled). |
+| T2: Stab(b^{±1}) = {±I, ±swap}; Stab(p_n^{±1}) = {±I} "(n ≥ 2)" | VERIFIED for b and for 3 ≤ n ≤ 7; **ERROR for n = 2** | β = (x ↦ xy⁻³, y ↦ y⁻¹) sends p₂ = x²y⁻³ to xy⁻³x ~ p₂, so Stab(p₂^{±1}) = {±I, ±β} has order 4 (TH02's "hidden reflection" of a T(2,q) relator). The stated consequence (only ±I fixes both relators of AK(n)) survives for n = 2, since β ∉ {±swap}. Correct wording: "Stab(p_n^{±1}) = {±I} for n ≥ 3; order 4 for n = 2". |
+| T3: (κ, Ĵ) is a complete invariant of φ-twisted conjugacy in F/γ₅F; θ₀ flips κ, fixes Ĵ; θ₀(g) ≁ g for degree-1 g | VERIFIED (own level-by-level argument + TH11's Φ₄) | I−A and I+A are unimodular (levels 1, 3), level 2 gives ℤ/2 (φ acts by det A = −1 on γ₂/γ₃), and coker(I−Φ₄) ≅ ℤ exactly (gcd of the 2×2 minors of I−Φ₄ is 1; eigenvalues 1+λ², 0, 1+μ²); the stabilizer of a normal form z^κ·w₄ is γ₄ mod γ₅, so ℓ·[w₄] is well defined. The θ₀ statements were tested on 250 random words (not re-proved). Note Ĵ = J − κ in the script's normalization. |
+| T4 (closed forms) | VERIFIED by computation: agreement on n ∈ [−40,60], s ∈ [−40,40]; on each class mod 4 the invariants are polynomials of degree ≤ 4 (Magnus coefficients), so ≥ 5 points per class suffice. |
+| T5 (uniform O6: k_n ≁ xˢy for all n ≥ 3) | VERIFIED given T3, T4 | (s²−s−1)² = (n²−5n−7)² − 48(n+1) checked by expansion; my Runge bounds: no solution for n ≥ 31 or n ≤ −19; brute force \|n\| ≤ 2000 gives exactly TH11's list; (9,5) is excluded by my exact τ. Agrees with O6 (n ≤ 8) and with TH03's independent proof by a different invariant. |
+| T6 (k_n ~ k_m iff n = m or {n,m} = {1,2}; k_n ≁ θ₀(k_m)) | VERIFIED given T3, T4 | Ĵ(k_n) is strictly decreasing for n ≥ 9 with Ĵ(k_9) = −15 below all earlier values; the only coincidences are (1,2) (a true conjugacy, O3) and (6,7) with different κ; the remaining case k₆ vs θ₀(k₇) (and k₇ vs θ₀(k₆)) is excluded by τ (both twists). |
+
+**TH13, note version of 04:30 UTC (122 lines, §1–§4 written).** `python3 experiments/th20_th13_plateau.py k p` (own enumeration of *all* cyclically reduced words up to the claimed bounds, own torus invariant):
+```
+power side k=2 p=2: no word off the plateau for L <= 10;  L=11: 264 words (TH13's count)
+power side k=2 p=3: plateau = 28 words at L=7; nothing else for L <= 12;  L=13: 624 words (claimed bound, attained)
+braid side k=2 p=3, G_p and G_p': Orb(W_2) = 20 words at L=10; nothing else for L <= 11;  L=12: 144 words (claimed bound, attained)
+k=1 p=3: power side first exit L=9 (432 words), braid side L=8 (32 words)   [J's numbers]
+```
+
+| claim | verdict | what I checked |
+|---|---|---|
+| T1 (F(a,b;i,j;m) trivial iff \|bi−aj\| = 1; admissible (i,j) give AC-equivalent presentations) | VERIFIED (proof read; (a) also re-derived for AK(k;p)) | y^{ja} = Δx^{ia}Δ⁻¹ = zⁱ = y^{bi}; (b): shifting (i,j) by l(a,b) multiplies both Artin sides by z^{l(2m+1)}; the free identity for A_m(α⁻¹,β⁻¹) checked by hand. |
+| T2 (duality AK(k;p) ~AC (ψ_k(V_{k,p}), W_k), one W_k-frozen ACM move) | VERIFIED (own hand proof + own script k,p ≤ 8 + certificates) | see above; the three certificates start at AK(k;p) and end at (red ψ_k(V_{k,p}), W_k). Wording is correct: D(k;p) is reached only up to the automorphism ψ_k ("AC-trivial iff", by D2). |
+| T3 (AK(k;2) ≅ AK(k) up to Aut; AK(2;2), AK(k;1) AC-trivial) | VERIFIED (G1 + D2/D3; certificates replay, starts (xxYYY, W₂), (xYY, W₂), (xYY, W₃), ends (x,y)). Not new information about AK(3). |
+| T4 (plateau: first exit from AK(k;p), p ≥ 3, has cyclic length ≥ 2p+4k+3+min(4k−2, 2k+2, 2p−4)) | VERIFIED (Lemma P and Lemma B read line by line; brute force above) | Lemma P: zigzag table (xy)ⁱ = aⁱ, (xy)ⁱx = a^{i−k}Δ, … recomputed; case analysis (1)/(2) and the parity of 2J correct. Lemma B: M+N = 0 forces ν ∈ {0} ∪ [2,∞), and \|ε+om\| ≥ o−1. A statement about ACM paths, correctly labelled as not being evidence of non-triviality. |
+| T5, T6, X7 | not yet written at 04:30 UTC — see final re-read below. |
+
+## 7. TH16 (small cancellation; Miller–Schupp nodes as local minima of the ACM graph)
+
+Version read: 04:35 UTC (≈ 25.8 kB). My checks: pieces recomputed with `th20_lib.pieces` and a star-graph triangle test; own Baumslag–Solitar conjugacy code `experiments/th20_bs.py` (Britton reduction + Collins + slide lattice with exact integrality test; self-test: invariance under conjugation and relator insertion, 3000 random cases); `python3 experiments/th20_th16_check.py`:
+```
+(A) BS(3,4), BS(4,3), BS(4,5), BS(5,4), w1 and w2: no conjugate of w_i^+-1 of length < 5; at L=5 exactly Orb(w_i) (10 words); L=6: 36 resp. 24 words
+(B) n=3 (and n=4), G_w1 and G_w2: no conjugate of m_n^+-1 of length < 2n+3; at length 2n+3: 36 (44) words = Orb(m_n) u Orb(m_n')
+(C) 34 benchmark targets (first relator ~ m_3^+-1 in F): {'w1': 17, 'w2': 17, 'other': 0} | w1 ~ w2^+-1 in BS(3,4): False
+(D) m_n ~ p_n in B (n <= 8); b ~ w_1 in BS(n,n+1) (2 <= n <= 8)
+```
+Piece table recomputed (max piece, min # pieces, triangle): b (2,4,no), p₃ (3,4,no), c (2,4,yes), k₃ (2,6,yes), q₁ (1,6,yes), q₂ (2,6,yes), m₃ (3,5,yes), w₁,w₂ (1,5,yes); joint maximal pieces AK(3) 3, P₃ 3, Q 2, MS(3,w_i) 3 — **identical to TH16's table**; brute force: no non-power cyclically reduced word of length 3–9 satisfies C′(1/6).
+
+| claim | verdict | what I checked |
+|---|---|---|
+| T1 (C′(1/6) forces \|r\| ≤ 2 or ≥ 13; C′(1/8): ≤ 2, 17, 18 or ≥ 25; C(6), C(4)–T(4) fail for the listed relators except C(6) for k₃, q₁, q₂) | VERIFIED | pigeonhole re-derived (2ℓ ≤ 4·3^μ); table recomputed. The small-cancellation hypotheses are *not* satisfied by any word the note works with, and the note says so and uses no small-cancellation theorem: the classical statements appear only in Remark 2 as "externally reported", (c) of that remark (thin-annulus theorem) is explicitly not used. |
+| T2 (displacement lemma) | VERIFIED (two-line proof read) |
+| T3 = Theorem A (shortest conjugates of w_i^{±1} in BS(P,Q), P,Q ≥ 3, P ≠ Q, are Orb(w_i); b ~ w₁ if Q = P+1) | VERIFIED (slide formula recomputed by hand: a′ = (−1+P(k₁−k₂), Qk₂−Pk₃, −1+Q(k₃−k₁)); brute force (A)); rests on Britton/Collins (classical, quoted). |
+| T4 = Theorem B (shortest conjugates of m_n^{±1} in G_{w_i} have length 2n+3 and are Orb(m_n) ∪ Orb(m_n′), all n ≥ 3) | VERIFIED (proof read case by case: (n_x,n_y) list, loss table for the eight sign patterns, the equation ε₁ = −ε₂; brute force (B) for n = 3, 4). |
+| T5 = Theorem C + Prop. D (MS(n,w_i) are plateaus/local minima of the ACM graph; AK(n) → (m_n,b) → MS(n,w₁) by two ACM moves) | VERIFIED given A, B; (D) recomputed (in B: Xyⁿx = yxⁿY, so m_n = y·p_n·Y). A statement about ACM paths only. |
+| T6 (the 34 benchmark members are two ACM nodes) | VERIFIED by independent exact computation (C). |
+| T7 (P₃, Q: method gives nothing; "Q local minimum" is necessary for AK(3) to be a counterexample) | PLAUSIBLE-UNCHECKED (the free-by-cyclic structures of G_{q₁}, G_{k₃} were not re-derived; the logical remark uses the externally reported classification of length ≤ 12). |
+
+## 8. TH17 (T(2;p,q) as killers of the trefoil group; level shifts)
+
+Version read: 04:34 UTC (≈ 16 kB; Theorems 1–5 read, Theorem 6 only skimmed). Certificates replayed (`th20_lib.cert_info`): `th17_c3_to_T2_4_7_one_move.json` (274 moves, (xxyXy, xy⁵xY²) → (x⁴y⁷, xxyXy)), `th17_r74member_to_T2_4_9.json` (374, (xxyXy, xy⁷xY²) → (x⁴y⁹, xxyXy)), `th17_T2_4_7_to_third_form.json` (189, (x⁴y⁷, xxyXy) → ((x²y)³(xy)⁻⁸ reduced, xxyXy)), `th17_T2_7_13_to_third_form.json` (574, (x⁷y¹³, xxyXy) → (…, xxyXy)) — all pass.
+
+| claim | verdict | what I checked |
+|---|---|---|
+| 1 (dictionary: class of xᵖy^q in H = ⟨x,z \| x³z²⟩ is (k;1^q), (k;2·1^{q−1}), (k;2·1^{q−3}) for p = 3k+0,1,2) | VERIFIED (re-derived by hand: xᵖ(xz)^q with x³ = ζ, z² = ζ⁻¹) |
+| 2 (Lemma S for a = 2 is the necklace identity) | VERIFIED (immediate from 1) |
+| 3 (coincidences: only the Lemma S pairs; AK(n)'s killer class (0;2ⁿ1^{n+1}) is a T(2;·) class only for n = 1; xy^{2i+1}xY² ~ x⁴y^{2i+3}) | VERIFIED ((c) recomputed by hand: ζ(xz)^{2i+2}x²z; (a),(b) are necklace comparisons; "up to automorphisms" uses Out(H) = ℤ/2, classical, quoted) |
+| 4 ((x²yXy, xy⁷xY²) ~AC T(2;4,9), a plain AC equivalence) | VERIFIED (certificate replay with endpoints checked + the conjugacy by hand) |
+| 5 (family K(a,b,c): trivial iff \|a−b+6c\| = 1 and gcd(a,b) = 1; contains AK(n) and T(2;·)) | VERIFIED (own proof of the triviality criterion: modulo ζ, uᵃ = vᵇ and vᵃ = uᵇ are central, so gcd(a,b) = 1 makes the quotient abelian; d = gcd > 1 gives a (2,3,d) triangle quotient) |
+| 6 (third torus form: x^{3k+1}y^q ~ (x²y)^{2k+1}(xy)^{−(q+1)} in H) | VERIFIED (braid computation Δ^{2k+1}u^{−(q+1)} = ζᵏuvu^{−q} ~ ζᵏvu^{−(q−1)} = Δ⁻¹(ζᵏuv^{−(q−1)})Δ re-done; ν(xyXyXy) = x²yXy by free reduction; two certificates replayed) |
+| 7 (Theorem 6: rigidity of each level in the restricted graph 𝔖) | PLAUSIBLE-UNCHECKED (Lemmas 6.1–6.3 not verified for lack of time). The note labels it correctly as a statement about a restricted move class, **not** an AC invariant. |
+| 8 (Prop. 5: a uniform level shift is equivalent to AC-triviality of all members; inequivalence of two levels would disprove AC) | VERIFIED (formal; level 0 has primitive killers xy, xy³) |
+
+## 9. TH18 (killers of BS(n,n+1); Miller–Schupp classes; generalized AK pairs)
+
+Version read: 04:35 UTC (≈ 26 kB). `python3 experiments/th20_th18_check.py` (own BS conjugacy code):
+```
+(1) n=2,3,4,5: t-length-3 killer classes with sigma=+1: 2, 6, 12, 20 (claimed n(n-1))
+(1) n=2, t-length 5: necklace (+++--): 12 classes, (++-+-): 4 classes (claimed 12 + 4 = 2n^3(n-1) = 16)
+(2) T4 class formula verified for n = 2,3,4 (all residues b', c'; a in [-2,2])
+(3) bridge word in C_{2n+1} and Q_gamma classes, n = 2..8;   P_beta ~ x^2 y^b X y^-b with b = beta (mod n+1), b = 1 (mod n), n = 2..7
+```
+All 16 `th18_*.json` certificates replay; endpoints as stated (e.g. `th18_p2_to_ak_4_beta2.json`: (XyyxYYY, XXXYxxY) → (xxxxYYYYY, xYYxyyXY), 914 moves; `th18_p2_to_ak_5_betam2.json`: → (xxxxxYYYYYY, xyyxYYXY), 1547; `th18_ak3_beta1/beta2_trivialization.json`: (xxxYYYY, xYxyXY) resp. (xxxYYYY, xYYxyyXY) → (x,y); `th18_m3_to_ak3_via_t9.json`: (XyyyxYYYY, XYxxY) → (xxxYYYY, xyxYXY)). **None of them starts at AK(3) and ends at (x,y)**: "ak3_beta1/2" are the pairs AK₁(3), AK₂(3) with the torus relator x³y⁻⁴ and a *different* partner.
+
+| claim | verdict | what I checked |
+|---|---|---|
+| T1 (killers of G_n = elements with σ = ±1; Miller–Schupp) | VERIFIED (classical proof re-derived: a power of y commutes with x = w, giving y^{n^{2k−1}} = 1, and yⁿ ~ y^{n+1} forces y = 1) |
+| T2 (complete invariant: sign necklace + exponents mod Λ_d, index (n(n+1))^{(ℓ−1)/2}; class counts) | VERIFIED (lattice and its determinant ∏q_i − ∏p_i re-derived; well-definedness of Britton-reducedness mod Λ_d checked; counts confirmed by (1)); rests on Britton/Collins (classical, quoted) |
+| T3 (primitive in the class ⇔ ℓ = 1 ⇔ w ~ x^{±1}) | VERIFIED (own proof: primitives are determined up to conjugacy in F by exponent vector, and xy^a ~ x) |
+| T4 (ℓ = 3 classes C_b; membership criterion) | VERIFIED (own derivation: (a,b′,c′) ↦ (b′ mod n+1, c′ mod n) is a bijection ℤ³/Λ → ℤ/(n+1) × ℤ/n; script (2)) |
+| T5 (bridge word XYx²Y ∈ C_{2n+1}; no primitive one ACM move from M_n) | VERIFIED (class by hand and script; other direction: a⁻¹(r_n) = p_n in B for a⁻¹ = (x ↦ xy), computed by hand, then G2(b)) |
+| T6, T6′ (divisor classes are AC-trivial; sharpness for the representatives w_b) | VERIFIED (T6: both conjugations recomputed, incl. b \| n+1 via u = y^{−(n+1)}xy^{n+1}, u^{2^m} = x; T6′: amalgam length argument read) |
+| T7 (MS(2,w), ℓ ≤ 3, AC-trivial; MS(3,w), ℓ ≤ 3, AC-trivial or ~ AK(3)) | VERIFIED (residue arithmetic mod 6, mod 12 redone; uses C's and D's certificates) |
+| T8 (half classes are one ACM move from a T(2,m) pair) | VERIFIED for (a) by hand; (b) read only |
+| T9 (MS(n,w) ~AC AK_β(n) = (xⁿy^{−(n+1)}, xy^{−β}xy^{β}x⁻¹y⁻¹) for w ∈ C_b^{±1}; AK₁(n) trivial; **holdout P2 ~AC AK₂(4) ~AC AK₋₂(5)**) | VERIFIED (own derivation: modulo P_β, x⁻¹yx = y^{−β}xy^{β}, so r_n = y^{−β}p_n y^{β}; certificates replayed with endpoints). **OVERCLAIM in wording:** AK₂(4) is called "a torus-knot pair" and advice 0 says "P2 is a torus-knot pair". In the project's usage (F §9, G, I) that means two torus-type relators; here only x⁴y⁻⁵ is of torus type — the Whitehead-minimal forms of P₂ = xy⁻²xy²x⁻¹y⁻¹ are x⁻²y⁻²xy and its relatives (4 syllables; `th20_stab` level graph), so P₂ is not a torus word. Correct wording: "P2's class contains a presentation whose first relator is the torus relator x⁴y⁻⁵ (resp. x⁵y⁻⁶)". These are equivalences; P2 remains open, as the note says. |
+

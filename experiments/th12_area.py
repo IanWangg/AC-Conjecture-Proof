@@ -233,11 +233,138 @@ def random_paths(trials=200, length=30, seed=12):
         worst = max(worst, (res["mu"], res["x"]["count"][0] + res["x"]["count"][1]))
     return trials, worst
 
+def ak1_calibration():
+    """All shortest instruction paths AK(1) -> (x,y) (E: d_F = 8): the set of
+    (mu, kappa) they realize, by bidirectional BFS of depth 4 + 4."""
+    def nbrs(st):
+        a, b = st
+        yield (inv(a), b), "I"; yield (a, inv(b)), "I"; yield (b, a), "S"
+        yield (red(a + b), b), "M"; yield (red(a + inv(b)), b), "M"
+        yield (a, red(b + a)), "M"; yield (a, red(b + inv(a))), "M"
+        for g in "xXyY":
+            yield (red(inv(g) + a + g), b), "C"; yield (a, red(inv(g) + b + g)), "C"
+    def layers(start, depth):
+        cur = {start: {(0, 0)}}; seen = {start: 0}; out = [cur]
+        for d in range(1, depth + 1):
+            nxt = {}
+            for st, pk in cur.items():
+                for st2, typ in nbrs(st):
+                    if st2 in seen and seen[st2] < d: continue
+                    s = nxt.setdefault(st2, set())
+                    for mu, ka in pk: s.add((mu + (typ == "M"), ka + (typ == "C")))
+            for st2 in nxt: seen[st2] = d
+            cur = nxt; out.append(cur)
+        return out
+    A = layers(("xYY", "xyxYXY"), 4); B = layers(("x", "y"), 4)
+    for total in range(0, 9):
+        pk = set()
+        for i in range(max(0, total - 4), min(4, total) + 1):
+            for st in set(A[i]) & set(B[total - i]):
+                for m1, k1 in A[i][st]:
+                    for m2, k2 in B[total - i][st]: pk.add((m1 + m2, k1 + k2))
+        if pk: return total, sorted(pk)
+    return None
+
+def check_pn_braid(nmax):
+    """Exact identities over P_n = (c, k), c = xyxYYXy, k = x^n YXyy, with a = x, b = yxY:
+       y = c^-1 a b a^-n k   and
+       a b a b^-1 a^-1 b^-1 = [u k u^-1][u a^-1 k^-1 a u^-1] c [b c^-1 b^-1],  u = a b a^(1-n)."""
+    for n in range(2, nmax+1):
+        rel = {"c": "xyxYYXy", "k": "x"*n + "YXyy"}
+        a, b = "x", "yxY"
+        assert red(inv(rel["c"]) + a + b + inv(a)*n + rel["k"]) == "y"
+        u = red(a + b + inv(a)*(n-1))
+        lhs = red(a + b + a + inv(b) + inv(a) + inv(b))
+        fac = [(u, "k", 1), (red(u + inv(a)), "k", -1), ("", "c", 1), (b, "c", -1)]
+        assert prod(fac, rel) == lhs, n
+    return nmax
+
+def area_over_pn(nmax):
+    """Proposition 8: with a = x, b = yxY the AK relators r(a,b) = a^n b^-(n+1) and
+    s(a,b) = abaBAB have 3 resp. 4 factors over P_n = (c,k); substituting into (I_x)
+    gives an explicit expression of x over P_n with 4n+13 factors, checked by free reduction."""
+    sub = {"x": "x", "y": "yxY", "X": "X", "Y": "yXY"}
+    S = lambda w: red("".join(sub[ch] for ch in w))
+    out = {}
+    for n in range(2, nmax+1):
+        rel = {"c": "xyxYYXy", "k": "x"*n + "YXyy"}
+        a, b = "x", "yxY"
+        u = red(a + b + inv(a)*(n-1))
+        sfac = [(u, "k", 1), (red(u + inv(a)), "k", -1), ("", "c", 1), (b, "c", -1)]
+        rfac = [("", "k", 1), ("y", "k", -1), (red(b*n + inv(a)), "c", -1)]
+        assert prod(sfac, rel) == S("xyxYXY") and prod(rfac, rel) == S("x"*n + "Y"*(n+1)), n
+        fac = []
+        for g, nm, e in x_factors(n):
+            subf = sfac if nm == "s" else rfac
+            subf = subf if e > 0 else [(f, j, -d) for f, j, d in reversed(subf)]
+            fac += [(red(S(g) + f), j, d) for f, j, d in subf]
+        assert prod(fac, rel) == "x", n
+        cnt = (sum(1 for f in fac if f[1] == "c"), sum(1 for f in fac if f[1] == "k"))
+        assert cnt == (2*n+5, 2*n+8), (n, cnt)
+        out[n] = cnt
+    return nmax, out[3]
+
+def pn_area3(R, ns=(2, 3, 4)):
+    """Experiment: is x or y a product of <= 3 conjugates of c^{+-1}, k^{+-1} over P_n
+    with all conjugators of length <= R?  (meet in the middle: pairs vs singles)"""
+    ball = [""]; layer = [""]
+    for _ in range(R):
+        layer = [w + ch for w in layer for ch in "xXyY" if not (w and w[-1] == ch.swapcase())]
+        ball += layer
+    res = {}
+    for n in ns:
+        rel = {"c": "xyxYYXy", "k": "x"*n + "YXyy"}
+        S = set(conj(g, u) for g in ball for u in (rel["c"], inv(rel["c"]), rel["k"], inv(rel["k"])))
+        pairs = set(red(u + v) for u in S for v in S)
+        res[n] = {tg: (tg in S) or any(red(inv(u) + tg) in pairs for u in S) for tg in ("x", "y")}
+    return res
+
+def bounded_area_pn(nmax):
+    """Proposition 9: over P_n = (c,k) the generator x has an explicit expression with
+    11 factors for EVERY n >= 2 (7 on c, 4 on k), and y one with 11(n+2)+2 factors.
+    Notation a = x, b = yxY, s = abaBAB (4 factors by (P2)), C = y c y^-1,
+    Psi = a b a^-2 b = [(abAA) C (abAA)^-1][(abA) C (abA)^-1] C^-1 (y s y^-1),
+    b = (a^-1 s a) (aBA) Psi (aBA)^-1,  x = y^-1 b y,  y = c^-1 a b a^-n k."""
+    def cj(g, fac): return [(red(g + f), j, d) for f, j, d in fac]
+    def invf(fac): return [(f, j, -d) for f, j, d in reversed(fac)]
+    for n in range(2, nmax+1):
+        rel = {"c": "xyxYYXy", "k": "x"*n + "YXyy"}
+        a, b, A, B = "x", "yxY", "X", "yXY"
+        u = red(a + b + A*(n-1))
+        sfac = [(u, "k", 1), (red(u + A), "k", -1), ("", "c", 1), (b, "c", -1)]          # s(a,b)
+        C = [("y", "c", 1)]
+        Psi = cj(red(a + b + A + A), C) + cj(red(a + b + A), C) + invf(C) + cj("y", sfac)
+        assert prod(Psi, rel) == red(a + b + A + A + b), n
+        bfac = cj(A, sfac) + cj(red(a + B + A), Psi)
+        assert prod(bfac, rel) == b, n
+        xfac = cj("Y", bfac)                                                              # x = y^-1 b y
+        assert prod(xfac, rel) == "x" and len(xfac) == 11, n
+        assert (sum(1 for f in xfac if f[1] == "c"), sum(1 for f in xfac if f[1] == "k")) == (7, 4)
+        yfac = [("", "c", -1)] + xfac + bfac + invf(xfac)*n + [("", "k", 1)]              # y = c^-1 a b a^-n k
+        assert prod(yfac, rel) == "y" and len(yfac) == 11*(n+2) + 2, n
+    return nmax
+
+def check_s_nfree():
+    """(P2) in n-independent form: s(a,b) = (aba) [u, x^-1] (aba)^-1 c (b c^-1 b^-1), u = YXyy,
+    where [u, x^-1] = u X U x = x^-n (k X K x) x^n for every n."""
+    a, b, c, u = "x", "yxY", "xyxYYXy", "YXyy"
+    lhs = red(a + b + a + inv(b) + inv(a) + inv(b))
+    com = red(u + "X" + inv(u) + "x")
+    assert red(a + b + a + com + inv(a + b + a) + c + b + inv(c) + inv(b)) == lhs
+    for n in range(0, 20):
+        k = "x"*n + u
+        assert red("X"*n + k + "X" + inv(k) + "x" + "x"*n) == com
+    return True
+
 def main(argv):
     here = os.path.dirname(os.path.abspath(__file__))
     if "--cert" in argv:
         path = argv[argv.index("--cert") + 1]
         print(json.dumps(bookkeeping(json.load(open(path)))))
+        return
+    if "--pn-area3" in argv:
+        R = int(argv[argv.index("--pn-area3") + 1])
+        print("area <= 3 over P_n with radius <= %d (n: {x: found, y: found}):" % R, pn_area3(R))
         return
     if "--selftest" in argv:
         print("identities x,y over AK(n) verified for n = 1..%d" % check_identities(40))
@@ -254,6 +381,13 @@ def main(argv):
             if os.path.exists(p):
                 print("P_3 transport via", name, json.dumps(area_over_p3(p)))
         print("random reversed paths through bookkeeping (trials, (max mu, its x-area)):", random_paths())
+        print("P_n braid identity (area <= 4 for s(x, yxY) over P_n) verified for n = 2..%d" % check_pn_braid(40))
+        print("Proposition 8 (x over P_n with 4n+13 factors) verified for n = 2..%d; counts (c,k) for n=3: %s" % area_over_pn(30))
+        print("Proposition 9 (x over P_n with 11 factors for every n; y with 11(n+2)+2) verified for n = 2..%d" % bounded_area_pn(30))
+        print("n-independent form of (P2) verified:", check_s_nfree())
+        cal = ak1_calibration()
+        assert cal[0] == 8 and all(mu >= 4 and ka >= 1 for mu, ka in cal[1])
+        print("AK(1): d_F = %d; (mu, kappa) of its shortest paths: %s" % cal)
         print("TH12 selftest OK")
         return
     print(__doc__)

@@ -248,6 +248,8 @@ def selftest():
         assert k2 == 1 - k, "theta0 must flip kappa"
         assert KJ_ser(mu(u)) == (k, J) and KJ_ser(ser_theta(mu(u))) == (k2, J2)
         assert ser_phi(mu(u)) == mu(phi(u))
+        m_ = mu(u); p_, q_ = m_.get((0,), 0), m_.get((1,), 0)       # TH03's formula for kappa
+        assert k == (binom(p_ + 1, 2) + binom(q_ + 1, 2) + m_.get((0, 1), 0)) % 2
     print("PHI4 (columns) =", PHI4, " ELL =", ELL)
     print("th11_nil self-test passed: (kappa,J) invariant on 300 random twisted conjugations; theta0 flips kappa")
 

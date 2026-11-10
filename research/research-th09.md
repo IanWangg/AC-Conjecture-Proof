@@ -3,7 +3,13 @@
 Date: 2026-11-09 (Los Angeles). Independent research agent TH09 (round 5, theory round).
 
 **Status.** Partial results, each labelled. **No AC trivialization of AK(3), no proof that AK(3) is not AC-trivial, no
-counterexample.** Everything concerns the ordinary (unstabilized) AC relation; no stabilization is used.
+counterexample.** Achieved: a new sufficient criterion for AC-triviality (a relator whose one-relator group is
+BS(1,2)), proved and compiled to certificates; exact proofs that this exit, like the primitive exit, is not one
+generalized move away from AK(n), n ≥ 3 (torus coordinates) resp. n = 3, 4, 5, 8 (Gieseking coordinates); a census of
+the killers of the trefoil group in which AK(3) and C3 are the only two undecided classes at the first undecided
+length; and, as a by-product, verified AC trivializations of three presentations of length 15–16, one of them
+(R249) taken from a published list of unresolved presentations.
+Everything concerns the ordinary (unstabilized) AC relation; no stabilization is used.
 Novelty is not claimed (Theorem 1 for the standard Miller–Schupp marking is reported to be in
 Myasnikov–Myasnikov–Shpilrain 2002, which I could not read here).
 
@@ -20,13 +26,14 @@ B = G_b. A **BS(1,2)-type word** is θ(XyxYY) for some θ ∈ Aut(F) (XyxYY = x�
 | T3 | BS(1,2)-type conjugacy classes are parametrized by (primitive vector u = [θ(y)], sign δ = det θ); θ(XyxYY) kills G_r iff det([r],u) = ±1. So the BS(1,2)-type killers of any G_r form a **one-parameter family** v_j^±, j ∈ ℤ | proved here (§3) |
 | T4 | **Trefoil side.** In B the BS(1,2)-type killers have syllable necklaces α_j = 112(21)^j and β_j = 111(21)^{j−1}22 in C₂*C₃ (up to rotation/inversion). The partner xⁿY^{n+1} of AK(n) has necklace 1^{n+1}2ⁿ. Hence a BS(1,2)-type word is conjugate in B to (xⁿY^{n+1})^{±1} **iff n ≤ 2** | proved here (§4), formulas machine-checked for \|j\| ≤ 40 |
 | T5 | **T(n,n+1) side.** In ⟨x,y \| xⁿ = y^{n+1}⟩ the BS(1,2)-type killers have 2n\|j\|+6 or 2n\|j\|+2 syllables; for n ≥ 3 none is conjugate to b^{±1} | proved here (§5), machine-checked n ≤ 9, \|j\| ≤ 12 |
-| T6 | **Gieseking side (K/O's coordinates P_n = (c,k_n)).** For n = 3, 4 no BS(1,2)-type word is conjugate to k_n^{±1} in G_c | proved by exact finite computation (§6; one hom to PSL(2,13), O's witness) |
+| T6 | **Gieseking side (K/O's coordinates P_n = (c,k_n)).** For n = 3, 4, 5, 8 no BS(1,2)-type word is conjugate to k_n^{±1} in G_c (n = 6, 7 not decided). For n = 1 the killer k_1 = xYXyy *is* a BS(1,2)-type word, so P_1 is AC-trivial by T1 with no computation | proved by exact finite computation (§6; homs to PSL(2,7), PSL(2,13); for n = 3, 4 a single hom, O's witness) |
 | T7 | So for AK(3) the new exit is **not** one generalized (ACM) move away in any of the three known coordinate systems (same status as the primitive exit: G2, O6). For AK(2) it is: AK(2) → (BS(1,2)-type word, b) in one move with b frozen, although no primitive word is conjugate to x²Y³ in B (G2(b)) | proved (corollary of T1, T4–T6) |
 | T8 | **Killers of the trefoil group.** g ∈ ⟨x,y \| x^p = y^q⟩ is a killer iff ab(g) = ±1 and its image kills C_p*C_q. Killer classes of B up to inversion and Aut ↔ necklaces in {1,2}^k (k odd, Σe ≢ 0 mod 3) up to rotation/reversal/complement with ⟨s,t \| s²,t³,∏st^{e_i}⟩ = 1 | proved here (§7) |
 | T9 | **Census** (k = number of t-syllables; syllable length 2k; classes up to inversion and Aut). Killer classes: k=1: 1; k=3: 1; k=5: 2; k=7: 5; k=9: 15. All classes with k ≤ 5 are AC-trivial by exits. At k=7: 1121212 (primitive exit), 1112122 (**BS(1,2) exit, new**), 1121122 (**exchange exit**, T10; certificate, 6,998 moves) are AC-trivial. **The undecided killer classes of the trefoil group at the first undecided syllable length 14 are exactly two: 1111222 = AK(3) and 1111112 = C3** (I's frontier class (x²yXy, xy⁵xY²)) | exact enumeration (Todd–Coxeter) + T1, D3, certificate; "undecided" = no exit known to me, not a hardness claim |
-| T10 | **Exchange exit.** If the killer class of s in G_r contains a word v such that r lies in an AC-trivial killer class of G_v, then (r,s) is AC-trivial. With both groups trefoil groups this gives a graph on necklaces; within bounds its only edges among k ≤ 9 are 112 — 11122 (AK(2)) and 112 — 1121122; AK(3) and C3 have no trefoil-type word in their class (bounds in §7.4) | proved (principle) + bounded experiment + certificate `certificates/th09_x7_trivialization.json` |
+| T10 | **Exchange exit.** If the killer class of s in G_r contains a word v such that r lies in an AC-trivial killer class of G_v, then (r,s) is AC-trivial. With both groups trefoil groups this gives a graph on necklaces; within the bounds of §7.4 its edges among k ≤ 9 are 1 — 112121122, 112 — 11122 (AK(2)), 112 — 1121122 and loops at 1 and at C3; AK(3) has no trefoil-type word in its class within these bounds | proved (principle) + bounded experiment + certificates `th09_x7_trivialization.json`, `th09_k9_112121122_trivialization.json` |
+| T11 | **Payoff: a published residual class is AC-trivial.** The length-16 presentation (x²yx⁻²y⁻², xyx⁻¹yxy⁴) — listed as unresolved (label R249) in the third-party residual list used by F, G, I, and "trivial 0" in I's cap-25 landscape — has a trefoil-type relator whose partner has necklace 1112122, a BS(1,2)-type class. It is AC-trivial by the BS(1,2) exit: certificate `th09_r249_trivialization.json` (37,603 moves). The list's seed for R249, (x²yx⁻²y⁻², x³y²x⁻¹yx⁻¹y), reaches it by 28 elementary moves (`th09_r249_seed_to_member.json`), so the seed is AC-trivial too | proved by certificates (verifier output in §9) |
 
-Not achieved: any exit for AK(3) or C3; a classification of the killers of C₂*C₃ beyond k ≤ 9; 11 of the 15 classes
+Not achieved: any exit for AK(3) or C3; a classification of the killers of C₂*C₃ beyond k ≤ 9; 12 of the 15 classes
 at k = 9 have no exit known to me (they include C6 = 111212212 and AK(4) = 111112222).
 
 ## 1. Previous work read and choice of direction
@@ -59,7 +66,8 @@ which killer classes are decided. It does not overlap TH18's BS(n,n+1), n ≥ 2 
 (r,α(s)) is. (d) If r is primitive and ⟨⟨r,s⟩⟩ = F, then (r,s) is AC-trivial.
 
 So for fixed r the AC class of (r,s) depends only on the **killer class** of s (its conjugacy class in G_r up to
-inversion), and AC-triviality only on the killer class up to the automorphisms of G_r induced from Stab_{Aut(F)}(±[r]).
+inversion), and AC-triviality only on the killer class up to the automorphisms of G_r induced by those α ∈ Aut(F)
+for which α(r) is conjugate to r^{±1}.
 
 **Definition.** Call r **universally trivializing** (r ∈ 𝒰) if every balanced presentation (r,s) of the trivial
 group is AC-trivial. 𝒰 is closed under Aut(F), conjugation and inversion (Lemma 2.1(c)); primitive words are in 𝒰
@@ -93,15 +101,15 @@ p^{±1} in G_r. Lemma 2.1(a) gives (r,s) ~AC (r,p), and (r,p) is AC-trivial by L
 pairs with s of x-exponent sum ±1, i.e. up to inverting s the Miller–Schupp presentations
 MS(1,w) = ⟨x,y | x⁻¹yx = y², x = w⟩ with w of x-exponent sum 0 (s = x⁻¹w). All of them are AC-trivial.
 *(Externally reported as known: Myasnikov–Myasnikov–Shpilrain 2002; proved here independently, and compiled:
-`th09_killers.bs12_trivialize(s)` outputs a strict elementary certificate for any such s. Its length is not bounded
-polynomially in |s| — the Dehn function of BS(1,2) is exponential — consistent with the known role of BS(1,2)-type
-words as "hard but trivial" instances.)*
+`th09_killers.bs12_trivialize(s)` outputs a strict elementary certificate for any such s. The compiler's output is
+not polynomially bounded in |s|: it normalizes s through words x^a y^b X^c, which can be exponentially long (the
+Dehn function of BS(1,2) is exponential). No claim is made about shortest trivializations.)*
 
 **Corollary 1.2 (BS(1,2)-type relators are exits).** If any presentation in the AC class of (r,s) has a relator v
 that is BS(1,2)-type (v = θ(XyxYY), θ ∈ Aut(F)) or, more generally, has G_v ≅ BS(1,2), then (r,s) is AC-trivial.
-Recognition is as cheap as primitivity: v is BS(1,2)-type iff its Whitehead-minimal cyclic form is one of the
-length-5 signed-permutation images of XyxYY or its inverse. *(Proof: Theorem 1 and Lemma 2.1(c); Whitehead's
-theorem for the recognition.)*
+Recognition is as cheap as primitivity: v is BS(1,2)-type iff its Whitehead canonical form
+(`d_whitehead.aut_canon((v,))`) equals that of XyxYY, which has minimal length 5. *(Proof: Theorem 1 and
+Lemma 2.1(c); Whitehead's theorem for the recognition.)*
 
 **Theorem 2 (BS(1,m): only m = 2 occurs).** If G_r ≅ BS(1,m) = ⟨a,t | t⁻¹at = a^m⟩ and (r,s) presents the trivial
 group, then m = 2 or m = 0. For m = 0, G_r ≅ ℤ and the pair is covered by Lemma 2.1(d) (r is then primitive, by
@@ -192,7 +200,7 @@ The primitive killers have N(Q_j) = (21)^j2 for j ≥ 0 and N(Q_{−i}) = (12)^{
 - Q_j = (xY)^jx ↦ (st²·st)^j·st² for j ≥ 0, and Q_{−i} = (yX)^{i−1}y ↦ (t²s·ts)^{i−1}·t²s. ∎
 
 **Theorem 4 (trefoil side).** Let n ≥ 1. A BS(1,2)-type word is conjugate in B to (xⁿY^{n+1})^{±1} iff n ≤ 2.
-For n = 2: x²Y³ is conjugate in B to the inverse or to a conjugate of yxYXyXX = v(xY, xYx), a word of length 7.
+For n = 2: x²Y³ is conjugate in B to (yxYXyXX)^{±1}, where yxYXyXX is a cyclic form of v(xY, xYx) (length 7).
 
 *Proof.* The image of xⁿY^{n+1} is (st²)ⁿ(st)^{n+1}: necklace 2ⁿ1^{n+1} (G Theorem G1, A Lemma 1). The number of
 maximal runs of a necklace is invariant under rotation, reversal and complement, hence under inversion. 2ⁿ1^{n+1}
@@ -255,25 +263,38 @@ killers of G_c are, up to inversion and conjugacy,
 
 (direct free reduction; checked by machine for |j| ≤ 5), all of y-degree −1.
 
-**Theorem 6.** For n = 3 and n = 4, no BS(1,2)-type word is conjugate to k_n^{±1} in G_c. Hence no generalized move
-with c frozen takes P_3 (or P_4) to a presentation with a BS(1,2)-type relator.
+**Theorem 6.** For n ∈ {3, 4, 5, 8}, no BS(1,2)-type word is conjugate to k_n^{±1} in G_c. Hence no generalized
+move with c frozen takes P_n to a presentation with a BS(1,2)-type relator, for these n; in particular not P_3.
 
-*Proof (exact computation, `th09_killers.check_gieseking`).* Let H ≤ G_c be the index-2 subgroup of even degree,
-H = ⟨a,b,t = y²⟩, and ρ: H → PSL(2,13) O's witness homomorphism (O Theorem O6): ρ(a) = [[0,2],[6,8]],
-ρ(b) = [[1,11],[6,2]], ρ(t) = [[0,1],[12,5]]; the script re-checks the two relations of H and uses O's normal form.
-If v ~ k_n⁻¹ in G_c then v² ~ k_n⁻² in G_c, so v² is H-conjugate to k_n⁻² or to y·k_n⁻²·y⁻¹, and
-tr ρ(v²) ∈ {±tr ρ(k_n²), ±tr ρ(y k_n² Y)} (traces of inverses agree in SL₂). ρ(a), ρ(b) have order 7 and every
-φ^m(a) is H-conjugate to a or b, so ρ(v_j²) depends only on j mod 7. Computed traces (up to sign, mod 13):
-v_j^+: 5, 3, 5, 5, 2, 0, 3 and v_j^-: 3, 5, 3, 0, 2, 5, 5 for j ≡ 0,…,6 (the same values for y v² Y), whereas
-k_3 gives 4 and k_4 gives 1. ∎
+*Proof (exact computation).* Let H ≤ G_c be the index-2 subgroup of even degree, H = ⟨a,b,t = y²⟩
+(t a t⁻¹ = b⁻¹a, t b t⁻¹ = a⁻¹b², O §6.3), and ρ: H → PSL(2,p) a homomorphism. If v ~ k_n⁻¹ in G_c then
+v² ~ k_n⁻² in G_c, so v² is H-conjugate to k_n⁻² or to y·k_n⁻²·y⁻¹ (G_c = H ⊔ yH, and y²= t ∈ H), hence
+tr ρ(k_n²) ∈ {±tr ρ(v²), ±tr ρ(y v² Y)} (traces of inverses agree in SL₂). In the normal form of v_j^{±2} and of
+y v_j^{±2} Y the parameter j enters only through the powers a^{−j}, (ab)^{−j} = φ⁻¹(a)^{−j} and b^{−j}, and ab is
+H-conjugate to b (t·ab·t⁻¹ = b); so the candidate traces depend only on j modulo lcm(ord ρ(a), ord ρ(b)).
+- *n = 3, 4, one homomorphism* (`th09_killers.check_gieseking`, in the self-test): O's witness
+  ρ(a) = [[0,2],[6,8]], ρ(b) = [[1,11],[6,2]], ρ(t) = [[0,1],[12,5]] mod 13 (relations re-checked; ρ(a), ρ(b) of
+  order 7). Traces up to sign: v_j^+: 5, 3, 5, 5, 2, 0, 3 and v_j^-: 3, 5, 3, 0, 2, 5, 5 for j ≡ 0,…,6 (the same
+  values for y v² Y); k_3 gives 4 and k_4 gives 1. Not among the candidates.
+- *n = 5, 8 (and again 3, 4), full sieve* (`th09_killers.gieseking_sieve`, option `--gsieve`): over all
+  homomorphisms H → PSL(2,7) and H → PSL(2,13) with non-abelian fibre image (176 and 416 of them, enumerated by
+  O's `o_sieve.homs_H`), intersect by CRT the sets of residues j (mod 1092) for which the trace condition holds;
+  for n = 3, 4, 5, 8 no residue survives, for either sign. ∎
 
-For n = 1, 2, 8 the value is 3 and for n = 5, 6, 7 it is 5, so this single homomorphism does not decide those n
-(for n = 1, 2 no exclusion is expected: P_1, P_2 are one move from a primitive relator by O Cor. O3).
+For n = 6, 7 residues survive (j ≡ 360, 864 resp. 65, 149, 500, 1088 mod 1092 for v^+, and similarly for v^-),
+so these quotients do not decide. For n = 1, 2 the residues j ≡ 1 (v^+) and j ≡ 0, 2 (v^-) survive, as they must:
+
+**Remark 6.2 (P_1 has a BS(1,2)-type relator).** k_1 = xYXyy is the inverse of a rotation of xyXYY = v_0^-
+(k_1⁻¹ = YYxyX). So P_1 = (c, k_1) is AC-trivial by Theorem 1 directly, and P_2 by O's c-frozen move k_2 → k_1
+(O Cor. O3) followed by Theorem 1 — a second proof of O's Corollary O3 consequences that does not use the
+conjugacy k_1 ~ x⁻²y.
 
 **Corollary 6.1 (T7).** For AK(3), in each of the three coordinate systems in which a relator can be frozen with
 a solvable conjugacy problem in this repository (b; x³Y⁴; c), neither a primitive word (G2, O6) nor a BS(1,2)-type
-word (Theorems 4–6) lies in the killer class of the partner. Any trivialization of AK(3) through these two exits
-needs at least two generalized moves, with an intermediate relator that is neither primitive nor BS(1,2)-type.
+word (Theorems 4–6) lies in the killer class of the partner. So after one generalized move from AK(3) (either
+relator frozen) or from P_3 with c frozen, no relator is primitive or BS(1,2)-type; a trivialization through
+these two exits needs at least two generalized moves. (Not covered: moving c with k_3 frozen — O's question Q2 —
+and the Miller–Schupp coordinates with a BS(3,4) relator frozen.)
 
 ## 7. Killers of the trefoil group: criterion, census, exchange graph
 
@@ -314,7 +335,11 @@ W_N = 1 is decided by Todd–Coxeter (`f_descent.is_trivial_group`, index 1 over
 
 Exits available: **P** = the class contains a primitive word (necklace (21)^j2 up to symmetry, Prop. 4.2; then
 D3); **BS** = the class contains a BS(1,2)-type word (necklace α_j or β_j, Prop. 4.2; then Theorem 1);
-**X** = exchange exit (Lemma 2.2(ii)) through a trefoil-type word.
+**X** = exchange exit (Lemma 2.2(ii)) through a trefoil-type word. P and BS are decided *exactly* for every
+killer class of B, of any length: by Theorem 3(d) and Prop. 4.2 the classes with a P exit are exactly (21)^j2 and
+those with a BS exit exactly α_j, β_j (j ≥ 0), up to symmetry. Since the reversal of β_j is a rotation of α_j,
+this is one P-class and one BS-class for each odd k ≥ 5 (they coincide for k = 3), while the number of killer
+classes grows (5 at k = 7, 15 at k = 9). Only X depends on bounded enumeration.
 
 | k | N | identification | status |
 |---|---|---|---|
@@ -323,22 +348,23 @@ D3); **BS** = the class contains a BS(1,2)-type word (necklace α_j or β_j, Pro
 | 5 | 11122 | AK(2) | AC-trivial: BS (Cor. 4.3); X via 112; known certificates |
 | 5 | 11212 | — | AC-trivial: P |
 | 7 | 1121212 | — | AC-trivial: P |
-| 7 | 1112122 | — (shortest form found: (x⁻⁴y⁻¹x⁻¹y⁻¹x²y, x⁻¹y⁻²x⁻¹y), length 15) | AC-trivial: **BS (new exit)** |
+| 7 | 1112122 | "BS7" = (x⁻⁴y⁻¹x⁻¹y⁻¹x²y, x⁻¹y⁻²x⁻¹y), length 15; contains the residual-list row R249 (§7.5) | AC-trivial: **BS (new exit)**; certificates `th09_bs7_bs_exit.json`, `th09_r249_trivialization.json` |
 | 7 | 1121122 | "X7" = (x⁻³y⁻¹x⁻²y⁻¹x²y, x⁻¹y⁻²x⁻¹y), length 15 | AC-trivial: **X via 112**; certificate `th09_x7_trivialization.json` (6,998 moves, peak 364) |
 | 7 | 1111222 | **AK(3)** | **undecided** |
-| 7 | 1111112 | **C3** = (x²yXy, xy⁵xY²) (trefoil relator x²yXy) | **undecided** |
+| 7 | 1111112 | **C3** = (x²yXy, xy⁵xY²) (trefoil relator x²yXy); also the list's R327 | **undecided** |
 | 9 | 112121212 | — | AC-trivial: P |
 | 9 | 111212122 | — | AC-trivial: BS |
-| 9 | 112121122 | — | AC-trivial: X via the meridian class 1 (bounded search hit, see §7.4) |
-| 9 | 111112222 | AK(4) | undecided |
-| 9 | 111212212 | C6 = P1 (trefoil relator xyXYYXy) | undecided |
-| 9 | ten others | — | no exit known to me |
+| 9 | 112121122 | — | AC-trivial: X via the meridian class 1; certificate `th09_k9_112121122_trivialization.json` (§7.4) |
+| 9 | 111112222 | AK(4) (= the list's R24, as I found) | undecided |
+| 9 | 111212212 | C6 = P1 (trefoil relator xyXYYXy); also the list's R28 | undecided |
+| 9 | 111111112, 111111122, 111111212, 111112112, 111121112, 111121222, 111122122, 111211222 | rows of the third-party residual list: R62/R74; R94/R125 (two necklaces); R97/R186; R54; R25/R80; R26/R316; R27/R58 | no exit known to me |
+| 9 | 111221122, 112112122 | not in that list (the representatives s_N of `--census` give lengths 22 and 20 after Whitehead reduction; not minimized over the class) | no exit known to me |
 
 **Answer to the seed question.** Ordered by syllable length, the first undecided killers of the trefoil group occur
-at length 14 (k = 7), and there are exactly two of them up to symmetry: AK(3) and C3. All eight classes of smaller
-or equal length other than these two are AC-trivial by a primitive, BS(1,2) or exchange exit. (The identification
-of C3, C6, AK(n) is by computing the necklace of the partner of their trefoil-type relator, `cen2.py` in the scratch
-directory; "undecided" means only that none of these exits applies within the stated bounds.)
+at length 14 (k = 7), and there are exactly two of them up to symmetry: AK(3) and C3. The other seven classes of
+length ≤ 14 are AC-trivial by a primitive, BS(1,2) or exchange exit. (The identification
+of C3, C6, AK(n) is by computing the necklace of the partner of their trefoil-type relator, option `--identify`;
+"undecided" means only that none of these exits applies within the stated bounds.)
 
 ### 7.4 The exchange graph (principle proved; data = bounded experiment + two certificates)
 
@@ -373,6 +399,44 @@ formula is proved here only for T(2,3) and T(n,n+1)). No exit at any node. In pa
 partner has 10 syllables and the four BS(1,2)-type classes with 10 syllables ((m,k) = ±(3,−10), ±(3,−11)) are
 different from it (tested for |m| ≤ 80).
 
+### 7.5 Payoff: the published residual class R249 is AC-trivial (proved by certificates)
+
+F, G and I used the third-party list `residual_classes16.txt` (nahomar/andrews-curtis-solver; 838 presentations
+of length 13–16 in 287 labelled classes that its cap-28 search left unresolved; unreviewed external data, read
+here as text only, from the copy in agent F's scratch directory). I computed, for every row and every relator of
+torus type (324 relators: T(2,3) 200, T(2,5) 67, T(3,4) 33, T(2,7) 13, T(3,5) 7, T(2,9) 2, T(4,5) 1, T(4,7) 1;
+recognition bounds |M| ≤ 5, exponents ≤ 12), whether the partner is conjugate in the torus group to a primitive
+word (exact, G Lemma G4) or to a BS(1,2)-type word (family of Theorem 3(d), |m| ≤ 10). No row has a BS(1,2)-type
+relator itself, none has a primitive exit (as G found), and **exactly one row has a BS(1,2) exit**:
+
+    R249:  (r, s) = (x²yx⁻²y⁻², xyx⁻¹yxy⁴) = (xxyXXYY, xyXyxyyyy),  length 16.
+
+Here s is trefoil-type (Whitehead-minimal form x³y²), and r has necklace 1112122 = β₂ in G_s ≅ B. By Prop. 4.2 the
+class of r in G_s contains a BS(1,2)-type word, so (r,s) is AC-trivial by Theorem 1 and Lemma 2.2.
+
+**Corollary 7.5.** (x²yx⁻²y⁻², xyx⁻¹yxy⁴) is AC-trivial; so is (x²yx⁻²y⁻², x³y²x⁻¹yx⁻¹y), the list's seed for
+the class R249 (I's `i_landscape_cap25.txt`: "comp 207 R249 xxyXXYY,xxxyyXyXy states 3392 … trivial 0").
+*Proof by certificates.* `certificates/th09_r249_trivialization.json`: 37,603 strict moves from
+(xxyXXYY, xyXyxyyyy) to (x,y) — one generalized move with s frozen to the automorphic image α(BS7) of the
+presentation BS7 = (x⁻⁴y⁻¹x⁻¹y⁻¹x²y, x⁻¹y⁻²x⁻¹y) (same killer class), then BS7's BS-exit certificate
+transported by α (Lemma D2), then a Nielsen reduction. `certificates/th09_r249_seed_to_member.json`: 28 strict
+moves (two cyclic products with the first relator frozen) from the seed to that row. Both are replayed by
+`elementary_verify.py` (§9). ∎
+
+So the new exit resolves a presentation that the bounded searches of this repository and of the external solver
+left open. I claim no more than that: the label "R249" and the statement that the list's 838 rows are unresolved
+are the external source's; whether R249 was known to be AC-trivial elsewhere I could not check. The necklaces
+of the other rows agree with the merges found earlier by other means (C3 and R327 share 1111112; C6 and R28
+share 111212212; R62 and R74 share 111111112; R24 has AK(4)'s necklace 111112222; I's groups {R27, R58} and
+{R32, R134} share one necklace each), which is an independent consistency check of the necklace computation.
+With R249 resolved, the residual rows with a trefoil-type relator and k = 7 are exactly those of AK(3) and C3 (R327).
+
+*Depth 2 (experiment, negative).* For each of the 36 other necklaces carried by residual rows with a trefoil-type
+relator (10 with k = 9, 18 with k = 11, 8 with k = 13), and for the two remaining undecided k = 9 classes, I
+repeated the scan of §7.4 (torus-type words in the class
+with |M| ≤ 5, exponents ≤ 9, length ≤ 60; at each such node a primitive or BS(1,2)-type conjugate of the partner):
+no exit. Exchange neighbours (|M| ≤ 8, length ≤ 120) of the 26 necklaces with k ≥ 11: none found.
+
 ## 8. Failed attempts and negative results (precise)
 
 1. **BS(1,2) exit for AK(3), one generalized move.** Closed exactly in all three coordinate systems (Theorems 4–6)
@@ -383,7 +447,7 @@ different from it (tested for |m| ≤ 80).
 3. **"Unique killer class" for other relators.** I looked for further one-relator groups with a single killer class
    (which would give new members of 𝒰 as in Theorem 1). For G_r = N ⋊ ℤ this means that the twisted conjugation
    action on N = [G_r,G_r] is transitive; when N is abelian this happens only for ℤ and BS(1,2) (Remark 2.3), and
-   for the groups of this project (torus knot groups, G_c) there are infinitely many killer classes (§7; O). I
+   for the groups of this project (torus knot groups, G_c) there are infinitely many killer classes (Prop. 4.2; O). I
    found no further example and no proof that none exists with N non-abelian.
 4. **A structural reason why AK(3) and C3 have no exit.** I do not have one. The census shows that at k = 7 three
    of five classes exit, by three different mechanisms; I see no invariant separating {AK(3), C3} from the other
@@ -391,8 +455,13 @@ different from it (tested for |m| ≤ 80).
 5. **Classification of 𝒦.** Not attempted beyond k ≤ 9. Which elements of C₂*C₃ are killers is the question
    "which one-relator quotients of the modular group are trivial"; all 15 perfect classes at k = 9 are killers,
    so 𝒦 is large and no pattern excluding AK-type necklaces is visible.
+6. **Direct compilation of the BS(1,2) exit for R249.** Theorem 1's compiler normalizes the partner through words
+   x^a y^b X^c; in the coordinates (P,Q) available for the row R249 this blows up (no run finished within the
+   limits; a first attempt for AK(2) produced a valid but 313,290-move, 12 MB certificate, discarded). The stored
+   R249 certificate therefore goes through the automorphic image of BS7, where the compiler is short. The stored
+   AK(2) BS-exit certificate uses the cheapest of the complements PQ^i, |i| ≤ 3 (14,394 moves).
 
-## 9. Experiments and reproduction (executed in this session; one core, < 300 MB, each run < 2 min)
+## 9. Experiments and reproduction (executed in this session; one core, < 300 MB, each run < 5 min)
 
 `experiments/th09_killers.py` (standard library; imports `g_torus`, `g_cert`, `f_descent`, `o_gc`,
 `elementary_verify` read-only).
@@ -431,12 +500,42 @@ Verifier output (this session):
 {"endpoint": ["x", "y"], "moves": 6998, "path": "certificates/th09_x7_trivialization.json", "peak_total_length": 364}
 {"endpoint": ["x", "y"], "moves": 7147, "path": "certificates/th09_k9_112121122_trivialization.json", "peak_total_length": 122}
 ```
-(BS-exit certificates: see the addendum at the end of this section.)
+{"endpoint": ["x", "y"], "moves": 5503,  "path": "certificates/th09_bs7_bs_exit.json", "peak_total_length": 267}
+{"endpoint": ["x", "y"], "moves": 14394, "path": "certificates/th09_ak2_bs_exit.json", "peak_total_length": 270}
+{"endpoint": ["x", "y"], "moves": 37603, "path": "certificates/th09_r249_trivialization.json", "peak_total_length": 675}
+{"endpoint": ["xxyXXYY", "xyXyxyyyy"], "moves": 28, "path": "certificates/th09_r249_seed_to_member.json", "peak_total_length": 23}
+```
+(The second block was produced by `th09_killers.bs_exit_certificate`, `transport_certificate` and
+`frozen_path_certificate`; `--write` regenerates all of them.)
+```
 
 - `th09_ms1_*.json`: Theorem 1 for (XyxYY, s), s = XyxyX, XYxyyX, XyXYxxYxYXX, XXyxyyxYX, XyyXYYxxyXY, XYYxyXy.
+- `th09_bs7_bs_exit.json`: (x⁻⁴y⁻¹x⁻¹y⁻¹x²y, x⁻¹y⁻²x⁻¹y) → (x,y) by the BS(1,2) exit: relator 0 is moved, with the
+  trefoil relator frozen, to a BS(1,2)-type word P⁻¹QPQ⁻²; then Theorem 1's compiler runs in the coordinates (P,Q)
+  (letter conjugations become conjugations by the words θ(g)); then a Nielsen reduction of the basis (P,Q).
+- `th09_ak2_bs_exit.json`: AK(2) = (x²Y³, xyxYXY) → (x,y) the same way (Corollary 4.3), with b frozen in the first move.
+- `th09_r249_trivialization.json`, `th09_r249_seed_to_member.json`: §7.5.
 - `th09_x7_trivialization.json`: (x⁻³y⁻¹x⁻²y⁻¹x²y, x⁻¹y⁻²x⁻¹y) → (x,y), exchange exit (§7.4).
 - `th09_k9_112121122_trivialization.json`: (XyXyXYXyXYxyxyxYxY, xxYYY) → (x,y), exchange exit through a
   trefoil-type word that is a meridian (conjugate to a primitive word of length 2 in adapted coordinates).
+
+```
+python3 experiments/th09_killers.py --gsieve      # about 80 s
+# n=1 modulus 1092 survivors +: [1, 470, 638, 923, 925, 1091]  -: [0, 2, 168, 170, 455, 623]
+# n=2 (same as n=1)
+# n=3 modulus 1092 survivors +: []  -: []  EXCLUDED        (likewise n=4, n=5, n=8)
+# n=6 modulus 1092 survivors +: [360, 864]  -: [229, 733]
+# n=7 modulus 1092 survivors +: [65, 149, 500, 1088]  -: [5, 593, 944, 1028]
+python3 experiments/th09_killers.py --forward 20  # about 1 min
+# {'cap': 20, 'complete': True, 'states': 39840, 'relators': 25450, 'hits': []}
+```
+**Forward sets of AK(3) tested for the new exit (experiment, bounded, directed).** In the graph "replace u by
+cyc(rot(u)·rot(v^{±1}))" on pairs of cyclic words up to rotation, inversion and order, with total length ≤ cap:
+cap 20 complete — 39,840 states, 25,450 distinct relators, none primitive, none BS(1,2)-type; cap 22 stopped at
+the 275 s limit after 169,710 states and 122,298 relators — none. (My graph convention is not byte-identical to
+D's/M's engines; the numbers are for this script only.) Along the 47 stored certificates that start or end at
+AK(3) (`d_ak3_*`, `ms3_to_ak3_exact`, `i_R212_to_ak3`, `k_ak3_to_p3*`, `g_ak3_to_trefoil_t2_7`; 12,089 states,
+256 distinct cyclic relators of length ≤ 60) no relator is BS(1,2)-type.
 
 Scratch scripts (not stored; they only call the functions above): identification of C3, C6, AK(n) necklaces;
 shortest representatives; the depth-2 scan of §7.4 (`d2.py`: C3 and AK(3) with |M| ≤ 6, exponents ≤ 14, length ≤ 70;
@@ -455,13 +554,13 @@ the twelve undecided k = 9 classes with |M| ≤ 5, exponents ≤ 9, length ≤ 6
 - "G_v ≅ BS(1,2), any marking": I do not know whether a two-generator one-relator presentation of BS(1,2) other
   than the Aut(F)-images of XyxYY exists; Theorem 1 covers it if it does, but Theorems 3–6 concern
   BS(1,2)-type words (Aut-images) only.
-- Theorem 6 is proved for n = 3, 4 only; for n ≥ 5 the single homomorphism does not decide (more quotients, as in
-  O's sieve, would be needed). The Gieseking-side statement uses O's normal form and O's witness homomorphism,
-  re-checked here (relations, orders).
+- Theorem 6 is proved for n = 3, 4, 5, 8 only (n = 6, 7 undecided; n ≥ 9 not attempted). It is a computer proof:
+  it relies on O's normal form (`o_gc.nf`), O's enumeration of homomorphisms (`o_sieve.homs_H`) and CRT sieve
+  (`o_sieve.combine`); for n = 3, 4 the single witness homomorphism is re-checked here (relations, orders).
 - The exchange graph and the depth-2 scans are **bounded** enumerations (matrix entries, exponents and word
   lengths as stated). "No trefoil-type word in AK(3)'s class" is not proved here (TH04's topic).
 - "Undecided" in §7.3 means: none of the exits P, BS, X applies within the stated bounds, and I know no
-  trivialization. The ten unnamed classes at k = 9 were not compared with published residual lists.
+  trivialization. The residual-list labels in that table are the external source's (unreviewed).
 - The census uses Todd–Coxeter for triviality (exact when it terminates with index 1); the two non-killers are
   justified separately (A₅; the (2,3,7) triangle group).
 - The certificates are long (thousands of moves) because the compilers go through normal forms; no minimality.
@@ -472,7 +571,9 @@ the twelve undecided k = 9 classes with |M| ≤ 5, exponents ≤ 9, length ≤ 6
    graph). By Corollary 1.2 a state with a BS(1,2)-type relator is an immediate trivialization, exactly like a
    primitive relator, and the test costs one Whitehead reduction (minimal form of length 5). The cap-29 forward
    set of AK(3) (2.9·10⁸ states) was only tested for primitive relators and contact with T(22); a BS(1,2)-type
-   relator with a long partner would not have been noticed. Same for C3, C4, C6, P2.
+   relator with a long partner would not have been noticed. Same for C3, C4, C6, P2. (Here: a Python forward
+   scan of AK(3) to cap 20, complete, and cap 22, partial, finds none — §9; and the residual list has exactly
+   one row with a BS(1,2) exit at distance one, R249 — §7.5.)
 2. **Treat AK(3) and C3 together.** They are the only two undecided killers of the trefoil group at the first
    undecided syllable length; C3's class has 14+ torus nodes (types (2,7), (3,4), …) while AK(3)'s has 3. A proof
    or trivialization technique should be tested on the three decided neighbours 1112122, 1121122, 1121212 first:
@@ -480,18 +581,21 @@ the twelve undecided k = 9 classes with |M| ≤ 5, exponents ≤ 9, length ≤ 6
 3. **Extend the exit list.** 𝒰 (universally trivializing relators) now contains primitives and BS(1,2)-type
    words. Each new member closes the whole one-parameter family of its Aut-images in every G_r. Candidates:
    relators whose group has finitely many killer classes each containing a member of 𝒰; a concrete test case
-   is whether the trefoil relator's ten undecided k = 9 classes reduce to shorter ones by exchange through
+   is whether the trefoil relator's twelve undecided k = 9 classes reduce to shorter ones by exchange through
    non-trefoil torus types (G's torus graph with the BS exit added).
 4. **Do not expect a strict-descent or length argument**: three of the five k = 7 classes are AC-trivial but
    admit no strictly decreasing generalized move (§8.2).
-5. For the Gieseking coordinates, combine O's sieve with the families v_j^± of §6 to decide n = 5,…,8.
+5. For the Gieseking coordinates, n = 6, 7 remain undecided for the BS(1,2) exit (§6); more quotients
+   (PΓL(2,25) as in O §6.2, or PSL(2,p) for p = 19) would probably decide them.
 
 ## 12. Files written
 
 - `research/research-th09.md` (this note).
 - `experiments/th09_killers.py` (self-test: `--selftest`).
 - `certificates/th09_ms1_{1..6}.json`, `certificates/th09_x7_trivialization.json`,
-  `certificates/th09_k9_112121122_trivialization.json`, `certificates/th09_bs7_bs_exit.json` (see §9 addendum).
+  `certificates/th09_k9_112121122_trivialization.json`, `certificates/th09_bs7_bs_exit.json`,
+  `certificates/th09_ak2_bs_exit.json`, `certificates/th09_r249_trivialization.json`,
+  `certificates/th09_r249_seed_to_member.json` (11 files, each < 2 MB, all replayed by `elementary_verify.py`).
 
 ## References
 

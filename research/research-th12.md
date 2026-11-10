@@ -13,13 +13,14 @@ Notation: F = F(x,y), X = x⁻¹, Y = y⁻¹; AK(n) = (r,s) with r = xⁿY^(n+1)
 - **Corollary (the seed is closed negatively).** The abelianization already forces area ≥ n+2, so the area of AK(n) is within 2 of the trivial bound; area/Dehn-function arguments (in F or in any quotient, with any conjugation-invariant norm) can never give more than μ ≥ log_φ(n) + O(1) for AK(n).
 - **Theorem 3.** Every instruction path from AK(n) to (x,y) has **μ ≥ n+2** multiplications (abelianization alone gives exactly n+1; the extra 1 uses Theorem 2).
 - **Theorem 4.** For n ≥ 4 every instruction path from AK(n) to (x,y) has **κ ≥ n−3** conjugations.
-- **Corollary 5.** d_F(AK(n)) ≥ 2n−1 for n ≥ 4: every AC trivialization of AK(n) by the 15 instructions, and every `ordinary-ac-elementary-v1` certificate, has at least 2n−1 moves. For n = 3 this method gives only ≥ 6 (E's exhaustive bound is 15); it exceeds 15 from n = 9 on. As far as I can see this is the repository's first lower bound on d_F(AK(n)) valid for all n and growing with n; it is a complexity statement, not an obstruction.
+- **Proposition 9 (K's coordinates).** Over P_n = (xyxYYXy, xⁿYXyy) the generator x is a product of 11 conjugates of the relators **for every n** (3 ≤ Area_{P_n}(x) ≤ 11), and n ≤ Area_{P_n}(y) ≤ 11n+24. So area is far from AC-invariant: it is n+4 for x over AK(n) and bounded over the AC-equivalent P_n. Every instruction path from AK(n) to P_n has ≥ 2n multiplications (Corollary 10; K1 uses 4n−1).
+- **Corollary 5.** d_F(AK(n)) ≥ 2n−1 for n ≥ 4: every AC trivialization of AK(n) by the 15 instructions, and every `ordinary-ac-elementary-v1` certificate, has at least 2n−1 moves. For n = 3 this method gives only ≥ 6 (≥ 7 with the exact radius computed in §7; E's exhaustive bound is 15); it exceeds 15 from n = 9 on. As far as I can see this is the repository's first lower bound on d_F(AK(n)) valid for all n and growing with n; it is a complexity statement, not an obstruction.
 
 ## 1. Previous work read and choice of direction
 
 Read: `README.md` in full; B (§1, §4), E (§2–5, §8–9), K (§3, §6–9) in full; status paragraphs of A, C, D, F–J, L–O. Used and re-checked: E's instruction alphabet and Fact 0 (an elementary-v1 primitive is one instruction); B §1 (z = xⁿ central, Δ conjugates x to y); E's tables (d_F(AK(1)) = 8, d_{N₁}(AK(n)) = n+2 for n ≤ 4, d_F(AK(3)) ≥ 15); K2/K3.
 
-Direction: I kept the seed (area as a complexity measure) but its expected outcome reversed. The seed hoped for a growing lower bound A(AK(n)) ≥ g(n) leading to a move bound. I first computed the area exactly (Theorem 2): it is n+4, essentially the abelian bound, so that route provably yields nothing beyond a logarithm. I then replaced "total area" by two finer by-products of the same bookkeeping that *are* forced to be linear: the L/R-word of the count matrix (Theorem 3) and the spread of the conjugators of the s-factors (Theorem 4, via a permutation model in which r acts trivially and s fixes a window — the "stability-type" idea of the seed, used for conjugator length instead of area). New relative to A–O: none of the notes contains area/count matrices, an exact area, or a bound on d_F(AK(n)) for general n (E has n ≤ 4 abelian values by BFS). Not duplicated: TH07 bounds *peak length* by frozen-relator arguments; here only *numbers of moves* are bounded.
+Direction: I kept the seed (area as a complexity measure) but its expected outcome reversed. The seed hoped for a growing lower bound A(AK(n)) ≥ g(n) leading to a move bound. I first computed the area exactly (Theorem 2): it is n+4, essentially the abelian bound, so that route provably yields nothing beyond a logarithm. I then replaced "total area" by two finer by-products of the same bookkeeping that *are* forced to be linear: the L/R-word of the count matrix (Theorem 3) and the spread of the conjugators of the s-factors (Theorem 4, via a permutation model in which r acts trivially and s fixes a window — the "stability-type" idea of the seed, used for conjugator length instead of area). In K's coordinates P_n the same bookkeeping gives a different picture (§5): x has bounded area there. New relative to A–O: none of the notes contains area/count matrices, an exact area, or a bound on d_F(AK(n)) for general n (E has n ≤ 4 abelian values by BFS). Not duplicated: TH07 bounds *peak length* by frozen-relator arguments; here only *numbers of moves* are bounded.
 
 ## 2. The count-matrix calculus (proved here)
 
@@ -115,7 +116,7 @@ Let σ: F → ℤ, σ(x) = σ(y) = 1.
 
 *Proof.* Take the expression of x over AK(n) given by Corollary 1.1. By Theorem 1 every conjugator is a product h_(k₁)⋯h_(k_q) over *distinct* conjugation instructions, and so is each of its prefixes g'; hence σ(g') ∈ [−κ⁻, κ⁺]. Suppose κ⁺+κ⁻ ≤ n−4 and put v = κ⁻+1 ∈ [1,n−3]. A factor g r^ε g⁻¹ fixes v by Lemma 4.1(a). For a factor g s^ε g⁻¹: every prefix g' satisfies v+σ(g') ∈ [1, κ⁻+κ⁺+1] ⊆ [1,n−3]; by induction on |g'| and Lemma 4.1(c), v·g' = v+σ(g'); so v·g ∈ [1,n−3] is fixed by s (Lemma 4.1(b)), and g s^ε g⁻¹ fixes v. Thus the product x fixes v; but v·x = v+1. Contradiction. ∎
 
-Remarks. (a) The mechanism: the n+1 (at least) s-factors must carry conjugators whose σ-values do not fit into any window of n−3 consecutive integers; in (I_x) they are Δ⁻¹yⁱ, 0 ≤ i ≤ n, so the bound is sharp up to an additive constant *for this invariant*. (b) The r-factors carry no such information: in (I_x) their conjugators have length ≤ 3 for all n. (c) Theorem 4 bounds the radius too: every expression of x over AK(n), whether or not it comes from a path, has an s-conjugator g with a prefix g' of |σ(g')| ≥ ⌊(n−2)/2⌋, so its radius is ≥ ⌊(n−2)/2⌋ (take v = ⌈(n−2)/2⌉ in the proof), in contrast with (b). *Experiment (exact, Stallings folding, §7):* the least radius ρ*(n) of an expression of x over AK(n) (equivalently: the least ρ with x ∈ ⟨g r g⁻¹, g s g⁻¹ : |g| ≤ ρ⟩) is ⌊n/2⌋+1 for every n ≤ 12, and the same for y. So the theorem's radius bound is 2 below the truth in that range; κ ≥ ρ*(n) by Theorem 1. *Open:* prove ρ*(n) = ⌊n/2⌋+1 for all n.
+Remarks. (a) The mechanism: the n+1 (at least) s-factors must carry conjugators whose prefix σ-values do not fit into any window of n−3 consecutive integers; in (I_x) they are Δ⁻¹yⁱ, 0 ≤ i ≤ n, so the bound is sharp up to an additive constant *for this invariant*. (b) The r-factors carry no such information: in (I_x) their conjugators have length ≤ 3 for all n. (c) Theorem 4 bounds the radius too: every expression of x over AK(n), whether or not it comes from a path, has an s-conjugator g with a prefix g' of |σ(g')| ≥ ⌊(n−2)/2⌋, so its radius is ≥ ⌊(n−2)/2⌋ (take v = ⌈(n−2)/2⌉ in the proof), in contrast with (b). *Experiment (exact, Stallings folding, §7):* the least radius ρ*(n) of an expression of x over AK(n) (equivalently: the least ρ with x ∈ ⟨g r g⁻¹, g s g⁻¹ : |g| ≤ ρ⟩) is ⌊n/2⌋+1 for every n ≤ 16, and the same for y. So the theorem's radius bound is 2 below the truth in that range; κ ≥ ρ*(n) by Theorem 1. *Open:* prove ρ*(n) = ⌊n/2⌋+1 for all n.
 
 ### 4.3 Corollary 5 and comparison with E
 
@@ -124,11 +125,11 @@ Remarks. (a) The mechanism: the n+1 (at least) s-factors must carry conjugators 
 | n | 1 | 2 | 3 | 4 | 5 | 9 | 10 | 20 | general n ≥ 4 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---|
 | this note (theorem) | 5 | 5 | 6 | 7 | 9 | 17 | 19 | 39 | 2n−1 |
-| theorem + exact radius ρ* (experiment, n ≤ 12) | 5 | 6 | 7 | 9 | 10 | 17 | 19 | — | μ ≥ n+2, κ ≥ max(n−3, ρ*) |
+| theorem + exact radius ρ* (experiment, n ≤ 16) | 5 | 6 | 7 | 9 | 10 | 17 | 19 | — | μ ≥ n+2, κ ≥ max(n−3, ρ*) |
 | E (exhaustive BFS) | 8 (exact) | ≥ 15 | ≥ 15 | — | — | — | — | — | — |
 | known upper bound | 8 | 19 (E: 19 instructions = 28 elementary-v1 moves) | none | none | none | none | none | none | none (open) |
 
-So for n = 3 the theorem is far weaker than E's exhaustive bound 15, and it overtakes that bound only for n ≥ 9 — where no exhaustive search exists. The calibration cases agree: E's 12-move AK(1) certificate has μ = 5, κ = 3 and count matrix [[7,2],[3,1]]; E's 28-move AK(2) certificate has μ = 10, κ = 10, count matrix [[67,49],[41,30]], radius 6 (§7).
+So for n = 3 the theorem is far weaker than E's exhaustive bound 15, and it overtakes that bound only for n ≥ 9 — where no exhaustive search exists. The calibration cases agree: by a bidirectional BFS (§7) *every* shortest (8-instruction) trivialization of AK(1) has (μ,κ) = (5,3) and no inversion or swap (theorem: μ ≥ 4, κ ≥ 1); E's 12-move AK(1) certificate has μ = 5, κ = 3 and count matrix [[7,2],[3,1]]; E's 28-move AK(2) certificate has μ = 10, κ = 10, count matrix [[67,49],[41,30]], radius 6 (§7).
 
 **What the bound is not.** Corollary 5 holds for AK(1) and AK(2), which are AC-trivial. It is a statement about the length of trivializations, not evidence for or against their existence (K2 applies verbatim: μ and κ are not monotone along anything).
 
@@ -150,7 +151,35 @@ Split every ACM move of insertion number k (Remark (c) of §2) into its k signed
 
 *Proved here.* E_{P_n} = [[1,0],[n−1,1]] (rows c, k_n), so by Lemma 0 the signed counts are (1,0) for x and (−(n−1),1) for y: Area_{P_n}(y) ≥ n, and Area_{P_n}(x) ≥ 3 (c_c is odd, c_k even, and (1,0) is impossible because x is not conjugate in F to the cyclically reduced word c^{±1} of length 7). Σ = R^(−(n−1)) has class (ba)^(n−1) of length 2n−2, and S⁻¹Σ has length 2n−1. By Steps 3–5 of Theorem 3: μ = n−1 would force loss 0 and C₀ = |Σ|, i.e. count vector (1,0) for x, which is impossible; so **every instruction path from P_n to (x,y) has μ ≥ n multiplications.**
 
-*Experiment (verified upper bounds, n = 3).* Composing (I_x), (I_y) with the expressions of r, s over P₃ obtained by reversing K's 68-move certificate gives explicit expressions, checked by free reduction, with count vectors (211, 382) for x and (174, 315) for y; K's 88-move uniform certificate gives (975,1568) and (804,1293). So 3 ≤ Area_{P₃}(x) ≤ 593 and 3 ≤ Area_{P₃}(y) ≤ 489. *Open:* the exact areas over P_n (I expect them to be linear in n; transport along a path is far from optimal because the count matrices multiply), and an analogue of Theorem 4 for P_n (I found no model with a long window: in the obvious metabelian quotient ℤ² ⋊ ℤ of ⟨x,y | c⟩ the affine map induced by k_n has a single fixed point — sketch, not checked).
+**Proposition 8 (P_n is AK(n) in the letters a = x, b = yxy⁻¹; proved here, machine-checked for n ≤ 30–40).** Let n ≥ 2, a = x, b = yxY, c = xyxYYXy, k = k_n. The following are identities in F:
+
+    (P1)  y = c⁻¹ · a b a⁻ⁿ · k
+    (P2)  a b a b⁻¹ a⁻¹ b⁻¹ = (u k u⁻¹) · (u a⁻¹ k⁻¹ a u⁻¹) · c · (b c⁻¹ b⁻¹),      u = a b a^(1−n)
+    (P3)  aⁿ b^(−n−1) = k · (y k⁻¹ y⁻¹) · (bⁿa⁻¹) c⁻¹ (bⁿa⁻¹)⁻¹
+
+So the two AK(n) relators, written in a and b, have areas ≤ 4 and ≤ 3 over P_n, uniformly in n. Substituting x ↦ a, y ↦ b in (I_x) gives an expression of x over P_n with 4(n+1) + 3·3 = 4n+13 factors (2n+5 on c, 2n+8 on k); Proposition 9 below does much better.
+
+*Proof.* c = a·b·(y⁻¹a⁻¹y) gives y⁻¹ay = c⁻¹ab; hence k = aⁿ(y⁻¹a⁻¹y)y = aⁿb⁻¹a⁻¹c·y, which is (P1). For (P2): b = yay⁻¹ = c⁻¹(aba⁻ⁿ)·kak⁻¹·(aⁿb⁻¹a⁻¹)c by (P1); write kak⁻¹ = a·(a⁻¹ka)·k⁻¹ and note (aba⁻ⁿ)a = u, aⁿb⁻¹a⁻¹ = a u⁻¹, u a u⁻¹ = abab⁻¹a⁻¹; so cbc⁻¹ = (u a⁻¹ka u⁻¹)(u k⁻¹ u⁻¹)·abab⁻¹a⁻¹, and solving for abab⁻¹a⁻¹·b⁻¹ gives (P2). For (P3): bⁿ = y aⁿ y⁻¹ and, by (P1), aⁿ = k y⁻¹ c⁻¹ab = k y⁻¹·y⁻¹ay, so bⁿ = (yky⁻¹)·y⁻¹a, i.e. y = a b⁻ⁿ (yky⁻¹). Equating with (P1): a b⁻ⁿ (yky⁻¹) = c⁻¹ a b a⁻ⁿ k, whence aⁿ = k (yk⁻¹y⁻¹) bⁿ a⁻¹c⁻¹a b and (P3) follows on multiplying by b^(−n−1). The substitution x ↦ a, y ↦ b is a homomorphism F → F, so (I_x) remains an identity. ∎
+
+**Proposition 9 (over P_n the generator x has bounded area; proved here, machine-checked for 2 ≤ n ≤ 30).** For every n ≥ 2, x is a product of **11** conjugates of c^{±1}, k_n^{±1} (7 on c, 4 on k), and y is a product of 11(n+2)+2. Hence
+
+    3 ≤ Area_{P_n}(x) ≤ 11   (independently of n),        n ≤ Area_{P_n}(y) ≤ 11n+24,
+
+in contrast with Area_{AK(n)}(x) = n+4, Area_{AK(n)}(y) = n+3 (Theorem 2).
+
+*Proof.* Notation of Proposition 8; s = abab⁻¹a⁻¹b⁻¹ has 4 factors by (P2); put C = ycy⁻¹.
+(1) yay⁻¹ = b by definition; and y⁻¹ay = c⁻¹ab gives a = (yc⁻¹y⁻¹)·b·(yby⁻¹), i.e. yby⁻¹ = b⁻¹Ca.
+(2) Conjugating s by y and substituting (1): y s y⁻¹ = b·(b⁻¹Ca)·b·(a⁻¹C⁻¹b)·b⁻¹·(a⁻¹C⁻¹b) = C·aba⁻¹·C⁻¹·a⁻¹C⁻¹·b. Therefore
+
+    Ψ := a b a⁻² b = (aba⁻²) C (aba⁻²)⁻¹ · (aba⁻¹) C (aba⁻¹)⁻¹ · C⁻¹ · (y s y⁻¹)        (3 + 4 = 7 factors).
+
+(3) b = (a⁻¹ s a) · (ab⁻¹a⁻¹) Ψ (ab⁻¹a⁻¹)⁻¹ is a free identity (the right side is bab⁻¹a⁻¹b⁻¹a · a⁻¹bab·a⁻¹ = b): 4 + 7 = 11 factors. Finally x = y⁻¹by, and y = c⁻¹·a·b·a⁻ⁿ·k by (P1), with a, b, a⁻¹ of area ≤ 11 each. Lower bounds: Lemma 0 and the first paragraph of this section. ∎
+
+In words: conjugating the braid relation by y and using the bundle relations (1) gives aba⁻²b = 1; with the braid relation itself this gives b = 1. Only c and the braid relation s(a,b) are used, and (P2) has the n-independent form s(a,b) = (aba)·[u,x⁻¹]·(aba)⁻¹·c·(bc⁻¹b⁻¹) with u = YXyy and [u,x⁻¹] = uXu⁻¹x = x⁻ⁿ(k_nXk_n⁻¹x)xⁿ. So **x ∈ ⟨⟨c, [x,u]⟩⟩ by an 11-factor filling that does not depend on n**: modulo c, x dies as soon as it commutes with the killer k_n = xⁿu. Only y, whose signed count vector is (−(n−1),1), carries the n-dependence. *Experiment (exact, Stallings folding):* the least radius of an expression of x, and of y, over P_n is 2 for every 2 ≤ n ≤ 16 (over AK(n) it is ⌊n/2⌋+1); so no analogue of Theorem 4 with a bound growing in n can hold for P_n in that range.
+
+**Corollary 10 (multiplications between AK(n) and P_n; proved here).** Every instruction path from AK(n) to P_n contains at least 2n multiplications (K1 uses 4n−1 cyclic products, each containing exactly one). *Proof.* By Theorem 1 and Lemma 0, g_m⋯g₁ = Σ_{P_n}⁻¹Σ_{AK(n)} = −RⁿL^(−n−1), whose class is (ab⁻¹)^(n−1)·a·b·a·(b⁻¹a)ⁿ of length 4n+1; multiplying by a on the left gives length 4n. Step 4 of Theorem 3 gives μ ≥ 2n. ∎ (Area alone gives only a logarithm here as well: n+4 ≤ 11·F_(μ+2).)
+
+Remarks. (a) (P1)–(P3) explain K1 conceptually: modulo c and k the elements a = x, b = yxy⁻¹ satisfy the two AK(n) relations at bounded cost, and y is the word aba⁻ⁿ in them. This is a statement about areas (and about the group), **not** a new AC-equivalence; K1 remains the certified one. (b) *Experiment, for contrast:* transporting (I_x), (I_y) along K's certificates (reversed) gives verified expressions over P₃ with 593 and 489 factors (68-move certificate) or 2543 and 2097 (88-move one); Proposition 9 gives 11 for x. Transport along a path is far from optimal because count matrices multiply. (c) *Experiment:* for n = 2, 3, 4 neither x nor y is a product of ≤ 3 conjugates of c^{±1}, k^{±1} with all conjugators of length ≤ 4 (`--pn-area3 4`, exhaustive meet-in-the-middle; no statement for longer conjugators). (d) *Open:* the exact values (3 ≤ Area_{P_n}(x) ≤ 11, n ≤ Area_{P_n}(y) ≤ 11n+24); a proof that the radius over P_n is 2 for all n. (I found no model with a long window; the AK model does not transfer because the permutations of a and b in Lemma 4.1 are not conjugate.)
 
 ## 6. Failed attempts and negative results (with precise reasons)
 
@@ -158,7 +187,7 @@ Split every ACM move of insertion number k (Remark (c) of §2) into its k signed
 2. **Conjugator length of the r-factors:** bounded by 3 for all n ((I_x)); only the s-factors are forced to spread (Theorem 4).
 3. **Excluding μ = n+2 for n ≥ 2.** The n−1 words L R^(j−2) L R⁻¹ L^(−(n+1−j)), j ≥ 3, have count matrices compatible with Theorem 2(ii). Excluding them needs to know which non-minimal count vectors are realized by expressions, which I could not determine.
 4. **A superlinear bound.** Both mechanisms are saturated at linear size by the identities themselves: (I_x) has n+4 factors and σ-spread n. The actual difficulty of trivializing AK(n) (if any) is invisible to count matrices and conjugator windows; I see no way to push these two invariants beyond c·n.
-5. **P_n:** no window model, exact area open (§5).
+5. **P_n:** no conjugation bound is possible in the range n ≤ 16 (radius 2, §5); areas over P_n are known only up to constants.
 
 ## 7. Experiments (exact commands and outputs)
 
@@ -172,7 +201,15 @@ Split every ACM move of insertion number k (Remark (c) of §2) into its k signed
     P_3 transport via k_ak3_to_p3.json {... [[21, 38], [37, 67]], "x": [211, 382], "y": [174, 315]}
     P_3 transport via k_ak3_to_p3_uniform.json {... [[171, 275], [97, 156]], "x": [975, 1568], "y": [804, 1293]}
     random reversed paths through bookkeeping (trials, (max mu, its x-area)): (200, (13, 367))
+    P_n braid identity (area <= 4 for s(x, yxY) over P_n) verified for n = 2..40
+    Proposition 8 (x over P_n with 4n+13 factors) verified for n = 2..30; counts (c,k) for n=3: (11, 14)
+    Proposition 9 (x over P_n with 11 factors for every n; y with 11(n+2)+2) verified for n = 2..30
+    n-independent form of (P2) verified: True
+    AK(1): d_F = 8; (mu, kappa) of its shortest paths: [(5, 3)]
     TH12 selftest OK
+
+    $ PYTHONDONTWRITEBYTECODE=1 python3 experiments/th12_area.py --pn-area3 4     # about 6 s, < 300 MB
+    area <= 3 over P_n with radius <= 4 (n: {x: found, y: found}): {2: {'x': False, 'y': False}, 3: {'x': False, 'y': False}, 4: {'x': False, 'y': False}}
 
     $ PYTHONDONTWRITEBYTECODE=1 python3 experiments/th12_radius.py --selftest 12 8     # about 3 s, < 100 MB
     th12_radius selftest OK
@@ -189,6 +226,8 @@ Split every ACM move of insertion number k (Remark (c) of §2) into its k signed
     n=11  rho*(x)=6  rho*(y)=6  theorem: >= 4
     n=12  rho*(x)=7  rho*(y)=7  theorem: >= 5
 
+  (n = 13,…,16 were checked the same way at the two radii ⌊n/2⌋ and ⌊n/2⌋+1 only: x, y ∉ H_⌊n/2⌋ and x, y ∈ H_(⌊n/2⌋+1); 8 s.)
+
 What each line checks: (1) the factor lists of (I_x), (I_y) multiply to x, y by free reduction, with counts (3,n+1), (3,n) and r-conjugators of length ≤ 3; (2) Lemma 4.1 (and Fix(s) = [1,n−3] exactly); (3) for n ≤ 5, exhaustively over all words in L^{±1},R^{±1} of length ≤ n+2 and d ∈ {±I,±S}: the shortest have length n+1 (one word, count matrix |Σ|), those of length n+2 are the n+1 words of the Addendum, of which exactly the n−1 with j ≥ 3 satisfy Theorem 2(ii); (4) sharpness of the Fibonacci bounds; (5) Theorem 1 made executable: the script walks E's certificates backwards, builds the expressions of x and y over AK(1), AK(2), verifies them by free reduction and checks signed counts = E⁻¹, counts ≤ Fibonacci, radius ≤ κ; (6) §5; (7) Theorem 1 again on 200 random instruction paths of length 30 from (x,y), reversed into trivializations (all asserts of (5) pass). The second script decides membership of x, y in H_ρ = ⟨g r g⁻¹, g s g⁻¹ : |g| ≤ ρ⟩ exactly by Stallings folding (ball of radius ρ with a loop r and a loop s at every vertex, folded; x ∈ H_ρ iff x reads a loop at the base vertex); `theorem: >=` is the bound ⌊(n−2)/2⌋ of §4.2(c). `python3 experiments/th12_area.py --cert FILE` runs (5) on any elementary-v1 certificate ending at (x,y). No new AC-equivalence is claimed, so no certificate is written.
 
 ## 8. Honest limits
@@ -197,14 +236,15 @@ What each line checks: (1) the factor lists of (I_x), (I_y) multiply to x, y by 
 - The bounds count instructions of E's alphabet (equivalently elementary-v1 primitives). They do not bound peak length, and they are not invariant under changing the generating set of moves beyond what §4.4 states.
 - Theorem 3 relies on the classical free product decomposition PSL₂(ℤ) ≅ ℤ/2 * ℤ/3 (recalled), with the specific generators verified by matrix multiplication; its conclusion is also checked by brute force for n ≤ 5.
 - Bridson's and Lishak's results are cited from memory only; I did not have access to the papers. No novelty is claimed for anything here: count matrices are the obvious bookkeeping, and Theorems 2–4 are elementary.
-- §5's upper bounds for P₃ are crude; the exact areas over P_n are open.
+- Over P_n only bounds are proved (3 ≤ Area(x) ≤ 11; n ≤ Area(y) ≤ 11n+24); exact areas are open, and Proposition 9 is a statement about fillings, not an AC move.
 
 ## 9. Advice to the coordinator (ranked)
 
+0. **Proposition 9 may deserve a second look by a constructive agent**: over P_n, x has an 11-factor filling whose shape does not depend on n (x ∈ ⟨⟨c, [x,u]⟩⟩, u = YXyy), and the radius over P_n is 2 for n ≤ 16. It is not an AC move, but it says that in K's coordinates one generator is "almost a relator" uniformly in n, with short conjugators; an ACM-style search that tries to realize exactly these 11 insertions (7 of c, 4 of k) in some order is a concrete, finite experiment for P_2 (known trivial: calibration) and P_3.
 1. **Record Theorem 2 as closing the "area / Dehn function / stability" line for the AK family**: A(AK(n)) = n+4 exactly, r-conjugators of length ≤ 3. Nobody should look for large fillings, quasimorphism bounds or approximate-representation bounds on AK(n) again. A Bridson–Lishak-type argument needs relators that encode a group with large Dehn function; AK(n) has none.
 2. **Use Corollary 5 as the general-n complement of E's table** (d_F(AK(n)) ≥ 2n−1, with ≥ n+2 multiplications and ≥ n−3 conjugations), clearly labelled as complexity, not obstruction. If a referee wants it stronger, the natural targets are Theorem 3's Addendum (decide μ = n+2 for n ≥ 2).
 3. **The executable bookkeeping (`--cert`) is a cheap diagnostic for search agents**: for any found trivialization it returns the count matrix and radius; a search for AK(3) could be pruned or guided by the necessary conditions "count matrix ≥ [[3,4],[3,3]], Σ = [[−1,4],[−1,3]]" — e.g. meet-in-the-middle over abelian words of length μ first, since Theorem 3 lists exactly which abelian words of minimal length can occur.
-4. **Open, small, well-posed:** exact generator area of P_n (and whether Theorem 4 has a P_n-analogue); whether μ = n+2 is realizable for AK(2) (its known certificate has μ = 10).
+4. **Open, small, well-posed:** exact areas over P_n (Proposition 9: 3 ≤ Area(x) ≤ 11); is the radius over P_n equal to 2 for all n (true for n ≤ 16)? is ρ*(n) = ⌊n/2⌋+1 for all n (true for n ≤ 16)? is μ = n+2 realizable for AK(2) (its known certificate has μ = 10)?
 5. Do not invest in superlinear versions of these two invariants (§6.4).
 
 ## References

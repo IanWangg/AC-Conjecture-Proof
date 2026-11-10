@@ -377,6 +377,60 @@ def div_path(n, b):
                   rewrite_path(r2, "Y" * B + "X", "XX" + "Y" * B))
 
 
+def half_path(n, k):
+    """Proposition T8: (frozen word w, path of r_n) with every step a letter
+    conjugation or one application of w.  n = 2h even: w = x^2 y^k X y^h and
+    r_n -> u^-2 y^-(n+1), u = x y^k.  n = 2h-1 odd: w = x^2 y^h X y^k and
+    r_n -> y^n u^-2, u = X y^-k."""
+    r = rel(n)
+    if n % 2 == 0:
+        h = n // 2
+        return "xx" + yp(k) + "X" + yp(h), [
+            r, red(yp(-k) + "XX" + yp(h) + "x" + yp(-n - 1)), red(yp(-k) + "X" + yp(-k) + "X" + yp(-n - 1))]
+    h = (n + 1) // 2
+    return "xx" + yp(h) + "X" + yp(k), [
+        r, red("x" + r + "X"), red(yp(n + k) + "xx" + yp(-h) + "X"), red(yp(n + k) + "x" + yp(k) + "x")]
+
+
+def partner(beta):
+    """P_beta = x y^-beta x y^beta X Y  (Theorem T9); P_{-1} is the braid relator."""
+    return "x" + yp(-beta) + "x" + yp(beta) + "XY"
+
+
+def t9_moves(n, state, moves):
+    """state = [r_n, w] with w in C_b^{+-1}, b = 1 mod n: two ACM moves to
+    exactly AK_beta(n) = (x^n Y^(n+1), P_beta), beta = b mod (n+1) (Theorem T9)."""
+    if xexp(state[1]) < 0:
+        moves.append({"op": "invert", "i": 1})
+        state[1] = inv(state[1])
+    b = label3(state[1], n)[1]
+    assert b % n == 1, "class is not in the row b = 1 mod n"
+    beta = b % (n + 1)
+    if 2 * beta > n + 1:
+        beta -= n + 1
+    compile_path(bs_path(state[1], partner(beta), n), state, 1, moves)
+    step = yp(-beta) + "x" + yp(beta)                 # X y x = y^-beta x y^beta modulo P_beta
+    path = [red(step * j + "X" + "y" * (n - j) + "x" + "Y" * (n + 1)) for j in range(n + 1)]
+    g = "y" if beta > 0 else "Y"
+    for _ in range(abs(beta)):
+        path.append(red(g + path[-1] + inv(g)))
+    compile_path(path, state, 0, moves)
+    assert state == ["x" * n + "Y" * (n + 1), partner(beta)]
+    return beta
+
+
+def rotate_to(state, i, goal, moves):
+    """Bring state[i] to `goal` (a rotation of it or of its inverse) by AC moves."""
+    rots = lambda u: [u[k:] + u[:k] for k in range(len(u))]
+    if goal not in rots(state[i]):
+        moves.append({"op": "invert", "i": i})
+        state[i] = inv(state[i])
+    assert goal in rots(state[i])
+    while state[i] != goal:
+        moves.append({"op": "conjugate", "i": i, "g": state[i][0].swapcase()})
+        state[i] = state[i][1:] + state[i][0]
+
+
 def _cert(start, moves, text):
     return {"format": "ordinary-ac-elementary-v1", "start": start, "target": ["x", "y"],
             "moves": moves, "description": text}
@@ -398,6 +452,24 @@ def cert_divisor(n, w):
     compile_path(div_path(n, b), state, 0, moves)
     finish(state, 0, moves)
     return _cert(start, moves, "TH18 Theorem T6: MS(%d,w), w in C_%d, two ACM moves + D3" % (n, b))
+
+
+def cert_ak_beta(n, beta):
+    """AK_beta(n) = (x^n Y^(n+1), P_beta) -> (x,y) when its class is a divisor
+    class: Theorem T9 backwards (one P_beta-frozen ACM move), then Theorem T6."""
+    tmp, fwd = [rel(n), partner(beta)], []
+    t9_moves(n, tmp, fwd)                              # only to obtain the path of the first relator
+    step = yp(-beta) + "x" + yp(beta)
+    path = [red(step * j + "X" + "y" * (n - j) + "x" + "Y" * (n + 1)) for j in range(n + 1)]
+    g = "y" if beta > 0 else "Y"
+    for _ in range(abs(beta)):
+        path.append(red(g + path[-1] + inv(g)))
+    state, moves = ["x" * n + "Y" * (n + 1), partner(beta)], []
+    start = state[:]
+    compile_path(path[::-1], state, 0, moves)
+    tail = cert_divisor(n, state[1])
+    assert tail["start"] == state
+    return _cert(start, moves + tail["moves"], "TH18 Theorems T9+T6: AK_%d(%d) is AC-trivial" % (beta, n))
 
 
 def cert_len1(n, w):
@@ -467,6 +539,33 @@ def selftest():
             if b and (n % abs(b) == 0 or (n + 1) % abs(b) == 0) and b % n and b % (n + 1):
                 EV.replay(cert_divisor(n, "xx" + yp(b) + "X" + yp(-b)))
                 ncert += 1
+    for n in range(2, 10):                          # Proposition T8
+        for k in range(-n, n + 1):
+            if k % (n + 1 if n % 2 == 0 else n):
+                w, path = half_path(n, k)
+                compile_path(path, [rel(n), w], 0, [])
+                assert (2 * label3(w, n)[1]) % (n if n % 2 == 0 else n + 1) == 0
+    for n in range(2, 8):                           # Theorem T9
+        for beta in range(1, n + 1):
+            state, moves = [rel(n), "xx" + yp(beta) + "XY"], []
+            start = state[:]
+            t9_moves(n, state, moves)
+            EV.replay({"format": "ordinary-ac-elementary-v1", "start": start, "target": state, "moves": moves})
+    assert partner(-1) == "xyxYXY"
+    for n in range(2, 8):
+        EV.replay(cert_ak_beta(n, 1))                # AK_1(n) is AC-trivial for every n
+    EV.replay(cert_ak_beta(3, 2))
+    for n in range(2, 8):                           # Theorem T9(b): the column b = -1 mod (n+1)
+        for gam in range(1, n):
+            q = "x" + yp(-gam) + "xYX" + yp(gam)    # Q_gamma
+            b = label3(q, n)[1]
+            assert b % (n + 1) == n and (b + gam) % n == 0
+            step = yp(gam) + "X" + yp(-gam)         # x Y X = y^gam X y^-gam modulo Q_gamma
+            path = [rel(n), red("x" + rel(n) + "X")] + [
+                red("y" * n + step * j + "x" + "Y" * (n + 1 - j) + "X") for j in range(1, n + 2)]
+            state = [rel(n), q]
+            compile_path(path, state, 0, [])
+            assert state[0] == red("y" * (n + gam) + "X" * (n + 1) + "Y" * gam)
     EV.replay(cert_divisor(2, "XYxxY"))
     EV.replay(cert_len1(3, "XyyyxxxyyyyXy"))
     print("th18_bs self-test passed: invariance (3 x 400 trials), %d compiled paths replayed, "

@@ -24,21 +24,25 @@ xˢy for n = 4, 5) is handled correctly by TH03.
 | T2 Prop. 3.1, Thm 3.2 (transfer lattice), Thm 3.3 (central lifting when [⟨⟨s⟩⟩,⟨⟨t⟩⟩] = 1) | VERIFIED | re-derived, including [R₊,G] ⊇ [G,G] and "z_S, z_T are central" |
 | T3(b) (ω,t) ~ (zω,t) in G = ⟨SL(2,3), t \| [t,z]⟩ although D₀ = D₁ = 0 | VERIFIED | by hand in the Hurwitz quaternions: [j,i] = (ji)² = −1; iω = (−1−i−j+k)/2 has order 3, so iω = (iω)⁴ ∈ ⟨⟨ω[t,i]⟩⟩, hence K ⊆ ⟨⟨p⟩⟩; Cor. 2.2 applies with κ = j, c = i |
 | T3(a) one-coordinate rigidity (Gerstenhaber–Rothaus), Λ = 1 × ⟨z⟩ | VERIFIED modulo the classical degree fact deg(τ ↦ k₀τ^{n₁}k₁⋯) = Σnᵢ | re-derived; Z(G) = ⟨z⟩ |
+| Cor. 2.3′ (two-sided form), Lemma 3.4, Thm 3.5 (abelian transfer), Cor. 3.6 | VERIFIED | re-derived ([σ,cd] = [σ,d]·[σ,c]^d, z·y^d = y; [N,⟨⟨gν⟩⟩] = [N,⟨⟨g⟩⟩]; the transfer through (s, ts)) |
+| Prop. 4.4: in ⟨SL(2,5), t \| [t,z]⟩ all pairs (u,t), u non-central, are AC-equivalent | VERIFIED for SL(2,5) | `th19_th01_sl25.py` (own matrices mod 5): 118 non-central elements, 7 classes under conjugacy and inversion (orders 3, 4, 5, 5, 6, 10, 10), 1 component after adding the commutator-transfer edges; the cases SL(2,7), A₅, PSL(2,7) mentioned in the summary were not re-run |
+| Prop. 5.1 (central twists as central automorphisms) | VERIFIED (elementary) | — |
 | status line "the two-pair problem is not settled in general" | accurate | — |
 
-No certificate (no statement about F). T4 (failed invariants, §5–6) not refereed.
+No certificate (no statement about F). The failed attempts and Test case 6.1 (§6) were read, not refereed.
 
 ## TH02 — hidden reflections; the stabilizers Ŝ
 
 | claim | verdict | how checked |
 |---|---|---|
-| 1 (Lemma 0, Thm 1): for r ~ (u²vⁿ)^{±1}, β = (u ↦ u⁻¹v⁻ⁿ, v ↦ v) has β(r,s) ~AC (r,s) for **every** s | VERIFIED | re-derived (β(u)u⁻¹ and β(ρ)ρ are conjugates of ρ^{∓1}); `th19_th02_check.py` (b): the two identities for 300 random bases |
+| 1 (Lemma 0, Thm 1): for r ~ (u²vⁿ)^{±1}, β = (u ↦ u⁻¹v⁻ⁿ, v ↦ v) has β(r,s) ~AC (r,s) for **every** s | VERIFIED | re-derived (β(u)u⁻¹ = u·(u⁻²ρ⁻¹u²)·u⁻¹ is a conjugate of ρ⁻¹, and β(ρ) = u⁻¹ρ⁻¹u); `th19_th02_check.py` (b): the two identities for 300 random bases |
 | 2: N's D₆ ⊆ Ŝ(C4) is ⟨β_A, β_w⟩; the swap is the hidden reflection of the braid relator, so swap(b,s) ~AC (b,s) for all s, in particular swap(AK(n)) ~AC AK(n) for all n | VERIFIED | by hand: b ~ (u²v³)⁻¹ with u = (xyx)⁻¹, v = xy; β = (x ↦ xyxyXYX, y ↦ xyxYX), matrix = swap. Certificates `th02_c4_reflect_A/w.json`, `th02_ak3_swap_hidden.json`: start exact, target = β(start) exactly, (β(x),β(y)) a basis, matrices [[1,−3],[0,−1]], [[−1,0],[−1,1]], swap (script part (a)) |
 | 3 (Lemma 3) T(a;2a,q) ~AC D(a;q) | VERIFIED | free identity xᵃ = A·YxY; three certificates replay with the stated endpoints |
 | 4 (Thm 4) tr(R₁R₂) = 2 − D; D₆ for δ = +1 (C3-form, C4), hyperbolic element of trace 3 for δ = −1 (X, T(6;12,5)) | VERIFIED for the listed cases | certificates `th02_c3form_order6.json` (trace 1), `th02_x_hyperbolic.json`, `th02_T6_12_5_hyperbolic.json` (trace 3): target = h(start) exactly, h a basis |
 | 5 (Thm 5) Ŝ(AK(n)) ⊇ ⟨−I, swap, [[−1,3],[0,1]]⟩, infinite, for all n ≥ 1 | VERIFIED given G's Theorem G1 | W_n = x⁻¹U²V^{−(2n+1)}x with V = xy, U = xVⁿ recomputed; ΨτΨ⁻¹ = [[−1,3],[0,1]]; τR has trace 3 |
 | 6 (Thm 6) Ŝ(Y) is infinite for Y = T(4;7,5) (new) | VERIFIED by certificate | `th02_y_to_double_form.json`, `th02_y_hyperbolic.json`: Y → h(Y) exactly, matrix [[7,−5],[3,−2]], trace 5 |
-| 7 (Prop. 7, Cor. 8) stabilizer of the cyclic word xᵖy^q; hidden reflections lie in the index-2 subgroup ker(det·sgn(M mod 2)), which contains none of the Nielsen generators x ↦ x⁻¹, x ↦ xy^{±1}, … | Cor. 8 VERIFIED (re-derived); Prop. 7 PLAUSIBLE-UNCHECKED (Whitehead's theorem; only a bounded ball check, script part (c)) | — |
+| 7 (Prop. 7, Cor. 8) stabilizer of the cyclic word xᵖy^q is {±I} (\|p\|,\|q\| ≥ 3) or {±I, ±β} (min = 2); hidden reflections lie in the index-2 subgroup ker(det·sgn(M mod 2)), which contains none of x ↦ x⁻¹, x ↦ xy^{±1}, y ↦ yx^{±1} | Cor. 8 VERIFIED (re-derived); Prop. 7 VERIFIED for (p,q) = (3,4), (3,5), (4,5), (3,7), (5,7), (5,8), (2,3), (2,5), (2,7), (2,9), (2,−5) modulo Whitehead's theorem (general proof read) | `th19_th02_stab.py`: own BFS through the Whitehead level set, stabilizers of order 2 resp. 4 with exactly the stated matrices |
+| §4 (added later): three explicit "open candidates" for further elements of Ŝ(C4); Prop. 9 (if ε_x ∈ Ŝ(C4) then Ŝ(C4) ⊇ Γ⁰(3)^±, index 4) | Prop. 9 VERIFIED as a conditional statement (ε_xβ_w = [[1,0],[−1,1]], β_A(−ε_x) = [[1,3],[0,1]] recomputed); the candidates are labelled open and are neither claimed nor refuted | — |
 | 8 experiment in Fwd(C4,28); "no element of Ŝ(C4) outside D₆ found" | not re-run; labelled experiment; **the C4 question stays open**, as the note says | — |
 
 ## TH03 — uniform O6 and the killer side Q2 (Gieseking coordinates P_n = (c, k_n))
@@ -47,16 +51,18 @@ No certificate (no statement about F). T4 (failed invariants, §5–6) not refer
 |---|---|---|
 | T1: A, B, Y ∈ SL(2,ℤ[ω]) with Y·conj(A) = BY, Y·conj(B) = B⁻¹AY; T = Y·conj(Y) represents H | VERIFIED | `th19_th03_check.py` (own ℤ[ω] arithmetic): T1(i),(iii),(iv) asserted exactly |
 | T2: I(u) = tr(ρ(u)Y·conj(ρ(u)Y)) ∈ ℤ is a conjugacy invariant of (u,1) in G_c | VERIFIED | re-derived: (u,k) ↦ ρ(u)(Y∘conj)^k is a homomorphism to SL₂(ℂ)⋊⟨conj⟩; the square of a degree-1 element is linear, its trace changes at most by complex conjugation and is real |
-| T3–T5: recurrence u(n+4) = 3u(n+3) − u(n+2) + 3u(n+1) − u(n); σ(s) = σ(1−s); σ(n) < τ(n) < σ(n+1) for n ≥ 6; τ(n) = σ(s) exactly for n ∈ {1,2,4,5} | VERIFIED | same script, |n|, |s| ≤ 120: solutions (1,−2),(1,3),(2,−2),(2,3),(4,−4),(4,5),(5,−5),(5,6) only (agrees with the coordinator's `fig8_check.py`); Lemma T4 re-derived (if d(k+1) ≥ 2d(k) > 0 for three consecutive k then d(k+4) ≥ 2.5 d(k+3)); doubling bases found at k = 2 (τ−σ, Δσ, Δτ) and k = 6 (σ(n+1)−τ(n)) |
+| T3–T5: recurrence u(n+4) = 3u(n+3) − u(n+2) + 3u(n+1) − u(n); σ(s) = σ(1−s); σ(n) < τ(n) < σ(n+1) for n ≥ 6; τ(n) = σ(s) exactly for n ∈ {1,2,4,5} | VERIFIED | same script, \|n\|, \|s\| ≤ 120: solutions (1,−2),(1,3),(2,−2),(2,3),(4,−4),(4,5),(5,−5),(5,6) only (agrees with the coordinator's `fig8_check.py`); Lemma T4 re-derived (if d(k+1) ≥ 2d(k) > 0 for three consecutive k then d(k+4) ≥ 2.5 d(k+3)); doubling bases found at k = 2 (τ−σ, Δσ, Δτ) and k = 6 (σ(n+1)−τ(n)) |
 | T6: n = 4, 5 are isospectral (same I) but not conjugate | VERIFIED twice | `th19_th03_J.py` reproduces every value of J in Prop. T6 exactly; `th19_th03_n45.py` (third independent PSL(2,7)/PSL(2,13) computation, 176 + 416 homs of H): (4,−4),(4,5),(5,−5),(5,6) each separated, the true conjugacies (1,−2),(2,−2) never |
 | **T7: for every n ≥ 3 and s ∈ ℤ, k_n ≁ xˢy in G_c — no c-frozen one-move primitive exit from P_n** (uniform O6) | **VERIFIED** (scope: one ACM move, c frozen) | T2 + T5 + T6 + O's Prop. O2. Holonomy traces alone do not suffice for n = 4, 5, and the note says so |
 | T8: τ strictly increasing on n ≥ 2, so no c-frozen move joins P_n and P_m (n ≠ m ≥ 2) | VERIFIED | Δτ doubling base from n = 2 |
-| T9: mirror automorphism α (x ↦ x⁻¹, y ↦ yx), α(c) ~ c⁻¹, I∘α = I | VERIFIED for α(c), α(xˢy), α(k_n) (free reductions by hand) and the identity SA = A⁻¹S; the trace computation was read, not re-derived | — |
+| T9: mirror automorphism α (x ↦ x⁻¹, y ↦ yx), α(c) ~ c⁻¹, I∘α = I, J∘α = J | VERIFIED | α(c), α(xˢy), α(k_n) by hand; SA = A⁻¹S re-derived; I(ι(u)b) = I(u) and J(ι(u)b) = J(u) on 300 random u (0 violations), normal form of α(w) checked on samples |
 | **T11: Q2(3) is negative — c is not conjugate in G_{k₃} to x·tʲ; with T7: no primitive relator is one ACM move from P₃, whichever relator is frozen (Cor. T11′)** — this closes O's open question Q2 for n = 3 | **VERIFIED** | `th19_th03_q2.py` (own truncated Magnus algebra): normal forms k₃ ↦ (1,0), c ↦ (t₁t₂⁻¹t₁⁻¹,1), xtʲ ↦ (t₁ʲ,1); all 39 identities (TT) hold for the printed functional ℓ; invariance under u ↦ v u ψ(v)⁻¹ on 400 random pairs; ℓ(t₁ʲ) = j(j−1)/2 ≥ 0; ℓ(c) = −2. Lemma T11a and Lemma 7.1 re-derived |
 | T12: Q2(4), Q2(5) negative | VERIFIED | `th19_th03_tt.py` (own solver of (TT)): n = 4 over 𝔽₂, D = 4: solution space of dimension 7, no residue j mod 8 survives; n = 5 over ℚ, D = 3: dimension 4, one trace vanishes on all t₁ʲ and is −2 on c |
 | T13: integer twisted trace L4 on G_c; L4(xˢy) = C(s+1,4) ≥ 0, L4(k_n) = 1, 1, −1, −5, −10, −14, −14, −6, 15 (n = 1..9): second proof of O6 for n = 3..8 | VERIFIED | same script: L4 satisfies the 30 identities; solution space of dimension 2; values reproduced exactly |
-| T14: exactly 43 cyclic words of y-degree 1 and length ≤ 9 have I = 20; 25 have J ≠ J(k₃); 7 are conjugate to k₃; so every c-frozen neighbour (c,w) of P₃ has |w| ≥ 7 | VERIFIED (counts and the 7 positives; the status of the 11 mirror words as in the note) | `th19_th03_t14.py`: 43 = 25 (by length 6:3, 7:6, 8:5, 9:11) + 18 (7:3, 8:6, 9:9); `th19_th03_t14a.py`: own twisted-conjugacy BFS (cap 15, 4,733 class elements) reaches exactly the 7 listed words |
-| T15 (second moves through five short neighbours), §9 experiments | PLAUSIBLE-UNCHECKED (not re-run; correctly labelled a bounded census) | — |
+| T14: exactly 43 cyclic words of y-degree 1 and length ≤ 9 have I = 20; 25 have J ≠ J(k₃); 7 are conjugate to k₃; so every c-frozen neighbour (c,w) of P₃ has \|w\| ≥ 7 | VERIFIED (counts and the 7 positives; the status of the 11 mirror words as in the note) | `th19_th03_t14.py`: 43 = 25 (by length 6:3, 7:6, 8:5, 9:11) + 18 (7:3, 8:6, 9:9); `th19_th03_t14a.py`: own twisted-conjugacy BFS (cap 15, 4,733 class elements) reaches exactly the 7 listed words |
+| **T16 mirror theorem**: ε(u) = C(p+1,2) + C(q+1,2) + μ_ab(u) mod 2 is a class invariant flipped by α; **T17**: xˢy ~ x^{s′}y iff s = s′ or {s,s′} = {−1,0} or {1,2}; **k_n ~ xˢy iff n ∈ {1,2} and s = −2** (complete answer to O's Q1) | **VERIFIED** | the six mod-2 identities (TT) and the flip computation re-derived by hand; `th19_th03_mirror.py`: 0 violations of invariance and of the flip on 2,000 random pairs; ε(k_n) = 1,1,0,0,1,1,0,0, ε(xˢy) = C(s+1,2) mod 2; T17 then follows from T5 + T6 + T16 + O3/O4 |
+| T18: the k₃-frozen neighbours (c′,k₃) of P₃ with \|c′\| ≤ 8 are exactly c′^{±1} ∈ rotations of x⁻²yxy⁻², c, x⁻³y⁻¹xyxy⁻¹; P₃ ~AC (x⁻²yxy⁻², k₃) of length 13 (= D's Q up to x ↦ x⁻¹) | VERIFIED | `th19_th03_t18.py`: the 3-dimensional space of rational twisted traces of degree ≤ 3 on G_{k₃} leaves exactly XXyxYY, c, XXXYxyxY among all cyclic words of length ≤ 8; Y·c·y = yxYYXX and c = xyxYXXXY hold in G_{k₃} (own normal form); certificate `th03_p3_to_len13_k3_frozen.json`: (xyxYYXy, xxxYXyy) → (XXyxYY, xxxYXyy), 22 moves, replayed |
+| T15 (no two-move exit through the seven c-frozen neighbours of length ≤ 9; ℤ/9-valued traces, an ascending HNN case), T18(c), §9 experiments | PLAUSIBLE-UNCHECKED (the note's self-test passes; not re-derived; correctly labelled a bounded census, the general two-move question is stated as open) | — |
 
 Outputs: σ(0..9) = 2, 2, 2, 8, 26, 74, 218, 650, 1928, 5714; τ(1..9) = 8, 8, 20, 74, 218, 632, 1880, 5588, 16562.
 Remark for the README: TH08's finding F2 (the closing summary overstated O6 because the k_n-frozen half was open)
@@ -66,12 +72,15 @@ was correct when written; TH03's T11/T12 now prove that half for n = 3, 4, 5 (fo
 
 | claim | verdict | how checked |
 |---|---|---|
-| T1 (Thm 2.2, Cor. 2.3) twist rigidity: outside the trefoil group a twist of a partner is a partner only for ±I and (if 2 ∈ {|p|,|q|}) the hidden involution | VERIFIED | ping-pong proof re-derived step by step ((0)–(4)); `th19_th04_check.py` (c): among 7,772 twist matrices and all partner vectors in a box, exactly {±I} for (3,−4), (3,5), (4,5), exactly {±I, ±M_ι} for (2,±5), (2,7), and 12 matrices for the trefoil |
+| T1 (Thm 2.2, Cor. 2.3) twist rigidity: outside the trefoil group a twist of a partner is a partner only for ±I and (if 2 ∈ {\|p\|,\|q\|}) the hidden involution | VERIFIED | ping-pong proof re-derived step by step ((0)–(4)); `th19_th04_check.py` (c): among 7,772 twist matrices and all partner vectors in a box, exactly {±I} for (3,−4), (3,5), (4,5), exactly {±I, ±M_ι} for (2,±5), (2,7), and 12 matrices for the trefoil |
 | T2 (Lemma 3.1) hidden involution ι for p = ±2 (the same automorphism as TH02's β) | VERIFIED | by hand and script part (b) |
 | T3 (Prop. 2.4) the trefoil exception κ: x ↦ x, y ↦ x²Y | PLAUSIBLE (proof read; consistent with the brute force) | — |
 | T4 (Thm 4.1) AK(n) ~AC (cyc ψκ(W_n), b) for all n ≥ 1 — G's third island node, uniformly | VERIFIED | script part (a): κ(W_n) ~ W_n⁻¹ in ⟨x,y \| x² = y³⟩ for n ≤ 12 (own necklace test); certificate `th04_ak3_to_kappa_node.json` (6,774 moves): start exactly AK(3), target[0] a rotation of cyc ψκ(W₃), κ(W₃) = G's third-node word up to rotation/inversion |
-| T5 structure of the island (experiment), T6 (Lemma 6.1, Bass–Serre tree) | T5 not re-run (labelled experiment); T6 read (case EE checked), not fully re-derived | — |
-| "the island theorem is not proved; two lemmas are missing" | accurate | — |
+| **T8 (Thm 6.4): for n ≥ 3, the only torus-type cyclic words conjugate to b^{±1} in ⟨x,y \| xⁿ = y^{n+1}⟩ are b^{±1}; with G2(a): AK(n) has no torus-type or primitive ACM neighbour with the T(n,n+1) relator frozen** | VERIFIED | proof re-derived: Lemma 6.3 (non-negative exponent matrix, slopes in [k,k+1], reduction of k by the twist x ↦ xy^{qj}, induction on length), forms (L) and (Y_k) in full ((r,t) = (2,3) gives exactly B²A⁻³ with k = 1 and A²B⁻³ with k = n−1, a twist image), (X_j) by the x ↔ y symmetry, then T1; independent bounded brute force `th19_th04_T8.py`: 12,635 bases × exponents 2 ≤ \|a\|,\|c\| ≤ 5 (97,778 words): for n = 3, 4, 5, 6 the only hit is b^{±1}; for n = 2 there are 13 classes, as expected |
+| **T10 (Thm 6.6): for n ≥ 2, with the T(2,2n+1) relator frozen, the only torus-type or primitive words conjugate to the partner P^{±1} are P^{±1}, ι′(P)^{±1}, at island nodes 2 and 3** | VERIFIED | case analysis re-derived (forms (L), (Y_k); the twist (x ↦ xy^{2n+1})∘σ_y exchanges xyⁿ and xy^{n+1}); bounded brute force `th19_th04_T10.py` (18,840 bases, 53,151 words): node 2: exactly {N_n, ι′(N_n)} for n = 2, 3, 4; node-3 class for n = 2: exactly two classes, exchanged by ι′ (for n = 3, 4 its torus-type members lie outside my length bound) |
+| T9 (Prop. 6.5) stabilizer of ⟨⟨xᵖ,y^q⟩⟩ = twists; T7 (Prop. 6.2); T6 (Lemma 6.1) | PLAUSIBLE-UNCHECKED (read; case EE of 6.1 checked) | — |
+| T5 structure of the island | first sentence (closure under twists) follows from T1–T4; the listing is an experiment, not re-run | — |
+| "the island theorem is not proved" (missing: the analogue of T8/T10 on the trefoil side, §6.5) | accurate | — |
 
 ## TH05 — homes for an obstruction
 
@@ -90,11 +99,13 @@ was correct when written; TH03's T11/T12 now prove that half for n = 3, 4, 5 (fo
 |---|---|---|
 | Lemma 1.1 / Thm 1: in every nilpotent ⟨a,b⟩, (a,b) → (a e₀, b e₁) for all e_i ∈ γ₂ by 4 conjugations + 4 multiplications; d*_Q(U) ≤ ℓ(U) + 8 | VERIFIED | induction on the lower central series re-derived (it is the classical lemma of the brief in two-conjugation form); `th19_th06_check.py`: brute force in two 2-generated 2-groups (orders 256, 512): 0 failures for (a,b) and (b, a e₀); control S₄ fails, as it may; ℓ(AK(n)) = 3, 4, 5, 6 recomputed by BFS in GL₂(ℤ) |
 | Lemma 1.2 (abelian-by-nilpotent), Lemma 1.3, Lemma 1.4, Thm 1′ (C = 8 / 24 / 32 for metabelian / Q″ central / derived length ≤ 3) | VERIFIED | re-derived (the 8-instruction word for [c,μ]; [a,K][ba,K] = [K,Q]) |
-| Lemma 1.5 (series with coinvariant-free layers; SL₂(ℤ/pⁿ) towers) | PLAUSIBLE (same computation as 1.1; read) | — |
+| Lemma 1.5 (series with coinvariant-free layers; SL₂(ℤ/pⁿ) towers) | VERIFIED (induction step re-derived; the SL₂(ℤ/pⁿ) example uses standard facts I did not re-prove) | — |
 | Thm 2 pro-p version; "the pro-p completion with arbitrary conjugators sees exactly the exponent matrix" | VERIFIED | inverse limit of non-empty finite solution sets |
 | Thm 4: with syllable instructions (a) or power instructions (b, Hilbert basis theorem) the chain N_c stays faithful; Cor. 5 | VERIFIED | re-derived; (a) is E's Lemma 2(a) with syllable length |
-| Prop. 7 (bounded d* on finite simple quotients) | PLAUSIBLE modulo Liebeck–Shalev (external); counting argument read | — |
-| files `certificates/th06_*.json` | **not** AC certificates (format `th06-8move-nilpotent-v1`, quotient-only, labelled so in the files); the strict verifier rightly rejects them | their own `--verify`/self-test pass |
+| Prop. 6 (four conjugations are necessary in N_c, c ≥ 5; counting in the Lazard group over 𝔽_p) | VERIFIED modulo the Lazard correspondence (standard) | counting re-derived; Witt numbers and 3r_c − n_c − 1 = 3, 3, 12 for c = 5, 6, 7 recomputed |
+| Prop. 7 (quasimorphism lower bound; d*_F(x[x,y]^k, y) ≥ log₂((k−2)/18) − 1, so d*_F is not the supremum of the nilpotent d*) | VERIFIED modulo the standard facts on Brooks quasimorphisms (defect, homogenization) | recursion v(P_j) = E_j v(P_{j−1}) + ε_j re-derived; cyclic count of x⁻¹y⁻¹xy in xy(XYxy)^{k−2}XYx is k−2 and of its inverse 0 (by hand) |
+| Prop. 8 (bounded d* on finite simple quotients) | PLAUSIBLE modulo Liebeck–Shalev (external); counting argument read | — |
+| files `certificates/th06_*.json` | **not** AC certificates (format `th06-8move-nilpotent-v1`, quotient-only, labelled so in the files; the strict verifier rightly rejects them). As records of the 8-move scheme in N_c they are VERIFIED | `th19_th06_cert.py` (own Magnus algebra and Lyndon bracketing): AK(3) at classes 7 and 8 and AK(2) at class 8 reach the normalized pair modulo γ_{c+1} |
 
 Consistency with the brief: Theorem 1 is exactly the "about ten moves plus Nielsen moves" bound; nothing contradicts it.
 
@@ -104,9 +115,10 @@ Consistency with the brief: Theorem 1 is exactly the "about ten moves plus Niels
 |---|---|---|
 | Thm A: the words of length 2n+3 conjugate to p_n^{±1} in B are exactly the 4n(n+1)(2n+3) rotations of U1(a,c)^{±1}, U2(a,c)^{±1} | VERIFIED for n = 1,…,4 by exhaustive enumeration; general proof read, no gap found | `th19_th07_check.py`: 40, 168, 432, 880 words, equal to the claimed sets; 0 words of length 2n+2 |
 | Thm B: braid side — besides Orb(b) nothing shorter than 2n+2; exactly Orb(b₁) ∪ Orb(b₂) (8n+8 words) at 2n+2; hence a braid-side exit costs ≥ 4n+3 | VERIFIED for n = 3, 4, 5 by exhaustive enumeration; proof read | `th19_th07_B.py`: counts 12, 0, …, 0, 8n+8 |
-| Thm C: the class of b modulo w_n = xⁿyX^{n+1}Y | VERIFIED in part | `th19_th07_C.py` (own Britton reduction): v_j = x^{n(j−1)}βx^{−n(j−1)} (|j| ≤ 6) and e_n = x^{n²−1}βx^{−(n²−1)} for n = 3, 4, 5; for n = 3, 4 the words of length ≤ n+3 conjugate to β^{±1} are exactly the claimed 46 and 76 (exhaustive in words, conjugator search bounded) |
+| Thm C: the class of b modulo w_n = xⁿyX^{n+1}Y | VERIFIED in part | `th19_th07_C.py` (own Britton reduction): v_j = x^{n(j−1)}βx^{−n(j−1)} (\|j\| ≤ 6) and e_n = x^{n²−1}βx^{−(n²−1)} for n = 3, 4, 5; for n = 3, 4 the words of length ≤ n+3 conjugate to β^{±1} are exactly the claimed 46 and 76 (exhaustive in words, conjugator search bounded) |
 | Cor. C1/C2: 2n+9 (J1) is sharp; ACM path AK(n) → (w_n,b) → (w_n,e_n) → (d_n,e_n) → P_n of peak 3n+6; S_n = (xⁿYXyy, x^{n−1}yyXY) ~AC AK(n); the ACM barrier between AK(3) and Q, P₃ is exactly 15 | VERIFIED for n = 3,…,8 (free-word triangles) together with Thm C for n = 3, 4, 5 | `th19_th07_paths.py`: w_n ∈ C_n, triangles (w,d,e), (w,a,d), (d,a,c), lengths 2n+7, 2n+9, 3n+6, 2n+7, n+11; S₃ = D/E's second length-13 pair up to x ↦ X |
 | Cor. C3 balanced chain (peak 2n+8+⌊(2n+1)/3⌋) | VERIFIED for 3 ≤ n ≤ 10 (triangles and lengths) | same script |
+| Cor. C5/C6: AK(n) ~AC F_n = (XyXyxYY, yx^{n−1}yXYX) of length n+11, and AK(n) ~AC X_m (1 ≤ m ≤ n−1); a presentation shorter than AK(n) at ACM peak 2n+12 (n ≥ 5) | VERIFIED: identities for 3 ≤ n ≤ 9 (θ_m(w_n) ~ w_n, θ_m(β) ~ v_m, θ_m(U2(n−2,1)) ~ g_m, U2(n−2,1) ∈ C_n) + Thm C; certificates | `th07_ak3_F.json` (AK(3) → (XyXyxYY, yxxyXYX), 107 moves), `th07_ak5_F.json`, `th07_ak7_X4.json` (AK(7) → (xYxxYXyXXXy, yxxxxyXYX), length 20 < 21), `th07_ak3_de.json` (AK(3) → S₃), `th07_ak3_v0.json`, `th07_ak5_P.json` (AK(5) → P₅), `th07_ak5_de.json`: all replay with exact AK(n) starts and the stated targets |
 | scope statement: all numbers are ACM peaks in cyclic length, not elementary peaks, and no evidence about triviality | accurate | — |
 
 ## TH08 — audit of G–O
@@ -124,24 +136,48 @@ Every error or wording problem TH08 reports that I re-derived is **real**:
 | F9 O §2.3 typo ∂ = aBAB for abAB; F10 N §3.2 R and R⁻¹ interchanged | CONFIRMED (both recomputed: φ(abAB) = b⁻¹(abAB)⁻¹b; φ₁∘φ₂ has matrix M₁M₂) |
 | F7, F8, F11 | read; consistent; not re-derived |
 
-New results of TH08 §3: Lemma TH08-L, **Thm TH08-P1** (F/(V₀∩V₁) ≅ G₀ × G₁ and F/[V₀,V₁] never obstruct — "AK(3) is
-AC-trivial modulo [⟨⟨x³y⁻⁴⟩⟩, ⟨⟨b⟩⟩]"), Cor. P2, Lemma TH08-S: **VERIFIED** by re-derivation (Steps 1–3 of P1; the
-five-term sequence in S). They are consistent with, and partly implied by, TH05's Theorems 1 and 2. I did not re-audit
-the long list "verified correct" (H, N, O, K, G, I, L, M); where my own reading of H, N, O overlapped it, I agree.
+New results of TH08 §3 — all **VERIFIED** by re-derivation: Lemma TH08-A (a coordinate with abelian cokernel ⇒ no
+obstruction) and Theorem TH08-C (Q obstructs U iff Q/N does, for every abelian normal N) are the same statements as
+TH05's Theorem 1 and Theorem 2(a),(b), found independently and proved the same way (the two notes cross-validate);
+Cor. C1–C3; **Thm TH08-P1** (F/(V_w ∩ K) never obstructs when F/V_wK is abelian; in particular G₀ × G₁ of a class pair — "AK(3) is
+AC-trivial modulo ⟨⟨x³y⁻⁴⟩⟩ ∩ ⟨⟨b⟩⟩") and Prop. P1′ (Steps 1–3 re-derived; γ_n(Ḡ) ⊆ image of ⋂K_i); Lemma TH08-S
+(five-term sequence). Worked instances recomputed: (a³,b⁴) in the trefoil group (ρ(7,−6) = 9, ρ(6,−5) = 8, det 1,
+Q/⟨⟨b⁴⟩⟩ ≅ ℤ/8); c_K kills B₃ (xy = y²x, then x = y, y = 1). I did not re-audit the long list "verified correct"
+(H, N, O, K, G, I, L, M); where my own reading of H, N, O overlapped it, I agree.
 
 ## TH09 — killers; the BS(1,2) exit; census of trefoil killers
 
 | claim | verdict | how checked |
 |---|---|---|
 | T1 (Thm 1): G_r ≅ BS(1,2) ⇒ every balanced (r,s) of the trivial group is AC-trivial (one generalized move to a primitive, then D3) | VERIFIED | re-derived exactly as in the brief (every element of degree ±1 of ℤ[1/2]⋊ℤ is conjugate to t^{±1}; a primitive of degree 1 exists for any marking); `th19_th09_check.py` (1); certificates `th09_ms1_1..6.json` replay from (XyxYY, s) to (x,y) |
-| T2 (Thm 2): BS(1,m) occurs only for m = 2 (m = 0 primitive) | VERIFIED | abelianization ℤ × ℤ/|m−1| |
+| T2 (Thm 2): BS(1,m) occurs only for m = 2 (m = 0 primitive) | VERIFIED | abelianization ℤ × ℤ/\|m−1\| |
 | T3 (Thm 3): BS(1,2)-type killer classes of G_r form the one-parameter family v_j^± | VERIFIED | re-derived (IA(F₂) = Inn); bounded cross-check: all 26 BS(1,2)-type partners of b in a ball of 8,865 automorphisms lie in the family |
-| T4 (Thm 4): a BS(1,2)-type word is conjugate in B to (xⁿY^{n+1})^{±1} iff n ≤ 2 | VERIFIED | run-count argument re-read; own necklace computation, n ≤ 12, |j| ≤ 40: hits only for n = 1, 2 |
+| T4 (Thm 4): a BS(1,2)-type word is conjugate in B to (xⁿY^{n+1})^{±1} iff n ≤ 2 | VERIFIED | run-count argument re-read; own necklace computation, n ≤ 12, \|j\| ≤ 40: hits only for n = 1, 2 |
 | T5 (Thm 5): T(n,n+1) side, none for n ≥ 3 | VERIFIED (proof read; bounded machine check n = 3..7: 0 hits, n = 2: 4 hits) | script part (4) |
-| T6 (Thm 6): Gieseking side, n = 3, 4 | VERIFIED | `th19_th09_gieseking.py` (own normal form of G_c): |tr| of (v_j^+)² = 5,3,5,5,2,0,3, of (v_j^-)² = 3,5,3,0,2,5,5, k₃: 4, k₄: 1 — the note's numbers |
+| T6 (Thm 6): Gieseking side — no BS(1,2)-type word is conjugate to k_n^{±1} in G_c for n = 3, 4, 5, 8 (n = 6, 7 undecided) | VERIFIED | `th19_th09_gieseking.py` (own normal form of G_c, O's witness hom): \|tr\| of (v_j^+)² = 5,3,5,5,2,0,3, of (v_j^-)² = 3,5,3,0,2,5,5, k₃: 4, k₄: 1; `th19_th09_gsieve.py` (own enumeration of all 592 homs H → PSL(2,7), PSL(2,13)): no residue j mod 1092 survives for n = 3, 4, 5, 8; survivors for n = 6 (v^+: 360, 864) and n = 7 (v^+: 65, 149, 500, 1088) exactly as in the note; the controls n = 1, 2 survive |
 | T8 (Thm 8) killer criterion for torus-knot groups | VERIFIED | re-derived |
 | T9 census k ≤ 9: 1, 1, 2, 5, 15 killer classes; at k = 7 the classes without a known exit are exactly AK(3) = 1111222 and C3 = 1111112 | VERIFIED | `th19_th09_census.py` (own class enumeration + repository Todd–Coxeter): same lists; `th19_th09_necklace.py`: necklaces of AK(2), AK(3), AK(4), C3 and of both certificate presentations recomputed |
 | T10 exchange exit; two trivializations | VERIFIED by replay | `th09_x7_trivialization.json`: (XXXYXXYxxy, XYYXy) → (x,y), 6,998 moves, necklace 1121122; `th09_k9_112121122_trivialization.json`: (XyXyXYXyXYxyxyxYxY, xxYYY) → (x,y), 7,147 moves |
+| **T11 (§7.5): the published residual class R249 is AC-trivial** — (x²yx⁻²y⁻², xyx⁻¹yxy⁴) and the list's seed (x²yx⁻²y⁻², x³y²x⁻¹yx⁻¹y) | **VERIFIED by certificate (an ordinary AC trivialization)** | `th09_r249_seed_to_member.json` (28 moves) and `th09_r249_trivialization.json` (37,603 moves, peak 675) replay with the repository verifier **and** with my own replay `th19_replay.py`, and chain: (xxyXXYY, xxxyyXyXy) → (xxyXXYY, xyXyxyyyy) → (x,y). The seed is exactly the row "comp 207 R249 … trivial 0" of `experiments/i_landscape_cap25.txt`. Necklace of the partner recomputed: 1112122 = β₂ (BS(1,2)-type). That R249 was unresolved is the external list's / I's bounded statement, as the note says |
+| BS-exit certificates `th09_ak2_bs_exit.json` (AK(2) → (x,y), 14,394 moves), `th09_bs7_bs_exit.json` ((XXXXYXYxxy, XYYXy) → (x,y), 5,503 moves) | VERIFIED by replay | necklace of BS7 recomputed: 1112122 |
 | exchange-graph data and depth-2 exits (§7.4) | not re-run (labelled bounded experiment) | — |
 
 "Undecided" in T9 means "no exit known", as the note says; it is not a hardness claim.
+
+## Overall summary
+
+1. **Strongest verified results of the batch.** (a) TH09: the published residual length-16 class R249 is AC-trivial, by a strict certificate (the only new ordinary-AC *trivialization* of the round; mechanism: a BS(1,2)-type relator is an exit, Theorem 1). (b) TH03: for every n ≥ 3 no c-frozen ACM move takes P_n to a primitive relator, and for n = 3, 4, 5 none with k_n frozen either — the complete one-move statement for P₃ ~AC AK(3), closing O's question Q2 for n = 3; moreover k_n ~ xˢy in ⟨x,y | c⟩ iff n ∈ {1,2}, s = −2 (mirror theorem). (c) TH05 (and, independently, TH08): a class pair with a coordinate of abelian or metabelian cokernel never obstructs; obstruction lifts through every abelian, solvable or finite normal subgroup, so fibre products carry nothing and a just-obstructing quotient has no such normal subgroup.
+2. **Also verified:** TH02's hidden reflections (a symbolic proof of N's D₆ ⊆ Ŝ(C4), swap(b,s) ~AC (b,s) for every s, Ŝ(AK(n)) and Ŝ(Y) infinite — certificates); TH06's universal 8-move bound in nilpotent/metabelian/pro-p quotients; TH07's exact first-exit classification and the ACM barrier 15 between AK(3) and P₃, Q; TH04's twist rigidity, the uniform third island node and the rigidity of the island on the T(n,n+1) and T(2,2n+1) sides (T8, T10); TH01's substitution lemma and the SL(2,3) example; TH08's audit findings F1–F6, F9, F10.
+3. **Errors found in the nine notes: none.** Overclaims: none of substance; every note states its move class and scope (ACM vs elementary, quotient-only, bounded experiment) correctly.
+4. **Not fully checked (see the tables):** TH04 T7/T9, TH03 T15 and the second-move census, TH02 claim 8 and §4 experiments, TH06 Prop. 8 and TH05 T5/T6 as far as they rest on external theorems (Liebeck–Shalev; Mennicke, Serre, Margulis), all engine/bounded experiments.
+5. **For the README:** the files `certificates/th06_*.json` are quotient-only records, not AC certificates; TH08's F1–F3 require three wording changes in the closing summary; F2 is now partly superseded by TH03 (true for P₃, P₄, P₅ with either relator frozen; c-frozen for all n ≥ 3; k_n-frozen open for n ≥ 6). No statement of the nine notes bears on whether AK(3) is AC-trivial.
+
+## Files written by TH19
+
+`research/research-th19.md` (this report) and the check scripts `experiments/th19_lib.py`, `th19_replay.py`,
+`th19_th02_check.py`, `th19_th02_stab.py`, `th19_th03_check.py`, `th19_th03_n45.py`, `th19_th03_J.py`, `th19_th03_q2.py`,
+`th19_th03_tt.py`, `th19_th03_t14.py`, `th19_th03_t14a.py`, `th19_th03_t18.py`, `th19_th03_mirror.py`, `th19_th04_check.py`, `th19_th04_T8.py`, `th19_th04_T10.py`,
+`th19_th06_check.py`, `th19_th06_cert.py`, `th19_th07_check.py`, `th19_th07_B.py`, `th19_th07_C.py`, `th19_th07_paths.py`,
+`th19_th09_check.py`, `th19_th09_gieseking.py`, `th19_th09_gsieve.py`, `th19_th09_census.py`, `th19_th09_necklace.py`, `th19_th01_sl25.py`
+(run each as `python3 experiments/<name>`; `th19_replay.py` and `th19_th06_cert.py` take certificate paths as arguments).
+No certificate and no other file was written or modified.

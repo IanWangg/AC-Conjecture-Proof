@@ -7,7 +7,9 @@ conjugacy invariant (g_torus.torus_class) and certificate compiler (g_cert).
   python3 experiments/th04_island.py --selftest
   python3 experiments/th04_island.py --enumerate N K P L   (bounded listing, T5)
   python3 experiments/th04_island.py --write certificates  (certificate for T4, n = 3)
-  python3 experiments/th04_island.py --stabilizer K        (evidence for Missing Lemma M2)
+  python3 experiments/th04_island.py --check-t8 N L        (brute-force check of Theorem 6.4's case analysis)
+  python3 experiments/th04_island.py --check-t2side N L    (same for Theorem 6.6)
+  python3 experiments/th04_island.py --stabilizer K        (experiment for Proposition 6.5)
   python3 experiments/th04_island.py --check-t7 N K P      (consistency check of Prop. 6.2)
 """
 import itertools, json, os, random, sys
@@ -217,13 +219,84 @@ def check_t7(n, K, P):
                         bad += 1
     return hits, bad
 
+def necklace_family(partner, p, q):
+    """Necklaces of partner^+-1 and of their images under the factor inversions."""
+    out = set()
+    for w in (partner, G.inv(partner)):
+        for sx in (0, 1):
+            for sy in (0, 1):
+                v = w
+                if sx: v = v.translate(str.maketrans("xX", "Xx"))
+                if sy: v = v.translate(str.maketrans("yY", "Yy"))
+                out.add(G.torus_class(v, p, q)[1])
+    return out
+
+def reduced_solutions(p, q, partner, maxlen):
+    """Brute-force check of the case analyses of Theorems 6.4 and 6.6: all
+    cyclic words eta(W0), W0 = (positive word)(negative word) in A, B with
+    r + t <= maxlen, for every reduced form (Y_k), 1 <= k <= |q|-2, and
+    (X_j), 1 <= j <= |p|-2, whose necklace lies in the family of `partner`.
+    Returns the set of (form, k, canonical cyclic word)."""
+    F = necklace_family(partner, p, q)
+    sols = set()
+    for heavy, top in (("y", abs(q) - 2), ("x", abs(p) - 2)):
+        for k in range(1, top + 1):
+            if heavy == "y": sub = {"a": "x" + "y"*k, "b": "x" + "y"*(k + 1)}
+            else: sub = {"a": "y" + "x"*k, "b": "y" + "x"*(k + 1)}
+            for r in range(0, maxlen + 1):
+                for t in range(0, maxlen + 1 - r):
+                    for pos in itertools.product("ab", repeat=r):
+                        for neg in itertools.product("ab", repeat=t):
+                            w = G.cyc("".join(sub[c] for c in pos) + "".join(G.inv(sub[c]) for c in neg))
+                            if w and G.torus_class(w, p, q)[1] in F:
+                                sols.add((heavy, k, G.cyc_canon(w)))
+    return sols
+
+def node3_partner(n):
+    """Trefoil relator x^2 Y^3 in the coordinates where kappa(W_n) = x^-2 y^(2n+1)."""
+    kinv = ("x", "Yxx")
+    thinv = (G.red("y"*n + "X"), G.red("x" + "Y"*(n + 1)))
+    P = G.cyc(G.apply(thinv, G.apply(kinv, "xxYYY")))
+    assert len(G.torus_class(P, -2, 2*n + 1)[1]) == 14
+    return P
+
+def check_t8(n, maxlen):
+    """Theorem 6.4: reduced words with the necklace family of b in C_n * C_(n+1)."""
+    b = "xyxYXY"
+    sols = reduced_solutions(n, -(n + 1), b, maxlen)
+    tw_y = G.cyc_canon(("x" + "y"*(n - 1))*2 + G.inv("x" + "y"*n)*3)
+    tw_x = G.cyc_canon(("y" + "x"*(n - 2))*2 + G.inv("y" + "x"*(n - 1))*3)
+    expected = {("y", 1, G.cyc_canon(b)), ("y", n - 1, tw_y), ("x", 1, G.cyc_canon(b)), ("x", n - 2, tw_x)}
+    return sols == expected, sorted(sols)
+
+def check_t2side(n, maxlen):
+    """Theorem 6.6: reduced words with the necklace families of N_n and of the
+    node-3 partner in C_2 * C_(2n+1): only positive/negative words with k = n."""
+    A, B = "x" + "y"*n, "x" + "y"*(n + 1)
+    ok = True
+    out = []
+    for partner, pats in ((N(n), ("aaabb", "aabbb")), (node3_partner(n), ("bbaabaa", "aabbabb"))):
+        sols = reduced_solutions(-2, 2*n + 1, partner, maxlen)
+        exp = set(("y", n, G.cyc_canon("".join(A if c == "a" else B for c in pat))) for pat in pats)
+        ok = ok and sols == exp
+        out.append(sorted(sols))
+    return ok, out
+
 if __name__ == "__main__":
     if sys.argv[1:] == ["--selftest"]:
         selftest()
+        assert check_t8(3, 6)[0] and check_t8(4, 6)[0]
+        assert check_t2side(2, 7)[0]
         assert stabilizer_experiment(5, pairs=((3, -4), (2, -3)))
         h, bad = check_t7(3, 4, 5)
         assert h > 0 and bad == 0, (h, bad)
         print("th04 extra checks passed (M2 evidence K=5; T7 consistency n=3: %d hits, 0 with an elliptic root)" % h)
+    elif sys.argv[1:2] == ["--check-t8"]:
+        n, L = int(sys.argv[2]), int(sys.argv[3])
+        print("n=%d, r+t<=%d: case analysis of Theorem 6.4 confirmed:" % (n, L), check_t8(n, L))
+    elif sys.argv[1:2] == ["--check-t2side"]:
+        n, L = int(sys.argv[2]), int(sys.argv[3])
+        print("n=%d, r+t<=%d: case analysis of Theorem 6.6 confirmed:" % (n, L), check_t2side(n, L))
     elif sys.argv[1:2] == ["--stabilizer"]:
         print("all equal:", stabilizer_experiment(int(sys.argv[2])))
     elif sys.argv[1:2] == ["--check-t7"]:

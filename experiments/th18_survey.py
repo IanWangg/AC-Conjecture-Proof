@@ -5,6 +5,7 @@ public 1190-presentation benchmark file).
 
   python3 experiments/th18_survey.py --selftest
   python3 experiments/th18_survey.py --certs            # D/L certificate endpoints
+  python3 experiments/th18_survey.py --write DIR        # regenerate the 10 data-free certificates
   python3 -I experiments/th18_survey.py --bench FILE    # all_presentations.txt (third-party data)
   python3 -I experiments/th18_survey.py --triage FILE SOLVED_FILE
   python3 -I experiments/th18_survey.py --certify FILE [OUTDIR LINE ...]
@@ -140,6 +141,42 @@ def certify(bench, outdir=None, lines=()):
     print("certificates generated and replayed: %s; longest has %d moves" % (cnt, mx))
 
 
+def write_certs(outdir):
+    """Regenerate the certificates that need no third-party data (replayed before writing)."""
+    import elementary_verify as EV
+    out = {"th18_m2_bridge_trivialization": B.cert_divisor(2, "XYxxY"),
+           "th18_ms3_w2_trivialization": B.cert_divisor(3, "xxyyXYY"),
+           "th18_johnson_p31_trivialization": B.cert_divisor(3, "YxyXX"),
+           "th18_ms3_len1_trivialization": B.cert_len1(3, "XyyyxxxyyyyXy"),
+           "th18_ak3_beta1_trivialization": B.cert_ak_beta(3, 1),
+           "th18_ak3_beta2_trivialization": B.cert_ak_beta(3, 2),
+           "th18_ak4_beta1_trivialization": B.cert_ak_beta(4, 1)}
+    state, moves = [B.rel(3), "XYxxY"], []
+    B.t9_moves(3, state, moves)
+    out["th18_m3_to_ak3_via_t9"] = {
+        "format": "ordinary-ac-elementary-v1", "start": [B.rel(3), "XYxxY"], "target": state[:], "moves": moves,
+        "description": "TH18 Theorem T9 (beta=-1): MS(3, XYxxY) to AK(3) by two ACM moves"}
+    done = set()
+    for f in sorted(glob.glob(os.path.join(HERE, "..", "certificates", "d_ms2b_to_ms*.json"))):
+        c = json.load(open(f))
+        r, w = c["target"]
+        n = bs_n(r)
+        if n in (4, 5) and n not in done and B.label3(w if B.xexp(w) > 0 else B.inv(w), n)[1] % n == 1:
+            state, moves = [B.red(r), B.red(w)], list(c["moves"])
+            B.rotate_to(state, 0, B.rel(n), moves)
+            beta = B.t9_moves(n, state, moves)
+            done.add(n)
+            out["th18_p2_to_ak_%d_beta%s" % (n, str(beta).replace("-", "m"))] = {
+                "format": "ordinary-ac-elementary-v1", "start": c["start"], "target": state[:], "moves": moves,
+                "description": "P2 to AK_beta(n) (n=%d, beta=%d): D's certificate %s followed by Theorem T9 (TH18)"
+                               % (n, beta, os.path.basename(f))}
+    for name, cert in sorted(out.items()):
+        res = EV.replay(cert)
+        with open(os.path.join(outdir, name + ".json"), "w") as fh:
+            json.dump(cert, fh, separators=(",", ":"))
+        print("%-36s %s -> %s  %d moves" % (name, cert["start"], res["endpoint"], res["moves"]))
+
+
 def selftest():
     assert bs_n("YYYYXyyyx") == 3 and bs_n("XyyxYYY") == 2 and bs_n("xyxYXY") is None
     assert key("XYxxY", 3)[1] == "l=3 C_-5 (bridge)" and key("YXXYx", 3)[1] == "l=3 C_5 (bridge)"
@@ -157,6 +194,8 @@ if __name__ == "__main__":
     elif len(sys.argv) == 4 and sys.argv[1] == "--triage":
         for row in triage(sys.argv[2], sys.argv[3]):
             print("   not in the solved list, AC-trivial by T3/T6: line %d  n=%d  w=%s  %s" % row)
+    elif len(sys.argv) == 3 and sys.argv[1] == "--write":
+        write_certs(sys.argv[2])
     elif len(sys.argv) >= 3 and sys.argv[1] == "--certify":
         certify(sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else None, [int(v) for v in sys.argv[4:]])
     elif len(sys.argv) == 3 and sys.argv[1] == "--bench":

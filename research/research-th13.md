@@ -18,11 +18,12 @@ Notation: X = x⁻¹, Y = y⁻¹, and for k, p ≥ 1
 |---|---|---|
 | T1 | AK(k;p) presents the trivial group for all k, p ≥ 1. More generally F(a,b;i,j;m) = ⟨x,y \| x^a = y^b, (x^i y^j)^m x^i = y^j (x^i y^j)^m⟩ is trivial iff \|bi − aj\| = 1, and for fixed (a,b,m) all admissible (i,j) give AC-equivalent presentations | P (§2) |
 | T2 | **Duality.** For all k, p ≥ 1: AK(k;p) ~AC (ψ_k(V_{k,p}), W_k) by one W_k-frozen ACM move, where ψ_k = (x ↦ x(xy)^k, y ↦ xy); hence ψ_k⁻¹(AK(k;p)) ~AC D(k;p). For k = 1 this is G's Theorem G1. So "torus T(p,p+1) relation + Artin relation of length 2k+1 in (x,y)" = "torus T(2,2k+1) relation + Artin relation of length 2p+1 in (x, y^k)" | P (§3) + C for (k,p) = (2,2), (2,3), (3,3) |
-| T3 | The column p = 2 is the AK series again: AK(k;2) is, up to an automorphism, AC-equivalent to AK(k). So AK(2;2) is AC-trivial (certificate), and AK(3;2) = (xxYYY, xyxyxyxYXYXYXY) is AC-trivial iff AK(3) is. The row p = 1 is AC-trivial (primitive relator; certificates k = 2, 3) | P (from G1, D2, D3) + C |
+| T3 | The column p = 2 is the AK series again: AK(k;2) is, up to an automorphism, AC-equivalent to AK(k). So AK(2;2) is AC-trivial (certificate), and **AK(3) ~AC AK(3;2) = (xxYYY, xyxyxyxYXYXYXY)**, i.e. AK(3) ~AC ⟨x,y \| x² = y³, (xy)³x = y(xy)³⟩ by plain AC moves (certificate, 2,522 moves, using D6). The row p = 1 is AC-trivial (primitive relator; certificates k = 2, 3) | P (from G1, D2, D3, D6) + C |
 | T4 | **Plateau of unbounded depth.** For k ≥ 1, p ≥ 3: every ACM path from AK(k;p) with non-increasing total cyclic length stays on (Orb(p_p) ∪ Orb(q_p)) × Orb(W_k), and the first state off this plateau has total cyclic length ≥ 2p+4k+3 + min(4k−2, 2k+2, 2p−4). Hence every AC trivialization of AK(k;p), if one exists, passes through cyclic length ≥ that number; e.g. ≥ initial + 2k+2 for p ≥ k+3 ≥ 6. For k = 1 this is A's theorem with J's bound 2n+9 | P (§4) + X (exact brute force for small k, p) |
 | T5 | For p ≥ 2 and (k,p) ≠ (1,2), no pair with a primitive relator is one ACM move from AK(k;p) (arbitrary conjugators, Aut(F₂) free); both meridian defects are > 2, so Prop. M / thickenability exits do not apply either | P modulo the classical Fact C of research-g (§5) + X (exact test k ≤ 6, p ≤ 7) |
-| T6 | For k ≥ 2 the partner of the T(2,2k+1) relator in D(k;p) is the Artin word on the generating pair (x, y^k), which is not Nielsen equivalent to (x, y) in ⟨x,y \| x² = y^(2k+1)⟩ by Zieschang's classification (externally reported) — the structural reason the k = 1 "role swap" into a second torus pair does not persist. Experiment: within G's torus-graph bounds, AK(k;p) is an isolated torus node for k ≥ 2, p ≥ 3 (islands of size 1), while AK(k;2) and AK(1;p) have 3-orbit islands | remark + X (§6) |
-| X7 | Directed cyclic-product forward sets (D's engine, complete to its maximal cap 31): AK(2;3) 805,962 states, AK(2;4) 10,400, AK(3;3) 65,530 — no primitive relator, no state shorter than the start. Bounded search, **not** evidence of non-triviality | X (§7) |
+| T6 | **Aut(F₂) is AC-realized on AK(2;3) and on AK(2;4)**: θ(AK(2;p)) ~AC AK(2;p) for every θ ∈ Aut(F₂), p = 3, 4 (certificates for the transvection x ↦ xy and the swap; these generate Out(F₂)). Yet the mirror image of AK(2;3) is *not* found by complete forward searches to cap 31 (two-sided) / 34 (one-sided): bounded "no automorphic image" observations (as for C4 in I, M, N) do not indicate chirality | P by C (§6) + X |
+| T7 | For k ≥ 2 the partner V_{k,p} in D(k;p) is the T(2,2p+1) Wirtinger word on the generating pair (x, y^k), which is not the image of any basis of F₂ (commutator-necklace argument) — the structural reason the k = 1 role swap into a second torus pair does not persist. Experiment: within G's torus-graph bounds AK(k;p) is an isolated torus node for k ≥ 2, p ≥ 3, while AK(k;2) and AK(1;p) have 3-orbit islands | P (Lemma 7) + X (§7) |
+| X8 | Directed cyclic-product forward sets (D's engine, complete to its maximal cap 31): AK(2;3) 805,962 states, AK(2;4) 10,400, AK(3;3) 65,530 — no primitive relator, no state shorter than the start. Bounded search, **not** evidence of non-triviality | X (§8) |
 
 **Open after this note:** AC-triviality of every AK(k;p) with k ≥ 2, p ≥ 3 (smallest: AK(2;3) = (xxxYYYY, xyxyxYXYXY), length 17) and of AK(k;2) ≅ AK(k), k ≥ 3.
 
@@ -30,7 +31,7 @@ Notation: X = x⁻¹, Y = y⁻¹, and for k, p ≥ 1
 
 Read: `README.md` in full; A in full; G §1–3 in full; J §4; I §2–3; K §3; status paragraphs and coordinator reviews of the other notes. Used and re-verified here: G's Lemma 1 (conjugacy in torus groups = syllable necklace + central exponent), Lemma G0 (ACM moves are AC composites, compiled by `g_cert.acm_edge`), G1, G2, Fact C; J's Lemma J0; A's two lemmas; D2 (AC-triviality is Aut(F₂)-invariant), D3 (primitive relator ⇒ AC-trivial).
 
-Direction: the seed family AK(k;p) = (x^p y^-(p+1), W_k). Why it is worth a note: G1 shows that AK(n) hides a second torus knot T(2,2n+1); the family makes both knots T(p,p+1) and T(2,2k+1) free parameters, so one can see which of the AK(n) phenomena (role swap, plateau, absence of exits) are general and which are accidents of k = 1. The answers: the plateau and the absence of one-move exits are general and get *stronger* with k (T4, T5); the role swap persists only as torus ↔ Artin-on-a-non-standard-generating-pair (T2, T6); and the AK series itself sits in the family twice (row k = 1, column p = 2; T3). This is new relative to A–O, which treat only k = 1. Overlap check with the other round-5 seeds: TH04 classifies torus words in the partner classes of AK(n) itself (k = 1), TH07 studies paths beyond A's plateau for AK(n); here both questions are asked for general k, where the answers differ.
+Direction: the seed family AK(k;p) = (x^p y^-(p+1), W_k). Why it is worth a note: G1 shows that AK(n) hides a second torus knot T(2,2n+1); the family makes both knots T(p,p+1) and T(2,2k+1) free parameters, so one can see which of the AK(n) phenomena (role swap, plateau, absence of exits) are general and which are accidents of k = 1. The answers: the plateau and the absence of one-move exits are general and get *stronger* with k (T4, T5); the role swap persists only as torus ↔ Artin-on-a-non-standard-generating-pair (T2, T7); the AK series itself sits in the family twice (row k = 1, column p = 2; T3); and the first genuinely new members AK(2;3), AK(2;4) already have all of Aut(F₂) AC-realized although bounded searches do not see their mirror images (T6). This is new relative to A–O, which treat only k = 1. Overlap check with the other round-5 seeds: TH04 classifies torus words in the partner classes of AK(n) itself (k = 1), TH07 studies paths beyond A's plateau for AK(n); here both questions are asked for general k, where the answers differ.
 
 ## 2. Triviality, and the three-parameter family behind AK(k;p) (proved)
 
@@ -66,14 +67,14 @@ and AK(k;p) is AC-trivial iff D(k;p) is (Lemma D2).
 
 *Proof.* In H_k: X = s z⁻¹, Y^k = t^(k+1) z⁻¹, Y = t^(2k) z⁻¹, t^(3k+1) = t^k z. So φ_k(x) = xY^k = s t^(k+1) z⁻¹ and φ_k(Y) = YxY^k = t^(2k) s t^(k+1) z⁻². Then
 (t^(2k) s t^(k+1))^(p+1) = t^(2k) s (t^(3k+1) s)^p t^(k+1) = t^(2k) s (t^k s)^p t^(k+1) z^p, so
-φ_k(p_p) = (s t^(k+1))^p · t^(2k) s (t^k s)^p t^(k+1) · z^(−p−2(p+1)+p). Using (s t^(k+1))^p t^(2k) = (s t^(k+1))^(p−1) s t^(3k+1) = (s t^(k+1))^(p−1) s t^k z, we get φ_k(p_p) = (s t^(k+1))^(p−1) (s t^k)(s t^k)^p (s t^(k+1)) z^-(2p+1), the first formula. For V: y^k = t^k, X = s z⁻¹, Y^k X = t^(k+1) s z⁻², so V_{k,p} = (t^k s)^p t^k · s z⁻¹ · (t^(k+1) s)^p z^(−2p), the second formula. Conjugating V_{k,p} by s gives (s t^k)^(p+1) (s t^(k+1))^p z^-(2p+1); moving the block (s t^(k+1)) from the end of φ_k(p_p) to the front gives (s t^(k+1))^p (s t^k)^(p+1) z^-(2p+1); these are cyclic rotations of each other, and z is central. So φ_k(p_p) and V_{k,p} are conjugate in H_k, i.e. ψ_k(V_{k,p}) ≡ g p_p g⁻¹ modulo ⟨⟨W_k⟩⟩, and Lemma G0 turns the replacement into ordinary AC moves. Applying φ_k (a letterwise transport of the certificate) gives the second line, with frozen relator φ_k(W_k) = X·x²Y^(2k+1)·x. ∎
+φ_k(p_p) = (s t^(k+1))^p · t^(2k) s (t^k s)^p t^(k+1) · z^(−p−2(p+1)+p). Using (s t^(k+1))^p t^(2k) = (s t^(k+1))^(p−1) s t^(3k+1) = (s t^(k+1))^(p−1) s t^k z, we get φ_k(p_p) = (s t^(k+1))^(p−1) (s t^k)(s t^k)^p (s t^(k+1)) z^-(2p+1), the first formula. For V: y^k = t^k, X = s z⁻¹, Y^k X = t^(k+1) s z⁻², so V_{k,p} = (t^k s)^p t^k · s z⁻¹ · (t^(k+1) s)^p z^(−2p), the second formula. Conjugating V_{k,p} by s gives (s t^k)^(p+1) (s t^(k+1))^p z^-(2p+1); moving the block (s t^(k+1)) from the end of φ_k(p_p) to the front gives (s t^(k+1))^p (s t^k)^(p+1) z^-(2p+1); these are cyclic rotations of each other, and z is central. So φ_k(p_p) and V_{k,p} are conjugate in H_k, i.e. ψ_k(V_{k,p}) ≡ g p_p g⁻¹ modulo ⟨⟨W_k⟩⟩, and Lemma G0 turns the replacement into ordinary AC moves. Applying φ_k (a letterwise transport of the certificate) gives the second line, with frozen relator φ_k(W_k) = φ_k(x)⁻¹·x²Y^(2k+1)·φ_k(x), a conjugate of x²Y^(2k+1). ∎
 
 **Remarks.** (i) k = 1: V_{1,p} = (yx)^p y X (YX)^p = W_p⁻¹, so D(1;p) is (W_p, x²Y³) — Theorem G1. (ii) |D(k;p)| − |AK(k;p)| = 2pk − k + 1 > 0: the dual is longer; no length is gained. (iii) In the language of §2: F(p,p+1;1,1;k) ≅ F(2,2k+1;1,k;p) up to an automorphism: the Artin length and one torus parameter are exchanged. By Theorem 1(b) one may replace y^k by y^-(k+1) (and x by X).
 
 **Corollary 3 (the AK series occurs twice; small members).**
 (a) For every k ≥ 1, AK(k;2) = (x²Y³, W_k) equals D(1;k) up to exchanging the relators and inverting one. Hence φ_1(AK(k)) ~AC AK(k;2), and AK(k;2) is AC-trivial iff AK(k) is (D2).
 (b) AK(2;2) = (xxYYY, xyxyxYXYXY) (length 15) is AC-trivial: `certificates/th13_ak_2_2_trivialization.json` (2,351 moves: two torus-frozen ACM moves — the dual of G1, then G's AK(2) move transported — and a primitive finish).
-(c) AK(3;2) = (xxYYY, xyxyxyxYXYXYXY) (length 19) is AC-trivial iff AK(3) is; since Aut(F₂) is AC-realized on AK(3)'s class (D6), in fact AK(3;2) ~AC AK(3).
+(c) AK(3;2) = (xxYYY, xyxyxyxYXYXYXY) (length 19) is AC-trivial iff AK(3) is; since Aut(F₂) is AC-realized on AK(3)'s class (D6), in fact AK(3) ~AC AK(3;2) by plain AC moves: `certificates/th13_ak3_to_ak_3_2.json` (2,522 moves, peak 74) composes D's certificates for x ↦ xY and y ↦ yX (G's φ = (x ↦ xY, y ↦ yyX) is their product), the second transported by the first, with one x²Y³-frozen ACM move φ(p_3) → W_3 and a swap.
 (d) AK(k;1) = (xYY, W_k) is AC-trivial for every k (primitive relator, D3); certificates for k = 2, 3.
 
 **Certificates of the duality move** (`th13_family.py --write certificates`; start exactly AK(k;p), end exactly (red ψ_k(V_{k,p}), W_k)): (k,p) = (2,2): 2,686 moves; (2,3): 6,718 moves; (3,3): 9,192 moves. They are long because G's compiler goes through normal forms; minimality is not claimed.
@@ -95,7 +96,7 @@ Also yΔ = Δx and Δy = xΔ in B_k (from W_k), so conjugation by Δ exchanges x
 
     (☆)  2p+1 ≤ L − 2J,  and  2p+1 ≤ L − 2J − 2 if some T-syllable of this word is trivial in C_(2k+1)
 
-(a trivial T-syllable makes two S's adjacent, which cancel).
+(a trivial T-syllable makes two S's adjacent, which cancel; if the word has only one S, its image has at most one syllable, which is excluded).
 *J = 0.* The image is alternating with 2L syllables, so L = 2p+1, and the T-necklace is (k+1)^p k^(p+1) or (k+1)^(p+1) k^p. Type TS decodes T^(k+1) ↦ x, T^k ↦ Y, giving rotations of x^pY^(p+1) = p_p or x^(p+1)Y^p = q_p⁻¹; type ST decodes T^(k+1) ↦ y, T^k ↦ X, giving rotations of q_p or p_p⁻¹.
 *J ≥ 1.* A *zigzag* is a maximal subword with ≥ 2 letters whose consecutive letters have different types; by the junction rule it is a subword of (xy)^∞ or of (YX)^∞. If all of u is one cyclic zigzag, u is a rotation of (xy)^i or (YX)^i = a^{±i}, whose image has at most one syllable; excluded. Otherwise every junction lies in exactly one zigzag, a zigzag with ℓ letters contains ℓ − 1 junctions, its first and last letters are end letters of runs of length ≥ 2 and its inner letters are runs of length 1. Inside a zigzag all Δ^{±1} cancel except possibly one at each end, so it contributes exactly one a-syllable a^e; from xy = a, yx = Δ⁻¹aΔ, x = a^-kΔ, y = Δ⁻¹a^(k+1):
 
@@ -106,7 +107,7 @@ All other a-syllables come from letters strictly inside runs and are a^{±k}, a^
 (1) If no T-syllable is trivial, the image is already cyclically reduced, so every zigzag syllable must be T^{±k}: for ℓ = 2i this needs i ≡ ±k, so ℓ ≥ 2k; for ℓ = 2i+1 it needs i ≡ 2k or 0 (mod 2k+1), so ℓ ≥ 4k+1. The number 2J = Σ(ℓ − 1) of junctions is even, so either some zigzag has odd ℓ (2J ≥ 4k) or there are at least two zigzags with even ℓ (2J ≥ 2(2k−1)). By (☆), L ≥ 2p+1+4k−2.
 (2) If some T-syllable is trivial, it is a zigzag syllable. If every zigzag had ℓ ≤ 2k−1 (so 1 ≤ i ≤ k−1), every zigzag syllable would be T^{±r} with 1 ≤ r ≤ k−1, hence nontrivial; so some zigzag has ℓ ≥ 2k, 2J ≥ 2k−1, hence 2J ≥ 2k, and by (☆) L ≥ 2p+1+2k+2. ∎
 
-For k = 1 this is A's Lemma 1 with J's Lemma J1a (no partner of length 2p+2). The bound is attained for k = 1 (J: 432 words of length 9 for p = 3) and for (k,p) = (2,2) (264 words of length 11, §7); for k ≥ 3 it is probably not sharp.
+For k = 1 this is A's Lemma 1 with J's Lemma J1a (no partner of length 2p+2). The bound is attained for k = 1 (J: 432 words of length 9 for p = 3) and for (k,p) = (2,2) (264 words of length 11, §8); for k ≥ 3 it is probably not sharp.
 
 **Lemma B (braid side; k ≥ 1, p ≥ 3).** Let u be a cyclically reduced word conjugate to W_k^{±1} in G_p = ⟨x,y | x^p = y^(p+1)⟩ or in G_p′ = ⟨x,y | y^p = x^(p+1)⟩. Then u ∈ Orb(W_k) or |u| ≥ 4k+2 + 2(p−2). The bound is attained.
 
@@ -120,3 +121,141 @@ For k = 1 this is A's Lemma 1 with J's Lemma J1a (no partner of length 2p+2). Th
 *Proof.* On the plateau the frozen relator is a rotation of p_p^{±1}, q_p^{±1} or W_k^{±1}, with quotient G_p, G_p′ or B_k; in B_k, q_p is conjugate to p_p. A move with W_k frozen replaces the power relator by a word conjugate to p_p^{±1} in B_k: by Lemma P it stays in Orb(p_p) ∪ Orb(q_p) or has length ≥ 2p+1+min(4k−2,2k+2). A move with the power relator frozen replaces the other by a word conjugate to W_k^{±1} in G_p or G_p′: by Lemma B it stays in Orb(W_k) or has length ≥ 4k+2+2p−4. Induction on the path gives (a) and (b); the plateau does not contain (x,y). ∎
 
 **What this is and is not.** It is a search-independent statement about the complete ACM graph: AK(k;p) sits in a basin whose rim is at height ≥ d(k,p) above it, and d → ∞ in the family. For k = 1 it reproduces A and J (d = 2; AK(3): 15). After the first exit the frozen relator is no longer of torus type and the method gives nothing; in particular this is **not** evidence that any member is AC-nontrivial (AK(2;2) is AC-trivial although it is not covered: p = 2).
+
+## 5. The known exits do not apply (proved, modulo the classical Fact C of research-g)
+
+**Proposition 5.** Let k ≥ 1, p ≥ 2, (k,p) ≠ (1,2). Then no pair with a primitive relator is one ACM move away from AK(k;p) — with arbitrary conjugators, and the same for every automorphic image of AK(k;p). Moreover both meridian defects (cyclic syllable lengths of each relator in the other relator's torus group) are 4p+2 and 4k+2, never 2, so Prop. M of research-i and F's thickenability criterion do not apply at AK(k;p) or at any state one ACM move away.
+
+*Proof.* The frozen relators p_p and W_k are not primitive. Two cases, exactly as in G's Proposition G2.
+(a) *A primitive π conjugate to W_k^{±1} in G_p = ⟨x^p = y^(p+1)⟩.* The abelianization x ↦ p+1, y ↦ p sends W_k to 1, so the exponent vector (m,l) of π satisfies (p+1)m + pl = ±1; m, l ≠ 0 have opposite signs. If |m| = 1 then |l| = 1 (for p ≥ 3; l = (p+2)/p is not an integer) and the image of π has 2 syllables < 4k+2. If |m| ≥ 2 then 1 < |l|/|m| < 2, so by Fact C the letters x^σ of π are isolated and the y-runs have length 1 or 2; all are nontrivial in C_p * C_(p+1) (p+1 ≥ 4), so the image of π is cyclically reduced with all x-syllables equal to x^σ. The image of W_k^{±1} has x-syllables x and x⁻¹ (k+1 and k of them), distinct for p ≥ 3. So for p ≥ 3 there is no such π. For p = 2 (so k ≥ 2): in ⟨x² = y³⟩ the image of W_k has t-exponent necklace 1^k 2^(k+1) (Theorem G1's computation), which contains both factors 11 and 22; a primitive with |m| ≥ 2 has, by Fact C, a balanced necklace in {1,2} (run lengths 1, 2, with the bijection 1 ↔ 2 if the y-letters are negative), and one with |m| = 1 has 2 syllables. No such π.
+(b) *A primitive π conjugate to p_p^{±1} in B_k.* Transport by φ_k to H_k; π′ = φ_k(π) is primitive with exponent vector (m,l), and the abelianization x ↦ 2k+1, y ↦ 2 of H_k sends φ_k(p_p) to −1, so (2k+1)m + 2l = ±1. If |m| = 1, π′ is conjugate to x^{±1}y^l and its image has ≤ 2 syllables < 4p+2. If |m| ≥ 3, then k < |l|/|m| < k+1, so by Fact C the x-letters of π′ are isolated, the y-runs have lengths k and k+1 (nontrivial in C_(2k+1)), and the cyclic sequence of run lengths is balanced. The t-exponent necklace of the image is this sequence, up to the bijection k ↔ k+1 when the y-letters are negative (−k ≡ k+1), hence balanced. But the necklace of φ_k(p_p)^{±1} is (k+1)^p k^(p+1) or k^p (k+1)^(p+1) (Theorem 2), which for p ≥ 2 contains both squares (k+1)(k+1) and kk. No such π.
+Automorphisms carry primitives to primitives and transport ACM moves. The defects are read off from Theorem 2 (4p+2) and from the alternating image of W_k in C_p * C_(p+1) (4k+2). ∎
+
+Exact machine check (G's complete finite test `primitive_complete`, Lemma G4): for 1 ≤ k ≤ 6, 2 ≤ p ≤ 7 a primitive neighbour exists only for (k,p) = (1,2) (self-test, item 6).
+
+**Summary of the family by known exits.** Row p = 1: AC-trivial. AK(1;2) = AK(2) and AK(2;2): AC-trivial. Column p = 2, k ≥ 3: equivalent to AK(k). All other members (k ≥ 2, p ≥ 3): no exit at ACM distance one, plateau depth ≥ d(k,p) ≥ 2; status open.
+
+## 6. Aut(F₂) is AC-realized on AK(2;3) and AK(2;4) — and a caution about mirror images (proved by certificates)
+
+**Lemma 6.1 (D6 in general form).** For a pair P, S(P) = {θ ∈ Aut(F₂) : θ(P) ~AC P} is a subgroup of Aut(F₂) containing the inner automorphisms.
+*Proof.* If θ₂(P) ~AC P then θ₁θ₂(P) ~AC θ₁(P) by transporting the moves letterwise by θ₁ (D2), so θ₁, θ₂ ∈ S(P) gives θ₁θ₂ ∈ S(P); and θ(P) ~AC P gives P ~AC θ⁻¹(P) by transport with θ⁻¹. Conjugating both relators by a word is a composite of AC moves. ∎
+
+**Theorem 6 (certificates).** For every θ ∈ Aut(F₂): θ(AK(2;3)) ~AC AK(2;3) and θ(AK(2;4)) ~AC AK(2;4), where AK(2;3) = (xxxYYYY, xyxyxYXYXY) (length 17) and AK(2;4) = (xxxxYYYYY, xyxyxYXYXY) (length 19).
+*Proof.* `certificates/th13_ak_2_3_aut_x_xy.json`: AK(2;3) → (xyxyxYYY, xyyxyyxYXYYXY) = τ(AK(2;3)) exactly, τ = (x ↦ xy, y ↦ y); 212 elementary moves (21 cyclic products found by M's engine at barrier 29, compiled by `d_certify.py`). `certificates/th13_ak_2_3_aut_swap.json`: AK(2;3) → (yyyXXXX, yxyxyXYXYX) = σ(AK(2;3)) exactly, σ = (x ↔ y); one W_2-frozen ACM move p_3 → q_3 (Lemma P: q_p = Δ p_p Δ⁻¹), 6,309 moves. The images of τ and σ in Out(F₂) = GL₂(ℤ) are (1 0; 1 1) and (0 1; 1 0), which generate GL₂(ℤ); the kernel of Aut(F₂) → GL₂(ℤ) is Inn(F₂) (Nielsen). By Lemma 6.1, S(AK(2;3)) = Aut(F₂). For AK(2;4) the same argument with `certificates/th13_ak_2_4_aut_x_xy.json` (AK(2;4) → (xyxyxyxYYYY, xyyxyyxYXYYXY) = τ(AK(2;4)) exactly; 306 moves, 25 cyclic products, barrier 37) and `certificates/th13_ak_2_4_aut_swap.json` (→ (yyyyXXXXX, yxyxyXYXYX); 12,899 moves). ∎
+
+So, as for AK(3) (D6), automorphic images of AK(2;3) may be used freely, and the class of AK(2;3) is *not* a chirality candidate in N's sense. The swap σ is realized on every AK(k;p) by the same single ACM move (certificate also for (2,4)), and ι = (x ↦ X, y ↦ Y) fixes AK(k;p) up to rotation and inversion; what is open for general (k,p) is the realization of one transvection τ. The two engine paths for p = 3, 4 have the same shape (22 and 26 states), so a uniform symbolic realization on AK(2;p) in the style of K1 looks likely; it was not attempted. For AK(3;3) no automorphic image was found (M's engine, budget 1.5·10⁷ states, complete to barrier 34 = start + 13).
+
+**Caution for bounded "chirality" searches (experiment + the theorem above).** The mirror image ι_x(AK(2;3)) = (XXXYYYY, XyXyXYxYxY), ι_x = (x ↦ X), is AC-equivalent to AK(2;3) by Theorem 6. Nevertheless: (i) D's engine with the two sources AK(2;3) and ι_x(AK(2;3)), complete to cap 31: 1,611,924 = 2 × 805,962 states, **no collision**; (ii) M's engine from AK(2;3), complete to cap 34 (17 above the start; 12,677,954 states): the mirror states and the images under x ↦ xY, y ↦ yX are **not** in the forward set, although τ(AK(2;3)) is reached at barrier 29. (For comparison AK(3) meets its mirror image at barrier 19. Likewise for AK(2;4): M's engine complete to cap 39, 5,808,576 states, reaches τ(AK(2;4)) and the image under y ↦ yx at barrier 37 but none of the mirror-type images.) So any path to the mirror image inside the cyclic-product graph has peak length > 34; the certified equivalence goes through transported paths. Hence "the forward set of a class contains no automorphic image of the class up to cap c" — the observation recorded for C4 in notes I, M, N — can fail to detect an equivalence that is certified by a short generator computation. For C4 (N: the known stabilizer D₆ contains no Nielsen generator) the absence of automorphic images in bounded forward sets is therefore weak evidence at best; what would decide the question is one further stabilizer element outside D₆, or a proof that none exists.
+
+## 7. Why the k = 1 role swap does not persist: a non-standard generating pair (proved remark + experiment)
+
+For k = 1, V_{1,p} = W_p⁻¹ is itself a torus-type word, so AK(p) acquires a second torus pair (G1). For k ≥ 2, V_{k,p} is the T(2,2p+1) Wirtinger word evaluated on the pair (x, y^k), which generates H_k but:
+
+**Lemma 7.** For k ≥ 2, no basis (α,β) of F maps, in H_k/centre = C₂ * C_(2k+1), to a simultaneous conjugate of (s, t^k); and no basis maps, in B_k/centre, to a simultaneous conjugate of (x, Δ_k y^i x^j) for any i, j (Δ_k = (xy)^k x).
+*Proof.* For a basis (α,β) of F₂ the commutator [α,β] is conjugate to [x,y]^{±1} (Nielsen; MKS Thm 3.9). In C₂ * C_(2k+1) the image of [x,y] is s t s t⁻¹ (H_k coordinates), resp. the image of [Δ,a]^{±1} = S T S T⁻¹ up to conjugacy and inversion (B_k coordinates; (Δ,a) is a basis): T-exponent necklace {1, −1}. But [s, t^k] = s t^k s t^-k has necklace {k, −k}, and in B_k, [x, Δy^i x^j] = x^(i+1) y⁻¹ x^-i (use Δy = xΔ, Δx⁻¹ = y⁻¹Δ) is conjugate to xY ↦ T^(k+1)S·T^kS, necklace {k+1, k} = {−k, k}. {k,−k} = {1,−1} modulo 2k+1 only for k = 1. ∎
+
+Consequences (remarks, no claim about AC classes): (i) there is no automorphism θ with θ(x) ≡ x, θ(y) ≡ y^k modulo ⟨⟨x²Y^(2k+1)⟩⟩ and the centre, so V_{k,p} is not "θ(W_p^{±1})" in the way it is for k = 1. (ii) The coordinate change behind the Miller–Schupp form of AK(n) (C, K: the pair (x, c) with c ≡ Δ_1 x^j is a basis and p_n ≡ x^n c x^-(n+1) c⁻¹) has no analogue of this shape for k ≥ 2. I did not prove that no Miller–Schupp-type form exists at all.
+
+**Experiment (bounded; G's torus graph, exact primitive-neighbour test; `th13_family.py --islands`).** Aut-orbits of torus pairs reachable by torus-word ACM edges, bounds |M| ≤ 12, exponents ≤ 20, length ≤ 120:
+
+| member | Aut-orbits | torus types met | winners |
+|---|---:|---|---:|
+| AK(2;2) | 3 | (2,3)&(2,3), (2,3)&(2,5) twice | 1 (it is AC-trivial) |
+| AK(3;2) ≅ AK(3) | 3 | (2,3)&(3,4), (2,3)&(2,7) twice | 0 |
+| AK(2;3), AK(2;4), AK(2;5) | 1 each | (p,p+1)&(2,5) only | 0 |
+| AK(3;3), AK(3;4), AK(4;3) | 1 each | (p,p+1)&(2,2k+1) only | 0 |
+
+(AK(2;3), AK(3;3), AK(2;4) also at bounds 16, 24, 160: still 1 orbit.) So within these bounds every member with k ≥ 2, p ≥ 3 is an **isolated torus node**: no other torus-type word in either partner class. This is consistent with Lemma 7 but is a bounded experiment, not a classification.
+
+## 8. Experiments (exact commands; outputs from this session; one niced core, < 0.6 GB)
+
+**Self-test and certificates.**
+```
+python3 experiments/th13_family.py --selftest          # th13_family self-test passed   (about 20 s CPU)
+python3 experiments/th13_family.py --write certificates
+python3 experiments/d_certify.py experiments/th13_path_ak_2_3_x_xy.txt xxxYYYY xyxyxYXYXY xyxyxYYY xyyxyyxYXYYXY certificates/th13_ak_2_3_aut_x_xy.json
+python3 experiments/d_certify.py experiments/th13_path_ak_2_4_x_xy.txt xxxxYYYYY xyxyxYXYXY xyxyxyxYYYY xyyxyyxYXYYXY certificates/th13_ak_2_4_aut_x_xy.json
+for f in certificates/th13_*.json; do python3 experiments/elementary_verify.py $f; done
+```
+The self-test checks: ψ_kφ_k = id and ψ_k(x²Y^(2k+1)) ∈ Orb(W_k) (k ≤ 8); Theorem 2 by G's exact `torus_class` (k, p ≤ 8: equal classes, central exponent −(2p+1), 4p+2 syllables, t-exponents k^(p+1)(k+1)^p); triviality of AK(k;p), D(k;p) (k ≤ 4, p ≤ 5) and of sample F(a,b;i,j;m) by coset enumeration; Theorem 1(b) on samples; Lemmas P and B by brute force over all cyclically reduced words (below); Proposition 5 by G's complete primitive test (k ≤ 6, 2 ≤ p ≤ 7: only (1,2)); Lemma 7's necklaces (k ≤ 8).
+
+Verifier output (all eleven pass):
+
+| certificate | from → to | moves | peak |
+|---|---|---:|---:|
+| `th13_dual_k2_p2.json` | AK(2;2) → (ψ_2(V_{2,2}), W_2) | 2,686 | 183 |
+| `th13_dual_k2_p3.json` | AK(2;3) → (ψ_2(V_{2,3}), W_2) | 6,718 | 263 |
+| `th13_dual_k3_p3.json` | AK(3;3) → (ψ_3(V_{3,3}), W_3) | 9,192 | 367 |
+| `th13_ak_2_2_trivialization.json` | AK(2;2) → (x, y) | 2,351 | 139 |
+| `th13_ak_2_1_trivialization.json` | AK(2;1) → (x, y) | 574 | 69 |
+| `th13_ak_3_1_trivialization.json` | AK(3;1) → (x, y) | 1,054 | 99 |
+| `th13_ak3_to_ak_3_2.json` | AK(3) = (xxxYYYY, xyxYXY) → AK(3;2) = (xxYYY, xyxyxyxYXYXYXY) | 2,522 | 74 |
+| `th13_ak_2_3_aut_x_xy.json` | AK(2;3) → (xyxyxYYY, xyyxyyxYXYYXY) | 212 | 43 |
+| `th13_ak_2_3_aut_swap.json` | AK(2;3) → (yyyXXXX, yxyxyXYXYX) | 6,309 | 263 |
+| `th13_ak_2_4_aut_x_xy.json` | AK(2;4) → (xyxyxyxYYYY, xyyxyyxYXYYXY) | 306 | 55 |
+| `th13_ak_2_4_aut_swap.json` | AK(2;4) → (yyyyXXXXX, yxyxyXYXYX) | 12,899 | 343 |
+
+**First exits, exact (`th13_family.py --exits`, about 2.5 min).** Number of cyclically reduced words of length L conjugate to the partner (exact test via `torus_class`), for all L between the plateau length and the listed maximum:
+
+- power side (words ~ p_p^{±1} in B_k, off the plateau): (k,p) = (1,3): none at 8, 432 at 9 [Lemma P bound 9]; (2,2): none at 6–10, 264 at 11 [bound 11]; (2,3): none at 8–12 [bound 13]; (3,2): none at 6–11 [bound 13]; (3,3): none at 8–12 [bound 15].
+- braid side (words ~ W_k^{±1} in G_p and in G_p′, same counts): (1,3): none at 7, 32 at 8 [Lemma B bound 8]; (1,4): none at 7–9, 40 at 10 [10]; (1,5): none at 7–11, 48 at 12 [12]; (2,3): none at 11, 144 at 12 [12]; (2,4): none at 11–12 [14].
+So Lemma B is sharp in every case tested and Lemma P is sharp for k = 1, 2.
+
+**Torus islands (`th13_family.py --islands`, 47 s):** the table of §7.
+
+**Forward sets (D's engine, `g++ -O2 -std=c++17 -o d_acsearch experiments/d_acsearch.cpp`; directed cyclic-product graph, Σ-classes, complete to cap 31 = the engine's maximum).**
+```
+./d_acsearch --cap 31 --maxstates 12000000 --source xxxYYYY,xyxyxYXYXY       # AK(2;3): budget_hit 0, total_states 805962, trivializing_states 0
+./d_acsearch --cap 31 --maxstates 12000000 --source xxxxYYYYY,xyxyxYXYXY     # AK(2;4): total_states 10400, trivializing_states 0
+./d_acsearch --cap 31 --maxstates 12000000 --source xxxYYYY,xyxyxyxYXYXYXY   # AK(3;3): total_states 65530, trivializing_states 0
+./d_acsearch --cap 31 ... --source xxxYYYY,xyxyxYXYXY --source XXXYYYY,XyXyXYxYxY   # AK(2;3) + mirror: total_states 1611924, no COLLISION
+./d_acsearch --cap 24 ... --source xxxYYYY,xyxYXY --source XXXYYYY,XyXYxY           # AK(3) + mirror: COLLISION 0-1 barrier 19
+```
+Energy spectra: AK(2;3): 17 (2 states), then 19, 20, …; AK(2;4): 19 (2 states), then 23, 24, …; AK(3;3): 21 (2 states), then 23, … — no state below the start, and the first exits 19 = 17+2, 23 = 19+4, 23 = 21+2 equal 2p+4k+3+d(k,p) of Theorem 4 (so Theorem 4(b) is sharp for these three members, already in the cyclic-product subgraph).
+
+**Automorphic images (M's engine, `g++ -O2 -std=c++17 -pthread -o m_acsearch experiments/m_acsearch.cpp`).**
+```
+./m_acsearch --source xxxYYYY,xyxyxYXYXY --cap 33 --width 2 --threads 1 --maxstates 20000000 --exact-targets experiments/th13_targets_ak_2_3.txt --no-stop
+#   budget_hit 0, last_complete_barrier 33, total_states 5858556, trivializing_states 0; target_hits 1: HIT x_xy barrier 29, PATH len 22 verified  (mirror, x_xY, y_yX: not hit)
+./m_acsearch --source xxxxYYYYY,xyxyxYXYXY --cap 39 --width 2 --threads 1 --maxstates 15000000 --exact-targets experiments/th13_targets_ak_2_4.txt --no-stop
+#   budget_hit 0, total_states 5808576, trivializing_states 0; hits: x_xy, x_yx, y_yx (and their q-forms) at barrier 37; mirror, x_xY, y_yX, x_Yx: not hit
+./m_acsearch --source xxxYYYY,xyxyxyxYXYXYXY --cap 37 --width 2 --threads 1 --maxstates 15000000 --exact-targets experiments/th13_targets_ak_3_3.txt --no-stop
+#   budget_hit 1, last_complete_barrier 34, trivializing_states 0, no target hit
+```
+The first of these commands (AK(2;3)) with `--cap 34 --maxstates 17000000`: budget_hit 0, last_complete_barrier 34, total_states 12677954, trivializing_states 0, same single hit.
+
+**Aut-minimal lengths (D's `d_whitehead.aut_canon`).** AK(2;2): 14; AK(2;3): 17; AK(2;4): 19; AK(2;5): 21; AK(3;2): 16; AK(3;3): 19; AK(4;3): 21. In these cases the minimum is min(2p+4k+3, 3p+2k+4), the second value being the length of the image under (x ↦ xY): ⟨x,y | x^(k+1) = y x^k y, (xY)^p = y^(p+1)⟩ (free identity: W_k ↦ x^(k+1) Y X^k Y). So AK(2;3) is Aut-minimal at length 17, outside the published length ≤ 16 lists.
+
+All searches are directed, engine-relative and bounded; "no trivializing state" is **not** evidence of non-triviality.
+
+## 9. Failed attempts (precise reasons)
+
+1. **A second torus pair for k ≥ 2 (a literal generalization of G1).** The partner class of the T(2,2k+1) relator contains V_{k,p}, which for k ≥ 2 is not of torus type: ⟨x,y | V_{k,p}⟩ is the amalgam of the T(2,2p+1) group ⟨x,c⟩ with ⟨y⟩ along c = y^k, and its centre is trivial because the centre of ⟨x,c⟩ is generated by (xc)^(2p+1) ∉ ⟨c⟩. Whether some *other* torus-type word lies in the class is not decided: Lemma 7 excludes the natural candidate, the bounded experiment of §7 finds none, but there is no classification.
+2. **A Miller–Schupp / K-type normal form for k ≥ 2.** For k = 1, C and K pass through p_n ≡ x^n c x^-(n+1) c⁻¹ with (x,c) a basis. In B_k, p_p = x^p Δ_k x^-(p+1) Δ_k⁻¹, but by Lemma 7 no basis of F maps to a conjugate of (x, Δ_k y^i x^j). This kills the direct analogue only; other normal forms were not explored.
+3. **Depth beyond the first exit.** After the first exit the frozen relator is not of torus type, Lemma J0 is unavailable, and Lemmas P/B say nothing. Theorem 4 is a statement about the rim of the first basin only.
+4. **Direct trivialization of the smallest open member AK(2;3).** Complete forward sets to cap 31 (D) and cap 34 (M; 12,677,954 states) contain no primitive relator; no trivialization was found. No conclusion.
+5. **An explicit certificate AK(2;3) → mirror image.** It exists by Theorem 6 (compose the two generator certificates along ι_x ≡ τ₂⁻¹τ₁τ₂⁻¹σ modulo Inn, τ₂ = στ₁σ), but each use of τ₂ transports the 6,309-move swap certificate; the composite was estimated above the 2 MB limit and was not assembled.
+6. **Transvection on AK(3;3); uniform transvection on AK(2;p).** Not found within the budget for AK(3;3) (complete to start + 13); for AK(2;p) only p = 3, 4 are certified.
+
+## 10. Honest limits
+
+- Nothing here trivializes or obstructs AK(3), and no member with k ≥ 2, p ≥ 3 is shown AC-trivial or non-trivial. Theorem 4's unbounded depth is a statement about local minima of the ACM graph; AK(2;2) and the row p = 1 show that members of the family can be AC-trivial.
+- Theorems 1, 2, 4, Lemmas P, B, 6.1, 7 are proved in full here (given G's Lemma 1 = J's Lemma J0, the conjugacy theorem for free products, and Nielsen's commutator theorem). Proposition 5 uses Fact C of research-g (classical structure of primitive words; G checked it by machine for |m|+|k| < 60); the exact machine test covers k ≤ 6, p ≤ 7 independently of the argument.
+- Theorem 6 and Corollary 3(b),(c) rest on replayed certificates plus Lemma 6.1; Corollary 3(c)'s certificate uses D's two generator certificates for AK(3).
+- §7's islands, §8's forward sets and the "mirror not found" statements are bounded, directed, engine-relative experiments.
+- T3 and the k = 1 cases of T2, T4, T5 are restatements of G1, A, J, G2; what is new relative to A–O is the dependence on k, Theorem 6, and Lemma 7. No novelty claim against the literature (Panteleev–Ushakov and Myasnikov–Myasnikov–Shpilrain treat AK(n); I could not check whether the two-parameter family appears elsewhere).
+
+## 11. Advice to the coordinator (ranked)
+
+1. **Record the mirror-image caution (§6) next to the C4 question.** AK(2;3) is a certified example where complete forward sets to start + 17 contain no mirror image although the class is closed under Aut(F₂). For C4 the informative experiment is therefore not "more cap" in the plain forward search but a targeted search for *one* transvection-type generator of its stabilizer (N showed D₆ ⊂ Ŝ(C4) contains none), e.g. with exact targets τ(C4) in M's engine at the largest affordable cap and with torus-frozen ACM composites.
+2. **Use AK(2;3) (length 17) as a laboratory twin of AK(3).** Same qualitative features (rigid plateau, no one-move exit, Aut-realized) but an isolated torus node and forward sets about 50 times smaller at equal height (5.9·10⁶ states at start + 16 against AK(3)'s 2.9·10⁸ at start + 16; growth ×2.2–2.7 per unit of cap; 1.27·10⁷ at start + 17), so caps of start + 19 to + 20 are affordable on this machine; a meet-in-the-middle against T(22) there is the cheapest new experiment in the project. A trivialization of AK(2;3) would not settle AK(3), but its peak would calibrate what to expect.
+3. **Uniform transvection on AK(2;p).** The two engine paths (`experiments/th13_path_ak_2_{3,4}_x_xy.txt`) have the same shape; turning them into a closed-form chain in the style of K1 would give "Aut(F₂) is AC-realized on AK(2;p) for all p ≥ 3", and probably shows how to treat general k (TH15's k = 1 method may transfer).
+4. **Sharpen Lemma P for k ≥ 3 and classify torus-type words in the two partner classes for k ≥ 2** (an "isolation theorem" explaining §7's islands); with TH04's k = 1 classification this would settle the torus graph of the whole family.
+5. Low priority: the dual presentations D(k;p) are longer than AK(k;p) and give no shortening; the wider family F(a,b;i,j;m) reduces to (a,b,m) by Theorem 1(b) and was not explored further.
+
+## References
+
+- research-a (plateau lemmas), research-g (Lemma 1, G0, G1, G2, Fact C, `g_torus.py`, `g_cert.py`), research-j (Lemma J0, Theorem J1), research-i (Prop. M, Lemma E), research-k (Theorem K1), research-d (D2, D3, D6, `d_acsearch.cpp`, `d_certify.py`), research-m (`m_acsearch.cpp`), research-n (chirality of C4).
+- W. Magnus, A. Karrass, D. Solitar, *Combinatorial Group Theory*: conjugacy theorem for free products (Thm 4.2); Nielsen's theorem that [α,β] is conjugate to [x,y]^{±1} for every basis (α,β) of F₂ (Thm 3.9); Out(F₂) = GL₂(ℤ).
+- D. Panteleev, A. Ushakov, *Conjugacy search problem and the Andrews–Curtis conjecture*, arXiv:1609.00325 (ACM moves; externally reported, not re-read in this session).
+- H. Zieschang, *Generators of the free product with amalgamation of two infinite cyclic groups*, Math. Ann. 227 (1977): classification of generating pairs of ⟨s,t | s^p = t^q⟩ (context for Lemma 7, which is proved here directly and does not rely on it; citation from memory).

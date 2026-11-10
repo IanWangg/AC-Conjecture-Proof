@@ -1,0 +1,120 @@
+{
+"format": "ordinary-ac-elementary-v1",
+"note": "P_3 = (c, k_3) -> (XXyxYY, k_3): a composite of three right multiplications of the first relator by conjugates of k_3^{+-1} (so one generalized (ACM) move with k_3 frozen), total length 13. The endpoint is the image of D's second length-13 presentation Q = (xxyXYY, xxxYYXy) under x -> X, up to inverting and rotating the second relator (XXXYYxy is the inverse of the rotation yyxxxYX of k_3). Agent TH03.",
+"start": [
+"xyxYYXy",
+"xxxYXyy"
+],
+"target": [
+"XXyxYY",
+"xxxYXyy"
+],
+"moves": [
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 0,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "invert",
+"i": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "X"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "y"
+},
+{
+"op": "multiply",
+"i": 0,
+"j": 1
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "Y"
+},
+{
+"op": "conjugate",
+"i": 1,
+"g": "x"
+}
+]
+}

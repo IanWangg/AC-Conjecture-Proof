@@ -147,6 +147,35 @@ GROUPS = {  # name: (degree, generators)
     "7:6": (7, [tuple((i + 1) % 7 for i in range(7)), tuple((3 * i) % 7 for i in range(7))]),
 }
 
+# ---- exact Eisenstein arithmetic for the glide-length invariant (note, Proposition 5.2) -------
+# a + b*w with w = exp(2 pi i/3), w^2 = -1 - w; an isometry is (A, B, f): z -> A z + B (f = 0)
+# or z -> A conj(z) + B (f = 1), A a unit.
+def e_mul(p, q): return (p[0] * q[0] - p[1] * q[1], p[0] * q[1] + p[1] * q[0] - p[1] * q[1])
+def e_add(p, q): return (p[0] + q[0], p[1] + q[1])
+def e_conj(p): return (p[0] - p[1], -p[1])
+def e_norm(p): return p[0] * p[0] - p[0] * p[1] + p[1] * p[1]
+def i_comp(g, h):                      # g o h
+    A, B, f = g; C, D, e = h
+    if f == 0: return (e_mul(A, C), e_add(e_mul(A, D), B), e)
+    return (e_mul(A, e_conj(C)), e_add(e_mul(A, e_conj(D)), B), 1 - e)
+def i_inv(g):
+    A, B, f = g
+    Ai = e_conj(A)                     # units: inverse = conjugate
+    if f == 0: return (Ai, e_mul((-1, 0), e_mul(Ai, B)), 0)
+    return (A, e_mul((-1, 0), e_mul(A, e_conj(B))), 1)   # z = A conj(y)+B  =>  y = A conj(z) - A conj(B)
+SIG = ((-1, -1), (1, 0), 1)            # x -> sigma: z -> conj(w) conj(z) + 1
+ETA = ((1, 0), (0, 1), 1)              # y -> eta:   z -> conj(z) + w
+def rho(word):
+    r = ((1, 0), (0, 0), 0)
+    m = {"x": SIG, "y": ETA, "X": i_inv(SIG), "Y": i_inv(ETA)}
+    for c in word: r = i_comp(r, m[c])
+    return r
+def glide2(word):
+    """squared glide length of rho(word) (word of odd exponent sum)"""
+    g = rho(word); assert g[2] == 1
+    g2 = i_comp(g, g); assert g2[0] == (1, 0) and g2[2] == 0
+    return e_norm(g2[1])
+
 def selftest():
     assert torus_type("xxxYYYY") == (3, 4) and torus_type("xyxYXY") == (2, 3)
     assert torus_type("xy") == (1, 1) and torus_type("xyXY") is None and torus_type("XyyyxYYYY") is None
@@ -198,13 +227,46 @@ def selftest():
                 assert pmul(pmul(pinv(V), U), V) in CN and pmul(pmul(V, U), pinv(V)) in CN, name
                 assert pmul(pmul(pinv(U), pinv(V)), pmul(U, V)) in CN, name
                 bchecked += 1
+    # Theorem A, steps 3-4 (Remark (ii)): in a metabelian group E = <P, Qg> with P in E',
+    # every element of Qg*E' is conjugate to some Qg*P^i.  (False in general for derived length 3.)
+    achecked = 0
+    for name in ("S3", "A4", "D7", "7:3", "7:6"):
+        n, gens = GROUPS[name]
+        G = sorted(closure(gens, n))
+        Gset = set(G)
+        comm = lambda g, h: pmul(pmul(pinv(g), pinv(h)), pmul(g, h))
+        D1 = closure([comm(g, h) for g in G for h in G], n)
+        assert all(comm(g, h) == tuple(range(n)) for g in D1 for h in D1), name   # metabelian
+        for Pp, Qg in product(sorted(D1), G):
+            if closure([Pp, Qg], n) != Gset:
+                continue
+            targets = set()
+            for i in range(order(Pp)):
+                y0 = pmul(Qg, ppow(Pp, i))
+                targets |= {pmul(pmul(g, y0), pinv(g)) for g in G}
+            assert all(pmul(Qg, m) in targets for m in D1), (name, Pp, Qg)
+            achecked += 1
+    assert achecked > 0
+    # glide-length invariant: rho kills the braid relator and (y x^-1)^3; formula for AK(n) killers
+    ident = ((1, 0), (0, 0), 0)
+    assert rho("xyxYXY") == ident and rho("yXyXyX") == ident and rho("xX") == ident
+    for n in range(0, 60):
+        assert glide2("x" * n + "Y" * (n + 1)) == (3 * n // 2 + 1) ** 2
+    for al in range(0, 12):            # primitive elements of exponent sum -1: y^-1 (x y^-1)^al, (x^-1 y)^al y^-1 ...
+        assert glide2("Y" + "xY" * al) in (1, 4) and glide2("Y" + "yX" * al) in (1, 4)
+    import random
+    random.seed(5)
+    for _ in range(300):               # conjugation invariance on random words
+        g = "".join(random.choice("xXyY") for _ in range(random.randint(0, 12)))
+        assert glide2(g + "xxxYYYY" + inv(g)) == 25
     # sharpness: exponent 42 does not make the three AK(3) torus quotients abelian
     n, gens = GROUPS["S3"]; t, r = gens
     assert not quotient_abelian(closure(gens, n), t, r, pmul(ppow(t, 2), ppow(r, -3)), n)
     assert not quotient_abelian(closure(gens, n), r, t, pmul(ppow(r, 3), ppow(t, -4)), n)
     n, gens = GROUPS["D7"]; r, t = gens
     assert not quotient_abelian(closure(gens, n), t, r, pmul(ppow(t, 2), ppow(r, -7)), n)
-    print(f"selftest passed ({checked} instances of Theorem B's core, {bchecked} of Theorem B''s core)")
+    print(f"selftest passed ({checked} instances of Theorem C's core, {bchecked} of Theorem B(a)'s core, "
+          f"{achecked} of Theorem A's step 4)")
 
 def scan():
     root = os.path.dirname(HERE)

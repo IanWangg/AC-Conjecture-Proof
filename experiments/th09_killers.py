@@ -7,6 +7,9 @@ Standard library only; imports g_torus / f_descent / elementary_verify read-only
   python3 experiments/th09_killers.py --write certificates # MS(1,w) certificates
   python3 experiments/th09_killers.py --census 9           # killers of the trefoil group
   python3 experiments/th09_killers.py --exchange 12 9 160  # exchange graph (bounded)
+  python3 experiments/th09_killers.py --forward 20         # AK(3) forward set, BS(1,2) test
+  python3 experiments/th09_killers.py --gsieve             # Theorem 6, full sieve (about 80 s)
+  python3 experiments/th09_killers.py --identify           # necklaces of AK(n), C3, C6, X7, BS7, R249
 
 Part 1  BS(1,2) = <x,y | x^-1 y x = y^2>: normal forms, and a compiler that turns
         "every element of x-degree -1 is conjugate to x^-1" into strict elementary
@@ -285,6 +288,10 @@ def check_torus_side(nmax=9, J=12):
         for j in range(-J, J + 1):
             m, k = 1 + j * n, -1 - j * (n + 1)
             vp, vm = torus_family(n, j)
+            u = "xY" * n + "Y"                 # the form of v_j^- printed in the note
+            assert G.min_rot(G.cyc("Yx" + "yX" * (n + 1) + G.power(u, -j) + "xY" * (n - 1))) == G.min_rot(vm)
+            assert G.min_rot(vp) == G.min_rot(bs_word(u, G.red("xY" + G.power(u, j)), 1))
+            assert G.min_rot(vm) == G.min_rot(bs_word(u, G.red("xY" + G.power(u, j)), -1))
             assert {G.min_rot(vp), G.min_rot(vm)} == {matrix_class(m, k, 1), matrix_class(m, k, -1)}, (n, j)
             for v in (vp, vm):
                 L = G.syllables(v, p, q)
@@ -362,6 +369,50 @@ def check_gieseking(ns=range(1, 9), p=13):
     res = {n: sorted(traces(O.killer(n))) for n in ns}
     excluded = [n for n in ns if not (set(res[n]) & allc)]
     return cand, res, excluded
+
+
+def gieseking_sieve(ns=range(1, 9), primes=(7, 13)):
+    """Theorem 6, full sieve: all homs H -> PSL(2,p) (o_sieve.homs_H) with
+    non-abelian fibre image; residues j mod the period for which the trace of
+    rho(k_n^2) is among those of rho(v^2), rho(y v^2 Y), v = v_j^+ (sign 0) or
+    v_j^- (sign 1); CRT intersection (o_sieve.combine).  Returns
+    {n: (survivors for +, survivors for -)}; both empty = exclusion."""
+    import o_sieve as S
+    import o_gc as O
+
+    def fam(j):
+        Xj = G.power("X", j)
+        return "yxY" + Xj + "YX", "xyXY" + Xj + "Y"
+
+    def hword(w):
+        u, k = O.nf(w)
+        assert k % 2 == 0
+        return u + ("t" if k > 0 else "T") * (abs(k) // 2)
+
+    allc = []
+    for p in primes:
+        cons = {(n, sg): {} for n in ns for sg in (0, 1)}
+        for (A, B, T) in S.homs_H(p):
+            if S.is_pm_I(S.mmul(S.mmul(A, B, p), S.mmul(S.minv(A, p), S.minv(B, p), p), p), p):
+                continue
+            o = S.lcm(S.psl_order(A, p), S.psl_order(B, p), S.psl_order(S.mmul(S.minv(B, p), A, p), p))
+            cand = [[None] * o, [None] * o]
+            for j in range(o):
+                for sg, v in enumerate(fam(j)):
+                    cand[sg][j] = {S.tr(S.evab(hword(v + v), A, B, T, p), p),
+                                   S.tr(S.evab(hword("y" + v + v + "Y"), A, B, T, p), p)}
+            for n in ns:
+                t = S.tr(S.evab(S.sq_word(n), A, B, T, p), p)
+                for sg in (0, 1):
+                    arr = cons[(n, sg)].setdefault(o, bytearray(b"\x01") * o)
+                    for j in range(o):
+                        if t not in cand[sg][j]:
+                            arr[j] = 0
+        allc.append(cons)
+    out = {}
+    for n in ns:
+        out[n] = tuple(S.combine([c[(n, sg)] for c in allc]) for sg in (0, 1))
+    return out
 
 
 # ----------------------------------------------------------------- Part 3
@@ -656,7 +707,70 @@ def frozen_path_certificate(a, s1, s2, maxlen=16, depth=3):
             "description": "TH09: %d cyclic products with the first relator frozen" % len(steps)}
 
 
+def forward_bs_scan(cap, tlim=250.0, start=("xxxYYYY", "xyxYXY")):
+    """Breadth-first forward set of `start` under cyclic products (u, v) ->
+    (cyc(rot(u) rot(v^{+-1})), v) with total length <= cap; every relator met
+    is tested for primitivity and for BS(1,2)-type (Corollary 1.2)."""
+    import time
+    import d_whitehead as W
+    BS = W.aut_canon((R_BS,))
+    st0 = tuple(sorted(W.canon_word(w) for w in start))
+    seen, front, rels, hits, t0, done = {st0}, [st0], {}, [], time.time(), True
+    while front and done:
+        nxt = []
+        for st in front:
+            if time.time() - t0 > tlim:
+                done = False
+                break
+            for i in (0, 1):
+                u, v = st[i], st[1 - i]
+                vi = G.inv(v)
+                for V in [v[k:] + v[:k] for k in range(len(v))] + [vi[k:] + vi[:k] for k in range(len(v))]:
+                    for k in range(len(u)):
+                        c = G.cyc(u[k:] + u[:k] + V)
+                        if not c or len(c) + len(v) > cap:
+                            continue
+                        cw = W.canon_word(c)
+                        ns = tuple(sorted((cw, v)))
+                        if ns in seen:
+                            continue
+                        seen.add(ns)
+                        nxt.append(ns)
+                        if cw not in rels:
+                            L, cf = W.aut_canon((cw,))
+                            rels[cw] = "primitive" if L == 1 else ("BS(1,2)-type" if (L, cf) == BS else "")
+                        if rels[cw]:
+                            hits.append((rels[cw], ns))
+        front = nxt
+    return {"cap": cap, "complete": done, "states": len(seen), "relators": len(rels), "hits": hits[:5]}
+
+
+def partner_necklaces(pair):
+    """[(i, necklace)]: relator i of the pair is trefoil-type and the other
+    relator has this necklace (up to rotation/reversal/complement) in its group."""
+    import g_cert as GC
+    import d_whitehead as W
+    tref = W.aut_canon(("xxYYY",))
+    out = []
+    for i in (0, 1):
+        r, s = pair[i], pair[1 - i]
+        if W.aut_canon((r,)) != tref:
+            continue
+        M, p, q = G.torus_type(r)
+        U = G.cyc(G.apply(GC.exact_inverse(G.aut_cached(M)), s))
+        g3 = "y" if abs(q) == 3 else "x"
+        out.append((i, canon_neck("".join(str(e) for g, e in G.torus_class(U, p, q)[1] if g == g3))))
+    return out
+
+
+KNOWN = {"AK(2)": ("xxYYY", "xyxYXY"), "AK(3)": ("xxxYYYY", "xyxYXY"), "AK(4)": ("xxxxYYYYY", "xyxYXY"),
+         "C3": ("xxyXy", "xyyyyyxYY"), "C6": ("xxyxxYY", "xyXYYXy"), "C4": ("xxxxyXy", "xyyyxYY")}
+
+
 X7 = ("XXXYXXYxxy", "XYYXy")     # killer class 1121122 of the trefoil group
+BS7 = ("XXXXYXYxxy", "XYYXy")    # killer class 1112122 (BS(1,2)-type)
+R249 = ("xxyXXYY", "xyXyxyyyy")  # row of the third-party residual list, label R249; class 1112122
+R249_SEED = "xxxyyXyXy"          # (xxyXXYY, xxxyyXyXy) is the list's seed for R249
 
 
 def selftest():
@@ -696,6 +810,15 @@ if __name__ == "__main__":
         selftest()
     elif "--census" in sys.argv:
         print_census(int(sys.argv[sys.argv.index("--census") + 1]))
+    elif "--identify" in sys.argv:
+        for name, pair in list(KNOWN.items()) + [("X7", X7), ("BS7", BS7), ("R249", R249)]:
+            print(name, pair, partner_necklaces(pair))
+    elif "--gsieve" in sys.argv:
+        for n, (plus, minus) in gieseking_sieve().items():
+            print("n=%d modulus %d survivors +: %s  -: %s  %s" % (n, plus[0], plus[1][:6], minus[1][:6],
+                  "EXCLUDED" if not plus[1] and not minus[1] else ""))
+    elif "--forward" in sys.argv:
+        print(forward_bs_scan(int(sys.argv[sys.argv.index("--forward") + 1])))
     elif "--exchange" in sys.argv:
         i = sys.argv.index("--exchange")
         K, kmax, ml = int(sys.argv[i + 1]), int(sys.argv[i + 2]), int(sys.argv[i + 3])
@@ -712,6 +835,15 @@ if __name__ == "__main__":
         with open(os.path.join(d, "th09_k9_112121122_trivialization.json"), "w") as f:
             json.dump(c, f)
         print("th09_k9_112121122_trivialization.json", c["start"], len(c["moves"]))
+        bs7 = bs_exit_certificate(*BS7)
+        ak2 = bs_exit_certificate("xxYYY", "xyxYXY")
+        r249 = transport_certificate(R249[0], R249[1], bs7)
+        seed = frozen_path_certificate(R249[0], R249_SEED, R249[1])
+        for name, c in (("th09_bs7_bs_exit", bs7), ("th09_ak2_bs_exit", ak2),
+                        ("th09_r249_trivialization", r249), ("th09_r249_seed_to_member", seed)):
+            with open(os.path.join(d, name + ".json"), "w") as f:
+                json.dump(c, f)
+            print(name + ".json", c["start"], len(c["moves"]))
         for n, s in enumerate(MS1_EXAMPLES, 1):
             c = bs12_trivialize(s)
             path = os.path.join(d, "th09_ms1_%d.json" % n)

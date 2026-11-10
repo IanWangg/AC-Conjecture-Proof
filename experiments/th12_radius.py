@@ -3,7 +3,7 @@
 rho*(w) = least rho such that w lies in H_rho = < g u g^-1 : u in {r,s}, |g| <= rho >
 (a subgroup of the free group F(x,y); membership decided by Stallings folding).
 By Theorem 1 of research-th12.md every instruction trivialization has kappa >= rho*(x), rho*(y).
-Usage: python3 experiments/th12_radius.py [--selftest] [nmax] [rhomax]
+Usage: python3 experiments/th12_radius.py [--selftest] [--pn] [nmax] [rhomax]
 """
 import sys
 
@@ -78,5 +78,10 @@ if __name__ == "__main__":
         assert radius(["xxyXXY", "y"], "x", 3) is None    # <<[x^2,y], y>> does not contain x
         print("th12_radius selftest OK")
     nmax = int(args[0]) if args else 6; rhomax = int(args[1]) if len(args) > 1 else 7
+    if "--pn" in sys.argv:                               # K's coordinates P_n = (xyxYYXy, x^n YXyy)
+        for n in range(2, nmax + 1):
+            rels = ["xyxYYXy", "x"*n + "YXyy"]
+            print("P_%d  rho*(x)=%s  rho*(y)=%s" % (n, radius(rels, "x", rhomax), radius(rels, "y", rhomax)), flush=True)
+        sys.exit(0)
     for n in range(1, nmax + 1):
         print("n=%d  rho*(x)=%s  rho*(y)=%s  theorem: >= %d" % (n, radius(ak(n), "x", rhomax), radius(ak(n), "y", rhomax), max(0, (n-2)//2)), flush=True)

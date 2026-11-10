@@ -1,0 +1,14 @@
+x_xy xyxyxYYY xyyxyyxyyxYXYYXYYXY
+x_xy_q yyXYXYXYX xyyxyyxyyxYXYYXYYXY
+x_xY xYxYxYYYYY xxxxYXXXY
+x_xY_q yyyyXyXyXyX xxxxYXXXY
+y_yx xxYXYXYXY xyxxyxxyxYXXYXXYXXY
+y_yx_q yxyxyXXX xyxxyxxyxYXXYXXYXXY
+y_yX xxxxYxYxYxY xyyyxYYYY
+y_yX_q yXyXyXXXXX xyyyxYYYY
+mirror XXXYYYY XyXyXyXYxYxYxY
+mirror_q yyyxxxx XyXyXyXYxYxYxY
+x_yx xyxyxYYY xyyxyyxyyxYXYYXYYXY
+x_yx_q yyXYXYXYX xyyxyyxyyxYXYYXYYXY
+x_Yx YxYxYxYYYY YxxxxYXXX
+x_Yx_q yyyXyXyXyXy YxxxxYXXX

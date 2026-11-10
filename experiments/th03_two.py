@@ -123,6 +123,13 @@ def structure(k):
         return q.inv(rest) if e == 1 else rest
     images = [(i + 2,) for i in range(r - 1)] + [solve(r, 0)]
     inv_images = [solve(0, 1)] + [(i,) for i in range(1, r)]
+    def ap(imgs, w):
+        out = []
+        for g in w:
+            im = imgs[abs(g) - 1]; out.extend(im if g > 0 else q.inv(im))
+        return q.red(out)
+    for g in range(1, r + 1):                          # psi is an automorphism with inverse inv_images
+        assert ap(images, ap(inv_images, (g,))) == (g,) == ap(inv_images, ap(images, (g,)))
     return m, lo, r, images, inv_images, sub
 def nf_general(word, st):
     m, lo, r, images, inv_images, sub = st
@@ -141,13 +148,13 @@ def nf_general(word, st):
             for _ in range(abs(k)): g = ap(images, g) if k > 0 else ap(inv_images, g)
             u = q.red(u + g)
     return u, k
-def second_move(kp, D, mod2=False):
-    """Is c conjugate in <x,y | k'> to a primitive x t^j ?  Returns the list of surviving j
-    (rational traces: all integers j; mod 2: residues mod 8), or None if k' is not handled."""
+def second_move(kp, D, mod2=False, moved='xyxYYXy'):
+    """Is `moved` (default c) conjugate in <x,y | k'> to a primitive x t^j ?  Returns the list of
+    surviving j (rational traces: all integers j; mod 2: residues mod 8), or None if not handled."""
     st = structure(kp)
     if st is None: return None
     assert nf_general(kp, st) == ((), 0)
-    uc, kc = nf_general('xyxYYXy', st); assert kc == 1
+    uc, kc = nf_general(moved, st); assert kc == 1
     G = Gen(st[3], D, rational=not mod2)
     if mod2:
         assert D < 8
@@ -215,6 +222,61 @@ def second_move_ascending(D=8, p=3):
     ic = ev(uc)
     return len(B), [j for j in range(p ** e) if ev(nf_asc('x' + 'y' * j)[0]) == ic]
 
+def second_move_mod9(kp, D=3, period=None):
+    """Z/9-valued twisted traces for a target k' satisfying Brown's criterion: F_3-valued traces l0 are
+    lifted to l = l0 + 3 l1 with R l = 0 (mod 9) (R the integer relation matrix; verified), and the
+    invariants of c and of x t^j are compared for all j mod 27 ((1+X)^27 = 1 mod (9, X^4)).
+    Returns (number of F_3-traces, number of independent lifts, surviving j mod 27)."""
+    import numpy as np
+    assert D <= 3
+    def null_mod(M, p):
+        M = M.copy() % p; R_, N_ = M.shape; piv, r0 = [], 0
+        for c in range(N_):
+            nz = np.nonzero(M[r0:, c])[0]
+            if len(nz) == 0: continue
+            pr = r0 + int(nz[0])
+            if pr != r0: M[[r0, pr]] = M[[pr, r0]]
+            M[r0] = (M[r0] * pow(int(M[r0, c]), p - 2, p)) % p
+            col = M[:, c].copy(); col[r0] = 0
+            nzr = np.nonzero(col)[0]
+            if len(nzr): M[nzr] = (M[nzr] - np.outer(col[nzr], M[r0])) % p
+            piv.append(c); r0 += 1
+            if r0 == R_: break
+        ps, basis = set(piv), []
+        for fc in (c for c in range(N_) if c not in ps):
+            l = np.zeros(N_, dtype=np.int64); l[fc] = 1
+            for i, c in enumerate(piv): l[c] = (-M[i, fc]) % p
+            basis.append(l)
+        return basis
+    st = structure(kp); assert st is not None and nf_general(kp, st) == ((), 0)
+    uc, kc = nf_general('xyxYYXy', st); assert kc == 1
+    G = Gen(st[3], D, rational=False); rows = q.relations(G); N = len(G.mons)
+    per = 27 if period is None else period
+    R = np.zeros((len(rows), N), dtype=np.int64)
+    for a, rr in enumerate(rows):
+        for m, c in rr.items(): R[a, G.idx[m]] = c
+    B0 = null_mod(R, 3)
+    aug = np.concatenate([R % 3] + [((R.dot(l) // 3) % 3).reshape(-1, 1) for l in B0], axis=1)
+    lifts = []
+    for v in null_mod(aug, 3):
+        if v[N:].any():
+            l = (sum(int(ci) * B0[i] for i, ci in enumerate(v[N:])) + 3 * v[:N]) % 9
+            assert not (R.dot(l) % 9).any()            # l is a Z/9-valued twisted trace
+            lifts.append(l)
+    gens = lifts + [3 * l for l in B0]
+    ev = lambda u: tuple(int(sum(int(l[G.idx[m]]) * c for m, c in G.magnus(u).items()) % 9) for l in gens)
+    ic = ev(uc)
+    return len(B0), len(lifts), [j for j in range(per) if ev((2,) * j) == ic]
+
+def q2_modp(n, D, p):
+    """Q2(n) with F_p-valued twisted traces of degree <= D < p for psi_n: (#traces, surviving j mod p)."""
+    assert D < p
+    G = Gen([(i + 2,) for i in range(n - 1)] + [(n, 1)], D, rational=False)
+    B = traces_modp(G, p)
+    ev = lambda u: tuple(sum(l[G.idx[m]] * c for m, c in G.magnus(u).items()) % p for l in B)
+    ic = ev((2, -3, -2))                               # c = (t_1 T_2 T_1, 1)
+    return len(B), [j for j in range(p) if ev((2,) * j) == ic]
+
 # ---------------------------------------------------------------- (4) the mod-2 invariant eps (mirror theorem)
 def eps(u):
     """eps(u) = C(p+1,2) + C(q+1,2) + mu_ab(u) mod 2, (p,q) the exponent sums of u in a, b and
@@ -250,6 +312,40 @@ def selftest_eps():
     assert eps('aaaaBA') != eps('aaaaa') and eps('aaaaaBA') != eps('AAAAA')   # (n,s) = (4,5), (5,-5)
     return True
 
+# ---------------------------------------------------------------- (5) the k_3-frozen side: neighbours (c', k_3)
+def census_b(maxlen=8, cap=13):
+    """Cyclically reduced words w with lambda(w) = 1 (lambda(x) = 1, lambda(y) = -2), |w| <= maxlen,
+    whose rational degree-3 twisted-trace invariant in G_{k_3} equals that of c; 'class' = found in the
+    BFS class of c (explicit twisted conjugators), 'undecided' otherwise."""
+    G = q.GK(3, 3)
+    uc, _ = G.nf('xyxYYXy'); ic = G.Inv(uc)
+    seen, dq = {uc}, deque([uc])
+    while dq:
+        u = dq.popleft()
+        nb = [G.psi(u), G.psi_inv(u)] + [q.red((g,) + u + q.inv(G.psi((g,)))) for g in (1, 2, 3, -1, -2, -3)]
+        for w in nb:
+            if len(w) <= cap and w not in seen: seen.add(w); dq.append(w)
+    out = {}
+    for L in range(1, maxlen + 1):
+        for tup in itertools.product('xXyY', repeat=L):
+            w = "".join(tup)
+            if (w.count('x') - w.count('X')) - 2 * (w.count('y') - w.count('Y')) != 1: continue
+            if any(w[i] == w[(i + 1) % L].swapcase() for i in range(L)): continue
+            if min(w[i:] + w[:i] for i in range(L)) != w: continue
+            u, k = G.nf(w); assert k == 1
+            if G.Inv(u) == ic: out.setdefault('class' if u in seen else 'undecided', []).append(w)
+    return out
+def selftest_b():
+    cb = census_b(8)
+    assert cb == {'class': ['XXyxYY', 'XyxyxYY', 'XXXYxyxY']}, cb      # XyxyxYY is a rotation of c
+    k3 = 'xxxYXyy'; G = q.GK(3, 1)
+    assert G.nf('Y' + 'xyxYYXy' + 'y' + t.inv('yxYYXX')) == ((), 0)     # Y c y = yxYYXX mod <<k_3>>
+    assert G.nf('xyxYYXy' + t.inv('xyxYXXXY')) == ((), 0)               # c = xyxYXXXY mod <<k_3>>
+    # second moves with c' frozen: is k_3 conjugate to a primitive in <x,y | c'> ?  (frozen word = c'^-1)
+    assert second_move('yyXYxx', 6, True, moved=k3) == []               # c' = XXyxYY, mod 2, degree 6
+    assert second_move('yXYXyxxx', 3, False, moved=k3) == []            # c' = XXXYxyxY, rational, degree 3
+    return cb
+
 EXPECTED = {(6, 'excluded'): 3, (7, 'k3'): 2, (7, 'mirror'): 1, (7, 'excluded'): 6, (8, 'k3'): 2, (8, 'mirror'): 4,
             (8, 'excluded'): 5, (9, 'k3'): 3, (9, 'mirror'): 6, (9, 'excluded'): 11}
 K3_CLASS = ['XyyxxxY', 'XYxxyXy', 'XyyxYYxy', 'XYXyxxxy', 'XyyxYxyxY', 'XyyxYxYxy', 'XYYxyxyXy']
@@ -278,9 +374,14 @@ def selftest():
     assert second_move('XyyxYxYxy', 3) is None         # rank 5: only the constant trace in degree <= 3
     try:
         res['asc'] = second_move_ascending(8, 3); assert res['asc'] == (13, []), res['asc']
+        res['mod9'] = second_move_mod9('XyyxYxYxy', 3); assert res['mod9'] == (3, 3, []), res['mod9']
+        assert second_move_mod9('XyyxxxY', 3)[2] == []      # control: agrees with the rational result for k_3
+        res['q2_7'] = q2_modp(7, 3, 7); assert res['q2_7'] == (3, []), res['q2_7']          # Q2(7)
+        res['q2_8'] = second_move_mod9('x' * 8 + 'YXyy', 3); assert res['q2_8'] == (3, 3, []), res['q2_8']   # Q2(8)
     except ImportError:
-        res['asc'] = 'numpy missing: ascending target not re-checked'
+        res['asc'] = res['mod9'] = res['q2_7'] = res['q2_8'] = 'numpy missing: not re-checked'
     assert selftest_eps()                              # (4) mirror theorem
+    res['b'] = selftest_b()                            # (5) the k_3-frozen side
     mirror = [w for (Lw, tag), ws in cs.items() if tag == 'mirror' for w in ws]
     assert len(mirror) == 11 and all(eps(t.nf(w)[0]) == 1 for w in mirror) and eps('aaaBA') == 0
     return kn, cs, res
@@ -292,6 +393,11 @@ if __name__ == "__main__":
         print("L4(x^s y) = C(s+1,4) >= 0;  L4(k_n), n = 1..9:", [str(a) for a in kn])
         for key in sorted(cs): print("  length %d, %-9s:" % key, len(cs[key]), cs[key] if key[1] in ('k3', 'mirror') else '')
         print("eps: twisted trace mod 2, flipped by alpha; the 11 mirror words have eps = 1 != 0 = eps(k_3): not neighbours")
-        print("second move excluded for k' in: XyyxxxY (= k_3), XYxxyXy, XyyxYYxy, XYXyxxxy, XyyxYxyxY; XYYxyxyXy (ascending HNN, 13 traces mod 3, degree 8):", res['asc'], "; undecided: XyyxYxYxy")
+        print("Q2(7): F_7-valued traces of degree 3, (#traces, surviving j mod 7) =", res['q2_7'], "; Q2(8): Z/9-valued, degree 3, (#F_3-traces, #lifts, surviving j mod 27) =", res['q2_8'])
+        print("k_3-frozen neighbours (c', k_3) of P_3 with |c'| <= 8:", res['b'], "; second move excluded for each")
+        print("second move (c ~ primitive in <x,y|k'>) excluded for all seven k' of T14:")
+        print("  XyyxxxY (= k_3), XYXyxxxy, XyyxYxyxY: rational traces, degree 3;  XYxxyXy: mod 2, degree 6;  XyyxYYxy: mod 2, degree 4")
+        print("  XYYxyxyXy (ascending HNN; mod 3, degree 8; (#traces, surviving j mod 9)):", res['asc'])
+        print("  XyyxYxYxy (rank 5; Z/9-valued, degree 3; (#F_3-traces, #lifts, surviving j mod 27)):", res['mod9'])
     else:
         print(__doc__)

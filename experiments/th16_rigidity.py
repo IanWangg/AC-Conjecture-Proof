@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-"""TH16: piece structure (small cancellation), exact conjugacy minima in BS(3,4)
-(Collins slides) and in torus-type one-relator quotients (weighted syllables).
-Standard library only.  Usage: python3 experiments/th16_rigidity.py --selftest | --all
+"""TH16: piece structure (small cancellation), exact conjugacy minima in BS(P,Q)
+(Collins slides) and in torus-type one-relator quotients (syllable necklaces, research-j Lemma J0),
+normal forms and index-2 PSL(2,p) sieves for free-by-cyclic relators.
+Standard library only (plus experiments/th03_q2.py for --fbc).
+Usage: python3 experiments/th16_rigidity.py [--selftest] [--pieces] [--ms] [--fbc] [--sieve] [--all]
 Words: x,y and X,Y (inverse).  All lengths are cyclic lengths."""
 import sys, itertools
 from fractions import Fraction
@@ -253,6 +255,79 @@ def sieve(r, s, maxlen, degrees=(4, 5, 6, 7), ab=None):
     return cand
 MW2 = TorusQuotient({"a": 3, "s": 2}, {"x": [("a", 1)], "y": [("s", 1), ("a", 1)]}, (2, -1))            # F/<<YXXYx>>
 
+# ---------- rank-2 free-by-cyclic groups F(a,b) x|_phi Z and the index-2 PSL(2,p) sieve ----------
+def fred(u):
+    o = []
+    for ch in u:
+        if o and o[-1] == ch.swapcase(): o.pop()
+        else: o.append(ch)
+    return "".join(o)
+def finv(u): return u.swapcase()[::-1]
+class FBC:
+    """G = F(gens) x|_phi <z>.  rules: letter of {x,X,y,Y} -> list of steps, a step is an int e (multiply by
+    z^e) or a word in the generators (lower case) and their inverses (upper case).  Elements are (u, k) = u z^k.
+    phi, phinv: dicts generator -> word.  images(T, Ti, A, Ai, p) -> dict generator -> matrix, forced by rho(z^2) = T
+    and rho(first generator) = A through the relations T g T^-1 = phi^2(g)."""
+    def __init__(self, phi, phinv, rules, images):
+        self.rules = rules; self.gens = sorted(phi); self.images = images
+        def ext(d):
+            d = dict(d)
+            for g in self.gens: d[g.upper()] = finv(d[g])
+            return d
+        self.phi, self.phinv = ext(phi), ext(phinv)
+        for g in self.gens: assert self.app(1, self.app(-1, g)) == g and self.app(-1, self.app(1, g)) == g
+    def app(self, k, u):
+        d = self.phi if k > 0 else self.phinv
+        for _ in range(abs(k)): u = fred("".join(d[ch] for ch in u))
+        return u
+    def nf(self, w):
+        u, k = "", 0
+        for ch in w:
+            for st in self.rules[ch]:
+                if isinstance(st, int): k += st
+                else: u = fred(u + self.app(k, st))
+        return u, k
+    def homs_H(self, p):
+        """all homs of H = F(gens) x| <z^2> to PSL(2,p) with the given forced shape, T up to GL(2,p)-conjugacy;
+        every relation T g T^-1 = +-rho(phi^2(g)) is checked explicitly"""
+        I = (1, 0, 0, 1); pm = lambda M, N: M == N or M == tuple((-v) % p for v in N)
+        p2 = {g: self.app(2, g) for g in self.gens}; out = []; G = sl2(p)
+        for T in [I, (p - 1, 0, 0, p - 1)] + [(0, p - 1, 1, t) for t in range(p)]:
+            Ti = minv(T, p)
+            for A in G:
+                g = dict(self.images(T, Ti, A, minv(A, p), p))
+                for k in self.gens: g[k.upper()] = minv(g[k], p)
+                if all(pm(mm(mm(T, g[k], p), Ti, p), mev(p2[k], g, p)) for k in self.gens): out.append((T, g))
+        return out
+    def tr2(self, w, hom, p):
+        """trace^2 of rho(w^2), w of odd degree"""
+        T, g = hom; u, k = self.nf(w + w); assert k % 2 == 0
+        M = mev(u, g, p); Tk = T if k > 0 else minv(T, p)
+        for _ in range(abs(k) // 2): M = mm(M, Tk, p)
+        return (M[0] + M[3]) ** 2 % p
+    def sieve(self, s, z, cands, primes, stats=None):
+        """words of cands (odd degree) not separated from s^{+-1}: W ~ s^{+-1} in G implies that W^2 is
+        H-conjugate to s^{+-2} or to z s^{+-2} z^-1.  Returns the survivors (list)."""
+        c0, c1 = list(cands), list(cands)
+        for p in primes:
+            hs = self.homs_H(p)
+            for h in hs:
+                t0, t1 = self.tr2(s, h, p), self.tr2(z + s + z.swapcase(), h, p)
+                c0 = [w for w in c0 if self.tr2(w, h, p) == t0]; c1 = [w for w in c1 if self.tr2(w, h, p) == t1]
+            if stats is not None: stats.append((p, len(hs), len(set(c0) | set(c1))))
+        return sorted(set(c0) | set(c1), key=lambda w: (len(w), w))
+# G_c (research-o Thm O1): a = x, b = yxY, z = y, phi(a) = b, phi(b) = Ba; phi^2(a) = Ba => B = A T A^-1 T^-1
+GC = FBC({"a": "b", "b": "Ba"}, {"a": "ab", "b": "a"}, {"x": ["a"], "X": ["A"], "y": [1], "Y": [-1]},
+         lambda T, Ti, A, Ai, p: {"a": A, "b": mm(mm(mm(A, T, p), Ai, p), Ti, p)})
+# G_{q1}, q1 = xxyXYY: z = x, y = x a, phi(a) = b, phi(b) = ab; phi^2(a) = ab => B = A^-1 T A T^-1
+GQ1 = FBC({"a": "b", "b": "ab"}, {"a": "bA", "b": "a"}, {"x": [1], "X": [-1], "y": [1, "a"], "Y": ["A", -1]},
+          lambda T, Ti, A, Ai, p: {"a": A, "b": mm(mm(mm(Ai, T, p), A, p), Ti, p)})
+# G_{k3}, k3 = xxxYXyy: z = x, t = y x^2 = a, t_i = x^i t x^-i = a, b, c; phi: a -> b -> c -> ca  (k3 ~ t_5^-1 t_4 t_2)
+# phi^2(a) = c => C = T A T^-1 ;  phi^2(b) = ca => B = T^-1 C A T
+GK3 = FBC({"a": "b", "b": "c", "c": "ca"}, {"a": "Bc", "b": "a", "c": "b"},
+          {"x": [1], "X": [-1], "y": ["a", -2], "Y": [2, "A"]},
+          lambda T, Ti, A, Ai, p: (lambda C: {"a": A, "c": C, "b": mm(mm(mm(Ti, C, p), A, p), T, p)})(mm(mm(T, A, p), Ti, p)))
+
 # ---------- named words ----------
 B_ = "xyxYXY"; P3_ = "xxxYYYY"; C_ = "xyxYYXy"; K3_ = "xxxYXyy"; Q1_ = "xxyXYY"; Q2_ = "xxxYYXy"
 W1_ = "XYxxY"; W2_ = "YXXYx"
@@ -425,10 +500,68 @@ def report_sieve(primes=(5, 7, 11, 13), degrees=(5, 6, 7, 8)):
         for w in cand: by[len(w)] = by.get(len(w), 0) + 1
         print("%s: unseparated shorter words: %d, by length %s; shortest: %s" % (name, len(cand), by, sorted(cand, key=len)[:6]), flush=True)
 
+Q2P_ = "xxYYYXy"                     # mirror of q_2: swap(q_2) is a rotation of Q2P_^-1
+THETA = str.maketrans("xX", "Xx")    # theta: x -> x^-1 ; q_2 is a rotation of theta(k_3^-1)
+
+def selftest_fbc():
+    import random
+    rnd = random.Random(7)
+    def rw(k): return red("".join(rnd.choice("xXyY") for _ in range(k)))
+    # normal forms kill the relators and are invariant under insertion of relator conjugates
+    for G, r in ((GC, C_), (GQ1, Q1_), (GK3, K3_)):
+        assert G.nf(r) == ("", 0)
+        for _ in range(200):
+            w, g = rw(8), rw(4)
+            assert G.nf(w) == G.nf(red(w[:3] + g + rnd.choice([r, inv(r)]) + inv(g) + w[3:]))
+    assert Q2_ in orb(inv(K3_).translate(THETA)) and Q1_.translate(str.maketrans("xXyY", "yYxX")) in orb(Q1_)
+    assert Q2_.translate(str.maketrans("xXyY", "yYxX")) in orb(Q2P_)
+    assert GK3.nf("Y" + C_ + "y") == GK3.nf("yxYYXX")            # y^-1 c y = y x y^-2 x^-2 in G_{k_3}
+    # soundness of the index-2 sieve invariants on random conjugates
+    for G, s0, z in ((GQ1, Q2_, "x"), (GC, K3_, "y")):
+        hs = G.homs_H(7)
+        for _ in range(30):
+            g = rw(5); w = cyc(g + rnd.choice([s0, inv(s0)]) + inv(g))
+            assert all(G.tr2(w, h, 7) == G.tr2(s0, h, 7) for h in hs) or \
+                   all(G.tr2(w, h, 7) == G.tr2(z + s0 + z.swapcase(), h, 7) for h in hs)
+    print("th16 free-by-cyclic self-test passed")
+
+def report_fbc(primes=(7, 13)):
+    """research-th16 section 5: exact separations for Q and P_3"""
+    d11 = lambda w: sum((c in "xy") - (c in "XY") for c in w)
+    cands = [w for l in range(1, 8) for w in cyc_words(l) if abs(d11(w)) == 1]
+    st = []; surv = GQ1.sieve(Q2_, "x", cands, primes, stats=st)
+    print("G_{q1}: words of length <= 7, degree +-1:", len(cands), "; (p, #homs of H, #unseparated):", st)
+    print("   unseparated from q_2^{+-1}: %d words; == Orb(q_2) u Orb(q_2'): %s; shortest length %d" %
+          (len(surv), set(surv) == orb(Q2_) | orb(Q2P_), min(map(len, surv))))
+    dy = lambda w: sum((c == "y") - (c == "Y") for c in w)
+    cands = [w for l in range(1, 8) for w in cyc_words(l) if abs(dy(w)) == 1]
+    st = []; surv = GC.sieve(K3_, "y", cands, primes, stats=st)
+    print("G_c: words of length <= 7, degree +-1:", len(cands), "; (p, #homs of H, #unseparated):", st)
+    print("   unseparated from k_3^{+-1}: %d words, shortest length %d, Orb(k_3) included: %s" %
+          (len(surv), min(map(len, surv)), orb(K3_) <= set(surv)))
+    import th03_q2 as T3                      # TH03's twisted traces on the truncated Magnus algebra (degree <= 3)
+    G = T3.GK(3, 3); assert G.nf(K3_) == ((), 0)
+    d3 = lambda w: sum({"x": 1, "X": -1, "y": -2, "Y": 2}[c] for c in w)
+    def inv1(w):
+        v = w if d3(w) == 1 else inv(w); u, k = G.nf(v); assert k == 1; return G.Inv(u)
+    import random
+    rnd = random.Random(11)
+    for _ in range(100):                      # invariance on random conjugates (independent of TH03's own tests)
+        g = red("".join(rnd.choice("xXyY") for _ in range(5))); w = cyc(g + C_ + inv(g))
+        assert inv1(w) == inv1(C_)
+    tq1 = Q1_.translate(THETA)
+    assert inv1(tq1) == inv1(C_)
+    surv = [w for l in range(1, 8) for w in cyc_words(l) if abs(d3(w)) == 1 and inv1(w) == inv1(C_)]
+    print("G_{k3}: %d twisted traces (degree <= 3); words of length <= 7 with the invariant of c: %d;"
+          " == Orb(theta q_1) u Orb(c): %s" % (len(G.traces), len(surv), set(surv) == orb(tq1) | orb(C_)))
+    print("   explicit: nf(Y c y) == nf(yxYYXX) in G_{k3}:", GK3.nf("Y" + C_ + "y") == GK3.nf("yxYYXX"))
+
 if __name__ == "__main__":
     a = sys.argv[1:]
     if "--selftest" in a or not a:
         selftest(); assert uniform_checks(8); print("uniform checks n = 3..8 passed (Theorems A, B, D)")
+        selftest_fbc()
     if "--pieces" in a or "--all" in a: piece_table()
     if "--ms" in a or "--all" in a: report_ms()
+    if "--fbc" in a or "--all" in a: report_fbc()
     if "--sieve" in a: report_sieve()

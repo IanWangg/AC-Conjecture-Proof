@@ -1,0 +1,5 @@
+mirror_p XXXYYYY XyXyXYxYxY
+mirror_q yyyxxxx XyXyXYxYxY
+x_xY xYxYxYYYYY xxxYXXY
+y_yX xxxxYxYxYxY xyyxYYY
+x_xy xyxyxYYY xyyxyyxYXYYXY

@@ -7,7 +7,7 @@ integer coordinates (a,b,c,d) ~ (a+bi+cj+dk)/2.  Elements of G are kept in the a
 normal form  k0 t^n1 k1 ... t^nr kr  with k1..kr in a fixed transversal of {+-1} in K,
 interior ki not central, ni != 0 (unique by the normal form theorem for amalgams).
 AC moves: invert, multiply coordinate a by coordinate b^{+-1}, conjugate one coordinate
-by a generator i, w(=omega), t or its inverse.   Usage: --selftest | --replay
+by a generator i, w(=omega), t or its inverse.   Usage: --selftest | --replay | --sl25 | --sl27
 """
 import itertools, random, sys
 
@@ -191,7 +191,65 @@ def identities_s4(rnd):
         assert lhs == pm(pm(t_, nu1), pm(pm(s_, n), pi(s_)))        # Theorem 3.5(b), last step
     return True
 
+def sl2_components(q=5, proj=False):
+    """Proposition 4.4: K = SL(2,q) (q = 5, 7; 2x2 matrices mod q), or K = PSL(2,q) if proj.
+    G = <K, t | [t,-1]> (resp. the free product PSL(2,q) * <t>).  Rule (Cor. 2.2 + Lemma 2.3):
+    for u, kappa, c in K with (c u)^o(c) and u[kappa,c] both non-central (resp. nontrivial),
+    (u,t) ~ (u[kappa,c], t) in G, because non-central elements of the quasisimple K normally generate K.
+    Returns (#slice classes of non-central u under conjugacy and inversion, #components after the rule)."""
+    def mm(a, b): return ((a[0]*b[0]+a[1]*b[2]) % q, (a[0]*b[1]+a[1]*b[3]) % q,
+                          (a[2]*b[0]+a[3]*b[2]) % q, (a[2]*b[1]+a[3]*b[3]) % q)
+    def mi(a): return (a[3], (-a[1]) % q, (-a[2]) % q, a[0])
+    E, MZ = (1, 0, 0, 1), (q-1, 0, 0, q-1)
+    Kg = [m for m in itertools.product(range(q), repeat=4) if (m[0]*m[3]-m[1]*m[2]) % q == 1]
+    assert len(Kg) == q*(q*q-1)
+    cen = {E, MZ}
+    def order(a):                      # order in K (in PSL if proj)
+        n, x = 1, a
+        while x != E and not (proj and x == MZ): x = mm(x, a); n += 1
+        return n
+    def power(a, n):
+        x = E
+        for _ in range(n): x = mm(x, a)
+        return x
+    parent = {u: u for u in Kg if u not in cen}
+    def find(u):
+        while parent[u] != u: parent[u] = parent[parent[u]]; u = parent[u]
+        return u
+    def union(u, v): parent[find(u)] = find(v)
+    for u in list(parent):
+        union(u, mi(u))
+        if proj: union(u, mm(MZ, u))
+        for g in Kg: union(u, mm(mm(mi(g), u), g))
+    slices = len({find(u) for u in parent})
+    for rep_u in {find(u) for u in parent}:        # every non-central element normally generates K
+        gens = {mm(mm(mi(g), rep_u), g) for g in Kg}
+        ncl, frontier = {E}, [E]
+        while frontier:
+            nxt = []
+            for x in frontier:
+                for g in gens:
+                    y = mm(x, g)
+                    if y not in ncl: ncl.add(y); nxt.append(y)
+            frontier = nxt
+        assert len(ncl) == len(Kg)
+    ords = {c: order(c) for c in Kg}
+    comms = {c: {mm(mm(mi(k), mi(c)), mm(k, c)) for k in Kg} for c in Kg if c not in cen}   # {[kappa,c]}
+    for u in list(parent):
+        for c, ws in comms.items():
+            if power(mm(c, u), ords[c]) in cen: continue
+            for w in ws:
+                v = mm(u, w)
+                if v not in cen: union(u, v)
+    return slices, len({find(u) for u in parent})
+
 if __name__ == "__main__":
-    if "--selftest" in sys.argv: selftest()
+    if "--sl25" in sys.argv:
+        print("SL(2,5): slice classes, components after commutator transfer:", sl2_components(5))
+        print("PSL(2,5)=A5 (free product A5*Z):", sl2_components(5, True))
+    elif "--sl27" in sys.argv:
+        print("SL(2,7): slice classes, components after commutator transfer:", sl2_components(7))
+        print("PSL(2,7) (free product PSL(2,7)*Z):", sl2_components(7, True))
+    elif "--selftest" in sys.argv: selftest()
     elif "--replay" in sys.argv: sys.exit(0 if replay()[0] else 1)
     else: print(__doc__)

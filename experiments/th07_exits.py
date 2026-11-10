@@ -5,8 +5,10 @@
   python3 experiments/th07_exits.py --cert 3 de OUT     # AK(3) -> (d_3, e_3) elementary certificate
   python3 experiments/th07_exits.py --cert 3 v0 OUT     # AK(3) -> (w_3, yyXYX)
   python3 experiments/th07_exits.py --cert 5 F OUT      # AK(5) -> F_5 (frame state, length 16); also route P
+  python3 experiments/th07_exits.py --cert 7 X4 OUT     # AK(7) -> X_4 (length 20 < 21, ACM peak 2n+12)
   python3 experiments/th07_exits.py --whitehead 3 8     # Aut(F2)-minimal lengths of first-exit states
   python3 experiments/th07_exits.py --frames 4 11 -3 7  # least lengths in the frame classes theta_m(C_n)
+  python3 experiments/th07_exits.py --fn-primitive 3 8  # no primitive relator one f-frozen ACM move from F_n
 
 Checked: (A) Theorem A closed forms against exhaustive enumeration (n <= 4);
 (B) Theorem B against enumeration (n <= 5, both frozen power relators);
@@ -235,6 +237,8 @@ def acm_path(n, route, m=None):
         return st + [(W['w'], v(0))]
     if route == 'F':                        # frame state F_n = theta_{n-1}(U2(n-2,1), b^-1)
         return st + [(W['w'], v(n - 1)), (FWORD, v(n - 1))]
+    if route == 'X':                        # staircase X_m = theta_m(U2(n-2,1), b^-1), 1 <= m <= n-1
+        return st + [(W['w'], v(m)), (gword(n, m), v(m))]
     if route in ('de', 'P'):
         st += [(W['w'], W['e']), (W['d'], W['e'])]
     else:                                   # balanced chain entering at frame m
@@ -259,6 +263,11 @@ def product_path(n, route):
 
 
 FWORD = 'XyXyxYY'
+
+
+def gword(n, m):
+    """g_m = theta_m(U2(n-2,1)) = x Y x^(n-1-m) Y X y X^(n-m) y, of length 2n+5-2m (1 <= m <= n-1)."""
+    return 'xY' + 'x' * (n - 1 - m) + 'YXy' + 'X' * (n - m) + 'y'
 
 
 def theta_raw(j, w):
@@ -301,24 +310,25 @@ def set_literal(bld, i, word):
     assert bld.state[i] == word
 
 
-def certificate_F(n):
-    """AK(n) -> F_n: cyclic products to (w_n, v_{n-1}), then the theta_{n-1}-image of a chain in C_n."""
+def certificate_F(n, m=None):
+    """AK(n) -> X_m (F_n for m = n-1): cyclic products to (w_n, v_m), then the theta_m-image of a chain in C_n."""
     W = words(n)
+    m = n - 1 if m is None else m
     st = [(W['z'][i], B) for i in range(n + 1, -1, -1)]
-    st += [(W['w'], triple_word(j)) for j in transfer_path(n, (n - 1, -1, -1))[1:]]
-    bld = d_certify.build(st, (W['p'], B), (W['w'], v(n - 1)))
+    st += [(W['w'], triple_word(j)) for j in transfer_path(n, (m, -1, -1))[1:]]
+    bld = d_certify.build(st, (W['p'], B), (W['w'], v(m)))
     for A, Bs in chain_in_C(n, W['w'], U2(n, n - 2, 1)):
-        set_literal(bld, 0, theta_raw(n - 1, A))
-        set_literal(bld, 1, theta_raw(n - 1, Bs))
+        set_literal(bld, 0, theta_raw(m, A))
+        set_literal(bld, 1, theta_raw(m, Bs))
         bld.multiply(0)
         bld.cyclic_reduce(0)
-    target = (FWORD, v(n - 1))
+    target = (FWORD if m == n - 1 else gword(n, m), v(m))
     bld.cyclic_reduce(1)
     assert d_certify.orient(bld, 0, target[0]) and d_certify.orient(bld, 1, target[1])
     cert = {'format': 'ordinary-ac-elementary-v1', 'start': [W['p'], B], 'target': list(target), 'moves': bld.moves,
-            'description': f"AK({n}) -> F_{n} = (XyXyxYY, y x^{n - 1} y XYX) of research-th07.md: cyclic products to "
-                           f"(w_n, v_(n-1)), then the image under theta_(n-1): y -> x^(n-2) y of a chain of cyclic "
-                           f"products inside C_n from w_n to U2(n-2,1); compiled to strict elementary moves."}
+            'description': f"AK({n}) -> X_{m} = theta_{m}(U2(n-2,1), b^-1) = {target} of research-th07.md (F_n when "
+                           f"m = n-1): cyclic products to (w_n, v_m), then the image under theta_m: y -> x^(m-1) y of a "
+                           f"chain of cyclic products inside C_n from w_n to U2(n-2,1); compiled to strict elementary moves."}
     r = elementary_verify.replay(cert)
     assert r['endpoint'] == list(target)
     return cert, r, None
@@ -327,6 +337,8 @@ def certificate_F(n):
 def certificate(n, route):
     if route == 'F':
         return certificate_F(n)
+    if route.startswith('X'):
+        return certificate_F(n, int(route[1:]))
     W = words(n)
     target = {'v0': (W['w'], 'yyXYX'), 'de': (W['d'], W['e']), 'P': (W['d'], W['c'])}[route]
     st = product_path(n, route)
@@ -374,6 +386,9 @@ def selftest(full=False):
         assert all(same(W['a'][m], v(m)) and same_pm(W['b'][m], theta(m, U1(n, n - 1, 1))) for m in range(1, n + 1))
         assert same(W['e'], W['cc'][n]) and same(W['d'], W['b'][n]) and same(W['w'], U1(n, n - 1, 0))
         assert all(same(W['cc'][m], theta(m, W['cc'][1])) for m in range(1, n + 1))
+        om = lambda w: cyc(''.join({'x': 'X', 'X': 'x', 'y': 'xY', 'Y': 'yX'}[ch] for ch in w))   # omega: x -> X, y -> xY
+        assert same_pm(om(W['c']), FWORD) and same_pm(om(W['a'][n]), v(n - 1))       # F_n = omega(c, a_n)
+        assert same_pm(theta(n, U1(n, n - 2, 1)), W['c']) and triangle(W['d'], W['a'][n], W['c'])
         for m in range(2, n + 1):           # automorphic images Q_m of P_n (remark in section 5)
             cm = theta(1 - (n - m), W['c'])
             assert len(cm) == 2 * (n - m) + 5 + (2 if m == n else 0) and triangle(W['b'][m], W['a'][m], cm)
@@ -410,6 +425,11 @@ def selftest(full=False):
             peak = max(len(a) + len(b) for a, b in st)
             want = {'v0': 2 * n + 9, 'de': 3 * n + 6, 'P': 3 * n + 6, 'F': 3 * n + 7}.get(route) or max(2 * n + 9, 2 * n + 8 + m, 4 * n + 7 - 2 * m)
             assert peak == want, (n, route, m, peak)
+        for m in range(1, n):               # staircase X_m: length 2n+10-m, reached with ACM peak 2n+8+m
+            st = acm_path(n, 'X', m)
+            assert same(gword(n, m), theta(m, U2(n, n - 2, 1))) and len(gword(n, m)) == 2 * n + 5 - 2 * m
+            assert all(acm_ok(st[i], st[i + 1], n) for i in range(len(st) - 1)), (n, 'X', m)
+            assert [len(a) + len(b) for a, b in st] == [2 * n + 7, 2 * n + 9, 2 * n + 8 + m, 2 * n + 10 - m]
         best = min(max(2 * n + 9, 2 * n + 8 + m, 4 * n + 7 - 2 * m) for m in range(2, n))
         assert best == 2 * n + 8 + (2 * n + 1) // 3
         print(f'D  n={n}: ACM paths verified; peaks 2n+9={2 * n + 9} (to (w_n,yyXYX)), 3n+6={3 * n + 6} (to (d_n,e_n) and P_n), '
@@ -418,6 +438,8 @@ def selftest(full=False):
         cert, r, cp = certificate(3, route)
         print(f"E  n=3 route {route}: certificate replays, {r['moves']} moves, elementary peak {r['peak_total_length']}, "
               f"cyclic-product peak {cp}, endpoint {r['endpoint']}")
+    fn_primitive_sieve(3, 8 if full else 5, quiet=True)
+    print('F  no primitive word is conjugate to the killer of F_n modulo f (research-o sieve, p = 7, 13), n = 3..%d' % (8 if full else 5))
     print('selftest passed')
 
 
@@ -464,8 +486,53 @@ def frame_scan(n, lmax, lo, hi):
               f'({len(ex)} words up to rotation/inversion, e.g. {ex[:2]}), total {tot}')
 
 
+def fn_primitive_sieve(lo, hi, quiet=False):
+    """exact computation (research-o's sieve, o_sieve.py, with p = 7, 13): the killer of F_n in the group of
+    f = XyXyxYY is not conjugate to a primitive word.  y -> Y maps f to a rotation of c^-1 (c = xyxYYXy) and
+    v_(n-1)^-1 to kappa_n = x Y x y X^(n-1) y, of y-degree +1 in G_c; a primitive conjugate of kappa_n would be
+    x^s y for some s (research-o, Prop. O2).  Controls: research-o's killers k_1, k_2 survive, k_3 is excluded."""
+    import o_gc
+    import o_sieve as S
+    from math import lcm
+    sf = FWORD.translate(str.maketrans('yY', 'Yy'))
+    assert same(sf, inv(o_gc.C_WORD))
+    words = {('F', n): 'xYxy' + 'X' * (n - 1) + 'y' for n in range(lo, hi + 1)}
+    for n in range(lo, hi + 1):
+        assert same(words[('F', n)], inv(v(n - 1).translate(str.maketrans('yY', 'Yy'))))
+    words.update({('k', n): o_gc.killer(n) for n in (1, 2, 3)})
+    cons = {key: {} for key in words}
+    for p in (7, 13):
+        for (A, Bm, Tm) in S.homs_H(p):
+            if S.is_pm_I(S.mmul(S.mmul(A, Bm, p), S.mmul(S.minv(A, p), S.minv(Bm, p), p), p), p):
+                continue
+            o = lcm(S.psl_order(A, p), S.psl_order(Bm, p), S.psl_order(S.mmul(S.minv(Bm, p), A, p), p))
+            cand = [{S.tr(S.evab('a' * q + 'b' * q + 't', A, Bm, Tm, p), p),
+                     S.tr(S.evab('b' * q + 'Ba' * q + 't', A, Bm, Tm, p), p)} for q in range(o)]
+            for key, wd in words.items():
+                u, k = o_gc.nf(wd)
+                assert k == 1
+                t = S.tr(S.evab(u + o_gc.apply_endo(o_gc.PHI, u) + 't', A, Bm, Tm, p), p)
+                arr = cons[key].setdefault(o, bytearray(b'\x01') * o)
+                for q in range(o):
+                    if t not in cand[q]:
+                        arr[q] = 0
+    out = {}
+    for key in sorted(words):
+        M, surv = S.combine([cons[key]])
+        out[key] = (M, surv)
+        if not quiet:
+            print(f'{key[0]}_{key[1]}: {words[key]}  normal form {o_gc.nf(words[key])}  modulus {M}  '
+                  f'surviving residues of s: {surv}')
+    assert out[('k', 1)][1] and out[('k', 2)][1] and not out[('k', 3)][1]
+    assert all(not out[('F', n)][1] for n in range(lo, hi + 1))
+    return out
+
+
 def main():
     a = sys.argv[1:]
+    if a[:1] == ['--fn-primitive']:
+        fn_primitive_sieve(int(a[1]), int(a[2]))
+        return print('no primitive word is conjugate to the killer of F_n modulo f for n =', a[1], '..', a[2])
     if a[:1] == ['--frames']:
         return frame_scan(*map(int, a[1:5]))
     if a[:1] == ['--whitehead']:
