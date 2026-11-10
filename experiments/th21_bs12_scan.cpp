@@ -109,16 +109,17 @@ static int wh_min(u8* s, int n, int nmaps = 4) {
   return n;
 }
 static u64 wkey(const u8* s, int n) { u64 k = (u64)n << 58; for (int i = 0; i < n; i++) k |= (u64)s[i] << (2 * i); return k; }
-static vector<u64> Svec; static vector<string> Sstr;
-static void build_S() {
-  u8 w[B], c[B]; int n = parse("XyxYY", w); canon_word(w, n, c);
+static vector<u64> Svec, Tvec; static vector<string> Sstr;
+// closure at length 5 of base: all length-5 canonical cyclic words in its Aut-orbit
+static void build_S(const char* base, vector<u64>& Svec, vector<string>& Sstr) {
+  u8 w[B], c[B]; int n = parse(base, w); canon_word(w, n, c);
   set<u64> seen; vector<vector<u8>> st; seen.insert(wkey(c, 5)); st.push_back(vector<u8>(c, c + 5));
   while (!st.empty()) {
     vector<u8> cur = st.back(); st.pop_back();
     for (int m = 0; m < 16; m++) {
       u8 t[B]; int L;
       if (m < 8) L = apply_map(cur.data(), 5, m, t); else { signed_perm(cur.data(), 5, m - 8, t); L = 5; }
-      if (L < 5) { fprintf(stderr, "XyxYY not Whitehead-minimal?!\n"); exit(3); }
+      if (L < 5) { fprintf(stderr, "%s not Whitehead-minimal?!\n", base); exit(3); }
       if (L != 5) continue;
       canon_word(t, 5, c); u64 k = wkey(c, 5);
       if (seen.insert(k).second) st.push_back(vector<u8>(c, c + 5));
@@ -126,12 +127,15 @@ static void build_S() {
   }
   for (u64 k : seen) { Svec.push_back(k); u8 t[5]; for (int i = 0; i < 5; i++) t[i] = (k >> (2 * i)) & 3; Sstr.push_back(wstr(t, 5)); }
 }
+static thread_local int last_cls = 0;  // for minimal length 5: 1 BS(1,2) orbit, 2 trefoil (xxYYY) orbit, 3 other; else 0
 static bool classify(const u8* s0, int n0, int& ml, int nmaps = 4) {
   u8 s[B]; memcpy(s, s0, n0); int n = reduce_cyc(s, n0);
   n = wh_min(s, n, nmaps); ml = n;
-  if (n != 5) return false;
-  u8 c[8]; canon_word(s, 5, c);
-  return binary_search(Svec.begin(), Svec.end(), wkey(c, 5));
+  last_cls = 0; if (n != 5) return false;
+  u8 c[8]; canon_word(s, 5, c); u64 k = wkey(c, 5);
+  bool bs = binary_search(Svec.begin(), Svec.end(), k);
+  last_cls = bs ? 1 : binary_search(Tvec.begin(), Tvec.end(), k) ? 2 : 3;
+  return bs;
 }
 // ---- self-test ----
 static int fails = 0;
@@ -183,12 +187,14 @@ static int selftest() {
   }
   // 5. AK(3) relators
   { u8 a[B], b[B]; int na = parse("xxxYYYY", a), nb = parse("xyxYXY", b), m1, m2; bool v1 = classify(a, na, m1), v2 = classify(b, nb, m2);
-    printf("AK(3): xxxYYYY minlen %d bs %d ; xyxYXY minlen %d bs %d\n", m1, (int)v1, m2, (int)v2); CHECK(!v1 && !v2, "AK3"); }
+    printf("AK(3): xxxYYYY minlen %d bs %d ; xyxYXY minlen %d bs %d\n", m1, (int)v1, m2, (int)v2); CHECK(!v1 && !v2, "AK3"); 
+    CHECK(last_cls == 2, "xyxYXY in trefoil orbit"); u8 t[B]; int nt = parse("xxYYY", t); classify(t, nt, m1); CHECK(last_cls == 2, "xxYYY trefoil");
+    printf("trefoil (xxYYY) orbit at length 5: %zu canonical words\n", Tvec.size()); }
   printf(fails ? "SELFTEST FAILED (%d failures)\n" : "SELFTEST PASSED\n", fails);
   return fails ? 1 : 0;
 }
 // ---- scan ----
-struct Res { long long states = 0, rels = 0, hits = 0, badlen = 0, badrt = 0, baddec = 0, ak3 = 0, cachehit = 0; long long hist[64] = {0}; };
+struct Res { long long states = 0, rels = 0, hits = 0, badlen = 0, badrt = 0, baddec = 0, ak3 = 0, ak3exact = 0, cachehit = 0; long long hist[64] = {0}, c5[4] = {0}; };
 static mutex pm; static atomic<long long> done_states(0), total_hits(0);
 static vector<u64> ak3keys; static int maxhits = 20;
 static void worker(int fd, long long lo, long long hi, int cap, Res* Rp, int tid, const char* fname) {
@@ -203,13 +209,13 @@ static void worker(int fd, long long lo, long long hi, int cap, Res* Rp, int tid
       if (!decode(key, w[0], n[0], w[1], n[1])) { R.baddec++; continue; }
       if (n[0] + n[1] > cap) R.badlen++;
       if (key_of_pair(w[0], n[0], w[1], n[1]) != key) R.badrt++;
-      for (u64 ak : ak3keys) if (ak == key) R.ak3++;
+      for (size_t q = 0; q < ak3keys.size(); q++) if (ak3keys[q] == key) { R.ak3++; if (q == 0) R.ak3exact++; }
       for (int j = 0; j < 2; j++) {
         R.rels++; u64 wk = wkey(w[j], n[j]); u64 h = (wk * 0x9E3779B97F4A7C15ULL) >> (64 - LOG);
-        int ml; bool bs;
-        if (ck[h] == wk) { R.cachehit++; ml = cv[h] & 127; bs = cv[h] >> 7; }
-        else { bs = classify(w[j], n[j], ml); ck[h] = wk; cv[h] = (u8)(ml | (bs ? 128 : 0)); }
-        R.hist[ml]++;
+        int ml, cls; bool bs;
+        if (ck[h] == wk) { R.cachehit++; ml = cv[h] & 31; cls = cv[h] >> 5; bs = cls == 1; }
+        else { bs = classify(w[j], n[j], ml); cls = last_cls; ck[h] = wk; cv[h] = (u8)(ml | (cls << 5)); }
+        R.hist[ml]++; R.c5[cls]++;
         if (bs) { R.hits++; total_hits++; lock_guard<mutex> g(pm);
           printf("HIT file %s index %lld relator %d state [%s %s] bs-relator %s\n", fname, p + i, j, wstr(w[0], n[0]).c_str(), wstr(w[1], n[1]).c_str(), wstr(w[j], n[j]).c_str()); fflush(stdout); }
       }
@@ -219,7 +225,7 @@ static void worker(int fd, long long lo, long long hi, int cap, Res* Rp, int tid
   }
 }
 int main(int argc, char** argv) {
-  build_S();
+  build_S("XyxYY", Svec, Sstr); { vector<string> t; build_S("xxYYY", Tvec, t); }
   if (argc >= 2 && string(argv[1]) == "--selftest") return selftest();
   if (argc >= 2 && string(argv[1]) == "--words") {
     string line; while (getline(cin, line)) { u8 w[B]; int n = parse(line, w); if (!n) continue; int ml; bool v = classify(w, n, ml); printf("%s %d %d\n", line.c_str(), ml, (int)v); }
@@ -239,9 +245,10 @@ int main(int argc, char** argv) {
   vector<Res> RR(T); vector<thread> th; long long per = (en - st + T - 1) / T;
   for (int t = 0; t < T; t++) { long long lo = st + t * per, hi = min(en, lo + per); th.emplace_back(worker, fd, lo, max(lo, hi), cap, &RR[t], t, fname); }
   for (auto& x : th) x.join();
-  Res S; for (auto& r : RR) { S.states += r.states; S.rels += r.rels; S.hits += r.hits; S.badlen += r.badlen; S.badrt += r.badrt; S.baddec += r.baddec; S.ak3 += r.ak3; S.cachehit += r.cachehit; for (int i = 0; i < 64; i++) S.hist[i] += r.hist[i]; }
+  Res S; for (auto& r : RR) { S.states += r.states; S.rels += r.rels; S.hits += r.hits; S.badlen += r.badlen; S.badrt += r.badrt; S.baddec += r.baddec; S.ak3 += r.ak3; S.ak3exact += r.ak3exact; for (int i = 0; i < 4; i++) S.c5[i] += r.c5[i]; S.cachehit += r.cachehit; for (int i = 0; i < 64; i++) S.hist[i] += r.hist[i]; }
   printf("states_scanned %lld relators_tested %lld bs12_hits %lld\n", S.states, S.rels, S.hits);
-  printf("decode_failures %lld total_length_over_cap %lld roundtrip_failures %lld ak3_occurrences %lld cache_hits %lld\n", S.baddec, S.badlen, S.badrt, S.ak3, S.cachehit);
+  printf("decode_failures %lld total_length_over_cap %lld roundtrip_failures %lld ak3_D8_image_occurrences %lld ak3_exact_key_occurrences %lld cache_hits %lld\n", S.baddec, S.badlen, S.badrt, S.ak3, S.ak3exact, S.cachehit);
+  printf("minimal_length_5 split: BS(1,2)-orbit %lld trefoil(xxYYY)-orbit %lld other %lld\n", S.c5[1], S.c5[2], S.c5[3]);
   printf("whitehead_minimal_length_histogram (relator occurrences):"); for (int i = 0; i < 64; i++) if (S.hist[i]) printf(" %d:%lld", i, S.hist[i]); printf("\n");
   printf(S.states == en - st ? "COMPLETE range [%lld, %lld)\n" : "INCOMPLETE (stopped early) range [%lld, %lld)\n", st, en);
   return 0;
