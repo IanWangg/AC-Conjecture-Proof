@@ -123,7 +123,12 @@ def nf_asc(word, st):
         for g in w:
             im = images[abs(g) - 1]; out.extend(im if g > 0 else q.inv(im))
         return q.red(out)
-    sh = -lo + len(word) + 2
+    lv, mn = 0, 0
+    for ch in "".join(sub[c] for c in word):
+        if ch == 'x': lv += 1
+        elif ch == 'X': lv -= 1
+        else: mn = min(mn, lv)
+    sh = -mn                                           # conjugate by a power of x: every t-letter at level >= 0
     pre = 'x' * sh if sh >= 0 else 'X' * (-sh)
     u, k = (), 0
     for ch in pre + "".join(sub[c] for c in word) + pre.swapcase():
@@ -136,21 +141,25 @@ def nf_asc(word, st):
             u = q.red(u + g)
     return u, k
 def second(kp, log):
-    st, NF = tw.structure(kp), tw.nf_general
+    st, NF, mv = tw.structure(kp), tw.nf_general, C
     if st is None:
         st, NF = structure_asc(kp), nf_asc
-        if st is None: log("  %s: Brown fails, top level not unique -> not handled" % kp); return None
+        if st is None:      # bottom level unique: apply sigma (x <-> X); the three families are sigma+inverse stable
+            kp = kp.translate(str.maketrans('xX', 'Xx')); mv = t.inv(C.translate(str.maketrans('xX', 'Xx')))
+            st = structure_asc(kp)
+            if st is None: log("  %s: Brown fails, no unique extreme level -> not handled" % kp); return None
+            log("  sigma(k') = %s, moved relator sigma(c)^-1 = %s" % (kp, mv))
         log("  %s: ascending HNN (top t-level once)" % kp)
     assert NF(kp, st) == ((), 0)
     r = st[2]; open_ = set(KINDS); log("  %s: m=%d rank=%d" % (kp, st[0], r))
     for D in (3, 4):
         if r ** D > 700: break
-        nt, res = rational_test(st, D, NF=NF); log("    rational D=%d: %d traces, surviving j: %s" % (D, nt, res))
+        nt, res = rational_test(st, D, moved=mv, NF=NF); log("    rational D=%d: %d traces, surviving j: %s" % (D, nt, res))
         open_ = {k for k in open_ if res[k] != []}
         if not open_: return 'excluded'
     for p, D in [(2, 4), (2, 5), (2, 6), (3, 3), (5, 3), (7, 3), (3, 4), (2, 7)]:
         if r ** D > 1300: continue
-        nb, per, res = modp_test(st, D, p, NF=NF); res = {k: res[k] for k in open_}
+        nb, per, res = modp_test(st, D, p, moved=mv, NF=NF); res = {k: res[k] for k in open_}
         log("    F_%d D=%d: %d traces, surviving j mod %d: %s" % (p, D, nb, per, res))
         open_ = {k for k in open_ if res[k] != []}
         if not open_: return 'excluded'

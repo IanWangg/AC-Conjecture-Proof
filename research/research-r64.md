@@ -3,10 +3,19 @@
 Date: 2026-11-10 (UTC). Agent R6-4, round 6. Time-boxed (≈25 min; a first attempt was lost to a
 container restart).
 
-**Status (in progress).** Theory: the Lemma-M contributions at the known torus states of C4's
-class are classified (all lie in D₆) and a class-wide "eigenline" criterion is proved. A targeted
-search of the conjugacy class of x⁸y⁵ in G_A = F/⟨⟨x⁴yXy⟩⟩ for T(2,n)-type and Baumslag–Solitar-type
-representatives is running. **Not achieved so far:** no element of Ŝ(C4) outside D₆.
+**Status.** *Proved here:* (1) Proposition 1 — the complete table of Lemma-M contributions
+(stabilizers of the cyclic relators up to inversion in Out(F₂), which elements are inner on the
+one-relator group, which preserve the partner's class) at the torus states C4 and T(4;8,5): all lie
+in D₆; a torus-type relator can only ever contribute ±I or reflections. (2) Theorem 2 / Corollary 6 —
+a class-wide criterion: if any state of C4's class has a T(2,n)-type relator whose eigenline pair is
+not one of three explicit pairs, or any relator of Baumslag–Solitar type, then Ŝ(C4) is infinite;
+equivalently, "C4 is a counterexample" forces all T(2,n)-relators in the class onto three eigenline
+pairs and excludes BS relators. (3) Lemma 3 — an exact conjugacy test for the two "frozen families"
+of T(4;8,5); Proposition 4 — T(4;8,5) is the only same-basis torus pair on them.
+*Experiment (bounded):* in both frozen families every T(2,n)-type representative found has its
+hidden reflection in D₆ (all three reflection classes of D₆ occur as hidden reflections, M₃ via a
+new T(2,5)-form xyx³yxYX³YX³Y), and no BS-type representative was found. *Not achieved:* **no element of Ŝ(C4) outside D₆; the dichotomy remains open.** No
+certificates (nothing new to certify).
 
 Notation: F = F(x,y), X = x⁻¹, Y = y⁻¹; A = x⁴yXy; s₅ = x⁸y⁵; s_w = xy³xY²; C4 = (A, s_w);
 T(4;8,5) = (s₅, A); z = Xy, so y = xz and A = x⁵z² up to rotation; G_A = F/⟨⟨A⟩⟩ = ⟨x,z | x⁵z²⟩;
@@ -117,11 +126,19 @@ reflection and tests membership in D₆.
 | family | L, range | distinct hit words | hidden reflections | BS-type hits |
 |---|---|---|---|---|
 | A-frozen (s′ ~ s₅^{±1} in G_A) | L = 12, \|n\|,\|m\| ≤ 15 | 140 (all n = ±5) | only M₁ = β_w | 0 |
+| A-frozen | L = 14, \|n\|,\|m\| ≤ 21 | 274 (all n = ±5) | M₁ (250 words), M₃ (24 words) | 0 |
 | s₅-frozen (A′ ~ A^{±1} in G_{s₅}) | L = 10, \|n\|,\|m\| ≤ 15 | 138 (n ∈ {±5, ±11}) | only β_A = −M₂ | 0 |
+| s₅-frozen | L = 12, \|n\|,\|m\| ≤ 21 | 236 (n ∈ {±5, ±11, ±21}) | only β_A | 0 |
 
-So in both families every T(2,n)-type representative found carries **the same** hidden reflection
-as the visible one at T(4;8,5)/C4 (on the A-side: s_w; on the s₅-side: A itself), and none lies
-outside D₆. (Example of a new torus-type state: (x⁸y⁵, x⁷yX⁴y) ~AC T(4;8,5), with x⁷yX⁴y of type
+So every T(2,n)-type representative found has its hidden reflection **in D₆**. On the s₅-side all
+carry β_A (the reflection of A itself); on the A-side, up to L = 12 all carry M₁ = β_w, but at L = 14
+the reflection **M₃** = [[2,−3],[1,−2]] appears as well, e.g. s′ = xyx³yxYX³YX³Y = p²q⁵ with
+p = xyx³yx³, q = (yx³)⁻¹ (ab(s′) = (1,1), [q] = (−3,−1): the M₃ pair). So all three reflection
+classes of D₆ are *hidden* reflections at states of the class (M₂ ~ β_A from A, M₁ from s_w, M₃ from
+s′; D₆ itself was already obtained without search in th02 Cor. 2 from β_A and β_w, so this is a
+consistency check, now via Lemma 3 + th02 Thm 1 alone) — but no reflection outside D₆ occurs.
+Both examples were re-checked directly: s′ has the Π-necklace and χ-value of s₅ (χ = 1), and
+x⁷yX⁴y those of A in G_{s₅} (χ = −1). (Example of a new torus-type state: (x⁸y⁵, x⁷yX⁴y) ~AC T(4;8,5), with x⁷yX⁴y of type
 T(2,11), hidden reflection β_A.) This is a bounded search, not a proof that no such word exists.
 
 ## 4. What would settle the dichotomy, and failed attempts
@@ -145,18 +162,18 @@ need det(ρ₁,ρ) = ±1; that hypothesis only makes D odd). Since det(M₁β) =
 gives an element of infinite order directly.
 
 **Failed attempts / negative findings (this session).**
-1. *Hidden reflections in the frozen families* (Experiment 5): every T(2,n)-type representative
-   found carries the same reflection as the visible relator (M₁, resp. β_A); none outside D₆.
-   Bounded (basis length ≤ 12 / ≤ 10 so far, see §5 for the larger runs).
+1. *Hidden reflections in the frozen families* (Experiment 5): all reflections found lie in D₆
+   (M₁, M₃ on the A-side; β_A on the s₅-side). Bounded (basis length ≤ 14 / ≤ 12).
 2. *BS-type representatives in the frozen families*: none found (same bounds). This is consistent
    with research-th15 §7 (no BS relator in Fwd(C4, 30)); it is not a proof that none exists.
 3. *A third torus form for a = 4*: TH17's Theorem 4 rests on Δ = uvu in B₃ (a = 2); I did not find
    an analogue for ⟨x,z | x⁵z²⟩, and Proposition 4 shows that no same-basis torus pair other than
    T(4;8,5) lies on the two frozen families. The new T(2,11)-type state (x⁸y⁵, x⁷yX⁴y) found by
    the search lies on the s₅-frozen family and gives only β_A.
-4. *Explaining "one reflection per family"*: I tried to prove that all T(2,n)-type representatives
-   of a fixed conjugacy class of G_A (resp. G_{s₅}) have the same hidden reflection (via generating
-   pairs of ℤ/5 * ℤ/2, resp. ℤ/8 * ℤ/5, and the image ū²v̄ⁿ); not completed. **Open.**
+4. *Explaining the restriction to D₆*: I tried to prove that every T(2,n)-type representative
+   of the class of s₅ in G_A (resp. of A in G_{s₅}) has its hidden reflection in D₆ (via generating
+   pairs of ℤ/5 * ℤ/2, resp. ℤ/8 * ℤ/5, and the image ū²v̄ⁿ); not completed. **Open.** (An early
+   guess "one reflection per family", suggested by the L ≤ 12 data, is false: M₃ appears at L = 14.)
 
 ## 5. Honest limits and what remains open
 
@@ -169,10 +186,27 @@ gives an element of infinite order directly.
 - Theorem 2 only uses *hidden* reflections and Lemma T; Lemma M with a non-hidden stabilizer
   element (Corollary 6(iii)) at non-torus states (e.g. th02's ε_x-candidates r₁, Prop. 11 there)
   is not examined here; th02's Prop. 11 candidate remains the most concrete open lead.
-- Open questions made precise here: (Q1) Is every T(2,n)-type representative of the class of s₅
-  in G_A of hidden reflection M₁, and every one of A's class in G_{s₅} of reflection β_A (true for
-  all found)? (Q2) Does either frozen family contain a Baumslag–Solitar-type word (none found)?
-  A "yes" to (Q2) or a "no" to (Q1) proves Ŝ(C4) infinite (Theorem 2); both are now pure
+- Open questions made precise here: (Q1) Does every T(2,n)-type representative of the class of
+  s₅ in G_A, resp. of A in G_{s₅}, have its hidden reflection in D₆ (true for all found)? (Q2) Does either frozen family contain a Baumslag–Solitar-type word (none found)?
+  A "yes" to (Q2) or a "no" to (Q1) proves Ŝ(C4) infinite (Theorem 2); both are pure
   conjugacy questions in ⟨x,z | x⁵z²⟩, resp. ⟨x,y | x⁸y⁵⟩, decidable word by word by Lemma 3.
 - An affirmative answer to (Q1)/(Q2)-type questions for the two frozen families would *not*
   prove Ŝ(C4) = D₆: other states of the class (reached by moving both relators) are not covered.
+
+## 6. Files and reproduction (run in this session; one core, niced, each < 5 min, < 50 MB)
+
+- `experiments/r64_search.py` (new): exact conjugacy test of Lemma 3 (`necklace`, `chi`), D₆ as a
+  set of 12 matrices, Nielsen enumeration of bases, T(2,n)/BS search, `torus_scan` (Prop. 4).
+
+```
+export PYTHONDONTWRITEBYTECODE=1
+python3 experiments/r64_search.py --self-test                      # r64_search self-test passed
+python3 experiments/r64_search.py --case A --len 12 --nmax 15      # hits 140 outside D6: 0 BS: 0
+python3 experiments/r64_search.py --case S --len 10 --nmax 15      # hits 138 outside D6: 0 BS: 0
+python3 experiments/r64_search.py --case A --len 14 --nmax 21      # hits 274 outside D6: 0 BS: 0  (~2 min)
+python3 experiments/r64_search.py --case S --len 12 --nmax 21      # hits 236 outside D6: 0 BS: 0  (~1 min)
+# (each hit line is printed when found, so a word can appear several times; 'hits' counts distinct words)
+python3 -c "import sys; sys.path.insert(0,'experiments'); import r64_search as r; print(r.torus_scan(40))"
+#   ([(-8, -5), (8, 5)], [4])
+```
+No certificates were produced (nothing outside D₆ was found to certify). No other files written.
