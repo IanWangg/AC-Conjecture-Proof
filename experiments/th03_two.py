@@ -277,6 +277,25 @@ def q2_modp(n, D, p):
     ic = ev((2, -3, -2))                               # c = (t_1 T_2 T_1, 1)
     return len(B), [j for j in range(p) if ev((2,) * j) == ic]
 
+def control_n2():
+    """Positive control on the killer side: for n = 2 the twisted traces single out j = -3, and indeed
+    c ~ x (yx)^-3 = YXYXY in G_{k_2} (conjugator yxYY; verified by normal forms in F(t_0,t_1) x| Z)."""
+    G = q.GK(2, 4)                                     # psi_2: t_0 -> t_1 -> t_1 t_0
+    assert G.nf('xxYXyy') == ((), 0)
+    uc, kc = G.nf('xyxYYXy'); assert (uc, kc) == ((2, -1, -2, -2), 1)
+    ic, co, cand = G.Inv(uc), G.power_poly(1), None
+    for r in range(len(G.traces)):
+        poly = [co[k_][r] for k_ in range(5)]; poly[0] -= ic[r]
+        if any(poly):
+            rts = set(q.integer_roots(poly)); cand = rts if cand is None else cand & rts
+    assert sorted(cand) == [-3, 2]                     # rational traces of degree 4
+    G2 = Gen([(2,), (2, 1)], 6, rational=False); B = traces_mod2(G2)
+    allowed = [j for j in range(8) if ev2(G2, B, (2,) * j) == ev2(G2, B, uc)]
+    assert allowed == [5]                              # mod 2, degree 6: j = -3 survives, j = 2 does not
+    assert G.nf('yxYY' + 'xyxYYXy' + t.inv('yxYY') + t.inv('YXYXY')) == ((), 0)   # the genuine conjugacy
+    assert G.nf('x' + 'XY' * 3) == G.nf('YXYXY') == ((-2, -2, -2), 1)
+    return sorted(cand), allowed
+
 # ---------------------------------------------------------------- (4) the mod-2 invariant eps (mirror theorem)
 def eps(u):
     """eps(u) = C(p+1,2) + C(q+1,2) + mu_ab(u) mod 2, (p,q) the exponent sums of u in a, b and
@@ -382,6 +401,7 @@ def selftest():
         res['asc'] = res['mod9'] = res['q2_7'] = res['q2_8'] = 'numpy missing: not re-checked'
     assert selftest_eps()                              # (4) mirror theorem
     res['b'] = selftest_b()                            # (5) the k_3-frozen side
+    res['n2'] = control_n2()                           # positive control, n = 2
     mirror = [w for (Lw, tag), ws in cs.items() if tag == 'mirror' for w in ws]
     assert len(mirror) == 11 and all(eps(t.nf(w)[0]) == 1 for w in mirror) and eps('aaaBA') == 0
     return kn, cs, res
@@ -393,6 +413,7 @@ if __name__ == "__main__":
         print("L4(x^s y) = C(s+1,4) >= 0;  L4(k_n), n = 1..9:", [str(a) for a in kn])
         for key in sorted(cs): print("  length %d, %-9s:" % key, len(cs[key]), cs[key] if key[1] in ('k3', 'mirror') else '')
         print("eps: twisted trace mod 2, flipped by alpha; the 11 mirror words have eps = 1 != 0 = eps(k_3): not neighbours")
+        print("control n = 2: rational candidates j, residues mod 8:", res['n2'], "; and c ~ x(yx)^-3 = YXYXY in G_{k_2} (conjugator yxYY)")
         print("Q2(7): F_7-valued traces of degree 3, (#traces, surviving j mod 7) =", res['q2_7'], "; Q2(8): Z/9-valued, degree 3, (#F_3-traces, #lifts, surviving j mod 27) =", res['q2_8'])
         print("k_3-frozen neighbours (c', k_3) of P_3 with |c'| <= 8:", res['b'], "; second move excluded for each")
         print("second move (c ~ primitive in <x,y|k'>) excluded for all seven k' of T14:")
