@@ -12,7 +12,10 @@ Consequences: the AC class of AK(n) is a union of Aut(F₂)-orbits for all n, so
 the repository quoted Panteleev–Ushakov for n ≠ 3 (G1's Aut-form, K1.3, Corollary D7) are now
 unconditional; AK(n) ~AC (x⁻¹y⁻⁽ⁿ⁺¹⁾xyⁿ, x²y⁻¹x⁻¹y⁻¹) of length 2n+8 (the length of C's M_n);
 every Miller–Schupp presentation has an infinite stabilizer; C's MS-bridge is two generalized
-moves (n+3 cyclic products); the generalized-move distance from AK(n) to a(AK(n)) is exactly 3.
+moves (n+3 cyclic products); the generalized-move distance from AK(n) to a(AK(n)) is exactly 3;
+Aut(F₂) is AC-realized on ⟨x,y | x⁻¹yⁿx = y^{n+1}, y⁻¹xⁿy = x^{n+1}⟩ for all n (n = 2: the frontier
+class P1 = C6) by a two-line symbolic argument. *Experiment:* no Baumslag–Solitar-type relator in
+Fwd(C4, 30) or Fwd(C3, 26) (bounded, directed; not evidence about the classes).
 *Not achieved:* no AC trivialization of AK(3), no obstruction, no counterexample. Theorem 1 itself
 is not new (Panteleev–Ushakov, arXiv:1609.00325, externally reported); contributed here are the
 explicit uniform proof, the mechanism and the certificates. No novelty claim.
@@ -28,9 +31,11 @@ q_n = yⁿX^{n+1}, AK(n) = (p_n, b), β_n = XY^{n+1}xyⁿ, σ = (x ↔ y), T = (
 | 4 | **Lemma H (hub).** β_n ≡ conjugate of p_n mod ⟨⟨b⟩⟩, so AK(n) ~AC (β_n, b); explicitly n cyclic products = 2n+4 elementary moves | proved here; certificate n = 3: 10 moves |
 | 5 | **Prop. A / B (closed forms).** (p_n, b) → σ(AK(n)) and (p_n, b) → a(AK(n)) by 2n+1 cyclic products each (peaks 2n+13 and 4n+7) | proved here (tables §4); certificates n = 2..8 |
 | 6 | **Cor. 5.** AK(n) ~AC (β_n, xy^{k+1}xYXY) for every k ∈ ℤ; k = −1 gives H_n = (XY^{n+1}xyⁿ, xxYXY), length 2n+8 | proved here; certificates |
-| 7 | **Cor. 6.** MS(n,w) ~AC MS(n,w') whenever x⁻¹w' = T_k(x⁻¹w) up to conjugacy; the stabilizer Ŝ(MS(n,w)) ⊆ GL₂(ℤ) is infinite for every w | proved here; 247 generated certificates replayed |
+| 7 | **Cor. 6.** MS(n,w) ~AC MS(n,w') whenever x⁻¹w' = T_k(x⁻¹w) up to conjugacy; the stabilizer Ŝ(MS(n,w)) ⊆ GL₂(ℤ) is infinite for every w | proved here; 265 generated certificates replayed |
 | 8 | **Prop. D.** C's bridge AK(n) ~AC M_n = MS(n, y⁻¹x²y⁻¹) in n+3 cyclic products; M_n = a(β′_n, b) up to rotation | proved here; certificates n = 2..8 |
 | 9 | **Prop. E.** In generalized (frozen-relator) moves, σ(AK(n)) is at distance exactly 1 and a(AK(n)) at distance exactly 3 from AK(n), n ≥ 2 | proved here |
+| 10 | **Cor. 8.** Aut(F₂) is AC-realized on Sym_n = (x⁻¹yⁿxy^{−(n+1)}, y⁻¹xⁿyx^{−(n+1)}) for every n ≥ 1 by two hidden transvections and the visible swap; Sym₂ = P1, so this re-proves I's result for the class P1 = C6 without search | proved here; certificates |
+| 11 | No relator of Baumslag–Solitar type occurs in Fwd(C4, 30) (1,246,365 states) or Fwd(C3, 26) (127,850 states); positive control: 704 of the 39,840 states of Fwd(AK(3), 20) have one | experiment (§7; directed cyclic-product sets, exact recognizer) |
 
 A **cyclic product** replaces one relator r by cyc(g·r′) or cyc(r′·g), r′ a rotation of r^{±1},
 g a rotation of the other relator or of its inverse; it is a composite of ordinary AC moves
@@ -259,6 +264,20 @@ b. Hence M_n = (β′_n, XYxxY) ~AC (β′_n, b) by one β′_n-frozen move (Cor
 (β′_n, b) ~AC (q_n, b) ~AC AK(n) by b-frozen moves (Lemmas H, S). C's ten-step prefix and
 linear tail is an elementary expansion of this.
 
+**Corollary 8 (the symmetric Miller–Schupp presentations; P1 = C6).** For n ≥ 1 let
+Sym_n = (x⁻¹yⁿxy^{−(n+1)}, y⁻¹xⁿyx^{−(n+1)}) = (β′_n, σ(β′_n)) (a Miller–Schupp presentation,
+w = y⁻¹xⁿyx⁻ⁿ; trivial group, externally reported). Then S(Sym_n) = Aut(F₂).
+For n = 2, Sym₂ is P1 = MS(2, x⁻²y⁻¹x²y) = (XyyxYYY, XXXYxxy) up to rotation, so Aut(F₂) is
+AC-realized on the class of P1 = C6 (I's result, there by search-found certificates) with a
+symbolic proof.
+*Proof.* T = (x ↦ xy) is a hidden transvection of the first relator, so T ∈ S(Sym_n) (Lemma T);
+σ(Sym_n) is Sym_n with the relators interchanged, so σ ∈ S(Sym_n). By Lemma 0(b) and Lemma N,
+S(Sym_n) = Aut(F₂). (Symmetrically, σTσ = (y ↦ yx) is the hidden transvection of the second
+relator; the two transvections generate SL₂(ℤ) modulo inner automorphisms.) ∎
+For P2 = (XyyxYYY, XXXYxxY) the first relator is again β′₂, so all x ↦ xy^k are realized
+symbolically; its second relator is not of Baumslag–Solitar type, and the remaining generators
+still rest on I's certificates.
+
 **Remark 5.1 (what this says about stabilizers in general).** TH02's draft states (its Prop. 7,
 not re-checked by me) that "hidden reflections" (relators of type T(2,n)) generate only subgroups
 of an index-2 subgroup of GL₂(ℤ) and never give a Nielsen transvection. Lemma T supplies the missing kind of hidden symmetry: any
@@ -297,10 +316,10 @@ AK(3)'s class (besides P₃). Nothing here shortens AK(n).
    shape, and that no partner is primitive, is TH18's T4/T3/T5 (for the orientation β′_n) —
    not re-proved here.
 
-## 7. Experiments (exact commands; outputs from this session; < 5 s each, one core, < 100 MB)
+## 7. Experiments (exact commands; outputs from this session; each < 40 s, one core, < 0.5 GB)
 
-    $ python3 experiments/th15_aut_family.py --check 2 120
-    closed-form paths verified for n = 2..120: swap 2n+1 cyclic products (peak 2n+13); a = (x->xY)
+    $ python3 experiments/th15_aut_family.py --check 2 200
+    closed-form paths verified for n = 2..200: swap 2n+1 cyclic products (peak 2n+13); a = (x->xY)
     2n+1 cyclic products (peak 4n+7); hub (p_n,b)->(beta_n,b)->(beta_n,xxYXY) n+3 products (peak
     4n+10); (p_n,b)->(beta'_n,b)->M_n n+3 products (peak 4n+7); every multiplier is a rotation of
     the frozen relator or its inverse; Lemma S / Lemma T free-group identities hold
@@ -324,8 +343,43 @@ AK(3)'s class (besides P₃). Nothing here shortens AK(n).
     n=8: all 7 maps verified; moves [46, 122, 194, 301, 229, 927, 920], peaks [31, 57, 56, 56, 57, 105, 105]
     (order: swap, x_xY, x_xy, y_yx, y_yX, invy, invx; targets = cyclically reduced φ(AK(n)), exact)
     $ python3 experiments/th15_hidden.py --selftest
-    selftest passed: 247 hidden-transvection certificates built and replayed (8 BS relators
-    x^-1 y^m x y^-n', random partners; M_n -> (b-rotation, beta'_n), n = 2..8; random MS(n,w))
+    selftest passed: 265 hidden-transvection certificates built and replayed (8 BS relators
+    x^-1 y^m x y^-n', random partners; M_n -> (b-rotation, beta'_n), n = 2..8; random MS(n,w);
+    Sym_n, n = 1..6)
+
+    $ python3 experiments/th15_hidden.py --sym 2 1 certificates/th15_p1_hiddenT.json
+    Sym_2 -> T_1(Sym_2): 79 moves, peak 33, start ['XyyxYYY', 'YxxyXXX'], target ['XyyxYYY', 'YxyxyXYXYX'], ...
+    (I's search-found `i_p1_aut_x_xy.json` reaches the same cyclic words in 55 moves.)
+
+**Scan for Baumslag–Solitar-type relators (experiment; the test of Remark 5.1).**
+`experiments/th15_bs_scan.py` reduces each relator by the Whitehead maps x ↦ xy^{±1}, y ↦ yx^{±1}
+and tests the minimal word for "one generator occurring exactly twice, once with each sign".
+A positive answer is a proof (the reduction is by automorphisms). Completeness (*proved here,
+using Whitehead's theorem, classical*): for w = Xy^i xy^j with |i|+|j| > 2 the maps x ↦ xy^{±1},
+x ↦ y^{±1}x fix the cyclic word w, and y ↦ yx^{±1} sends it to a cyclic word of length
+2(|i|+|j|) > |i|+|j|+2 (e.g. i > 0 > j = −n′: X(yx)^i x(XY)^{n′} = X(yx)^iY(XY)^{n′−1}); so w is
+Whitehead-minimal and the minimal words of its orbit are its signed-permutation images. In a
+balanced presentation of the trivial group a BS-type relator has |m−n′| = 1, and |m|+|n′| ≤ 2
+then means a primitive relator. Forward sets = D's engine, all cyclic products, directed:
+
+    $ g++ -O2 -std=c++17 -o $S/d_acsearch experiments/d_acsearch.cpp
+    $ $S/d_acsearch --cap 30 --source xxxxyXy,xyyyxYY --no-stop --maxstates 2000000 --dump 30 $S/c4_dump30.txt   (12 s)
+    $ $S/d_acsearch --cap 26 --source xxyXy,xyyyyyxYY --no-stop --maxstates 4000000 --dump 26 $S/c3_dump26.txt
+    $ python3 experiments/th15_bs_scan.py --selftest
+    selftest passed: 1400 random automorphic images of 7 BS relators recognized; braid, torus,
+    T(a;p,q)-type and K's relators rejected
+    $ python3 experiments/th15_bs_scan.py $S/c4_dump30.txt $S/c3_dump26.txt        (35 s)
+    c4_dump30.txt: 1246365 states, 1220003 distinct relator words, 0 states with a relator of Baumslag-Solitar type
+    c3_dump26.txt: 127850 states, 111530 distinct relator words, 0 states with a relator of Baumslag-Solitar type
+    $ $S/d_acsearch --cap 20 --source xxxYYYY,xyxYXY --no-stop --maxstates 1000000 --dump 20 $S/ak3_dump20.txt
+    $ python3 experiments/th15_bs_scan.py $S/ak3_dump20.txt                       (positive control)
+    ak3_dump20.txt: 39840 states, 25452 distinct relator words, 704 states with a relator of Baumslag-Solitar type
+      BS type {|m|,|n'|} = (3, 4): 704 occurrences, e.g. ('xyyXYxYYY', 'xyyyXYYYY')
+    start states of P1 and P2: type {2,3} (P1: both relators); of C3, C4: none.
+
+($S = my scratch directory; the C4 dump is identical as a set to TH02's independent dump.) This is
+a bounded, directed, engine-relative negative result: it does **not** show that the classes of C4
+or C3 contain no Baumslag–Solitar-type relator.
 
 Stored certificates (all pass `python3 experiments/elementary_verify.py certificates/th15_*.json`):
 
@@ -338,6 +392,7 @@ Stored certificates (all pass `python3 experiments/elementary_verify.py certific
 | `th15_ak3_hubT.json` | AK(3) → H₃ = (XYYYYxyyy, xxYXY) | 42/31 |
 | `th15_ak3_to_ms3.json` | AK(3) → M₃ = (XyyyxYYYY, XYxxY) (Prop. D) | 57/28 |
 | `th15_ms3_hiddenT.json` | (XYxxY, β′₃) → (XYxyxY, β′₃): hidden transvection on M₃ | 49/32 |
+| `th15_p1_hiddenT.json` | P1 = (XyyxYYY, YxxyXXX) → (XyyxYYY, YxyxyXYXYX) = T(P1) | 79/33 |
 
 The n = 3 swap and a certificates are regenerated by `--cert swap 3 OUT.json`, `--cert a 3 OUT.json`
 (26 and 48 moves; D's stored ones have 45 and 48). TH20 re-derived Props A, B by hand and with an
@@ -352,7 +407,7 @@ independent script (its §2) before this note's proof sections existed.
   whether its use for AC-equivalences of Miller–Schupp presentations is in the literature.
 - Nothing here bears on whether AK(3) is AC-trivial. Theorem 1 only says the invariant "S(R)"
   (N's Ŝ) does not distinguish AK(n) from the trivial presentation, for any n.
-- Certificates were generated for n = 2..8 (closed forms checked symbolically to n = 120); the
+- Certificates were generated for n = 2..8 (closed forms checked mechanically to n = 200); the
   statements for all n rest on the displayed identities, each a finite cancellation uniform in n.
 - Proposition E counts generalized moves with arbitrary conjugators; it is not a bound on
   ordinary AC length or peak. Remark 4.3 is a consistency remark, not a classification.
@@ -368,15 +423,29 @@ independent script (its §2) before this note's proof sections existed.
    m ≠ n′) and TH18's conjugacy classification in BS(n,n+1). A joint statement: "S(R) contains
    the hidden symmetries of every relator occurring in any pair of the class". For AK(n) these
    already generate everything; for C4 only reflections are known (D₆).
-3. **A concrete test for the chirality question (N).** Scan C4's stored forward set for relators
-   of Baumslag–Solitar type θ(x⁻¹y^m x y^{−n′}), m ≠ n′ (candidate recognizer: Whitehead-reduce
-   the cyclic word and look for a minimal form with exactly one x and one X; not implemented or
-   proved complete here). One hit makes Ŝ(C4) infinite (Remark 5.1).
-   Likewise for C3, P1, P2 this would explain I's search-found transvections symbolically.
+3. **A concrete test for the chirality question (N).** A relator of Baumslag–Solitar type
+   θ(x⁻¹y^m x y^{−n′}), m ≠ n′, anywhere in C4's class would make Ŝ(C4) infinite (Remark 5.1).
+   I scanned Fwd(C4, 30) and Fwd(C3, 26): none (§7). M's cap-34 set of C4 (42.9M states) is the
+   natural next scan (`th15_bs_scan.py` reads any text dump; about 30 s per million states); a
+   frozen-relator (unbounded-conjugator) search for BS-type partners of C4's T(2,5)-type
+   relators would be the exact version. P1 = C6 is now explained symbolically (Corollary 8);
+   P2 partly; C3 not at all by this mechanism (TH02's reflections apply there).
 4. **Do not expect more for AK(3) from symmetry.** All of GL₂(ℤ) is realized and costs nothing
    conceptually; the hub adds no shorter presentation. The remaining value of the hub is as a
    third exact arena (after B and G_n) for frozen-relator searches: with β_n frozen, conjugacy
    is decidable with unbounded conjugators (TH18's T2), exactly as G did for torus relators.
+
+## 10. Files written
+
+- `research/research-th15.md` (this note).
+- `experiments/th15_aut_family.py` — closed forms of Props A–D, identities of Lemmas S, T;
+  `--selftest`, `--check LO HI`, `--cert swap|a|hub|hubT|ms N OUT`, `--batch LO HI`.
+- `experiments/th15_transport.py` — constructive Lemma D2/D6 (transport, reversal, composition of
+  strict certificates); the seven Nielsen-type maps on AK(n); `--selftest`, `--batch`, `--named`.
+- `experiments/th15_hidden.py` — Lemma T as certificates for arbitrary (s, x⁻¹y^m x y^{−n′});
+  `--selftest`, `--ms N W K OUT`, `--sym N K OUT`.
+- `experiments/th15_bs_scan.py` — recognizer/scan for Baumslag–Solitar-type relators; `--selftest`.
+- `certificates/th15_*.json` — 13 strict certificates (table in §7), 1.5–20 kB each.
 
 ## References
 
@@ -390,3 +459,10 @@ independent script (its §2) before this note's proof sections existed.
 - Repository notes: A (Δ conjugates x to y in B), C (MS bridge), D (Lemmas D1, D2, D6; n = 3
   certificates), G (Lemma G0, Theorem G1), J (Lemma J0, Theorem J1), K (Theorem K1), N (Ŝ);
   round-5 drafts TH02 (Lemma 0, hidden reflections), TH18 (conjugacy in BS(n,n+1)), TH20 (referee).
+
+## Coordinator's check (2026-11-09, Los Angeles time)
+
+- Re-ran all four self-tests (`th15_aut_family.py`, `th15_transport.py`, `th15_hidden.py`, `th15_bs_scan.py`, each with `--selftest`): pass. All 13 files `certificates/th15_*.json` replay under `python3 experiments/elementary_verify.py`.
+- **Theorem 1 re-derived by hand, step by step, and found correct**: Lemma 0 (S(R) is a subgroup and a class invariant, by transporting AC sequences letterwise); Lemma M; Lemma S (Δ x Δ⁻¹ = b·y and Δ y Δ⁻¹ = x·b⁻¹ as free words, so the swap is conjugation by Δ = xyx modulo ⟨⟨b⟩⟩, and swap(b) = b⁻¹); Lemma T (T_k(β) = y⁻ᵏ β yᵏ and, modulo β = x⁻¹yᵐxy⁻ⁿ′, y^{mi} x y^{−mi} = x y^{(n′−m)i}, so x ↦ xy is conjugation by y^{−(n+1)} modulo β_n); Lemma H (xyX ≡ Yxy modulo ⟨⟨b⟩⟩, so β_n is conjugate to p_n there and AK(n) ~AC (β_n, b)); Lemma N (the swap and one transvection generate GL₂(ℤ), and the kernel of Aut(F₂) → GL₂(ℤ) is Inn(F₂)). The coordinator also checked the free-word identities behind Lemmas S, T and H for n = 1,…,6 with independent code.
+- Status of the result: the theorem is Panteleev–Ushakov's (externally reported in earlier notes); what is new in this repository is a short self-contained proof valid for every n ≥ 1, with certificates. Consequently research-d's Corollary D7, research-g's "up to Aut(F₂)" form of Theorem G1 and research-k's remark K1.3 no longer depend on an externally reported theorem.
+- Read but not re-derived: Propositions A–E (closed-form cyclic-product paths; the agent reports that the referee re-derived A and B, and the self-test checks the identities for n = 2..40), Corollaries 5–8. The scans of §7 are bounded, directed experiments and are labelled as such.

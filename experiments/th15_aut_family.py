@@ -17,12 +17,15 @@ of r and g a rotation of the OTHER relator or of its inverse: an ordinary-AC com
      III b1 frozen:  u_(n-1) -> v_0 = x x y^(n-1) X Y^(n+2)
      IV  v_0 frozen: b1 -> b2 = y x y X X                           (= a(b)^-1 rotated)
      V   b2 frozen:  v_m = x x y^(n-1-m) X Y^(n+2) (xY)^m, m = 0..n-1; v_(n-1) ~ (xY)^n Y^(n+1)
+  hub   (n steps, b frozen)   (p_n, b) -> (beta_n, b), beta_n = X Y^(n+1) x y^n;
+  hubT  (+3 steps, beta_n frozen)      -> (beta_n, xxYXY) = a(beta_n, b)           [Lemma T]
+  ms    (n+3 steps)  (p_n, b) -> (beta'_n, b) -> (beta'_n, XYxxY) = C's M_n,  beta'_n = X y^n x Y^(n+1)
 
     python3 experiments/th15_aut_family.py --selftest
     python3 experiments/th15_aut_family.py --check 2 200
     python3 experiments/th15_aut_family.py --cert swap|a|hub|hubT|ms N OUT.json
     python3 experiments/th15_aut_family.py --batch 2 8
-    python3 experiments/th15_aut_family.py --nielsen N [OUTDIR]   (see th15_transport.py)
+  (the seven Nielsen-type maps are composed from these two by experiments/th15_transport.py)
 """
 import json
 import os

@@ -10,6 +10,7 @@ finally conjugate beta by y^-k.  It runs from (s, beta) to (T_k(s), T_k(beta)) E
 
     python3 experiments/th15_hidden.py --selftest
     python3 experiments/th15_hidden.py --ms N W K OUT.json   # MS(N,W) -> MS(N, W(xy^K,y) y^-K)
+    python3 experiments/th15_hidden.py --sym N K OUT.json    # Sym_N -> T_K(Sym_N); N = 2 is P1
 """
 import json
 import os
@@ -122,6 +123,30 @@ def ms(n, w, k):
     return cert, r, wk
 
 
+def sym_cert(n, k):
+    """Sym_n = (x^-1 y^n x y^-(n+1), y^-1 x^n y x^-(n+1)) -> T_k(Sym_n), relators cyclically
+    reduced and in this order (for n = 2: P1 of research-i, target as in i_p1_aut_x_xy.json)."""
+    bp = bs(n, n + 1)
+    s2 = red("Y" + "x" * n + "y" + "X" * (n + 1))
+    cert, _ = hidden_transvection(n, n + 1, k, s2)          # (s2, beta') -> (T_k s2, T_k beta')
+    b = Build(cert["target"][0], cert["target"][1])
+    for i in (0, 1):                                         # cyclically reduce both relators
+        while len(b.st[i]) >= 2 and b.st[i][0] == INV[b.st[i][-1]]:
+            b.conj(i, INV[b.st[i][0]])
+    assert b.st[1] in fam.rots(bp)
+    while b.st[1] != bp:
+        b.conj(1, INV[b.st[1][0]])
+    moves = [{**m, "i": 1 - m["i"], **({"j": 1 - m["j"]} if "j" in m else {})} for m in cert["moves"] + b.moves]
+    out = {"format": "ordinary-ac-elementary-v1", "start": [bp, s2], "target": [b.st[1], b.st[0]], "moves": moves,
+           "description": f"Sym_{n} = (x^-1 y^{n} x y^-{n + 1}, y^-1 x^{n} y x^-{n + 1}) -> T_{k}(Sym_{n}) "
+                          f"(cyclically reduced), T_k = (x -> x y^{k}): hidden transvection of the first "
+                          f"relator (research-th15 Lemma T, Corollary 8); n = 2 is P1 = MS(2, x^-2 y^-1 x^2 y)"}
+    r = elementary_verify.replay(out)
+    assert r["endpoint"] == out["target"]
+    assert fam.cyc(tk(k, s2)) in fam.rots(out["target"][1])
+    return out, r
+
+
 def selftest():
     rnd = random.Random(15)
     cnt = 0
@@ -141,14 +166,24 @@ def selftest():
                 w = red("".join(rnd.choice("xXyY") for _ in range(rnd.randint(2, 8)))) or "y"
                 ms(n, w, k)
                 cnt += 1
+    for n in range(1, 7):
+        for k in (1, -1, 2):
+            sym_cert(n, k)
+            cnt += 1
     print(f"selftest passed: {cnt} hidden-transvection certificates built and replayed "
-          f"(8 BS relators x^-1 y^m x y^-n', random partners; M_n -> (b-rotation, beta'_n), n = 2..8; random MS(n,w))")
+          f"(8 BS relators x^-1 y^m x y^-n', random partners; M_n -> (b-rotation, beta'_n), n = 2..8; random MS(n,w); Sym_n, n = 1..6)")
 
 
 if __name__ == "__main__":
     a = sys.argv[1:]
     if a[:1] == ["--selftest"]:
         selftest()
+    elif a[:1] == ["--sym"]:
+        cert, r = sym_cert(int(a[1]), int(a[2]))
+        with open(a[3], "w") as f:
+            json.dump(cert, f)
+        print(f"Sym_{a[1]} -> T_{a[2]}(Sym_{a[1]}): {r['moves']} moves, peak {r['peak_total_length']}, "
+              f"start {cert['start']}, target {cert['target']}, wrote {a[3]}")
     elif a[:1] == ["--ms"]:
         cert, r, wk = ms(int(a[1]), a[2], int(a[3]))
         with open(a[4], "w") as f:
