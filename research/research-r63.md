@@ -129,3 +129,9 @@ Earlier, the ascending targets, the deeper 𝔽_p scans and the L = 11 second mo
   invertibility; the base group embeds by the Freiheitssatz) — checked here only by `NF(k′) = (1, 0)`.
 - The k₃-frozen side at |c′| = 9 was **not** attempted (time).
 - Exact arithmetic throughout (Fractions, integers mod p via numpy int64 with asserted nullspace checks).
+
+## Coordinator's check (2026-11-09, Los Angeles time)
+
+- Re-ran `PYTHONDONTWRITEBYTECODE=1 python3 experiments/r63_two.py --selftest 10 11` (exit 0, "selftest ok (family controls)"); the per-target lines reproduce the note's counts (second moves excluded vs. undecided; see the commit message). `certificates/r63_run_10_11.log` is a run log, **not** an AC certificate.
+- Not re-derived by the coordinator: the correctness of each twisted-trace exclusion; these rest on research-th03's method, whose core the referee research-th19 verified.
+- Status, stated plainly: no two-move exit P₃ → (c, k′) → (primitive or BS(1,2)-type relator, k′) exists with |k′| ≤ 9 (all decided), and with |k′| = 10, 11 all but five intermediate relators are decided negatively; the five undecided ones (XYxyyxxYXy at length 10; XXyXYYxxxyy, XXyyxYYYxyy, XYYxYxyyyXy, XYYYxyXyxyy at length 11) are listed in the note. The k₃-frozen side beyond TH03's |c′| ≤ 8 was not attempted. A bounded census is not an obstruction.
