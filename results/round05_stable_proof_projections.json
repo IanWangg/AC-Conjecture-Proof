@@ -1,0 +1,457 @@
+{
+  "total_prefix_orbits": 2000000,
+  "no_z_pivot_prefix_orbits": 21597,
+  "literal_charts": 44396,
+  "intrinsic_charts": 5854,
+  "signed_projection_orbits": 9969,
+  "primitive_projection_examples": [],
+  "input_tsv_sha256": "0552219c8af2382d588584dcdb4e8d0a310fcf453982b9c433eaabceae6e5daa",
+  "catalogue_hits": {
+    "26": 2569,
+    "27": 3450
+  },
+  "projection_energy_histogram": {
+    "13": 1,
+    "15": 16,
+    "16": 13,
+    "17": 51,
+    "18": 43,
+    "19": 160,
+    "20": 49,
+    "21": 323,
+    "22": 151,
+    "23": 484,
+    "24": 287,
+    "25": 658,
+    "26": 337,
+    "27": 881,
+    "28": 403,
+    "29": 823,
+    "30": 386,
+    "31": 681,
+    "32": 293,
+    "33": 512,
+    "34": 331,
+    "35": 463,
+    "36": 305,
+    "37": 339,
+    "38": 231,
+    "39": 228,
+    "40": 145,
+    "41": 138,
+    "42": 126,
+    "43": 130,
+    "44": 92,
+    "45": 96,
+    "46": 75,
+    "47": 98,
+    "48": 51,
+    "49": 79,
+    "50": 41,
+    "51": 47,
+    "52": 43,
+    "53": 38,
+    "54": 17,
+    "55": 20,
+    "56": 20,
+    "57": 16,
+    "58": 9,
+    "59": 14,
+    "60": 7,
+    "61": 13,
+    "62": 7,
+    "63": 25,
+    "64": 8,
+    "65": 6,
+    "66": 2,
+    "67": 5,
+    "68": 2,
+    "69": 11,
+    "70": 2,
+    "71": 8,
+    "72": 4,
+    "73": 17,
+    "74": 2,
+    "75": 8,
+    "76": 1,
+    "77": 7,
+    "78": 6,
+    "79": 7,
+    "83": 5,
+    "84": 9,
+    "85": 5,
+    "89": 8,
+    "90": 2,
+    "91": 5,
+    "94": 1,
+    "95": 5,
+    "97": 2,
+    "98": 3,
+    "99": 2,
+    "101": 2,
+    "102": 2,
+    "104": 11,
+    "108": 1,
+    "109": 1,
+    "120": 1,
+    "126": 1,
+    "127": 1,
+    "128": 2,
+    "133": 2,
+    "135": 1,
+    "137": 2,
+    "143": 1,
+    "148": 1,
+    "172": 1
+  },
+  "unmatched_energy_histogram": {
+    "22": 1,
+    "25": 1,
+    "27": 2,
+    "28": 403,
+    "29": 823,
+    "30": 386,
+    "31": 681,
+    "32": 293,
+    "33": 512,
+    "34": 331,
+    "35": 463,
+    "36": 305,
+    "37": 339,
+    "38": 231,
+    "39": 228,
+    "40": 145,
+    "41": 138,
+    "42": 126,
+    "43": 130,
+    "44": 92,
+    "45": 96,
+    "46": 75,
+    "47": 98,
+    "48": 51,
+    "49": 79,
+    "50": 41,
+    "51": 47,
+    "52": 43,
+    "53": 38,
+    "54": 17,
+    "55": 20,
+    "56": 20,
+    "57": 16,
+    "58": 9,
+    "59": 14,
+    "60": 7,
+    "61": 13,
+    "62": 7,
+    "63": 25,
+    "64": 8,
+    "65": 6,
+    "66": 2,
+    "67": 5,
+    "68": 2,
+    "69": 11,
+    "70": 2,
+    "71": 8,
+    "72": 4,
+    "73": 17,
+    "74": 2,
+    "75": 8,
+    "76": 1,
+    "77": 7,
+    "78": 6,
+    "79": 7,
+    "83": 5,
+    "84": 9,
+    "85": 5,
+    "89": 8,
+    "90": 2,
+    "91": 5,
+    "94": 1,
+    "95": 5,
+    "97": 2,
+    "98": 3,
+    "99": 2,
+    "101": 2,
+    "102": 2,
+    "104": 11,
+    "108": 1,
+    "109": 1,
+    "120": 1,
+    "126": 1,
+    "127": 1,
+    "128": 2,
+    "133": 2,
+    "135": 1,
+    "137": 2,
+    "143": 1,
+    "148": 1,
+    "172": 1
+  },
+  "shortest_unmatched_examples": [
+    {
+      "rank_three_rows": [
+        "XXYZyzxYZ",
+        "XYZYzy",
+        "XZxYxzy"
+      ],
+      "projected_pair": [
+        "XXyxYxyXYxyXYxY",
+        "XXyyxYY"
+      ],
+      "chart": "intrinsic",
+      "original_pivot": "XZxYxzy",
+      "eliminated": "y",
+      "pivot": "Y",
+      "whitehead_descent": [
+        {
+          "multiplier": "X",
+          "cut": "XY",
+          "result": [
+            "XyzYZ"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "XYZz",
+          "result": [
+            "XzYZ"
+          ]
+        },
+        {
+          "multiplier": "Z",
+          "cut": "YZy",
+          "result": [
+            "XY"
+          ]
+        },
+        {
+          "multiplier": "X",
+          "cut": "XZy",
+          "result": [
+            "Y"
+          ]
+        }
+      ]
+    },
+    {
+      "rank_three_rows": [
+        "XYxYXy",
+        "XYxZyZY",
+        "XYzxZyZ"
+      ],
+      "projected_pair": [
+        "XXYxyyxYYXyxYxyy",
+        "XYXYxyxyy"
+      ],
+      "chart": "intrinsic",
+      "original_pivot": "XYzxZyZ",
+      "eliminated": "z",
+      "pivot": "Z",
+      "whitehead_descent": [
+        {
+          "multiplier": "Z",
+          "cut": "XYZx",
+          "result": [
+            "XYxyZ"
+          ]
+        },
+        {
+          "multiplier": "X",
+          "cut": "Xyz",
+          "result": [
+            "XyzY"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "YZz",
+          "result": [
+            "Xz"
+          ]
+        },
+        {
+          "multiplier": "X",
+          "cut": "XYZ",
+          "result": [
+            "Z"
+          ]
+        }
+      ]
+    },
+    {
+      "rank_three_rows": [
+        "XXXXYzxzXXY",
+        "XZXzxz",
+        "XzYZ"
+      ],
+      "projected_pair": [
+        "XXXyxyyxy",
+        "XYXYxyxyXyxyXyXyxy"
+      ],
+      "chart": "intrinsic",
+      "original_pivot": "XXXXYzxzXXY",
+      "eliminated": "y",
+      "pivot": "Y",
+      "whitehead_descent": [
+        {
+          "multiplier": "X",
+          "cut": "XZyz",
+          "result": [
+            "XXXYzxzXY"
+          ]
+        },
+        {
+          "multiplier": "X",
+          "cut": "XZyz",
+          "result": [
+            "XXYzxzY"
+          ]
+        },
+        {
+          "multiplier": "X",
+          "cut": "Xyz",
+          "result": [
+            "XYzzY"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "YZx",
+          "result": [
+            "Xzyz"
+          ]
+        },
+        {
+          "multiplier": "Z",
+          "cut": "XZy",
+          "result": [
+            "Xy"
+          ]
+        },
+        {
+          "multiplier": "X",
+          "cut": "XY",
+          "result": [
+            "Y"
+          ]
+        }
+      ]
+    },
+    {
+      "rank_three_rows": [
+        "XyXzYZY",
+        "XyzYZ",
+        "XzyZYYZxY"
+      ],
+      "projected_pair": [
+        "XXYxyXXYxyyxY",
+        "XXYxyyXYXYxyXY"
+      ],
+      "chart": "intrinsic",
+      "original_pivot": "XzyZYYZxY",
+      "eliminated": "z",
+      "pivot": "Z",
+      "whitehead_descent": [
+        {
+          "multiplier": "Z",
+          "cut": "XYZy",
+          "result": [
+            "XyZYYxY"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "XYZz",
+          "result": [
+            "XZYxY"
+          ]
+        },
+        {
+          "multiplier": "X",
+          "cut": "XYyz",
+          "result": [
+            "Xyzy"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "XYz",
+          "result": [
+            "Xz"
+          ]
+        },
+        {
+          "multiplier": "X",
+          "cut": "XYZ",
+          "result": [
+            "Z"
+          ]
+        }
+      ]
+    },
+    {
+      "rank_three_rows": [
+        "XXXXYZZ",
+        "XXXXZZZ",
+        "XyXzYZxY"
+      ],
+      "projected_pair": [
+        "XXXXXYXXXXYxxxxxyyxYY",
+        "XXXXYYY"
+      ],
+      "chart": "literal",
+      "eliminated": "y",
+      "pivot": "XXXXYZZ"
+    },
+    {
+      "rank_three_rows": [
+        "XXXXZYZ",
+        "XXXXZZZ",
+        "XyXzYZxY"
+      ],
+      "projected_pair": [
+        "XXXXXYYxyxxxxyxYXXXXY",
+        "XXXXYYY"
+      ],
+      "chart": "literal",
+      "eliminated": "y",
+      "pivot": "XXXXZYZ"
+    },
+    {
+      "rank_three_rows": [
+        "XXXXYZZ",
+        "XXXXyZYZZ",
+        "XZxYXz"
+      ],
+      "projected_pair": [
+        "XXXXXyXYxYXyxYxYY",
+        "XXXXXyxYxYY"
+      ],
+      "chart": "literal",
+      "eliminated": "y",
+      "pivot": "XZxYXz"
+    },
+    {
+      "rank_three_rows": [
+        "XXXXYZZ",
+        "XXXXYZZYz",
+        "XZxZXy"
+      ],
+      "projected_pair": [
+        "XXXXXYxYXYY",
+        "XXXXXYxYXYYXYxYXy"
+      ],
+      "chart": "literal",
+      "eliminated": "y",
+      "pivot": "XZxZXy"
+    }
+  ],
+  "known_trivial_reverse_hits": [],
+  "geometry_screen": {
+    "minimal_rank_two_signed_orbits": 9113,
+    "classifications": {
+      "parity_obstructed": 9113
+    },
+    "remaining": []
+  }
+}

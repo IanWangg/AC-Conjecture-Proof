@@ -1,0 +1,583 @@
+{
+  "rotation": {
+    "native": {
+      "by_middle_gap_length": [
+        {
+          "length": 0,
+          "first_sources": 42,
+          "certified_first_sources": 42,
+          "middle_overgroups": 2314,
+          "certified_middle_overgroups": 2314,
+          "final_graphs": 397560,
+          "DAG_excluded": 397560,
+          "exact_excluded": 0,
+          "exact_pair_states": 0,
+          "primitive_positives": 0,
+          "incomplete": 0
+        },
+        {
+          "length": 1,
+          "first_sources": 42,
+          "certified_first_sources": 42,
+          "middle_overgroups": 2096,
+          "certified_middle_overgroups": 2096,
+          "final_graphs": 481676,
+          "DAG_excluded": 481676,
+          "exact_excluded": 0,
+          "exact_pair_states": 0,
+          "primitive_positives": 0,
+          "incomplete": 0
+        },
+        {
+          "length": 2,
+          "first_sources": 42,
+          "certified_first_sources": 42,
+          "middle_overgroups": 6160,
+          "certified_middle_overgroups": 6160,
+          "final_graphs": 1550436,
+          "DAG_excluded": 1550436,
+          "exact_excluded": 0,
+          "exact_pair_states": 0,
+          "primitive_positives": 0,
+          "incomplete": 0
+        },
+        {
+          "length": 3,
+          "first_sources": 42,
+          "certified_first_sources": 42,
+          "middle_overgroups": 18608,
+          "certified_middle_overgroups": 18608,
+          "final_graphs": 5109276,
+          "DAG_excluded": 5109276,
+          "exact_excluded": 0,
+          "exact_pair_states": 0,
+          "primitive_positives": 0,
+          "incomplete": 0
+        },
+        {
+          "length": 4,
+          "first_sources": 42,
+          "certified_first_sources": 42,
+          "middle_overgroups": 55696,
+          "certified_middle_overgroups": 55696,
+          "final_graphs": 16622836,
+          "DAG_excluded": 16622836,
+          "exact_excluded": 0,
+          "exact_pair_states": 0,
+          "primitive_positives": 0,
+          "incomplete": 0
+        }
+      ]
+    },
+    "independent": {
+      "sampled_middle_overgroups": 45,
+      "independent_last_join_refolds": 450,
+      "independent_exact_closed_map_states": 9764
+    }
+  },
+  "short": {
+    "native": {
+      "by_middle_gap_length": [
+        {
+          "length": 0,
+          "first_sources": 42,
+          "certified_first_sources": 42,
+          "middle_overgroups": 3318,
+          "certified_middle_overgroups": 3318,
+          "final_graphs": 855282,
+          "DAG_excluded": 855282,
+          "exact_excluded": 0,
+          "exact_pair_states": 0,
+          "primitive_positives": 0,
+          "incomplete": 0
+        },
+        {
+          "length": 1,
+          "first_sources": 42,
+          "certified_first_sources": 42,
+          "middle_overgroups": 3060,
+          "certified_middle_overgroups": 3060,
+          "final_graphs": 997560,
+          "DAG_excluded": 997560,
+          "exact_excluded": 0,
+          "exact_pair_states": 0,
+          "primitive_positives": 0,
+          "incomplete": 0
+        },
+        {
+          "length": 2,
+          "first_sources": 42,
+          "certified_first_sources": 42,
+          "middle_overgroups": 9036,
+          "certified_middle_overgroups": 9036,
+          "final_graphs": 3180672,
+          "DAG_excluded": 3180672,
+          "exact_excluded": 0,
+          "exact_pair_states": 0,
+          "primitive_positives": 0,
+          "incomplete": 0
+        },
+        {
+          "length": 3,
+          "first_sources": 42,
+          "certified_first_sources": 42,
+          "middle_overgroups": 27252,
+          "certified_middle_overgroups": 27252,
+          "final_graphs": 10328508,
+          "DAG_excluded": 10328508,
+          "exact_excluded": 0,
+          "exact_pair_states": 0,
+          "primitive_positives": 0,
+          "incomplete": 0
+        },
+        {
+          "length": 4,
+          "first_sources": 42,
+          "certified_first_sources": 42,
+          "middle_overgroups": 81612,
+          "certified_middle_overgroups": 81612,
+          "final_graphs": 33216084,
+          "DAG_excluded": 33216084,
+          "exact_excluded": 0,
+          "exact_pair_states": 0,
+          "primitive_positives": 0,
+          "incomplete": 0
+        }
+      ]
+    },
+    "independent": {
+      "sampled_middle_overgroups": 45,
+      "independent_last_join_refolds": 450,
+      "independent_exact_closed_map_states": 9548
+    }
+  },
+  "four": {
+    "native": {
+      "by_middle_gap_length": [
+        {
+          "length": 0,
+          "first_sources": 1,
+          "certified_first_sources": 1,
+          "middle_overgroups": 352,
+          "certified_middle_overgroups": 352,
+          "final_graphs": 428640,
+          "DAG_excluded": 428640,
+          "exact_excluded": 0,
+          "exact_pair_states": 0,
+          "primitive_positives": 0,
+          "incomplete": 0
+        },
+        {
+          "length": 1,
+          "first_sources": 1,
+          "certified_first_sources": 1,
+          "middle_overgroups": 296,
+          "certified_middle_overgroups": 296,
+          "final_graphs": 423872,
+          "DAG_excluded": 423872,
+          "exact_excluded": 0,
+          "exact_pair_states": 0,
+          "primitive_positives": 0,
+          "incomplete": 0
+        },
+        {
+          "length": 2,
+          "first_sources": 1,
+          "certified_first_sources": 1,
+          "middle_overgroups": 856,
+          "certified_middle_overgroups": 856,
+          "final_graphs": 1272016,
+          "DAG_excluded": 1272016,
+          "exact_excluded": 0,
+          "exact_pair_states": 0,
+          "primitive_positives": 0,
+          "incomplete": 0
+        },
+        {
+          "length": 3,
+          "first_sources": 1,
+          "certified_first_sources": 1,
+          "middle_overgroups": 2600,
+          "certified_middle_overgroups": 2600,
+          "final_graphs": 4006600,
+          "DAG_excluded": 4006600,
+          "exact_excluded": 0,
+          "exact_pair_states": 0,
+          "primitive_positives": 0,
+          "incomplete": 0
+        },
+        {
+          "length": 4,
+          "first_sources": 1,
+          "certified_first_sources": 1,
+          "middle_overgroups": 7768,
+          "certified_middle_overgroups": 7768,
+          "final_graphs": 12405496,
+          "DAG_excluded": 12405496,
+          "exact_excluded": 0,
+          "exact_pair_states": 0,
+          "primitive_positives": 0,
+          "incomplete": 0
+        }
+      ]
+    },
+    "independent": {
+      "sampled_middle_overgroups": 15,
+      "independent_last_join_refolds": 150,
+      "independent_exact_closed_map_states": 5562
+    }
+  },
+  "five": {
+    "native": {
+      "by_middle_gap_length": [
+        {
+          "length": 0,
+          "first_sources": 1,
+          "certified_first_sources": 1,
+          "middle_overgroups": 529,
+          "certified_middle_overgroups": 529,
+          "final_graphs": 992257,
+          "DAG_excluded": 992257,
+          "exact_excluded": 0,
+          "exact_pair_states": 0,
+          "primitive_positives": 0,
+          "incomplete": 0
+        },
+        {
+          "length": 1,
+          "first_sources": 1,
+          "certified_first_sources": 1,
+          "middle_overgroups": 425,
+          "certified_middle_overgroups": 425,
+          "final_graphs": 912050,
+          "DAG_excluded": 912050,
+          "exact_excluded": 0,
+          "exact_pair_states": 0,
+          "primitive_positives": 0,
+          "incomplete": 0
+        },
+        {
+          "length": 2,
+          "first_sources": 1,
+          "certified_first_sources": 1,
+          "middle_overgroups": 1257,
+          "certified_middle_overgroups": 1257,
+          "final_graphs": 2780484,
+          "DAG_excluded": 2780484,
+          "exact_excluded": 0,
+          "exact_pair_states": 0,
+          "primitive_positives": 0,
+          "incomplete": 0
+        }
+      ]
+    },
+    "independent": {
+      "sampled_middle_overgroups": 9,
+      "independent_last_join_refolds": 90,
+      "independent_exact_closed_map_states": 3216
+    }
+  },
+  "ak2_barbell": {
+    "native": {
+      "by_middle_gap_length": [
+        {
+          "length": 0,
+          "first_sources": 1,
+          "certified_first_sources": 0,
+          "middle_overgroups": 56,
+          "certified_middle_overgroups": 49,
+          "final_graphs": 9804,
+          "DAG_excluded": 9690,
+          "exact_excluded": 0,
+          "exact_pair_states": 5264,
+          "primitive_positives": 114,
+          "incomplete": 0
+        },
+        {
+          "length": 1,
+          "first_sources": 1,
+          "certified_first_sources": 0,
+          "middle_overgroups": 52,
+          "certified_middle_overgroups": 50,
+          "final_graphs": 12064,
+          "DAG_excluded": 12036,
+          "exact_excluded": 0,
+          "exact_pair_states": 1232,
+          "primitive_positives": 28,
+          "incomplete": 0
+        },
+        {
+          "length": 2,
+          "first_sources": 1,
+          "certified_first_sources": 1,
+          "middle_overgroups": 148,
+          "certified_middle_overgroups": 148,
+          "final_graphs": 37592,
+          "DAG_excluded": 37592,
+          "exact_excluded": 0,
+          "exact_pair_states": 0,
+          "primitive_positives": 0,
+          "incomplete": 0
+        }
+      ]
+    },
+    "independent": {
+      "prior_two_copy_audit": {
+        "checked_joins": 55,
+        "dag_exclusions": 55,
+        "closed_map_states": 5236,
+        "primitive_joins": []
+      },
+      "first_positive_outer_join": {
+        "root": [
+          "xYYYx",
+          "yxYXYx",
+          "y"
+        ],
+        "middle": [
+          0,
+          5,
+          ""
+        ],
+        "last": [
+          0,
+          3
+        ],
+        "status": "PRIMITIVE",
+        "primitive": "xYxYYxYY",
+        "program": "RLRL",
+        "alphabet": "xY",
+        "component": 1,
+        "based_word": "YxYYxYYx",
+        "loop_vertex": 2
+      }
+    }
+  },
+  "literal_zero_gap_iteration": {
+    "native": {
+      "source_vertices": 10,
+      "stages": [
+        {
+          "conjugation_phases": 0,
+          "graphs": 1,
+          "DAG_excluded": 1,
+          "exact_excluded": 0,
+          "primitive_positives": 0,
+          "incomplete": 0
+        },
+        {
+          "conjugation_phases": 1,
+          "graphs": 46,
+          "DAG_excluded": 46,
+          "exact_excluded": 0,
+          "primitive_positives": 0,
+          "incomplete": 0
+        },
+        {
+          "conjugation_phases": 2,
+          "graphs": 6301,
+          "DAG_excluded": 6301,
+          "exact_excluded": 0,
+          "primitive_positives": 0,
+          "incomplete": 0
+        },
+        {
+          "conjugation_phases": 3,
+          "graphs": 2804905,
+          "DAG_excluded": 2761897,
+          "exact_excluded": 5860,
+          "primitive_positives": 37148,
+          "incomplete": 0
+        }
+      ]
+    },
+    "independent": {
+      "counts": [
+        1,
+        46,
+        6301,
+        2804905
+      ],
+      "formations": [
+        {
+          "source_vertices": 10,
+          "source_rank": 2,
+          "tree_path_to_first_vertex": "",
+          "tree_path_to_second_vertex": "x"
+        },
+        {
+          "source_vertices": 15,
+          "source_rank": 4,
+          "tree_path_to_first_vertex": "",
+          "tree_path_to_second_vertex": "x"
+        },
+        {
+          "source_vertices": 20,
+          "source_rank": 6,
+          "tree_path_to_first_vertex": "",
+          "tree_path_to_second_vertex": "XXyx"
+        }
+      ],
+      "witness": {
+        "path": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            19
+          ]
+        ],
+        "status": "PRIMITIVE",
+        "primitive": "x",
+        "based_word": "x",
+        "graph": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "long_middle_bridges": {
+    "first_barbell": [
+      "YYYYxxx",
+      "xyxYXY",
+      "x"
+    ],
+    "samples": [
+      {
+        "parameter": 0,
+        "length": 4,
+        "residual": "YY"
+      },
+      {
+        "parameter": 1,
+        "length": 19,
+        "residual": "YY"
+      },
+      {
+        "parameter": 4,
+        "length": 64,
+        "residual": "YY"
+      },
+      {
+        "parameter": 20,
+        "length": 304,
+        "residual": "YY"
+      }
+    ]
+  },
+  "outside_four_lobe_language": {
+    "lobes": [
+      "xxxYYYY",
+      "XXXyyyy",
+      "XXyyyyX",
+      "xyxYXY",
+      "YXYxyx"
+    ],
+    "connectors": "XyyX",
+    "bridge": "XXXXyyyyyXXyyyyXyxyxYXYX",
+    "bridge_length": 24,
+    "older_four_lobe_cores": 7200,
+    "older_start_vertices_checked": 187848,
+    "older_full_readings": 0,
+    "older_one_letter_shorter_prefix_readings": 16,
+    "legal_endpoint_paths_by_length": [
+      {
+        "length": 4,
+        "legal_paths": 1,
+        "unreadable_paths": 0
+      },
+      {
+        "length": 10,
+        "legal_paths": 2,
+        "unreadable_paths": 0
+      },
+      {
+        "length": 11,
+        "legal_paths": 4,
+        "unreadable_paths": 0
+      },
+      {
+        "length": 16,
+        "legal_paths": 2,
+        "unreadable_paths": 0
+      },
+      {
+        "length": 17,
+        "legal_paths": 8,
+        "unreadable_paths": 4
+      },
+      {
+        "length": 18,
+        "legal_paths": 12,
+        "unreadable_paths": 0
+      },
+      {
+        "length": 19,
+        "legal_paths": 4,
+        "unreadable_paths": 0
+      },
+      {
+        "length": 20,
+        "legal_paths": 8,
+        "unreadable_paths": 0
+      },
+      {
+        "length": 21,
+        "legal_paths": 8,
+        "unreadable_paths": 4
+      },
+      {
+        "length": 22,
+        "legal_paths": 6,
+        "unreadable_paths": 0
+      },
+      {
+        "length": 23,
+        "legal_paths": 16,
+        "unreadable_paths": 12
+      },
+      {
+        "length": 24,
+        "legal_paths": 32,
+        "unreadable_paths": 12
+      }
+    ],
+    "shortest_escape_bridges_in_this_chart": [
+      "XXXXyyyyyyxyxYXYX",
+      "XXXXyyyyyyyxyXYXX",
+      "XYYYYxxxyyxyxYXYX",
+      "XYYYYxxxyyyxyXYXX"
+    ],
+    "strict_AK3_entries": [
+      {
+        "bridge": "XXXXyyyyyyxyxYXYX",
+        "conjugator": "XXXXyyyyyyxyxYXYXXYX",
+        "strict_moves": 20,
+        "endpoint": [
+          "xxxYYYY",
+          "XXXXyyyyyyxyxYXYXYXYxyxxyxyXYXYYYYYYxxxx"
+        ]
+      },
+      {
+        "bridge": "XXXXyyyyyXXyyyyXyxyxYXYX",
+        "conjugator": "XXXXyyyyyXXyyyyXyxyxYXYXXYX",
+        "strict_moves": 27,
+        "endpoint": [
+          "xxxYYYY",
+          "XXXXyyyyyXXyyyyXyxyxYXYXYXYxyxxyxyXYXYxYYYYxxYYYYYxxxx"
+        ]
+      }
+    ],
+    "equal_length_extended_samples": 16,
+    "extended_sample_length": 94
+  }
+}

@@ -1,0 +1,718 @@
+{
+  "status": "CHECKED_BOUNDED_SEARCHES",
+  "ordinary_AC_goal_solved": false,
+  "minimum_required_cyclic_peak": 29,
+  "input_sha256": {
+    "cap26_tsv": "3bce0c9dbd0791990a97230f451f1f068d4d648f8bcf58d156a1861785ea1893",
+    "cap27_tsv": "1e8303ee458e76003b071dac5b1b8ebbf933c4839ffba5e1341fc12968c3f1aa",
+    "reverse56_tsv": "c9dd0627965a6f1ffa899c4a465b95a788d739eedd49089d9b6c5681980ba2c4"
+  },
+  "cap27_reverse_basis_index": {
+    "status": "NO_SUBGROUP_JOIN",
+    "forward_pairs": 37344580,
+    "forward_distinct_words": 32187372,
+    "forward_cap": 27,
+    "forward_minimum_coordinate": 5,
+    "reverse_pairs": 23902,
+    "reverse_rotation_pairs": 6230442,
+    "reverse_distinct_rotated_cores": 2675055,
+    "reverse_geodesic_bridges": 741714,
+    "primitive_slopes_constructed": 7007230,
+    "coordinates_found_in_forward_catalogue": 2943619,
+    "basis_pair_lookups": 784087,
+    "core_topologies": {
+      "barbell": 747798,
+      "rose": 861364,
+      "theta": 1807607
+    }
+  },
+  "cap28_reverse_basis_index": {
+    "status": "NO_SUBGROUP_JOIN",
+    "forward_pairs": 69541172,
+    "forward_distinct_words": 60596424,
+    "forward_cap": 28,
+    "forward_minimum_coordinate": 5,
+    "reverse_pairs": 23902,
+    "reverse_rotation_pairs": 6230442,
+    "reverse_distinct_rotated_cores": 2675055,
+    "reverse_geodesic_bridges": 1065680,
+    "primitive_slopes_constructed": 9159201,
+    "coordinates_found_in_forward_catalogue": 3656993,
+    "basis_pair_lookups": 1093967,
+    "core_topologies": {
+      "barbell": 1071764,
+      "rose": 861364,
+      "theta": 1807607
+    }
+  },
+  "cap27_escape_catalogue": {
+    "minimum_escape_energy": 16,
+    "all_escapes": {
+      "16": 8,
+      "17": 184,
+      "18": 48,
+      "19": 1000,
+      "20": 392,
+      "21": 6584,
+      "22": 3192,
+      "23": 40928,
+      "24": 18672,
+      "25": 271952,
+      "26": 156752,
+      "27": 26503872
+    },
+    "sample_rows": 1336,
+    "lowest_sha256": "3488bd42d704ce5168df8f8d6dad4f24faa6ff8888b047bf14635412dc59dccf",
+    "sample_sha256": "a04213416bd467cfe3f196aa69bb960a24cc25ec14a9b8ca2895392ab36a4010"
+  },
+  "cap27_shortest_escape": {
+    "cyclic_cap": 27,
+    "target_count": 8,
+    "minimum_macro_distance": 40,
+    "disjoint_ball_radii": [
+      7,
+      32
+    ],
+    "states_discovered": [
+      1469728,
+      1332860
+    ],
+    "products_checked": 1668076113,
+    "route": [
+      [
+        "XXXyyyy",
+        "XYXyxy"
+      ],
+      [
+        "XYXYxyXyyyy",
+        "XYXyxy"
+      ],
+      [
+        "XYXYYxyyyyy",
+        "XYXyxy"
+      ],
+      [
+        "XYXYYxyyyyy",
+        "XYYYxyyyy"
+      ],
+      [
+        "XYYYxyyyy",
+        "XYYxyXyy"
+      ],
+      [
+        "XYYXyxy",
+        "XYYxyXyy"
+      ],
+      [
+        "XXyxYxY",
+        "XYYXyxy"
+      ],
+      [
+        "XXYXyxxY",
+        "XXyxYxY"
+      ],
+      [
+        "XXXyXYxyxxY",
+        "XXYXyxxY"
+      ],
+      [
+        "XXXyXYxyxxY",
+        "XXXyxYY"
+      ],
+      [
+        "XXXYXXyxxY",
+        "XXXyxYY"
+      ],
+      [
+        "XXXYxyyxY",
+        "XXXyxYY"
+      ],
+      [
+        "XXXYXyxxxY",
+        "XXXYxyyxY"
+      ],
+      [
+        "XXXYXyxxxY",
+        "XXYxxyy"
+      ],
+      [
+        "XXXYXyxYxxy",
+        "XXXYXyxxxY"
+      ],
+      [
+        "XXXYXyxYxxy",
+        "XXyxYXY"
+      ],
+      [
+        "XXXXYXyxxY",
+        "XXyxYXY"
+      ],
+      [
+        "XXXXYXyxxY",
+        "XXXyXYxyxxY"
+      ],
+      [
+        "XXXyXYxyxxY",
+        "XXXyxYXXY"
+      ],
+      [
+        "XXXXXYXXyxxY",
+        "XXXyxYXXY"
+      ],
+      [
+        "XXXXXYxyxxyxY",
+        "XXXyxYXXY"
+      ],
+      [
+        "XXXXXYXyxxxY",
+        "XXXXXYxyxxyxY"
+      ],
+      [
+        "XXXXXYXyxxxY",
+        "XXYXXyxxY"
+      ],
+      [
+        "XXXXXYXyxxxY",
+        "XXXYXyxYxxy"
+      ],
+      [
+        "XXXYXXyxY",
+        "XXXYXyxYxxy"
+      ],
+      [
+        "XXXXXXYXyxxY",
+        "XXXYXyxYxxy"
+      ],
+      [
+        "XXXXXXYXyxxY",
+        "XXXXYXyXYXyxY"
+      ],
+      [
+        "XXXXYXyXYXyxY",
+        "XXYXyxYxyxYxy"
+      ],
+      [
+        "XXXXXYXyxYXyXY",
+        "XXXXYXyXYXyxY"
+      ],
+      [
+        "XXXXYXyXYXyxY",
+        "XXXXYxyxxxyXY"
+      ],
+      [
+        "XXXXXYxyXYXyXY",
+        "XXXXYxyxxxyXY"
+      ],
+      [
+        "XXXXYXyXYxyXY",
+        "XXXXYxyxxxyXY"
+      ],
+      [
+        "XXXXYxyxxxyXY",
+        "XXYXXyXY"
+      ],
+      [
+        "XXXXXYXyxxY",
+        "XXXXYxyxxxyXY"
+      ],
+      [
+        "XXXXXYXyxxY",
+        "XXXYXyXYXyxxxY"
+      ],
+      [
+        "XXXXXYXyxxY",
+        "XXYXyXYxyxYxy"
+      ],
+      [
+        "XXXXXYXyxxY",
+        "XXXXYXXyXYxyxY"
+      ],
+      [
+        "XXXXYXXyXYxyxY",
+        "XXyXYxyXYxyxY"
+      ],
+      [
+        "XXXyxYXXY",
+        "XXyXYxyXYxyxY"
+      ],
+      [
+        "XXXyxYXXY",
+        "XXyXYXYXXyxY"
+      ],
+      [
+        "XXXyxYXXY",
+        "XYXYxyy"
+      ]
+    ],
+    "certificate_sha256": "7a100b064a302699d9809c9b6c7bb28d955bedbf3dc350f48ea24b6a94258dd6",
+    "strict_moves": 451,
+    "raw_peak": 39,
+    "cyclic_peak": 27,
+    "endpoint": [
+      "XXXyxYXXY",
+      "XYXYxyy"
+    ],
+    "orbit_partition": {
+      "rows": 8,
+      "signed_permutation_orbits": 1,
+      "multiplicities": {
+        "8": 1
+      },
+      "sha256": "3488bd42d704ce5168df8f8d6dad4f24faa6ff8888b047bf14635412dc59dccf"
+    }
+  },
+  "cap27_shortest_escape_orbit_control": {
+    "minimum_macro_distance": 40,
+    "disjoint_ball_radii": [
+      7,
+      32
+    ],
+    "products_checked": 431565840,
+    "strict_moves": 626,
+    "cyclic_peak": 27
+  },
+  "cap27_escape_intersecting_axis_first_phase": {
+    "rotations_enabled": true,
+    "source_pairs": 8,
+    "rotation_pairs": 504,
+    "unbased_cores": 264,
+    "own_tests": 264,
+    "distinct_vertex_joins": 24464,
+    "DAG_absent": 24728,
+    "exact_absent": 0,
+    "exact_map_pair_states": 0,
+    "positive": 0,
+    "incomplete": 0
+  },
+  "cap27_escape_disjoint_axis_first_phase": {
+    "left": "XXXYXXYxy",
+    "right": "XYXyyxY",
+    "lengths": {
+      "1": {
+        "admissible": 60,
+        "distinct_cores": 60,
+        "joins": 7200,
+        "dag_absent": 7260,
+        "exact_absent": 0,
+        "map_states": 0,
+        "positive": 0,
+        "incomplete": 0
+      },
+      "2": {
+        "admissible": 192,
+        "distinct_cores": 192,
+        "joins": 26112,
+        "dag_absent": 26304,
+        "exact_absent": 0,
+        "map_states": 0,
+        "positive": 0,
+        "incomplete": 0
+      },
+      "3": {
+        "admissible": 564,
+        "distinct_cores": 564,
+        "joins": 86292,
+        "dag_absent": 86856,
+        "exact_absent": 0,
+        "map_states": 0,
+        "positive": 0,
+        "incomplete": 0
+      },
+      "4": {
+        "admissible": 1704,
+        "distinct_cores": 1704,
+        "joins": 291384,
+        "dag_absent": 293088,
+        "exact_absent": 0,
+        "map_states": 0,
+        "positive": 0,
+        "incomplete": 0
+      },
+      "5": {
+        "admissible": 5100,
+        "distinct_cores": 5100,
+        "joins": 969000,
+        "dag_absent": 974100,
+        "exact_absent": 0,
+        "map_states": 0,
+        "positive": 0,
+        "incomplete": 0
+      },
+      "6": {
+        "admissible": 15312,
+        "distinct_cores": 15312,
+        "joins": 3215520,
+        "dag_absent": 3230832,
+        "exact_absent": 0,
+        "map_states": 0,
+        "positive": 0,
+        "incomplete": 0
+      },
+      "7": {
+        "admissible": 45924,
+        "distinct_cores": 45924,
+        "joins": 10608444,
+        "dag_absent": 10654368,
+        "exact_absent": 0,
+        "map_states": 0,
+        "positive": 0,
+        "incomplete": 0
+      },
+      "8": {
+        "admissible": 137784,
+        "distinct_cores": 137784,
+        "joins": 34859352,
+        "dag_absent": 34997136,
+        "exact_absent": 0,
+        "map_states": 0,
+        "positive": 0,
+        "incomplete": 0
+      }
+    }
+  },
+  "cap28_short_escape_catalogue_through_energy_16": {
+    "minimum_escape_energy": 16,
+    "all_escapes": {
+      "16": 8
+    },
+    "sample_rows": 8,
+    "lowest_sha256": "9e2de42ec0fc3c00adf24185cb6154214865adfcb92f5f15f5a41c55411ec620",
+    "sample_sha256": "9e2de42ec0fc3c00adf24185cb6154214865adfcb92f5f15f5a41c55411ec620"
+  },
+  "cap28_shortest_escape": {
+    "cyclic_cap": 28,
+    "minimum_macro_distance": 51,
+    "disjoint_ball_radii": [
+      7,
+      43
+    ],
+    "states_discovered": [
+      518896,
+      208199
+    ],
+    "products_checked": 437978816,
+    "orbit_route": [
+      [
+        "xyxYXY",
+        "xxxxYYY"
+      ],
+      [
+        "xyxYXY",
+        "xxxxxyXYXYY"
+      ],
+      [
+        "xyxYXY",
+        "xxxxxyXXYXY"
+      ],
+      [
+        "xxxxyXXXY",
+        "xxxxxyXXYXY"
+      ],
+      [
+        "xxyxYXXy",
+        "xxxxYXXXy"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxyXXXY"
+      ],
+      [
+        "xxxyXyXY",
+        "xxxxyXXXY"
+      ],
+      [
+        "xxyXyXY",
+        "xxxxYXXXy"
+      ],
+      [
+        "xxxyXYXy",
+        "xxxxyXXXY"
+      ],
+      [
+        "xxxyXYY",
+        "xxxxyXXXY"
+      ],
+      [
+        "xxyXYY",
+        "xxxxYXXXy"
+      ],
+      [
+        "xxyXYY",
+        "xxxxYXyXY"
+      ],
+      [
+        "xxxxyXYXy",
+        "xxxyXYxyy"
+      ],
+      [
+        "xxxyXYxyy",
+        "xxxyxYXXXYXYXy"
+      ],
+      [
+        "xxxyxyxyxYXXy",
+        "xxxyxyxYXXXYXy"
+      ],
+      [
+        "xxxyxyxYXXy",
+        "xxxyxYXXXYXYXy"
+      ],
+      [
+        "xxxyxyxYXXy",
+        "xxxyxxyxYXXXYXy"
+      ],
+      [
+        "xxxyXYxyXYXy",
+        "xxxyxYXXXYXXYXy"
+      ],
+      [
+        "xxxyXYxyXYXy",
+        "xxxxyXYXXXYXy"
+      ],
+      [
+        "xxxyXYxyXYXy",
+        "xxxxyXYXyXYxy"
+      ],
+      [
+        "xxxxyxYXyXYXy",
+        "xxxxxyxYXXXXYXy"
+      ],
+      [
+        "xxxyxYXyXYXy",
+        "xxxxxyXYXXXXYxy"
+      ],
+      [
+        "xxxxyXYxyXYXy",
+        "xxxxxyxYXXXXYXy"
+      ],
+      [
+        "xxxxxxyXXYXy",
+        "xxxxxyXYXXXXYxy"
+      ],
+      [
+        "xxxyxxYXy",
+        "xxxxxyxYXXXXYXy"
+      ],
+      [
+        "xxxyxxYXy",
+        "xxxxyxYXyXXYxy"
+      ],
+      [
+        "xxxyxxYXy",
+        "xxYxyxYXyXYXy"
+      ],
+      [
+        "xxxyxxYXy",
+        "xxxxyxYxyXYXXy"
+      ],
+      [
+        "xxyxYXyxYXyXY",
+        "xxxxyxYxyXYXXy"
+      ],
+      [
+        "xxxxxxyxYXXXy",
+        "xxxxyxYxyXYXXy"
+      ],
+      [
+        "xxxxxxyxYXXXy",
+        "xxxxyxxxxyxYXXy"
+      ],
+      [
+        "xxxxyxYXXy",
+        "xxxxyxxxxyXXYxy"
+      ],
+      [
+        "xxxxyxYXXy",
+        "xxxyxxxyXXY"
+      ],
+      [
+        "xxxxyxYXXy",
+        "xxxyxxyxYxy"
+      ],
+      [
+        "xxxyxxyxYxy",
+        "xxxxyxxxyxYxyxy"
+      ],
+      [
+        "xxxyxxyxYxy",
+        "xxxyXYXYxyxy"
+      ],
+      [
+        "xxxyxxyxYxy",
+        "xxxyxYYXyxy"
+      ],
+      [
+        "xxyxyXXy",
+        "xxYXYYYXYXy"
+      ],
+      [
+        "xxyxyXXy",
+        "xxYYXYXyy"
+      ],
+      [
+        "xxyxyXXy",
+        "xxyXXYYXY"
+      ],
+      [
+        "xxyxyXXy",
+        "xxyXyxyyy"
+      ],
+      [
+        "xxxyxYxyy",
+        "xxyyXYYYxyy"
+      ],
+      [
+        "xxxyXXyyXXY",
+        "xxxyXXYxxYXYXY"
+      ],
+      [
+        "xxxyxxyXyXyXy",
+        "xxxYXXyxxyXyXy"
+      ],
+      [
+        "xxxxxyXXXXy",
+        "xxxyxxyXyXyXy"
+      ],
+      [
+        "xxxxxyXXXXy",
+        "xxxxxxyXyXyXyXXY"
+      ],
+      [
+        "xxxxxyXXXXy",
+        "xxxyXyXyXXYxY"
+      ],
+      [
+        "xxxyxyXXYXYXY",
+        "xxxyXXyxyXXYXY"
+      ],
+      [
+        "xxxyXXYxYXY",
+        "xxxyXXyxyXXYXY"
+      ],
+      [
+        "xxxyXyy",
+        "xxxYXXyxyXy"
+      ],
+      [
+        "xxxyXyy",
+        "xxxYXXyXXY"
+      ],
+      [
+        "xxxyXyy",
+        "xxyyxyXXY"
+      ]
+    ],
+    "certificate_sha256": "2021a118c9f4a7ddd35c96c6a782053d6461009497135480c5c26cbac5f56e85",
+    "strict_moves": 675,
+    "raw_peak": 39,
+    "cyclic_peak": 28,
+    "endpoint": [
+      "XXYxxyyxy",
+      "XXXYYxY"
+    ],
+    "orbit_partition": {
+      "rows": 8,
+      "signed_permutation_orbits": 1,
+      "multiplicities": {
+        "8": 1
+      },
+      "sha256": "9e2de42ec0fc3c00adf24185cb6154214865adfcb92f5f15f5a41c55411ec620"
+    }
+  },
+  "cap28_stable_proof_projection_membership": {
+    "literal_input": [
+      "XXyxYxyXYxyXYxY",
+      "XXyyxYY"
+    ],
+    "compact_key": [
+      "xxyXXYY",
+      "xyxYXyxYXyxyXYY"
+    ],
+    "present": false
+  },
+  "cap28_signed_orbit_generation": {
+    "status": "PASS",
+    "cyclic_cap": 28,
+    "signed_permutation_orbits": 8694374,
+    "primitive_coordinate_orbits": 0,
+    "minimum_coordinate": 5,
+    "rotation_product_candidates": 8772461272,
+    "admitted_neighbors": 486305648,
+    "orbit_histogram": {
+      "13": 2,
+      "14": 5,
+      "15": 72,
+      "16": 82,
+      "17": 453,
+      "18": 507,
+      "19": 2645,
+      "20": 2827,
+      "21": 15264,
+      "22": 16097,
+      "23": 89003,
+      "24": 97222,
+      "25": 537979,
+      "26": 610397,
+      "27": 3354167,
+      "28": 3967652
+    }
+  },
+  "cap28_signed_orbit_verification": {
+    "status": "CLOSED_AND_CONNECTED",
+    "cyclic_cap": 28,
+    "signed_permutation_orbits": 8694374,
+    "rotation_product_candidates": 8772461272,
+    "admitted_neighbors": 486305648
+  },
+  "cap28_signed_orbit_primitive_audit": {
+    "rows": 8694374,
+    "single_sign_candidates": 386351,
+    "primitive_coordinates": [],
+    "tsv_sha256": "985d0236c6a26448469b6fb69f96f288772f93f14832172421549b64e07efbe0"
+  },
+  "cap28_literal_expansion": {
+    "input_orbits": 8694374,
+    "expanded_rows": 69541172,
+    "multiplicities": {
+      "4": 3455,
+      "8": 8690919
+    },
+    "tsv_sha256": "a090c4e99a425a849fd35b99a7eb871c12c6927e981e4a9c356a244fa86c7b83"
+  },
+  "cap22_literal_orbit_control": {
+    "status": "SAME_ORBITS",
+    "full_rows": 258032,
+    "quotient_rows": 32363,
+    "full_multiplicities": {
+      "4": 218,
+      "8": 32145
+    }
+  },
+  "cap22_seed_image_control": {
+    "all_seed_images_present": true,
+    "signed_cyclic_seed_images": [
+      [
+        "XXXXYYY",
+        "XYxYXy"
+      ],
+      [
+        "XXXXyyy",
+        "XYXyxy"
+      ],
+      [
+        "XXXYYYY",
+        "XYxYXy"
+      ],
+      [
+        "XXXyyyy",
+        "XYXyxy"
+      ]
+    ]
+  },
+  "cap22_closure_control": {
+    "status": "CLOSED_AND_CONNECTED",
+    "cyclic_cap": 22,
+    "signed_permutation_orbits": 32363,
+    "rotation_product_candidates": 24220040,
+    "admitted_neighbors": 1283644
+  }
+}

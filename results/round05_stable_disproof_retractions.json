@@ -1,0 +1,63 @@
+{
+  "degree_seven_padding_exclusions": [
+    {
+      "degree": 6,
+      "spare_rows": 1,
+      "limit": 11,
+      "distance": null,
+      "last_radius": 11,
+      "visited": [
+        590239,
+        2241421
+      ]
+    },
+    {
+      "degree": 5,
+      "spare_rows": 2,
+      "limit": 9,
+      "distance": null,
+      "last_radius": 9,
+      "visited": [
+        45581,
+        272526
+      ]
+    },
+    {
+      "degree": 4,
+      "spare_rows": 3,
+      "limit": 7,
+      "distance": null,
+      "last_radius": 7,
+      "visited": [
+        2622,
+        20971
+      ]
+    }
+  ],
+  "degree_five_one_identity_control": {
+    "degree": 5,
+    "spare_rows": 1,
+    "limit": 11,
+    "distance": 10,
+    "last_radius": 10,
+    "visited": [
+      36930,
+      180457
+    ]
+  },
+  "stronger_two_identity_exclusion": {
+    "degree": 6,
+    "spare_rows": 2,
+    "limit": 10,
+    "distance": null,
+    "last_radius": 10,
+    "visited": [
+      823413,
+      277049
+    ]
+  },
+  "degree_seven_stable_distance": {
+    "ordered": 14,
+    "unordered": 14
+  }
+}

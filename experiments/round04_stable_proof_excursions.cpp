@@ -273,6 +273,7 @@ int scan(int cap, const std::string& seeds_path, const std::string& output_prefi
 }
 }
 
+#ifndef AC_ROUND04_EXCURSION_LIBRARY
 int main(int argc, char** argv) {
     if (argc != 5 && !(argc == 6 && std::string(argv[5]) == "--signed-symmetries")) {
         std::cerr << "usage: excursions cyclic_cap seeds.tsv output_prefix limit [--signed-symmetries]\n";
@@ -285,3 +286,4 @@ int main(int argc, char** argv) {
         return 1;
     }
 }
+#endif

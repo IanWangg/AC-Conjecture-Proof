@@ -1,0 +1,37 @@
+{
+  "positive_padding_exclusions_at_stable_length_14": [
+    {
+      "degree": 7,
+      "spare_rows": 1,
+      "limit": 12,
+      "distance": null,
+      "last_radius": 12,
+      "visited": [
+        8656959,
+        2247723
+      ]
+    },
+    {
+      "degree": 6,
+      "spare_rows": 2,
+      "limit": 10,
+      "distance": null,
+      "last_radius": 10,
+      "visited": [
+        823413,
+        277049
+      ]
+    },
+    {
+      "degree": 4,
+      "spare_rows": 3,
+      "limit": 8,
+      "distance": null,
+      "last_radius": 8,
+      "visited": [
+        33824,
+        20971
+      ]
+    }
+  ]
+}

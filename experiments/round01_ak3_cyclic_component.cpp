@@ -160,6 +160,7 @@ int run(int cap, const char* catalogue_path, const char* result_path) {
 
 }  // namespace round01
 
+#ifndef AC_ROUND01_COMPONENT_LIBRARY
 int main(int argc, char** argv) {
     if (argc != 4) {
         std::cerr << "usage: round01_ak3_cyclic_component cap catalogue.json result.json\n";
@@ -172,3 +173,4 @@ int main(int argc, char** argv) {
         return 1;
     }
 }
+#endif

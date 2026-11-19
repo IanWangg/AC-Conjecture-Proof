@@ -1,0 +1,64 @@
+{
+  "solvable_kernel": "additive Z[1/2] in A5 times BS(1,2)",
+  "quotient": "A5 times Z",
+  "first_error_permutation_cycle_type": [
+    1,
+    1,
+    3
+  ],
+  "second_error_infinite_kernel_translation": "3",
+  "substitution_images": [
+    {
+      "permutation": [
+        2,
+        3,
+        1,
+        4,
+        5
+      ],
+      "exponent": 1,
+      "translation": "-6"
+    },
+    {
+      "permutation": [
+        2,
+        3,
+        4,
+        5,
+        1
+      ],
+      "exponent": 0,
+      "translation": "4"
+    }
+  ],
+  "final_images": [
+    {
+      "permutation": [
+        2,
+        3,
+        1,
+        4,
+        5
+      ],
+      "exponent": 1,
+      "translation": "0"
+    },
+    {
+      "permutation": [
+        2,
+        3,
+        4,
+        5,
+        1
+      ],
+      "exponent": 0,
+      "translation": "1"
+    }
+  ],
+  "strict_moves_by_stage": [
+    50,
+    28,
+    18
+  ],
+  "strict_moves": 96
+}

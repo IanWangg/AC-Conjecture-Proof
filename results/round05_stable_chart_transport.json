@@ -1,0 +1,133 @@
+{
+  "rank_three_replay": {
+    "moves": 267,
+    "raw_peak": 28,
+    "cyclic_peak": 22,
+    "target": [
+      "XYZYzy",
+      "XZxYxzy",
+      "XXYZyzxYZ"
+    ],
+    "first_pivotless_step": 255
+  },
+  "maximum_rank_of_stable_connection": 4,
+  "defining_exchange_count": 8,
+  "whitehead_stages": [
+    {
+      "descent": {
+        "multiplier": "X",
+        "cut": "XY",
+        "result": [
+          "XyzYZ"
+        ]
+      },
+      "defining_exchanges": [
+        {
+          "introduced_relator": "txY",
+          "eliminated": "y"
+        }
+      ],
+      "rows": [
+        "XYZXYzy",
+        "XyzYZ",
+        "XXXYZyxzYZ"
+      ]
+    },
+    {
+      "descent": {
+        "multiplier": "Y",
+        "cut": "XYZz",
+        "result": [
+          "XzYZ"
+        ]
+      },
+      "defining_exchanges": [
+        {
+          "introduced_relator": "tyX",
+          "eliminated": "x"
+        },
+        {
+          "introduced_relator": "tZY",
+          "eliminated": "z"
+        },
+        {
+          "introduced_relator": "tyZ",
+          "eliminated": "z"
+        }
+      ],
+      "rows": [
+        "XYYZXYYzy",
+        "XzYZ",
+        "XYXYXYYZyyxzYZ"
+      ]
+    },
+    {
+      "descent": {
+        "multiplier": "Z",
+        "cut": "YZy",
+        "result": [
+          "XY"
+        ]
+      },
+      "defining_exchanges": [
+        {
+          "introduced_relator": "tYZ",
+          "eliminated": "y"
+        },
+        {
+          "introduced_relator": "tzY",
+          "eliminated": "y"
+        }
+      ],
+      "rows": [
+        "XZYYXZYYzyz",
+        "XY",
+        "XZYYZyyzxYXZYzXZYz"
+      ]
+    },
+    {
+      "descent": {
+        "multiplier": "X",
+        "cut": "XZy",
+        "result": [
+          "Y"
+        ]
+      },
+      "defining_exchanges": [
+        {
+          "introduced_relator": "tYX",
+          "eliminated": "y"
+        },
+        {
+          "introduced_relator": "txZ",
+          "eliminated": "z"
+        }
+      ],
+      "rows": [
+        "XZYxYXZYxYxzyz",
+        "Y",
+        "XXZYxYxzyXyzxZXyzxZXyzxy"
+      ]
+    }
+  ],
+  "rank_two_projections": {
+    "marked_x": [
+      "XXXyxxyxY",
+      "XXYxyxYxyxyXY"
+    ],
+    "intrinsic": [
+      "XXyxYxyXYxyXYxY",
+      "XXyyxYY"
+    ]
+  },
+  "in_exact_ordinary_cyclic_components": {
+    "27": {
+      "marked_x": true,
+      "intrinsic": false
+    },
+    "28": {
+      "marked_x": true,
+      "intrinsic": false
+    }
+  }
+}

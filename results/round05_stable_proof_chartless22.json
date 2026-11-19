@@ -1,0 +1,169 @@
+{
+  "moves": 253,
+  "raw_peak": 28,
+  "cyclic_peak": 22,
+  "target": [
+    "XYZZZYYxy",
+    "XYxYXy",
+    "XXYYZZY"
+  ],
+  "first_pivotless_step": 235,
+  "distinct_cyclic_states": 27,
+  "first_all_chartless_step": 249,
+  "first_all_nonprimitive_step": 249,
+  "final_rows": {
+    "XXYYZZY": {
+      "occurrence_counts": [
+        2,
+        3,
+        2
+      ],
+      "whitehead_minimum": "XXYYZZY",
+      "is_primitive": false
+    },
+    "XYZZZYYxy": {
+      "occurrence_counts": [
+        2,
+        4,
+        3
+      ],
+      "whitehead_minimum": "XYZZZYYxy",
+      "is_primitive": false
+    },
+    "XYxYXy": {
+      "occurrence_counts": [
+        3,
+        3,
+        0
+      ],
+      "whitehead_minimum": "XYYXy",
+      "is_primitive": false
+    }
+  },
+  "final_two_row_blocks": [
+    {
+      "rows": [
+        "XXYYZZY",
+        "XYZZZYYxy"
+      ],
+      "fox_obstruction": true,
+      "weights": [
+        5,
+        -6,
+        4
+      ],
+      "omitted_column": 2,
+      "minor": [
+        [
+          -15,
+          1
+        ],
+        [
+          -10,
+          1
+        ],
+        [
+          -9,
+          1
+        ],
+        [
+          -5,
+          -1
+        ],
+        [
+          -4,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ]
+    },
+    {
+      "rows": [
+        "XXYYZZY",
+        "XYxYXy"
+      ],
+      "fox_obstruction": true,
+      "weights": [
+        -2,
+        2,
+        -1
+      ],
+      "omitted_column": 2,
+      "minor": [
+        [
+          -2,
+          -1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          -1
+        ]
+      ]
+    },
+    {
+      "rows": [
+        "XYZZZYYxy",
+        "XYxYXy"
+      ],
+      "fox_obstruction": true,
+      "weights": [
+        -3,
+        3,
+        -2
+      ],
+      "omitted_column": 2,
+      "minor": [
+        [
+          -3,
+          -1
+        ],
+        [
+          6,
+          -1
+        ]
+      ]
+    }
+  ],
+  "joint_whitehead_minimum": {
+    "rows": [
+      "XXYYZZY",
+      "XYZZZYYxy",
+      "XYxYXy"
+    ],
+    "moves": [],
+    "edges": {
+      "XY": 3,
+      "Xx": 1,
+      "Xy": 3,
+      "Yx": 3,
+      "Yy": 2,
+      "Yz": 2,
+      "Zy": 2,
+      "Zz": 3,
+      "xy": 3
+    },
+    "degrees": {
+      "x": 7,
+      "X": 7,
+      "y": 10,
+      "Y": 10,
+      "z": 5,
+      "Z": 5
+    },
+    "cut_minima": {
+      "x": 7,
+      "X": 7,
+      "y": 10,
+      "Y": 10,
+      "z": 5,
+      "Z": 5
+    }
+  }
+}

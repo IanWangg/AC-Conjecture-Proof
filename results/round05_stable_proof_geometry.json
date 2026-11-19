@@ -1,0 +1,95 @@
+{
+  "basis": {
+    "planar": true,
+    "checked_rotations": 1,
+    "local_order_counts": [
+      1,
+      1,
+      1
+    ],
+    "spherical_orders": [
+      [
+        1
+      ],
+      [
+        0
+      ],
+      [
+        3
+      ],
+      [
+        2
+      ],
+      [
+        5
+      ],
+      [
+        4
+      ]
+    ]
+  },
+  "nonprimitive_rank_two_geometric_block_with_z": {
+    "planar": true,
+    "checked_rotations": 127,
+    "local_order_counts": [
+      1,
+      12,
+      38
+    ],
+    "spherical_orders": [
+      [
+        1,
+        11,
+        9,
+        23,
+        13
+      ],
+      [
+        14,
+        10,
+        0,
+        12,
+        2
+      ],
+      [
+        4,
+        16,
+        22,
+        8,
+        20,
+        6,
+        18
+      ],
+      [
+        17,
+        5,
+        19,
+        7,
+        21,
+        15,
+        3
+      ],
+      [
+        25
+      ],
+      [
+        24
+      ]
+    ]
+  },
+  "cap_22_boundary": {
+    "planar": false,
+    "checked_rotations": 16,
+    "local_order_counts": [
+      4,
+      4,
+      8
+    ]
+  },
+  "scan": {
+    "checked_minimal_diagrams": 127,
+    "spherical_diagrams": [],
+    "maximum_local_order_count": 120,
+    "checked_rotations": 22528
+  }
+}

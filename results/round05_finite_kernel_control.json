@@ -1,0 +1,61 @@
+{
+  "infinite_group": "Z^2 with a central C3 coordinate and a C5 coordinate acted on by multiplication by 2^a",
+  "finite_kernel_order": 15,
+  "initial_images": [
+    [
+      1,
+      0,
+      2,
+      2
+    ],
+    [
+      0,
+      1,
+      1,
+      0
+    ]
+  ],
+  "stages": [
+    {
+      "stage": "noncentral kernel corrected modulo the central kernel",
+      "moves": 108,
+      "tuple_images": [
+        [
+          1,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "stage": "central kernel corrected",
+      "moves": 144,
+      "tuple_images": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ]
+    }
+  ],
+  "strict_moves": 144,
+  "free_endpoint_lengths": [
+    2943,
+    7145
+  ]
+}
