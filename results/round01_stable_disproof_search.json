@@ -1,0 +1,104 @@
+{
+  "degree_five_stable": {
+    "ordered": 11,
+    "unordered": 10
+  },
+  "runs": [
+    {
+      "distance": 1,
+      "last_radius": 1,
+      "visited": [
+        1,
+        1
+      ],
+      "degree": 1,
+      "extra_rows": 0,
+      "limit": 1,
+      "unordered": true
+    },
+    {
+      "distance": 3,
+      "last_radius": 3,
+      "visited": [
+        9,
+        9
+      ],
+      "degree": 2,
+      "extra_rows": 0,
+      "limit": 3,
+      "unordered": true
+    },
+    {
+      "distance": 5,
+      "last_radius": 5,
+      "visited": [
+        92,
+        80
+      ],
+      "degree": 3,
+      "extra_rows": 0,
+      "limit": 5,
+      "unordered": true
+    },
+    {
+      "distance": 9,
+      "last_radius": 9,
+      "visited": [
+        7233,
+        4045
+      ],
+      "degree": 4,
+      "extra_rows": 0,
+      "limit": 9,
+      "unordered": true
+    },
+    {
+      "distance": 10,
+      "last_radius": 10,
+      "visited": [
+        11460,
+        35251
+      ],
+      "degree": 5,
+      "extra_rows": 0,
+      "limit": 11,
+      "unordered": true
+    },
+    {
+      "distance": 11,
+      "last_radius": 11,
+      "visited": [
+        111457,
+        41495
+      ],
+      "degree": 5,
+      "extra_rows": 0,
+      "limit": 11,
+      "unordered": false
+    },
+    {
+      "distance": null,
+      "last_radius": 8,
+      "visited": [
+        277751,
+        189669
+      ],
+      "degree": 5,
+      "extra_rows": 1,
+      "limit": 8,
+      "unordered": true
+    },
+    {
+      "distance": null,
+      "last_radius": 6,
+      "visited": [
+        74434,
+        63539
+      ],
+      "degree": 5,
+      "extra_rows": 2,
+      "limit": 6,
+      "unordered": true
+    }
+  ]
+}

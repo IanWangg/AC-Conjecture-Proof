@@ -168,8 +168,10 @@ int run(const std::string& input,int cap,const std::string& output) {
                     for(const auto& q:tails.at(bound)) {
                         ++candidates;
                         if(!q.first.empty()) ++positive_tail_candidates;
-                        auto product=class_word(a+q.first+b+q.second);
-                        if(product.size()+words[donor].size()>static_cast<std::size_t>(cap)) continue;
+                        const auto reduced=cyclically_reduced(a+q.first+b+q.second);
+                        if(reduced.size()+words[donor].size()>static_cast<std::size_t>(cap)) continue;
+                        const auto product=std::min(least_rotation(reduced),
+                                                    least_rotation(reversed_inverse(reduced)));
                         ++accepted;
                         if(!q.first.empty()) ++positive_tail_accepted;
                         auto next=index.find(pair_key(product,words[donor]));

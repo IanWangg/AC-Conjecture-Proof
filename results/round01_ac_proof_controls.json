@@ -1,0 +1,478 @@
+{
+  "ambient_generators": [
+    "x",
+    "y"
+  ],
+  "relator_coordinates": 3,
+  "ak3_trace": {
+    "n": 3,
+    "start": [
+      "xxxYYYY",
+      "xyxYXY",
+      ""
+    ],
+    "endpoint": [
+      "",
+      "y",
+      "x"
+    ],
+    "moves": [
+      {
+        "op": "multiply",
+        "i": 2,
+        "j": 1
+      },
+      {
+        "op": "invert",
+        "i": 0
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "y"
+      },
+      {
+        "op": "multiply",
+        "i": 2,
+        "j": 0
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "X"
+      },
+      {
+        "op": "invert",
+        "i": 0
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "y"
+      },
+      {
+        "op": "multiply",
+        "i": 2,
+        "j": 0
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "Y"
+      },
+      {
+        "op": "invert",
+        "i": 0
+      },
+      {
+        "op": "multiply",
+        "i": 2,
+        "j": 0
+      },
+      {
+        "op": "invert",
+        "i": 0
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "x"
+      },
+      {
+        "op": "multiply",
+        "i": 2,
+        "j": 1
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "x"
+      },
+      {
+        "op": "multiply",
+        "i": 2,
+        "j": 1
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "X"
+      },
+      {
+        "op": "multiply",
+        "i": 2,
+        "j": 1
+      },
+      {
+        "op": "invert",
+        "i": 2
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "y"
+      },
+      {
+        "op": "multiply",
+        "i": 0,
+        "j": 2
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "x"
+      },
+      {
+        "op": "invert",
+        "i": 2
+      },
+      {
+        "op": "invert",
+        "i": 2
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "y"
+      },
+      {
+        "op": "multiply",
+        "i": 0,
+        "j": 2
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "x"
+      },
+      {
+        "op": "invert",
+        "i": 2
+      },
+      {
+        "op": "invert",
+        "i": 2
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "y"
+      },
+      {
+        "op": "multiply",
+        "i": 0,
+        "j": 2
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "Y"
+      },
+      {
+        "op": "invert",
+        "i": 2
+      },
+      {
+        "op": "invert",
+        "i": 2
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "y"
+      },
+      {
+        "op": "multiply",
+        "i": 1,
+        "j": 2
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "y"
+      },
+      {
+        "op": "invert",
+        "i": 2
+      },
+      {
+        "op": "invert",
+        "i": 2
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "y"
+      },
+      {
+        "op": "multiply",
+        "i": 1,
+        "j": 2
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "Y"
+      },
+      {
+        "op": "invert",
+        "i": 2
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "y"
+      },
+      {
+        "op": "multiply",
+        "i": 1,
+        "j": 2
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "Y"
+      },
+      {
+        "op": "invert",
+        "i": 1
+      },
+      {
+        "op": "multiply",
+        "i": 0,
+        "j": 1
+      },
+      {
+        "op": "multiply",
+        "i": 0,
+        "j": 1
+      },
+      {
+        "op": "multiply",
+        "i": 0,
+        "j": 1
+      },
+      {
+        "op": "multiply",
+        "i": 0,
+        "j": 1
+      }
+    ],
+    "move_count": 92,
+    "peak_total_length": 28
+  },
+  "family_control_move_counts": {
+    "2": 67,
+    "3": 92,
+    "4": 125,
+    "5": 166,
+    "6": 215,
+    "7": 272,
+    "8": 337
+  }
+}

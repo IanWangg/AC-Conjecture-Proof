@@ -1,0 +1,257 @@
+{
+  "ordinary_AC_goal_solved": false,
+  "external_path_replay": {
+    "published_paths": {
+      "ak3_certificates.zip": 34,
+      "640_simplification_paths.zip": 640
+    },
+    "archive_sha256": {
+      "ak3_certificates.zip": "033980a92bf824d4947a8ca390b5a61b8ce16f92b76ae7a3dffc3a004d3d25f9",
+      "640_simplification_paths.zip": "c795b469b8fcd51fa846fe8a3a01d547dd5d86e085319ec658cbbba6a5b1d493"
+    },
+    "moves_replayed": {
+      "ak3_certificates.zip": 193604,
+      "640_simplification_paths.zip": 443569
+    },
+    "all_states_equal_to_printed_ledgers": true,
+    "benchmark_id_overlap": [],
+    "literal_start_overlap": [],
+    "distinct_forward_raw": 24420,
+    "distinct_forward_signed_cyclic": 3675,
+    "forward_path_literal_raw_peak_range": [
+      205,
+      221
+    ],
+    "forward_path_literal_cyclic_peak_range": [
+      203,
+      207
+    ],
+    "cross_corpus_exact_state_hits": [],
+    "cross_corpus_cyclic_key_hits": [],
+    "catalogue_cyclic_cap": 32,
+    "forward_cyclic_catalogue": {
+      "rows": 1281,
+      "sha256": "9fc93a127b3b243a71850eb7df6866f81f6d1dcb48de406f2a13d0bf852a87b1",
+      "energies": {
+        "13": 5,
+        "14": 11,
+        "15": 60,
+        "16": 36,
+        "17": 87,
+        "18": 44,
+        "19": 113,
+        "20": 55,
+        "21": 110,
+        "22": 53,
+        "23": 97,
+        "24": 48,
+        "25": 107,
+        "26": 67,
+        "27": 96,
+        "28": 47,
+        "29": 88,
+        "30": 46,
+        "31": 74,
+        "32": 37
+      }
+    },
+    "reverse_cyclic_catalogue": {
+      "rows": 9257,
+      "sha256": "6e8635d5bf97b4ebc4629ee7fe4fe8491e4dc5d0b89cbc44d44cba4b3701478d"
+    },
+    "selected_forward_strict_waypoint": {
+      "moves": 71,
+      "peak_total_length": 37,
+      "endpoint": [
+        "xxYYYXYXXyxyxxxxxYYYXYXy",
+        "XYXYxxyxyyyXX"
+      ],
+      "source": {
+        "archive": "ak3_certificates.zip",
+        "member": "ak3_certificates/n3row103_toAK3_moves.txt",
+        "forward_waypoint_step": 8289
+      },
+      "endpoint_cyclic_energy": 37
+    },
+    "shortest_published_reverse_control": {
+      "moves": 24,
+      "peak_total_length": 12,
+      "endpoint": [
+        "x",
+        "y"
+      ],
+      "archive_moves": 11,
+      "source": "n1row1_pureAC_moves.txt",
+      "start": [
+        "XyxYY",
+        "yX"
+      ]
+    }
+  },
+  "c22_overlap": {
+    "archive_pairs_with_cyclic_energy_at_most_22": 574,
+    "previous_c22_members": 572,
+    "outside_previous_c22_with_cyclic_energy_at_most_22": 2,
+    "outside_previous_c22_short_pairs": [
+      {
+        "canonical_pair": [
+          "XXyXYYYxxYxyy",
+          "XYxYYxY"
+        ],
+        "source": [
+          "ak3_certificates/n3row36_toAK3_moves.txt",
+          414
+        ]
+      },
+      {
+        "canonical_pair": [
+          "XXyyxYxyxYYXy",
+          "XYxYYxY"
+        ],
+        "source": [
+          "ak3_certificates/n3row36_toAK3_moves.txt",
+          441
+        ]
+      }
+    ],
+    "archive_pairs_with_cyclic_energy_23_to_32": 707
+  },
+  "archive_all_tail_primitive_scan": {
+    "status": "COMPLETE",
+    "ordinary_AC_goal_solved": false,
+    "literal_source_pairs": 1281,
+    "independent_rotation_pairs": 155216,
+    "distinct_unbased_labelled_core_graphs": 71753,
+    "direct_DAG_primitive_absence_graphs": 71724,
+    "inconclusive_graphs": 29,
+    "closed_map_certificates_checked": 29,
+    "closed_map_pair_states_checked": 3036,
+    "closed_map_certificates_sha256": "97ee32762bfefdbe921638c1e283e514c631e7e6a095aefe69cba3850b49e4f2"
+  },
+  "exact_one_phase_join_controls": {
+    "positive_and_negative_controls": {
+      "FORWARD_INTERSECT_REVERSE_BARBELL": {
+        "status": "FORWARD_INTERSECT_REVERSE_BARBELL",
+        "forward_index": 0,
+        "reverse_index": 0,
+        "forward_rotations": [
+          "XYXyxY",
+          "Y"
+        ],
+        "reverse_rotations": null,
+        "canonical_unbased_graph": [
+          -1,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          -1,
+          2,
+          2,
+          2,
+          1,
+          -1
+        ]
+      },
+      "FORWARD_BARBELL_REVERSE_INTERSECT": {
+        "status": "FORWARD_BARBELL_REVERSE_INTERSECT",
+        "forward_index": 0,
+        "reverse_index": 0,
+        "forward_rotations": null,
+        "reverse_rotations": [
+          "XYXyxY",
+          "Y"
+        ],
+        "canonical_unbased_graph": [
+          -1,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          -1,
+          2,
+          2,
+          2,
+          1,
+          -1
+        ]
+      },
+      "BOTH_INTERSECT": {
+        "status": "BOTH_INTERSECT",
+        "forward_index": 0,
+        "reverse_index": 0,
+        "forward_rotations": [
+          "XY",
+          "Y"
+        ],
+        "reverse_rotations": [
+          "X",
+          "Y"
+        ],
+        "canonical_unbased_graph": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "EQUAL_CYCLIC_PAIR": {
+        "status": "EQUAL_CYCLIC_PAIR",
+        "forward_index": 0,
+        "reverse_index": 0,
+        "canonical": [
+          "XYXyxY",
+          "Y"
+        ]
+      },
+      "COMPLETE_NO_ALL_TAIL_SUBGROUP_MATCH": {
+        "status": "COMPLETE_NO_ALL_TAIL_SUBGROUP_MATCH",
+        "forward_cyclic_pairs": 1,
+        "reverse_cyclic_pairs": 1,
+        "forward_intersecting_rotation_pairs": 42,
+        "reverse_intersecting_rotation_pairs": 1,
+        "forward_distinct_rotation_core_keys": 21,
+        "forward_barbell_rotation_cores_counting_repeats": 0,
+        "reverse_barbell_rotation_cores_counting_repeats": 0
+      }
+    },
+    "strict_disjoint_basis_change": {
+      "moves": 2,
+      "peak_total_length": 6,
+      "endpoint": [
+        "x",
+        "yxyXY"
+      ]
+    },
+    "strict_intersecting_basis_change": {
+      "moves": 3,
+      "peak_total_length": 11,
+      "endpoint": [
+        "xyxyXY",
+        "yxyXY"
+      ]
+    }
+  },
+  "new_archive_waypoints_vs_known_trivial_archive": {
+    "status": "COMPLETE_NO_ALL_TAIL_SUBGROUP_MATCH",
+    "forward_cyclic_pairs": 1281,
+    "reverse_cyclic_pairs": 9257,
+    "forward_intersecting_rotation_pairs": 155216,
+    "reverse_intersecting_rotation_pairs": 1117474,
+    "forward_distinct_rotation_core_keys": 71753,
+    "forward_barbell_rotation_cores_counting_repeats": 981,
+    "reverse_barbell_rotation_cores_counting_repeats": 9958
+  },
+  "known_trivial_archive_vs_certified_AK3_cap22": {
+    "status": "COMPLETE_NO_ALL_TAIL_SUBGROUP_MATCH",
+    "forward_cyclic_pairs": 9257,
+    "reverse_cyclic_pairs": 258032,
+    "forward_intersecting_rotation_pairs": 1117474,
+    "reverse_intersecting_rotation_pairs": 24136172,
+    "forward_distinct_rotation_core_keys": 486726,
+    "forward_barbell_rotation_cores_counting_repeats": 9958,
+    "reverse_barbell_rotation_cores_counting_repeats": 38832
+  }
+}

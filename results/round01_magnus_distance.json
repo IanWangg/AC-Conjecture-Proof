@@ -1,0 +1,34 @@
+{
+  "word_support_controls": {
+    "reduced_words_checked": 5180,
+    "generator_support_checks": 15036,
+    "eighth_power_first_visible_degree": 8
+  },
+  "ak3": [
+    {
+      "degree": 1,
+      "ordinary_distance": 1,
+      "stable_distance": 1
+    },
+    {
+      "degree": 2,
+      "ordinary_distance": 3,
+      "stable_distance": 3
+    },
+    {
+      "degree": 3,
+      "ordinary_distance": 5,
+      "stable_distance": 5
+    },
+    {
+      "degree": 4,
+      "ordinary_distance": 9,
+      "stable_distance": 9
+    },
+    {
+      "degree": 5,
+      "ordinary_distance": 11,
+      "stable_distance": null
+    }
+  ]
+}

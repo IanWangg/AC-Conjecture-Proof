@@ -1,0 +1,149 @@
+{
+  "bridge_max": 5,
+  "by_length": {
+    "1": {
+      "sources": 42,
+      "certified_sources": 42,
+      "vertex_identifications": 3276,
+      "signed_automata": 26208,
+      "cyclic_components": 14896,
+      "inequalities": 44684,
+      "unresolved_sources": [],
+      "certificates_sha256": "459316eb6eeedd55478c798753bddaf8f7608a14c03bb4b738ba6a99c9fa72f2"
+    },
+    "2": {
+      "sources": 126,
+      "certified_sources": 126,
+      "vertex_identifications": 11466,
+      "signed_automata": 91728,
+      "cyclic_components": 46968,
+      "inequalities": 140184,
+      "unresolved_sources": [],
+      "certificates_sha256": "542e501f30f43b972a4894f2df4348b662d99409d00a4b71696d8f1e45ac51b6"
+    },
+    "3": {
+      "sources": 378,
+      "certified_sources": 378,
+      "vertex_identifications": 39690,
+      "signed_automata": 317520,
+      "cyclic_components": 145016,
+      "inequalities": 426744,
+      "unresolved_sources": [],
+      "certificates_sha256": "985cdadd5edd52e6aa845f70a6dc6a607c1a2d569519d4fcd30dbc56e1ca6f77"
+    },
+    "4": {
+      "sources": 1134,
+      "certified_sources": 1134,
+      "vertex_identifications": 136080,
+      "signed_automata": 1088640,
+      "cyclic_components": 448716,
+      "inequalities": 1304864,
+      "unresolved_sources": [],
+      "certificates_sha256": "58fa078c5393529ba81a0bfbacfb0b0aaa847c5ec8c4d4bfdd46d8a4d8deb9d8"
+    },
+    "5": {
+      "sources": 3402,
+      "certified_sources": 3402,
+      "vertex_identifications": 462672,
+      "signed_automata": 3701376,
+      "cyclic_components": 1392708,
+      "inequalities": 4012852,
+      "unresolved_sources": [],
+      "certificates_sha256": "feb30f28ed07aed3279880d5f1b32ee83fdafec6540cfa07451e88aa4e22890f"
+    }
+  },
+  "length_one_seed": {
+    "status": "PASS",
+    "ordinary_AC_goal_solved": false,
+    "original_graph_vertices": 13,
+    "vertex_identifications_independently_refolded": 78,
+    "rank_three_cases": 78,
+    "character_values_on_p_b_t": [
+      0,
+      0,
+      1
+    ],
+    "signed_double_free_graphs_independently_reconstructed": 624,
+    "cyclic_components_independently_recognized": 326,
+    "integer_potential_inequalities_checked": 936,
+    "constructor_or_Bellman_Ford_solver_imported": false,
+    "scope": "Finite certificate audit for the unbounded restricted kernel theorem; no global AC invariant",
+    "certificate_sha256": "e7248904dd2c3dfc22d79253507cd2cf5168b5d610fa20b5a9550e25b7f50b67"
+  },
+  "controls": {
+    "rotation_sources_checked": 42,
+    "seed_power_loops": 42,
+    "seed_containing_rotation_graphs": 0,
+    "QP_readable_at_seed_power_loops": 0,
+    "AK2_barbell": {
+      "source": [
+        "xYYYx",
+        "yyxYXYxY"
+      ],
+      "identified_vertices": [
+        0,
+        3
+      ],
+      "primitive_in_coarse_kernel": {
+        "alphabet": "xY",
+        "positive_basis_program": "RLRL",
+        "component": 1,
+        "loop_vertex": 2,
+        "word_length": 8,
+        "base_to_loop_path": "X",
+        "cyclic_primitive_word": "xYxYYxYY",
+        "based_primitive_word": "YxYYxYYx"
+      }
+    }
+  },
+  "external_waypoints": [
+    {
+      "pair": [
+        "XXyXYYYxxYxyy",
+        "XYxYYxY"
+      ],
+      "audit": {
+        "status": "PASS",
+        "ordinary_AC_goal_solved": false,
+        "original_graph_vertices": 18,
+        "vertex_identifications_independently_refolded": 153,
+        "rank_three_cases": 153,
+        "character_values_on_p_b_t": [
+          0,
+          0,
+          1
+        ],
+        "signed_double_free_graphs_independently_reconstructed": 1224,
+        "cyclic_components_independently_recognized": 474,
+        "integer_potential_inequalities_checked": 1576,
+        "constructor_or_Bellman_Ford_solver_imported": false,
+        "scope": "Finite certificate audit for the unbounded restricted kernel theorem; no global AC invariant",
+        "certificate_sha256": "f4a91c76722ed92cbf150f42fe56ce623a83a72c17d7e9b7aef43c7068df7a9c"
+      }
+    },
+    {
+      "pair": [
+        "XXyyxYxyxYYXy",
+        "XYxYYxY"
+      ],
+      "audit": {
+        "status": "PASS",
+        "ordinary_AC_goal_solved": false,
+        "original_graph_vertices": 18,
+        "vertex_identifications_independently_refolded": 153,
+        "rank_three_cases": 153,
+        "character_values_on_p_b_t": [
+          0,
+          0,
+          1
+        ],
+        "signed_double_free_graphs_independently_reconstructed": 1224,
+        "cyclic_components_independently_recognized": 452,
+        "integer_potential_inequalities_checked": 1318,
+        "constructor_or_Bellman_Ford_solver_imported": false,
+        "scope": "Finite certificate audit for the unbounded restricted kernel theorem; no global AC invariant",
+        "certificate_sha256": "0dafad95bbb00419baf69794c2f7742ba2a1c96d8c27b49a841e05f23ad07f64"
+      }
+    }
+  ]
+}

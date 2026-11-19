@@ -1,17 +1,22 @@
 # Andrews–Curtis research
 
-## Status: no free-group solution established
+## Status
 
-This repository records a twenty-six-agent investigation begun on 2026-11-02. It does **not** prove AK(3) AC-trivial or non-AC-trivial, and does **not** prove or disprove the Andrews–Curtis conjecture. No novelty or priority claim is made for the partial results.
+The ordinary AC triviality of AK(3) and both the ordinary and stable Andrews–Curtis conjectures remain unresolved in this repository. No novelty or priority claim is made for the partial results.
 
-The target is ordinary, unstabilized AC triviality of
+The five research tracks seek an ordinary AC trivialization of AK(3), a proof of Stable AC, a proof of ordinary AC, a counterexample to ordinary AC, and a counterexample to Stable AC. The marked AK(3) presentation is
 
     AK(3) = <x,y | x^3 y^-4, xyx y^-1 x^-1 y^-1>.
 
-The repository was initially empty. Twenty-six research agents have worked with up to three researchers concurrently, the maximum available alongside the coordinating agent. Each read previous work before independently choosing a direction. Reports record sources, rationale, exact proofs or computations, and limitations. Overlapping directions were coordinated explicitly; later reports credit shared discoveries. The researchers independently reviewed the arguments and replayed the artifacts before publication; individual reports record the reviewer roles.
+The initial investigation began on 2026-11-02 and involved twenty-six research agents. The numbered rounds continue that work across the five tracks. Each round records the proofs, computations, their scope, and questions shared across tracks. The current collaboration environment has three researcher slots alongside the coordinator, so each round runs its five researchers in waves.
+
+| Round | Date | Synthesis |
+|---|---|---|
+| [01](research/round-01.md) | 2026-11-19 | Archive replay, geometric and algebraic descent, disjoint-axis obstructions, and stable distance by peak rank |
 
 ## Current strongest checked results
 
+- **Ordinary AK(3) cyclic peak at least 25:** an independent full-bridge closure and connectedness audit checks all 1,596,072 canonical cap-24 states and 1,339,662,272 candidate products. A separate exact primitive-coordinate audit checks 1,234,376 cyclic words and finds zero primitive coordinates. The two archive waypoints of energy 20 outside the cap-22 component have strict witnesses with cyclic entry peak exactly 23. [Round 01 AK(3) report](research/round-01-ak3.md), [component checks](results/round01_ak3_cyclic_components.json).
 - **Unbounded initial one-phase exclusion:** for every `u,v` in `H0=<xxxYYYY,xyxYXY>` and arbitrary independent conjugators, their two-conjugate subgroup is primitive-free. V certifies 45 infinite kernels with 822 integer inequalities; the coordinator and U independently verify them. This excludes an arbitrary initial Nielsen prelude, one conjugation phase and a Nielsen suffix at every length. Further alternating subgroup changes remain outside the theorem. [V's theorem](research/research-v-unbounded.md), [U's review](research/u-voltage-phase-review.md).
 - **Restricted two-phase exclusion:** all 42 literal initial rotation successors satisfy the same unbounded two-conjugate property, with 2,272 kernel cases and 42,876 independently replayed inequalities. This excludes an initial pure conjugation phase whose endpoint axes intersect, arbitrary Nielsen mixing, another independent conjugation phase and a Nielsen suffix. A preceding arbitrary Nielsen prelude and disjoint first endpoint axes remain outside the result. [X's proof](research/research-x.md), [T's certificate audit](research/research-t-x-character-review.md), [Y's scope and actual-entry review](research/research-y-rotation-scope-review.md).
 - **Literal cap-22 presentation complexes are not thickenable:** W supplies planar-link parity contradictions for all 258,032 literal canonical cyclic tuples, with a separate checker and T's independent review. A uniform three-equation proof excludes the initial literal AK(n) complexes for n>=2. This is a local embedding condition, not an AC invariant or an all-tail theorem. [W's proof and controls](research/research-w.md), [T's review](research/research-t-w-topology-review.md).
@@ -24,7 +29,7 @@ The repository was initially empty. Twenty-six research agents have worked with 
 - **Every cap-22 representative has a primitive-free subgroup:** Q/R's axes theorem reduces arbitrary independent conjugating tails to rotation pairs. All 24,136,172 rotation pairs are classified: 11,424,800 unbased graphs pass the signed-DAG criterion, and all 6,568 exceptions have complete finite partial-map absence certificates. Thus any actual tuple in this cyclic component has no primitive in its generated subgroup at any word length, even after an unbounded Nielsen-only suffix. This is not invariant under later individual conjugations. The earlier uniform n>=2 cyclic braid-preimage theorem remains valid. [Q's reduction and scan](research/research-q.md), [R's exact detector and certificates](research/research-r.md).
 - **Explicit short free-group paths:** existing cap-18 data now yield a 32-strict-move path to a cyclic-length-14 pair and a 43-move path to a different cyclic-length-13 pair, both with raw peak 18. These are exact free words, not bases, and were already inside the earlier exhausted component. [Certificates and lifting method](research/short-waypoint-paths.md). Earlier 222/179-move entries and their quotient analyses remain useful derivations.
 
-All these results leave the original four breakthrough objectives unachieved.
+These results constrain the ordinary AK(3) search. The numbered rounds also cover Stable AC and track how the two conjectures interact.
 
 ## Research reports
 
