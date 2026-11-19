@@ -1,0 +1,38 @@
+{
+  "ordinary_searches": [
+    {
+      "distance": 14,
+      "last_radius": 14,
+      "visited": [
+        1119381,
+        2537254
+      ],
+      "degree": 7,
+      "extra_rows": 0,
+      "limit": 14,
+      "unordered": true
+    },
+    {
+      "distance": 14,
+      "last_radius": 14,
+      "visited": [
+        1272928,
+        2984786
+      ],
+      "degree": 7,
+      "extra_rows": 0,
+      "limit": 14,
+      "unordered": false
+    }
+  ],
+  "stable_distance_bounds": {
+    "ordered": [
+      13,
+      14
+    ],
+    "unordered": [
+      13,
+      14
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "parameter": 3,
+    "cyclic_cap": 18,
+    "complete": true,
+    "discovered_vertices": 275488,
+    "expanded_vertices": 275488,
+    "candidate_products": 191029456,
+    "admitted_products": 5445784,
+    "nonempty_bridge_candidates": 58320,
+    "catalogue_sha256": "713ec4b30273b7ad1034cc7d1c28f42a7437190f1566137dd06202779e63de56",
+    "rows_with_a_z_singleton": 275488,
+    "energy_counts": {
+      "14": 6,
+      "15": 168,
+      "16": 2520,
+      "17": 27474,
+      "18": 245320
+    }
+  },
+  {
+    "parameter": 3,
+    "cyclic_cap": 19,
+    "complete": false,
+    "discovered_vertices": 2000000,
+    "expanded_vertices": 1583045,
+    "candidate_products": 1208207183,
+    "admitted_products": 39461885,
+    "nonempty_bridge_candidates": 975960,
+    "catalogue_sha256": "77aedd0e8eaae9e2de9af7f8ae14899a0d6107c9746d0424559a63c09bfbc29d",
+    "rows_with_a_z_singleton": 2000000,
+    "energy_counts": {
+      "14": 6,
+      "15": 168,
+      "16": 2530,
+      "17": 27579,
+      "18": 244374,
+      "19": 1725343
+    }
+  }
+]

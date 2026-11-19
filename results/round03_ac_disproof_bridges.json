@@ -1,0 +1,344 @@
+{
+  "endpoint_window": 7,
+  "signed_lobe_rotations": 26,
+  "all_length_regular_language": {
+    "7": {
+      "all_admissible_literal_sources": 30618,
+      "guarded_literal_sources": 27228
+    },
+    "8": {
+      "all_admissible_literal_sources": 91854,
+      "guarded_literal_sources": 80730
+    },
+    "9": {
+      "all_admissible_literal_sources": 275562,
+      "guarded_literal_sources": 239348
+    },
+    "10": {
+      "all_admissible_literal_sources": 826686,
+      "guarded_literal_sources": 709490
+    },
+    "12": {
+      "all_admissible_literal_sources": 7440174,
+      "guarded_literal_sources": 6233856
+    },
+    "16": {
+      "all_admissible_literal_sources": 602654094,
+      "guarded_literal_sources": 481297324
+    },
+    "20": {
+      "all_admissible_literal_sources": 48814981614,
+      "guarded_literal_sources": 37159553168
+    },
+    "25": {
+      "all_admissible_literal_sources": 11862040532202,
+      "guarded_literal_sources": 8504361917668
+    },
+    "30": {
+      "all_admissible_literal_sources": 2882475849325086,
+      "guarded_literal_sources": 1946314362193158
+    },
+    "40": {
+      "all_admissible_literal_sources": 170207316426797003214,
+      "guarded_literal_sources": 101942550290128835628
+    },
+    "50": {
+      "all_admissible_literal_sources": 10050571827685936242783486,
+      "guarded_literal_sources": 5339468156580917234981712
+    }
+  },
+  "endpoint_guard_counts": {
+    "power": {
+      "xxxYYYY": {
+        "any": {
+          "admissible": 1458,
+          "guarded": 1351
+        },
+        "positive": {
+          "admissible": 0,
+          "guarded": 0
+        },
+        "negative": {
+          "admissible": 128,
+          "guarded": 128
+        }
+      },
+      "xxYYYYx": {
+        "any": {
+          "admissible": 1458,
+          "guarded": 1356
+        },
+        "positive": {
+          "admissible": 64,
+          "guarded": 64
+        },
+        "negative": {
+          "admissible": 64,
+          "guarded": 64
+        }
+      },
+      "xYYYYxx": {
+        "any": {
+          "admissible": 1458,
+          "guarded": 1356
+        },
+        "positive": {
+          "admissible": 64,
+          "guarded": 64
+        },
+        "negative": {
+          "admissible": 64,
+          "guarded": 64
+        }
+      },
+      "YYYYxxx": {
+        "any": {
+          "admissible": 1458,
+          "guarded": 1351
+        },
+        "positive": {
+          "admissible": 128,
+          "guarded": 128
+        },
+        "negative": {
+          "admissible": 0,
+          "guarded": 0
+        }
+      },
+      "YYYxxxY": {
+        "any": {
+          "admissible": 1458,
+          "guarded": 1340
+        },
+        "positive": {
+          "admissible": 64,
+          "guarded": 64
+        },
+        "negative": {
+          "admissible": 64,
+          "guarded": 64
+        }
+      },
+      "YYxxxYY": {
+        "any": {
+          "admissible": 1458,
+          "guarded": 1370
+        },
+        "positive": {
+          "admissible": 64,
+          "guarded": 64
+        },
+        "negative": {
+          "admissible": 64,
+          "guarded": 64
+        }
+      },
+      "YxxxYYY": {
+        "any": {
+          "admissible": 1458,
+          "guarded": 1340
+        },
+        "positive": {
+          "admissible": 64,
+          "guarded": 64
+        },
+        "negative": {
+          "admissible": 64,
+          "guarded": 64
+        }
+      }
+    },
+    "braid": {
+      "xyxYXY": {
+        "any": {
+          "admissible": 1458,
+          "guarded": 1351
+        },
+        "positive": {
+          "admissible": 0,
+          "guarded": 0
+        },
+        "negative": {
+          "admissible": 128,
+          "guarded": 128
+        }
+      },
+      "yxYXYx": {
+        "any": {
+          "admissible": 1458,
+          "guarded": 1371
+        },
+        "positive": {
+          "admissible": 64,
+          "guarded": 64
+        },
+        "negative": {
+          "admissible": 64,
+          "guarded": 64
+        }
+      },
+      "xYXYxy": {
+        "any": {
+          "admissible": 1458,
+          "guarded": 1371
+        },
+        "positive": {
+          "admissible": 64,
+          "guarded": 64
+        },
+        "negative": {
+          "admissible": 64,
+          "guarded": 64
+        }
+      },
+      "YXYxyx": {
+        "any": {
+          "admissible": 1458,
+          "guarded": 1351
+        },
+        "positive": {
+          "admissible": 128,
+          "guarded": 128
+        },
+        "negative": {
+          "admissible": 0,
+          "guarded": 0
+        }
+      },
+      "XYxyxY": {
+        "any": {
+          "admissible": 1458,
+          "guarded": 1371
+        },
+        "positive": {
+          "admissible": 64,
+          "guarded": 64
+        },
+        "negative": {
+          "admissible": 64,
+          "guarded": 64
+        }
+      },
+      "YxyxYX": {
+        "any": {
+          "admissible": 1458,
+          "guarded": 1371
+        },
+        "positive": {
+          "admissible": 64,
+          "guarded": 64
+        },
+        "negative": {
+          "admissible": 64,
+          "guarded": 64
+        }
+      }
+    }
+  },
+  "same_sign_endpoint_totals": {
+    "power": {
+      "positive": 448,
+      "negative": 448
+    },
+    "braid": {
+      "positive": 384,
+      "negative": 384
+    }
+  },
+  "replayed_lobe_pair_certificates": [
+    {
+      "lobes": [
+        "xxxYYYY",
+        "xxxYYYY"
+      ],
+      "rotation_pairs": 49,
+      "map_pair_states": 4928
+    },
+    {
+      "lobes": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "rotation_pairs": 42,
+      "map_pair_states": 3688
+    },
+    {
+      "lobes": [
+        "xyxYXY",
+        "xyxYXY"
+      ],
+      "rotation_pairs": 36,
+      "map_pair_states": 1568
+    }
+  ],
+  "independent_full_fold_guard_check": {
+    "source_folds": 240,
+    "passes": 185,
+    "failures": 55
+  },
+  "multiple_full_readings_control": {
+    "power": "YYYYxxx",
+    "braid": "xyxYXY",
+    "bridge": "xxxxxxxxxxxxxxxxxx",
+    "bridge_reading_starts": [
+      0,
+      1,
+      2,
+      5,
+      8
+    ],
+    "direct_two_copy_audit": {
+      "checked_joins": 435,
+      "dag_exclusions": 435,
+      "closed_map_states": 185160,
+      "primitive_joins": []
+    }
+  },
+  "mixed_sign_control": {
+    "power": "YYYYxxx",
+    "braid": "xyxYXY",
+    "bridge": "xyyyyyyyxYXyxyyyyyyy",
+    "bridge_reading_starts": [
+      0
+    ],
+    "direct_two_copy_audit": {
+      "checked_joins": 496,
+      "dag_exclusions": 496,
+      "closed_map_states": 85822,
+      "primitive_joins": []
+    }
+  },
+  "chain_families": {
+    "native_counts": {
+      "sources": 552,
+      "vertex_pairs": 100092,
+      "DAG_exclusions": 100092,
+      "DAG_unresolved": 0,
+      "join_ranks": {
+        "5": 3880,
+        "6": 96212
+      }
+    },
+    "independent_sampled_chains": 9,
+    "independent_sampled_joins": 1596,
+    "independent_map_states": 243190,
+    "repeated_lobe_control": {
+      "power": "xxxYYYY",
+      "braid": "xyxYXY",
+      "middle": "YXYxyx",
+      "overgroup_basis": [
+        "xxxYYYY",
+        "XYXYxyxx",
+        "XyxyxYXYYx"
+      ],
+      "bridge": "XYXYxyxYXYxyxYXYxyxy",
+      "middle_word_readings_in_source": 4,
+      "overgroup_audit": {
+        "checked_joins": 171,
+        "dag_exclusions": 171,
+        "closed_map_states": 28952,
+        "primitive_joins": []
+      }
+    }
+  }
+}

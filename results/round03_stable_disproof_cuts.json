@@ -1,0 +1,83 @@
+{
+  "metabelian_donor_control": {
+    "start": [
+      "xyXYY",
+      "x",
+      "z"
+    ],
+    "crossing_order": [
+      "in",
+      "out",
+      "in",
+      "out"
+    ],
+    "state_with_no_retained_conjugate_of_donor": [
+      "xyXYYx",
+      "x",
+      "zxyXYY"
+    ],
+    "projected_before_capture": [
+      "xyXYY",
+      "x"
+    ],
+    "projected_before_erasure": [
+      "xyXYY",
+      "xxyXYY"
+    ],
+    "excursion_moves": 16,
+    "projected_splice_moves": 1,
+    "excursion_endpoint": [
+      "xyXYY",
+      "xxyXYY",
+      "z"
+    ],
+    "moves_to_unordered_basis": 25,
+    "endpoint": [
+      "y",
+      "x",
+      "z"
+    ]
+  },
+  "degree_one_two_by_two": {
+    "AABB": {
+      "span_states": 256,
+      "coordinate_transfers": [
+        0
+      ]
+    },
+    "ABAB": {
+      "span_states": 544,
+      "coordinate_transfers": [
+        0,
+        1
+      ]
+    },
+    "ABBA": {
+      "span_states": 511,
+      "coordinate_transfers": [
+        0,
+        1
+      ]
+    },
+    "BAAB": {
+      "span_states": 511,
+      "coordinate_transfers": [
+        0,
+        1
+      ]
+    },
+    "BABA": {
+      "span_states": 544,
+      "coordinate_transfers": [
+        0,
+        1
+      ]
+    },
+    "BBAA": {
+      "span_states": 256,
+      "coordinate_transfers": [
+        0
+      ]
+    }
+  }
+}

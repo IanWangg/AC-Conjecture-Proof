@@ -1,0 +1,496 @@
+{
+  "ordinary_AC_goal_solved": false,
+  "input_sha256": {
+    "cap24_tsv": "a6bee931aefa3abbd1bbdaf69f9c9ffaa9b827e7e0ebe2aaf5d27d74edcd5912",
+    "cap25_tsv": "acb60bac212c4d14ecbdfc251e87d35f191676b0321bc446d4d6928587ae1978",
+    "archive_forward_cap210_tsv": "f2d1b85f24078eeeea57f66d1aafb014ec2728e812c3a73cb8c9f103438134e9",
+    "reverse_cap32_tsv": "6e8635d5bf97b4ebc4629ee7fe4fe8491e4dc5d0b89cbc44d44cba4b3701478d",
+    "escape_source_tsv": "b9e7dd98cb64123ac24c7a6914c14d29773f8ba87293f8bfd7f70fcfcdf2fcf2"
+  },
+  "escape_catalogue": {
+    "minimum_escape_energy": 17,
+    "all_escapes": {
+      "17": 56,
+      "18": 96,
+      "19": 504,
+      "20": 736,
+      "21": 3524,
+      "22": 3612,
+      "23": 22116,
+      "24": 30060,
+      "25": 3905448
+    },
+    "sample_rows": 1048,
+    "lowest_sha256": "1fe2f7afd8ceec2afc24233a8950d8a4d79fb929706e90f47d52925617987042",
+    "sample_sha256": "098b671e689e51995a0c84e67dee4c944ea50e9ffb17ac67ee09370844dfd4db"
+  },
+  "minimum_escape_macro_path": {
+    "cyclic_cap": 25,
+    "target_count": 56,
+    "minimum_macro_distance": 22,
+    "disjoint_ball_radii": [
+      8,
+      13
+    ],
+    "states_discovered": [
+      360206,
+      309013
+    ],
+    "products_checked": 396351188,
+    "route": [
+      [
+        "XXXyyyy",
+        "XYXyxy"
+      ],
+      [
+        "XXyyyXYxy",
+        "XYXyxy"
+      ],
+      [
+        "XXyxYYxxY",
+        "XYXyxy"
+      ],
+      [
+        "XXXyxYxxY",
+        "XXyxYYxxY"
+      ],
+      [
+        "XXXyxYxxY",
+        "XXYxxYxy"
+      ],
+      [
+        "XXXyxYxxY",
+        "XXyxYXyxy"
+      ],
+      [
+        "XXXyxyxy",
+        "XXyxYXyxy"
+      ],
+      [
+        "XXyxYXyxy",
+        "XYXYxyyxy"
+      ],
+      [
+        "XYXYYXyxyyxYXyxy",
+        "XYXYxyyxy"
+      ],
+      [
+        "XYXYXyxyyxY",
+        "XYXYxyyxy"
+      ],
+      [
+        "XYXYXYXyxyxyxY",
+        "XYXYxyyxy"
+      ],
+      [
+        "XXYxyxyxY",
+        "XYXYXYXyxyxyxY"
+      ],
+      [
+        "XYXYXYXyxyxyxY",
+        "XYXYXyyxY"
+      ],
+      [
+        "XYXYXYXyxyxyxY",
+        "XYXYxyy"
+      ],
+      [
+        "XXYxyxyxyxY",
+        "XYXYXYXyxyxyxY"
+      ],
+      [
+        "XXyxYXYXY",
+        "XYXYXYXyxyxyxY"
+      ],
+      [
+        "XXYXYxy",
+        "XYXYXYXyxyxyxY"
+      ],
+      [
+        "XXYXYxy",
+        "XXYxyxyxyxyxY"
+      ],
+      [
+        "XXYXYXyxxyxY",
+        "XXYxyxyxyxyxY"
+      ],
+      [
+        "XXYXyxYXYXY",
+        "XXYxyxyxyxyxY"
+      ],
+      [
+        "XXYXyxYXYXY",
+        "XYXYXYXyxyxyxY"
+      ],
+      [
+        "XXYXYxyXY",
+        "XXYXyxYXYXY"
+      ],
+      [
+        "XXYXYxyXY",
+        "XYYXyyxY"
+      ]
+    ]
+  },
+  "strict_escape_replay": {
+    "moves": 284,
+    "peak_total_length": 35,
+    "endpoint": [
+      "XXYXYxyXY",
+      "XYYXyyxY"
+    ],
+    "cyclic_peak": 25,
+    "macro_boundary_receipts": [
+      {
+        "strict_step": 9,
+        "state": [
+          "XXXyyyy",
+          "XYXyxy"
+        ]
+      },
+      {
+        "strict_step": 13,
+        "state": [
+          "XXyyyXYxy",
+          "XYXyxy"
+        ]
+      },
+      {
+        "strict_step": 25,
+        "state": [
+          "XXyxYYxxY",
+          "XYXyxy"
+        ]
+      },
+      {
+        "strict_step": 43,
+        "state": [
+          "XXyxYYxxY",
+          "XXXyxYxxY"
+        ]
+      },
+      {
+        "strict_step": 57,
+        "state": [
+          "XXYxxYxy",
+          "XXXyxYxxY"
+        ]
+      },
+      {
+        "strict_step": 75,
+        "state": [
+          "XXyxYXyxy",
+          "XXXyxYxxY"
+        ]
+      },
+      {
+        "strict_step": 87,
+        "state": [
+          "XXyxYXyxy",
+          "XXXyxyxy"
+        ]
+      },
+      {
+        "strict_step": 98,
+        "state": [
+          "XXyxYXyxy",
+          "XYXYxyyxy"
+        ]
+      },
+      {
+        "strict_step": 110,
+        "state": [
+          "XYXYYXyxyyxYXyxy",
+          "XYXYxyyxy"
+        ]
+      },
+      {
+        "strict_step": 125,
+        "state": [
+          "XYXYXyxyyxY",
+          "XYXYxyyxy"
+        ]
+      },
+      {
+        "strict_step": 139,
+        "state": [
+          "XYXYXYXyxyxyxY",
+          "XYXYxyyxy"
+        ]
+      },
+      {
+        "strict_step": 147,
+        "state": [
+          "XYXYXYXyxyxyxY",
+          "XXYxyxyxY"
+        ]
+      },
+      {
+        "strict_step": 153,
+        "state": [
+          "XYXYXYXyxyxyxY",
+          "XYXYXyyxY"
+        ]
+      },
+      {
+        "strict_step": 159,
+        "state": [
+          "XYXYXYXyxyxyxY",
+          "XYXYxyy"
+        ]
+      },
+      {
+        "strict_step": 165,
+        "state": [
+          "XYXYXYXyxyxyxY",
+          "XXYxyxyxyxY"
+        ]
+      },
+      {
+        "strict_step": 175,
+        "state": [
+          "XYXYXYXyxyxyxY",
+          "XXyxYXYXY"
+        ]
+      },
+      {
+        "strict_step": 188,
+        "state": [
+          "XYXYXYXyxyxyxY",
+          "XXYXYxy"
+        ]
+      },
+      {
+        "strict_step": 212,
+        "state": [
+          "XXYxyxyxyxyxY",
+          "XXYXYxy"
+        ]
+      },
+      {
+        "strict_step": 226,
+        "state": [
+          "XXYxyxyxyxyxY",
+          "XXYXYXyxxyxY"
+        ]
+      },
+      {
+        "strict_step": 238,
+        "state": [
+          "XXYxyxyxyxyxY",
+          "XXYXyxYXYXY"
+        ]
+      },
+      {
+        "strict_step": 263,
+        "state": [
+          "XYXYXYXyxyxyxY",
+          "XXYXyxYXYXY"
+        ]
+      },
+      {
+        "strict_step": 274,
+        "state": [
+          "XXYXYxyXY",
+          "XXYXyxYXYXY"
+        ]
+      },
+      {
+        "strict_step": 284,
+        "state": [
+          "XXYXYxyXY",
+          "XYYXyyxY"
+        ]
+      }
+    ]
+  },
+  "two_copy_exclusions": {
+    "archive_literal": {
+      "rotations_enabled": false,
+      "source_pairs": 3675,
+      "rotation_pairs": 3675,
+      "unbased_cores": 3615,
+      "own_tests": 3615,
+      "distinct_vertex_joins": 5394613,
+      "DAG_absent": 5397996,
+      "exact_absent": 232,
+      "exact_map_pair_states": 28736,
+      "positive": 0,
+      "incomplete": 0
+    },
+    "minimum_escape_rotations": {
+      "rotations_enabled": true,
+      "source_pairs": 56,
+      "rotation_pairs": 3984,
+      "unbased_cores": 1976,
+      "own_tests": 1976,
+      "distinct_vertex_joins": 209056,
+      "DAG_absent": 210952,
+      "exact_absent": 80,
+      "exact_map_pair_states": 8640,
+      "positive": 0,
+      "incomplete": 0
+    },
+    "stratified_escape_literal": {
+      "rotations_enabled": false,
+      "source_pairs": 1048,
+      "rotation_pairs": 1048,
+      "unbased_cores": 1048,
+      "own_tests": 1048,
+      "distinct_vertex_joins": 155999,
+      "DAG_absent": 150378,
+      "exact_absent": 6669,
+      "exact_map_pair_states": 885432,
+      "positive": 0,
+      "incomplete": 0
+    }
+  },
+  "cap25_malnormality_control": {
+    "displayed_cores": 5562224,
+    "nonmalnormal_cores": 0
+  },
+  "reverse_intersecting_axis_joins": {
+    "target_rows": 9257,
+    "target_mode": "rotations",
+    "sources": [
+      {
+        "source": [
+          "XXYXYxyXY",
+          "XYYXyyxY"
+        ],
+        "compared": 1117474,
+        "rank_two_products": 6326,
+        "any_cyclic_component": 3409,
+        "max_cyclic_components": 1,
+        "cyclic_components_total": 3409,
+        "primitive_projections_total": 3409,
+        "two_valid_cyclic_components": 0,
+        "inconclusive_lattice": 0,
+        "source_has_primitive_absence": 1,
+        "source_passes_direct_DAG_test": 1,
+        "full_ambient_targets": 6326,
+        "multilift_words": 0,
+        "longest_multilift_word": 0,
+        "multilift_barbells": 0,
+        "rank_filtered_barbells": 0,
+        "unresolved_two_lobes": 0
+      },
+      {
+        "source": [
+          "XXYXYxyXY",
+          "XXYXyxYXYXY"
+        ],
+        "compared": 1117474,
+        "rank_two_products": 6326,
+        "any_cyclic_component": 3418,
+        "max_cyclic_components": 1,
+        "cyclic_components_total": 3418,
+        "primitive_projections_total": 3418,
+        "two_valid_cyclic_components": 0,
+        "inconclusive_lattice": 0,
+        "source_has_primitive_absence": 1,
+        "source_passes_direct_DAG_test": 1,
+        "full_ambient_targets": 6326,
+        "multilift_words": 0,
+        "longest_multilift_word": 0,
+        "multilift_barbells": 0,
+        "rank_filtered_barbells": 0,
+        "unresolved_two_lobes": 0
+      },
+      {
+        "source": [
+          "XXYXYxy",
+          "XXYxyxyxyxyxY"
+        ],
+        "compared": 1117474,
+        "rank_two_products": 6326,
+        "any_cyclic_component": 1724,
+        "max_cyclic_components": 1,
+        "cyclic_components_total": 1724,
+        "primitive_projections_total": 1724,
+        "two_valid_cyclic_components": 0,
+        "inconclusive_lattice": 0,
+        "source_has_primitive_absence": 1,
+        "source_passes_direct_DAG_test": 1,
+        "full_ambient_targets": 6326,
+        "multilift_words": 0,
+        "longest_multilift_word": 0,
+        "multilift_barbells": 0,
+        "rank_filtered_barbells": 0,
+        "unresolved_two_lobes": 0
+      }
+    ]
+  },
+  "reverse_disjoint_axis_joins": {
+    "targets": 9257,
+    "sources": [
+      {
+        "source": [
+          "XXYXYxyXY",
+          "XYYXyyxY"
+        ],
+        "nonmalnormal": false,
+        "multilift_map_states": 38,
+        "longest_representative": 5,
+        "map_placements": 10100867,
+        "rank_at_least_two": 0,
+        "intrinsic_lobe_exceptions": 0
+      },
+      {
+        "source": [
+          "XXYXYxyXY",
+          "XXYXyxYXYXY"
+        ],
+        "nonmalnormal": false,
+        "multilift_map_states": 36,
+        "longest_representative": 4,
+        "map_placements": 9768613,
+        "rank_at_least_two": 0,
+        "intrinsic_lobe_exceptions": 0
+      },
+      {
+        "source": [
+          "XXYXYxy",
+          "XXYxyxyxyxyxY"
+        ],
+        "nonmalnormal": false,
+        "multilift_map_states": 54,
+        "longest_representative": 7,
+        "map_placements": 15725375,
+        "rank_at_least_two": 0,
+        "intrinsic_lobe_exceptions": 0
+      }
+    ]
+  },
+  "nonmalnormal_control": {
+    "self_fiber": {
+      "displayed_cores": 1,
+      "nonmalnormal_cores": 1
+    },
+    "bridge_maps": {
+      "targets": 1,
+      "sources": [
+        {
+          "source": [
+            "xx",
+            "y"
+          ],
+          "nonmalnormal": true,
+          "multilift_map_states": 4,
+          "longest_representative": 2,
+          "map_placements": 4,
+          "rank_at_least_two": 4,
+          "intrinsic_lobe_exceptions": 1
+        }
+      ]
+    }
+  },
+  "prior_positive_basis_join_replay": {
+    "moves": 22,
+    "peak_total_length": 11,
+    "endpoint": [
+      "x",
+      "yXyxYx"
+    ]
+  }
+}

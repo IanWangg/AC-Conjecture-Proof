@@ -1,0 +1,13 @@
+{
+  "rotations_enabled": true,
+  "source_pairs": 8,
+  "rotation_pairs": 448,
+  "unbased_cores": 232,
+  "own_tests": 232,
+  "distinct_vertex_joins": 18384,
+  "DAG_absent": 18616,
+  "exact_absent": 0,
+  "exact_map_pair_states": 0,
+  "positive": 0,
+  "incomplete": 0
+}

@@ -1,0 +1,60 @@
+{
+  "ordinary_AC_goal_solved": false,
+  "minimum_cyclic_peak_before_a_primitive_coordinate": 27,
+  "cyclic_components": {
+    "26": {
+      "catalogue_sha256": "590498a03bacb8c49742358aba1cdb6b689b3e7da130479ecf81a6a0b91feecb",
+      "catalogue_tsv_sha256": "3bce0c9dbd0791990a97230f451f1f068d4d648f8bcf58d156a1861785ea1893",
+      "closure_and_connectedness": {
+        "status": "PASS",
+        "ordinary_AC_goal_solved": false,
+        "cyclic_cap": 26,
+        "canonical_states": 10340996,
+        "minimum_cyclic_sum": 13,
+        "minimum_cyclic_coordinate": 5,
+        "minimum_disjoint_axes_neighbor_sum": 21,
+        "all_menu_candidates_checked": 9587387424,
+        "admitted_neighbor_checks": 518647032,
+        "positive_tail_candidates_checked": 10641280,
+        "positive_tail_admitted_checks": 10641280,
+        "maximum_geodesic_bridge_length_needed": 3,
+        "all_states_reachable_from_original_AK3": true,
+        "closed_under_full_geometric_neighbor_menu": true,
+        "independent_free_reduction_and_Booth_canonicalizer": true,
+        "minimum_required_cyclic_peak": 27,
+        "state_histogram": {
+          "13": 12,
+          "14": 40,
+          "15": 564,
+          "16": 616,
+          "17": 3320,
+          "18": 3896,
+          "19": 19800,
+          "20": 21724,
+          "21": 113504,
+          "22": 123508,
+          "23": 661896,
+          "24": 748972,
+          "25": 3986304,
+          "26": 4656840
+        }
+      },
+      "primitive_coordinate_audit": {
+        "status": "PASS",
+        "ordinary_AC_goal_solved": false,
+        "catalogue_sha256": "590498a03bacb8c49742358aba1cdb6b689b3e7da130479ecf81a6a0b91feecb",
+        "states": 10340996,
+        "distinct_cyclic_coordinate_orbits": 8561906,
+        "primitive_coordinates": [],
+        "rejections": {
+          "mixed_signs": 8558298,
+          "noncoprime_exponents": 0,
+          "wrong_cyclic_word": 3608
+        },
+        "positive_signed_rotation_controls": 3208,
+        "method": "Nielsen uniqueness plus exact positive Euclidean representatives and cyclic rotations; no Whitehead descent",
+        "scope": "Displayed cyclic coordinate classes and every free conjugate/inverse of them; not arbitrary elements of their generated subgroups"
+      }
+    }
+  }
+}

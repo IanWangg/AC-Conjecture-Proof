@@ -1,0 +1,73 @@
+[
+  {
+    "cap": 19,
+    "rank_two_catalogue_sha256": "acb60bac212c4d14ecbdfc251e87d35f191676b0321bc446d4d6928587ae1978",
+    "rank_two_pairs_of_length_at_most_cap_minus_one": 8240,
+    "boundary_projected_ordered_pairs_by_weight": {},
+    "first_exit_source_lifts_examined": 0,
+    "first_exit_overapproximation": 0,
+    "non_z_states_examined": 0,
+    "product_candidates_examined": 0,
+    "reentry_projections": 0,
+    "reentry_projections_outside_certified_component": [],
+    "minimum_row_length_without_z_singleton": null,
+    "one_occurrence_pivot_projection_pairs": 0,
+    "one_occurrence_projections_not_certified_at_length_cap_minus_one": 0,
+    "states_with_at_least_two_one_occurrence_pivots": 0,
+    "states_without_a_one_occurrence_pivot": 0,
+    "example_without_a_one_occurrence_pivot": null,
+    "distinct_rank_two_blocks_omitting_the_only_pivot": 0,
+    "whitehead_minimized_block_keys": 0,
+    "minimized_block_keys_with_verified_parity_obstruction": 0,
+    "omitting_the_only_pivot_but_still_using_z": 0
+  },
+  {
+    "cap": 20,
+    "rank_two_catalogue_sha256": "acb60bac212c4d14ecbdfc251e87d35f191676b0321bc446d4d6928587ae1978",
+    "rank_two_pairs_of_length_at_most_cap_minus_one": 27520,
+    "boundary_projected_ordered_pairs_by_weight": {
+      "20": 20
+    },
+    "first_exit_source_lifts_examined": 244,
+    "first_exit_overapproximation": 224,
+    "non_z_states_examined": 224,
+    "product_candidates_examined": 235776,
+    "reentry_projections": 20,
+    "reentry_projections_outside_certified_component": [],
+    "minimum_row_length_without_z_singleton": 5,
+    "one_occurrence_pivot_projection_pairs": 20,
+    "one_occurrence_projections_not_certified_at_length_cap_minus_one": 0,
+    "states_with_at_least_two_one_occurrence_pivots": 0,
+    "states_without_a_one_occurrence_pivot": 0,
+    "example_without_a_one_occurrence_pivot": null,
+    "distinct_rank_two_blocks_omitting_the_only_pivot": 20,
+    "whitehead_minimized_block_keys": 20,
+    "minimized_block_keys_with_verified_parity_obstruction": 20,
+    "omitting_the_only_pivot_but_still_using_z": 0
+  },
+  {
+    "cap": 21,
+    "rank_two_catalogue_sha256": "acb60bac212c4d14ecbdfc251e87d35f191676b0321bc446d4d6928587ae1978",
+    "rank_two_pairs_of_length_at_most_cap_minus_one": 48636,
+    "boundary_projected_ordered_pairs_by_weight": {
+      "20": 20,
+      "21": 48
+    },
+    "first_exit_source_lifts_examined": 5852,
+    "first_exit_overapproximation": 4208,
+    "non_z_states_examined": 4208,
+    "product_candidates_examined": 4802688,
+    "reentry_projections": 56,
+    "reentry_projections_outside_certified_component": [],
+    "minimum_row_length_without_z_singleton": 5,
+    "one_occurrence_pivot_projection_pairs": 928,
+    "one_occurrence_projections_not_certified_at_length_cap_minus_one": 0,
+    "states_with_at_least_two_one_occurrence_pivots": 3456,
+    "states_without_a_one_occurrence_pivot": 0,
+    "example_without_a_one_occurrence_pivot": null,
+    "distinct_rank_two_blocks_omitting_the_only_pivot": 56,
+    "whitehead_minimized_block_keys": 52,
+    "minimized_block_keys_with_verified_parity_obstruction": 52,
+    "omitting_the_only_pivot_but_still_using_z": 0
+  }
+]
