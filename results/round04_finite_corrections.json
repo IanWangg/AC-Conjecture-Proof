@@ -1,0 +1,83 @@
+{
+  "prefix_sha256": "0d195a1cc1a8dda57f1785c724ea7b27a49d6eaa60ea4e5aa90c7c257b767fd9",
+  "image_of_braid_derived_subgroup_size": 79200,
+  "braid_derived_subgroup_lift_generators": [
+    "xyxYXYxxyxYXYXyxyyXYXX",
+    "xyxxYXYxyXYXyyxyXYXY",
+    "xyxYYXYxyxyXYXXyxyXY"
+  ],
+  "finite_factor_commutator_audits": [
+    {
+      "factor_order": 1320,
+      "conjugacy_classes": 15,
+      "central_classes": 2
+    },
+    {
+      "factor_order": 60,
+      "conjugacy_classes": 5,
+      "central_classes": 1
+    }
+  ],
+  "phases": [
+    {
+      "recipient": 1,
+      "component": 0,
+      "conjugators_in_braid_derived_subgroup": [
+        "xyxYXYxxyxYXYXyxyyXYXXyxYXYxxyxYXYXyxyyXYXyxyxYXYYxyxYXyxyXYYXYxyxyXYXXyxyXY",
+        "xyxYXYxxyxYXYXyxyyXYXXyxYXYxxyxYXYXyxyyXYXyxYXYxxyxYXYXyxyyXYXyxyxYXYYxyxYXyxyXYYXYxyxyXYXXyxyyxYXYYxyxYXyxyXXYX"
+      ],
+      "strict_moves": 384,
+      "free_endpoint_lengths": [
+        635,
+        4759
+      ]
+    },
+    {
+      "recipient": 0,
+      "component": 0,
+      "conjugators_in_braid_derived_subgroup": [
+        "xyxYYXYxyxyXYXXyxyXYxyxxYXYxyXYXyyxyXYXYxxyxYYXYxyxyXYXXyxyXYXyxYXYxxyxYXYXyxyXYxxyxYXYXyxyyXYXX",
+        "xyxYYXYxyxyXYXXyxyXYxyxxYXYxyXYXyyxyXYYXYxxyxYXYXyxyyXYXyxyxYXYYxyxYXyxyXYXYxxyxYXYXyxyyXYXX"
+      ],
+      "strict_moves": 384,
+      "free_endpoint_lengths": [
+        20027,
+        4759
+      ]
+    },
+    {
+      "recipient": 0,
+      "component": 1,
+      "conjugators_in_braid_derived_subgroup": [
+        "xyxxYXYxyXYXyyxyXYXYxyxYXYxxyxYXYXyxyyXYXX",
+        "xyxxYXYxyXYXyyxyXYXYxyxxYXYxyXYXyyxyXYXYxyxYXYxxyxYXYXyxyyXYXXyxyxYXYYxyxYXyxyXXYX"
+      ],
+      "strict_moves": 256,
+      "free_endpoint_lengths": [
+        39291,
+        4759
+      ]
+    },
+    {
+      "recipient": 1,
+      "component": 1,
+      "conjugators_in_braid_derived_subgroup": [
+        "xyxxYXYxyXYXyyxyXYXYxyxYXYxxyxYXYXyxyyXYXX",
+        "yxYXYxxyxYXYXyxyXYxxyxYXYXyxyyXYXyxxYXYxyXYXyyxyXYXYxyxYYXYxyxyXYXXyxyXY"
+      ],
+      "strict_moves": 236,
+      "free_endpoint_lengths": [
+        39291,
+        162135
+      ]
+    }
+  ],
+  "strict_moves": 1793,
+  "raw_peak": 201426,
+  "free_endpoint_lengths": [
+    39291,
+    162135
+  ],
+  "both_finite_images_match_marked_basis": true,
+  "braid_relation_module_image_matches_marked_basis": true
+}

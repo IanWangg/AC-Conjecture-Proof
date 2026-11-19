@@ -1,0 +1,434 @@
+{
+  "input_sha256": {
+    "cap26": "3bce0c9dbd0791990a97230f451f1f068d4d648f8bcf58d156a1861785ea1893",
+    "reverse32": "6e8635d5bf97b4ebc4629ee7fe4fe8491e4dc5d0b89cbc44d44cba4b3701478d",
+    "reverse56": "c9dd0627965a6f1ffa899c4a465b95a788d739eedd49089d9b6c5681980ba2c4",
+    "fixed_forward_route_and_escapes": "2d93b9b7035384a6dfc3cc95779d7055acc58f2b66830f612551a12a07698760"
+  },
+  "intrinsic_basis_index": {
+    "reverse32": {
+      "status": "NO_SUBGROUP_JOIN",
+      "forward_pairs": 10340996,
+      "forward_distinct_words": 8561906,
+      "forward_cap": 26,
+      "forward_minimum_coordinate": 5,
+      "reverse_pairs": 9257,
+      "reverse_rotation_pairs": 1117474,
+      "reverse_distinct_rotated_cores": 486726,
+      "reverse_geodesic_bridges": 295016,
+      "primitive_slopes_constructed": 2798436,
+      "coordinates_found_in_forward_catalogue": 985188,
+      "basis_pair_lookups": 324539,
+      "core_topologies": {
+        "barbell": 296246,
+        "rose": 155277,
+        "theta": 330219
+      }
+    },
+    "reverse56": {
+      "status": "NO_SUBGROUP_JOIN",
+      "forward_pairs": 10340996,
+      "forward_distinct_words": 8561906,
+      "forward_cap": 26,
+      "forward_minimum_coordinate": 5,
+      "reverse_pairs": 23902,
+      "reverse_rotation_pairs": 6230442,
+      "reverse_distinct_rotated_cores": 2675055,
+      "reverse_geodesic_bridges": 295016,
+      "primitive_slopes_constructed": 4876186,
+      "coordinates_found_in_forward_catalogue": 1867074,
+      "basis_pair_lookups": 324917,
+      "core_topologies": {
+        "barbell": 301100,
+        "rose": 861364,
+        "theta": 1807607
+      }
+    },
+    "controls": {
+      "barbell": {
+        "status": "JOIN",
+        "topology": "barbell",
+        "reverse_pair": [
+          "X",
+          "Y"
+        ],
+        "reverse_lobe_representatives": [
+          "X",
+          "Y"
+        ],
+        "bridge": "yx",
+        "core_basis": [
+          "X",
+          "yxYXY"
+        ],
+        "slopes": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "forward_pair": [
+          "XYXyxY",
+          "Y"
+        ]
+      },
+      "rose": {
+        "status": "JOIN",
+        "topology": "rose",
+        "reverse_pair": [
+          "X",
+          "Y"
+        ],
+        "reverse_lobe_representatives": [
+          "X",
+          "Y"
+        ],
+        "bridge": "",
+        "core_basis": [
+          "X",
+          "Y"
+        ],
+        "slopes": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "forward_pair": [
+          "XXY",
+          "XY"
+        ]
+      },
+      "theta": {
+        "status": "JOIN",
+        "topology": "theta",
+        "reverse_pair": [
+          "XXXY",
+          "XXY"
+        ],
+        "reverse_lobe_representatives": [
+          "XXXY",
+          "XYX"
+        ],
+        "bridge": "",
+        "core_basis": [
+          "xyxx",
+          "xxy"
+        ],
+        "slopes": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            -2
+          ]
+        ],
+        "forward_pair": [
+          "XXY",
+          "XXYXyxxY"
+        ]
+      },
+      "theta_round01_reference": "BOTH_INTERSECT",
+      "barbell_strict_certificate": {
+        "moves": 7,
+        "peak_total_length": 11,
+        "endpoint": [
+          "x",
+          "y"
+        ]
+      }
+    }
+  },
+  "fixed_forward_core_comparison": {
+    "forward_cores": 38,
+    "reverse_pairs": 9257,
+    "reverse_rotated_core_comparisons": 42464012,
+    "full_ambient_rank_two_cases": 240388,
+    "multilift_bridge_placements": 469970544,
+    "join_found": false
+  },
+  "energy15_first_disjoint_bridge_scan": {
+    "1": {
+      "admissible": 54,
+      "distinct_cores": 54,
+      "joins": 5670,
+      "dag_absent": 5724,
+      "exact_absent": 0,
+      "map_states": 0,
+      "positive": 0,
+      "incomplete": 0
+    },
+    "2": {
+      "admissible": 170,
+      "distinct_cores": 170,
+      "joins": 20400,
+      "dag_absent": 20570,
+      "exact_absent": 0,
+      "map_states": 0,
+      "positive": 0,
+      "incomplete": 0
+    },
+    "3": {
+      "admissible": 502,
+      "distinct_cores": 502,
+      "joins": 68272,
+      "dag_absent": 68774,
+      "exact_absent": 0,
+      "map_states": 0,
+      "positive": 0,
+      "incomplete": 0
+    },
+    "4": {
+      "admissible": 1514,
+      "distinct_cores": 1514,
+      "joins": 231642,
+      "dag_absent": 233156,
+      "exact_absent": 0,
+      "map_states": 0,
+      "positive": 0,
+      "incomplete": 0
+    },
+    "5": {
+      "admissible": 4534,
+      "distinct_cores": 4534,
+      "joins": 775314,
+      "dag_absent": 779848,
+      "exact_absent": 0,
+      "map_states": 0,
+      "positive": 0,
+      "incomplete": 0
+    },
+    "6": {
+      "admissible": 13610,
+      "distinct_cores": 13610,
+      "joins": 2585900,
+      "dag_absent": 2599510,
+      "exact_absent": 0,
+      "map_states": 0,
+      "positive": 0,
+      "incomplete": 0
+    },
+    "7": {
+      "admissible": 40822,
+      "distinct_cores": 40822,
+      "joins": 8572620,
+      "dag_absent": 8613442,
+      "exact_absent": 0,
+      "map_states": 0,
+      "positive": 0,
+      "incomplete": 0
+    },
+    "8": {
+      "admissible": 122474,
+      "distinct_cores": 122474,
+      "joins": 28291494,
+      "dag_absent": 28413968,
+      "exact_absent": 0,
+      "map_states": 0,
+      "positive": 0,
+      "incomplete": 0
+    }
+  },
+  "energy15_first_disjoint_guarded_language": {
+    "lobes": [
+      "XXYxYxy",
+      "XYXyxYYY"
+    ],
+    "guard_window": 8,
+    "forbidden_signed_rotations": 30,
+    "endpoint_guards": {
+      "XXYxYxy": {
+        "all": [
+          30618,
+          29784
+        ],
+        "positive": [
+          896,
+          888
+        ],
+        "negative": [
+          896,
+          888
+        ]
+      },
+      "XYXyxYYY": {
+        "all": [
+          34992,
+          33838
+        ],
+        "positive": [
+          1024,
+          1020
+        ],
+        "negative": [
+          1024,
+          1020
+        ]
+      }
+    },
+    "regular_language_counts": {
+      "8": {
+        "admissible": 122474,
+        "guarded": 116324
+      },
+      "9": {
+        "admissible": 367414,
+        "guarded": 347400
+      },
+      "10": {
+        "admissible": 1102250,
+        "guarded": 1037533
+      },
+      "12": {
+        "admissible": 9920234,
+        "guarded": 9253977
+      },
+      "16": {
+        "admissible": 803538794,
+        "guarded": 736160715
+      },
+      "20": {
+        "admissible": 65086642154,
+        "guarded": 58562158364
+      },
+      "30": {
+        "admissible": 3843301132433450,
+        "guarded": 3305431537590096
+      },
+      "50": {
+        "admissible": 13400762436914581657044650,
+        "guarded": 10530532907812144902689834
+      }
+    },
+    "lobe_pairs": [
+      {
+        "lobes": [
+          "XXYxYxy",
+          "XXYxYxy"
+        ],
+        "rotation_pairs": 49,
+        "map_pair_states": 2720
+      },
+      {
+        "lobes": [
+          "XXYxYxy",
+          "XYXyxYYY"
+        ],
+        "rotation_pairs": 56,
+        "map_pair_states": 4104
+      },
+      {
+        "lobes": [
+          "XYXyxYYY",
+          "XYXyxYYY"
+        ],
+        "rotation_pairs": 64,
+        "map_pair_states": 4400
+      }
+    ],
+    "independent_controls": {
+      "full_folds": 120,
+      "guard_passes": 115,
+      "replayed_two_copy_joins": 2628
+    }
+  },
+  "outward_search": {
+    "anchor": [
+      "XXYxYxy",
+      "XYXyxYYY"
+    ],
+    "local_cap": 28,
+    "product_counts": [
+      {
+        "products": 15680,
+        "admitted": 15680
+      },
+      {
+        "products": 1594144,
+        "admitted": 40614
+      }
+    ],
+    "first_outgoing_states": {
+      "27": 340,
+      "28": 1004
+    },
+    "two_step_distinct_states": 1389,
+    "novel_states": {
+      "27": 1123,
+      "28": 1004
+    },
+    "primitive_coordinate_positives": [],
+    "new_outside_cap26_states_below_the_ceiling": 0,
+    "outside_cap26_witness": {
+      "goal": [
+        "XXXXXYxxYYYxYXyxYYY",
+        "XYXyxYYY"
+      ],
+      "first_outside_pair": [
+        "XXXXXYxYxyxxYXyxYYY",
+        "XYXyxYYY"
+      ],
+      "concrete_first_edge": [
+        0,
+        "XXYxYxy",
+        "YXyxYYYX",
+        "xx"
+      ],
+      "concrete_second_edge": [
+        0,
+        "XYXyXyxxxxxyyyXYxyX",
+        "yyyXYxyx",
+        ""
+      ],
+      "moves": 427,
+      "peak_total_length": 35,
+      "endpoint": [
+        "XYXyxYYY",
+        "XXXXXYxxYYYxYXyxYYY"
+      ],
+      "cyclic_peak": 27
+    },
+    "known_trivial_basis_comparison": {
+      "status": "NO_SUBGROUP_JOIN",
+      "forward_pairs": 2127,
+      "forward_distinct_words": 2129,
+      "forward_cap": 28,
+      "forward_minimum_coordinate": 7,
+      "reverse_pairs": 23902,
+      "reverse_rotation_pairs": 6230442,
+      "reverse_distinct_rotated_cores": 2675055,
+      "reverse_geodesic_bridges": 26522,
+      "primitive_slopes_constructed": 3718582,
+      "coordinates_found_in_forward_catalogue": 14741,
+      "basis_pair_lookups": 0,
+      "core_topologies": {
+        "barbell": 32606,
+        "rose": 861364,
+        "theta": 1807607
+      }
+    },
+    "literal_two_copy_screen": {
+      "rotations_enabled": false,
+      "source_pairs": 2127,
+      "rotation_pairs": 2127,
+      "unbased_cores": 1788,
+      "own_tests": 1788,
+      "distinct_vertex_joins": 434154,
+      "DAG_absent": 435942,
+      "exact_absent": 0,
+      "exact_map_pair_states": 0,
+      "positive": 0,
+      "incomplete": 0
+    }
+  }
+}

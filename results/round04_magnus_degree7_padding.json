@@ -1,0 +1,16 @@
+{
+  "exclusions": [
+    {
+      "distance": null,
+      "last_radius": 7,
+      "visited": [
+        273807,
+        11096421
+      ],
+      "degree": 7,
+      "extra_rows": 3,
+      "limit": 7,
+      "unordered": true
+    }
+  ]
+}

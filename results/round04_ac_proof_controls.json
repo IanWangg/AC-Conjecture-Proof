@@ -1,0 +1,380 @@
+{
+  "two_auxiliary": {
+    "edge_from": [
+      "zztZTzzt",
+      "TZZtzTZ",
+      "tX",
+      "ytt"
+    ],
+    "edge_to": [
+      "z",
+      "TZZtzTZ",
+      "tX",
+      "ytt"
+    ],
+    "chosen_slots": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "projections": [
+      [
+        "X",
+        "y"
+      ],
+      [
+        "X",
+        "yxx"
+      ]
+    ],
+    "projected_moves": [
+      {
+        "op": "invert",
+        "i": 0
+      },
+      {
+        "op": "multiply",
+        "i": 1,
+        "j": 0
+      },
+      {
+        "op": "multiply",
+        "i": 1,
+        "j": 0
+      },
+      {
+        "op": "invert",
+        "i": 0
+      }
+    ],
+    "projected_replay": {
+      "moves": 4,
+      "peak_total_length": 4,
+      "endpoint": [
+        "X",
+        "yxx"
+      ]
+    }
+  },
+  "three_auxiliary": {
+    "edge_from": [
+      "z",
+      "tuztZUT",
+      "u",
+      "ztuztZUTztuztZUTZZUTZZUTZx",
+      "ztuztZUTztuztZUTztuztZUTztuztZUTztuztZUTZUTZZZUTZZUTZy"
+    ],
+    "edge_to": [
+      "ztuztZUT",
+      "tuztZUT",
+      "u",
+      "ztuztZUTztuztZUTZZUTZZUTZx",
+      "ztuztZUTztuztZUTztuztZUTztuztZUTztuztZUTZUTZZZUTZZUTZy"
+    ],
+    "middle_tuple": [
+      "z",
+      "ztuztZUT",
+      "u",
+      "ztuztZUTztuztZUTZZUTZZUTZx",
+      "ztuztZUTztuztZUTztuztZUTztuztZUTztuztZUTZUTZZZUTZZUTZy"
+    ],
+    "chosen_slots": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        3,
+        4
+      ]
+    ],
+    "transported_at_right": {
+      "minimal_words": [
+        "x",
+        "y",
+        "utUz",
+        "t",
+        "ZTu"
+      ],
+      "degree_and_minimum_cut": {
+        "x": [
+          1,
+          1
+        ],
+        "y": [
+          1,
+          1
+        ],
+        "z": [
+          2,
+          2
+        ],
+        "t": [
+          3,
+          3
+        ],
+        "u": [
+          3,
+          3
+        ]
+      }
+    },
+    "transported_at_middle": {
+      "minimal_words": [
+        "x",
+        "y",
+        "z",
+        "utZUz",
+        "Tu"
+      ],
+      "degree_and_minimum_cut": {
+        "x": [
+          1,
+          1
+        ],
+        "y": [
+          1,
+          1
+        ],
+        "z": [
+          3,
+          3
+        ],
+        "t": [
+          2,
+          2
+        ],
+        "u": [
+          3,
+          3
+        ]
+      }
+    },
+    "old_residual_frame_after_killing_product": [
+      "z",
+      "WzwwZ"
+    ],
+    "right_chart": {
+      "z": "YxYxx",
+      "t": "YXyXyXy",
+      "u": "YxYxYxyXXyXyXyXXyXy"
+    },
+    "projections": [
+      [
+        "x",
+        "y"
+      ],
+      [
+        "XXyXy",
+        "YxYxYxyXXyXyXyXXyXy"
+      ]
+    ],
+    "right_to_left_moves": [
+      {
+        "op": "invert",
+        "i": 0
+      },
+      {
+        "op": "multiply",
+        "i": 1,
+        "j": 0
+      },
+      {
+        "op": "invert",
+        "i": 0
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "Y"
+      },
+      {
+        "op": "multiply",
+        "i": 1,
+        "j": 0
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "X"
+      },
+      {
+        "op": "invert",
+        "i": 1
+      },
+      {
+        "op": "multiply",
+        "i": 1,
+        "j": 0
+      },
+      {
+        "op": "multiply",
+        "i": 0,
+        "j": 1
+      },
+      {
+        "op": "multiply",
+        "i": 0,
+        "j": 1
+      },
+      {
+        "op": "multiply",
+        "i": 1,
+        "j": 0
+      },
+      {
+        "op": "invert",
+        "i": 0
+      },
+      {
+        "op": "invert",
+        "i": 1
+      }
+    ],
+    "projected_replay": {
+      "moves": 39,
+      "peak_total_length": 35,
+      "endpoint": [
+        "x",
+        "y"
+      ]
+    }
+  }
+}

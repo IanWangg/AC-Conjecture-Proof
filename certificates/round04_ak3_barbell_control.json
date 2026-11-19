@@ -1,0 +1,46 @@
+{
+  "format": "ordinary-ac-elementary-v1",
+  "start": [
+    "xyxyXY",
+    "y"
+  ],
+  "target": [
+    "x",
+    "y"
+  ],
+  "moves": [
+    {
+      "op": "conjugate",
+      "i": 1,
+      "g": "x"
+    },
+    {
+      "op": "conjugate",
+      "i": 1,
+      "g": "y"
+    },
+    {
+      "op": "invert",
+      "i": 1
+    },
+    {
+      "op": "multiply",
+      "i": 0,
+      "j": 1
+    },
+    {
+      "op": "invert",
+      "i": 1
+    },
+    {
+      "op": "conjugate",
+      "i": 1,
+      "g": "Y"
+    },
+    {
+      "op": "conjugate",
+      "i": 1,
+      "g": "X"
+    }
+  ]
+}

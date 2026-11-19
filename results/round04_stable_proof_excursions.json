@@ -1,0 +1,105 @@
+{
+  "seeding": {
+    "cap": 22,
+    "rank_two_catalogue_sha256": "6ed07aa9a47059516cac8cf2bac255684c5a2d63437c17d321ba4cf510be6894",
+    "ordered_boundary_pairs": 476,
+    "examined_singleton_lifts": 78316,
+    "first_exit_seeds": 48096
+  },
+  "literal_prefix": {
+    "cap": 22,
+    "complete": false,
+    "signed_symmetries": false,
+    "seed_orbits": 48096,
+    "seeds": 48096,
+    "state_orbits": 2000000,
+    "states": 2000000,
+    "minimum_row_length": 2,
+    "pivotless": 5431,
+    "candidates": 314406586,
+    "nonempty_bridge_candidates": 4741016,
+    "admitted": 23823462,
+    "reentry_projections": 432,
+    "histogram": {
+      "15": 1183,
+      "16": 12,
+      "17": 19323,
+      "18": 1617,
+      "19": 182068,
+      "20": 32702,
+      "21": 1449336,
+      "22": 313759
+    },
+    "reentries_in_cap21": 432
+  },
+  "signed_orbit_prefix": {
+    "cap": 22,
+    "complete": false,
+    "signed_symmetries": true,
+    "seed_orbits": 3008,
+    "seeds": 48096,
+    "state_orbits": 2000000,
+    "states": 31989768,
+    "minimum_row_length": 2,
+    "pivotless": 345416,
+    "candidates": 681995055,
+    "nonempty_bridge_candidates": 2729296,
+    "admitted": 42337217,
+    "reentry_projections": 432,
+    "histogram": {
+      "14": 16,
+      "15": 3424,
+      "16": 496,
+      "17": 102416,
+      "18": 20264,
+      "19": 1726816,
+      "20": 481400,
+      "21": 22409744,
+      "22": 7245192
+    },
+    "reentries_in_cap21": 432
+  },
+  "witness_rank_two_macros": 17,
+  "witness_rank_three_macro_rows": [
+    [
+      "XXXXYYY",
+      "XXXXYYYZ",
+      "XYxYXy"
+    ],
+    [
+      "XXXXYYY",
+      "XYYYxzyyy",
+      "XYxYXy"
+    ],
+    [
+      "XXXXYYY",
+      "XYYZXyyxY",
+      "XYxYXy"
+    ],
+    [
+      "XXXXYYY",
+      "XXYYZXyxY",
+      "XYxYXy"
+    ],
+    [
+      "XXXXYYY",
+      "XXXYYZY",
+      "XYxYXy"
+    ],
+    [
+      "XXXYYZY",
+      "XYYzyy",
+      "XYxYXy"
+    ],
+    [
+      "XXYYZZY",
+      "XYYzyy",
+      "XYxYXy"
+    ],
+    [
+      "XXYYZZY",
+      "XYYZZZY",
+      "XYxYXy"
+    ]
+  ]
+}

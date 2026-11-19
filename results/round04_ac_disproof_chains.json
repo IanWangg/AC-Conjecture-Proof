@@ -1,0 +1,136 @@
+{
+  "escape_control": {
+    "bridge": "XXXXyyyyyXXyyyyXy",
+    "bridge_length": 17,
+    "connectors": "Xyy",
+    "equal_length_extended_sample_count": 16,
+    "extended_sample_bridge_length": 96,
+    "lobes": [
+      "xxxYYYY",
+      "XXXyyyy",
+      "XXyyyyX",
+      "xyxYXY"
+    ],
+    "minimum_escape_length_in_this_chain": 17,
+    "older_reading_starts_by_length_in_this_chain": {
+      "10": {
+        "XXXXyyyyyy": 30,
+        "XYYYYxxxyy": 30,
+        "XyXXyyyyXy": 24,
+        "XyxYYYYxxy": 24
+      },
+      "17": {
+        "XXXXyyyyXXXyyyyyy": 30,
+        "XXXXyyyyyXXyyyyXy": 0,
+        "XXXXyyyyyxYYYYxxy": 0,
+        "XYYYYxxxYYYYxxxyy": 30,
+        "XYYYYxxxyXXyyyyXy": 0,
+        "XYYYYxxxyxYYYYxxy": 0,
+        "XyXXyyyyXXXyyyyXy": 24,
+        "XyxYYYYxxxYYYYxxy": 24
+      },
+      "3": {
+        "Xyy": 1446
+      }
+    },
+    "older_start_vertices_checked": 10788,
+    "older_three_lobe_cores": 552,
+    "overgroup_basis": [
+      "xxxYYYY",
+      "XXXXyyyyx",
+      "XyXXyyyyXYx",
+      "XyyxyxYXYYYx"
+    ]
+  },
+  "independent_bouquet_audit": {
+    "closed_map_pair_states_checked": 513266,
+    "explicit_chain": {
+      "checked_joins": 351,
+      "closed_map_states": 83902,
+      "dag_exclusions": 351,
+      "primitive_joins": []
+    },
+    "rebased_joins": 2902,
+    "sampled_chains": 9
+  },
+  "literal_AK2_positive_control": {
+    "checked_joins": 28,
+    "closed_map_states": 2276,
+    "dag_exclusions": 25,
+    "primitive_joins": [
+      {
+        "vertices": [
+          1,
+          4
+        ],
+        "witness": {
+          "alphabet": "xY",
+          "base_to_loop_path": "X",
+          "based_primitive_word": "YxYYxYYx",
+          "component": 1,
+          "cyclic_primitive_word": "xYxYYxYY",
+          "loop_vertex": 2,
+          "positive_basis_program": "RLRL",
+          "word_length": 8
+        }
+      },
+      {
+        "vertices": [
+          3,
+          7
+        ],
+        "witness": {
+          "alphabet": "xY",
+          "base_to_loop_path": "XX",
+          "based_primitive_word": "XYxYYxYYxx",
+          "component": 1,
+          "cyclic_primitive_word": "xYxYYxYY",
+          "loop_vertex": 3,
+          "positive_basis_program": "RLRL",
+          "word_length": 8
+        }
+      },
+      {
+        "vertices": [
+          5,
+          6
+        ],
+        "witness": {
+          "alphabet": "xY",
+          "base_to_loop_path": "YY",
+          "based_primitive_word": "YYxYxYYx",
+          "component": 1,
+          "cyclic_primitive_word": "xYxYYxYY",
+          "loop_vertex": 8,
+          "positive_basis_program": "RLRL",
+          "word_length": 8
+        }
+      }
+    ]
+  },
+  "native": {
+    "certified_sources": 7200,
+    "exact_map_states": 0,
+    "incomplete": 0,
+    "join_exact_exclusions": 0,
+    "native_joins": {
+      "DAG_exclusions": 2358360,
+      "DAG_unresolved": 0,
+      "join_ranks": {
+        "6": 2424,
+        "7": 127448,
+        "8": 2228488
+      },
+      "sources": 7200,
+      "vertex_pairs": 2358360
+    },
+    "own_DAG_exclusions": 7200,
+    "own_exact_exclusions": 0,
+    "primitive_positive": 0,
+    "source_vertex_counts": {
+      "25": 1512,
+      "26": 3528,
+      "27": 2160
+    }
+  }
+}

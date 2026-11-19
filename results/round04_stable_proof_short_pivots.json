@@ -1,0 +1,14 @@
+{
+  "states": 2000000,
+  "length_two_rows": {
+    "Xz": 1124857,
+    "Yz": 561298
+  },
+  "projected_pairs": 640,
+  "primitive_projected_rows": [],
+  "unmatched_against_cap26": [],
+  "distinct_z_free_rows": 443,
+  "primitive_z_free_rows": [],
+  "signed_projected_pairs": 2444,
+  "known_trivial_archive_matches": []
+}

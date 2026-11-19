@@ -15,6 +15,7 @@ The initial investigation began on 2026-11-02 and involved twenty-six research a
 | [01](research/round-01.md) | 2026-11-19 | Archive replay, geometric and algebraic descent, disjoint-axis obstructions, and stable distance by peak rank |
 | [02](research/round-02.md) | 2026-11-19 | Cyclic peak at least 26, fiber-product joins, geometric blocks, triangular paths, and relative quotient lifts |
 | [03](research/round-03.md) | 2026-11-19 | Cyclic peak at least 27, rank-three stable bound, malnormal cores, and wider frame descent |
+| [04](research/round-04.md) | 2026-11-19 | Full cap-26 subgroup join audit, sharp fixed-pivot loss, and simultaneous finite/relative corrections |
 
 ## Current strongest checked results
 

@@ -1,0 +1,25 @@
+{
+  "distinct_rank_three_cyclic_states": 26,
+  "states_with_at_least_one_chart": 26,
+  "chart_counts_by_eliminated_generator": {
+    "x": 3,
+    "z": 26
+  },
+  "distinct_rank_two_projections": 20,
+  "in_cap_26_component": 20,
+  "unmatched": [],
+  "distinct_whitehead_minima": 20,
+  "independent_planar_parity_checks": {
+    "PARITY_OBSTRUCTION": 20
+  },
+  "final_state_charts": [
+    {
+      "eliminated": "x",
+      "pivot": "XYYZZZY",
+      "projection": [
+        "XXXXYYYxyyyxYYY",
+        "XXXYYYY"
+      ]
+    }
+  ]
+}

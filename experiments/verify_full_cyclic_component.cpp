@@ -156,6 +156,8 @@ int run(const std::string& input,int cap,const std::string& output,int workers) 
         std::map<int,std::vector<std::pair<std::string,std::string>>> tails;
         Counts counts;
         for(std::size_t state=begin;state<end;++state) {
+            // Rotations are local accelerators. Avoid retaining every word in a large catalogue.
+            if(orientations.size()>65536) orientations.clear();
             const std::string words[2]={states[state].first,states[state].second};
             for(const auto& w:words)
                 if(!orientations.count(w)) orientations.emplace(w,signed_rotations(w));

@@ -39,6 +39,7 @@ struct Graph {
     }
 };
 
+#ifndef AC_FOLD_ENDPOINT_LIBRARY
 int main(int argc,char**argv) {
     if(argc!=2){std::cerr<<"usage: fold_endpoint word-pair.txt\n";return 2;}
     std::ifstream input(argv[1]);std::string word;
@@ -70,3 +71,4 @@ int main(int argc,char**argv) {
              <<",\"accepts_x\":"<<(x?"true":"false")
              <<",\"accepts_y\":"<<(y?"true":"false")<<"}\n";
 }
+#endif

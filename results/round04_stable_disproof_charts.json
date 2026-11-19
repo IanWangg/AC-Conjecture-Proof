@@ -1,0 +1,107 @@
+{
+  "free_middle": {
+    "start": [
+      "y",
+      "x",
+      "z"
+    ],
+    "moves": 8,
+    "crossing_order": [
+      "out",
+      "in",
+      "in",
+      "out"
+    ],
+    "before_first_incoming": [
+      "Zyx",
+      "x",
+      "z"
+    ],
+    "middle": [
+      "Zyx",
+      "x",
+      "yx"
+    ],
+    "after_second_incoming": [
+      "Zyx",
+      "x",
+      "y"
+    ],
+    "endpoint": [
+      "z",
+      "x",
+      "y"
+    ],
+    "early_common_basis_words": [
+      "x",
+      "yz"
+    ],
+    "late_common_basis_words": [
+      "x",
+      "z"
+    ],
+    "projected_early_pair": [
+      "yx",
+      "x"
+    ],
+    "projected_middle_early_marking": [
+      "YX",
+      "x"
+    ],
+    "projected_middle_late_marking": [
+      "Y",
+      "x"
+    ],
+    "projected_late_pair": [
+      "Yx",
+      "x"
+    ],
+    "strict_splice_moves": [
+      2,
+      1
+    ]
+  },
+  "nonfree_middle": {
+    "start": [
+      "y",
+      "x",
+      "z"
+    ],
+    "moves": 12,
+    "crossing_order": [
+      "out",
+      "in",
+      "in",
+      "out"
+    ],
+    "before_first_incoming": [
+      "ZyxyxYX",
+      "xyxYX",
+      "z"
+    ],
+    "middle": [
+      "ZyxyxYX",
+      "xyxYX",
+      "yxyxYX"
+    ],
+    "after_second_incoming": [
+      "ZyxyxYX",
+      "xyxYX",
+      "y"
+    ],
+    "endpoint": [
+      "z",
+      "x",
+      "y"
+    ],
+    "nonfree_relation": "x u x^-1 = u^2, u = yx",
+    "affine_image_of_u": [
+      1,
+      1
+    ],
+    "incoming_donors_after_killing_y_and_z": [
+      "x",
+      "x"
+    ]
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "considered_triples": 5431,
+  "distinct_blocks": 9638,
+  "excluded_by_cyclic_cover": 9582,
+  "remaining_block_witnesses": [
+    {
+      "pair": [
+        "XXXXYYY",
+        "XYZYXyxz"
+      ],
+      "count": 12,
+      "nonabelian_S5_images": [
+        [
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          3,
+          4,
+          2
+        ],
+        [
+          0,
+          2,
+          4,
+          3,
+          1
+        ]
+      ]
+    },
+    {
+      "pair": [
+        "XXXXYYY",
+        "XYZyxYXz"
+      ],
+      "count": 12,
+      "nonabelian_S5_images": [
+        [
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          3,
+          4,
+          2
+        ],
+        [
+          0,
+          4,
+          1,
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "pair": [
+        "XXXYZXzxY",
+        "XYxYXy"
+      ],
+      "count": 12,
+      "nonabelian_S5_images": [
+        [
+          4,
+          3,
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          3,
+          0,
+          4,
+          2
+        ],
+        [
+          0,
+          2,
+          1,
+          4,
+          3
+        ]
+      ]
+    },
+    {
+      "pair": [
+        "XXXYZZZ",
+        "XXYxyXZYZ"
+      ],
+      "count": 8,
+      "nonabelian_S5_images": [
+        [
+          4,
+          3,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          2,
+          4,
+          1
+        ],
+        [
+          4,
+          3,
+          1,
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "pair": [
+        "XXYZYXz",
+        "XYxYXy"
+      ],
+      "count": 12,
+      "base": "B_3",
+      "associated_cycle_generators": [
+        "YX",
+        "yxx"
+      ],
+      "trace_xy": 3,
+      "abelianized_exponent_of_yxx": 1
+    }
+  ]
+}
