@@ -1,0 +1,151 @@
+{
+  "searches": [
+    {
+      "extra_rows": 1,
+      "high_degree": 7,
+      "low_degree": 5,
+      "radii": [
+        5,
+        6
+      ],
+      "low_ball_layers": [
+        [
+          1,
+          17,
+          218,
+          2688,
+          34006,
+          449693
+        ],
+        [
+          1,
+          14,
+          145,
+          1418,
+          14720,
+          164159,
+          1949465
+        ]
+      ],
+      "low_midpoint_intersection": 24,
+      "low_corridor_widths": [
+        [
+          1,
+          9,
+          22,
+          22,
+          26,
+          24
+        ],
+        [
+          1,
+          8,
+          11,
+          13,
+          18,
+          23,
+          24
+        ]
+      ],
+      "lifted_widths": [
+        [
+          1,
+          23,
+          132,
+          196,
+          258,
+          308
+        ],
+        [
+          1,
+          21,
+          61,
+          78,
+          107,
+          134,
+          276
+        ]
+      ],
+      "high_midpoint_intersection": 0
+    },
+    {
+      "extra_rows": 0,
+      "high_degree": 8,
+      "low_degree": 6,
+      "radii": [
+        7,
+        7
+      ],
+      "low_ball_layers": [
+        [
+          1,
+          14,
+          144,
+          1360,
+          12296,
+          109110,
+          961057,
+          8439701
+        ],
+        [
+          1,
+          10,
+          77,
+          542,
+          4082,
+          32214,
+          263087,
+          2197679
+        ]
+      ],
+      "low_midpoint_intersection": 98,
+      "low_corridor_widths": [
+        [
+          1,
+          15,
+          54,
+          69,
+          79,
+          93,
+          95,
+          98
+        ],
+        [
+          1,
+          11,
+          32,
+          43,
+          69,
+          85,
+          99,
+          98
+        ]
+      ],
+      "lifted_widths": [
+        [
+          1,
+          15,
+          54,
+          69,
+          79,
+          93,
+          98,
+          102
+        ],
+        [
+          1,
+          11,
+          32,
+          43,
+          69,
+          85,
+          99,
+          98
+        ]
+      ],
+      "high_midpoint_intersection": 0
+    }
+  ],
+  "degree_eight_ordinary_distance_lower_bound": 15,
+  "degree_eight_stable_distance_lower_bound": 15
+}

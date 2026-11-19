@@ -1,0 +1,164 @@
+{
+  "rank_three_replay": {
+    "moves": 148,
+    "raw_peak": 28,
+    "cyclic_peak": 23,
+    "target": [
+      "XzyZYYZxy",
+      "XXzYZ",
+      "XYXzYZxyy"
+    ],
+    "first_pivotless_step": 140
+  },
+  "whitehead_stages": [
+    {
+      "descent": {
+        "multiplier": "Z",
+        "cut": "XYZy",
+        "result": [
+          "XyZYYxy"
+        ]
+      },
+      "defining_exchanges": [
+        {
+          "introduced_relator": "tzX",
+          "eliminated": "x"
+        },
+        {
+          "introduced_relator": "tYZ",
+          "eliminated": "y"
+        },
+        {
+          "introduced_relator": "tzY",
+          "eliminated": "y"
+        }
+      ],
+      "rows": [
+        "XyZYYxy",
+        "XYZXZ",
+        "XYxyyXZY"
+      ]
+    },
+    {
+      "descent": {
+        "multiplier": "Y",
+        "cut": "XYZz",
+        "result": [
+          "XZYxy"
+        ]
+      },
+      "defining_exchanges": [
+        {
+          "introduced_relator": "tyX",
+          "eliminated": "x"
+        },
+        {
+          "introduced_relator": "tZY",
+          "eliminated": "z"
+        },
+        {
+          "introduced_relator": "tyZ",
+          "eliminated": "z"
+        }
+      ],
+      "rows": [
+        "XZYxy",
+        "XYYZXYZ",
+        "XYZYXYxyy"
+      ]
+    },
+    {
+      "descent": {
+        "multiplier": "X",
+        "cut": "XYyz",
+        "result": [
+          "XyzY"
+        ]
+      },
+      "defining_exchanges": [
+        {
+          "introduced_relator": "tYX",
+          "eliminated": "y"
+        },
+        {
+          "introduced_relator": "txY",
+          "eliminated": "y"
+        },
+        {
+          "introduced_relator": "tZX",
+          "eliminated": "z"
+        }
+      ],
+      "rows": [
+        "XyzY",
+        "XYYxZXYxZ",
+        "XYxZYXYxyy"
+      ]
+    },
+    {
+      "descent": {
+        "multiplier": "Y",
+        "cut": "YZz",
+        "result": [
+          "Xz"
+        ]
+      },
+      "defining_exchanges": [
+        {
+          "introduced_relator": "tZY",
+          "eliminated": "z"
+        },
+        {
+          "introduced_relator": "tyZ",
+          "eliminated": "z"
+        }
+      ],
+      "rows": [
+        "Xz",
+        "XYYxYZyXYxYZy",
+        "XYxYZXYxyy"
+      ]
+    },
+    {
+      "descent": {
+        "multiplier": "X",
+        "cut": "XYZ",
+        "result": [
+          "Z"
+        ]
+      },
+      "defining_exchanges": [
+        {
+          "introduced_relator": "txY",
+          "eliminated": "y"
+        },
+        {
+          "introduced_relator": "txZ",
+          "eliminated": "z"
+        }
+      ],
+      "rows": [
+        "Z",
+        "XYXYYXZyXYYXZy",
+        "XXYxyxyXYYXZ"
+      ]
+    }
+  ],
+  "defining_exchanges": 13,
+  "maximum_rank_of_stable_connection": 4,
+  "rank_two_projection": [
+    "XXXYxyxyXYY",
+    "XYXYYXyXYYXy"
+  ],
+  "cap29_membership": {
+    "literal_input": [
+      "XXXYxyxyXYY",
+      "XYXYYXyXYYXy"
+    ],
+    "compact_key": [
+      "xxxyXYXYxyy",
+      "xyxyyxYxyyxY"
+    ],
+    "present": false
+  }
+}

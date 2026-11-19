@@ -1,0 +1,555 @@
+{
+  "bounded_basis_scans": [
+    {
+      "native": {
+        "first_basis_bound": 3,
+        "second_basis_bound": 3,
+        "first_geodesic_gap": 0,
+        "second_geodesic_gap": 0,
+        "first_slope_pairs": 5,
+        "second_slope_pairs": 5,
+        "first_marked_pairs": 328,
+        "second_placements": 204402,
+        "distinct_second_marked_pairs": 93320,
+        "distinct_second_cores": 45400,
+        "vertex_pairs_covered": 14379815,
+        "DAG_excluded": 6860232,
+        "exact_excluded": 0,
+        "primitive_positives": 0,
+        "incomplete": 0
+      },
+      "independent": {
+        "first_marked_pairs": 328,
+        "second_marked_pairs": 93320,
+        "second_unbased_cores": 45400,
+        "third_join_placements_represented": 14379815,
+        "independent_sampled_four_word_refolds": 144
+      }
+    },
+    {
+      "native": {
+        "first_basis_bound": 2,
+        "second_basis_bound": 3,
+        "first_geodesic_gap": 1,
+        "second_geodesic_gap": 0,
+        "first_slope_pairs": 1,
+        "second_slope_pairs": 5,
+        "first_marked_pairs": 84,
+        "second_placements": 32908,
+        "distinct_second_marked_pairs": 22974,
+        "distinct_second_cores": 11229,
+        "vertex_pairs_covered": 1907262,
+        "DAG_excluded": 894921,
+        "exact_excluded": 0,
+        "primitive_positives": 0,
+        "incomplete": 0
+      },
+      "independent": {
+        "first_marked_pairs": 84,
+        "second_marked_pairs": 22974,
+        "second_unbased_cores": 11229,
+        "third_join_placements_represented": 1907262,
+        "independent_sampled_four_word_refolds": 144
+      }
+    },
+    {
+      "native": {
+        "first_basis_bound": 3,
+        "second_basis_bound": 2,
+        "first_geodesic_gap": 0,
+        "second_geodesic_gap": 1,
+        "first_slope_pairs": 5,
+        "second_slope_pairs": 1,
+        "first_marked_pairs": 328,
+        "second_placements": 46182,
+        "distinct_second_marked_pairs": 988,
+        "distinct_second_cores": 489,
+        "vertex_pairs_covered": 66109,
+        "DAG_excluded": 31038,
+        "exact_excluded": 0,
+        "primitive_positives": 0,
+        "incomplete": 0
+      },
+      "independent": {
+        "first_marked_pairs": 328,
+        "second_marked_pairs": 988,
+        "second_unbased_cores": 489,
+        "third_join_placements_represented": 66109,
+        "independent_sampled_four_word_refolds": 144
+      }
+    },
+    {
+      "native": {
+        "first_basis_bound": 3,
+        "second_basis_bound": 4,
+        "first_geodesic_gap": 0,
+        "second_geodesic_gap": 0,
+        "first_slope_pairs": 5,
+        "second_slope_pairs": 9,
+        "first_marked_pairs": 328,
+        "second_placements": 493106,
+        "distinct_second_marked_pairs": 239030,
+        "distinct_second_cores": 116765,
+        "vertex_pairs_covered": 60081093,
+        "DAG_excluded": 28921301,
+        "exact_excluded": 0,
+        "primitive_positives": 0,
+        "incomplete": 0
+      },
+      "independent": {
+        "first_marked_pairs": 328,
+        "second_marked_pairs": 239030,
+        "second_unbased_cores": 116765,
+        "third_join_placements_represented": 60081093,
+        "independent_sampled_four_word_refolds": 144
+      }
+    },
+    {
+      "native": {
+        "first_basis_bound": 3,
+        "second_basis_bound": 3,
+        "first_geodesic_gap": 0,
+        "second_geodesic_gap": 1,
+        "first_slope_pairs": 5,
+        "second_slope_pairs": 5,
+        "first_marked_pairs": 328,
+        "second_placements": 410230,
+        "distinct_second_marked_pairs": 208488,
+        "distinct_second_cores": 139397,
+        "vertex_pairs_covered": 48530663,
+        "DAG_excluded": 23206928,
+        "exact_excluded": 0,
+        "primitive_positives": 0,
+        "incomplete": 0
+      },
+      "independent": {
+        "first_marked_pairs": 328,
+        "second_marked_pairs": 187660,
+        "second_unbased_cores": 139397,
+        "third_join_placements_represented": 48530663,
+        "independent_sampled_four_word_refolds": 144
+      }
+    },
+    {
+      "native": {
+        "first_basis_bound": 3,
+        "second_basis_bound": 3,
+        "first_geodesic_gap": 1,
+        "second_geodesic_gap": 0,
+        "first_slope_pairs": 5,
+        "second_slope_pairs": 5,
+        "first_marked_pairs": 658,
+        "second_placements": 451558,
+        "distinct_second_marked_pairs": 317308,
+        "distinct_second_cores": 155196,
+        "vertex_pairs_covered": 56489073,
+        "DAG_excluded": 27011215,
+        "exact_excluded": 0,
+        "primitive_positives": 0,
+        "incomplete": 0
+      },
+      "independent": {
+        "first_marked_pairs": 658,
+        "second_marked_pairs": 317308,
+        "second_unbased_cores": 155196,
+        "third_join_placements_represented": 56489073,
+        "independent_sampled_four_word_refolds": 144
+      }
+    },
+    {
+      "native": {
+        "first_basis_bound": 4,
+        "second_basis_bound": 3,
+        "first_geodesic_gap": 0,
+        "second_geodesic_gap": 0,
+        "first_slope_pairs": 9,
+        "second_slope_pairs": 5,
+        "first_marked_pairs": 784,
+        "second_placements": 760818,
+        "distinct_second_marked_pairs": 352068,
+        "distinct_second_cores": 172298,
+        "vertex_pairs_covered": 103017706,
+        "DAG_excluded": 49629356,
+        "exact_excluded": 0,
+        "primitive_positives": 0,
+        "incomplete": 0
+      },
+      "independent": {
+        "first_marked_pairs": 784,
+        "second_marked_pairs": 352068,
+        "second_unbased_cores": 172298,
+        "third_join_placements_represented": 103017706,
+        "independent_sampled_four_word_refolds": 144
+      }
+    }
+  ],
+  "rank_four_controls": {
+    "ak2_literal_positives": [
+      {
+        "vertices": [
+          1,
+          4
+        ],
+        "ambient_primitive": "xYxYYxYY",
+        "abstract_word": "cDa",
+        "basis_test": {
+          "status": "REALIZABLE",
+          "syllables": [
+            "cD",
+            "a"
+          ],
+          "roots": [
+            "a",
+            "cD"
+          ],
+          "slopes": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "determinant": -1
+        },
+        "actual_placed_pair": [
+          "xYYYx",
+          "YxYYxyX"
+        ]
+      },
+      {
+        "vertices": [
+          3,
+          7
+        ],
+        "ambient_primitive": "xYxYYxYY",
+        "abstract_word": "cDa",
+        "basis_test": {
+          "status": "REALIZABLE",
+          "syllables": [
+            "cD",
+            "a"
+          ],
+          "roots": [
+            "a",
+            "cD"
+          ],
+          "slopes": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "determinant": -1
+        },
+        "actual_placed_pair": [
+          "YYYxx",
+          "XYxYYxy"
+        ]
+      },
+      {
+        "vertices": [
+          5,
+          6
+        ],
+        "ambient_primitive": "xYxYYxYY",
+        "abstract_word": "cBa",
+        "basis_test": {
+          "status": "REALIZABLE",
+          "syllables": [
+            "c",
+            "Ba"
+          ],
+          "roots": [
+            "Ba",
+            "c"
+          ],
+          "slopes": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "determinant": 1
+        },
+        "actual_placed_pair": [
+          "yXYxYYx",
+          "YYxxY"
+        ]
+      }
+    ],
+    "ak2_strict_path_to_primitive": {
+      "ledger": {
+        "format": "ordinary-ac-elementary-v1",
+        "start": [
+          "xxYYY",
+          "xyxYXY"
+        ],
+        "target": [
+          "xYYYx",
+          "YxYYxYYx"
+        ],
+        "moves": [
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 0
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "Y"
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "Y"
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "Y"
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "x"
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "x"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "Y"
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 0
+          }
+        ]
+      },
+      "replayed": {
+        "moves": 11,
+        "peak_total_length": 14,
+        "endpoint": [
+          "xYYYx",
+          "YxYYxYYx"
+        ]
+      }
+    },
+    "ak3_new_first_bridge_path": {
+      "first_placement": [
+        "XYxxxYYYYxyxY",
+        "YYXYxyxy"
+      ],
+      "first_placement_step": 16,
+      "first_axes_gap": 1,
+      "first_unread_gap": 1,
+      "old_loop_vertices": [
+        5,
+        8
+      ],
+      "basis_masses": [
+        3,
+        3
+      ],
+      "second_axes_gap": 0,
+      "ledger": {
+        "format": "ordinary-ac-elementary-v1",
+        "start": [
+          "xxxYYYY",
+          "xyxYXY"
+        ],
+        "target": [
+          "XYxxxYYYYxyxYYYXYxyxy",
+          "YXYxyx"
+        ],
+        "moves": [
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 1
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "y"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "y"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "y"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "y"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "Y"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "y"
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "Y"
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "Y"
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 1
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "y"
+          }
+        ]
+      },
+      "replayed": {
+        "moves": 18,
+        "peak_total_length": 29,
+        "endpoint": [
+          "XYxxxYYYYxyxYYYXYxyxy",
+          "YXYxyx"
+        ]
+      }
+    },
+    "noncyclic_syllables": {
+      "status": "NONCYCLIC_BLOCK",
+      "syllables": [
+        "a",
+        "c",
+        "b",
+        "d"
+      ],
+      "obstructed_block": 0
+    },
+    "slope_determinant": {
+      "status": "INCOMPATIBLE_SLOPES",
+      "syllables": [
+        "a",
+        "cdd"
+      ],
+      "roots": [
+        "a",
+        "cdd"
+      ],
+      "slopes": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "determinant": 2
+    },
+    "nonprimitive_root": {
+      "status": "NONPRIMITIVE_ROOT",
+      "syllables": [
+        "abaB",
+        "cd"
+      ],
+      "root": "abaB"
+    }
+  },
+  "uncompressed_control": {
+    "first_basis_bound": 3,
+    "second_basis_bound": 3,
+    "first_geodesic_gap": 0,
+    "second_geodesic_gap": 0,
+    "first_slope_pairs": 5,
+    "second_slope_pairs": 5,
+    "first_marked_pairs": 328,
+    "second_placements": 204402,
+    "distinct_second_marked_pairs": 93320,
+    "distinct_second_cores": 45400,
+    "vertex_pairs_covered": 14379815,
+    "DAG_excluded": 14379815,
+    "exact_excluded": 0,
+    "primitive_positives": 0,
+    "incomplete": 0
+  }
+}

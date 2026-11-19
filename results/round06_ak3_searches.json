@@ -1,0 +1,1170 @@
+{
+  "ordinary_ak3_trivialization_found": false,
+  "marked_waypoint": {
+    "exact_minimum_cyclic_peak": 29,
+    "orbit_route": {
+      "cyclic_cap": 29,
+      "minimum_macro_distance": 17,
+      "disjoint_ball_radii": [
+        4,
+        12
+      ],
+      "states_discovered": [
+        793076,
+        1089858
+      ],
+      "products_checked": 1034682848,
+      "orbit_route": [
+        [
+          "xyxYXY",
+          "xxxxYYY"
+        ],
+        [
+          "xyxYXY",
+          "xxxxxyXYXYY"
+        ],
+        [
+          "xyxYXY",
+          "xxxxxyXXYXY"
+        ],
+        [
+          "xxxxyXXXY",
+          "xxxxxyXXYXY"
+        ],
+        [
+          "xxyxYXXy",
+          "xxxxYXXXy"
+        ],
+        [
+          "xxyXYXy",
+          "xxxxyXXXY"
+        ],
+        [
+          "xxxyXyXY",
+          "xxxxyXXXY"
+        ],
+        [
+          "xxyXyXY",
+          "xxxxYXXXy"
+        ],
+        [
+          "xxxyXYXy",
+          "xxxxyXXXY"
+        ],
+        [
+          "xxxyXYY",
+          "xxxYXyXY"
+        ],
+        [
+          "xxxyXYY",
+          "xyyXYxY"
+        ],
+        [
+          "xxyXyXY",
+          "xxYYXyxyXY"
+        ],
+        [
+          "xxyXyXY",
+          "xxYXyxyXYxyXY"
+        ],
+        [
+          "xxyXyXY",
+          "xyxyXYxyXYxyXY"
+        ],
+        [
+          "xyxyXYxyXYxyXY",
+          "xxYXyxYXyxYXyXY"
+        ],
+        [
+          "xxxyXXY",
+          "xyxyXYxyXYxyXY"
+        ],
+        [
+          "xyxyXYxyXYxyXY",
+          "xxyXYXyxYXyxYXY"
+        ],
+        [
+          "xxyXXYY",
+          "xyxYXyxYXyxyXYY"
+        ]
+      ]
+    },
+    "literal_route": {
+      "cyclic_cap": 29,
+      "target_count": 1,
+      "minimum_macro_distance": 18,
+      "disjoint_ball_radii": [
+        4,
+        13
+      ],
+      "states_discovered": [
+        1684507,
+        1846803
+      ],
+      "products_checked": 2162581956,
+      "route": [
+        [
+          "XXXyyyy",
+          "XYXyxy"
+        ],
+        [
+          "XXyyyXYxy",
+          "XYXyxy"
+        ],
+        [
+          "XXyXYxyxyXYxy",
+          "XYXyxy"
+        ],
+        [
+          "XXXyxYxxY",
+          "XYXyxy"
+        ],
+        [
+          "XXXXyxxxY",
+          "XXXyxYxxY"
+        ],
+        [
+          "XXXXYxxxyxxy",
+          "XXXXyxxxY"
+        ],
+        [
+          "XXXXyxxxY",
+          "XXYxyxY"
+        ],
+        [
+          "XXXXyxxxY",
+          "XXXyxYxY"
+        ],
+        [
+          "XXXXyxxxY",
+          "XXYxYxy"
+        ],
+        [
+          "XXXYxyxY",
+          "XXYxYxy"
+        ],
+        [
+          "XXXYxyxY",
+          "XYXyyxY"
+        ],
+        [
+          "XXXyxYY",
+          "XYXyyxY"
+        ],
+        [
+          "XXyxYxyXYY",
+          "XYXyyxY"
+        ],
+        [
+          "XYXyyxY",
+          "XYYXyxYxyXYxy"
+        ],
+        [
+          "XYXyyxY",
+          "XYxYxyXYxyXYxy"
+        ],
+        [
+          "XXYxyXYxyXYxyxY",
+          "XYxYxyXYxyXYxy"
+        ],
+        [
+          "XXXyxxY",
+          "XYxYxyXYxyXYxy"
+        ],
+        [
+          "XXyxYxyXYxyXYxY",
+          "XYxYxyXYxyXYxy"
+        ],
+        [
+          "XXyxYxyXYxyXYxY",
+          "XXyyxYY"
+        ]
+      ]
+    },
+    "relabeled_seed_route": {
+      "cyclic_cap": 22,
+      "target_count": 1,
+      "minimum_macro_distance": 7,
+      "disjoint_ball_radii": [
+        3,
+        3
+      ],
+      "states_discovered": [
+        1888,
+        1826
+      ],
+      "products_checked": 1233047,
+      "route": [
+        [
+          "XXXyyyy",
+          "XYXyxy"
+        ],
+        [
+          "XXXXyyyxyxY",
+          "XYXyxy"
+        ],
+        [
+          "XXXyyyxyxxYXY",
+          "XYXyxy"
+        ],
+        [
+          "XXYXYYYxxyxyy",
+          "XYXyxy"
+        ],
+        [
+          "XXYXYYYxyxyyy",
+          "XYXyxy"
+        ],
+        [
+          "XXYXYYxyyyy",
+          "XYXyxy"
+        ],
+        [
+          "XXYXYxyXyyy",
+          "XYXyxy"
+        ],
+        [
+          "XXXXyyy",
+          "XYXyxy"
+        ]
+      ]
+    },
+    "marked_low_raw_replay": {
+      "moves": 267,
+      "peak_total_length": 29,
+      "endpoint": [
+        "XXyxYxyXYxyXYxY",
+        "XXyyxYY"
+      ],
+      "cyclic_peak": 29,
+      "seed_strict_moves_before_alignment": 96,
+      "seed_peak_cyclic_length": 19,
+      "seed_alignment_complete_step": 98,
+      "orbit_route_strict_moves": 151,
+      "transported_marking": "YyXx"
+    },
+    "literal_route_replay": {
+      "moves": 263,
+      "peak_total_length": 33,
+      "endpoint": [
+        "XXyxYxyXYxyXYxY",
+        "XXyyxYY"
+      ],
+      "cyclic_peak": 29,
+      "macro_boundary_receipts": [
+        {
+          "strict_step": 9,
+          "state": [
+            "XXXyyyy",
+            "XYXyxy"
+          ]
+        },
+        {
+          "strict_step": 13,
+          "state": [
+            "XXyyyXYxy",
+            "XYXyxy"
+          ]
+        },
+        {
+          "strict_step": 24,
+          "state": [
+            "XXyXYxyxyXYxy",
+            "XYXyxy"
+          ]
+        },
+        {
+          "strict_step": 40,
+          "state": [
+            "XXXyxYxxY",
+            "XYXyxy"
+          ]
+        },
+        {
+          "strict_step": 55,
+          "state": [
+            "XXXyxYxxY",
+            "XXXXyxxxY"
+          ]
+        },
+        {
+          "strict_step": 72,
+          "state": [
+            "XXXXYxxxyxxy",
+            "XXXXyxxxY"
+          ]
+        },
+        {
+          "strict_step": 91,
+          "state": [
+            "XXYxyxY",
+            "XXXXyxxxY"
+          ]
+        },
+        {
+          "strict_step": 102,
+          "state": [
+            "XXXyxYxY",
+            "XXXXyxxxY"
+          ]
+        },
+        {
+          "strict_step": 116,
+          "state": [
+            "XXYxYxy",
+            "XXXXyxxxY"
+          ]
+        },
+        {
+          "strict_step": 121,
+          "state": [
+            "XXYxYxy",
+            "XXXYxyxY"
+          ]
+        },
+        {
+          "strict_step": 137,
+          "state": [
+            "XYXyyxY",
+            "XXXYxyxY"
+          ]
+        },
+        {
+          "strict_step": 140,
+          "state": [
+            "XYXyyxY",
+            "XXXyxYY"
+          ]
+        },
+        {
+          "strict_step": 151,
+          "state": [
+            "XYXyyxY",
+            "XXyxYxyXYY"
+          ]
+        },
+        {
+          "strict_step": 164,
+          "state": [
+            "XYXyyxY",
+            "XYYXyxYxyXYxy"
+          ]
+        },
+        {
+          "strict_step": 187,
+          "state": [
+            "XYXyyxY",
+            "XYxYxyXYxyXYxy"
+          ]
+        },
+        {
+          "strict_step": 209,
+          "state": [
+            "XXYxyXYxyXYxyxY",
+            "XYxYxyXYxyXYxy"
+          ]
+        },
+        {
+          "strict_step": 227,
+          "state": [
+            "XXXyxxY",
+            "XYxYxyXYxyXYxy"
+          ]
+        },
+        {
+          "strict_step": 243,
+          "state": [
+            "XXyxYxyXYxyXYxY",
+            "XYxYxyXYxyXYxy"
+          ]
+        },
+        {
+          "strict_step": 263,
+          "state": [
+            "XXyxYxyXYxyXYxY",
+            "XXyyxYY"
+          ]
+        }
+      ]
+    }
+  },
+  "cap28_compact_control": {
+    "status": "NO_SUBGROUP_JOIN",
+    "forward_pairs": 8694374,
+    "forward_distinct_words": 7578578,
+    "forward_cap": 28,
+    "forward_minimum_coordinate": 5,
+    "reverse_pairs": 23902,
+    "reverse_rotation_pairs": 6230442,
+    "reverse_distinct_rotated_cores": 2675055,
+    "reverse_geodesic_bridges": 1065680,
+    "primitive_slopes_constructed": 9159201,
+    "coordinates_found_in_forward_catalogue": 3656993,
+    "basis_pair_lookups": 1093967,
+    "core_topologies": {
+      "barbell": 1071764,
+      "rose": 861364,
+      "theta": 1807607
+    }
+  },
+  "cap29_reverse_join": {
+    "status": "NO_SUBGROUP_JOIN",
+    "forward_pairs": 35968003,
+    "forward_distinct_words": 32064190,
+    "forward_cap": 29,
+    "forward_minimum_coordinate": 5,
+    "reverse_pairs": 23902,
+    "reverse_rotation_pairs": 6230442,
+    "reverse_distinct_rotated_cores": 2675055,
+    "reverse_geodesic_bridges": 2747792,
+    "primitive_slopes_constructed": 16696790,
+    "coordinates_found_in_forward_catalogue": 6771415,
+    "basis_pair_lookups": 2460314,
+    "core_topologies": {
+      "barbell": 2753876,
+      "rose": 861364,
+      "theta": 1807607
+    }
+  },
+  "cap29_new_low_energy_orbits": {
+    "maximum_energy": 22,
+    "new_orbits_by_energy": {
+      "17": 1,
+      "19": 35,
+      "20": 112,
+      "21": 464,
+      "22": 1383
+    },
+    "output_sha256": "92610118e67d484b46eea2430ccae9579a53b7256db5302d48c8c3fff108d361"
+  },
+  "cap29_energy17_route": {
+    "cyclic_cap": 29,
+    "minimum_macro_distance": 34,
+    "disjoint_ball_radii": [
+      5,
+      28
+    ],
+    "states_discovered": [
+      1150366,
+      1773512
+    ],
+    "products_checked": 2231748040,
+    "orbit_route": [
+      [
+        "xyxYXY",
+        "xxxxYYY"
+      ],
+      [
+        "xyxYXY",
+        "xxxYXyxYY"
+      ],
+      [
+        "xyxYXY",
+        "xxyXXyyXY"
+      ],
+      [
+        "xxxyXXyXY",
+        "xxyXXyyXY"
+      ],
+      [
+        "xxyxYXXy",
+        "xxxYXXYXy"
+      ],
+      [
+        "xxyxYXXy",
+        "xxyXyxYXy"
+      ],
+      [
+        "xxyXYXy",
+        "xxYXyxYXY"
+      ],
+      [
+        "xxyXyxYXy",
+        "xyXyxYxYXy"
+      ],
+      [
+        "xxyxYXYXy",
+        "xyxYxyXYXY"
+      ],
+      [
+        "xxyxYXYXy",
+        "xxyXYXYXYxy"
+      ],
+      [
+        "xxyxYXYXy",
+        "xyxyxyxYXYXYXy"
+      ],
+      [
+        "xxyXYXYXy",
+        "xyxyxyxyXYXYXY"
+      ],
+      [
+        "xxyXyXyXY",
+        "xyXyXyXyXYxYxY"
+      ],
+      [
+        "xxyXyXY",
+        "xyXyXyXYxYxYxY"
+      ],
+      [
+        "xxyXYXYXYXy",
+        "xyxyxyxyXYXYXY"
+      ],
+      [
+        "xxyxyxyXY",
+        "xyxyxyxyXYXYXY"
+      ],
+      [
+        "xxyxyXY",
+        "xxYXyxyxy"
+      ],
+      [
+        "xxyxyXY",
+        "xxxYXyXy"
+      ],
+      [
+        "xxxyXyXY",
+        "xxxxyXyxYXy"
+      ],
+      [
+        "xxxyXyXY",
+        "xxxxyxxyXXy"
+      ],
+      [
+        "xxxxyxxyXXy",
+        "xxxyxxyxyXy"
+      ],
+      [
+        "xxxyxxyxyXy",
+        "xxyxyxYXXYXy"
+      ],
+      [
+        "xxyxyxYXXYXy",
+        "xxyxxyxyxxyXy"
+      ],
+      [
+        "xxyxyxYXXYXy",
+        "xxyXYxyxyxxyy"
+      ],
+      [
+        "xxyxyxYXXYXy",
+        "xxyxyxyxYXyxxyy"
+      ],
+      [
+        "xxyxyxYXXYXy",
+        "xxyxyxxyyxYXy"
+      ],
+      [
+        "xxxyxyy",
+        "xxyxyxYXXYXy"
+      ],
+      [
+        "xxyxyxYXXYXy",
+        "xxyXYXYxyxyxy"
+      ],
+      [
+        "xxyxyxyxYXYXy",
+        "xxyxyXYxyxyxYXy"
+      ],
+      [
+        "xxyxyxyxYXYXy",
+        "xxyxyXYYXXYxyy"
+      ],
+      [
+        "xxyxyxyxYXYXy",
+        "xxyxyxYXXYxyyxy"
+      ],
+      [
+        "xxyxyXYYXyxYXy",
+        "xxyxyyxyxyXYYXy"
+      ],
+      [
+        "xxyxyxyXY",
+        "xxyXYxyXYYXYXy"
+      ],
+      [
+        "xxyxyxyXY",
+        "xyxyXYxyxyyxY"
+      ],
+      [
+        "xxyxYXXy",
+        "xyxyxyyXY"
+      ]
+    ]
+  },
+  "cap29_energy17_replay": {
+    "moves": 477,
+    "peak_total_length": 39,
+    "endpoint": [
+      "XXYXYXYxy",
+      "XYYXyyxY"
+    ],
+    "cyclic_peak": 29,
+    "macro_boundary_receipts": [
+      {
+        "strict_step": 9,
+        "state": [
+          "XXXyyyy",
+          "XYXyxy"
+        ]
+      },
+      {
+        "strict_step": 22,
+        "state": [
+          "XXyxYXyyy",
+          "XYXyxy"
+        ]
+      },
+      {
+        "strict_step": 38,
+        "state": [
+          "XXYxxYYxy",
+          "XYXyxy"
+        ]
+      },
+      {
+        "strict_step": 45,
+        "state": [
+          "XXYxxYYxy",
+          "XXXYxxYxy"
+        ]
+      },
+      {
+        "strict_step": 51,
+        "state": [
+          "XXyXYxxy",
+          "XXXYxxYxy"
+        ]
+      },
+      {
+        "strict_step": 56,
+        "state": [
+          "XXyXYxxy",
+          "XXyxyXYxy"
+        ]
+      },
+      {
+        "strict_step": 64,
+        "state": [
+          "XXYxyxY",
+          "XXyxyXYxy"
+        ]
+      },
+      {
+        "strict_step": 75,
+        "state": [
+          "XYXYxyXyxy",
+          "XXyxyXYxy"
+        ]
+      },
+      {
+        "strict_step": 92,
+        "state": [
+          "XYXYxyXyxy",
+          "XYXyxyyxY"
+        ]
+      },
+      {
+        "strict_step": 110,
+        "state": [
+          "XYXYXYxyyxy",
+          "XYXyxyyxY"
+        ]
+      },
+      {
+        "strict_step": 129,
+        "state": [
+          "XYXYXYXYxyxyxy",
+          "XYXyxyyxY"
+        ]
+      },
+      {
+        "strict_step": 146,
+        "state": [
+          "XYXYXYXYxyxyxy",
+          "XXYxyxyxY"
+        ]
+      },
+      {
+        "strict_step": 161,
+        "state": [
+          "XYXYXYXYxyxyxy",
+          "XYXYXYxyy"
+        ]
+      },
+      {
+        "strict_step": 181,
+        "state": [
+          "XYXYXYXYxyxyxy",
+          "XYXyyxY"
+        ]
+      },
+      {
+        "strict_step": 200,
+        "state": [
+          "XYXYXYXYxyxyxy",
+          "XXYxyxyxyxY"
+        ]
+      },
+      {
+        "strict_step": 214,
+        "state": [
+          "XYXYXYXYxyxyxy",
+          "XXYXYXYxy"
+        ]
+      },
+      {
+        "strict_step": 233,
+        "state": [
+          "XXyxYXY",
+          "XXYXYXYxy"
+        ]
+      },
+      {
+        "strict_step": 245,
+        "state": [
+          "XXyxYXY",
+          "XXXYxYxy"
+        ]
+      },
+      {
+        "strict_step": 253,
+        "state": [
+          "XXXXYxYXyxY",
+          "XXXYxYxy"
+        ]
+      },
+      {
+        "strict_step": 265,
+        "state": [
+          "XXXXYXXYxxY",
+          "XXXYxYxy"
+        ]
+      },
+      {
+        "strict_step": 272,
+        "state": [
+          "XXXXYXXYxxY",
+          "XXXYXXYXYxY"
+        ]
+      },
+      {
+        "strict_step": 280,
+        "state": [
+          "XXYXYXyxxyxY",
+          "XXXYXXYXYxY"
+        ]
+      },
+      {
+        "strict_step": 304,
+        "state": [
+          "XXYXYXyxxyxY",
+          "XXYXXYXYXXYxY"
+        ]
+      },
+      {
+        "strict_step": 315,
+        "state": [
+          "XXYXYXyxxyxY",
+          "XXYYXXYxyXYXY"
+        ]
+      },
+      {
+        "strict_step": 333,
+        "state": [
+          "XXYXYXyxxyxY",
+          "XXYXYXYXyxYXXYY"
+        ]
+      },
+      {
+        "strict_step": 347,
+        "state": [
+          "XXYXYXyxxyxY",
+          "XXYXYXXYYXyxY"
+        ]
+      },
+      {
+        "strict_step": 359,
+        "state": [
+          "XXYXYXyxxyxY",
+          "XXXYXYY"
+        ]
+      },
+      {
+        "strict_step": 365,
+        "state": [
+          "XXYXYXyxxyxY",
+          "XXYxyxyXYXYXY"
+        ]
+      },
+      {
+        "strict_step": 383,
+        "state": [
+          "XXYxyXYXYXyxYXY",
+          "XXYxyxyXYXYXY"
+        ]
+      },
+      {
+        "strict_step": 403,
+        "state": [
+          "XXYYXyxxyyxYXY",
+          "XXYxyxyXYXYXY"
+        ]
+      },
+      {
+        "strict_step": 425,
+        "state": [
+          "XXYXYYXyxxyXYXY",
+          "XXYxyxyXYXYXY"
+        ]
+      },
+      {
+        "strict_step": 441,
+        "state": [
+          "XXYXYYXyxxyXYXY",
+          "XXYxyXYxyyxyxY"
+        ]
+      },
+      {
+        "strict_step": 456,
+        "state": [
+          "XXYXYXYxy",
+          "XXYxyXYxyyxyxY"
+        ]
+      },
+      {
+        "strict_step": 472,
+        "state": [
+          "XXYXYXYxy",
+          "XYXYYXyXYXYxy"
+        ]
+      },
+      {
+        "strict_step": 477,
+        "state": [
+          "XXYXYXYxy",
+          "XYYXyyxY"
+        ]
+      }
+    ]
+  },
+  "cap29_escape_intersecting_axes_two_phase": {
+    "rotations_enabled": true,
+    "source_pairs": 1995,
+    "rotation_pairs": 172161,
+    "unbased_cores": 82683,
+    "own_tests": 82683,
+    "distinct_vertex_joins": 15221075,
+    "DAG_absent": 15293966,
+    "exact_absent": 9792,
+    "exact_map_pair_states": 1520732,
+    "positive": 0,
+    "incomplete": 0
+  },
+  "cap29_energy17_disjoint_axes_two_phase": {
+    "left": "xxyxYXXy",
+    "right": "xyxyxyyXY",
+    "lengths": {
+      "1": {
+        "admissible": 70,
+        "distinct_cores": 70,
+        "joins": 9520,
+        "dag_absent": 9590,
+        "exact_absent": 0,
+        "map_states": 0,
+        "positive": 0,
+        "incomplete": 0
+      },
+      "2": {
+        "admissible": 218,
+        "distinct_cores": 218,
+        "joins": 33354,
+        "dag_absent": 33572,
+        "exact_absent": 0,
+        "map_states": 0,
+        "positive": 0,
+        "incomplete": 0
+      },
+      "3": {
+        "admissible": 646,
+        "distinct_cores": 646,
+        "joins": 110466,
+        "dag_absent": 111112,
+        "exact_absent": 0,
+        "map_states": 0,
+        "positive": 0,
+        "incomplete": 0
+      },
+      "4": {
+        "admissible": 1946,
+        "distinct_cores": 1946,
+        "joins": 369740,
+        "dag_absent": 371686,
+        "exact_absent": 0,
+        "map_states": 0,
+        "positive": 0,
+        "incomplete": 0
+      },
+      "5": {
+        "admissible": 5830,
+        "distinct_cores": 5830,
+        "joins": 1224300,
+        "dag_absent": 1230130,
+        "exact_absent": 0,
+        "map_states": 0,
+        "positive": 0,
+        "incomplete": 0
+      },
+      "6": {
+        "admissible": 17498,
+        "distinct_cores": 17498,
+        "joins": 4042038,
+        "dag_absent": 4059536,
+        "exact_absent": 0,
+        "map_states": 0,
+        "positive": 0,
+        "incomplete": 0
+      },
+      "7": {
+        "admissible": 52486,
+        "distinct_cores": 52486,
+        "joins": 13278958,
+        "dag_absent": 13331444,
+        "exact_absent": 0,
+        "map_states": 0,
+        "positive": 0,
+        "incomplete": 0
+      },
+      "8": {
+        "admissible": 157466,
+        "distinct_cores": 157466,
+        "joins": 43460616,
+        "dag_absent": 43618082,
+        "exact_absent": 0,
+        "map_states": 0,
+        "positive": 0,
+        "incomplete": 0
+      }
+    }
+  },
+  "outward_cap32_search": {
+    "cap": 32,
+    "requested_depth": 2,
+    "known_cap29_orbits": 35968003,
+    "seed_orbits": 1995,
+    "seed_energy": {
+      "17": 1,
+      "19": 35,
+      "20": 112,
+      "21": 464,
+      "22": 1383
+    },
+    "layers": [
+      {
+        "step": 1,
+        "input_orbits": 1995,
+        "candidate_products": 17191496,
+        "admitted_products": 16551600,
+        "back_to_cap29": 11588708,
+        "novel_orbits": 1608559,
+        "energy": {
+          "30": 199248,
+          "31": 804852,
+          "32": 604459
+        }
+      },
+      {
+        "step": 2,
+        "input_orbits": 1608559,
+        "candidate_products": 1723158104,
+        "admitted_products": 121305008,
+        "back_to_cap29": 33983316,
+        "novel_orbits": 5572027,
+        "energy": {
+          "23": 2,
+          "24": 4,
+          "25": 3,
+          "26": 13,
+          "27": 8,
+          "28": 15,
+          "29": 1566,
+          "30": 645111,
+          "31": 808987,
+          "32": 4116318
+        }
+      }
+    ],
+    "minimum_energy_route": [
+      [
+        "xxyXXYY",
+        "xyxyXYxyXYxyXY"
+      ],
+      [
+        "xyxyXYxyXYxyXY",
+        "xxyXYXyxYXyxYXYXY"
+      ],
+      [
+        "xxyxYYXXy",
+        "xyxyXYxyXYxyXY"
+      ]
+    ],
+    "primitive_route": []
+  },
+  "outward_cap32_primitive_audit": {
+    "rows": 7180586,
+    "single_sign_candidates": 7096362,
+    "primitive_coordinates": [],
+    "tsv_sha256": "a440d4a9450988f47c49ba25cc5995fcf828d2efbc4d2c79a6521b57688428f1"
+  },
+  "outward_cap32_reverse_join": {
+    "status": "NO_SUBGROUP_JOIN",
+    "forward_pairs": 7180586,
+    "forward_distinct_words": 7174627,
+    "forward_cap": 32,
+    "forward_minimum_coordinate": 5,
+    "reverse_pairs": 23902,
+    "reverse_rotation_pairs": 6230442,
+    "reverse_distinct_rotated_cores": 2675055,
+    "reverse_geodesic_bridges": 3416236,
+    "primitive_slopes_constructed": 21806853,
+    "coordinates_found_in_forward_catalogue": 3514639,
+    "basis_pair_lookups": 71836,
+    "core_topologies": {
+      "barbell": 3422320,
+      "rose": 861364,
+      "theta": 1807607
+    }
+  },
+  "outward_cap32_energy23_entry_route": {
+    "cyclic_cap": 29,
+    "minimum_macro_distance": 25,
+    "disjoint_ball_radii": [
+      6,
+      18
+    ],
+    "states_discovered": [
+      1551464,
+      1137607
+    ],
+    "products_checked": 1985504856,
+    "orbit_route": [
+      [
+        "xyxYXY",
+        "xxxxYYY"
+      ],
+      [
+        "xyxYXY",
+        "xxxYXyxYY"
+      ],
+      [
+        "xyxYXY",
+        "xxxYxyXXY"
+      ],
+      [
+        "xxxxyXXXY",
+        "xxxyXXYxy"
+      ],
+      [
+        "xxxxyXXXY",
+        "xxxxxyXXYY"
+      ],
+      [
+        "xxyXy",
+        "xyyyXYYYY"
+      ],
+      [
+        "xxxxyXXXY",
+        "xxxxyXXYxy"
+      ],
+      [
+        "xxxxyXXXY",
+        "xxxxxyxyXXY"
+      ],
+      [
+        "xyxyxY",
+        "xxxxyXXXY"
+      ],
+      [
+        "xxxxyXXXY",
+        "xxxxxyxYXXY"
+      ],
+      [
+        "xxxxyXXXY",
+        "xxxxYxyXXy"
+      ],
+      [
+        "xxyxYxy",
+        "xxxxyXXXY"
+      ],
+      [
+        "xxxxyXXXY",
+        "xxxxxyxYXY"
+      ],
+      [
+        "xxxxyxYXY",
+        "xxxxYXXXy"
+      ],
+      [
+        "xxxyxYxy",
+        "xxxxyXXXY"
+      ],
+      [
+        "xxxxxyxYY",
+        "xxxxyXXXY"
+      ],
+      [
+        "xxxxyxYY",
+        "xxxxYXXXy"
+      ],
+      [
+        "xxxxyxYY",
+        "xxxyyxYYY"
+      ],
+      [
+        "xxyXyXY",
+        "xxxyyyXXy"
+      ],
+      [
+        "xxyXyXY",
+        "xxYYXyXYXY"
+      ],
+      [
+        "xxyXyXY",
+        "xxYXyXYxyXYXY"
+      ],
+      [
+        "xxyXyXY",
+        "xyxYXyxYXyxYXy"
+      ],
+      [
+        "xyxyXYxyXYxyXY",
+        "xxYXyxyXYxyXYxy"
+      ],
+      [
+        "xxxyXXY",
+        "xyxYXyxYXyxYXy"
+      ],
+      [
+        "xyxyXYxyXYxyXY",
+        "xxYxyXYxyXYxyXy"
+      ],
+      [
+        "xxyXXYY",
+        "xyxyXYxyXYxyXY"
+      ]
+    ]
+  },
+  "outward_cap32_energy23_strict_replay": {
+    "moves": 300,
+    "peak_total_length": 43,
+    "endpoint": [
+      "XXyyxYYxY",
+      "XYxYxyXYxyXYxy"
+    ],
+    "cyclic_peak": 31,
+    "continuation_step_indices": [
+      278,
+      300
+    ]
+  }
+}

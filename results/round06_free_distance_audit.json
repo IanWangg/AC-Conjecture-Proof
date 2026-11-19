@@ -1,0 +1,62 @@
+[
+  {
+    "spare_rows": 0,
+    "bound": 10,
+    "radii": [
+      5,
+      5
+    ],
+    "visited": [
+      129669,
+      37110
+    ]
+  },
+  {
+    "spare_rows": 1,
+    "bound": 8,
+    "radii": [
+      4,
+      4
+    ],
+    "visited": [
+      44374,
+      16458
+    ]
+  },
+  {
+    "spare_rows": 2,
+    "bound": 8,
+    "radii": [
+      4,
+      4
+    ],
+    "visited": [
+      54176,
+      21548
+    ]
+  },
+  {
+    "spare_rows": 3,
+    "bound": 6,
+    "radii": [
+      3,
+      3
+    ],
+    "visited": [
+      3743,
+      1864
+    ]
+  },
+  {
+    "spare_rows": 4,
+    "bound": 6,
+    "radii": [
+      3,
+      3
+    ],
+    "visited": [
+      3743,
+      1864
+    ]
+  }
+]

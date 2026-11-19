@@ -1,0 +1,1000 @@
+{
+  "imports_with_safe_outgoing": {
+    "rank_three_replay": {
+      "moves": 65,
+      "raw_peak": 85,
+      "cyclic_peak": 63,
+      "target": [
+        "zxyxYXY",
+        "xyxYXY",
+        "yxxxYYYYzxzxyxYXYxyxYXYZXY"
+      ],
+      "first_pivotless_step": 3
+    },
+    "rank_three_moves": [
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "z"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "x"
+      },
+      {
+        "op": "multiply",
+        "i": 0,
+        "j": 1
+      },
+      {
+        "op": "multiply",
+        "i": 2,
+        "j": 0
+      },
+      {
+        "op": "multiply",
+        "i": 0,
+        "j": 2
+      },
+      {
+        "op": "multiply",
+        "i": 2,
+        "j": 1
+      },
+      {
+        "op": "invert",
+        "i": 2
+      },
+      {
+        "op": "multiply",
+        "i": 0,
+        "j": 2
+      },
+      {
+        "op": "invert",
+        "i": 2
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "Z"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "z"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "z"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "x"
+      },
+      {
+        "op": "multiply",
+        "i": 0,
+        "j": 1
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "Z"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "Z"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "z"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "Z"
+      },
+      {
+        "op": "multiply",
+        "i": 0,
+        "j": 1
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "z"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "y"
+      },
+      {
+        "op": "invert",
+        "i": 1
+      },
+      {
+        "op": "multiply",
+        "i": 0,
+        "j": 1
+      },
+      {
+        "op": "invert",
+        "i": 1
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "Z"
+      }
+    ],
+    "gap": {
+      "first_chartless_step": 3,
+      "last_chartless_step": 57,
+      "chartless_cyclic_tuples": [
+        {
+          "tuple": [
+            "XYXZXZxzyxy",
+            "XYXyxy",
+            "XXXyyyy"
+          ],
+          "individual_whitehead_minima": [
+            9,
+            5,
+            7
+          ]
+        },
+        {
+          "tuple": [
+            "XYXZXZxzyxy",
+            "XYXyxy",
+            "XXzyxyXYXZXZyyyy"
+          ],
+          "individual_whitehead_minima": [
+            9,
+            5,
+            15
+          ]
+        },
+        {
+          "tuple": [
+            "XXzyxyXYXZXZxzyxyXYXZXZyyyy",
+            "XYXyxy",
+            "XXzyxyXYXZXZyyyy"
+          ],
+          "individual_whitehead_minima": [
+            25,
+            5,
+            15
+          ]
+        },
+        {
+          "tuple": [
+            "XXzyxyXYXZXZxzyxyXYXZXZyyyy",
+            "XYXyxy",
+            "XXzyxyXYXyxyXYXZXZyyyy"
+          ],
+          "individual_whitehead_minima": [
+            25,
+            5,
+            21
+          ]
+        },
+        {
+          "tuple": [
+            "XXXzxzxyxYXYZxxYYYYzxzyxyXYXZXZyyyy",
+            "XYXyxy",
+            "XXzyxyXYXyxyXYXZXZyyyy"
+          ],
+          "individual_whitehead_minima": [
+            32,
+            5,
+            21
+          ]
+        },
+        {
+          "tuple": [
+            "XYXZXZxzyxy",
+            "XYXyxy",
+            "XXzyxyXYXyxyXYXZXZyyyy"
+          ],
+          "individual_whitehead_minima": [
+            9,
+            5,
+            21
+          ]
+        },
+        {
+          "tuple": [
+            "XYXZXZyxyXYzyxy",
+            "XYXyxy",
+            "XXzyxyXYXyxyXYXZXZyyyy"
+          ],
+          "individual_whitehead_minima": [
+            9,
+            5,
+            21
+          ]
+        }
+      ]
+    },
+    "block": [
+      0,
+      1
+    ],
+    "outgoing_donors_in_fixed_normal_closure": [
+      {
+        "step": 4,
+        "slot": 0,
+        "word": "zxzxyxYXYZX"
+      },
+      {
+        "step": 6,
+        "slot": 1,
+        "word": "xzxyxYXYZX"
+      }
+    ],
+    "intermediate_imported_pivot": "zxzxyxYXYZxxYYYYzxzxyxYXYZX",
+    "its_nonidentity_permutation": [
+      1,
+      0,
+      2
+    ],
+    "outside_permutations": [
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        2,
+        1,
+        0
+      ]
+    ],
+    "exit_chart": {
+      "x": "x",
+      "y": "y",
+      "z": "yxyXYX"
+    },
+    "ordinary_from": [
+      "xyxYXY",
+      "xxxYYYY"
+    ],
+    "ordinary_moves": [
+      {
+        "op": "invert",
+        "i": 0
+      },
+      {
+        "op": "multiply",
+        "i": 1,
+        "j": 0
+      },
+      {
+        "op": "invert",
+        "i": 0
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "x"
+      },
+      {
+        "op": "multiply",
+        "i": 1,
+        "j": 0
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "x"
+      },
+      {
+        "op": "multiply",
+        "i": 1,
+        "j": 0
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "y"
+      }
+    ],
+    "ordinary_replay": {
+      "moves": 34,
+      "peak_total_length": 31,
+      "endpoint": [
+        "xyxYXY",
+        "yxxxYYYxyXYxyxYXYxyxYXYXY"
+      ]
+    }
+  },
+  "ak3_primitive_slot_transfer": {
+    "source_certificate": "round05_stable_proof_chartless22.json",
+    "rank_three_replay": {
+      "moves": 281,
+      "raw_peak": 31,
+      "cyclic_peak": 28,
+      "target": [
+        "XYZZZYYxy",
+        "XYYZZZY",
+        "XXzzzyxYXZZY"
+      ],
+      "first_pivotless_step": 235
+    },
+    "rank_three_continuation": [
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "x"
+      },
+      {
+        "op": "invert",
+        "i": 0
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "Y"
+      },
+      {
+        "op": "multiply",
+        "i": 2,
+        "j": 0
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "z"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "z"
+      },
+      {
+        "op": "conjugate",
+        "i": 2,
+        "g": "y"
+      },
+      {
+        "op": "invert",
+        "i": 0
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "z"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "z"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "z"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "y"
+      },
+      {
+        "op": "multiply",
+        "i": 1,
+        "j": 0
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "Y"
+      }
+    ],
+    "gap_start_rank_three_step": 248,
+    "gap": {
+      "first_chartless_step": 1,
+      "last_chartless_step": 29,
+      "chartless_cyclic_tuples": [
+        {
+          "tuple": [
+            "XYZZZYYxy",
+            "XYxYXy",
+            "XXYYZZY"
+          ],
+          "individual_whitehead_minima": [
+            9,
+            5,
+            7
+          ]
+        },
+        {
+          "tuple": [
+            "XYZZZYYxy",
+            "XYxYXy",
+            "XXzzzyxYXZZY"
+          ],
+          "individual_whitehead_minima": [
+            9,
+            5,
+            11
+          ]
+        }
+      ]
+    },
+    "pivot_slots": [
+      0,
+      1
+    ],
+    "shared_chart": {
+      "y": "y",
+      "z": "x",
+      "x": "YYXXXY"
+    },
+    "outgoing_projected_word": "xxxYXXXYxxxyyyy",
+    "ordinary_from": [
+      "yxxxyyyxY",
+      "yxxxYXXXYxxxyyy"
+    ],
+    "ordinary_gap_moves": [
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "X"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "Y"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "Y"
+      },
+      {
+        "op": "multiply",
+        "i": 0,
+        "j": 1
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 0,
+        "g": "y"
+      },
+      {
+        "op": "invert",
+        "i": 1
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "y"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "x"
+      },
+      {
+        "op": "conjugate",
+        "i": 1,
+        "g": "x"
+      }
+    ],
+    "ordinary_gap_replay": {
+      "moves": 27,
+      "peak_total_length": 43,
+      "endpoint": [
+        "yxxxyyyxxxyyxxxYXXXYxxxyyXXY",
+        "yxxxyXXXYYYYXXX"
+      ]
+    },
+    "ordinary_full_replay": {
+      "moves": 278,
+      "peak_total_length": 43,
+      "endpoint": [
+        "yxxxyyyxxxyyxxxYXXXYxxxyyXXY",
+        "yxxxyXXXYYYYXXX"
+      ]
+    }
+  }
+}

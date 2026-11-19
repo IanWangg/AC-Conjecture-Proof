@@ -1,0 +1,326 @@
+{
+  "counts": {
+    "input_states": 4000000,
+    "screened_states": 15828,
+    "states_without_fixed_z_chart": 15828,
+    "states_with_short_z_free_row": 0,
+    "literal_charts": 17112,
+    "intrinsic_charts": 2322
+  },
+  "input_sha256": "8b057c2ff39084b160be05dc74c1adcc7e29157e68c17e2494a9582718fab352",
+  "distinct_projection_orbits": 725,
+  "projection_hits_cap29": 151,
+  "projection_primitive_examples": [],
+  "reverse_pair_hits": [],
+  "shortest_pairs_absent_from_cap29": [
+    {
+      "rank_three_rows": [
+        "XXzYZ",
+        "XYXzYZxyy",
+        "XzyZYYZxy"
+      ],
+      "projected_pair": [
+        "XXXYxyxyXYY",
+        "XYXYYXyXYYXy"
+      ],
+      "chart": "intrinsic",
+      "original_pivot": "XzyZYYZxy",
+      "eliminated": "z",
+      "pivot": "Z",
+      "whitehead_descent": [
+        {
+          "multiplier": "Z",
+          "cut": "XYZy",
+          "result": [
+            "XyZYYxy"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "XYZz",
+          "result": [
+            "XZYxy"
+          ]
+        },
+        {
+          "multiplier": "X",
+          "cut": "XYyz",
+          "result": [
+            "XyzY"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "YZz",
+          "result": [
+            "Xz"
+          ]
+        },
+        {
+          "multiplier": "X",
+          "cut": "XYZ",
+          "result": [
+            "Z"
+          ]
+        }
+      ]
+    },
+    {
+      "rank_three_rows": [
+        "XXzyZ",
+        "XYYxzyZXy",
+        "XYxzyyzYZ"
+      ],
+      "projected_pair": [
+        "XXXYxyxYXXyxY",
+        "XXyxYXyxYxyXY"
+      ],
+      "chart": "intrinsic",
+      "original_pivot": "XYYxzyZXy",
+      "eliminated": "y",
+      "pivot": "Y",
+      "whitehead_descent": [
+        {
+          "multiplier": "X",
+          "cut": "Xz",
+          "result": [
+            "XYYzyZy"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "XYZx",
+          "result": [
+            "XYzyZ"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "YZx",
+          "result": [
+            "XzyZ"
+          ]
+        },
+        {
+          "multiplier": "Z",
+          "cut": "YZy",
+          "result": [
+            "Xy"
+          ]
+        },
+        {
+          "multiplier": "X",
+          "cut": "XY",
+          "result": [
+            "Y"
+          ]
+        }
+      ]
+    },
+    {
+      "rank_three_rows": [
+        "XXZxzYxyZ",
+        "XXyxyZxzY",
+        "XzYYZ"
+      ],
+      "projected_pair": [
+        "XXXXYxyXXYxyxY",
+        "XXYXyxYxyXYxy"
+      ],
+      "chart": "intrinsic",
+      "original_pivot": "XXyxyZxzY",
+      "eliminated": "y",
+      "pivot": "Y",
+      "whitehead_descent": [
+        {
+          "multiplier": "Y",
+          "cut": "YZ",
+          "result": [
+            "XXyxZxz"
+          ]
+        },
+        {
+          "multiplier": "X",
+          "cut": "XZ",
+          "result": [
+            "XyZxz"
+          ]
+        },
+        {
+          "multiplier": "X",
+          "cut": "XYZ",
+          "result": [
+            "XzYZ"
+          ]
+        },
+        {
+          "multiplier": "Z",
+          "cut": "YZy",
+          "result": [
+            "XY"
+          ]
+        },
+        {
+          "multiplier": "X",
+          "cut": "XZy",
+          "result": [
+            "Y"
+          ]
+        }
+      ]
+    },
+    {
+      "rank_three_rows": [
+        "XXyZYzY",
+        "XZYzy",
+        "XyZyyZYzYxY"
+      ],
+      "projected_pair": [
+        "XYXYYxYXYXYxY",
+        "XYxYXYxyXYxYXy"
+      ],
+      "chart": "intrinsic",
+      "original_pivot": "XyZyyZYzYxY",
+      "eliminated": "z",
+      "pivot": "Z",
+      "whitehead_descent": [
+        {
+          "multiplier": "Y",
+          "cut": "XYZ",
+          "result": [
+            "XZyZYzxY"
+          ]
+        },
+        {
+          "multiplier": "Z",
+          "cut": "Zx",
+          "result": [
+            "XyZYxY"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "XYZz",
+          "result": [
+            "XZxY"
+          ]
+        },
+        {
+          "multiplier": "X",
+          "cut": "XYy",
+          "result": [
+            "YZ"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "XYxz",
+          "result": [
+            "Z"
+          ]
+        }
+      ]
+    },
+    {
+      "rank_three_rows": [
+        "XXYYYYZXyzYZ",
+        "XYxYXy",
+        "XYzyZ"
+      ],
+      "projected_pair": [
+        "XXXXYxxyXXYxyXY",
+        "XXyxYxyXYxyxY"
+      ],
+      "chart": "literal",
+      "eliminated": "x",
+      "pivot": "XYzyZ"
+    },
+    {
+      "rank_three_rows": [
+        "XYXyXzYZYYYZ",
+        "XYxYXy",
+        "XzyZY"
+      ],
+      "projected_pair": [
+        "XXXYxyXXYxxyXXY",
+        "XXyxYxyXYxyxY"
+      ],
+      "chart": "literal",
+      "eliminated": "x",
+      "pivot": "XzyZY"
+    },
+    {
+      "rank_three_rows": [
+        "XXyzYZY",
+        "XyzyZYYZYxy",
+        "XzYZy"
+      ],
+      "projected_pair": [
+        "XXYxYXYxyXYxY",
+        "XYYXYYxYXYYXYxY"
+      ],
+      "chart": "intrinsic",
+      "original_pivot": "XyzyZYYZYxy",
+      "eliminated": "z",
+      "pivot": "Z",
+      "whitehead_descent": [
+        {
+          "multiplier": "Y",
+          "cut": "XYz",
+          "result": [
+            "XzyZYZxy"
+          ]
+        },
+        {
+          "multiplier": "Z",
+          "cut": "XYZy",
+          "result": [
+            "XyZYxy"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "XYZz",
+          "result": [
+            "XZxy"
+          ]
+        },
+        {
+          "multiplier": "X",
+          "cut": "XYy",
+          "result": [
+            "Yz"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "XYZ",
+          "result": [
+            "Z"
+          ]
+        }
+      ]
+    },
+    {
+      "rank_three_rows": [
+        "XXyyxY",
+        "XYYZyzy",
+        "XYxZyyZYz"
+      ],
+      "projected_pair": [
+        "XXYxyXYxyxYXy",
+        "XXyXYXyxYxyxYxy"
+      ],
+      "chart": "literal",
+      "eliminated": "x",
+      "pivot": "XYYZyzy"
+    }
+  ],
+  "geometry": {
+    "minimal_rank_two_signed_orbits": 255,
+    "classifications": {
+      "parity_obstructed": 255
+    },
+    "remaining": []
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "excluded_marked_conjugation_sequences": [
+    [
+      {
+        "sequence": "",
+        "vertices": 10,
+        "closed_map_pair_states": 72
+      }
+    ],
+    [
+      {
+        "sequence": "x",
+        "vertices": 15,
+        "closed_map_pair_states": 108
+      },
+      {
+        "sequence": "X",
+        "vertices": 15,
+        "closed_map_pair_states": 108
+      },
+      {
+        "sequence": "y",
+        "vertices": 14,
+        "closed_map_pair_states": 100
+      },
+      {
+        "sequence": "Y",
+        "vertices": 14,
+        "closed_map_pair_states": 100
+      }
+    ],
+    [
+      {
+        "sequence": "xx",
+        "vertices": 20,
+        "closed_map_pair_states": 142
+      },
+      {
+        "sequence": "xX",
+        "vertices": 20,
+        "closed_map_pair_states": 142
+      },
+      {
+        "sequence": "xy",
+        "vertices": 23,
+        "closed_map_pair_states": 158
+      },
+      {
+        "sequence": "xY",
+        "vertices": 23,
+        "closed_map_pair_states": 158
+      },
+      {
+        "sequence": "Xx",
+        "vertices": 20,
+        "closed_map_pair_states": 142
+      },
+      {
+        "sequence": "XX",
+        "vertices": 20,
+        "closed_map_pair_states": 142
+      },
+      {
+        "sequence": "Xy",
+        "vertices": 24,
+        "closed_map_pair_states": 150
+      },
+      {
+        "sequence": "XY",
+        "vertices": 24,
+        "closed_map_pair_states": 150
+      },
+      {
+        "sequence": "yx",
+        "vertices": 22,
+        "closed_map_pair_states": 156
+      },
+      {
+        "sequence": "yX",
+        "vertices": 22,
+        "closed_map_pair_states": 156
+      },
+      {
+        "sequence": "yy",
+        "vertices": 18,
+        "closed_map_pair_states": 122
+      },
+      {
+        "sequence": "yY",
+        "vertices": 18,
+        "closed_map_pair_states": 122
+      },
+      {
+        "sequence": "Yx",
+        "vertices": 23,
+        "closed_map_pair_states": 150
+      },
+      {
+        "sequence": "YX",
+        "vertices": 23,
+        "closed_map_pair_states": 150
+      },
+      {
+        "sequence": "Yy",
+        "vertices": 18,
+        "closed_map_pair_states": 122
+      },
+      {
+        "sequence": "YY",
+        "vertices": 18,
+        "closed_map_pair_states": 122
+      }
+    ]
+  ],
+  "first_primitive_admitting_envelope_depth": 3,
+  "positive_envelopes_at_depth_three": [
+    {
+      "sequence": "xxy",
+      "vertices": 1,
+      "witness": {
+        "alphabet": "xy",
+        "positive_basis_program": "",
+        "component": 0,
+        "loop_vertex": 0,
+        "word_length": 1,
+        "base_to_loop_path": "",
+        "cyclic_primitive_word": "x",
+        "based_primitive_word": "x"
+      }
+    },
+    {
+      "sequence": "xxY",
+      "vertices": 1,
+      "witness": {
+        "alphabet": "xy",
+        "positive_basis_program": "",
+        "component": 0,
+        "loop_vertex": 0,
+        "word_length": 1,
+        "base_to_loop_path": "",
+        "cyclic_primitive_word": "x",
+        "based_primitive_word": "x"
+      }
+    },
+    {
+      "sequence": "xyx",
+      "vertices": 8,
+      "witness": {
+        "alphabet": "xy",
+        "positive_basis_program": "",
+        "component": 0,
+        "loop_vertex": 0,
+        "word_length": 1,
+        "base_to_loop_path": "",
+        "cyclic_primitive_word": "x",
+        "based_primitive_word": "x"
+      }
+    },
+    {
+      "sequence": "xyX",
+      "vertices": 8,
+      "witness": {
+        "alphabet": "xy",
+        "positive_basis_program": "",
+        "component": 0,
+        "loop_vertex": 0,
+        "word_length": 1,
+        "base_to_loop_path": "",
+        "cyclic_primitive_word": "x",
+        "based_primitive_word": "x"
+      }
+    },
+    {
+      "sequence": "yxy",
+      "vertices": 8,
+      "witness": {
+        "alphabet": "xy",
+        "positive_basis_program": "",
+        "component": 0,
+        "loop_vertex": 3,
+        "word_length": 1,
+        "base_to_loop_path": "xy",
+        "cyclic_primitive_word": "x",
+        "based_primitive_word": "xyxYX"
+      }
+    },
+    {
+      "sequence": "yxY",
+      "vertices": 8,
+      "witness": {
+        "alphabet": "xy",
+        "positive_basis_program": "",
+        "component": 0,
+        "loop_vertex": 3,
+        "word_length": 1,
+        "base_to_loop_path": "xy",
+        "cyclic_primitive_word": "x",
+        "based_primitive_word": "xyxYX"
+      }
+    },
+    {
+      "sequence": "yyx",
+      "vertices": 1,
+      "witness": {
+        "alphabet": "xy",
+        "positive_basis_program": "",
+        "component": 0,
+        "loop_vertex": 0,
+        "word_length": 1,
+        "base_to_loop_path": "",
+        "cyclic_primitive_word": "x",
+        "based_primitive_word": "x"
+      }
+    },
+    {
+      "sequence": "yyX",
+      "vertices": 1,
+      "witness": {
+        "alphabet": "xy",
+        "positive_basis_program": "",
+        "component": 0,
+        "loop_vertex": 0,
+        "word_length": 1,
+        "base_to_loop_path": "",
+        "cyclic_primitive_word": "x",
+        "based_primitive_word": "x"
+      }
+    }
+  ]
+}

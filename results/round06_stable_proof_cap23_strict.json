@@ -1,0 +1,29 @@
+{
+  "moves": 21528218,
+  "move_counts": {
+    "stabilize": 14,
+    "invert": 132354,
+    "conjugate": 21227742,
+    "multiply": 168094,
+    "destabilize": 14
+  },
+  "rank_peak": 4,
+  "raw_peak": 1369,
+  "cyclic_peak": 405,
+  "whitehead_stage_boundaries": [
+    599497,
+    1380391,
+    4666840,
+    11646909,
+    21528191
+  ],
+  "final_marking": {
+    "x": "b",
+    "y": "d"
+  },
+  "final_words": [
+    "BDBDDBdBDDBd",
+    "BBDbdbdBDDB"
+  ],
+  "strict_ledger_sha256": "93615913dcb94a09b7f038555feaf4e4a1c29cea012ca8800159bf2e19ad1cda"
+}

@@ -128,11 +128,11 @@ struct Worker {
         return it->second;
     }
 
-    void scan(Code key, int cap) {
+    template <typename Visitor>
+    void scan_pair(Code first, Code second, int cap, const Visitor& visit) {
         if (orbit_cache.size() > 32768) orbit_cache.clear();
         if (rotation_cache.size() > 8192) rotation_cache.clear();
-        const auto unpacked = unpack(key);
-        const Code codes[2]{unpacked.first, unpacked.second};
+        const Code codes[2]{first, second};
         const std::string coordinates[2]{word(codes[0]), word(codes[1])};
         for (unsigned i = 0; i < 2; ++i)
             if (!rotation_cache.count(codes[i])) rotation_cache.emplace(codes[i], variants(coordinates[i]));
@@ -155,9 +155,16 @@ struct Worker {
                         if (!product || product->size() > limit) continue;
                         if (product->empty()) throw std::runtime_error("empty AC descendant coordinate");
                         ++admitted;
-                        next.insert(orbit_key(orbit(word_code(*product)), donor_orbit));
+                        visit(orbit(word_code(*product)), donor_orbit);
                     }
         }
+    }
+
+    void scan(Code key, int cap) {
+        const auto [first, second] = unpack(key);
+        scan_pair(first, second, cap, [&](const Orbit& product, const Orbit& donor) {
+            next.insert(orbit_key(product, donor));
+        });
     }
 };
 

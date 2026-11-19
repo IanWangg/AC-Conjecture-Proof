@@ -1,0 +1,92 @@
+{
+  "strict_prefix_moves": 267,
+  "free_endpoint": [
+    "XXyxYxyXYxyXYxY",
+    "XXyyxYY"
+  ],
+  "short_donor_SL2_F7": {
+    "marking": [
+      [
+        0,
+        6,
+        1,
+        6
+      ],
+      [
+        0,
+        1,
+        6,
+        4
+      ]
+    ],
+    "endpoint_images": [
+      [
+        4,
+        6,
+        2,
+        5
+      ],
+      [
+        1,
+        0,
+        0,
+        1
+      ]
+    ],
+    "receiver_trace": 2,
+    "candidate_traces": [
+      4,
+      5,
+      5
+    ]
+  },
+  "long_donor_heisenberg_semidirect": {
+    "marking": [
+      [
+        7,
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      [
+        0,
+        [
+          1,
+          0,
+          0
+        ]
+      ]
+    ],
+    "endpoint_images": [
+      [
+        0,
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      [
+        1,
+        [
+          4,
+          5,
+          6
+        ]
+      ]
+    ],
+    "action_order": 8,
+    "finite_group_order": 2744,
+    "candidate_central_differences": [
+      4,
+      6,
+      2,
+      6,
+      4,
+      3,
+      3
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "minimum_required_ordinary_cyclic_peak": 30,
+  "generation": {
+    "status": "PASS",
+    "cyclic_cap": 29,
+    "signed_permutation_orbits": 35968003,
+    "primitive_coordinate_orbits": 0,
+    "minimum_coordinate": 5,
+    "rotation_product_candidates": 38057628792,
+    "admitted_neighbors": 2125859940,
+    "orbit_histogram": {
+      "13": 2,
+      "14": 5,
+      "15": 72,
+      "16": 82,
+      "17": 454,
+      "18": 507,
+      "19": 2680,
+      "20": 2939,
+      "21": 15728,
+      "22": 17480,
+      "23": 93880,
+      "24": 111369,
+      "25": 583801,
+      "26": 744917,
+      "27": 3792540,
+      "28": 5213226,
+      "29": 25388321
+    }
+  },
+  "independent_closure": {
+    "status": "CLOSED_AND_CONNECTED",
+    "cyclic_cap": 29,
+    "signed_permutation_orbits": 35968003,
+    "rotation_product_candidates": 38057628792,
+    "admitted_neighbors": 2125859940
+  },
+  "independent_primitive_screen": {
+    "rows": 35968003,
+    "single_sign_candidates": 6480071,
+    "primitive_coordinates": [],
+    "tsv_sha256": "05040d3a79e9b9499536e844e7859df554ffc9680ce850331f16f34f15e123a8"
+  },
+  "previous_stable_waypoint_membership": {
+    "literal_input": [
+      "XXyxYxyXYxyXYxY",
+      "XXyyxYY"
+    ],
+    "compact_key": [
+      "xxyXXYY",
+      "xyxYXyxYXyxyXYY"
+    ],
+    "present": true
+  }
+}

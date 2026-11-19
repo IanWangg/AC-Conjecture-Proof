@@ -51,6 +51,11 @@ struct Catalogue {
         }
         if (pairs.empty() || file.bad()) throw std::runtime_error("empty or unreadable forward catalogue");
     }
+
+    bool contains_word(const std::string& word) const { return words.count(word_key(word)); }
+    bool contains_pair(const std::string& a, const std::string& b) const {
+        return pairs.count(pair_key(a, b));
+    }
 };
 
 int degree(const Graph& graph, int vertex) {
@@ -151,7 +156,8 @@ struct Candidate {
     std::string word;
 };
 
-bool scan(const Catalogue& catalogue, const Shape& shape, const Words& reverse,
+template <typename ForwardCatalogue>
+bool scan(const ForwardCatalogue& catalogue, const Shape& shape, const Words& reverse,
           const Words& representatives, const std::string& bridge,
           Totals& stats, std::ostream& out) {
     ++stats.topology[shape.kind];
@@ -166,13 +172,13 @@ bool scan(const Catalogue& catalogue, const Shape& shape, const Words& reverse,
             ++stats.slopes;
             auto word = basis_word(shape, a, b);
             if (int(word.size()) < lower) throw std::runtime_error("homology length bound failed");
-            if (int(word.size()) > limit || !catalogue.words.count(word_key(word))) continue;
+            if (int(word.size()) > limit || !catalogue.contains_word(word)) continue;
             ++stats.possible_coordinates;
             for (const auto& previous : accepted) {
                 if (previous.word.size() + word.size() > size_t(catalogue.cap) ||
                     std::abs(determinant(previous.slope, {a, b})) != 1) continue;
                 ++stats.basis_pairs_checked;
-                if (!catalogue.pairs.count(pair_key(previous.word, word))) continue;
+                if (!catalogue.contains_pair(previous.word, word)) continue;
                 out << "{\"status\":\"JOIN\",\"topology\":\"" << shape.kind
                     << "\",\"reverse_pair\":";
                 words_json(out, reverse);
@@ -192,9 +198,10 @@ bool scan(const Catalogue& catalogue, const Shape& shape, const Words& reverse,
     return false;
 }
 
+template <typename ForwardCatalogue>
 bool reverse_bridges(int remaining, std::string& path, const Words& words,
                      const std::vector<std::string>& first, const std::vector<std::string>& second,
-                     const Catalogue& catalogue, Totals& stats, std::ostream& out) {
+                     const ForwardCatalogue& catalogue, Totals& stats, std::ostream& out) {
     if (remaining == 0) {
         for (const auto& p : first) {
             if (path.front() == p.front() || path.front() == inverse(p.back())) continue;
@@ -217,8 +224,8 @@ bool reverse_bridges(int remaining, std::string& path, const Words& words,
     return false;
 }
 
-int run(const char* forward, const char* reverse, const char* output) {
-    const Catalogue catalogue(forward);
+template <typename ForwardCatalogue>
+int run_scan(const ForwardCatalogue& catalogue, const char* reverse, const char* output) {
     const auto targets = read_pairs(reverse);
     std::ofstream out(output);
     if (!out) throw std::runtime_error("cannot open basis-index report");
@@ -229,7 +236,7 @@ int run(const char* forward, const char* reverse, const char* output) {
             if (w.empty() || cyclic_reduce(w) != w || cyclic_key(w) != w)
                 throw std::runtime_error("reverse pair must use canonical cyclic coordinates");
         if (item[0].size() + item[1].size() <= size_t(catalogue.cap)
-            && catalogue.pairs.count(pair_key(item[0], item[1]))) {
+            && catalogue.contains_pair(item[0], item[1])) {
             out << "{\"status\":\"EQUAL_CYCLIC_PAIR\",\"pair\":";
             words_json(out, item);
             out << "}\n";
@@ -248,7 +255,8 @@ int run(const char* forward, const char* reverse, const char* output) {
         const int lobe_energy = int(item[0].size() + item[1].size());
         int pure = 1000;
         for (const auto& w : item)
-            if (w.size() < 28 && catalogue.words.count(word_key(w))) pure = std::min(pure, int(w.size()));
+            if (int(w.size()) <= catalogue.cap - catalogue.minimum && catalogue.contains_word(w))
+                pure = std::min(pure, int(w.size()));
         const int bound = std::max((catalogue.cap - lobe_energy - pure) / 2,
                                    (catalogue.cap - 2 * lobe_energy) / 4);
         for (int length = 1; length <= bound; ++length) {
@@ -283,12 +291,14 @@ int run(const char* forward, const char* reverse, const char* output) {
 }
 }  // namespace basis_index
 
+#ifndef AC_ROUND04_AK3_BASIS_INDEX_LIBRARY
 int main(int argc, char** argv) {
     try {
         if (argc != 4) throw std::runtime_error("usage: basis_index forward.tsv reverse.tsv result.json");
-        return basis_index::run(argv[1], argv[2], argv[3]);
+        return basis_index::run_scan(basis_index::Catalogue(argv[1]), argv[2], argv[3]);
     } catch (const std::exception& error) {
         std::cerr << error.what() << '\n';
         return 1;
     }
 }
+#endif

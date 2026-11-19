@@ -1,0 +1,12 @@
+{
+  "literal_input": [
+    "XXXYxyxyXYY",
+    "XYXYYXyXYYXy"
+  ],
+  "compact_key": [
+    "xxxyXYXYxyy",
+    "xyxyyxYxyyxY"
+  ],
+  "present": false,
+  "outward32_tsv_sha256": "a440d4a9450988f47c49ba25cc5995fcf828d2efbc4d2c79a6521b57688428f1"
+}

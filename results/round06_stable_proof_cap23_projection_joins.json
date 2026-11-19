@@ -1,0 +1,15 @@
+{
+  "status":"NO_SUBGROUP_JOIN",
+  "forward_pairs":744,
+  "forward_distinct_words":792,
+  "forward_cap":28,
+  "forward_minimum_coordinate":5,
+  "reverse_pairs":23902,
+  "reverse_rotation_pairs":6230442,
+  "reverse_distinct_rotated_cores":2675055,
+  "reverse_geodesic_bridges":682130,
+  "primitive_slopes_constructed":7321285,
+  "coordinates_found_in_forward_catalogue":1006405,
+  "basis_pair_lookups":75012,
+  "core_topologies":{"barbell":688214,"rose":861364,"theta":1807607}
+}

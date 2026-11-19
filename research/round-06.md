@@ -1,0 +1,31 @@
+# Research round 06
+
+2026-11-19. Five agents continued the five targets in overlapping waves. The new marked AK(3) waypoint, the cyclic cap-29 exclusion and the uncapped free instruction bounds were replayed or independently audited. The five requested outcomes remain open.
+
+## Track reports
+
+| Target | Result |
+| --- | --- |
+| [Ordinary AK(3) trivialization](round-06-ak3.md) | The previous stable projection is ordinarily reachable at exact minimum cyclic and raw peak 29. A 267-move path attains both, and the literal cyclic-product distance there at cap 29 is exactly 18. The complete cap-29 component and 7,180,586 new cap-32 outward orbits give zero arbitrary-tail joins against the known-trivial archive. |
+| [Proof of Stable AC](round-06-stable-proof.md) | The all-singleton algorithm checks returns through every marked letter. A 148-move rank-three prefix gives the new energy-23 projection outside cap 29. The full continuation expands to a verified 21,528,218-move strict stable path of maximum rank four. |
+| [Proof of ordinary AC](round-06-ac-proof.md) | A block can be compiled through a chartless excursion when its outgoing donors vanish in the common quotient and its endpoint charts satisfy the compatibility condition. The exact AK(3) control changes primitive slots after a chartless interval, and a second control allows a genuine intervening import and change of normal closure. |
+| [Disproof of ordinary AC](round-06-ac-disproof.md) | A free-product syllable test determines whether a fixed primitive in a rank-four rebased join can be realized with a genuine source basis. The largest exact first- and second-phase basis scope checks 172,298 actual middle cores and 103,017,706 final join positions, with no primitive. |
+| [Disproof of Stable AC](round-06-stable-disproof.md) | Successive lower-degree midpoint filters prove degree-eight stable and ordinary distances at least 16. An independent free-group subgroup check requires at least three original-letter conjugations, tightening the padding cutoff. |
+
+## What the results establish together
+
+- The [complete cap-29 audit](round-06-cyclic29.md) checks 35,968,003 signed ambient orbits and excludes a primitive relation throughout, giving a cyclic ordinary peak lower bound of **30**. The rank-two waypoint from the rank-three stable search is nonetheless attained exactly at cap 29. Its earlier absence at cap 28 measured a length barrier, and now both the ordinary and stable tracks can use the same waypoint without paying extra rank.
+- The new energy-23 projection from the stable track is outside cap 29. None of its signed copies occurs in the two-layer cap-32 continuation from the selected low-energy orbits. This gives a second test case for the chartless transfer theorem and for an ordinary connection at higher peak. The strict stable ledger reaches maximum rank four and cyclic peak 405 during the defining exchanges. [New cap-23 waypoint](round-06-stable-proof.md), [local catalogue membership check](../results/round06_stable_waypoint_outward32_membership.json).
+- The chartless block result shows that loss of every primitive row alone does not obstruct rank reduction of a path. Provided the outgoing donors vanish in the common quotient, an excursion may change its internal normal closure, import from outside, and restore a primitive in a different slot. The endpoint charts and the outgoing donor images determine the actual test. [Chartless descent and exact controls](round-06-ac-proof.md).
+- Exact searches in uncapped free words give ordinary and stable distance lower bounds of 18. The positive-padding tests use auxiliary-letter retraction and retain all rows. The same relaxation has a 30-instruction upper bound for AK(3) once any identity row is available, so higher finite lower bounds need information about how the auxiliary letters were used. [Free-distance bounds](round-06-free-distance.md).
+- Two finite markings at the new waypoint exclude any primitive before both rows receive a multiplication. The shorter donor is killed in a matrix marking and the longer donor in a Heisenberg semidirect product, with exact conjugacy exclusions in both cases. A completion from the waypoint must therefore alternate between the rows. [Frozen-donor witnesses](round-06-waypoint-frozen-donors.md).
+- The [Magnus midpoint filter](round-06-magnus-corridor.md) replaces complete high-degree balls with lifts of surviving paths in a quotient. It reproduces the direct degree-seven one-padding exclusion. [Successive tiers](round-06-stable-disproof.md) extend the degree-eight ordinary and stable lower bounds to 16 and can synchronize all pairwise variable erasures in a single instruction sequence.
+- Every successful free path must have at least three conjugations by an original letter after normalized padding. These are distinct from the crossing products counted in the incidence bound, so a length-18 stable test only needs at most three extra pairs. [Conjugation cutoff](round-06-stable-disproof.md#three-necessary-original-letter-conjugations-in-the-free-group).
+
+## Questions for round 07
+
+1. **AK(3) trivialization.** Explore the new low-energy ordinary waypoints and later exits using an efficient exact cap-30 search or new constructive moves. Test membership and reconstruct any path to the new energy-23 stable projection. Prioritize certificates for a primitive coordinate or a join to the known-trivial archive.
+2. **Stable AC proof.** Finish the all-marked singleton closure at cap 22 if still running. Screen additional cap-23 excursions and connect any promising projected pairs to standard form by strict moves.
+3. **Ordinary AC proof.** Test whether the chartless transfer theorem applies to the new cap-23 waypoint. Derive conditions that force outgoing block donors to vanish in the common quotient, or compile an excursion where a nontrivial block donor reaches an exterior row.
+4. **Ordinary AC disproof.** Carry simultaneous basis constraints through arbitrarily long middle bridges and identify whether the positive envelope controls can be realized by actual successive bases.
+5. **Stable AC disproof.** Combine several successive quotient filters or several markings on the same lifted path. Prove new free-group instruction bounds without discarding auxiliary-letter information at every stage.
