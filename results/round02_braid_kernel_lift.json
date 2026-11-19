@@ -1,0 +1,51 @@
+{
+  "prefix_sha256": "0d195a1cc1a8dda57f1785c724ea7b27a49d6eaa60ea4e5aa90c7c257b767fd9",
+  "prefix_moves": 533,
+  "verified_ambient_quotient": "F/gamma_3(N), N the braid normal closure",
+  "corrections": [
+    {
+      "target": "x",
+      "donor_factors": 316,
+      "total_conjugator_power": 836,
+      "strict_word_moves_from_this_stage": 1062352,
+      "before": {
+        "free_word_length": 634,
+        "braid_vertices": 70,
+        "schreier_letters": 154,
+        "schreier_basis_edges": 18,
+        "degree_one_support": 0,
+        "degree_two_support": 168
+      },
+      "after": {
+        "free_word_length": 775524,
+        "braid_vertices": 2051,
+        "schreier_letters": 206166,
+        "schreier_basis_edges": 659,
+        "degree_one_support": 0,
+        "degree_two_support": 0
+      }
+    },
+    {
+      "target": "y",
+      "donor_factors": 942,
+      "total_conjugator_power": 2496,
+      "strict_word_moves_from_this_stage": 9321948,
+      "before": {
+        "free_word_length": 1866,
+        "braid_vertices": 105,
+        "schreier_letters": 416,
+        "schreier_basis_edges": 31,
+        "degree_one_support": 0,
+        "degree_two_support": 264
+      },
+      "after": {
+        "free_word_length": 1693860,
+        "braid_vertices": 2550,
+        "schreier_letters": 493800,
+        "schreier_basis_edges": 881,
+        "degree_one_support": 0,
+        "degree_two_support": 0
+      }
+    }
+  ]
+}

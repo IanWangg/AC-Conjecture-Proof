@@ -1,0 +1,78 @@
+{
+  "one_product_with_pivot": {
+    "start": [
+      "x",
+      "y"
+    ],
+    "conjugator": "xy",
+    "end": [
+      "x",
+      "yxyxYX"
+    ],
+    "quotient_unchanged": "y",
+    "whitehead_minimal_pair": [
+      "x",
+      "yyxYX"
+    ],
+    "whitehead_cut_minima": {
+      "x": 3,
+      "y": 3
+    },
+    "independent_parity_replay": {
+      "status": "PASS",
+      "kind": "K4",
+      "equations": 1,
+      "literal_words": [
+        "x",
+        "yyxYX"
+      ]
+    }
+  },
+  "nonprimitive_geometric_block": {
+    "rank_three_tuple": [
+      "xxYYY",
+      "xxxYYYY",
+      "zxZXYzxxYYYZyxzX"
+    ],
+    "geometric_block": [
+      "xxYYY",
+      "xxxYYYY"
+    ],
+    "block_planar_witness_genus": 0,
+    "block_ordinary_moves": 35,
+    "block_endpoint": [
+      "x",
+      "y"
+    ],
+    "whitehead_cut_minima_for_each_word": {
+      "xxYYY": {
+        "x": 2,
+        "y": 3,
+        "z": 0
+      },
+      "xxxYYYY": {
+        "x": 3,
+        "y": 4,
+        "z": 0
+      },
+      "zxZXYzxxYYYZyxzX": {
+        "x": 6,
+        "y": 5,
+        "z": 5
+      }
+    },
+    "nonplanar_K33_partition_in_last_word": [
+      "Xxy",
+      "YZz"
+    ],
+    "quotient_by_whole_block": [
+      "z"
+    ],
+    "direct_normalization_endpoint": [
+      "x",
+      "y",
+      "z"
+    ],
+    "final_conjugate_factors": 5
+  }
+}

@@ -1,0 +1,628 @@
+{
+  "status": "COMPLETE_NO_JOIN_IN_TESTED_SCOPE",
+  "ordinary_AK3_trivialization_found": false,
+  "input_sha256": {
+    "sources.tsv": "95721bf86d5f0347a451760c4aaecfa02ee7b03babd424f26aaacc208a94f6bf",
+    "sources_initial_rotations.tsv": "f60d079f7e83b2c42a208cceadbc54a0dc2c9ab8d3c564e897e131cb6771e0ac",
+    "reverse32.tsv": "6e8635d5bf97b4ebc4629ee7fe4fe8491e4dc5d0b89cbc44d44cba4b3701478d",
+    "reverse44.tsv": "ad252059a6f4e755484480f52eb662e0655ad8f90a903e27d71265b81dadb696"
+  },
+  "four_waypoints": {
+    "target_rows": 16943,
+    "target_mode": "all_tails",
+    "sources": [
+      {
+        "source": [
+          "XXyXYYYxxYxyy",
+          "XYxYYxY"
+        ],
+        "compared": 3182723,
+        "rank_two_products": 11669,
+        "any_cyclic_component": 10994,
+        "max_cyclic_components": 1,
+        "cyclic_components_total": 10994,
+        "primitive_projections_total": 10994,
+        "two_valid_cyclic_components": 0,
+        "inconclusive_lattice": 0,
+        "source_has_primitive_absence": 1,
+        "source_passes_direct_DAG_test": 1,
+        "full_ambient_targets": 11669,
+        "multilift_words": 38,
+        "longest_multilift_word": 4,
+        "multilift_barbells": 26966703,
+        "rank_filtered_barbells": 26966703,
+        "unresolved_two_lobes": 0
+      },
+      {
+        "source": [
+          "XXyyxYxyxYYXy",
+          "XYxYYxY"
+        ],
+        "compared": 3182723,
+        "rank_two_products": 11669,
+        "any_cyclic_component": 10994,
+        "max_cyclic_components": 1,
+        "cyclic_components_total": 10994,
+        "primitive_projections_total": 10994,
+        "two_valid_cyclic_components": 0,
+        "inconclusive_lattice": 0,
+        "source_has_primitive_absence": 1,
+        "source_passes_direct_DAG_test": 1,
+        "full_ambient_targets": 11669,
+        "multilift_words": 40,
+        "longest_multilift_word": 5,
+        "multilift_barbells": 27889857,
+        "rank_filtered_barbells": 27889857,
+        "unresolved_two_lobes": 0
+      },
+      {
+        "source": [
+          "xxxYYYY",
+          "xyxYXY"
+        ],
+        "compared": 3182723,
+        "rank_two_products": 11669,
+        "any_cyclic_component": 150,
+        "max_cyclic_components": 1,
+        "cyclic_components_total": 150,
+        "primitive_projections_total": 150,
+        "two_valid_cyclic_components": 0,
+        "inconclusive_lattice": 0,
+        "source_has_primitive_absence": 1,
+        "source_passes_direct_DAG_test": 1,
+        "full_ambient_targets": 11669,
+        "multilift_words": 34,
+        "longest_multilift_word": 5,
+        "multilift_barbells": 25915509,
+        "rank_filtered_barbells": 25915509,
+        "unresolved_two_lobes": 0
+      },
+      {
+        "source": [
+          "xxYYYXYXXyxyxxxxxYYYXYXy",
+          "XYXYxxyxyyyXX"
+        ],
+        "compared": 3182723,
+        "rank_two_products": 11669,
+        "any_cyclic_component": 0,
+        "max_cyclic_components": 0,
+        "cyclic_components_total": 0,
+        "primitive_projections_total": 0,
+        "two_valid_cyclic_components": 0,
+        "inconclusive_lattice": 0,
+        "source_has_primitive_absence": 1,
+        "source_passes_direct_DAG_test": 1,
+        "full_ambient_targets": 11669,
+        "multilift_words": 94,
+        "longest_multilift_word": 9,
+        "multilift_barbells": 75931627,
+        "rank_filtered_barbells": 75931627,
+        "unresolved_two_lobes": 0
+      }
+    ]
+  },
+  "initial_rotation_cores": {
+    "target_rows": 9257,
+    "target_mode": "all_tails",
+    "sources": [
+      {
+        "source": [
+          "xxxYYYY",
+          "xyxYXY"
+        ],
+        "compared": 1117474,
+        "rank_two_products": 6326,
+        "any_cyclic_component": 150,
+        "max_cyclic_components": 1,
+        "cyclic_components_total": 150,
+        "primitive_projections_total": 150,
+        "two_valid_cyclic_components": 0,
+        "inconclusive_lattice": 0,
+        "source_has_primitive_absence": 1,
+        "source_passes_direct_DAG_test": 1,
+        "full_ambient_targets": 6326,
+        "multilift_words": 34,
+        "longest_multilift_word": 5,
+        "multilift_barbells": 9107733,
+        "rank_filtered_barbells": 9107733,
+        "unresolved_two_lobes": 0
+      },
+      {
+        "source": [
+          "xxxYYYY",
+          "yxYXYx"
+        ],
+        "compared": 1117474,
+        "rank_two_products": 6326,
+        "any_cyclic_component": 143,
+        "max_cyclic_components": 1,
+        "cyclic_components_total": 143,
+        "primitive_projections_total": 143,
+        "two_valid_cyclic_components": 0,
+        "inconclusive_lattice": 0,
+        "source_has_primitive_absence": 1,
+        "source_passes_direct_DAG_test": 1,
+        "full_ambient_targets": 6326,
+        "multilift_words": 34,
+        "longest_multilift_word": 5,
+        "multilift_barbells": 10426658,
+        "rank_filtered_barbells": 10426658,
+        "unresolved_two_lobes": 0
+      },
+      {
+        "source": [
+          "xxxYYYY",
+          "xYXYxy"
+        ],
+        "compared": 1117474,
+        "rank_two_products": 6326,
+        "any_cyclic_component": 152,
+        "max_cyclic_components": 1,
+        "cyclic_components_total": 152,
+        "primitive_projections_total": 145,
+        "two_valid_cyclic_components": 0,
+        "inconclusive_lattice": 0,
+        "source_has_primitive_absence": 1,
+        "source_passes_direct_DAG_test": 1,
+        "full_ambient_targets": 6326,
+        "multilift_words": 26,
+        "longest_multilift_word": 4,
+        "multilift_barbells": 7450091,
+        "rank_filtered_barbells": 7450091,
+        "unresolved_two_lobes": 0
+      },
+      {
+        "source": [
+          "xxxYYYY",
+          "YXYxyx"
+        ],
+        "compared": 1117474,
+        "rank_two_products": 6326,
+        "any_cyclic_component": 143,
+        "max_cyclic_components": 1,
+        "cyclic_components_total": 143,
+        "primitive_projections_total": 143,
+        "two_valid_cyclic_components": 0,
+        "inconclusive_lattice": 0,
+        "source_has_primitive_absence": 1,
+        "source_passes_direct_DAG_test": 1,
+        "full_ambient_targets": 6326,
+        "multilift_words": 46,
+        "longest_multilift_word": 6,
+        "multilift_barbells": 12584495,
+        "rank_filtered_barbells": 12584495,
+        "unresolved_two_lobes": 0
+      },
+      {
+        "source": [
+          "xxxYYYY",
+          "XYxyxY"
+        ],
+        "compared": 1117474,
+        "rank_two_products": 6326,
+        "any_cyclic_component": 143,
+        "max_cyclic_components": 1,
+        "cyclic_components_total": 143,
+        "primitive_projections_total": 143,
+        "two_valid_cyclic_components": 0,
+        "inconclusive_lattice": 0,
+        "source_has_primitive_absence": 1,
+        "source_passes_direct_DAG_test": 1,
+        "full_ambient_targets": 6326,
+        "multilift_words": 30,
+        "longest_multilift_word": 5,
+        "multilift_barbells": 7701606,
+        "rank_filtered_barbells": 7701606,
+        "unresolved_two_lobes": 0
+      },
+      {
+        "source": [
+          "xxxYYYY",
+          "YxyxYX"
+        ],
+        "compared": 1117474,
+        "rank_two_products": 6326,
+        "any_cyclic_component": 143,
+        "max_cyclic_components": 1,
+        "cyclic_components_total": 143,
+        "primitive_projections_total": 143,
+        "two_valid_cyclic_components": 0,
+        "inconclusive_lattice": 0,
+        "source_has_primitive_absence": 1,
+        "source_passes_direct_DAG_test": 1,
+        "full_ambient_targets": 6326,
+        "multilift_words": 36,
+        "longest_multilift_word": 6,
+        "multilift_barbells": 8449688,
+        "rank_filtered_barbells": 8449688,
+        "unresolved_two_lobes": 0
+      },
+      {
+        "source": [
+          "xxYYYYx",
+          "xyxYXY"
+        ],
+        "compared": 1117474,
+        "rank_two_products": 6326,
+        "any_cyclic_component": 145,
+        "max_cyclic_components": 1,
+        "cyclic_components_total": 145,
+        "primitive_projections_total": 145,
+        "two_valid_cyclic_components": 0,
+        "inconclusive_lattice": 0,
+        "source_has_primitive_absence": 1,
+        "source_passes_direct_DAG_test": 1,
+        "full_ambient_targets": 6326,
+        "multilift_words": 28,
+        "longest_multilift_word": 4,
+        "multilift_barbells": 7946658,
+        "rank_filtered_barbells": 7946658,
+        "unresolved_two_lobes": 0
+      },
+      {
+        "source": [
+          "xxYYYYx",
+          "xYXYxy"
+        ],
+        "compared": 1117474,
+        "rank_two_products": 6326,
+        "any_cyclic_component": 143,
+        "max_cyclic_components": 1,
+        "cyclic_components_total": 143,
+        "primitive_projections_total": 143,
+        "two_valid_cyclic_components": 0,
+        "inconclusive_lattice": 0,
+        "source_has_primitive_absence": 1,
+        "source_passes_direct_DAG_test": 1,
+        "full_ambient_targets": 6326,
+        "multilift_words": 28,
+        "longest_multilift_word": 4,
+        "multilift_barbells": 7946658,
+        "rank_filtered_barbells": 7946658,
+        "unresolved_two_lobes": 0
+      },
+      {
+        "source": [
+          "xxYYYYx",
+          "YxyxYX"
+        ],
+        "compared": 1117474,
+        "rank_two_products": 6326,
+        "any_cyclic_component": 147,
+        "max_cyclic_components": 1,
+        "cyclic_components_total": 147,
+        "primitive_projections_total": 147,
+        "two_valid_cyclic_components": 0,
+        "inconclusive_lattice": 0,
+        "source_has_primitive_absence": 1,
+        "source_passes_direct_DAG_test": 1,
+        "full_ambient_targets": 6326,
+        "multilift_words": 22,
+        "longest_multilift_word": 3,
+        "multilift_barbells": 6043964,
+        "rank_filtered_barbells": 6043964,
+        "unresolved_two_lobes": 0
+      },
+      {
+        "source": [
+          "xYYYYxx",
+          "xyxYXY"
+        ],
+        "compared": 1117474,
+        "rank_two_products": 6326,
+        "any_cyclic_component": 152,
+        "max_cyclic_components": 1,
+        "cyclic_components_total": 152,
+        "primitive_projections_total": 144,
+        "two_valid_cyclic_components": 0,
+        "inconclusive_lattice": 0,
+        "source_has_primitive_absence": 1,
+        "source_passes_direct_DAG_test": 1,
+        "full_ambient_targets": 6326,
+        "multilift_words": 26,
+        "longest_multilift_word": 4,
+        "multilift_barbells": 7450091,
+        "rank_filtered_barbells": 7450091,
+        "unresolved_two_lobes": 0
+      },
+      {
+        "source": [
+          "xYYYYxx",
+          "xYXYxy"
+        ],
+        "compared": 1117474,
+        "rank_two_products": 6326,
+        "any_cyclic_component": 143,
+        "max_cyclic_components": 1,
+        "cyclic_components_total": 143,
+        "primitive_projections_total": 143,
+        "two_valid_cyclic_components": 0,
+        "inconclusive_lattice": 0,
+        "source_has_primitive_absence": 1,
+        "source_passes_direct_DAG_test": 1,
+        "full_ambient_targets": 6326,
+        "multilift_words": 34,
+        "longest_multilift_word": 5,
+        "multilift_barbells": 9107733,
+        "rank_filtered_barbells": 9107733,
+        "unresolved_two_lobes": 0
+      },
+      {
+        "source": [
+          "xYYYYxx",
+          "YxyxYX"
+        ],
+        "compared": 1117474,
+        "rank_two_products": 6326,
+        "any_cyclic_component": 143,
+        "max_cyclic_components": 1,
+        "cyclic_components_total": 143,
+        "primitive_projections_total": 143,
+        "two_valid_cyclic_components": 0,
+        "inconclusive_lattice": 0,
+        "source_has_primitive_absence": 1,
+        "source_passes_direct_DAG_test": 1,
+        "full_ambient_targets": 6326,
+        "multilift_words": 36,
+        "longest_multilift_word": 6,
+        "multilift_barbells": 8449688,
+        "rank_filtered_barbells": 8449688,
+        "unresolved_two_lobes": 0
+      },
+      {
+        "source": [
+          "YYYYxxx",
+          "xyxYXY"
+        ],
+        "compared": 1117474,
+        "rank_two_products": 6326,
+        "any_cyclic_component": 143,
+        "max_cyclic_components": 1,
+        "cyclic_components_total": 143,
+        "primitive_projections_total": 143,
+        "two_valid_cyclic_components": 0,
+        "inconclusive_lattice": 0,
+        "source_has_primitive_absence": 1,
+        "source_passes_direct_DAG_test": 1,
+        "full_ambient_targets": 6326,
+        "multilift_words": 46,
+        "longest_multilift_word": 6,
+        "multilift_barbells": 12584495,
+        "rank_filtered_barbells": 12584495,
+        "unresolved_two_lobes": 0
+      },
+      {
+        "source": [
+          "YYYYxxx",
+          "xYXYxy"
+        ],
+        "compared": 1117474,
+        "rank_two_products": 6326,
+        "any_cyclic_component": 143,
+        "max_cyclic_components": 1,
+        "cyclic_components_total": 143,
+        "primitive_projections_total": 143,
+        "two_valid_cyclic_components": 0,
+        "inconclusive_lattice": 0,
+        "source_has_primitive_absence": 1,
+        "source_passes_direct_DAG_test": 1,
+        "full_ambient_targets": 6326,
+        "multilift_words": 34,
+        "longest_multilift_word": 5,
+        "multilift_barbells": 10426658,
+        "rank_filtered_barbells": 10426658,
+        "unresolved_two_lobes": 0
+      },
+      {
+        "source": [
+          "YYYYxxx",
+          "YxyxYX"
+        ],
+        "compared": 1117474,
+        "rank_two_products": 6326,
+        "any_cyclic_component": 143,
+        "max_cyclic_components": 1,
+        "cyclic_components_total": 143,
+        "primitive_projections_total": 143,
+        "two_valid_cyclic_components": 0,
+        "inconclusive_lattice": 0,
+        "source_has_primitive_absence": 1,
+        "source_passes_direct_DAG_test": 1,
+        "full_ambient_targets": 6326,
+        "multilift_words": 30,
+        "longest_multilift_word": 5,
+        "multilift_barbells": 7701606,
+        "rank_filtered_barbells": 7701606,
+        "unresolved_two_lobes": 0
+      },
+      {
+        "source": [
+          "YYYxxxY",
+          "xYXYxy"
+        ],
+        "compared": 1117474,
+        "rank_two_products": 6326,
+        "any_cyclic_component": 143,
+        "max_cyclic_components": 1,
+        "cyclic_components_total": 143,
+        "primitive_projections_total": 143,
+        "two_valid_cyclic_components": 0,
+        "inconclusive_lattice": 0,
+        "source_has_primitive_absence": 1,
+        "source_passes_direct_DAG_test": 1,
+        "full_ambient_targets": 6326,
+        "multilift_words": 22,
+        "longest_multilift_word": 3,
+        "multilift_barbells": 5630971,
+        "rank_filtered_barbells": 5630971,
+        "unresolved_two_lobes": 0
+      },
+      {
+        "source": [
+          "YYYxxxY",
+          "YXYxyx"
+        ],
+        "compared": 1117474,
+        "rank_two_products": 6326,
+        "any_cyclic_component": 143,
+        "max_cyclic_components": 1,
+        "cyclic_components_total": 143,
+        "primitive_projections_total": 143,
+        "two_valid_cyclic_components": 0,
+        "inconclusive_lattice": 0,
+        "source_has_primitive_absence": 1,
+        "source_passes_direct_DAG_test": 1,
+        "full_ambient_targets": 6326,
+        "multilift_words": 32,
+        "longest_multilift_word": 4,
+        "multilift_barbells": 8198173,
+        "rank_filtered_barbells": 8198173,
+        "unresolved_two_lobes": 0
+      },
+      {
+        "source": [
+          "YYYxxxY",
+          "YxyxYX"
+        ],
+        "compared": 1117474,
+        "rank_two_products": 6326,
+        "any_cyclic_component": 143,
+        "max_cyclic_components": 1,
+        "cyclic_components_total": 143,
+        "primitive_projections_total": 143,
+        "two_valid_cyclic_components": 0,
+        "inconclusive_lattice": 0,
+        "source_has_primitive_absence": 1,
+        "source_passes_direct_DAG_test": 1,
+        "full_ambient_targets": 6326,
+        "multilift_words": 28,
+        "longest_multilift_word": 4,
+        "multilift_barbells": 6792046,
+        "rank_filtered_barbells": 6792046,
+        "unresolved_two_lobes": 0
+      },
+      {
+        "source": [
+          "YYxxxYY",
+          "xYXYxy"
+        ],
+        "compared": 1117474,
+        "rank_two_products": 6326,
+        "any_cyclic_component": 143,
+        "max_cyclic_components": 1,
+        "cyclic_components_total": 143,
+        "primitive_projections_total": 143,
+        "two_valid_cyclic_components": 0,
+        "inconclusive_lattice": 0,
+        "source_has_primitive_absence": 1,
+        "source_passes_direct_DAG_test": 1,
+        "full_ambient_targets": 6326,
+        "multilift_words": 22,
+        "longest_multilift_word": 3,
+        "multilift_barbells": 5630971,
+        "rank_filtered_barbells": 5630971,
+        "unresolved_two_lobes": 0
+      },
+      {
+        "source": [
+          "YYxxxYY",
+          "YXYxyx"
+        ],
+        "compared": 1117474,
+        "rank_two_products": 6326,
+        "any_cyclic_component": 143,
+        "max_cyclic_components": 1,
+        "cyclic_components_total": 143,
+        "primitive_projections_total": 143,
+        "two_valid_cyclic_components": 0,
+        "inconclusive_lattice": 0,
+        "source_has_primitive_absence": 1,
+        "source_passes_direct_DAG_test": 1,
+        "full_ambient_targets": 6326,
+        "multilift_words": 28,
+        "longest_multilift_word": 4,
+        "multilift_barbells": 6792046,
+        "rank_filtered_barbells": 6792046,
+        "unresolved_two_lobes": 0
+      },
+      {
+        "source": [
+          "YYxxxYY",
+          "YxyxYX"
+        ],
+        "compared": 1117474,
+        "rank_two_products": 6326,
+        "any_cyclic_component": 143,
+        "max_cyclic_components": 1,
+        "cyclic_components_total": 143,
+        "primitive_projections_total": 143,
+        "two_valid_cyclic_components": 0,
+        "inconclusive_lattice": 0,
+        "source_has_primitive_absence": 1,
+        "source_passes_direct_DAG_test": 1,
+        "full_ambient_targets": 6326,
+        "multilift_words": 32,
+        "longest_multilift_word": 4,
+        "multilift_barbells": 8198173,
+        "rank_filtered_barbells": 8198173,
+        "unresolved_two_lobes": 0
+      }
+    ]
+  },
+  "independent_direct_audit": {
+    "four_waypoints": {
+      "all_single_lobe_controls": 67772,
+      "sampled_barbells": 2110,
+      "sampled_rotations": 8124
+    },
+    "initial_rotation_cores": {
+      "all_single_lobe_controls": 194397,
+      "sampled_barbells": 6678,
+      "sampled_rotations": 24654
+    }
+  },
+  "positive_control": {
+    "previous_test": {
+      "status": "COMPLETE_NO_ALL_TAIL_SUBGROUP_MATCH",
+      "forward_cyclic_pairs": 1,
+      "reverse_cyclic_pairs": 1,
+      "forward_intersecting_rotation_pairs": 6,
+      "reverse_intersecting_rotation_pairs": 6,
+      "forward_distinct_rotation_core_keys": 3,
+      "forward_barbell_rotation_cores_counting_repeats": 4,
+      "reverse_barbell_rotation_cores_counting_repeats": 4
+    },
+    "fiber_join": {
+      "status": "MATCH",
+      "left": [
+        "xyxyXY",
+        "yxyXY"
+      ],
+      "right": [
+        "x",
+        "yXyxYx"
+      ],
+      "loops": [
+        {
+          "ambient": "x",
+          "left_marked": "x",
+          "right_marked": "x"
+        },
+        {
+          "ambient": "y",
+          "left_marked": "y",
+          "right_marked": "y"
+        }
+      ],
+      "rank_two_components": 0
+    },
+    "strict_replay": {
+      "moves": 22,
+      "peak_total_length": 11,
+      "endpoint": [
+        "x",
+        "yXyxYx"
+      ]
+    }
+  }
+}

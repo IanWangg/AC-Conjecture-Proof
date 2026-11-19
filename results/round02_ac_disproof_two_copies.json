@@ -1,0 +1,249 @@
+{
+  "ordinary_AC_goal_solved": false,
+  "native_by_bridge_length": {
+    "1": {
+      "sources": 42,
+      "vertex_pairs": 3276,
+      "DAG_exclusions": 3276,
+      "DAG_unresolved": 0,
+      "join_ranks": {
+        "4": 3276
+      }
+    },
+    "2": {
+      "sources": 126,
+      "vertex_pairs": 11466,
+      "DAG_exclusions": 11466,
+      "DAG_unresolved": 0,
+      "join_ranks": {
+        "4": 11466
+      }
+    },
+    "3": {
+      "sources": 378,
+      "vertex_pairs": 39690,
+      "DAG_exclusions": 39690,
+      "DAG_unresolved": 0,
+      "join_ranks": {
+        "4": 39690
+      }
+    },
+    "4": {
+      "sources": 1134,
+      "vertex_pairs": 136080,
+      "DAG_exclusions": 136080,
+      "DAG_unresolved": 0,
+      "join_ranks": {
+        "4": 136080
+      }
+    },
+    "5": {
+      "sources": 3402,
+      "vertex_pairs": 462672,
+      "DAG_exclusions": 462672,
+      "DAG_unresolved": 0,
+      "join_ranks": {
+        "4": 462672
+      }
+    },
+    "6": {
+      "sources": 10206,
+      "vertex_pairs": 1561518,
+      "DAG_exclusions": 1561518,
+      "DAG_unresolved": 0,
+      "join_ranks": {
+        "4": 1561518
+      }
+    },
+    "7": {
+      "sources": 30618,
+      "vertex_pairs": 5235678,
+      "DAG_exclusions": 5235678,
+      "DAG_unresolved": 0,
+      "join_ranks": {
+        "4": 5235678
+      }
+    },
+    "8": {
+      "sources": 91854,
+      "vertex_pairs": 17452260,
+      "DAG_exclusions": 17452260,
+      "DAG_unresolved": 0,
+      "join_ranks": {
+        "4": 17452260
+      }
+    }
+  },
+  "native_total_sources": 137760,
+  "native_total_joins": 24902640,
+  "independent_four_word_folds": {
+    "1": {
+      "sample_sources": 5,
+      "checked_joins": 390
+    },
+    "2": {
+      "sample_sources": 5,
+      "checked_joins": 455
+    },
+    "3": {
+      "sample_sources": 5,
+      "checked_joins": 525
+    },
+    "4": {
+      "sample_sources": 5,
+      "checked_joins": 600
+    },
+    "5": {
+      "sample_sources": 5,
+      "checked_joins": 680
+    },
+    "6": {
+      "sample_sources": 5,
+      "checked_joins": 765
+    },
+    "7": {
+      "sample_sources": 5,
+      "checked_joins": 855
+    },
+    "8": {
+      "sample_sources": 5,
+      "checked_joins": 950
+    }
+  },
+  "exact_lobe_rotation_tests": [
+    {
+      "lobes": [
+        "xxxYYYY",
+        "xxxYYYY"
+      ],
+      "rotation_pairs": 49,
+      "map_pair_states": 4928
+    },
+    {
+      "lobes": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "rotation_pairs": 42,
+      "map_pair_states": 3688
+    },
+    {
+      "lobes": [
+        "xyxYXY",
+        "xyxYXY"
+      ],
+      "rotation_pairs": 36,
+      "map_pair_states": 1568
+    }
+  ],
+  "arbitrary_length_family": {
+    "power": "YYYYxxx",
+    "braid": "xyxYXY",
+    "local_example_bridge": "xyyyyyyyyyyyyyyyyyy",
+    "unique_reading_starts": {
+      "xxxYYYY": 8,
+      "yyyyXXX": 8,
+      "xxYYYYx": 5,
+      "XyyyyXX": 5,
+      "xYYYYxx": 2,
+      "XXyyyyX": 2,
+      "YYYYxxx": 0,
+      "XXXyyyy": 0,
+      "YYYxxxY": 3,
+      "yXXXyyy": 3,
+      "YYxxxYY": 6,
+      "yyXXXyy": 6,
+      "YxxxYYY": 9,
+      "yyyXXXy": 9,
+      "xyxYXY": 25,
+      "yxyXYX": 25,
+      "yxYXYx": 26,
+      "XyxyXY": 26,
+      "xYXYxy": 28,
+      "YXyxyX": 28,
+      "YXYxyx": 30,
+      "XYXyxy": 30,
+      "XYxyxY": 29,
+      "yXYXyx": 29,
+      "YxyxYX": 27,
+      "xyXYXy": 27,
+      "xyyyyyyyyyyyyyyyyyy": 0
+    },
+    "maximum_y_run_in_earlier_rotation_cores": 5,
+    "maximum_y_run_bound_in_bridge_cap5_cores": 16
+  },
+  "controls": {
+    "literal_AK2": {
+      "checked_joins": 28,
+      "dag_exclusions": 25,
+      "closed_map_states": 2276,
+      "primitive_joins": [
+        {
+          "vertices": [
+            1,
+            4
+          ],
+          "witness": {
+            "alphabet": "xY",
+            "positive_basis_program": "RLRL",
+            "component": 1,
+            "loop_vertex": 2,
+            "word_length": 8,
+            "base_to_loop_path": "X",
+            "cyclic_primitive_word": "xYxYYxYY",
+            "based_primitive_word": "YxYYxYYx"
+          }
+        },
+        {
+          "vertices": [
+            3,
+            7
+          ],
+          "witness": {
+            "alphabet": "xY",
+            "positive_basis_program": "RLRL",
+            "component": 1,
+            "loop_vertex": 3,
+            "word_length": 8,
+            "base_to_loop_path": "XX",
+            "cyclic_primitive_word": "xYxYYxYY",
+            "based_primitive_word": "XYxYYxYYxx"
+          }
+        },
+        {
+          "vertices": [
+            5,
+            6
+          ],
+          "witness": {
+            "alphabet": "xY",
+            "positive_basis_program": "RLRL",
+            "component": 1,
+            "loop_vertex": 8,
+            "word_length": 8,
+            "base_to_loop_path": "YY",
+            "cyclic_primitive_word": "xYxYYxYY",
+            "based_primitive_word": "YYxYxYYx"
+          }
+        }
+      ]
+    },
+    "disjoint_AK2_barbell": {
+      "checked_joins": 55,
+      "dag_exclusions": 55,
+      "closed_map_states": 5236,
+      "primitive_joins": [],
+      "larger_kernel_witness": {
+        "identified_vertices": [
+          0,
+          3
+        ],
+        "loop_vertex": 2,
+        "primitive": "xYxYYxYY",
+        "positive_basis_program": "RLRL",
+        "extra_generator": "Y",
+        "voltage": 0
+      }
+    }
+  }
+}

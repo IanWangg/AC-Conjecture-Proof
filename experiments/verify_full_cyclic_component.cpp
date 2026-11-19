@@ -5,6 +5,7 @@
 #include <chrono>
 #include <cstdint>
 #include <fstream>
+#include <future>
 #include <iostream>
 #include <limits>
 #include <map>
@@ -111,7 +112,8 @@ void self_test() {
     }
 }
 
-int run(const std::string& input,int cap,const std::string& output) {
+int run(const std::string& input,int cap,const std::string& output,int workers) {
+    if(workers<1) throw std::runtime_error("workers must be positive");
     self_test();
     const auto started=std::chrono::steady_clock::now();
     std::ifstream source(input);
@@ -142,51 +144,74 @@ int run(const std::string& input,int cap,const std::string& output) {
     if(index.count(pair_key(class_word("x"),class_word("y"))))
         throw std::runtime_error("standard basis unexpectedly present");
 
-    std::unordered_map<std::string,std::vector<std::string>> orientations;
-    std::map<int,std::vector<std::pair<std::string,std::string>>> tails;
     std::vector<std::vector<uint32_t>> adjacent(states.size());
-    uint64_t candidates=0,accepted=0,positive_tail_candidates=0,positive_tail_accepted=0;
-    int maximum_tail=0;
-    for(std::size_t state=0;state<states.size();++state) {
-        const std::string words[2]={states[state].first,states[state].second};
-        for(const auto& w:words)
-            if(!orientations.count(w)) orientations.emplace(w,signed_rotations(w));
-        for(int recipient=0;recipient<2;++recipient) {
-            const int donor=1-recipient;
-            const int numerator=cap-static_cast<int>(words[recipient].size())
-                                   -2*static_cast<int>(words[donor].size());
-            const int bound=numerator<0 ? 0 : numerator/2;
-            maximum_tail=std::max(maximum_tail,bound);
-            if(!tails.count(bound)) {
-                std::vector<std::string> raw;
-                std::string prefix;
-                append_tails(bound,prefix,raw);
-                for(const auto& q:raw) tails[bound].emplace_back(q,reversed_inverse(q));
-            }
-            for(const auto& a:orientations.at(words[recipient]))
-                for(const auto& b:orientations.at(words[donor]))
-                    for(const auto& q:tails.at(bound)) {
-                        ++candidates;
-                        if(!q.first.empty()) ++positive_tail_candidates;
-                        const auto reduced=cyclically_reduced(a+q.first+b+q.second);
-                        if(reduced.size()+words[donor].size()>static_cast<std::size_t>(cap)) continue;
-                        const auto product=std::min(least_rotation(reduced),
-                                                    least_rotation(reversed_inverse(reduced)));
-                        ++accepted;
-                        if(!q.first.empty()) ++positive_tail_accepted;
-                        auto next=index.find(pair_key(product,words[donor]));
-                        if(next==index.end()) {
-                            std::cerr<<"missing neighbor from "<<words[0]<<" / "<<words[1]
-                                     <<"; recipient="<<recipient<<" tail="<<q.first
-                                     <<" product="<<product<<"\n";
-                            throw std::runtime_error("catalogue not closed under full finite menu");
+    struct Counts {
+        uint64_t candidates=0,accepted=0,positive_tail_candidates=0,positive_tail_accepted=0;
+        int maximum_tail=0;
+    };
+    const auto& lookup=index;
+    // Workers share the catalogue and write disjoint rows of the adjacency table.
+    auto scan=[&](std::size_t begin,std::size_t end) {
+        std::unordered_map<std::string,std::vector<std::string>> orientations;
+        std::map<int,std::vector<std::pair<std::string,std::string>>> tails;
+        Counts counts;
+        for(std::size_t state=begin;state<end;++state) {
+            const std::string words[2]={states[state].first,states[state].second};
+            for(const auto& w:words)
+                if(!orientations.count(w)) orientations.emplace(w,signed_rotations(w));
+            for(int recipient=0;recipient<2;++recipient) {
+                const int donor=1-recipient;
+                const int numerator=cap-static_cast<int>(words[recipient].size())
+                                       -2*static_cast<int>(words[donor].size());
+                const int bound=numerator<0 ? 0 : numerator/2;
+                counts.maximum_tail=std::max(counts.maximum_tail,bound);
+                if(!tails.count(bound)) {
+                    std::vector<std::string> raw;
+                    std::string prefix;
+                    append_tails(bound,prefix,raw);
+                    for(const auto& q:raw) tails[bound].emplace_back(q,reversed_inverse(q));
+                }
+                for(const auto& a:orientations.at(words[recipient]))
+                    for(const auto& b:orientations.at(words[donor]))
+                        for(const auto& q:tails.at(bound)) {
+                            ++counts.candidates;
+                            if(!q.first.empty()) ++counts.positive_tail_candidates;
+                            const auto reduced=cyclically_reduced(a+q.first+b+q.second);
+                            if(reduced.size()+words[donor].size()>static_cast<std::size_t>(cap)) continue;
+                            const auto product=std::min(least_rotation(reduced),
+                                                        least_rotation(reversed_inverse(reduced)));
+                            ++counts.accepted;
+                            if(!q.first.empty()) ++counts.positive_tail_accepted;
+                            auto next=lookup.find(pair_key(product,words[donor]));
+                            if(next==lookup.end()) {
+                                std::cerr<<"missing neighbor from "<<words[0]<<" / "<<words[1]
+                                         <<"; recipient="<<recipient<<" tail="<<q.first
+                                         <<" product="<<product<<"\n";
+                                throw std::runtime_error("catalogue not closed under full finite menu");
+                            }
+                            adjacent[state].push_back(next->second);
                         }
-                        adjacent[state].push_back(next->second);
-                    }
+            }
+            auto& neighbors=adjacent[state];
+            std::sort(neighbors.begin(),neighbors.end());
+            neighbors.erase(std::unique(neighbors.begin(),neighbors.end()),neighbors.end());
         }
-        auto& neighbors=adjacent[state];
-        std::sort(neighbors.begin(),neighbors.end());
-        neighbors.erase(std::unique(neighbors.begin(),neighbors.end()),neighbors.end());
+        return counts;
+    };
+    const auto partitions=std::min(static_cast<std::size_t>(workers),states.size());
+    const auto policy=partitions==1 ? std::launch::deferred : std::launch::async;
+    std::vector<std::future<Counts>> scans;
+    for(std::size_t part=0;part<partitions;++part)
+        scans.push_back(std::async(policy,scan,states.size()*part/partitions,
+                                   states.size()*(part+1)/partitions));
+    Counts counts;
+    for(auto& scan_result:scans) {
+        const auto part=scan_result.get();
+        counts.candidates+=part.candidates;
+        counts.accepted+=part.accepted;
+        counts.positive_tail_candidates+=part.positive_tail_candidates;
+        counts.positive_tail_accepted+=part.positive_tail_accepted;
+        counts.maximum_tail=std::max(counts.maximum_tail,part.maximum_tail);
     }
     std::vector<bool> reached(states.size(),false);
     std::queue<uint32_t> frontier;
@@ -206,11 +231,11 @@ int run(const std::string& input,int cap,const std::string& output) {
           <<"  \"cyclic_cap\": "<<cap<<",\n  \"canonical_states\": "<<states.size()<<",\n"
           <<"  \"minimum_cyclic_sum\": "<<min_sum<<",\n  \"minimum_cyclic_coordinate\": "<<min_word<<",\n"
           <<"  \"minimum_disjoint_axes_neighbor_sum\": "<<min_bridge<<",\n"
-          <<"  \"all_menu_candidates_checked\": "<<candidates<<",\n"
-          <<"  \"admitted_neighbor_checks\": "<<accepted<<",\n"
-          <<"  \"positive_tail_candidates_checked\": "<<positive_tail_candidates<<",\n"
-          <<"  \"positive_tail_admitted_checks\": "<<positive_tail_accepted<<",\n"
-          <<"  \"maximum_geodesic_bridge_length_needed\": "<<maximum_tail<<",\n"
+          <<"  \"all_menu_candidates_checked\": "<<counts.candidates<<",\n"
+          <<"  \"admitted_neighbor_checks\": "<<counts.accepted<<",\n"
+          <<"  \"positive_tail_candidates_checked\": "<<counts.positive_tail_candidates<<",\n"
+          <<"  \"positive_tail_admitted_checks\": "<<counts.positive_tail_accepted<<",\n"
+          <<"  \"maximum_geodesic_bridge_length_needed\": "<<counts.maximum_tail<<",\n"
           <<"  \"all_states_reachable_from_original_AK3\": true,\n"
           <<"  \"closed_under_full_geometric_neighbor_menu\": true,\n"
           <<"  \"independent_free_reduction_and_Booth_canonicalizer\": true,\n"
@@ -219,15 +244,16 @@ int run(const std::string& input,int cap,const std::string& output) {
     bool first=true;
     for(auto entry:histogram) {if(!first)result<<", ";first=false;result<<"\""<<entry.first<<"\": "<<entry.second;}
     result<<"}\n}\n";
-    std::cout<<"PASS "<<states.size()<<" states; "<<candidates<<" menu checks; "
-             <<positive_tail_candidates<<" positive-tail checks; "<<elapsed<<" seconds\n";
+    std::cout<<"PASS "<<states.size()<<" states; "<<counts.candidates<<" menu checks; "
+             <<counts.positive_tail_candidates<<" positive-tail checks; "<<elapsed<<" seconds\n";
     return 0;
 }
 } // namespace audit
 
 int main(int argc,char** argv) {
     try {
-        if(argc!=4) throw std::runtime_error("usage: verify_full_cyclic_component catalogue.tsv cap result.json");
-        return audit::run(argv[1],std::stoi(argv[2]),argv[3]);
+        if(argc!=4 && argc!=5)
+            throw std::runtime_error("usage: verify_full_cyclic_component catalogue.tsv cap result.json [workers]");
+        return audit::run(argv[1],std::stoi(argv[2]),argv[3],argc==5 ? std::stoi(argv[4]) : 1);
     } catch(const std::exception& e) {std::cerr<<"FAIL: "<<e.what()<<"\n";return 1;}
 }
