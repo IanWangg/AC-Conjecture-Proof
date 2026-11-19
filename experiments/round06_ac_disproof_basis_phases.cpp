@@ -203,6 +203,7 @@ void run(int first_bound, int second_bound, int first_gap, int second_gap, const
 }
 }
 
+#ifndef AC_ROUND06_BASIS_PHASES_LIBRARY
 int main(int argc, char** argv) {
     try {
         if (argc != 6 && (argc != 7 || std::string_view(argv[6]) != "--all-final-vertices"))
@@ -214,3 +215,4 @@ int main(int argc, char** argv) {
         return 1;
     }
 }
+#endif

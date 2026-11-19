@@ -1,0 +1,917 @@
+{
+  "unbounded_middle_bridge_scopes": [
+    {
+      "native": {
+        "first_basis_mass": 2,
+        "second_basis_mass": 2,
+        "first_bridge_cap": 0,
+        "first_marked_pairs": 42,
+        "distinct_second_lobe_pairs": 1,
+        "bare_lobes_unique": 1,
+        "rotation_certified_pairs": 1,
+        "guarded_pairs": 1,
+        "pairs_with_exponential_families": 1,
+        "rotation_DAG_exclusions": 91,
+        "rotation_exact_exclusions": 0,
+        "rotation_positive_checks": 0,
+        "rotation_incomplete_checks": 0,
+        "constant_families": 42,
+        "exponential_families": 42,
+        "unrestricted_alphabet_families": 60
+      },
+      "independent": {
+        "independent_first_markings": 42,
+        "independent_second_lobe_pairs": 1,
+        "independent_bare_unique_pairs": 1,
+        "sampled_exact_endpoint_template_audits": 1,
+        "sampled_independent_rotation_pair_DAG_checks": 91,
+        "catalogue_sha256": "7f3465c93ee6515891f6d3727fee54ed175bf72365793770a89244a8c039c8d8"
+      }
+    },
+    {
+      "native": {
+        "first_basis_mass": 3,
+        "second_basis_mass": 3,
+        "first_bridge_cap": 0,
+        "first_marked_pairs": 328,
+        "distinct_second_lobe_pairs": 645,
+        "bare_lobes_unique": 181,
+        "rotation_certified_pairs": 181,
+        "guarded_pairs": 181,
+        "pairs_with_exponential_families": 181,
+        "rotation_DAG_exclusions": 51512,
+        "rotation_exact_exclusions": 0,
+        "rotation_positive_checks": 0,
+        "rotation_incomplete_checks": 0,
+        "constant_families": 22091,
+        "exponential_families": 39763,
+        "unrestricted_alphabet_families": 49378
+      },
+      "independent": {
+        "independent_first_markings": 328,
+        "independent_second_lobe_pairs": 645,
+        "independent_bare_unique_pairs": 181,
+        "sampled_exact_endpoint_template_audits": 10,
+        "sampled_independent_rotation_pair_DAG_checks": 3017,
+        "catalogue_sha256": "c02fdcc9b8724c1e4f9c75736e5eac07a72f40d35c63036a474342163c05383e"
+      }
+    },
+    {
+      "native": {
+        "first_basis_mass": 2,
+        "second_basis_mass": 3,
+        "first_bridge_cap": 1,
+        "first_marked_pairs": 84,
+        "distinct_second_lobe_pairs": 253,
+        "bare_lobes_unique": 39,
+        "rotation_certified_pairs": 39,
+        "guarded_pairs": 39,
+        "pairs_with_exponential_families": 39,
+        "rotation_DAG_exclusions": 6111,
+        "rotation_exact_exclusions": 0,
+        "rotation_positive_checks": 0,
+        "rotation_incomplete_checks": 0,
+        "constant_families": 2446,
+        "exponential_families": 3542,
+        "unrestricted_alphabet_families": 3866
+      },
+      "independent": {
+        "independent_first_markings": 84,
+        "independent_second_lobe_pairs": 253,
+        "independent_bare_unique_pairs": 39,
+        "sampled_exact_endpoint_template_audits": 10,
+        "sampled_independent_rotation_pair_DAG_checks": 1535,
+        "catalogue_sha256": "d00c321a414870d7bfaf5e13e803aeb9d66690d9156386616432a880e3d7e123"
+      }
+    },
+    {
+      "native": {
+        "first_basis_mass": 3,
+        "second_basis_mass": 3,
+        "first_bridge_cap": 1,
+        "first_marked_pairs": 658,
+        "distinct_second_lobe_pairs": 1965,
+        "bare_lobes_unique": 181,
+        "rotation_certified_pairs": 181,
+        "guarded_pairs": 181,
+        "pairs_with_exponential_families": 181,
+        "rotation_DAG_exclusions": 51512,
+        "rotation_exact_exclusions": 0,
+        "rotation_positive_checks": 0,
+        "rotation_incomplete_checks": 0,
+        "constant_families": 22091,
+        "exponential_families": 39763,
+        "unrestricted_alphabet_families": 49378
+      },
+      "independent": {
+        "independent_first_markings": 658,
+        "independent_second_lobe_pairs": 1965,
+        "independent_bare_unique_pairs": 181,
+        "sampled_exact_endpoint_template_audits": 10,
+        "sampled_independent_rotation_pair_DAG_checks": 3058,
+        "catalogue_sha256": "80f0911eb239ad137ee724773bfeee6c3f72e9bc5880b893d8cbbe3d55c4db71"
+      }
+    },
+    {
+      "native": {
+        "first_basis_mass": 4,
+        "second_basis_mass": 3,
+        "first_bridge_cap": 0,
+        "first_marked_pairs": 784,
+        "distinct_second_lobe_pairs": 1541,
+        "bare_lobes_unique": 317,
+        "rotation_certified_pairs": 317,
+        "guarded_pairs": 317,
+        "pairs_with_exponential_families": 317,
+        "rotation_DAG_exclusions": 156434,
+        "rotation_exact_exclusions": 0,
+        "rotation_positive_checks": 0,
+        "rotation_incomplete_checks": 0,
+        "constant_families": 70792,
+        "exponential_families": 134729,
+        "unrestricted_alphabet_families": 174001
+      },
+      "independent": {
+        "independent_first_markings": 784,
+        "independent_second_lobe_pairs": 1541,
+        "independent_bare_unique_pairs": 317,
+        "sampled_exact_endpoint_template_audits": 10,
+        "sampled_independent_rotation_pair_DAG_checks": 5235,
+        "catalogue_sha256": "18398b1fcb3d525acc843d569cd1c3d9c3f7a04f6f4b5fd4aa939de768d8a8aa"
+      }
+    },
+    {
+      "native": {
+        "first_basis_mass": 3,
+        "second_basis_mass": 4,
+        "first_bridge_cap": 0,
+        "first_marked_pairs": 328,
+        "distinct_second_lobe_pairs": 1285,
+        "bare_lobes_unique": 181,
+        "rotation_certified_pairs": 181,
+        "guarded_pairs": 181,
+        "pairs_with_exponential_families": 181,
+        "rotation_DAG_exclusions": 51512,
+        "rotation_exact_exclusions": 0,
+        "rotation_positive_checks": 0,
+        "rotation_incomplete_checks": 0,
+        "constant_families": 22091,
+        "exponential_families": 39763,
+        "unrestricted_alphabet_families": 49378
+      },
+      "independent": {
+        "independent_first_markings": 328,
+        "independent_second_lobe_pairs": 1285,
+        "independent_bare_unique_pairs": 181,
+        "sampled_exact_endpoint_template_audits": 10,
+        "sampled_independent_rotation_pair_DAG_checks": 2912,
+        "catalogue_sha256": "4e3642fe7fad98ed20173a7a08828e220dfa6c3224d2871d0076776b3ad7b918"
+      }
+    }
+  ],
+  "nontrivial_strict_example": {
+    "first_placed_pair": [
+      "YxxxYYY",
+      "XYXyyyyXXXyyyyXXXyxy"
+    ],
+    "basis_masses": [
+      4,
+      3
+    ],
+    "second_placed_lobes": [
+      "XXXXYxxxYYYYxxxYYYYxyxyyy",
+      "XXyxyXYXyyyyXXXyyyyX"
+    ],
+    "bridge": "xxxxxxxxxxxxxxxxxxxxxxxxxxyxxyyxyxxyyxyxxyyxyxxyyyyyyyyyyyyyyyyyyyyyyyyyyy",
+    "first_core_vertices": 25,
+    "lobe_loop_vertices": [
+      9,
+      15
+    ],
+    "bridge_readable_prefix": 0,
+    "bridge_readable_suffix": 0,
+    "bridge_unread_gap": 74,
+    "strict_entry_ledger": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "target": [
+        "XXXXYxxxYYYYxxxYYYYxyxyyy",
+        "xxxxxxxxxxxxxxxxxxxxxxxxxxyxxyyxyxxyyxyxxyyxyxxyyyyyyyyyyyyyyyyyyyyyyyyyyyXXyxyXYXyyyyXXXyyyyXYYYYYYYYYYYYYYYYYYYYYYYYYYYXXYXYYXXYXYYXXYXYYXXYXXXXXXXXXXXXXXXXXXXXXXXXXX"
+      ],
+      "moves": [
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        }
+      ]
+    },
+    "replayed": {
+      "moves": 140,
+      "peak_total_length": 193,
+      "endpoint": [
+        "XXXXYxxxYYYYxxxYYYYxyxyyy",
+        "xxxxxxxxxxxxxxxxxxxxxxxxxxyxxyyxyxxyyxyxxyyxyxxyyyyyyyyyyyyyyyyyyyyyyyyyyyXXyxyXYXyyyyXXXyyyyXYYYYYYYYYYYYYYYYYYYYYYYYYYYXXYXYYXXYXYYXXYXYYXXYXXXXXXXXXXXXXXXXXXXXXXXXXX"
+      ]
+    },
+    "sampled_full_barbell_folds": 4,
+    "sampled_independent_final_joins": 80,
+    "sampled_exact_partial_map_states": 58700
+  }
+}

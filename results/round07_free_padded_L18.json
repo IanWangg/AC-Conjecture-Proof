@@ -1,0 +1,39 @@
+{
+  "stable_instruction_budget": 18,
+  "maximum_padding_to_check": 3,
+  "retracted_middle_section_checks": [
+    {
+      "spare_rows": 2,
+      "limit": 14,
+      "ordered": false,
+      "distance": null,
+      "radii": [
+        7,
+        7
+      ],
+      "visited": [
+        14691033,
+        63089488
+      ],
+      "distinct_words": 12603357,
+      "final_boundary_candidates": 505191962
+    },
+    {
+      "spare_rows": 3,
+      "limit": 12,
+      "ordered": false,
+      "distance": null,
+      "radii": [
+        6,
+        6
+      ],
+      "visited": [
+        891942,
+        4458757
+      ],
+      "distinct_words": 1016856,
+      "final_boundary_candidates": 35037249
+    }
+  ],
+  "one_padding_check": "pending"
+}

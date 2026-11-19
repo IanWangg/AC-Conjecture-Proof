@@ -1,0 +1,78 @@
+{
+  "scope": "signed ambient orbit query of generated cyclic catalogue",
+  "catalogue_tsv_sha256": "6a8ec12b10c6229e555b42da880eb4eea140ee3a096ec334bf895825b109b6c5",
+  "pairs": [
+    {
+      "marked": {
+        "literal_input": [
+          "XXYxyXYxyxYXy",
+          "XXyXYXyxYxyxYxy"
+        ],
+        "compact_key": [
+          "xxyxYXyXYxyXY",
+          "xxyXYXyXYXyxYxy"
+        ],
+        "present": false
+      },
+      "minimum": {
+        "literal_input": [
+          "XXYXyxYxyXYxy",
+          "XYXyXYXyyxYxy"
+        ],
+        "compact_key": [
+          "xxyxYXyXYxyXY",
+          "xyxYxyxYYXyXY"
+        ],
+        "present": false
+      }
+    },
+    {
+      "marked": {
+        "literal_input": [
+          "XXXyXYXYxyxyxYXyxyxY",
+          "XXYxyxyxYXyXY"
+        ],
+        "compact_key": [
+          "xxyxYxyXYXYXy",
+          "xxxyXYXYxyXYXYXyxyxY"
+        ],
+        "present": false
+      },
+      "minimum": {
+        "literal_input": [
+          "XXXYXyyxYYxyXYYxy",
+          "XYXyXyxYYxy"
+        ],
+        "compact_key": [
+          "xxyXYxYXYXy",
+          "xxyXyyyxYXXyxYXXY"
+        ],
+        "present": false
+      }
+    },
+    {
+      "marked": {
+        "literal_input": [
+          "XXXYxyxYxYXyxxYXy",
+          "XXYxyXYxyxYXy"
+        ],
+        "compact_key": [
+          "xxyxYXyXYxyXY",
+          "xxxyxYXXyxYXYXyXY"
+        ],
+        "present": false
+      },
+      "minimum": {
+        "literal_input": [
+          "XXXYXyxxYXyyxYxy",
+          "XXYXyxYxyXYxy"
+        ],
+        "compact_key": [
+          "xxyxYXyXYxyXY",
+          "xxxyxYXXyxYYXyXY"
+        ],
+        "present": false
+      }
+    }
+  ]
+}

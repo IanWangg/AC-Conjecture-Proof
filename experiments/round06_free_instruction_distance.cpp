@@ -47,6 +47,7 @@ public:
     }
 
     const std::string& at(Id id) const { return *entries[id].word; }
+    std::string describe(Id id) const { return at(id); }
     std::size_t size() const { return entries.size(); }
 
     Id inverse(Id id) {
@@ -95,13 +96,15 @@ struct Report {
     std::array<int, 2> radii{};
     std::array<std::size_t, 2> visited{1, 1};
     std::size_t words = 0;
+    std::vector<std::string> midpoint;
+    uint64_t final_boundary_candidates = 0;
 };
 
-template <std::size_t Rows>
+template <std::size_t Rows, class Elements = WordTable>
 Report search(const std::array<std::string, Rows>& first, const std::array<std::string, Rows>& last,
-              int limit, bool ordered) {
+              int limit, bool ordered, bool boundary_only = false) {
     using Seen = std::unordered_set<State<Rows>, StateHash<Rows>>;
-    WordTable words;
+    Elements words;
     auto endpoint = [&](const auto& input) {
         State<Rows> state{};
         for (std::size_t i = 0; i < Rows; ++i) state[i] = words.intern(input[i]);
@@ -109,7 +112,7 @@ Report search(const std::array<std::string, Rows>& first, const std::array<std::
         return state;
     };
     const auto start = endpoint(first), goal = endpoint(last);
-    if (start == goal) return {0, {}, {1, 1}, words.size()};
+    if (start == goal) return {0, {}, {1, 1}, words.size(), {}, 0};
     std::array<std::vector<State<Rows>>, 2> frontier{{{start}, {goal}}};
     std::array<Seen, 2> seen{{{start}, {goal}}};
     Report result;
@@ -118,10 +121,15 @@ Report search(const std::array<std::string, Rows>& first, const std::array<std::
         const auto& opposite = seen[1 - side];
         auto& own = seen[side];
         std::vector<State<Rows>> following;
+        const bool omit_storage = boundary_only && depth == limit;
         auto admit = [&](State<Rows> next) {
             if (!ordered) std::sort(next.begin(), next.end());
-            if (opposite.count(next)) return true;
-            if (own.insert(next).second) following.push_back(next);
+            if (omit_storage) ++result.final_boundary_candidates;
+            if (opposite.count(next)) {
+                for (const auto id : next) result.midpoint.push_back(words.describe(id));
+                return true;
+            }
+            if (!omit_storage && own.insert(next).second) following.push_back(next);
             return false;
         };
         ++result.radii[side];
@@ -160,15 +168,18 @@ Report search(const std::array<std::string, Rows>& first, const std::array<std::
 }
 
 template <std::size_t Rows>
-void run(int limit, bool ordered) {
+void run(int limit, bool ordered, bool boundary_only) {
     const std::array<std::string, Rows> initial{"xxxYYYY", "xyxYXY"}, basis{"x", "y"};
-    const Report result = search(initial, basis, limit, ordered);
+    const Report result = search(initial, basis, limit, ordered, boundary_only);
     const std::string distance = result.distance < 0 ? "null" : std::to_string(result.distance);
     std::cout << "{\"spare_rows\":" << Rows - 2 << ",\"limit\":" << limit
               << ",\"ordered\":" << (ordered ? "true" : "false")
               << ",\"distance\":" << distance << ",\"radii\":[" << result.radii[0]
               << "," << result.radii[1] << "],\"visited\":[" << result.visited[0] << ","
-              << result.visited[1] << "],\"distinct_words\":" << result.words << "}\n";
+              << result.visited[1] << "],\"distinct_words\":" << result.words;
+    if (boundary_only)
+        std::cout << ",\"final_boundary_candidates\":" << result.final_boundary_candidates;
+    std::cout << "}\n";
 }
 
 void selftest() {
@@ -181,19 +192,27 @@ void selftest() {
 }
 }
 
+#ifndef AC_ROUND06_INSTRUCTION_DISTANCE_LIBRARY
 int main(int argc, char** argv) {
     try {
-        if (argc != 3 && (argc != 4 || std::string_view(argv[3]) != "--ordered"))
-            throw std::runtime_error("usage: search spare_rows limit [--ordered]");
+        if (argc < 3 || argc > 5)
+            throw std::runtime_error("usage: search spare_rows limit [--ordered] [--boundary-only]");
         free_distance::selftest();
         const int spare = std::stoi(argv[1]), limit = std::stoi(argv[2]);
         if (limit < 0) throw std::runtime_error("negative search limit");
+        bool ordered = false, boundary_only = false;
+        for (int i = 3; i < argc; ++i) {
+            const std::string_view option(argv[i]);
+            if (option == "--ordered" && !ordered) ordered = true;
+            else if (option == "--boundary-only" && !boundary_only) boundary_only = true;
+            else throw std::runtime_error("unexpected search option");
+        }
         switch (spare) {
-        case 0: free_distance::run<2>(limit, argc == 4); break;
-        case 1: free_distance::run<3>(limit, argc == 4); break;
-        case 2: free_distance::run<4>(limit, argc == 4); break;
-        case 3: free_distance::run<5>(limit, argc == 4); break;
-        case 4: free_distance::run<6>(limit, argc == 4); break;
+        case 0: free_distance::run<2>(limit, ordered, boundary_only); break;
+        case 1: free_distance::run<3>(limit, ordered, boundary_only); break;
+        case 2: free_distance::run<4>(limit, ordered, boundary_only); break;
+        case 3: free_distance::run<5>(limit, ordered, boundary_only); break;
+        case 4: free_distance::run<6>(limit, ordered, boundary_only); break;
         default: throw std::runtime_error("spare row count outside 0–4");
         }
     } catch (const std::exception& error) {
@@ -201,3 +220,4 @@ int main(int argc, char** argv) {
         return 1;
     }
 }
+#endif

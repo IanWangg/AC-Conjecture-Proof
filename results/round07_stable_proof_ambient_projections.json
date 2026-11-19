@@ -1,0 +1,105 @@
+{
+  "cap": 29,
+  "partial_sha256": "8b057c2ff39084b160be05dc74c1adcc7e29157e68c17e2494a9582718fab352",
+  "compact_rank_two_cap29_sha256": "05040d3a79e9b9499536e844e7859df554ffc9680ce850331f16f34f15e123a8",
+  "no_fixed_z_chart_states": 15828,
+  "source_signed_projection_orbits": 725,
+  "sources_with_minimum_above_cap": 415,
+  "sources_minimum_histogram_above_cap": {
+    "30": 78,
+    "31": 24,
+    "32": 12,
+    "33": 37,
+    "34": 23,
+    "35": 15,
+    "36": 38,
+    "37": 18,
+    "38": 22,
+    "39": 11,
+    "40": 23,
+    "41": 4,
+    "42": 34,
+    "43": 5,
+    "44": 8,
+    "46": 10,
+    "48": 30,
+    "49": 14,
+    "50": 1,
+    "56": 2,
+    "58": 6
+  },
+  "searched_ambient_orbits": 96,
+  "searched_signed_states": 858,
+  "ambient_orbits_with_anchor": 93,
+  "ambient_orbits_missing_anchor": 3,
+  "source_orbits_with_anchor": 307,
+  "source_orbits_missing_anchor": 418,
+  "minimal_missing_orbits": [
+    {
+      "whitehead_minimum": [
+        "XXYXyxYxyXYxy",
+        "XYXyXYXyyxYxy"
+      ],
+      "restated_source": {
+        "rank_three_rows": [
+          "XXyyxY",
+          "XYYZyzy",
+          "XYxZyyZYz"
+        ],
+        "projected_pair": [
+          "XXYxyXYxyxYXy",
+          "XXyXYXyxYxyxYxy"
+        ],
+        "chart": "literal",
+        "eliminated": "x",
+        "pivot": "XYYZyzy"
+      },
+      "ambient_orbit_sublevel_size": 11,
+      "source_orbits": 1
+    },
+    {
+      "whitehead_minimum": [
+        "XXXYXyyxYYxyXYYxy",
+        "XYXyXyxYYxy"
+      ],
+      "restated_source": {
+        "rank_three_rows": [
+          "XXXYxyy",
+          "XXYxzxzxZ",
+          "XYxzXZy"
+        ],
+        "projected_pair": [
+          "XXXyXYXYxyxyxYXyxyxY",
+          "XXYxyxyxYXyXY"
+        ],
+        "chart": "literal",
+        "eliminated": "y",
+        "pivot": "XXYxzxzxZ"
+      },
+      "ambient_orbit_sublevel_size": 2,
+      "source_orbits": 1
+    },
+    {
+      "whitehead_minimum": [
+        "XXXYXyxxYXyyxYxy",
+        "XXYXyxYxyXYxy"
+      ],
+      "restated_source": {
+        "rank_three_rows": [
+          "XXyyxY",
+          "XYYZyzy",
+          "XZYzYxZyy"
+        ],
+        "projected_pair": [
+          "XXXYxyxYxYXyxxYXy",
+          "XXYxyXYxyxYXy"
+        ],
+        "chart": "literal",
+        "eliminated": "x",
+        "pivot": "XYYZyzy"
+      },
+      "ambient_orbit_sublevel_size": 1,
+      "source_orbits": 1
+    }
+  ]
+}

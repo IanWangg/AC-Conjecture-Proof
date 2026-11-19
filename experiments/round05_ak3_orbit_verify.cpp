@@ -187,6 +187,7 @@ int run(int cap, unsigned workers, const char* tsv, const char* report) {
 }
 }
 
+#ifndef AC_ROUND05_ORBIT_VERIFY_LIBRARY
 int main(int argc, char** argv) {
     try {
         if (argc != 5) throw std::runtime_error("usage: verify cap workers catalogue.tsv output.json");
@@ -196,3 +197,4 @@ int main(int argc, char** argv) {
         return 1;
     }
 }
+#endif

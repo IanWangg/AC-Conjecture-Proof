@@ -1,0 +1,101 @@
+{
+  "degree": 8,
+  "moves": [
+    {
+      "op": "conjugate",
+      "i": 1,
+      "g": "X"
+    },
+    {
+      "op": "multiply",
+      "i": 1,
+      "j": 0,
+      "sign": 1
+    },
+    {
+      "op": "multiply",
+      "i": 1,
+      "j": 0,
+      "sign": 1
+    },
+    {
+      "op": "conjugate",
+      "i": 1,
+      "g": "Y"
+    },
+    {
+      "op": "multiply",
+      "i": 1,
+      "j": 0,
+      "sign": -1
+    },
+    {
+      "op": "conjugate",
+      "i": 1,
+      "g": "X"
+    },
+    {
+      "op": "multiply",
+      "i": 1,
+      "j": 0,
+      "sign": -1
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "X"
+    },
+    {
+      "op": "multiply",
+      "i": 1,
+      "j": 0,
+      "sign": -1
+    },
+    {
+      "op": "conjugate",
+      "i": 1,
+      "g": "y"
+    },
+    {
+      "op": "multiply",
+      "i": 0,
+      "j": 1,
+      "sign": 1
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "X"
+    },
+    {
+      "op": "multiply",
+      "i": 1,
+      "j": 0,
+      "sign": 1
+    },
+    {
+      "op": "conjugate",
+      "i": 1,
+      "g": "x"
+    },
+    {
+      "op": "multiply",
+      "i": 1,
+      "j": 0,
+      "sign": 1
+    },
+    {
+      "op": "multiply",
+      "i": 0,
+      "j": 1,
+      "sign": 1
+    }
+  ],
+  "length": 16,
+  "target_order": [
+    "x",
+    "y"
+  ],
+  "start_to_midpoint_length": 8,
+  "independent_monomial_replay": true
+}

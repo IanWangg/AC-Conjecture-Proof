@@ -13,11 +13,10 @@ def images(pair):
     return {tuple(sorted(item)) for item in zip(*(word_orbit(word) for word in pair))}
 
 
-def lift(record):
+def literal_route(orbit_route, cap):
     route = [tuple(sorted(map(canonical, START)))]
-    cap = record["cyclic_cap"]
-    assert route[0] in images(record["orbit_route"][0])
-    for orbit_target in record["orbit_route"][1:]:
+    assert route[0] in images(orbit_route[0])
+    for orbit_target in orbit_route[1:]:
         target_images = images(orbit_target)
         candidates = set()
         state = route[-1]
@@ -34,6 +33,11 @@ def lift(record):
                             candidates.add(target)
         assert candidates, (state, orbit_target)
         route.append(min(candidates))
+    return route
+
+
+def lift(record):
+    route = literal_route(record["orbit_route"], record["cyclic_cap"])
     return compile_route({**record, "route": route})
 
 

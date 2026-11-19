@@ -1,0 +1,257 @@
+{
+  "short_exchanges": [
+    {
+      "index": 0,
+      "compiler": {
+        "moves": 144955,
+        "move_counts": {
+          "stabilize": 2,
+          "invert": 2022,
+          "conjugate": 140481,
+          "multiply": 2448,
+          "destabilize": 2
+        },
+        "exchange_boundaries": [
+          71453
+        ],
+        "rank_peak": 4,
+        "raw_peak": 514,
+        "cyclic_peak": 210,
+        "final_relabeling": {
+          "x": "x",
+          "a": "y"
+        },
+        "final_words": [
+          "XXAxxxxxxAXXaX",
+          "AxxaxxAXXXXaX"
+        ],
+        "cyclic_pair": [
+          "XXXXXXyxxxYxxy",
+          "XXXXyXYxxyxxY"
+        ],
+        "strict_ledger_sha256": "38eb980ab8e94bc3868b6ae4abc7a048e09e185ee640c69a11eb80444d3e3634"
+      },
+      "independent_replay": {
+        "moves": 144955,
+        "rank_peak": 4,
+        "raw_peak": 514,
+        "cyclic_peak": 210,
+        "final_words": [
+          "XXAxxxxxxAXXaX",
+          "AxxaxxAXXXXaX"
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "compiler": {
+        "moves": 1108470,
+        "move_counts": {
+          "stabilize": 4,
+          "invert": 13370,
+          "conjugate": 1078106,
+          "multiply": 16986,
+          "destabilize": 4
+        },
+        "exchange_boundaries": [
+          223212,
+          619690,
+          1108102
+        ],
+        "rank_peak": 4,
+        "raw_peak": 767,
+        "cyclic_peak": 251,
+        "final_relabeling": {
+          "b": "x",
+          "a": "y"
+        },
+        "final_words": [
+          "BABBAABaBABAABabab",
+          "BABBAABBBAbababab"
+        ],
+        "cyclic_pair": [
+          "XXXYxyxyXYY",
+          "XYXYYXyXYYXy"
+        ],
+        "strict_ledger_sha256": "92865158eb25ef9d858ce579f89c1ed7fa27c98201b9d2325191deae46128f78"
+      },
+      "independent_replay": {
+        "moves": 1108470,
+        "rank_peak": 4,
+        "raw_peak": 767,
+        "cyclic_peak": 251,
+        "final_words": [
+          "BABBAABaBABAABabab",
+          "BABBAABBBAbababab"
+        ]
+      }
+    }
+  ],
+  "literal_deletions": [
+    {
+      "index": 0,
+      "compiler": {
+        "rank_three_prefix": {
+          "moves": 271,
+          "raw_peak": 29,
+          "cyclic_peak": 23,
+          "target": [
+            "XYxZyyZYz",
+            "XXyyxY",
+            "XYYZyzy"
+          ],
+          "first_pivotless_step": 264
+        },
+        "literal_pivot": "XYYZyzy",
+        "eliminated_letter": "x",
+        "strict_stable": {
+          "moves": 27600129,
+          "move_counts": {
+            "stabilize": 1,
+            "invert": 70590,
+            "conjugate": 27391029,
+            "multiply": 138508,
+            "destabilize": 1
+          },
+          "exchange_boundaries": [],
+          "rank_peak": 3,
+          "raw_peak": 1098,
+          "cyclic_peak": 407,
+          "final_relabeling": {
+            "y": "x",
+            "z": "y"
+          },
+          "final_words": [
+            "YZYzYZyzyZyyZYz",
+            "YZYzyZYzyyZyz"
+          ],
+          "cyclic_pair": [
+            "XXYxyXYxyxYXy",
+            "XXyXYXyxYxyxYxy"
+          ],
+          "strict_ledger_sha256": "5b8f902ae6d0d70a9e16fefc9137f47f50d520fc8af94bcf2941f0adbef998f4"
+        }
+      },
+      "independent_replay": {
+        "moves": 27600129,
+        "rank_peak": 3,
+        "raw_peak": 1098,
+        "cyclic_peak": 407,
+        "final_words": [
+          "YZYzYZyzyZyyZYz",
+          "YZYzyZYzyyZyz"
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "compiler": {
+        "rank_three_prefix": {
+          "moves": 271,
+          "raw_peak": 28,
+          "cyclic_peak": 23,
+          "target": [
+            "XXXYxyy",
+            "XXYxzxzxZ",
+            "XYxzXZy"
+          ],
+          "first_pivotless_step": 266
+        },
+        "literal_pivot": "XXYxzxzxZ",
+        "eliminated_letter": "y",
+        "strict_stable": {
+          "moves": 18790714,
+          "move_counts": {
+            "stabilize": 1,
+            "invert": 34622,
+            "conjugate": 18696902,
+            "multiply": 59188,
+            "destabilize": 1
+          },
+          "exchange_boundaries": [],
+          "rank_peak": 3,
+          "raw_peak": 1612,
+          "cyclic_peak": 562,
+          "final_relabeling": {
+            "x": "x",
+            "z": "y"
+          },
+          "final_words": [
+            "XzXZXZxzxzxZXzxzxZXX",
+            "xzXZXXZxzxzxZXX"
+          ],
+          "cyclic_pair": [
+            "XXXyXYXYxyxyxYXyxyxY",
+            "XXYxyxyxYXyXY"
+          ],
+          "strict_ledger_sha256": "d29b41c8c9bca6dbc10a8137458890fffe89e608d7982c54674501adcd7ce106"
+        }
+      },
+      "independent_replay": {
+        "moves": 18790714,
+        "rank_peak": 3,
+        "raw_peak": 1612,
+        "cyclic_peak": 562,
+        "final_words": [
+          "XzXZXZxzxzxZXzxzxZXX",
+          "xzXZXXZxzxzxZXX"
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "compiler": {
+        "rank_three_prefix": {
+          "moves": 277,
+          "raw_peak": 29,
+          "cyclic_peak": 23,
+          "target": [
+            "XZYzYxZyy",
+            "XXyyxY",
+            "XYYZyzy"
+          ],
+          "first_pivotless_step": 265
+        },
+        "literal_pivot": "XYYZyzy",
+        "eliminated_letter": "x",
+        "strict_stable": {
+          "moves": 27778917,
+          "move_counts": {
+            "stabilize": 1,
+            "invert": 70590,
+            "conjugate": 27569817,
+            "multiply": 138508,
+            "destabilize": 1
+          },
+          "exchange_boundaries": [],
+          "rank_peak": 3,
+          "raw_peak": 1122,
+          "cyclic_peak": 417,
+          "final_relabeling": {
+            "y": "x",
+            "z": "y"
+          },
+          "final_words": [
+            "YZYzyyZYzYYYZyzyZyy",
+            "YZYzyZYzyyZyz"
+          ],
+          "cyclic_pair": [
+            "XXXYxyxYxYXyxxYXy",
+            "XXYxyXYxyxYXy"
+          ],
+          "strict_ledger_sha256": "28f3d2e7c1f33a724be0763475a250b9cbb4848df26cc39d245f28432ee2c7c5"
+        }
+      },
+      "independent_replay": {
+        "moves": 27778917,
+        "rank_peak": 3,
+        "raw_peak": 1122,
+        "cyclic_peak": 417,
+        "final_words": [
+          "YZYzyyZYzYYYZyzyZyy",
+          "YZYzyZYzyyZyz"
+        ]
+      }
+    }
+  ]
+}

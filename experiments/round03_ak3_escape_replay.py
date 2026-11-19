@@ -19,6 +19,13 @@ def compile_route(record):
     cap = record["cyclic_cap"]
     assert len(route) == record["minimum_macro_distance"] + 1
     assert 1 + sum(record["disjoint_ball_radii"]) == record["minimum_macro_distance"]
+    certificate, summary = compile_path(route, cap)
+    assert summary["cyclic_peak"] == cap
+    return certificate, summary
+
+
+def compile_path(route, cap):
+    assert all(sum(map(len, state)) <= cap for state in route)
     state = START
     ledger = []
     for i in (0, 1):
@@ -60,7 +67,7 @@ def compile_route(record):
         energies.append(sum(len(cyclic(word)) for word in state))
     summary["cyclic_peak"] = max(energies)
     summary["macro_boundary_receipts"] = receipts
-    assert summary["cyclic_peak"] == cap
+    assert summary["cyclic_peak"] <= cap
     return certificate, summary
 
 

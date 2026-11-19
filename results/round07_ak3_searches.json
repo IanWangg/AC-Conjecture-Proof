@@ -1,0 +1,502 @@
+{
+  "ordinary_AC_goal_solved": false,
+  "cap22_wide_control": {
+    "generator": {
+      "status": "PASS",
+      "cyclic_cap": 22,
+      "signed_permutation_orbits": 32363,
+      "primitive_coordinate_orbits": 0,
+      "w23_found": false,
+      "minimum_coordinate": 5,
+      "rotation_product_candidates": 24220040,
+      "admitted_neighbors": 1283644,
+      "orbit_histogram": {
+        "13": 2,
+        "14": 5,
+        "15": 70,
+        "16": 74,
+        "17": 398,
+        "18": 456,
+        "19": 2286,
+        "20": 2447,
+        "21": 12968,
+        "22": 13657
+      }
+    },
+    "independent_checker": {
+      "status": "CLOSED_AND_CONNECTED",
+      "cyclic_cap": 22,
+      "signed_permutation_orbits": 32363,
+      "rotation_product_candidates": 24220040,
+      "admitted_neighbors": 1283644
+    }
+  },
+  "cap30_generator": {
+    "status": "PASS",
+    "cyclic_cap": 30,
+    "signed_permutation_orbits": 73876424,
+    "primitive_coordinate_orbits": 0,
+    "w23_found": true,
+    "minimum_coordinate": 5,
+    "rotation_product_candidates": 78886780816,
+    "admitted_neighbors": 4543003748,
+    "orbit_histogram": {
+      "13": 2,
+      "14": 5,
+      "15": 72,
+      "16": 82,
+      "17": 454,
+      "18": 508,
+      "19": 2682,
+      "20": 2949,
+      "21": 15765,
+      "22": 17525,
+      "23": 94060,
+      "24": 111580,
+      "25": 584939,
+      "26": 746474,
+      "27": 3802553,
+      "28": 5243862,
+      "29": 25587729,
+      "30": 37665183
+    }
+  },
+  "cap30_independent_closure": null,
+  "cap30_independent_primitive_screen": {
+    "rows": 73876424,
+    "single_sign_candidates": 18450241,
+    "primitive_coordinates": [],
+    "tsv_sha256": "6a8ec12b10c6229e555b42da880eb4eea140ee3a096ec334bf895825b109b6c5"
+  },
+  "cap30_reverse56": {
+    "status": "NO_SUBGROUP_JOIN",
+    "forward_pairs": 73876424,
+    "forward_distinct_words": 67403552,
+    "forward_cap": 30,
+    "forward_minimum_coordinate": 5,
+    "reverse_pairs": 23902,
+    "reverse_rotation_pairs": 6230442,
+    "reverse_distinct_rotated_cores": 2675055,
+    "reverse_geodesic_bridges": 4186428,
+    "primitive_slopes_constructed": 24599582,
+    "coordinates_found_in_forward_catalogue": 9292913,
+    "basis_pair_lookups": 3462820,
+    "core_topologies": {
+      "barbell": 4192512,
+      "rose": 861364,
+      "theta": 1807607
+    }
+  },
+  "minimum_cyclic_peak_before_primitive": 30,
+  "w23_minimum_cyclic_entry_peak": 30,
+  "w23_bridge_search": {
+    "cyclic_cap": 30,
+    "known_orbits": 35968003,
+    "state_limit": 1000000,
+    "states_discovered": 7509,
+    "states_expanded": 7482,
+    "completed_radius": 16,
+    "minimum_discovered_energy": 18,
+    "product_candidates": 11008776,
+    "admitted_products": 342044,
+    "hit_cap29": true,
+    "hit_primitive": false,
+    "closed_component": false
+  },
+  "w23_bridge_route": {
+    "cyclic_cap": 30,
+    "macro_distance": 17,
+    "orbit_route": [
+      [
+        "xxyXYxyXYxyXY",
+        "xyxyXyxYXyxYXY"
+      ],
+      [
+        "xxyXYxyXYxyXY",
+        "xyxyXyxYxyXYxyXYY"
+      ],
+      [
+        "xxyXXyxYxYXY",
+        "xxYXyxYXyxYXy"
+      ],
+      [
+        "xxyXXyxYxYXY",
+        "xxyXyXXYxyXYxxYXY"
+      ],
+      [
+        "xxyXXyxYxYXY",
+        "xxyXyXXYxxYXYxY"
+      ],
+      [
+        "xxyXXyxYxYXY",
+        "xxyXyXYxYXYxYxY"
+      ],
+      [
+        "xxyxyxyxyXyXY",
+        "xxyxyxyXyxyXYXY"
+      ],
+      [
+        "xxyxYYXyXY",
+        "xyxYxYxYYXyXyxY"
+      ],
+      [
+        "xxyxYYXyXY",
+        "xxyyXyXYXyXYY"
+      ],
+      [
+        "xxyxYYXyXY",
+        "xxyyXYXyXYxyXYY"
+      ],
+      [
+        "xxyxYYXyXY",
+        "xyXYxyXYxyXYY"
+      ],
+      [
+        "xxyXYxyXYxyXY",
+        "xyxYXYxyyxyXYxyXY"
+      ],
+      [
+        "xxxyXYxyXYXy",
+        "xyXYxyXYxyXYY"
+      ],
+      [
+        "xxyXXyyXY",
+        "xyXYxyXYxyyXY"
+      ],
+      [
+        "xxyXYxyXYxyXY",
+        "xxyXYxyXYXYYXy"
+      ],
+      [
+        "xxxyXYXYxyy",
+        "xxyXYxyXYXYYXy"
+      ],
+      [
+        "xxxyXYXYxyy",
+        "xxyxYXXYxyxyy"
+      ],
+      [
+        "xxxyXYXYxyy",
+        "xyxyyxYxyyxY"
+      ]
+    ]
+  },
+  "w23_cap29_prefix": {
+    "cyclic_cap": 29,
+    "minimum_macro_distance": 26,
+    "disjoint_ball_radii": [
+      5,
+      20
+    ],
+    "states_discovered": [
+      987575,
+      1281868
+    ],
+    "products_checked": 1650571240,
+    "orbit_route": [
+      [
+        "xyxYXY",
+        "xxxxYYY"
+      ],
+      [
+        "xyxYXY",
+        "xxxYXyxYY"
+      ],
+      [
+        "xyxYXY",
+        "xxxYxyXXY"
+      ],
+      [
+        "xyxYXY",
+        "xxYxyXyXY"
+      ],
+      [
+        "xxyxYXYXy",
+        "xyxYXYYXy"
+      ],
+      [
+        "xxyxYXYXy",
+        "xxyxyXYXYXYYXy"
+      ],
+      [
+        "xxyXyXyXY",
+        "xxYxYxYXyXyyXY"
+      ],
+      [
+        "xxyXyXyXY",
+        "xyXyXyyXyXYxY"
+      ],
+      [
+        "xxyXyXyXY",
+        "xyXyXyxYXY"
+      ],
+      [
+        "xyxyxYXyXY",
+        "xxyxyxYXYXYXy"
+      ],
+      [
+        "xxyxyXYXY",
+        "xyxyxyXYYXYXY"
+      ],
+      [
+        "xxyxyxYXYXYXy",
+        "xxyxyxyXYXYYXy"
+      ],
+      [
+        "xxyxyXY",
+        "xxyXYYXYXyxyxy"
+      ],
+      [
+        "xxyxyXY",
+        "xxyXYXYxyxyxy"
+      ],
+      [
+        "xxyxyXY",
+        "xxyxxyXYXYXy"
+      ],
+      [
+        "xxyxxyxYXXy",
+        "xxyxxyXYXYXy"
+      ],
+      [
+        "xxyxxyxYXXy",
+        "xxyxYXyxxyy"
+      ],
+      [
+        "xxyxYXXy",
+        "xxyxxyXXYxy"
+      ],
+      [
+        "xxyxYXXy",
+        "xxyxxyyxYXy"
+      ],
+      [
+        "xxyxYXXy",
+        "xxyxxyxxyXYXYXy"
+      ],
+      [
+        "xxyxyxYXYXy",
+        "xxyxxyxxyXYXYXy"
+      ],
+      [
+        "xxyxyxYXYXy",
+        "xxyxxyxYXyxy"
+      ],
+      [
+        "xxyxxyxyXYxy",
+        "xxyxyyxYXXYxy"
+      ],
+      [
+        "xxyXyXyXY",
+        "xxYxYYxYXyyXY"
+      ],
+      [
+        "xxyXyXyXY",
+        "xxYxYXyXYxyyXY"
+      ],
+      [
+        "xxyXyXyXY",
+        "xyXYxyXYxyyXY"
+      ],
+      [
+        "xxyXYxyXYxyXY",
+        "xyxyXyxYXyxYXY"
+      ]
+    ]
+  },
+  "w23_strict_replay": {
+    "moves": 956,
+    "peak_total_length": 40,
+    "endpoint": [
+      "XXXYxyxyXYY",
+      "XYXYYXyXYYXy"
+    ],
+    "cyclic_peak": 30,
+    "seed_prefix_moves": 170,
+    "transported_core_moves": 765,
+    "ambient_signed_marking": "XxyY",
+    "swapped_slot_instructions": false,
+    "products_to_bridge": 26,
+    "products_from_bridge_to_w23": 17
+  },
+  "w23_cap29_component": {
+    "generator": {
+      "cyclic_cap": 29,
+      "known_orbits": 35968003,
+      "state_limit": 1000000,
+      "states_discovered": 3745,
+      "states_expanded": 3745,
+      "completed_radius": 15,
+      "minimum_discovered_energy": 18,
+      "product_candidates": 5281776,
+      "admitted_products": 170640,
+      "hit_cap29": false,
+      "hit_primitive": false,
+      "closed_component": true
+    },
+    "independent_checker": {
+      "status": "CLOSED_AND_CONNECTED",
+      "cyclic_cap": 29,
+      "signed_permutation_orbits": 3745,
+      "rotation_product_candidates": 5281776,
+      "admitted_neighbors": 170640
+    },
+    "primitive_screen": {
+      "rows": 3745,
+      "single_sign_candidates": 16,
+      "primitive_coordinates": [],
+      "tsv_sha256": "8fa93893b173bde2d1eeced5e453a6bf41f45da541ddfdd9ae1acf511984da10"
+    },
+    "reverse56": {
+      "status": "NO_SUBGROUP_JOIN",
+      "forward_pairs": 3745,
+      "forward_distinct_words": 2999,
+      "forward_cap": 29,
+      "forward_minimum_coordinate": 9,
+      "reverse_pairs": 23902,
+      "reverse_rotation_pairs": 6230442,
+      "reverse_distinct_rotated_cores": 2675055,
+      "reverse_geodesic_bridges": 26372,
+      "primitive_slopes_constructed": 3381073,
+      "coordinates_found_in_forward_catalogue": 8659,
+      "basis_pair_lookups": 10,
+      "core_topologies": {
+        "barbell": 32456,
+        "rose": 861364,
+        "theta": 1807607
+      }
+    },
+    "geometry": {
+      "input_sha256": "8fa93893b173bde2d1eeced5e453a6bf41f45da541ddfdd9ae1acf511984da10",
+      "source_pairs": 3745,
+      "strict_whitehead_shortenings": 2136,
+      "distinct_whitehead_minimal_keys": 3745,
+      "classification": {
+        "PARITY_OBSTRUCTION": 3745
+      },
+      "remaining": []
+    },
+    "lowest_energy_route": {
+      "cyclic_cap": 29,
+      "macro_distance": 5,
+      "orbit_route": [
+        [
+          "xxxyXYXYxyy",
+          "xyxyyxYxyyxY"
+        ],
+        [
+          "xxyxyXyxxyXy",
+          "xxyXyxxyXYYXyxy"
+        ],
+        [
+          "xxyXXyyXY",
+          "xxYxYXYxxYXY"
+        ],
+        [
+          "xxyxyXyxxyXy",
+          "xxxyXyxxyXYXy"
+        ],
+        [
+          "xxyxYXyXy",
+          "xxyXyxxyXyxy"
+        ],
+        [
+          "xxxyxyXXy",
+          "xxyXyXYxy"
+        ]
+      ]
+    }
+  },
+  "energy18_entry_strict_replay": {
+    "moves": 846,
+    "peak_total_length": 40,
+    "endpoint": [
+      "XYXYxyXyy",
+      "XYYXyyyXy"
+    ],
+    "cyclic_peak": 30,
+    "continuation_products": 5,
+    "products_to_bridge": 26,
+    "products_from_bridge_to_w23": 17
+  },
+  "energy18_frozen_cap36": [
+    {
+      "recipient": "xxxyxyXXy",
+      "frozen_donor": "xxyXyXYxy",
+      "cyclic_cap": 36,
+      "radius": 3,
+      "layers": [
+        {
+          "new_words": 6558,
+          "menu_candidates": 104328
+        },
+        {
+          "new_words": 37786,
+          "menu_candidates": 12004416
+        },
+        {
+          "new_words": 21995,
+          "menu_candidates": 71412192
+        }
+      ],
+      "distinct_recipients": 66340,
+      "primitive_recipients": 0
+    },
+    {
+      "recipient": "xxyXyXYxy",
+      "frozen_donor": "xxxyxyXXy",
+      "cyclic_cap": 36,
+      "radius": 3,
+      "layers": [
+        {
+          "new_words": 6558,
+          "menu_candidates": 104328
+        },
+        {
+          "new_words": 38490,
+          "menu_candidates": 12004416
+        },
+        {
+          "new_words": 22882,
+          "menu_candidates": 72722016
+        }
+      ],
+      "distinct_recipients": 67931,
+      "primitive_recipients": 0
+    }
+  ],
+  "cap30_new_through_energy22": {
+    "maximum_energy": 22,
+    "new_orbits_by_energy": {
+      "18": 1,
+      "19": 2,
+      "20": 10,
+      "21": 37,
+      "22": 45
+    },
+    "output_sha256": "21f54cb8970a0b962eb9ef9eebc83732a399ae48e25e3c02aa9d2a7a7508a7ac"
+  },
+  "cap30_new_low_geometry": {
+    "input_sha256": "21f54cb8970a0b962eb9ef9eebc83732a399ae48e25e3c02aa9d2a7a7508a7ac",
+    "source_pairs": 95,
+    "strict_whitehead_shortenings": 61,
+    "distinct_whitehead_minimal_keys": 93,
+    "classification": {
+      "PARITY_OBSTRUCTION": 93
+    },
+    "remaining": []
+  },
+  "cap30_new_low_two_copy": {
+    "rotations_enabled": true,
+    "source_pairs": 95,
+    "rotation_pairs": 10554,
+    "unbased_cores": 5072,
+    "own_tests": 5072,
+    "distinct_vertex_joins": 906253,
+    "DAG_absent": 911290,
+    "exact_absent": 35,
+    "exact_map_pair_states": 4360,
+    "positive": 0,
+    "incomplete": 0
+  }
+}

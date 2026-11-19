@@ -1,0 +1,228 @@
+{
+  "independent_audit": [
+    {
+      "seed": [
+        "XXYXyxYxyXYxy",
+        "XYXyXYXyyxYxy"
+      ],
+      "independently_checked_cap": 30,
+      "signed_orbits": 25,
+      "products": 40104,
+      "minimum_cyclic_energy": 25,
+      "primitive_free_enclosure": true,
+      "route_one_above_cap": [
+        [
+          "xxyxYXyXYxyXY",
+          "xyxYxyxYYXyXY"
+        ],
+        [
+          "xxyxyXYXyXXY",
+          "xyxYxyxYYXyXY"
+        ],
+        [
+          "xxyXyxyXyxYXY",
+          "xyxyXyxyXyxyXYYxY"
+        ],
+        [
+          "xxyXyxyXyxYXY",
+          "xyxyXyxyxyXyxyXYxY"
+        ],
+        [
+          "xxyXyxyXyxYXY",
+          "xxyxyXyxyxyxyXy"
+        ],
+        [
+          "xxyxyXyxyxyxyXy",
+          "xxyXXYXYxYXYXYXY"
+        ],
+        [
+          "xxyXyXyXY",
+          "xxYxYXYxYxYxYXY"
+        ],
+        [
+          "xxyXyXyXY",
+          "xxYxYXYYxY"
+        ]
+      ],
+      "anchor": [
+        "xxyXyXyXY",
+        "xxYxYXYYxY"
+      ],
+      "cyclic_products_to_anchor": 7,
+      "ordinary_minimum_entry_peak": 31
+    },
+    {
+      "seed": [
+        "XXXYXyyxYYxyXYYxy",
+        "XYXyXyxYYxy"
+      ],
+      "independently_checked_cap": 30,
+      "signed_orbits": 87,
+      "products": 136808,
+      "minimum_cyclic_energy": 23,
+      "primitive_free_enclosure": true,
+      "route_one_above_cap": [
+        [
+          "xxyXYxYXYXy",
+          "xxyXyyyxYXXyxYXXY"
+        ],
+        [
+          "xxyXYxYXYXy",
+          "xyxyXYYYxYXy"
+        ],
+        [
+          "xxyXYxYXYXy",
+          "xxyXyyxYXYXYYXy"
+        ],
+        [
+          "xxyXYxYXYXy",
+          "xxyXyxYXYXyxYXYYXy"
+        ],
+        [
+          "xxyXYxYXYXy",
+          "xyXYxyXYxyXYxyy"
+        ],
+        [
+          "xxyxYXyxYXyxYXy",
+          "xxYXyxyxxYXyxYXy"
+        ],
+        [
+          "xxyXYXyxYXYXy",
+          "xxyXYxyXYxyXYxy"
+        ],
+        [
+          "xxyXYXyxYXYXy",
+          "xyxyXYXyxYxyXYxyXY"
+        ],
+        [
+          "xxyXYXyxYXYXy",
+          "xxyxYXYXyxYXyXY"
+        ],
+        [
+          "xxxyxYXYXyXY",
+          "xxyxYXYXyxYXyXY"
+        ],
+        [
+          "xxyXYXyXY",
+          "xxxYxyXyXYXy"
+        ]
+      ],
+      "anchor": [
+        "xxyXYXyXY",
+        "xxxYxyXyXYXy"
+      ],
+      "cyclic_products_to_anchor": 10,
+      "ordinary_minimum_entry_peak": 31
+    },
+    {
+      "seed": [
+        "XXXYXyxxYXyyxYxy",
+        "XXYXyxYxyXYxy"
+      ],
+      "independently_checked_cap": 30,
+      "signed_orbits": 13,
+      "products": 21528,
+      "minimum_cyclic_energy": 26,
+      "primitive_free_enclosure": true,
+      "route_one_above_cap": [
+        [
+          "xxyxYXyXYxyXY",
+          "xxxyxYXXyxYYXyXY"
+        ],
+        [
+          "xxyxYXyXYxyXY",
+          "xyxYXyxYXyxYYXyXY"
+        ],
+        [
+          "xxyxYXyXYxyXY",
+          "xyxyXYXyXYXyxY"
+        ],
+        [
+          "xxyxxyXYXyXXY",
+          "xyxyXYXyXYXyxY"
+        ],
+        [
+          "xyxyXyxYXYxYXY",
+          "xxyyxyyXYxYXYxYXY"
+        ],
+        [
+          "xyxyXyxYXYxYXY",
+          "xxyyxyXYxYXYxxYXY"
+        ],
+        [
+          "xxxyXyxxYxyXy",
+          "xyXyxyXyxYxYXY"
+        ],
+        [
+          "xxxyXyxxYxyXy",
+          "xxxyXyXYxYxxyXy"
+        ],
+        [
+          "xxxyXyXY",
+          "xxxyXyxYxxyXy"
+        ]
+      ],
+      "anchor": [
+        "xxxyXyXY",
+        "xxxyXyxYxxyXy"
+      ],
+      "cyclic_products_to_anchor": 8,
+      "ordinary_minimum_entry_peak": 31
+    },
+    {
+      "seed": [
+        "XXYxyXYxyxYXy",
+        "XXyXYXyxYxyxYxy"
+      ],
+      "independently_checked_cap": 36,
+      "signed_orbits": 175,
+      "products": 391640,
+      "minimum_cyclic_energy": 27,
+      "primitive_free_enclosure": true,
+      "route_one_above_cap": [
+        [
+          "xxyxYXyXYxyXY",
+          "xxyXYXyXYXyxYxy"
+        ],
+        [
+          "xxxyxxYXXyXYXy",
+          "xxyxYxyXYXyXYXy"
+        ],
+        [
+          "xxyxYxyXYXyXYXy",
+          "xxxyxxYXyXYXyXYXyxy"
+        ],
+        [
+          "xxyxYxyXYXyXYXy",
+          "xxxyxYXyXYXyxyXYXyxy"
+        ],
+        [
+          "xxyxYxyXYXyXYXy",
+          "xxyXYXyxyxyXYXyxy"
+        ],
+        [
+          "xxyxyXYXyxyxyXYXy",
+          "xxyxYXXYXyxyxyXYXyxy"
+        ],
+        [
+          "xxyxYXYXYXy",
+          "xxyxyXYXyxyxyXYXy"
+        ],
+        [
+          "xxyxYXYXYXy",
+          "xxyxyXYXXyxy"
+        ],
+        [
+          "xxyxyXY",
+          "xyxyxYXYYXy"
+        ]
+      ],
+      "anchor": [
+        "xxyxyXY",
+        "xyxyxYXYYXy"
+      ],
+      "cyclic_products_to_anchor": 8,
+      "ordinary_minimum_entry_peak": 37
+    }
+  ]
+}

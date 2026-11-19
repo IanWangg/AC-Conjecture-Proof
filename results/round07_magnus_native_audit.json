@@ -1,0 +1,78 @@
+{
+  "complete_negative_controls": [
+    {
+      "degree": 4,
+      "spare_rows": 3,
+      "tested_radius": 7,
+      "balls": [
+        2622,
+        20971
+      ],
+      "complete_exclusion": true
+    },
+    {
+      "degree": 5,
+      "spare_rows": 2,
+      "tested_radius": 9,
+      "balls": [
+        45581,
+        272526
+      ],
+      "complete_exclusion": true
+    },
+    {
+      "degree": 6,
+      "spare_rows": 1,
+      "tested_radius": 11,
+      "balls": [
+        590239,
+        2241421
+      ],
+      "complete_exclusion": true
+    },
+    {
+      "degree": 7,
+      "spare_rows": 0,
+      "tested_radius": 10,
+      "balls": [
+        125399,
+        37036
+      ],
+      "complete_exclusion": true
+    },
+    {
+      "degree": 8,
+      "spare_rows": 0,
+      "tested_radius": 10,
+      "balls": [
+        128556,
+        37072
+      ],
+      "complete_exclusion": true
+    },
+    {
+      "degree": 9,
+      "spare_rows": 0,
+      "tested_radius": 10,
+      "balls": [
+        129348,
+        37106
+      ],
+      "complete_exclusion": true
+    },
+    {
+      "degree": 10,
+      "spare_rows": 0,
+      "tested_radius": 10,
+      "balls": [
+        129651,
+        37110
+      ],
+      "complete_exclusion": true
+    }
+  ],
+  "ordered_positive_control": {
+    "degree": 5,
+    "distance": 11
+  }
+}

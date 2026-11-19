@@ -1,0 +1,246 @@
+{
+  "maximum_exchanges": 3,
+  "symbolic_rank_three_cap": 40,
+  "state_layers": [
+    1,
+    24,
+    392,
+    2926
+  ],
+  "projection_orbits": 27,
+  "in_cap29": 19,
+  "outside_by_minimum_exchange_count": {
+    "1": 2,
+    "2": 2,
+    "3": 4
+  },
+  "primitive_projections": [],
+  "earliest_outside": [
+    {
+      "exchanges": 1,
+      "marker_changes": [
+        [
+          "z",
+          "X",
+          false
+        ]
+      ],
+      "resulting_ambient_rows": [
+        "XYxZxYXzXyyz",
+        "XXzXYxZ",
+        "XYXzXYxZxyy"
+      ],
+      "eliminated": "y",
+      "pivot": "XXzXYxZ",
+      "pair": [
+        "XXXXXXyxxxYxxy",
+        "XXXXyXYxxyxxY"
+      ],
+      "energy": 27
+    },
+    {
+      "exchanges": 1,
+      "marker_changes": [
+        [
+          "y",
+          "z",
+          false
+        ]
+      ],
+      "resulting_ambient_rows": [
+        "XzyZYZYZxyz",
+        "XXYZ",
+        "XYZxyzyzXZY"
+      ],
+      "eliminated": "z",
+      "pivot": "XXYZ",
+      "pair": [
+        "XXXXXXXYxxxyxxY",
+        "XXXXYXyxxYxxy"
+      ],
+      "energy": 28
+    },
+    {
+      "exchanges": 2,
+      "marker_changes": [
+        [
+          "x",
+          "z",
+          true
+        ],
+        [
+          "y",
+          "X",
+          false
+        ]
+      ],
+      "resulting_ambient_rows": [
+        "XXyXZxYxYxy",
+        "XZYZ",
+        "XXZxYYxyXy"
+      ],
+      "eliminated": "z",
+      "pivot": "XXZxYYxyXy",
+      "pair": [
+        "XXyxYYxyXYxyXy",
+        "XXyxYxYXyxYxy"
+      ],
+      "energy": 27
+    },
+    {
+      "exchanges": 2,
+      "marker_changes": [
+        [
+          "y",
+          "x",
+          true
+        ],
+        [
+          "y",
+          "z",
+          false
+        ]
+      ],
+      "resulting_ambient_rows": [
+        "XXzxyzxyzYXZxZY",
+        "XXYXZ",
+        "XXYXZxxyzxyzXZY"
+      ],
+      "eliminated": "z",
+      "pivot": "XXYXZ",
+      "pair": [
+        "XXXXXXXXYxxxyxxY",
+        "XXXXYXyxxYxxy"
+      ],
+      "energy": 29
+    },
+    {
+      "exchanges": 3,
+      "marker_changes": [
+        [
+          "x",
+          "y",
+          false
+        ],
+        [
+          "x",
+          "z",
+          true
+        ],
+        [
+          "y",
+          "x",
+          false
+        ]
+      ],
+      "resulting_ambient_rows": [
+        "XYXYxyyxZ",
+        "XXYZXYXZXY",
+        "XXYxyxyZXYXY"
+      ],
+      "eliminated": "z",
+      "pivot": "XYXYxyyxZ",
+      "pair": [
+        "XXXYxyxyXYY",
+        "XYXYYXyXYYXy"
+      ],
+      "energy": 23
+    },
+    {
+      "exchanges": 3,
+      "marker_changes": [
+        [
+          "x",
+          "y",
+          false
+        ],
+        [
+          "x",
+          "z",
+          true
+        ],
+        [
+          "y",
+          "x",
+          false
+        ]
+      ],
+      "resulting_ambient_rows": [
+        "XYXYxyyxZ",
+        "XXYZXYXZXY",
+        "XXYxyxyZXYXY"
+      ],
+      "eliminated": "z",
+      "pivot": "XXYxyxyZXYXY",
+      "pair": [
+        "XXXYxyxyXYY",
+        "XXYxyXYxyxyyxY"
+      ],
+      "energy": 25
+    },
+    {
+      "exchanges": 3,
+      "marker_changes": [
+        [
+          "x",
+          "Y",
+          false
+        ],
+        [
+          "x",
+          "Y",
+          false
+        ],
+        [
+          "x",
+          "z",
+          true
+        ]
+      ],
+      "resulting_ambient_rows": [
+        "XyZYYxy",
+        "XYZyyXZyy",
+        "XYxyyXZy"
+      ],
+      "eliminated": "z",
+      "pivot": "XYxyyXZy",
+      "pair": [
+        "XYxYXyyyXYxyy",
+        "XYxYYXyxYXyxy"
+      ],
+      "energy": 26
+    },
+    {
+      "exchanges": 3,
+      "marker_changes": [
+        [
+          "x",
+          "Y",
+          false
+        ],
+        [
+          "x",
+          "z",
+          true
+        ],
+        [
+          "y",
+          "X",
+          false
+        ]
+      ],
+      "resulting_ambient_rows": [
+        "XXyXZxYxYxy",
+        "XXZyXYZy",
+        "XXZYxyXy"
+      ],
+      "eliminated": "z",
+      "pivot": "XXZYxyXy",
+      "pair": [
+        "XXyxYYxyXYxyXy",
+        "XXyxYxYXyxYxYxy"
+      ],
+      "energy": 29
+    }
+  ]
+}

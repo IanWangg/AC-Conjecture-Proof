@@ -1,0 +1,22 @@
+{
+  "moves": 784,
+  "peak_total_length": 45,
+  "endpoint": [
+    "XXXYxyxyXYY",
+    "XYXYYXyXYYXy"
+  ],
+  "cyclic_peak": 35,
+  "seed_peak": 21,
+  "seed_alignment_step": 160,
+  "preimage_peak": 27,
+  "preimage_strict_moves": 422,
+  "transported_move_count": 613,
+  "preimage": [
+    "XXYxyyXYxY",
+    "XYYxYXyXYxYXy"
+  ],
+  "ambient_automorphism": {
+    "x": "x",
+    "y": "yx"
+  }
+}

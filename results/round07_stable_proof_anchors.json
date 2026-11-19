@@ -1,0 +1,44 @@
+{
+  "primitive_slot_anchors": [
+    {
+      "slot": 0,
+      "whitehead_stage": 4,
+      "pivot": "Xz",
+      "deleted": "z",
+      "pair": [
+        "XXYxyyXYxY",
+        "XYYxYXyXYxYXy"
+      ]
+    },
+    {
+      "slot": 1,
+      "whitehead_stage": 0,
+      "pivot": "XXzYZ",
+      "deleted": "y",
+      "pair": [
+        "XXXXXyxxxYxxy",
+        "XXXXyXYxxyxxY"
+      ]
+    },
+    {
+      "slot": 2,
+      "whitehead_stage": 1,
+      "pivot": "XYxyyXZY",
+      "deleted": "z",
+      "pair": [
+        "XYxYXyXYxyy",
+        "XYxYYXyxYXyxy"
+      ]
+    }
+  ],
+  "all_in_cyclic_cap29": true,
+  "first_in_cap27": true,
+  "induced_rank_two_automorphism": {
+    "x": "x",
+    "y": "yx"
+  },
+  "induced_image": [
+    "XXXYxyxyXYY",
+    "XYXYYXyXYYXy"
+  ]
+}
