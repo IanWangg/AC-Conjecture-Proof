@@ -1,0 +1,51 @@
+{
+  "fixed_wings": {
+    "lower": {
+      "left_affected_runs": [
+        1,
+        1
+      ],
+      "right_affected_runs": [
+        2,
+        2
+      ]
+    },
+    "upper": {
+      "left_affected_runs": [
+        1,
+        2
+      ],
+      "right_affected_runs": [
+        2,
+        1
+      ]
+    }
+  },
+  "total_shift_words": 19464,
+  "trace_controls": {
+    "2": {
+      "first_end_power_interval": [
+        -5,
+        7
+      ],
+      "shift_words_per_orientation": 4017,
+      "stems_by_number_of_c_runs": [
+        1,
+        36,
+        272
+      ]
+    },
+    "4": {
+      "first_end_power_interval": [
+        -5,
+        9
+      ],
+      "shift_words_per_orientation": 5715,
+      "stems_by_number_of_c_runs": [
+        1,
+        44,
+        336
+      ]
+    }
+  }
+}

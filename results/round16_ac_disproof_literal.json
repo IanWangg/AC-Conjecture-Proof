@@ -1,0 +1,786 @@
+{
+  "literal_AK3": {
+    "source": [
+      "xxxYYYY",
+      "xyxYXY"
+    ],
+    "source_absence": {
+      "status": "PASS",
+      "complete_absence_certificate": true,
+      "vertices": 10,
+      "closed_map_pair_states_checked": 72,
+      "ordinary_AC_goal_solved": false
+    },
+    "first_identifications": {
+      "3": 45
+    },
+    "distinct_first_graph_pairs": 22,
+    "second_identifications": 3216,
+    "proper_cumulative_rank_3": 562,
+    "ambient_cumulative_subgroup": 1608,
+    "broad_inequalities": 45298,
+    "proper_cumulative_rank_4": 1046,
+    "proper_subgroups_by_method": {
+      "free_quotient": 67,
+      "integer_characters": 1
+    },
+    "proper_exceptions": [
+      {
+        "method": "integer_characters",
+        "voltage": {
+          "graph": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            -1,
+            0,
+            0,
+            -1,
+            1,
+            2,
+            2
+          ],
+          "chord_basis": [
+            "x",
+            "YY",
+            "yxyXY"
+          ],
+          "source_in_chords": [
+            "aaabb",
+            "aC"
+          ],
+          "integer_character_basis": [
+            [
+              2,
+              -3,
+              2
+            ]
+          ],
+          "excluded_languages": 8,
+          "tests": [
+            {
+              "character": [
+                -2,
+                3,
+                -2
+              ],
+              "inequalities_checked": 5,
+              "alphabet": [
+                0,
+                2
+              ],
+              "forbidden_double": 0,
+              "status": "PASS",
+              "cyclic_components": [
+                {
+                  "states": [
+                    0,
+                    1,
+                    3
+                  ],
+                  "strict_cycle_voltage_sign": -1,
+                  "potential": [
+                    0,
+                    0,
+                    -1
+                  ]
+                },
+                {
+                  "states": [
+                    5
+                  ],
+                  "strict_cycle_voltage_sign": -1,
+                  "potential": [
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "character": [
+                -2,
+                3,
+                -2
+              ],
+              "inequalities_checked": 1,
+              "alphabet": [
+                0,
+                2
+              ],
+              "forbidden_double": 1,
+              "status": "PASS",
+              "cyclic_components": [
+                {
+                  "states": [
+                    0
+                  ],
+                  "strict_cycle_voltage_sign": -1,
+                  "potential": [
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "character": [
+                -2,
+                3,
+                -2
+              ],
+              "inequalities_checked": 5,
+              "alphabet": [
+                0,
+                3
+              ],
+              "forbidden_double": 0,
+              "status": "PASS",
+              "cyclic_components": [
+                {
+                  "states": [
+                    0,
+                    1,
+                    3
+                  ],
+                  "strict_cycle_voltage_sign": 1,
+                  "potential": [
+                    -1,
+                    -8,
+                    0
+                  ]
+                },
+                {
+                  "states": [
+                    5
+                  ],
+                  "strict_cycle_voltage_sign": 1,
+                  "potential": [
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "character": [
+                -2,
+                3,
+                -2
+              ],
+              "inequalities_checked": 1,
+              "alphabet": [
+                0,
+                3
+              ],
+              "forbidden_double": 1,
+              "status": "PASS",
+              "cyclic_components": [
+                {
+                  "states": [
+                    0
+                  ],
+                  "strict_cycle_voltage_sign": -1,
+                  "potential": [
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "character": [
+                -2,
+                3,
+                -2
+              ],
+              "inequalities_checked": 5,
+              "alphabet": [
+                1,
+                2
+              ],
+              "forbidden_double": 0,
+              "status": "PASS",
+              "cyclic_components": [
+                {
+                  "states": [
+                    5
+                  ],
+                  "strict_cycle_voltage_sign": -1,
+                  "potential": [
+                    0
+                  ]
+                },
+                {
+                  "states": [
+                    0,
+                    1,
+                    3
+                  ],
+                  "strict_cycle_voltage_sign": -1,
+                  "potential": [
+                    0,
+                    -7,
+                    -8
+                  ]
+                }
+              ]
+            },
+            {
+              "character": [
+                -2,
+                3,
+                -2
+              ],
+              "inequalities_checked": 1,
+              "alphabet": [
+                1,
+                2
+              ],
+              "forbidden_double": 1,
+              "status": "PASS",
+              "cyclic_components": [
+                {
+                  "states": [
+                    0
+                  ],
+                  "strict_cycle_voltage_sign": 1,
+                  "potential": [
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "character": [
+                -2,
+                3,
+                -2
+              ],
+              "inequalities_checked": 5,
+              "alphabet": [
+                1,
+                3
+              ],
+              "forbidden_double": 0,
+              "status": "PASS",
+              "cyclic_components": [
+                {
+                  "states": [
+                    5
+                  ],
+                  "strict_cycle_voltage_sign": 1,
+                  "potential": [
+                    0
+                  ]
+                },
+                {
+                  "states": [
+                    0,
+                    1,
+                    3
+                  ],
+                  "strict_cycle_voltage_sign": 1,
+                  "potential": [
+                    -1,
+                    -1,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "character": [
+                -2,
+                3,
+                -2
+              ],
+              "inequalities_checked": 1,
+              "alphabet": [
+                1,
+                3
+              ],
+              "forbidden_double": 1,
+              "status": "PASS",
+              "cyclic_components": [
+                {
+                  "states": [
+                    0
+                  ],
+                  "strict_cycle_voltage_sign": 1,
+                  "potential": [
+                    0
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "ambient_cumulative_failures": [],
+    "first_graph_pairs": [
+      {
+        "first_representatives": [
+          [
+            0,
+            1,
+            "X"
+          ],
+          [
+            1,
+            3,
+            "X"
+          ],
+          [
+            2,
+            4,
+            "X"
+          ],
+          [
+            3,
+            7,
+            "X"
+          ],
+          [
+            5,
+            8,
+            "X"
+          ]
+        ],
+        "two_copy_vertices": 15,
+        "second_identifications": 105,
+        "proper_cumulative_rank_3": 34,
+        "ambient_cumulative_subgroup": 71,
+        "broad_inequalities": 2340
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            2,
+            "Y"
+          ],
+          [
+            1,
+            5,
+            "Y"
+          ],
+          [
+            2,
+            6,
+            "Y"
+          ],
+          [
+            4,
+            8,
+            "xyXYX"
+          ],
+          [
+            6,
+            9,
+            "Y"
+          ]
+        ],
+        "two_copy_vertices": 14,
+        "second_identifications": 91,
+        "ambient_cumulative_subgroup": 69,
+        "broad_inequalities": 2104,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            3,
+            "XX"
+          ],
+          [
+            1,
+            7,
+            "XX"
+          ]
+        ],
+        "two_copy_vertices": 18,
+        "second_identifications": 153,
+        "proper_cumulative_rank_3": 49,
+        "ambient_cumulative_subgroup": 68,
+        "broad_inequalities": 2134,
+        "proper_cumulative_rank_4": 36
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            4,
+            "YX"
+          ],
+          [
+            1,
+            8,
+            "YX"
+          ]
+        ],
+        "two_copy_vertices": 18,
+        "second_identifications": 153,
+        "ambient_cumulative_subgroup": 93,
+        "broad_inequalities": 3040,
+        "proper_cumulative_rank_4": 48,
+        "proper_cumulative_rank_3": 12
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            5,
+            "XY"
+          ],
+          [
+            2,
+            8,
+            "yXYX"
+          ]
+        ],
+        "two_copy_vertices": 18,
+        "second_identifications": 153,
+        "ambient_cumulative_subgroup": 69,
+        "broad_inequalities": 2598,
+        "proper_cumulative_rank_4": 72,
+        "proper_cumulative_rank_3": 12
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            6,
+            "YY"
+          ],
+          [
+            2,
+            9,
+            "YY"
+          ],
+          [
+            6,
+            7,
+            "yyXXX"
+          ]
+        ],
+        "two_copy_vertices": 17,
+        "second_identifications": 136,
+        "proper_cumulative_rank_3": 64,
+        "ambient_cumulative_subgroup": 22,
+        "broad_inequalities": 384,
+        "proper_cumulative_rank_4": 50
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            7,
+            "XXX"
+          ]
+        ],
+        "two_copy_vertices": 19,
+        "second_identifications": 171,
+        "proper_cumulative_rank_3": 73,
+        "proper_cumulative_rank_4": 98
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            8,
+            "XYX"
+          ]
+        ],
+        "two_copy_vertices": 19,
+        "second_identifications": 171,
+        "ambient_cumulative_subgroup": 66,
+        "broad_inequalities": 2644,
+        "proper_cumulative_rank_4": 94,
+        "proper_cumulative_rank_3": 11
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            9,
+            "YYY"
+          ],
+          [
+            2,
+            7,
+            "yXXX"
+          ]
+        ],
+        "two_copy_vertices": 18,
+        "second_identifications": 153,
+        "ambient_cumulative_subgroup": 70,
+        "broad_inequalities": 1946,
+        "proper_cumulative_rank_3": 41,
+        "proper_cumulative_rank_4": 42
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            2,
+            "xY"
+          ],
+          [
+            3,
+            5,
+            "xY"
+          ],
+          [
+            4,
+            6,
+            "xY"
+          ]
+        ],
+        "two_copy_vertices": 17,
+        "second_identifications": 136,
+        "ambient_cumulative_subgroup": 115,
+        "broad_inequalities": 3006,
+        "proper_cumulative_rank_3": 13,
+        "proper_cumulative_rank_4": 8
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            4,
+            "xYX"
+          ],
+          [
+            3,
+            8,
+            "xYX"
+          ]
+        ],
+        "two_copy_vertices": 18,
+        "second_identifications": 153,
+        "ambient_cumulative_subgroup": 83,
+        "broad_inequalities": 2244,
+        "proper_cumulative_rank_4": 58,
+        "proper_cumulative_rank_3": 12
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            6,
+            "xYY"
+          ],
+          [
+            4,
+            9,
+            "xYY"
+          ]
+        ],
+        "two_copy_vertices": 18,
+        "second_identifications": 153,
+        "proper_cumulative_rank_3": 48,
+        "ambient_cumulative_subgroup": 81,
+        "broad_inequalities": 1696,
+        "proper_cumulative_rank_4": 24
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            9,
+            "xYYY"
+          ],
+          [
+            4,
+            7,
+            "xyXXX"
+          ]
+        ],
+        "two_copy_vertices": 18,
+        "second_identifications": 153,
+        "ambient_cumulative_subgroup": 91,
+        "broad_inequalities": 2838,
+        "proper_cumulative_rank_4": 50,
+        "proper_cumulative_rank_3": 12
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            3,
+            "yXX"
+          ],
+          [
+            5,
+            7,
+            "yXX"
+          ]
+        ],
+        "two_copy_vertices": 18,
+        "second_identifications": 153,
+        "ambient_cumulative_subgroup": 75,
+        "broad_inequalities": 2618,
+        "proper_cumulative_rank_4": 66,
+        "proper_cumulative_rank_3": 12
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            5,
+            "yXY"
+          ],
+          [
+            6,
+            8,
+            "yyXYX"
+          ]
+        ],
+        "two_copy_vertices": 18,
+        "second_identifications": 153,
+        "ambient_cumulative_subgroup": 85,
+        "broad_inequalities": 1830,
+        "proper_cumulative_rank_4": 56,
+        "proper_cumulative_rank_3": 12
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            4,
+            "xxYX"
+          ],
+          [
+            7,
+            8,
+            "xxYX"
+          ]
+        ],
+        "two_copy_vertices": 17,
+        "second_identifications": 136,
+        "ambient_cumulative_subgroup": 77,
+        "broad_inequalities": 2060,
+        "proper_cumulative_rank_4": 46,
+        "proper_cumulative_rank_3": 13
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            6,
+            "xxYY"
+          ]
+        ],
+        "two_copy_vertices": 19,
+        "second_identifications": 171,
+        "proper_cumulative_rank_3": 53,
+        "ambient_cumulative_subgroup": 60,
+        "broad_inequalities": 1148,
+        "proper_cumulative_rank_4": 58
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            9,
+            "xxYYY"
+          ]
+        ],
+        "two_copy_vertices": 19,
+        "second_identifications": 171,
+        "ambient_cumulative_subgroup": 92,
+        "broad_inequalities": 2486,
+        "proper_cumulative_rank_4": 68,
+        "proper_cumulative_rank_3": 11
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            5,
+            "xyXY"
+          ]
+        ],
+        "two_copy_vertices": 19,
+        "second_identifications": 171,
+        "ambient_cumulative_subgroup": 102,
+        "broad_inequalities": 2508,
+        "proper_cumulative_rank_4": 58,
+        "proper_cumulative_rank_3": 11
+      },
+      {
+        "first_representatives": [
+          [
+            5,
+            6,
+            "yxYY"
+          ],
+          [
+            8,
+            9,
+            "xyxYYY"
+          ]
+        ],
+        "two_copy_vertices": 18,
+        "second_identifications": 153,
+        "ambient_cumulative_subgroup": 73,
+        "broad_inequalities": 1510,
+        "proper_cumulative_rank_4": 68,
+        "proper_cumulative_rank_3": 12
+      },
+      {
+        "first_representatives": [
+          [
+            5,
+            9,
+            "yxYYY"
+          ]
+        ],
+        "two_copy_vertices": 17,
+        "second_identifications": 136,
+        "ambient_cumulative_subgroup": 77,
+        "broad_inequalities": 2060,
+        "proper_cumulative_rank_4": 46,
+        "proper_cumulative_rank_3": 13
+      },
+      {
+        "first_representatives": [
+          [
+            7,
+            9,
+            "xxxYYY"
+          ]
+        ],
+        "two_copy_vertices": 14,
+        "second_identifications": 91,
+        "ambient_cumulative_subgroup": 69,
+        "broad_inequalities": 2104,
+        "proper_cumulative_rank_3": 22
+      }
+    ],
+    "case_digest": "e41935371b38e2ab1b9a80f92b8aef148a3b30d82724525cc5e1cd0e8ac1a4d9"
+  },
+  "AK2_positive_control": {
+    "start": [
+      "yyXXy",
+      "xyxYXY"
+    ],
+    "strict_replay": {
+      "moves": 6,
+      "peak_total_length": 17,
+      "endpoint": [
+        "yyXyyXyX",
+        "xxYXyyXyX"
+      ]
+    },
+    "first_phase": 1,
+    "second_phase": 3,
+    "primitive_cyclic_word": "yyXyyXyX",
+    "separate_envelope_escape": {
+      "first": "X",
+      "second": "Y",
+      "rank": 2
+    }
+  }
+}

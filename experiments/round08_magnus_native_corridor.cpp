@@ -23,6 +23,34 @@ struct Options {
     bool ledger = false;
     bool first_arrivals = false;
     bool partial_degree_six = false;
+    bool compact_degree_five = false;
+};
+
+struct CompactPairLayer {
+    using Pair = free_distance::State<2>;
+    std::vector<std::size_t> offsets;
+    std::vector<Id> seconds;
+
+    template <class PairSet>
+    CompactPairLayer(const PairSet& source, std::size_t element_count) : offsets(element_count + 1), seconds(source.size()) {
+        for (const auto& state : source) ++offsets[state[0] + 1];
+        for (std::size_t i = 1; i < offsets.size(); ++i) offsets[i] += offsets[i - 1];
+        auto position = offsets;
+        for (const auto& state : source) seconds[position[state[0]]++] = state[1];
+        for (std::size_t i = 0; i < element_count; ++i)
+            if (offsets[i + 1] - offsets[i] > 1)
+                std::sort(seconds.begin() + offsets[i], seconds.begin() + offsets[i + 1]);
+    }
+
+    bool count(const Pair& state) const {
+        const std::size_t first = state[0];
+        if (first + 1 >= offsets.size()) return false;
+        return std::binary_search(seconds.begin() + offsets[first], seconds.begin() + offsets[first + 1], state[1]);
+    }
+};
+
+struct CompactCounts {
+    std::size_t layer_count = 0, pair_count = 0, offset_bytes = 0, second_bytes = 0;
 };
 
 enum class Operation { invert, multiply, conjugate, swap };
@@ -46,6 +74,7 @@ class Corridor {
     std::vector<Record> records;
     std::vector<std::string> midpoint;
     std::vector<Move> ledger;
+    std::optional<CompactCounts> compact_counts;
 
     static State mark(State tuple, bool ordered) {
         if (!ordered) std::sort(tuple.begin(), tuple.end());
@@ -180,8 +209,8 @@ class Corridor {
         return trim_balls(group, depths, false);
     }
 
-    template <class Low, class High, class Projection>
-    Layers refine(Low& low, const Layers& allowed, High& high, bool ordered, Projection&& project) const {
+    template <class Low, class Allowable, class High, class Projection>
+    Layers refine(Low& low, const Allowable& allowed, High& high, bool ordered, Projection&& project) const {
         std::vector<Id> projection;
         auto image = [&](Id id) {
             if (id >= projection.size()) projection.resize(high.size(), free_distance::missing);
@@ -196,7 +225,7 @@ class Corridor {
         };
         const auto moves = menu(ordered);
         const auto start = endpoints(high, ordered);
-        auto screen_moves = [&](const State& state, const State& low_state, const Set& permitted, auto&& admit) {
+        auto screen_moves = [&](const State& state, const State& low_state, const auto& permitted, auto&& admit) {
             for (Move move : moves) {
                 auto candidate = apply(low, low_state, move);
                 if (permitted.count(mark(candidate, false)))
@@ -309,13 +338,36 @@ class Corridor {
         records.push_back(std::move(record));
     }
 
+    template <class Next>
+    Layers refine_from_five(magnus_native::Elements<5>& degree_five, Layers& layers, Next& next, bool ordered) {
+        auto project = [&](Id id) { return next.project(id, degree_five); };
+        if constexpr (Rows == 2) if (options.compact_degree_five) {
+            std::array<std::vector<CompactPairLayer>, 2> compact;
+            CompactCounts counts;
+            for (unsigned side = 0; side < 2; ++side) {
+                compact[side].reserve(layers[side].size());
+                for (auto& layer : layers[side]) {
+                    auto& next_layer = compact[side].emplace_back(layer, degree_five.size());
+                    ++counts.layer_count;
+                    counts.pair_count += next_layer.seconds.size();
+                    counts.offset_bytes += next_layer.offsets.size() * sizeof(std::size_t);
+                    counts.second_bytes += next_layer.seconds.size() * sizeof(Id);
+                    Set{}.swap(layer);
+                }
+            }
+            compact_counts = counts;
+            return refine(degree_five, compact, next, ordered, project);
+        }
+        return refine(degree_five, layers, next, ordered, project);
+    }
+
     void partial_degree_six(std::unique_ptr<magnus_native::Elements<5>> degree_five, Layers layers) {
         using DegreeSix = magnus_native::Elements<6>;
         // The final eleventh coordinate is added by the full degree-six refinement.
         constexpr std::array<unsigned, 10> coordinates{1, 3, 5, 7, 9, 11, 13, 15, 23, 27};
         uint64_t mask = uint64_t(1) << coordinates.front();
         auto current = std::make_unique<DegreeSix>(mask);
-        layers = refine(*degree_five, layers, *current, false, [&](Id id) { return current->project(id, *degree_five); });
+        layers = refine_from_five(*degree_five, layers, *current, false);
         degree_five.reset();
         add_record(6, layers, mask);
         for (unsigned i = 1; i < coordinates.size() && !layers[0].back().empty(); ++i) {
@@ -360,9 +412,9 @@ class Corridor {
         if constexpr (Degree < 10) {
             auto next = std::make_unique<magnus_native::Elements<Degree + 1>>();
             const bool ordered = options.ordered && Degree + 1 == options.final_degree && !options.free_final;
-            auto lifted = refine(*group, layers, *next, ordered, [&](Id id) {
-                return next->project(id, *group);
-            });
+            Layers lifted;
+            if constexpr (Degree == 5) lifted = refine_from_five(*group, layers, *next, ordered);
+            else lifted = refine(*group, layers, *next, ordered, [&](Id id) { return next->project(id, *group); });
             group.reset();
             layers = {};
             add_record(Degree + 1, lifted);
@@ -430,6 +482,11 @@ class Corridor {
             }
             std::cout << ']';
         }
+        if (compact_counts) {
+            std::cout << ",\"compact_degree_five\":{\"layers\":" << compact_counts->layer_count
+                      << ",\"pairs\":" << compact_counts->pair_count << ",\"offset_bytes\":" << compact_counts->offset_bytes
+                      << ",\"second_id_bytes\":" << compact_counts->second_bytes << '}';
+        }
         std::cout << "}\n";
     }
 
@@ -460,7 +517,7 @@ int main(int argc, char** argv) {
         if (argc < 4)
             throw std::runtime_error("usage: corridor final_degree left_radius right_radius "
                                      "[--ordered] [--spare-rows N] [--free] [--screen] [--ledger] "
-                                     "[--first-arrivals] [--partial-degree-six]");
+                                     "[--first-arrivals] [--partial-degree-six] [--compact-degree-five]");
         const int degree = std::stoi(argv[1]), left = std::stoi(argv[2]), right = std::stoi(argv[3]);
         if (degree < 5 || degree > 10 || left < 0 || right < 0)
             throw std::runtime_error("degree must be 5–10 and radii nonnegative");
@@ -473,10 +530,13 @@ int main(int argc, char** argv) {
             else if (argument == "--ledger") options.ledger = true;
             else if (argument == "--first-arrivals") options.first_arrivals = true;
             else if (argument == "--partial-degree-six") options.partial_degree_six = true;
+            else if (argument == "--compact-degree-five") options.compact_degree_five = true;
             else if (argument == "--spare-rows" && i + 1 < argc) options.padding = std::stoul(argv[++i]);
             else throw std::runtime_error("unexpected corridor option");
         }
         if (options.partial_degree_six && degree < 6) throw std::runtime_error("partial-degree-six needs a final degree of at least six");
+        if (options.compact_degree_five && (degree < 6 || options.padding != 0))
+            throw std::runtime_error("compact-degree-five requires an unpadded search through at least degree six");
         options.screen = options.screen || options.padding > 0;
         switch (options.padding) {
         case 0: Corridor<2>(options).run<4>(); break;

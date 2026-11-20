@@ -1,0 +1,7307 @@
+[
+  {
+    "source": [
+      "xxxyxYxyxYY",
+      "xxyxxYYxxyxY"
+    ],
+    "source_absence": {
+      "status": "PASS",
+      "complete_absence_certificate": true,
+      "vertices": 19,
+      "closed_map_pair_states_checked": 68,
+      "ordinary_AC_goal_solved": false
+    },
+    "first_identifications": {
+      "3": 171
+    },
+    "distinct_first_graph_pairs": 97,
+    "second_identifications": 60049,
+    "proper_cumulative_rank_3": 2407,
+    "ambient_cumulative_subgroup": 8297,
+    "broad_inequalities": 42368,
+    "proper_cumulative_rank_4": 49345,
+    "proper_subgroups_by_method": {
+      "free_quotient": 1889
+    },
+    "proper_exceptions": [],
+    "ambient_cumulative_failures": [],
+    "first_graph_pairs": [
+      {
+        "first_representatives": [
+          [
+            0,
+            1,
+            "X"
+          ],
+          [
+            1,
+            3,
+            "X"
+          ],
+          [
+            3,
+            6,
+            "X"
+          ],
+          [
+            7,
+            10,
+            "X"
+          ],
+          [
+            11,
+            14,
+            "X"
+          ]
+        ],
+        "two_copy_vertices": 33,
+        "second_identifications": 528,
+        "proper_cumulative_rank_3": 33,
+        "ambient_cumulative_subgroup": 223,
+        "broad_inequalities": 1216,
+        "proper_cumulative_rank_4": 272
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            2,
+            "Y"
+          ],
+          [
+            2,
+            5,
+            "Y"
+          ],
+          [
+            4,
+            9,
+            "Y"
+          ],
+          [
+            8,
+            13,
+            "Y"
+          ],
+          [
+            12,
+            17,
+            "Y"
+          ]
+        ],
+        "two_copy_vertices": 33,
+        "second_identifications": 528,
+        "ambient_cumulative_subgroup": 209,
+        "broad_inequalities": 1200,
+        "proper_cumulative_rank_3": 25,
+        "proper_cumulative_rank_4": 294
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            3,
+            "XX"
+          ],
+          [
+            1,
+            6,
+            "XX"
+          ],
+          [
+            2,
+            7,
+            "XX"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_3": 41,
+        "ambient_cumulative_subgroup": 155,
+        "broad_inequalities": 644,
+        "proper_cumulative_rank_4": 399
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            4,
+            "xY"
+          ],
+          [
+            1,
+            2,
+            "xY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 95,
+        "broad_inequalities": 384,
+        "proper_cumulative_rank_4": 514,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            5,
+            "YY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 592,
+        "proper_cumulative_rank_3": 38,
+        "ambient_cumulative_subgroup": 36,
+        "broad_inequalities": 308
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            6,
+            "XXX"
+          ],
+          [
+            2,
+            10,
+            "XXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_3": 47,
+        "proper_cumulative_rank_4": 537,
+        "ambient_cumulative_subgroup": 46,
+        "broad_inequalities": 144
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            7,
+            "YXX"
+          ],
+          [
+            1,
+            11,
+            "YXX"
+          ],
+          [
+            3,
+            15,
+            "YXX"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "ambient_cumulative_subgroup": 83,
+        "broad_inequalities": 520,
+        "proper_cumulative_rank_4": 490,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            8,
+            "yxY"
+          ],
+          [
+            2,
+            4,
+            "yxY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 199,
+        "broad_inequalities": 990,
+        "proper_cumulative_rank_4": 410,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            9,
+            "xYY"
+          ],
+          [
+            1,
+            5,
+            "xYY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 477,
+        "ambient_cumulative_subgroup": 132,
+        "broad_inequalities": 940,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            10,
+            "YXXX"
+          ],
+          [
+            1,
+            14,
+            "YXXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 77,
+        "broad_inequalities": 542,
+        "proper_cumulative_rank_4": 532,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            11,
+            "XYXX"
+          ],
+          [
+            1,
+            15,
+            "XYXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 93,
+        "broad_inequalities": 654,
+        "proper_cumulative_rank_4": 516,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            12,
+            "xyxY"
+          ],
+          [
+            1,
+            8,
+            "xyxY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 121,
+        "broad_inequalities": 488,
+        "proper_cumulative_rank_4": 488,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            13,
+            "yxYY"
+          ],
+          [
+            2,
+            9,
+            "yxYY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 89,
+        "broad_inequalities": 266,
+        "proper_cumulative_rank_4": 486,
+        "proper_cumulative_rank_3": 55
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            14,
+            "XYXXX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "ambient_cumulative_subgroup": 86,
+        "broad_inequalities": 452,
+        "proper_cumulative_rank_4": 560,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            15,
+            "XXYXX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "ambient_cumulative_subgroup": 132,
+        "broad_inequalities": 924,
+        "proper_cumulative_rank_4": 514,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            16,
+            "xxyxY"
+          ],
+          [
+            1,
+            12,
+            "xxyxY"
+          ],
+          [
+            2,
+            18,
+            "yyXXYXX"
+          ],
+          [
+            3,
+            8,
+            "xxyxY"
+          ],
+          [
+            5,
+            15,
+            "yyXXYXX"
+          ],
+          [
+            9,
+            11,
+            "yyXXYXX"
+          ]
+        ],
+        "two_copy_vertices": 30,
+        "second_identifications": 435,
+        "ambient_cumulative_subgroup": 255,
+        "broad_inequalities": 990,
+        "proper_cumulative_rank_4": 144,
+        "proper_cumulative_rank_3": 36
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            17,
+            "xyxYY"
+          ],
+          [
+            1,
+            13,
+            "xyxYY"
+          ],
+          [
+            2,
+            14,
+            "yXYXXX"
+          ],
+          [
+            4,
+            10,
+            "yXYXXX"
+          ]
+        ],
+        "two_copy_vertices": 31,
+        "second_identifications": 465,
+        "ambient_cumulative_subgroup": 135,
+        "broad_inequalities": 760,
+        "proper_cumulative_rank_4": 299,
+        "proper_cumulative_rank_3": 31
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            18,
+            "yXXYXX"
+          ],
+          [
+            2,
+            15,
+            "yXXYXX"
+          ],
+          [
+            4,
+            11,
+            "yXXYXX"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 509,
+        "ambient_cumulative_subgroup": 64,
+        "broad_inequalities": 372,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            4,
+            "xxY"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "ambient_cumulative_subgroup": 157,
+        "broad_inequalities": 874,
+        "proper_cumulative_rank_4": 396,
+        "proper_cumulative_rank_3": 42
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            7,
+            "xYXX"
+          ],
+          [
+            3,
+            11,
+            "xYXX"
+          ],
+          [
+            6,
+            15,
+            "xYXX"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "ambient_cumulative_subgroup": 124,
+        "broad_inequalities": 662,
+        "proper_cumulative_rank_4": 449,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            9,
+            "xxYY"
+          ],
+          [
+            3,
+            5,
+            "xxYY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 545,
+        "ambient_cumulative_subgroup": 64,
+        "broad_inequalities": 242,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            10,
+            "xYXXX"
+          ],
+          [
+            3,
+            14,
+            "xYXXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 77,
+        "broad_inequalities": 460,
+        "proper_cumulative_rank_4": 532,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            16,
+            "xxxyxY"
+          ],
+          [
+            3,
+            12,
+            "xxxyxY"
+          ],
+          [
+            6,
+            8,
+            "xxxyxY"
+          ]
+        ],
+        "two_copy_vertices": 31,
+        "second_identifications": 465,
+        "ambient_cumulative_subgroup": 135,
+        "broad_inequalities": 760,
+        "proper_cumulative_rank_4": 299,
+        "proper_cumulative_rank_3": 31
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            17,
+            "xxyxYY"
+          ],
+          [
+            3,
+            13,
+            "xxyxYY"
+          ],
+          [
+            7,
+            9,
+            "xxyxYY"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "ambient_cumulative_subgroup": 140,
+        "broad_inequalities": 542,
+        "proper_cumulative_rank_4": 398,
+        "proper_cumulative_rank_3": 23
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            18,
+            "xyXXYXX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 638,
+        "proper_cumulative_rank_3": 20,
+        "ambient_cumulative_subgroup": 8,
+        "broad_inequalities": 16
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            3,
+            "yXX"
+          ],
+          [
+            5,
+            7,
+            "yXX"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "ambient_cumulative_subgroup": 157,
+        "broad_inequalities": 874,
+        "proper_cumulative_rank_4": 396,
+        "proper_cumulative_rank_3": 42
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            6,
+            "yXXX"
+          ],
+          [
+            5,
+            10,
+            "yXXX"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "ambient_cumulative_subgroup": 67,
+        "broad_inequalities": 352,
+        "proper_cumulative_rank_4": 506,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            8,
+            "yyxY"
+          ],
+          [
+            4,
+            12,
+            "yyxY"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 428,
+        "ambient_cumulative_subgroup": 140,
+        "broad_inequalities": 694,
+        "proper_cumulative_rank_3": 27
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            11,
+            "yXYXX"
+          ],
+          [
+            4,
+            7,
+            "yXYXX"
+          ]
+        ],
+        "two_copy_vertices": 30,
+        "second_identifications": 435,
+        "ambient_cumulative_subgroup": 255,
+        "broad_inequalities": 990,
+        "proper_cumulative_rank_4": 144,
+        "proper_cumulative_rank_3": 36
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            12,
+            "yxyxY"
+          ],
+          [
+            4,
+            16,
+            "yxyxY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 512,
+        "ambient_cumulative_subgroup": 97,
+        "broad_inequalities": 614,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            13,
+            "yyxYY"
+          ],
+          [
+            4,
+            17,
+            "yyxYY"
+          ],
+          [
+            5,
+            9,
+            "yyxYY"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 436,
+        "ambient_cumulative_subgroup": 137,
+        "broad_inequalities": 618,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            16,
+            "yxxyxY"
+          ],
+          [
+            5,
+            18,
+            "yyyXXYXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 530,
+        "ambient_cumulative_subgroup": 79,
+        "broad_inequalities": 542,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            17,
+            "yxyxYY"
+          ],
+          [
+            5,
+            14,
+            "yyXYXXX"
+          ],
+          [
+            9,
+            10,
+            "yyXYXXX"
+          ]
+        ],
+        "two_copy_vertices": 32,
+        "second_identifications": 496,
+        "ambient_cumulative_subgroup": 218,
+        "broad_inequalities": 886,
+        "proper_cumulative_rank_4": 247,
+        "proper_cumulative_rank_3": 31
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            4,
+            "xxxY"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "ambient_cumulative_subgroup": 67,
+        "broad_inequalities": 352,
+        "proper_cumulative_rank_4": 506,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            7,
+            "xxYXX"
+          ],
+          [
+            6,
+            11,
+            "xxYXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 131,
+        "broad_inequalities": 658,
+        "proper_cumulative_rank_4": 478,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            9,
+            "xxxYY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 567,
+        "proper_cumulative_rank_3": 21,
+        "ambient_cumulative_subgroup": 42,
+        "broad_inequalities": 262
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            10,
+            "xxYXXX"
+          ],
+          [
+            6,
+            14,
+            "xxYXXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 37,
+        "broad_inequalities": 184,
+        "proper_cumulative_rank_4": 572,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            16,
+            "xxxxyxY"
+          ],
+          [
+            6,
+            12,
+            "xxxxyxY"
+          ],
+          [
+            7,
+            18,
+            "xxyyXXYXX"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "ambient_cumulative_subgroup": 128,
+        "broad_inequalities": 458,
+        "proper_cumulative_rank_4": 445,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            17,
+            "xxxyxYY"
+          ],
+          [
+            6,
+            13,
+            "xxxyxYY"
+          ],
+          [
+            7,
+            14,
+            "xxyXYXXX"
+          ]
+        ],
+        "two_copy_vertices": 32,
+        "second_identifications": 496,
+        "ambient_cumulative_subgroup": 218,
+        "broad_inequalities": 886,
+        "proper_cumulative_rank_4": 247,
+        "proper_cumulative_rank_3": 31
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            18,
+            "xxyXXYXX"
+          ],
+          [
+            7,
+            15,
+            "xxyXXYXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 494,
+        "ambient_cumulative_subgroup": 109,
+        "broad_inequalities": 512,
+        "proper_cumulative_rank_3": 27
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            5,
+            "yXYY"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 428,
+        "ambient_cumulative_subgroup": 140,
+        "broad_inequalities": 694,
+        "proper_cumulative_rank_3": 27
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            6,
+            "yXXXX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "ambient_cumulative_subgroup": 84,
+        "broad_inequalities": 560,
+        "proper_cumulative_rank_4": 562,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            8,
+            "yXyxY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 580,
+        "ambient_cumulative_subgroup": 66,
+        "broad_inequalities": 352,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            13,
+            "yXyxYY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 596,
+        "ambient_cumulative_subgroup": 50,
+        "broad_inequalities": 258,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            14,
+            "yXXYXXX"
+          ],
+          [
+            8,
+            17,
+            "yXYxyxYY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 543,
+        "ambient_cumulative_subgroup": 66,
+        "broad_inequalities": 362,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            15,
+            "yXXXYXX"
+          ],
+          [
+            8,
+            18,
+            "yXXXYXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 504,
+        "ambient_cumulative_subgroup": 105,
+        "broad_inequalities": 534,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            18,
+            "yXyXXYXX"
+          ],
+          [
+            8,
+            16,
+            "yXYxxyxY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 502,
+        "ambient_cumulative_subgroup": 101,
+        "broad_inequalities": 366,
+        "proper_cumulative_rank_3": 27
+      },
+      {
+        "first_representatives": [
+          [
+            5,
+            6,
+            "yyXXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 567,
+        "ambient_cumulative_subgroup": 42,
+        "broad_inequalities": 262,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            5,
+            8,
+            "yyyxY"
+          ],
+          [
+            9,
+            12,
+            "yyyxY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 575,
+        "ambient_cumulative_subgroup": 34,
+        "broad_inequalities": 234,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            5,
+            11,
+            "yyXYXX"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "ambient_cumulative_subgroup": 140,
+        "broad_inequalities": 542,
+        "proper_cumulative_rank_4": 398,
+        "proper_cumulative_rank_3": 23
+      },
+      {
+        "first_representatives": [
+          [
+            5,
+            12,
+            "yyxyxY"
+          ],
+          [
+            9,
+            16,
+            "yyxyxY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 533,
+        "ambient_cumulative_subgroup": 66,
+        "broad_inequalities": 460,
+        "proper_cumulative_rank_3": 31
+      },
+      {
+        "first_representatives": [
+          [
+            5,
+            13,
+            "yyyxYY"
+          ],
+          [
+            9,
+            17,
+            "yyyxYY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 530,
+        "ambient_cumulative_subgroup": 79,
+        "broad_inequalities": 346,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            5,
+            16,
+            "yyxxyxY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 560,
+        "ambient_cumulative_subgroup": 86,
+        "broad_inequalities": 602,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            5,
+            17,
+            "yyxyxYY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 556,
+        "ambient_cumulative_subgroup": 90,
+        "broad_inequalities": 576,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            6,
+            7,
+            "xxxYXX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "ambient_cumulative_subgroup": 34,
+        "broad_inequalities": 156,
+        "proper_cumulative_rank_4": 612,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            6,
+            9,
+            "xxxxYY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 646,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            6,
+            10,
+            "xxxYXXX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "ambient_cumulative_subgroup": 40,
+        "broad_inequalities": 250,
+        "proper_cumulative_rank_4": 606,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            6,
+            16,
+            "xxxxxyxY"
+          ],
+          [
+            10,
+            18,
+            "xxxyyXXYXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 112,
+        "broad_inequalities": 476,
+        "proper_cumulative_rank_4": 497,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            6,
+            17,
+            "xxxxyxYY"
+          ],
+          [
+            10,
+            14,
+            "xxxyXYXXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 99,
+        "broad_inequalities": 484,
+        "proper_cumulative_rank_4": 510,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            6,
+            18,
+            "xxxyXXYXX"
+          ],
+          [
+            10,
+            15,
+            "xxxyXXYXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 587,
+        "proper_cumulative_rank_3": 21,
+        "ambient_cumulative_subgroup": 22,
+        "broad_inequalities": 32
+      },
+      {
+        "first_representatives": [
+          [
+            7,
+            8,
+            "xxyyxY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 646,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            7,
+            11,
+            "xxyXYXX"
+          ],
+          [
+            11,
+            15,
+            "xxyXYXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 196,
+        "broad_inequalities": 900,
+        "proper_cumulative_rank_4": 408,
+        "proper_cumulative_rank_3": 26
+      },
+      {
+        "first_representatives": [
+          [
+            7,
+            12,
+            "xxyxyxY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 559,
+        "ambient_cumulative_subgroup": 50,
+        "broad_inequalities": 332,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            7,
+            13,
+            "xxyyxYY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 646,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            7,
+            16,
+            "xxyxxyxY"
+          ],
+          [
+            11,
+            12,
+            "xxyxxyxY"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 543,
+        "proper_cumulative_rank_3": 22,
+        "ambient_cumulative_subgroup": 30,
+        "broad_inequalities": 100
+      },
+      {
+        "first_representatives": [
+          [
+            7,
+            17,
+            "xxyxyxYY"
+          ],
+          [
+            11,
+            13,
+            "xxyxyxYY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 106,
+        "broad_inequalities": 524,
+        "proper_cumulative_rank_4": 503,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            8,
+            9,
+            "yXYxYY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 602,
+        "ambient_cumulative_subgroup": 44,
+        "broad_inequalities": 144,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            8,
+            10,
+            "yXYYXXX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 646,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            8,
+            11,
+            "yXYXYXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 559,
+        "ambient_cumulative_subgroup": 50,
+        "broad_inequalities": 332,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            8,
+            12,
+            "yXYxyxY"
+          ],
+          [
+            12,
+            16,
+            "yXYxyxY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 484,
+        "ambient_cumulative_subgroup": 120,
+        "broad_inequalities": 610,
+        "proper_cumulative_rank_3": 26
+      },
+      {
+        "first_representatives": [
+          [
+            8,
+            14,
+            "yXYXYXXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 609,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            8,
+            15,
+            "yXYXXYXX"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 543,
+        "proper_cumulative_rank_3": 22,
+        "ambient_cumulative_subgroup": 30,
+        "broad_inequalities": 100
+      },
+      {
+        "first_representatives": [
+          [
+            9,
+            13,
+            "yyXyxYY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 566,
+        "ambient_cumulative_subgroup": 80,
+        "broad_inequalities": 406,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            9,
+            14,
+            "yyXXYXXX"
+          ],
+          [
+            13,
+            17,
+            "yyXYxyxYY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 151,
+        "broad_inequalities": 646,
+        "proper_cumulative_rank_4": 458,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            9,
+            15,
+            "yyXXXYXX"
+          ],
+          [
+            13,
+            18,
+            "yyXXXYXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 563,
+        "ambient_cumulative_subgroup": 46,
+        "broad_inequalities": 252,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            9,
+            18,
+            "yyXyXXYXX"
+          ],
+          [
+            13,
+            16,
+            "yyXYxxyxY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 545,
+        "proper_cumulative_rank_3": 85
+      },
+      {
+        "first_representatives": [
+          [
+            10,
+            11,
+            "xxxyXYXX"
+          ],
+          [
+            14,
+            15,
+            "xxxyXYXX"
+          ],
+          [
+            17,
+            18,
+            "yyXYXyXXYXX"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "ambient_cumulative_subgroup": 93,
+        "broad_inequalities": 542,
+        "proper_cumulative_rank_4": 480,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            10,
+            12,
+            "xxxyxyxY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 609,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            10,
+            13,
+            "xxxyyxYY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 626,
+        "proper_cumulative_rank_3": 20,
+        "ambient_cumulative_subgroup": 20,
+        "broad_inequalities": 132
+      },
+      {
+        "first_representatives": [
+          [
+            10,
+            16,
+            "xxxyxxyxY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 591,
+        "proper_cumulative_rank_3": 21,
+        "ambient_cumulative_subgroup": 18,
+        "broad_inequalities": 56
+      },
+      {
+        "first_representatives": [
+          [
+            10,
+            17,
+            "xxxyxyxYY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 45,
+        "broad_inequalities": 144,
+        "proper_cumulative_rank_4": 564,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            11,
+            16,
+            "xxyxxxyxY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 533,
+        "ambient_cumulative_subgroup": 76,
+        "broad_inequalities": 616,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            11,
+            17,
+            "xxyxxyxYY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 543,
+        "ambient_cumulative_subgroup": 66,
+        "broad_inequalities": 448,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            11,
+            18,
+            "xxyxyXXYXX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 552,
+        "proper_cumulative_rank_3": 56,
+        "ambient_cumulative_subgroup": 58,
+        "broad_inequalities": 174
+      },
+      {
+        "first_representatives": [
+          [
+            12,
+            13,
+            "yXYXyxYY"
+          ],
+          [
+            16,
+            17,
+            "yXYXyxYY"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 507,
+        "ambient_cumulative_subgroup": 66,
+        "broad_inequalities": 260,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            12,
+            14,
+            "yXYXXYXXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 591,
+        "proper_cumulative_rank_3": 21,
+        "ambient_cumulative_subgroup": 18,
+        "broad_inequalities": 56
+      },
+      {
+        "first_representatives": [
+          [
+            12,
+            15,
+            "yXYXXXYXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 533,
+        "ambient_cumulative_subgroup": 76,
+        "broad_inequalities": 616,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            12,
+            18,
+            "yXYXyXXYXX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 620,
+        "proper_cumulative_rank_3": 20,
+        "ambient_cumulative_subgroup": 26,
+        "broad_inequalities": 148
+      },
+      {
+        "first_representatives": [
+          [
+            13,
+            14,
+            "yyXYXYXXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 45,
+        "broad_inequalities": 144,
+        "proper_cumulative_rank_4": 564,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            13,
+            15,
+            "yyXYXXYXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 543,
+        "ambient_cumulative_subgroup": 66,
+        "broad_inequalities": 448,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            14,
+            16,
+            "xxxyxxxyxY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 646,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            14,
+            17,
+            "xxxyxxyxYY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 548,
+        "ambient_cumulative_subgroup": 98,
+        "broad_inequalities": 524,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            14,
+            18,
+            "xxxyxyXXYXX"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 507,
+        "ambient_cumulative_subgroup": 66,
+        "broad_inequalities": 260,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            15,
+            16,
+            "xxyxxxxyxY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 604,
+        "ambient_cumulative_subgroup": 36,
+        "broad_inequalities": 308,
+        "proper_cumulative_rank_3": 26
+      },
+      {
+        "first_representatives": [
+          [
+            15,
+            17,
+            "xxyxxxyxYY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 646,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            15,
+            18,
+            "xxyxxyXXYXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 484,
+        "ambient_cumulative_subgroup": 124,
+        "broad_inequalities": 684,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            16,
+            18,
+            "yXYXXyXXYXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 484,
+        "ambient_cumulative_subgroup": 124,
+        "broad_inequalities": 684,
+        "proper_cumulative_rank_3": 22
+      }
+    ],
+    "case_digest": "171654ab0e365f256dbaeffe02d960c6aaaeba2cfff50d652895c0c1a5cebf37"
+  },
+  {
+    "source": [
+      "xxxyyxyyXYY",
+      "xxyXYYYYXXyy"
+    ],
+    "source_absence": {
+      "status": "PASS",
+      "complete_absence_certificate": true,
+      "vertices": 20,
+      "closed_map_pair_states_checked": 96,
+      "ordinary_AC_goal_solved": false
+    },
+    "first_identifications": {
+      "3": 190
+    },
+    "distinct_first_graph_pairs": 99,
+    "second_identifications": 68053,
+    "proper_cumulative_rank_3": 2731,
+    "ambient_cumulative_subgroup": 8300,
+    "broad_inequalities": 69838,
+    "proper_cumulative_rank_4": 57022,
+    "proper_subgroups_by_method": {
+      "free_quotient": 2006,
+      "integer_characters": 1
+    },
+    "proper_exceptions": [
+      {
+        "method": "integer_characters",
+        "voltage": {
+          "graph": [
+            0,
+            0,
+            1,
+            2,
+            -1,
+            3,
+            4,
+            0,
+            -1,
+            -1,
+            0,
+            5,
+            1,
+            -1,
+            -1,
+            6,
+            7,
+            -1,
+            -1,
+            1,
+            8,
+            -1,
+            2,
+            -1,
+            -1,
+            -1,
+            3,
+            9,
+            -1,
+            4,
+            7,
+            7,
+            10,
+            5,
+            -1,
+            -1,
+            -1,
+            -1,
+            6,
+            11,
+            -1,
+            8,
+            11,
+            -1,
+            -1,
+            -1,
+            9,
+            10
+          ],
+          "chord_basis": [
+            "x",
+            "yyxyXYY",
+            "YYxxyyyyxY"
+          ],
+          "source_in_chords": [
+            "aaabb",
+            "aaC"
+          ],
+          "integer_character_basis": [
+            [
+              2,
+              -3,
+              4
+            ]
+          ],
+          "excluded_languages": 8,
+          "tests": [
+            {
+              "character": [
+                -2,
+                3,
+                -4
+              ],
+              "inequalities_checked": 1,
+              "alphabet": [
+                0,
+                2
+              ],
+              "forbidden_double": 0,
+              "status": "PASS",
+              "cyclic_components": [
+                {
+                  "states": [
+                    15
+                  ],
+                  "strict_cycle_voltage_sign": 1,
+                  "potential": [
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "character": [
+                -2,
+                3,
+                -4
+              ],
+              "inequalities_checked": 1,
+              "alphabet": [
+                0,
+                2
+              ],
+              "forbidden_double": 1,
+              "status": "PASS",
+              "cyclic_components": [
+                {
+                  "states": [
+                    0
+                  ],
+                  "strict_cycle_voltage_sign": -1,
+                  "potential": [
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "character": [
+                -2,
+                3,
+                -4
+              ],
+              "inequalities_checked": 1,
+              "alphabet": [
+                0,
+                3
+              ],
+              "forbidden_double": 0,
+              "status": "PASS",
+              "cyclic_components": [
+                {
+                  "states": [
+                    15
+                  ],
+                  "strict_cycle_voltage_sign": -1,
+                  "potential": [
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "character": [
+                -2,
+                3,
+                -4
+              ],
+              "inequalities_checked": 1,
+              "alphabet": [
+                0,
+                3
+              ],
+              "forbidden_double": 1,
+              "status": "PASS",
+              "cyclic_components": [
+                {
+                  "states": [
+                    0
+                  ],
+                  "strict_cycle_voltage_sign": -1,
+                  "potential": [
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "character": [
+                -2,
+                3,
+                -4
+              ],
+              "inequalities_checked": 1,
+              "alphabet": [
+                1,
+                2
+              ],
+              "forbidden_double": 0,
+              "status": "PASS",
+              "cyclic_components": [
+                {
+                  "states": [
+                    15
+                  ],
+                  "strict_cycle_voltage_sign": 1,
+                  "potential": [
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "character": [
+                -2,
+                3,
+                -4
+              ],
+              "inequalities_checked": 1,
+              "alphabet": [
+                1,
+                2
+              ],
+              "forbidden_double": 1,
+              "status": "PASS",
+              "cyclic_components": [
+                {
+                  "states": [
+                    0
+                  ],
+                  "strict_cycle_voltage_sign": 1,
+                  "potential": [
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "character": [
+                -2,
+                3,
+                -4
+              ],
+              "inequalities_checked": 1,
+              "alphabet": [
+                1,
+                3
+              ],
+              "forbidden_double": 0,
+              "status": "PASS",
+              "cyclic_components": [
+                {
+                  "states": [
+                    15
+                  ],
+                  "strict_cycle_voltage_sign": -1,
+                  "potential": [
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "character": [
+                -2,
+                3,
+                -4
+              ],
+              "inequalities_checked": 1,
+              "alphabet": [
+                1,
+                3
+              ],
+              "forbidden_double": 1,
+              "status": "PASS",
+              "cyclic_components": [
+                {
+                  "states": [
+                    0
+                  ],
+                  "strict_cycle_voltage_sign": 1,
+                  "potential": [
+                    0
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "ambient_cumulative_failures": [],
+    "first_graph_pairs": [
+      {
+        "first_representatives": [
+          [
+            0,
+            1,
+            "X"
+          ],
+          [
+            1,
+            4,
+            "X"
+          ],
+          [
+            4,
+            7,
+            "X"
+          ],
+          [
+            8,
+            11,
+            "X"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_3": 49,
+        "ambient_cumulative_subgroup": 307,
+        "broad_inequalities": 2146,
+        "proper_cumulative_rank_4": 274
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            2,
+            "Y"
+          ],
+          [
+            2,
+            5,
+            "Y"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 340,
+        "broad_inequalities": 1752,
+        "proper_cumulative_rank_3": 50,
+        "proper_cumulative_rank_4": 240
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            3,
+            "y"
+          ],
+          [
+            3,
+            6,
+            "y"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 340,
+        "broad_inequalities": 1752,
+        "proper_cumulative_rank_3": 50,
+        "proper_cumulative_rank_4": 240
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            4,
+            "XX"
+          ],
+          [
+            1,
+            7,
+            "XX"
+          ],
+          [
+            2,
+            8,
+            "XX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_3": 54,
+        "ambient_cumulative_subgroup": 127,
+        "broad_inequalities": 860,
+        "proper_cumulative_rank_4": 485
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            5,
+            "YY"
+          ],
+          [
+            1,
+            9,
+            "YY"
+          ]
+        ],
+        "two_copy_vertices": 33,
+        "second_identifications": 528,
+        "ambient_cumulative_subgroup": 208,
+        "broad_inequalities": 1712,
+        "proper_cumulative_rank_3": 41,
+        "proper_cumulative_rank_4": 279
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            6,
+            "yy"
+          ],
+          [
+            1,
+            10,
+            "yy"
+          ],
+          [
+            2,
+            3,
+            "yy"
+          ],
+          [
+            4,
+            14,
+            "yy"
+          ],
+          [
+            8,
+            18,
+            "yy"
+          ]
+        ],
+        "two_copy_vertices": 33,
+        "second_identifications": 528,
+        "ambient_cumulative_subgroup": 208,
+        "broad_inequalities": 1712,
+        "proper_cumulative_rank_3": 41,
+        "proper_cumulative_rank_4": 279
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            7,
+            "XXX"
+          ],
+          [
+            2,
+            11,
+            "XXX"
+          ],
+          [
+            5,
+            15,
+            "XXX"
+          ],
+          [
+            9,
+            17,
+            "yyxyyXYY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_3": 52,
+        "proper_cumulative_rank_4": 538,
+        "ambient_cumulative_subgroup": 40,
+        "broad_inequalities": 344
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            8,
+            "YXX"
+          ],
+          [
+            3,
+            4,
+            "YXX"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "ambient_cumulative_subgroup": 81,
+        "broad_inequalities": 662,
+        "proper_cumulative_rank_4": 600,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            9,
+            "XYY"
+          ],
+          [
+            3,
+            13,
+            "XYY"
+          ],
+          [
+            6,
+            17,
+            "XYY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "ambient_cumulative_subgroup": 141,
+        "broad_inequalities": 1524,
+        "proper_cumulative_rank_4": 502,
+        "proper_cumulative_rank_3": 23
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            10,
+            "Xyy"
+          ],
+          [
+            1,
+            14,
+            "Xyy"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "ambient_cumulative_subgroup": 133,
+        "broad_inequalities": 1370,
+        "proper_cumulative_rank_4": 548,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            11,
+            "YXXX"
+          ],
+          [
+            2,
+            15,
+            "YXXX"
+          ],
+          [
+            3,
+            7,
+            "YXXX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "ambient_cumulative_subgroup": 22,
+        "broad_inequalities": 220,
+        "proper_cumulative_rank_4": 621,
+        "proper_cumulative_rank_3": 23
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            12,
+            "xYXX"
+          ],
+          [
+            1,
+            8,
+            "xYXX"
+          ],
+          [
+            3,
+            16,
+            "xYXX"
+          ],
+          [
+            6,
+            19,
+            "xYXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 138,
+        "broad_inequalities": 1106,
+        "proper_cumulative_rank_4": 468,
+        "proper_cumulative_rank_3": 24
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            13,
+            "yXYY"
+          ],
+          [
+            2,
+            9,
+            "yXYY"
+          ],
+          [
+            3,
+            17,
+            "yXYY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "ambient_cumulative_subgroup": 48,
+        "broad_inequalities": 422,
+        "proper_cumulative_rank_4": 595,
+        "proper_cumulative_rank_3": 23
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            14,
+            "XXyy"
+          ],
+          [
+            2,
+            18,
+            "XXyy"
+          ],
+          [
+            5,
+            19,
+            "yyyyxYXX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "ambient_cumulative_subgroup": 131,
+        "broad_inequalities": 1146,
+        "proper_cumulative_rank_4": 512,
+        "proper_cumulative_rank_3": 23
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            15,
+            "YYXXX"
+          ],
+          [
+            1,
+            17,
+            "xyyXYY"
+          ],
+          [
+            3,
+            11,
+            "YYXXX"
+          ],
+          [
+            6,
+            7,
+            "YYXXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 118,
+        "broad_inequalities": 980,
+        "proper_cumulative_rank_4": 488,
+        "proper_cumulative_rank_3": 24
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            16,
+            "yxYXX"
+          ],
+          [
+            2,
+            12,
+            "yxYXX"
+          ],
+          [
+            3,
+            19,
+            "yxYXX"
+          ],
+          [
+            6,
+            18,
+            "YYYXXyy"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 545,
+        "ambient_cumulative_subgroup": 61,
+        "broad_inequalities": 668,
+        "proper_cumulative_rank_3": 24
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            17,
+            "yyXYY"
+          ],
+          [
+            2,
+            13,
+            "yyXYY"
+          ],
+          [
+            5,
+            9,
+            "yyXYY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "ambient_cumulative_subgroup": 133,
+        "broad_inequalities": 1432,
+        "proper_cumulative_rank_4": 510,
+        "proper_cumulative_rank_3": 23
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            18,
+            "YXXyy"
+          ],
+          [
+            2,
+            19,
+            "yyyxYXX"
+          ],
+          [
+            3,
+            14,
+            "YXXyy"
+          ],
+          [
+            5,
+            16,
+            "yyyxYXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 549,
+        "ambient_cumulative_subgroup": 57,
+        "broad_inequalities": 576,
+        "proper_cumulative_rank_3": 24
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            19,
+            "yyxYXX"
+          ],
+          [
+            2,
+            16,
+            "yyxYXX"
+          ],
+          [
+            3,
+            18,
+            "YYXXyy"
+          ],
+          [
+            5,
+            12,
+            "yyxYXX"
+          ],
+          [
+            6,
+            14,
+            "YYXXyy"
+          ]
+        ],
+        "two_copy_vertices": 33,
+        "second_identifications": 528,
+        "ambient_cumulative_subgroup": 185,
+        "broad_inequalities": 1338,
+        "proper_cumulative_rank_4": 310,
+        "proper_cumulative_rank_3": 33
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            2,
+            "xY"
+          ]
+        ],
+        "two_copy_vertices": 39,
+        "second_identifications": 741,
+        "ambient_cumulative_subgroup": 58,
+        "broad_inequalities": 592,
+        "proper_cumulative_rank_4": 662,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            3,
+            "xy"
+          ]
+        ],
+        "two_copy_vertices": 39,
+        "second_identifications": 741,
+        "ambient_cumulative_subgroup": 54,
+        "broad_inequalities": 514,
+        "proper_cumulative_rank_4": 666,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            5,
+            "xYY"
+          ],
+          [
+            4,
+            9,
+            "xYY"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "ambient_cumulative_subgroup": 75,
+        "broad_inequalities": 904,
+        "proper_cumulative_rank_4": 592,
+        "proper_cumulative_rank_3": 36
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            6,
+            "xyy"
+          ],
+          [
+            4,
+            10,
+            "xyy"
+          ],
+          [
+            7,
+            14,
+            "xyy"
+          ],
+          [
+            11,
+            18,
+            "xyy"
+          ],
+          [
+            15,
+            19,
+            "xxxyyyyxYXX"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "ambient_cumulative_subgroup": 129,
+        "broad_inequalities": 1260,
+        "proper_cumulative_rank_4": 441,
+        "proper_cumulative_rank_3": 25
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            11,
+            "xYXXX"
+          ]
+        ],
+        "two_copy_vertices": 39,
+        "second_identifications": 741,
+        "ambient_cumulative_subgroup": 46,
+        "broad_inequalities": 454,
+        "proper_cumulative_rank_4": 674,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            12,
+            "xxYXX"
+          ],
+          [
+            4,
+            8,
+            "xxYXX"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "ambient_cumulative_subgroup": 169,
+        "broad_inequalities": 1438,
+        "proper_cumulative_rank_4": 512,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            13,
+            "xyXYY"
+          ]
+        ],
+        "two_copy_vertices": 39,
+        "second_identifications": 741,
+        "ambient_cumulative_subgroup": 60,
+        "broad_inequalities": 626,
+        "proper_cumulative_rank_4": 660,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            15,
+            "xYYXXX"
+          ],
+          [
+            4,
+            17,
+            "xxyyXYY"
+          ],
+          [
+            8,
+            13,
+            "xxyyXYY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "ambient_cumulative_subgroup": 91,
+        "broad_inequalities": 832,
+        "proper_cumulative_rank_4": 552,
+        "proper_cumulative_rank_3": 23
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            16,
+            "xyxYXX"
+          ]
+        ],
+        "two_copy_vertices": 39,
+        "second_identifications": 741,
+        "proper_cumulative_rank_4": 720,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            18,
+            "xYXXyy"
+          ]
+        ],
+        "two_copy_vertices": 39,
+        "second_identifications": 741,
+        "proper_cumulative_rank_4": 654,
+        "ambient_cumulative_subgroup": 66,
+        "broad_inequalities": 504,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            19,
+            "xyyxYXX"
+          ]
+        ],
+        "two_copy_vertices": 39,
+        "second_identifications": 741,
+        "ambient_cumulative_subgroup": 116,
+        "broad_inequalities": 1014,
+        "proper_cumulative_rank_4": 604,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            4,
+            "yXX"
+          ],
+          [
+            5,
+            8,
+            "yXX"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "ambient_cumulative_subgroup": 57,
+        "broad_inequalities": 544,
+        "proper_cumulative_rank_4": 624,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            6,
+            "yyy"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "proper_cumulative_rank_4": 640,
+        "proper_cumulative_rank_3": 63
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            7,
+            "yXXX"
+          ],
+          [
+            5,
+            11,
+            "yXXX"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "ambient_cumulative_subgroup": 20,
+        "broad_inequalities": 200,
+        "proper_cumulative_rank_4": 661,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            10,
+            "yXyy"
+          ]
+        ],
+        "two_copy_vertices": 39,
+        "second_identifications": 741,
+        "proper_cumulative_rank_4": 692,
+        "ambient_cumulative_subgroup": 28,
+        "broad_inequalities": 296,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            14,
+            "yXXyy"
+          ],
+          [
+            5,
+            18,
+            "yXXyy"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "proper_cumulative_rank_4": 644,
+        "ambient_cumulative_subgroup": 37,
+        "broad_inequalities": 148,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            17,
+            "yyyXYY"
+          ],
+          [
+            5,
+            13,
+            "yyyXYY"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "ambient_cumulative_subgroup": 45,
+        "broad_inequalities": 424,
+        "proper_cumulative_rank_4": 636,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            5,
+            "YYY"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "proper_cumulative_rank_4": 640,
+        "proper_cumulative_rank_3": 63
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            8,
+            "YYXX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "ambient_cumulative_subgroup": 136,
+        "broad_inequalities": 1190,
+        "proper_cumulative_rank_4": 507,
+        "proper_cumulative_rank_3": 23
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            9,
+            "YXYY"
+          ],
+          [
+            6,
+            13,
+            "YXYY"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "ambient_cumulative_subgroup": 95,
+        "broad_inequalities": 862,
+        "proper_cumulative_rank_4": 586,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            10,
+            "YXyy"
+          ]
+        ],
+        "two_copy_vertices": 39,
+        "second_identifications": 741,
+        "proper_cumulative_rank_4": 678,
+        "ambient_cumulative_subgroup": 42,
+        "broad_inequalities": 416,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            12,
+            "YxYXX"
+          ],
+          [
+            6,
+            16,
+            "YxYXX"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "proper_cumulative_rank_4": 636,
+        "ambient_cumulative_subgroup": 45,
+        "broad_inequalities": 268,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            15,
+            "YYYXXX"
+          ],
+          [
+            6,
+            11,
+            "YYYXXX"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "proper_cumulative_rank_4": 681,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            5,
+            "xxYY"
+          ],
+          [
+            7,
+            9,
+            "xxYY"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "ambient_cumulative_subgroup": 157,
+        "broad_inequalities": 1652,
+        "proper_cumulative_rank_4": 524,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            6,
+            "xxyy"
+          ],
+          [
+            7,
+            10,
+            "xxyy"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "ambient_cumulative_subgroup": 136,
+        "broad_inequalities": 1190,
+        "proper_cumulative_rank_4": 507,
+        "proper_cumulative_rank_3": 23
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            11,
+            "xxYXXX"
+          ],
+          [
+            8,
+            15,
+            "xxYXXX"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "ambient_cumulative_subgroup": 73,
+        "broad_inequalities": 818,
+        "proper_cumulative_rank_4": 608,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            12,
+            "xxxYXX"
+          ],
+          [
+            7,
+            8,
+            "xxxYXX"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "ambient_cumulative_subgroup": 47,
+        "broad_inequalities": 386,
+        "proper_cumulative_rank_4": 634,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            13,
+            "xxyXYY"
+          ],
+          [
+            8,
+            9,
+            "xxyXYY"
+          ]
+        ],
+        "two_copy_vertices": 33,
+        "second_identifications": 528,
+        "ambient_cumulative_subgroup": 185,
+        "broad_inequalities": 1338,
+        "proper_cumulative_rank_4": 310,
+        "proper_cumulative_rank_3": 33
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            15,
+            "xxYYXXX"
+          ],
+          [
+            7,
+            17,
+            "xxxyyXYY"
+          ],
+          [
+            11,
+            13,
+            "xxxyyXYY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 199,
+        "broad_inequalities": 1666,
+        "proper_cumulative_rank_4": 402,
+        "proper_cumulative_rank_3": 29
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            16,
+            "xxyxYXX"
+          ],
+          [
+            8,
+            12,
+            "xxyxYXX"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "proper_cumulative_rank_4": 614,
+        "ambient_cumulative_subgroup": 67,
+        "broad_inequalities": 506,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            18,
+            "xxYXXyy"
+          ],
+          [
+            8,
+            19,
+            "xxyyyxYXX"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "proper_cumulative_rank_4": 594,
+        "ambient_cumulative_subgroup": 87,
+        "broad_inequalities": 914,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            19,
+            "xxyyxYXX"
+          ],
+          [
+            8,
+            16,
+            "xxyyxYXX"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "ambient_cumulative_subgroup": 65,
+        "broad_inequalities": 336,
+        "proper_cumulative_rank_4": 616,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            5,
+            6,
+            "yyyy"
+          ],
+          [
+            9,
+            10,
+            "yyyy"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "proper_cumulative_rank_4": 637,
+        "proper_cumulative_rank_3": 66
+      },
+      {
+        "first_representatives": [
+          [
+            5,
+            7,
+            "yyXXX"
+          ]
+        ],
+        "two_copy_vertices": 39,
+        "second_identifications": 741,
+        "ambient_cumulative_subgroup": 50,
+        "broad_inequalities": 360,
+        "proper_cumulative_rank_4": 670,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            5,
+            10,
+            "yyXyy"
+          ],
+          [
+            9,
+            14,
+            "yyXyy"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "proper_cumulative_rank_4": 609,
+        "ambient_cumulative_subgroup": 72,
+        "broad_inequalities": 990,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            5,
+            14,
+            "yyXXyy"
+          ]
+        ],
+        "two_copy_vertices": 39,
+        "second_identifications": 741,
+        "proper_cumulative_rank_4": 630,
+        "ambient_cumulative_subgroup": 90,
+        "broad_inequalities": 608,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            5,
+            17,
+            "yyyyXYY"
+          ]
+        ],
+        "two_copy_vertices": 39,
+        "second_identifications": 741,
+        "ambient_cumulative_subgroup": 116,
+        "broad_inequalities": 1314,
+        "proper_cumulative_rank_4": 604,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            6,
+            8,
+            "YYYXX"
+          ]
+        ],
+        "two_copy_vertices": 39,
+        "second_identifications": 741,
+        "proper_cumulative_rank_4": 688,
+        "ambient_cumulative_subgroup": 32,
+        "broad_inequalities": 140,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            6,
+            9,
+            "YYXYY"
+          ]
+        ],
+        "two_copy_vertices": 39,
+        "second_identifications": 741,
+        "ambient_cumulative_subgroup": 114,
+        "broad_inequalities": 1590,
+        "proper_cumulative_rank_4": 606,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            6,
+            10,
+            "YYXyy"
+          ],
+          [
+            10,
+            14,
+            "YYXyy"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "ambient_cumulative_subgroup": 252,
+        "broad_inequalities": 1406,
+        "proper_cumulative_rank_4": 404,
+        "proper_cumulative_rank_3": 47
+      },
+      {
+        "first_representatives": [
+          [
+            6,
+            12,
+            "YYxYXX"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "proper_cumulative_rank_4": 593,
+        "ambient_cumulative_subgroup": 88,
+        "broad_inequalities": 600,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            6,
+            15,
+            "YYYYXXX"
+          ],
+          [
+            10,
+            17,
+            "YYxyyXYY"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "proper_cumulative_rank_4": 681,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            7,
+            11,
+            "xxxYXXX"
+          ],
+          [
+            11,
+            15,
+            "xxxYXXX"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "ambient_cumulative_subgroup": 56,
+        "broad_inequalities": 522,
+        "proper_cumulative_rank_4": 624,
+        "proper_cumulative_rank_3": 23
+      },
+      {
+        "first_representatives": [
+          [
+            7,
+            12,
+            "xxxxYXX"
+          ]
+        ],
+        "two_copy_vertices": 39,
+        "second_identifications": 741,
+        "ambient_cumulative_subgroup": 46,
+        "broad_inequalities": 370,
+        "proper_cumulative_rank_4": 674,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            7,
+            13,
+            "xxxyXYY"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "ambient_cumulative_subgroup": 77,
+        "broad_inequalities": 994,
+        "proper_cumulative_rank_4": 604,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            7,
+            15,
+            "xxxYYXXX"
+          ]
+        ],
+        "two_copy_vertices": 39,
+        "second_identifications": 741,
+        "ambient_cumulative_subgroup": 38,
+        "broad_inequalities": 408,
+        "proper_cumulative_rank_4": 676,
+        "proper_cumulative_rank_3": 27
+      },
+      {
+        "first_representatives": [
+          [
+            7,
+            16,
+            "xxxyxYXX"
+          ],
+          [
+            11,
+            12,
+            "xxxyxYXX"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "proper_cumulative_rank_4": 681,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            7,
+            18,
+            "xxxYXXyy"
+          ],
+          [
+            11,
+            19,
+            "xxxyyyxYXX"
+          ],
+          [
+            15,
+            16,
+            "xxxyyyxYXX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 643,
+        "proper_cumulative_rank_3": 23
+      },
+      {
+        "first_representatives": [
+          [
+            7,
+            19,
+            "xxxyyxYXX"
+          ],
+          [
+            11,
+            16,
+            "xxxyyxYXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 29,
+        "broad_inequalities": 180,
+        "proper_cumulative_rank_4": 577,
+        "proper_cumulative_rank_3": 24
+      },
+      {
+        "first_representatives": [
+          [
+            8,
+            10,
+            "xxyXyy"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "proper_cumulative_rank_4": 593,
+        "ambient_cumulative_subgroup": 88,
+        "broad_inequalities": 600,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            8,
+            14,
+            "xxyXXyy"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "proper_cumulative_rank_4": 597,
+        "ambient_cumulative_subgroup": 84,
+        "broad_inequalities": 984,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            8,
+            17,
+            "xxyyyXYY"
+          ],
+          [
+            12,
+            15,
+            "xxyXYYXXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 29,
+        "broad_inequalities": 180,
+        "proper_cumulative_rank_4": 577,
+        "proper_cumulative_rank_3": 24
+      },
+      {
+        "first_representatives": [
+          [
+            9,
+            11,
+            "yyxYXXX"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "ambient_cumulative_subgroup": 77,
+        "broad_inequalities": 994,
+        "proper_cumulative_rank_4": 604,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            9,
+            12,
+            "yyxxYXX"
+          ],
+          [
+            13,
+            16,
+            "yyxxYXX"
+          ],
+          [
+            17,
+            19,
+            "yyxxYXX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 593,
+        "ambient_cumulative_subgroup": 50,
+        "broad_inequalities": 376,
+        "proper_cumulative_rank_3": 23
+      },
+      {
+        "first_representatives": [
+          [
+            9,
+            13,
+            "yyxyXYY"
+          ],
+          [
+            13,
+            17,
+            "yyxyXYY"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "proper_cumulative_rank_3": 63,
+        "proper_cumulative_rank_4": 568,
+        "ambient_cumulative_subgroup": 72,
+        "broad_inequalities": 576
+      },
+      {
+        "first_representatives": [
+          [
+            9,
+            15,
+            "yyxYYXXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 199,
+        "broad_inequalities": 1666,
+        "proper_cumulative_rank_4": 402,
+        "proper_cumulative_rank_3": 29
+      },
+      {
+        "first_representatives": [
+          [
+            9,
+            16,
+            "yyxyxYXX"
+          ],
+          [
+            13,
+            19,
+            "yyxyxYXX"
+          ],
+          [
+            17,
+            18,
+            "yyxYYYXXyy"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 643,
+        "proper_cumulative_rank_3": 23
+      },
+      {
+        "first_representatives": [
+          [
+            9,
+            18,
+            "yyxYXXyy"
+          ],
+          [
+            13,
+            14,
+            "yyxYXXyy"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "proper_cumulative_rank_4": 597,
+        "ambient_cumulative_subgroup": 84,
+        "broad_inequalities": 814,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            9,
+            19,
+            "yyxyyxYXX"
+          ],
+          [
+            13,
+            18,
+            "yyxYYXXyy"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 554,
+        "ambient_cumulative_subgroup": 52,
+        "broad_inequalities": 320,
+        "proper_cumulative_rank_3": 24
+      },
+      {
+        "first_representatives": [
+          [
+            10,
+            11,
+            "YYxYXXX"
+          ]
+        ],
+        "two_copy_vertices": 39,
+        "second_identifications": 741,
+        "proper_cumulative_rank_4": 720,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            10,
+            12,
+            "YYxxYXX"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "proper_cumulative_rank_4": 597,
+        "ambient_cumulative_subgroup": 84,
+        "broad_inequalities": 984,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            10,
+            13,
+            "YYxyXYY"
+          ]
+        ],
+        "two_copy_vertices": 39,
+        "second_identifications": 741,
+        "proper_cumulative_rank_4": 654,
+        "ambient_cumulative_subgroup": 66,
+        "broad_inequalities": 544,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            10,
+            15,
+            "YYxYYXXX"
+          ],
+          [
+            14,
+            17,
+            "YYxxyyXYY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 554,
+        "ambient_cumulative_subgroup": 52,
+        "broad_inequalities": 320,
+        "proper_cumulative_rank_3": 24
+      },
+      {
+        "first_representatives": [
+          [
+            10,
+            16,
+            "YYxyxYXX"
+          ]
+        ],
+        "two_copy_vertices": 39,
+        "second_identifications": 741,
+        "proper_cumulative_rank_4": 696,
+        "proper_cumulative_rank_3": 21,
+        "ambient_cumulative_subgroup": 24,
+        "broad_inequalities": 186
+      },
+      {
+        "first_representatives": [
+          [
+            10,
+            18,
+            "YYxYXXyy"
+          ]
+        ],
+        "two_copy_vertices": 39,
+        "second_identifications": 741,
+        "proper_cumulative_rank_4": 630,
+        "ambient_cumulative_subgroup": 90,
+        "broad_inequalities": 646,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            10,
+            19,
+            "YYxyyxYXX"
+          ]
+        ],
+        "two_copy_vertices": 39,
+        "second_identifications": 741,
+        "proper_cumulative_rank_4": 582,
+        "ambient_cumulative_subgroup": 138,
+        "broad_inequalities": 1238,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            11,
+            14,
+            "xxxyXXyy"
+          ],
+          [
+            15,
+            18,
+            "xxxyXXyy"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "proper_cumulative_rank_4": 681,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            11,
+            17,
+            "xxxyyyXYY"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "ambient_cumulative_subgroup": 93,
+        "broad_inequalities": 886,
+        "proper_cumulative_rank_4": 588,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            12,
+            13,
+            "xxyXyXYY"
+          ],
+          [
+            16,
+            17,
+            "xxyXyXYY"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "proper_cumulative_rank_4": 655,
+        "proper_cumulative_rank_3": 22,
+        "ambient_cumulative_subgroup": 26,
+        "broad_inequalities": 72
+      },
+      {
+        "first_representatives": [
+          [
+            12,
+            14,
+            "xxyXXXyy"
+          ]
+        ],
+        "two_copy_vertices": 39,
+        "second_identifications": 741,
+        "proper_cumulative_rank_4": 690,
+        "proper_cumulative_rank_3": 51
+      },
+      {
+        "first_representatives": [
+          [
+            12,
+            16,
+            "xxyXyxYXX"
+          ],
+          [
+            16,
+            19,
+            "xxyXyxYXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 444,
+        "ambient_cumulative_subgroup": 156,
+        "broad_inequalities": 1196,
+        "proper_cumulative_rank_3": 30
+      },
+      {
+        "first_representatives": [
+          [
+            12,
+            17,
+            "xxyXyyXYY"
+          ]
+        ],
+        "two_copy_vertices": 39,
+        "second_identifications": 741,
+        "proper_cumulative_rank_4": 720,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            12,
+            18,
+            "xxyXYXXyy"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "proper_cumulative_rank_4": 660,
+        "proper_cumulative_rank_3": 43
+      },
+      {
+        "first_representatives": [
+          [
+            12,
+            19,
+            "xxyXyyxYXX"
+          ],
+          [
+            16,
+            18,
+            "xxyXYYXXyy"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 552,
+        "ambient_cumulative_subgroup": 78,
+        "broad_inequalities": 590,
+        "proper_cumulative_rank_3": 36
+      },
+      {
+        "first_representatives": [
+          [
+            13,
+            15,
+            "yyxYYYXXX"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "ambient_cumulative_subgroup": 93,
+        "broad_inequalities": 886,
+        "proper_cumulative_rank_4": 588,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            14,
+            15,
+            "YYxxYYXXX"
+          ]
+        ],
+        "two_copy_vertices": 39,
+        "second_identifications": 741,
+        "proper_cumulative_rank_4": 656,
+        "ambient_cumulative_subgroup": 64,
+        "broad_inequalities": 750,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            14,
+            16,
+            "YYxxyxYXX"
+          ]
+        ],
+        "two_copy_vertices": 38,
+        "second_identifications": 703,
+        "proper_cumulative_rank_4": 660,
+        "proper_cumulative_rank_3": 43
+      },
+      {
+        "first_representatives": [
+          [
+            14,
+            18,
+            "YYxxYXXyy"
+          ],
+          [
+            18,
+            19,
+            "YYxxyyyxYXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 444,
+        "ambient_cumulative_subgroup": 156,
+        "broad_inequalities": 1196,
+        "proper_cumulative_rank_3": 30
+      },
+      {
+        "first_representatives": [
+          [
+            14,
+            19,
+            "YYxxyyxYXX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 552,
+        "ambient_cumulative_subgroup": 78,
+        "broad_inequalities": 590,
+        "proper_cumulative_rank_3": 36
+      },
+      {
+        "first_representatives": [
+          [
+            15,
+            17,
+            "xxxyyyyXYY"
+          ]
+        ],
+        "two_copy_vertices": 39,
+        "second_identifications": 741,
+        "ambient_cumulative_subgroup": 104,
+        "broad_inequalities": 748,
+        "proper_cumulative_rank_4": 616,
+        "proper_cumulative_rank_3": 21
+      }
+    ],
+    "case_digest": "f8caf0f6e4dc78c8de8cddb0d688ad5d04175f23249603d650d730c111dac0d8"
+  },
+  {
+    "source": [
+      "xxyxYYXXY",
+      "xyxYXyXYxyxYXY"
+    ],
+    "source_absence": {
+      "status": "PASS",
+      "complete_absence_certificate": true,
+      "vertices": 19,
+      "closed_map_pair_states_checked": 52,
+      "ordinary_AC_goal_solved": false
+    },
+    "first_identifications": {
+      "3": 171
+    },
+    "distinct_first_graph_pairs": 86,
+    "second_identifications": 53428,
+    "proper_cumulative_rank_3": 1915,
+    "ambient_cumulative_subgroup": 6790,
+    "broad_inequalities": 44744,
+    "proper_cumulative_rank_4": 44723,
+    "proper_subgroups_by_method": {
+      "free_quotient": 2004
+    },
+    "proper_exceptions": [],
+    "ambient_cumulative_failures": [],
+    "first_graph_pairs": [
+      {
+        "first_representatives": [
+          [
+            0,
+            1,
+            "X"
+          ],
+          [
+            1,
+            3,
+            "X"
+          ],
+          [
+            2,
+            4,
+            "X"
+          ],
+          [
+            4,
+            6,
+            "X"
+          ],
+          [
+            5,
+            7,
+            "X"
+          ],
+          [
+            7,
+            10,
+            "X"
+          ],
+          [
+            11,
+            12,
+            "xyxYYXXY"
+          ]
+        ],
+        "two_copy_vertices": 31,
+        "second_identifications": 465,
+        "proper_cumulative_rank_3": 29,
+        "ambient_cumulative_subgroup": 222,
+        "broad_inequalities": 1560,
+        "proper_cumulative_rank_4": 214
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            2,
+            "Y"
+          ],
+          [
+            1,
+            5,
+            "Y"
+          ],
+          [
+            3,
+            8,
+            "Y"
+          ],
+          [
+            4,
+            9,
+            "Y"
+          ],
+          [
+            6,
+            12,
+            "Y"
+          ]
+        ],
+        "two_copy_vertices": 33,
+        "second_identifications": 528,
+        "ambient_cumulative_subgroup": 151,
+        "broad_inequalities": 956,
+        "proper_cumulative_rank_3": 24,
+        "proper_cumulative_rank_4": 353
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            3,
+            "XX"
+          ],
+          [
+            2,
+            6,
+            "XX"
+          ],
+          [
+            5,
+            10,
+            "XX"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_3": 44,
+        "ambient_cumulative_subgroup": 121,
+        "broad_inequalities": 816,
+        "proper_cumulative_rank_4": 430
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            4,
+            "YX"
+          ],
+          [
+            1,
+            7,
+            "YX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 73,
+        "broad_inequalities": 602,
+        "proper_cumulative_rank_4": 536,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            5,
+            "XY"
+          ],
+          [
+            1,
+            8,
+            "XY"
+          ],
+          [
+            2,
+            9,
+            "XY"
+          ],
+          [
+            4,
+            12,
+            "XY"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "ambient_cumulative_subgroup": 73,
+        "broad_inequalities": 578,
+        "proper_cumulative_rank_4": 465,
+        "proper_cumulative_rank_3": 23
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            6,
+            "YXX"
+          ],
+          [
+            1,
+            10,
+            "YXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 91,
+        "broad_inequalities": 896,
+        "proper_cumulative_rank_4": 518,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            7,
+            "XYX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "ambient_cumulative_subgroup": 66,
+        "broad_inequalities": 574,
+        "proper_cumulative_rank_4": 580,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            8,
+            "XXY"
+          ],
+          [
+            2,
+            12,
+            "XXY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 169,
+        "broad_inequalities": 1388,
+        "proper_cumulative_rank_4": 440,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            9,
+            "YXY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 572,
+        "ambient_cumulative_subgroup": 74,
+        "broad_inequalities": 604,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            10,
+            "XYXX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "ambient_cumulative_subgroup": 74,
+        "broad_inequalities": 752,
+        "proper_cumulative_rank_4": 572,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            11,
+            "yXYX"
+          ],
+          [
+            2,
+            7,
+            "yXYX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 82,
+        "broad_inequalities": 702,
+        "proper_cumulative_rank_4": 527,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            12,
+            "YXXY"
+          ],
+          [
+            2,
+            10,
+            "yXYXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 83,
+        "broad_inequalities": 656,
+        "proper_cumulative_rank_4": 526,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            13,
+            "xYXY"
+          ],
+          [
+            1,
+            9,
+            "xYXY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 609,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            14,
+            "xyXYX"
+          ],
+          [
+            1,
+            11,
+            "xyXYX"
+          ],
+          [
+            2,
+            16,
+            "xyXYX"
+          ],
+          [
+            4,
+            7,
+            "xyXYX"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "ambient_cumulative_subgroup": 173,
+        "broad_inequalities": 976,
+        "proper_cumulative_rank_4": 365,
+        "proper_cumulative_rank_3": 23
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            15,
+            "yxYXY"
+          ],
+          [
+            2,
+            13,
+            "yxYXY"
+          ],
+          [
+            5,
+            9,
+            "yxYXY"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "ambient_cumulative_subgroup": 156,
+        "broad_inequalities": 1106,
+        "proper_cumulative_rank_4": 417,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            16,
+            "YxyXYX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 610,
+        "ambient_cumulative_subgroup": 36,
+        "broad_inequalities": 208,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            17,
+            "xyxYXY"
+          ],
+          [
+            1,
+            15,
+            "xyxYXY"
+          ],
+          [
+            2,
+            18,
+            "yxYxyXYX"
+          ],
+          [
+            4,
+            13,
+            "xyxYXY"
+          ],
+          [
+            5,
+            16,
+            "yxYxyXYX"
+          ],
+          [
+            7,
+            9,
+            "xyxYXY"
+          ]
+        ],
+        "two_copy_vertices": 30,
+        "second_identifications": 435,
+        "ambient_cumulative_subgroup": 174,
+        "broad_inequalities": 1068,
+        "proper_cumulative_rank_4": 232,
+        "proper_cumulative_rank_3": 29
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            18,
+            "xYxyXYX"
+          ],
+          [
+            1,
+            16,
+            "xYxyXYX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 557,
+        "ambient_cumulative_subgroup": 52,
+        "broad_inequalities": 400,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            2,
+            "xY"
+          ],
+          [
+            3,
+            5,
+            "xY"
+          ],
+          [
+            6,
+            9,
+            "xY"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "ambient_cumulative_subgroup": 69,
+        "broad_inequalities": 594,
+        "proper_cumulative_rank_4": 504,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            4,
+            "xYX"
+          ],
+          [
+            3,
+            7,
+            "xYX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 61,
+        "broad_inequalities": 490,
+        "proper_cumulative_rank_4": 548,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            6,
+            "xYXX"
+          ],
+          [
+            3,
+            10,
+            "xYXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 49,
+        "broad_inequalities": 328,
+        "proper_cumulative_rank_4": 560,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            12,
+            "xYXXY"
+          ],
+          [
+            4,
+            10,
+            "xyXYXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 48,
+        "broad_inequalities": 370,
+        "proper_cumulative_rank_4": 561,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            13,
+            "xxYXY"
+          ],
+          [
+            3,
+            9,
+            "xxYXY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 609,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            14,
+            "xxyXYX"
+          ],
+          [
+            3,
+            11,
+            "xxyXYX"
+          ],
+          [
+            4,
+            16,
+            "xxyXYX"
+          ],
+          [
+            6,
+            7,
+            "xxyXYX"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "ambient_cumulative_subgroup": 92,
+        "broad_inequalities": 598,
+        "proper_cumulative_rank_4": 446,
+        "proper_cumulative_rank_3": 23
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            17,
+            "xxyxYXY"
+          ],
+          [
+            3,
+            15,
+            "xxyxYXY"
+          ],
+          [
+            4,
+            18,
+            "xyxYxyXYX"
+          ],
+          [
+            6,
+            13,
+            "xxyxYXY"
+          ],
+          [
+            7,
+            16,
+            "xyxYxyXYX"
+          ],
+          [
+            11,
+            14,
+            "xyxYxyXYX"
+          ]
+        ],
+        "two_copy_vertices": 30,
+        "second_identifications": 435,
+        "ambient_cumulative_subgroup": 172,
+        "broad_inequalities": 1252,
+        "proper_cumulative_rank_4": 236,
+        "proper_cumulative_rank_3": 27
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            18,
+            "xxYxyXYX"
+          ],
+          [
+            3,
+            16,
+            "xxYxyXYX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 609,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            3,
+            "yXX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "ambient_cumulative_subgroup": 84,
+        "broad_inequalities": 768,
+        "proper_cumulative_rank_4": 562,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            5,
+            "yXY"
+          ],
+          [
+            5,
+            8,
+            "yXY"
+          ],
+          [
+            9,
+            12,
+            "yXY"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "ambient_cumulative_subgroup": 240,
+        "broad_inequalities": 1284,
+        "proper_cumulative_rank_4": 332,
+        "proper_cumulative_rank_3": 23
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            8,
+            "yXXY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 562,
+        "ambient_cumulative_subgroup": 74,
+        "broad_inequalities": 456,
+        "proper_cumulative_rank_3": 30
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            11,
+            "yyXYX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "ambient_cumulative_subgroup": 110,
+        "broad_inequalities": 900,
+        "proper_cumulative_rank_4": 536,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            14,
+            "yxyXYX"
+          ],
+          [
+            5,
+            11,
+            "yxyXYX"
+          ]
+        ],
+        "two_copy_vertices": 30,
+        "second_identifications": 435,
+        "ambient_cumulative_subgroup": 174,
+        "broad_inequalities": 1068,
+        "proper_cumulative_rank_4": 232,
+        "proper_cumulative_rank_3": 29
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            15,
+            "yyxYXY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 602,
+        "proper_cumulative_rank_3": 20,
+        "ambient_cumulative_subgroup": 44,
+        "broad_inequalities": 128
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            17,
+            "yxyxYXY"
+          ],
+          [
+            5,
+            15,
+            "yxyxYXY"
+          ],
+          [
+            9,
+            13,
+            "yxyxYXY"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 428,
+        "ambient_cumulative_subgroup": 145,
+        "broad_inequalities": 706,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            4,
+            "xxYX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "ambient_cumulative_subgroup": 52,
+        "broad_inequalities": 352,
+        "proper_cumulative_rank_4": 594,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            6,
+            "xxYXX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "ambient_cumulative_subgroup": 82,
+        "broad_inequalities": 688,
+        "proper_cumulative_rank_4": 564,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            12,
+            "xxYXXY"
+          ],
+          [
+            6,
+            10,
+            "xxyXYXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 83,
+        "broad_inequalities": 458,
+        "proper_cumulative_rank_4": 526,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            13,
+            "xxxYXY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 646,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            14,
+            "xxxyXYX"
+          ],
+          [
+            6,
+            16,
+            "xxxyXYX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 72,
+        "broad_inequalities": 436,
+        "proper_cumulative_rank_4": 537,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            17,
+            "xxxyxYXY"
+          ],
+          [
+            6,
+            18,
+            "xxyxYxyXYX"
+          ],
+          [
+            10,
+            16,
+            "xxyxYxyXYX"
+          ],
+          [
+            12,
+            14,
+            "yxxyxyXYX"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "ambient_cumulative_subgroup": 114,
+        "broad_inequalities": 988,
+        "proper_cumulative_rank_4": 424,
+        "proper_cumulative_rank_3": 23
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            18,
+            "xxxYxyXYX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 646,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            5,
+            "xyXY"
+          ],
+          [
+            7,
+            8,
+            "xyXY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 89,
+        "broad_inequalities": 420,
+        "proper_cumulative_rank_4": 520,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            8,
+            "xyXXY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 614,
+        "ambient_cumulative_subgroup": 32,
+        "broad_inequalities": 56,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            11,
+            "xyyXYX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "ambient_cumulative_subgroup": 106,
+        "broad_inequalities": 722,
+        "proper_cumulative_rank_4": 540,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            14,
+            "xyxyXYX"
+          ],
+          [
+            7,
+            11,
+            "xyxyXYX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 147,
+        "broad_inequalities": 1058,
+        "proper_cumulative_rank_4": 462,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            15,
+            "xyyxYXY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 646,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            17,
+            "xyxyxYXY"
+          ],
+          [
+            7,
+            15,
+            "xyxyxYXY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 609,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            5,
+            6,
+            "yxYXX"
+          ],
+          [
+            8,
+            10,
+            "yxYXX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 46,
+        "broad_inequalities": 170,
+        "proper_cumulative_rank_4": 557,
+        "proper_cumulative_rank_3": 27
+      },
+      {
+        "first_representatives": [
+          [
+            5,
+            12,
+            "yxYXXY"
+          ],
+          [
+            9,
+            10,
+            "yxyXYXX"
+          ]
+        ],
+        "two_copy_vertices": 30,
+        "second_identifications": 435,
+        "ambient_cumulative_subgroup": 172,
+        "broad_inequalities": 1252,
+        "proper_cumulative_rank_4": 236,
+        "proper_cumulative_rank_3": 27
+      },
+      {
+        "first_representatives": [
+          [
+            5,
+            13,
+            "yxxYXY"
+          ],
+          [
+            8,
+            9,
+            "yxxYXY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 570,
+        "ambient_cumulative_subgroup": 39,
+        "broad_inequalities": 186,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            5,
+            14,
+            "yxxyXYX"
+          ],
+          [
+            8,
+            11,
+            "yxxyXYX"
+          ],
+          [
+            9,
+            16,
+            "yxxyXYX"
+          ],
+          [
+            13,
+            18,
+            "yxxyXYX"
+          ],
+          [
+            15,
+            17,
+            "yxyXYxyxYXY"
+          ]
+        ],
+        "two_copy_vertices": 32,
+        "second_identifications": 496,
+        "ambient_cumulative_subgroup": 181,
+        "broad_inequalities": 1060,
+        "proper_cumulative_rank_4": 290,
+        "proper_cumulative_rank_3": 25
+      },
+      {
+        "first_representatives": [
+          [
+            5,
+            17,
+            "yxxyxYXY"
+          ],
+          [
+            8,
+            15,
+            "yxxyxYXY"
+          ],
+          [
+            9,
+            18,
+            "yxyxYxyXYX"
+          ],
+          [
+            12,
+            13,
+            "yxxyxYXY"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "proper_cumulative_rank_4": 490,
+        "proper_cumulative_rank_3": 23,
+        "ambient_cumulative_subgroup": 48,
+        "broad_inequalities": 120
+      },
+      {
+        "first_representatives": [
+          [
+            5,
+            18,
+            "yxxYxyXYX"
+          ],
+          [
+            8,
+            16,
+            "yxxYxyXYX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 552,
+        "ambient_cumulative_subgroup": 57,
+        "broad_inequalities": 290,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            6,
+            8,
+            "xxyXXY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 618,
+        "ambient_cumulative_subgroup": 28,
+        "broad_inequalities": 242,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            6,
+            11,
+            "xxyyXYX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "ambient_cumulative_subgroup": 48,
+        "broad_inequalities": 380,
+        "proper_cumulative_rank_4": 598,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            6,
+            14,
+            "xxyxyXYX"
+          ],
+          [
+            10,
+            11,
+            "xxyxyXYX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 78,
+        "broad_inequalities": 594,
+        "proper_cumulative_rank_4": 531,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            6,
+            15,
+            "xxyyxYXY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 646,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            6,
+            17,
+            "xxyxyxYXY"
+          ],
+          [
+            10,
+            15,
+            "xxyxyxYXY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 609,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            7,
+            12,
+            "xyxYXXY"
+          ]
+        ],
+        "two_copy_vertices": 32,
+        "second_identifications": 496,
+        "ambient_cumulative_subgroup": 181,
+        "broad_inequalities": 1060,
+        "proper_cumulative_rank_4": 290,
+        "proper_cumulative_rank_3": 25
+      },
+      {
+        "first_representatives": [
+          [
+            7,
+            13,
+            "xyxxYXY"
+          ],
+          [
+            11,
+            15,
+            "xyxxYXY"
+          ],
+          [
+            14,
+            17,
+            "xyxxYXY"
+          ],
+          [
+            16,
+            18,
+            "xyxYXyxYxyXYX"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "proper_cumulative_rank_4": 392,
+        "ambient_cumulative_subgroup": 146,
+        "broad_inequalities": 576,
+        "proper_cumulative_rank_3": 23
+      },
+      {
+        "first_representatives": [
+          [
+            7,
+            14,
+            "xyxxyXYX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "ambient_cumulative_subgroup": 122,
+        "broad_inequalities": 696,
+        "proper_cumulative_rank_4": 524,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            7,
+            17,
+            "xyxxyxYXY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 646,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            7,
+            18,
+            "xyxxYxyXYX"
+          ],
+          [
+            11,
+            17,
+            "xyxYxyxYXY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 529,
+        "ambient_cumulative_subgroup": 80,
+        "broad_inequalities": 408,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            8,
+            12,
+            "yxxYXXY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 180,
+        "broad_inequalities": 1288,
+        "proper_cumulative_rank_4": 424,
+        "proper_cumulative_rank_3": 26
+      },
+      {
+        "first_representatives": [
+          [
+            8,
+            13,
+            "yxxxYXY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 618,
+        "proper_cumulative_rank_3": 20,
+        "ambient_cumulative_subgroup": 28,
+        "broad_inequalities": 180
+      },
+      {
+        "first_representatives": [
+          [
+            8,
+            14,
+            "yxxxyXYX"
+          ],
+          [
+            12,
+            16,
+            "yxxxyXYX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 517,
+        "ambient_cumulative_subgroup": 92,
+        "broad_inequalities": 740,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            8,
+            17,
+            "yxxxyxYXY"
+          ],
+          [
+            12,
+            18,
+            "yxxyxYxyXYX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 525,
+        "ambient_cumulative_subgroup": 84,
+        "broad_inequalities": 292,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            8,
+            18,
+            "yxxxYxyXYX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 580,
+        "ambient_cumulative_subgroup": 66,
+        "broad_inequalities": 352,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            9,
+            11,
+            "yxyyXYX"
+          ],
+          [
+            13,
+            14,
+            "yxyyXYX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 82,
+        "broad_inequalities": 504,
+        "proper_cumulative_rank_4": 527,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            9,
+            14,
+            "yxyxyXYX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 610,
+        "ambient_cumulative_subgroup": 36,
+        "broad_inequalities": 104,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            9,
+            15,
+            "yxyyxYXY"
+          ],
+          [
+            13,
+            17,
+            "yxyyxYXY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 558,
+        "ambient_cumulative_subgroup": 51,
+        "broad_inequalities": 248,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            9,
+            17,
+            "yxyxyxYXY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 590,
+        "ambient_cumulative_subgroup": 56,
+        "broad_inequalities": 378,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            10,
+            12,
+            "xxyxYXXY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "ambient_cumulative_subgroup": 180,
+        "broad_inequalities": 1288,
+        "proper_cumulative_rank_4": 424,
+        "proper_cumulative_rank_3": 26
+      },
+      {
+        "first_representatives": [
+          [
+            10,
+            13,
+            "xxyxxYXY"
+          ],
+          [
+            12,
+            15,
+            "yxxyyxYXY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 609,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            10,
+            14,
+            "xxyxxyXYX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "ambient_cumulative_subgroup": 30,
+        "broad_inequalities": 274,
+        "proper_cumulative_rank_4": 616,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            10,
+            17,
+            "xxyxxyxYXY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 646,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            10,
+            18,
+            "xxyxxYxyXYX"
+          ],
+          [
+            12,
+            17,
+            "yxxyxyxYXY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 609,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            11,
+            13,
+            "xyxYxYXY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 646,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            11,
+            16,
+            "xyxYYxyXYX"
+          ],
+          [
+            14,
+            18,
+            "xyxYYxyXYX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 524,
+        "proper_cumulative_rank_3": 49,
+        "ambient_cumulative_subgroup": 57,
+        "broad_inequalities": 420
+      },
+      {
+        "first_representatives": [
+          [
+            11,
+            18,
+            "xyxYxYxyXYX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 550,
+        "ambient_cumulative_subgroup": 96,
+        "broad_inequalities": 688,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            13,
+            15,
+            "yxyXyxYXY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 598,
+        "proper_cumulative_rank_3": 20,
+        "ambient_cumulative_subgroup": 48,
+        "broad_inequalities": 298
+      },
+      {
+        "first_representatives": [
+          [
+            13,
+            16,
+            "yxyXYxyXYX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 533,
+        "proper_cumulative_rank_3": 21,
+        "ambient_cumulative_subgroup": 76,
+        "broad_inequalities": 380
+      },
+      {
+        "first_representatives": [
+          [
+            14,
+            15,
+            "xyxYXyxYXY"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 533,
+        "proper_cumulative_rank_3": 21,
+        "ambient_cumulative_subgroup": 76,
+        "broad_inequalities": 380
+      },
+      {
+        "first_representatives": [
+          [
+            14,
+            16,
+            "xyxYXYxyXYX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 518,
+        "ambient_cumulative_subgroup": 128,
+        "broad_inequalities": 994,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            15,
+            16,
+            "yxyXYYxyXYX"
+          ],
+          [
+            17,
+            18,
+            "yxyXYYxyXYX"
+          ]
+        ],
+        "two_copy_vertices": 36,
+        "second_identifications": 630,
+        "proper_cumulative_rank_4": 516,
+        "ambient_cumulative_subgroup": 93,
+        "broad_inequalities": 488,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            15,
+            18,
+            "yxyXYxYxyXYX"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 598,
+        "proper_cumulative_rank_3": 20,
+        "ambient_cumulative_subgroup": 48,
+        "broad_inequalities": 226
+      },
+      {
+        "first_representatives": [
+          [
+            16,
+            17,
+            "xyxYXyxyxYXY"
+          ]
+        ],
+        "two_copy_vertices": 37,
+        "second_identifications": 666,
+        "proper_cumulative_rank_4": 598,
+        "proper_cumulative_rank_3": 20,
+        "ambient_cumulative_subgroup": 48,
+        "broad_inequalities": 226
+      }
+    ],
+    "case_digest": "b23c82871c88ac2d0cda0b14663d7c90e976c5a2a3cd452535091df9f0e7eec7"
+  },
+  {
+    "source": [
+      "xxyxyXYXyy",
+      "xxyXyxxyXYYXy"
+    ],
+    "source_absence": {
+      "status": "PASS",
+      "complete_absence_certificate": true,
+      "vertices": 18,
+      "closed_map_pair_states_checked": 60,
+      "ordinary_AC_goal_solved": false
+    },
+    "first_identifications": {
+      "3": 153
+    },
+    "distinct_first_graph_pairs": 77,
+    "second_identifications": 42631,
+    "proper_cumulative_rank_3": 1666,
+    "ambient_cumulative_subgroup": 4852,
+    "broad_inequalities": 33356,
+    "proper_cumulative_rank_4": 36113,
+    "proper_subgroups_by_method": {
+      "free_quotient": 1508
+    },
+    "proper_exceptions": [],
+    "ambient_cumulative_failures": [],
+    "first_graph_pairs": [
+      {
+        "first_representatives": [
+          [
+            0,
+            1,
+            "X"
+          ],
+          [
+            1,
+            3,
+            "X"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "proper_cumulative_rank_3": 21,
+        "ambient_cumulative_subgroup": 72,
+        "broad_inequalities": 572,
+        "proper_cumulative_rank_4": 468
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            2,
+            "y"
+          ],
+          [
+            1,
+            4,
+            "y"
+          ],
+          [
+            2,
+            5,
+            "y"
+          ],
+          [
+            4,
+            8,
+            "y"
+          ],
+          [
+            7,
+            12,
+            "y"
+          ]
+        ],
+        "two_copy_vertices": 31,
+        "second_identifications": 465,
+        "ambient_cumulative_subgroup": 152,
+        "broad_inequalities": 1326,
+        "proper_cumulative_rank_3": 25,
+        "proper_cumulative_rank_4": 288
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            3,
+            "XX"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_3": 25,
+        "proper_cumulative_rank_4": 570
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            4,
+            "Xy"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "ambient_cumulative_subgroup": 40,
+        "broad_inequalities": 190,
+        "proper_cumulative_rank_4": 536,
+        "proper_cumulative_rank_3": 19
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            5,
+            "yy"
+          ],
+          [
+            1,
+            8,
+            "yy"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "proper_cumulative_rank_4": 493,
+        "proper_cumulative_rank_3": 36,
+        "ambient_cumulative_subgroup": 32,
+        "broad_inequalities": 192
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            6,
+            "YXX"
+          ],
+          [
+            1,
+            9,
+            "YXX"
+          ],
+          [
+            2,
+            3,
+            "YXX"
+          ]
+        ],
+        "two_copy_vertices": 33,
+        "second_identifications": 528,
+        "ambient_cumulative_subgroup": 82,
+        "broad_inequalities": 926,
+        "proper_cumulative_rank_4": 425,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            7,
+            "YXy"
+          ],
+          [
+            2,
+            4,
+            "YXy"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "proper_cumulative_rank_4": 448,
+        "ambient_cumulative_subgroup": 93,
+        "broad_inequalities": 822,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            8,
+            "Xyy"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 512,
+        "ambient_cumulative_subgroup": 64,
+        "broad_inequalities": 580,
+        "proper_cumulative_rank_3": 19
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            9,
+            "XYXX"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "ambient_cumulative_subgroup": 64,
+        "broad_inequalities": 462,
+        "proper_cumulative_rank_4": 512,
+        "proper_cumulative_rank_3": 19
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            10,
+            "xYXX"
+          ],
+          [
+            1,
+            6,
+            "xYXX"
+          ],
+          [
+            3,
+            9,
+            "xYXX"
+          ],
+          [
+            6,
+            13,
+            "xYXX"
+          ],
+          [
+            10,
+            12,
+            "xxyXYXyy"
+          ]
+        ],
+        "two_copy_vertices": 31,
+        "second_identifications": 465,
+        "ambient_cumulative_subgroup": 210,
+        "broad_inequalities": 1274,
+        "proper_cumulative_rank_4": 226,
+        "proper_cumulative_rank_3": 29
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            11,
+            "YYXy"
+          ],
+          [
+            1,
+            15,
+            "YYXy"
+          ],
+          [
+            2,
+            7,
+            "YYXy"
+          ]
+        ],
+        "two_copy_vertices": 32,
+        "second_identifications": 496,
+        "proper_cumulative_rank_4": 312,
+        "ambient_cumulative_subgroup": 162,
+        "broad_inequalities": 1162,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            12,
+            "YXyy"
+          ],
+          [
+            1,
+            13,
+            "xYXYXX"
+          ],
+          [
+            2,
+            8,
+            "YXyy"
+          ]
+        ],
+        "two_copy_vertices": 33,
+        "second_identifications": 528,
+        "proper_cumulative_rank_4": 434,
+        "ambient_cumulative_subgroup": 57,
+        "broad_inequalities": 384,
+        "proper_cumulative_rank_3": 37
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            13,
+            "YXYXX"
+          ],
+          [
+            2,
+            9,
+            "YXYXX"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "proper_cumulative_rank_4": 462,
+        "ambient_cumulative_subgroup": 79,
+        "broad_inequalities": 898,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            14,
+            "YxYXX"
+          ],
+          [
+            1,
+            16,
+            "YxYXX"
+          ],
+          [
+            2,
+            10,
+            "YxYXX"
+          ],
+          [
+            3,
+            17,
+            "xxyXYYXy"
+          ],
+          [
+            4,
+            6,
+            "YxYXX"
+          ],
+          [
+            6,
+            15,
+            "xxyXYYXy"
+          ],
+          [
+            10,
+            11,
+            "xxyXYYXy"
+          ]
+        ],
+        "two_copy_vertices": 29,
+        "second_identifications": 406,
+        "proper_cumulative_rank_4": 237,
+        "ambient_cumulative_subgroup": 138,
+        "broad_inequalities": 904,
+        "proper_cumulative_rank_3": 31
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            15,
+            "XYYXy"
+          ],
+          [
+            2,
+            17,
+            "XYYXy"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "proper_cumulative_rank_4": 541,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            16,
+            "XYxYXX"
+          ],
+          [
+            1,
+            17,
+            "xyXYYXy"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "proper_cumulative_rank_4": 541,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            0,
+            17,
+            "yXYYXy"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 576,
+        "proper_cumulative_rank_3": 19
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            2,
+            "xy"
+          ],
+          [
+            3,
+            4,
+            "xy"
+          ],
+          [
+            6,
+            7,
+            "xy"
+          ]
+        ],
+        "two_copy_vertices": 33,
+        "second_identifications": 528,
+        "ambient_cumulative_subgroup": 197,
+        "broad_inequalities": 898,
+        "proper_cumulative_rank_4": 310,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            5,
+            "xyy"
+          ],
+          [
+            3,
+            8,
+            "xyy"
+          ],
+          [
+            6,
+            12,
+            "xyy"
+          ],
+          [
+            9,
+            13,
+            "xxyxYXYXX"
+          ]
+        ],
+        "two_copy_vertices": 32,
+        "second_identifications": 496,
+        "proper_cumulative_rank_4": 362,
+        "ambient_cumulative_subgroup": 112,
+        "broad_inequalities": 1036,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            7,
+            "xYXy"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 522,
+        "ambient_cumulative_subgroup": 54,
+        "broad_inequalities": 432,
+        "proper_cumulative_rank_3": 19
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            10,
+            "xxYXX"
+          ],
+          [
+            3,
+            6,
+            "xxYXX"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "ambient_cumulative_subgroup": 99,
+        "broad_inequalities": 568,
+        "proper_cumulative_rank_4": 442,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            11,
+            "xYYXy"
+          ],
+          [
+            3,
+            15,
+            "xYYXy"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "proper_cumulative_rank_4": 505,
+        "ambient_cumulative_subgroup": 36,
+        "broad_inequalities": 184,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            12,
+            "xYXyy"
+          ],
+          [
+            3,
+            13,
+            "xxYXYXX"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "proper_cumulative_rank_4": 481,
+        "ambient_cumulative_subgroup": 60,
+        "broad_inequalities": 634,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            1,
+            14,
+            "xYxYXX"
+          ],
+          [
+            3,
+            16,
+            "xYxYXX"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "proper_cumulative_rank_4": 517,
+        "proper_cumulative_rank_3": 20,
+        "ambient_cumulative_subgroup": 24,
+        "broad_inequalities": 64
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            6,
+            "YYXX"
+          ],
+          [
+            4,
+            9,
+            "YYXX"
+          ],
+          [
+            7,
+            13,
+            "YYXX"
+          ]
+        ],
+        "two_copy_vertices": 32,
+        "second_identifications": 496,
+        "proper_cumulative_rank_4": 434,
+        "ambient_cumulative_subgroup": 40,
+        "broad_inequalities": 472,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            11,
+            "YYYXy"
+          ],
+          [
+            4,
+            15,
+            "YYYXy"
+          ],
+          [
+            5,
+            7,
+            "YYYXy"
+          ]
+        ],
+        "two_copy_vertices": 33,
+        "second_identifications": 528,
+        "proper_cumulative_rank_4": 425,
+        "ambient_cumulative_subgroup": 58,
+        "broad_inequalities": 430,
+        "proper_cumulative_rank_3": 45
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            12,
+            "YYXyy"
+          ],
+          [
+            4,
+            13,
+            "YxYXYXX"
+          ],
+          [
+            5,
+            8,
+            "YYXyy"
+          ]
+        ],
+        "two_copy_vertices": 33,
+        "second_identifications": 528,
+        "proper_cumulative_rank_4": 419,
+        "ambient_cumulative_subgroup": 88,
+        "broad_inequalities": 752,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            13,
+            "YYXYXX"
+          ],
+          [
+            5,
+            9,
+            "YYXYXX"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "proper_cumulative_rank_4": 442,
+        "ambient_cumulative_subgroup": 99,
+        "broad_inequalities": 814,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            14,
+            "YYxYXX"
+          ],
+          [
+            4,
+            16,
+            "YYxYXX"
+          ],
+          [
+            5,
+            10,
+            "YYxYXX"
+          ]
+        ],
+        "two_copy_vertices": 32,
+        "second_identifications": 496,
+        "proper_cumulative_rank_4": 366,
+        "ambient_cumulative_subgroup": 108,
+        "broad_inequalities": 698,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            15,
+            "YXYYXy"
+          ],
+          [
+            5,
+            17,
+            "YXYYXy"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "proper_cumulative_rank_4": 497,
+        "ambient_cumulative_subgroup": 44,
+        "broad_inequalities": 248,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            2,
+            16,
+            "YXYxYXX"
+          ],
+          [
+            4,
+            17,
+            "YxyXYYXy"
+          ],
+          [
+            7,
+            15,
+            "YxyXYYXy"
+          ]
+        ],
+        "two_copy_vertices": 33,
+        "second_identifications": 528,
+        "proper_cumulative_rank_4": 407,
+        "ambient_cumulative_subgroup": 100,
+        "broad_inequalities": 444,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            5,
+            "xxyy"
+          ]
+        ],
+        "two_copy_vertices": 32,
+        "second_identifications": 496,
+        "proper_cumulative_rank_4": 434,
+        "ambient_cumulative_subgroup": 40,
+        "broad_inequalities": 472,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            7,
+            "xxYXy"
+          ],
+          [
+            6,
+            11,
+            "xxYXy"
+          ],
+          [
+            9,
+            15,
+            "xxYXy"
+          ]
+        ],
+        "two_copy_vertices": 33,
+        "second_identifications": 528,
+        "proper_cumulative_rank_4": 484,
+        "proper_cumulative_rank_3": 21,
+        "ambient_cumulative_subgroup": 23,
+        "broad_inequalities": 88
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            10,
+            "xxxYXX"
+          ],
+          [
+            6,
+            14,
+            "xxxYXX"
+          ],
+          [
+            9,
+            16,
+            "xxxYXX"
+          ]
+        ],
+        "two_copy_vertices": 33,
+        "second_identifications": 528,
+        "ambient_cumulative_subgroup": 46,
+        "broad_inequalities": 224,
+        "proper_cumulative_rank_4": 461,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            11,
+            "xxYYXy"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 552,
+        "proper_cumulative_rank_3": 19,
+        "ambient_cumulative_subgroup": 24,
+        "broad_inequalities": 36
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            12,
+            "xxYXyy"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 576,
+        "proper_cumulative_rank_3": 19
+      },
+      {
+        "first_representatives": [
+          [
+            3,
+            14,
+            "xxYxYXX"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 536,
+        "proper_cumulative_rank_3": 19,
+        "ambient_cumulative_subgroup": 40,
+        "broad_inequalities": 258
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            5,
+            "Yxyy"
+          ]
+        ],
+        "two_copy_vertices": 32,
+        "second_identifications": 496,
+        "proper_cumulative_rank_4": 312,
+        "ambient_cumulative_subgroup": 162,
+        "broad_inequalities": 1162,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            7,
+            "YxYXy"
+          ],
+          [
+            7,
+            11,
+            "YxYXy"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "proper_cumulative_rank_4": 424,
+        "ambient_cumulative_subgroup": 116,
+        "broad_inequalities": 690,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            10,
+            "YxxYXX"
+          ],
+          [
+            7,
+            14,
+            "YxxYXX"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "proper_cumulative_rank_4": 500,
+        "proper_cumulative_rank_3": 20,
+        "ambient_cumulative_subgroup": 41,
+        "broad_inequalities": 152
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            11,
+            "YxYYXy"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 570,
+        "proper_cumulative_rank_3": 25
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            12,
+            "YxYXyy"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 576,
+        "proper_cumulative_rank_3": 19
+      },
+      {
+        "first_representatives": [
+          [
+            4,
+            14,
+            "YxYxYXX"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 540,
+        "proper_cumulative_rank_3": 19,
+        "ambient_cumulative_subgroup": 36,
+        "broad_inequalities": 64
+      },
+      {
+        "first_representatives": [
+          [
+            5,
+            6,
+            "YYYXX"
+          ],
+          [
+            8,
+            9,
+            "YYYXX"
+          ],
+          [
+            12,
+            13,
+            "YYYXX"
+          ]
+        ],
+        "two_copy_vertices": 33,
+        "second_identifications": 528,
+        "proper_cumulative_rank_4": 423,
+        "ambient_cumulative_subgroup": 84,
+        "broad_inequalities": 820,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            5,
+            11,
+            "YYYYXy"
+          ],
+          [
+            8,
+            15,
+            "YYYYXy"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "proper_cumulative_rank_4": 467,
+        "ambient_cumulative_subgroup": 74,
+        "broad_inequalities": 324,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            5,
+            12,
+            "YYYXyy"
+          ],
+          [
+            8,
+            13,
+            "YYxYXYXX"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "proper_cumulative_rank_4": 414,
+        "ambient_cumulative_subgroup": 127,
+        "broad_inequalities": 680,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            5,
+            13,
+            "YYYXYXX"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 466,
+        "ambient_cumulative_subgroup": 110,
+        "broad_inequalities": 1250,
+        "proper_cumulative_rank_3": 19
+      },
+      {
+        "first_representatives": [
+          [
+            5,
+            14,
+            "YYYxYXX"
+          ],
+          [
+            8,
+            16,
+            "YYYxYXX"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "proper_cumulative_rank_4": 487,
+        "ambient_cumulative_subgroup": 54,
+        "broad_inequalities": 88,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            5,
+            15,
+            "YYXYYXy"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 488,
+        "ambient_cumulative_subgroup": 88,
+        "broad_inequalities": 766,
+        "proper_cumulative_rank_3": 19
+      },
+      {
+        "first_representatives": [
+          [
+            5,
+            16,
+            "YYXYxYXX"
+          ],
+          [
+            8,
+            17,
+            "YYxyXYYXy"
+          ],
+          [
+            12,
+            15,
+            "YYxyXYYXy"
+          ]
+        ],
+        "two_copy_vertices": 33,
+        "second_identifications": 528,
+        "proper_cumulative_rank_4": 507,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            6,
+            8,
+            "xxyXyy"
+          ]
+        ],
+        "two_copy_vertices": 32,
+        "second_identifications": 496,
+        "proper_cumulative_rank_4": 366,
+        "ambient_cumulative_subgroup": 108,
+        "broad_inequalities": 698,
+        "proper_cumulative_rank_3": 22
+      },
+      {
+        "first_representatives": [
+          [
+            6,
+            9,
+            "xxyXYXX"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "proper_cumulative_rank_4": 444,
+        "ambient_cumulative_subgroup": 92,
+        "broad_inequalities": 768,
+        "proper_cumulative_rank_3": 25
+      },
+      {
+        "first_representatives": [
+          [
+            6,
+            10,
+            "xxyxYXX"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "proper_cumulative_rank_4": 444,
+        "ambient_cumulative_subgroup": 92,
+        "broad_inequalities": 768,
+        "proper_cumulative_rank_3": 25
+      },
+      {
+        "first_representatives": [
+          [
+            6,
+            16,
+            "xxyXYxYXX"
+          ],
+          [
+            9,
+            17,
+            "xxyxyXYYXy"
+          ],
+          [
+            10,
+            14,
+            "xxyXYxYXX"
+          ],
+          [
+            13,
+            15,
+            "xxyxyXYYXy"
+          ]
+        ],
+        "two_copy_vertices": 30,
+        "second_identifications": 435,
+        "proper_cumulative_rank_4": 301,
+        "ambient_cumulative_subgroup": 110,
+        "broad_inequalities": 626,
+        "proper_cumulative_rank_3": 24
+      },
+      {
+        "first_representatives": [
+          [
+            6,
+            17,
+            "xxyyXYYXy"
+          ],
+          [
+            10,
+            16,
+            "xxyXXYxYXX"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "proper_cumulative_rank_4": 444,
+        "ambient_cumulative_subgroup": 97,
+        "broad_inequalities": 454,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            7,
+            8,
+            "YxyXyy"
+          ],
+          [
+            11,
+            12,
+            "YxyXyy"
+          ]
+        ],
+        "two_copy_vertices": 30,
+        "second_identifications": 435,
+        "proper_cumulative_rank_4": 301,
+        "ambient_cumulative_subgroup": 110,
+        "broad_inequalities": 626,
+        "proper_cumulative_rank_3": 24
+      },
+      {
+        "first_representatives": [
+          [
+            7,
+            9,
+            "YxyXYXX"
+          ],
+          [
+            11,
+            13,
+            "YxyXYXX"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "proper_cumulative_rank_4": 541,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            7,
+            10,
+            "YxyxYXX"
+          ],
+          [
+            11,
+            14,
+            "YxyxYXX"
+          ],
+          [
+            15,
+            16,
+            "YxyxYXX"
+          ]
+        ],
+        "two_copy_vertices": 33,
+        "second_identifications": 528,
+        "proper_cumulative_rank_4": 342,
+        "ambient_cumulative_subgroup": 165,
+        "broad_inequalities": 902,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            7,
+            16,
+            "YxyXYxYXX"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 494,
+        "ambient_cumulative_subgroup": 82,
+        "broad_inequalities": 388,
+        "proper_cumulative_rank_3": 19
+      },
+      {
+        "first_representatives": [
+          [
+            7,
+            17,
+            "YxyyXYYXy"
+          ],
+          [
+            11,
+            15,
+            "YxyyXYYXy"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "proper_cumulative_rank_4": 504,
+        "proper_cumulative_rank_3": 20,
+        "ambient_cumulative_subgroup": 37,
+        "broad_inequalities": 238
+      },
+      {
+        "first_representatives": [
+          [
+            8,
+            10,
+            "YYxxYXX"
+          ],
+          [
+            12,
+            14,
+            "YYxxYXX"
+          ],
+          [
+            13,
+            16,
+            "xxyxyXYxYXX"
+          ]
+        ],
+        "two_copy_vertices": 33,
+        "second_identifications": 528,
+        "proper_cumulative_rank_4": 456,
+        "ambient_cumulative_subgroup": 51,
+        "broad_inequalities": 348,
+        "proper_cumulative_rank_3": 21
+      },
+      {
+        "first_representatives": [
+          [
+            8,
+            11,
+            "YYxYYXy"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 576,
+        "proper_cumulative_rank_3": 19
+      },
+      {
+        "first_representatives": [
+          [
+            8,
+            12,
+            "YYxYXyy"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 502,
+        "ambient_cumulative_subgroup": 74,
+        "broad_inequalities": 586,
+        "proper_cumulative_rank_3": 19
+      },
+      {
+        "first_representatives": [
+          [
+            8,
+            14,
+            "YYxYxYXX"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 514,
+        "ambient_cumulative_subgroup": 62,
+        "broad_inequalities": 304,
+        "proper_cumulative_rank_3": 19
+      },
+      {
+        "first_representatives": [
+          [
+            9,
+            10,
+            "xxyxxYXX"
+          ],
+          [
+            13,
+            14,
+            "xxyxxYXX"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "proper_cumulative_rank_4": 535,
+        "proper_cumulative_rank_3": 26
+      },
+      {
+        "first_representatives": [
+          [
+            9,
+            11,
+            "xxyxYYXy"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 576,
+        "proper_cumulative_rank_3": 19
+      },
+      {
+        "first_representatives": [
+          [
+            9,
+            12,
+            "xxyxYXyy"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 524,
+        "ambient_cumulative_subgroup": 52,
+        "broad_inequalities": 300,
+        "proper_cumulative_rank_3": 19
+      },
+      {
+        "first_representatives": [
+          [
+            9,
+            14,
+            "xxyxYxYXX"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 552,
+        "proper_cumulative_rank_3": 19,
+        "ambient_cumulative_subgroup": 24,
+        "broad_inequalities": 162
+      },
+      {
+        "first_representatives": [
+          [
+            10,
+            13,
+            "xxyXYXYXX"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 534,
+        "ambient_cumulative_subgroup": 42,
+        "broad_inequalities": 428,
+        "proper_cumulative_rank_3": 19
+      },
+      {
+        "first_representatives": [
+          [
+            10,
+            15,
+            "xxyXXYYXy"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 548,
+        "proper_cumulative_rank_3": 19,
+        "ambient_cumulative_subgroup": 28,
+        "broad_inequalities": 160
+      },
+      {
+        "first_representatives": [
+          [
+            10,
+            17,
+            "xxyXyXYYXy"
+          ],
+          [
+            14,
+            15,
+            "xxyXyXYYXy"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "proper_cumulative_rank_4": 507,
+        "proper_cumulative_rank_3": 20,
+        "ambient_cumulative_subgroup": 34,
+        "broad_inequalities": 234
+      },
+      {
+        "first_representatives": [
+          [
+            11,
+            16,
+            "YxyyXYxYXX"
+          ],
+          [
+            15,
+            17,
+            "YxyyxyXYYXy"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "proper_cumulative_rank_4": 464,
+        "ambient_cumulative_subgroup": 77,
+        "broad_inequalities": 422,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            11,
+            17,
+            "YxyyyXYYXy"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 550,
+        "proper_cumulative_rank_3": 19,
+        "ambient_cumulative_subgroup": 26,
+        "broad_inequalities": 120
+      },
+      {
+        "first_representatives": [
+          [
+            12,
+            16,
+            "YYxyXYxYXX"
+          ],
+          [
+            13,
+            17,
+            "xxyxyyXYYXy"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "proper_cumulative_rank_4": 541,
+        "proper_cumulative_rank_3": 20
+      },
+      {
+        "first_representatives": [
+          [
+            12,
+            17,
+            "YYxyyXYYXy"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 576,
+        "proper_cumulative_rank_3": 19
+      },
+      {
+        "first_representatives": [
+          [
+            14,
+            16,
+            "xxyXyXYxYXX"
+          ],
+          [
+            16,
+            17,
+            "xxyXyxyXYYXy"
+          ]
+        ],
+        "two_copy_vertices": 34,
+        "second_identifications": 561,
+        "proper_cumulative_rank_4": 480,
+        "proper_cumulative_rank_3": 21,
+        "ambient_cumulative_subgroup": 60,
+        "broad_inequalities": 384
+      },
+      {
+        "first_representatives": [
+          [
+            14,
+            17,
+            "xxyXyyXYYXy"
+          ]
+        ],
+        "two_copy_vertices": 35,
+        "second_identifications": 595,
+        "proper_cumulative_rank_4": 570,
+        "proper_cumulative_rank_3": 25
+      }
+    ],
+    "case_digest": "c89ae4938fdc2a758095f1c3ea5fe6c274f2a176aa18dc65a1b301e361485766"
+  }
+]

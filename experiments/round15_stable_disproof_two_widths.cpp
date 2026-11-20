@@ -48,7 +48,7 @@ struct Tables {
     std::array<std::vector<Rule>, 2> rules;
 };
 
-Tables read(std::istream& stream) {
+Tables read(std::istream& stream, bool two_sevens) {
     Tables input;
     unsigned span;
     std::string relation, left, right;
@@ -66,7 +66,9 @@ Tables read(std::istream& stream) {
         rules.back().endpoints.push_back(endpoint);
         ++counts[width];
     }
-    if (!stream.eof() || counts != std::array<std::size_t, 2>{136, 5769})
+    const std::array<std::size_t, 2> expected = two_sevens ? std::array<std::size_t, 2>{0, 7047}
+                                                         : std::array<std::size_t, 2>{136, 5769};
+    if (!stream.eof() || counts != expected)
         throw std::runtime_error("incomplete marked transition table");
     return input;
 }
@@ -110,9 +112,13 @@ public:
 
 template <unsigned Degree>
 class Search {
+    using Active = free_distance::State<3>;
+    using ActiveSet = std::unordered_set<Active, free_distance::StateHash<3>>;
+
     magnus_native::Elements<Degree> high;
     magnus_native::Elements<3> low;
     Tables tables;
+    const bool two_sevens;
     Evaluation<magnus_native::Elements<Degree>> marked{high, tables.words.expressions};
     Evaluation<magnus_native::Elements<3>> coarse{low, tables.words.expressions};
     const std::array<Id, 4> high_letters{high.intern("x"), high.intern("X"), high.intern("y"), high.intern("Y")};
@@ -184,19 +190,28 @@ class Search {
         }
     }
 
+    template <class Visit>
+    void last_excursions(const std::array<Set, 4>& layer, unsigned used, Visit&& accept) {
+        if (two_sevens) {
+            if (used != 0)
+                for (const State parent : layer[used == 3 ? 1 : 0]) excursion(parent, 1, used == 3, accept);
+        } else {
+            for (unsigned width = 0; width < 2; ++width)
+                if (used & (1U << width))
+                    for (const State parent : layer[used ^ (1U << width)]) excursion(parent, width, used == 3, accept);
+        }
+    }
+
     Layers layers(State start, unsigned idle_steps) {
         Layers result(idle_steps + 1);
         for (unsigned i = 0; i <= idle_steps; ++i) {
             for (unsigned used = 0; used < 4; ++used) {
-                if (i == idle_steps && used == 3) continue;
+                if ((two_sevens && used == 2) || (i == idle_steps && used == 3)) continue;
                 auto accept = [&](State state) { result[i][used].insert(state); };
                 if (i == 0 && used == 0) accept(start);
                 if (i > 0)
                     for (const State previous : result[i - 1][used]) idle(previous, accept);
-                for (unsigned width = 0; width < 2; ++width)
-                    if (used & (1U << width))
-                        for (const State previous : result[i][used ^ (1U << width)])
-                            excursion(previous, width, used == 3, accept);
+                last_excursions(result[i], used, accept);
             }
         }
         return result;
@@ -216,17 +231,84 @@ class Search {
         std::cout << ']';
     }
 
+    struct IdleBoundaries {
+        std::vector<Set> plain, via_six;
+    };
+
+    IdleBoundaries boundaries(State endpoint, unsigned plain_idle, unsigned short_idle) {
+        IdleBoundaries result{std::vector<Set>(plain_idle + 1), std::vector<Set>(short_idle + 1)};
+        result.plain[0].insert(endpoint);
+        for (unsigned i = 1; i <= plain_idle; ++i)
+            for (const State state : result.plain[i - 1]) idle(state, [&](State child) { result.plain[i].insert(child); });
+        for (unsigned i = 0; i <= short_idle; ++i) {
+            auto accept = [&](State child) { result.via_six[i].insert(child); };
+            if (i > 0) for (const State state : result.via_six[i - 1]) idle(state, accept);
+            for (const State state : result.plain[i]) excursion(state, 0, false, accept);
+        }
+        return result;
+    }
+
+    template <class Visit>
+    void active_edges(Active state, Visit&& accept) {
+        if constexpr (Degree < 9) accept(state);
+        auto change = [&](unsigned row, Id value, unsigned mark) {
+            if constexpr (Degree == 9)
+                if (value == high_one || value == (state[row] >> 1)) return;
+            if (value & (1U << 31)) throw std::runtime_error("row ID exceeds 31 bits");
+            Active child = state;
+            child[row] = (value << 1) | mark;
+            std::sort(child.begin(), child.end());
+            accept(child);
+        };
+        for (unsigned i = 0; i < 3; ++i) {
+            const Id a = state[i] >> 1;
+            const unsigned mark_a = state[i] & 1;
+            change(i, high.inverse(a), mark_a);
+            for (unsigned letter = 0; letter < 4; ++letter) change(i, high.conjugate(a, letter), mark_a);
+            for (unsigned j = 0; j < 3; ++j) if (i != j) {
+                const Id b = state[j] >> 1;
+                const unsigned mark = mark_a ^ (state[j] & 1);
+                change(i, high.product(a, b), mark);
+                change(i, high.product(a, high.inverse(b)), mark);
+            }
+        }
+    }
+
+    ActiveSet active_layer(const Set& boundary, unsigned depth) {
+        ActiveSet layer;
+        for (const State pair : boundary) for (unsigned donor = 0; donor < 2; ++donor) {
+            const Id copy = pair[donor] >> 1;
+            const unsigned mark = (pair[donor] & 1) ^ 1;
+            for (const Id value : {copy, high.inverse(copy)}) {
+                if (value & (1U << 31)) throw std::runtime_error("row ID exceeds 31 bits");
+                Active child{pair[0], pair[1], (value << 1) | mark};
+                std::sort(child.begin(), child.end());
+                layer.insert(child);
+            }
+        }
+        for (unsigned i = 1; i < depth; ++i) {
+            ActiveSet next;
+            for (const Active state : layer) active_edges(state, [&](Active child) { next.insert(child); });
+            layer = std::move(next);
+        }
+        return layer;
+    }
+
 public:
-    explicit Search(Tables input) : tables(std::move(input)) {}
+    Search(Tables input, bool repeated_width) : tables(std::move(input)), two_sevens(repeated_width) {}
 
     void run() {
         const State start = pack(high.intern("xxxYYYY"), 0, high.intern("xyxYXY"), 0);
         const State goal = pack(high_letters[0], 0, high_letters[2], 0);
-        const std::array<Layers, 2> walks{layers(start, 2), layers(goal, 3)};
+        const std::array<Layers, 2> walks{layers(start, 2), layers(goal, two_sevens ? 2 : 3)};
         std::array<std::size_t, 2> edges{};
         std::array<std::size_t, 4> meetings{};
-        for (unsigned used : {1, 2})
-            for (const State state : walks[0].back()[used]) meetings[used] += walks[1].back()[used ^ 3].count(state);
+        if (two_sevens) {
+            for (const State state : walks[0].back()[1]) meetings[1] += walks[1].back()[1].count(state);
+        } else {
+            for (unsigned used : {1, 2})
+                for (const State state : walks[0].back()[used]) meetings[used] += walks[1].back()[used ^ 3].count(state);
+        }
         for (unsigned side = 0; side < 2; ++side) {
             const auto& walk = walks[side];
             const Set& opposite = walks[side ^ 1].back()[0];
@@ -236,29 +318,71 @@ public:
                 if (opposite.count(state)) matched.insert(state);
             };
             for (const State previous : walk[walk.size() - 2][3]) idle(previous, accept);
-            for (unsigned width = 0; width < 2; ++width)
-                for (const State previous : walk.back()[3 ^ (1U << width)]) excursion(previous, width, true, accept);
+            last_excursions(walk.back(), 3, accept);
             meetings[side == 0 ? 3 : 0] = matched.size();
         }
         std::cout << "{\"degree\":" << Degree << ",\"left_layers\":";
         print(walks[0]);
         std::cout << ",\"right_layers\":";
         print(walks[1]);
-        std::cout << ",\"meetings\":[" << meetings[0] << ',' << meetings[1] << ',' << meetings[2] << ',' << meetings[3]
-                  << "],\"edges\":[" << edges[0] << ',' << edges[1] << "],\"elements\":" << high.size() << "}\n";
+        std::cout << ",\"meetings\":[" << meetings[0] << ',' << meetings[1] << ',';
+        if (!two_sevens) std::cout << meetings[2] << ',';
+        std::cout << meetings[3] << "],\"edges\":[" << edges[0] << ',' << edges[1]
+                  << "],\"elements\":" << high.size() << "}\n";
+    }
+
+    void run_six_eight(unsigned short_idle) {
+        if (short_idle > 4) throw std::runtime_error("the four idle instructions must be split between the two sides");
+        const unsigned plain_idle = 4 - short_idle;
+        const unsigned short_depth = 5 - short_idle, plain_depth = 8 - short_depth;
+        const State start = pack(high.intern("xxxYYYY"), 0, high.intern("xyxYXY"), 0);
+        const State goal = pack(high_letters[0], 0, high_letters[2], 0);
+        const unsigned maximum_idle = std::max(short_idle, plain_idle);
+        const std::array<IdleBoundaries, 2> endpoints{boundaries(start, maximum_idle, short_idle),
+                                                     boundaries(goal, maximum_idle, short_idle)};
+        std::cout << "{\"degree\":" << Degree << ",\"short_idle\":" << short_idle << ",\"active_depths\":[" << short_depth
+                  << ',' << plain_depth << "],\"orientations\":[";
+        for (unsigned side = 0; side < 2; ++side) {
+            const Set& short_boundary = endpoints[side].via_six[short_idle];
+            const Set& plain_boundary = endpoints[side ^ 1].plain[plain_idle];
+            const auto left = active_layer(short_boundary, short_depth);
+            const auto almost_right = active_layer(plain_boundary, plain_depth - 1);
+            ActiveSet matched;
+            std::size_t edges = 0;
+            for (const Active state : almost_right) active_edges(state, [&](Active child) {
+                ++edges;
+                if (left.count(child)) matched.insert(child);
+            });
+            if (side > 0) std::cout << ',';
+            std::cout << "{\"short_boundary\":" << short_boundary.size() << ",\"plain_boundary\":" << plain_boundary.size()
+                      << ",\"active_layer\":" << left.size() << ",\"penultimate_layer\":" << almost_right.size()
+                      << ",\"edges\":" << edges << ",\"meetings\":" << matched.size() << '}' << std::flush;
+        }
+        std::cout << "]}\n";
     }
 };
+
+template <unsigned Degree>
+void run(Tables tables, bool two_sevens, std::optional<unsigned> short_idle) {
+    Search<Degree> search(std::move(tables), two_sevens);
+    if (short_idle) search.run_six_eight(*short_idle);
+    else search.run();
+}
 }
 
 int main(int argc, char** argv) {
-    if (argc != 2) throw std::runtime_error("expected one Magnus degree");
-    auto tables = mixed_widths::read(std::cin);
+    const bool two_sevens = argc == 3 && std::string_view(argv[2]) == "--two-sevens";
+    const bool six_eight = argc == 4 && std::string_view(argv[2]) == "--six-eight";
+    if (argc != 2 && !two_sevens && !six_eight)
+        throw std::runtime_error("expected a Magnus degree and optional --two-sevens or --six-eight IDLE_STEPS");
+    const std::optional<unsigned> short_idle = six_eight ? std::optional<unsigned>(std::stoul(argv[3])) : std::nullopt;
+    auto tables = mixed_widths::read(std::cin, two_sevens);
     switch (std::stoi(argv[1])) {
-    case 5: mixed_widths::Search<5>(std::move(tables)).run(); break;
-    case 6: mixed_widths::Search<6>(std::move(tables)).run(); break;
-    case 7: mixed_widths::Search<7>(std::move(tables)).run(); break;
-    case 8: mixed_widths::Search<8>(std::move(tables)).run(); break;
-    case 9: mixed_widths::Search<9>(std::move(tables)).run(); break;
+    case 5: mixed_widths::run<5>(std::move(tables), two_sevens, short_idle); break;
+    case 6: mixed_widths::run<6>(std::move(tables), two_sevens, short_idle); break;
+    case 7: mixed_widths::run<7>(std::move(tables), two_sevens, short_idle); break;
+    case 8: mixed_widths::run<8>(std::move(tables), two_sevens, short_idle); break;
+    case 9: mixed_widths::run<9>(std::move(tables), two_sevens, short_idle); break;
     default: throw std::runtime_error("degree must be between five and nine");
     }
 }

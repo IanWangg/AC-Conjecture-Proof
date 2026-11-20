@@ -10,7 +10,7 @@ from round13_stable_disproof_templates import transitions as width_six
 from round13_stable_disproof_width_seven import strict_comparison
 
 
-def marked_width_seven():
+def marked_width_seven(nonzero_only=True):
     residual, _ = strict_comparison()
     targets = defaultdict(set)
     for removed, donor, pair in residual:
@@ -22,7 +22,7 @@ def marked_width_seven():
             recipient = order.index(0)
             donors = [j for j, row in enumerate(rows) if j != recipient and row in (donor, inverse(donor))]
             for marks in product(range(2), repeat=2):
-                if marks == (0, 0):
+                if nonzero_only and marks == (0, 0):
                     continue
                 for donor_row in donors:
                     auxiliary = [0, *marks]
@@ -36,7 +36,7 @@ def marked_width_seven():
     desired = set(targets)
     hits = {child for state in layer for child in marked_formal_children(*state) & desired}
     found = {rule for state in hits for rule in targets[state]}
-    assert len(found) == 5769
+    assert len(found) == (5769 if nonzero_only else 7047)
     return sorted(found)
 
 

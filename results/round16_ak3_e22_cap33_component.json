@@ -1,0 +1,77 @@
+{
+  "uncompressed_catalogue_sha256": "83115d478b51b4df1253f071f214f7cf917627642db3cb72a52d6096da5d0e86",
+  "reverse": {
+    "cap": 33,
+    "indexed_seeds": 1258633777,
+    "expanded": 37659,
+    "discovered": 37659,
+    "candidates": 65473912,
+    "admitted": 1928110,
+    "closed": true,
+    "seed_anchor": null,
+    "primitive": false,
+    "route": []
+  },
+  "independent": {
+    "status": "CLOSED_AND_CONNECTED",
+    "cyclic_cap": 33,
+    "signed_permutation_orbits": 37659,
+    "rotation_product_candidates": 65473912,
+    "admitted_neighbors": 1928110
+  },
+  "energy_histogram": {
+    "20": 5,
+    "21": 11,
+    "22": 4,
+    "23": 40,
+    "24": 42,
+    "25": 98,
+    "26": 103,
+    "27": 417,
+    "28": 464,
+    "29": 1458,
+    "30": 1813,
+    "31": 5399,
+    "32": 7242,
+    "33": 20563
+  },
+  "euclidean_primitive_and_membership_audit": {
+    "coordinates_checked": 36804,
+    "controls": 3208,
+    "membership": {
+      "ak3": false,
+      "e22": true,
+      "e24": true
+    }
+  },
+  "one_product_arbitrary_tail": {
+    "rows_checked": 37659,
+    "complete": true,
+    "hit": null
+  },
+  "first_exit_index_positive_control": {
+    "cap": 33,
+    "indexed_seeds": 1258633777,
+    "expanded": 1,
+    "discovered": 15312,
+    "candidates": 979440,
+    "admitted": 979440,
+    "closed": false,
+    "seed_anchor": [
+      "xyxYXY",
+      "xxxxYYY"
+    ],
+    "primitive": false,
+    "route": [
+      [
+        "xyxYXY",
+        "xxxxYYY"
+      ],
+      [
+        "xyxYXY",
+        "xxxxxxxxxxxxyxYXYXXXXXXXYYY"
+      ]
+    ]
+  },
+  "independent_closure_negative_control": "Removing the final row fails with catalogue not closed."
+}

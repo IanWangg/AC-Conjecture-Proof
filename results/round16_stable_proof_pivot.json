@@ -1,0 +1,97 @@
+{
+  "cleared_prefix": {
+    "moves": 1031,
+    "rank_peak": 3,
+    "raw_peak": 41,
+    "cyclic_peak": 32,
+    "final_words": [
+      "zXyxxyy",
+      "XXYxYXXYxxy",
+      "XXYXYxxyXyxxy"
+    ],
+    "sha256": "b5d1ba817d89748b4f5d2400c7d547d20cbeee5bc1a673067fd4b56bd1df3bdf"
+  },
+  "tail_products": 26,
+  "complete": {
+    "moves": 1346,
+    "rank_peak": 3,
+    "raw_peak": 41,
+    "cyclic_peak": 33,
+    "final_words": [
+      "XXYxYXXYxxy",
+      "XXYXYxxyXyxxy"
+    ],
+    "sha256": "4d333d2b6605b5bbc4592ebbb085d75bc8b4e75551dda1849918ea79a014c84a"
+  },
+  "single_pivot_search": {
+    "cyclic_floor": 12,
+    "word_width": 21,
+    "bridge_limit": 3,
+    "maximum_auxiliary_occurrences": 1,
+    "state_budget": 700000,
+    "cap32": {
+      "expanded": 47249,
+      "forward": 19918,
+      "reverse": 30824,
+      "join": false
+    },
+    "cap33": {
+      "expanded": 43559,
+      "forward": 29009,
+      "reverse": 30570,
+      "join": true
+    }
+  },
+  "original_tail_splice": {
+    "original_cut": [
+      2403,
+      2743
+    ],
+    "tail_products": 16,
+    "search": {
+      "expanded": 21997,
+      "forward": 22230,
+      "reverse": 11222,
+      "join": true
+    },
+    "complete": {
+      "product_edges": 136,
+      "moves": 1773,
+      "rank_peak": 3,
+      "raw_peak": 45,
+      "cyclic_peak": 34,
+      "final_words": [
+        "XXYxYXXYxxy",
+        "XXYXYxxyXyxxy"
+      ],
+      "sha256": "0840208fa6fb4006689c90c7afd667c6ded8e34e3e8f6f6c6d437207c5989bc3"
+    }
+  },
+  "lower_energy_projection": {
+    "stable_tail_products": 24,
+    "stable": {
+      "moves": 1306,
+      "rank_peak": 3,
+      "raw_peak": 41,
+      "cyclic_peak": 33,
+      "final_words": [
+        "XXYYYxYXY",
+        "XXYYxYXXyxxY"
+      ],
+      "sha256": "68e7de48ed65bdf79f402c196579cdd3f1d0660de4108449dc2cf234dcba3dde"
+    },
+    "ordinary_bridge_to_energy_24": {
+      "moves": 40,
+      "peak_total_length": 29,
+      "endpoint": [
+        "XXYxYXXYxxy",
+        "XXYXYxxyXyxxy"
+      ]
+    },
+    "unbounded_single_product": {
+      "rows_checked": 1,
+      "complete": true,
+      "hit": null
+    }
+  }
+}

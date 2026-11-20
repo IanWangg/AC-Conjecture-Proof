@@ -1,0 +1,168 @@
+{
+  "comparisons": [
+    {
+      "compact": {
+        "layers": 13,
+        "offset_bytes": 325832,
+        "pairs": 189,
+        "second_id_bytes": 756
+      },
+      "degree": 6,
+      "final_midpoints": 0,
+      "full_tiers_agree": true,
+      "independently_replayed_order": null,
+      "ordered": false,
+      "partial_degree_six": false,
+      "path_within_budget": false,
+      "radii": [
+        5,
+        6
+      ]
+    },
+    {
+      "compact": {
+        "layers": 13,
+        "offset_bytes": 325832,
+        "pairs": 189,
+        "second_id_bytes": 756
+      },
+      "degree": 6,
+      "final_midpoints": 0,
+      "full_tiers_agree": true,
+      "independently_replayed_order": null,
+      "ordered": false,
+      "partial_degree_six": true,
+      "path_within_budget": false,
+      "radii": [
+        5,
+        6
+      ]
+    },
+    {
+      "compact": {
+        "layers": 14,
+        "offset_bytes": 2021712,
+        "pairs": 1390,
+        "second_id_bytes": 5560
+      },
+      "degree": 6,
+      "final_midpoints": 1,
+      "full_tiers_agree": true,
+      "independently_replayed_order": [
+        1,
+        0
+      ],
+      "ordered": false,
+      "partial_degree_six": false,
+      "path_within_budget": true,
+      "radii": [
+        6,
+        6
+      ]
+    },
+    {
+      "compact": {
+        "layers": 14,
+        "offset_bytes": 2021712,
+        "pairs": 1390,
+        "second_id_bytes": 5560
+      },
+      "degree": 6,
+      "final_midpoints": 1,
+      "full_tiers_agree": true,
+      "independently_replayed_order": [
+        1,
+        0
+      ],
+      "ordered": false,
+      "partial_degree_six": true,
+      "path_within_budget": true,
+      "radii": [
+        6,
+        6
+      ]
+    },
+    {
+      "compact": {
+        "layers": 14,
+        "offset_bytes": 2021712,
+        "pairs": 1390,
+        "second_id_bytes": 5560
+      },
+      "degree": 6,
+      "final_midpoints": 0,
+      "full_tiers_agree": true,
+      "independently_replayed_order": null,
+      "ordered": true,
+      "partial_degree_six": false,
+      "path_within_budget": false,
+      "radii": [
+        6,
+        6
+      ]
+    },
+    {
+      "compact": {
+        "layers": 14,
+        "offset_bytes": 2021712,
+        "pairs": 1390,
+        "second_id_bytes": 5560
+      },
+      "degree": 6,
+      "final_midpoints": 0,
+      "full_tiers_agree": true,
+      "independently_replayed_order": null,
+      "ordered": true,
+      "partial_degree_six": true,
+      "path_within_budget": false,
+      "radii": [
+        6,
+        6
+      ]
+    },
+    {
+      "compact": {
+        "layers": 16,
+        "offset_bytes": 25181696,
+        "pairs": 38422,
+        "second_id_bytes": 153688
+      },
+      "degree": 7,
+      "final_midpoints": 1,
+      "full_tiers_agree": true,
+      "independently_replayed_order": [
+        0,
+        1
+      ],
+      "ordered": false,
+      "partial_degree_six": false,
+      "path_within_budget": true,
+      "radii": [
+        7,
+        7
+      ]
+    },
+    {
+      "compact": {
+        "layers": 16,
+        "offset_bytes": 25181696,
+        "pairs": 38422,
+        "second_id_bytes": 153688
+      },
+      "degree": 7,
+      "final_midpoints": 1,
+      "full_tiers_agree": true,
+      "independently_replayed_order": [
+        0,
+        1
+      ],
+      "ordered": false,
+      "partial_degree_six": true,
+      "path_within_budget": true,
+      "radii": [
+        7,
+        7
+      ]
+    }
+  ]
+}
