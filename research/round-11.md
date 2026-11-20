@@ -1,0 +1,29 @@
+# Research round 11
+
+2026-11-19. Five researchers pursued the five targets in overlapping waves. The ordinary AK(3) trivialization and both Andrews–Curtis conjectures remain open.
+
+## Track reports
+
+| Target | Result |
+| --- | --- |
+| [Ordinary AK(3) trivialization](round-11-ak3.md) | Exact all-tail archive lookups exclude joins for the full marked cap-32 sample and 20,490 Whitehead-minimized search states. The completed stage-two Wirtinger outer charts have two common intermediate relators through cyclic length 24. Explicit finite marks exclude both corresponding middle blocks. |
+| [Proof of Stable AC](round-11-stable-proof.md) | Short strict rank-three paths bracket the erroneous and corrected Wirtinger markings. The wrong-side path reaches a tuple without singletons in three further cyclic products. Reverse neighborhoods from verified trivial endpoints give no exact join within the stated search bounds. |
+| [Proof of ordinary AC](round-11-ac-proof.md) | A relative normal-generation lifting theorem defeats simultaneous finite quotient separation of the full same-row Wirtinger pattern. Magnus rewriting and a finite permutation witness exclude literal equality of the middle rows in the fixed-donor quotient for the specified homology marking. |
+| [Disproof of ordinary AC](round-11-ac-disproof.md) | The marked wrong Wirtinger pair has primitive-free normal closure in every proper overgroup. A marked AK(2) pair 44 strict moves from a basis has the same property, and an ordinary conjugation separates two AK(2) markings with opposite outcomes. |
+| [Disproof of Stable AC](round-11-stable-disproof.md) | Budget 20 leaves zero, one or two added pairs. Erasing the spare at the original degree in a shortest one-padding path forces an interval of at least six moves with three active rows in the free group and in Magnus degrees at least eight. The separate degree-nine truncation has stronger length constraints at this budget. |
+
+## Joint results
+
+- The complete generated ordinary cap-32 component has **539,705,143** signed orbits and no primitive coordinate. The independent Euclidean scan agrees for all 285,484,620 additions, with 101,668,360 sign-pure coordinate occurrences checked. The boundary and closure rechecks are in progress. A strict **687-instruction** path proves that the new energy-20 pair `(xxxxxyXXy, xxyxxyyXYXY)` first enters at cyclic peak **32**. [Complete generation and strict entry](round-11-cyclic32.md), [independent closure method and controls](round-11-incremental-closure.md).
+- A three-block ordinary repair through an intermediate in the two completed chart stages fails at either of the two exposed intermediate markings. The global relative lifting theorem shows that a finite family of middle tests cannot cover all outer-compatible lifts. An exact free-group repair now needs arbitrary conjugacy in the one-relator middle quotient or a different receiver order. The stable reverse search provides verified endpoints for trying the latter. [Finite chart intersection](round-11-ak3.md), [relative lifting theorem](round-11-ac-proof.md), [rank-three endpoints](round-11-stable-proof.md).
+- The wrong Wirtinger proper-overgroup proof uses different integer characters for different forbidden-double languages. This extends the principal-image technique past free-quotient cases. The trivial AK(2) control gives a precise limit for the obstruction, so future searches can measure when the cumulative conjugators first generate the ambient group. [Voltage proofs and controls](round-11-ac-disproof.md).
+- The cap-23 chart projections yield 66,951 signed Whitehead-minimal pairs from 92,361 signed projections. Every minimal pair fails the planar-link parity test. This tests the projected markings. The strict rank-three chart excursion offers a route to longer searches that change the pivot. [Geometry receipt](../results/round11_stable_proof_projected_geometry.json), [frontier method](round-10-stable-proof.md), [strict excursion](round-11-stable-proof.md).
+- A free ordinary or stabilized path with exactly three original-letter conjugations must use **`x,x,Y`**. Both intervening intervals must contain a product that survives auxiliary erasure. The second receiver immediately before conjugating must lie outside the original row subgroup, and the third must lie outside the one-conjugation envelope. These constraints complement the degree-ten corridor and shortest-spare results. [Exact schedule and receiver tests](round-11-three-conjugations.md), [distance and padding analysis](round-11-stable-disproof.md).
+
+## Questions for round 12
+
+1. **AK(3) trivialization.** Finish the cap-32 audits. Search from the two energy-20 orbits and the new shorter states using strict marked ancestry. Try deeper alternating outer chart stages or an independently enlarged archive.
+2. **Stable AC proof.** Follow the genuine rank-three excursions that have lost singleton pivots and search for chart switches on verified paths. Track both wrong Wirtinger rows and widen the reverse seeds using independently certified trivial presentations.
+3. **Ordinary AC proof.** Study conjugacy of the middle donors in the full one-relator quotient of an outer-compatible intermediate. Compare with the more rigid equality theorem and use the short stable routes to identify additional ordinary receiver orders.
+4. **Ordinary AC disproof.** Test the sharp energy-20 ordinary waypoint with the proper-overgroup method. Compare the first full-ambient conjugator transition on strict AK(2) and AK(3) routes.
+5. **Stable AC disproof.** Follow the native degree-ten length-20 run and the remaining one- and two-spare branches. Use the earliest three- or four-active-row interval for exact corridor cuts. Combine the free-word filters with the three-original-conjugation schedule where it applies.

@@ -1,0 +1,18 @@
+{
+  "degree": 8,
+  "spare_rows": 3,
+  "limit": 14,
+  "ordered": false,
+  "distance": null,
+  "radii": [
+    7,
+    7
+  ],
+  "visited": [
+    15631448,
+    74695954
+  ],
+  "distinct_elements": 11801436,
+  "midpoint_hex": [],
+  "final_boundary_candidates": 661103565
+}

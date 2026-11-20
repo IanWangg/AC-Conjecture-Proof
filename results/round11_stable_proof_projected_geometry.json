@@ -1,0 +1,12 @@
+{
+  "signed_projections": 92361,
+  "minimal_rank_two_signed_orbits": 66951,
+  "classifications": {
+    "parity_obstructed": 66951
+  },
+  "remaining": [],
+  "input_rank_three_orbits": 450874,
+  "input_tsv_sha256": "7e00ac74ea6f7664f5ec04faee63a2d0fbe24ec1263da23ba64b7e7d2abf662d",
+  "minima_signed_markings_through28": 129792,
+  "minima_signed_markings_through28_tsv_sha256": "c4203b72c15a5ed127c3ad6a38fa5989d7f1c08cf3f2d0410498d2e6f921d358"
+}

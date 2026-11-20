@@ -1,0 +1,1871 @@
+{
+  "parameters": {
+    "stages": 3,
+    "allocation_cap": 90000,
+    "horizon": 20,
+    "bases": 32,
+    "beam": 16,
+    "alternations": 4,
+    "maximum_energy": 42,
+    "workers": 4
+  },
+  "archive_tsv_sha256": "c9dd0627965a6f1ffa899c4a465b95a788d739eedd49089d9b6c5681980ba2c4",
+  "positive_control": {
+    "checks": {
+      "graph_sizes": [
+        12,
+        325,
+        8513
+      ],
+      "allocation_stop": true,
+      "hits": [
+        [
+          "X",
+          1
+        ]
+      ]
+    },
+    "strict_replay": {
+      "moves": 8,
+      "peak_total_length": 23,
+      "endpoint": [
+        "X",
+        "XXYYxyyyxYY"
+      ]
+    }
+  },
+  "reverse_beam": {
+    "seed": "correct",
+    "rounds": [
+      {
+        "inputs": 2,
+        "vertices": 22300,
+        "return_states": 1454281,
+        "allocation_stops": 2,
+        "primitive_tails": 4,
+        "interior_slopes": 0,
+        "exact_primitive_hits": [
+          {
+            "pair": [
+              "X",
+              "XXYYxyyyxYY"
+            ],
+            "next_receiver": 1,
+            "route": [
+              [
+                0,
+                "X",
+                2
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "XXYYxyXyyxYY",
+              "X"
+            ],
+            "next_receiver": 0,
+            "route": [
+              [
+                1,
+                "X",
+                2
+              ]
+            ]
+          }
+        ],
+        "novel_states": 27
+      },
+      {
+        "inputs": 16,
+        "vertices": 251525,
+        "return_states": 3525295,
+        "allocation_stops": 14,
+        "primitive_tails": 32,
+        "interior_slopes": 0,
+        "exact_primitive_hits": [
+          {
+            "pair": [
+              "X",
+              "Y"
+            ],
+            "next_receiver": 0,
+            "route": [
+              [
+                0,
+                "X",
+                2
+              ],
+              [
+                1,
+                "Y",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "Y",
+              "X"
+            ],
+            "next_receiver": 1,
+            "route": [
+              [
+                1,
+                "X",
+                2
+              ],
+              [
+                0,
+                "Y",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "XY",
+              "X"
+            ],
+            "next_receiver": 1,
+            "route": [
+              [
+                1,
+                "X",
+                2
+              ],
+              [
+                0,
+                "XY",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "XXYYxyxyyxYY",
+              "X"
+            ],
+            "next_receiver": 0,
+            "route": [
+              [
+                0,
+                "XXYYxyxyyxYY",
+                2
+              ],
+              [
+                1,
+                "X",
+                2
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "X",
+              "XXYYxyXXyyxYY"
+            ],
+            "next_receiver": 1,
+            "route": [
+              [
+                1,
+                "XXYYxyXXyyxYY",
+                2
+              ],
+              [
+                0,
+                "X",
+                2
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "XXYYxyyXYXyxyxYY",
+              "X"
+            ],
+            "next_receiver": 0,
+            "route": [
+              [
+                0,
+                "XXYYxyyXYXyxyxYY",
+                2
+              ],
+              [
+                1,
+                "X",
+                2
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "XXYYxyyXYxyxyxYY",
+              "X"
+            ],
+            "next_receiver": 0,
+            "route": [
+              [
+                0,
+                "XXYYxyyXYxyxyxYY",
+                2
+              ],
+              [
+                1,
+                "X",
+                2
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "XXYYxyyyyyXYYxYY",
+              "X"
+            ],
+            "next_receiver": 0,
+            "route": [
+              [
+                0,
+                "XXYYxyyyyyXYYxYY",
+                2
+              ],
+              [
+                1,
+                "X",
+                2
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "X",
+              "XXYYXyXYxxyXyyxYY"
+            ],
+            "next_receiver": 1,
+            "route": [
+              [
+                1,
+                "XXYYXyXYxxyXyyxYY",
+                2
+              ],
+              [
+                0,
+                "X",
+                1
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "X",
+              "XXYYXyxYxxyXyyxYY"
+            ],
+            "next_receiver": 1,
+            "route": [
+              [
+                1,
+                "XXYYXyxYxxyXyyxYY",
+                2
+              ],
+              [
+                0,
+                "X",
+                1
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "X",
+              "XXYYxyXyXYXyxyxYY"
+            ],
+            "next_receiver": 1,
+            "route": [
+              [
+                1,
+                "XXYYxyXyXYXyxyxYY",
+                2
+              ],
+              [
+                0,
+                "X",
+                1
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "X",
+              "XXYYxyXyXYxyxyxYY"
+            ],
+            "next_receiver": 1,
+            "route": [
+              [
+                1,
+                "XXYYxyXyXYxyxyxYY",
+                2
+              ],
+              [
+                0,
+                "X",
+                1
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "XXYXyyXYYxYxyyyxYY",
+              "X"
+            ],
+            "next_receiver": 0,
+            "route": [
+              [
+                0,
+                "XXYXyyXYYxYxyyyxYY",
+                2
+              ],
+              [
+                1,
+                "X",
+                1
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "XXYYxyxYYXyyXyyxYY",
+              "X"
+            ],
+            "next_receiver": 0,
+            "route": [
+              [
+                0,
+                "XXYYxyxYYXyyXyyxYY",
+                2
+              ],
+              [
+                1,
+                "X",
+                1
+              ]
+            ]
+          }
+        ],
+        "novel_states": 64
+      },
+      {
+        "inputs": 16,
+        "vertices": 152,
+        "return_states": 102182,
+        "allocation_stops": 0,
+        "primitive_tails": 32,
+        "interior_slopes": 3,
+        "exact_primitive_hits": [
+          {
+            "pair": [
+              "Y",
+              "XY"
+            ],
+            "next_receiver": 1,
+            "route": [
+              [
+                0,
+                "X",
+                2
+              ],
+              [
+                1,
+                "XY",
+                3
+              ],
+              [
+                0,
+                "Y",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "Y",
+              "Xy"
+            ],
+            "next_receiver": 1,
+            "route": [
+              [
+                0,
+                "X",
+                2
+              ],
+              [
+                1,
+                "Xy",
+                3
+              ],
+              [
+                0,
+                "Y",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "XY",
+              "Y"
+            ],
+            "next_receiver": 0,
+            "route": [
+              [
+                1,
+                "X",
+                2
+              ],
+              [
+                0,
+                "XY",
+                3
+              ],
+              [
+                1,
+                "Y",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "Xy",
+              "Y"
+            ],
+            "next_receiver": 0,
+            "route": [
+              [
+                1,
+                "X",
+                2
+              ],
+              [
+                0,
+                "Xy",
+                3
+              ],
+              [
+                1,
+                "Y",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "Xy",
+              "XYXyy"
+            ],
+            "next_receiver": 1,
+            "route": [
+              [
+                0,
+                "X",
+                2
+              ],
+              [
+                1,
+                "XYXyy",
+                3
+              ],
+              [
+                0,
+                "Xy",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "XYXyy",
+              "Xy"
+            ],
+            "next_receiver": 0,
+            "route": [
+              [
+                1,
+                "X",
+                2
+              ],
+              [
+                0,
+                "XYXyy",
+                3
+              ],
+              [
+                1,
+                "Xy",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "Y",
+              "X"
+            ],
+            "next_receiver": 1,
+            "route": [
+              [
+                0,
+                "XXYYxyxyyxYY",
+                2
+              ],
+              [
+                1,
+                "X",
+                2
+              ],
+              [
+                0,
+                "Y",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "Xy",
+              "X"
+            ],
+            "next_receiver": 1,
+            "route": [
+              [
+                0,
+                "XXYYxyxyyxYY",
+                2
+              ],
+              [
+                1,
+                "X",
+                2
+              ],
+              [
+                0,
+                "Xy",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "X",
+              "Y"
+            ],
+            "next_receiver": 0,
+            "route": [
+              [
+                1,
+                "XXYYxyXXyyxYY",
+                2
+              ],
+              [
+                0,
+                "X",
+                2
+              ],
+              [
+                1,
+                "Y",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "X",
+              "XY"
+            ],
+            "next_receiver": 0,
+            "route": [
+              [
+                1,
+                "XXYYxyXXyyxYY",
+                2
+              ],
+              [
+                0,
+                "X",
+                2
+              ],
+              [
+                1,
+                "XY",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "X",
+              "XXY"
+            ],
+            "next_receiver": 0,
+            "route": [
+              [
+                1,
+                "XXYYxyXXyyxYY",
+                2
+              ],
+              [
+                0,
+                "X",
+                2
+              ],
+              [
+                1,
+                "XXY",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "Y",
+              "X"
+            ],
+            "next_receiver": 1,
+            "route": [
+              [
+                0,
+                "XXYYxyyXYXyxyxYY",
+                2
+              ],
+              [
+                1,
+                "X",
+                2
+              ],
+              [
+                0,
+                "Y",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "XY",
+              "X"
+            ],
+            "next_receiver": 1,
+            "route": [
+              [
+                0,
+                "XXYYxyyXYXyxyxYY",
+                2
+              ],
+              [
+                1,
+                "X",
+                2
+              ],
+              [
+                0,
+                "XY",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "Y",
+              "X"
+            ],
+            "next_receiver": 1,
+            "route": [
+              [
+                0,
+                "XXYYxyyXYxyxyxYY",
+                2
+              ],
+              [
+                1,
+                "X",
+                2
+              ],
+              [
+                0,
+                "Y",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "Xy",
+              "X"
+            ],
+            "next_receiver": 1,
+            "route": [
+              [
+                0,
+                "XXYYxyyXYxyxyxYY",
+                2
+              ],
+              [
+                1,
+                "X",
+                2
+              ],
+              [
+                0,
+                "Xy",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "Y",
+              "X"
+            ],
+            "next_receiver": 1,
+            "route": [
+              [
+                0,
+                "XXYYxyyyyyXYYxYY",
+                2
+              ],
+              [
+                1,
+                "X",
+                2
+              ],
+              [
+                0,
+                "Y",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "XY",
+              "X"
+            ],
+            "next_receiver": 1,
+            "route": [
+              [
+                0,
+                "XXYYxyyyyyXYYxYY",
+                2
+              ],
+              [
+                1,
+                "X",
+                2
+              ],
+              [
+                0,
+                "XY",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "X",
+              "Y"
+            ],
+            "next_receiver": 0,
+            "route": [
+              [
+                1,
+                "XXYYXyXYxxyXyyxYY",
+                2
+              ],
+              [
+                0,
+                "X",
+                1
+              ],
+              [
+                1,
+                "Y",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "X",
+              "XY"
+            ],
+            "next_receiver": 0,
+            "route": [
+              [
+                1,
+                "XXYYXyXYxxyXyyxYY",
+                2
+              ],
+              [
+                0,
+                "X",
+                1
+              ],
+              [
+                1,
+                "XY",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "X",
+              "XXY"
+            ],
+            "next_receiver": 0,
+            "route": [
+              [
+                1,
+                "XXYYXyXYxxyXyyxYY",
+                2
+              ],
+              [
+                0,
+                "X",
+                1
+              ],
+              [
+                1,
+                "XXY",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "X",
+              "Y"
+            ],
+            "next_receiver": 0,
+            "route": [
+              [
+                1,
+                "XXYYXyxYxxyXyyxYY",
+                2
+              ],
+              [
+                0,
+                "X",
+                1
+              ],
+              [
+                1,
+                "Y",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "X",
+              "Y"
+            ],
+            "next_receiver": 0,
+            "route": [
+              [
+                1,
+                "XXYYxyXyXYXyxyxYY",
+                2
+              ],
+              [
+                0,
+                "X",
+                1
+              ],
+              [
+                1,
+                "Y",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "X",
+              "XY"
+            ],
+            "next_receiver": 0,
+            "route": [
+              [
+                1,
+                "XXYYxyXyXYXyxyxYY",
+                2
+              ],
+              [
+                0,
+                "X",
+                1
+              ],
+              [
+                1,
+                "XY",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "X",
+              "XXY"
+            ],
+            "next_receiver": 0,
+            "route": [
+              [
+                1,
+                "XXYYxyXyXYXyxyxYY",
+                2
+              ],
+              [
+                0,
+                "X",
+                1
+              ],
+              [
+                1,
+                "XXY",
+                3
+              ]
+            ]
+          }
+        ],
+        "novel_states": 85
+      },
+      {
+        "inputs": 16,
+        "vertices": 16,
+        "return_states": 707,
+        "allocation_stops": 0,
+        "primitive_tails": 32,
+        "interior_slopes": 0,
+        "exact_primitive_hits": [
+          {
+            "pair": [
+              "X",
+              "Y"
+            ],
+            "next_receiver": 1,
+            "route": [
+              [
+                1,
+                "X",
+                2
+              ],
+              [
+                0,
+                "XY",
+                3
+              ],
+              [
+                1,
+                "Y",
+                3
+              ],
+              [
+                0,
+                "X",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "XY",
+              "X"
+            ],
+            "next_receiver": 0,
+            "route": [
+              [
+                0,
+                "X",
+                2
+              ],
+              [
+                1,
+                "Y",
+                3
+              ],
+              [
+                0,
+                "XY",
+                3
+              ],
+              [
+                1,
+                "X",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "X",
+              "Y"
+            ],
+            "next_receiver": 1,
+            "route": [
+              [
+                1,
+                "X",
+                2
+              ],
+              [
+                0,
+                "Xy",
+                3
+              ],
+              [
+                1,
+                "Y",
+                3
+              ],
+              [
+                0,
+                "X",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "Xy",
+              "X"
+            ],
+            "next_receiver": 0,
+            "route": [
+              [
+                0,
+                "X",
+                2
+              ],
+              [
+                1,
+                "Y",
+                3
+              ],
+              [
+                0,
+                "Xy",
+                3
+              ],
+              [
+                1,
+                "X",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "X",
+              "XY"
+            ],
+            "next_receiver": 1,
+            "route": [
+              [
+                1,
+                "X",
+                2
+              ],
+              [
+                0,
+                "Y",
+                3
+              ],
+              [
+                1,
+                "XY",
+                3
+              ],
+              [
+                0,
+                "X",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "Y",
+              "X"
+            ],
+            "next_receiver": 0,
+            "route": [
+              [
+                0,
+                "X",
+                2
+              ],
+              [
+                1,
+                "XY",
+                3
+              ],
+              [
+                0,
+                "Y",
+                3
+              ],
+              [
+                1,
+                "X",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "X",
+              "Xy"
+            ],
+            "next_receiver": 1,
+            "route": [
+              [
+                1,
+                "X",
+                2
+              ],
+              [
+                0,
+                "Y",
+                3
+              ],
+              [
+                1,
+                "Xy",
+                3
+              ],
+              [
+                0,
+                "X",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "Y",
+              "X"
+            ],
+            "next_receiver": 0,
+            "route": [
+              [
+                0,
+                "X",
+                2
+              ],
+              [
+                1,
+                "Xy",
+                3
+              ],
+              [
+                0,
+                "Y",
+                3
+              ],
+              [
+                1,
+                "X",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "XY",
+              "XXY"
+            ],
+            "next_receiver": 1,
+            "route": [
+              [
+                1,
+                "XXYYxyXXyyxYY",
+                2
+              ],
+              [
+                0,
+                "X",
+                2
+              ],
+              [
+                1,
+                "XXY",
+                3
+              ],
+              [
+                0,
+                "XY",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "XXY",
+              "X"
+            ],
+            "next_receiver": 0,
+            "route": [
+              [
+                0,
+                "X",
+                2
+              ],
+              [
+                1,
+                "XY",
+                3
+              ],
+              [
+                0,
+                "XXY",
+                3
+              ],
+              [
+                1,
+                "X",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "XXy",
+              "X"
+            ],
+            "next_receiver": 0,
+            "route": [
+              [
+                0,
+                "X",
+                2
+              ],
+              [
+                1,
+                "Xy",
+                3
+              ],
+              [
+                0,
+                "XXy",
+                3
+              ],
+              [
+                1,
+                "X",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "X",
+              "XXY"
+            ],
+            "next_receiver": 1,
+            "route": [
+              [
+                1,
+                "X",
+                2
+              ],
+              [
+                0,
+                "XY",
+                3
+              ],
+              [
+                1,
+                "XXY",
+                3
+              ],
+              [
+                0,
+                "X",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "Y",
+              "XYY"
+            ],
+            "next_receiver": 1,
+            "route": [
+              [
+                1,
+                "X",
+                2
+              ],
+              [
+                0,
+                "XY",
+                3
+              ],
+              [
+                1,
+                "XYY",
+                3
+              ],
+              [
+                0,
+                "Y",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "XYY",
+              "Y"
+            ],
+            "next_receiver": 0,
+            "route": [
+              [
+                0,
+                "X",
+                2
+              ],
+              [
+                1,
+                "XY",
+                3
+              ],
+              [
+                0,
+                "XYY",
+                3
+              ],
+              [
+                1,
+                "Y",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "X",
+              "XXy"
+            ],
+            "next_receiver": 1,
+            "route": [
+              [
+                1,
+                "X",
+                2
+              ],
+              [
+                0,
+                "Xy",
+                3
+              ],
+              [
+                1,
+                "XXy",
+                3
+              ],
+              [
+                0,
+                "X",
+                3
+              ]
+            ]
+          },
+          {
+            "pair": [
+              "Y",
+              "Xyy"
+            ],
+            "next_receiver": 1,
+            "route": [
+              [
+                1,
+                "X",
+                2
+              ],
+              [
+                0,
+                "Xy",
+                3
+              ],
+              [
+                1,
+                "Xyy",
+                3
+              ],
+              [
+                0,
+                "Y",
+                3
+              ]
+            ]
+          }
+        ],
+        "novel_states": 21
+      }
+    ]
+  },
+  "reverse_marked_pairs": 186,
+  "reverse_donor_keys": 147704,
+  "forward": {
+    "wrong": {
+      "beam": {
+        "seed": "wrong",
+        "rounds": [
+          {
+            "inputs": 2,
+            "vertices": 15999,
+            "return_states": 1289531,
+            "allocation_stops": 2,
+            "primitive_tails": 4,
+            "interior_slopes": 0,
+            "exact_primitive_hits": [],
+            "novel_states": 23
+          },
+          {
+            "inputs": 16,
+            "vertices": 63664,
+            "return_states": 1752015,
+            "allocation_stops": 16,
+            "primitive_tails": 32,
+            "interior_slopes": 0,
+            "exact_primitive_hits": [],
+            "novel_states": 16
+          },
+          {
+            "inputs": 16,
+            "vertices": 110673,
+            "return_states": 4752999,
+            "allocation_stops": 15,
+            "primitive_tails": 32,
+            "interior_slopes": 6,
+            "exact_primitive_hits": [],
+            "novel_states": 99
+          },
+          {
+            "inputs": 16,
+            "vertices": 317563,
+            "return_states": 8789748,
+            "allocation_stops": 15,
+            "primitive_tails": 32,
+            "interior_slopes": 3,
+            "exact_primitive_hits": [],
+            "novel_states": 100
+          }
+        ]
+      },
+      "distinct_marked_pairs": 238,
+      "direct_checks": {
+        "charts": 93,
+        "target_word_checks": 39156,
+        "largest_graph": 17783,
+        "allocation_stops": 20,
+        "hits": 0
+      },
+      "lowest_energy_pairs": [
+        {
+          "pair": [
+            "XYYXyxy",
+            "XXYxYxy"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              0,
+              "XXYxyyyXYYYXyyxyxYY",
+              2
+            ],
+            [
+              1,
+              "XYYYXyyxYYXyxyyy",
+              1
+            ],
+            [
+              0,
+              "XYYXyxy",
+              1
+            ],
+            [
+              1,
+              "XXYxYxy",
+              3
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XYYXyxy",
+            "XXyxYxY"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              0,
+              "XXYxyyyXYYYXyyxyxYY",
+              2
+            ],
+            [
+              1,
+              "XYYYXyyxYYXyxyyy",
+              1
+            ],
+            [
+              0,
+              "XYYXyxy",
+              1
+            ],
+            [
+              1,
+              "XXyxYxY",
+              3
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XYYXyxy",
+            "XXYXyxxY"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              0,
+              "XXYxyyyXYYYXyyxyxYY",
+              2
+            ],
+            [
+              1,
+              "XYYYXyyxYYXyxyyy",
+              1
+            ],
+            [
+              0,
+              "XYYXyxy",
+              1
+            ],
+            [
+              1,
+              "XXYXyxxY",
+              3
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XYYXyxy",
+            "XYYYxyXy"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              0,
+              "XXYxyyyXYYYXyyxyxYY",
+              2
+            ],
+            [
+              1,
+              "XYYYXyyxYYXyxyyy",
+              1
+            ],
+            [
+              0,
+              "XYYXyxy",
+              1
+            ],
+            [
+              1,
+              "XYYYxyXy",
+              3
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXYxyXyxYY",
+            "XYYXyxy"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              0,
+              "XXYxyXyxYYxYYXyXYXy",
+              2
+            ],
+            [
+              1,
+              "XYXyxYYXy",
+              1
+            ],
+            [
+              0,
+              "XXYxyXyxYY",
+              2
+            ],
+            [
+              1,
+              "XYYXyxy",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXYYXyyyyXY",
+            "XYYXyxy"
+          ],
+          "next_receiver": 1,
+          "route": [
+            [
+              0,
+              "XXXYxyyxYxyxxyyXYxY",
+              2
+            ],
+            [
+              1,
+              "XYYXyxy",
+              1
+            ],
+            [
+              0,
+              "XXYYXyyyyXY",
+              3
+            ]
+          ]
+        }
+      ]
+    },
+    "waypoint": {
+      "beam": {
+        "seed": "waypoint",
+        "rounds": [
+          {
+            "inputs": 2,
+            "vertices": 13541,
+            "return_states": 1353953,
+            "allocation_stops": 1,
+            "primitive_tails": 4,
+            "interior_slopes": 4,
+            "exact_primitive_hits": [],
+            "novel_states": 19
+          },
+          {
+            "inputs": 16,
+            "vertices": 321315,
+            "return_states": 3297822,
+            "allocation_stops": 16,
+            "primitive_tails": 32,
+            "interior_slopes": 0,
+            "exact_primitive_hits": [],
+            "novel_states": 34
+          },
+          {
+            "inputs": 16,
+            "vertices": 70693,
+            "return_states": 3425366,
+            "allocation_stops": 16,
+            "primitive_tails": 32,
+            "interior_slopes": 8,
+            "exact_primitive_hits": [],
+            "novel_states": 39
+          },
+          {
+            "inputs": 16,
+            "vertices": 263372,
+            "return_states": 10513653,
+            "allocation_stops": 10,
+            "primitive_tails": 32,
+            "interior_slopes": 22,
+            "exact_primitive_hits": [],
+            "novel_states": 121
+          }
+        ]
+      },
+      "distinct_marked_pairs": 212,
+      "direct_checks": {
+        "charts": 138,
+        "target_word_checks": 76176,
+        "largest_graph": 12140,
+        "allocation_stops": 0,
+        "hits": 0
+      },
+      "lowest_energy_pairs": [
+        {
+          "pair": [
+            "XXyxyyXyxy",
+            "XXYxyxY"
+          ],
+          "next_receiver": 1,
+          "route": [
+            [
+              1,
+              "XXYxyXyXXyxyyyxYxY",
+              3
+            ],
+            [
+              0,
+              "XXyxyyyxYXy",
+              1
+            ],
+            [
+              1,
+              "XXYxyxY",
+              2
+            ],
+            [
+              0,
+              "XXyxyyXyxy",
+              3
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXYYYXYxYxy",
+            "XXYxyxY"
+          ],
+          "next_receiver": 1,
+          "route": [
+            [
+              1,
+              "XXYXyyyyxYxYYxyXy",
+              3
+            ],
+            [
+              0,
+              "XXyyyyxYxYYxyXyyXY",
+              2
+            ],
+            [
+              1,
+              "XXYxyxY",
+              1
+            ],
+            [
+              0,
+              "XXYYYXYxYxy",
+              3
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXyxYxYYXYY",
+            "XXYxyxY"
+          ],
+          "next_receiver": 1,
+          "route": [
+            [
+              1,
+              "XXYxyXyXXyxyyyxYxY",
+              3
+            ],
+            [
+              0,
+              "XXyxyyyxYXy",
+              1
+            ],
+            [
+              1,
+              "XXYxyxY",
+              2
+            ],
+            [
+              0,
+              "XXyxYxYYXYY",
+              3
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXyxyyyxYXy",
+            "XXYxyxY"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              1,
+              "XXYxyXyXXyxyyyxYxY",
+              3
+            ],
+            [
+              0,
+              "XXyxyyyxYXy",
+              1
+            ],
+            [
+              1,
+              "XXYxyxY",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XYxYXYxYYxy",
+            "XXYxyxY"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              1,
+              "XXYxyxYXYxYXYxYYxy",
+              3
+            ],
+            [
+              0,
+              "XYxYXYxYYxy",
+              2
+            ],
+            [
+              1,
+              "XXYxyxY",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XYxYXyxYxYY",
+            "XXYxyxY"
+          ],
+          "next_receiver": 1,
+          "route": [
+            [
+              1,
+              "XXXYxyxYYxyXyxyyXy",
+              3
+            ],
+            [
+              0,
+              "XXXYxyxYYXYxyyxyyXy",
+              1
+            ],
+            [
+              1,
+              "XXYxyxY",
+              1
+            ],
+            [
+              0,
+              "XYxYXyxYxYY",
+              3
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

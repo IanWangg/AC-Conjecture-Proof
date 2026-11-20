@@ -1,0 +1,144 @@
+{
+  "reverse_archive": {
+    "sha256": "c9dd0627965a6f1ffa899c4a465b95a788d739eedd49089d9b6c5681980ba2c4",
+    "verified_pairs": 23902
+  },
+  "cap32_marked_e17_outward_sample": {
+    "sha256": "899a76ff9acb0998e15f0d26f167539eda8abe9fb54addf588e1359a591a64f3",
+    "all_tail_join": {
+      "status": "NO_SUBGROUP_JOIN",
+      "forward_pairs": 777475,
+      "forward_distinct_words": 773035,
+      "forward_cap": 32,
+      "forward_minimum_coordinate": 7,
+      "reverse_pairs": 23902,
+      "reverse_rotation_pairs": 6230442,
+      "reverse_distinct_rotated_cores": 2675055,
+      "reverse_geodesic_bridges": 297100,
+      "primitive_slopes_constructed": 6869530,
+      "coordinates_found_in_forward_catalogue": 243295,
+      "basis_pair_lookups": 268,
+      "core_topologies": {
+        "barbell": 303184,
+        "rose": 861364,
+        "theta": 1807607
+      }
+    }
+  },
+  "cap32_875_step_waypoint": {
+    "seed": [
+      "XXYxyxY",
+      "XXXYXYxxxYYXYxxYxxyxyXXY"
+    ],
+    "whitehead_products": {
+      "cyclic_product_cap": 36,
+      "whitehead_frontier_cap": 31,
+      "beam_width": 144,
+      "seed_classes": 1,
+      "layers": [
+        {
+          "frontier_classes": 1,
+          "minimal_markings": 1,
+          "product_candidates": 1104,
+          "admitted_products": 552,
+          "distinct_successors_summed_over_markings": 138,
+          "new_short_classes": 15
+        },
+        {
+          "frontier_classes": 15,
+          "minimal_markings": 15,
+          "product_candidates": 17904,
+          "admitted_products": 4176,
+          "distinct_successors_summed_over_markings": 900,
+          "new_short_classes": 25
+        },
+        {
+          "frontier_classes": 25,
+          "minimal_markings": 28,
+          "product_candidates": 35152,
+          "admitted_products": 11656,
+          "distinct_successors_summed_over_markings": 2428,
+          "new_short_classes": 117
+        },
+        {
+          "frontier_classes": 117,
+          "minimal_markings": 117,
+          "product_candidates": 151216,
+          "admitted_products": 46080,
+          "distinct_successors_summed_over_markings": 8901,
+          "new_short_classes": 381
+        },
+        {
+          "frontier_classes": 144,
+          "minimal_markings": 207,
+          "product_candidates": 386320,
+          "admitted_products": 250612,
+          "distinct_successors_summed_over_markings": 42925,
+          "new_short_classes": 1287
+        },
+        {
+          "frontier_classes": 144,
+          "minimal_markings": 144,
+          "product_candidates": 389728,
+          "admitted_products": 312666,
+          "distinct_successors_summed_over_markings": 48787,
+          "new_short_classes": 4267
+        },
+        {
+          "frontier_classes": 144,
+          "minimal_markings": 229,
+          "product_candidates": 2271768,
+          "admitted_products": 2162514,
+          "distinct_successors_summed_over_markings": 284806,
+          "new_short_classes": 14397
+        }
+      ],
+      "generated_short_classes": 20490,
+      "primitive_product_hits": 0
+    },
+    "classes_sha256": "30750193eab83eb5fc0df3ef4fb304f0dfb2f9cab8cdaf21ab642b989063c612",
+    "all_tail_join": {
+      "status": "NO_SUBGROUP_JOIN",
+      "forward_pairs": 20490,
+      "forward_distinct_words": 20093,
+      "forward_cap": 31,
+      "forward_minimum_coordinate": 5,
+      "reverse_pairs": 23902,
+      "reverse_rotation_pairs": 6230442,
+      "reverse_distinct_rotated_cores": 2675055,
+      "reverse_geodesic_bridges": 2427776,
+      "primitive_slopes_constructed": 16042469,
+      "coordinates_found_in_forward_catalogue": 2506117,
+      "basis_pair_lookups": 38314,
+      "core_topologies": {
+        "barbell": 2433860,
+        "rose": 861364,
+        "theta": 1807607
+      }
+    }
+  },
+  "corrected_pair_whitehead_positive_control": {
+    "seed": [
+      "XXYYxyXyyxYY",
+      "XXYYxyyyxYY"
+    ],
+    "whitehead_products": {
+      "cyclic_product_cap": 36,
+      "whitehead_frontier_cap": 31,
+      "beam_width": 144,
+      "seed_classes": 1,
+      "layers": [
+        {
+          "frontier_classes": 1,
+          "minimal_markings": 1,
+          "product_candidates": 3168,
+          "admitted_products": 3168,
+          "distinct_successors_summed_over_markings": 527,
+          "new_short_classes": 29
+        }
+      ],
+      "generated_short_classes": 30,
+      "primitive_product_hits": 2
+    }
+  }
+}

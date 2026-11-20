@@ -1,0 +1,102 @@
+{
+  "rank_two_formal_ball_four": 14284,
+  "terminal_symbolic_cases": 1296,
+  "cases_using_last_cancellation_equality": [
+    {
+      "removed": "A",
+      "signed_donor_equal_to_removed": "AAA",
+      "remaining_pair": [
+        "aaa",
+        "b"
+      ],
+      "pair_after_using_return_equality": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "removed": "A",
+      "signed_donor_equal_to_removed": "aaa",
+      "remaining_pair": [
+        "aaa",
+        "b"
+      ],
+      "pair_after_using_return_equality": [
+        "A",
+        "b"
+      ]
+    },
+    {
+      "removed": "a",
+      "signed_donor_equal_to_removed": "AAA",
+      "remaining_pair": [
+        "AAA",
+        "b"
+      ],
+      "pair_after_using_return_equality": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "removed": "a",
+      "signed_donor_equal_to_removed": "AAA",
+      "remaining_pair": [
+        "aaa",
+        "b"
+      ],
+      "pair_after_using_return_equality": [
+        "A",
+        "b"
+      ]
+    },
+    {
+      "removed": "a",
+      "signed_donor_equal_to_removed": "aaa",
+      "remaining_pair": [
+        "AAA",
+        "b"
+      ],
+      "pair_after_using_return_equality": [
+        "A",
+        "b"
+      ]
+    },
+    {
+      "removed": "a",
+      "signed_donor_equal_to_removed": "aaa",
+      "remaining_pair": [
+        "aaa",
+        "b"
+      ],
+      "pair_after_using_return_equality": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "removed": "b",
+      "signed_donor_equal_to_removed": "BAA",
+      "remaining_pair": [
+        "A",
+        "aab"
+      ],
+      "pair_after_using_return_equality": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "removed": "b",
+      "signed_donor_equal_to_removed": "aab",
+      "remaining_pair": [
+        "A",
+        "aab"
+      ],
+      "pair_after_using_return_equality": [
+        "A",
+        "b"
+      ]
+    }
+  ]
+}

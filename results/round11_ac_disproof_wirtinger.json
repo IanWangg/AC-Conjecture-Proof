@@ -1,0 +1,1532 @@
+{
+  "ordinary_AC_goal_solved": false,
+  "fringes": {
+    "wrong_wirtinger": {
+      "pair": [
+        "XXYYxyyyxYY",
+        "XXYxyXyxYY"
+      ],
+      "source_vertices": 13,
+      "rank_histogram_including_ambient_rose": {
+        "2": 2,
+        "3": 35,
+        "4": 232,
+        "5": 321,
+        "6": 108,
+        "7": 3
+      },
+      "proper_cases_by_rank_and_status": {
+        "2": {
+          "source_excluded": 1
+        },
+        "3": {
+          "free_excluded": 35
+        },
+        "4": {
+          "free_excluded": 230,
+          "voltage_excluded": 2
+        },
+        "5": {
+          "free_excluded": 321
+        },
+        "6": {
+          "free_excluded": 108
+        },
+        "7": {
+          "free_excluded": 3
+        }
+      },
+      "case_sha256": "c3f5e5e650d5ad3d05f6c4ff4bf071578e2623846eface5f7dc8216eaaf91774",
+      "source": {
+        "graph": [
+          -1,
+          1,
+          2,
+          -1,
+          0,
+          3,
+          -1,
+          -1,
+          -1,
+          -1,
+          4,
+          0,
+          1,
+          -1,
+          -1,
+          5,
+          -1,
+          6,
+          -1,
+          2,
+          7,
+          -1,
+          3,
+          8,
+          4,
+          -1,
+          -1,
+          9,
+          -1,
+          5,
+          10,
+          -1,
+          11,
+          -1,
+          5,
+          -1,
+          10,
+          -1,
+          6,
+          12,
+          -1,
+          9,
+          -1,
+          7,
+          -1,
+          8,
+          12,
+          -1,
+          -1,
+          -1,
+          9,
+          11
+        ],
+        "rank": 2,
+        "status": "source_excluded",
+        "absence": {
+          "status": "PASS",
+          "complete_absence_certificate": true,
+          "vertices": 13,
+          "closed_map_pair_states_checked": 64,
+          "ordinary_AC_goal_solved": false
+        }
+      },
+      "exceptional_covers": [
+        {
+          "graph": [
+            1,
+            1,
+            2,
+            2,
+            0,
+            0,
+            1,
+            1,
+            2,
+            2,
+            0,
+            0
+          ],
+          "rank": 4,
+          "status": "voltage_excluded",
+          "voltage": {
+            "chord_basis": [
+              "XX",
+              "YY",
+              "xyX",
+              "yxY"
+            ],
+            "marked_rows_in_chord_basis": [
+              "abcccAb",
+              "abdBacAb"
+            ],
+            "checks": [
+              {
+                "chord_character": [
+                  0,
+                  3,
+                  -2,
+                  -1
+                ],
+                "edge_voltages": [
+                  0,
+                  0,
+                  0,
+                  3,
+                  0,
+                  0,
+                  -2,
+                  2,
+                  -1,
+                  1,
+                  -3,
+                  0
+                ],
+                "inequalities_verified": 9,
+                "alphabet": [
+                  0,
+                  2
+                ],
+                "forbidden_double": 0,
+                "status": "PASS",
+                "cyclic_components": [
+                  {
+                    "states": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "strict_cycle_voltage_sign": -1,
+                    "potential": [
+                      0,
+                      -1,
+                      0,
+                      -1,
+                      -2,
+                      -2
+                    ]
+                  }
+                ]
+              },
+              {
+                "chord_character": [
+                  1,
+                  0,
+                  0,
+                  -1
+                ],
+                "edge_voltages": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  -1,
+                  0,
+                  0,
+                  0,
+                  -1,
+                  1,
+                  0,
+                  0
+                ],
+                "inequalities_verified": 9,
+                "alphabet": [
+                  0,
+                  2
+                ],
+                "forbidden_double": 1,
+                "status": "PASS",
+                "cyclic_components": [
+                  {
+                    "states": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "strict_cycle_voltage_sign": -1,
+                    "potential": [
+                      -1,
+                      0,
+                      -3,
+                      -2,
+                      -1,
+                      0
+                    ]
+                  }
+                ]
+              },
+              {
+                "chord_character": [
+                  0,
+                  3,
+                  -2,
+                  -1
+                ],
+                "edge_voltages": [
+                  0,
+                  0,
+                  0,
+                  3,
+                  0,
+                  0,
+                  -2,
+                  2,
+                  -1,
+                  1,
+                  -3,
+                  0
+                ],
+                "inequalities_verified": 9,
+                "alphabet": [
+                  0,
+                  3
+                ],
+                "forbidden_double": 0,
+                "status": "PASS",
+                "cyclic_components": [
+                  {
+                    "states": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "strict_cycle_voltage_sign": 1,
+                    "potential": [
+                      -8,
+                      -8,
+                      0,
+                      -9,
+                      0,
+                      -7
+                    ]
+                  }
+                ]
+              },
+              {
+                "chord_character": [
+                  1,
+                  0,
+                  0,
+                  -1
+                ],
+                "edge_voltages": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  -1,
+                  0,
+                  0,
+                  0,
+                  -1,
+                  1,
+                  0,
+                  0
+                ],
+                "inequalities_verified": 9,
+                "alphabet": [
+                  0,
+                  3
+                ],
+                "forbidden_double": 1,
+                "status": "PASS",
+                "cyclic_components": [
+                  {
+                    "states": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "strict_cycle_voltage_sign": -1,
+                    "potential": [
+                      -1,
+                      0,
+                      -3,
+                      -2,
+                      -1,
+                      0
+                    ]
+                  }
+                ]
+              },
+              {
+                "chord_character": [
+                  0,
+                  3,
+                  -2,
+                  -1
+                ],
+                "edge_voltages": [
+                  0,
+                  0,
+                  0,
+                  3,
+                  0,
+                  0,
+                  -2,
+                  2,
+                  -1,
+                  1,
+                  -3,
+                  0
+                ],
+                "inequalities_verified": 9,
+                "alphabet": [
+                  1,
+                  2
+                ],
+                "forbidden_double": 0,
+                "status": "PASS",
+                "cyclic_components": [
+                  {
+                    "states": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "strict_cycle_voltage_sign": -1,
+                    "potential": [
+                      0,
+                      -1,
+                      0,
+                      -1,
+                      -2,
+                      -9
+                    ]
+                  }
+                ]
+              },
+              {
+                "chord_character": [
+                  1,
+                  0,
+                  0,
+                  -1
+                ],
+                "edge_voltages": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  -1,
+                  0,
+                  0,
+                  0,
+                  -1,
+                  1,
+                  0,
+                  0
+                ],
+                "inequalities_verified": 9,
+                "alphabet": [
+                  1,
+                  2
+                ],
+                "forbidden_double": 1,
+                "status": "PASS",
+                "cyclic_components": [
+                  {
+                    "states": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "strict_cycle_voltage_sign": 1,
+                    "potential": [
+                      -2,
+                      -2,
+                      -1,
+                      0,
+                      -3,
+                      0
+                    ]
+                  }
+                ]
+              },
+              {
+                "chord_character": [
+                  0,
+                  3,
+                  -2,
+                  -1
+                ],
+                "edge_voltages": [
+                  0,
+                  0,
+                  0,
+                  3,
+                  0,
+                  0,
+                  -2,
+                  2,
+                  -1,
+                  1,
+                  -3,
+                  0
+                ],
+                "inequalities_verified": 9,
+                "alphabet": [
+                  1,
+                  3
+                ],
+                "forbidden_double": 0,
+                "status": "PASS",
+                "cyclic_components": [
+                  {
+                    "states": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "strict_cycle_voltage_sign": 1,
+                    "potential": [
+                      -1,
+                      -1,
+                      0,
+                      -2,
+                      0,
+                      0
+                    ]
+                  }
+                ]
+              },
+              {
+                "chord_character": [
+                  1,
+                  0,
+                  0,
+                  -1
+                ],
+                "edge_voltages": [
+                  0,
+                  1,
+                  0,
+                  0,
+                  -1,
+                  0,
+                  0,
+                  0,
+                  -1,
+                  1,
+                  0,
+                  0
+                ],
+                "inequalities_verified": 9,
+                "alphabet": [
+                  1,
+                  3
+                ],
+                "forbidden_double": 1,
+                "status": "PASS",
+                "cyclic_components": [
+                  {
+                    "states": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "strict_cycle_voltage_sign": 1,
+                    "potential": [
+                      -2,
+                      -2,
+                      -1,
+                      0,
+                      -3,
+                      0
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "graph": [
+            1,
+            2,
+            1,
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            2
+          ],
+          "rank": 4,
+          "status": "voltage_excluded",
+          "voltage": {
+            "chord_basis": [
+              "yX",
+              "YX",
+              "xxx",
+              "Xyx"
+            ],
+            "marked_rows_in_chord_basis": [
+              "CAbcdddbA",
+              "CABdbA"
+            ],
+            "checks": [
+              {
+                "chord_character": [
+                  1,
+                  -2,
+                  0,
+                  2
+                ],
+                "edge_voltages": [
+                  0,
+                  0,
+                  1,
+                  -2,
+                  0,
+                  0,
+                  2,
+                  -1,
+                  0,
+                  0,
+                  2,
+                  -2
+                ],
+                "inequalities_verified": 9,
+                "alphabet": [
+                  0,
+                  2
+                ],
+                "forbidden_double": 0,
+                "status": "PASS",
+                "cyclic_components": [
+                  {
+                    "states": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "strict_cycle_voltage_sign": 1,
+                    "potential": [
+                      0,
+                      -1,
+                      0,
+                      -1,
+                      0,
+                      -1
+                    ]
+                  }
+                ]
+              },
+              {
+                "chord_character": [
+                  1,
+                  1,
+                  -2,
+                  0
+                ],
+                "edge_voltages": [
+                  0,
+                  0,
+                  1,
+                  1,
+                  -2,
+                  0,
+                  -1,
+                  -1,
+                  0,
+                  2,
+                  0,
+                  0
+                ],
+                "inequalities_verified": 9,
+                "alphabet": [
+                  0,
+                  2
+                ],
+                "forbidden_double": 1,
+                "status": "PASS",
+                "cyclic_components": [
+                  {
+                    "states": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "strict_cycle_voltage_sign": -1,
+                    "potential": [
+                      -2,
+                      -2,
+                      -9,
+                      -3,
+                      -1,
+                      0
+                    ]
+                  }
+                ]
+              },
+              {
+                "chord_character": [
+                  1,
+                  -2,
+                  0,
+                  2
+                ],
+                "edge_voltages": [
+                  0,
+                  0,
+                  1,
+                  -2,
+                  0,
+                  0,
+                  2,
+                  -1,
+                  0,
+                  0,
+                  2,
+                  -2
+                ],
+                "inequalities_verified": 9,
+                "alphabet": [
+                  0,
+                  3
+                ],
+                "forbidden_double": 0,
+                "status": "PASS",
+                "cyclic_components": [
+                  {
+                    "states": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "strict_cycle_voltage_sign": -1,
+                    "potential": [
+                      0,
+                      -1,
+                      0,
+                      -1,
+                      0,
+                      -1
+                    ]
+                  }
+                ]
+              },
+              {
+                "chord_character": [
+                  1,
+                  1,
+                  -2,
+                  0
+                ],
+                "edge_voltages": [
+                  0,
+                  0,
+                  1,
+                  1,
+                  -2,
+                  0,
+                  -1,
+                  -1,
+                  0,
+                  2,
+                  0,
+                  0
+                ],
+                "inequalities_verified": 9,
+                "alphabet": [
+                  0,
+                  3
+                ],
+                "forbidden_double": 1,
+                "status": "PASS",
+                "cyclic_components": [
+                  {
+                    "states": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "strict_cycle_voltage_sign": -1,
+                    "potential": [
+                      -2,
+                      -2,
+                      -9,
+                      -3,
+                      -1,
+                      0
+                    ]
+                  }
+                ]
+              },
+              {
+                "chord_character": [
+                  1,
+                  -2,
+                  0,
+                  2
+                ],
+                "edge_voltages": [
+                  0,
+                  0,
+                  1,
+                  -2,
+                  0,
+                  0,
+                  2,
+                  -1,
+                  0,
+                  0,
+                  2,
+                  -2
+                ],
+                "inequalities_verified": 9,
+                "alphabet": [
+                  1,
+                  2
+                ],
+                "forbidden_double": 0,
+                "status": "PASS",
+                "cyclic_components": [
+                  {
+                    "states": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "strict_cycle_voltage_sign": 1,
+                    "potential": [
+                      0,
+                      -1,
+                      0,
+                      -1,
+                      0,
+                      -1
+                    ]
+                  }
+                ]
+              },
+              {
+                "chord_character": [
+                  1,
+                  1,
+                  -2,
+                  0
+                ],
+                "edge_voltages": [
+                  0,
+                  0,
+                  1,
+                  1,
+                  -2,
+                  0,
+                  -1,
+                  -1,
+                  0,
+                  2,
+                  0,
+                  0
+                ],
+                "inequalities_verified": 9,
+                "alphabet": [
+                  1,
+                  2
+                ],
+                "forbidden_double": 1,
+                "status": "PASS",
+                "cyclic_components": [
+                  {
+                    "states": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "strict_cycle_voltage_sign": 1,
+                    "potential": [
+                      -7,
+                      -1,
+                      0,
+                      0,
+                      -9,
+                      -8
+                    ]
+                  }
+                ]
+              },
+              {
+                "chord_character": [
+                  1,
+                  -2,
+                  0,
+                  2
+                ],
+                "edge_voltages": [
+                  0,
+                  0,
+                  1,
+                  -2,
+                  0,
+                  0,
+                  2,
+                  -1,
+                  0,
+                  0,
+                  2,
+                  -2
+                ],
+                "inequalities_verified": 9,
+                "alphabet": [
+                  1,
+                  3
+                ],
+                "forbidden_double": 0,
+                "status": "PASS",
+                "cyclic_components": [
+                  {
+                    "states": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "strict_cycle_voltage_sign": -1,
+                    "potential": [
+                      0,
+                      -1,
+                      0,
+                      -1,
+                      0,
+                      -1
+                    ]
+                  }
+                ]
+              },
+              {
+                "chord_character": [
+                  1,
+                  1,
+                  -2,
+                  0
+                ],
+                "edge_voltages": [
+                  0,
+                  0,
+                  1,
+                  1,
+                  -2,
+                  0,
+                  -1,
+                  -1,
+                  0,
+                  2,
+                  0,
+                  0
+                ],
+                "inequalities_verified": 9,
+                "alphabet": [
+                  1,
+                  3
+                ],
+                "forbidden_double": 1,
+                "status": "PASS",
+                "cyclic_components": [
+                  {
+                    "states": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4,
+                      5
+                    ],
+                    "strict_cycle_voltage_sign": 1,
+                    "potential": [
+                      -7,
+                      -1,
+                      0,
+                      0,
+                      -9,
+                      -8
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "example_primitive_in_strict_proper_overgroup": null
+    },
+    "corrected_wirtinger": {
+      "pair": [
+        "XXYYxyXyyxYY",
+        "XXYYxyyyxYY"
+      ],
+      "source_vertices": 11,
+      "rank_histogram_including_ambient_rose": {
+        "2": 2,
+        "3": 22,
+        "4": 74,
+        "5": 47,
+        "6": 10
+      },
+      "proper_cases_by_rank_and_status": {
+        "2": {
+          "primitive": 1
+        },
+        "3": {
+          "primitive": 22
+        },
+        "4": {
+          "primitive": 74
+        },
+        "5": {
+          "primitive": 47
+        },
+        "6": {
+          "primitive": 10
+        }
+      },
+      "case_sha256": "4185ecbd4adcd0ad731dc501419a5178ed9f90e502869c530823fde2d8b3a7eb",
+      "source": {
+        "graph": [
+          -1,
+          1,
+          2,
+          -1,
+          0,
+          3,
+          -1,
+          -1,
+          -1,
+          -1,
+          4,
+          0,
+          1,
+          -1,
+          -1,
+          5,
+          -1,
+          6,
+          -1,
+          2,
+          -1,
+          -1,
+          3,
+          7,
+          4,
+          -1,
+          -1,
+          8,
+          9,
+          -1,
+          5,
+          -1,
+          -1,
+          -1,
+          6,
+          10,
+          -1,
+          7,
+          10,
+          -1,
+          10,
+          10,
+          8,
+          9
+        ],
+        "rank": 2,
+        "status": "primitive",
+        "outsiders": [],
+        "inverse_marking": [
+          "b",
+          "Ab"
+        ],
+        "witness": {
+          "alphabet": "xy",
+          "blocked": "y",
+          "vertex": 10,
+          "word": "x",
+          "base_path": "yyXYY",
+          "based_primitive": "yyXYYxyyxYY",
+          "marked_basis_expression": "Ab",
+          "normal_product": [
+            {
+              "row": 0,
+              "sign": -1,
+              "conjugator": ""
+            },
+            {
+              "row": 1,
+              "sign": 1,
+              "conjugator": ""
+            }
+          ]
+        },
+        "neutral_cyclic_paths": [
+          {
+            "alphabet": "xy",
+            "blocked": "y",
+            "vertex": 10,
+            "word": "x"
+          },
+          {
+            "alphabet": "xY",
+            "blocked": "Y",
+            "vertex": 10,
+            "word": "x"
+          },
+          {
+            "alphabet": "Xy",
+            "blocked": "y",
+            "vertex": 10,
+            "word": "X"
+          },
+          {
+            "alphabet": "XY",
+            "blocked": "Y",
+            "vertex": 10,
+            "word": "X"
+          }
+        ]
+      },
+      "exceptional_covers": [],
+      "example_primitive_in_strict_proper_overgroup": {
+        "graph": [
+          -1,
+          1,
+          0,
+          0,
+          0,
+          2,
+          -1,
+          3,
+          1,
+          -1,
+          -1,
+          4,
+          -1,
+          -1,
+          1,
+          5,
+          -1,
+          -1,
+          2,
+          6,
+          5,
+          5,
+          3,
+          7,
+          7,
+          -1,
+          4,
+          -1,
+          -1,
+          6,
+          5,
+          -1
+        ],
+        "rank": 3,
+        "status": "primitive",
+        "outsiders": [
+          "Y"
+        ],
+        "inverse_marking": [
+          "C",
+          "ccAbCC",
+          "bCC"
+        ],
+        "witness": {
+          "alphabet": "xy",
+          "blocked": "y",
+          "vertex": 5,
+          "word": "x",
+          "base_path": "XYY",
+          "based_primitive": "XYYxyyx",
+          "marked_basis_expression": "ccAbCC",
+          "normal_product": [
+            {
+              "row": 0,
+              "sign": -1,
+              "conjugator": "YY"
+            },
+            {
+              "row": 1,
+              "sign": 1,
+              "conjugator": "YY"
+            }
+          ]
+        },
+        "neutral_cyclic_paths": [
+          {
+            "alphabet": "xy",
+            "blocked": "y",
+            "vertex": 5,
+            "word": "x"
+          },
+          {
+            "alphabet": "xY",
+            "blocked": "Y",
+            "vertex": 5,
+            "word": "x"
+          },
+          {
+            "alphabet": "Xy",
+            "blocked": "y",
+            "vertex": 5,
+            "word": "X"
+          },
+          {
+            "alphabet": "XY",
+            "blocked": "Y",
+            "vertex": 5,
+            "word": "X"
+          }
+        ]
+      }
+    },
+    "ak2_initial": {
+      "pair": [
+        "xxYYY",
+        "xyxYXY"
+      ],
+      "source_vertices": 8,
+      "rank_histogram_including_ambient_rose": {
+        "2": 2,
+        "3": 12,
+        "4": 10
+      },
+      "proper_cases_by_rank_and_status": {
+        "2": {
+          "source_excluded": 1
+        },
+        "3": {
+          "free_excluded": 11,
+          "primitive": 1
+        },
+        "4": {
+          "free_excluded": 8,
+          "neutral_unresolved": 1,
+          "primitive": 1
+        }
+      },
+      "case_sha256": "ada75450e210ed7546fa3d11f66187fdce414c2f78ffacc18a4a94f34a501217",
+      "source": {
+        "graph": [
+          1,
+          -1,
+          2,
+          -1,
+          3,
+          0,
+          4,
+          -1,
+          5,
+          -1,
+          6,
+          0,
+          -1,
+          1,
+          -1,
+          6,
+          7,
+          -1,
+          -1,
+          1,
+          -1,
+          2,
+          7,
+          -1,
+          -1,
+          -1,
+          3,
+          2,
+          -1,
+          4,
+          -1,
+          5
+        ],
+        "rank": 2,
+        "status": "source_excluded",
+        "absence": {
+          "status": "PASS",
+          "complete_absence_certificate": true,
+          "vertices": 8,
+          "closed_map_pair_states_checked": 56,
+          "ordinary_AC_goal_solved": false
+        }
+      },
+      "exceptional_covers": [],
+      "example_primitive_in_strict_proper_overgroup": {
+        "graph": [
+          1,
+          -1,
+          2,
+          -1,
+          3,
+          0,
+          1,
+          1,
+          4,
+          -1,
+          4,
+          0,
+          -1,
+          1,
+          -1,
+          4,
+          -1,
+          2,
+          3,
+          2
+        ],
+        "rank": 3,
+        "status": "primitive",
+        "outsiders": [
+          "xYX"
+        ],
+        "inverse_marking": [
+          "C",
+          "Acb",
+          "cb"
+        ],
+        "witness": {
+          "alphabet": "Xy",
+          "blocked": "X",
+          "vertex": 0,
+          "word": "yyXyyXyX",
+          "base_path": "",
+          "based_primitive": "yyXyyXyX",
+          "marked_basis_expression": "AcbAC",
+          "normal_product": [
+            {
+              "row": 0,
+              "sign": -1,
+              "conjugator": ""
+            },
+            {
+              "row": 1,
+              "sign": 1,
+              "conjugator": "xYX"
+            },
+            {
+              "row": 0,
+              "sign": -1,
+              "conjugator": "xYX"
+            }
+          ]
+        },
+        "neutral_cyclic_paths": [
+          {
+            "alphabet": "xY",
+            "blocked": "x",
+            "vertex": 0,
+            "word": "xYxYYxYxYYxYxYYY"
+          },
+          {
+            "alphabet": "Xy",
+            "blocked": "X",
+            "vertex": 0,
+            "word": "yyXyyXyX"
+          }
+        ]
+      }
+    },
+    "ak2_after_two_moves": {
+      "pair": [
+        "yyXXy",
+        "xyxYXY"
+      ],
+      "source_vertices": 9,
+      "rank_histogram_including_ambient_rose": {
+        "2": 2,
+        "3": 16,
+        "4": 25,
+        "5": 5
+      },
+      "proper_cases_by_rank_and_status": {
+        "2": {
+          "source_excluded": 1
+        },
+        "3": {
+          "free_excluded": 16
+        },
+        "4": {
+          "free_excluded": 25
+        },
+        "5": {
+          "free_excluded": 5
+        }
+      },
+      "case_sha256": "af3fc2045106af3097ba5151239f2fc9f51501f87b323bd303514137abf1db94",
+      "source": {
+        "graph": [
+          1,
+          -1,
+          2,
+          3,
+          -1,
+          0,
+          4,
+          -1,
+          5,
+          -1,
+          6,
+          0,
+          7,
+          -1,
+          0,
+          -1,
+          8,
+          -1,
+          -1,
+          1,
+          -1,
+          2,
+          8,
+          -1,
+          -1,
+          7,
+          -1,
+          2,
+          6,
+          3,
+          -1,
+          -1,
+          -1,
+          4,
+          -1,
+          5
+        ],
+        "rank": 2,
+        "status": "source_excluded",
+        "absence": {
+          "status": "PASS",
+          "complete_absence_certificate": true,
+          "vertices": 9,
+          "closed_map_pair_states_checked": 60,
+          "ordinary_AC_goal_solved": false
+        }
+      },
+      "exceptional_covers": [],
+      "example_primitive_in_strict_proper_overgroup": null
+    }
+  },
+  "ordinary_replays": {
+    "wrong_wirtinger_entry": {
+      "path": "certificates/round10_stable_proof_wirtinger_wrong.json",
+      "moves": 105,
+      "peak_total_length": 22,
+      "endpoint": [
+        "XXYYxyyyxYY",
+        "XXYxyXyxYY"
+      ]
+    },
+    "corrected_wirtinger_exit": {
+      "path": "certificates/round10_stable_proof_wirtinger_correct.json",
+      "moves": 73,
+      "peak_total_length": 30,
+      "endpoint": [
+        "x",
+        "y"
+      ]
+    },
+    "ak2_full_exit": {
+      "path": "certificates/n_ak2_cyclic13.json",
+      "moves": 46,
+      "peak_total_length": 18,
+      "endpoint": [
+        "x",
+        "y"
+      ]
+    },
+    "ak2_after_two_moves_exit": {
+      "moves": 44,
+      "peak_total_length": 18,
+      "endpoint": [
+        "x",
+        "y"
+      ]
+    },
+    "ak2_primitive_exposure": {
+      "moves": 6,
+      "peak_total_length": 17,
+      "endpoint": [
+        "yyXyyXyX",
+        "xxYXyyXyX"
+      ],
+      "elementary_moves": [
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        }
+      ]
+    }
+  },
+  "ak2_barrier_transition": {
+    "last_move": {
+      "op": "conjugate",
+      "i": 0,
+      "g": "Y"
+    },
+    "proper_common_overgroup": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      2,
+      -1,
+      2,
+      2,
+      -1,
+      1
+    ],
+    "primitive_exposure_macro_conjugator": "xYX",
+    "from_exclusion_side_with_both_conjugators": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

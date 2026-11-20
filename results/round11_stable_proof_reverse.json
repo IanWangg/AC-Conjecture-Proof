@@ -1,0 +1,271 @@
+{
+  "input_sha256": {
+    "exact_cap22_chartless": "f6bed6dfbd9cb9b40005fc8acbc251e2055b35ff0e896e6ad1003e90da25b562",
+    "one_product_energy23": "7e00ac74ea6f7664f5ec04faee63a2d0fbe24ec1263da23ba64b7e7d2abf662d",
+    "wrong_source": "85fe82c6afe2393d280a8c8419da688b10090f42b8b444031a6fbe82c215c830",
+    "forward_combined": "d57c3400685796b92f0dcf447e9d0170f54415d57b50cf157ab89d78338e0ace",
+    "reverse_roots": "ea17384de4c1e09afc3c4247bb71c8f15eb07c9b19083ef01cf98ec1ca3e9d8c"
+  },
+  "strict_rank_three_paths": {
+    "wrong_prefix": {
+      "moves": 138,
+      "raw_peak": 43,
+      "cyclic_peak": 23,
+      "target": [
+        "XXYYxyyyxYY",
+        "ZYXXYxyXyxY",
+        "Z"
+      ],
+      "first_pivotless_step": null
+    },
+    "correct_suffix": {
+      "moves": 110,
+      "raw_peak": 49,
+      "cyclic_peak": 25,
+      "target": [
+        "x",
+        "y",
+        "z"
+      ],
+      "first_pivotless_step": null
+    },
+    "geometric_suffix": {
+      "moves": 48,
+      "raw_peak": 38,
+      "cyclic_peak": 28,
+      "target": [
+        "x",
+        "y",
+        "z"
+      ],
+      "first_pivotless_step": 1
+    },
+    "source_excursion": {
+      "moves": 154,
+      "raw_peak": 43,
+      "cyclic_peak": 27,
+      "target": [
+        "XXYYxyyyxYZY",
+        "XYYXyxy",
+        "XYYXyxyz"
+      ],
+      "first_pivotless_step": null
+    }
+  },
+  "positive_control": {
+    "floor": 16,
+    "cap": 25,
+    "word_width_cap": 21,
+    "roots": 1,
+    "eligible_target_rows": 1,
+    "target_orbits": 1,
+    "expanded": 1,
+    "discovered": 4,
+    "without_singleton": 0,
+    "candidates": 1336,
+    "positive_bridge_candidates": 0,
+    "admitted": 36,
+    "products_above_word_width": 0,
+    "closed": false,
+    "join": true,
+    "reached_by_depth": [
+      1,
+      3
+    ],
+    "expanded_by_depth": [
+      1
+    ],
+    "route_signed_tsv": [
+      "X\tXYZZYYzyZyyzY\tYYYZyyzzyyZ",
+      "X\tYYYZyyzzyyZ\tYYZZYYzyZyyz"
+    ]
+  },
+  "searches": {
+    "reverse25-tighter": {
+      "floor": 20,
+      "cap": 25,
+      "word_width_cap": 21,
+      "roots": 2,
+      "eligible_target_rows": 623738,
+      "target_orbits": 623738,
+      "expanded": 12000,
+      "discovered": 223071,
+      "without_singleton": 1057,
+      "candidates": 15014176,
+      "positive_bridge_candidates": 774432,
+      "admitted": 1632036,
+      "products_above_word_width": 0,
+      "closed": false,
+      "join": false,
+      "reached_by_depth": [
+        2,
+        24,
+        195,
+        5673,
+        77311,
+        139866
+      ],
+      "expanded_by_depth": [
+        2,
+        24,
+        195,
+        5673,
+        6106
+      ],
+      "reached_tsv_sha256": "ce1e18d69e3f8cdf63e63997cc49096efda48b4968590362f2688db86900077a"
+    },
+    "forward25-tighter": {
+      "floor": 20,
+      "cap": 25,
+      "word_width_cap": 21,
+      "roots": 1,
+      "eligible_target_rows": 223071,
+      "target_orbits": 223071,
+      "expanded": 12000,
+      "discovered": 103351,
+      "without_singleton": 0,
+      "candidates": 15669184,
+      "positive_bridge_candidates": 377088,
+      "admitted": 828536,
+      "products_above_word_width": 0,
+      "closed": false,
+      "join": false,
+      "reached_by_depth": [
+        1,
+        42,
+        904,
+        1188,
+        28121,
+        73095
+      ],
+      "expanded_by_depth": [
+        1,
+        42,
+        904,
+        1188,
+        9865
+      ],
+      "reached_tsv_sha256": "32aab35045ef0865dc5550b24e205b0fae3bd64d38cc985c652ec583b1f5c787"
+    },
+    "reverse27-tighter": {
+      "floor": 20,
+      "cap": 27,
+      "word_width_cap": 21,
+      "roots": 2,
+      "eligible_target_rows": 623738,
+      "target_orbits": 623738,
+      "expanded": 12000,
+      "discovered": 218380,
+      "without_singleton": 597,
+      "candidates": 17638736,
+      "positive_bridge_candidates": 857040,
+      "admitted": 1450682,
+      "products_above_word_width": 7936,
+      "closed": false,
+      "join": false,
+      "reached_by_depth": [
+        2,
+        116,
+        2477,
+        69959,
+        145826
+      ],
+      "expanded_by_depth": [
+        2,
+        116,
+        2477,
+        9405
+      ],
+      "reached_tsv_sha256": "6affa995256f524e84ef9e61269b493b500b5f2570af702559c874d75f139208"
+    },
+    "forward27-tighter": {
+      "floor": 20,
+      "cap": 27,
+      "word_width_cap": 21,
+      "roots": 1,
+      "eligible_target_rows": 218380,
+      "target_orbits": 218380,
+      "expanded": 12000,
+      "discovered": 204731,
+      "without_singleton": 41,
+      "candidates": 17974144,
+      "positive_bridge_candidates": 728232,
+      "admitted": 1571734,
+      "products_above_word_width": 0,
+      "closed": false,
+      "join": false,
+      "reached_by_depth": [
+        1,
+        136,
+        5399,
+        17565,
+        181630
+      ],
+      "expanded_by_depth": [
+        1,
+        136,
+        5399,
+        6464
+      ],
+      "reached_tsv_sha256": "5c2cb294c9c8530af53a4777dde75d1d1fca839a2ccec036ce44e58e2dae40dc"
+    },
+    "reverse29-tighter": {
+      "floor": 20,
+      "cap": 29,
+      "word_width_cap": 21,
+      "roots": 3,
+      "eligible_target_rows": 623738,
+      "target_orbits": 623738,
+      "expanded": 9000,
+      "discovered": 845627,
+      "without_singleton": 36722,
+      "candidates": 18775648,
+      "positive_bridge_candidates": 4501440,
+      "admitted": 4854724,
+      "products_above_word_width": 487444,
+      "closed": false,
+      "join": false,
+      "reached_by_depth": [
+        3,
+        552,
+        15424,
+        829648
+      ],
+      "expanded_by_depth": [
+        3,
+        552,
+        8445
+      ],
+      "reached_tsv_sha256": "283cc6f18ac2f739215dda159ca0b722402d0977dd4b1e80c3f64b7ef9eb7708"
+    },
+    "forward29-tighter": {
+      "floor": 20,
+      "cap": 29,
+      "word_width_cap": 21,
+      "roots": 1,
+      "eligible_target_rows": 845627,
+      "target_orbits": 845627,
+      "expanded": 9000,
+      "discovered": 117226,
+      "without_singleton": 42,
+      "candidates": 15609824,
+      "positive_bridge_candidates": 560256,
+      "admitted": 950186,
+      "products_above_word_width": 0,
+      "closed": false,
+      "join": false,
+      "reached_by_depth": [
+        1,
+        752,
+        39111,
+        77362
+      ],
+      "expanded_by_depth": [
+        1,
+        752,
+        8247
+      ],
+      "reached_tsv_sha256": "1ea91fb97cafe7232263fbc36b36f8635a36838063121bec3d85921286938a9b"
+    }
+  }
+}

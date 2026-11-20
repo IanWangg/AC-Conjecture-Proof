@@ -1,0 +1,30 @@
+{
+  "complete_cap21": {
+    "status": "CLOSED_AND_CONNECTED",
+    "cyclic_cap": 21,
+    "signed_permutation_orbits": 18118,
+    "rotation_product_candidates": 12999584,
+    "admitted_neighbors": 698252
+  },
+  "incremental_cap22": {
+    "status": "NEW_ORBITS_CLOSED_AND_ATTACHED",
+    "cyclic_cap": 22,
+    "signed_permutation_orbits": 32363,
+    "lower_orbits_assumed_connected": 18118,
+    "new_orbits_checked": 14245,
+    "rotation_product_candidates": 11215112,
+    "admitted_neighbors": 384302
+  },
+  "cap22_removed_first_outside_orbit": "catalogue not closed",
+  "cap21_lower_sha256": "122fc8c9bcf37a76a3bd24c7b81bfb5549fc08971ec5ddc64bcc7dcb9f13bc2d",
+  "cap22_outside_sha256": "9d4f4136b114fe7ef171f463cb3d89ceda347cafc4082f2c83139bf01cde66b2",
+  "empty_outside_fixture_checks_zero_new_orbits": {
+    "status": "NEW_ORBITS_CLOSED_AND_ATTACHED",
+    "cyclic_cap": 22,
+    "signed_permutation_orbits": 18118,
+    "lower_orbits_assumed_connected": 18118,
+    "new_orbits_checked": 0,
+    "rotation_product_candidates": 0,
+    "admitted_neighbors": 0
+  }
+}

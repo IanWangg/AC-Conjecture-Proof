@@ -389,6 +389,7 @@ void emit(std::ostream& out, const Harvest& result) {
 
 } // namespace acm08
 
+#ifndef AC_ROUND08_ACM_LIBRARY
 int main(int argc, char** argv) {
     try {
         if (argc != 8) throw std::invalid_argument(
@@ -403,3 +404,4 @@ int main(int argc, char** argv) {
         return 1;
     }
 }
+#endif

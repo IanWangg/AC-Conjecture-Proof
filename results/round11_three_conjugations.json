@@ -1,0 +1,94 @@
+{
+  "start": [
+    "xxxYYYY",
+    "xyxYXY"
+  ],
+  "envelope_excluded": 56,
+  "final_receiver_cases": [
+    {
+      "sequence": "xxy",
+      "core_vertices": 20,
+      "vertex_pairs_folding_to_rose": 41,
+      "product_automaton_states": 163,
+      "completing_word": null
+    },
+    {
+      "sequence": "xxY",
+      "core_vertices": 20,
+      "vertex_pairs_folding_to_rose": 41,
+      "product_automaton_states": 205,
+      "completing_word": "xyyyXYYYY"
+    },
+    {
+      "sequence": "xyx",
+      "core_vertices": 23,
+      "vertex_pairs_folding_to_rose": 24,
+      "product_automaton_states": 172,
+      "completing_word": null
+    },
+    {
+      "sequence": "xyX",
+      "core_vertices": 23,
+      "vertex_pairs_folding_to_rose": 24,
+      "product_automaton_states": 175,
+      "completing_word": null
+    },
+    {
+      "sequence": "yxy",
+      "core_vertices": 22,
+      "vertex_pairs_folding_to_rose": 30,
+      "product_automaton_states": 186,
+      "completing_word": null
+    },
+    {
+      "sequence": "yxY",
+      "core_vertices": 22,
+      "vertex_pairs_folding_to_rose": 30,
+      "product_automaton_states": 186,
+      "completing_word": null
+    },
+    {
+      "sequence": "yyx",
+      "core_vertices": 18,
+      "vertex_pairs_folding_to_rose": 24,
+      "product_automaton_states": 104,
+      "completing_word": null
+    },
+    {
+      "sequence": "yyX",
+      "core_vertices": 18,
+      "vertex_pairs_folding_to_rose": 24,
+      "product_automaton_states": 161,
+      "completing_word": null
+    }
+  ],
+  "three_conjugation_schedules_remaining": [
+    "xxY"
+  ],
+  "product_free_intervals": {
+    "first_gap_same_receiver": {
+      "core_vertices": 18,
+      "vertex_pairs_folding_to_rose": 0,
+      "product_automaton_states": 8,
+      "completing_word": null
+    },
+    "first_gap_distinct_receivers": {
+      "core_vertices": 15,
+      "vertex_pairs_folding_to_rose": 0,
+      "product_automaton_states": 7,
+      "completing_word": null
+    },
+    "last_gap_same_receiver": {
+      "core_vertices": 15,
+      "vertex_pairs_folding_to_rose": 0,
+      "product_automaton_states": 1,
+      "completing_word": null
+    },
+    "last_gap_distinct_receivers": {
+      "core_vertices": 20,
+      "vertex_pairs_folding_to_rose": 41,
+      "product_automaton_states": 89,
+      "completing_word": null
+    }
+  }
+}

@@ -23,20 +23,15 @@ Pair signed_key(const std::string& a, const std::string& b) {
                       compact_verify::explicit_images(compact_verify::digits(b)));
 }
 
-int run(int cap, unsigned workers, const char* catalogue, const char* report,
-        const std::string& first, const std::string& second) {
-    if (cap < 13 || cap > 62 || !workers)
-        throw std::runtime_error("need cap 13–62 and positive worker count");
-    audit::self_test();
+void load_catalogue(int cap, int input_cap, const char* catalogue, std::vector<Pair>& states,
+                    std::unordered_map<Pair, uint32_t, Hash>& ids) {
     std::ifstream input(catalogue);
     if (!input) throw std::runtime_error("cannot open orbit catalogue");
-    std::vector<Pair> states;
-    std::unordered_map<Pair, uint32_t, Hash> ids;
     std::string line;
     while (std::getline(input, line)) {
         const auto separator = line.find('\t');
         if (separator == std::string::npos || !separator || separator + 1 == line.size()
-                || line.size() > size_t(cap + 1))
+                || line.size() > size_t(input_cap + 1))
             throw std::runtime_error("invalid orbit catalogue row");
         if (states.size() == std::numeric_limits<uint32_t>::max())
             throw std::runtime_error("state index exhausted");
@@ -52,10 +47,26 @@ int run(int cap, unsigned workers, const char* catalogue, const char* report,
         states.push_back(key);
     }
     if (input.bad() || states.empty()) throw std::runtime_error("empty or unreadable catalogue");
+}
+
+int run(int cap, unsigned workers, const char* catalogue, const char* report,
+        const std::string& first, const std::string& second, const char* lower = nullptr) {
+    if (cap < 13 || cap > 62 || !workers || (lower && cap < 14))
+        throw std::runtime_error("need cap 13–62 and positive worker count; extensions begin at cap 14");
+    audit::self_test();
+    std::vector<Pair> states;
+    std::unordered_map<Pair, uint32_t, Hash> ids;
+    if (lower) load_catalogue(cap, cap - 1, lower, states, ids);
+    const auto first_scanned = states.size();
+    load_catalogue(cap, cap, catalogue, states, ids);
     const auto start_id = ids.at(signed_key(first, second));
     std::cerr << "loaded " << states.size() << " orbits\n";
     compact_verify::Components components(states.size());
-    std::atomic<std::size_t> cursor(0);
+    if (lower) {
+        if (start_id >= first_scanned) throw std::runtime_error("AK(3) missing from lower catalogue");
+        for (uint32_t i = 0; i < first_scanned; ++i) components.join(start_id, i);
+    }
+    std::atomic<std::size_t> cursor(first_scanned);
     const auto& lookup = ids;
     auto scan = [&]() {
         compact_verify::Totals totals;
@@ -72,7 +83,7 @@ int run(int cap, unsigned workers, const char* catalogue, const char* report,
         for (;;) {
             const auto begin = cursor.fetch_add(block, std::memory_order_relaxed);
             if (begin >= states.size()) return totals;
-            if (begin % (block * 8192) == 0)
+            if ((begin - first_scanned) % (block * 8192) == 0)
                 std::cerr << "checking orbit block starting at " << begin << '\n';
             for (auto i = begin; i < std::min(states.size(), begin + block); ++i) {
                 if (images.size() > 32768) images.clear();
@@ -123,12 +134,14 @@ int run(int cap, unsigned workers, const char* catalogue, const char* report,
         totals.admitted += count.admitted;
     }
     const auto root = components.root(start_id);
-    for (uint32_t i = 0; i < states.size(); ++i)
+    for (uint32_t i = first_scanned; i < states.size(); ++i)
         if (components.root(i) != root) throw std::runtime_error("catalogue not connected");
     std::ofstream out(report);
-    out << "{\n  \"status\":\"CLOSED_AND_CONNECTED\",\n  \"cyclic_cap\":" << cap
-        << ",\n  \"signed_permutation_orbits\":" << states.size()
-        << ",\n  \"rotation_product_candidates\":" << totals.candidates
+    out << "{\n  \"status\":\"" << (lower ? "NEW_ORBITS_CLOSED_AND_ATTACHED" : "CLOSED_AND_CONNECTED")
+        << "\",\n  \"cyclic_cap\":" << cap << ",\n  \"signed_permutation_orbits\":" << states.size();
+    if (lower) out << ",\n  \"lower_orbits_assumed_connected\":" << first_scanned
+                   << ",\n  \"new_orbits_checked\":" << states.size() - first_scanned;
+    out << ",\n  \"rotation_product_candidates\":" << totals.candidates
         << ",\n  \"admitted_neighbors\":" << totals.admitted << "\n}\n";
     if (!out) throw std::runtime_error("cannot write independent audit");
     return 0;
@@ -137,8 +150,12 @@ int run(int cap, unsigned workers, const char* catalogue, const char* report,
 
 int main(int argc, char** argv) {
     try {
+        if (argc == 7 && std::string_view(argv[1]) == "--extend")
+            return wide_verify::run(std::stoi(argv[2]), std::stoul(argv[3]), argv[5], argv[6],
+                                    "xxxYYYY", "xyxYXY", argv[4]);
         if (argc != 5 && argc != 7)
-            throw std::runtime_error("usage: wide-verify cap workers catalogue.tsv report.json [first second]");
+            throw std::runtime_error("usage: wide-verify cap workers catalogue.tsv report.json [first second]; "
+                                     "wide-verify --extend cap workers lower.tsv outside.tsv report.json");
         return wide_verify::run(std::stoi(argv[1]), std::stoul(argv[2]), argv[3], argv[4],
                                 argc == 5 ? "xxxYYYY" : argv[5], argc == 5 ? "xyxYXY" : argv[6]);
     } catch (const std::exception& error) {
