@@ -137,7 +137,8 @@ string oriented(const string& word, int sign) {
     return sign < 0 ? inverse(word) : word;
 }
 
-string check(const string& a, const string& b, bool alternating, Counters& counts) {
+string check(const string& a, const string& b, bool alternating, Counters& counts,
+             int fixed_count = 3) {
     Equation eq(counts);
     for (const auto& pair : {std::array<string,2>{a,b}, {b,a}}) {
         const auto& r = pair[0];
@@ -157,10 +158,10 @@ string check(const string& a, const string& b, bool alternating, Counters& count
                  + ",\"equation\":" + solved + "}";
         };
         if (!alternating) {
-            for (int sum : {-3,-1,1,3}) {
+            for (int sum = -fixed_count; sum <= fixed_count; sum += 2) {
                 Words factors{r};
-                const int positive_count = (sum+3)/2;
-                for (int i=0; i<3; ++i) factors.push_back(oriented(d,i<positive_count?1:-1));
+                const int positive_count = (sum+fixed_count)/2;
+                for (int i=0; i<fixed_count; ++i) factors.push_back(oriented(d,i<positive_count?1:-1));
                 if (auto hit=run(std::move(factors),x+sum*u,y+sum*v,0,sum); !hit.empty())
                     return hit;
             }
@@ -184,9 +185,10 @@ string check(const string& a, const string& b, bool alternating, Counters& count
 #ifndef AC_ROUND19_THREE_PRODUCTS_LIBRARY
 int main(int argc, char** argv) {
     try {
-        if (argc != 4) throw std::invalid_argument("usage: three-products fixed|alternating pairs.tsv workers");
+        if (argc != 4) throw std::invalid_argument("usage: three-products fixed|fixed4|alternating pairs.tsv workers");
         const string mode = argv[1];
-        if (mode != "fixed" && mode != "alternating") throw std::invalid_argument("mode");
+        if (mode != "fixed" && mode != "fixed4" && mode != "alternating")
+            throw std::invalid_argument("mode");
         std::ifstream input(argv[2]);
         const unsigned workers = std::stoul(argv[3]);
         if (!input || !workers) throw std::invalid_argument("invalid input");
@@ -198,7 +200,8 @@ int main(int argc, char** argv) {
         std::vector<std::future<void>> pool;
         for (unsigned i=0; i<workers; ++i) pool.push_back(std::async(std::launch::async,[&,i] {
             for (size_t j; (j=cursor++) < rows.size();)
-                hits[j] = check(rows[j].first,rows[j].second,mode=="alternating",counts[i]);
+                hits[j] = check(rows[j].first,rows[j].second,mode=="alternating",counts[i],
+                                mode=="fixed4" ? 4 : 3);
         }));
         for (auto& task : pool) task.get();
         Counters total;

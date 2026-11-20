@@ -1,0 +1,976 @@
+{
+  "hit_order": [
+    "four_active_on_right_only",
+    "four_active_on_left_only",
+    "four_active_on_both_sides"
+  ],
+  "middle_budget": 16,
+  "row_slots": 4,
+  "runs": {
+    "degree_3": [
+      {
+        "ak_on_right": false,
+        "degree": 3,
+        "expanded_states": 89092,
+        "four_active_boundaries": [
+          216,
+          204
+        ],
+        "hits": [
+          6854,
+          5779,
+          185
+        ],
+        "idle": [
+          0,
+          2,
+          0
+        ],
+        "interned_rows": 128,
+        "middle_boundaries": [
+          2583,
+          2423
+        ],
+        "seeds": [
+          1,
+          1
+        ],
+        "widths": [
+          7,
+          7
+        ]
+      },
+      {
+        "ak_on_right": false,
+        "degree": 3,
+        "expanded_states": 365900,
+        "four_active_boundaries": [
+          216,
+          892
+        ],
+        "hits": [
+          6627,
+          21146,
+          396
+        ],
+        "idle": [
+          0,
+          1,
+          1
+        ],
+        "interned_rows": 128,
+        "middle_boundaries": [
+          1023,
+          2468
+        ],
+        "seeds": [
+          1,
+          10
+        ],
+        "widths": [
+          7,
+          7
+        ]
+      },
+      {
+        "ak_on_right": false,
+        "degree": 3,
+        "expanded_states": 1424090,
+        "four_active_boundaries": [
+          216,
+          2292
+        ],
+        "hits": [
+          5760,
+          23152,
+          162
+        ],
+        "idle": [
+          0,
+          0,
+          2
+        ],
+        "interned_rows": 128,
+        "middle_boundaries": [
+          216,
+          2292
+        ],
+        "seeds": [
+          1,
+          70
+        ],
+        "widths": [
+          7,
+          7
+        ]
+      },
+      {
+        "ak_on_right": false,
+        "degree": 3,
+        "expanded_states": 1730501,
+        "four_active_boundaries": [
+          1016,
+          204
+        ],
+        "hits": [
+          24728,
+          5692,
+          174
+        ],
+        "idle": [
+          1,
+          1,
+          0
+        ],
+        "interned_rows": 128,
+        "middle_boundaries": [
+          2551,
+          884
+        ],
+        "seeds": [
+          11,
+          1
+        ],
+        "widths": [
+          7,
+          7
+        ]
+      },
+      {
+        "ak_on_right": false,
+        "degree": 3,
+        "expanded_states": 2221488,
+        "four_active_boundaries": [
+          1016,
+          892
+        ],
+        "hits": [
+          20659,
+          18425,
+          371
+        ],
+        "idle": [
+          1,
+          0,
+          1
+        ],
+        "interned_rows": 128,
+        "middle_boundaries": [
+          1016,
+          892
+        ],
+        "seeds": [
+          11,
+          10
+        ],
+        "widths": [
+          7,
+          7
+        ]
+      },
+      {
+        "ak_on_right": false,
+        "degree": 3,
+        "expanded_states": 3446640,
+        "four_active_boundaries": [
+          2572,
+          204
+        ],
+        "hits": [
+          23481,
+          5405,
+          157
+        ],
+        "idle": [
+          2,
+          0,
+          0
+        ],
+        "interned_rows": 128,
+        "middle_boundaries": [
+          2572,
+          204
+        ],
+        "seeds": [
+          81,
+          1
+        ],
+        "widths": [
+          7,
+          7
+        ]
+      },
+      {
+        "ak_on_right": false,
+        "degree": 3,
+        "expanded_states": 661935,
+        "four_active_boundaries": [
+          216,
+          792
+        ],
+        "hits": [
+          6620,
+          18560,
+          367
+        ],
+        "idle": [
+          0,
+          1,
+          0
+        ],
+        "interned_rows": 128,
+        "middle_boundaries": [
+          1023,
+          2364
+        ],
+        "seeds": [
+          1,
+          1
+        ],
+        "widths": [
+          7,
+          8
+        ]
+      },
+      {
+        "ak_on_right": false,
+        "degree": 3,
+        "expanded_states": 4325790,
+        "four_active_boundaries": [
+          216,
+          2357
+        ],
+        "hits": [
+          6410,
+          22480,
+          161
+        ],
+        "idle": [
+          0,
+          0,
+          1
+        ],
+        "interned_rows": 128,
+        "middle_boundaries": [
+          216,
+          2357
+        ],
+        "seeds": [
+          1,
+          10
+        ],
+        "widths": [
+          7,
+          8
+        ]
+      },
+      {
+        "ak_on_right": false,
+        "degree": 3,
+        "expanded_states": 5201834,
+        "four_active_boundaries": [
+          1016,
+          792
+        ],
+        "hits": [
+          21087,
+          16089,
+          310
+        ],
+        "idle": [
+          1,
+          0,
+          0
+        ],
+        "interned_rows": 128,
+        "middle_boundaries": [
+          1016,
+          792
+        ],
+        "seeds": [
+          11,
+          1
+        ],
+        "widths": [
+          7,
+          8
+        ]
+      },
+      {
+        "ak_on_right": true,
+        "degree": 3,
+        "expanded_states": 5997782,
+        "four_active_boundaries": [
+          204,
+          921
+        ],
+        "hits": [
+          5715,
+          22071,
+          388
+        ],
+        "idle": [
+          0,
+          1,
+          0
+        ],
+        "interned_rows": 128,
+        "middle_boundaries": [
+          884,
+          2529
+        ],
+        "seeds": [
+          1,
+          1
+        ],
+        "widths": [
+          7,
+          8
+        ]
+      },
+      {
+        "ak_on_right": true,
+        "degree": 3,
+        "expanded_states": 10273407,
+        "four_active_boundaries": [
+          204,
+          2502
+        ],
+        "hits": [
+          5566,
+          28747,
+          161
+        ],
+        "idle": [
+          0,
+          0,
+          1
+        ],
+        "interned_rows": 128,
+        "middle_boundaries": [
+          204,
+          2502
+        ],
+        "seeds": [
+          1,
+          11
+        ],
+        "widths": [
+          7,
+          8
+        ]
+      },
+      {
+        "ak_on_right": true,
+        "degree": 3,
+        "expanded_states": 11254350,
+        "four_active_boundaries": [
+          892,
+          921
+        ],
+        "hits": [
+          19012,
+          17980,
+          315
+        ],
+        "idle": [
+          1,
+          0,
+          0
+        ],
+        "interned_rows": 128,
+        "middle_boundaries": [
+          892,
+          921
+        ],
+        "seeds": [
+          10,
+          1
+        ],
+        "widths": [
+          7,
+          8
+        ]
+      },
+      {
+        "ak_on_right": false,
+        "degree": 3,
+        "expanded_states": 6552370,
+        "four_active_boundaries": [
+          216,
+          2227
+        ],
+        "hits": [
+          6343,
+          21913,
+          167
+        ],
+        "idle": [
+          0,
+          0,
+          0
+        ],
+        "interned_rows": 128,
+        "middle_boundaries": [
+          216,
+          2227
+        ],
+        "seeds": [
+          1,
+          1
+        ],
+        "widths": [
+          7,
+          9
+        ]
+      },
+      {
+        "ak_on_right": true,
+        "degree": 3,
+        "expanded_states": 14495218,
+        "four_active_boundaries": [
+          204,
+          2431
+        ],
+        "hits": [
+          5546,
+          27610,
+          159
+        ],
+        "idle": [
+          0,
+          0,
+          0
+        ],
+        "interned_rows": 128,
+        "middle_boundaries": [
+          204,
+          2431
+        ],
+        "seeds": [
+          1,
+          1
+        ],
+        "widths": [
+          7,
+          9
+        ]
+      },
+      {
+        "ak_on_right": false,
+        "degree": 3,
+        "expanded_states": 1366000,
+        "four_active_boundaries": [
+          921,
+          792
+        ],
+        "hits": [
+          18560,
+          16533,
+          275
+        ],
+        "idle": [
+          0,
+          0,
+          0
+        ],
+        "interned_rows": 128,
+        "middle_boundaries": [
+          921,
+          792
+        ],
+        "seeds": [
+          1,
+          1
+        ],
+        "widths": [
+          8,
+          8
+        ]
+      }
+    ],
+    "degree_8": [
+      {
+        "ak_on_right": false,
+        "degree": 8,
+        "expanded_states": 501003,
+        "four_active_boundaries": [
+          1074,
+          404
+        ],
+        "hits": [
+          0,
+          0,
+          0
+        ],
+        "idle": [
+          0,
+          2,
+          0
+        ],
+        "interned_rows": 160115,
+        "middle_boundaries": [
+          114115,
+          23566
+        ],
+        "seeds": [
+          1,
+          1
+        ],
+        "widths": [
+          7,
+          7
+        ]
+      },
+      {
+        "ak_on_right": false,
+        "degree": 8,
+        "expanded_states": 1360596,
+        "four_active_boundaries": [
+          1074,
+          3740
+        ],
+        "hits": [
+          0,
+          0,
+          0
+        ],
+        "idle": [
+          0,
+          1,
+          1
+        ],
+        "interned_rows": 200667,
+        "middle_boundaries": [
+          11974,
+          29836
+        ],
+        "seeds": [
+          1,
+          10
+        ],
+        "widths": [
+          7,
+          7
+        ]
+      },
+      {
+        "ak_on_right": false,
+        "degree": 8,
+        "expanded_states": 5690434,
+        "four_active_boundaries": [
+          1074,
+          29908
+        ],
+        "hits": [
+          0,
+          0,
+          0
+        ],
+        "idle": [
+          0,
+          0,
+          2
+        ],
+        "interned_rows": 231827,
+        "middle_boundaries": [
+          1074,
+          29908
+        ],
+        "seeds": [
+          1,
+          78
+        ],
+        "widths": [
+          7,
+          7
+        ]
+      },
+      {
+        "ak_on_right": false,
+        "degree": 8,
+        "expanded_states": 7432954,
+        "four_active_boundaries": [
+          11976,
+          404
+        ],
+        "hits": [
+          0,
+          0,
+          0
+        ],
+        "idle": [
+          1,
+          1,
+          0
+        ],
+        "interned_rows": 262620,
+        "middle_boundaries": [
+          120045,
+          3108
+        ],
+        "seeds": [
+          14,
+          1
+        ],
+        "widths": [
+          7,
+          7
+        ]
+      },
+      {
+        "ak_on_right": false,
+        "degree": 8,
+        "expanded_states": 9526208,
+        "four_active_boundaries": [
+          11976,
+          3740
+        ],
+        "hits": [
+          0,
+          0,
+          0
+        ],
+        "idle": [
+          1,
+          0,
+          1
+        ],
+        "interned_rows": 269695,
+        "middle_boundaries": [
+          11976,
+          3740
+        ],
+        "seeds": [
+          14,
+          10
+        ],
+        "widths": [
+          7,
+          7
+        ]
+      },
+      {
+        "ak_on_right": false,
+        "degree": 8,
+        "expanded_states": 23042250,
+        "four_active_boundaries": [
+          114376,
+          404
+        ],
+        "hits": [
+          0,
+          0,
+          0
+        ],
+        "idle": [
+          2,
+          0,
+          0
+        ],
+        "interned_rows": 376973,
+        "middle_boundaries": [
+          114376,
+          404
+        ],
+        "seeds": [
+          146,
+          1
+        ],
+        "widths": [
+          7,
+          7
+        ]
+      },
+      {
+        "ak_on_right": false,
+        "degree": 8,
+        "expanded_states": 2170102,
+        "four_active_boundaries": [
+          1074,
+          2500
+        ],
+        "hits": [
+          0,
+          0,
+          0
+        ],
+        "idle": [
+          0,
+          1,
+          0
+        ],
+        "interned_rows": 140432,
+        "middle_boundaries": [
+          11974,
+          18810
+        ],
+        "seeds": [
+          1,
+          1
+        ],
+        "widths": [
+          7,
+          8
+        ]
+      },
+      {
+        "ak_on_right": false,
+        "degree": 8,
+        "expanded_states": 23497832,
+        "four_active_boundaries": [
+          1074,
+          22272
+        ],
+        "hits": [
+          0,
+          0,
+          0
+        ],
+        "idle": [
+          0,
+          0,
+          1
+        ],
+        "interned_rows": 188706,
+        "middle_boundaries": [
+          1074,
+          22272
+        ],
+        "seeds": [
+          1,
+          10
+        ],
+        "widths": [
+          7,
+          8
+        ]
+      },
+      {
+        "ak_on_right": false,
+        "degree": 8,
+        "expanded_states": 26890029,
+        "four_active_boundaries": [
+          11976,
+          2500
+        ],
+        "hits": [
+          0,
+          0,
+          0
+        ],
+        "idle": [
+          1,
+          0,
+          0
+        ],
+        "interned_rows": 218164,
+        "middle_boundaries": [
+          11976,
+          2500
+        ],
+        "seeds": [
+          14,
+          1
+        ],
+        "widths": [
+          7,
+          8
+        ]
+      },
+      {
+        "ak_on_right": true,
+        "degree": 8,
+        "expanded_states": 33336904,
+        "four_active_boundaries": [
+          404,
+          8132
+        ],
+        "hits": [
+          0,
+          0,
+          0
+        ],
+        "idle": [
+          0,
+          1,
+          0
+        ],
+        "interned_rows": 248313,
+        "middle_boundaries": [
+          3108,
+          84556
+        ],
+        "seeds": [
+          1,
+          1
+        ],
+        "widths": [
+          7,
+          8
+        ]
+      },
+      {
+        "ak_on_right": true,
+        "degree": 8,
+        "expanded_states": 105446631,
+        "four_active_boundaries": [
+          404,
+          84809
+        ],
+        "hits": [
+          0,
+          0,
+          0
+        ],
+        "idle": [
+          0,
+          0,
+          1
+        ],
+        "interned_rows": 540590,
+        "middle_boundaries": [
+          404,
+          84809
+        ],
+        "seeds": [
+          1,
+          14
+        ],
+        "widths": [
+          7,
+          8
+        ]
+      },
+      {
+        "ak_on_right": true,
+        "degree": 8,
+        "expanded_states": 112267155,
+        "four_active_boundaries": [
+          3740,
+          8132
+        ],
+        "hits": [
+          0,
+          0,
+          0
+        ],
+        "idle": [
+          1,
+          0,
+          0
+        ],
+        "interned_rows": 555899,
+        "middle_boundaries": [
+          3740,
+          8132
+        ],
+        "seeds": [
+          10,
+          1
+        ],
+        "widths": [
+          7,
+          8
+        ]
+      },
+      {
+        "ak_on_right": false,
+        "degree": 8,
+        "expanded_states": 51430157,
+        "four_active_boundaries": [
+          1074,
+          14064
+        ],
+        "hits": [
+          0,
+          0,
+          0
+        ],
+        "idle": [
+          0,
+          0,
+          0
+        ],
+        "interned_rows": 177745,
+        "middle_boundaries": [
+          1074,
+          14064
+        ],
+        "seeds": [
+          1,
+          1
+        ],
+        "widths": [
+          7,
+          9
+        ]
+      },
+      {
+        "ak_on_right": true,
+        "degree": 8,
+        "expanded_states": 264872487,
+        "four_active_boundaries": [
+          404,
+          55460
+        ],
+        "hits": [
+          0,
+          0,
+          0
+        ],
+        "idle": [
+          0,
+          0,
+          0
+        ],
+        "interned_rows": 925339,
+        "middle_boundaries": [
+          404,
+          55460
+        ],
+        "seeds": [
+          1,
+          1
+        ],
+        "widths": [
+          7,
+          9
+        ]
+      },
+      {
+        "ak_on_right": false,
+        "degree": 8,
+        "expanded_states": 8119467,
+        "four_active_boundaries": [
+          8132,
+          2500
+        ],
+        "hits": [
+          0,
+          0,
+          0
+        ],
+        "idle": [
+          0,
+          0,
+          0
+        ],
+        "interned_rows": 145196,
+        "middle_boundaries": [
+          8132,
+          2500
+        ],
+        "seeds": [
+          1,
+          1
+        ],
+        "widths": [
+          8,
+          8
+        ]
+      }
+    ]
+  },
+  "unordered": true
+}

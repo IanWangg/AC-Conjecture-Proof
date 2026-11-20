@@ -78,7 +78,7 @@ def compile_hit(hit):
     donor = 1 - receiver
     assert source[donor] == d
     basis = hit["boundary"]
-    assert basis[0] == r and basis[-1] == inverse(primitive) and len(basis) == 5
+    assert basis[0] == r and basis[-1] == inverse(primitive) and len(basis) in (5, 6)
     factors = spherical_factors(basis, hit["equation"])
     shift = conjugator(factors[0], r)
     factors = [conjugate(word, shift) for word in factors]
@@ -115,7 +115,7 @@ if __name__ == "__main__":
         for hit in receipt["hits"]:
             spherical_factors(hit["boundary"], hit["equation"])
         if args.ledger:
-            assert len(receipt["hits"]) == 1 and receipt["mode"] == "fixed"
+            assert len(receipt["hits"]) == 1 and receipt["mode"] in ("fixed", "fixed4")
             proof, checked = compile_hit(receipt["hits"][0])
             args.ledger.write_text(json.dumps(proof, separators=(",", ":")) + "\n")
             print(json.dumps(checked))

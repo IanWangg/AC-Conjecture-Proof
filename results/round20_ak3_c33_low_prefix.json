@@ -1,0 +1,102 @@
+{
+  "26": {
+    "arbitrary_two_products": {
+      "rows_checked": 18243,
+      "complete": true,
+      "hit": null
+    },
+    "arbitrary_tail_archive": {
+      "status": "NO_SUBGROUP_JOIN",
+      "forward_pairs": 18243,
+      "forward_distinct_words": 17596,
+      "forward_cap": 26,
+      "forward_minimum_coordinate": 6,
+      "reverse_pairs": 23902,
+      "reverse_rotation_pairs": 6230442,
+      "reverse_distinct_rotated_cores": 2675055,
+      "reverse_geodesic_bridges": 79424,
+      "primitive_slopes_constructed": 3546349,
+      "coordinates_found_in_forward_catalogue": 459599,
+      "basis_pair_lookups": 8272,
+      "core_topologies": {
+        "barbell": 85508,
+        "rose": 861364,
+        "theta": 1807607
+      }
+    },
+    "simultaneous_ambient_archive": {
+      "archive_rows": 23902,
+      "archive_classes": 19771,
+      "forward_rows": 18243,
+      "forward_classes": 18045,
+      "matching_forward_rows": 0,
+      "first_join": null
+    },
+    "literal_planar_links": {
+      "source_sha256": "314a5d93f3d4843c0e6b915fe9e84808a17440d00716b7ea8ed1ed376692472d",
+      "rows": 18243,
+      "counts": {
+        "C4": 15,
+        "DIAMOND": 589,
+        "K4": 17639,
+        "PARITY_OBSTRUCTION": 18243
+      },
+      "independently_verified_witness_equations": 27416,
+      "exceptions": []
+    }
+  },
+  "28": {
+    "arbitrary_two_products": {
+      "rows_checked": 109894,
+      "complete": true,
+      "hit": null
+    },
+    "arbitrary_tail_archive": {
+      "status": "NO_SUBGROUP_JOIN",
+      "forward_pairs": 109894,
+      "forward_distinct_words": 106901,
+      "forward_cap": 28,
+      "forward_minimum_coordinate": 6,
+      "reverse_pairs": 23902,
+      "reverse_rotation_pairs": 6230442,
+      "reverse_distinct_rotated_cores": 2675055,
+      "reverse_geodesic_bridges": 251076,
+      "primitive_slopes_constructed": 4873794,
+      "coordinates_found_in_forward_catalogue": 757464,
+      "basis_pair_lookups": 24363,
+      "core_topologies": {
+        "barbell": 257160,
+        "rose": 861364,
+        "theta": 1807607
+      }
+    },
+    "simultaneous_ambient_archive": {
+      "archive_rows": 23902,
+      "archive_classes": 19771,
+      "forward_rows": 109894,
+      "forward_classes": 108404,
+      "matching_forward_rows": 0,
+      "first_join": null
+    },
+    "literal_planar_links": {
+      "source_sha256": "739e0fea9431ca04f8f19c0a647966db1b36924723b38140167249a57782fe08",
+      "rows": 109894,
+      "counts": {
+        "C4": 26,
+        "DIAMOND": 3436,
+        "K4": 106432,
+        "PARITY_OBSTRUCTION": 109894
+      },
+      "independently_verified_witness_equations": 167939,
+      "exceptions": []
+    }
+  },
+  "30": {
+    "arbitrary_two_products": {
+      "rows_checked": 718402,
+      "complete": true,
+      "hit": null
+    },
+    "source_sha256": "5b1e35a07c6490031ae498a762b229e8d2452c8f517dd0753de21384e5ca8709"
+  }
+}

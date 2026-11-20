@@ -71,29 +71,58 @@ public:
     }
 };
 
+Pair read_catalogue_row(const std::string& line, int cap, int input_cap) {
+    const auto separator = line.find('\t');
+    if (separator == std::string::npos || !separator || separator + 1 == line.size()
+            || line.size() > size_t(input_cap + 1))
+        throw std::runtime_error("invalid orbit catalogue row");
+    const auto a = line.substr(0, separator), b = line.substr(separator + 1);
+    if (a.size() > 31 || b.size() > 31 || cap - int(std::min(a.size(), b.size())) > 31)
+        throw std::runtime_error("an input coordinate or allowed successor exceeds the packed word capacity");
+    if (audit::cyclically_reduced(a) != a || audit::cyclically_reduced(b) != b)
+        throw std::runtime_error("noncyclic input");
+    const Pair key = signed_key(a, b);
+    if (key != Pair{orbit_search::word_code(a), orbit_search::word_code(b)})
+        throw std::runtime_error("noncanonical or repeated orbit");
+    return key;
+}
+
 void load_catalogue(int cap, int input_cap, const char* catalogue, std::vector<Pair>& states,
-                    RowIndex& ids) {
+                    RowIndex& ids, unsigned workers) {
     std::ifstream input(catalogue);
     if (!input) throw std::runtime_error("cannot open orbit catalogue");
     const auto before = states.size();
-    std::string line;
-    while (std::getline(input, line)) {
-        const auto separator = line.find('\t');
-        if (separator == std::string::npos || !separator || separator + 1 == line.size()
-                || line.size() > size_t(input_cap + 1))
-            throw std::runtime_error("invalid orbit catalogue row");
+    const auto append = [&](const Pair& key) {
         if (states.size() == std::numeric_limits<uint32_t>::max())
             throw std::runtime_error("state index exhausted");
-        const auto a = line.substr(0, separator), b = line.substr(separator + 1);
-        if (a.size() > 31 || b.size() > 31 || cap - int(std::min(a.size(), b.size())) > 31)
-            throw std::runtime_error("an input coordinate or allowed successor exceeds the packed word capacity");
-        if (audit::cyclically_reduced(a) != a || audit::cyclically_reduced(b) != b)
-            throw std::runtime_error("noncyclic input");
-        const Pair key = signed_key(a, b);
-        if (key != Pair{orbit_search::word_code(a), orbit_search::word_code(b)}
-                || !ids.add(key))
-            throw std::runtime_error("noncanonical or repeated orbit");
+        if (!ids.add(key)) throw std::runtime_error("noncanonical or repeated orbit");
         states.push_back(key);
+    };
+    std::string line;
+    if (workers == 1) {
+        while (std::getline(input, line))
+            append(read_catalogue_row(line, cap, input_cap));
+    } else {
+        constexpr size_t capacity = 1 << 20;
+        std::vector<std::string> lines;
+        std::vector<Pair> keys;
+        lines.reserve(capacity);
+        for (;;) {
+            lines.clear();
+            while (lines.size() < capacity && std::getline(input, line)) lines.push_back(line);
+            if (lines.empty()) break;
+            keys.resize(lines.size());
+            std::vector<std::future<void>> jobs;
+            for (unsigned i = 0; i < workers; ++i)
+                jobs.push_back(std::async(std::launch::async, [&,i] {
+                    for (size_t j = lines.size()*i/workers; j < lines.size()*(i+1)/workers; ++j)
+                        keys[j] = read_catalogue_row(lines[j], cap, input_cap);
+                }));
+            for (auto& job : jobs) job.get();
+            for (const auto& key : keys) append(key);
+            if ((states.size()-before) % (64*capacity) == 0)
+                std::cerr << "loaded " << states.size() << " cumulative catalogue rows\n";
+        }
     }
     if (input.bad() || states.size() == before) throw std::runtime_error("empty or unreadable catalogue");
 }
@@ -152,23 +181,25 @@ uint64_t check_seeds(const RowIndex& ids, int cap, size_t first_new, unsigned wo
 
 int run(int cap, unsigned workers, const char* catalogue, const char* report,
         const std::string& first, const std::string& second, const char* lower = nullptr,
-        unsigned index_bits = 0, const char* seed_manifest = nullptr, bool check_old_boundary = false) {
+        unsigned index_bits = 0, const char* seed_manifest = nullptr, bool check_old_boundary = false,
+        bool parallel_load = false) {
     if (cap < 13 || cap > 62 || !workers || (lower && cap < 14))
         throw std::runtime_error("need cap 13–62 and positive worker count; extensions begin at cap 14");
     audit::self_test();
     std::vector<Pair> states;
     RowIndex ids(states, index_bits);
+    const unsigned loading_workers = parallel_load ? workers : 1;
     if (lower && lower[0] == '@') {
         std::ifstream manifest(lower + 1);
         if (!manifest) throw std::runtime_error("cannot open lower catalogue manifest");
         for (std::string path; std::getline(manifest, path);)
-            load_catalogue(cap, cap - 1, path.c_str(), states, ids);
+            load_catalogue(cap, cap - 1, path.c_str(), states, ids, loading_workers);
         if (manifest.bad() || states.empty()) throw std::runtime_error("empty or unreadable lower manifest");
     } else if (lower) {
-        load_catalogue(cap, cap - 1, lower, states, ids);
+        load_catalogue(cap, cap - 1, lower, states, ids, loading_workers);
     }
     const auto first_scanned = states.size();
-    load_catalogue(cap, cap, catalogue, states, ids);
+    load_catalogue(cap, cap, catalogue, states, ids, loading_workers);
     const auto start_id = ids.find(signed_key(first, second));
     if (start_id == RowIndex::missing) throw std::runtime_error("root orbit absent from catalogue");
     std::cerr << "loaded " << states.size() << " orbits\n";
@@ -274,12 +305,13 @@ int run(int cap, unsigned workers, const char* catalogue, const char* report,
 int main(int argc, char** argv) {
     try {
         const auto mode = argc > 1 ? std::string_view(argv[1]) : std::string_view{};
-        if ((argc == 8 || argc == 9) && (mode == "--flat-extend" || mode == "--flat-complete")) {
+        if ((argc == 8 || argc == 9) &&
+            (mode == "--flat-extend" || mode == "--flat-complete" || mode == "--parallel-complete")) {
             const auto bits = std::stoul(argv[7]);
             if (!bits || bits > 32) throw std::runtime_error("index exponent must be in [1,32]");
             return wide_verify::run(std::stoi(argv[2]), std::stoul(argv[3]), argv[5], argv[6],
                                     "xxxYYYY", "xyxYXY", argv[4], bits, argc == 9 ? argv[8] : nullptr,
-                                    mode == "--flat-complete");
+                                    mode != "--flat-extend", mode == "--parallel-complete");
         }
         if (argc == 7 && std::string_view(argv[1]) == "--extend")
             return wide_verify::run(std::stoi(argv[2]), std::stoul(argv[3]), argv[5], argv[6],
@@ -287,7 +319,7 @@ int main(int argc, char** argv) {
         if (argc != 5 && argc != 7)
             throw std::runtime_error("usage: wide-verify cap workers catalogue.tsv report.json [first second]; "
                                      "wide-verify --extend cap workers lower.tsv outside.tsv report.json; "
-                                     "wide-verify --flat-extend|--flat-complete cap workers lower.tsv-or-@manifest outside.tsv report.json bits [seed-manifest]");
+                                     "wide-verify --flat-extend|--flat-complete|--parallel-complete cap workers lower.tsv-or-@manifest outside.tsv report.json bits [seed-manifest]");
         return wide_verify::run(std::stoi(argv[1]), std::stoul(argv[2]), argv[3], argv[4],
                                 argc == 5 ? "xxxYYYY" : argv[5], argc == 5 ? "xyxYXY" : argv[6]);
     } catch (const std::exception& error) {

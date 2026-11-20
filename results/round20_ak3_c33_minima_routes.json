@@ -1,0 +1,116 @@
+{
+  "route_catalogue_uncompressed_sha256": "eb7210f2a0e507c21580f014f67e0c56a2215fc9a6989516b9092c37a0cbae2b",
+  "independent_old_rows_through_energy17": [
+    616,
+    0
+  ],
+  "old_component_membership": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "verified_strict_paths": [
+    {
+      "moves": 879,
+      "peak_total_length": 39,
+      "endpoint": [
+        "xxyXYY",
+        "xxxxYxYxYXY"
+      ],
+      "cyclic_peak": 33
+    },
+    {
+      "moves": 891,
+      "peak_total_length": 39,
+      "endpoint": [
+        "xxyXYY",
+        "xxxxYxYYYxY"
+      ],
+      "cyclic_peak": 33
+    },
+    {
+      "moves": 941,
+      "peak_total_length": 44,
+      "endpoint": [
+        "xxyXYY",
+        "xxxyxYYXYXY"
+      ],
+      "cyclic_peak": 33
+    },
+    {
+      "moves": 932,
+      "peak_total_length": 44,
+      "endpoint": [
+        "xxyXYY",
+        "xxxYxxYXYXY"
+      ],
+      "cyclic_peak": 33
+    },
+    {
+      "moves": 914,
+      "peak_total_length": 44,
+      "endpoint": [
+        "xxyXYY",
+        "xxxYxYYxYXY"
+      ],
+      "cyclic_peak": 33
+    },
+    {
+      "moves": 912,
+      "peak_total_length": 39,
+      "endpoint": [
+        "xxyXYY",
+        "xxyyXXYXYXy"
+      ],
+      "cyclic_peak": 33
+    },
+    {
+      "moves": 869,
+      "peak_total_length": 39,
+      "endpoint": [
+        "xxyXYY",
+        "xxYxYxYXyxY"
+      ],
+      "cyclic_peak": 33
+    },
+    {
+      "moves": 887,
+      "peak_total_length": 39,
+      "endpoint": [
+        "xxyXYY",
+        "xxYXYxYXyxy"
+      ],
+      "cyclic_peak": 33
+    },
+    {
+      "moves": 917,
+      "peak_total_length": 44,
+      "endpoint": [
+        "xxyXYY",
+        "xxYXYXyxYxY"
+      ],
+      "cyclic_peak": 33
+    }
+  ],
+  "parallel_audit_control": {
+    "status": "NEW_ORBITS_CLOSED_AND_ATTACHED",
+    "cyclic_cap": 22,
+    "signed_permutation_orbits": 32363,
+    "lower_orbits_assumed_connected": 18118,
+    "new_orbits_checked": 14245,
+    "first_exit_seeds_checked": 13164,
+    "old_orbits_boundary_checked": 18118,
+    "old_rotation_product_candidates": 13004928,
+    "old_first_exit_admitted_products": 197002,
+    "rotation_product_candidates": 11215112,
+    "admitted_neighbors": 384302
+  },
+  "parallel_and_sequential_control_byte_equal": true,
+  "partial_catalogue_failure_control": "catalogue not closed"
+}
