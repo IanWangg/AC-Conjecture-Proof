@@ -35,7 +35,8 @@ def orient(word, sign):
 class AnnotatedFold:
     """Keep a path with freely trivial label for each representative change."""
 
-    def __init__(self):
+    def __init__(self, letters=LETTERS):
+        self.letters = letters
         self.parent = []
         self.size = []
         self.transport = []
@@ -47,7 +48,7 @@ class AnnotatedFold:
         self.parent.append(at)
         self.size.append(1)
         self.transport.append(())
-        self.arcs.append([None] * 4)
+        self.arcs.append([None] * len(self.letters))
         return at
 
     def find(self, at):
@@ -101,7 +102,7 @@ class AnnotatedFold:
         for index, letter in enumerate(word, 1):
             finish = index == len(word)
             new = 0 if finish else self.new_vertex()
-            self.add_arc(at, LETTERS.index(letter), new, (symbol,) if finish else ())
+            self.add_arc(at, self.letters.index(letter), new, (symbol,) if finish else ())
             at = new
 
     def paths(self):
@@ -110,7 +111,7 @@ class AnnotatedFold:
         visited = {root: ''}
         while queue:
             at = queue.popleft()
-            for letter, arc in zip(LETTERS, self.arcs[at]):
+            for letter, arc in zip(self.letters, self.arcs[at]):
                 if arc is None:
                     continue
                 end, _ = self.find(arc[1])
@@ -121,7 +122,7 @@ class AnnotatedFold:
 
     def follow(self, at, word):
         for letter in word:
-            arc = self.arcs[at][LETTERS.index(letter)]
+            arc = self.arcs[at][self.letters.index(letter)]
             if arc is None:
                 return None
             at, _ = self.find(arc[1])
@@ -132,7 +133,7 @@ class AnnotatedFold:
         at = root
         parts = [reverse(tail)]
         for letter in word:
-            arc = self.arcs[at][LETTERS.index(letter)]
+            arc = self.arcs[at][self.letters.index(letter)]
             at, part = self.trace(arc)
             parts.append(part)
         if root != at:

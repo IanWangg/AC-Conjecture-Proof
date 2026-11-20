@@ -1,0 +1,296 @@
+{
+  "marked_and_quadratic_checks": {
+    "marked_symbolic_layer_widths": [
+      2,
+      30,
+      149,
+      255,
+      672,
+      1440
+    ],
+    "quadratic_lift_checks": [
+      {
+        "lifted_layer_widths": [
+          2,
+          30,
+          149,
+          255,
+          672,
+          1440
+        ],
+        "old_linear_parts": [
+          1,
+          2
+        ],
+        "surviving_templates": 8
+      },
+      {
+        "lifted_layer_widths": [
+          2,
+          30,
+          149,
+          255,
+          672,
+          1440
+        ],
+        "old_linear_parts": [
+          1,
+          3
+        ],
+        "surviving_templates": 8
+      },
+      {
+        "lifted_layer_widths": [
+          2,
+          30,
+          149,
+          255,
+          672,
+          1440
+        ],
+        "old_linear_parts": [
+          2,
+          1
+        ],
+        "surviving_templates": 8
+      },
+      {
+        "lifted_layer_widths": [
+          2,
+          30,
+          149,
+          255,
+          672,
+          1440
+        ],
+        "old_linear_parts": [
+          2,
+          3
+        ],
+        "surviving_templates": 8
+      },
+      {
+        "lifted_layer_widths": [
+          2,
+          30,
+          149,
+          255,
+          672,
+          1440
+        ],
+        "old_linear_parts": [
+          3,
+          1
+        ],
+        "surviving_templates": 8
+      },
+      {
+        "lifted_layer_widths": [
+          2,
+          30,
+          149,
+          255,
+          672,
+          1440
+        ],
+        "old_linear_parts": [
+          3,
+          2
+        ],
+        "surviving_templates": 8
+      }
+    ],
+    "surviving_square_templates": [
+      [
+        "XAAAxaa",
+        "AAXaaaxAA",
+        [
+          "aaXAAAxaa",
+          "b"
+        ]
+      ],
+      [
+        "XaaaxAA",
+        "aaaaXAAAx",
+        [
+          "aaaaXAAAx",
+          "b"
+        ]
+      ],
+      [
+        "YAAAyaa",
+        "AAYaaayAA",
+        [
+          "aaYAAAyaa",
+          "b"
+        ]
+      ],
+      [
+        "YaaayAA",
+        "aaaaYAAAy",
+        [
+          "aaaaYAAAy",
+          "b"
+        ]
+      ],
+      [
+        "xAAAXaa",
+        "AAxaaaXAA",
+        [
+          "aaxAAAXaa",
+          "b"
+        ]
+      ],
+      [
+        "xaaaXAA",
+        "aaaaxAAAX",
+        [
+          "aaaaxAAAX",
+          "b"
+        ]
+      ],
+      [
+        "yAAAYaa",
+        "AAyaaaYAA",
+        [
+          "aayAAAYaa",
+          "b"
+        ]
+      ],
+      [
+        "yaaaYAA",
+        "aaaayAAAY",
+        [
+          "aaaayAAAY",
+          "b"
+        ]
+      ]
+    ],
+    "terminals_restoring_linear_marking": 1440
+  },
+  "strict_comparison": {
+    "covered_remaining_templates": {
+      "degree_three_obstruction": 10427,
+      "last_equality_rewrites": 73332
+    },
+    "distinct_remaining_templates": 89489,
+    "formal_radius_six_pairs": 1171516,
+    "residual_templates": 5730,
+    "template_occurrences": {
+      "exponent_obstruction_occurrences": 521992,
+      "last_equality_replacement_occurrences": 1523082,
+      "literal_replacement_occurrences": 5042438,
+      "other_template_occurrences": 122344
+    }
+  },
+  "strict_saving_geodesic_windows": [
+    {
+      "degree_nine_half_widths": [
+        1214,
+        38078
+      ],
+      "entry_tick": 0,
+      "exit_geodesic_tick": 6,
+      "midpoints": 0
+    },
+    {
+      "degree_nine_half_widths": [
+        3475,
+        38078
+      ],
+      "entry_tick": 1,
+      "exit_geodesic_tick": 7,
+      "midpoints": 0
+    },
+    {
+      "degree_nine_half_widths": [
+        3556,
+        38072
+      ],
+      "entry_tick": 2,
+      "exit_geodesic_tick": 8,
+      "midpoints": 0
+    },
+    {
+      "degree_nine_half_widths": [
+        3560,
+        38067
+      ],
+      "entry_tick": 3,
+      "exit_geodesic_tick": 9,
+      "midpoints": 0
+    },
+    {
+      "degree_nine_half_widths": [
+        2428,
+        72013
+      ],
+      "entry_tick": 4,
+      "exit_geodesic_tick": 10,
+      "midpoints": 0
+    },
+    {
+      "degree_nine_half_widths": [
+        2428,
+        90594
+      ],
+      "entry_tick": 5,
+      "exit_geodesic_tick": 11,
+      "midpoints": 0
+    },
+    {
+      "degree_nine_half_widths": [
+        2428,
+        104472
+      ],
+      "entry_tick": 6,
+      "exit_geodesic_tick": 12,
+      "midpoints": 0
+    },
+    {
+      "degree_nine_half_widths": [
+        2428,
+        89911
+      ],
+      "entry_tick": 7,
+      "exit_geodesic_tick": 13,
+      "midpoints": 0
+    },
+    {
+      "degree_nine_half_widths": [
+        2428,
+        69175
+      ],
+      "entry_tick": 8,
+      "exit_geodesic_tick": 14,
+      "midpoints": 0
+    },
+    {
+      "degree_nine_half_widths": [
+        2428,
+        44675
+      ],
+      "entry_tick": 9,
+      "exit_geodesic_tick": 15,
+      "midpoints": 0
+    },
+    {
+      "degree_nine_half_widths": [
+        4636,
+        31058
+      ],
+      "entry_tick": 10,
+      "exit_geodesic_tick": 16,
+      "midpoints": 0
+    },
+    {
+      "degree_nine_half_widths": [
+        5849,
+        7420
+      ],
+      "entry_tick": 11,
+      "exit_geodesic_tick": 17,
+      "midpoints": 0
+    }
+  ]
+}

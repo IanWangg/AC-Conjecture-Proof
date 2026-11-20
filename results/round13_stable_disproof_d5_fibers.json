@@ -1,0 +1,9 @@
+{
+  "degree_five_elements": 524288,
+  "degree_four_elements": 8192,
+  "fiber_size": 64,
+  "degree_four_independent_unordered_pairs": 12582912,
+  "degree_five_aligned_pairs": 51539607552,
+  "one_bit_chart_bytes": 6442450944,
+  "first_arrival_nibble_bytes_per_side": 25769803776
+}

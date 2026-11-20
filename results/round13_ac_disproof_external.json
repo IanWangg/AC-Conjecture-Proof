@@ -1,0 +1,621 @@
+{
+  "pair": [
+    "XXYxYXXYxxy",
+    "XXYXYxxyXyxxy"
+  ],
+  "row_exponent_determinant": -1,
+  "strict_stable_replay": {
+    "moves": 18477,
+    "rank_peak": 3,
+    "raw_peak": 234,
+    "cyclic_peak": 170,
+    "final_words": [
+      "XXYxYXXYxxy",
+      "XXYXYxxyXyxxy"
+    ]
+  },
+  "strict_stable_ledger_sha256": "a82b30519bdccbdf607cc528728e1650292e1006cae6e6dc8884e8502d7e810d",
+  "source_vertices": 17,
+  "source_map_pair_absence": {
+    "status": "PASS",
+    "complete_absence_certificate": true,
+    "vertices": 17,
+    "closed_map_pair_states_checked": 60,
+    "ordinary_AC_goal_solved": false
+  },
+  "first_identifications_by_rank": {
+    "3": 136
+  },
+  "principal_quotients_by_rank": {
+    "2": 2,
+    "3": 60,
+    "4": 887,
+    "5": 3900,
+    "6": 4764,
+    "7": 1437,
+    "8": 76
+  },
+  "rank_two_principal_images": [
+    [
+      -1,
+      1,
+      -1,
+      2,
+      0,
+      3,
+      -1,
+      -1,
+      -1,
+      4,
+      0,
+      -1,
+      1,
+      -1,
+      -1,
+      5,
+      2,
+      6,
+      -1,
+      -1,
+      7,
+      8,
+      3,
+      -1,
+      4,
+      -1,
+      9,
+      10,
+      -1,
+      5,
+      -1,
+      11,
+      5,
+      -1,
+      -1,
+      12,
+      13,
+      -1,
+      -1,
+      6,
+      14,
+      -1,
+      6,
+      -1,
+      -1,
+      13,
+      7,
+      -1,
+      15,
+      -1,
+      8,
+      -1,
+      11,
+      9,
+      -1,
+      -1,
+      -1,
+      10,
+      -1,
+      16,
+      16,
+      12,
+      -1,
+      -1,
+      -1,
+      15,
+      14,
+      -1
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "principal_quotients": 11126,
+  "independent_principal_enumeration": {
+    "all_images": 11126,
+    "all_images_sha256": "433ac96c9a6a5d4b4a0e9c94adb4645924b56cf84a57874542256744ca9bd98d",
+    "rank_increasing_images": 11124,
+    "rank_increasing_images_sha256": "80273905906509b576b29ad3f54ad101b654efa7be9197ddec4e332df331ed03"
+  },
+  "free_quotient_exclusions_by_rank": {
+    "3": 60,
+    "4": 886,
+    "5": 3900,
+    "6": 4764,
+    "7": 1437,
+    "8": 76
+  },
+  "free_quotient_case_sha256": "28968a65f4847878429702a90666d3137e82188f95a2e0b45d3c72f965b8cf09",
+  "free_quotient_neutral_cases": [],
+  "exceptional": [
+    {
+      "graph": [
+        1,
+        2,
+        2,
+        3,
+        3,
+        0,
+        3,
+        -1,
+        0,
+        3,
+        -1,
+        0,
+        2,
+        1,
+        0,
+        1
+      ],
+      "chord_basis": [
+        "yx",
+        "xxy",
+        "xyy",
+        "XXy"
+      ],
+      "source_in_chords": [
+        "dCbCAb",
+        "dCDadb"
+      ],
+      "integer_character_basis": [
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          -1,
+          -2,
+          0,
+          3
+        ]
+      ],
+      "excluded_languages": 8,
+      "tests": [
+        {
+          "character": [
+            1,
+            1,
+            -1,
+            -3
+          ],
+          "inequalities_checked": 5,
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                3,
+                7
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                -2,
+                0
+              ]
+            },
+            {
+              "states": [
+                1,
+                4
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "character": [
+            1,
+            2,
+            0,
+            -3
+          ],
+          "inequalities_checked": 10,
+          "alphabet": [
+            0,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                6,
+                7
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                -1,
+                -2,
+                -2,
+                0,
+                -3,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "character": [
+            1,
+            2,
+            0,
+            -3
+          ],
+          "inequalities_checked": 5,
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                1,
+                5,
+                6
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -4,
+                0,
+                -5
+              ]
+            },
+            {
+              "states": [
+                2,
+                7
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "character": [
+            1,
+            2,
+            0,
+            -3
+          ],
+          "inequalities_checked": 10,
+          "alphabet": [
+            0,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                2,
+                4,
+                5,
+                6,
+                7
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -8,
+                -1,
+                -9,
+                0,
+                0,
+                -2,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "character": [
+            1,
+            2,
+            0,
+            -3
+          ],
+          "inequalities_checked": 5,
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                3,
+                6
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0,
+                -1
+              ]
+            },
+            {
+              "states": [
+                1,
+                4,
+                7
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                -5,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "character": [
+            1,
+            2,
+            0,
+            -3
+          ],
+          "inequalities_checked": 10,
+          "alphabet": [
+            1,
+            2
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                6,
+                7
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -1,
+                -1,
+                0,
+                0,
+                -9,
+                -1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "character": [
+            1,
+            1,
+            -1,
+            -3
+          ],
+          "inequalities_checked": 5,
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 0,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                5
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                0,
+                -1
+              ]
+            },
+            {
+              "states": [
+                1,
+                2,
+                7
+              ],
+              "strict_cycle_voltage_sign": 1,
+              "potential": [
+                -1,
+                0,
+                -2
+              ]
+            }
+          ]
+        },
+        {
+          "character": [
+            1,
+            2,
+            0,
+            -3
+          ],
+          "inequalities_checked": 10,
+          "alphabet": [
+            1,
+            3
+          ],
+          "forbidden_double": 1,
+          "status": "PASS",
+          "cyclic_components": [
+            {
+              "states": [
+                0,
+                1,
+                2,
+                4,
+                5,
+                6,
+                7
+              ],
+              "strict_cycle_voltage_sign": -1,
+              "potential": [
+                -2,
+                -2,
+                -1,
+                -3,
+                -3,
+                -3,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "all_proper_images_excluded": true,
+  "ak2_positive_control": {
+    "known_primitive_kernel_witnesses_replayed": 3,
+    "source": [
+      "xxYYY",
+      "xyxYXY"
+    ]
+  },
+  "short_generated_projection_checks": [
+    {
+      "pair": [
+        "xxxyxYxyxYY",
+        "xxyxxYYxxyxY"
+      ],
+      "first_identifications_by_rank": {
+        "3": 171
+      },
+      "source_map_pair_absence": {
+        "status": "PASS",
+        "complete_absence_certificate": true,
+        "vertices": 19,
+        "closed_map_pair_states_checked": 68,
+        "ordinary_AC_goal_solved": false
+      }
+    },
+    {
+      "pair": [
+        "xxxyyxyyXYY",
+        "xxyXYYYYXXyy"
+      ],
+      "first_identifications_by_rank": {
+        "3": 190
+      },
+      "source_map_pair_absence": {
+        "status": "PASS",
+        "complete_absence_certificate": true,
+        "vertices": 20,
+        "closed_map_pair_states_checked": 96,
+        "ordinary_AC_goal_solved": false
+      }
+    },
+    {
+      "pair": [
+        "xxyxYYXXY",
+        "xyxYXyXYxyxYXY"
+      ],
+      "first_identifications_by_rank": {
+        "3": 171
+      },
+      "source_map_pair_absence": {
+        "status": "PASS",
+        "complete_absence_certificate": true,
+        "vertices": 19,
+        "closed_map_pair_states_checked": 52,
+        "ordinary_AC_goal_solved": false
+      }
+    },
+    {
+      "pair": [
+        "xxyxyXYXyy",
+        "xxyXyxxyXYYXy"
+      ],
+      "first_identifications_by_rank": {
+        "3": 153
+      },
+      "source_map_pair_absence": {
+        "status": "PASS",
+        "complete_absence_certificate": true,
+        "vertices": 18,
+        "closed_map_pair_states_checked": 60,
+        "ordinary_AC_goal_solved": false
+      }
+    }
+  ],
+  "fixed_second_row_primitive_exclusion": {
+    "receiver": "XXYxYXXYxxy",
+    "fixed_donor": "XXYXYxxyXyxxy",
+    "x": [
+      1,
+      3,
+      2,
+      5,
+      6,
+      4
+    ],
+    "y": [
+      2,
+      4,
+      5,
+      3,
+      1,
+      6
+    ],
+    "receiver_cycle_type": [
+      2,
+      2,
+      2
+    ],
+    "power_period": 5,
+    "primitive_residue_cycle_types": [
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        6
+      ],
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        1,
+        1,
+        4
+      ],
+      [
+        6
+      ]
+    ]
+  }
+}

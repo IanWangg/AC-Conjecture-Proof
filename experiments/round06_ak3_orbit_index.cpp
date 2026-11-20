@@ -98,6 +98,7 @@ struct Catalogue {
 };
 }
 
+#ifndef AC_ROUND06_ORBIT_INDEX_LIBRARY
 int main(int argc, char** argv) {
     try {
         if (argc != 4) throw std::runtime_error("usage: orbit-index forward.orbit.tsv reverse.tsv result.json");
@@ -107,3 +108,4 @@ int main(int argc, char** argv) {
         return 1;
     }
 }
+#endif

@@ -1,0 +1,126 @@
+{
+  "middle_budget": 18,
+  "excursion_spans": [
+    6,
+    6
+  ],
+  "idle_steps_per_side": 3,
+  "template_count": 136,
+  "mod_two_auxiliary_marks": true,
+  "tiers": [
+    {
+      "degree": 5,
+      "left_layers": [
+        [
+          1,
+          27,
+          772
+        ],
+        [
+          14,
+          730,
+          31238
+        ],
+        [
+          143,
+          12185,
+          704574
+        ],
+        [
+          1312,
+          162009,
+          null
+        ]
+      ],
+      "right_layers": [
+        [
+          1,
+          22,
+          614
+        ],
+        [
+          11,
+          491,
+          21336
+        ],
+        [
+          88,
+          7137,
+          422677
+        ],
+        [
+          626,
+          81517,
+          null
+        ]
+      ],
+      "meeting_counts": [
+        12,
+        2,
+        0
+      ],
+      "boundary_edges_checked": [
+        15988352,
+        9169359
+      ],
+      "magnus_elements": 522482
+    },
+    {
+      "degree": 6,
+      "left_layers": [
+        [
+          1,
+          32,
+          938
+        ],
+        [
+          15,
+          852,
+          37908
+        ],
+        [
+          159,
+          14297,
+          880791
+        ],
+        [
+          1519,
+          195246,
+          null
+        ]
+      ],
+      "right_layers": [
+        [
+          1,
+          22,
+          622
+        ],
+        [
+          11,
+          491,
+          22074
+        ],
+        [
+          88,
+          7241,
+          460867
+        ],
+        [
+          630,
+          85635,
+          null
+        ]
+      ],
+      "meeting_counts": [
+        0,
+        0,
+        0
+      ],
+      "boundary_edges_checked": [
+        19462284,
+        9813423
+      ],
+      "magnus_elements": 21463611
+    }
+  ]
+}

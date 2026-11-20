@@ -1,0 +1,553 @@
+{
+  "archive_tsv_sha256": "c9dd0627965a6f1ffa899c4a465b95a788d739eedd49089d9b6c5681980ba2c4",
+  "modular_prefilter": {
+    "all_keys": 147060,
+    "height_one": 8726,
+    "trace_gate": 1634,
+    "details": [
+      [
+        3,
+        1,
+        341,
+        2,
+        1634,
+        528
+      ],
+      [
+        3,
+        6,
+        341,
+        2,
+        528,
+        176
+      ],
+      [
+        11,
+        2,
+        341,
+        2,
+        176,
+        17
+      ]
+    ],
+    "remaining": [
+      "XXXXXXyXyXYXyXXXyXyXXXyxxYxYxxxYxxxy",
+      "XXXXXyXyXyXyxxYxYxYXYxYxYxxxxxyXyXXXy",
+      "XXXXYxxyxYxxxxYxxxyXXYXy",
+      "XXXXyXXXXyXYxxYxxxYxxxxYxxy",
+      "XXXXyXYxYYXXXyXyxYxYxxxyXYxyXyxYxxxyXYxYxxy",
+      "XXXXyXyXYxxYxxxYYYxyXyyXyxYxxYxxYXy",
+      "XXXXyyXXYYxYYxxyyyXYxxy",
+      "XXXXyyxxY",
+      "XXXyxxYXy",
+      "XXYXYXyxyyXYYxyxy",
+      "XXYYXyXYXXyyxyxYxyyxY",
+      "XXYYxYYYxyXYYxYxYXYYxyxyyXyyxyyyy",
+      "XXyxYXXyxYXXyxYYYxyXyyyxY",
+      "XYXyyyyyxYxYYYYxYxy",
+      "XYYYYXyXyyxYxYYXyyyyXy",
+      "XYYYYYYxYYYxYYYxYYYXyyyyyXyyyXyyyyyXyyy",
+      "XYYYxYYXYxyXyyXyXyxYxYXyyyy"
+    ]
+  },
+  "integer_cover": {
+    "branches": {
+      "XXXXXXyXyXYXyXXXyXyXXXyxxYxYxxxYxxxy": {
+        "status": "sign_eval_nonintegral",
+        "start_character": 1,
+        "conjugator_abelianization": [
+          -2,
+          3,
+          -5,
+          6,
+          -6,
+          1,
+          -1,
+          1,
+          2,
+          -4
+        ],
+        "failed_values": [
+          "0",
+          "-336223428432405/1968949062557",
+          "-303025784302883/1968949062557",
+          "1849950156025024/1968949062557",
+          "-33100240053380/1968949062557",
+          "52314071046409/1968949062557",
+          "196654122920211/1968949062557",
+          "-407954044959955/1968949062557",
+          "989231266742098/1968949062557",
+          "572863788227852/1968949062557"
+        ]
+      },
+      "XXXXXyXyXyXyxxYxYxYXYxYxYxxxxxyXyXXXy": {
+        "status": "sign_eval_nonintegral",
+        "start_character": 1,
+        "conjugator_abelianization": [
+          -2,
+          2,
+          -2,
+          -1,
+          1,
+          -2,
+          3,
+          -4,
+          3,
+          1
+        ],
+        "failed_values": [
+          "0",
+          "-50123148695404/1968949062557",
+          "-10291815503168/1968949062557",
+          "143818376236935/1968949062557",
+          "40070909283389/1968949062557",
+          "7045582567966/1968949062557",
+          "74313018109649/1968949062557",
+          "36821174604426/1968949062557",
+          "123704880657231/1968949062557",
+          "98903993893633/1968949062557"
+        ]
+      },
+      "XXXXYxxyxYxxxxYxxxyXXYXy": {
+        "status": "sign_eval_nonintegral",
+        "start_character": 1,
+        "conjugator_abelianization": [
+          -1,
+          3,
+          -4,
+          3,
+          -4,
+          1,
+          0,
+          -1,
+          1,
+          -2
+        ],
+        "failed_values": [
+          "1",
+          "-962694903985139/5906847187671",
+          "-872671571453662/5906847187671",
+          "5550863320642901/5906847187671",
+          "-253289534670946/5906847187671",
+          "84570143597513/5906847187671",
+          "216979458970276/5906847187671",
+          "-1367547222023881/5906847187671",
+          "2849393366228447/5906847187671",
+          "1613846383944310/5906847187671"
+        ]
+      },
+      "XXXXyXXXXyXYxxYxxxYxxxxYxxy": {
+        "status": "sign_eval_nonintegral",
+        "start_character": 1,
+        "conjugator_abelianization": [
+          -1,
+          0,
+          0,
+          1,
+          -2,
+          -3,
+          1,
+          1,
+          0,
+          -3
+        ],
+        "failed_values": [
+          "1",
+          "629849239279300/5906847187671",
+          "554840065878950/5906847187671",
+          "-3728396102637235/5906847187671",
+          "67148794007390/5906847187671",
+          "112485864739355/5906847187671",
+          "-374605798847855/5906847187671",
+          "723547971792401/5906847187671",
+          "-2085768386629798/5906847187671",
+          "-1229449575283337/5906847187671"
+        ]
+      },
+      "XXXXyXYxYYXXXyXyxYxYxxxyXYxyXyxYxxxyXYxYxxy": {
+        "status": "sign_eval_nonintegral",
+        "start_character": 1,
+        "conjugator_abelianization": [
+          7,
+          -8,
+          -7,
+          8,
+          5,
+          -4,
+          -9,
+          -3,
+          13,
+          -3
+        ],
+        "failed_values": [
+          "1",
+          "-71723941236318/1968949062557",
+          "-90652087588171/1968949062557",
+          "567051643515424/1968949062557",
+          "-145930131896537/1968949062557",
+          "-25362958706656/1968949062557",
+          "-13936077223741/1968949062557",
+          "-110999868962827/1968949062557",
+          "286553772832527/1968949062557",
+          "120440337983581/1968949062557"
+        ]
+      },
+      "XXXXyXyXYxxYxxxYYYxyXyyXyxYxxYxxYXy": {
+        "status": "sign_eval_nonintegral",
+        "start_character": 1,
+        "conjugator_abelianization": [
+          -2,
+          3,
+          -2,
+          2,
+          -3,
+          -1,
+          1,
+          0,
+          1,
+          -2
+        ],
+        "failed_values": [
+          "0",
+          "-860597627985913/5906847187671",
+          "-722828929319156/5906847187671",
+          "5242878351055126/5906847187671",
+          "-243761818869263/5906847187671",
+          "18312075170989/5906847187671",
+          "146623553150021/5906847187671",
+          "-1274230099799198/5906847187671",
+          "2655799865544763/5906847187671",
+          "1453793363621996/5906847187671"
+        ]
+      },
+      "XXXXyyXXYYxYYxxyyyXYxxy": {
+        "status": "sign_eval_nonintegral",
+        "start_character": 1,
+        "conjugator_abelianization": [
+          -2,
+          4,
+          -5,
+          2,
+          0,
+          -2,
+          3,
+          -5,
+          5,
+          -2
+        ],
+        "failed_values": [
+          "0",
+          "-488054954234068/1968949062557",
+          "-458871816851643/1968949062557",
+          "3059804413350612/1968949062557",
+          "-125395998813324/1968949062557",
+          "1317449188018/1968949062557",
+          "237864155965135/1968949062557",
+          "-649854665650979/1968949062557",
+          "1623692080844911/1968949062557",
+          "953295911083656/1968949062557"
+        ]
+      },
+      "XXXXyyxxY": {
+        "status": "integral"
+      },
+      "XXXyxxYXy": {
+        "status": "sign_eval_nonintegral",
+        "start_character": 1,
+        "conjugator_abelianization": [
+          -2,
+          3,
+          -3,
+          1,
+          -2,
+          -1,
+          2,
+          -2,
+          2,
+          -2
+        ],
+        "failed_values": [
+          "0",
+          "-1048255820661241/5906847187671",
+          "-912766304145587/5906847187671",
+          "6217046999497843/5906847187671",
+          "-175988290168766/5906847187671",
+          "76351232862997/5906847187671",
+          "642824878251098/5906847187671",
+          "-1249069512626210/5906847187671",
+          "3375314312132524/5906847187671",
+          "1995463396359710/5906847187671"
+        ]
+      },
+      "XXYXYXyxyyXYYxyxy": {
+        "status": "sign_eval_nonintegral",
+        "start_character": 1,
+        "conjugator_abelianization": [
+          1,
+          1,
+          -3,
+          -3,
+          3,
+          2,
+          -1,
+          -4,
+          -1,
+          5
+        ],
+        "failed_values": [
+          "1",
+          "-996039390292709/5906847187671",
+          "-1011735377019145/5906847187671",
+          "6513205289917727/5906847187671",
+          "-494279291612461/5906847187671",
+          "136428900749324/5906847187671",
+          "446139743998549/5906847187671",
+          "-1478009746170664/5906847187671",
+          "3346019926611221/5906847187671",
+          "1838085248690491/5906847187671"
+        ]
+      },
+      "XXYYXyXYXXyyxyxYxyyxY": {
+        "status": "sign_eval_nonintegral",
+        "start_character": 1,
+        "conjugator_abelianization": [
+          2,
+          -5,
+          4,
+          -4,
+          3,
+          -1,
+          -4,
+          3,
+          -1,
+          1
+        ],
+        "failed_values": [
+          "0",
+          "116266064654551/1968949062557",
+          "26809897336542/1968949062557",
+          "-880471443989336/1968949062557",
+          "-69740780254031/1968949062557",
+          "53162849386799/1968949062557",
+          "-86759219173062/1968949062557",
+          "127514434485943/1968949062557",
+          "-501825002107877/1968949062557",
+          "-289311665578139/1968949062557"
+        ]
+      },
+      "XXYYxYYYxyXYYxYxYXYYxyxyyXyyxyyyy": {
+        "status": "sign_eval_nonintegral",
+        "start_character": 1,
+        "conjugator_abelianization": [
+          53,
+          -28,
+          -75,
+          32,
+          60,
+          15,
+          -65,
+          -56,
+          78,
+          24
+        ],
+        "failed_values": [
+          "1",
+          "-2713878379184650/5906847187671",
+          "-2413993982295491/5906847187671",
+          "17318062144026940/5906847187671",
+          "-670469851185134/5906847187671",
+          "154839281949037/5906847187671",
+          "1140755675640413/5906847187671",
+          "-3886502605918502/5906847187671",
+          "9083017759127164/5906847187671",
+          "5206908816149678/5906847187671"
+        ]
+      },
+      "XXyxYXXyxYXXyxYYYxyXyyyxY": {
+        "status": "sign_eval_nonintegral",
+        "start_character": 1,
+        "conjugator_abelianization": [
+          -2,
+          4,
+          -6,
+          3,
+          -2,
+          -1,
+          2,
+          -5,
+          5,
+          -2
+        ],
+        "failed_values": [
+          "0",
+          "-132714459589734/1968949062557",
+          "-74079563933524/1968949062557",
+          "873225536340893/1968949062557",
+          "54698340445094/1968949062557",
+          "46416959630803/1968949062557",
+          "158275873775894/1968949062557",
+          "-123110459389793/1968949062557",
+          "496333381690785/1968949062557",
+          "314148960670398/1968949062557"
+        ]
+      },
+      "XYXyyyyyxYxYYYYxYxy": {
+        "status": "sign_eval_nonintegral",
+        "start_character": 1,
+        "conjugator_abelianization": [
+          -1,
+          0,
+          -1,
+          -2,
+          1,
+          -2,
+          0,
+          -2,
+          1,
+          1
+        ],
+        "failed_values": [
+          "1",
+          "-321401366303058/1968949062557",
+          "-305991901746123/1968949062557",
+          "2132708459435332/1968949062557",
+          "-114175706178975/1968949062557",
+          "30241666706942/1968949062557",
+          "114980689160728/1968949062557",
+          "-495168246190648/1968949062557",
+          "1090664938706955/1968949062557",
+          "618622174214623/1968949062557"
+        ]
+      },
+      "XYYYYXyXyyxYxYYXyyyyXy": {
+        "status": "sign_eval_nonintegral",
+        "start_character": 1,
+        "conjugator_abelianization": [
+          6,
+          -10,
+          0,
+          4,
+          3,
+          -3,
+          -9,
+          4,
+          6,
+          -3
+        ],
+        "failed_values": [
+          "0",
+          "-153655665046840/5906847187671",
+          "-353776796524004/5906847187671",
+          "130881879344686/5906847187671",
+          "-229547860000499/5906847187671",
+          "114932511447031/5906847187671",
+          "-135216349594405/5906847187671",
+          "-333695934274940/5906847187671",
+          "-92227861650836/5906847187671",
+          "-43718518535983/5906847187671"
+        ]
+      },
+      "XYYYYYYxYYYxYYYxYYYXyyyyyXyyyXyyyyyXyyy": {
+        "status": "sign_eval_nonintegral",
+        "start_character": 1,
+        "conjugator_abelianization": [
+          288,
+          -109,
+          -452,
+          184,
+          259,
+          245,
+          -461,
+          -244,
+          305,
+          236
+        ],
+        "failed_values": [
+          "0",
+          "-28153192356495/1968949062557",
+          "-58047099686632/1968949062557",
+          "282868629266368/1968949062557",
+          "-47750763480207/1968949062557",
+          "23805547321483/1968949062557",
+          "-2251180522723/1968949062557",
+          "-81677908450194/1968949062557",
+          "117700394236479/1968949062557",
+          "88552461117354/1968949062557"
+        ]
+      },
+      "XYYYxYYXYxyXyyXyXyxYxYXyyyy": {
+        "status": "sign_eval_nonintegral",
+        "start_character": 1,
+        "conjugator_abelianization": [
+          -10,
+          27,
+          -19,
+          -5,
+          -1,
+          9,
+          11,
+          -19,
+          -5,
+          11
+        ],
+        "failed_values": [
+          "0",
+          "504787798925995/5906847187671",
+          "466898996228315/5906847187671",
+          "-3364752413707957/5906847187671",
+          "111208880032445/5906847187671",
+          "77827488908165/5906847187671",
+          "43773089604385/5906847187671",
+          "953165613486833/5906847187671",
+          "-1660808078836531/5906847187671",
+          "-961648307927837/5906847187671"
+        ]
+      },
+      "yXXXyxxyXXYYxxYxxxY": {
+        "status": "integral"
+      },
+      "XyXXyxxyXXYYxxYxxYx": {
+        "status": "integral"
+      },
+      "xxYxxYxyXXXyxxyXXYYxxYxxxYXyXXyXX": {
+        "status": "integral"
+      }
+    },
+    "counts": {
+      "sign_eval_nonintegral": 16,
+      "integral": 1
+    },
+    "known_conjugate_controls": {
+      "yXXXyxxyXXYYxxYxxxY": "xxYxxxY",
+      "XyXXyxxyXXYYxxYxxYx": "xxYxxYxxxYyXX",
+      "xxYxxYxyXXXyxxyXXYYxxYxxxYXyXXyXX": "xxYxxxYxxYyXXXyXXyXX"
+    }
+  },
+  "remaining_cyclic_word": "XXXXyyxxY",
+  "remaining_word_is_source_class": true,
+  "archive_companions": [
+    "XXXXXYYXYYxYxxxYxxxyxxxyXyyxxY",
+    "XXXXXYxxyXXyyxxY",
+    "XXXXXYxxyXXyyxxyXXyxYxxxxyXXYXYxxYY",
+    "XXXXXyxxxxY",
+    "XXXXYYxxyxyyxxY",
+    "XXXXYxxyxYxxyxyXyyxxYXXXYXYXXy",
+    "XXXXyxy",
+    "XXXXyyxxYXXXyXyyxxYXXXy",
+    "XXXXyyxxyyXXXYxxYY",
+    "XXXYXXXyXXXyXyyxyyxxY",
+    "XXXYXYXXyxyXXYYXYXXyyxxxYxxyxyXyyxxY",
+    "XXXYXYXXyxyXXYYXYxxyxYxxyxyXyyxxY",
+    "XXXYxxy",
+    "XXXyXXXyXyyxxY",
+    "XXXyy",
+    "XXyxY",
+    "XXyyXY",
+    "Xy"
+  ],
+  "compatible_receivers_in_other_quotient": [
+    "XXXXYYxxyyyXYYYYxxxxyy",
+    "XXXXyxxyyxYxxYY"
+  ],
+  "reciprocal_connections": 0
+}

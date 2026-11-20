@@ -1,0 +1,52 @@
+{
+  "first_receipt_sha256": "4bcde1f89d25e12eaffc5f1d50dba09f55b49f6fc02017c6b1b0a033c42ad90e",
+  "positive_control": {
+    "start": [
+      "xxyxy",
+      "xyxxyXYX"
+    ],
+    "moves": 110,
+    "peak_total_length": 27,
+    "endpoint": [
+      "x",
+      "y"
+    ],
+    "cyclic_peak": 13
+  },
+  "center": {
+    "charts": 71,
+    "allocation_stops": 71,
+    "largest_completed_graph": 260511,
+    "completed_stage_histogram": {
+      "1": 16,
+      "2": 55
+    },
+    "slope_tails_checked": 142,
+    "interior_slopes_checked": 58
+  },
+  "terminal": {
+    "charts": 85,
+    "allocation_stops": 85,
+    "largest_completed_graph": 244889,
+    "completed_stage_histogram": {
+      "1": 60,
+      "2": 25
+    },
+    "slope_tails_checked": 170,
+    "interior_slopes_checked": 53
+  },
+  "distinct_terminal_markings": 85,
+  "intermediate_energy": 42,
+  "center_harvested": {
+    "1": 35,
+    "2": 15,
+    "3": 9,
+    "4": 6,
+    "6": 1,
+    "7": 2,
+    "9": 1,
+    "11": 1,
+    "12": 1
+  },
+  "verified_ak3_basis_path": null
+}

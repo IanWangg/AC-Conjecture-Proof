@@ -1,0 +1,53 @@
+{
+  "segments": {
+    "c31": {
+      "first_exit_generation": {
+        "cyclic_cap": 33,
+        "source_size": 8258753914,
+        "start_offset": 0,
+        "next_offset": 8258753914,
+        "source_rows_scanned": 254220523,
+        "source_reached_eof": true,
+        "source_boundary_independently_compared": false,
+        "recipient_parity_skips": 209724770,
+        "zero_bridge_rotation_checks": 83765413988,
+        "positive_bridge_rotation_checks": 1062438880,
+        "admitted_candidates": 5967418383,
+        "boundary_records": 2456594139,
+        "primitive_boundary_records": 0
+      },
+      "uncapped_final_product": {
+        "rows_checked": 2456594139,
+        "complete": true,
+        "hit": null
+      },
+      "boundary_binary_bytes": 78611012448
+    },
+    "outside": {
+      "first_exit_generation": {
+        "cyclic_cap": 33,
+        "source_size": 9704752703,
+        "start_offset": 0,
+        "next_offset": 9704752703,
+        "source_rows_scanned": 285484620,
+        "source_reached_eof": true,
+        "source_boundary_independently_compared": false,
+        "recipient_parity_skips": 1258067,
+        "zero_bridge_rotation_checks": 163567561720,
+        "positive_bridge_rotation_checks": 35888,
+        "admitted_candidates": 7356795585,
+        "boundary_records": 1842133617,
+        "primitive_boundary_records": 0
+      },
+      "uncapped_final_product": {
+        "rows_checked": 1842133617,
+        "complete": true,
+        "hit": null
+      },
+      "boundary_binary_bytes": 58948275744
+    }
+  },
+  "total_source_orbits": 539705143,
+  "total_boundary_records": 4298727756,
+  "primitive_coordinate_found": false
+}

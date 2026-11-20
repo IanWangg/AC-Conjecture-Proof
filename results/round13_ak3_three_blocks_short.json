@@ -1,0 +1,525 @@
+{
+  "archive_pairs": 4657,
+  "archive_donors": 16980,
+  "archive_sha256": "c9dd0627965a6f1ffa899c4a465b95a788d739eedd49089d9b6c5681980ba2c4",
+  "positive_control": {
+    "forward": [
+      "XXYYxyXyyxYYXXYYxyyyxYYXXYYxyXyyxYYXXYYxyyyxYYXXYYxyyyxYY",
+      "XXYYxyXyyxYYXXYYxyyyxYYXXYYxyyyxYY"
+    ],
+    "reverse": [
+      "XXYYxyXyyxYY",
+      "XXYYxyyyxYY"
+    ],
+    "common_receiver": "XXYYxyXyyxYYXXYYxyyyxYY",
+    "stages": [
+      1,
+      1,
+      1
+    ],
+    "moves": 224,
+    "peak_total_length": 105,
+    "endpoint": [
+      "x",
+      "y"
+    ],
+    "cyclic_peak": 91,
+    "receiving_block_instructions": [
+      117,
+      3,
+      29
+    ]
+  },
+  "first_families": [
+    {
+      "source": 0,
+      "pair": [
+        "XXXXXYxxY",
+        "XXYXXyxyxYY"
+      ],
+      "harvest": {
+        "stages": 3,
+        "graph_sizes": [
+          9,
+          298,
+          8649,
+          249613
+        ],
+        "primitive_slopes": 1,
+        "primitive_tails": 2,
+        "return_states": 33077641,
+        "incomplete_graph": true,
+        "words": [
+          "XXXXXYxxY",
+          "XXXXYxxYYYXXYXXyxy",
+          "XXXXYxxYxyxxyyXYXY",
+          "XXXYxYXYxxyxxyyxxyyXYXY",
+          "XXXYxxYXYYXYYXXYXXyXyxy"
+        ],
+        "primitive_words": []
+      },
+      "extra_exact_contacts": [],
+      "first_intermediates": [
+        [
+          "XXXXYxxYYYXXYXXyxy",
+          1
+        ],
+        [
+          "XXXXYxxYxyxxyyXYXY",
+          1
+        ],
+        [
+          "XXXYxYXYxxyxxyyxxyyXYXY",
+          1
+        ],
+        [
+          "XXXYxxYXYYXYYXXYXXyXyxy",
+          2
+        ]
+      ]
+    },
+    {
+      "source": 0,
+      "pair": [
+        "XXYXXyxyxYY",
+        "XXXXXYxxY"
+      ],
+      "harvest": {
+        "stages": 4,
+        "graph_sizes": [
+          11,
+          192,
+          1828,
+          14798,
+          111169
+        ],
+        "primitive_slopes": 0,
+        "primitive_tails": 2,
+        "return_states": 48554790,
+        "incomplete_graph": false,
+        "words": [
+          "XXYXXyxyxYY",
+          "XXYYxyXXyyxYY",
+          "XXXXyxyxYYxxxy",
+          "XXYYxxYYXXyxyXy",
+          "XXXXXYYXXyxyxYYY",
+          "XXXXXYXYXXyxyxYYxY",
+          "XXYXyyxxyyXYYXYxxY",
+          "XXXYxxYxYXXyxyxYXXy",
+          "XXYXXYXXyxYxxYxxyXy",
+          "XXYXXyXyXYxxYxyyxYY",
+          "XXYYxyXyXXyXYxxyxYY",
+          "XXYxxYxxyyyXYXYxxyy",
+          "XXyxYXYXXyxyxYYxYXy",
+          "XXXXXYxxyyXYXYxxyxxY",
+          "XXXXXYxyyXYXYxxyxxxY",
+          "XXXYxxYxxYxxyXYXXXyy",
+          "XXYYXXYxxYXYYXXyxyXy",
+          "XXXXXYYYXXyxyxYYYXXXY",
+          "XXXXYxxYxxxyyXYXYXXXY",
+          "XXXYXXyxyxYYXyXYxxYxy",
+          "XXXyXYxxYxyXYXXyxyxYY",
+          "XXXyyxYYxYxxYxyyxyyXY",
+          "XXYXXYYXYXXYxxYXYXyXy",
+          "XXYXYXXyXXyxxYXYYXXYY",
+          "XXYxYYXXyxyxYYYxyyXXy",
+          "XXXXXYXYXyxYYXXYYXYXXY",
+          "XXXXXYYxxyyXYXYxxyyxxY",
+          "XXXXXYxyyxxxyxyxYYxyXY",
+          "XXXXyyxYYXXYXXyxYXYxxY",
+          "XXXYXyxYYXXYYXYxxxyXXy",
+          "XXXyxyyxxYxxYYYxyyxxyy",
+          "XXYXYXXyxyxYXXyXYXYxxY",
+          "XXXXXYXYXYXYxxyXYXYYXXY",
+          "XXXXXYXyyxxxYYXXYxyxyxY",
+          "XXXXXYxyxxyxyxYYXXYxyXY",
+          "XXXYXYXXyxyXXYXXYXYYxxY",
+          "XXXYYXyXYxxYxyxYXyyXYXY",
+          "XXXyyxxyyyxyxxYxxYYXYXY",
+          "XXYXXYYXyXXyXyxxYYYXXYY",
+          "XXYXyyyxxyyXYxxyxYXYxxY",
+          "XXYYxxyyyXyXXyXYYYxyxYY",
+          "XXyXXyyxYXYXXyxyxYYxYxY",
+          "XXyXYxxYxyyXYXXyxyxYYXY"
+        ],
+        "primitive_words": []
+      },
+      "extra_exact_contacts": [
+        "XXXXXXXYxxyXXXYxxxxYxxxxyxxYXXXy",
+        "XXXXXYxyxxxYXYXXXXXYxyxyXyxxxxY",
+        "XXXXyXXYxxxyxYY",
+        "XXXYxxyXYYYxxYxxyXXXyy",
+        "XXXYxxyxxyxxYXy",
+        "XXXyxxYXyxxyxxY",
+        "XXYYxyXXyyxYY"
+      ],
+      "first_intermediates": [
+        [
+          "XXXXXYXYXXyxyxYYxY",
+          1
+        ],
+        [
+          "XXXXXYYXXyxyxYYY",
+          1
+        ],
+        [
+          "XXXXXYxxyyXYXYxxyxxY",
+          1
+        ],
+        [
+          "XXXXXYxyyXYXYxxyxxxY",
+          1
+        ],
+        [
+          "XXXXyXXYxxxyxYY",
+          1
+        ],
+        [
+          "XXXXyxyxYYxxxy",
+          1
+        ],
+        [
+          "XXXYxxyxxyxxYXy",
+          1
+        ],
+        [
+          "XXXyxxYXyxxyxxY",
+          1
+        ],
+        [
+          "XXYYxyXXyyxYY",
+          1
+        ],
+        [
+          "XXXXXXXYxxyXXXYxxxxYxxxxyxxYXXXy",
+          2
+        ],
+        [
+          "XXXXXYXYXYXYxxyXYXYYXXY",
+          2
+        ],
+        [
+          "XXXXXYXyyxxxYYXXYxyxyxY",
+          2
+        ],
+        [
+          "XXXXXYYYXXyxyxYYYXXXY",
+          2
+        ],
+        [
+          "XXXXXYYxxyyXYXYxxyyxxY",
+          2
+        ],
+        [
+          "XXXXXYxyxxxYXYXXXXXYxyxyXyxxxxY",
+          2
+        ],
+        [
+          "XXXXXYxyxxyxyxYYXXYxyXY",
+          2
+        ],
+        [
+          "XXXXXYxyyxxxyxyxYYxyXY",
+          2
+        ],
+        [
+          "XXXXYxxYxxxyyXYXYXXXY",
+          2
+        ],
+        [
+          "XXXXyyxYYXXYXXyxYXYxxY",
+          2
+        ],
+        [
+          "XXXYXXyxyxYYXyXYxxYxy",
+          2
+        ],
+        [
+          "XXXYXYXXyxyXXYXXYXYYxxY",
+          2
+        ],
+        [
+          "XXXYXyxYYXXYYXYxxxyXXy",
+          2
+        ],
+        [
+          "XXXYxxYxYXXyxyxYXXy",
+          2
+        ],
+        [
+          "XXXYxxYxxYxxyXYXXXyy",
+          2
+        ],
+        [
+          "XXXYxxyXYYYxxYxxyXXXyy",
+          2
+        ],
+        [
+          "XXXyXYxxYxyXYXXyxyxYY",
+          2
+        ],
+        [
+          "XXYXXYXXyxYxxYxxyXy",
+          2
+        ],
+        [
+          "XXYXXYYXYXXYxxYXYXyXy",
+          2
+        ],
+        [
+          "XXYXXyXyXYxxYxyyxYY",
+          2
+        ],
+        [
+          "XXYXYXXyXXyxxYXYYXXYY",
+          2
+        ],
+        [
+          "XXYXYXXyxyxYXXyXYXYxxY",
+          2
+        ],
+        [
+          "XXYXyyxxyyXYYXYxxY",
+          2
+        ],
+        [
+          "XXYYXXYxxYXYYXXyxyXy",
+          2
+        ],
+        [
+          "XXYYxxYYXXyxyXy",
+          2
+        ],
+        [
+          "XXYYxyXyXXyXYxxyxYY",
+          2
+        ],
+        [
+          "XXYxxYxxyyyXYXYxxyy",
+          2
+        ],
+        [
+          "XXyxYXYXXyxyxYYxYXy",
+          2
+        ],
+        [
+          "XXXXXYXYXyxYYXXYYXYXXY",
+          3
+        ],
+        [
+          "XXXYYXyXYxxYxyxYXyyXYXY",
+          3
+        ],
+        [
+          "XXXyxyyxxYxxYYYxyyxxyy",
+          3
+        ],
+        [
+          "XXXyyxYYxYxxYxyyxyyXY",
+          3
+        ],
+        [
+          "XXXyyxxyyyxyxxYxxYYXYXY",
+          3
+        ],
+        [
+          "XXYXXYYXyXXyXyxxYYYXXYY",
+          3
+        ],
+        [
+          "XXYXyyyxxyyXYxxyxYXYxxY",
+          3
+        ],
+        [
+          "XXYxYYXXyxyxYYYxyyXXy",
+          3
+        ],
+        [
+          "XXyXXyyxYXYXXyxyxYYxYxY",
+          3
+        ],
+        [
+          "XXyXYxxYxyyXYXXyxyxYYXY",
+          3
+        ],
+        [
+          "XXYYxxyyyXyXXyXYYYxyxYY",
+          4
+        ]
+      ]
+    },
+    {
+      "source": 1,
+      "pair": [
+        "XXXXyyxxY",
+        "XXyXXyyyXYY"
+      ],
+      "harvest": {
+        "stages": 3,
+        "graph_sizes": [
+          9,
+          330,
+          9894,
+          293358
+        ],
+        "primitive_slopes": 0,
+        "primitive_tails": 2,
+        "return_states": 30265799,
+        "incomplete_graph": true,
+        "words": [
+          "XXXXyyxxY",
+          "XXYYxxyyyXYYXXyy",
+          "XXXyyxxYxyyxYYYxxY",
+          "XXXXYxxyyXyXXyyyXXYY",
+          "XXXXyyyyyxYYYxxyyXYYY",
+          "XXYYXXyyyxxYYYXXyyxxy",
+          "XXyyxYYYxxYXXyyyyyXYY",
+          "XXXYYXXyyyxxYXXYYxxyyy"
+        ],
+        "primitive_words": []
+      },
+      "extra_exact_contacts": [],
+      "first_intermediates": [
+        [
+          "XXXyyxxYxyyxYYYxxY",
+          1
+        ],
+        [
+          "XXYYxxyyyXYYXXyy",
+          1
+        ],
+        [
+          "XXyyxYYYxxYXXyyyyyXYY",
+          1
+        ],
+        [
+          "XXXXYxxyyXyXXyyyXXYY",
+          2
+        ],
+        [
+          "XXXXyyyyyxYYYxxyyXYYY",
+          2
+        ],
+        [
+          "XXYYXXyyyxxYYYXXyyxxy",
+          2
+        ],
+        [
+          "XXXYYXXyyyxxYXXYYxxyyy",
+          3
+        ]
+      ]
+    },
+    {
+      "source": 1,
+      "pair": [
+        "XXyXXyyyXYY",
+        "XXXXyyxxY"
+      ],
+      "harvest": {
+        "stages": 3,
+        "graph_sizes": [
+          11,
+          243,
+          3841,
+          58169
+        ],
+        "primitive_slopes": 2,
+        "primitive_tails": 2,
+        "return_states": 29411521,
+        "incomplete_graph": true,
+        "words": [
+          "XXyXXyyyXYY",
+          "XXYXXyyyXYYxxy",
+          "XXXXyyyXXyyyXYYY",
+          "XXXXyXXYYXXyyyyyxY",
+          "XXXXyyXXXyXXyyyxYXY",
+          "XXXXyyXyyxYYYxxyxxYxY",
+          "XXYXXyyyXYYYYXyyxxYxyy",
+          "XXYXyXXYYxyyXXyXXyyyxY",
+          "XXXXYYxxxxYxyyyXYYXXyxy",
+          "XXYXYxxyXYYYxxyXyyyyxxY",
+          "XXYYxyyXXyxxyyxYxxYYYXy"
+        ],
+        "primitive_words": []
+      },
+      "extra_exact_contacts": [
+        "XXXXYYxxyyyXYYYYxxxxyy",
+        "XXXXyxxyyxYxxYY"
+      ],
+      "first_intermediates": [
+        [
+          "XXXXYYxxyyyXYYYYxxxxyy",
+          1
+        ],
+        [
+          "XXXXyXXYYXXyyyyyxY",
+          1
+        ],
+        [
+          "XXXXyxxyyxYxxYY",
+          1
+        ],
+        [
+          "XXXXyyyXXyyyXYYY",
+          1
+        ],
+        [
+          "XXYXXyyyXYYxxy",
+          1
+        ],
+        [
+          "XXXXYYxxxxYxyyyXYYXXyxy",
+          2
+        ],
+        [
+          "XXXXyyXXXyXXyyyxYXY",
+          2
+        ],
+        [
+          "XXXXyyXyyxYYYxxyxxYxY",
+          2
+        ],
+        [
+          "XXYXXyyyXYYYYXyyxxYxyy",
+          2
+        ],
+        [
+          "XXYXyXXYYxyyXXyXXyyyxY",
+          2
+        ],
+        [
+          "XXYXYxxyXYYYxxyXyyyyxxY",
+          3
+        ],
+        [
+          "XXYYxyyXXyxxyyxYxxYYYXy",
+          3
+        ]
+      ]
+    }
+  ],
+  "center": {
+    "charts": 71,
+    "word_checks": 205202,
+    "allocation_stops": 71,
+    "last_completed_stage_histogram": {
+      "1": 16,
+      "2": 55
+    },
+    "largest_graph": 260511,
+    "word_hits": 5
+  },
+  "reverse": {
+    "charts": 43,
+    "word_checks": 85,
+    "allocation_stops": 0,
+    "last_completed_stage_histogram": {
+      "2": 43
+    },
+    "largest_graph": 15801,
+    "word_hits": 0
+  },
+  "planned_reverse_charts": 43,
+  "joins": []
+}
