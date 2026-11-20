@@ -91,7 +91,7 @@ def check(padding, depth):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("padding", type=int, choices=(1, 2))
+    parser.add_argument("padding", type=int, choices=(1, 2, 3))
     parser.add_argument("first", type=int)
     parser.add_argument("last", type=int)
     args = parser.parse_args()

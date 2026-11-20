@@ -1,0 +1,10 @@
+{
+  "input_sha256": "ad6be304e22966fbb779907d6f9191b21b229a33906756a1b9239e8f5903892e",
+  "counts": {
+    "neighbor_states": 451731,
+    "literal_charts": 1418027,
+    "states_without_primitive_row": 54,
+    "intrinsic_charts": 102254
+  },
+  "primitive_projections": []
+}

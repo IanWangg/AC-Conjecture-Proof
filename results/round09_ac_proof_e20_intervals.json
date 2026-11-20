@@ -1,0 +1,1573 @@
+{
+  "source": "round09_stable_proof_e20_rank3.json",
+  "source_sha256": "2eb5571b6fd22d90bde6ffe3fc8f98b416ebbe914428bf9e698f90275ebbe5ef",
+  "rank_three_replay": {
+    "moves": 544,
+    "raw_peak": 30,
+    "cyclic_peak": 22,
+    "target": [
+      "XXXYY",
+      "XYXyz",
+      "XzzyZ"
+    ],
+    "first_pivotless_step": 462
+  },
+  "cyclic_product_count": 57,
+  "interval_counts": {
+    "different_block_lattice": 5411,
+    "different_donor_orbit": 439,
+    "fixed_pivot_edges": 63,
+    "passes_both_necessary_tests": 416
+  },
+  "chart_occurrence_counts": {
+    "AK3_cap30": 73,
+    "E20_cap36": 16,
+    "unmatched": 5
+  },
+  "distinct_chart_classes": 47,
+  "cap30_chart_classes": 35,
+  "e20_cap36_chart_classes": 8,
+  "direct_noninvertible_substitutions": {
+    "single_generator_image_lengths": [
+      4,
+      5
+    ],
+    "positive_self_exponent": 1,
+    "valid_substitutions": 72,
+    "distinct_signed_cyclic_pairs": 28,
+    "signed_pair_energies": {
+      "27": 2,
+      "28": 2,
+      "29": 2,
+      "31": 2,
+      "33": 6,
+      "35": 6,
+      "37": 5,
+      "41": 3
+    },
+    "AK3_cap30_hits": 0,
+    "E20_cap36_hits": 0
+  },
+  "stages": [
+    {
+      "strict_step": 0,
+      "cyclic_rows": [
+        "XXXyyyy",
+        "XYXyxy",
+        "Z"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XXXyyyy",
+            "XYXyxy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xyxYXY\txxxxYYY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 12,
+      "cyclic_rows": [
+        "XXyyyXYxy",
+        "XYXyxy",
+        "Z"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XXyyyXYxy",
+            "XYXyxy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xyxYXY\txxxYXyxYY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 16,
+      "cyclic_rows": [
+        "XYYxyXyyy",
+        "XYXyxy",
+        "Z"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XYYxyXyyy",
+            "XYXyxy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xyxYXY\txxxYxyXXY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 24,
+      "cyclic_rows": [
+        "XYYxyXyyy",
+        "XYxYxyXyy",
+        "Z"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XYYxyXyyy",
+            "XYxYxyXyy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxxyxYXXy\txxyxYXYXy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 27,
+      "cyclic_rows": [
+        "XYxYXyxYxy",
+        "XYxYxyXyy",
+        "Z"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XYxYXyxYxy",
+            "XYxYxyXyy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyxYXYXy\txyxYXyxyXY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 37,
+      "cyclic_rows": [
+        "XXyxYxYxY",
+        "XYxYxyXyy",
+        "Z"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XXyxYxYxY",
+            "XYxYxyXyy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyxYXYXy\txyxyxYYXy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 50,
+      "cyclic_rows": [
+        "XYxYXyxyXy",
+        "XYxYxyXyy",
+        "Z"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XYxYXyxyXy",
+            "XYxYxyXyy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyxYXYXy\txyxYxyXYXy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 60,
+      "cyclic_rows": [
+        "XYxYXyxyXy",
+        "XXyxyXYxY",
+        "Z"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XYxYXyxyXy",
+            "XXyxyXYxY"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXyxYXY\txyxYXYxyXy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 70,
+      "cyclic_rows": [
+        "XXYxyxy",
+        "XXyxyXYxY",
+        "Z"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XXYxyxy",
+            "XXyxyXYxY"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXyXY\txxYXYxyXy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 82,
+      "cyclic_rows": [
+        "XXYxyxy",
+        "XYXYxyXyxy",
+        "Z"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XXYxyxy",
+            "XYXYxyXyxy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXyXY\txyXyxyXYxY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 96,
+      "cyclic_rows": [
+        "XXYxyxy",
+        "XYXYYXyxyxy",
+        "Z"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XXYxyxy",
+            "XYXYYXyxyxy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXyXY\txyXyXyxYYxY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 103,
+      "cyclic_rows": [
+        "XYYXyyxY",
+        "XYXYYXyxyxy",
+        "Z"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XYYXyyxY",
+            "XYXYYXyxyxy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyxYXXy\txxyxyXYXYXy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 115,
+      "cyclic_rows": [
+        "XYYXyyxY",
+        "XYYXyxYXy",
+        "Z"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XYYXyyxY",
+            "XYYXyxYXy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyxYXXy\txxyXyxYXy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 127,
+      "cyclic_rows": [
+        "XYYXyyxY",
+        "XYYXYxyyy",
+        "Z"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XYYXyyxY",
+            "XYYXYxyyy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyxYXXy\txxxYXXYXy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 138,
+      "cyclic_rows": [
+        "XXYxyyXYY",
+        "XYYXYxyyy",
+        "Z"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XXYxyyXYY",
+            "XYYXYxyyy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxxyXXyXY\txxyXXyyXY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 147,
+      "cyclic_rows": [
+        "XXYxyyXYY",
+        "XYxYXy",
+        "Z"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XXYxyyXYY",
+            "XYxYXy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xyxYXY\txxyXXyyXY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 160,
+      "cyclic_rows": [
+        "XXYxyXyXYYY",
+        "XYxYXy",
+        "Z"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XXYxyXyXYYY",
+            "XYxYXy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xyxYXY\txxxYXYXyxYY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 169,
+      "cyclic_rows": [
+        "XXXXYYY",
+        "XYxYXy",
+        "Z"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XXXXYYY",
+            "XYxYXy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xyxYXY\txxxxYYY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 179,
+      "cyclic_rows": [
+        "XXXXYYY",
+        "XYxYXy",
+        "XXXXYYYZ"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XXXXYYY",
+            "XYxYXy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xyxYXY\txxxxYYY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 183,
+      "cyclic_rows": [
+        "XXXXYYY",
+        "XYxYXy",
+        "XYYYxzyyy"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XXXXYYY",
+            "XYxYXy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xyxYXY\txxxxYYY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 190,
+      "cyclic_rows": [
+        "XXXXYYY",
+        "XYxYXy",
+        "XYYZXyyxY"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XXXXYYY",
+            "XYxYXy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xyxYXY\txxxxYYY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 200,
+      "cyclic_rows": [
+        "XXXXYYY",
+        "XYxYXy",
+        "XXYYZXyxY"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XXXXYYY",
+            "XYxYXy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xyxYXY\txxxxYYY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 210,
+      "cyclic_rows": [
+        "XXXXYYY",
+        "XYxYXy",
+        "XXXYYZY"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XXXXYYY",
+            "XYxYXy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xyxYXY\txxxxYYY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 218,
+      "cyclic_rows": [
+        "XXXXYYY",
+        "XYxYXy",
+        "XYYzyy"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XXXYYYY",
+            "XYxYXy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xyxYXY\txxxxYYY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 224,
+      "cyclic_rows": [
+        "XXXXYYY",
+        "XYxYXy",
+        "XYZyxY"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XXXXYYY",
+            "XYxYXy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xyxYXY\txxxxYYY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 234,
+      "cyclic_rows": [
+        "XXXXYYY",
+        "XYxYXy",
+        "XXYZxY"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XXXXYYY",
+            "XYxYXy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xyxYXY\txxxxYYY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 244,
+      "cyclic_rows": [
+        "XXXXYYY",
+        "XYxYXy",
+        "XXXYZYxY"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XXXXYYY",
+            "XYxYXy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xyxYXY\txxxxYYY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 253,
+      "cyclic_rows": [
+        "XyXyzYY",
+        "XYxYXy",
+        "XXXYZYxY"
+      ],
+      "projections": [
+        {
+          "pivot": 0,
+          "pair": [
+            "XYxYXy",
+            "XXXXYYY"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xyxYXY\txxxxYYY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 2,
+          "pair": [
+            "XXXXYYY",
+            "XYxYXy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xyxYXY\txxxxYYY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 264,
+      "cyclic_rows": [
+        "XyyzY",
+        "XYxYXy",
+        "XXXYZYxY"
+      ],
+      "projections": [
+        {
+          "pivot": 0,
+          "pair": [
+            "XYYXy",
+            "XXXYxyXYXYXY"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXy\txyxyxyXYxyyy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 2,
+          "pair": [
+            "XXXYYXyxY",
+            "XYxYXy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xyxYXY\txxxYXyxYY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 273,
+      "cyclic_rows": [
+        "XyyzY",
+        "XYxZY",
+        "XXXYZYxY"
+      ],
+      "projections": [
+        {
+          "pivot": 0,
+          "pair": [
+            "XYYXy",
+            "XXXYxyXYXYXY"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXy\txyxyxyXYxyyy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 1,
+          "pair": [
+            "XYxYXy",
+            "XXXYXyxxY"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xyxYXY\txxxYxyXXY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 2,
+          "pair": [
+            "XXXYYXyxY",
+            "XXXYXyxxY"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxxyxYXXy\txxxyyxYXy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 282,
+      "cyclic_rows": [
+        "XyzYZY",
+        "XYxZY",
+        "XXXYZYxY"
+      ],
+      "projections": [
+        {
+          "pivot": 0,
+          "pair": [
+            "XYYXy",
+            "XXXYXyxxxY"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXy\txyXYYYxyyy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 1,
+          "pair": [
+            "XYxYXy",
+            "XXXYXyxxY"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xyxYXY\txxxYxyXXY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 2,
+          "pair": [
+            "XXXYxxxyXY",
+            "XXXYXyxxY"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxxyxYXXy\txxxyXXXYxy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 292,
+      "cyclic_rows": [
+        "XXXZYxxY",
+        "XYxZY",
+        "XXXYZYxY"
+      ],
+      "projections": [
+        {
+          "pivot": 0,
+          "pair": [
+            "XXXXyxxxY",
+            "XXXYxxxyXY"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxxxyXXXY\txxxyxYXXXy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 1,
+          "pair": [
+            "XXXXyxxxY",
+            "XXXYXyxxY"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxxxyXXXY\txxxyXXYxy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 2,
+          "pair": [
+            "XXXYxxxyXY",
+            "XXXYXyxxY"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxxyxYXXy\txxxyXXXYxy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 302,
+      "cyclic_rows": [
+        "XXXZYxxY",
+        "XYxZY",
+        "XXyzXZYxY"
+      ],
+      "projections": [
+        {
+          "pivot": 0,
+          "pair": [
+            "XXXXyxxxY",
+            "XYYXy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXy\txyyyXYYYY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 1,
+          "pair": [
+            "XXXXyxxxY",
+            "XXXYXyxxY"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxxxyXXXY\txxxyXXYxy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 2,
+          "pair": [
+            "XYXyxy",
+            "XXXyXYxxy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xyxYXY\txxxYxyXXY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 321,
+      "cyclic_rows": [
+        "XXXZYxxY",
+        "XYxZY",
+        "XXZYxxyxY"
+      ],
+      "projections": [
+        {
+          "pivot": 0,
+          "pair": [
+            "XXXXyxxxY",
+            "XYYXy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXy\txyyyXYYYY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 1,
+          "pair": [
+            "XXXXyxxxY",
+            "XXXYxxxyXY"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxxxyXXXY\txxxyxYXXXy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 2,
+          "pair": [
+            "XYYXy",
+            "XXXYxxxyXY"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXy\txyXYYYxyyy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 336,
+      "cyclic_rows": [
+        "XYYXy",
+        "XYxZY",
+        "XXZYxxyxY"
+      ],
+      "projections": [
+        {
+          "pivot": 1,
+          "pair": [
+            "XYYXy",
+            "XXXYxxxyXY"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXy\txyXYYYxyyy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 2,
+          "pair": [
+            "XYYXy",
+            "XXXYxxxyXY"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXy\txyXYYYxyyy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 345,
+      "cyclic_rows": [
+        "XYYXy",
+        "XYxZY",
+        "XXXYxxxyXY"
+      ],
+      "projections": [
+        {
+          "pivot": 1,
+          "pair": [
+            "XYYXy",
+            "XXXYxxxyXY"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXy\txyXYYYxyyy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 354,
+      "cyclic_rows": [
+        "XYYXy",
+        "XXYYZY",
+        "XXXYxxxyXY"
+      ],
+      "projections": [
+        {
+          "pivot": 1,
+          "pair": [
+            "XYYXy",
+            "XXXYxxxyXY"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXy\txyXYYYxyyy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 360,
+      "cyclic_rows": [
+        "XYYXy",
+        "XXYYZY",
+        "XXXyxYYZxY"
+      ],
+      "projections": [
+        {
+          "pivot": 1,
+          "pair": [
+            "XYYXy",
+            "XXXYxxxyXY"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXy\txyXYYYxyyy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 2,
+          "pair": [
+            "XYYXy",
+            "XXXYxxxyXY"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXy\txyXYYYxyyy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 369,
+      "cyclic_rows": [
+        "XYYXy",
+        "XXYYZY",
+        "XXXYXYZxY"
+      ],
+      "projections": [
+        {
+          "pivot": 1,
+          "pair": [
+            "XYYXy",
+            "XXXYXyxxyxY"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXy\txyXYYXYxyyy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 2,
+          "pair": [
+            "XYYXy",
+            "XXXYXyxxyxY"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXy\txyXYYXYxyyy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 376,
+      "cyclic_rows": [
+        "XYYXy",
+        "XXYYZY",
+        "XYXYZxzyy"
+      ],
+      "projections": [
+        {
+          "pivot": 1,
+          "pair": [
+            "XYYXy",
+            "XXXYXyxxyxY"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXy\txyXYYXYxyyy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 381,
+      "cyclic_rows": [
+        "XYYXy",
+        "XXYYZY",
+        "XYZXzyxY"
+      ],
+      "projections": [
+        {
+          "pivot": 1,
+          "pair": [
+            "XYYXy",
+            "XXYxYXyxxyXY"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXy\txyXYYXyxyyxY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 2,
+          "pair": [
+            "XXyxYxyxY",
+            "XXYxyxYXYxy"
+          ],
+          "one_donor_overapproximation_reaches": false,
+          "catalogue_key": "xxyXYXyXY\txxYXyxyXYXy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 390,
+      "cyclic_rows": [
+        "XYYXy",
+        "XYYZyxY",
+        "XYZXzyxY"
+      ],
+      "projections": [
+        {
+          "pivot": 1,
+          "pair": [
+            "XYYXy",
+            "XYXyxYXYxYXyxy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXy\txyxYxyXYXyxyXY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 2,
+          "pair": [
+            "XXyxYxyxY",
+            "XYXyxYXyXYxyxy"
+          ],
+          "one_donor_overapproximation_reaches": false,
+          "catalogue_key": "xxyXYXyXY\txyxyXYXyxYXyXY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        }
+      ]
+    },
+    {
+      "strict_step": 394,
+      "cyclic_rows": [
+        "XYYXy",
+        "XYYZyxY",
+        "XzzyZ"
+      ],
+      "projections": [
+        {
+          "pivot": 1,
+          "pair": [
+            "XYYXy",
+            "XYXyxYXYxYXyxy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXy\txyxYxyXYXyxyXY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 2,
+          "pair": [
+            "XXyXYYxyXYY",
+            "XXYxyyxYXyXYY"
+          ],
+          "one_donor_overapproximation_reaches": false,
+          "catalogue_key": "xxyxYYXyxYY\txxYXyyXYxyxYY",
+          "ordinary_ancestry_catalogue": "E20_cap36"
+        }
+      ]
+    },
+    {
+      "strict_step": 403,
+      "cyclic_rows": [
+        "XYXYzyyy",
+        "XYYZyxY",
+        "XzzyZ"
+      ],
+      "projections": [
+        {
+          "pivot": 0,
+          "pair": [
+            "XYYXy",
+            "XYXYXyxyxYYxyxy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXy\txxYXYXyxyxyXYXY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 1,
+          "pair": [
+            "XYYXy",
+            "XYXyxYXYxYXyxy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXy\txyxYxyXYXyxyXY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 2,
+          "pair": [
+            "XXXYxyyxYxyyxY",
+            "XXYxyyxYXyXYY"
+          ],
+          "one_donor_overapproximation_reaches": false,
+          "catalogue_key": "xxyXyxYXXYxyy\txxyXyxxyXYYYXy",
+          "ordinary_ancestry_catalogue": "E20_cap36"
+        }
+      ]
+    },
+    {
+      "strict_step": 413,
+      "cyclic_rows": [
+        "XYXYzyyy",
+        "XYYZXYzyy",
+        "XzzyZ"
+      ],
+      "projections": [
+        {
+          "pivot": 0,
+          "pair": [
+            "XYYXy",
+            "XYXYXyxyxYYxyxy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXy\txxYXYXyxyxyXYXY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 1,
+          "pair": [
+            "XYXyy",
+            "XYxYXyXyxYxyXy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXy\txyxyXYXyxyxYXY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 2,
+          "pair": [
+            "XXXYxyyxYxyyxY",
+            "XXXYYXyxxyXYY"
+          ],
+          "one_donor_overapproximation_reaches": false,
+          "catalogue_key": "xxxyyxYXXYxyy\txxxyXYYXyXYYXy",
+          "ordinary_ancestry_catalogue": "E20_cap36"
+        }
+      ]
+    },
+    {
+      "strict_step": 416,
+      "cyclic_rows": [
+        "XYXYzyyy",
+        "XYzYZyxYZ",
+        "XzzyZ"
+      ],
+      "projections": [
+        {
+          "pivot": 0,
+          "pair": [
+            "XYYXy",
+            "XYXYXyxyxYYxyxy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXy\txxYXYXyxyxyXYXY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 1,
+          "pair": [
+            "XXyyy",
+            "XYxYXYxyXyXyxy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxxyy\txyxyxYxyXYXyXY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 2,
+          "pair": [
+            "XXXYxyyxYxyyxY",
+            "XXYYXyXYxyyxY"
+          ],
+          "one_donor_overapproximation_reaches": false,
+          "catalogue_key": "xxyXyxYXXYxyy\txxyXyxxyXYYYXy",
+          "ordinary_ancestry_catalogue": "E20_cap36"
+        }
+      ]
+    },
+    {
+      "strict_step": 424,
+      "cyclic_rows": [
+        "XYXYzyyy",
+        "XYXzyxYZ",
+        "XzzyZ"
+      ],
+      "projections": [
+        {
+          "pivot": 0,
+          "pair": [
+            "XYXYXYXyxyxYYxyy",
+            "XYXYXyxyxYYxyxy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXyXYxYxYXyXy\txxyXXYxYxYxYXyXy",
+          "ordinary_ancestry_catalogue": null
+        },
+        {
+          "pivot": 1,
+          "pair": [
+            "XXyxYXyXYxyXYxyXyxY",
+            "XYXyxyXYxyXyxY"
+          ],
+          "one_donor_overapproximation_reaches": false,
+          "catalogue_key": "xyxyXYxYXyxYXY\txxyXYxYXyxYXyxYxyXY",
+          "ordinary_ancestry_catalogue": null
+        },
+        {
+          "pivot": 2,
+          "pair": [
+            "XXXYxyyxYxyyxY",
+            "XXYYXyXYxyyxY"
+          ],
+          "one_donor_overapproximation_reaches": false,
+          "catalogue_key": "xxyXyxYXXYxyy\txxyXyxxyXYYYXy",
+          "ordinary_ancestry_catalogue": "E20_cap36"
+        }
+      ]
+    },
+    {
+      "strict_step": 433,
+      "cyclic_rows": [
+        "XYXYzyyy",
+        "XYZxyzzyy",
+        "XzzyZ"
+      ],
+      "projections": [
+        {
+          "pivot": 0,
+          "pair": [
+            "XYXYYXyxyxYYxyXYXyy",
+            "XYXYXyxyxYYxyxy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXyXYxYxYXyXy\txxyXyxYXXYxYxyXXyXy",
+          "ordinary_ancestry_catalogue": null
+        },
+        {
+          "pivot": 2,
+          "pair": [
+            "XXXYxyyxYxyyxY",
+            "XXYYXyXYxyyxY"
+          ],
+          "one_donor_overapproximation_reaches": false,
+          "catalogue_key": "xxyXyxYXXYxyy\txxyXyxxyXYYYXy",
+          "ordinary_ancestry_catalogue": "E20_cap36"
+        }
+      ]
+    },
+    {
+      "strict_step": 437,
+      "cyclic_rows": [
+        "XYXYzyyy",
+        "XYzyZZYXz",
+        "XzzyZ"
+      ],
+      "projections": [
+        {
+          "pivot": 0,
+          "pair": [
+            "XYXYYXyxyxYYxyXYXyy",
+            "XYXYXyxyxYYxyxy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXyXYxYxYXyXy\txxyXyxYXXYxYxyXXyXy",
+          "ordinary_ancestry_catalogue": null
+        },
+        {
+          "pivot": 2,
+          "pair": [
+            "XXXYxyyxYxyyxY",
+            "XXYYXyxYYXy"
+          ],
+          "one_donor_overapproximation_reaches": false,
+          "catalogue_key": "xxyxYYXyxYY\txxxYXyyXYXyyXY",
+          "ordinary_ancestry_catalogue": "E20_cap36"
+        }
+      ]
+    },
+    {
+      "strict_step": 448,
+      "cyclic_rows": [
+        "XYXYzyyy",
+        "XYZxZYXz",
+        "XzzyZ"
+      ],
+      "projections": [
+        {
+          "pivot": 0,
+          "pair": [
+            "XYXYYXyxyxYYYXyyXYXYxyyy",
+            "XYXYXyxyxYYxyxy"
+          ],
+          "one_donor_overapproximation_reaches": true,
+          "catalogue_key": "xxyXyXYxYxYXyXy\txxxyXyXXyxYxYXXXyxxyXyXY",
+          "ordinary_ancestry_catalogue": null
+        },
+        {
+          "pivot": 2,
+          "pair": [
+            "XXXYxyyxYxyyxY",
+            "XXYYXyxYYXy"
+          ],
+          "one_donor_overapproximation_reaches": false,
+          "catalogue_key": "xxyxYYXyxYY\txxxYXyyXYXyyXY",
+          "ordinary_ancestry_catalogue": "E20_cap36"
+        }
+      ]
+    },
+    {
+      "strict_step": 462,
+      "cyclic_rows": [
+        "XYXYZxzyy",
+        "XYZxZYXz",
+        "XzzyZ"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XXXYxyyxYxyyxY",
+            "XXYYXyxYYXy"
+          ],
+          "one_donor_overapproximation_reaches": false,
+          "catalogue_key": "xxyxYYXyxYY\txxxYXyyXYXyyXY",
+          "ordinary_ancestry_catalogue": "E20_cap36"
+        }
+      ]
+    },
+    {
+      "strict_step": 470,
+      "cyclic_rows": [
+        "XYZxyzzyy",
+        "XYZxZYXz",
+        "XzzyZ"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XXYYXyXYxyyxY",
+            "XXYYXyxYYXy"
+          ],
+          "one_donor_overapproximation_reaches": false,
+          "catalogue_key": "xxyxYYXyxYY\txxYXyyXYxyxYY",
+          "ordinary_ancestry_catalogue": "E20_cap36"
+        }
+      ]
+    },
+    {
+      "strict_step": 489,
+      "cyclic_rows": [
+        "XYXzyxYZ",
+        "XYZxZYXz",
+        "XzzyZ"
+      ],
+      "projections": [
+        {
+          "pivot": 0,
+          "pair": [
+            "XYxYXYxyy",
+            "XYXyxyXYxyXyxY"
+          ],
+          "one_donor_overapproximation_reaches": false,
+          "catalogue_key": "xxyXYXyXY\txyxyXYXyxYXyXY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 2,
+          "pair": [
+            "XXYYXyXYxyyxY",
+            "XXYYXyxYYXy"
+          ],
+          "one_donor_overapproximation_reaches": false,
+          "catalogue_key": "xxyxYYXyxYY\txxYXyyXYxyxYY",
+          "ordinary_ancestry_catalogue": "E20_cap36"
+        }
+      ]
+    },
+    {
+      "strict_step": 500,
+      "cyclic_rows": [
+        "XYZYXzYZ",
+        "XYZxZYXz",
+        "XzzyZ"
+      ],
+      "projections": [
+        {
+          "pivot": 2,
+          "pair": [
+            "XXYYXYXyXY",
+            "XXYYXyxYYXy"
+          ],
+          "one_donor_overapproximation_reaches": false,
+          "catalogue_key": "xxyxyXyxyy\txxyXyyxxyXY",
+          "ordinary_ancestry_catalogue": "E20_cap36"
+        }
+      ]
+    },
+    {
+      "strict_step": 505,
+      "cyclic_rows": [
+        "XXzXYZY",
+        "XYZxZYXz",
+        "XzzyZ"
+      ],
+      "projections": [
+        {
+          "pivot": 0,
+          "pair": [
+            "XYYXy",
+            "XXYxyxYXYXyyXY"
+          ],
+          "one_donor_overapproximation_reaches": false,
+          "catalogue_key": "xxyXy\txxYXYXyxyXYYXY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 2,
+          "pair": [
+            "XXYYXYXyXY",
+            "XXYYXyxYYXy"
+          ],
+          "one_donor_overapproximation_reaches": false,
+          "catalogue_key": "xxyxyXyxyy\txxyXyyxxyXY",
+          "ordinary_ancestry_catalogue": "E20_cap36"
+        }
+      ]
+    },
+    {
+      "strict_step": 517,
+      "cyclic_rows": [
+        "XXzXYZY",
+        "XYXyz",
+        "XzzyZ"
+      ],
+      "projections": [
+        {
+          "pivot": 0,
+          "pair": [
+            "XYYXy",
+            "XXYxyxYXYXyyXY"
+          ],
+          "one_donor_overapproximation_reaches": false,
+          "catalogue_key": "xxyXy\txxYXYXyxyXYYXY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 1,
+          "pair": [
+            "XXXYY",
+            "XYXyXYXyxYxyxY"
+          ],
+          "one_donor_overapproximation_reaches": false,
+          "catalogue_key": "xxxyy\txyxyXYXyXYxyxY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 2,
+          "pair": [
+            "XXYYXYXyXY",
+            "XYYXyXYYxyy"
+          ],
+          "one_donor_overapproximation_reaches": false,
+          "catalogue_key": "xxyxyXyxyy\txxyXXYxYXXY",
+          "ordinary_ancestry_catalogue": "E20_cap36"
+        }
+      ]
+    },
+    {
+      "strict_step": 530,
+      "cyclic_rows": [
+        "XXYxZY",
+        "XYXyz",
+        "XzzyZ"
+      ],
+      "projections": [
+        {
+          "pivot": 0,
+          "pair": [
+            "XXXYY",
+            "XXYxYXXYxyXyxxyXY"
+          ],
+          "one_donor_overapproximation_reaches": false,
+          "catalogue_key": "xxxyy\txxyxYXXYxYXyxxyXy",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 1,
+          "pair": [
+            "XXXYY",
+            "XYXyXYXyxYxyxY"
+          ],
+          "one_donor_overapproximation_reaches": false,
+          "catalogue_key": "xxxyy\txyxyXYXyXYxyxY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 2,
+          "pair": [
+            "XYXYYXyyxYYXy",
+            "XYYXyXYYxyy"
+          ],
+          "one_donor_overapproximation_reaches": false,
+          "catalogue_key": "xxyXXyxyXXY\txxyXXYxxYxYXY",
+          "ordinary_ancestry_catalogue": "E20_cap36"
+        }
+      ]
+    },
+    {
+      "strict_step": 540,
+      "cyclic_rows": [
+        "XXXYY",
+        "XYXyz",
+        "XzzyZ"
+      ],
+      "projections": [
+        {
+          "pivot": 1,
+          "pair": [
+            "XXXYY",
+            "XYXyXYXyxYxyxY"
+          ],
+          "one_donor_overapproximation_reaches": false,
+          "catalogue_key": "xxxyy\txyxyXYXyXYxyxY",
+          "ordinary_ancestry_catalogue": "AK3_cap30"
+        },
+        {
+          "pivot": 2,
+          "pair": [
+            "XXyXYXYXYY",
+            "XYYXyXYYxyy"
+          ],
+          "one_donor_overapproximation_reaches": false,
+          "catalogue_key": "xxyxyxyXyy\txxyXXYxxyXy",
+          "ordinary_ancestry_catalogue": "E20_cap36"
+        }
+      ]
+    }
+  ]
+}

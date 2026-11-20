@@ -1,0 +1,73 @@
+{
+  "status": "NO_PRIMITIVE_PROJECTION",
+  "energy_limit": 22,
+  "input_catalogue_sha256": "df8dd8caab22a398b1e20a2a2d0ba75fb6b9b614f73f8af88b8a66410b9d8561",
+  "states": 246052265,
+  "states_without_primitive_row": 173389,
+  "charts_examined_one_per_primitive_row": 435020908,
+  "uncached_projection_checks_across_shards": 309669170,
+  "data_shard_sizes_bytes": [
+    1010630604,
+    1010630591,
+    1010630575,
+    1010630600,
+    1010630575,
+    1010630575
+  ],
+  "shards": [
+    {
+      "status": "NO_PRIMITIVE_PROJECTION",
+      "energy_limit": 22,
+      "states": 42737007,
+      "states_without_primitive_row": 4324,
+      "charts_examined_one_per_primitive_row": 76368840,
+      "row_classes_classified": 11464425,
+      "uncached_projection_checks": 52937576
+    },
+    {
+      "status": "NO_PRIMITIVE_PROJECTION",
+      "energy_limit": 22,
+      "states": 41614365,
+      "states_without_primitive_row": 25399,
+      "charts_examined_one_per_primitive_row": 77125370,
+      "row_classes_classified": 12953373,
+      "uncached_projection_checks": 57840316
+    },
+    {
+      "status": "NO_PRIMITIVE_PROJECTION",
+      "energy_limit": 22,
+      "states": 40425223,
+      "states_without_primitive_row": 0,
+      "charts_examined_one_per_primitive_row": 63056732,
+      "row_classes_classified": 6023454,
+      "uncached_projection_checks": 34709049
+    },
+    {
+      "status": "NO_PRIMITIVE_PROJECTION",
+      "energy_limit": 22,
+      "states": 40425224,
+      "states_without_primitive_row": 0,
+      "charts_examined_one_per_primitive_row": 75231841,
+      "row_classes_classified": 25066651,
+      "uncached_projection_checks": 67737150
+    },
+    {
+      "status": "NO_PRIMITIVE_PROJECTION",
+      "energy_limit": 22,
+      "states": 40425223,
+      "states_without_primitive_row": 0,
+      "charts_examined_one_per_primitive_row": 67407766,
+      "row_classes_classified": 9322163,
+      "uncached_projection_checks": 40599720
+    },
+    {
+      "status": "NO_PRIMITIVE_PROJECTION",
+      "energy_limit": 22,
+      "states": 40425223,
+      "states_without_primitive_row": 143666,
+      "charts_examined_one_per_primitive_row": 75830359,
+      "row_classes_classified": 8361473,
+      "uncached_projection_checks": 55845359
+    }
+  ]
+}

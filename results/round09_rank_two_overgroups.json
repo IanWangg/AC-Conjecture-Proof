@@ -1,0 +1,535 @@
+{
+  "AK3": {
+    "rows": [
+      "xxxYYYY",
+      "xyxYXY"
+    ],
+    "core_vertices": 10,
+    "all_principal_quotients": 82,
+    "quotients_by_rank": {
+      "2": 2,
+      "3": 21,
+      "4": 47,
+      "5": 12
+    },
+    "independently_matched_pair_identifications": 1625,
+    "rank_two_overgroups": [
+      {
+        "vertices": 10,
+        "initial_subgroup": true,
+        "ambient_rose": false,
+        "primitive_detector": {
+          "format": "f2-primitive-map-pairs-v1",
+          "status": "ABSENT",
+          "vertices": 10,
+          "encoded_graph": [
+            1,
+            -1,
+            2,
+            -1,
+            3,
+            0,
+            4,
+            -1,
+            5,
+            -1,
+            6,
+            0,
+            7,
+            1,
+            -1,
+            -1,
+            8,
+            -1,
+            -1,
+            1,
+            -1,
+            2,
+            8,
+            -1,
+            -1,
+            -1,
+            9,
+            2,
+            -1,
+            3,
+            -1,
+            9,
+            -1,
+            4,
+            -1,
+            5,
+            -1,
+            -1,
+            7,
+            6
+          ],
+          "alphabets": [
+            {
+              "status": "ABSENT",
+              "alphabet": "xy",
+              "pair_states_discovered": 8,
+              "pair_states_processed": 8,
+              "complete_finite_map_pair_exhaustion": true
+            },
+            {
+              "status": "ABSENT",
+              "alphabet": "xY",
+              "pair_states_discovered": 28,
+              "pair_states_processed": 28,
+              "complete_finite_map_pair_exhaustion": true
+            },
+            {
+              "status": "ABSENT",
+              "alphabet": "Xy",
+              "pair_states_discovered": 28,
+              "pair_states_processed": 28,
+              "complete_finite_map_pair_exhaustion": true
+            },
+            {
+              "status": "ABSENT",
+              "alphabet": "XY",
+              "pair_states_discovered": 8,
+              "pair_states_processed": 8,
+              "complete_finite_map_pair_exhaustion": true
+            }
+          ],
+          "ordinary_AC_goal_solved": false
+        }
+      },
+      {
+        "vertices": 1,
+        "initial_subgroup": false,
+        "ambient_rose": true,
+        "primitive_detector": {
+          "format": "f2-primitive-map-pairs-v1",
+          "status": "PRIMITIVE",
+          "vertices": 1,
+          "encoded_graph": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "alphabets": [
+            {
+              "status": "PRIMITIVE",
+              "alphabet": "xy",
+              "pair_states_discovered": 1,
+              "pair_states_processed": 0,
+              "witness": {
+                "alphabet": "xy",
+                "positive_basis_program": "",
+                "component": 0,
+                "loop_vertex": 0,
+                "word_length": 1,
+                "base_to_loop_path": "",
+                "cyclic_primitive_word": "x",
+                "based_primitive_word": "x"
+              }
+            }
+          ],
+          "witness": {
+            "alphabet": "xy",
+            "positive_basis_program": "",
+            "component": 0,
+            "loop_vertex": 0,
+            "word_length": 1,
+            "base_to_loop_path": "",
+            "cyclic_primitive_word": "x",
+            "based_primitive_word": "x"
+          }
+        }
+      }
+    ],
+    "vertex_pairs_giving_ambient_rose": []
+  },
+  "new_energy17": {
+    "rows": [
+      "xxyXYXy",
+      "xxYXYxYYXY"
+    ],
+    "core_vertices": 14,
+    "all_principal_quotients": 1839,
+    "quotients_by_rank": {
+      "2": 2,
+      "3": 42,
+      "4": 365,
+      "5": 745,
+      "6": 505,
+      "7": 158,
+      "8": 22
+    },
+    "independently_matched_pair_identifications": 72097,
+    "rank_two_overgroups": [
+      {
+        "vertices": 14,
+        "initial_subgroup": true,
+        "ambient_rose": false,
+        "primitive_detector": {
+          "format": "f2-primitive-map-pairs-v1",
+          "status": "ABSENT",
+          "vertices": 14,
+          "encoded_graph": [
+            1,
+            -1,
+            2,
+            3,
+            4,
+            0,
+            -1,
+            -1,
+            5,
+            -1,
+            -1,
+            0,
+            6,
+            -1,
+            0,
+            -1,
+            -1,
+            1,
+            7,
+            8,
+            -1,
+            2,
+            9,
+            -1,
+            -1,
+            3,
+            10,
+            -1,
+            -1,
+            10,
+            -1,
+            4,
+            -1,
+            11,
+            4,
+            -1,
+            -1,
+            -1,
+            12,
+            5,
+            7,
+            -1,
+            -1,
+            6,
+            8,
+            -1,
+            -1,
+            13,
+            -1,
+            13,
+            -1,
+            9,
+            12,
+            -1,
+            11,
+            -1
+          ],
+          "alphabets": [
+            {
+              "status": "ABSENT",
+              "alphabet": "xy",
+              "pair_states_discovered": 16,
+              "pair_states_processed": 16,
+              "complete_finite_map_pair_exhaustion": true
+            },
+            {
+              "status": "ABSENT",
+              "alphabet": "xY",
+              "pair_states_discovered": 16,
+              "pair_states_processed": 16,
+              "complete_finite_map_pair_exhaustion": true
+            },
+            {
+              "status": "ABSENT",
+              "alphabet": "Xy",
+              "pair_states_discovered": 16,
+              "pair_states_processed": 16,
+              "complete_finite_map_pair_exhaustion": true
+            },
+            {
+              "status": "ABSENT",
+              "alphabet": "XY",
+              "pair_states_discovered": 16,
+              "pair_states_processed": 16,
+              "complete_finite_map_pair_exhaustion": true
+            }
+          ],
+          "ordinary_AC_goal_solved": false
+        }
+      },
+      {
+        "vertices": 1,
+        "initial_subgroup": false,
+        "ambient_rose": true,
+        "primitive_detector": {
+          "format": "f2-primitive-map-pairs-v1",
+          "status": "PRIMITIVE",
+          "vertices": 1,
+          "encoded_graph": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "alphabets": [
+            {
+              "status": "PRIMITIVE",
+              "alphabet": "xy",
+              "pair_states_discovered": 1,
+              "pair_states_processed": 0,
+              "witness": {
+                "alphabet": "xy",
+                "positive_basis_program": "",
+                "component": 0,
+                "loop_vertex": 0,
+                "word_length": 1,
+                "base_to_loop_path": "",
+                "cyclic_primitive_word": "x",
+                "based_primitive_word": "x"
+              }
+            }
+          ],
+          "witness": {
+            "alphabet": "xy",
+            "positive_basis_program": "",
+            "component": 0,
+            "loop_vertex": 0,
+            "word_length": 1,
+            "base_to_loop_path": "",
+            "cyclic_primitive_word": "x",
+            "based_primitive_word": "x"
+          }
+        }
+      }
+    ],
+    "vertex_pairs_giving_ambient_rose": []
+  },
+  "factorization_control": {
+    "outer_map": [
+      "xxyX",
+      "y"
+    ],
+    "inner_map": [
+      "x",
+      "yyxY"
+    ],
+    "middle_core": [
+      1,
+      -1,
+      0,
+      0,
+      2,
+      0,
+      -1,
+      2,
+      -1,
+      1,
+      1,
+      -1
+    ],
+    "census": {
+      "rows": [
+        "xxyX",
+        "yyxxyXY"
+      ],
+      "core_vertices": 8,
+      "all_principal_quotients": 21,
+      "quotients_by_rank": {
+        "2": 3,
+        "3": 10,
+        "4": 8
+      },
+      "independently_matched_pair_identifications": 264,
+      "rank_two_overgroups": [
+        {
+          "vertices": 8,
+          "initial_subgroup": true,
+          "ambient_rose": false,
+          "primitive_detector": {
+            "format": "f2-primitive-map-pairs-v1",
+            "status": "PRIMITIVE",
+            "vertices": 8,
+            "encoded_graph": [
+              1,
+              -1,
+              2,
+              -1,
+              3,
+              0,
+              -1,
+              3,
+              4,
+              -1,
+              5,
+              0,
+              -1,
+              1,
+              1,
+              -1,
+              -1,
+              2,
+              -1,
+              6,
+              7,
+              -1,
+              -1,
+              2,
+              -1,
+              7,
+              4,
+              -1,
+              6,
+              5,
+              -1,
+              -1
+            ],
+            "alphabets": [
+              {
+                "status": "PRIMITIVE",
+                "alphabet": "xy",
+                "pair_states_discovered": 3,
+                "pair_states_processed": 1,
+                "witness": {
+                  "alphabet": "xy",
+                  "positive_basis_program": "L",
+                  "component": 1,
+                  "loop_vertex": 1,
+                  "word_length": 2,
+                  "base_to_loop_path": "x",
+                  "cyclic_primitive_word": "xy",
+                  "based_primitive_word": "xxyX"
+                }
+              }
+            ],
+            "witness": {
+              "alphabet": "xy",
+              "positive_basis_program": "L",
+              "component": 1,
+              "loop_vertex": 1,
+              "word_length": 2,
+              "base_to_loop_path": "x",
+              "cyclic_primitive_word": "xy",
+              "based_primitive_word": "xxyX"
+            }
+          }
+        },
+        {
+          "vertices": 1,
+          "initial_subgroup": false,
+          "ambient_rose": true,
+          "primitive_detector": {
+            "format": "f2-primitive-map-pairs-v1",
+            "status": "PRIMITIVE",
+            "vertices": 1,
+            "encoded_graph": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "alphabets": [
+              {
+                "status": "PRIMITIVE",
+                "alphabet": "xy",
+                "pair_states_discovered": 1,
+                "pair_states_processed": 0,
+                "witness": {
+                  "alphabet": "xy",
+                  "positive_basis_program": "",
+                  "component": 0,
+                  "loop_vertex": 0,
+                  "word_length": 1,
+                  "base_to_loop_path": "",
+                  "cyclic_primitive_word": "x",
+                  "based_primitive_word": "x"
+                }
+              }
+            ],
+            "witness": {
+              "alphabet": "xy",
+              "positive_basis_program": "",
+              "component": 0,
+              "loop_vertex": 0,
+              "word_length": 1,
+              "base_to_loop_path": "",
+              "cyclic_primitive_word": "x",
+              "based_primitive_word": "x"
+            }
+          }
+        },
+        {
+          "vertices": 3,
+          "initial_subgroup": false,
+          "ambient_rose": false,
+          "primitive_detector": {
+            "format": "f2-primitive-map-pairs-v1",
+            "status": "PRIMITIVE",
+            "vertices": 3,
+            "encoded_graph": [
+              1,
+              -1,
+              0,
+              0,
+              2,
+              0,
+              -1,
+              2,
+              -1,
+              1,
+              1,
+              -1
+            ],
+            "alphabets": [
+              {
+                "status": "PRIMITIVE",
+                "alphabet": "xy",
+                "pair_states_discovered": 1,
+                "pair_states_processed": 0,
+                "witness": {
+                  "alphabet": "xy",
+                  "positive_basis_program": "",
+                  "component": 1,
+                  "loop_vertex": 0,
+                  "word_length": 1,
+                  "base_to_loop_path": "",
+                  "cyclic_primitive_word": "y",
+                  "based_primitive_word": "y"
+                }
+              }
+            ],
+            "witness": {
+              "alphabet": "xy",
+              "positive_basis_program": "",
+              "component": 1,
+              "loop_vertex": 0,
+              "word_length": 1,
+              "base_to_loop_path": "",
+              "cyclic_primitive_word": "y",
+              "based_primitive_word": "y"
+            }
+          }
+        }
+      ],
+      "vertex_pairs_giving_ambient_rose": [
+        {
+          "vertices": [
+            0,
+            1
+          ],
+          "representative": "X"
+        },
+        {
+          "vertices": [
+            1,
+            3
+          ],
+          "representative": "X"
+        }
+      ]
+    }
+  }
+}

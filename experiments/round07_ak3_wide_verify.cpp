@@ -25,8 +25,8 @@ Pair signed_key(const std::string& a, const std::string& b) {
 
 int run(int cap, unsigned workers, const char* catalogue, const char* report,
         const std::string& first, const std::string& second) {
-    if (cap < 13 || cap > 32 || !workers)
-        throw std::runtime_error("need cap 13–32 and positive worker count");
+    if (cap < 13 || cap > 62 || !workers)
+        throw std::runtime_error("need cap 13–62 and positive worker count");
     audit::self_test();
     std::ifstream input(catalogue);
     if (!input) throw std::runtime_error("cannot open orbit catalogue");
@@ -41,6 +41,8 @@ int run(int cap, unsigned workers, const char* catalogue, const char* report,
         if (states.size() == std::numeric_limits<uint32_t>::max())
             throw std::runtime_error("state index exhausted");
         const auto a = line.substr(0, separator), b = line.substr(separator + 1);
+        if (a.size() > 31 || b.size() > 31 || cap - int(std::min(a.size(), b.size())) > 31)
+            throw std::runtime_error("an input coordinate or allowed successor exceeds the packed word capacity");
         if (audit::cyclically_reduced(a) != a || audit::cyclically_reduced(b) != b)
             throw std::runtime_error("noncyclic input");
         const Pair key = signed_key(a, b);

@@ -1,0 +1,1716 @@
+{
+  "stable_budget": 19,
+  "rank_two_magnus_erasures": [
+    {
+      "degree": 8,
+      "spare_rows": 2,
+      "limit": 15,
+      "ordered": false,
+      "distance": null,
+      "radii": [
+        7,
+        8
+      ],
+      "visited": [
+        265103602,
+        63023240
+      ],
+      "distinct_elements": 25051108,
+      "midpoint_hex": [],
+      "final_boundary_candidates": 2206422978
+    },
+    {
+      "degree": 7,
+      "spare_rows": 3,
+      "limit": 13,
+      "ordered": false,
+      "distance": null,
+      "radii": [
+        6,
+        7
+      ],
+      "visited": [
+        15337233,
+        4414593
+      ],
+      "distinct_elements": 1937906,
+      "midpoint_hex": [],
+      "final_boundary_candidates": 183178338
+    },
+    {
+      "degree": 7,
+      "spare_rows": 4,
+      "limit": 11,
+      "ordered": false,
+      "distance": null,
+      "radii": [
+        5,
+        6
+      ],
+      "visited": [
+        872891,
+        297500
+      ],
+      "distinct_elements": 191578,
+      "midpoint_hex": [],
+      "final_boundary_candidates": 13305834
+    }
+  ],
+  "one_spare_degree_nine_middle_budget_sixteen": {
+    "degree": 9,
+    "spare_rows": 1,
+    "ordered": false,
+    "radii": [
+      8,
+      8
+    ],
+    "path_within_budget": false,
+    "midpoint_hex": [],
+    "tiers": [
+      {
+        "degree": 3,
+        "midpoints": 232448,
+        "widths": [
+          [
+            1,
+            16,
+            169,
+            1454,
+            10257,
+            54632,
+            172332,
+            231872,
+            232448
+          ],
+          [
+            1,
+            15,
+            150,
+            1246,
+            8734,
+            47301,
+            159275,
+            231112,
+            232448
+          ]
+        ]
+      },
+      {
+        "degree": 4,
+        "midpoints": 4060216,
+        "widths": [
+          [
+            1,
+            17,
+            205,
+            2288,
+            25792,
+            272810,
+            1462759,
+            3502364,
+            4060216
+          ],
+          [
+            1,
+            15,
+            158,
+            1528,
+            15228,
+            148773,
+            810972,
+            2403189,
+            4060216
+          ]
+        ]
+      },
+      {
+        "degree": 5,
+        "midpoints": 250833,
+        "widths": [
+          [
+            1,
+            18,
+            236,
+            2924,
+            28697,
+            110843,
+            219241,
+            282162,
+            250833
+          ],
+          [
+            1,
+            15,
+            160,
+            1578,
+            12855,
+            45266,
+            97828,
+            167641,
+            250833
+          ]
+        ]
+      },
+      {
+        "degree": 6,
+        "midpoints": 3930,
+        "widths": [
+          [
+            1,
+            19,
+            259,
+            1353,
+            2446,
+            3059,
+            3539,
+            3857,
+            3930
+          ],
+          [
+            1,
+            15,
+            160,
+            687,
+            1158,
+            2015,
+            3033,
+            3735,
+            3930
+          ]
+        ]
+      },
+      {
+        "degree": 7,
+        "midpoints": 132,
+        "widths": [
+          [
+            1,
+            19,
+            69,
+            106,
+            110,
+            100,
+            119,
+            140,
+            132
+          ],
+          [
+            1,
+            15,
+            74,
+            107,
+            128,
+            142,
+            147,
+            139,
+            132
+          ]
+        ]
+      },
+      {
+        "degree": 8,
+        "midpoints": 2,
+        "widths": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2
+          ],
+          [
+            1,
+            1,
+            1,
+            2,
+            2,
+            1,
+            1,
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "degree": 9,
+        "midpoints": 0,
+        "widths": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    ]
+  },
+  "signed_integral_abelianization": [
+    {
+      "padding": 3,
+      "products": 6,
+      "prefix_states": 25788,
+      "inverse_suffix_states": 25788,
+      "matching_state_pairs": 0,
+      "witness": null
+    },
+    {
+      "padding": 3,
+      "products": 7,
+      "prefix_states": 25788,
+      "inverse_suffix_states": 564336,
+      "matching_state_pairs": 0,
+      "witness": null
+    },
+    {
+      "padding": 3,
+      "products": 8,
+      "prefix_states": 564336,
+      "inverse_suffix_states": 564336,
+      "matching_state_pairs": 0,
+      "witness": null
+    }
+  ],
+  "corridor_controls": {
+    "padded-control6-L12": {
+      "degree": 6,
+      "spare_rows": 1,
+      "ordered": false,
+      "radii": [
+        6,
+        6
+      ],
+      "path_within_budget": true,
+      "midpoint_hex": [
+        "00000000000000000000000000000001",
+        "40007dc5bdf83d80403dfa7847b24d67",
+        "00376ccfdfafa00083e355408d4a9dbb"
+      ],
+      "tiers": [
+        {
+          "degree": 3,
+          "midpoints": 120534,
+          "widths": [
+            [
+              1,
+              16,
+              169,
+              1454,
+              10257,
+              54469,
+              120534
+            ],
+            [
+              1,
+              15,
+              150,
+              1246,
+              8734,
+              47261,
+              120534
+            ]
+          ]
+        },
+        {
+          "degree": 4,
+          "midpoints": 6142,
+          "widths": [
+            [
+              1,
+              17,
+              199,
+              1195,
+              3598,
+              6024,
+              6142
+            ],
+            [
+              1,
+              15,
+              143,
+              732,
+              2265,
+              4592,
+              6142
+            ]
+          ]
+        },
+        {
+          "degree": 5,
+          "midpoints": 218,
+          "widths": [
+            [
+              1,
+              18,
+              120,
+              203,
+              218,
+              223,
+              218
+            ],
+            [
+              1,
+              15,
+              69,
+              87,
+              134,
+              170,
+              218
+            ]
+          ]
+        },
+        {
+          "degree": 6,
+          "midpoints": 1,
+          "widths": [
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              2,
+              1
+            ]
+          ]
+        }
+      ],
+      "moves": [
+        [
+          "multiply",
+          0,
+          1,
+          -1
+        ],
+        [
+          "multiply",
+          0,
+          1,
+          -1
+        ],
+        [
+          "conjugate",
+          0,
+          0,
+          -1
+        ],
+        [
+          "multiply",
+          0,
+          1,
+          -1
+        ],
+        [
+          "conjugate",
+          0,
+          0,
+          -1
+        ],
+        [
+          "multiply",
+          0,
+          1,
+          -1
+        ],
+        [
+          "invert",
+          0
+        ],
+        [
+          "conjugate",
+          0,
+          0,
+          -1
+        ],
+        [
+          "multiply",
+          0,
+          1,
+          -1
+        ],
+        [
+          "multiply",
+          1,
+          0,
+          1
+        ],
+        [
+          "conjugate",
+          0,
+          1,
+          -1
+        ],
+        [
+          "conjugate",
+          0,
+          0,
+          -1
+        ]
+      ]
+    },
+    "first-padded-control6-L12": {
+      "degree": 6,
+      "spare_rows": 1,
+      "ordered": false,
+      "radii": [
+        6,
+        6
+      ],
+      "path_within_budget": true,
+      "midpoint_hex": [
+        "00000000000000000000000000000001",
+        "40007dc5bdf83d80403dfa7847b24d67",
+        "00376ccfdfafa00083e355408d4a9dbb"
+      ],
+      "tiers": [
+        {
+          "degree": 3,
+          "midpoints": 120534,
+          "widths": [
+            [
+              1,
+              16,
+              169,
+              1454,
+              10257,
+              54469,
+              120534
+            ],
+            [
+              1,
+              15,
+              150,
+              1246,
+              8734,
+              47261,
+              120534
+            ]
+          ]
+        },
+        {
+          "degree": 4,
+          "midpoints": 6142,
+          "widths": [
+            [
+              1,
+              17,
+              199,
+              1195,
+              3598,
+              6024,
+              6142
+            ],
+            [
+              1,
+              15,
+              143,
+              732,
+              2265,
+              4592,
+              6142
+            ]
+          ]
+        },
+        {
+          "degree": 5,
+          "midpoints": 218,
+          "widths": [
+            [
+              1,
+              18,
+              120,
+              203,
+              218,
+              223,
+              218
+            ],
+            [
+              1,
+              15,
+              69,
+              87,
+              134,
+              170,
+              218
+            ]
+          ]
+        },
+        {
+          "degree": 6,
+          "midpoints": 1,
+          "widths": [
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              2,
+              1
+            ]
+          ]
+        }
+      ],
+      "moves": [
+        [
+          "multiply",
+          0,
+          1,
+          -1
+        ],
+        [
+          "multiply",
+          0,
+          1,
+          -1
+        ],
+        [
+          "conjugate",
+          0,
+          0,
+          -1
+        ],
+        [
+          "multiply",
+          0,
+          1,
+          -1
+        ],
+        [
+          "conjugate",
+          0,
+          0,
+          -1
+        ],
+        [
+          "multiply",
+          0,
+          1,
+          -1
+        ],
+        [
+          "invert",
+          0
+        ],
+        [
+          "conjugate",
+          0,
+          0,
+          -1
+        ],
+        [
+          "multiply",
+          0,
+          1,
+          -1
+        ],
+        [
+          "multiply",
+          1,
+          0,
+          1
+        ],
+        [
+          "conjugate",
+          0,
+          1,
+          -1
+        ],
+        [
+          "conjugate",
+          0,
+          0,
+          -1
+        ]
+      ]
+    },
+    "padded-control6-L12-ordered": {
+      "degree": 6,
+      "spare_rows": 1,
+      "ordered": true,
+      "radii": [
+        6,
+        6
+      ],
+      "path_within_budget": false,
+      "midpoint_hex": [],
+      "tiers": [
+        {
+          "degree": 3,
+          "midpoints": 120534,
+          "widths": [
+            [
+              1,
+              16,
+              169,
+              1454,
+              10257,
+              54469,
+              120534
+            ],
+            [
+              1,
+              15,
+              150,
+              1246,
+              8734,
+              47261,
+              120534
+            ]
+          ]
+        },
+        {
+          "degree": 4,
+          "midpoints": 6142,
+          "widths": [
+            [
+              1,
+              17,
+              199,
+              1195,
+              3598,
+              6024,
+              6142
+            ],
+            [
+              1,
+              15,
+              143,
+              732,
+              2265,
+              4592,
+              6142
+            ]
+          ]
+        },
+        {
+          "degree": 5,
+          "midpoints": 218,
+          "widths": [
+            [
+              1,
+              18,
+              120,
+              203,
+              218,
+              223,
+              218
+            ],
+            [
+              1,
+              15,
+              69,
+              87,
+              134,
+              170,
+              218
+            ]
+          ]
+        },
+        {
+          "degree": 6,
+          "midpoints": 0,
+          "widths": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "moves": []
+    },
+    "padded-free-control6-L12": {
+      "degree": 6,
+      "spare_rows": 1,
+      "ordered": false,
+      "radii": [
+        6,
+        6
+      ],
+      "path_within_budget": false,
+      "midpoint_hex": [],
+      "tiers": [
+        {
+          "degree": 3,
+          "midpoints": 120534,
+          "widths": [
+            [
+              1,
+              16,
+              169,
+              1454,
+              10257,
+              54469,
+              120534
+            ],
+            [
+              1,
+              15,
+              150,
+              1246,
+              8734,
+              47261,
+              120534
+            ]
+          ]
+        },
+        {
+          "degree": 4,
+          "midpoints": 6142,
+          "widths": [
+            [
+              1,
+              17,
+              199,
+              1195,
+              3598,
+              6024,
+              6142
+            ],
+            [
+              1,
+              15,
+              143,
+              732,
+              2265,
+              4592,
+              6142
+            ]
+          ]
+        },
+        {
+          "degree": 5,
+          "midpoints": 218,
+          "widths": [
+            [
+              1,
+              18,
+              120,
+              203,
+              218,
+              223,
+              218
+            ],
+            [
+              1,
+              15,
+              69,
+              87,
+              134,
+              170,
+              218
+            ]
+          ]
+        },
+        {
+          "degree": 6,
+          "midpoints": 1,
+          "widths": [
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              2,
+              1
+            ]
+          ]
+        }
+      ],
+      "midpoint_words": [],
+      "free_tier": {
+        "midpoints": 0,
+        "widths": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "moves": []
+    },
+    "first-padded-free-control6-L12": {
+      "degree": 6,
+      "spare_rows": 1,
+      "ordered": false,
+      "radii": [
+        6,
+        6
+      ],
+      "path_within_budget": false,
+      "midpoint_hex": [],
+      "tiers": [
+        {
+          "degree": 3,
+          "midpoints": 120534,
+          "widths": [
+            [
+              1,
+              16,
+              169,
+              1454,
+              10257,
+              54469,
+              120534
+            ],
+            [
+              1,
+              15,
+              150,
+              1246,
+              8734,
+              47261,
+              120534
+            ]
+          ]
+        },
+        {
+          "degree": 4,
+          "midpoints": 6142,
+          "widths": [
+            [
+              1,
+              17,
+              199,
+              1195,
+              3598,
+              6024,
+              6142
+            ],
+            [
+              1,
+              15,
+              143,
+              732,
+              2265,
+              4592,
+              6142
+            ]
+          ]
+        },
+        {
+          "degree": 5,
+          "midpoints": 218,
+          "widths": [
+            [
+              1,
+              18,
+              120,
+              203,
+              218,
+              223,
+              218
+            ],
+            [
+              1,
+              15,
+              69,
+              87,
+              134,
+              170,
+              218
+            ]
+          ]
+        },
+        {
+          "degree": 6,
+          "midpoints": 1,
+          "widths": [
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              2,
+              1
+            ]
+          ]
+        }
+      ],
+      "midpoint_words": [],
+      "free_tier": {
+        "midpoints": 0,
+        "widths": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "moves": []
+    },
+    "padded-control7-L14": {
+      "degree": 7,
+      "spare_rows": 1,
+      "ordered": false,
+      "radii": [
+        7,
+        7
+      ],
+      "path_within_budget": true,
+      "midpoint_hex": [
+        "0000000000000000000000000000000000000000000000000000000000000001",
+        "000000000000000000000000000040000000000000004000000040004000008b",
+        "0000800080000000000080008000000000008000800080008000a0002060e67d"
+      ],
+      "tiers": [
+        {
+          "degree": 3,
+          "midpoints": 230555,
+          "widths": [
+            [
+              1,
+              16,
+              169,
+              1454,
+              10257,
+              54632,
+              172332,
+              230555
+            ],
+            [
+              1,
+              15,
+              150,
+              1246,
+              8734,
+              47301,
+              159275,
+              230555
+            ]
+          ]
+        },
+        {
+          "degree": 4,
+          "midpoints": 194056,
+          "widths": [
+            [
+              1,
+              17,
+              205,
+              2285,
+              18769,
+              78674,
+              172766,
+              194056
+            ],
+            [
+              1,
+              15,
+              158,
+              1517,
+              10653,
+              44714,
+              122720,
+              194056
+            ]
+          ]
+        },
+        {
+          "degree": 5,
+          "midpoints": 8102,
+          "widths": [
+            [
+              1,
+              18,
+              236,
+              1969,
+              5238,
+              7499,
+              8544,
+              8102
+            ],
+            [
+              1,
+              15,
+              160,
+              1001,
+              2159,
+              3880,
+              6092,
+              8102
+            ]
+          ]
+        },
+        {
+          "degree": 6,
+          "midpoints": 109,
+          "widths": [
+            [
+              1,
+              19,
+              60,
+              74,
+              84,
+              99,
+              102,
+              109
+            ],
+            [
+              1,
+              15,
+              36,
+              47,
+              73,
+              90,
+              111,
+              109
+            ]
+          ]
+        },
+        {
+          "degree": 7,
+          "midpoints": 1,
+          "widths": [
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          ]
+        }
+      ],
+      "moves": [
+        [
+          "conjugate",
+          1,
+          0,
+          -1
+        ],
+        [
+          "multiply",
+          1,
+          0,
+          -1
+        ],
+        [
+          "multiply",
+          1,
+          0,
+          -1
+        ],
+        [
+          "multiply",
+          1,
+          0,
+          -1
+        ],
+        [
+          "conjugate",
+          1,
+          1,
+          -1
+        ],
+        [
+          "multiply",
+          1,
+          0,
+          1
+        ],
+        [
+          "multiply",
+          1,
+          0,
+          1
+        ],
+        [
+          "conjugate",
+          1,
+          0,
+          -1
+        ],
+        [
+          "multiply",
+          0,
+          1,
+          1
+        ],
+        [
+          "conjugate",
+          0,
+          0,
+          -1
+        ],
+        [
+          "multiply",
+          1,
+          0,
+          1
+        ],
+        [
+          "conjugate",
+          0,
+          0,
+          -1
+        ],
+        [
+          "multiply",
+          1,
+          0,
+          1
+        ],
+        [
+          "multiply",
+          0,
+          1,
+          1
+        ]
+      ]
+    },
+    "first-padded-control7-L14": {
+      "degree": 7,
+      "spare_rows": 1,
+      "ordered": false,
+      "radii": [
+        7,
+        7
+      ],
+      "path_within_budget": true,
+      "midpoint_hex": [
+        "0000000000000000000000000000000000000000000000000000000000000001",
+        "000000000000000000000000000040000000000000004000000040004000008b",
+        "0000800080000000000080008000000000008000800080008000a0002060e67d"
+      ],
+      "tiers": [
+        {
+          "degree": 3,
+          "midpoints": 230555,
+          "widths": [
+            [
+              1,
+              16,
+              169,
+              1454,
+              10257,
+              54632,
+              172332,
+              230555
+            ],
+            [
+              1,
+              15,
+              150,
+              1246,
+              8734,
+              47301,
+              159275,
+              230555
+            ]
+          ]
+        },
+        {
+          "degree": 4,
+          "midpoints": 194056,
+          "widths": [
+            [
+              1,
+              17,
+              205,
+              2285,
+              18769,
+              78674,
+              172766,
+              194056
+            ],
+            [
+              1,
+              15,
+              158,
+              1517,
+              10653,
+              44714,
+              122720,
+              194056
+            ]
+          ]
+        },
+        {
+          "degree": 5,
+          "midpoints": 8102,
+          "widths": [
+            [
+              1,
+              18,
+              236,
+              1969,
+              5238,
+              7499,
+              8544,
+              8102
+            ],
+            [
+              1,
+              15,
+              160,
+              1001,
+              2159,
+              3880,
+              6092,
+              8102
+            ]
+          ]
+        },
+        {
+          "degree": 6,
+          "midpoints": 109,
+          "widths": [
+            [
+              1,
+              19,
+              60,
+              74,
+              84,
+              99,
+              102,
+              109
+            ],
+            [
+              1,
+              15,
+              36,
+              47,
+              73,
+              90,
+              111,
+              109
+            ]
+          ]
+        },
+        {
+          "degree": 7,
+          "midpoints": 1,
+          "widths": [
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          ]
+        }
+      ],
+      "moves": [
+        [
+          "conjugate",
+          1,
+          0,
+          -1
+        ],
+        [
+          "multiply",
+          1,
+          0,
+          -1
+        ],
+        [
+          "multiply",
+          1,
+          0,
+          -1
+        ],
+        [
+          "multiply",
+          1,
+          0,
+          -1
+        ],
+        [
+          "conjugate",
+          1,
+          1,
+          -1
+        ],
+        [
+          "multiply",
+          1,
+          0,
+          1
+        ],
+        [
+          "multiply",
+          1,
+          0,
+          1
+        ],
+        [
+          "conjugate",
+          1,
+          0,
+          -1
+        ],
+        [
+          "multiply",
+          0,
+          1,
+          1
+        ],
+        [
+          "conjugate",
+          0,
+          0,
+          -1
+        ],
+        [
+          "multiply",
+          1,
+          0,
+          1
+        ],
+        [
+          "conjugate",
+          0,
+          0,
+          -1
+        ],
+        [
+          "multiply",
+          1,
+          0,
+          1
+        ],
+        [
+          "multiply",
+          0,
+          1,
+          1
+        ]
+      ]
+    },
+    "screen-control6-L12": {
+      "degree": 6,
+      "spare_rows": 0,
+      "ordered": false,
+      "radii": [
+        6,
+        6
+      ],
+      "path_within_budget": true,
+      "midpoint_hex": [
+        "40007dc5bdf83d80403dfa7847b24d67",
+        "00376ccfdfafa00083e355408d4a9dbb"
+      ],
+      "tiers": [
+        {
+          "degree": 4,
+          "midpoints": 5430,
+          "widths": [
+            [
+              1,
+              13,
+              119,
+              868,
+              3028,
+              5261,
+              5430
+            ],
+            [
+              1,
+              11,
+              86,
+              552,
+              1923,
+              4049,
+              5430
+            ]
+          ]
+        },
+        {
+          "degree": 5,
+          "midpoints": 179,
+          "widths": [
+            [
+              1,
+              14,
+              90,
+              169,
+              183,
+              183,
+              179
+            ],
+            [
+              1,
+              11,
+              54,
+              73,
+              110,
+              143,
+              179
+            ]
+          ]
+        },
+        {
+          "degree": 6,
+          "midpoints": 1,
+          "widths": [
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              2,
+              1
+            ]
+          ]
+        }
+      ],
+      "moves": [
+        [
+          "multiply",
+          0,
+          1,
+          -1
+        ],
+        [
+          "multiply",
+          0,
+          1,
+          -1
+        ],
+        [
+          "conjugate",
+          0,
+          0,
+          -1
+        ],
+        [
+          "multiply",
+          0,
+          1,
+          -1
+        ],
+        [
+          "conjugate",
+          0,
+          0,
+          -1
+        ],
+        [
+          "multiply",
+          0,
+          1,
+          -1
+        ],
+        [
+          "invert",
+          0
+        ],
+        [
+          "conjugate",
+          0,
+          0,
+          -1
+        ],
+        [
+          "multiply",
+          0,
+          1,
+          -1
+        ],
+        [
+          "multiply",
+          1,
+          0,
+          1
+        ],
+        [
+          "conjugate",
+          0,
+          1,
+          -1
+        ],
+        [
+          "conjugate",
+          0,
+          0,
+          -1
+        ]
+      ]
+    }
+  },
+  "independent_replays": {
+    "padded-control6-L12": {
+      "length": 12,
+      "target_slots": [
+        1,
+        0,
+        2
+      ],
+      "independent_monomial_replay": true
+    },
+    "first-padded-control6-L12": {
+      "length": 12,
+      "target_slots": [
+        1,
+        0,
+        2
+      ],
+      "independent_monomial_replay": true
+    },
+    "screen-control6-L12": {
+      "length": 12,
+      "target_slots": [
+        1,
+        0
+      ],
+      "independent_monomial_replay": true
+    },
+    "padded-control7-L14": {
+      "length": 14,
+      "target_slots": [
+        0,
+        1,
+        2
+      ],
+      "independent_monomial_replay": true
+    },
+    "first-padded-control7-L14": {
+      "length": 14,
+      "target_slots": [
+        0,
+        1,
+        2
+      ],
+      "independent_monomial_replay": true
+    }
+  }
+}

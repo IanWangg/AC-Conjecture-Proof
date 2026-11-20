@@ -1,0 +1,260 @@
+{
+  "cap36_orbit_route_from_E20_to_right": [
+    [
+      "xxxyxYxYY",
+      "xyxYYxyyXYY"
+    ],
+    [
+      "xxxyxYxYY",
+      "xxyxYYXyyxYY"
+    ],
+    [
+      "xxxyxYxYY",
+      "xyxYYYxyyXY"
+    ],
+    [
+      "xxxyXXYxyXy",
+      "xxYXyxxYXyyyXy"
+    ],
+    [
+      "xxxxyxYYxYYXy",
+      "xxxyxYYXyxYYXy"
+    ],
+    [
+      "xxxxyxYYxYYXy",
+      "xxYYXyxYxyyXY"
+    ],
+    [
+      "xxyXyxYXXyyXY",
+      "xxyXYxYYxxyXYYYYYY"
+    ],
+    [
+      "xxxxxyXYYxxyXYY",
+      "xxxxxxyXYYxxYxyXYY"
+    ],
+    [
+      "xxyXXyxxyXY",
+      "xxyyXYxxyyyyyXY"
+    ],
+    [
+      "xxyXXyxxyXY",
+      "xxyXYxxyyyyXXY"
+    ],
+    [
+      "xxxyyXXYY",
+      "xxxxyyXYxyyXYY"
+    ],
+    [
+      "xxxyyXXYY",
+      "xyxYYxyyXYY"
+    ],
+    [
+      "xxyXXyxyXXY",
+      "xxyXXyxYYXXy"
+    ],
+    [
+      "xxyxYYXyxYY",
+      "xxyyXYYXyyXY"
+    ],
+    [
+      "xxyxYYXyxYY",
+      "xxYXyyXYxyxYY"
+    ]
+  ],
+  "strict_ordinary_splices": [
+    {
+      "chart_change": "vertex",
+      "left_step_pivot": [
+        394,
+        1
+      ],
+      "right_step_pivot": [
+        394,
+        2
+      ],
+      "left_pair": [
+        "XYYXy",
+        "XYXyxYXYxYXyxy"
+      ],
+      "right_pair": [
+        "XXyXYYxyXYY",
+        "XXYxyyxYXyXYY"
+      ],
+      "root_to_left_orbit_route": [
+        [
+          "xyxYXY",
+          "xxxxYYY"
+        ],
+        [
+          "xyxYXY",
+          "xxxYXyxYY"
+        ],
+        [
+          "xxxyxYXXy",
+          "xxxyyxYXy"
+        ],
+        [
+          "xxxyxYXXy",
+          "xxxyXXXYxy"
+        ],
+        [
+          "xxxyxYXXXy",
+          "xxxyxyxYXXy"
+        ],
+        [
+          "xxyXy",
+          "xyxyXYYxyyy"
+        ],
+        [
+          "xxyXy",
+          "xyxyXYYXYxyy"
+        ],
+        [
+          "xxyXy",
+          "xyxyXYXyxYxyy"
+        ],
+        [
+          "xxyXy",
+          "xyxYxyXYXyxyXY"
+        ]
+      ],
+      "root_to_left_maximum_cyclic_length": 21,
+      "left_individual_automorphism_orbits": [
+        {
+          "length": 5,
+          "key": "XXXYY",
+          "minimal_classes": 8
+        },
+        {
+          "length": 13,
+          "key": "XXXYYXyxxyyxY",
+          "minimal_classes": 24
+        }
+      ],
+      "right_individual_automorphism_orbits": [
+        {
+          "length": 11,
+          "key": "XXYXyyxYXyy",
+          "minimal_classes": 8
+        },
+        {
+          "length": 13,
+          "key": "XXXYYXXYxyyxY",
+          "minimal_classes": 24
+        }
+      ],
+      "both_receiver_identities_are_necessary": true,
+      "sharp_ordinary_cyclic_peak": 37,
+      "strict_replay": {
+        "moves": 1803,
+        "peak_total_length": 46,
+        "endpoint": [
+          "XXyXYYxyXYY",
+          "XXYxyyxYXyXYY"
+        ]
+      },
+      "certificate": "round09_ac_proof_e20_vertex_splice.json"
+    },
+    {
+      "chart_change": "product",
+      "left_step_pivot": [
+        393,
+        2
+      ],
+      "right_step_pivot": [
+        394,
+        2
+      ],
+      "left_pair": [
+        "XXyxYxyxY",
+        "XYXyxYXyXYxyxy"
+      ],
+      "right_pair": [
+        "XXyXYYxyXYY",
+        "XXYxyyxYXyXYY"
+      ],
+      "root_to_left_orbit_route": [
+        [
+          "xyxYXY",
+          "xxxxYYY"
+        ],
+        [
+          "xyxYXY",
+          "xxxxxyXYXYY"
+        ],
+        [
+          "xyxYXY",
+          "xxxxxyXXYXY"
+        ],
+        [
+          "xxxxyXXXY",
+          "xxxxxyXXYXY"
+        ],
+        [
+          "xxyxYXXy",
+          "xxxxYXXXy"
+        ],
+        [
+          "xxyXYXy",
+          "xxyXXyXY"
+        ],
+        [
+          "xxyXyXY",
+          "xyXYYXy"
+        ],
+        [
+          "xxyXyXY",
+          "xyyyXYxY"
+        ],
+        [
+          "xxxyXyXY",
+          "xxyXyxYXyXY"
+        ],
+        [
+          "xxyXYXyXY",
+          "xxYXyXYxyXy"
+        ],
+        [
+          "xxyXYXyXY",
+          "xyxyXYXyxYXyXY"
+        ]
+      ],
+      "root_to_left_maximum_cyclic_length": 23,
+      "left_individual_automorphism_orbits": [
+        {
+          "length": 9,
+          "key": "XXYxyxYxy",
+          "minimal_classes": 4
+        },
+        {
+          "length": 13,
+          "key": "XXYYXyxYXXYxy",
+          "minimal_classes": 24
+        }
+      ],
+      "right_individual_automorphism_orbits": [
+        {
+          "length": 11,
+          "key": "XXYXyyxYXyy",
+          "minimal_classes": 8
+        },
+        {
+          "length": 13,
+          "key": "XXXYYXXYxyyxY",
+          "minimal_classes": 24
+        }
+      ],
+      "both_receiver_identities_are_necessary": true,
+      "sharp_ordinary_cyclic_peak": 37,
+      "strict_replay": {
+        "moves": 1719,
+        "peak_total_length": 46,
+        "endpoint": [
+          "XXyXYYxyXYY",
+          "XXYxyyxYXyXYY"
+        ]
+      },
+      "certificate": "round09_ac_proof_e20_product_splice.json"
+    }
+  ]
+}

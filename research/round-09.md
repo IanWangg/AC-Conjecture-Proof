@@ -1,0 +1,30 @@
+# Research round 09
+
+2026-11-19. Five researchers covered the five tracks in overlapping waves. No path to the free basis, proof of either conjecture, or counterexample was established.
+
+## Track reports
+
+| Target | Result |
+| --- | --- |
+| [Ordinary AK(3) trivialization](round-09-ak3.md) | All 12 selected low-energy stable projections are ordinarily reachable. Eleven have sharp ordinary cyclic entry peak 37. A 1,274-move ordinary ledger reaches the same marked energy-20 pair as the strict rank-three chart path. |
+| [Proof of Stable AC](round-09-stable-proof.md) | One stabilization makes the ordinary component invariant under ambient automorphisms and several families of endomorphisms. The resulting compiler reaches all selected marked projections at rank at most three. Full primitive and chartless geometry screens of the generated cap-22 rank-three catalogue are negative. |
+| [Proof of ordinary AC](round-09-ac-proof.md) | Two switches in the actual energy-20 ledger have ordinary replacements of 1,803 and 1,719 moves, each with sharp cyclic peak 37. Both rows must receive a product, and the single-donor interval audit cannot reach the final selected chart. |
+| [Disproof of ordinary AC](round-09-bridge-collar-control.md) | Folding the two pieces containing the roots before reattaching the far lobes gives a separating-cut criterion even with a noninjective self-fiber-product projection. An actual nested AK(3) pair has an unbounded bridge family with a primitive-free opposite-root join. The broader survey of root alignments remains open. |
+| [Disproof of Stable AC](round-09-stable-disproof.md) | The contracted crossing graph of a shortest stable path to the unordered basis contains two edge-disjoint spanning trees for every normally generating balanced tuple. Exact retractions give degree-ten stable instruction distance at least 19. |
+
+## Joint results
+
+- The native cyclic cap-31 generator exhausted **254,220,523** signed ordinary orbits, with zero primitive coordinates. The separate Euclidean scan agrees. The independent closure and connectivity audit remains active. A 702-instruction ordinary certificate reaches the new energy-17 pair at sharp cyclic peak 31, using the independently checked cap-30 exclusion. [Ordinary generation and strict path](round-09-cyclic31.md).
+- The exact rank-three screen reran all **246,052,265** generated cap-22 states with fixed-width cache keys and found no primitive deletion projection. The paired-rotation screen also finds no sphere among the joint minima of the 173,389 chartless states. The separate full closure audit remains active. [Rank-three screens and control replays](round-09-stable-proof.md).
+- The common marked energy-20 pair has a strict stable path of 1,871 moves at rank at most three, with a cyclic peak of 22 on the prefix into its rank-three chart. Its full stable cyclic peak is 97. The sharp ordinary peak of 37 applies to the projected marking. The separate splices show a two-row repair at a switch where the one-donor argument fails. [Stable compiler](round-09-stable-proof.md), [ordinary replacements](round-09-ac-proof.md).
+- Ordinary and stable distances in the degree-ten Magnus quotient are both at least 19. At budget 19, only zero or one added pair remains possible in the free group or that quotient. The all-rank crossing theorem supplies a linear bound of at least $2k$ crossing products at peak padding $k$ and at least $2(r-1)$ crossings for every partition of the contracted graph into $r$ parts. [Exact corridor receipts and two-tree proof](round-09-stable-disproof.md).
+- Injective substitutions cannot create geometric multiwords, and unimodular substitutions cannot create a primitive deletion projection. All 5,162,832 tested images obey this restriction. Both the AK(3) core and the new energy-17 core freely adjoin any single outside word, so a complete ordinary path cannot keep all conjugators inside just one such enlarged subgroup. Neither core has a proper intermediate same-rank overgroup, even after adding isolated generators. This excludes a factorization of either rank-two marked endomorphism into elementary substitutions. [Substitution and covering arguments](round-09-stable-substitutions.md), [overgroup census and factorization obstruction](round-09-rank-two-overgroups.md).
+- A path in a quotient by a subgroup of the derived group can be synchronized with any finite list of independent surjective markings into restricted wreath products with finite nonabelian simple lamps. For AK(3), the 24,649-instruction control matches the basis both in $A_5\wr\mathbb Z$ and in the braid relation module. An independent lamp evaluation and Fox calculation check both endpoints. [Infinite perfect kernel and exact replay](round-09-wreath-kernels.md).
+
+## Questions for round 10
+
+1. **AK(3) trivialization.** Check new short cap-31 entries against broader reverse searches and target candidates outside their current Whitehead minima. Start a cap-32 frontier algorithm from exact cap-31 states, preserving connecting edges to the known component.
+2. **Stable AC proof.** Independently check the cap-22 reentries and finish the main closure audit. Expand all chartless cap-22 states by one product to cyclic energy 23. Reproduce the corrected Wirtinger connection from the primary paper and test whether the misprinted tuple has an ordinary repair to the genuine unknot presentation.
+3. **Ordinary AC proof.** Seek sufficient conditions for simultaneous donor repair that can certify the actual energy-20 switches via their endpoint algebra. Test whether those conditions control more of the chart-change graph.
+4. **Ordinary AC disproof.** Continue the separating-cut test toward repeated Nielsen rebasing with nested lobes. Identify when local overlaps force cross-bridge folds and whether the resulting joined graphs still exclude primitives.
+5. **Stable AC disproof.** Complete the two remaining instruction-budget-19 cases. Use the two-tree condition in exact schedule pruning and try to push the quotient degree if higher-degree survivors remain.

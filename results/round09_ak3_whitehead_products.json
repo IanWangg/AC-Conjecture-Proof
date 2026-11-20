@@ -1,0 +1,1390 @@
+{
+  "short_stable_projection_pairs": [
+    [
+      "XXXYYXYXy",
+      "XYYXyXYYxyy"
+    ],
+    [
+      "XXXyXYXYY",
+      "XYYYXyyxYXy"
+    ],
+    [
+      "XXXyyxxYY",
+      "XYXyyxYYXyy"
+    ],
+    [
+      "XXXYYxxyy",
+      "XYYXyyXYxyy"
+    ],
+    [
+      "XXyxYYYXyxY",
+      "XYxYxyyXy"
+    ],
+    [
+      "XXYYxYXYY",
+      "XXYxYXXyxxY"
+    ],
+    [
+      "XXXyXYXYY",
+      "XXyXYYxyyXYY"
+    ],
+    [
+      "XXXyXYXYY",
+      "XXyyXYYxyXYY"
+    ],
+    [
+      "XXyyXyXyXY",
+      "XYXyyXYYxyy"
+    ],
+    [
+      "XXYXyXyXyy",
+      "XYYXyyxYXyy"
+    ],
+    [
+      "XXYXYxYXYY",
+      "XXYxYXXyxxY"
+    ],
+    [
+      "XXYXyXYXYY",
+      "XXyXYYxyXYY"
+    ]
+  ],
+  "shared_cap36_component_indices_zero_based": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "sharp_ordinary_cyclic_entry_peak_for_shared_component": 37,
+  "scans": {
+    "ordinary": {
+      "cyclic_product_cap": 36,
+      "whitehead_frontier_cap": 27,
+      "beam_width": 128,
+      "seed_classes": 6,
+      "layers": [
+        {
+          "frontier_classes": 6,
+          "minimal_markings": 6,
+          "product_candidates": 12800,
+          "admitted_products": 6248,
+          "distinct_successors_summed_over_markings": 987,
+          "new_short_classes": 22
+        },
+        {
+          "frontier_classes": 22,
+          "minimal_markings": 29,
+          "product_candidates": 89832,
+          "admitted_products": 68420,
+          "distinct_successors_summed_over_markings": 9910,
+          "new_short_classes": 67
+        },
+        {
+          "frontier_classes": 67,
+          "minimal_markings": 72,
+          "product_candidates": 5232360,
+          "admitted_products": 5190298,
+          "distinct_successors_summed_over_markings": 377370,
+          "new_short_classes": 3266
+        },
+        {
+          "frontier_classes": 128,
+          "minimal_markings": 151,
+          "product_candidates": 21554296,
+          "admitted_products": 21546636,
+          "distinct_successors_summed_over_markings": 2643462,
+          "new_short_classes": 21661
+        },
+        {
+          "frontier_classes": 128,
+          "minimal_markings": 153,
+          "product_candidates": 56185656,
+          "admitted_products": 56184916,
+          "distinct_successors_summed_over_markings": 6726974,
+          "new_short_classes": 45856
+        }
+      ],
+      "generated_short_classes": 70878,
+      "primitive_product_hits": 0,
+      "energy_histogram": {
+        "13": 2,
+        "14": 4,
+        "15": 13,
+        "16": 13,
+        "17": 39,
+        "18": 59,
+        "19": 187,
+        "20": 233,
+        "21": 782,
+        "22": 1150,
+        "23": 3006,
+        "24": 4116,
+        "25": 10750,
+        "26": 13890,
+        "27": 36631,
+        "29": 1,
+        "31": 2
+      }
+    },
+    "stable": {
+      "cyclic_product_cap": 36,
+      "whitehead_frontier_cap": 27,
+      "beam_width": 128,
+      "seed_classes": 9,
+      "layers": [
+        {
+          "frontier_classes": 9,
+          "minimal_markings": 10,
+          "product_candidates": 397400,
+          "admitted_products": 397400,
+          "distinct_successors_summed_over_markings": 50676,
+          "new_short_classes": 341
+        },
+        {
+          "frontier_classes": 128,
+          "minimal_markings": 137,
+          "product_candidates": 990320,
+          "admitted_products": 937022,
+          "distinct_successors_summed_over_markings": 127561,
+          "new_short_classes": 733
+        },
+        {
+          "frontier_classes": 128,
+          "minimal_markings": 166,
+          "product_candidates": 1886928,
+          "admitted_products": 1822652,
+          "distinct_successors_summed_over_markings": 239539,
+          "new_short_classes": 489
+        },
+        {
+          "frontier_classes": 128,
+          "minimal_markings": 138,
+          "product_candidates": 716840,
+          "admitted_products": 652790,
+          "distinct_successors_summed_over_markings": 90793,
+          "new_short_classes": 451
+        }
+      ],
+      "generated_short_classes": 2023,
+      "primitive_product_hits": 0,
+      "energy_histogram": {
+        "19": 2,
+        "20": 8,
+        "21": 13,
+        "22": 15,
+        "23": 70,
+        "24": 100,
+        "25": 251,
+        "26": 378,
+        "27": 1186
+      }
+    }
+  },
+  "positive_control": {
+    "cyclic_product_cap": 16,
+    "whitehead_frontier_cap": 14,
+    "beam_width": 8,
+    "seed_classes": 1,
+    "layers": [
+      {
+        "frontier_classes": 1,
+        "minimal_markings": 1,
+        "product_candidates": 200,
+        "admitted_products": 200,
+        "distinct_successors_summed_over_markings": 52,
+        "new_short_classes": 27
+      }
+    ],
+    "generated_short_classes": 28,
+    "primitive_product_hits": 2,
+    "primitive_pairs": [
+      [
+        "xxxy",
+        "xxyXY"
+      ],
+      [
+        "xxxy",
+        "xyyxY"
+      ]
+    ]
+  },
+  "remaining_projection_to_seed_whitehead_moves": [
+    {
+      "generator": "y",
+      "replacement": "yX",
+      "raw_image": [
+        "xxyyXYY",
+        "xxxyXYxYxyXY"
+      ],
+      "signed_key": [
+        "xxyXXYY",
+        "xyxYXyyyxYXy"
+      ]
+    }
+  ],
+  "remaining_projection_C30_routes": [
+    {
+      "root": [
+        "xxyXXYY",
+        "xyxYXyyyxYXy"
+      ],
+      "cap30_target": [
+        "xxyXYxYXYXy",
+        "xxyXYYYxxyXYYYXy"
+      ],
+      "edges": [
+        {
+          "parent": [
+            "xxyXXYY",
+            "xyxYXyyyxYXy"
+          ],
+          "source_marking": [
+            "xxyXXYY",
+            "xyxYXyyyxYXy"
+          ],
+          "product_pair": [
+            "xxxyXYxyxyXY",
+            "xxxyXYxyxYXXy"
+          ],
+          "child": [
+            "xxyXYxYXyy",
+            "xyXYxyyxyXYYY"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": [
+            {
+              "generator": "y",
+              "replacement": "yX",
+              "raw_image": [
+                "xxxyXYxyyXY",
+                "xxyXYxyxYXXy"
+              ],
+              "signed_key": [
+                "xxxyXYxyyXY",
+                "xxyXYxyxYXXy"
+              ]
+            },
+            {
+              "generator": "y",
+              "replacement": "yX",
+              "raw_image": [
+                "xxxyXYxyXyXY",
+                "xyXYxyxYXXy"
+              ],
+              "signed_key": [
+                "xxyXyxYXyXY",
+                "xxxyXYXYxyXY"
+              ]
+            },
+            {
+              "generator": "y",
+              "replacement": "yx",
+              "raw_image": [
+                "xxyyxYXyXY",
+                "xxxyXYXXYxyXY"
+              ],
+              "signed_key": [
+                "xxyXYxYXyy",
+                "xyXYxyyxyXYYY"
+              ]
+            }
+          ]
+        },
+        {
+          "parent": [
+            "xxyXYxYXyy",
+            "xyXYxyyxyXYYY"
+          ],
+          "source_marking": [
+            "xxyXYxYXyy",
+            "xyXYxyyxyXYYY"
+          ],
+          "product_pair": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "child": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": []
+        },
+        {
+          "parent": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "source_marking": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "product_pair": [
+            "xxyXYxYXyy",
+            "xxyxyXYxyxyXY"
+          ],
+          "child": [
+            "xxyXYxxyXYY",
+            "xyxYxyXYYXy"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": [
+            {
+              "generator": "y",
+              "replacement": "yX",
+              "raw_image": [
+                "xyXYxxYXyXy",
+                "xxyyXYxyyXY"
+              ],
+              "signed_key": [
+                "xxyXYxxyXYY",
+                "xyxYxyXYYXy"
+              ]
+            }
+          ]
+        },
+        {
+          "parent": [
+            "xxyXYxxyXYY",
+            "xyxYxyXYYXy"
+          ],
+          "source_marking": [
+            "xxyXYxxyXYY",
+            "xyxYxyXYYXy"
+          ],
+          "product_pair": [
+            "xxyXYxYXYXy",
+            "xxyXYYYxxyXYYYXy"
+          ],
+          "child": [
+            "xxyXYxYXYXy",
+            "xxyXYYYxxyXYYYXy"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": []
+        }
+      ]
+    },
+    {
+      "root": [
+        "xxyXXYY",
+        "xyxYXyyyxYXy"
+      ],
+      "cap30_target": [
+        "xxyXYxYXYXy",
+        "xxyXYYYxyXYYxYXy"
+      ],
+      "edges": [
+        {
+          "parent": [
+            "xxyXXYY",
+            "xyxYXyyyxYXy"
+          ],
+          "source_marking": [
+            "xxyXXYY",
+            "xyxYXyyyxYXy"
+          ],
+          "product_pair": [
+            "xxxyXYxyxyXY",
+            "xxxyXYxyxYXXy"
+          ],
+          "child": [
+            "xxyXYxYXyy",
+            "xyXYxyyxyXYYY"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": [
+            {
+              "generator": "y",
+              "replacement": "yX",
+              "raw_image": [
+                "xxxyXYxyyXY",
+                "xxyXYxyxYXXy"
+              ],
+              "signed_key": [
+                "xxxyXYxyyXY",
+                "xxyXYxyxYXXy"
+              ]
+            },
+            {
+              "generator": "y",
+              "replacement": "yX",
+              "raw_image": [
+                "xxxyXYxyXyXY",
+                "xyXYxyxYXXy"
+              ],
+              "signed_key": [
+                "xxyXyxYXyXY",
+                "xxxyXYXYxyXY"
+              ]
+            },
+            {
+              "generator": "y",
+              "replacement": "yx",
+              "raw_image": [
+                "xxyyxYXyXY",
+                "xxxyXYXXYxyXY"
+              ],
+              "signed_key": [
+                "xxyXYxYXyy",
+                "xyXYxyyxyXYYY"
+              ]
+            }
+          ]
+        },
+        {
+          "parent": [
+            "xxyXYxYXyy",
+            "xyXYxyyxyXYYY"
+          ],
+          "source_marking": [
+            "xxyXYxYXyy",
+            "xyXYxyyxyXYYY"
+          ],
+          "product_pair": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "child": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": []
+        },
+        {
+          "parent": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "source_marking": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "product_pair": [
+            "xxyXYxYXyy",
+            "xxyxyXYxyxyXY"
+          ],
+          "child": [
+            "xxyXYxxyXYY",
+            "xyxYxyXYYXy"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": [
+            {
+              "generator": "y",
+              "replacement": "yX",
+              "raw_image": [
+                "xyXYxxYXyXy",
+                "xxyyXYxyyXY"
+              ],
+              "signed_key": [
+                "xxyXYxxyXYY",
+                "xyxYxyXYYXy"
+              ]
+            }
+          ]
+        },
+        {
+          "parent": [
+            "xxyXYxxyXYY",
+            "xyxYxyXYYXy"
+          ],
+          "source_marking": [
+            "xxyXYxxyXYY",
+            "xyxYxyXYYXy"
+          ],
+          "product_pair": [
+            "xxyXYxYXYXy",
+            "xxyXYYYxyXYYxYXy"
+          ],
+          "child": [
+            "xxyXYxYXYXy",
+            "xxyXYYYxyXYYxYXy"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": []
+        }
+      ]
+    },
+    {
+      "root": [
+        "xxyXXYY",
+        "xyxYXyyyxYXy"
+      ],
+      "cap30_target": [
+        "xxyXYxxyXYY",
+        "xxxyXYYXyxYxxyXY"
+      ],
+      "edges": [
+        {
+          "parent": [
+            "xxyXXYY",
+            "xyxYXyyyxYXy"
+          ],
+          "source_marking": [
+            "xxyXXYY",
+            "xyxYXyyyxYXy"
+          ],
+          "product_pair": [
+            "xxxyXYxyxyXY",
+            "xxxyXYxyxYXXy"
+          ],
+          "child": [
+            "xxyXYxYXyy",
+            "xyXYxyyxyXYYY"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": [
+            {
+              "generator": "y",
+              "replacement": "yX",
+              "raw_image": [
+                "xxxyXYxyyXY",
+                "xxyXYxyxYXXy"
+              ],
+              "signed_key": [
+                "xxxyXYxyyXY",
+                "xxyXYxyxYXXy"
+              ]
+            },
+            {
+              "generator": "y",
+              "replacement": "yX",
+              "raw_image": [
+                "xxxyXYxyXyXY",
+                "xyXYxyxYXXy"
+              ],
+              "signed_key": [
+                "xxyXyxYXyXY",
+                "xxxyXYXYxyXY"
+              ]
+            },
+            {
+              "generator": "y",
+              "replacement": "yx",
+              "raw_image": [
+                "xxyyxYXyXY",
+                "xxxyXYXXYxyXY"
+              ],
+              "signed_key": [
+                "xxyXYxYXyy",
+                "xyXYxyyxyXYYY"
+              ]
+            }
+          ]
+        },
+        {
+          "parent": [
+            "xxyXYxYXyy",
+            "xyXYxyyxyXYYY"
+          ],
+          "source_marking": [
+            "xxyXYxYXyy",
+            "xyXYxyyxyXYYY"
+          ],
+          "product_pair": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "child": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": []
+        },
+        {
+          "parent": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "source_marking": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "product_pair": [
+            "xxyXYxYXyy",
+            "xxyxyXYxyxyXY"
+          ],
+          "child": [
+            "xxyXYxxyXYY",
+            "xyxYxyXYYXy"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": [
+            {
+              "generator": "y",
+              "replacement": "yX",
+              "raw_image": [
+                "xyXYxxYXyXy",
+                "xxyyXYxyyXY"
+              ],
+              "signed_key": [
+                "xxyXYxxyXYY",
+                "xyxYxyXYYXy"
+              ]
+            }
+          ]
+        },
+        {
+          "parent": [
+            "xxyXYxxyXYY",
+            "xyxYxyXYYXy"
+          ],
+          "source_marking": [
+            "xxyXYxxyXYY",
+            "xyxYxyXYYXy"
+          ],
+          "product_pair": [
+            "xxyXYxxyXYY",
+            "xxxyXYYXyxYxxyXY"
+          ],
+          "child": [
+            "xxyXYxxyXYY",
+            "xxxyXYYXyxYxxyXY"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": []
+        }
+      ]
+    },
+    {
+      "root": [
+        "xxyXXYY",
+        "xyxYXyyyxYXy"
+      ],
+      "cap30_target": [
+        "xxyXYxxyXYY",
+        "xxxyXYYxxxyXYYXy"
+      ],
+      "edges": [
+        {
+          "parent": [
+            "xxyXXYY",
+            "xyxYXyyyxYXy"
+          ],
+          "source_marking": [
+            "xxyXXYY",
+            "xyxYXyyyxYXy"
+          ],
+          "product_pair": [
+            "xxxyXYxyxyXY",
+            "xxxyXYxyxYXXy"
+          ],
+          "child": [
+            "xxyXYxYXyy",
+            "xyXYxyyxyXYYY"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": [
+            {
+              "generator": "y",
+              "replacement": "yX",
+              "raw_image": [
+                "xxxyXYxyyXY",
+                "xxyXYxyxYXXy"
+              ],
+              "signed_key": [
+                "xxxyXYxyyXY",
+                "xxyXYxyxYXXy"
+              ]
+            },
+            {
+              "generator": "y",
+              "replacement": "yX",
+              "raw_image": [
+                "xxxyXYxyXyXY",
+                "xyXYxyxYXXy"
+              ],
+              "signed_key": [
+                "xxyXyxYXyXY",
+                "xxxyXYXYxyXY"
+              ]
+            },
+            {
+              "generator": "y",
+              "replacement": "yx",
+              "raw_image": [
+                "xxyyxYXyXY",
+                "xxxyXYXXYxyXY"
+              ],
+              "signed_key": [
+                "xxyXYxYXyy",
+                "xyXYxyyxyXYYY"
+              ]
+            }
+          ]
+        },
+        {
+          "parent": [
+            "xxyXYxYXyy",
+            "xyXYxyyxyXYYY"
+          ],
+          "source_marking": [
+            "xxyXYxYXyy",
+            "xyXYxyyxyXYYY"
+          ],
+          "product_pair": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "child": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": []
+        },
+        {
+          "parent": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "source_marking": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "product_pair": [
+            "xxyXYxYXyy",
+            "xxyxyXYxyxyXY"
+          ],
+          "child": [
+            "xxyXYxxyXYY",
+            "xyxYxyXYYXy"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": [
+            {
+              "generator": "y",
+              "replacement": "yX",
+              "raw_image": [
+                "xyXYxxYXyXy",
+                "xxyyXYxyyXY"
+              ],
+              "signed_key": [
+                "xxyXYxxyXYY",
+                "xyxYxyXYYXy"
+              ]
+            }
+          ]
+        },
+        {
+          "parent": [
+            "xxyXYxxyXYY",
+            "xyxYxyXYYXy"
+          ],
+          "source_marking": [
+            "xxyXYxxyXYY",
+            "xyxYxyXYYXy"
+          ],
+          "product_pair": [
+            "xxyXYxxyXYY",
+            "xxxyXYYxxxyXYYXy"
+          ],
+          "child": [
+            "xxyXYxxyXYY",
+            "xxxyXYYxxxyXYYXy"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": []
+        }
+      ]
+    },
+    {
+      "root": [
+        "xxyXXYY",
+        "xyxYXyyyxYXy"
+      ],
+      "cap30_target": [
+        "xxyXYxxyXYY",
+        "xxyXYYYXyxyxYXy"
+      ],
+      "edges": [
+        {
+          "parent": [
+            "xxyXXYY",
+            "xyxYXyyyxYXy"
+          ],
+          "source_marking": [
+            "xxyXXYY",
+            "xyxYXyyyxYXy"
+          ],
+          "product_pair": [
+            "xxxyXYxyxyXY",
+            "xxxyXYxyxYXXy"
+          ],
+          "child": [
+            "xxyXYxYXyy",
+            "xyXYxyyxyXYYY"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": [
+            {
+              "generator": "y",
+              "replacement": "yX",
+              "raw_image": [
+                "xxxyXYxyyXY",
+                "xxyXYxyxYXXy"
+              ],
+              "signed_key": [
+                "xxxyXYxyyXY",
+                "xxyXYxyxYXXy"
+              ]
+            },
+            {
+              "generator": "y",
+              "replacement": "yX",
+              "raw_image": [
+                "xxxyXYxyXyXY",
+                "xyXYxyxYXXy"
+              ],
+              "signed_key": [
+                "xxyXyxYXyXY",
+                "xxxyXYXYxyXY"
+              ]
+            },
+            {
+              "generator": "y",
+              "replacement": "yx",
+              "raw_image": [
+                "xxyyxYXyXY",
+                "xxxyXYXXYxyXY"
+              ],
+              "signed_key": [
+                "xxyXYxYXyy",
+                "xyXYxyyxyXYYY"
+              ]
+            }
+          ]
+        },
+        {
+          "parent": [
+            "xxyXYxYXyy",
+            "xyXYxyyxyXYYY"
+          ],
+          "source_marking": [
+            "xxyXYxYXyy",
+            "xyXYxyyxyXYYY"
+          ],
+          "product_pair": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "child": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": []
+        },
+        {
+          "parent": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "source_marking": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "product_pair": [
+            "xxyxyXYxyxyXY",
+            "xxyXYYxyyxyXY"
+          ],
+          "child": [
+            "xxyXYxxyXYY",
+            "xxyXYYxyXYXYxy"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": [
+            {
+              "generator": "y",
+              "replacement": "yX",
+              "raw_image": [
+                "xxyyXYxyyXY",
+                "xxyXYxYxyXyyXY"
+              ],
+              "signed_key": [
+                "xxyXYxxyXYY",
+                "xxyXYYxyXYXYxy"
+              ]
+            }
+          ]
+        },
+        {
+          "parent": [
+            "xxyXYxxyXYY",
+            "xxyXYYxyXYXYxy"
+          ],
+          "source_marking": [
+            "xxyXYxxyXYY",
+            "xxyXYYxyXYXYxy"
+          ],
+          "product_pair": [
+            "xxyXYxxyXYY",
+            "xxyXYYYXyxyxYXy"
+          ],
+          "child": [
+            "xxyXYxxyXYY",
+            "xxyXYYYXyxyxYXy"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": []
+        }
+      ]
+    },
+    {
+      "root": [
+        "xxyXXYY",
+        "xyxYXyyyxYXy"
+      ],
+      "cap30_target": [
+        "xxyXYxxyXYY",
+        "xxyXYYxyXYXYxy"
+      ],
+      "edges": [
+        {
+          "parent": [
+            "xxyXXYY",
+            "xyxYXyyyxYXy"
+          ],
+          "source_marking": [
+            "xxyXXYY",
+            "xyxYXyyyxYXy"
+          ],
+          "product_pair": [
+            "xxxyXYxyxyXY",
+            "xxxyXYxyxYXXy"
+          ],
+          "child": [
+            "xxyXYxYXyy",
+            "xyXYxyyxyXYYY"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": [
+            {
+              "generator": "y",
+              "replacement": "yX",
+              "raw_image": [
+                "xxxyXYxyyXY",
+                "xxyXYxyxYXXy"
+              ],
+              "signed_key": [
+                "xxxyXYxyyXY",
+                "xxyXYxyxYXXy"
+              ]
+            },
+            {
+              "generator": "y",
+              "replacement": "yX",
+              "raw_image": [
+                "xxxyXYxyXyXY",
+                "xyXYxyxYXXy"
+              ],
+              "signed_key": [
+                "xxyXyxYXyXY",
+                "xxxyXYXYxyXY"
+              ]
+            },
+            {
+              "generator": "y",
+              "replacement": "yx",
+              "raw_image": [
+                "xxyyxYXyXY",
+                "xxxyXYXXYxyXY"
+              ],
+              "signed_key": [
+                "xxyXYxYXyy",
+                "xyXYxyyxyXYYY"
+              ]
+            }
+          ]
+        },
+        {
+          "parent": [
+            "xxyXYxYXyy",
+            "xyXYxyyxyXYYY"
+          ],
+          "source_marking": [
+            "xxyXYxYXyy",
+            "xyXYxyyxyXYYY"
+          ],
+          "product_pair": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "child": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": []
+        },
+        {
+          "parent": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "source_marking": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "product_pair": [
+            "xxyxyXYxyxyXY",
+            "xxyXYYxyyxyXY"
+          ],
+          "child": [
+            "xxyXYxxyXYY",
+            "xxyXYYxyXYXYxy"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": [
+            {
+              "generator": "y",
+              "replacement": "yX",
+              "raw_image": [
+                "xxyyXYxyyXY",
+                "xxyXYxYxyXyyXY"
+              ],
+              "signed_key": [
+                "xxyXYxxyXYY",
+                "xxyXYYxyXYXYxy"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "root": [
+        "xxyXXYY",
+        "xyxYXyyyxYXy"
+      ],
+      "cap30_target": [
+        "xxyXYxxyXYY",
+        "xxyyxYxyXYYxyXYY"
+      ],
+      "edges": [
+        {
+          "parent": [
+            "xxyXXYY",
+            "xyxYXyyyxYXy"
+          ],
+          "source_marking": [
+            "xxyXXYY",
+            "xyxYXyyyxYXy"
+          ],
+          "product_pair": [
+            "xxxyXYxyxyXY",
+            "xxxyXYxyxYXXy"
+          ],
+          "child": [
+            "xxyXYxYXyy",
+            "xyXYxyyxyXYYY"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": [
+            {
+              "generator": "y",
+              "replacement": "yX",
+              "raw_image": [
+                "xxxyXYxyyXY",
+                "xxyXYxyxYXXy"
+              ],
+              "signed_key": [
+                "xxxyXYxyyXY",
+                "xxyXYxyxYXXy"
+              ]
+            },
+            {
+              "generator": "y",
+              "replacement": "yX",
+              "raw_image": [
+                "xxxyXYxyXyXY",
+                "xyXYxyxYXXy"
+              ],
+              "signed_key": [
+                "xxyXyxYXyXY",
+                "xxxyXYXYxyXY"
+              ]
+            },
+            {
+              "generator": "y",
+              "replacement": "yx",
+              "raw_image": [
+                "xxyyxYXyXY",
+                "xxxyXYXXYxyXY"
+              ],
+              "signed_key": [
+                "xxyXYxYXyy",
+                "xyXYxyyxyXYYY"
+              ]
+            }
+          ]
+        },
+        {
+          "parent": [
+            "xxyXYxYXyy",
+            "xyXYxyyxyXYYY"
+          ],
+          "source_marking": [
+            "xxyXYxYXyy",
+            "xyXYxyyxyXYYY"
+          ],
+          "product_pair": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "child": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": []
+        },
+        {
+          "parent": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "source_marking": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "product_pair": [
+            "xxyXYxYXyy",
+            "xxyxyXYxyxyXY"
+          ],
+          "child": [
+            "xxyXYxxyXYY",
+            "xyxYxyXYYXy"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": [
+            {
+              "generator": "y",
+              "replacement": "yX",
+              "raw_image": [
+                "xyXYxxYXyXy",
+                "xxyyXYxyyXY"
+              ],
+              "signed_key": [
+                "xxyXYxxyXYY",
+                "xyxYxyXYYXy"
+              ]
+            }
+          ]
+        },
+        {
+          "parent": [
+            "xxyXYxxyXYY",
+            "xyxYxyXYYXy"
+          ],
+          "source_marking": [
+            "xxyXYxxyXYY",
+            "xyxYxyXYYXy"
+          ],
+          "product_pair": [
+            "xxyXYxxyXYY",
+            "xxyyxYxyXYYxyXYY"
+          ],
+          "child": [
+            "xxyXYxxyXYY",
+            "xxyyxYxyXYYxyXYY"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": []
+        }
+      ]
+    },
+    {
+      "root": [
+        "xxyXXYY",
+        "xyxYXyyyxYXy"
+      ],
+      "cap30_target": [
+        "xxyXYxxyXYY",
+        "xyxYxyXYYXy"
+      ],
+      "edges": [
+        {
+          "parent": [
+            "xxyXXYY",
+            "xyxYXyyyxYXy"
+          ],
+          "source_marking": [
+            "xxyXXYY",
+            "xyxYXyyyxYXy"
+          ],
+          "product_pair": [
+            "xxxyXYxyxyXY",
+            "xxxyXYxyxYXXy"
+          ],
+          "child": [
+            "xxyXYxYXyy",
+            "xyXYxyyxyXYYY"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": [
+            {
+              "generator": "y",
+              "replacement": "yX",
+              "raw_image": [
+                "xxxyXYxyyXY",
+                "xxyXYxyxYXXy"
+              ],
+              "signed_key": [
+                "xxxyXYxyyXY",
+                "xxyXYxyxYXXy"
+              ]
+            },
+            {
+              "generator": "y",
+              "replacement": "yX",
+              "raw_image": [
+                "xxxyXYxyXyXY",
+                "xyXYxyxYXXy"
+              ],
+              "signed_key": [
+                "xxyXyxYXyXY",
+                "xxxyXYXYxyXY"
+              ]
+            },
+            {
+              "generator": "y",
+              "replacement": "yx",
+              "raw_image": [
+                "xxyyxYXyXY",
+                "xxxyXYXXYxyXY"
+              ],
+              "signed_key": [
+                "xxyXYxYXyy",
+                "xyXYxyyxyXYYY"
+              ]
+            }
+          ]
+        },
+        {
+          "parent": [
+            "xxyXYxYXyy",
+            "xyXYxyyxyXYYY"
+          ],
+          "source_marking": [
+            "xxyXYxYXyy",
+            "xyXYxyyxyXYYY"
+          ],
+          "product_pair": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "child": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": []
+        },
+        {
+          "parent": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "source_marking": [
+            "xxyXYxYXyy",
+            "xxyXYYxyyxyXY"
+          ],
+          "product_pair": [
+            "xxyXYxYXyy",
+            "xxyxyXYxyxyXY"
+          ],
+          "child": [
+            "xxyXYxxyXYY",
+            "xyxYxyXYYXy"
+          ],
+          "source_marking_changes": [],
+          "target_marking_changes": [
+            {
+              "generator": "y",
+              "replacement": "yX",
+              "raw_image": [
+                "xyXYxxYXyXy",
+                "xxyyXYxyyXY"
+              ],
+              "signed_key": [
+                "xxyXYxxyXYY",
+                "xyxYxyXYYXy"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "nonprimitive_and_geometry": {
+    "stable_geometry": {
+      "input_sha256": "faddafa389d9d3d8b4770004ef34ece2749c8e89aa7e236a0364a4688862708a",
+      "source_pairs": 2023,
+      "strict_whitehead_shortenings": 0,
+      "distinct_whitehead_minimal_keys": 2023,
+      "classification": {
+        "PARITY_OBSTRUCTION": 2023
+      },
+      "remaining": []
+    },
+    "stable_reverse_archive": {
+      "status": "NO_SUBGROUP_JOIN",
+      "forward_pairs": 2023,
+      "forward_distinct_words": 1928,
+      "forward_cap": 27,
+      "forward_minimum_coordinate": 7,
+      "reverse_pairs": 23902,
+      "reverse_rotation_pairs": 6230442,
+      "reverse_distinct_rotated_cores": 2675055,
+      "reverse_geodesic_bridges": 44928,
+      "primitive_slopes_constructed": 3389533,
+      "coordinates_found_in_forward_catalogue": 175886,
+      "basis_pair_lookups": 984,
+      "core_topologies": {
+        "barbell": 51012,
+        "rose": 861364,
+        "theta": 1807607
+      }
+    },
+    "ordinary_through_energy23_geometry": {
+      "input_sha256": "a5600e833fc7318de90572ff97fc9e65f192abad9e5f878629a9bf91c03c906f",
+      "source_pairs": 5488,
+      "strict_whitehead_shortenings": 0,
+      "distinct_whitehead_minimal_keys": 5488,
+      "classification": {
+        "PARITY_OBSTRUCTION": 5488
+      },
+      "remaining": []
+    },
+    "ordinary_through_energy23_reverse_archive": {
+      "status": "NO_SUBGROUP_JOIN",
+      "forward_pairs": 5488,
+      "forward_distinct_words": 5200,
+      "forward_cap": 23,
+      "forward_minimum_coordinate": 5,
+      "reverse_pairs": 23902,
+      "reverse_rotation_pairs": 6230442,
+      "reverse_distinct_rotated_cores": 2675055,
+      "reverse_geodesic_bridges": 52646,
+      "primitive_slopes_constructed": 2952590,
+      "coordinates_found_in_forward_catalogue": 452287,
+      "basis_pair_lookups": 10097,
+      "core_topologies": {
+        "barbell": 58730,
+        "rose": 861364,
+        "theta": 1807607
+      }
+    }
+  }
+}

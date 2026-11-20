@@ -1,0 +1,100 @@
+{
+  "wreath_group": "restricted wreath product A5 wr Z",
+  "local_seed_in_braid_derived": "YXyxyXXyxYXYxxxYXyxyXXyxYXYXyxyXYxxYXYxyXyxyXYxxYXYxyX",
+  "number_of_explicit_single_site_lifts_in_braid_derived": 60,
+  "initial_lamp_sites_after_braid_path": [
+    [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    [
+      -7,
+      -6,
+      -5,
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3
+    ]
+  ],
+  "stages": [
+    {
+      "corrected_row": 1,
+      "sites": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "local_blocks": 19,
+      "donor_products": 76,
+      "through_move": 19661
+    },
+    {
+      "corrected_row": 0,
+      "sites": [
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "local_blocks": 19,
+      "donor_products": 38,
+      "through_move": 24649
+    }
+  ],
+  "strict_free_moves": 24649,
+  "raw_peak": 2500688,
+  "free_endpoint_lengths": [
+    2436675,
+    63987
+  ],
+  "free_endpoint_sha256": [
+    "8c60561adae78e368fe961580ced7443a8f7b73d13f2fa2ddaf653f2e9d04191",
+    "ea986df10a5f5cafd22c1d5bda28c660c19107db17b8de4b8991cf50f324cc6b"
+  ],
+  "independent_wreath_lamp_replay_matches_basis": true,
+  "independent_braid_fox_audit": [
+    {
+      "row": "x",
+      "fox_supports": [
+        0,
+        0
+      ]
+    },
+    {
+      "row": "y",
+      "fox_supports": [
+        0,
+        0
+      ]
+    }
+  ]
+}

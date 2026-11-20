@@ -1,0 +1,32 @@
+{
+  "prefix_replay": {
+    "moves": 544,
+    "raw_peak": 30,
+    "cyclic_peak": 22,
+    "target": [
+      "XXXYY",
+      "XYXyz",
+      "XzzyZ"
+    ],
+    "first_pivotless_step": 462
+  },
+  "first_exit_seed": [
+    "XXXXYYY",
+    "XXXXYYYZ",
+    "XYxYXy"
+  ],
+  "excursion_products": 39,
+  "strict_signed_chart": {
+    "pivot_slot": 2,
+    "eliminated": "y",
+    "pivot": "XzzyZ",
+    "projected_pair": [
+      "XXXYXyXyy",
+      "XYXyyXYYxyy"
+    ],
+    "requested_pair": [
+      "XXXYYXYXy",
+      "XYYXyXYYxyy"
+    ]
+  }
+}

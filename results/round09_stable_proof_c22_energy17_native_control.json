@@ -1,0 +1,9 @@
+{
+  "status": "NO_PRIMITIVE_PROJECTION",
+  "energy_limit": 17,
+  "states": 107734,
+  "states_without_primitive_row": 2,
+  "charts_examined_one_per_primitive_row": 264045,
+  "row_classes_classified": 32470,
+  "uncached_projection_checks": 236029
+}

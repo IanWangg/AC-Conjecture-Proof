@@ -1,0 +1,32 @@
+{
+  "generation": {
+    "source_tuples": 11951,
+    "substitution_word_limit": 5,
+    "substitutions": 432,
+    "candidate_tuples": 5162832,
+    "maximum_candidate_coordinate_length": 37,
+    "maximum_candidate_energy": 56,
+    "source_sha256": "dc047ba7c1aeef11e8626a567f35e8f3bed21bce81000964d62dd52934ce161f",
+    "candidate_sha256": "fca4c1f4353a2c44b5c1a412830fa078befb933fa55608529d403f5aff45f30b"
+  },
+  "primitive_screen": {
+    "status": "NO_PRIMITIVE_PROJECTION",
+    "energy_limit": 100,
+    "states": 5162832,
+    "states_without_primitive_row": 1523292,
+    "charts_examined_one_per_primitive_row": 5126788,
+    "row_classes_classified": 1811201,
+    "uncached_projection_checks": 4518508
+  },
+  "overlength_positive_control": {
+    "status": "PRIMITIVE",
+    "rows": [
+      "z",
+      "xyyyyyyyyyyyyyyyyyyyyyy",
+      "y"
+    ],
+    "pivot_slot": 0,
+    "witness_slot": 1,
+    "primitive_word": "xyyyyyyyyyyyyyyyyyyyyyy"
+  }
+}

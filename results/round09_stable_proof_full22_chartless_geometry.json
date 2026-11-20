@@ -1,0 +1,17 @@
+{
+  "states": 173389,
+  "abstract_nonplanar": 102942,
+  "abstract_planar": 70447,
+  "abstract_planar_minimal_signed_diagrams": 41495,
+  "paired_rotations": 5615442,
+  "spherical": [],
+  "chartless_catalogue_sha256": "f6bed6dfbd9cb9b40005fc8acbc251e2055b35ff0e896e6ad1003e90da25b562",
+  "energy18_prefilter_control": {
+    "states": 54,
+    "abstract_nonplanar": 36,
+    "abstract_planar": 18,
+    "abstract_planar_minimal_signed_diagrams": 18,
+    "paired_rotations": 3360,
+    "spherical": []
+  }
+}

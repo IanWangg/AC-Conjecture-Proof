@@ -1,0 +1,544 @@
+{
+  "D23_swaps": {
+    "compiled": {
+      "moves": 8076,
+      "move_counts": {
+        "stabilize": 1,
+        "conjugate": 7595,
+        "multiply": 262,
+        "invert": 217,
+        "destabilize": 1
+      },
+      "rank_peak": 3,
+      "raw_peak": 135,
+      "cyclic_peak": 89,
+      "initial_marking_moves": 6840,
+      "end_transported_prefix": 7942,
+      "prefix_moves": 148,
+      "pivot_slot": 0,
+      "descent": [
+        {
+          "multiplier": "Z",
+          "cut": "XYZy",
+          "result": [
+            "XyZYYxy"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "XYZz",
+          "result": [
+            "XZYxy"
+          ]
+        },
+        {
+          "multiplier": "X",
+          "cut": "XYyz",
+          "result": [
+            "XyzY"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "YZz",
+          "result": [
+            "Xz"
+          ]
+        },
+        {
+          "multiplier": "X",
+          "cut": "XYZ",
+          "result": [
+            "Z"
+          ]
+        }
+      ],
+      "literal_source_letter": null,
+      "old_generator_shear_factors": "swaps",
+      "basic_marking_factors": 45,
+      "marking": {
+        "x": "XYzxyyxx",
+        "y": "XXYYXZyxzxyyxx",
+        "z": "XXYXYzxyyxx"
+      },
+      "transformed_rank_three_words": [
+        "XXYYXZXZxzxyyxx",
+        "XXYYXZyXYYXZyXYx",
+        "XXYYXZyXYYXZXXYxyxzxyyxx"
+      ],
+      "final_words": [
+        "XYXYYXyXYYXy",
+        "XXXYxyxyXYY"
+      ],
+      "strict_ledger_sha256": "af1e731f8fc5fb6741a85c6dcec17d70e76cf32ccfa90569bea68f34245a802f"
+    },
+    "independent_native_replay": {
+      "moves": 8076,
+      "rank_peak": 3,
+      "raw_peak": 135,
+      "cyclic_peak": 89,
+      "final_words": [
+        "XYXYYXyXYYXy",
+        "XXXYxyxyXYY"
+      ]
+    }
+  },
+  "D23_commutator": {
+    "compiled": {
+      "moves": 5575,
+      "move_counts": {
+        "stabilize": 1,
+        "conjugate": 5221,
+        "multiply": 189,
+        "invert": 163,
+        "destabilize": 1
+      },
+      "rank_peak": 3,
+      "raw_peak": 164,
+      "cyclic_peak": 98,
+      "initial_marking_moves": 4339,
+      "end_transported_prefix": 5441,
+      "prefix_moves": 148,
+      "pivot_slot": 0,
+      "descent": [
+        {
+          "multiplier": "Z",
+          "cut": "XYZy",
+          "result": [
+            "XyZYYxy"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "XYZz",
+          "result": [
+            "XZYxy"
+          ]
+        },
+        {
+          "multiplier": "X",
+          "cut": "XYyz",
+          "result": [
+            "XyzY"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "YZz",
+          "result": [
+            "Xz"
+          ]
+        },
+        {
+          "multiplier": "X",
+          "cut": "XYZ",
+          "result": [
+            "Z"
+          ]
+        }
+      ],
+      "literal_source_letter": null,
+      "old_generator_shear_factors": "commutator",
+      "basic_marking_factors": 25,
+      "marking": {
+        "x": "XYzxyyxx",
+        "y": "XXYYXZyxzxyyxx",
+        "z": "XXYXYzxyyxx"
+      },
+      "transformed_rank_three_words": [
+        "XXYYXZXZxzxyyxx",
+        "XXYYXZyXYYXZyXYx",
+        "XXYYXZyXYYXZXXYxyxzxyyxx"
+      ],
+      "final_words": [
+        "XYXYYXyXYYXy",
+        "XXXYxyxyXYY"
+      ],
+      "strict_ledger_sha256": "d505e68352924835dc5dde6cf8a8e3764c1a3d94d516f9fbdb5ae7045f0ad421"
+    },
+    "independent_native_replay": {
+      "moves": 5575,
+      "rank_peak": 3,
+      "raw_peak": 164,
+      "cyclic_peak": 98,
+      "final_words": [
+        "XYXYYXyXYYXy",
+        "XXXYxyxyXYY"
+      ]
+    }
+  },
+  "B27_swaps": {
+    "compiled": {
+      "moves": 22094,
+      "move_counts": {
+        "stabilize": 1,
+        "invert": 360,
+        "multiply": 355,
+        "conjugate": 21377,
+        "destabilize": 1
+      },
+      "rank_peak": 3,
+      "raw_peak": 196,
+      "cyclic_peak": 135,
+      "initial_marking_moves": 18058,
+      "end_transported_prefix": 21467,
+      "prefix_moves": 323,
+      "pivot_slot": 1,
+      "descent": [
+        {
+          "multiplier": "X",
+          "cut": "XYZy",
+          "result": [
+            "XYYYzz"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "Yx",
+          "result": [
+            "XYYzz"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "Yx",
+          "result": [
+            "XYzz"
+          ]
+        },
+        {
+          "multiplier": "X",
+          "cut": "XZyz",
+          "result": [
+            "Yzz"
+          ]
+        },
+        {
+          "multiplier": "Z",
+          "cut": "XYZ",
+          "result": [
+            "Yz"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "XYZ",
+          "result": [
+            "Z"
+          ]
+        }
+      ],
+      "literal_source_letter": null,
+      "old_generator_shear_factors": "swaps",
+      "basic_marking_factors": 60,
+      "marking": {
+        "x": "YZYxxyzyxyzy",
+        "y": "YZYXYZYXyzyxyzy",
+        "z": "YZYXzyxxxyzyxyzy"
+      },
+      "transformed_rank_three_words": [
+        "YZYXYZYXXXYZYXXXYZYXXXYZYZxyzy",
+        "YZYXYZYXXXYZYzyzyxxxyzyxyzy",
+        "YZYXYZYXXXYZYxyzyXXYZYZxxyzyzyxxxyzyxyzy"
+      ],
+      "final_words": [
+        "XXXYYXXXYYXXXYYYY",
+        "XXYYxxyxyy"
+      ],
+      "strict_ledger_sha256": "809cc896cd105d4b0b26f74a6d5eeb181ead8da67c2fcdd6ce9e30676b826303"
+    },
+    "independent_native_replay": {
+      "moves": 22094,
+      "rank_peak": 3,
+      "raw_peak": 196,
+      "cyclic_peak": 135,
+      "final_words": [
+        "XXXYYXXXYYXXXYYYY",
+        "XXYYxxyxyy"
+      ]
+    }
+  },
+  "B27_commutator": {
+    "compiled": {
+      "moves": 12415,
+      "move_counts": {
+        "stabilize": 1,
+        "invert": 220,
+        "conjugate": 11955,
+        "multiply": 238,
+        "destabilize": 1
+      },
+      "rank_peak": 3,
+      "raw_peak": 186,
+      "cyclic_peak": 110,
+      "initial_marking_moves": 8379,
+      "end_transported_prefix": 11788,
+      "prefix_moves": 323,
+      "pivot_slot": 1,
+      "descent": [
+        {
+          "multiplier": "X",
+          "cut": "XYZy",
+          "result": [
+            "XYYYzz"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "Yx",
+          "result": [
+            "XYYzz"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "Yx",
+          "result": [
+            "XYzz"
+          ]
+        },
+        {
+          "multiplier": "X",
+          "cut": "XZyz",
+          "result": [
+            "Yzz"
+          ]
+        },
+        {
+          "multiplier": "Z",
+          "cut": "XYZ",
+          "result": [
+            "Yz"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "XYZ",
+          "result": [
+            "Z"
+          ]
+        }
+      ],
+      "literal_source_letter": null,
+      "old_generator_shear_factors": "commutator",
+      "basic_marking_factors": 30,
+      "marking": {
+        "x": "YZYxxyzyxyzy",
+        "y": "YZYXYZYXyzyxyzy",
+        "z": "YZYXzyxxxyzyxyzy"
+      },
+      "transformed_rank_three_words": [
+        "YZYXYZYXXXYZYXXXYZYXXXYZYZxyzy",
+        "YZYXYZYXXXYZYzyzyxxxyzyxyzy",
+        "YZYXYZYXXXYZYxyzyXXYZYZxxyzyzyxxxyzyxyzy"
+      ],
+      "final_words": [
+        "XXXYYXXXYYXXXYYYY",
+        "XXYYxxyxyy"
+      ],
+      "strict_ledger_sha256": "4df0fbba145322190fdf6d8a6148694e021b8d9ffaaf05611526b2ec9dc92c46"
+    },
+    "independent_native_replay": {
+      "moves": 12415,
+      "rank_peak": 3,
+      "raw_peak": 186,
+      "cyclic_peak": 110,
+      "final_words": [
+        "XXXYYXXXYYXXXYYYY",
+        "XXYYxxyxyy"
+      ]
+    }
+  },
+  "cap23_literal0": {
+    "compiled": {
+      "moves": 2114,
+      "move_counts": {
+        "stabilize": 1,
+        "conjugate": 1877,
+        "multiply": 111,
+        "invert": 124,
+        "destabilize": 1
+      },
+      "rank_peak": 3,
+      "raw_peak": 146,
+      "cyclic_peak": 112,
+      "initial_marking_moves": 1218,
+      "end_transported_prefix": 1987,
+      "prefix_moves": 271,
+      "pivot_slot": 2,
+      "descent": [],
+      "literal_source_letter": "x",
+      "old_generator_shear_factors": "commutator",
+      "basic_marking_factors": 14,
+      "marking": {
+        "x": "XXYxyxz",
+        "y": "x",
+        "z": "y"
+      },
+      "transformed_rank_three_words": [
+        "ZXYXyXYxyxzYxxYXy",
+        "ZXYXyxxZXYXyxxYxyxzX",
+        "Z"
+      ],
+      "final_words": [
+        "XXyXYXyxYxyxYxy",
+        "XXYxyXYxyxYXy"
+      ],
+      "strict_ledger_sha256": "8331728412f2aabe9c976d60e8831682b148937ff1394a6028305d0c6ab3f853"
+    },
+    "independent_native_replay": {
+      "moves": 2114,
+      "rank_peak": 3,
+      "raw_peak": 146,
+      "cyclic_peak": 112,
+      "final_words": [
+        "XXyXYXyxYxyxYxy",
+        "XXYxyXYxyxYXy"
+      ]
+    }
+  },
+  "cap23_literal1": {
+    "compiled": {
+      "moves": 2617,
+      "move_counts": {
+        "stabilize": 1,
+        "invert": 123,
+        "conjugate": 2388,
+        "multiply": 104,
+        "destabilize": 1
+      },
+      "rank_peak": 3,
+      "raw_peak": 189,
+      "cyclic_peak": 151,
+      "initial_marking_moves": 1391,
+      "end_transported_prefix": 2478,
+      "prefix_moves": 271,
+      "pivot_slot": 1,
+      "descent": [],
+      "literal_source_letter": "y",
+      "old_generator_shear_factors": "commutator",
+      "basic_marking_factors": 12,
+      "marking": {
+        "x": "x",
+        "y": "xyxyxYXXz",
+        "z": "y"
+      },
+      "transformed_rank_three_words": [
+        "XXXZxxyXYXYxyxyxYXXzxyxyxYXXz",
+        "XXZxx",
+        "XZxxyXYXXYxyxyxYXXz"
+      ],
+      "final_words": [
+        "XXXyXYXYxyxyxYXyxyxY",
+        "XXYxyxyxYXyXY"
+      ],
+      "strict_ledger_sha256": "70be2d8cf961358006446f5c04f8b2c025a938fbcaadf7d0053dbf2b76ecdc45"
+    },
+    "independent_native_replay": {
+      "moves": 2617,
+      "rank_peak": 3,
+      "raw_peak": 189,
+      "cyclic_peak": 151,
+      "final_words": [
+        "XXXyXYXYxyxyxYXyxyxY",
+        "XXYxyxyxYXyXY"
+      ]
+    }
+  },
+  "cap23_literal2": {
+    "compiled": {
+      "moves": 2139,
+      "move_counts": {
+        "stabilize": 1,
+        "conjugate": 1903,
+        "multiply": 111,
+        "invert": 123,
+        "destabilize": 1
+      },
+      "rank_peak": 3,
+      "raw_peak": 146,
+      "cyclic_peak": 112,
+      "initial_marking_moves": 1218,
+      "end_transported_prefix": 2005,
+      "prefix_moves": 277,
+      "pivot_slot": 2,
+      "descent": [],
+      "literal_source_letter": "x",
+      "old_generator_shear_factors": "commutator",
+      "basic_marking_factors": 14,
+      "marking": {
+        "x": "XXYxyxz",
+        "y": "x",
+        "z": "y"
+      },
+      "transformed_rank_three_words": [
+        "ZXYXyxxYXyXXXYxyxzYxx",
+        "ZXYXyxxZXYXyxxYxyxzX",
+        "Z"
+      ],
+      "final_words": [
+        "XXXYxyxYxYXyxxYXy",
+        "XXYxyXYxyxYXy"
+      ],
+      "strict_ledger_sha256": "e2b183ec759f9c7ecd3a4f45e9bf15f1c836663251cc9dc944318605ed340d89"
+    },
+    "independent_native_replay": {
+      "moves": 2139,
+      "rank_peak": 3,
+      "raw_peak": 146,
+      "cyclic_peak": 112,
+      "final_words": [
+        "XXXYxyxYxYXyxxYXy",
+        "XXYxyXYxyxYXy"
+      ]
+    }
+  },
+  "cap22_energy20": {
+    "compiled": {
+      "moves": 1871,
+      "move_counts": {
+        "stabilize": 1,
+        "invert": 157,
+        "conjugate": 1606,
+        "multiply": 106,
+        "destabilize": 1
+      },
+      "rank_peak": 3,
+      "raw_peak": 121,
+      "cyclic_peak": 97,
+      "initial_marking_moves": 563,
+      "end_transported_prefix": 1827,
+      "prefix_moves": 544,
+      "pivot_slot": 2,
+      "descent": [],
+      "literal_source_letter": "y",
+      "old_generator_shear_factors": "commutator",
+      "basic_marking_factors": 8,
+      "marking": {
+        "x": "x",
+        "y": "zYYxy",
+        "z": "y"
+      },
+      "transformed_rank_three_words": [
+        "XXXYXyyZYXyyZ",
+        "XYXyyZXzYYxyy",
+        "XyyzYYx"
+      ],
+      "final_words": [
+        "XXXYXyXyy",
+        "XYXyyXYYxyy"
+      ],
+      "strict_ledger_sha256": "e4bd922740d52f964b6dd46df56193e9c7d5854cd8f1e9399afd9022db64721f"
+    },
+    "independent_native_replay": {
+      "moves": 1871,
+      "rank_peak": 3,
+      "raw_peak": 121,
+      "cyclic_peak": 97,
+      "final_words": [
+        "XXXYXyXyy",
+        "XYXyyXYYxyy"
+      ]
+    }
+  }
+}

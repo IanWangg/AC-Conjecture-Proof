@@ -1,0 +1,296 @@
+{
+  "signed_projections": 8189,
+  "whitehead_sublevel": 30,
+  "minimum_energy_above_sublevel": 104,
+  "ambient_classes": 3845,
+  "ambient_states": 46276,
+  "anchored_classes": {
+    "29": 3654,
+    "30": 3742
+  },
+  "anchored_sources": {
+    "29": 7833,
+    "30": 7940
+  },
+  "unanchored_source_energies": {
+    "20": 6,
+    "21": 7,
+    "22": 3,
+    "23": 16,
+    "24": 11,
+    "25": 11,
+    "26": 18,
+    "27": 20,
+    "28": 2,
+    "29": 26,
+    "30": 8,
+    "31": 1,
+    "33": 2,
+    "35": 1,
+    "39": 1,
+    "41": 1,
+    "47": 1,
+    "51": 1,
+    "52": 1,
+    "53": 1,
+    "54": 2,
+    "55": 1,
+    "59": 2,
+    "62": 1,
+    "67": 1
+  },
+  "shortest_unanchored_sources": [
+    {
+      "source": [
+        "XXXYY",
+        "XYXZy",
+        "XzyZZ"
+      ],
+      "projected": [
+        "XXXYYXYXy",
+        "XYYXyXYYxyy"
+      ],
+      "chart": "literal",
+      "eliminated": "y",
+      "pivot": "XzyZZ"
+    },
+    {
+      "source": [
+        "XXXYY",
+        "XYZXy",
+        "XZZyz"
+      ],
+      "projected": [
+        "XXXyXYXYY",
+        "XYYYXyyxYXy"
+      ],
+      "chart": "literal",
+      "eliminated": "y",
+      "pivot": "XZZyz"
+    },
+    {
+      "source": [
+        "XXXYY",
+        "XYXZy",
+        "XZZYzz"
+      ],
+      "projected": [
+        "XXXyyxxYY",
+        "XYXyyxYYXyy"
+      ],
+      "chart": "literal",
+      "eliminated": "x",
+      "pivot": "XZZYzz"
+    },
+    {
+      "source": [
+        "XXXYY",
+        "XYZXy",
+        "XzzYZZ"
+      ],
+      "projected": [
+        "XXXYYxxyy",
+        "XYYXyyXYxyy"
+      ],
+      "chart": "literal",
+      "eliminated": "x",
+      "pivot": "XzzYZZ"
+    },
+    {
+      "source": [
+        "XYXZy",
+        "XYzyZZ",
+        "XyZXz"
+      ],
+      "projected": [
+        "XXyxYYYXyxY",
+        "XYxYxyyXy"
+      ],
+      "chart": "literal",
+      "eliminated": "x",
+      "pivot": "XYzyZZ"
+    },
+    {
+      "source": [
+        "XXYxZ",
+        "XYYzzY",
+        "XZYzY"
+      ],
+      "projected": [
+        "XXYYxYXYY",
+        "XXYxYXXyxxY"
+      ],
+      "chart": "literal",
+      "eliminated": "y",
+      "pivot": "XXYxZ"
+    },
+    {
+      "source": [
+        "XXXYY",
+        "XXYxzY",
+        "XZZyz"
+      ],
+      "projected": [
+        "XXXyXYXYY",
+        "XXyXYYxyyXYY"
+      ],
+      "chart": "literal",
+      "eliminated": "y",
+      "pivot": "XZZyz"
+    },
+    {
+      "source": [
+        "XXXYY",
+        "XXzYxY",
+        "XZZyz"
+      ],
+      "projected": [
+        "XXXyXYXYY",
+        "XXyyXYYxyXYY"
+      ],
+      "chart": "literal",
+      "eliminated": "y",
+      "pivot": "XZZyz"
+    },
+    {
+      "source": [
+        "XXXYY",
+        "XYXZy",
+        "XzyZZ"
+      ],
+      "projected": [
+        "XXyyXyXyXY",
+        "XYXyyXYYxyy"
+      ],
+      "chart": "literal",
+      "eliminated": "x",
+      "pivot": "XzyZZ"
+    },
+    {
+      "source": [
+        "XXXYY",
+        "XYZXy",
+        "XZZyz"
+      ],
+      "projected": [
+        "XXYXyXyXyy",
+        "XYYXyyxYXyy"
+      ],
+      "chart": "literal",
+      "eliminated": "x",
+      "pivot": "XZZyz"
+    },
+    {
+      "source": [
+        "XXYxZ",
+        "XYYzzY",
+        "XZYzY"
+      ],
+      "projected": [
+        "XXYXYxYXYY",
+        "XXYxYXXyxxY"
+      ],
+      "chart": "literal",
+      "eliminated": "z",
+      "pivot": "XXYxZ"
+    },
+    {
+      "source": [
+        "XXYxY",
+        "XXZXYY",
+        "XZZyz"
+      ],
+      "projected": [
+        "XXYXyXYXYY",
+        "XXyXYYxyXYY"
+      ],
+      "chart": "literal",
+      "eliminated": "y",
+      "pivot": "XZZyz"
+    },
+    {
+      "source": [
+        "XXYxY",
+        "XXZXYY",
+        "XZZyz"
+      ],
+      "projected": [
+        "XXYXyXXyy",
+        "XYXyXyyXYYxy"
+      ],
+      "chart": "literal",
+      "eliminated": "x",
+      "pivot": "XZZyz"
+    },
+    {
+      "source": [
+        "XXXYY",
+        "XYZXz",
+        "XZYYzz"
+      ],
+      "projected": [
+        "XXXXyyyxY",
+        "XXYYxxYxxYxxy"
+      ],
+      "chart": "literal",
+      "eliminated": "x",
+      "pivot": "XZYYzz"
+    },
+    {
+      "source": [
+        "XXYZY",
+        "XYYXy",
+        "XZyzYz"
+      ],
+      "projected": [
+        "XXYxYXyxYxYXy",
+        "XYXYxYYXy"
+      ],
+      "chart": "literal",
+      "eliminated": "x",
+      "pivot": "XZyzYz"
+    },
+    {
+      "source": [
+        "XXYxY",
+        "XYXZy",
+        "XzyZZ"
+      ],
+      "projected": [
+        "XXYYXyxYYXy",
+        "XYYXyXYYxyy"
+      ],
+      "chart": "literal",
+      "eliminated": "y",
+      "pivot": "XzyZZ"
+    },
+    {
+      "source": [
+        "XXXYY",
+        "XXzYxY",
+        "XZZyz"
+      ],
+      "projected": [
+        "XXYXyXyXyy",
+        "XYXyXyyyXYYxy"
+      ],
+      "chart": "literal",
+      "eliminated": "x",
+      "pivot": "XZZyz"
+    },
+    {
+      "source": [
+        "XXYxY",
+        "XYZy",
+        "XyZxZXz"
+      ],
+      "projected": [
+        "XXXYxYYXy",
+        "XYxYXyXYxYxyXy"
+      ],
+      "chart": "literal",
+      "eliminated": "y",
+      "pivot": "XyZxZXz"
+    }
+  ]
+}

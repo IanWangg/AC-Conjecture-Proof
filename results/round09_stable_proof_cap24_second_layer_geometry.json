@@ -1,0 +1,311 @@
+{
+  "input_sha256": "a78bcb0a22a5340ca28be18fa47d3eb6d07d9aae7c6d8956271cad6cc18c32a4",
+  "counts": {
+    "neighbor_states": 409123,
+    "literal_charts": 880694,
+    "intrinsic_charts": 20113,
+    "states_without_primitive_row": 2664
+  },
+  "distinct_projection_classes": 89977,
+  "projection_classes_in_cap29": 10660,
+  "primitive_projections": [],
+  "rank_two_geometry": {
+    "minimal_rank_two_signed_orbits": 85955,
+    "classifications": {
+      "parity_obstructed": 85955
+    },
+    "remaining": []
+  },
+  "jointly_minimized_rank_three_diagrams": 2415,
+  "rank_three_paired_rotation_systems": 1692212,
+  "spherical_rank_three_diagrams": [],
+  "lowest_outside_cap29": [
+    {
+      "rank_three_rows": [
+        "XXZyz",
+        "XYYXZyzxy",
+        "XZYzYXZyyy"
+      ],
+      "predecessor": [
+        "XXZyz",
+        "XXyyxY",
+        "XZYzYXZyyy"
+      ],
+      "projected_pair": [
+        "XXYYXYYYXXYYY",
+        "XYXYxyyXYYY"
+      ],
+      "chart": "intrinsic",
+      "original_pivot": "XZYzYXZyyy",
+      "eliminated": "z",
+      "pivot": "Z",
+      "whitehead_descent": [
+        {
+          "multiplier": "Z",
+          "cut": "Zx",
+          "result": [
+            "XYzYXyyy"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "XYZ",
+          "result": [
+            "XYzYXyy"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "XYZ",
+          "result": [
+            "XYzYXy"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "XYZ",
+          "result": [
+            "XXYzY"
+          ]
+        },
+        {
+          "multiplier": "X",
+          "cut": "Xyz",
+          "result": [
+            "XYzY"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "YZx",
+          "result": [
+            "Xz"
+          ]
+        },
+        {
+          "multiplier": "X",
+          "cut": "XYZ",
+          "result": [
+            "Z"
+          ]
+        }
+      ]
+    },
+    {
+      "rank_three_rows": [
+        "XXyxYY",
+        "XXyxYZxxYzy",
+        "XZ"
+      ],
+      "predecessor": [
+        "XXyxYY",
+        "XXzYYZy",
+        "XZ"
+      ],
+      "projected_pair": [
+        "XXYXYxy",
+        "XXyxYXyXYxyxYXyxY"
+      ],
+      "chart": "intrinsic",
+      "original_pivot": "XXyxYZxxYzy",
+      "eliminated": "y",
+      "pivot": "Y",
+      "whitehead_descent": [
+        {
+          "multiplier": "X",
+          "cut": "XY",
+          "result": [
+            "XYxYZyXzy"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "XY",
+          "result": [
+            "XYxZXz"
+          ]
+        },
+        {
+          "multiplier": "X",
+          "cut": "XZ",
+          "result": [
+            "XzYZ"
+          ]
+        },
+        {
+          "multiplier": "Z",
+          "cut": "YZy",
+          "result": [
+            "XY"
+          ]
+        },
+        {
+          "multiplier": "X",
+          "cut": "XZy",
+          "result": [
+            "Y"
+          ]
+        }
+      ]
+    },
+    {
+      "rank_three_rows": [
+        "XYxYXy",
+        "XYzyZ",
+        "XzyyzyZYYY"
+      ],
+      "predecessor": [
+        "XYxYXy",
+        "XYxyyzYZYYZy",
+        "XYzyZ"
+      ],
+      "projected_pair": [
+        "XXXyXYxyxxyxY",
+        "XXyxYxyXYxyxY"
+      ],
+      "chart": "literal",
+      "eliminated": "x",
+      "pivot": "XYzyZ"
+    },
+    {
+      "rank_three_rows": [
+        "XXXYzxxxy",
+        "XXZyxzXZ",
+        "XXZyyxY"
+      ],
+      "predecessor": [
+        "XXYzxZyy",
+        "XXZyxzXZ",
+        "XXZyyxY"
+      ],
+      "projected_pair": [
+        "XXXyXYxyxxyxY",
+        "XXYxyxyxYXyXY"
+      ],
+      "chart": "literal",
+      "eliminated": "y",
+      "pivot": "XXZyxzXZ"
+    },
+    {
+      "rank_three_rows": [
+        "XXXXYYZY",
+        "XYzyZYzYZy",
+        "XzyZY"
+      ],
+      "predecessor": [
+        "XXXXYYZY",
+        "XYxzYZy",
+        "XzyZY"
+      ],
+      "projected_pair": [
+        "XXXXyXYxxyxyxY",
+        "XXyxYxyXYxyxY"
+      ],
+      "chart": "literal",
+      "eliminated": "x",
+      "pivot": "XYzyZYzYZy"
+    },
+    {
+      "rank_three_rows": [
+        "XXZxZ",
+        "XYYYXzXz",
+        "XYYzXYxyy"
+      ],
+      "predecessor": [
+        "XXZxZ",
+        "XYYYXzXz",
+        "XYxyyZxZxyz"
+      ],
+      "projected_pair": [
+        "XXXYYXXXYYXXXYYYY",
+        "XXYYxxyxyy"
+      ],
+      "chart": "intrinsic",
+      "original_pivot": "XYYYXzXz",
+      "eliminated": "z",
+      "pivot": "Z",
+      "whitehead_descent": [
+        {
+          "multiplier": "X",
+          "cut": "XYZy",
+          "result": [
+            "XYYYzz"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "Yx",
+          "result": [
+            "XYYzz"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "Yx",
+          "result": [
+            "XYzz"
+          ]
+        },
+        {
+          "multiplier": "X",
+          "cut": "XZyz",
+          "result": [
+            "Yzz"
+          ]
+        },
+        {
+          "multiplier": "Z",
+          "cut": "XYZ",
+          "result": [
+            "Yz"
+          ]
+        },
+        {
+          "multiplier": "Y",
+          "cut": "XYZ",
+          "result": [
+            "Z"
+          ]
+        }
+      ]
+    },
+    {
+      "rank_three_rows": [
+        "XXZyz",
+        "XYXZyyyZYz",
+        "XYYZyzy"
+      ],
+      "predecessor": [
+        "XXZyz",
+        "XXyyxY",
+        "XYXZyyyZYz"
+      ],
+      "projected_pair": [
+        "XXXyXXYxxyxYxy",
+        "XXYxyXYxyxYXy"
+      ],
+      "chart": "literal",
+      "eliminated": "x",
+      "pivot": "XYYZyzy"
+    },
+    {
+      "rank_three_rows": [
+        "XXXYYYXZ",
+        "XYYZXzy",
+        "XZxzYZXz"
+      ],
+      "predecessor": [
+        "XXXYYYXZ",
+        "XYYZXzy",
+        "XYZXzxy"
+      ],
+      "projected_pair": [
+        "XXXYXyxxxYxyXY",
+        "XXYxyxYXyxYxy"
+      ],
+      "chart": "literal",
+      "eliminated": "y",
+      "pivot": "XZxzYZXz"
+    }
+  ]
+}

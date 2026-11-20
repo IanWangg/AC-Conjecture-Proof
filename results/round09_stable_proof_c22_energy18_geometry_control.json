@@ -1,0 +1,8 @@
+{
+  "states": 54,
+  "abstract_nonplanar": 36,
+  "abstract_planar": 18,
+  "abstract_planar_minimal_signed_diagrams": 18,
+  "paired_rotations": 3360,
+  "spherical": []
+}

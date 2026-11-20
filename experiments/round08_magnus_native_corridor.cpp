@@ -1,14 +1,10 @@
-// Complete bounded paths through successive exact rank-two Magnus quotients.
+// Complete bounded paths through successive rank-two Magnus quotients and the free group.
 #define AC_ROUND08_MAGNUS_NATIVE_LIBRARY
 #include "round07_magnus_native.cpp"
+#include <memory>
 
 namespace native_corridor {
-using State = free_distance::State<2>;
-using StateHash = free_distance::StateHash<2>;
 using Id = free_distance::Id;
-using Set = std::unordered_set<State, StateHash>;
-using Depths = std::unordered_map<State, unsigned, StateHash>;
-using Layers = std::array<std::vector<Set>, 2>;
 
 struct Record {
     unsigned degree;
@@ -16,165 +12,331 @@ struct Record {
     std::array<std::vector<std::size_t>, 2> widths;
 };
 
-State mark(State tuple, bool ordered) {
-    if (!ordered && tuple[0] > tuple[1]) std::swap(tuple[0], tuple[1]);
-    return tuple;
-}
+struct Options {
+    unsigned final_degree;
+    std::array<unsigned, 2> radii;
+    unsigned padding = 0;
+    bool ordered = false;
+    bool free_final = false;
+    bool screen = false;
+    bool ledger = false;
+    bool first_arrivals = false;
+};
 
-template <unsigned Degree>
-std::array<State, 2> endpoints(magnus_native::Elements<Degree>& group, bool ordered) {
-    return {mark({group.intern("xxxYYYY"), group.intern("xyxYXY")}, ordered),
-            mark({group.intern("x"), group.intern("y")}, ordered)};
-}
+enum class Operation { invert, multiply, conjugate, swap };
 
-template <unsigned Degree>
-Depths ball(magnus_native::Elements<Degree>& group, const State& start, unsigned radius) {
-    Depths depths{{start, 0}};
-    std::vector<State> frontier{start};
-    for (unsigned step = 1; step <= radius; ++step) {
-        std::vector<State> next;
-        for (const auto& state : frontier)
-            free_distance::visit_neighbors(group, state, false, [&](State candidate) {
-                candidate = mark(candidate, false);
-                if (depths.try_emplace(candidate, step).second) next.push_back(candidate);
-                return false;
-            });
-        frontier = std::move(next);
-    }
-    return depths;
-}
+struct Move {
+    Operation op;
+    unsigned row;
+    unsigned operand = 0;
+    int sign = 1;
+};
 
-Set meeting(const Set& left, const Set& right) {
-    const bool left_smaller = left.size() <= right.size();
-    const auto& smaller = left_smaller ? left : right;
-    const auto& larger = left_smaller ? right : left;
-    Set result;
-    for (const auto& state : smaller)
-        if (larger.count(state)) result.insert(state);
-    return result;
-}
+template <std::size_t Rows>
+class Corridor {
+    using State = free_distance::State<Rows>;
+    using StateHash = free_distance::StateHash<Rows>;
+    using Set = std::unordered_set<State, StateHash>;
+    using Depths = std::unordered_map<State, unsigned, StateHash>;
+    using Layers = std::array<std::vector<Set>, 2>;
 
-template <unsigned Degree, class Available>
-void restrict_to_meeting(magnus_native::Elements<Degree>& group, std::vector<Set>& layers,
-                         const Set& middle, bool ordered, Available&& available) {
-    layers.back() = middle;
-    for (std::size_t i = layers.size() - 1; i > 0; --i) {
-        Set prior;
-        auto keep = [&](State state) {
-            state = mark(state, ordered);
-            if (available(state, i - 1)) prior.insert(state);
-            return false;
-        };
-        for (const auto& state : layers[i]) {
-            keep(state);
-            free_distance::visit_neighbors(group, state, ordered, keep);
-        }
-        layers[i - 1] = std::move(prior);
-    }
-}
-
-Layers base_layers(magnus_native::Elements<4>& group, const std::array<unsigned, 2>& radii) {
-    const auto start = endpoints(group, false);
-    const std::array<Depths, 2> depths{ball(group, start[0], radii[0]), ball(group, start[1], radii[1])};
-    Set middle;
-    for (const auto& [state, depth] : depths[0]) {
-        (void)depth;
-        if (depths[1].count(state)) middle.insert(state);
-    }
-    Layers result;
-    for (unsigned side = 0; side < 2; ++side) {
-        result[side].resize(radii[side] + 1);
-        restrict_to_meeting(group, result[side], middle, false, [&](const State& state, unsigned step) {
-            const auto it = depths[side].find(state);
-            return it != depths[side].end() && it->second <= step;
-        });
-    }
-    return result;
-}
-
-template <unsigned Low, unsigned High>
-Layers refine(magnus_native::Elements<Low>& low, const Layers& allowed,
-              magnus_native::Elements<High>& high, bool ordered) {
-    std::vector<Id> projection;
-    auto image = [&](Id id) {
-        if (id >= projection.size()) projection.resize(high.size(), free_distance::missing);
-        auto& projected = projection[id];
-        if (projected == free_distance::missing) projected = high.project(id, low);
-        return projected;
-    };
-    const auto start = endpoints(high, ordered);
-    Layers result;
-    for (unsigned side = 0; side < 2; ++side) {
-        auto& levels = result[side];
-        levels.resize(allowed[side].size());
-        levels[0].insert(start[side]);
-        for (std::size_t i = 1; i < levels.size(); ++i) {
-            auto admit = [&](State state) {
-                if (allowed[side][i].count(mark({image(state[0]), image(state[1])}, false)))
-                    levels[i].insert(mark(state, ordered));
-                return false;
-            };
-            for (const auto& state : levels[i - 1]) {
-                admit(state);
-                free_distance::visit_neighbors(high, state, ordered, admit);
-            }
-        }
-    }
-    const auto middle = meeting(result[0].back(), result[1].back());
-    for (unsigned side = 0; side < 2; ++side) {
-        restrict_to_meeting(high, result[side], middle, ordered, [&](const State& state, unsigned step) {
-            return result[side][step].count(state);
-        });
-    }
-    return result;
-}
-
-void add_record(std::vector<Record>& records, unsigned degree, const Layers& result) {
-    Record record{degree, result[0].back().size(), {}};
-    for (unsigned side = 0; side < 2; ++side)
-        for (const auto& layer : result[side]) record.widths[side].push_back(layer.size());
-    std::cerr << "Degree " << degree << " retained " << record.midpoints << " midpoint states.\n";
-    records.push_back(std::move(record));
-}
-
-template <unsigned Degree>
-void cascade(magnus_native::Elements<Degree>& group, Layers& layers, unsigned goal_degree,
-             bool ordered, std::vector<Record>& records, std::vector<std::string>& midpoint) {
-    if (layers[0].back().empty()) return;
-    if (Degree == goal_degree) {
-        const auto selected = *std::min_element(layers[0].back().begin(), layers[0].back().end());
-        for (Id id : selected) midpoint.push_back(group.describe(id));
-        return;
-    }
-    if constexpr (Degree < 10) {
-        magnus_native::Elements<Degree + 1> next_group;
-        auto next_layers = refine(group, layers, next_group, ordered && Degree + 1 == goal_degree);
-        layers = {};
-        add_record(records, Degree + 1, next_layers);
-        cascade(next_group, next_layers, goal_degree, ordered, records, midpoint);
-    }
-}
-
-void run(unsigned final_degree, const std::array<unsigned, 2>& radii, bool ordered) {
-    magnus_native::Elements<4> base;
-    auto allowed = base_layers(base, radii);
+    const Options options;
     std::vector<Record> records;
     std::vector<std::string> midpoint;
-    add_record(records, 4, allowed);
-    cascade(base, allowed, final_degree, ordered, records, midpoint);
-    std::cout << "{\"degree\":" << final_degree << ",\"spare_rows\":0,\"ordered\":"
-              << (ordered ? "true" : "false") << ",\"radii\":[" << radii[0] << "," << radii[1]
-              << "],\"path_within_budget\":" << (midpoint.empty() ? "false" : "true") << ",\"midpoint_hex\":[";
-    for (std::size_t index = 0; index < midpoint.size(); ++index) {
-        if (index) std::cout << ',';
-        std::cout << '"' << midpoint[index] << '"';
+    std::vector<Move> ledger;
+
+    static State mark(State tuple, bool ordered) {
+        if (!ordered) std::sort(tuple.begin(), tuple.end());
+        return tuple;
     }
-    std::cout << "],\"tiers\":[";
-    for (std::size_t i = 0; i < records.size(); ++i) {
-        if (i) std::cout << ',';
-        const auto& record = records[i];
-        std::cout << "{\"degree\":" << record.degree << ",\"midpoints\":" << record.midpoints
-                  << ",\"widths\":[";
+
+    template <class Group>
+    static std::array<State, 2> endpoints(Group& group, bool ordered) {
+        State start, target;
+        start.fill(group.intern(""));
+        target = start;
+        start[0] = group.intern("xxxYYYY");
+        start[1] = group.intern("xyxYXY");
+        target[0] = group.intern("x");
+        target[1] = group.intern("y");
+        return {mark(start, ordered), mark(target, ordered)};
+    }
+
+    static std::vector<Move> menu(bool ordered) {
+        std::vector<Move> moves;
+        for (unsigned i = 0; i < Rows; ++i) {
+            moves.push_back({Operation::invert, i});
+            for (unsigned letter = 0; letter < free_distance::letters.size(); ++letter)
+                moves.push_back({Operation::conjugate, i, letter});
+            for (unsigned j = 0; j < Rows; ++j) {
+                if (i == j) continue;
+                moves.push_back({Operation::multiply, i, j, 1});
+                moves.push_back({Operation::multiply, i, j, -1});
+                if (ordered && i < j) moves.push_back({Operation::swap, i, j});
+            }
+        }
+        return moves;
+    }
+
+    template <class Group>
+    static State apply(Group& group, State state, Move move) {
+        const auto [operation, row, operand, sign] = move;
+        switch (operation) {
+        case Operation::invert:
+            state[row] = group.inverse(state[row]);
+            break;
+        case Operation::multiply: {
+            const Id donor = sign == 1 ? state[operand] : group.inverse(state[operand]);
+            state[row] = group.product(state[row], donor);
+            break;
+        }
+        case Operation::conjugate:
+            state[row] = group.conjugate(state[row], operand);
+            break;
+        case Operation::swap:
+            std::swap(state[row], state[operand]);
+            break;
+        }
+        return state;
+    }
+
+    template <class Expand>
+    static Depths ball(const State& start, unsigned radius, Expand&& expand) {
+        Depths depths{{start, 0}};
+        std::vector<State> frontier{start};
+        for (unsigned step = 1; step <= radius; ++step) {
+            std::vector<State> next;
+            for (const auto& state : frontier)
+                expand(state, step, [&](State candidate) {
+                    if (depths.try_emplace(candidate, step).second) next.push_back(candidate);
+                    return false;
+                });
+            if (next.empty()) break;
+            frontier = std::move(next);
+        }
+        return depths;
+    }
+
+    static Set meeting(const Set& left, const Set& right) {
+        const bool left_smaller = left.size() <= right.size();
+        const auto& smaller = left_smaller ? left : right;
+        const auto& larger = left_smaller ? right : left;
+        Set result;
+        for (const auto& state : smaller)
+            if (larger.count(state)) result.insert(state);
+        return result;
+    }
+
+    template <class Group, class Available>
+    static void restrict_to_meeting(Group& group, std::vector<Set>& layers, const Set& middle,
+                                    bool ordered, Available&& available) {
+        layers.back() = middle;
+        for (std::size_t i = layers.size() - 1; i > 0; --i) {
+            Set prior;
+            auto keep = [&](State state) {
+                state = mark(state, ordered);
+                if (available(state, i - 1)) prior.insert(state);
+                return false;
+            };
+            for (const auto& state : layers[i]) {
+                keep(state);
+                free_distance::visit_neighbors(group, state, ordered, keep);
+            }
+            layers[i - 1] = std::move(prior);
+        }
+    }
+
+    template <class Group>
+    Layers trim_balls(Group& group, const std::array<Depths, 2>& depths, bool ordered) const {
+        const auto radii = options.radii;
+        Set middle;
+        for (const auto& [state, depth] : depths[0]) {
+            (void)depth;
+            if (depths[1].count(state)) middle.insert(state);
+        }
+        Layers result;
+        for (unsigned side = 0; side < 2; ++side) {
+            result[side].resize(radii[side] + 1);
+            restrict_to_meeting(group, result[side], middle, ordered, [&](const State& state, unsigned step) {
+                const auto it = depths[side].find(state);
+                return it != depths[side].end() && it->second <= step;
+            });
+        }
+        return result;
+    }
+
+    template <class Group>
+    Layers base_layers(Group& group) const {
+        const auto start = endpoints(group, false);
+        auto expand = [&](const State& state, unsigned, auto&& admit) {
+            free_distance::visit_neighbors(group, state, false, [&](State candidate) {
+                return admit(mark(candidate, false));
+            });
+        };
+        const std::array<Depths, 2> depths{
+            ball(start[0], options.radii[0], expand), ball(start[1], options.radii[1], expand)};
+        return trim_balls(group, depths, false);
+    }
+
+    template <class Low, class High, class Projection>
+    Layers refine(Low& low, const Layers& allowed, High& high, bool ordered, Projection&& project) const {
+        std::vector<Id> projection;
+        auto image = [&](Id id) {
+            if (id >= projection.size()) projection.resize(high.size(), free_distance::missing);
+            auto& projected = projection[id];
+            if (projected == free_distance::missing) projected = project(id);
+            return projected;
+        };
+        auto image_rows = [&](const State& state) {
+            State projected;
+            std::transform(state.begin(), state.end(), projected.begin(), image);
+            return projected;
+        };
+        const auto moves = menu(ordered);
+        const auto start = endpoints(high, ordered);
+        auto screen_moves = [&](const State& state, const State& low_state, const Set& permitted, auto&& admit) {
+            for (Move move : moves) {
+                auto candidate = apply(low, low_state, move);
+                if (permitted.count(mark(candidate, false)))
+                    admit(mark(apply(high, state, move), ordered));
+            }
+        };
+        if (options.first_arrivals) {
+            // An actual path through a successful midpoint survives every lower tier.
+            // Replacing its prefix by a shorter high-tier prefix preserves that property,
+            // since waits at the midpoint fill any ticks saved by the replacement.
+            std::array<Depths, 2> depths;
+            for (unsigned side = 0; side < 2; ++side) {
+                depths[side] = ball(start[side], options.radii[side], [&](const State& state, unsigned step, auto&& admit) {
+                    screen_moves(state, image_rows(state), allowed[side][step], admit);
+                });
+            }
+            return trim_balls(high, depths, ordered);
+        }
+        Layers result;
+        for (unsigned side = 0; side < 2; ++side) {
+            auto& levels = result[side];
+            levels.resize(allowed[side].size());
+            levels[0].insert(start[side]);
+            for (std::size_t i = 1; i < levels.size(); ++i) {
+                const auto& permitted = allowed[side][i];
+                for (const auto& state : levels[i - 1]) {
+                    if (options.screen || options.free_final) {
+                        const State low_state = image_rows(state);
+                        if (permitted.count(mark(low_state, false))) levels[i].insert(state);
+                        screen_moves(state, low_state, permitted, [&](State candidate) { levels[i].insert(candidate); });
+                    } else {
+                        auto admit = [&](State candidate) {
+                            if (permitted.count(mark(image_rows(candidate), false)))
+                                levels[i].insert(mark(candidate, ordered));
+                            return false;
+                        };
+                        admit(state);
+                        free_distance::visit_neighbors(high, state, ordered, admit);
+                    }
+                }
+            }
+        }
+        const auto middle = meeting(result[0].back(), result[1].back());
+        for (unsigned side = 0; side < 2; ++side) {
+            restrict_to_meeting(high, result[side], middle, ordered, [&](const State& state, unsigned step) {
+                return result[side][step].count(state);
+            });
+        }
+        return result;
+    }
+
+    template <class Group>
+    static std::vector<State> trace_prefix(Group& group, const std::vector<Set>& layers, State selected,
+                                           bool ordered) {
+        std::vector<State> path{selected};
+        for (std::size_t t = layers.size() - 1; t > 0; --t) {
+            if (layers[t - 1].count(selected)) {
+                path.push_back(selected);
+                continue;
+            }
+            bool found = free_distance::visit_neighbors(group, selected, ordered, [&](State candidate) {
+                candidate = mark(candidate, ordered);
+                if (!layers[t - 1].count(candidate)) return false;
+                selected = candidate;
+                return true;
+            });
+            if (!found) throw std::runtime_error("corridor trace needs a predecessor");
+            path.push_back(selected);
+        }
+        return {path.rbegin(), path.rend()};
+    }
+
+    template <class Group>
+    void recover(Group& group, const Layers& layers, bool ordered) {
+        if (layers[0].back().empty()) return;
+        const auto selected = *std::min_element(layers[0].back().begin(), layers[0].back().end());
+        for (Id id : selected) midpoint.push_back(group.describe(id));
+        if (!options.ledger) return;
+        auto path = trace_prefix(group, layers[0], selected, ordered);
+        const auto suffix = trace_prefix(group, layers[1], selected, ordered);
+        path.insert(path.end(), suffix.rbegin() + 1, suffix.rend());
+        auto start = endpoints(group, true);
+        State current = start[0];
+        const auto moves = menu(ordered);
+        for (const auto& target : path) {
+            if (mark(current, ordered) == target) continue;
+            bool found = false;
+            for (Move move : moves) {
+                auto candidate = apply(group, current, move);
+                if (mark(candidate, ordered) != target) continue;
+                current = candidate;
+                ledger.push_back(move);
+                found = true;
+                break;
+            }
+            if (!found) throw std::runtime_error("corridor ledger needs a move");
+        }
+        if (mark(current, ordered) != mark(start[1], ordered))
+            throw std::runtime_error("corridor ledger failed to reach a basis");
+    }
+
+    void add_record(unsigned degree, const Layers& layers) {
+        Record record{degree, layers[0].back().size(), {}};
+        for (unsigned side = 0; side < 2; ++side)
+            for (const auto& layer : layers[side]) record.widths[side].push_back(layer.size());
+        if (degree) std::cerr << "Degree " << degree;
+        else std::cerr << "Free group";
+        std::cerr << " retained " << record.midpoints << " midpoint states.\n";
+        records.push_back(std::move(record));
+    }
+
+    template <unsigned Degree>
+    void cascade(std::unique_ptr<magnus_native::Elements<Degree>> group, Layers layers) {
+        if (layers[0].back().empty()) return;
+        if (Degree == options.final_degree) {
+            if (options.free_final) {
+                free_distance::WordTable next;
+                auto lifted = refine(*group, layers, next, options.ordered, [&](Id id) {
+                    return group->intern(next.at(id));
+                });
+                add_record(0, lifted);
+                recover(next, lifted, options.ordered);
+            } else {
+                recover(*group, layers, options.ordered);
+            }
+            return;
+        }
+        if constexpr (Degree < 10) {
+            auto next = std::make_unique<magnus_native::Elements<Degree + 1>>();
+            const bool ordered = options.ordered && Degree + 1 == options.final_degree && !options.free_final;
+            auto lifted = refine(*group, layers, *next, ordered, [&](Id id) {
+                return next->project(id, *group);
+            });
+            group.reset();
+            layers = {};
+            add_record(Degree + 1, lifted);
+            cascade(std::move(next), std::move(lifted));
+        }
+    }
+
+    static void print_widths(const Record& record) {
+        std::cout << "\"midpoints\":" << record.midpoints << ",\"widths\":[";
         for (unsigned side = 0; side < 2; ++side) {
             if (side) std::cout << ',';
             std::cout << '[';
@@ -184,20 +346,106 @@ void run(unsigned final_degree, const std::array<unsigned, 2>& radii, bool order
             }
             std::cout << ']';
         }
-        std::cout << "]}";
+        std::cout << ']';
     }
-    std::cout << "]}\n";
-}
+
+    static void print_ledger_move(Move move) {
+        const auto [op, row, operand, sign] = move;
+        switch (op) {
+        case Operation::invert: std::cout << "[\"invert\"," << row << ']'; break;
+        case Operation::multiply: std::cout << "[\"multiply\"," << row << ',' << operand << ',' << sign << ']'; break;
+        case Operation::conjugate:
+            std::cout << "[\"conjugate\"," << row << ',' << operand / 2 << ',' << ((operand & 1) ? -1 : 1) << ']';
+            break;
+        case Operation::swap: std::cout << "[\"swap\"," << row << ',' << operand << ']'; break;
+        }
+    }
+
+    void print() const {
+        std::cout << "{\"degree\":" << options.final_degree << ",\"spare_rows\":" << Rows - 2 << ",\"ordered\":"
+                  << (options.ordered ? "true" : "false") << ",\"radii\":[" << options.radii[0] << ',' << options.radii[1]
+                  << "],\"path_within_budget\":" << (midpoint.empty() ? "false" : "true") << ",\"midpoint_hex\":[";
+        if (!options.free_final) print_midpoint();
+        std::cout << "],\"tiers\":[";
+        for (std::size_t i = 0; i < records.size() && records[i].degree != 0; ++i) {
+            if (i) std::cout << ',';
+            std::cout << "{\"degree\":" << records[i].degree << ',';
+            print_widths(records[i]);
+            std::cout << '}';
+        }
+        std::cout << ']';
+        if (options.free_final) {
+            std::cout << ",\"midpoint_words\":[";
+            print_midpoint();
+            std::cout << "],\"free_tier\":";
+            if (records.back().degree == 0) {
+                std::cout << '{';
+                print_widths(records.back());
+                std::cout << '}';
+            } else {
+                std::cout << "null";
+            }
+        }
+        if (options.ledger) {
+            std::cout << ",\"moves\":[";
+            for (std::size_t i = 0; i < ledger.size(); ++i) {
+                if (i) std::cout << ',';
+                print_ledger_move(ledger[i]);
+            }
+            std::cout << ']';
+        }
+        std::cout << "}\n";
+    }
+
+    void print_midpoint() const {
+        for (std::size_t i = 0; i < midpoint.size(); ++i) {
+            if (i) std::cout << ',';
+            std::cout << '"' << midpoint[i] << '"';
+        }
+    }
+
+public:
+    explicit Corridor(Options parameters) : options(parameters) {}
+
+    template <unsigned BaseDegree>
+    void run() {
+        auto base = std::make_unique<magnus_native::Elements<BaseDegree>>();
+        auto layers = base_layers(*base);
+        add_record(BaseDegree, layers);
+        cascade(std::move(base), std::move(layers));
+        print();
+    }
+};
 }
 
 int main(int argc, char** argv) {
+    using namespace native_corridor;
     try {
-        if (argc != 4 && (argc != 5 || std::string_view(argv[4]) != "--ordered"))
-            throw std::runtime_error("usage: corridor final_degree left_radius right_radius [--ordered]");
+        if (argc < 4)
+            throw std::runtime_error("usage: corridor final_degree left_radius right_radius "
+                                     "[--ordered] [--spare-rows N] [--free] [--screen] [--ledger] [--first-arrivals]");
         const int degree = std::stoi(argv[1]), left = std::stoi(argv[2]), right = std::stoi(argv[3]);
         if (degree < 5 || degree > 10 || left < 0 || right < 0)
             throw std::runtime_error("degree must be 5–10 and radii nonnegative");
-        native_corridor::run(degree, {unsigned(left), unsigned(right)}, argc == 5);
+        Options options{unsigned(degree), {unsigned(left), unsigned(right)}};
+        for (int i = 4; i < argc; ++i) {
+            const std::string_view argument(argv[i]);
+            if (argument == "--ordered") options.ordered = true;
+            else if (argument == "--free") options.free_final = true;
+            else if (argument == "--screen") options.screen = true;
+            else if (argument == "--ledger") options.ledger = true;
+            else if (argument == "--first-arrivals") options.first_arrivals = true;
+            else if (argument == "--spare-rows" && i + 1 < argc) options.padding = std::stoul(argv[++i]);
+            else throw std::runtime_error("unexpected corridor option");
+        }
+        options.screen = options.screen || options.padding > 0;
+        switch (options.padding) {
+        case 0: Corridor<2>(options).run<4>(); break;
+        case 1: Corridor<3>(options).run<3>(); break;
+        case 2: Corridor<4>(options).run<3>(); break;
+        case 3: Corridor<5>(options).run<3>(); break;
+        default: throw std::runtime_error("spare row count outside 0–3");
+        }
     } catch (const std::exception& error) {
         std::cerr << error.what() << '\n';
         return 1;
