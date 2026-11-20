@@ -1,0 +1,258 @@
+{
+  "cyclic_cap": 32,
+  "detours": [
+    {
+      "original_steps": [
+        283,
+        296
+      ],
+      "interior": [
+        [
+          "XYzYZyyzyZZZyz",
+          "YYYYzzz",
+          "YZYzyz"
+        ],
+        [
+          "XYzYZyzyZZyz",
+          "YYYYzzz",
+          "YZYzyz"
+        ]
+      ]
+    },
+    {
+      "original_steps": [
+        519,
+        544
+      ],
+      "interior": [
+        [
+          "XYzYZyz",
+          "YYYZyyzzyyZ",
+          "YYZZYzyZyz"
+        ],
+        [
+          "XYzYZyz",
+          "YYYZyyzzyyZ",
+          "YYZyzyZ"
+        ]
+      ]
+    },
+    {
+      "original_steps": [
+        568,
+        735
+      ],
+      "interior": []
+    },
+    {
+      "original_steps": [
+        954,
+        999
+      ],
+      "interior": [
+        [
+          "XYYYZyzXyxZY",
+          "XYzyZxyz",
+          "YYZyzyZ"
+        ],
+        [
+          "XYYYZyzXyxZY",
+          "XYYZyyxZY",
+          "YYZyzyZ"
+        ]
+      ]
+    },
+    {
+      "original_steps": [
+        999,
+        1070
+      ],
+      "interior": [
+        [
+          "XYYYZyzXyxZY",
+          "XYYzyyzYYZyz",
+          "YYZyzyZ"
+        ],
+        [
+          "XYYYZyzXyxZY",
+          "XYYzyyzzY",
+          "YYZyzyZ"
+        ]
+      ]
+    },
+    {
+      "original_steps": [
+        1070,
+        1113
+      ],
+      "interior": [
+        [
+          "XYYYZyzXyxZY",
+          "XYYzyyzzY",
+          "YYZyzyZ"
+        ]
+      ]
+    },
+    {
+      "original_steps": [
+        1158,
+        1365
+      ],
+      "interior": [
+        [
+          "XYYYZyzXyxZY",
+          "XYxZyzyz",
+          "YYZyzyZ"
+        ],
+        [
+          "XYYYZyyz",
+          "XYxZyzyz",
+          "YYZyzyZ"
+        ],
+        [
+          "XYYYZyyz",
+          "XYYZyZYz",
+          "YYZyzyZ"
+        ],
+        [
+          "XYYZyZYz",
+          "XYxZyzyz",
+          "YYZyzyZ"
+        ],
+        [
+          "XYYZyZYz",
+          "XYxZYZyzyyz",
+          "YYZyzyZ"
+        ]
+      ]
+    },
+    {
+      "original_steps": [
+        1365,
+        1473
+      ],
+      "interior": [
+        [
+          "XYYZyZYz",
+          "XYxZYZyzyyz",
+          "YYZyzyZ"
+        ],
+        [
+          "XYZyZYYYZYzyz",
+          "XYxZYZyzyyz",
+          "YYZyzyZ"
+        ],
+        [
+          "XYZyZYYZYz",
+          "XYxZYZyzyyz",
+          "YYZyzyZ"
+        ]
+      ]
+    },
+    {
+      "original_steps": [
+        1473,
+        1499
+      ],
+      "interior": [
+        [
+          "XYYxZYZyzyXYZy",
+          "XYxZYZyzyyz",
+          "YYZyzyZ"
+        ]
+      ]
+    },
+    {
+      "original_steps": [
+        1499,
+        1673
+      ],
+      "interior": [
+        [
+          "XYYxZYZyzyXYZy",
+          "XYxZYZyzyyz",
+          "YYZyzyZ"
+        ],
+        [
+          "XYZyXYxZY",
+          "XYxZYZyzyyz",
+          "YYZyzyZ"
+        ],
+        [
+          "XYZyZYYZYz",
+          "XYxZYZyzyyz",
+          "YYZyzyZ"
+        ],
+        [
+          "XYZZYYz",
+          "XYxZYZyzyyz",
+          "YYZyzyZ"
+        ],
+        [
+          "XYxZYZyzyyz",
+          "XZZYYYYZYzyz",
+          "YYZyzyZ"
+        ],
+        [
+          "XYxZYZyzyyz",
+          "XZZYYYZYz",
+          "YYZyzyZ"
+        ],
+        [
+          "XYxZYZyzyyz",
+          "XZYZYzYZYz",
+          "YYZyzyZ"
+        ]
+      ]
+    },
+    {
+      "original_steps": [
+        1679,
+        1708
+      ],
+      "interior": [
+        [
+          "XYxZYZyzyyz",
+          "XZYZYYY",
+          "YYZyzyZ"
+        ]
+      ]
+    },
+    {
+      "original_steps": [
+        1708,
+        1797
+      ],
+      "interior": [
+        [
+          "XYxZYZyzXZYZYz",
+          "XYxZyzyz",
+          "YYZyzyZ"
+        ],
+        [
+          "XXYYxZYZyz",
+          "XYxZyzyz",
+          "YYZyzyZ"
+        ]
+      ]
+    },
+    {
+      "original_steps": [
+        1797,
+        1884
+      ],
+      "interior": [
+        [
+          "XXYxZYY",
+          "XYxZYZyzyyz",
+          "YYZyzyZ"
+        ],
+        [
+          "XXYxZYY",
+          "XYxZYZyzyyz",
+          "XYxZyzyz"
+        ]
+      ]
+    }
+  ]
+}

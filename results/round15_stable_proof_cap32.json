@@ -1,0 +1,163 @@
+{
+  "source_sha256": "75fab8b3584943b40354d5d6f5c4d801f1fb4a4c1613efa73b6bdef335360c04",
+  "route_sha256": "7ef9e8fffcdbf749a87bf449774bd1668185bbdb10c0f34adc6c9adcbe8dfad7",
+  "cap": 32,
+  "detours": [
+    {
+      "original_steps": [
+        283,
+        296
+      ],
+      "over_cap_instructions": 12,
+      "new_steps": [
+        284,
+        351
+      ]
+    },
+    {
+      "original_steps": [
+        519,
+        544
+      ],
+      "over_cap_instructions": 3,
+      "new_steps": [
+        574,
+        658
+      ]
+    },
+    {
+      "original_steps": [
+        568,
+        735
+      ],
+      "over_cap_instructions": 135,
+      "new_steps": [
+        682,
+        736
+      ]
+    },
+    {
+      "original_steps": [
+        954,
+        999
+      ],
+      "over_cap_instructions": 30,
+      "new_steps": [
+        955,
+        1020
+      ]
+    },
+    {
+      "original_steps": [
+        999,
+        1070
+      ],
+      "over_cap_instructions": 48,
+      "new_steps": [
+        1020,
+        1082
+      ]
+    },
+    {
+      "original_steps": [
+        1070,
+        1113
+      ],
+      "over_cap_instructions": 10,
+      "new_steps": [
+        1082,
+        1133
+      ]
+    },
+    {
+      "original_steps": [
+        1158,
+        1365
+      ],
+      "over_cap_instructions": 190,
+      "new_steps": [
+        1178,
+        1266
+      ]
+    },
+    {
+      "original_steps": [
+        1365,
+        1473
+      ],
+      "over_cap_instructions": 82,
+      "new_steps": [
+        1266,
+        1357
+      ]
+    },
+    {
+      "original_steps": [
+        1473,
+        1499
+      ],
+      "over_cap_instructions": 4,
+      "new_steps": [
+        1357,
+        1434
+      ]
+    },
+    {
+      "original_steps": [
+        1499,
+        1673
+      ],
+      "over_cap_instructions": 161,
+      "new_steps": [
+        1434,
+        1574
+      ]
+    },
+    {
+      "original_steps": [
+        1679,
+        1708
+      ],
+      "over_cap_instructions": 22,
+      "new_steps": [
+        1580,
+        1627
+      ]
+    },
+    {
+      "original_steps": [
+        1708,
+        1797
+      ],
+      "over_cap_instructions": 60,
+      "new_steps": [
+        1627,
+        1695
+      ]
+    },
+    {
+      "original_steps": [
+        1797,
+        1884
+      ],
+      "over_cap_instructions": 75,
+      "new_steps": [
+        1695,
+        1760
+      ]
+    }
+  ],
+  "compact": {
+    "product_edges": 71,
+    "moves": 898,
+    "raw_peak": 37,
+    "cyclic_peak": 32,
+    "target": [
+      "XXYxZYY",
+      "XYXYxZYYZyzyz",
+      "XYxZYZyzyyz"
+    ],
+    "first_pivotless_step": 126,
+    "sha256": "5ef0b3dcf782af271b15c0e517383b4f27a770eff58c6f848b86ee0c0408d0ca"
+  }
+}

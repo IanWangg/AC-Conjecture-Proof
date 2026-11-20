@@ -1,0 +1,182 @@
+{
+  "admissible_conjugator_coordinates_mod_3_by_first_power": {
+    "lower, epsilon -1": [
+      0,
+      0,
+      1
+    ],
+    "lower, epsilon 1": [
+      2,
+      1,
+      1
+    ],
+    "upper, epsilon -1": [
+      1,
+      0,
+      0
+    ],
+    "upper, epsilon 1": [
+      1,
+      2,
+      1
+    ]
+  },
+  "counts": {
+    "lower, determinant 0": {
+      "affected_sign_mismatch": 16,
+      "cases": 480,
+      "class_two_mismatch": 64,
+      "unreduced_input": 400
+    },
+    "lower, determinant 2": {
+      "affected_sign_mismatch": 16,
+      "cases": 480,
+      "class_two_mismatch": 64,
+      "unreduced_input": 400
+    },
+    "upper, determinant 0": {
+      "affected_sign_mismatch": 16,
+      "cases": 480,
+      "class_two_mismatch": 64,
+      "unreduced_input": 400
+    },
+    "upper, determinant 2": {
+      "affected_sign_mismatch": 16,
+      "cases": 480,
+      "class_two_mismatch": 64,
+      "unreduced_input": 400
+    }
+  },
+  "surviving_input_patterns": {
+    "0": [
+      {
+        "gaps": [
+          0,
+          -1,
+          1,
+          0,
+          0
+        ],
+        "input_signs": [
+          1,
+          1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "gaps": [
+          0,
+          0,
+          1,
+          -1,
+          0
+        ],
+        "input_signs": [
+          1,
+          1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "gaps": [
+          0,
+          1,
+          -1,
+          0,
+          0
+        ],
+        "input_signs": [
+          -1,
+          -1,
+          1,
+          1
+        ]
+      },
+      {
+        "gaps": [
+          0,
+          0,
+          -1,
+          1,
+          0
+        ],
+        "input_signs": [
+          -1,
+          -1,
+          1,
+          1
+        ]
+      }
+    ],
+    "2": [
+      {
+        "gaps": [
+          0,
+          1,
+          -1,
+          0,
+          0
+        ],
+        "input_signs": [
+          1,
+          1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "gaps": [
+          0,
+          0,
+          -1,
+          1,
+          0
+        ],
+        "input_signs": [
+          1,
+          1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "gaps": [
+          0,
+          -1,
+          1,
+          0,
+          0
+        ],
+        "input_signs": [
+          -1,
+          -1,
+          1,
+          1
+        ]
+      },
+      {
+        "gaps": [
+          0,
+          0,
+          1,
+          -1,
+          0
+        ],
+        "input_signs": [
+          -1,
+          -1,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  "totals": {
+    "affected_sign_mismatch": 64,
+    "cases": 1920,
+    "class_two_mismatch": 256,
+    "unreduced_input": 1600
+  }
+}

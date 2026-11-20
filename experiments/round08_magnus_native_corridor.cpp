@@ -10,6 +10,7 @@ struct Record {
     unsigned degree;
     std::size_t midpoints;
     std::array<std::vector<std::size_t>, 2> widths;
+    std::optional<uint64_t> top_mask = std::nullopt;
 };
 
 struct Options {
@@ -21,6 +22,7 @@ struct Options {
     bool screen = false;
     bool ledger = false;
     bool first_arrivals = false;
+    bool partial_degree_six = false;
 };
 
 enum class Operation { invert, multiply, conjugate, swap };
@@ -296,14 +298,41 @@ class Corridor {
             throw std::runtime_error("corridor ledger failed to reach a basis");
     }
 
-    void add_record(unsigned degree, const Layers& layers) {
-        Record record{degree, layers[0].back().size(), {}};
+    void add_record(unsigned degree, const Layers& layers, std::optional<uint64_t> top_mask = std::nullopt) {
+        Record record{degree, layers[0].back().size(), {}, top_mask};
         for (unsigned side = 0; side < 2; ++side)
             for (const auto& layer : layers[side]) record.widths[side].push_back(layer.size());
         if (degree) std::cerr << "Degree " << degree;
         else std::cerr << "Free group";
+        if (top_mask) std::cerr << " with " << __builtin_popcountll(*top_mask) << " top coordinates";
         std::cerr << " retained " << record.midpoints << " midpoint states.\n";
         records.push_back(std::move(record));
+    }
+
+    void partial_degree_six(std::unique_ptr<magnus_native::Elements<5>> degree_five, Layers layers) {
+        using DegreeSix = magnus_native::Elements<6>;
+        // The final eleventh coordinate is added by the full degree-six refinement.
+        constexpr std::array<unsigned, 10> coordinates{1, 3, 5, 7, 9, 11, 13, 15, 23, 27};
+        uint64_t mask = uint64_t(1) << coordinates.front();
+        auto current = std::make_unique<DegreeSix>(mask);
+        layers = refine(*degree_five, layers, *current, false, [&](Id id) { return current->project(id, *degree_five); });
+        degree_five.reset();
+        add_record(6, layers, mask);
+        for (unsigned i = 1; i < coordinates.size() && !layers[0].back().empty(); ++i) {
+            mask |= uint64_t(1) << coordinates[i];
+            auto next = std::make_unique<DegreeSix>(mask);
+            layers = refine(*current, layers, *next, false, [&](Id id) { return next->project(id, *current); });
+            current = std::move(next);
+            add_record(6, layers, mask);
+        }
+        if (layers[0].back().empty()) return;
+
+        auto full = std::make_unique<DegreeSix>();
+        const bool ordered = options.ordered && options.final_degree == 6 && !options.free_final;
+        layers = refine(*current, layers, *full, ordered, [&](Id id) { return full->project(id, *current); });
+        current.reset();
+        add_record(6, layers);
+        cascade(std::move(full), std::move(layers));
     }
 
     template <unsigned Degree>
@@ -321,6 +350,12 @@ class Corridor {
                 recover(*group, layers, options.ordered);
             }
             return;
+        }
+        if constexpr (Degree == 5) {
+            if (options.partial_degree_six) {
+                partial_degree_six(std::move(group), std::move(layers));
+                return;
+            }
         }
         if constexpr (Degree < 10) {
             auto next = std::make_unique<magnus_native::Elements<Degree + 1>>();
@@ -370,6 +405,7 @@ class Corridor {
         for (std::size_t i = 0; i < records.size() && records[i].degree != 0; ++i) {
             if (i) std::cout << ',';
             std::cout << "{\"degree\":" << records[i].degree << ',';
+            if (records[i].top_mask) std::cout << "\"top_mask\":" << *records[i].top_mask << ',';
             print_widths(records[i]);
             std::cout << '}';
         }
@@ -423,7 +459,8 @@ int main(int argc, char** argv) {
     try {
         if (argc < 4)
             throw std::runtime_error("usage: corridor final_degree left_radius right_radius "
-                                     "[--ordered] [--spare-rows N] [--free] [--screen] [--ledger] [--first-arrivals]");
+                                     "[--ordered] [--spare-rows N] [--free] [--screen] [--ledger] "
+                                     "[--first-arrivals] [--partial-degree-six]");
         const int degree = std::stoi(argv[1]), left = std::stoi(argv[2]), right = std::stoi(argv[3]);
         if (degree < 5 || degree > 10 || left < 0 || right < 0)
             throw std::runtime_error("degree must be 5–10 and radii nonnegative");
@@ -435,9 +472,11 @@ int main(int argc, char** argv) {
             else if (argument == "--screen") options.screen = true;
             else if (argument == "--ledger") options.ledger = true;
             else if (argument == "--first-arrivals") options.first_arrivals = true;
+            else if (argument == "--partial-degree-six") options.partial_degree_six = true;
             else if (argument == "--spare-rows" && i + 1 < argc) options.padding = std::stoul(argv[++i]);
             else throw std::runtime_error("unexpected corridor option");
         }
+        if (options.partial_degree_six && degree < 6) throw std::runtime_error("partial-degree-six needs a final degree of at least six");
         options.screen = options.screen || options.padding > 0;
         switch (options.padding) {
         case 0: Corridor<2>(options).run<4>(); break;

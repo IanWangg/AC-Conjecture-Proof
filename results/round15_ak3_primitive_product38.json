@@ -1,0 +1,30 @@
+{
+  "input_receipt_sha256": "aceaa34b9f12af68c68eb6d77936df41fcecab737b8a7e70221ea4b0764580c2",
+  "middle_energy_cap": 38,
+  "native": {
+    "charts": 91,
+    "candidate_products": 378224,
+    "admitted_products": 296654,
+    "length_excluded_charts": 7,
+    "marked_outputs": 1319
+  },
+  "independent_rotation_checks": 63184,
+  "distinct_marked_middle_outputs": 1319,
+  "middle_outputs_sha256": "aa23f4a80f8cd61f4e72029fc086bcc8dce9ee615dfeb5381fcd3827ede5dac7",
+  "middle_energy_histogram": {
+    "25": 5,
+    "27": 12,
+    "29": 22,
+    "31": 48,
+    "33": 130,
+    "35": 314,
+    "37": 788
+  },
+  "uncapped_final_product": {
+    "rows_checked": 1319,
+    "complete": true,
+    "hit": null
+  },
+  "strict_success": null,
+  "optional_low_membership": null
+}

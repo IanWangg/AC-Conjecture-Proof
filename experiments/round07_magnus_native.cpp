@@ -2,6 +2,7 @@
 #define AC_ROUND06_INSTRUCTION_DISTANCE_LIBRARY
 #include "round06_free_instruction_distance.cpp"
 #include <iomanip>
+#include <optional>
 #include <sstream>
 
 namespace magnus_native {
@@ -40,6 +41,8 @@ class Elements {
     std::vector<CachedProduct> product_cache{product_cache_size};
     std::array<Id, 4> generators{};
     Id one;
+    const std::optional<uint64_t> top_mask;
+    const Polynomial retained;
 
     static constexpr unsigned offset(unsigned degree) { return (1U << degree) - 1; }
 
@@ -95,15 +98,36 @@ class Elements {
         return result;
     }
 
-    Id identify(const Polynomial& value) {
+    static Polynomial retained_coefficients(std::optional<uint64_t> mask) {
+        Polynomial result;
+        result.fill(std::numeric_limits<uint64_t>::max());
+        if (!mask) return result;
+        if constexpr (Degree > 6) {
+            throw std::runtime_error("partial top-degree mask requires degree at most six");
+        } else {
+            constexpr auto first = offset(Degree);
+            result[0] = ((uint64_t(1) << first) - 1) | (*mask << first);
+            if constexpr (words > 1) result[1] = *mask >> (64 - first);
+            return result;
+        }
+    }
+
+    Id identify_retained(const Polynomial& value) {
         if (entries.size() == missing) throw std::runtime_error("Magnus element ID space exhausted");
         auto [it, fresh] = index.try_emplace(value, Id(entries.size()));
         if (fresh) entries.push_back({value});
         return it->second;
     }
 
+    Id identify(const Polynomial& value) {
+        if (!top_mask) return identify_retained(value);
+        Polynomial pruned;
+        for (std::size_t i = 0; i < words; ++i) pruned[i] = value[i] & retained[i];
+        return identify_retained(pruned);
+    }
+
 public:
-    Elements() {
+    explicit Elements(std::optional<uint64_t> mask = std::nullopt) : top_mask(mask), retained(retained_coefficients(mask)) {
         Polynomial value{};
         value[0] = 1;
         one = identify(value);
@@ -128,7 +152,12 @@ public:
 
     template <unsigned TargetDegree>
     Id project(Id id, Elements<TargetDegree>& target) const {
-        static_assert(TargetDegree < Degree);
+        static_assert(TargetDegree <= Degree);
+        if constexpr (TargetDegree == Degree) {
+            const uint64_t all = std::numeric_limits<uint64_t>::max();
+            const uint64_t source_mask = top_mask.value_or(all), target_mask = target.top_mask.value_or(all);
+            if ((source_mask & target_mask) != target_mask) throw std::runtime_error("projection would restore discarded terms");
+        }
         constexpr unsigned width = (1U << (TargetDegree + 1)) - 1;
         typename Elements<TargetDegree>::Polynomial projected{};
         std::copy_n(entries[id].value.begin(), projected.size(), projected.begin());

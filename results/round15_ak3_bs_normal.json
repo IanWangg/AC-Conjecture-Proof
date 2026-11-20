@@ -1,0 +1,60 @@
+{
+  "run": {
+    "atlas_marked_keys": 228,
+    "seeds_checked": 1258633777,
+    "complete": true,
+    "hit": null,
+    "candidates": {
+      "2": 3248527,
+      "3": 889290,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0
+    }
+  },
+  "atlas_cyclic_word_cap": 31,
+  "atlas_tsv_sha256": "4f73bbbc13d576f98c91e03aa82b65839b80a0f1fd5ca185c52cda6a853d3a5f",
+  "positive_fixture": {
+    "child": [
+      "xxxyXXY",
+      "xxxxyXXYXy"
+    ],
+    "anchor": [
+      "xxxyXXY",
+      "xxxxyXXYXy"
+    ],
+    "fixed_slot": 0,
+    "n": 2
+  },
+  "positive_control_strict_replay": {
+    "moves": 67,
+    "raw_peak": 40,
+    "target": [
+      "x",
+      "y"
+    ]
+  },
+  "boundary_negative_control": {
+    "child": [
+      "xxxxyXXXY",
+      "xxxxxxxxxxxxxxxxxxxyxxYY"
+    ],
+    "anchor": [
+      "xxxxyXXXY",
+      "xxxxxxxxxxxxxxxyxxxxxYY"
+    ],
+    "cyclic_stable_letters": 3,
+    "nonzero_pinch_residues": [
+      2,
+      3
+    ]
+  }
+}

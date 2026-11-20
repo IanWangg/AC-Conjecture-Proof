@@ -1,0 +1,206 @@
+{
+  "source_sha256": "13f663fca865da9a56c2b67396bc8854011323c329a09c41d8b05bcaefb25c0a",
+  "route_sha256": "70c4049c96265b03afd8fdb83baec90cc64c9f8b5be6354e9255ffb5e616d865",
+  "cap": 35,
+  "detours": [
+    {
+      "original_steps": [
+        600,
+        703
+      ],
+      "over_cap_instructions": 61,
+      "new_steps": [
+        601,
+        637
+      ]
+    },
+    {
+      "original_steps": [
+        969,
+        999
+      ],
+      "over_cap_instructions": 12,
+      "new_steps": [
+        903,
+        956
+      ]
+    },
+    {
+      "original_steps": [
+        1070,
+        1113
+      ],
+      "over_cap_instructions": 10,
+      "new_steps": [
+        1027,
+        1078
+      ]
+    },
+    {
+      "original_steps": [
+        1215,
+        1269
+      ],
+      "over_cap_instructions": 29,
+      "new_steps": [
+        1180,
+        1237
+      ]
+    },
+    {
+      "original_steps": [
+        1269,
+        1339
+      ],
+      "over_cap_instructions": 31,
+      "new_steps": [
+        1237,
+        1300
+      ]
+    },
+    {
+      "original_steps": [
+        1365,
+        1412
+      ],
+      "over_cap_instructions": 21,
+      "new_steps": [
+        1326,
+        1404
+      ]
+    },
+    {
+      "original_steps": [
+        1412,
+        1473
+      ],
+      "over_cap_instructions": 20,
+      "new_steps": [
+        1404,
+        1471
+      ]
+    },
+    {
+      "original_steps": [
+        1571,
+        1643
+      ],
+      "over_cap_instructions": 52,
+      "new_steps": [
+        1569,
+        1669
+      ]
+    },
+    {
+      "original_steps": [
+        1797,
+        1845
+      ],
+      "over_cap_instructions": 36,
+      "new_steps": [
+        1823,
+        1908
+      ]
+    },
+    {
+      "original_steps": [
+        2059,
+        2126
+      ],
+      "over_cap_instructions": 55,
+      "new_steps": [
+        2122,
+        2226
+      ]
+    },
+    {
+      "original_steps": [
+        2248,
+        2340
+      ],
+      "over_cap_instructions": 62,
+      "new_steps": [
+        2348,
+        2463
+      ]
+    },
+    {
+      "original_steps": [
+        2378,
+        2403
+      ],
+      "over_cap_instructions": 13,
+      "new_steps": [
+        2501,
+        2566
+      ]
+    },
+    {
+      "original_steps": [
+        2403,
+        2540
+      ],
+      "over_cap_instructions": 104,
+      "new_steps": [
+        2566,
+        2695
+      ]
+    },
+    {
+      "original_steps": [
+        2540,
+        2592
+      ],
+      "over_cap_instructions": 17,
+      "new_steps": [
+        2695,
+        2797
+      ]
+    },
+    {
+      "original_steps": [
+        2592,
+        2655
+      ],
+      "over_cap_instructions": 37,
+      "new_steps": [
+        2797,
+        2903
+      ]
+    },
+    {
+      "original_steps": [
+        2655,
+        2743
+      ],
+      "over_cap_instructions": 73,
+      "new_steps": [
+        2903,
+        2990
+      ]
+    }
+  ],
+  "spliced": {
+    "moves": 3003,
+    "rank_peak": 3,
+    "raw_peak": 57,
+    "cyclic_peak": 35,
+    "final_words": [
+      "XXYxYXXYxxy",
+      "XXYXYxxyXyxxy"
+    ],
+    "sha256": "2bb8702e0293050ab440e97cf855f51d4558a7b9dbb7c2a8210ae7e6490d7443"
+  },
+  "compact": {
+    "product_edges": 136,
+    "moves": 1832,
+    "rank_peak": 3,
+    "raw_peak": 45,
+    "cyclic_peak": 35,
+    "final_words": [
+      "XXYxYXXYxxy",
+      "XXYXYxxyXyxxy"
+    ],
+    "sha256": "3710fc7b56bbb28f62578ce82243e49cb2bc6b9c50dbb8c1c9ee99178c2608e0"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "active_interval_width": 9,
+  "compressed_budget": 17,
+  "degree": 9,
+  "geodesic_windows": [
+    {
+      "boundary_checks": 1019062,
+      "entry_tick": 0,
+      "exit_geodesic_tick": 8,
+      "midpoints": 0,
+      "widths_at_depth_four": [
+        19007,
+        38072
+      ]
+    },
+    {
+      "boundary_checks": 1019056,
+      "entry_tick": 1,
+      "exit_geodesic_tick": 9,
+      "midpoints": 0,
+      "widths_at_depth_four": [
+        54135,
+        38067
+      ]
+    },
+    {
+      "boundary_checks": 1927001,
+      "entry_tick": 2,
+      "exit_geodesic_tick": 10,
+      "midpoints": 0,
+      "widths_at_depth_four": [
+        55557,
+        72013
+      ]
+    },
+    {
+      "boundary_checks": 2424180,
+      "entry_tick": 3,
+      "exit_geodesic_tick": 11,
+      "midpoints": 0,
+      "widths_at_depth_four": [
+        55633,
+        90594
+      ]
+    },
+    {
+      "boundary_checks": 2784307,
+      "entry_tick": 4,
+      "exit_geodesic_tick": 12,
+      "midpoints": 0,
+      "widths_at_depth_four": [
+        38024,
+        104472
+      ]
+    },
+    {
+      "boundary_checks": 2393757,
+      "entry_tick": 5,
+      "exit_geodesic_tick": 13,
+      "midpoints": 0,
+      "widths_at_depth_four": [
+        38078,
+        89911
+      ]
+    },
+    {
+      "boundary_checks": 1835594,
+      "entry_tick": 6,
+      "exit_geodesic_tick": 14,
+      "midpoints": 0,
+      "widths_at_depth_four": [
+        38078,
+        69175
+      ]
+    },
+    {
+      "boundary_checks": 1163265,
+      "entry_tick": 7,
+      "exit_geodesic_tick": 15,
+      "midpoints": 0,
+      "widths_at_depth_four": [
+        38078,
+        44675
+      ]
+    },
+    {
+      "boundary_checks": 780698,
+      "entry_tick": 8,
+      "exit_geodesic_tick": 16,
+      "midpoints": 0,
+      "widths_at_depth_four": [
+        38072,
+        31058
+      ]
+    },
+    {
+      "boundary_checks": 177680,
+      "entry_tick": 9,
+      "exit_geodesic_tick": 17,
+      "midpoints": 0,
+      "widths_at_depth_four": [
+        38067,
+        7420
+      ]
+    }
+  ]
+}

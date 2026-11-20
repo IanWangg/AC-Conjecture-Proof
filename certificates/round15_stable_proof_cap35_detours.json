@@ -1,0 +1,322 @@
+{
+  "cyclic_cap": 35,
+  "detours": [
+    {
+      "original_steps": [
+        600,
+        703
+      ],
+      "interior": []
+    },
+    {
+      "original_steps": [
+        969,
+        999
+      ],
+      "interior": [
+        [
+          "XYYYZyzXyxZY",
+          "XYYZyyxZY",
+          "YYZyzyZ"
+        ]
+      ]
+    },
+    {
+      "original_steps": [
+        1070,
+        1113
+      ],
+      "interior": [
+        [
+          "XYYYZyzXyxZY",
+          "XYYzyyzzY",
+          "YYZyzyZ"
+        ]
+      ]
+    },
+    {
+      "original_steps": [
+        1215,
+        1269
+      ],
+      "interior": [
+        [
+          "XYYZyzXyxZYZYZYz",
+          "XYxZyzyz",
+          "YYZyzyZ"
+        ]
+      ]
+    },
+    {
+      "original_steps": [
+        1269,
+        1339
+      ],
+      "interior": [
+        [
+          "XYYZZyzyZYZYz",
+          "XYxZYZyzyyz",
+          "YYZyzyZ"
+        ]
+      ]
+    },
+    {
+      "original_steps": [
+        1365,
+        1412
+      ],
+      "interior": [
+        [
+          "XYYZyyyzXYxZY",
+          "XYxZyzyz",
+          "YYZyzyZ"
+        ],
+        [
+          "XYZyyyzXYxZYZYZYz",
+          "XYxZyzyz",
+          "YYZyzyZ"
+        ]
+      ]
+    },
+    {
+      "original_steps": [
+        1412,
+        1473
+      ],
+      "interior": [
+        [
+          "XYZyZYYZYz",
+          "XYxZYZyzyyz",
+          "YYZyzyZ"
+        ]
+      ]
+    },
+    {
+      "original_steps": [
+        1571,
+        1643
+      ],
+      "interior": [
+        [
+          "XYZYZYzzYZYzyyz",
+          "XYxZYZyzyyz",
+          "YYZyzyZ"
+        ],
+        [
+          "XYxZYZyzyyz",
+          "XZYZYzzYZYYzyz",
+          "YYZyzyZ"
+        ]
+      ]
+    },
+    {
+      "original_steps": [
+        1797,
+        1845
+      ],
+      "interior": [
+        [
+          "XXYYxZYZyz",
+          "XYxZYZyzyyz",
+          "XYxZyzyz"
+        ],
+        [
+          "XXYYxZYZyz",
+          "XYXYYxZYZyyzyz",
+          "XYxZYZyzyyz"
+        ]
+      ]
+    },
+    {
+      "original_steps": [
+        2059,
+        2126
+      ],
+      "interior": [
+        [
+          "XXYXYXYxxyxy",
+          "XXYXYxxyXyxxy",
+          "XXYxxyyyzY"
+        ],
+        [
+          "XXXYxxyXYxY",
+          "XXYXYXYxxyxy",
+          "XXYxxyyyzY"
+        ],
+        [
+          "XXXYxxyXYxY",
+          "XXYXYXYxxyxy",
+          "XYxYXyZYY"
+        ],
+        [
+          "XXYXYXYxxyxy",
+          "XXYXYxxyXyxxy",
+          "XYxYXyZYY"
+        ]
+      ]
+    },
+    {
+      "original_steps": [
+        2248,
+        2340
+      ],
+      "interior": [
+        [
+          "XXYYxYXXyxxY",
+          "XXYxYXXYxxy",
+          "XYxYXyxyZY"
+        ],
+        [
+          "XXYYYxYXY",
+          "XXYxYXXYxxy",
+          "XYxYXyxyZY"
+        ],
+        [
+          "XXYYYxYXY",
+          "XXYYxyzYXYY",
+          "XXYxYXXYxxy"
+        ],
+        [
+          "XXYYxYXXyxxY",
+          "XXYYxyzYXYY",
+          "XXYxYXXYxxy"
+        ],
+        [
+          "XXYYxYXXyxxY",
+          "XXYxYXXYxxy",
+          "XXYxxyyzYXY"
+        ]
+      ]
+    },
+    {
+      "original_steps": [
+        2378,
+        2403
+      ],
+      "interior": [
+        [
+          "XXYXYYxxyy",
+          "XXYxYXXYxxy",
+          "XXYxz"
+        ],
+        [
+          "XXYXYYxxyy",
+          "XXYYxxyyZ",
+          "XXYxYXXYxxy"
+        ]
+      ]
+    },
+    {
+      "original_steps": [
+        2403,
+        2540
+      ],
+      "interior": [
+        [
+          "XXYXYYxxyy",
+          "XXYYxxyyZ",
+          "XXYxYXXYxxy"
+        ],
+        [
+          "XXYXYYxxyy",
+          "XXYYYxxyXXYxyZ",
+          "XXYxYXXYxxy"
+        ],
+        [
+          "XXYXYYxxyy",
+          "XXYXyxxzYXyxxy",
+          "XXYxYXXYxxy"
+        ],
+        [
+          "XXYXYXyxxzYxy",
+          "XXYXYYxxyy",
+          "XXYxYXXYxxy"
+        ],
+        [
+          "XXYXYYxxyy",
+          "XXYxYXXYxxy",
+          "XXYxYxxyXyZ"
+        ]
+      ]
+    },
+    {
+      "original_steps": [
+        2540,
+        2592
+      ],
+      "interior": [
+        [
+          "XXYYxYXXyxxY",
+          "XXYxYXXYxxy",
+          "XXYxYxxyXyZ"
+        ],
+        [
+          "XXXyxxzyxxy",
+          "XXYYxYXXyxxY",
+          "XXYxYXXYxxy"
+        ]
+      ]
+    },
+    {
+      "original_steps": [
+        2592,
+        2655
+      ],
+      "interior": [
+        [
+          "XXXyxxzyxxy",
+          "XXYXYYxxyy",
+          "XXYxYXXYxxy"
+        ],
+        [
+          "XXYXXYxxyzyxxy",
+          "XXYXYYxxyy",
+          "XXYxYXXYxxy"
+        ],
+        [
+          "XXYXYYxxyy",
+          "XXYZYXXyxYYxxy",
+          "XXYxYXXYxxy"
+        ],
+        [
+          "XXYXYYxxyy",
+          "XXYxYXXYxxy",
+          "XXyXYxxyzxY"
+        ]
+      ]
+    },
+    {
+      "original_steps": [
+        2655,
+        2743
+      ],
+      "interior": [
+        [
+          "XXYXYYxxyy",
+          "XXYxYXXYxxy",
+          "XXyXYxxyzxY"
+        ],
+        [
+          "XXYXYXYxxyzxy",
+          "XXYXYYxxyy",
+          "XXYxYXXYxxy"
+        ],
+        [
+          "XXYXYYxxyy",
+          "XXYXYxxyzXyxxy",
+          "XXYxYXXYxxy"
+        ],
+        [
+          "XXYXYYxxyy",
+          "XXYxYXXYxxy",
+          "XXYxZYXXYxxy"
+        ],
+        [
+          "XXYXYYxxyy",
+          "XXYxYXXYxxy",
+          "Z"
+        ]
+      ]
+    }
+  ]
+}
