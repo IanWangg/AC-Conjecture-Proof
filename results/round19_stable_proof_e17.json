@@ -1,0 +1,311 @@
+{
+  "exact_chartless_census": {
+    "first_source": {
+      "28": {
+        "chartless_orbits": 432,
+        "first_entrance_orbits": 48,
+        "charted_exit_orbits": 441,
+        "native_candidates": 949048,
+        "projection_orbits": 9,
+        "identical_rank_two_cap": 17,
+        "projection_sha256": "2d707202471fcdae879149195a044bcbb57fabdf47f5876c398a835ed7f771e4",
+        "minimum_free_bridge_energy_after_entry": 36,
+        "maximum_output_word_width_after_entry": 11,
+        "states_without_length_six_donor": 0
+      },
+      "29": {
+        "chartless_orbits": 432,
+        "first_entrance_orbits": 48,
+        "charted_exit_orbits": 441,
+        "native_candidates": 1204048,
+        "projection_orbits": 9,
+        "identical_rank_two_cap": 17,
+        "projection_sha256": "2d707202471fcdae879149195a044bcbb57fabdf47f5876c398a835ed7f771e4",
+        "minimum_free_bridge_energy_after_entry": 36,
+        "maximum_output_word_width_after_entry": 12,
+        "states_without_length_six_donor": 0
+      },
+      "30": {
+        "chartless_orbits": 5568,
+        "first_entrance_orbits": 336,
+        "charted_exit_orbits": 5630,
+        "native_candidates": 13039504,
+        "projection_orbits": 62,
+        "identical_rank_two_cap": 19,
+        "projection_sha256": "0b7a4f2d9b11eb866b68eff15b8900a1f7d27ee6787f2f7cb81106353ce1f41d",
+        "minimum_free_bridge_energy_after_entry": 36,
+        "maximum_output_word_width_after_entry": 13,
+        "states_without_length_six_donor": 0
+      },
+      "31": {
+        "chartless_orbits": 5568,
+        "first_entrance_orbits": 336,
+        "charted_exit_orbits": 5630,
+        "native_candidates": 14316352,
+        "projection_orbits": 62,
+        "identical_rank_two_cap": 19,
+        "projection_sha256": "0b7a4f2d9b11eb866b68eff15b8900a1f7d27ee6787f2f7cb81106353ce1f41d",
+        "minimum_free_bridge_energy_after_entry": 36,
+        "maximum_output_word_width_after_entry": 14,
+        "states_without_length_six_donor": 0
+      },
+      "32": {
+        "chartless_orbits": 61200,
+        "first_entrance_orbits": 2016,
+        "charted_exit_orbits": 50817,
+        "native_candidates": 157883776,
+        "projection_orbits": 363,
+        "identical_rank_two_cap": 21,
+        "projection_sha256": "5d6684c9c47298968c25120cb4f389ee3723e0278bbefe0afd8ed27d03b203f7",
+        "minimum_free_bridge_energy_after_entry": 36,
+        "maximum_output_word_width_after_entry": 15,
+        "states_without_length_six_donor": 0
+      },
+      "33": {
+        "chartless_orbits": 73768,
+        "first_entrance_orbits": 2104,
+        "charted_exit_orbits": 63001,
+        "native_candidates": 198357488,
+        "projection_orbits": 363,
+        "identical_rank_two_cap": 21,
+        "projection_sha256": "5d6684c9c47298968c25120cb4f389ee3723e0278bbefe0afd8ed27d03b203f7",
+        "minimum_free_bridge_energy_after_entry": 36,
+        "maximum_output_word_width_after_entry": 16,
+        "states_without_length_six_donor": 528
+      }
+    },
+    "cap27_all_nine_no_entry": true,
+    "cap28_and_cap32_all_nine_same_native_chartless_sets": true,
+    "independent_stack_28": {
+      "cap27_entrance_candidates": 212,
+      "cap28_entrance_candidates": 932,
+      "cap28_entrances": 48,
+      "cap28_chartless_orbits": 432,
+      "cap28_charted_exits": 441,
+      "stack_product_candidates": 874368
+    }
+  },
+  "strict_stable_transfers": [
+    {
+      "signed_release": [
+        "xxyXYY",
+        "xxxxYxYxYXY"
+      ],
+      "cyclic_products": 2,
+      "excursion_cyclic_peak": 28,
+      "excursion_steps": 39,
+      "complete": {
+        "moves": 918,
+        "rank_peak": 3,
+        "raw_peak": 39,
+        "cyclic_peak": 33,
+        "final_words": [
+          "XXyyxY",
+          "XXXXyxyXyXy"
+        ],
+        "sha256": "f66a7345f354514fdf6d64ae7907ad68d7e329ae082e8b8a08a6e40b15bc70fc"
+      }
+    },
+    {
+      "signed_release": [
+        "xxyXYY",
+        "xxxxYxYYYxY"
+      ],
+      "cyclic_products": 3,
+      "excursion_cyclic_peak": 28,
+      "excursion_steps": 51,
+      "complete": {
+        "moves": 930,
+        "rank_peak": 3,
+        "raw_peak": 39,
+        "cyclic_peak": 33,
+        "final_words": [
+          "XXyyxY",
+          "XXXXyXyyyXy"
+        ],
+        "sha256": "f9b8dfa966f963b85aedcce8f9e27feaa537edd93a66c053cfa1fa6717696b61"
+      }
+    },
+    {
+      "signed_release": [
+        "xxyXYY",
+        "xxxyxYYXYXY"
+      ],
+      "cyclic_products": 6,
+      "excursion_cyclic_peak": 28,
+      "excursion_steps": 83,
+      "complete": {
+        "moves": 962,
+        "rank_peak": 3,
+        "raw_peak": 39,
+        "cyclic_peak": 33,
+        "final_words": [
+          "XXyyxY",
+          "XXYXYXyyyxy"
+        ],
+        "sha256": "dd931b7d600bed1128d108871bfa1f6f87a36cfc605b1ca7fee3f1a509c7f63e"
+      }
+    },
+    {
+      "signed_release": [
+        "xxyXYY",
+        "xxxYxxYXYXY"
+      ],
+      "cyclic_products": 5,
+      "excursion_cyclic_peak": 28,
+      "excursion_steps": 69,
+      "complete": {
+        "moves": 948,
+        "rank_peak": 3,
+        "raw_peak": 39,
+        "cyclic_peak": 33,
+        "final_words": [
+          "XXyyxY",
+          "XYXYXyyyXyy"
+        ],
+        "sha256": "f6b7893aab02efb0e6d4ccf0377b9494675509524047141a6730519d54d765a6"
+      }
+    },
+    {
+      "signed_release": [
+        "xxyXYY",
+        "xxxYxYYxYXY"
+      ],
+      "cyclic_products": 4,
+      "excursion_cyclic_peak": 28,
+      "excursion_steps": 65,
+      "complete": {
+        "moves": 944,
+        "rank_peak": 3,
+        "raw_peak": 39,
+        "cyclic_peak": 33,
+        "final_words": [
+          "XXyyxY",
+          "XXyXYXyyyXy"
+        ],
+        "sha256": "4a983573c72254192d2a5d0d0995aed087a5661b68a42f87a632048a0ce3d7b6"
+      }
+    },
+    {
+      "signed_release": [
+        "xxyXYY",
+        "xxyyXXYXYXy"
+      ],
+      "cyclic_products": 7,
+      "excursion_cyclic_peak": 28,
+      "excursion_steps": 99,
+      "complete": {
+        "moves": 978,
+        "rank_peak": 3,
+        "raw_peak": 39,
+        "cyclic_peak": 33,
+        "final_words": [
+          "XXyyxY",
+          "XXYXYXyxxyy"
+        ],
+        "sha256": "164f8c9205ef76438e6523e9893e16fe89c3322e36bb851ada499ac2d2a58230"
+      }
+    },
+    {
+      "signed_release": [
+        "xxyXYY",
+        "xxYxYxYXyxY"
+      ],
+      "cyclic_products": 3,
+      "excursion_cyclic_peak": 28,
+      "excursion_steps": 53,
+      "complete": {
+        "moves": 932,
+        "rank_peak": 3,
+        "raw_peak": 39,
+        "cyclic_peak": 33,
+        "final_words": [
+          "XXyyxY",
+          "XXyXYxyXyXy"
+        ],
+        "sha256": "8932d6bfec85dd656e764faaff64e36f7be1039721b7104805042b7d1c24449a"
+      }
+    },
+    {
+      "signed_release": [
+        "xxyXYY",
+        "xxYXYxYXyxy"
+      ],
+      "cyclic_products": 5,
+      "excursion_cyclic_peak": 28,
+      "excursion_steps": 71,
+      "complete": {
+        "moves": 950,
+        "rank_peak": 3,
+        "raw_peak": 39,
+        "cyclic_peak": 33,
+        "final_words": [
+          "XXyyxY",
+          "XXYXYxyXyxy"
+        ],
+        "sha256": "3a97ea3b85321368c3c668c2544ef148218216c240f765750bc642d0475f5bf2"
+      }
+    },
+    {
+      "signed_release": [
+        "xxyXYY",
+        "xxYXYXyxYxY"
+      ],
+      "cyclic_products": 4,
+      "excursion_cyclic_peak": 28,
+      "excursion_steps": 57,
+      "complete": {
+        "moves": 936,
+        "rank_peak": 3,
+        "raw_peak": 39,
+        "cyclic_peak": 33,
+        "final_words": [
+          "XXyyxY",
+          "XYXYxyXyXyy"
+        ],
+        "sha256": "f904a7c0bfaf9f6bc6869ffcd93b789c14d583c85e97b835458b4501c5735604"
+      }
+    }
+  ],
+  "length_six_donor_release": {
+    "orbit_route": [
+      [
+        "X",
+        "YYYYZyZYZYZ",
+        "YYZZyz"
+      ],
+      [
+        "XXXXYxYXYXY",
+        "XXYYZXZxzxy",
+        "XXYYxy"
+      ],
+      [
+        "XXXXYXYXYxY",
+        "XXXXYXYYYXY",
+        "XXyxZxzXzYY"
+      ]
+    ],
+    "strict": {
+      "moves": 46,
+      "raw_peak": 33,
+      "cyclic_peak": 33,
+      "target": [
+        "XXXXyXyyyXy",
+        "XXXXyxyXyXy",
+        "XXyyZXZxzxY"
+      ],
+      "first_pivotless_step": 21
+    }
+  },
+  "support_three_bounded_reverse": {
+    "roots": 7229,
+    "forward_keys": 568106,
+    "expanded": 225000,
+    "discovered": 8652144,
+    "product_candidates": 506538824,
+    "difference_edges": 0,
+    "width_omissions": 5389300,
+    "forward_anchor": null,
+    "closed": false
+  }
+}

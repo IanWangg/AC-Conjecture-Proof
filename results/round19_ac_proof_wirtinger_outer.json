@@ -1,0 +1,167 @@
+{
+  "A_kernel_factor": "wvUVwvWvuVWV",
+  "finite_field_obstructions": [
+    {
+      "depth": 3,
+      "excluded_divisor": 4,
+      "first_nonzero_remainder": [
+        [
+          2,
+          1,
+          2
+        ],
+        1
+      ],
+      "prime": 2,
+      "rank": 33,
+      "variables": 39
+    },
+    {
+      "depth": 6,
+      "excluded_divisor": 7,
+      "first_nonzero_remainder": [
+        [
+          2,
+          0,
+          2,
+          0,
+          2,
+          0
+        ],
+        3
+      ],
+      "prime": 7,
+      "rank": 951,
+      "variables": 1092
+    },
+    {
+      "depth": 4,
+      "excluded_divisor": 13,
+      "first_nonzero_remainder": [
+        [
+          2,
+          1,
+          2,
+          2
+        ],
+        3
+      ],
+      "prime": 13,
+      "rank": 114,
+      "variables": 120
+    },
+    {
+      "depth": 6,
+      "excluded_divisor": 71,
+      "first_nonzero_remainder": [
+        [
+          2,
+          1,
+          0,
+          2,
+          1,
+          1
+        ],
+        1
+      ],
+      "prime": 71,
+      "rank": 1001,
+      "variables": 1092
+    }
+  ],
+  "kernel_shift_by_b_inverse": [
+    "Wvw",
+    "w",
+    "vwvUVw"
+  ],
+  "necessary_positive_absolute_exponents": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    10,
+    15,
+    30
+  ],
+  "uniform_outer_obstruction": {
+    "denominator": -3374310784,
+    "exception_integer": 9376838582240376853086208,
+    "exception_integer_factors": {
+      "2": 14,
+      "7": 7,
+      "13": 10,
+      "71": 2
+    },
+    "excluded_prime_divisors_threshold": 7,
+    "stages": [
+      {
+        "degree": 1,
+        "symmetric_characteristic_at_1": -1
+      },
+      {
+        "degree": 2,
+        "symmetric_characteristic_at_1": 1
+      },
+      {
+        "degree": 3,
+        "symmetric_characteristic_at_1": -26
+      },
+      {
+        "degree": 4,
+        "symmetric_characteristic_at_1": 1352
+      },
+      {
+        "degree": 5,
+        "symmetric_characteristic_at_1": -95992
+      },
+      {
+        "degree": 6,
+        "example_coefficient": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          80587810753643648
+        ],
+        "projector_characteristic_quotient": [
+          1,
+          -125,
+          -2295,
+          247759,
+          -1432801,
+          -45460659,
+          253566181,
+          1855610789,
+          -8166181257,
+          -18531670223,
+          65351181179,
+          56486027847,
+          -153951216947,
+          -77452941135,
+          104343515503,
+          30248914237,
+          -29754867825,
+          -3367866583,
+          3453756841,
+          54027123,
+          -159212365,
+          3768883,
+          2952081,
+          -124321,
+          -18635,
+          825,
+          27,
+          -1
+        ],
+        "symmetric_characteristic_at_1": 0,
+        "witness_coefficient_gcd": 2778890025987712,
+        "witness_support": 700
+      }
+    ]
+  }
+}

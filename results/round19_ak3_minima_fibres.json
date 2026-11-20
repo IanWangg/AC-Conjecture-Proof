@@ -1,0 +1,1886 @@
+{
+  "minima": 9,
+  "excluded_directions": 17,
+  "cases": [
+    {
+      "source": [
+        "xxyXYY",
+        "xxxxYxYxYXY"
+      ],
+      "first_fixed_direction": {
+        "degree": 6,
+        "unit_algebra_dimension": 127,
+        "slope_period": 8,
+        "rank_by_residue": [
+          103,
+          103,
+          103,
+          104,
+          104,
+          103,
+          103,
+          103
+        ],
+        "surviving_residues": [],
+        "rejecting_duals_hex": {
+          "0": "0x21026b6106d36503387058152000000",
+          "1": "0x58ab432b92523c9d82ec45d0c5200000",
+          "2": "0x6a243fcd4f4193be9f3f29b56f040000",
+          "3": "0xa17e1c5d71efa14100cf840d6200000",
+          "4": "0x7a6aef3153fe2658880b06eb7e400000",
+          "5": "0x5c97a61d18083d86af4201361000000",
+          "6": "0x4f1e97a78a9db9f3ecea30ce37000000",
+          "7": "0x31a16bc2d70da613617eb98880482000"
+        }
+      },
+      "second_fixed_direction": {
+        "marking": [
+          "xYYYY",
+          "YxYYYY"
+        ],
+        "inverse_marking": [
+          "xxYxYxYxY",
+          "xY"
+        ],
+        "indexed_donor": [
+          [
+            0,
+            1
+          ],
+          [
+            -4,
+            1
+          ],
+          [
+            -8,
+            1
+          ],
+          [
+            -5,
+            -1
+          ],
+          [
+            -1,
+            -1
+          ]
+        ],
+        "indexed_receiver": [
+          [
+            0,
+            1
+          ],
+          [
+            -4,
+            1
+          ],
+          [
+            -5,
+            -1
+          ],
+          [
+            0,
+            -1
+          ]
+        ],
+        "magnus": {
+          "degree": 3,
+          "unit_algebra_dimension": 585,
+          "slope_period": 4,
+          "rank_by_residue": [
+            578,
+            578,
+            578,
+            578
+          ],
+          "surviving_residues": [
+            1
+          ],
+          "rejecting_duals_hex": {
+            "0": "0xb8e5965d73cb2eb9965d73cb2eb8e59773cb2eb8e5965d732eb8e5965d73cb2ee5965d73cb2eb8e45d73cb2eb8e5965dcb2eb8e5965d73cab8e5965d73cb2eb98e507449eed8d58e80",
+            "2": "0x12e5d2f73725c012e01972f96b8b92e5d9601cb97ca5c5d2f2fca00e5cae52f739796e40172e57372b9cbcb7200b9725cb85ce4e4b8005c012e5d2f73725c015bde79aa30197f5a40",
+            "3": "0x197732ee45dcab9965dcab997732ee45d732ee45dcab99773cab997732ee45dcb2ee45dcab997732eb997732ee45dcab8e45dcab997732ee597732ee45dcab9967861fa44b4293a78a0"
+          }
+        },
+        "permutation": {
+          "donor": "xxxxYxYxYXY",
+          "receiver": "xxyXYY",
+          "basis": [
+            "xY",
+            "xxYxYxYxY"
+          ],
+          "markings": [
+            {
+              "x": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                1
+              ],
+              "y": [
+                3,
+                4,
+                6,
+                7,
+                2,
+                1,
+                5
+              ],
+              "source_cycle_type": [
+                3,
+                4
+              ],
+              "period": 4,
+              "tail_cycle_types": [
+                [
+                  3,
+                  4
+                ],
+                [
+                  1,
+                  1,
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  5
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "allowed_residues": [
+                0,
+                3
+              ]
+            }
+          ],
+          "combined_period": 4,
+          "survivors": [
+            0,
+            3
+          ]
+        },
+        "common_period": 4,
+        "surviving_residues": []
+      }
+    },
+    {
+      "source": [
+        "xxyXYY",
+        "xxxxYxYYYxY"
+      ],
+      "first_fixed_direction": {
+        "degree": 6,
+        "unit_algebra_dimension": 127,
+        "slope_period": 8,
+        "rank_by_residue": [
+          103,
+          103,
+          103,
+          104,
+          104,
+          103,
+          103,
+          103
+        ],
+        "surviving_residues": [],
+        "rejecting_duals_hex": {
+          "0": "0x21026b6106d36503387058152000000",
+          "1": "0x58ab432b92523c9d82ec45d0c5200000",
+          "2": "0x6a243fcd4f4193be9f3f29b56f040000",
+          "3": "0xa17e1c5d71efa14100cf840d6200000",
+          "4": "0x7a6aef3153fe2658880b06eb7e400000",
+          "5": "0x5c97a61d18083d86af4201361000000",
+          "6": "0x4f1e97a78a9db9f3ecea30ce37000000",
+          "7": "0x31a16bc2d70da613617eb98880482000"
+        }
+      },
+      "second_fixed_direction": {
+        "marking": [
+          "xYYYYY",
+          "YxYYYYY"
+        ],
+        "inverse_marking": [
+          "xxYxYxYxYxY",
+          "xY"
+        ],
+        "indexed_donor": [
+          [
+            0,
+            1
+          ],
+          [
+            -5,
+            1
+          ],
+          [
+            -10,
+            1
+          ],
+          [
+            -8,
+            -1
+          ],
+          [
+            -2,
+            -1
+          ]
+        ],
+        "indexed_receiver": [
+          [
+            0,
+            1
+          ],
+          [
+            -5,
+            1
+          ],
+          [
+            -6,
+            -1
+          ],
+          [
+            0,
+            -1
+          ]
+        ],
+        "magnus": {
+          "degree": 3,
+          "unit_algebra_dimension": 1111,
+          "slope_period": 4,
+          "rank_by_residue": [
+            1082,
+            1082,
+            1082,
+            1082
+          ],
+          "surviving_residues": [],
+          "rejecting_duals_hex": {
+            "0": "0x649074794eb35d59f924873ba2a9c960e8f29d66faa3f6480e2be55793c191e53acdf507fc905d57caaf238223ca759beb0ffc20beae955e47004794ab27d537f8017d592bbcce008f28567d9a6bf102faa257799c410e566bfb74c7e205f504bef3388202ecd7f7e98fd40beb093de6733805d9bfebd21fe807d2127b9c89cf03049b50524b0608000000",
+            "1": "0x16d2aaa442034afd5360785ef3502da5554c8406d5eaa2c1f08ac6a45a4aaa89080dab9545866715cd58b0945552101f572ae37cca2b9ab1612caaa4603ea88ec6b994533462c2495548c04bc11d8c7328b668c48492aa913d97823b18e7512cd189082512727b2f047621cea359a312150f24a4f65a09ec038d42b346338aa01cac25ef3223c850000000",
+            "2": "0x714916defd4df07d063dc7a92e13e2922db9fb9ba0fa087b8f366c27c5241b73f33741b410f5c36c984f8a4936a7e66e82683e0b86d830df14966c4f8ccd06b67c171db061be293cd89e19b60d6cf92e7b70c77c5239a13ef46c1ac9f65cf6a19ef8a5732cede8d935d3fcb9ec437de14f8c599bc1b26aa7f963dc86fbd76ee08b89ebdd5941f3a0000000",
+            "3": "0x1acd0188161e5f6a72ad49db5363359a13102d3cbed4e55b93bc76c26a3466305a797de9dab44578ad84d469cc60b4f2fad3ffd88af15b09a8d799c169e5f461ffb105e2b61351af3783d3ce58c3ff620bc56826a35e6f03e19cf187fec517cad04946bcf2a7c738e34fed8e2f95e08289fde54f8e71c79fdb1c5f2ac164bea8df6710bcd79a4350000000"
+          }
+        },
+        "permutation": {
+          "donor": "xxxxYxYYYxY",
+          "receiver": "xxyXYY",
+          "basis": [
+            "xY",
+            "xxYxYxYxYxY"
+          ],
+          "markings": [
+            {
+              "x": [
+                2,
+                1,
+                4,
+                5,
+                3
+              ],
+              "y": [
+                2,
+                3,
+                5,
+                1,
+                4
+              ],
+              "source_cycle_type": [
+                1,
+                4
+              ],
+              "period": 3,
+              "tail_cycle_types": [
+                [
+                  1,
+                  4
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ]
+              ],
+              "allowed_residues": [
+                0,
+                1
+              ]
+            },
+            {
+              "x": [
+                2,
+                3,
+                4,
+                5,
+                1
+              ],
+              "y": [
+                2,
+                4,
+                1,
+                5,
+                3
+              ],
+              "source_cycle_type": [
+                1,
+                2,
+                2
+              ],
+              "period": 5,
+              "tail_cycle_types": [
+                [
+                  1,
+                  1,
+                  3
+                ],
+                [
+                  5
+                ],
+                [
+                  5
+                ],
+                [
+                  1,
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  2,
+                  2
+                ]
+              ],
+              "allowed_residues": [
+                4
+              ]
+            },
+            {
+              "x": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                1
+              ],
+              "y": [
+                1,
+                5,
+                7,
+                6,
+                4,
+                2,
+                3
+              ],
+              "source_cycle_type": [
+                1,
+                3,
+                3
+              ],
+              "period": 4,
+              "tail_cycle_types": [
+                [
+                  7
+                ],
+                [
+                  1,
+                  2,
+                  4
+                ],
+                [
+                  1,
+                  2,
+                  4
+                ],
+                [
+                  7
+                ]
+              ],
+              "allowed_residues": []
+            }
+          ],
+          "combined_period": 60,
+          "survivors": []
+        },
+        "common_period": 60,
+        "surviving_residues": []
+      }
+    },
+    {
+      "source": [
+        "xxyXYY",
+        "xxxyxYYXYXY"
+      ],
+      "first_fixed_direction": {
+        "degree": 6,
+        "unit_algebra_dimension": 127,
+        "slope_period": 8,
+        "rank_by_residue": [
+          103,
+          103,
+          103,
+          103,
+          103,
+          104,
+          104,
+          103
+        ],
+        "surviving_residues": [],
+        "rejecting_duals_hex": {
+          "0": "0x41e3267990a2c55fe50b6ddeec880000",
+          "1": "0x5a66cd36b7ae4f0db2a7a4812a580000",
+          "2": "0x731be0334175b4840f24d79fbc00000",
+          "3": "0x5c35e808a44b4ea5f50f238ae9400000",
+          "4": "0x2c2b0f1cde654869661bdcf4f4820000",
+          "5": "0x41b1473b535f805ae7e3b2f0400000",
+          "6": "0x7bab5373f236f0864708454eb800000",
+          "7": "0x3f222814352e3a3f7d5aad18f2180000"
+        }
+      },
+      "second_fixed_direction": {
+        "marking": [
+          "yXyy",
+          "Xyy"
+        ],
+        "inverse_marking": [
+          "xYxYY",
+          "xY"
+        ],
+        "indexed_donor": [
+          [
+            1,
+            -1
+          ],
+          [
+            4,
+            -1
+          ],
+          [
+            7,
+            -1
+          ],
+          [
+            9,
+            -1
+          ],
+          [
+            10,
+            1
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "indexed_receiver": [
+          [
+            1,
+            -1
+          ],
+          [
+            4,
+            -1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "magnus": {
+          "degree": 4,
+          "unit_algebra_dimension": 11111,
+          "slope_period": 8,
+          "rank_by_residue": [
+            11092,
+            11092,
+            11092,
+            11092,
+            11092,
+            11092,
+            11092,
+            11092
+          ],
+          "surviving_residues": [],
+          "rejecting_duals_hex": {
+            "0": "0x5ca002e572ae5cbf2f72800b94b8b92e5970012e65d2e2e4b900172e5d72b96e5e5c005cb97172b9000e5ae4e59725cae4004b9cbcb8e5b97cb8012e72f2e173cbe5d971720072e5cf2f975cb72cb8001732e17372dcb2e5ca002e572ae5cbf2f72800b94b8b92e5970012e65d2e2e4b900172e5d72b96e5e5c005cb974b8b92e5970012e65d2e2e4b9396b90005cae45cb96e5ae40072f971725cf2e0065dcbe5c5cf2e002e5cbae572dcbcb800b94b92e172005ca5cdcb2e4b85c80197397975cb72b960065ce5b972e397cbf2f2e000e5cb8e5cb8b92e5970012e65d2e2e4b9396b90005cae45cb96e5ae40072f971725cf2e0065dcbe5c5c80172e5d72b96e5e5c005cb9772f971725cf2e0065dcbe5c5cdcb72972004b85ccb972dca5cf2ee5f2f2e4b8e5801cbb97cbae4e58005cb965cae4b9396002e59765d2e000b94b8b965d975ca0072f72f2eb92e572801cb80172e5d72b96e5e5c005cb9772f971725cf2e0065dcbe5c5cdcb72972004b85ccb972dca5c972b9000e5ae4e59725cae40072e002e5cbae572dcbcb800b972ee5f2f2e4b8e5801cbb97cbe5cb92e52e001974b9972e4b9000e5dcae5e5d975ca00397729725cdca004b972cb85c97372e5c5cf2fcbe5c0017397173cb972b9000e5ae4e59725cae40072e002e5cbae572dcbcb800b972ee5f2f2e4b8e5801cbb97cbcb9cbcb8e5b97cb8012e72f2e4b92e172005ca5cdcb2e4b85cae4e58005cb965cae4b939600000e5dcae5e5d975ca0039772e5dcb9725ce5c0072f9772e5cae4005cab95cbcbf2eb900172e5d2e4b8b9001972e5974b92e4b9cbcb8e5b97cb8012e72f2e4b92e172005ca5cdcb2e4b85cae4e58005cb965cae4b939600173cbe5d971720072e5cf2f9700197397975cb72b960065ce5ae59765d2e000b94b8b965d971725cdca004b972cb85c97372ae4005cab95cbcbf2eb900172b97cbb972e4b9cb800e5f2ee5b965c800b9172b9396e597200173cbe5d971720072e5cf2f9700197397975cb72b960065ce5ae59765d2e000b94b8b965d975cb72cb8001732e17372dcb2e3972e397cbf2f2e000e5cb8e5dca0072f72f2eb92e572801cbe5c5cf2fcbe5c0017397173cbe5d2e4b8b9001972e5974b92e3965c800b9172b9396e59720000172b9772e5d97396005cae5dcb72cb8001732e17372dcb2e3972e397cbf2f2e000e5cb8e5dca0072f72f2eb92e572801cbdca002e572ae5cbf2f72800b94b8b92e5970012e65d2e2e4b900172e5d72b96e5e5c005cb97172b9000e5ae4e59725cae4004b9cbcb8e5b97cb8012e72f2e173cbe5d971720072e5cf2f975cb72cb8001732e17372dcb2e5ca002e572ae5cbf2f72800b94b8b92e5970012e65d2e2e4b900172e5d72b96e5e5c005cb974b8b92e5970012e65d2e2e4b9396b90005cae45cb96e5ae40072f971725cf2e0065dcbe5c5cf2e002e5cbae572dcbcb800b94b92e172005ca5cdcb2e4b85c80197397975cb72b960065ce5b972e397cbf2f2e000e5cb8e5cb8b92e5970012e65d2e2e4b9396b90005cae45cb96e5ae40072f971725cf2e0065dcbe5c5c80172e5d72b96e5e5c005cb9772f971725cf2e0065dcbe5c5cdcb72972004b85ccb972dca5cf2ee5f2f2e4b8e5801cbb97cbae4e58005cb965cae4b9396002e59765d2e000b94b8b965d975ca0072f72f2eb92e572801cb80172e5d72b96e5e5c005cb9772f971725cf2e0065dcbe5c5cdcb72972004b85ccb972dca5ca446ce0c44b060c7de911b383479dfa85b3488851d31e77ea159a187bf9b53b5ac7966861efcd8c1f1e3c1d3a777f36307c7d5b9b7df5aa24143f756e6df7e6d4ec19fbe0d8f0919b53b06449bf7eef1f4fefe6d126fdfba446ce0c44b060c7de911b383479dfa85b3488851d31e77ea159a187bf9b53b5ac7966861ef8310a000283075aad40c42800000",
+            "1": "0x39772ae59772f2e172e5dcab95cbcb972b965ce5cb972f2e5cae45cb96e5ae400172b9172e5e5cb93972e173cbdcb972e4e5f2f972e45ccb8e5dcbcbe5cb94b8e5801cbb97cbcb92e396001732e17372dcb2e0005ccb85cb9772ae59772f2e172e5dcab95cbcb972b965ce5cb972f2e5cae45cb96e5ae400172b9172e58012e65d2e2e4b965c004b9974b972ae45cf2ee5e5d2e5cab965cb93972e173cbdcb972e4e5cb85ccb972dca5c8012e1732e2e5cb97372e5d2e396b972e5cae4e5f2e5ccb9975cab9397cbe5d975ca0039772b979765d728012e65d2e2e4b965c004b9974b972ae45cf2ee5e5d2e5cab965cb93972e173cbdcb972e4e5dcbcbf2eb900172ae572f2fcbf2e0065dcbe5c5c973cb8019772f972e45ccb8e5dcbcbe5cb92e5cb97372e5d2e396b972e5c801974b9972e4b94b80065d2e5ca5cb972e2e5cbe5d72972e5ae45cdcae5cb99772eb917372dcbcbf2eb900172ae572f2fcbf2e0065dcbe5c5c973cb8019772f972e45ccb8e5dcbcbe5cb93965ccb8b95cb9772ee59732e172b9396e5972002e45cae4e5cb8e5801cbb97cbcb92e396002e4e5f2e5ccb9975cab9397cbdca5cb972e2e5cbe5d72972e5e5c0072f9772e5c97397001cbf2eb94b972e5c5cb97cbae52e3965ccb8b95cb9772ee59732e172b9396e5972002e45cae4e5cb8e5801cbb97cbcb92e396005cae5973972e5cbcb972b965cb9772cb997172b972ee5dcb2e1732e17372dcb2e0005ccb85ce5d975ca0039772b979765d72ae45cdcae5cb99772eb917372f2eb94b972e5c5cb97cbae52e4b9cb800e5f2ee5cb92e72e005cae5973972e5cbcb972b965cb9772cb997172b972ee5dcb2e1732e17372dcb2e0005ccb85ce5d97396005cae5dcb9765ce5e5cb95cb2e72e5cb97972e572b9772ae59772f2e172e5dcab90012e65d2e2e4b965c004b9975cbcbf2eb900172ae572f2fcbb965ccb8b95cb9772ee59732e5cae5973972e5cbcb972b965ce5d97396005cae5dcb9765ce5e5cb95cb2e72e5cb97972e572b9772ae59772f2e172e5dcab965cb95cb2e72e5cb97972e572ae5cbf2f72800b95cab972fcbdcbcb972b965ce5cb972f2e5ccb972ae45cf2ee5e5d2e5cab972e0065dcbe5c5c973cb80197172b9396e5972002e45cae4e5b9772cb997172b972ee5dcb2e65cb95cb2e72e5cb97972e572ae5cbf2f72800b95cab972fcbdcbcb972b965ce5cb972f2e5cb9772ae59772f2e172e5dcab95cbcb972b965ce5cb972f2e5cae45cb96e5ae400172b9172e5e5cb93972e173cbdcb972e4e5f2f972e45ccb8e5dcbcbe5cb94b8e5801cbb97cbcb92e396001732e17372dcb2e0005ccb85cb9772ae59772f2e172e5dcab95cbcb972b965ce5cb972f2e5cae45cb96e5ae400172b9172e58012e65d2e2e4b965c004b9974b972ae45cf2ee5e5d2e5cab965cb93972e173cbdcb972e4e5cb85ccb972dca5c8012e1732e2e5cb97372e5d2e396b972e5cae4e5f2e5ccb9975cab9397cbe5d975ca0039772b979765d728012e65d2e2e4b965c004b9974b972ae45cf2ee5e5d2e5cab965cb93972e173cbdcb972e4e5dcbcbf2eb900172ae572f2fcbf2e0065dcbe5c5c973cb8019772f972e45ccb8e5dcbcbe5cb92e5cb97372e5d2e396b972e5c801974b9972e4b94b80065d2e5ca5cb972e2e5cbe5d72972e5ae45cdcae5cb99772eb917372dcbcbf2eb900172ae572f2fcbf2e0065dcbe5c5c973cb8019772f972e45ccb8e5dcbcbe5cb92b5d3d5b2244891224ad74f56913b371f4ed6b42d9a44ecdc79e2b5449bf7ef3a28478ad51271e3c0a11e2b4181e3c78f0287de917eead0610a489f7a45fbb366cbc7361e37e982cd9b2f19b21428556dfa851d26c850a12b5d3d5b2244891224ad74f56913b371f4ed6b42d9a44ecdc79e2b5449bf7ef3a28478ad5124d93a000b5123c7cd9364e800000",
+            "2": "0x65d2e72eb939772973974b9cbae5cb97372e5d2e396b972e5ce5cb95cb2e72e5cb97972e572cb8e5e5dcbdca5cae52e397974b972cb85c973728012e5cb2e2e45cb96e5ae400172b9172e5801972e5974b92e2e40065cb965d2e72eb939772973974b9cbae5cb97372e5d2e396b972e5ce5cb95cb2e72e5cb97972e5729720072e5cf2f9765c5c801cbcb9cbe5ce597372ae52e72f975ca5cb972e2e5cbe5d72972e5dcbcb972b965ce5cb972f2e5c973975cbcbb96b94b85ce5d72801972e5974b92e2e40065cb94b85ccb972dca5c8012e1732e1720072e5cf2f9765c5c801cbcb9cbe5ce597372ae52e72f975ca5cb972e2e5cbe5d72972e5801974b9972e4b94b80065d2e72f2e000e5cb8e5f2fcbcb80017397397cbdcb2e2e45ce5ce5f2eb94b972e5c5cb97cbae52e65cb93972e173cbdcb972e4e5e5d2e72eb939772973974b9cb9720072e5cf2f9765c5c801cb801974b9972e4b94b80065d2e72f2e000e5cb8e5f2fcbcb80017397397cbdcb2e2e45ce5ce5f2f2e000e5cb8e5f2fcbcb80065c0072f9772e5c97397001cbb96e5e5c005cb975cae5b97971732e72f72b96b965c5ccb9cbdcae5973972e5cbcb972b965cae5cb97372e5d2e396b972e5ccb9cbe5ce597372ae52e72f9772f2e000e5cb8e5f2fcbcb80065c0072f9772e5c97397001cbb96e5e5c005cb975cae5b979717397397cbdcb2e2e45ce5ce5b96e5e5c005cb975cae5b97974b9cb800e5f2ee5cb92e72e002e572dcbcb800b972eb95cb72f2f2e65ce5ae572973cbcb99765cb95cb2e72e5cb97972e572dca5cb972e2e5cbe5d72972e597397397cbdcb2e2e45ce5ce5b96e5e5c005cb975cae5b97974b9cb800e5f2ee5cb92e72e0072eb94b972e5c5cb97cbae52e1732e72f72b96b965c5ccb9cbae572dcbcb800b972eb95cb72e5d97396005cae5dcb9765ce5b965cae4b939600172e5972b94b8e5e5dcbdca5cae52e397975cbcb972b965ce5cb972f2e5cf2eb94b972e5c5cb97cbae52e1732e72f72b96b965c5ccb9cbae572dcbcb800b972eb95cb72e5cb93972e173cbdcb972e4e5dcae5973972e5cbcb972b965cf2f2e65ce5ae572973cbcb9973965cae4b939600172e5972b92e5cbf2f72800b95cab972fcbcb972cb85c973728012e5cb2e173975cbcbb96b94b85ce5d72e5cb93972e173cbdcb972e4e5dcae5973972e5cbcb972b965cf2f2e65ce5ae572973cbcb99765d2e72eb939772973974b9cbae5cb97372e5d2e396b972e5ce5cb95cb2e72e5cb97972e572cb8e5e5dcbdca5cae52e397974b972cb85c973728012e5cb2e2e45cb96e5ae400172b9172e5801972e5974b92e2e40065cb965d2e72eb939772973974b9cbae5cb97372e5d2e396b972e5ce5cb95cb2e72e5cb97972e5729720072e5cf2f9765c5c801cbcb9cbe5ce597372ae52e72f975ca5cb972e2e5cbe5d72972e5dcbcb972b965ce5cb972f2e5c973975cbcbb96b94b85ce5d72801972e5974b92e2e40065cb94b85ccb972dca5c8012e1732e1720072e5cf2f9765c5c801cbcb9cbe5ce597372ae52e72f975ca5cb972e2e5cbe5d72972e5801974b9972e4b94b80065d2e72f2e000e5cb8e5f2fcbcb80017397397cbdcb2e2e45ce5ce5f2eb94b972e5c5cb97cbae52e65cb93972e173cbdcb972e4e5e5d2e72eb939772973974b9cb9720072e5cf2f9765c5c801cb801974b9972e4b94b80065d2e72f2e000e5cb8e5f2fcbcb80017397397cbdcb2e2e45ce5ce5a1428224f1cd89d5fa850a08978fa7122fdb077ed3be3e9c48c79dfcd9b32d51278f1e77f3677efd891c7982cd9b3dfbf62474e2471e3c245a74e9d3891c7c28b50f0281b2ad5ab0a2d43c5fa3c0a06cf7f367bf7e8f02821428224f1cd89d5fa850a08978fa7122fdb077ed3be3e9c48c79dfcd9b32d51278f1e77f364281800060bf6854290a06000000",
+            "3": "0x5ccb85cdcb72cb8001732e3979765d72800e5dcae5e5d9772eb917372b972e65dcbae45cb97cbae52e5cb97172e5f2eb94b92e72e00397cbb972e4b9cbcb972b965ce5cb972f2e5cae5f2ee5dcb2e65c5cae5cbb97728005ccb85cdcb72cb8001732e3979765d72800e5dcae5e5d9772eb917372b972e65dcbae45c972e5dcab965dcbcb85cb9772e5c004b9974b8b92e5970012e2e572f2fcbae4005cab95cbcbf2ee59732e2e572e5dcbb965ccb972b965ce5cb972f2e5cae5dcb9765ce580172b9772e5d97397972e572cb9cb972e5e5cb9172e5dcab965dcbcb85cb9772e5c004b9974b8b92e5970012e2e572f2fcbae4005cab95cbcbcb972f2e5cae5973972e5cbcbe5d2e5cab9173cbb97974b972973cb8019772f971725cf2e002e45cae4e5b965c800b9172b972ee5dcb2e65c5cae5cbb9772b97972e572cb9cb972e5e5cb95cab972fcbdca002e572ae5cbcb972f2e5cae5973972e5cbcbe5d2e5cab9173cbb97974b972973cb8019772f971725cf2e00172b9172e5b96b90005cae45cdcb972e4e5cb85cf2f72e5cb95cbcbe5cb91732e39772f2f974b92e3960072ee5f2f2e4b8e58005ccb85cdcb72cb8001732e172e5dcab965dcbcb85cb9772cb972f2e5cae5973972e5cbcb972b9172e5b96b90005cae45cdcb972e4e5cb85cf2f72e5cb95cbcbe5cb91732e39772f2f975cb972e4e5cb85cf2f72e5cb90012e1732e5cb72972004b85cb96b972e5cdcb974b8e5ae5cbdcab9397cb9732e65d72ae4e5b979765d72800e5dcae5e5d9765c004b9974b8b92e5970012e65d2e5cab9173cbb97974b972dcb972e4e5cb85cf2f72e5cb90012e1732e5cb72972004b85cb96b972e5cdcb974b8e5ae5cbdcbcbe5cb91732e39772f2f97396b972e5cdcb974b8e5ae5cbcb80065d2e65cb92e52e0019765d72972e5cb8b972f975ca5cf2eb917372b972e65dcbae45cae572f2fcbae4005cab95cbcb973cb8019772f971725cf2e005cbcbe5cb91732e39772f2f97396b972e5cdcb974b8e5ae5cbcb80065d2e65cb92e52e001974b92e3960072ee5f2f2e4b8e5dcab9397cb9732e65d72ae4e5e5d72972e5cb8b972f975ca5c97397001cbe5dcb9725ce5c00397cbae52e5cb97172e5f2eb972ee59732e2e572e5dcbb965cae45cae4e5b965c800b9172b94b92e3960072ee5f2f2e4b8e5dcab9397cb9732e65d72ae4e5e5d72972e5cb8b972f975ca5c8005ccb85cdcb72cb8001732e3979765d72800e5dcae5e5d9772eb917372b972e65dcbae45cb97cbae52e5cb97172e5f2eb94b92e72e00397cbb972e4b9cbcb972b965ce5cb972f2e5cae5f2ee5dcb2e65c5cae5cbb97728005ccb85cdcb72cb8001732e3979765d72800e5dcae5e5d9772eb917372b972e65dcbae45c972e5dcab965dcbcb85cb9772e5c004b9974b8b92e5970012e2e572f2fcbae4005cab95cbcbf2ee59732e2e572e5dcbb965ccb972b965ce5cb972f2e5cae5dcb9765ce580172b9772e5d97397972e572cb9cb972e5e5cb9172e5dcab965dcbcb85cb9772e5c004b9974b8b92e5970012e2e572f2fcbae4005cab95cbcbcb972f2e5cae5973972e5cbcbe5d2e5cab9173cbb97974b972973cb8019772f971725cf2e002e45cae4e5b965c800b9172b972ee5dcb2e65c5cae5cbb9772b97972e572cb9cb972e5e5cb95cab972fcbdca002e572ae5cbcb972f2e5cae5973972e5cbcbe5d2e5cab9173cbb97974b972973cb8019772f971725cf2e007bf9b215bf1b366913efe6c853a74ec18302b58f6cce9d3b067de9122448f4fb371ff7a44891d230122187beb553a748c048d0b66bf69d2d5ab56b42d9afd8518f274e9d3be3d0a1463c9d74e9d489ab419a759bd3a75227bf9b215bf1b366913efe6c853a74ec18302b58f6cce9d3b067de9122448f4fb371ff7a448900000000004b85cdca0000000000",
+            "4": "0x72eb95cb72f2e002e5cbae572b96b972e5cdcb974b8e5ae5cb8005ccb85cdcb72cb8001732e4b8002e52e2e59765d2e000b9396e5b9600000e5800e5b96e5cb85ce5d72f2ee5ae52e1739772ee59732e2e572e5dcbb965cf2eb95cb72f2e002e5cbae572b96b972e5cdcb974b8e5ae5cb8005ccb85cdcb72cb8001732e72ee5dcb2e65c5cae5cbb9772972e5972b92e4e58005cb965ce5d72972e5cb8b972f975ca5ce5c004b9974b8b92e5970012e72f970005ce5c5cf2fcbe5c0000172dcb72800005ca005cb72973974b9cbae4e5dca5ce5d2e72ee5dcb2e65c5cae5cbb9772972e5972b92e4e58005cb965ce5d72972e5cb8b972f975ca5cae52e72f973965cdcab94b9cb972e5dcab965dcbcb85cb97728012e5cb2e1725cdca004b972b97cbae52e5cb97172e5f2eb9173cb8019772f971725cf2e00396e5f2e004b9cbcb8e5b97cbae4002e4b92e400000b9000b92e52e72f973965cdcab94b9cb972e5dcab965dcbcb85cb97728012e5cb2e1725cdca004b9728005c8005c9725c80000172002e45ce5ce5f2f72cb8b91739765d2e5cab9173cbb97974b972ae40065cb965d2e4b8b9001974b972b965ce5cb972f2e5cae5cb92e3960072ee5f2f2e4b8e5e5d72dcae580197397975cb728005c8005c9725c80000172002e45ce5ce5f2f72cb8b91739765d2e5cab9173cbb97974b972dcbcbae4b95ca0072f72f2eb9000004b8004b92e4b8000012e65c5ccb9cbdcae5ae5971732e5cbcbe5cb91732e39772f2f9765c5c801cb973cbe5d9717200397972e572cb9cb972e5e5cb93979765d72800e5dcae5e5d975cbcbae4b95ca0072f72f2eb9000004b8004b92e4b8000012e65c5ccb9cbdcae5ae5971732e2e572f2fcbae4005cab95cbcbb96b93965c972b9000e5ae4e5e5c00001970019765d9700000173cbcb997396b95ca5cf2f2e5cab9397cb9732e65d72ae4e5f2fcbcb8003972e397cbf2f2e4b972f2e5cae5973972e5cbcbae572f2fcbae4005cab95cbcbb96b93965c972b9000e5ae4e5e5c00001970019765d97000005cb972e4e5cb85cf2f72e5cb92e45cae4e5b965c800b9172b90017297372cb92e172005ca5cf2fcb8000072e0072fcbf2e002e52e3979772f72972b94b8e5f2eb917372b972e65dcbae45cdcae5b979700172e5d72b96e5dcb972e4e5cb85cf2f72e5cb92e45cae4e5b965c800b9172b90017297372cb92e172005ca5cf2eb95cb72f2e002e5cbae572b96b972e5cdcb974b8e5ae5cb8005ccb85cdcb72cb8001732e4b8002e52e2e59765d2e000b9396e5b9600000e5800e5b96e5cb85ce5d72f2ee5ae52e1739772ee59732e2e572e5dcbb965cf2eb95cb72f2e002e5cbae572b96b972e5cdcb974b8e5ae5cb8005ccb85cdcb72cb8001732e72ee5dcb2e65c5cae5cbb9772972e5972b92e4e58005cb965ce5d72972e5cb8b972f975ca5ce5c004b9974b8b92e5970012e72f970005ce5c5cf2fcbe5c0000172dcb72800005ca005cb72973974b9cbae4e5dca5ce5d2e72ee5dcb2e65c5cae5cbb9772972e5972b92e4e58005cb965ce5d72972e5cb8b972f975ca5cae52e72f973965cdcab94b9cb972e5dcab965dcbcb85cb97728012e5cb2e1725cdca004b972b97cbae52e5cb97172e5f2eb9173cb8019772f971725cf2e00396e5f2e004b9cbcb8e5b97cbae4002e4b92e400000b9000b92e52e72f973965cdcab94b9cb972e5dcab965dcbcb85cb97728012e5cb2e1725cdca004b972bc6a1274508f0cd9b2f1a849d284c1dfa60efd1e77ea13077ea74e998274a24143f69d3a660dfa3c56b42d9a180917e8f15afdfbf0c048e3c78f1ff7efc30244303c6a130650982910c0f1b573a061efc89f7b36d5ce8183c6a1274508f0cd9b2f1a849d284c1dfa60efd1e77ea13077ea74e998274a24143f69d3a660f2e00000005ca5cb97cb80000000",
+            "5": "0x72ee5e5d2e5cab9173cbb97970017280172dcb72800005ca00000b972eb95cb72f2e002e5cbf2f9765c5c801cb973cbe5d97001cbf2fcb8000072e0072fcbf2f2e172e5dcab965dcbcb85cf2e5c97397001cbe5dcb9725cf2ee5e5d2e5cab9173cbb97970017280172dcb72800005ca00000b972eb95cb72f2e002e5cbf2ee5cb92e72e00397cbb972e4b8e5dcbcbe5cb91732e39772800002e4002e4b92e400000b939600172e5972b92e4e58005ccb8e5f2fcbcb8003972e397cbb9600396e5b9600000e5800e5f2ee5e5d2e5cab9173cbb979772ee5cb92e72e00397cbb972e4b8e5dcbcbe5cb91732e39772800002e4002e4b92e400000b94b8e5dcbcbe5cb91732e39772dcae5dcb9765ce580172b9772cb9975cab9397cb9732e65d72972000005c8005c9725c80000173728012e5cb2e1725cdca005cb975cae5b979700172e5d728017280172dcb72800005ca004b8e5dcbcbe5cb91732e39772dcae5dcb9765ce580172b9772cb9975cab9397cb9732e65d72800002e4002e4b92e400000b94b9975cab9397cb9732e65d72800b95cab972fcbdca002e572cb99772eb917372b972e65dcbcb92e000004b8004b92e4b8004b92e2e40065cb965d2e4b8b9000b972eb95cb72f2e002e5cb800002e4002e4b92e400000b94b9975cab9397cb9732e65d72800b95cab972fcbdca002e572b9600172e5972b92e4e58005c972000005c8005c9725c800004b99772eb917372b972e65dcbae400172b9172e5b96b90005cdcb9772ee59732e2e572e5dcbe5d9765c00001970019765d9772f9765c5c801cb973cbe5d9739600172e5972b92e4e58005c972000005c8005c9725c800004b99772eb917372b972e65dcbcb8e5f2fcbcb8003972e397cb973728012e5cb2e1725cdca004b92e000004b8004b92e4b8005cb9772ee59732e2e572e5dcbdca5c8012e1732e5cb7297200172b972ee5dcb2e65c5cae5cb801cbf2fcb8000072e0072fcbcb8e5f2fcbcb8003972e397cb973728012e5cb2e1725cdca004b92e000004b8004b92e4b80039600396e5b9600000e5800e5dcb975cae5b979700172e5d72cb92e2e40065cb965d2e4b8b965d9765c00001970019765d97172b972ee5dcb2e65c5cae5cbae4b94b80065d2e65cb92e52e72f2e172e5dcab965dcbcb85cb9600396e5b9600000e5800e5dcb975cae5b979700172e5d72cb92e2e40065cb965d2e4b8b972ee5e5d2e5cab9173cbb97970017280172dcb72800005ca00000b972eb95cb72f2e002e5cbf2f9765c5c801cb973cbe5d97001cbf2fcb8000072e0072fcbf2f2e172e5dcab965dcbcb85cf2e5c97397001cbe5dcb9725cf2ee5e5d2e5cab9173cbb97970017280172dcb72800005ca00000b972eb95cb72f2e002e5cbf2ee5cb92e72e00397cbb972e4b8e5dcbcbe5cb91732e39772800002e4002e4b92e400000b939600172e5972b92e4e58005ccb8e5f2fcbcb8003972e397cbb9600396e5b9600000e5800e5f2ee5e5d2e5cab9173cbb979772ee5cb92e72e00397cbb972e4b8e5dcbcbe5cb91732e39772800002e4002e4b92e400000b94b8e5dcbcbe5cb91732e39772dcae5dcb9765ce580172b9772cb9975cab9397cb9732e65d72972000005c8005c9725c80000173728012e5cb2e1725cdca005cb975cae5b979700172e5d728017280172dcb72800005ca004b8e5dcbcbe5cb91732e39772dcae5dcb9765ce580172b9772cb9975cab9397cb9732e65d72fde748c0ad63defdfbf79d230418d58518f55b7e983063561422583285b3030d9b368960ca10516aecc0c214281b2145abb34d824143f7b36893c73609050eccb56accd9b33a4d9b32d5ab3a6d9b37a73c7d39e2e9b66cdfde748c0ad63defdfbf79d230418d58518f55b7e983063561422583285b3030d9b368960ca13960000000172e5972e580000000",
+            "6": "0x72e5ccb9975cab9397cb9732e4b8b965d974b8002e52e2e597397cbdcb2e2e45ce5ce5f2f72b96e5ae400172b9172e5b96b972f72b96b965c5ccb9cbdcae58012e72f2e396e5f2e004b9cbcb997172b972ee5dcb2e65c5cf2e5ccb9975cab9397cb9732e4b8b965d974b8002e52e2e597397cbdcb2e2e45ce5ce5f2f72ae59772f2e172e5dcab965dcbdcae5cb99772eb917372b972e17397173cbf2f970005ce5c5cf2f72b96b965c5ccb9cbdcae5cb972dca5c8012e1732e5cb72e5ce5ae572973cbcb997396b93960065ce5e5d72dcae5801972e59772f2e172e5dcab965dcbdcae5cb99772eb917372b972e17397173cbf2f970005ce5c5cae572801cbdcbcbae4b95ca002e45cf2ee5e5d2e5cab9173cbcb8b95cb9772ee59732e2e5728012e72f2e396e5f2e004b9cbe5ce5ae572973cbcb997396b94b9972e4b94b80065d2e65cb965dcbdca5cae52e3979772f72ae572801cbdcbcbae4b95ca002e45cf2ee5e5d2e5cab9173cbcb8b95cb9772ee59732e2e572dcbcbb96b94b85ce5d72f2ee59725cae400396b93965c972b92e45ccb8e5dcbcbe5cb91732e4b997172b972ee5dcb2e65c5cb960065ce5e5d72dcae58019765dcbdca5cae52e3979772f72f2f9772e5c97397001cbe5dcbdcbcbb96b94b85ce5d72f2ee59725cae400396b93965c972b92e45ccb8e5dcbcbe5cb91732e000e5f2ee5cb92e72e00397cbf2eb939772973974b9cbae4e5dcb2e4b85c8017297372cb92e72e5ccb9975cab9397cb9732e2e59772f2e172e5dcab965dcbae572801cbdcbcbae4b95ca005cbcbb96b94b85ce5d72f2ee5800e5f2ee5cb92e72e00397cbf2eb939772973974b9cbae4e5dcb2e4b85c8017297372cb92e72eb939772973974b9cbae4e5b96005cae5dcb9765ce580172e5ce597372ae52e72f973965ccb8b965d974b8002e52e2e5975cae5cb99772eb917372b972e2e45cf2ee5e5d2e5cab9173cb9725cae400396b93965c972b972eb939772973974b9cbae4e5b96005cae5dcb9765ce580172e5ce597372ae52e72f973965cdcb2e4b85c8017297372cb92e65ce597372ae52e72f973965cf2f72800b95cab972fcbdca00397cbdcb2e2e45ce5ce5f2f7297397173cbf2f970005ce5c5ccb8b95cb9772ee59732e2e572ae45ccb8e5dcbcbe5cb91732e5cb2e4b85c8017297372cb92e65ce597372ae52e72f973965cf2f72800b95cab972fcbdca0072e5ccb9975cab9397cb9732e4b8b965d974b8002e52e2e597397cbdcb2e2e45ce5ce5f2f72b96e5ae400172b9172e5b96b972f72b96b965c5ccb9cbdcae58012e72f2e396e5f2e004b9cbcb997172b972ee5dcb2e65c5cf2e5ccb9975cab9397cb9732e4b8b965d974b8002e52e2e597397cbdcb2e2e45ce5ce5f2f72ae59772f2e172e5dcab965dcbdcae5cb99772eb917372b972e17397173cbf2f970005ce5c5cf2f72b96b965c5ccb9cbdcae5cb972dca5c8012e1732e5cb72e5ce5ae572973cbcb997396b93960065ce5e5d72dcae5801972e59772f2e172e5dcab965dcbdcae5cb99772eb917372b972e17397173cbf2f970005ce5c5cae572801cbdcbcbae4b95ca002e45cf2ee5e5d2e5cab9173cbcb8b95cb9772ee59732e2e5728012e72f2e396e5f2e004b9cbe5ce5ae572973cbcb997396b94b9972e4b94b80065d2e65cb965dcbdca5cae52e3979772f72ae572801cbdcbcbae4b95ca002e45cf2ee5e5d2e5cab9173cbcb8b95cb9772ee59732e2e572f7ea16cc50b6691357dfa85b328556ba7ab0a1a74e8a155ae9ecd2244828478f1913b34891271e856fc3059a186cdc7a15bf0f02850af1f4e9d3a63c0a142efc3060c44b079b449bf0c18322448cd956e6cd9f8e891233677ea16cc50b6691357dfa85b328556ba7ab0a1a74e8a155ae9ecd2244828478f1913b3489125aa14001c785050bf76a85000000",
+            "7": "0x5ccb85cdcb72cb8001732e3979765d72800e5dcae5e5d9772eb917372b972e65dcbae45cb97cbae52e5cb97172e5f2eb94b92e72e00397cbb972e4b9cbcb972b965ce5cb972f2e5cae5f2ee5dcb2e65c5cae5cbb97728005ccb85cdcb72cb8001732e3979765d72800e5dcae5e5d9772eb917372b972e65dcbae45c972e5dcab965dcbcb85cb9772e5c004b9974b8b92e5970012e2e572f2fcbae4005cab95cbcbf2ee59732e2e572e5dcbb965ccb972b965ce5cb972f2e5cae5dcb9765ce580172b9772e5d97397972e572cb9cb972e5e5cb9172e5dcab965dcbcb85cb9772e5c004b9974b8b92e5970012e2e572f2fcbae4005cab95cbcbcb972f2e5cae5973972e5cbcbe5d2e5cab9173cbb97974b972973cb8019772f971725cf2e002e45cae4e5b965c800b9172b972ee5dcb2e65c5cae5cbb9772b97972e572cb9cb972e5e5cb95cab972fcbdca002e572ae5cbcb972f2e5cae5973972e5cbcbe5d2e5cab9173cbb97974b972973cb8019772f971725cf2e00172b9172e5b96b90005cae45cdcb972e4e5cb85cf2f72e5cb95cbcbe5cb91732e39772f2f974b92e3960072ee5f2f2e4b8e58005ccb85cdcb72cb8001732e172e5dcab965dcbcb85cb9772cb972f2e5cae5973972e5cbcb972b9172e5b96b90005cae45cdcb972e4e5cb85cf2f72e5cb95cbcbe5cb91732e39772f2f975cb972e4e5cb85cf2f72e5cb90012e1732e5cb72972004b85cb96b972e5cdcb974b8e5ae5cbdcab9397cb9732e65d72ae4e5b979765d72800e5dcae5e5d9765c004b9974b8b92e5970012e65d2e5cab9173cbb97974b972dcb972e4e5cb85cf2f72e5cb90012e1732e5cb72972004b85cb96b972e5cdcb974b8e5ae5cbdcbcbe5cb91732e39772f2f97396b972e5cdcb974b8e5ae5cbcb80065d2e65cb92e52e0019765d72972e5cb8b972f975ca5cf2eb917372b972e65dcbae45cae572f2fcbae4005cab95cbcb973cb8019772f971725cf2e005cbcbe5cb91732e39772f2f97396b972e5cdcb974b8e5ae5cbcb80065d2e65cb92e52e001974b92e3960072ee5f2f2e4b8e5dcab9397cb9732e65d72ae4e5e5d72972e5cb8b972f975ca5c97397001cbe5dcb9725ce5c00397cbae52e5cb97172e5f2eb972ee59732e2e572e5dcbb965cae45cae4e5b965c800b9172b94b92e3960072ee5f2f2e4b8e5dcab9397cb9732e65d72ae4e5e5d72972e5cb8b972f975ca5c8005ccb85cdcb72cb8001732e3979765d72800e5dcae5e5d9772eb917372b972e65dcbae45cb97cbae52e5cb97172e5f2eb94b92e72e00397cbb972e4b9cbcb972b965ce5cb972f2e5cae5f2ee5dcb2e65c5cae5cbb97728005ccb85cdcb72cb8001732e3979765d72800e5dcae5e5d9772eb917372b972e65dcbae45c972e5dcab965dcbcb85cb9772e5c004b9974b8b92e5970012e2e572f2fcbae4005cab95cbcbf2ee59732e2e572e5dcbb965ccb972b965ce5cb972f2e5cae5dcb9765ce580172b9772e5d97397972e572cb9cb972e5e5cb9172e5dcab965dcbcb85cb9772e5c004b9974b8b92e5970012e2e572f2fcbae4005cab95cbcbcb972f2e5cae5973972e5cbcbe5d2e5cab9173cbb97974b972973cb8019772f971725cf2e002e45cae4e5b965c800b9172b972ee5dcb2e65c5cae5cbb9772b97972e572cb9cb972e5e5cb95cab972fcbdca002e572ae5cbcb972f2e5cae5973972e5cbcbe5d2e5cab9173cbb97974b972973cb8019772f971725cf2e007bf9b215bf1b366913efe6c853a74ec18302b58f6cce9d3b067de9122448f4fb371ff7a44891d230122187beb553a748c048d0b66bf69d2d5ab56b42d9afd8518f274e9d3be3d0a1463c9d74e9d489ab419a759bd3a75227bf9b215bf1b366913efe6c853a74ec18302b58f6cce9d3b067de9122448f4fb371ff7a448900000000004b85cdca0000000000"
+          }
+        },
+        "permutation": {
+          "donor": "xxxyxYYXYXY",
+          "receiver": "xxyXYY",
+          "basis": [
+            "xY",
+            "xYxYY"
+          ],
+          "markings": [
+            {
+              "x": [
+                2,
+                3,
+                4,
+                1
+              ],
+              "y": [
+                1,
+                3,
+                4,
+                2
+              ],
+              "source_cycle_type": [
+                4
+              ],
+              "period": 3,
+              "tail_cycle_types": [
+                [
+                  1,
+                  1,
+                  2
+                ],
+                [
+                  4
+                ],
+                [
+                  4
+                ]
+              ],
+              "allowed_residues": [
+                1,
+                2
+              ]
+            }
+          ],
+          "combined_period": 3,
+          "survivors": [
+            1,
+            2
+          ]
+        },
+        "common_period": 24,
+        "surviving_residues": []
+      }
+    },
+    {
+      "source": [
+        "xxyXYY",
+        "xxxYxxYXYXY"
+      ],
+      "first_fixed_direction": {
+        "degree": 6,
+        "unit_algebra_dimension": 127,
+        "slope_period": 8,
+        "rank_by_residue": [
+          103,
+          103,
+          103,
+          103,
+          103,
+          104,
+          104,
+          103
+        ],
+        "surviving_residues": [],
+        "rejecting_duals_hex": {
+          "0": "0x41e3267990a2c55fe50b6ddeec880000",
+          "1": "0x5a66cd36b7ae4f0db2a7a4812a580000",
+          "2": "0x731be0334175b4840f24d79fbc00000",
+          "3": "0x5c35e808a44b4ea5f50f238ae9400000",
+          "4": "0x2c2b0f1cde654869661bdcf4f4820000",
+          "5": "0x41b1473b535f805ae7e3b2f0400000",
+          "6": "0x7bab5373f236f0864708454eb800000",
+          "7": "0x3f222814352e3a3f7d5aad18f2180000"
+        }
+      },
+      "second_fixed_direction": {
+        "marking": [
+          "yXyyy",
+          "Xyyy"
+        ],
+        "inverse_marking": [
+          "xYxYxYY",
+          "xY"
+        ],
+        "indexed_donor": [
+          [
+            1,
+            -1
+          ],
+          [
+            5,
+            -1
+          ],
+          [
+            10,
+            -1
+          ],
+          [
+            11,
+            1
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "indexed_receiver": [
+          [
+            1,
+            -1
+          ],
+          [
+            5,
+            -1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "magnus": {
+          "degree": 4,
+          "unit_algebra_dimension": 16105,
+          "slope_period": 8,
+          "rank_by_residue": [
+            16104,
+            16104,
+            16104,
+            16104,
+            16104,
+            16104,
+            16104,
+            16104
+          ],
+          "surviving_residues": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "rejecting_duals_hex": {}
+        },
+        "permutation": {
+          "donor": "xxxYxxYXYXY",
+          "receiver": "xxyXYY",
+          "basis": [
+            "xY",
+            "xYxYxYY"
+          ],
+          "markings": [],
+          "combined_period": 1,
+          "survivors": [
+            0
+          ]
+        },
+        "common_period": 8,
+        "surviving_residues": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "source": [
+        "xxyXYY",
+        "xxxYxYYxYXY"
+      ],
+      "first_fixed_direction": {
+        "degree": 6,
+        "unit_algebra_dimension": 127,
+        "slope_period": 8,
+        "rank_by_residue": [
+          103,
+          103,
+          103,
+          103,
+          103,
+          104,
+          104,
+          103
+        ],
+        "surviving_residues": [],
+        "rejecting_duals_hex": {
+          "0": "0x41e3267990a2c55fe50b6ddeec880000",
+          "1": "0x5a66cd36b7ae4f0db2a7a4812a580000",
+          "2": "0x731be0334175b4840f24d79fbc00000",
+          "3": "0x5c35e808a44b4ea5f50f238ae9400000",
+          "4": "0x2c2b0f1cde654869661bdcf4f4820000",
+          "5": "0x41b1473b535f805ae7e3b2f0400000",
+          "6": "0x7bab5373f236f0864708454eb800000",
+          "7": "0x3f222814352e3a3f7d5aad18f2180000"
+        }
+      },
+      "second_fixed_direction": {
+        "marking": [
+          "yXyyyy",
+          "Xyyyy"
+        ],
+        "inverse_marking": [
+          "xYxYxYxYY",
+          "xY"
+        ],
+        "indexed_donor": [
+          [
+            1,
+            -1
+          ],
+          [
+            6,
+            -1
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "indexed_receiver": [
+          [
+            1,
+            -1
+          ],
+          [
+            6,
+            -1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "magnus": {
+          "degree": 3,
+          "unit_algebra_dimension": 585,
+          "slope_period": 4,
+          "rank_by_residue": [
+            584,
+            584,
+            584,
+            584
+          ],
+          "surviving_residues": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rejecting_duals_hex": {}
+        },
+        "permutation": {
+          "donor": "xxxYxYYxYXY",
+          "receiver": "xxyXYY",
+          "basis": [
+            "xY",
+            "xYxYxYxYY"
+          ],
+          "markings": [
+            {
+              "x": [
+                1,
+                3,
+                4,
+                5,
+                2
+              ],
+              "y": [
+                2,
+                4,
+                1,
+                5,
+                3
+              ],
+              "source_cycle_type": [
+                1,
+                1,
+                1,
+                2
+              ],
+              "period": 5,
+              "tail_cycle_types": [
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  1,
+                  1,
+                  1,
+                  2
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  1,
+                  4
+                ]
+              ],
+              "allowed_residues": [
+                2
+              ]
+            },
+            {
+              "x": [
+                1,
+                3,
+                2,
+                5,
+                6,
+                4
+              ],
+              "y": [
+                2,
+                4,
+                3,
+                6,
+                1,
+                5
+              ],
+              "source_cycle_type": [
+                1,
+                2,
+                3
+              ],
+              "period": 3,
+              "tail_cycle_types": [
+                [
+                  6
+                ],
+                [
+                  1,
+                  2,
+                  3
+                ],
+                [
+                  6
+                ]
+              ],
+              "allowed_residues": [
+                1
+              ]
+            },
+            {
+              "x": [
+                1,
+                3,
+                2,
+                5,
+                6,
+                7,
+                4
+              ],
+              "y": [
+                2,
+                4,
+                7,
+                5,
+                1,
+                6,
+                3
+              ],
+              "source_cycle_type": [
+                1,
+                3,
+                3
+              ],
+              "period": 4,
+              "tail_cycle_types": [
+                [
+                  1,
+                  2,
+                  4
+                ],
+                [
+                  7
+                ],
+                [
+                  7
+                ],
+                [
+                  1,
+                  2,
+                  4
+                ]
+              ],
+              "allowed_residues": []
+            }
+          ],
+          "combined_period": 60,
+          "survivors": []
+        },
+        "common_period": 60,
+        "surviving_residues": []
+      }
+    },
+    {
+      "source": [
+        "xxyXYY",
+        "xxyyXXYXYXy"
+      ],
+      "first_fixed_direction": {
+        "degree": 6,
+        "unit_algebra_dimension": 127,
+        "slope_period": 8,
+        "rank_by_residue": [
+          103,
+          103,
+          103,
+          104,
+          104,
+          103,
+          103,
+          103
+        ],
+        "surviving_residues": [],
+        "rejecting_duals_hex": {
+          "0": "0x5e647ff98f752775f50573a087a00000",
+          "1": "0x6b8617b35bf0b69ee3bf0b3f81200400",
+          "2": "0x5198bcfa4c76dbb98014a9b551400000",
+          "3": "0x365a6fb2d37d969b117f993925d00000",
+          "4": "0x3defa60910d249af5eb511ac60880000",
+          "5": "0x735910e08ddac17c91ca0f8ee1000000",
+          "6": "0x16b4a651c1f3050e3518aac626000000",
+          "7": "0x288ae7702b33855149824a242e400000"
+        }
+      },
+      "second_fixed_direction": {
+        "marking": [
+          "yXYY",
+          "XYY"
+        ],
+        "inverse_marking": [
+          "yXyXY",
+          "xY"
+        ],
+        "indexed_donor": [
+          [
+            1,
+            -1
+          ],
+          [
+            0,
+            -1
+          ],
+          [
+            -2,
+            -1
+          ],
+          [
+            -3,
+            1
+          ],
+          [
+            -2,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            -1
+          ]
+        ],
+        "indexed_receiver": [
+          [
+            1,
+            -1
+          ],
+          [
+            0,
+            -1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "magnus": {
+          "degree": 3,
+          "unit_algebra_dimension": 259,
+          "slope_period": 4,
+          "rank_by_residue": [
+            258,
+            258,
+            258,
+            258
+          ],
+          "surviving_residues": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rejecting_duals_hex": {}
+        },
+        "permutation": {
+          "donor": "xxyyXXYXYXy",
+          "receiver": "xxyXYY",
+          "basis": [
+            "xY",
+            "XyX"
+          ],
+          "markings": [
+            {
+              "x": [
+                1,
+                2,
+                4,
+                5,
+                3
+              ],
+              "y": [
+                2,
+                3,
+                5,
+                1,
+                4
+              ],
+              "source_cycle_type": [
+                1,
+                1,
+                3
+              ],
+              "period": 3,
+              "tail_cycle_types": [
+                [
+                  5
+                ],
+                [
+                  1,
+                  1,
+                  3
+                ],
+                [
+                  5
+                ]
+              ],
+              "allowed_residues": [
+                1
+              ]
+            },
+            {
+              "x": [
+                1,
+                3,
+                2,
+                5,
+                6,
+                7,
+                8,
+                4
+              ],
+              "y": [
+                4,
+                3,
+                5,
+                1,
+                8,
+                7,
+                2,
+                6
+              ],
+              "source_cycle_type": [
+                2,
+                3,
+                3
+              ],
+              "period": 6,
+              "tail_cycle_types": [
+                [
+                  1,
+                  1,
+                  6
+                ],
+                [
+                  1,
+                  2,
+                  5
+                ],
+                [
+                  1,
+                  1,
+                  1,
+                  2,
+                  3
+                ],
+                [
+                  2,
+                  3,
+                  3
+                ],
+                [
+                  1,
+                  1,
+                  6
+                ],
+                [
+                  8
+                ]
+              ],
+              "allowed_residues": [
+                3
+              ]
+            }
+          ],
+          "combined_period": 6,
+          "survivors": []
+        },
+        "common_period": 12,
+        "surviving_residues": []
+      }
+    },
+    {
+      "source": [
+        "xxyXYY",
+        "xxYxYxYXyxY"
+      ],
+      "first_fixed_direction": {
+        "degree": 6,
+        "unit_algebra_dimension": 127,
+        "slope_period": 8,
+        "rank_by_residue": [
+          103,
+          103,
+          103,
+          104,
+          104,
+          103,
+          103,
+          103
+        ],
+        "surviving_residues": [],
+        "rejecting_duals_hex": {
+          "0": "0x244528bfe4fc4aad5f4bf12bf8000000",
+          "1": "0x312a60f6dc3992535a4b676946400000",
+          "2": "0x583d53f79fb432dde417ad07e6000800",
+          "3": "0x303609c303d7283344e161a2db800000",
+          "4": "0xb0b88f008f040744b5a5a4b87400000",
+          "5": "0x38ec661bf135a1b740ef534e6a000000",
+          "6": "0x637429fc6fabae1a9614653642220000",
+          "7": "0x2d943c8acc0657491b0f7ba3e6a00000"
+        }
+      },
+      "second_fixed_direction": {
+        "marking": [
+          "xYYY",
+          "YxYYY"
+        ],
+        "inverse_marking": [
+          "xxYxYxY",
+          "xY"
+        ],
+        "indexed_donor": [
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            -1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "indexed_receiver": [
+          [
+            0,
+            1
+          ],
+          [
+            -3,
+            1
+          ],
+          [
+            -4,
+            -1
+          ],
+          [
+            0,
+            -1
+          ]
+        ],
+        "magnus": {
+          "degree": 5,
+          "unit_algebra_dimension": 364,
+          "slope_period": 8,
+          "rank_by_residue": [
+            333,
+            333,
+            333,
+            333,
+            333,
+            333,
+            333,
+            333
+          ],
+          "surviving_residues": [],
+          "rejecting_duals_hex": {
+            "0": "0x92307a821fe7d1de1320b973929b78d8d0598356d59cb06d73dc7db814b8e957d37ed215d23d930fc2a08000000",
+            "1": "0x850d71a6e03b7fd1221cd465d71447d10f4f7130275c5ae01b227262132bef7b469bc329a32629b4c56a0000000",
+            "2": "0x10bb68be312d60ddae6df67c9d08b41bd50bcf218f129b1c13bb5e759c4e19a87d1f7f7434c945885f3c0000000",
+            "3": "0xff40a1ff903a92491d6e2d25ac537c6fe015edb039d4e5789f9f329ef89eaa0443fbc7ecc25db670845c0000000",
+            "4": "0x58369a571d03a792e82fd7f2647b313e5bfdcbff9ea0ec06d4aab93255bc981b721781b4e6aa35c87c1c0000000",
+            "5": "0x12cb07cf08daa6c760f3636a0a4a2a186425b7bd7b7fa61acaf8912b843110c7be0495020d5507397de08000000",
+            "6": "0xc0922ca4994ca19c32dece4a963773e24996122caa68a93d9566a14e2aad6baea10c117f5f5d0791ef820000000",
+            "7": "0xb3b8239d323dbe8158ce2398dfb3195addcbccf82aa102a85f18a89a199c28e0ba6d562068117d7923900000000"
+          }
+        },
+        "permutation": {
+          "donor": "xxYxYxYXyxY",
+          "receiver": "xxyXYY",
+          "basis": [
+            "xY",
+            "xxYxYxY"
+          ],
+          "markings": [
+            {
+              "x": [
+                2,
+                3,
+                4,
+                1
+              ],
+              "y": [
+                1,
+                4,
+                2,
+                3
+              ],
+              "source_cycle_type": [
+                1,
+                1,
+                2
+              ],
+              "period": 3,
+              "tail_cycle_types": [
+                [
+                  4
+                ],
+                [
+                  4
+                ],
+                [
+                  1,
+                  1,
+                  2
+                ]
+              ],
+              "allowed_residues": [
+                2
+              ]
+            },
+            {
+              "x": [
+                1,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                2
+              ],
+              "y": [
+                2,
+                6,
+                8,
+                4,
+                5,
+                1,
+                7,
+                9,
+                3
+              ],
+              "source_cycle_type": [
+                3,
+                6
+              ],
+              "period": 6,
+              "tail_cycle_types": [
+                [
+                  1,
+                  8
+                ],
+                [
+                  1,
+                  8
+                ],
+                [
+                  1,
+                  1,
+                  1,
+                  2,
+                  2,
+                  2
+                ],
+                [
+                  1,
+                  8
+                ],
+                [
+                  1,
+                  8
+                ],
+                [
+                  3,
+                  6
+                ]
+              ],
+              "allowed_residues": [
+                5
+              ]
+            }
+          ],
+          "combined_period": 6,
+          "survivors": [
+            5
+          ]
+        },
+        "common_period": 24,
+        "surviving_residues": []
+      }
+    },
+    {
+      "source": [
+        "xxyXYY",
+        "xxYXYxYXyxy"
+      ],
+      "first_fixed_direction": {
+        "degree": 6,
+        "unit_algebra_dimension": 127,
+        "slope_period": 8,
+        "rank_by_residue": [
+          103,
+          103,
+          103,
+          104,
+          104,
+          103,
+          103,
+          103
+        ],
+        "surviving_residues": [],
+        "rejecting_duals_hex": {
+          "0": "0x5a183f3e4fb2af8d8935a24572200000",
+          "1": "0x4699200d9cc2d597994c934a3e800000",
+          "2": "0x4420552842065287ff36cb76f6800000",
+          "3": "0x4f74bf3cbf3bcb8493a860e3ec00000",
+          "4": "0x7e29ecb9507611a0921d7b9117000000",
+          "5": "0x11d3bbcdcb412fc6473847e528000000",
+          "6": "0x3c0636003c14270f330404100e200000",
+          "7": "0x734e0238882cef7cb0d5a6fa66400000"
+        }
+      },
+      "second_fixed_direction": {
+        "marking": [
+          "xY",
+          "YxY"
+        ],
+        "inverse_marking": [
+          "xxY",
+          "xY"
+        ],
+        "indexed_donor": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            2,
+            -1
+          ],
+          [
+            5,
+            -1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "indexed_receiver": [
+          [
+            0,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -2,
+            -1
+          ],
+          [
+            0,
+            -1
+          ]
+        ],
+        "magnus": {
+          "degree": 3,
+          "unit_algebra_dimension": 156,
+          "slope_period": 4,
+          "rank_by_residue": [
+            155,
+            155,
+            155,
+            155
+          ],
+          "surviving_residues": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rejecting_duals_hex": {}
+        },
+        "permutation": {
+          "donor": "xxYXYxYXyxy",
+          "receiver": "xxyXYY",
+          "basis": [
+            "xY",
+            "xxY"
+          ],
+          "markings": [
+            {
+              "x": [
+                2,
+                3,
+                4,
+                5,
+                1
+              ],
+              "y": [
+                2,
+                5,
+                1,
+                3,
+                4
+              ],
+              "source_cycle_type": [
+                1,
+                1,
+                3
+              ],
+              "period": 5,
+              "tail_cycle_types": [
+                [
+                  1,
+                  2,
+                  2
+                ],
+                [
+                  5
+                ],
+                [
+                  1,
+                  1,
+                  3
+                ],
+                [
+                  1,
+                  1,
+                  3
+                ],
+                [
+                  5
+                ]
+              ],
+              "allowed_residues": [
+                2,
+                3
+              ]
+            },
+            {
+              "x": [
+                1,
+                3,
+                2,
+                5,
+                6,
+                7,
+                8,
+                9,
+                4
+              ],
+              "y": [
+                4,
+                2,
+                9,
+                7,
+                3,
+                6,
+                1,
+                8,
+                5
+              ],
+              "source_cycle_type": [
+                1,
+                2,
+                6
+              ],
+              "period": 7,
+              "tail_cycle_types": [
+                [
+                  9
+                ],
+                [
+                  1,
+                  2,
+                  6
+                ],
+                [
+                  1,
+                  2,
+                  6
+                ],
+                [
+                  9
+                ],
+                [
+                  1,
+                  2,
+                  6
+                ],
+                [
+                  1,
+                  2,
+                  6
+                ],
+                [
+                  1,
+                  2,
+                  6
+                ]
+              ],
+              "allowed_residues": [
+                1,
+                2,
+                4,
+                5,
+                6
+              ]
+            },
+            {
+              "x": [
+                2,
+                1,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                3
+              ],
+              "y": [
+                1,
+                3,
+                5,
+                2,
+                6,
+                7,
+                8,
+                4,
+                9
+              ],
+              "source_cycle_type": [
+                1,
+                2,
+                3,
+                3
+              ],
+              "period": 7,
+              "tail_cycle_types": [
+                [
+                  1,
+                  1,
+                  1,
+                  6
+                ],
+                [
+                  1,
+                  8
+                ],
+                [
+                  2,
+                  7
+                ],
+                [
+                  3,
+                  6
+                ],
+                [
+                  2,
+                  7
+                ],
+                [
+                  1,
+                  8
+                ],
+                [
+                  2,
+                  7
+                ]
+              ],
+              "allowed_residues": []
+            }
+          ],
+          "combined_period": 35,
+          "survivors": []
+        },
+        "common_period": 140,
+        "surviving_residues": []
+      }
+    },
+    {
+      "source": [
+        "xxyXYY",
+        "xxYXYXyxYxY"
+      ],
+      "first_fixed_direction": {
+        "degree": 6,
+        "unit_algebra_dimension": 127,
+        "slope_period": 8,
+        "rank_by_residue": [
+          103,
+          103,
+          103,
+          103,
+          103,
+          104,
+          104,
+          103
+        ],
+        "surviving_residues": [],
+        "rejecting_duals_hex": {
+          "0": "0x7f17dd2b4a052ec0f5ee13f79e010000",
+          "1": "0x1b45580c144ff59267573b719b200000",
+          "2": "0x2078d93f1f689dd5605257f290000000",
+          "3": "0x2cfcae87e8d019a92491f91dfd800000",
+          "4": "0x1377d500135792d62c7b0a4406220000",
+          "5": "0xa9ceaf1dc2ace546a7bd44f63800000",
+          "6": "0x7c4473fc73f8f8819b6b6fc27200000",
+          "7": "0x2d5e86f9fc613c89638480a003200000"
+        }
+      },
+      "second_fixed_direction": {
+        "marking": [
+          "yXyy",
+          "Xyy"
+        ],
+        "inverse_marking": [
+          "xYxYY",
+          "xY"
+        ],
+        "indexed_donor": [
+          [
+            1,
+            -1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            -3,
+            1
+          ],
+          [
+            -4,
+            -1
+          ]
+        ],
+        "indexed_receiver": [
+          [
+            1,
+            -1
+          ],
+          [
+            4,
+            -1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "magnus": {
+          "degree": 3,
+          "unit_algebra_dimension": 259,
+          "slope_period": 4,
+          "rank_by_residue": [
+            244,
+            244,
+            244,
+            244
+          ],
+          "surviving_residues": [],
+          "rejecting_duals_hex": {
+            "0": "0x2838ba8bbe250713510ac0a0a26dd15914140bba2b2383517745746f65c4c2000",
+            "1": "0x6432764356acc64ac810d198895ab21b33014356432762c86acc64c5ac11b0000",
+            "2": "0x60d7a98f5a1c1bf1219643837e22d2c9746f8f5a596f8921ab4b3df5d951a8000",
+            "3": "0x3efe3075d6f7dec61ed5daebd9c69aba596b75d3474b2e1efa68e94fbc4089000"
+          }
+        },
+        "permutation": {
+          "donor": "xxYXYXyxYxY",
+          "receiver": "xxyXYY",
+          "basis": [
+            "xY",
+            "xYxYY"
+          ],
+          "markings": [
+            {
+              "x": [
+                1,
+                3,
+                4,
+                5,
+                2
+              ],
+              "y": [
+                2,
+                4,
+                1,
+                5,
+                3
+              ],
+              "source_cycle_type": [
+                1,
+                1,
+                1,
+                2
+              ],
+              "period": 3,
+              "tail_cycle_types": [
+                [
+                  1,
+                  4
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  2,
+                  3
+                ]
+              ],
+              "allowed_residues": []
+            }
+          ],
+          "combined_period": 3,
+          "survivors": []
+        },
+        "common_period": 12,
+        "surviving_residues": []
+      }
+    }
+  ]
+}

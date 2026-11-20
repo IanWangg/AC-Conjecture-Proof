@@ -1,0 +1,147 @@
+{
+  "interval_widths": [
+    9,
+    9
+  ],
+  "middle_budget": 18,
+  "pruned_degree_seven": {
+    "degree": 7,
+    "depth_seven": [
+      111825158,
+      25186682
+    ],
+    "edges": [
+      1353569743,
+      297290238
+    ],
+    "elements": 75672801,
+    "left": 4311472,
+    "meeting_coordinates": [],
+    "meetings": 0,
+    "right": 946601,
+    "widths": [
+      9,
+      9
+    ]
+  },
+  "pruned_degree_six": {
+    "degree": 6,
+    "depth_seven": [
+      107946600,
+      25098818
+    ],
+    "edges": [
+      1309336097,
+      296422038
+    ],
+    "elements": 47094793,
+    "left": 4020554,
+    "meeting_coordinates": [
+      [
+        [
+          "00376ccfdfafa00083e355408d4a9dbb",
+          0
+        ],
+        [
+          "40007dc5bdf83d80403dfa7847b24d67",
+          1
+        ]
+      ],
+      [
+        [
+          "00376ccfdfafa00083e355408d4a9dbb",
+          1
+        ],
+        [
+          "40007dc5bdf83d80403dfa7847b24d67",
+          0
+        ]
+      ],
+      [
+        [
+          "00376ccfdfafa00083e355408d4a9dbb",
+          1
+        ],
+        [
+          "40007dc5bdf83d80403dfa7847b24d67",
+          1
+        ]
+      ],
+      [
+        [
+          "003eec2ed627c6f803665d200ccf1433",
+          0
+        ],
+        [
+          "006f07ef68ef80008797ef009378ac9f",
+          1
+        ]
+      ],
+      [
+        [
+          "003eec2ed627c6f803665d200ccf1433",
+          0
+        ],
+        [
+          "40007dc5bdf83d80403dfa7847b24d67",
+          0
+        ]
+      ],
+      [
+        [
+          "003eec2ed627c6f803665d200ccf1433",
+          0
+        ],
+        [
+          "40007dc5bdf83d80403dfa7847b24d67",
+          1
+        ]
+      ],
+      [
+        [
+          "003eec2ed627c6f803665d200ccf1433",
+          1
+        ],
+        [
+          "40007dc5bdf83d80403dfa7847b24d67",
+          0
+        ]
+      ],
+      [
+        [
+          "003eec2ed627c6f803665d200ccf1433",
+          1
+        ],
+        [
+          "40007dc5bdf83d80403dfa7847b24d67",
+          1
+        ]
+      ]
+    ],
+    "meetings": 8,
+    "right": 939307,
+    "widths": [
+      9,
+      9
+    ]
+  },
+  "unpruned_degree_six": {
+    "degree": 6,
+    "depth_seven": [
+      122937446,
+      28045313
+    ],
+    "edges": [
+      1561314560,
+      346846644
+    ],
+    "elements": 51276358,
+    "left": 6764515,
+    "meetings": 45,
+    "right": 1465497,
+    "widths": [
+      9,
+      9
+    ]
+  }
+}

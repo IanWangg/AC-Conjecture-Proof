@@ -108,13 +108,15 @@ struct Meeting {
     Split first, second;
 };
 
-std::optional<Meeting> sphere(const std::array<string,4>& rows, bool coincident) {
+template<class BuildMenu>
+std::optional<Meeting> sphere_with_menus(const std::array<string,4>& rows, bool coincident,
+                                       BuildMenu build_menu) {
     for (const auto order : {std::array<int,4>{0,1,2,3}, {0,2,1,3}, {0,3,1,2}}) {
         const auto [i,j,k,l] = order;
         if (coincident && j == 2) continue;
-        const auto left = zero_bridge(rows[i], rows[j]);
+        const auto& left = build_menu(rows[i], rows[j]);
         // Index the right product by its inverse, to compare both sides literally.
-        const auto right = zero_bridge(inverse(rows[l]), inverse(rows[k]));
+        const auto& right = build_menu(inverse(rows[l]), inverse(rows[k]));
         for (const auto& [needed, witness] : left) {
             if (const auto entry = right.find(needed); entry != right.end())
                 return Meeting{order,witness,{inverse(entry->second.b),inverse(entry->second.a),{}}};
@@ -126,6 +128,10 @@ std::optional<Meeting> sphere(const std::array<string,4>& rows, bool coincident)
                 return Meeting{order,std::move(*bridge),{inverse(witness.b),inverse(witness.a),{}}};
     }
     return {};
+}
+
+std::optional<Meeting> sphere(const std::array<string,4>& rows, bool coincident) {
+    return sphere_with_menus(rows,coincident,zero_bridge);
 }
 
 std::pair<int,int> vector(const string& word) {

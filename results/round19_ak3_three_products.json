@@ -1,0 +1,125 @@
+{
+  "certified_low_catalogue_sha256": "c9069696714936e3679a9ede1864f03bfd1f5127a710c9880e08d8c193ba0aa3",
+  "energy_17_prefix_sha256": "ebc69ce5a21625ec14a2f03fef0d96049ede23d5b7b9aca3fb9b9b944461077c",
+  "fixed_ordinary_low20": {
+    "mode": "fixed",
+    "rows_checked": 84,
+    "slopes": 672,
+    "contractions": 52413,
+    "cached_negative": 86,
+    "terminal": 52327,
+    "hits": []
+  },
+  "all_alternating_relaxation_energy17": {
+    "mode": "alternating",
+    "rows_checked": 9,
+    "slopes": 108,
+    "contractions": 877644,
+    "cached_negative": 419085,
+    "terminal": 450866,
+    "hits": []
+  },
+  "fixed_round17_minima": {
+    "mode": "fixed",
+    "rows_checked": 5,
+    "slopes": 40,
+    "contractions": 3253,
+    "cached_negative": 5,
+    "terminal": 3248,
+    "hits": []
+  },
+  "ribbon_controls": [
+    {
+      "boundaries": 5,
+      "positive": 1997,
+      "negative": 3
+    },
+    {
+      "boundaries": 6,
+      "positive": 1999,
+      "negative": 1
+    }
+  ],
+  "positive_control": {
+    "one": {
+      "rows_checked": 1,
+      "complete": true,
+      "hit": null
+    },
+    "two": {
+      "rows_checked": 1,
+      "complete": true,
+      "hit": null
+    },
+    "three": {
+      "mode": "fixed",
+      "rows_checked": 1,
+      "slopes": 4,
+      "contractions": 427,
+      "cached_negative": 2,
+      "terminal": 425,
+      "hits": [
+        {
+          "source": [
+            "yxyyxxYYXXXXyyyxxYYXXXYxyyyxxYYXXXYX",
+            "xxxyyXXYY"
+          ],
+          "working_pair": [
+            "yxyyxxYYXXXXyyyxxYYXXXYxyyyxxYYXXXYX",
+            "xxxyyXXYY"
+          ],
+          "primitive": "y",
+          "first_sign": 0,
+          "coefficient": 3,
+          "boundary": [
+            "yxyyxxYYXXXXyyyxxYYXXXYxyyyxxYYXXXYX",
+            "xxxyyXXYY",
+            "xxxyyXXYY",
+            "xxxyyXXYY",
+            "Y"
+          ],
+          "equation": {
+            "kind": "contract",
+            "i": 0,
+            "j": 1,
+            "merge": [
+              "yyxxYYXXXYXyxyyxxYYXXXXyyyxxYYXXXYxy",
+              "YxxxyyXXY",
+              ""
+            ],
+            "coefficient": "XXXXyyyxxYYXXXYxxxxyyXXyxxYYXXXYXyxyyxxYY",
+            "child": {
+              "kind": "quadruple",
+              "order": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "left": [
+                "xxxyyXXYY",
+                "YxxxyyXXY",
+                "YxxxxyyXX"
+              ],
+              "right": [
+                "Y",
+                "xyyxxYYXXXXyyyxxYYXXXYxxxxyyXXyxxYYXXXYXy",
+                ""
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "strict": {
+      "moves": 379,
+      "peak_total_length": 232,
+      "endpoint": [
+        "x",
+        "y"
+      ],
+      "cyclic_peak": 79,
+      "primitive_exposed_at": 301
+    }
+  }
+}
