@@ -1,0 +1,338 @@
+{
+  "literal_endpoint": [
+    "xxyXYY",
+    "xxxxYxYxYXY"
+  ],
+  "cyclic_energy": 17,
+  "strict_replay": {
+    "moves": 879,
+    "peak_total_length": 39,
+    "endpoint": [
+      "xxyXYY",
+      "xxxxYxYxYXY"
+    ],
+    "cyclic_peak": 33
+  },
+  "lower_catalogue_energy_at_most_17_rows": {
+    "cap31": 616,
+    "additional_cap32": 0
+  },
+  "membership_in_old_catalogue": false,
+  "sharp_ordinary_entry_peak": 33,
+  "two_products_arbitrary_length": {
+    "rows_checked": 1,
+    "complete": true,
+    "hit": null
+  },
+  "planar_link_obstruction": {
+    "status": "PARITY_OBSTRUCTION",
+    "words": [
+      "xxyXYY",
+      "xxxxYxYxYXY"
+    ],
+    "kind": "K4",
+    "variable_count": 20,
+    "equation_count": 155,
+    "contradiction_rows": [
+      {
+        "vertex": 0,
+        "triple": [
+          1,
+          6,
+          11
+        ],
+        "mask": 0,
+        "rhs": 1
+      }
+    ],
+    "base_orders": [
+      [
+        1,
+        13,
+        15,
+        17,
+        11,
+        21,
+        25,
+        33,
+        6,
+        30
+      ],
+      [
+        16,
+        14,
+        12,
+        0,
+        5,
+        18,
+        22,
+        26,
+        2,
+        29
+      ],
+      [
+        32,
+        24,
+        20,
+        10,
+        28,
+        3,
+        8
+      ],
+      [
+        31,
+        7,
+        9,
+        27,
+        23,
+        19,
+        4
+      ]
+    ],
+    "variables": [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        5,
+        10
+      ],
+      [
+        5,
+        12
+      ],
+      [
+        5,
+        16
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        10,
+        16
+      ],
+      [
+        12,
+        16
+      ],
+      [
+        3,
+        15
+      ],
+      [
+        1,
+        14
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        9,
+        11
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        11,
+        13
+      ]
+    ]
+  },
+  "permutation_slope_tests": [
+    {
+      "donor": "xxyXYY",
+      "receiver": "xxxxYxYxYXY",
+      "basis": [
+        "xxYxYxYxY",
+        "xY"
+      ],
+      "markings": [
+        {
+          "x": [
+            1,
+            2,
+            4,
+            5,
+            3,
+            7,
+            8,
+            6
+          ],
+          "y": [
+            3,
+            6,
+            5,
+            7,
+            2,
+            8,
+            4,
+            1
+          ],
+          "source_cycle_type": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "period": 4,
+          "tail_cycle_types": [
+            [
+              1,
+              1,
+              3,
+              3
+            ],
+            [
+              1,
+              1,
+              3,
+              3
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              2,
+              6
+            ]
+          ],
+          "allowed_residues": [
+            0,
+            1
+          ]
+        }
+      ],
+      "combined_period": 4,
+      "survivors": [
+        0,
+        1
+      ]
+    },
+    {
+      "donor": "xxxxYxYxYXY",
+      "receiver": "xxyXYY",
+      "basis": [
+        "xY",
+        "xxYxYxYxY"
+      ],
+      "markings": [
+        {
+          "x": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            1
+          ],
+          "y": [
+            3,
+            4,
+            6,
+            7,
+            2,
+            1,
+            5
+          ],
+          "source_cycle_type": [
+            3,
+            4
+          ],
+          "period": 4,
+          "tail_cycle_types": [
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              1,
+              2,
+              3
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "allowed_residues": [
+            0,
+            3
+          ]
+        }
+      ],
+      "combined_period": 4,
+      "survivors": [
+        0,
+        3
+      ]
+    }
+  ],
+  "bounded_primitive_replacement": {
+    "slope_parameter_range": [
+      -24,
+      24
+    ],
+    "completion_stages": 3,
+    "first_direction": {
+      "graph_sizes": [
+        11,
+        99,
+        627,
+        3795
+      ],
+      "allocation_stop": false,
+      "hits": []
+    },
+    "second_direction": {
+      "graph_sizes": [
+        6,
+        189,
+        4380,
+        98523
+      ],
+      "allocation_stop": false,
+      "hits": []
+    }
+  }
+}

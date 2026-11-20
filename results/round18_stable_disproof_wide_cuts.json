@@ -1,0 +1,167 @@
+{
+  "eight_eight": {
+    "degree": 6,
+    "elements": 77588688,
+    "left": [
+      18525,
+      408540,
+      6098668
+    ],
+    "meetings": [
+      0,
+      0,
+      0
+    ],
+    "right": [
+      36798,
+      420135,
+      4328526
+    ],
+    "widths": [
+      8,
+      8
+    ]
+  },
+  "eight_nine": {
+    "degree_seven_last_split": {
+      "active_depths": [
+        2,
+        7
+      ],
+      "degree": 7,
+      "orientations": [
+        {
+          "active_layer": 31116791,
+          "edges": 58577792,
+          "meetings": 0,
+          "penultimate_layer": 2092064,
+          "plain_boundary": 1,
+          "short_boundary": 432935
+        },
+        {
+          "active_layer": 22276605,
+          "edges": 222019224,
+          "meetings": 0,
+          "penultimate_layer": 7929258,
+          "plain_boundary": 1,
+          "short_boundary": 421767
+        }
+      ],
+      "short_idle": 1,
+      "widths": [
+        8,
+        9
+      ]
+    },
+    "degree_six_splits": [
+      {
+        "active_depths": [
+          3,
+          6
+        ],
+        "degree": 6,
+        "orientations": [
+          {
+            "active_layer": 23534301,
+            "edges": 50885184,
+            "meetings": 0,
+            "penultimate_layer": 1817328,
+            "plain_boundary": 11,
+            "short_boundary": 18525
+          },
+          {
+            "active_layer": 26126690,
+            "edges": 166550496,
+            "meetings": 0,
+            "penultimate_layer": 5948232,
+            "plain_boundary": 15,
+            "short_boundary": 36798
+          }
+        ],
+        "short_idle": 0,
+        "widths": [
+          8,
+          9
+        ]
+      },
+      {
+        "active_depths": [
+          2,
+          7
+        ],
+        "degree": 6,
+        "orientations": [
+          {
+            "active_layer": 29243238,
+            "edges": 58515744,
+            "meetings": 0,
+            "penultimate_layer": 2089848,
+            "plain_boundary": 1,
+            "short_boundary": 408540
+          },
+          {
+            "active_layer": 22112239,
+            "edges": 216693792,
+            "meetings": 12,
+            "penultimate_layer": 7739064,
+            "plain_boundary": 1,
+            "short_boundary": 420135
+          }
+        ],
+        "short_idle": 1,
+        "widths": [
+          8,
+          9
+        ]
+      }
+    ]
+  },
+  "eight_ten": {
+    "active_depths": [
+      3,
+      7
+    ],
+    "degree": 6,
+    "orientations": [
+      {
+        "active_layer": 23534301,
+        "edges": 58515744,
+        "meetings": 0,
+        "penultimate_layer": 2089848,
+        "plain_boundary": 1,
+        "short_boundary": 18525
+      },
+      {
+        "active_layer": 26126690,
+        "edges": 216693792,
+        "meetings": 0,
+        "penultimate_layer": 7739064,
+        "plain_boundary": 1,
+        "short_boundary": 36798
+      }
+    ],
+    "short_idle": 0,
+    "widths": [
+      8,
+      10
+    ]
+  },
+  "width_eight_rules": {
+    "distinct_residual_rules": 3592267,
+    "marked_prefix_widths": [
+      50,
+      930,
+      15842,
+      262805,
+      4329001
+    ],
+    "rank_two_radius_seven_pairs": 10514136,
+    "sorted_table_sha256": "e1cc89a1472ff9b7fa9c76698138058112fa7ee86971e9b3a579782e776f6c7d",
+    "terminal_occurrences": {
+      "last_equality_saving": 45963573,
+      "literal_saving": 147061942,
+      "modulo_16_obstruction": 20526520,
+      "remaining": 4348349
+    }
+  }
+}

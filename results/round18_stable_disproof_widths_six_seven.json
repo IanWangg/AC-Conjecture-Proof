@@ -1,0 +1,536 @@
+{
+  "middle_budget": 18,
+  "schedules": [
+    {
+      "degree_seven_splits": [],
+      "degree_six_splits": [
+        {
+          "active_depths": [
+            5,
+            5
+          ],
+          "degree": 6,
+          "orientations": [
+            {
+              "active_layer": 15740246,
+              "edges": 33647516,
+              "meetings": 0,
+              "penultimate_layer": 1201697,
+              "plain_boundary": 88,
+              "short_boundary": 32
+            },
+            {
+              "active_layer": 8664644,
+              "edges": 105371672,
+              "meetings": 0,
+              "penultimate_layer": 3763274,
+              "plain_boundary": 159,
+              "short_boundary": 22
+            }
+          ],
+          "short_idle": 0
+        },
+        {
+          "active_depths": [
+            4,
+            6
+          ],
+          "degree": 6,
+          "orientations": [
+            {
+              "active_layer": 23596034,
+              "edges": 50885184,
+              "meetings": 0,
+              "penultimate_layer": 1817328,
+              "plain_boundary": 11,
+              "short_boundary": 852
+            },
+            {
+              "active_layer": 11455689,
+              "edges": 166550496,
+              "meetings": 0,
+              "penultimate_layer": 5948232,
+              "plain_boundary": 15,
+              "short_boundary": 491
+            }
+          ],
+          "short_idle": 1
+        },
+        {
+          "active_depths": [
+            3,
+            7
+          ],
+          "degree": 6,
+          "orientations": [
+            {
+              "active_layer": 23242650,
+              "edges": 58515744,
+              "meetings": 0,
+              "penultimate_layer": 2089848,
+              "plain_boundary": 1,
+              "short_boundary": 14297
+            },
+            {
+              "active_layer": 10227080,
+              "edges": 216693792,
+              "meetings": 0,
+              "penultimate_layer": 7739064,
+              "plain_boundary": 1,
+              "short_boundary": 7241
+            }
+          ],
+          "short_idle": 2
+        }
+      ],
+      "idle_instructions": 2,
+      "interval_lengths": [
+        6,
+        10
+      ]
+    },
+    {
+      "degree_seven_splits": [],
+      "degree_six_splits": [
+        {
+          "active_depths": [
+            5,
+            6
+          ],
+          "degree": 6,
+          "orientations": [
+            {
+              "active_layer": 15740246,
+              "edges": 50885184,
+              "meetings": 0,
+              "penultimate_layer": 1817328,
+              "plain_boundary": 11,
+              "short_boundary": 32
+            },
+            {
+              "active_layer": 8664644,
+              "edges": 166550496,
+              "meetings": 0,
+              "penultimate_layer": 5948232,
+              "plain_boundary": 15,
+              "short_boundary": 22
+            }
+          ],
+          "short_idle": 0
+        },
+        {
+          "active_depths": [
+            4,
+            7
+          ],
+          "degree": 6,
+          "orientations": [
+            {
+              "active_layer": 23596034,
+              "edges": 58515744,
+              "meetings": 0,
+              "penultimate_layer": 2089848,
+              "plain_boundary": 1,
+              "short_boundary": 852
+            },
+            {
+              "active_layer": 11455689,
+              "edges": 216693792,
+              "meetings": 0,
+              "penultimate_layer": 7739064,
+              "plain_boundary": 1,
+              "short_boundary": 491
+            }
+          ],
+          "short_idle": 1
+        }
+      ],
+      "idle_instructions": 1,
+      "interval_lengths": [
+        6,
+        11
+      ]
+    },
+    {
+      "degree_seven_splits": [],
+      "degree_six_splits": [
+        {
+          "active_depths": [
+            5,
+            7
+          ],
+          "degree": 6,
+          "orientations": [
+            {
+              "active_layer": 15740246,
+              "edges": 58515744,
+              "meetings": 0,
+              "penultimate_layer": 2089848,
+              "plain_boundary": 1,
+              "short_boundary": 32
+            },
+            {
+              "active_layer": 8664644,
+              "edges": 216693792,
+              "meetings": 0,
+              "penultimate_layer": 7739064,
+              "plain_boundary": 1,
+              "short_boundary": 22
+            }
+          ],
+          "short_idle": 0
+        }
+      ],
+      "idle_instructions": 0,
+      "interval_lengths": [
+        6,
+        12
+      ]
+    },
+    {
+      "degree_seven_splits": [
+        {
+          "active_depths": [
+            4,
+            5
+          ],
+          "degree": 7,
+          "orientations": [
+            {
+              "active_layer": 25653500,
+              "edges": 33694220,
+              "meetings": 0,
+              "penultimate_layer": 1203365,
+              "plain_boundary": 88,
+              "short_boundary": 1105
+            },
+            {
+              "active_layer": 15890379,
+              "edges": 106482684,
+              "meetings": 0,
+              "penultimate_layer": 3802953,
+              "plain_boundary": 159,
+              "short_boundary": 1011
+            }
+          ],
+          "short_idle": 0
+        },
+        {
+          "active_depths": [
+            3,
+            6
+          ],
+          "degree": 7,
+          "orientations": [
+            {
+              "active_layer": 35011951,
+              "edges": 50942192,
+              "meetings": 0,
+              "penultimate_layer": 1819364,
+              "plain_boundary": 11,
+              "short_boundary": 26766
+            },
+            {
+              "active_layer": 17495022,
+              "edges": 169382304,
+              "meetings": 0,
+              "penultimate_layer": 6049368,
+              "plain_boundary": 15,
+              "short_boundary": 18339
+            }
+          ],
+          "short_idle": 1
+        },
+        {
+          "active_depths": [
+            2,
+            7
+          ],
+          "degree": 7,
+          "orientations": [
+            {
+              "active_layer": 31811231,
+              "edges": 58577792,
+              "meetings": 0,
+              "penultimate_layer": 2092064,
+              "plain_boundary": 1,
+              "short_boundary": 420852
+            },
+            {
+              "active_layer": 13707436,
+              "edges": 222019224,
+              "meetings": 0,
+              "penultimate_layer": 7929258,
+              "plain_boundary": 1,
+              "short_boundary": 218710
+            }
+          ],
+          "short_idle": 2
+        }
+      ],
+      "degree_six_splits": [
+        {
+          "active_depths": [
+            4,
+            5
+          ],
+          "degree": 6,
+          "orientations": [
+            {
+              "active_layer": 24465128,
+              "edges": 33647516,
+              "meetings": 0,
+              "penultimate_layer": 1201697,
+              "plain_boundary": 88,
+              "short_boundary": 1061
+            },
+            {
+              "active_layer": 15851307,
+              "edges": 105371672,
+              "meetings": 6,
+              "penultimate_layer": 3763274,
+              "plain_boundary": 159,
+              "short_boundary": 1011
+            }
+          ],
+          "short_idle": 0
+        },
+        {
+          "active_depths": [
+            3,
+            6
+          ],
+          "degree": 6,
+          "orientations": [
+            {
+              "active_layer": 33478331,
+              "edges": 50885184,
+              "meetings": 0,
+              "penultimate_layer": 1817328,
+              "plain_boundary": 11,
+              "short_boundary": 25694
+            },
+            {
+              "active_layer": 17390412,
+              "edges": 166550496,
+              "meetings": 10,
+              "penultimate_layer": 5948232,
+              "plain_boundary": 15,
+              "short_boundary": 18291
+            }
+          ],
+          "short_idle": 1
+        },
+        {
+          "active_depths": [
+            2,
+            7
+          ],
+          "degree": 6,
+          "orientations": [
+            {
+              "active_layer": 30308538,
+              "edges": 58515744,
+              "meetings": 0,
+              "penultimate_layer": 2089848,
+              "plain_boundary": 1,
+              "short_boundary": 401828
+            },
+            {
+              "active_layer": 13545636,
+              "edges": 216693792,
+              "meetings": 16,
+              "penultimate_layer": 7739064,
+              "plain_boundary": 1,
+              "short_boundary": 216668
+            }
+          ],
+          "short_idle": 2
+        }
+      ],
+      "idle_instructions": 2,
+      "interval_lengths": [
+        7,
+        9
+      ]
+    },
+    {
+      "degree_seven_splits": [
+        {
+          "active_depths": [
+            4,
+            6
+          ],
+          "degree": 7,
+          "orientations": [
+            {
+              "active_layer": 25653500,
+              "edges": 50942192,
+              "meetings": 0,
+              "penultimate_layer": 1819364,
+              "plain_boundary": 11,
+              "short_boundary": 1105
+            },
+            {
+              "active_layer": 15890379,
+              "edges": 169382304,
+              "meetings": 0,
+              "penultimate_layer": 6049368,
+              "plain_boundary": 15,
+              "short_boundary": 1011
+            }
+          ],
+          "short_idle": 0
+        },
+        {
+          "active_depths": [
+            3,
+            7
+          ],
+          "degree": 7,
+          "orientations": [
+            {
+              "active_layer": 35011951,
+              "edges": 58577792,
+              "meetings": 0,
+              "penultimate_layer": 2092064,
+              "plain_boundary": 1,
+              "short_boundary": 26766
+            },
+            {
+              "active_layer": 17495022,
+              "edges": 222019224,
+              "meetings": 0,
+              "penultimate_layer": 7929258,
+              "plain_boundary": 1,
+              "short_boundary": 18339
+            }
+          ],
+          "short_idle": 1
+        }
+      ],
+      "degree_six_splits": [
+        {
+          "active_depths": [
+            4,
+            6
+          ],
+          "degree": 6,
+          "orientations": [
+            {
+              "active_layer": 24465128,
+              "edges": 50885184,
+              "meetings": 0,
+              "penultimate_layer": 1817328,
+              "plain_boundary": 11,
+              "short_boundary": 1061
+            },
+            {
+              "active_layer": 15851307,
+              "edges": 166550496,
+              "meetings": 14,
+              "penultimate_layer": 5948232,
+              "plain_boundary": 15,
+              "short_boundary": 1011
+            }
+          ],
+          "short_idle": 0
+        },
+        {
+          "active_depths": [
+            3,
+            7
+          ],
+          "degree": 6,
+          "orientations": [
+            {
+              "active_layer": 33478331,
+              "edges": 58515744,
+              "meetings": 0,
+              "penultimate_layer": 2089848,
+              "plain_boundary": 1,
+              "short_boundary": 25694
+            },
+            {
+              "active_layer": 17390412,
+              "edges": 216693792,
+              "meetings": 2,
+              "penultimate_layer": 7739064,
+              "plain_boundary": 1,
+              "short_boundary": 18291
+            }
+          ],
+          "short_idle": 1
+        }
+      ],
+      "idle_instructions": 1,
+      "interval_lengths": [
+        7,
+        10
+      ]
+    },
+    {
+      "degree_seven_splits": [
+        {
+          "active_depths": [
+            4,
+            7
+          ],
+          "degree": 7,
+          "orientations": [
+            {
+              "active_layer": 25653500,
+              "edges": 58577792,
+              "meetings": 0,
+              "penultimate_layer": 2092064,
+              "plain_boundary": 1,
+              "short_boundary": 1105
+            },
+            {
+              "active_layer": 15890379,
+              "edges": 222019224,
+              "meetings": 0,
+              "penultimate_layer": 7929258,
+              "plain_boundary": 1,
+              "short_boundary": 1011
+            }
+          ],
+          "short_idle": 0
+        }
+      ],
+      "degree_six_splits": [
+        {
+          "active_depths": [
+            4,
+            7
+          ],
+          "degree": 6,
+          "orientations": [
+            {
+              "active_layer": 24465128,
+              "edges": 58515744,
+              "meetings": 0,
+              "penultimate_layer": 2089848,
+              "plain_boundary": 1,
+              "short_boundary": 1061
+            },
+            {
+              "active_layer": 15851307,
+              "edges": 216693792,
+              "meetings": 2,
+              "penultimate_layer": 7739064,
+              "plain_boundary": 1,
+              "short_boundary": 1011
+            }
+          ],
+          "short_idle": 0
+        }
+      ],
+      "idle_instructions": 0,
+      "interval_lengths": [
+        7,
+        11
+      ]
+    }
+  ]
+}

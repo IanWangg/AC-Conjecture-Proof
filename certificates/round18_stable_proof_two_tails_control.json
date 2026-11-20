@@ -1,0 +1,52 @@
+{
+  "format": "rank-three-ac-elementary-v1",
+  "start": [
+    "zx",
+    "zYx",
+    "x"
+  ],
+  "target": [
+    "y",
+    "z",
+    "x"
+  ],
+  "maximum_cyclic_length": 6,
+  "moves": [
+    {
+      "op": "invert",
+      "i": 1
+    },
+    {
+      "op": "multiply",
+      "i": 0,
+      "j": 1
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "Z"
+    },
+    {
+      "op": "invert",
+      "i": 1
+    },
+    {
+      "op": "invert",
+      "i": 2
+    },
+    {
+      "op": "multiply",
+      "i": 1,
+      "j": 2
+    },
+    {
+      "op": "invert",
+      "i": 2
+    },
+    {
+      "op": "multiply",
+      "i": 1,
+      "j": 0
+    }
+  ]
+}

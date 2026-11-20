@@ -1,0 +1,93 @@
+{
+  "native_expansion": {
+    "cyclic_cap": 33,
+    "lower_orbits": 539705143,
+    "boundary_records_read": 1258633777,
+    "unique_seed_orbits": 1258633777,
+    "expanded_orbits": 1318624663,
+    "outside_orbits": 1318624663,
+    "closure_reached_from_listed_seeds": true,
+    "primitive_found": false,
+    "candidate_products": 1636187542080,
+    "admitted_products": 66651281822,
+    "outside_histogram": {
+      "17": 9,
+      "19": 59,
+      "20": 16,
+      "21": 347,
+      "22": 95,
+      "23": 2131,
+      "24": 450,
+      "25": 12627,
+      "26": 2509,
+      "27": 75662,
+      "28": 15989,
+      "29": 475172,
+      "30": 133336,
+      "31": 3894513,
+      "32": 3122943,
+      "33": 1310888805
+    }
+  },
+  "combined_signed_orbits": 1858329806,
+  "parent_ledger_bytes": 42195989216,
+  "outside_tsv_bytes": 46137966297,
+  "generated_ordinary_cyclic_peak_lower_bound": 34,
+  "independent_full_closure": "in_progress",
+  "independent_primitive_coordinates": {
+    "rows": 1318624663,
+    "primitive_word_classes_with_rotations": 26124,
+    "sign_pure_coordinates": 311133869,
+    "primitive_coordinate_occurrences": 0,
+    "first_hit_code": 0
+  },
+  "additional_orbits_beyond_seeds_unbounded_product": {
+    "rows_checked": 59990886,
+    "complete": true,
+    "hit": null
+  },
+  "new_rows_through_energy_20": {
+    "literal_parity": {
+      "source_sha256": "c9069696714936e3679a9ede1864f03bfd1f5127a710c9880e08d8c193ba0aa3",
+      "rows": 84,
+      "counts": {
+        "K4": 84,
+        "PARITY_OBSTRUCTION": 84
+      },
+      "independently_verified_witness_equations": 134,
+      "exceptions": []
+    },
+    "unbounded_two_product": {
+      "rows_checked": 84,
+      "complete": true,
+      "hit": null
+    },
+    "simultaneous_ambient_archive": {
+      "archive_rows": 23902,
+      "archive_classes": 19771,
+      "forward_rows": 84,
+      "forward_classes": 84,
+      "matching_forward_rows": 0,
+      "first_join": null
+    },
+    "arbitrary_tail_archive": {
+      "status": "NO_SUBGROUP_JOIN",
+      "forward_pairs": 84,
+      "forward_distinct_words": 90,
+      "forward_cap": 20,
+      "forward_minimum_coordinate": 6,
+      "reverse_pairs": 23902,
+      "reverse_rotation_pairs": 6230442,
+      "reverse_distinct_rotated_cores": 2675055,
+      "reverse_geodesic_bridges": 1698,
+      "primitive_slopes_constructed": 2072314,
+      "coordinates_found_in_forward_catalogue": 61094,
+      "basis_pair_lookups": 85,
+      "core_topologies": {
+        "barbell": 7782,
+        "rose": 861364,
+        "theta": 1807607
+      }
+    }
+  }
+}

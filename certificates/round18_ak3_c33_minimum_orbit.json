@@ -1,0 +1,5 @@
+{
+  "cyclic_cap":33,
+  "lower_anchor":["xxyxyxyxYXyxxyy","xxyxyxYXXYXYXYXy"],
+  "orbit_route":[["xxyxyxyxYXyxxyy","xxyxyxYXXYXYXYXy"],["xxyxyxyxYXXYXYXy","xxyxyxyxyxYXyxxyy"],["xxyxyxyxxyXYxyy","xxyxyxYXXYXYXYXy"],["xxyxxyxyy","xxyxyxyxYXXYXYXy"],["xxyxyxyxyxYXYXy","xxyxyxYXXYXYXYXy"],["xxyxyxyxyxYXYXy","xxyxyxYXYXYXyxxyy"],["xxyxyXYYXXYxyy","xxyxyxyxyxYXYXy"],["xxyxyxyxyxYXYXy","xxyxyxyxYXXYxyyxy"],["xxyxyXYYXyxYXy","xxyxyyxyxyxyXYYXy"],["xxyxyxyXYxy","xxyXYxyXYYXYXy"],["xxyxyxyXYxy","xxxyxyXYxyxyy"],["xxyXYY","xxYxYxYXyxY"],["xxyXYY","xxxxYxYxYXY"]]
+}

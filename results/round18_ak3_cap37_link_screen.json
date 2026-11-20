@@ -1,0 +1,12 @@
+{
+  "source_sha256": "cfb4b975494cd961235dab4b93db720e5ba7bb5cbe61717131862e6e338f6f76",
+  "rows": 1141922,
+  "counts": {
+    "C4": 8,
+    "DIAMOND": 68304,
+    "K4": 1073610,
+    "PARITY_OBSTRUCTION": 1141922
+  },
+  "independently_verified_witness_equations": 1947409,
+  "exceptions": []
+}

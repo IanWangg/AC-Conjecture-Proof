@@ -1,4 +1,4 @@
-"""Lift the cap-37 signed-orbit bridge to the exact ordered E22 endpoint."""
+"""Lift a signed-orbit boundary bridge from AK(3) to its exact ordered endpoint."""
 
 import argparse
 import json
@@ -20,8 +20,17 @@ def rows(path):
 
 def compile_path(reverse, middle, inner, literal_path):
     entry = json.loads(reverse.read_bytes())
-    assert entry["cap"] == 37 and entry["seed_anchor"]
-    outward = lift_from(E22, entry["route"] + [entry["seed_anchor"]], 37)
+    if "orbit_route" in entry:
+        cap = entry["cyclic_cap"]
+        target_pair = tuple(entry["orbit_route"][-1])
+        orbit_path = entry["orbit_route"][::-1]
+        assert orbit_path[-1] == entry["lower_anchor"]
+    else:
+        cap = entry["cap"]
+        assert cap == 37 and entry["seed_anchor"]
+        target_pair = E22
+        orbit_path = entry["route"] + [entry["seed_anchor"]]
+    outward = lift_from(target_pair, orbit_path, cap)
     to_low = lift_from(outward[-1], rows(middle), 32)
     to_inner = lift_from(to_low[-1], rows(inner), 29)
     with TemporaryDirectory() as scratch:
@@ -34,12 +43,12 @@ def compile_path(reverse, middle, inner, literal_path):
         base = [tuple(pair) for pair in json.loads(literal.read_bytes())["route"]]
     assert base[-1] == to_inner[-1]
     full = base + to_inner[-2::-1] + to_low[-2::-1] + outward[-2::-1]
-    certificate, first_replay = compile_local_caps(full, 37)
-    certificate["moves"].extend(normalize_pair(tuple(certificate["target"]), E22))
-    certificate["target"] = list(E22)
+    certificate, first_replay = compile_local_caps(full, cap)
+    certificate["moves"].extend(normalize_pair(tuple(certificate["target"]), target_pair))
+    certificate["target"] = list(target_pair)
     final = replay(certificate)
     final["cyclic_peak"] = cyclic_peak(certificate)
-    assert final["cyclic_peak"] == 37
+    assert final["cyclic_peak"] == cap
     return certificate, {"pre_normalization": first_replay, "final": final, "marked_cyclic_route": full}
 
 

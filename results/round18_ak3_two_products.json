@@ -1,0 +1,61 @@
+{
+  "menu_sha256": "98061474cfdb90610fc4f7e4a064c19cc9eba5f5f37cebf23dad0a671b0400a0",
+  "menu_cap": 40,
+  "done": {
+    "rows_checked": 206077,
+    "complete": true,
+    "hit": null
+  },
+  "slope_cases": 1236462,
+  "independent_controls": {
+    "rotations_reductions": 20000,
+    "sphere_cases": 4000,
+    "positive": 3960,
+    "negative": 40
+  },
+  "positive_control": {
+    "one_product": {
+      "rows_checked": 1,
+      "complete": true,
+      "hit": null
+    },
+    "two_products": {
+      "rows_checked": 1,
+      "complete": false,
+      "hit": {
+        "source": [
+          "yyxxYYXXXXyyyxxYYXX",
+          "xxxyyXXYY"
+        ],
+        "donor_index": 1,
+        "axial_coefficient": 2,
+        "primitive": "y",
+        "order": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "left": [
+          "XXXyyyxxYYXXyyxxYYX",
+          "yyXXYYxxx",
+          ""
+        ],
+        "right": [
+          "xyyXXYYxx",
+          "Y",
+          "yyXX"
+        ]
+      }
+    },
+    "strict_replay": {
+      "moves": 79,
+      "peak_total_length": 42,
+      "endpoint": [
+        "x",
+        "y"
+      ],
+      "cyclic_peak": 28
+    }
+  }
+}

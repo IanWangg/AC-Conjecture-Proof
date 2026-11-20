@@ -338,9 +338,11 @@ struct StrictComparison {
 };
 }
 
+#ifndef AC_MIXED_EIGHT_LIBRARY
 int main(int argc, char** argv) {
     if (argc == 1) mixed_eight::Comparison{}.run();
     else if (argc == 2 && std::string_view(argv[1]) == "--strict") mixed_eight::StrictComparison{}.run();
     else if (argc == 2 && std::string_view(argv[1]) == "--traces") mixed_eight::Comparison{}.run_traces();
     else throw std::runtime_error("expected no arguments, --strict or --traces");
 }
+#endif

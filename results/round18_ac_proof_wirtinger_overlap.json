@@ -1,0 +1,61 @@
+{
+  "polynomial_identities": {
+    "-1": {
+      "coefficients": [
+        1,
+        -1,
+        -1,
+        2,
+        -1
+      ],
+      "cubic_factor": [
+        1,
+        0,
+        -1,
+        1
+      ]
+    },
+    "1": {
+      "coefficients": [
+        -1,
+        2,
+        -1,
+        -1,
+        1
+      ],
+      "cubic_factor": [
+        1,
+        -1,
+        0,
+        1
+      ]
+    }
+  },
+  "simple_lift_exclusions": {
+    "-1": {
+      "cyclic_target": "YXyxYYxyyXXYxx",
+      "eligible_rotations": [
+        {
+          "first_half": "xyyXXY",
+          "inverse_second_half": "yXYxyX",
+          "rotation": "YxyyXXYxxYXyxY"
+        }
+      ]
+    },
+    "1": {
+      "cyclic_target": "YXXyxxYYxyyXYx",
+      "eligible_rotations": [
+        {
+          "first_half": "YxyyXY",
+          "inverse_second_half": "XXYxxy",
+          "rotation": "YYxyyXYxYXXyxx"
+        },
+        {
+          "first_half": "xYXXyx",
+          "inverse_second_half": "xYYXyy",
+          "rotation": "YxYXXyxxYYxyyX"
+        }
+      ]
+    }
+  }
+}

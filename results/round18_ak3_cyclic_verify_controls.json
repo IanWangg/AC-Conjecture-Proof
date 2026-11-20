@@ -1,0 +1,36 @@
+{
+  "whole_cap22_extension": {
+    "status": "NEW_ORBITS_CLOSED_AND_ATTACHED",
+    "cyclic_cap": 22,
+    "signed_permutation_orbits": 32363,
+    "lower_orbits_assumed_connected": 18118,
+    "new_orbits_checked": 14245,
+    "first_exit_seeds_checked": 13164,
+    "old_orbits_boundary_checked": 18118,
+    "old_rotation_product_candidates": 13004928,
+    "old_first_exit_admitted_products": 197002,
+    "rotation_product_candidates": 11215112,
+    "admitted_neighbors": 384302
+  },
+  "map_flat_and_split_manifest_byte_match": true,
+  "negative_controls": {
+    "insufficient_capacity": "flat verification index reached its load limit",
+    "duplicate_old_orbit": "noncanonical or repeated orbit",
+    "missing_old_boundary_neighbor": "catalogue not closed",
+    "missing_compacted_seed": "first-exit seed absent from the new catalogue"
+  },
+  "independent_euclidean_primitive_controls": {
+    "rows": 26128,
+    "primitive_word_classes_with_rotations": 26124,
+    "sign_pure_coordinates": 26128,
+    "primitive_coordinate_occurrences": 26128,
+    "first_hit_code": 6
+  },
+  "cap32_addition_primitive_control": {
+    "rows": 285484620,
+    "primitive_word_classes_with_rotations": 26124,
+    "sign_pure_coordinates": 101668360,
+    "primitive_coordinate_occurrences": 0,
+    "first_hit_code": 0
+  }
+}
