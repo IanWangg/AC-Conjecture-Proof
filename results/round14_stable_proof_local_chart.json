@@ -1,0 +1,247 @@
+{
+  "source_sha256": "bb922c90c500aee7b022e8da1cb7b834d378fbc50ea92127ef3ea3faeb1b5a94",
+  "marking": {
+    "x": "z",
+    "y": "y",
+    "z": "yzXY"
+  },
+  "whitehead_moves": [
+    {
+      "multiplier": "y",
+      "cut": "yzZ"
+    },
+    {
+      "multiplier": "z",
+      "cut": "zx"
+    },
+    {
+      "multiplier": "x",
+      "cut": "xZ"
+    }
+  ],
+  "initial_realization": {
+    "moves": 188,
+    "raw_peak": 38,
+    "cyclic_peak": 28
+  },
+  "prefix": {
+    "moves": 1913,
+    "raw_peak": 57,
+    "cyclic_peak": 40,
+    "target": [
+      "XXYxZYY",
+      "XYXYxZYYZyzyz",
+      "XYxZYZyzyyz"
+    ],
+    "first_pivotless_step": 127
+  },
+  "literal_clearing": {
+    "cleared": {
+      "rows": [
+        "zXyxxyy",
+        "XXYxYXXYxxy",
+        "XXYXYxxyXyxxy"
+      ],
+      "moves": 2046,
+      "cyclic_peak": 40
+    },
+    "tail_searches": [
+      {
+        "word_cap": 12,
+        "forward": 196,
+        "backward": 173,
+        "hit": false
+      },
+      {
+        "word_cap": 13,
+        "forward": 844,
+        "backward": 1165,
+        "hit": true
+      }
+    ],
+    "tail_factors": [
+      [
+        1,
+        1,
+        "YYXXYxYXXYxxy"
+      ],
+      [
+        2,
+        -1,
+        "YYYXXyxyxx"
+      ],
+      [
+        1,
+        -1,
+        "YYXyxxyXyxx"
+      ],
+      [
+        2,
+        1,
+        "YYxyXXYXYxxyXyxxy"
+      ],
+      [
+        1,
+        1,
+        "YYXYxYXXYxxy"
+      ],
+      [
+        2,
+        -1,
+        "YYxYXXyxyxx"
+      ],
+      [
+        1,
+        1,
+        "YxxyXXYxYXXYxxy"
+      ],
+      [
+        2,
+        1,
+        "xxyXXYXYxxyXyxxy"
+      ],
+      [
+        1,
+        -1,
+        "YxYXXyxxyXyxx"
+      ],
+      [
+        2,
+        -1,
+        "YXYxYXXyxyxx"
+      ],
+      [
+        1,
+        1,
+        "YxyXXYxYXXYxxy"
+      ],
+      [
+        2,
+        1,
+        "YXyxxyXXYXYxxyXyxxy"
+      ],
+      [
+        1,
+        -1,
+        "YYXXyxxyXyxx"
+      ],
+      [
+        1,
+        1,
+        "Xyxx"
+      ],
+      [
+        2,
+        -1,
+        "XXYxxyXyxxy"
+      ],
+      [
+        1,
+        -1,
+        "XXYYxxy"
+      ],
+      [
+        2,
+        1,
+        "XXYxyxxYXXYxYXXyxyxx"
+      ],
+      [
+        1,
+        1,
+        "XXYxyxyxxYXXyxxyXyxx"
+      ],
+      [
+        2,
+        -1,
+        "XXYxxxyXyxxy"
+      ],
+      [
+        1,
+        -1,
+        "XXYxYxxyXXYxYXXYxxy"
+      ],
+      [
+        2,
+        1,
+        "XXYxxyxxYXXYxYXXyxyxx"
+      ],
+      [
+        1,
+        -1,
+        "XXYxxxYXXYxxy"
+      ],
+      [
+        1,
+        1,
+        "YXXyxxyXyxx"
+      ],
+      [
+        2,
+        -1,
+        "YXXyxYxxyXyxxy"
+      ],
+      [
+        2,
+        -1,
+        "XyxxyXXYXYxxyXyxxy"
+      ],
+      [
+        1,
+        -1,
+        "xyXXYxYXXYxxy"
+      ],
+      [
+        2,
+        1,
+        "XYxYXXyxyxx"
+      ],
+      [
+        1,
+        1,
+        "x"
+      ]
+    ],
+    "intermediate_tail_lengths": [
+      6,
+      9,
+      12,
+      11,
+      8,
+      9,
+      6,
+      5,
+      10,
+      9,
+      12,
+      13,
+      10,
+      7,
+      4,
+      11,
+      8,
+      13,
+      12,
+      11,
+      10,
+      11,
+      10,
+      13,
+      10,
+      13,
+      12,
+      11,
+      0
+    ],
+    "complete": {
+      "moves": 2757,
+      "cyclic_peak": 40,
+      "raw_peak": 57,
+      "rank_peak": 3,
+      "final_words": [
+        "XXYxYXXYxxy",
+        "XXYXYxxyXyxxy"
+      ],
+      "sha256": "13f663fca865da9a56c2b67396bc8854011323c329a09c41d8b05bcaefb25c0a"
+    }
+  }
+}

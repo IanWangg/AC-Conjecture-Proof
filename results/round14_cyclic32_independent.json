@@ -1,0 +1,38 @@
+{
+  "closure_and_attachment": {
+    "status": "NEW_ORBITS_CLOSED_AND_ATTACHED",
+    "cyclic_cap": 32,
+    "signed_permutation_orbits": 539705143,
+    "lower_orbits_assumed_connected": 254220523,
+    "new_orbits_checked": 285484620,
+    "rotation_product_candidates": 328010482664,
+    "admitted_neighbors": 12567099338
+  },
+  "independent_boundary_audit": {
+    "reference_boundary_audit": {
+      "cyclic_cap": 32,
+      "source_size": 8258753914,
+      "start_offset": 0,
+      "next_offset": 8258753914,
+      "source_rows_scanned": 254220523,
+      "source_reached_eof": true,
+      "source_boundary_independently_compared": true,
+      "recipient_parity_skips": 298716276,
+      "zero_bridge_rotation_checks": 60161897580,
+      "positive_bridge_rotation_checks": 228249632,
+      "admitted_candidates": 3509580702,
+      "boundary_records": 1073329989,
+      "primitive_boundary_records": 0
+    },
+    "generation_and_audit_binary_match": true,
+    "boundary_binary_size": 34346559648,
+    "comparison": "complete bytewise comparison"
+  },
+  "independent_outside_primitive_audit": {
+    "rows": 285484620,
+    "single_sign_candidates": 101668360,
+    "primitive_coordinates": [],
+    "tsv_sha256": "08f34a6ddf611d64f374e7976ec29c18f98b2ad39846380f8a3a93f623d9c634"
+  },
+  "ordinary_cyclic_peak_lower_bound": 33
+}

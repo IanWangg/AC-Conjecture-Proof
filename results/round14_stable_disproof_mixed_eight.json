@@ -1,0 +1,7851 @@
+{
+  "arithmetic_audit": {
+    "compact_group_elements": 64,
+    "full_group_elements": 512,
+    "verified_products": 262144
+  },
+  "first_comparison": {
+    "compact_reverse_layers": [
+      18,
+      162,
+      1224,
+      7212,
+      27618,
+      40476,
+      9162,
+      144
+    ],
+    "exponent_obstruction_modulo_sixteen": 41229,
+    "formal_radius_seven_pairs": 10514136,
+    "last_equality_replacement": 126658,
+    "literal_replacement": 9840202,
+    "remaining_after_exponents": 11679,
+    "symbolic_forward_layers": [
+      {
+        "distinct_terminal_templates_so_far": 9802240,
+        "old_linear_parts": [
+          1,
+          2
+        ],
+        "sixth_step_edges": 16661223,
+        "widths_through_depth_five": [
+          2,
+          50,
+          948,
+          16645,
+          230096,
+          1892638
+        ]
+      },
+      {
+        "distinct_terminal_templates_so_far": 9886036,
+        "old_linear_parts": [
+          1,
+          3
+        ],
+        "sixth_step_edges": 16605361,
+        "widths_through_depth_five": [
+          2,
+          50,
+          948,
+          16645,
+          229008,
+          1889185
+        ]
+      },
+      {
+        "distinct_terminal_templates_so_far": 10019768,
+        "old_linear_parts": [
+          3,
+          1
+        ],
+        "sixth_step_edges": 16385181,
+        "widths_through_depth_five": [
+          2,
+          50,
+          948,
+          16669,
+          227950,
+          1864114
+        ]
+      }
+    ]
+  },
+  "last_equality_tests": {
+    "counts": {
+      "degree_three_obstruction": 1189,
+      "two_last_equality_rewrites_per_row": 9638
+    },
+    "unresolved_templates": [
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbXAxxAXax",
+          "a"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbXAxxaXax",
+          "a"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbXaxxAXAx",
+          "a"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbXaxxaXAx",
+          "a"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbYAyAxYay",
+          "a"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbYAyaxYay",
+          "a"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbYAyxAYay",
+          "a"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbYAyxaYay",
+          "a"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbYayAxYAy",
+          "a"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbYayaxYAy",
+          "a"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbYayxAYAy",
+          "a"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbYayxaYAy",
+          "a"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbxAXAxxaX",
+          "a"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbxAXaxxaX",
+          "a"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbxaXAxxAX",
+          "a"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbxaXaxxAX",
+          "a"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbyAYAxyaY",
+          "a"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbyAYaxyaY",
+          "a"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbyAYxAyaY",
+          "a"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbyAYxayaY",
+          "a"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbyaYAxyAY",
+          "a"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbyaYaxyAY",
+          "a"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbyaYxAyAY",
+          "a"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbyaYxayAY",
+          "a"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "bAAAAAAAA"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "bXAxAAXax"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "bXAxaaXax"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "bXaxAAXAx"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "bXaxaaXAx"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "bYAyAAYay"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "bYAyaaYay"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "bYayAAYAy"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "bYayaaYAy"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "baaaaaaaa"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "bxAXAAxaX"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "bxAXaaxaX"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "bxaXAAxAX"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "bxaXaaxAX"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "byAYAAyaY"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "byAYaayaY"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "byaYAAyAY"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "byaYaayAY"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbXAxAXXax"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbXAxaXXax"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbXaxAXXAx"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbXaxaXXAx"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbYAyAXYay"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbYAyXAYay"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbYAyXaYay"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbYAyaXYay"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbYayAXYAy"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbYayXAYAy"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbYayXaYAy"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbYayaXYAy"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbxAXXAxaX"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbxAXXaxaX"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbxaXXAxAX"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbxaXXaxAX"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbyAYAXyaY"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbyAYXAyaY"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbyAYXayaY"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbyAYaXyaY"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbyaYAXyAY"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbyaYXAyAY"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbyaYXayAY"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbyaYaXyAY"
+        ],
+        "removed": "A",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AAAAAAAAAAAAAAAA",
+        "remaining_pair": [
+          "aaaaaaaaaaaaa",
+          "b"
+        ],
+        "removed": "AAA",
+        "signed_donor": "aaaaaaaaaaaaa"
+      },
+      {
+        "last_equality": "AAAAAAAAAAAAAAAA",
+        "remaining_pair": [
+          "aaaaaaaaa",
+          "b"
+        ],
+        "removed": "AAAAAAA",
+        "signed_donor": "aaaaaaaaa"
+      },
+      {
+        "last_equality": "AAAAAAAAAAAAAAAA",
+        "remaining_pair": [
+          "AAAAAAA",
+          "b"
+        ],
+        "removed": "AAAAAAAAA",
+        "signed_donor": "aaaaaaa"
+      },
+      {
+        "last_equality": "AAAAAAAAAAAAAAAA",
+        "remaining_pair": [
+          "aaaaa",
+          "b"
+        ],
+        "removed": "AAAAAAAAAAA",
+        "signed_donor": "aaaaa"
+      },
+      {
+        "last_equality": "AAAAXaaaxAAXaaax",
+        "remaining_pair": [
+          "XAAAxaa",
+          "b"
+        ],
+        "removed": "AAAAXaaax",
+        "signed_donor": "XAAAxaa"
+      },
+      {
+        "last_equality": "AAAAxaaaXAAxaaaX",
+        "remaining_pair": [
+          "b",
+          "xAAAXaa"
+        ],
+        "removed": "AAAAxaaaX",
+        "signed_donor": "xAAAXaa"
+      },
+      {
+        "last_equality": "AAAAxxaaaXXAAxxaaaXX",
+        "remaining_pair": [
+          "XXaaxxAAAXXaaxx",
+          "b"
+        ],
+        "removed": "AAAXXaaxx",
+        "signed_donor": "XXAAxxaaaXXAAxx"
+      },
+      {
+        "last_equality": "AAAAxaaaXAAxaaaX",
+        "remaining_pair": [
+          "XAAAAxaaa",
+          "b"
+        ],
+        "removed": "AAAXaax",
+        "signed_donor": "XAAAAxaaa"
+      },
+      {
+        "last_equality": "AAAXaaxAXaax",
+        "remaining_pair": [
+          "AXaax",
+          "b"
+        ],
+        "removed": "AAAXaax",
+        "signed_donor": "XAAxa"
+      },
+      {
+        "last_equality": "AAAAyyaaaYYAAyyaaaYY",
+        "remaining_pair": [
+          "YYaayyAAAYYaayy",
+          "b"
+        ],
+        "removed": "AAAYYaayy",
+        "signed_donor": "YYAAyyaaaYYAAyy"
+      },
+      {
+        "last_equality": "AAAAXaaaxAAXaaax",
+        "remaining_pair": [
+          "b",
+          "xAAAAXaaa"
+        ],
+        "removed": "AAAxaaX",
+        "signed_donor": "xAAAAXaaa"
+      },
+      {
+        "last_equality": "AAAxaaXAxaaX",
+        "remaining_pair": [
+          "AxaaX",
+          "b"
+        ],
+        "removed": "AAAxaaX",
+        "signed_donor": "xAAXa"
+      },
+      {
+        "last_equality": "AAAAXXaaaxxAAXXaaaxx",
+        "remaining_pair": [
+          "b",
+          "xxaaXXAAAxxaaXX"
+        ],
+        "removed": "AAAxxaaXX",
+        "signed_donor": "xxAAXXaaaxxAAXX"
+      },
+      {
+        "last_equality": "AAAAYYaaayyAAYYaaayy",
+        "remaining_pair": [
+          "b",
+          "yyaaYYAAAyyaaYY"
+        ],
+        "removed": "AAAyyaaYY",
+        "signed_donor": "yyAAYYaaayyAAYY"
+      },
+      {
+        "last_equality": "AAXAxaaXXAxaax",
+        "remaining_pair": [
+          "XXAxaax",
+          "b"
+        ],
+        "removed": "AAXAxaa",
+        "signed_donor": "XAAXaxx"
+      },
+      {
+        "last_equality": "AAXAxaaYXAxaay",
+        "remaining_pair": [
+          "YXAxaay",
+          "b"
+        ],
+        "removed": "AAXAxaa",
+        "signed_donor": "YAAXaxy"
+      },
+      {
+        "last_equality": "AAXAXaxaax",
+        "remaining_pair": [
+          "AxaaX",
+          "b"
+        ],
+        "removed": "AAXAxaa",
+        "signed_donor": "xAAXa"
+      },
+      {
+        "last_equality": "AAXAxaayXAxaaY",
+        "remaining_pair": [
+          "b",
+          "yXAxaaY"
+        ],
+        "removed": "AAXAxaa",
+        "signed_donor": "yAAXaxY"
+      },
+      {
+        "last_equality": "AAXXAxaaXAxaax",
+        "remaining_pair": [
+          "XXAxaax",
+          "b"
+        ],
+        "removed": "AAXXAxaax",
+        "signed_donor": "XAAXaxx"
+      },
+      {
+        "last_equality": "AAAAXXaaaxxAAXXaaaxx",
+        "remaining_pair": [
+          "XXaaaxxAA",
+          "b"
+        ],
+        "removed": "AAXXaaaxxAA",
+        "signed_donor": "aaXXAAAxx"
+      },
+      {
+        "last_equality": "AAXaxAAXaxyaaY",
+        "remaining_pair": [
+          "YXAxaay",
+          "b"
+        ],
+        "removed": "AAYXAxaay",
+        "signed_donor": "YAAXaxy"
+      },
+      {
+        "last_equality": "AAAAYYaaayyAAYYaaayy",
+        "remaining_pair": [
+          "YYaaayyAA",
+          "b"
+        ],
+        "removed": "AAYYaaayyAA",
+        "signed_donor": "aaYYAAAyy"
+      },
+      {
+        "last_equality": "AAYxAXaaxAXaay",
+        "remaining_pair": [
+          "YxAXaay",
+          "b"
+        ],
+        "removed": "AAYxAXaay",
+        "signed_donor": "YAAxaXy"
+      },
+      {
+        "last_equality": "AAxAXaXaax",
+        "remaining_pair": [
+          "AXaax",
+          "b"
+        ],
+        "removed": "AAxAXaa",
+        "signed_donor": "XAAxa"
+      },
+      {
+        "last_equality": "AAxAXaaYxAXaay",
+        "remaining_pair": [
+          "YxAXaay",
+          "b"
+        ],
+        "removed": "AAxAXaa",
+        "signed_donor": "YAAxaXy"
+      },
+      {
+        "last_equality": "AAxAXaaxxAXaaX",
+        "remaining_pair": [
+          "b",
+          "xxAXaaX"
+        ],
+        "removed": "AAxAXaa",
+        "signed_donor": "xAAxaXX"
+      },
+      {
+        "last_equality": "AAxAXaayxAXaaY",
+        "remaining_pair": [
+          "b",
+          "yxAXaaY"
+        ],
+        "removed": "AAxAXaa",
+        "signed_donor": "yAAxaXY"
+      },
+      {
+        "last_equality": "AAxaXAAxaXXaax",
+        "remaining_pair": [
+          "b",
+          "xxAXaaX"
+        ],
+        "removed": "AAxxAXaaX",
+        "signed_donor": "xAAxaXX"
+      },
+      {
+        "last_equality": "AAAAxxaaaXXAAxxaaaXX",
+        "remaining_pair": [
+          "b",
+          "xxaaaXXAA"
+        ],
+        "removed": "AAxxaaaXXAA",
+        "signed_donor": "aaxxAAAXX"
+      },
+      {
+        "last_equality": "AAXaxAAXaxYaay",
+        "remaining_pair": [
+          "b",
+          "yXAxaaY"
+        ],
+        "removed": "AAyXAxaaY",
+        "signed_donor": "yAAXaxY"
+      },
+      {
+        "last_equality": "AAxaXAAxaXYaay",
+        "remaining_pair": [
+          "b",
+          "yxAXaaY"
+        ],
+        "removed": "AAyxAXaaY",
+        "signed_donor": "yAAxaXY"
+      },
+      {
+        "last_equality": "AAAAyyaaaYYAAyyaaaYY",
+        "remaining_pair": [
+          "b",
+          "yyaaaYYAA"
+        ],
+        "removed": "AAyyaaaYYAA",
+        "signed_donor": "aayyAAAYY"
+      },
+      {
+        "last_equality": "AAAXAXaaxaax",
+        "remaining_pair": [
+          "XaaxAAAXaax",
+          "b"
+        ],
+        "removed": "XAAAXaaxx",
+        "signed_donor": "XAAxaaaXAAx"
+      },
+      {
+        "last_equality": "AAAAXaaaxAAXaaax",
+        "remaining_pair": [
+          "AAAAXaaax",
+          "b"
+        ],
+        "removed": "XAAAxaa",
+        "signed_donor": "AAAAXaaax"
+      },
+      {
+        "last_equality": "AAAAXaaaxAAXaaax",
+        "remaining_pair": [
+          "AAXaaaxAA",
+          "b"
+        ],
+        "removed": "XAAAxaa",
+        "signed_donor": "AAXaaaxAA"
+      },
+      {
+        "last_equality": "AAAAXaaaxAAXaaax",
+        "remaining_pair": [
+          "B",
+          "aaXAAAxaa"
+        ],
+        "removed": "XAAAxaa",
+        "signed_donor": "AAXaaaxAA"
+      },
+      {
+        "last_equality": "AAAAXaaaxAAXaaax",
+        "remaining_pair": [
+          "Xbx",
+          "aaXAAAxaa"
+        ],
+        "removed": "XAAAxaa",
+        "signed_donor": "AAXaaaxAA"
+      },
+      {
+        "last_equality": "AAAAXaaaxAAXaaax",
+        "remaining_pair": [
+          "Yby",
+          "aaXAAAxaa"
+        ],
+        "removed": "XAAAxaa",
+        "signed_donor": "AAXaaaxAA"
+      },
+      {
+        "last_equality": "AAAAXaaaxAAXaaax",
+        "remaining_pair": [
+          "aaXAAAxaa",
+          "bA"
+        ],
+        "removed": "XAAAxaa",
+        "signed_donor": "AAXaaaxAA"
+      },
+      {
+        "last_equality": "AAAAXaaaxAAXaaax",
+        "remaining_pair": [
+          "aaXAAAxaa",
+          "bAAXaaaxAA"
+        ],
+        "removed": "XAAAxaa",
+        "signed_donor": "AAXaaaxAA"
+      },
+      {
+        "last_equality": "AAAAXaaaxAAXaaax",
+        "remaining_pair": [
+          "aaXAAAxaa",
+          "ba"
+        ],
+        "removed": "XAAAxaa",
+        "signed_donor": "AAXaaaxAA"
+      },
+      {
+        "last_equality": "AAAAXaaaxAAXaaax",
+        "remaining_pair": [
+          "aaXAAAxaa",
+          "baaXAAAxaa"
+        ],
+        "removed": "XAAAxaa",
+        "signed_donor": "AAXaaaxAA"
+      },
+      {
+        "last_equality": "AAAAXaaaxAAXaaax",
+        "remaining_pair": [
+          "aaXAAAxaa",
+          "xbX"
+        ],
+        "removed": "XAAAxaa",
+        "signed_donor": "AAXaaaxAA"
+      },
+      {
+        "last_equality": "AAAAXaaaxAAXaaax",
+        "remaining_pair": [
+          "aaXAAAxaa",
+          "ybY"
+        ],
+        "removed": "XAAAxaa",
+        "signed_donor": "AAXaaaxAA"
+      },
+      {
+        "last_equality": "AAAxAxaaXaaX",
+        "remaining_pair": [
+          "XaaXAAAxaax",
+          "b"
+        ],
+        "removed": "XAAAxaa",
+        "signed_donor": "XAAXaaaxAAx"
+      },
+      {
+        "last_equality": "AAAxaaYaaXAAAxaayX",
+        "remaining_pair": [
+          "YaaXAAAxaay",
+          "b"
+        ],
+        "removed": "XAAAxaa",
+        "signed_donor": "YAAXaaaxAAy"
+      },
+      {
+        "last_equality": "AAAxaaXXAAAxaaxaaX",
+        "remaining_pair": [
+          "b",
+          "xaaXAAAxaaX"
+        ],
+        "removed": "XAAAxaa",
+        "signed_donor": "xAAXaaaxAAX"
+      },
+      {
+        "last_equality": "AAAxaaYXAAAxaayaaX",
+        "remaining_pair": [
+          "b",
+          "yaaXAAAxaaY"
+        ],
+        "removed": "XAAAxaa",
+        "signed_donor": "yAAXaaaxAAY"
+      },
+      {
+        "last_equality": "AAXAxaxaXAAXAxaxaXaxaX",
+        "remaining_pair": [
+          "XaxaXAAXAxaxa",
+          "b"
+        ],
+        "removed": "XAAXAxaxa",
+        "signed_donor": "AXAXaxaaxAXAx"
+      },
+      {
+        "last_equality": "AAYAyxYayaXAAYAyxYayaYayaX",
+        "remaining_pair": [
+          "YayaXAAYAyxYaya",
+          "b"
+        ],
+        "removed": "XAAYAyxYaya",
+        "signed_donor": "AYAyXYayaaxAYAy"
+      },
+      {
+        "last_equality": "AAxAXaXaxAAxAXaXaxaXax",
+        "remaining_pair": [
+          "XaXaxAAxAXaXaxx",
+          "b"
+        ],
+        "removed": "XAAxAXaXaxx",
+        "signed_donor": "XXAxAxaXaaXAxAx"
+      },
+      {
+        "last_equality": "AAxAxaXaXAAxAxaXaxaXaX",
+        "remaining_pair": [
+          "b",
+          "xaXaXAAxAxaXa"
+        ],
+        "removed": "XAAxAxaXa",
+        "signed_donor": "AxAXaXaaxAxAX"
+      },
+      {
+        "last_equality": "AAyAYxyaYaXAAyAYxyaYayaYaX",
+        "remaining_pair": [
+          "b",
+          "yaYaXAAyAYxyaYa"
+        ],
+        "removed": "XAAyAYxyaYa",
+        "signed_donor": "AyAYXyaYaaxAyAY"
+      },
+      {
+        "last_equality": "AAAXaaxAXaax",
+        "remaining_pair": [
+          "XAXaaxx",
+          "b"
+        ],
+        "removed": "XAXaaxAAx",
+        "signed_donor": "XXAAxax"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XaxAXaxAXaXAxax",
+          "b"
+        ],
+        "removed": "XAXaxAxaXAx",
+        "signed_donor": "XAXaxAxaXAxaXAx"
+      },
+      {
+        "last_equality": "AAXaaxaxAX",
+        "remaining_pair": [
+          "XaxaXAXaxaxAXAx",
+          "b"
+        ],
+        "removed": "XAXaxaxAXAx",
+        "signed_donor": "XaxaXAXAxaxAXAx"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "YayAYayAXaYAyax",
+          "b"
+        ],
+        "removed": "XAYayAxaYAy",
+        "signed_donor": "XAYayAxaYAyaYAy"
+      },
+      {
+        "last_equality": "AAyaxYayaXAY",
+        "remaining_pair": [
+          "YayaXAYayaxAYAy",
+          "b"
+        ],
+        "removed": "XAYayaxAYAy",
+        "signed_donor": "YayaXAYAyaxAYAy"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XaXAxaXAxaxAXax",
+          "b"
+        ],
+        "removed": "XAxaXAXaxAx",
+        "signed_donor": "XAxaXAXaxAXaxAx"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "aXAxaXAxbXaxAXax",
+          "b"
+        ],
+        "removed": "XAxaXAxBXaxA",
+        "signed_donor": "XAxaXAxBXaxAXaxA"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "b",
+          "xaXAxaXAXaxAXax"
+        ],
+        "removed": "XAxaXAxaxAX",
+        "signed_donor": "XAxaXAxaxAXaxAX"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "aXAxaXAxBXaxAXax",
+          "b"
+        ],
+        "removed": "XAxaXAxbXaxA",
+        "signed_donor": "XAxaXAxbXaxAXaxA"
+      },
+      {
+        "last_equality": "AAXaaXaxAx",
+        "remaining_pair": [
+          "XaXaxAxaXaXAxAx",
+          "b"
+        ],
+        "removed": "XAxaXaXAxAx",
+        "signed_donor": "XaXaxAxAXaXAxAx"
+      },
+      {
+        "last_equality": "AAXaxxaXaXAx",
+        "remaining_pair": [
+          "b",
+          "xaXaXAxaXaxAxAX"
+        ],
+        "removed": "XAxaXaxAxAX",
+        "signed_donor": "xaXaXAxAXaxAxAX"
+      },
+      {
+        "last_equality": "AAAxaaXAxaaX",
+        "remaining_pair": [
+          "XAxaa",
+          "b"
+        ],
+        "removed": "XAxaaXAAx",
+        "signed_donor": "AAXax"
+      },
+      {
+        "last_equality": "AAXXAxaaXAxaax",
+        "remaining_pair": [
+          "XAxaa",
+          "b"
+        ],
+        "removed": "XAxaaxAAX",
+        "signed_donor": "AAXax"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "b",
+          "yaYAyaYAXayAYax"
+        ],
+        "removed": "XAyaYAxayAY",
+        "signed_donor": "XAyaYAxayAYayAY"
+      },
+      {
+        "last_equality": "AAYaxyaYaXAy",
+        "remaining_pair": [
+          "b",
+          "yaYaXAyaYaxAyAY"
+        ],
+        "removed": "XAyaYaxAyAY",
+        "signed_donor": "yaYaXAyAYaxAyAY"
+      },
+      {
+        "last_equality": "AAAAXXaaaxxAAXXaaaxx",
+        "remaining_pair": [
+          "aaXXAAAxxaa",
+          "b"
+        ],
+        "removed": "XXAAAxxaa",
+        "signed_donor": "AAXXaaaxxAA"
+      },
+      {
+        "last_equality": "AAxAXaaxxAXaaX",
+        "remaining_pair": [
+          "AXaax",
+          "b"
+        ],
+        "removed": "XXAAxAXaaxx",
+        "signed_donor": "XAAxa"
+      },
+      {
+        "last_equality": "AAxaXAAxaXXaax",
+        "remaining_pair": [
+          "AXaax",
+          "b"
+        ],
+        "removed": "XXAAxxAXaax",
+        "signed_donor": "XAAxa"
+      },
+      {
+        "last_equality": "AAAAxxaaaXXAAxxaaaXX",
+        "remaining_pair": [
+          "aaaXXAAxx",
+          "b"
+        ],
+        "removed": "XXAAxxaaaXXAAxx",
+        "signed_donor": "XXaaxxAAA"
+      },
+      {
+        "last_equality": "AXXaxx",
+        "remaining_pair": [
+          "a",
+          "bXAxAAXax"
+        ],
+        "removed": "XXAxx",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AXXaxx",
+        "remaining_pair": [
+          "a",
+          "bXAxaaXax"
+        ],
+        "removed": "XXAxx",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AXXaxx",
+        "remaining_pair": [
+          "a",
+          "bXaxAAXAx"
+        ],
+        "removed": "XXAxx",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AXXaxx",
+        "remaining_pair": [
+          "a",
+          "bXaxaaXAx"
+        ],
+        "removed": "XXAxx",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AAXaaxxaXXAAxxxaXX",
+        "remaining_pair": [
+          "aXXAAxx",
+          "b"
+        ],
+        "removed": "XXXaaxxaXXAAxxx",
+        "signed_donor": "XXaaxxA"
+      },
+      {
+        "last_equality": "AAXaaxxxaXXAAxxaXX",
+        "remaining_pair": [
+          "aXXAAxx",
+          "b"
+        ],
+        "removed": "XXXaaxxxaXXAAxx",
+        "signed_donor": "XXaaxxA"
+      },
+      {
+        "last_equality": "AAXXaaxAXaaxAx",
+        "remaining_pair": [
+          "XAAXXaaxAxx",
+          "b"
+        ],
+        "removed": "XXaXAAxxx",
+        "signed_donor": "XAAXXaaxAxx"
+      },
+      {
+        "last_equality": "AAxAxxaXaXaX",
+        "remaining_pair": [
+          "XAxAXXaXaxAxx",
+          "b"
+        ],
+        "removed": "XXaXAxAxx",
+        "signed_donor": "XAxAXXaXaxAxx"
+      },
+      {
+        "last_equality": "AAAAxxaaaXXAAxxaaaXX",
+        "remaining_pair": [
+          "aaaXXAAxx",
+          "b"
+        ],
+        "removed": "XXaaaaxxAAA",
+        "signed_donor": "aaaXXAAxx"
+      },
+      {
+        "last_equality": "AAAAXXaaaxxAAXXaaaxx",
+        "remaining_pair": [
+          "aaaaXXAAAxx",
+          "b"
+        ],
+        "removed": "XXaaaxxAA",
+        "signed_donor": "aaaaXXAAAxx"
+      },
+      {
+        "last_equality": "AAAXaaxAXaax",
+        "remaining_pair": [
+          "XaaaXAAxx",
+          "b"
+        ],
+        "removed": "XXaaxAx",
+        "signed_donor": "XaaaXAAxx"
+      },
+      {
+        "last_equality": "AAXaaXAxaaXAxx",
+        "remaining_pair": [
+          "aaXXaxAAx",
+          "b"
+        ],
+        "removed": "XXaxAAx",
+        "signed_donor": "XaaXAxxAA"
+      },
+      {
+        "last_equality": "AAXXaaXAxaaXAxxx",
+        "remaining_pair": [
+          "b",
+          "xAAXXaaXAxx"
+        ],
+        "removed": "XXaxAAx",
+        "signed_donor": "xAAXXaaXAxx"
+      },
+      {
+        "last_equality": "AAXAxaxaXXax",
+        "remaining_pair": [
+          "XaxaXXaxAXAxx",
+          "b"
+        ],
+        "removed": "XXaxAXAxx",
+        "signed_donor": "XXaxaXAxxAXAx"
+      },
+      {
+        "last_equality": "AAXAxxaxaXXXax",
+        "remaining_pair": [
+          "b",
+          "xAXAXXaxaXAxx"
+        ],
+        "removed": "XXaxAXAxx",
+        "signed_donor": "xAXAXXaxaXAxx"
+      },
+      {
+        "last_equality": "AXXaxx",
+        "remaining_pair": [
+          "a",
+          "bXAxAAXax"
+        ],
+        "removed": "XXaxx",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AXXaxx",
+        "remaining_pair": [
+          "a",
+          "bXAxaaXax"
+        ],
+        "removed": "XXaxx",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AXXaxx",
+        "remaining_pair": [
+          "a",
+          "bXaxAAXAx"
+        ],
+        "removed": "XXaxx",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AXXaxx",
+        "remaining_pair": [
+          "a",
+          "bXaxaaXAx"
+        ],
+        "removed": "XXaxx",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AAAAXYaaayxAAXYaaayx",
+        "remaining_pair": [
+          "aaXYAAAyxaa",
+          "b"
+        ],
+        "removed": "XYAAAyxaa",
+        "signed_donor": "AAXYaaayxAA"
+      },
+      {
+        "last_equality": "AAyyXYYaayyaYYAAyyxaYY",
+        "remaining_pair": [
+          "aYYAAyy",
+          "b"
+        ],
+        "removed": "XYYaayyaYYAAyyx",
+        "signed_donor": "YYaayyA"
+      },
+      {
+        "last_equality": "AAyyXYYaayyxaYYAAyyaYY",
+        "remaining_pair": [
+          "aYYAAyy",
+          "b"
+        ],
+        "removed": "XYYaayyxaYYAAyy",
+        "signed_donor": "YYaayyA"
+      },
+      {
+        "last_equality": "AAAAXYaaayxAAXYaaayx",
+        "remaining_pair": [
+          "aaaaXYAAAyx",
+          "b"
+        ],
+        "removed": "XYaaayxAA",
+        "signed_donor": "aaaaXYAAAyx"
+      },
+      {
+        "last_equality": "AAyXYaayxyaYYAAyyaYY",
+        "remaining_pair": [
+          "b",
+          "yaYYAAy"
+        ],
+        "removed": "XYaayxyaYYAAy",
+        "signed_donor": "YaayyAY"
+      },
+      {
+        "last_equality": "AAyXYaayyaYYAAyxyaYY",
+        "remaining_pair": [
+          "b",
+          "yaYYAAy"
+        ],
+        "removed": "XYaayyaYYAAyx",
+        "signed_donor": "YaayyAY"
+      },
+      {
+        "last_equality": "AAXaaYAyaaYAyx",
+        "remaining_pair": [
+          "aaXYayAAx",
+          "b"
+        ],
+        "removed": "XYayAAx",
+        "signed_donor": "XaaYAyxAA"
+      },
+      {
+        "last_equality": "AAXXaaYAyaaYAyxx",
+        "remaining_pair": [
+          "b",
+          "xAAXXaaYAyx"
+        ],
+        "removed": "XYayAAx",
+        "signed_donor": "xAAXXaaYAyx"
+      },
+      {
+        "last_equality": "AAYAyxYayaXYay",
+        "remaining_pair": [
+          "YayaXYayAYAyx",
+          "b"
+        ],
+        "removed": "XYayAYAyx",
+        "signed_donor": "XYayaYAyxAYAy"
+      },
+      {
+        "last_equality": "AAYAyxxYayaXXYay",
+        "remaining_pair": [
+          "b",
+          "xAYAyXXYayaYAyx"
+        ],
+        "removed": "XYayAYAyx",
+        "signed_donor": "xAYAyXXYayaYAyx"
+      },
+      {
+        "last_equality": "AAAXaaxAXaax",
+        "remaining_pair": [
+          "XaaaXAAxx",
+          "b"
+        ],
+        "removed": "XaXAAxx",
+        "signed_donor": "XXaaxAAAx"
+      },
+      {
+        "last_equality": "AAXaaxaxAX",
+        "remaining_pair": [
+          "XaaxaXAAx",
+          "b"
+        ],
+        "removed": "XaXAAxx",
+        "signed_donor": "XaaxAXAAx"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XaxAXaXaxAxaXAx",
+          "b"
+        ],
+        "removed": "XaXaxAxaXAx",
+        "signed_donor": "XaxAXaXaxAxaXAx"
+      },
+      {
+        "last_equality": "AXAxAXXaxaxAXXaxax",
+        "remaining_pair": [
+          "XaxaXaxaXAXAxAx",
+          "b"
+        ],
+        "removed": "XaXaxaxAXAx",
+        "signed_donor": "XaxaXaxaXAXAxAx"
+      },
+      {
+        "last_equality": "AAyXXYaayAYaayAxxY",
+        "remaining_pair": [
+          "b",
+          "xYAAyXXYaayAx"
+        ],
+        "removed": "XaYAAyx",
+        "signed_donor": "xYAAyXXYaayAx"
+      },
+      {
+        "last_equality": "AAyAxxaYayXXaY",
+        "remaining_pair": [
+          "b",
+          "xYAyAXXaYayAx"
+        ],
+        "removed": "XaYAyAx",
+        "signed_donor": "xYAyAXXaYayAx"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "YayAXaYayAxaYAy",
+          "b"
+        ],
+        "removed": "XaYayAxaYAy",
+        "signed_donor": "YayAXaYayAxaYAy"
+      },
+      {
+        "last_equality": "AYAyAYAyXaYayaxAYAyXaYayax",
+        "remaining_pair": [
+          "YayaYayaXAYAyAx",
+          "b"
+        ],
+        "removed": "XaYayaxAYAy",
+        "signed_donor": "YayaYayaXAYAyAx"
+      },
+      {
+        "last_equality": "AAAXaaxAXaax",
+        "remaining_pair": [
+          "XAXaaxx",
+          "b"
+        ],
+        "removed": "XaaXAAxax",
+        "signed_donor": "XAXaaxx"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XaxAXaaXAxaxA",
+          "b"
+        ],
+        "removed": "XaaXAxaxA",
+        "signed_donor": "XaxAXaaXAxaxA"
+      },
+      {
+        "last_equality": "AAXaaXXaxxAAXaxx",
+        "remaining_pair": [
+          "XXaxxAA",
+          "b"
+        ],
+        "removed": "XaaXXaxxAAx",
+        "signed_donor": "aaXXAxx"
+      },
+      {
+        "last_equality": "AAXXaxxAAXaaXaxx",
+        "remaining_pair": [
+          "XXaxxAA",
+          "b"
+        ],
+        "removed": "XaaXaxxAA",
+        "signed_donor": "aaXXAxx"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "YayAXaaYAyxYayA",
+          "b"
+        ],
+        "removed": "XaaYAyxYayA",
+        "signed_donor": "YayAXaaYAyxYayA"
+      },
+      {
+        "last_equality": "AAXaaYYayyAAxYYayy",
+        "remaining_pair": [
+          "YYayyAA",
+          "b"
+        ],
+        "removed": "XaaYYayyAAx",
+        "signed_donor": "aaYYAyy"
+      },
+      {
+        "last_equality": "AAAXXaaxax",
+        "remaining_pair": [
+          "XaaaaxAAA",
+          "b"
+        ],
+        "removed": "XaaaXAAxx",
+        "signed_donor": "XaaaaxAAA"
+      },
+      {
+        "last_equality": "AAAAAAAAAxAAAAAAAX",
+        "remaining_pair": [
+          "aaaaaaa",
+          "b"
+        ],
+        "removed": "Xaaaaaaaaax",
+        "signed_donor": "AAAAAAA"
+      },
+      {
+        "last_equality": "AAAAAAAAAXAAAAAAAx",
+        "remaining_pair": [
+          "AAAAAAAAA",
+          "b"
+        ],
+        "removed": "Xaaaaaaax",
+        "signed_donor": "AAAAAAAAA"
+      },
+      {
+        "last_equality": "AAAxxaaXaX",
+        "remaining_pair": [
+          "XaaaaXAAAxx",
+          "b"
+        ],
+        "removed": "XaaaxAA",
+        "signed_donor": "XaaaaXAAAxx"
+      },
+      {
+        "last_equality": "AAAAyXaaaxAAYXaaax",
+        "remaining_pair": [
+          "YaaaaXAAAxy",
+          "b"
+        ],
+        "removed": "XaaaxAA",
+        "signed_donor": "YaaaaXAAAxy"
+      },
+      {
+        "last_equality": "AAAAXaaaxAAXaaax",
+        "remaining_pair": [
+          "AAXaaaxAA",
+          "b"
+        ],
+        "removed": "XaaaxAA",
+        "signed_donor": "aaXAAAxaa"
+      },
+      {
+        "last_equality": "AAAAXaaaxAAXaaax",
+        "remaining_pair": [
+          "B",
+          "aaaaXAAAx"
+        ],
+        "removed": "XaaaxAA",
+        "signed_donor": "aaaaXAAAx"
+      },
+      {
+        "last_equality": "AAAAXaaaxAAXaaax",
+        "remaining_pair": [
+          "XaaaxAAAA",
+          "b"
+        ],
+        "removed": "XaaaxAA",
+        "signed_donor": "aaaaXAAAx"
+      },
+      {
+        "last_equality": "AAAAXaaaxAAXaaax",
+        "remaining_pair": [
+          "Xbx",
+          "aaaaXAAAx"
+        ],
+        "removed": "XaaaxAA",
+        "signed_donor": "aaaaXAAAx"
+      },
+      {
+        "last_equality": "AAAAXaaaxAAXaaax",
+        "remaining_pair": [
+          "Yby",
+          "aaaaXAAAx"
+        ],
+        "removed": "XaaaxAA",
+        "signed_donor": "aaaaXAAAx"
+      },
+      {
+        "last_equality": "AAAAXaaaxAAXaaax",
+        "remaining_pair": [
+          "aaaaXAAAx",
+          "bA"
+        ],
+        "removed": "XaaaxAA",
+        "signed_donor": "aaaaXAAAx"
+      },
+      {
+        "last_equality": "AAAAXaaaxAAXaaax",
+        "remaining_pair": [
+          "aaaaXAAAx",
+          "bXaaaxAAAA"
+        ],
+        "removed": "XaaaxAA",
+        "signed_donor": "aaaaXAAAx"
+      },
+      {
+        "last_equality": "AAAAXaaaxAAXaaax",
+        "remaining_pair": [
+          "aaaaXAAAx",
+          "ba"
+        ],
+        "removed": "XaaaxAA",
+        "signed_donor": "aaaaXAAAx"
+      },
+      {
+        "last_equality": "AAAAXaaaxAAXaaax",
+        "remaining_pair": [
+          "aaaaXAAAx",
+          "baaaaXAAAx"
+        ],
+        "removed": "XaaaxAA",
+        "signed_donor": "aaaaXAAAx"
+      },
+      {
+        "last_equality": "AAAAXaaaxAAXaaax",
+        "remaining_pair": [
+          "aaaaXAAAx",
+          "xbX"
+        ],
+        "removed": "XaaaxAA",
+        "signed_donor": "aaaaXAAAx"
+      },
+      {
+        "last_equality": "AAAAXaaaxAAXaaax",
+        "remaining_pair": [
+          "aaaaXAAAx",
+          "ybY"
+        ],
+        "removed": "XaaaxAA",
+        "signed_donor": "aaaaXAAAx"
+      },
+      {
+        "last_equality": "AAAAXXaaaxax",
+        "remaining_pair": [
+          "b",
+          "xaaaaXAAA"
+        ],
+        "removed": "XaaaxAA",
+        "signed_donor": "xaaaaXAAA"
+      },
+      {
+        "last_equality": "AAAAYXaaaxAAyXaaax",
+        "remaining_pair": [
+          "b",
+          "yaaaaXAAAxY"
+        ],
+        "removed": "XaaaxAA",
+        "signed_donor": "yaaaaXAAAxY"
+      },
+      {
+        "last_equality": "AAAAxaaaXAAxaaaX",
+        "remaining_pair": [
+          "XAAxaaaXAAx",
+          "b"
+        ],
+        "removed": "XaaxAAA",
+        "signed_donor": "XAAxaaaXAAx"
+      },
+      {
+        "last_equality": "AAAxaaXAxaaX",
+        "remaining_pair": [
+          "XAxaa",
+          "b"
+        ],
+        "removed": "XaaxAAXax",
+        "signed_donor": "XAxaa"
+      },
+      {
+        "last_equality": "AAxaXAAxaXXaax",
+        "remaining_pair": [
+          "b",
+          "xAXaa"
+        ],
+        "removed": "XaaxAAxaX",
+        "signed_donor": "xAXaa"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XaXAxaaxAXaXAxx",
+          "b"
+        ],
+        "removed": "XaaxAXaXAxx",
+        "signed_donor": "XaXAxaaxAXaXAxx"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "b",
+          "xaXAXaaxAxaXA"
+        ],
+        "removed": "XaaxAxaXA",
+        "signed_donor": "xaXAXaaxAxaXA"
+      },
+      {
+        "last_equality": "AAxYAXaaxAXaaxyX",
+        "remaining_pair": [
+          "YAXaaxy",
+          "b"
+        ],
+        "removed": "XaaxYXAAxay",
+        "signed_donor": "YAXaaxy"
+      },
+      {
+        "last_equality": "AAXaaxYYayyAAYYayy",
+        "remaining_pair": [
+          "YYayyAA",
+          "b"
+        ],
+        "removed": "XaaxYYayyAA",
+        "signed_donor": "aaYYAyy"
+      },
+      {
+        "last_equality": "AAxYXaaxxAXXaaxxAXyX",
+        "remaining_pair": [
+          "YxaXXAAxy",
+          "b"
+        ],
+        "removed": "XaaxYxaXXAAxy",
+        "signed_donor": "YXaaxxAXy"
+      },
+      {
+        "last_equality": "AAXaaxxAXXaaxxAX",
+        "remaining_pair": [
+          "aXXAAxx",
+          "b"
+        ],
+        "removed": "XaaxaXXAAxx",
+        "signed_donor": "XXaaxxA"
+      },
+      {
+        "last_equality": "AAAAxaaaXAAxaaaX",
+        "remaining_pair": [
+          "aaaXAAAAx",
+          "b"
+        ],
+        "removed": "XaaxaaaXAAAAx",
+        "signed_donor": "XaaaaxAAA"
+      },
+      {
+        "last_equality": "AAAAAAxAAAXAAAAxAAAX",
+        "remaining_pair": [
+          "aaaXaaaax",
+          "b"
+        ],
+        "removed": "XaaxaaaXaaaax",
+        "signed_donor": "XAAAAxAAA"
+      },
+      {
+        "last_equality": "AAAAAAAAAAAAAAXAAx",
+        "remaining_pair": [
+          "aaaaaaa",
+          "b"
+        ],
+        "removed": "Xaaxaaaaaaa",
+        "signed_donor": "AAAAAAA"
+      },
+      {
+        "last_equality": "AAXaaxxAXaaxxAXX",
+        "remaining_pair": [
+          "aXXAAxx",
+          "b"
+        ],
+        "removed": "XaaxxaXXAAx",
+        "signed_donor": "XXaaxxA"
+      },
+      {
+        "last_equality": "AAxYXaaxxAXyXaaxxAXX",
+        "remaining_pair": [
+          "YxaXXAAxy",
+          "b"
+        ],
+        "removed": "XaaxxaXXAAx",
+        "signed_donor": "YXaaxxAXy"
+      },
+      {
+        "last_equality": "AAXaaxxaXXAAxxxaXX",
+        "remaining_pair": [
+          "b",
+          "xxaXXAA"
+        ],
+        "removed": "XaaxxaXXAAx",
+        "signed_donor": "aaxxAXX"
+      },
+      {
+        "last_equality": "AAxYXaaxxaXXAAxyxaXX",
+        "remaining_pair": [
+          "b",
+          "yxaXXAAxY"
+        ],
+        "removed": "XaaxxaXXAAx",
+        "signed_donor": "yXaaxxAXY"
+      },
+      {
+        "last_equality": "AAXaaxxxaXXAAxxaXX",
+        "remaining_pair": [
+          "b",
+          "xxaXXAA"
+        ],
+        "removed": "XaaxxxaXXAA",
+        "signed_donor": "aaxxAXX"
+      },
+      {
+        "last_equality": "AAxaXAAxaYXaaxyX",
+        "remaining_pair": [
+          "b",
+          "yAXaaxY"
+        ],
+        "removed": "XaaxyXAAxaY",
+        "signed_donor": "yAXaaxY"
+      },
+      {
+        "last_equality": "AAxYXaaxyxaXXAAxxaXX",
+        "remaining_pair": [
+          "b",
+          "yxaXXAAxY"
+        ],
+        "removed": "XaaxyxaXXAAxY",
+        "signed_donor": "yXaaxxAXY"
+      },
+      {
+        "last_equality": "AAXaaxyyaYYAAyyaYY",
+        "remaining_pair": [
+          "b",
+          "yyaYYAA"
+        ],
+        "removed": "XaaxyyaYYAA",
+        "signed_donor": "aayyAYY"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "b",
+          "yaYAXaayAYxyaYA"
+        ],
+        "removed": "XaayAYxyaYA",
+        "signed_donor": "yaYAXaayAYxyaYA"
+      },
+      {
+        "last_equality": "AAXaayyaYYAAxyyaYY",
+        "remaining_pair": [
+          "b",
+          "yyaYYAA"
+        ],
+        "removed": "XaayyaYYAAx",
+        "signed_donor": "aayyAYY"
+      },
+      {
+        "last_equality": "AAXaaXaxAx",
+        "remaining_pair": [
+          "XaaXaxAAx",
+          "b"
+        ],
+        "removed": "XaxAA",
+        "signed_donor": "XaaXAxAAx"
+      },
+      {
+        "last_equality": "AAYaaXaxAAyXax",
+        "remaining_pair": [
+          "YaaXaxAAy",
+          "b"
+        ],
+        "removed": "XaxAA",
+        "signed_donor": "YaaXAxAAy"
+      },
+      {
+        "last_equality": "AAAxaaXAxaaX",
+        "remaining_pair": [
+          "XaaaxAA",
+          "b"
+        ],
+        "removed": "XaxAA",
+        "signed_donor": "aaXAAAx"
+      },
+      {
+        "last_equality": "AAXaaXAxaaXAxx",
+        "remaining_pair": [
+          "b",
+          "xaaXXaxAA"
+        ],
+        "removed": "XaxAA",
+        "signed_donor": "aaXAxxAAX"
+      },
+      {
+        "last_equality": "AAXXaxAAxaaXax",
+        "remaining_pair": [
+          "b",
+          "xaaXaxAAX"
+        ],
+        "removed": "XaxAA",
+        "signed_donor": "xaaXAxAAX"
+      },
+      {
+        "last_equality": "AAYXaxAAyaaXax",
+        "remaining_pair": [
+          "b",
+          "yaaXaxAAY"
+        ],
+        "removed": "XaxAA",
+        "signed_donor": "yaaXAxAAY"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XaxAXaxAAXaxA",
+          "b"
+        ],
+        "removed": "XaxAAXaxA",
+        "signed_donor": "XaxAXaxAAXaxA"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XAxaXAxaXAxaXAx",
+          "b"
+        ],
+        "removed": "XaxAXaxAXax",
+        "signed_donor": "XaxAXaxAXaxAXax"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XaXAxaxaXAXaxAx",
+          "b"
+        ],
+        "removed": "XaxaXAXaxAx",
+        "signed_donor": "XaXAxaxaXAXaxAx"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "b",
+          "xaXAXaxaXAxaxAX"
+        ],
+        "removed": "XaxaXAxaxAX",
+        "signed_donor": "xaXAXaxaXAxaxAX"
+      },
+      {
+        "last_equality": "AXAxxaXaXAxxaXaXAx",
+        "remaining_pair": [
+          "XaXaxaXaxAxAXAx",
+          "b"
+        ],
+        "removed": "XaxaXaXAxAx",
+        "signed_donor": "XaXaxaXaxAxAXAx"
+      },
+      {
+        "last_equality": "AXAxAXXaxaXaxAxAXXaxaXaxAx",
+        "remaining_pair": [
+          "b",
+          "xaXaxaXaXAxAXAx"
+        ],
+        "removed": "XaxaXaxAxAX",
+        "signed_donor": "xaXaxaXaXAxAXAx"
+      },
+      {
+        "last_equality": "AAYXXyaaYAyaaYAxxy",
+        "remaining_pair": [
+          "b",
+          "xyAAYXXyaaYAx"
+        ],
+        "removed": "XayAAYx",
+        "signed_donor": "xyAAYXXyaaYAx"
+      },
+      {
+        "last_equality": "AAYAxxayaYXXay",
+        "remaining_pair": [
+          "b",
+          "xyAYAXXayaYAx"
+        ],
+        "removed": "XayAYAx",
+        "signed_donor": "xyAYAXXayaYAx"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "b",
+          "yaYAXayaYAxayAY"
+        ],
+        "removed": "XayaYAxayAY",
+        "signed_donor": "yaYAXayaYAxayAY"
+      },
+      {
+        "last_equality": "AYAxyaYaXAyAYAxyaYayaYaXAy",
+        "remaining_pair": [
+          "b",
+          "yaYayaYaXAyAYAx"
+        ],
+        "removed": "XayaYaxAyAY",
+        "signed_donor": "yaYayaYaXAyAYAx"
+      },
+      {
+        "last_equality": "ABxabX",
+        "remaining_pair": [
+          "YaBAyAB",
+          "ab"
+        ],
+        "removed": "Xbax",
+        "signed_donor": "ab"
+      },
+      {
+        "last_equality": "ABxabX",
+        "remaining_pair": [
+          "YaabyAB",
+          "ab"
+        ],
+        "removed": "Xbax",
+        "signed_donor": "ab"
+      },
+      {
+        "last_equality": "ABxabX",
+        "remaining_pair": [
+          "YayBAAB",
+          "ab"
+        ],
+        "removed": "Xbax",
+        "signed_donor": "ab"
+      },
+      {
+        "last_equality": "ABxabX",
+        "remaining_pair": [
+          "YayabAB",
+          "ab"
+        ],
+        "removed": "Xbax",
+        "signed_donor": "ab"
+      },
+      {
+        "last_equality": "ABxabX",
+        "remaining_pair": [
+          "aBABAAB",
+          "ab"
+        ],
+        "removed": "Xbax",
+        "signed_donor": "ab"
+      },
+      {
+        "last_equality": "ABxabX",
+        "remaining_pair": [
+          "aababAB",
+          "ab"
+        ],
+        "removed": "Xbax",
+        "signed_donor": "ab"
+      },
+      {
+        "last_equality": "ABxabX",
+        "remaining_pair": [
+          "ab",
+          "yaBAYAB"
+        ],
+        "removed": "Xbax",
+        "signed_donor": "ab"
+      },
+      {
+        "last_equality": "ABxabX",
+        "remaining_pair": [
+          "ab",
+          "yaYBAAB"
+        ],
+        "removed": "Xbax",
+        "signed_donor": "ab"
+      },
+      {
+        "last_equality": "ABxabX",
+        "remaining_pair": [
+          "ab",
+          "yaYabAB"
+        ],
+        "removed": "Xbax",
+        "signed_donor": "ab"
+      },
+      {
+        "last_equality": "ABxabX",
+        "remaining_pair": [
+          "ab",
+          "yaabYAB"
+        ],
+        "removed": "Xbax",
+        "signed_donor": "ab"
+      },
+      {
+        "last_equality": "AAAAXyaaaYxAAXyaaaYx",
+        "remaining_pair": [
+          "aaXyAAAYxaa",
+          "b"
+        ],
+        "removed": "XyAAAYxaa",
+        "signed_donor": "AAXyaaaYxAA"
+      },
+      {
+        "last_equality": "AAXaayAYaayAYx",
+        "remaining_pair": [
+          "aaXyaYAAx",
+          "b"
+        ],
+        "removed": "XyaYAAx",
+        "signed_donor": "XaayAYxAA"
+      },
+      {
+        "last_equality": "AAXXaayAYaayAYxx",
+        "remaining_pair": [
+          "b",
+          "xAAXXaayAYx"
+        ],
+        "removed": "XyaYAAx",
+        "signed_donor": "xAAXXaayAYx"
+      },
+      {
+        "last_equality": "AAyAYxyaYaXyaY",
+        "remaining_pair": [
+          "b",
+          "yaYaXyaYAyAYx"
+        ],
+        "removed": "XyaYAyAYx",
+        "signed_donor": "XyaYayAYxAyAY"
+      },
+      {
+        "last_equality": "AAyAYxxyaYaXXyaY",
+        "remaining_pair": [
+          "b",
+          "xAyAYXXyaYayAYx"
+        ],
+        "removed": "XyaYAyAYx",
+        "signed_donor": "xAyAYXXyaYayAYx"
+      },
+      {
+        "last_equality": "AAYXyaaYYayyAAYxYayy",
+        "remaining_pair": [
+          "YayyAAY",
+          "b"
+        ],
+        "removed": "XyaaYYayyAAYx",
+        "signed_donor": "yaaYYAy"
+      },
+      {
+        "last_equality": "AAYXyaaYxYayyAAYYayy",
+        "remaining_pair": [
+          "YayyAAY",
+          "b"
+        ],
+        "removed": "XyaaYxYayyAAY",
+        "signed_donor": "yaaYYAy"
+      },
+      {
+        "last_equality": "AAAAXyaaaYxAAXyaaaYx",
+        "remaining_pair": [
+          "aaaaXyAAAYx",
+          "b"
+        ],
+        "removed": "XyaaaYxAA",
+        "signed_donor": "aaaaXyAAAYx"
+      },
+      {
+        "last_equality": "AAYYXyyaaYYayyAAYYxayy",
+        "remaining_pair": [
+          "ayyAAYY",
+          "b"
+        ],
+        "removed": "XyyaaYYayyAAYYx",
+        "signed_donor": "yyaaYYA"
+      },
+      {
+        "last_equality": "AAYYXyyaaYYxayyAAYYayy",
+        "remaining_pair": [
+          "ayyAAYY",
+          "b"
+        ],
+        "removed": "XyyaaYYxayyAAYY",
+        "signed_donor": "yyaaYYA"
+      },
+      {
+        "last_equality": "AAAYAYaayaay",
+        "remaining_pair": [
+          "YaayAAAYaay",
+          "b"
+        ],
+        "removed": "YAAAYaayy",
+        "signed_donor": "YAAyaaaYAAy"
+      },
+      {
+        "last_equality": "AAAAYaaayAAYaaay",
+        "remaining_pair": [
+          "AAAAYaaay",
+          "b"
+        ],
+        "removed": "YAAAyaa",
+        "signed_donor": "AAAAYaaay"
+      },
+      {
+        "last_equality": "AAAAYaaayAAYaaay",
+        "remaining_pair": [
+          "AAYaaayAA",
+          "b"
+        ],
+        "removed": "YAAAyaa",
+        "signed_donor": "AAYaaayAA"
+      },
+      {
+        "last_equality": "AAAAYaaayAAYaaay",
+        "remaining_pair": [
+          "B",
+          "aaYAAAyaa"
+        ],
+        "removed": "YAAAyaa",
+        "signed_donor": "AAYaaayAA"
+      },
+      {
+        "last_equality": "AAAAYaaayAAYaaay",
+        "remaining_pair": [
+          "Xbx",
+          "aaYAAAyaa"
+        ],
+        "removed": "YAAAyaa",
+        "signed_donor": "AAYaaayAA"
+      },
+      {
+        "last_equality": "AAAAYaaayAAYaaay",
+        "remaining_pair": [
+          "Yby",
+          "aaYAAAyaa"
+        ],
+        "removed": "YAAAyaa",
+        "signed_donor": "AAYaaayAA"
+      },
+      {
+        "last_equality": "AAAAYaaayAAYaaay",
+        "remaining_pair": [
+          "aaYAAAyaa",
+          "bA"
+        ],
+        "removed": "YAAAyaa",
+        "signed_donor": "AAYaaayAA"
+      },
+      {
+        "last_equality": "AAAAYaaayAAYaaay",
+        "remaining_pair": [
+          "aaYAAAyaa",
+          "bAAYaaayAA"
+        ],
+        "removed": "YAAAyaa",
+        "signed_donor": "AAYaaayAA"
+      },
+      {
+        "last_equality": "AAAAYaaayAAYaaay",
+        "remaining_pair": [
+          "aaYAAAyaa",
+          "ba"
+        ],
+        "removed": "YAAAyaa",
+        "signed_donor": "AAYaaayAA"
+      },
+      {
+        "last_equality": "AAAAYaaayAAYaaay",
+        "remaining_pair": [
+          "aaYAAAyaa",
+          "baaYAAAyaa"
+        ],
+        "removed": "YAAAyaa",
+        "signed_donor": "AAYaaayAA"
+      },
+      {
+        "last_equality": "AAAAYaaayAAYaaay",
+        "remaining_pair": [
+          "aaYAAAyaa",
+          "xbX"
+        ],
+        "removed": "YAAAyaa",
+        "signed_donor": "AAYaaayAA"
+      },
+      {
+        "last_equality": "AAAAYaaayAAYaaay",
+        "remaining_pair": [
+          "aaYAAAyaa",
+          "ybY"
+        ],
+        "removed": "YAAAyaa",
+        "signed_donor": "AAYaaayAA"
+      },
+      {
+        "last_equality": "AAAyaaXaaYAAAyaaxY",
+        "remaining_pair": [
+          "XaaYAAAyaax",
+          "b"
+        ],
+        "removed": "YAAAyaa",
+        "signed_donor": "XAAYaaayAAx"
+      },
+      {
+        "last_equality": "AAAyAyaaYaaY",
+        "remaining_pair": [
+          "YaaYAAAyaay",
+          "b"
+        ],
+        "removed": "YAAAyaa",
+        "signed_donor": "YAAYaaayAAy"
+      },
+      {
+        "last_equality": "AAAyaaXYAAAyaaxaaY",
+        "remaining_pair": [
+          "b",
+          "xaaYAAAyaaX"
+        ],
+        "removed": "YAAAyaa",
+        "signed_donor": "xAAYaaayAAX"
+      },
+      {
+        "last_equality": "AAAyaaYYAAAyaayaaY",
+        "remaining_pair": [
+          "b",
+          "yaaYAAAyaaY"
+        ],
+        "removed": "YAAAyaa",
+        "signed_donor": "yAAYaaayAAY"
+      },
+      {
+        "last_equality": "AAXAxyXaxaXaxaYAAXAxyXaxaY",
+        "remaining_pair": [
+          "XaxaYAAXAxyXaxa",
+          "b"
+        ],
+        "removed": "YAAXAxyXaxa",
+        "signed_donor": "AXAxYXaxaayAXAx"
+      },
+      {
+        "last_equality": "AAYAyayaYAAYAyayaYayaY",
+        "remaining_pair": [
+          "YayaYAAYAyaya",
+          "b"
+        ],
+        "removed": "YAAYAyaya",
+        "signed_donor": "AYAYayaayAYAy"
+      },
+      {
+        "last_equality": "AAxAXyxaXaYAAxAXyxaXaxaXaY",
+        "remaining_pair": [
+          "b",
+          "xaXaYAAxAXyxaXa"
+        ],
+        "removed": "YAAxAXyxaXa",
+        "signed_donor": "AxAXYxaXaayAxAX"
+      },
+      {
+        "last_equality": "AAyAYaYayAAyAYaYayaYay",
+        "remaining_pair": [
+          "YaYayAAyAYaYayy",
+          "b"
+        ],
+        "removed": "YAAyAYaYayy",
+        "signed_donor": "YYAyAyaYaaYAyAy"
+      },
+      {
+        "last_equality": "AAyAyaYaYAAyAyaYayaYaY",
+        "remaining_pair": [
+          "b",
+          "yaYaYAAyAyaYa"
+        ],
+        "removed": "YAAyAyaYa",
+        "signed_donor": "AyAYaYaayAyAY"
+      },
+      {
+        "last_equality": "AAxYAXaaxAXaaxyX",
+        "remaining_pair": [
+          "YAXaaxy",
+          "b"
+        ],
+        "removed": "YAXaaxyXAAx",
+        "signed_donor": "YXAAxay"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XaxAXaxAYaXAxay",
+          "b"
+        ],
+        "removed": "YAXaxAyaXAx",
+        "signed_donor": "YAXaxAyaXAxaXAx"
+      },
+      {
+        "last_equality": "AAxayXaxaYAX",
+        "remaining_pair": [
+          "XaxaYAXaxayAXAx",
+          "b"
+        ],
+        "removed": "YAXaxayAXAx",
+        "signed_donor": "XaxaYAXAxayAXAx"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "YayAYayAYaYAyay",
+          "b"
+        ],
+        "removed": "YAYayAyaYAy",
+        "signed_donor": "YAYayAyaYAyaYAy"
+      },
+      {
+        "last_equality": "AAYaayayAY",
+        "remaining_pair": [
+          "YayaYAYayayAYAy",
+          "b"
+        ],
+        "removed": "YAYayayAYAy",
+        "signed_donor": "YayaYAYAyayAYAy"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "b",
+          "xaXAxaXAYaxAXay"
+        ],
+        "removed": "YAxaXAyaxAX",
+        "signed_donor": "YAxaXAyaxAXaxAX"
+      },
+      {
+        "last_equality": "AAXayxaXaYAx",
+        "remaining_pair": [
+          "b",
+          "xaXaYAxaXayAxAX"
+        ],
+        "removed": "YAxaXayAxAX",
+        "signed_donor": "xaXaYAxAXayAxAX"
+      },
+      {
+        "last_equality": "AAXYAxaaXAxaaXyx",
+        "remaining_pair": [
+          "YAxaaXy",
+          "b"
+        ],
+        "removed": "YAxaaXyxAAX",
+        "signed_donor": "YxAAXay"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "YaYAyaYAyayAYay",
+          "b"
+        ],
+        "removed": "YAyaYAYayAy",
+        "signed_donor": "YAyaYAYayAYayAy"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "aYAyaYAybYayAYay",
+          "b"
+        ],
+        "removed": "YAyaYAyBYayA",
+        "signed_donor": "YAyaYAyBYayAYayA"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "b",
+          "yaYAyaYAYayAYay"
+        ],
+        "removed": "YAyaYAyayAY",
+        "signed_donor": "YAyaYAyayAYayAY"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "aYAyaYAyBYayAYay",
+          "b"
+        ],
+        "removed": "YAyaYAybYayA",
+        "signed_donor": "YAyaYAybYayAYayA"
+      },
+      {
+        "last_equality": "AAYaaYayAy",
+        "remaining_pair": [
+          "YaYayAyaYaYAyAy",
+          "b"
+        ],
+        "removed": "YAyaYaYAyAy",
+        "signed_donor": "YaYayAyAYaYAyAy"
+      },
+      {
+        "last_equality": "AAYayyaYaYAy",
+        "remaining_pair": [
+          "b",
+          "yaYaYAyaYayAyAY"
+        ],
+        "removed": "YAyaYayAyAY",
+        "signed_donor": "yaYaYAyAYayAyAY"
+      },
+      {
+        "last_equality": "AAAAYXaaaxyAAYXaaaxy",
+        "remaining_pair": [
+          "aaYXAAAxyaa",
+          "b"
+        ],
+        "removed": "YXAAAxyaa",
+        "signed_donor": "AAYXaaaxyAA"
+      },
+      {
+        "last_equality": "AAAAYXaaaxyAAYXaaaxy",
+        "remaining_pair": [
+          "aaaaYXAAAxy",
+          "b"
+        ],
+        "removed": "YXaaaxyAA",
+        "signed_donor": "aaaaYXAAAxy"
+      },
+      {
+        "last_equality": "AAxYXaaxxaXXAAxyxaXX",
+        "remaining_pair": [
+          "b",
+          "xaXXAAx"
+        ],
+        "removed": "YXaaxxaXXAAxy",
+        "signed_donor": "XaaxxAX"
+      },
+      {
+        "last_equality": "AAxYXaaxyxaXXAAxxaXX",
+        "remaining_pair": [
+          "b",
+          "xaXXAAx"
+        ],
+        "removed": "YXaaxyxaXXAAx",
+        "signed_donor": "XaaxxAX"
+      },
+      {
+        "last_equality": "AAAAYYaaayyAAYYaaayy",
+        "remaining_pair": [
+          "aaYYAAAyyaa",
+          "b"
+        ],
+        "removed": "YYAAAyyaa",
+        "signed_donor": "AAYYaaayyAA"
+      },
+      {
+        "last_equality": "AAAAyyaaaYYAAyyaaaYY",
+        "remaining_pair": [
+          "aaaYYAAyy",
+          "b"
+        ],
+        "removed": "YYAAyyaaaYYAAyy",
+        "signed_donor": "YYaayyAAA"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbYAyAxYay",
+          "a"
+        ],
+        "removed": "YYAyy",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbYAyaxYay",
+          "a"
+        ],
+        "removed": "YYAyy",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbYAyxAYay",
+          "a"
+        ],
+        "removed": "YYAyy",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbYAyxaYay",
+          "a"
+        ],
+        "removed": "YYAyy",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbYayAxYAy",
+          "a"
+        ],
+        "removed": "YYAyy",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbYayaxYAy",
+          "a"
+        ],
+        "removed": "YYAyy",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbYayxAYAy",
+          "a"
+        ],
+        "removed": "YYAyy",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbYayxaYAy",
+          "a"
+        ],
+        "removed": "YYAyy",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "bYAyAAYay"
+        ],
+        "removed": "YYAyy",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "bYAyaaYay"
+        ],
+        "removed": "YYAyy",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "bYayAAYAy"
+        ],
+        "removed": "YYAyy",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "bYayaaYAy"
+        ],
+        "removed": "YYAyy",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbYAyAXYay"
+        ],
+        "removed": "YYAyy",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbYAyXAYay"
+        ],
+        "removed": "YYAyy",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbYAyXaYay"
+        ],
+        "removed": "YYAyy",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbYAyaXYay"
+        ],
+        "removed": "YYAyy",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbYayAXYAy"
+        ],
+        "removed": "YYAyy",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbYayXAYAy"
+        ],
+        "removed": "YYAyy",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbYayXaYAy"
+        ],
+        "removed": "YYAyy",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbYayaXYAy"
+        ],
+        "removed": "YYAyy",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AAxYYXaaxAXaaxAyyX",
+        "remaining_pair": [
+          "XAAxYYXaaxAyy",
+          "b"
+        ],
+        "removed": "YYaXAAxyy",
+        "signed_donor": "XAAxYYXaaxAyy"
+      },
+      {
+        "last_equality": "AAxAyyaXaxYYaX",
+        "remaining_pair": [
+          "XAxAYYaXaxAyy",
+          "b"
+        ],
+        "removed": "YYaXAxAyy",
+        "signed_donor": "XAxAYYaXaxAyy"
+      },
+      {
+        "last_equality": "AAAAyyaaaYYAAyyaaaYY",
+        "remaining_pair": [
+          "aaaYYAAyy",
+          "b"
+        ],
+        "removed": "YYaaaayyAAA",
+        "signed_donor": "aaaYYAAyy"
+      },
+      {
+        "last_equality": "AAAAYYaaayyAAYYaaayy",
+        "remaining_pair": [
+          "aaaaYYAAAyy",
+          "b"
+        ],
+        "removed": "YYaaayyAA",
+        "signed_donor": "aaaaYYAAAyy"
+      },
+      {
+        "last_equality": "AAXYYxaaXAxaaXAyyx",
+        "remaining_pair": [
+          "b",
+          "xAAXYYxaaXAyy"
+        ],
+        "removed": "YYaxAAXyy",
+        "signed_donor": "xAAXYYxaaXAyy"
+      },
+      {
+        "last_equality": "AAXAyyaxaXYYax",
+        "remaining_pair": [
+          "b",
+          "xAXAYYaxaXAyy"
+        ],
+        "removed": "YYaxAXAyy",
+        "signed_donor": "xAXAYYaxaXAyy"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbYAyAxYay",
+          "a"
+        ],
+        "removed": "YYayy",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbYAyaxYay",
+          "a"
+        ],
+        "removed": "YYayy",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbYAyxAYay",
+          "a"
+        ],
+        "removed": "YYayy",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbYAyxaYay",
+          "a"
+        ],
+        "removed": "YYayy",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbYayAxYAy",
+          "a"
+        ],
+        "removed": "YYayy",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbYayaxYAy",
+          "a"
+        ],
+        "removed": "YYayy",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbYayxAYAy",
+          "a"
+        ],
+        "removed": "YYayy",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbYayxaYAy",
+          "a"
+        ],
+        "removed": "YYayy",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "bYAyAAYay"
+        ],
+        "removed": "YYayy",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "bYAyaaYay"
+        ],
+        "removed": "YYayy",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "bYayAAYAy"
+        ],
+        "removed": "YYayy",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "bYayaaYAy"
+        ],
+        "removed": "YYayy",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbYAyAXYay"
+        ],
+        "removed": "YYayy",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbYAyXAYay"
+        ],
+        "removed": "YYayy",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbYAyXaYay"
+        ],
+        "removed": "YYayy",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbYAyaXYay"
+        ],
+        "removed": "YYayy",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbYayAXYAy"
+        ],
+        "removed": "YYayy",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbYayXAYAy"
+        ],
+        "removed": "YYayy",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbYayXaYAy"
+        ],
+        "removed": "YYayy",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbYayaXYAy"
+        ],
+        "removed": "YYayy",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AAxYYXaaxAXaaxAyyX",
+        "remaining_pair": [
+          "b",
+          "yXAAxYYXaaxAy"
+        ],
+        "removed": "YaXAAxy",
+        "signed_donor": "yXAAxYYXaaxAy"
+      },
+      {
+        "last_equality": "AAxAyyaXaxYYaX",
+        "remaining_pair": [
+          "b",
+          "yXAxAYYaXaxAy"
+        ],
+        "removed": "YaXAxAy",
+        "signed_donor": "yXAxAYYaXaxAy"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XaxAYaXaxAyaXAx",
+          "b"
+        ],
+        "removed": "YaXaxAyaXAx",
+        "signed_donor": "XaxAYaXaxAyaXAx"
+      },
+      {
+        "last_equality": "AXAxAXAxYaXaxayAXAxYaXaxay",
+        "remaining_pair": [
+          "XaxaXaxaYAXAxAy",
+          "b"
+        ],
+        "removed": "YaXaxayAXAx",
+        "signed_donor": "XaxaXaxaYAXAxAy"
+      },
+      {
+        "last_equality": "AAYaayayAY",
+        "remaining_pair": [
+          "YaayaYAAy",
+          "b"
+        ],
+        "removed": "YaYAAyy",
+        "signed_donor": "YaayAYAAy"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "YayAYaYayAyaYAy",
+          "b"
+        ],
+        "removed": "YaYayAyaYAy",
+        "signed_donor": "YayAYaYayAyaYAy"
+      },
+      {
+        "last_equality": "AYAyAYYayayAYYayay",
+        "remaining_pair": [
+          "YayaYayaYAYAyAy",
+          "b"
+        ],
+        "removed": "YaYayayAYAy",
+        "signed_donor": "YayaYayaYAYAyAy"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XaxAYaaXAxyXaxA",
+          "b"
+        ],
+        "removed": "YaaXAxyXaxA",
+        "signed_donor": "XaxAYaaXAxyXaxA"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "YayAYaaYAyayA",
+          "b"
+        ],
+        "removed": "YaaYAyayA",
+        "signed_donor": "YayAYaaYAyayA"
+      },
+      {
+        "last_equality": "AAAYYaayay",
+        "remaining_pair": [
+          "YaaaayAAA",
+          "b"
+        ],
+        "removed": "YaaaYAAyy",
+        "signed_donor": "YaaaayAAA"
+      },
+      {
+        "last_equality": "AAAAxYaaayAAXYaaay",
+        "remaining_pair": [
+          "XaaaaYAAAyx",
+          "b"
+        ],
+        "removed": "YaaayAA",
+        "signed_donor": "XaaaaYAAAyx"
+      },
+      {
+        "last_equality": "AAAyyaaYaY",
+        "remaining_pair": [
+          "YaaaaYAAAyy",
+          "b"
+        ],
+        "removed": "YaaayAA",
+        "signed_donor": "YaaaaYAAAyy"
+      },
+      {
+        "last_equality": "AAAAYaaayAAYaaay",
+        "remaining_pair": [
+          "AAYaaayAA",
+          "b"
+        ],
+        "removed": "YaaayAA",
+        "signed_donor": "aaYAAAyaa"
+      },
+      {
+        "last_equality": "AAAAYaaayAAYaaay",
+        "remaining_pair": [
+          "B",
+          "aaaaYAAAy"
+        ],
+        "removed": "YaaayAA",
+        "signed_donor": "aaaaYAAAy"
+      },
+      {
+        "last_equality": "AAAAYaaayAAYaaay",
+        "remaining_pair": [
+          "Xbx",
+          "aaaaYAAAy"
+        ],
+        "removed": "YaaayAA",
+        "signed_donor": "aaaaYAAAy"
+      },
+      {
+        "last_equality": "AAAAYaaayAAYaaay",
+        "remaining_pair": [
+          "YaaayAAAA",
+          "b"
+        ],
+        "removed": "YaaayAA",
+        "signed_donor": "aaaaYAAAy"
+      },
+      {
+        "last_equality": "AAAAYaaayAAYaaay",
+        "remaining_pair": [
+          "Yby",
+          "aaaaYAAAy"
+        ],
+        "removed": "YaaayAA",
+        "signed_donor": "aaaaYAAAy"
+      },
+      {
+        "last_equality": "AAAAYaaayAAYaaay",
+        "remaining_pair": [
+          "aaaaYAAAy",
+          "bA"
+        ],
+        "removed": "YaaayAA",
+        "signed_donor": "aaaaYAAAy"
+      },
+      {
+        "last_equality": "AAAAYaaayAAYaaay",
+        "remaining_pair": [
+          "aaaaYAAAy",
+          "bYaaayAAAA"
+        ],
+        "removed": "YaaayAA",
+        "signed_donor": "aaaaYAAAy"
+      },
+      {
+        "last_equality": "AAAAYaaayAAYaaay",
+        "remaining_pair": [
+          "aaaaYAAAy",
+          "ba"
+        ],
+        "removed": "YaaayAA",
+        "signed_donor": "aaaaYAAAy"
+      },
+      {
+        "last_equality": "AAAAYaaayAAYaaay",
+        "remaining_pair": [
+          "aaaaYAAAy",
+          "baaaaYAAAy"
+        ],
+        "removed": "YaaayAA",
+        "signed_donor": "aaaaYAAAy"
+      },
+      {
+        "last_equality": "AAAAYaaayAAYaaay",
+        "remaining_pair": [
+          "aaaaYAAAy",
+          "xbX"
+        ],
+        "removed": "YaaayAA",
+        "signed_donor": "aaaaYAAAy"
+      },
+      {
+        "last_equality": "AAAAYaaayAAYaaay",
+        "remaining_pair": [
+          "aaaaYAAAy",
+          "ybY"
+        ],
+        "removed": "YaaayAA",
+        "signed_donor": "aaaaYAAAy"
+      },
+      {
+        "last_equality": "AAAAXYaaayAAxYaaay",
+        "remaining_pair": [
+          "b",
+          "xaaaaYAAAyX"
+        ],
+        "removed": "YaaayAA",
+        "signed_donor": "xaaaaYAAAyX"
+      },
+      {
+        "last_equality": "AAAAYYaaayay",
+        "remaining_pair": [
+          "b",
+          "yaaaaYAAA"
+        ],
+        "removed": "YaaayAA",
+        "signed_donor": "yaaaaYAAA"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "b",
+          "xaXAYaaxAXyxaXA"
+        ],
+        "removed": "YaaxAXyxaXA",
+        "signed_donor": "xaXAYaaxAXyxaXA"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "YaYAyaayAYaYAyy",
+          "b"
+        ],
+        "removed": "YaayAYaYAyy",
+        "signed_donor": "YaYAyaayAYaYAyy"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "b",
+          "yaYAYaayAyaYA"
+        ],
+        "removed": "YaayAyaYA",
+        "signed_donor": "yaYAYaayAyaYA"
+      },
+      {
+        "last_equality": "AAXYYxaaXAxaaXAyyx",
+        "remaining_pair": [
+          "b",
+          "yxAAXYYxaaXAy"
+        ],
+        "removed": "YaxAAXy",
+        "signed_donor": "yxAAXYYxaaXAy"
+      },
+      {
+        "last_equality": "AAXAyyaxaXYYax",
+        "remaining_pair": [
+          "b",
+          "yxAXAYYaxaXAy"
+        ],
+        "removed": "YaxAXAy",
+        "signed_donor": "yxAXAYYaxaXAy"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "b",
+          "xaXAYaxaXAyaxAX"
+        ],
+        "removed": "YaxaXAyaxAX",
+        "signed_donor": "xaXAYaxaXAyaxAX"
+      },
+      {
+        "last_equality": "AXAxAXYaxaXayAxAXYaxaXayAx",
+        "remaining_pair": [
+          "b",
+          "xaXaxaXaYAxAXAy"
+        ],
+        "removed": "YaxaXayAxAX",
+        "signed_donor": "xaXaxaXaYAxAXAy"
+      },
+      {
+        "last_equality": "AAXaaYayAAxYay",
+        "remaining_pair": [
+          "XaaYayAAx",
+          "b"
+        ],
+        "removed": "YayAA",
+        "signed_donor": "XaaYAyAAx"
+      },
+      {
+        "last_equality": "AAYaaYayAy",
+        "remaining_pair": [
+          "YaaYayAAy",
+          "b"
+        ],
+        "removed": "YayAA",
+        "signed_donor": "YaaYAyAAy"
+      },
+      {
+        "last_equality": "AAXaaxYayAAYay",
+        "remaining_pair": [
+          "XaaxYayAA",
+          "b"
+        ],
+        "removed": "YayAA",
+        "signed_donor": "aaYAyXAAx"
+      },
+      {
+        "last_equality": "AAXaaYAyaaYAyx",
+        "remaining_pair": [
+          "b",
+          "xaaXYayAA"
+        ],
+        "removed": "YayAA",
+        "signed_donor": "aaYAyxAAX"
+      },
+      {
+        "last_equality": "AAXYayAAxaaYay",
+        "remaining_pair": [
+          "b",
+          "xaaYayAAX"
+        ],
+        "removed": "YayAA",
+        "signed_donor": "xaaYAyAAX"
+      },
+      {
+        "last_equality": "AAYYayAAyaaYay",
+        "remaining_pair": [
+          "b",
+          "yaaYayAAY"
+        ],
+        "removed": "YayAA",
+        "signed_donor": "yaaYAyAAY"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "YayAYayAAYayA",
+          "b"
+        ],
+        "removed": "YayAAYayA",
+        "signed_donor": "YayAYayAAYayA"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "YaYAyayaYAYayAy",
+          "b"
+        ],
+        "removed": "YayaYAYayAy",
+        "signed_donor": "YaYAyayaYAYayAy"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "b",
+          "yaYAYayaYAyayAY"
+        ],
+        "removed": "YayaYAyayAY",
+        "signed_donor": "yaYAYayaYAyayAY"
+      },
+      {
+        "last_equality": "AYAyyaYaYAyyaYaYAy",
+        "remaining_pair": [
+          "YaYayaYayAyAYAy",
+          "b"
+        ],
+        "removed": "YayaYaYAyAy",
+        "signed_donor": "YaYayaYayAyAYAy"
+      },
+      {
+        "last_equality": "AYAyAYYayaYayAyAYYayaYayAy",
+        "remaining_pair": [
+          "b",
+          "yaYayaYaYAyAYAy"
+        ],
+        "removed": "YayaYayAyAY",
+        "signed_donor": "yaYayaYaYAyAYAy"
+      },
+      {
+        "last_equality": "AByabY",
+        "remaining_pair": [
+          "aBABAAB",
+          "ab"
+        ],
+        "removed": "Ybay",
+        "signed_donor": "ab"
+      },
+      {
+        "last_equality": "AByabY",
+        "remaining_pair": [
+          "aababAB",
+          "ab"
+        ],
+        "removed": "Ybay",
+        "signed_donor": "ab"
+      },
+      {
+        "last_equality": "AAAAYxaaaXyAAYxaaaXy",
+        "remaining_pair": [
+          "aaYxAAAXyaa",
+          "b"
+        ],
+        "removed": "YxAAAXyaa",
+        "signed_donor": "AAYxaaaXyAA"
+      },
+      {
+        "last_equality": "AAXYxaaXXaxxAAXyXaxx",
+        "remaining_pair": [
+          "XaxxAAX",
+          "b"
+        ],
+        "removed": "YxaaXXaxxAAXy",
+        "signed_donor": "xaaXXAx"
+      },
+      {
+        "last_equality": "AAXXaxxAAXYxaaXyXaxx",
+        "remaining_pair": [
+          "XaxxAAX",
+          "b"
+        ],
+        "removed": "YxaaXyXaxxAAX",
+        "signed_donor": "xaaXXAx"
+      },
+      {
+        "last_equality": "AAAAYxaaaXyAAYxaaaXy",
+        "remaining_pair": [
+          "aaaaYxAAAXy",
+          "b"
+        ],
+        "removed": "YxaaaXyAA",
+        "signed_donor": "aaaaYxAAAXy"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbXAxxAXax",
+          "a"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbXAxxaXax",
+          "a"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbXaxxAXAx",
+          "a"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbXaxxaXAx",
+          "a"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbYAyAxYay",
+          "a"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbYAyaxYay",
+          "a"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbYAyxAYay",
+          "a"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbYAyxaYay",
+          "a"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbYayAxYAy",
+          "a"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbYayaxYAy",
+          "a"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbYayxAYAy",
+          "a"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbYayxaYAy",
+          "a"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbxAXAxxaX",
+          "a"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbxAXaxxaX",
+          "a"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbxaXAxxAX",
+          "a"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbxaXaxxAX",
+          "a"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbyAYAxyaY",
+          "a"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbyAYaxyaY",
+          "a"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbyAYxAyaY",
+          "a"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbyAYxayaY",
+          "a"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbyaYAxyAY",
+          "a"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbyaYaxyAY",
+          "a"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbyaYxAyAY",
+          "a"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "XbyaYxayAY",
+          "a"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "bAAAAAAAA"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "bXAxAAXax"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "bXAxaaXax"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "bXaxAAXAx"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "bXaxaaXAx"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "bYAyAAYay"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "bYAyaaYay"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "bYayAAYAy"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "bYayaaYAy"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "baaaaaaaa"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "bxAXAAxaX"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "bxAXaaxaX"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "bxaXAAxAX"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "bxaXaaxAX"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "byAYAAyaY"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "byAYaayaY"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "byaYAAyAY"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "byaYaayAY"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbXAxAXXax"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbXAxaXXax"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbXaxAXXAx"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbXaxaXXAx"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbYAyAXYay"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbYAyXAYay"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbYAyXaYay"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbYAyaXYay"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbYayAXYAy"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbYayXAYAy"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbYayXaYAy"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbYayaXYAy"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbxAXXAxaX"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbxAXXaxaX"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbxaXXAxAX"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbxaXXaxAX"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbyAYAXyaY"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbyAYXAyaY"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbyAYXayaY"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbyAYaXyaY"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbyaYAXyAY"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbyaYXAyAY"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbyaYXayAY"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "",
+        "remaining_pair": [
+          "a",
+          "xbyaYaXyAY"
+        ],
+        "removed": "a",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AAXXaaxxxaXAAxaX",
+        "remaining_pair": [
+          "XXXAAxxaaxA",
+          "b"
+        ],
+        "removed": "aXAAx",
+        "signed_donor": "XXXAAxxaaxA"
+      },
+      {
+        "last_equality": "AAAXaaxAXaax",
+        "remaining_pair": [
+          "aaaXAAx",
+          "b"
+        ],
+        "removed": "aXAAx",
+        "signed_donor": "XaaxAAA"
+      },
+      {
+        "last_equality": "AAXaaxxaXAAxaX",
+        "remaining_pair": [
+          "XXaaxxaXAAx",
+          "b"
+        ],
+        "removed": "aXAAx",
+        "signed_donor": "XaaxAXXAAxx"
+      },
+      {
+        "last_equality": "AAxYYXaaxyyaXAAxaX",
+        "remaining_pair": [
+          "YYXAAxyyXaaxA",
+          "b"
+        ],
+        "removed": "aXAAx",
+        "signed_donor": "YYXAAxyyXaaxA"
+      },
+      {
+        "last_equality": "AAXXaaxAXaaxAx",
+        "remaining_pair": [
+          "b",
+          "xAAXXaaxA"
+        ],
+        "removed": "aXAAx",
+        "signed_donor": "xAAXXaaxA"
+      },
+      {
+        "last_equality": "AAxYYXaaxAXaaxAyyX",
+        "remaining_pair": [
+          "b",
+          "yyXAAxYYXaaxA"
+        ],
+        "removed": "aXAAx",
+        "signed_donor": "yyXAAxYYXaaxA"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XAxaXAxaXAxaXAx",
+          "b"
+        ],
+        "removed": "aXAAxaXAxaXAxaXAx",
+        "signed_donor": "XAxaXAxaXAxaXAx"
+      },
+      {
+        "last_equality": "ABXbax",
+        "remaining_pair": [
+          "XABxaXABxaXABxaXABx",
+          "b"
+        ],
+        "removed": "aXABx",
+        "signed_donor": "B"
+      },
+      {
+        "last_equality": "AbXBax",
+        "remaining_pair": [
+          "XAbxaXAbxaXAbxaXAbx",
+          "b"
+        ],
+        "removed": "aXAbx",
+        "signed_donor": "b"
+      },
+      {
+        "last_equality": "AAxAXXaXaxxxaX",
+        "remaining_pair": [
+          "XXXAxAxxaXaxA",
+          "b"
+        ],
+        "removed": "aXAxA",
+        "signed_donor": "XXXAxAxxaXaxA"
+      },
+      {
+        "last_equality": "AAxAYYaXaxyyaX",
+        "remaining_pair": [
+          "YYXAxAyyaXaxA",
+          "b"
+        ],
+        "removed": "aXAxA",
+        "signed_donor": "YYXAxAyyaXaxA"
+      },
+      {
+        "last_equality": "AAxAXaXaax",
+        "remaining_pair": [
+          "b",
+          "xaXaaXAxA"
+        ],
+        "removed": "aXAxA",
+        "signed_donor": "aXaxAAxAX"
+      },
+      {
+        "last_equality": "AAxAXaXaxxaX",
+        "remaining_pair": [
+          "XaXaxxaXAxA",
+          "b"
+        ],
+        "removed": "aXAxA",
+        "signed_donor": "aXaxAXXAxAx"
+      },
+      {
+        "last_equality": "AAxAxxaXaXaX",
+        "remaining_pair": [
+          "b",
+          "xAxAXXaXaxA"
+        ],
+        "removed": "aXAxA",
+        "signed_donor": "xAxAXXaXaxA"
+      },
+      {
+        "last_equality": "AAxAyyaXaxYYaX",
+        "remaining_pair": [
+          "b",
+          "yyXAxAYYaXaxA"
+        ],
+        "removed": "aXAxA",
+        "signed_donor": "yyXAxAYYaXaxA"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XAxBaXAxBaXAxBaXAxB",
+          "b"
+        ],
+        "removed": "aXAxB",
+        "signed_donor": "B"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XAxaXAxaXAxaXAx",
+          "b"
+        ],
+        "removed": "aXAxB",
+        "signed_donor": "B"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XAxaXAxaXAxaXAxB",
+          "b"
+        ],
+        "removed": "aXAxB",
+        "signed_donor": "B"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XaxaXAAxaXAxaXAAx",
+          "b"
+        ],
+        "removed": "aXAxaXAAx",
+        "signed_donor": "XaxaXAAxaXAxaXAAx"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XaxAXaxAAXaxA",
+          "b"
+        ],
+        "removed": "aXAxaaXAx",
+        "signed_donor": "aXAxaaXAxaXAx"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XAxaXAxaXAxaXAx",
+          "b"
+        ],
+        "removed": "aXAxb",
+        "signed_donor": "b"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XAxaXAxaXAxaXAxb",
+          "b"
+        ],
+        "removed": "aXAxb",
+        "signed_donor": "b"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XAxbaXAxbaXAxbaXAxb",
+          "b"
+        ],
+        "removed": "aXAxb",
+        "signed_donor": "b"
+      },
+      {
+        "last_equality": "AAAAAAAAxAXAAAAAAxAX",
+        "remaining_pair": [
+          "XAAAAAAAAxA",
+          "b"
+        ],
+        "removed": "aXaaaaaax",
+        "signed_donor": "XAAAAAAAAxA"
+      },
+      {
+        "last_equality": "AAxAXAxAXAxAXAAxAXAxAXAxAXAxAX",
+        "remaining_pair": [
+          "XaxaXaxaXaxaXax",
+          "b"
+        ],
+        "removed": "aXaaxaXaxaXaxaXax",
+        "signed_donor": "XAxAXAxAXAxAXAx"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "YayAYayAAYayA",
+          "b"
+        ],
+        "removed": "aYAyaaYAy",
+        "signed_donor": "aYAyaaYAyaYAy"
+      },
+      {
+        "last_equality": "AAAAXaaaxAAXaaax",
+        "remaining_pair": [
+          "XAAAxaa",
+          "b"
+        ],
+        "removed": "aaXAAAxaa",
+        "signed_donor": "AAXaaax"
+      },
+      {
+        "last_equality": "AAAxaaXAxaaX",
+        "remaining_pair": [
+          "XaaaxAA",
+          "b"
+        ],
+        "removed": "aaXAx",
+        "signed_donor": "XaaaxAA"
+      },
+      {
+        "last_equality": "AAXaaXAxaaXAxx",
+        "remaining_pair": [
+          "b",
+          "xaaXXaxAA"
+        ],
+        "removed": "aaXAx",
+        "signed_donor": "xaaXXaxAA"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XaxAXaxAXaxAXaxAA",
+          "b"
+        ],
+        "removed": "aaXAxaXAxaXAx",
+        "signed_donor": "aaXAxaXAxaXAxaXAx"
+      },
+      {
+        "last_equality": "AAXAxAXAxAXAxAAXAxAXAxAXAxAXAx",
+        "remaining_pair": [
+          "XAxAXAxAXAxAXAxAA",
+          "b"
+        ],
+        "removed": "aaXaxaXaxaXax",
+        "signed_donor": "XAxAXAxAXAxAXAxAA"
+      },
+      {
+        "last_equality": "AAXaaxYayAAYay",
+        "remaining_pair": [
+          "XaaxYayAA",
+          "b"
+        ],
+        "removed": "aaYAy",
+        "signed_donor": "XaaxYayAA"
+      },
+      {
+        "last_equality": "AAXaaYAyaaYAyx",
+        "remaining_pair": [
+          "b",
+          "xaaXYayAA"
+        ],
+        "removed": "aaYAy",
+        "signed_donor": "xaaXYayAA"
+      },
+      {
+        "last_equality": "AAAAAAAAAAAAAAAA",
+        "remaining_pair": [
+          "aaaaaaaaaaaaa",
+          "b"
+        ],
+        "removed": "aaa",
+        "signed_donor": "AAAAAAAAAAAAA"
+      },
+      {
+        "last_equality": "AAAAxaaaXAAxaaaX",
+        "remaining_pair": [
+          "XAAxaaaXAAx",
+          "b"
+        ],
+        "removed": "aaaXAAx",
+        "signed_donor": "XaaxAAAXaax"
+      },
+      {
+        "last_equality": "AAAAxxaaaXXAAxxaaaXX",
+        "remaining_pair": [
+          "XXaaaaxxAAA",
+          "b"
+        ],
+        "removed": "aaaXXAAxx",
+        "signed_donor": "XXaaaaxxAAA"
+      },
+      {
+        "last_equality": "AAAAyyaaaYYAAyyaaaYY",
+        "remaining_pair": [
+          "YYaaaayyAAA",
+          "b"
+        ],
+        "removed": "aaaYYAAyy",
+        "signed_donor": "YYaaaayyAAA"
+      },
+      {
+        "last_equality": "AAAAXXaaaxxAAXXaaaxx",
+        "remaining_pair": [
+          "XXaaaxxAA",
+          "b"
+        ],
+        "removed": "aaaaXXAAAxx",
+        "signed_donor": "XXaaaxxAA"
+      },
+      {
+        "last_equality": "AAAAYYaaayyAAYYaaayy",
+        "remaining_pair": [
+          "YYaaayyAA",
+          "b"
+        ],
+        "removed": "aaaaYYAAAyy",
+        "signed_donor": "YYaaayyAA"
+      },
+      {
+        "last_equality": "AAAAAXAAAAxAAAAAXAAx",
+        "remaining_pair": [
+          "XAAAAxAAAAA",
+          "b"
+        ],
+        "removed": "aaaaaXaax",
+        "signed_donor": "XAAAAxAAAAA"
+      },
+      {
+        "last_equality": "AAAAAAAAAAAAAAAA",
+        "remaining_pair": [
+          "aaaaaaaaa",
+          "b"
+        ],
+        "removed": "aaaaaaa",
+        "signed_donor": "AAAAAAAAA"
+      },
+      {
+        "last_equality": "AAAAAAAAAAAAAAAA",
+        "remaining_pair": [
+          "AAAAAAA",
+          "b"
+        ],
+        "removed": "aaaaaaaaa",
+        "signed_donor": "AAAAAAA"
+      },
+      {
+        "last_equality": "AAAAAAAAAAAAAAAA",
+        "remaining_pair": [
+          "aaaaa",
+          "b"
+        ],
+        "removed": "aaaaaaaaaaa",
+        "signed_donor": "AAAAA"
+      },
+      {
+        "last_equality": "AAAAAxAAAAXAAAAAxAAX",
+        "remaining_pair": [
+          "b",
+          "xAAAAXAAAAA"
+        ],
+        "removed": "aaaaaxaaX",
+        "signed_donor": "xAAAAXAAAAA"
+      },
+      {
+        "last_equality": "AAAAxxaaaXXAAxxaaaXX",
+        "remaining_pair": [
+          "b",
+          "xxaaaXXAA"
+        ],
+        "removed": "aaaaxxAAAXX",
+        "signed_donor": "xxaaaXXAA"
+      },
+      {
+        "last_equality": "AAAAyyaaaYYAAyyaaaYY",
+        "remaining_pair": [
+          "b",
+          "yyaaaYYAA"
+        ],
+        "removed": "aaaayyAAAYY",
+        "signed_donor": "yyaaaYYAA"
+      },
+      {
+        "last_equality": "AAAAXaaaxAAXaaax",
+        "remaining_pair": [
+          "b",
+          "xAAXaaaxAAX"
+        ],
+        "removed": "aaaxAAX",
+        "signed_donor": "xaaXAAAxaaX"
+      },
+      {
+        "last_equality": "AAAAXXaaaxxAAXXaaaxx",
+        "remaining_pair": [
+          "b",
+          "xxaaaaXXAAA"
+        ],
+        "removed": "aaaxxAAXX",
+        "signed_donor": "xxaaaaXXAAA"
+      },
+      {
+        "last_equality": "AAAAYYaaayyAAYYaaayy",
+        "remaining_pair": [
+          "b",
+          "yyaaaaYYAAA"
+        ],
+        "removed": "aaayyAAYY",
+        "signed_donor": "yyaaaaYYAAA"
+      },
+      {
+        "last_equality": "AAAAxaaaXAAxaaaX",
+        "remaining_pair": [
+          "b",
+          "xAAAXaa"
+        ],
+        "removed": "aaxAAAXaa",
+        "signed_donor": "AAxaaaX"
+      },
+      {
+        "last_equality": "AAXaaxxaXAAxaX",
+        "remaining_pair": [
+          "XaaxxaXAA",
+          "b"
+        ],
+        "removed": "aaxAX",
+        "signed_donor": "XaaxxaXAA"
+      },
+      {
+        "last_equality": "AAAXaaxAXaax",
+        "remaining_pair": [
+          "b",
+          "xaaaXAA"
+        ],
+        "removed": "aaxAX",
+        "signed_donor": "xaaaXAA"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "b",
+          "xaXAxaXAxaXAxaXAA"
+        ],
+        "removed": "aaxAXaxAXaxAX",
+        "signed_donor": "aaxAXaxAXaxAXaxAX"
+      },
+      {
+        "last_equality": "AAxAXAxAXAxAXAAxAXAxAXAxAXAxAX",
+        "remaining_pair": [
+          "b",
+          "xAXAxAXAxAXAxAXAA"
+        ],
+        "removed": "aaxaXaxaXaxaX",
+        "signed_donor": "xAXAxAXAxAXAxAXAA"
+      },
+      {
+        "last_equality": "AAXaaxyaYAAyaY",
+        "remaining_pair": [
+          "XaaxyaYAA",
+          "b"
+        ],
+        "removed": "aayAY",
+        "signed_donor": "XaaxyaYAA"
+      },
+      {
+        "last_equality": "AAXaayAYaayAYx",
+        "remaining_pair": [
+          "b",
+          "xaaXyaYAA"
+        ],
+        "removed": "aayAY",
+        "signed_donor": "xaaXyaYAA"
+      },
+      {
+        "last_equality": "AAXXaaxaxAAXax",
+        "remaining_pair": [
+          "XAAxxaaXA",
+          "b"
+        ],
+        "removed": "axAAX",
+        "signed_donor": "XAAxxaaXA"
+      },
+      {
+        "last_equality": "AAXYYxaaXyyaxAAXax",
+        "remaining_pair": [
+          "YYxAAXyyxaaXA",
+          "b"
+        ],
+        "removed": "axAAX",
+        "signed_donor": "YYxAAXyyxaaXA"
+      },
+      {
+        "last_equality": "AAAxaaXAxaaX",
+        "remaining_pair": [
+          "aaaxAAX",
+          "b"
+        ],
+        "removed": "axAAX",
+        "signed_donor": "xaaXAAA"
+      },
+      {
+        "last_equality": "AAXaaXAxaaXAxx",
+        "remaining_pair": [
+          "b",
+          "xxaaXXaxAAX"
+        ],
+        "removed": "axAAX",
+        "signed_donor": "xaaXAxxAAXX"
+      },
+      {
+        "last_equality": "AAXXaaXAxaaXAxxx",
+        "remaining_pair": [
+          "b",
+          "xxxAAXXaaXA"
+        ],
+        "removed": "axAAX",
+        "signed_donor": "xxxAAXXaaXA"
+      },
+      {
+        "last_equality": "AAXYYxaaXAxaaXAyyx",
+        "remaining_pair": [
+          "b",
+          "yyxAAXYYxaaXA"
+        ],
+        "removed": "axAAX",
+        "signed_donor": "yyxAAXYYxaaXA"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "b",
+          "xAXaxAXaxAXaxAX"
+        ],
+        "removed": "axAAXaxAXaxAXaxAX",
+        "signed_donor": "xAXaxAXaxAXaxAX"
+      },
+      {
+        "last_equality": "ABXbax",
+        "remaining_pair": [
+          "b",
+          "xABXaxABXaxABXaxABX"
+        ],
+        "removed": "axABX",
+        "signed_donor": "B"
+      },
+      {
+        "last_equality": "AAXAXXaxaxax",
+        "remaining_pair": [
+          "XAXAxxaxaXA",
+          "b"
+        ],
+        "removed": "axAXA",
+        "signed_donor": "XAXAxxaxaXA"
+      },
+      {
+        "last_equality": "AAXAYYaxaXyyax",
+        "remaining_pair": [
+          "YYxAXAyyaxaXA",
+          "b"
+        ],
+        "removed": "axAXA",
+        "signed_donor": "YYxAXAyyaxaXA"
+      },
+      {
+        "last_equality": "AAXAXaxaax",
+        "remaining_pair": [
+          "XaxaaxAXA",
+          "b"
+        ],
+        "removed": "axAXA",
+        "signed_donor": "axaXAAXAx"
+      },
+      {
+        "last_equality": "AAXAxaxaXXax",
+        "remaining_pair": [
+          "b",
+          "xaxaXXaxAXA"
+        ],
+        "removed": "axAXA",
+        "signed_donor": "axaXAxxAXAX"
+      },
+      {
+        "last_equality": "AAXAxxaxaXXXax",
+        "remaining_pair": [
+          "b",
+          "xxxAXAXXaxaXA"
+        ],
+        "removed": "axAXA",
+        "signed_donor": "xxxAXAXXaxaXA"
+      },
+      {
+        "last_equality": "AAXAyyaxaXYYax",
+        "remaining_pair": [
+          "b",
+          "yyxAXAYYaxaXA"
+        ],
+        "removed": "axAXA",
+        "signed_donor": "yyxAXAYYaxaXA"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "b",
+          "xAXBaxAXBaxAXBaxAXB"
+        ],
+        "removed": "axAXB",
+        "signed_donor": "B"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "b",
+          "xAXaxAXaxAXaxAX"
+        ],
+        "removed": "axAXB",
+        "signed_donor": "B"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "b",
+          "xAXaxAXaxAXaxAXB"
+        ],
+        "removed": "axAXB",
+        "signed_donor": "B"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "b",
+          "xaXAxaXAAxaXA"
+        ],
+        "removed": "axAXaaxAX",
+        "signed_donor": "axAXaaxAXaxAX"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "b",
+          "xaXaxAAXaxAXaxAAX"
+        ],
+        "removed": "axAXaxAAX",
+        "signed_donor": "xaXaxAAXaxAXaxAAX"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "b",
+          "xAXaxAXaxAXaxAX"
+        ],
+        "removed": "axAXb",
+        "signed_donor": "b"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "b",
+          "xAXaxAXaxAXaxAXb"
+        ],
+        "removed": "axAXb",
+        "signed_donor": "b"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "b",
+          "xAXbaxAXbaxAXbaxAXb"
+        ],
+        "removed": "axAXb",
+        "signed_donor": "b"
+      },
+      {
+        "last_equality": "AbXBax",
+        "remaining_pair": [
+          "b",
+          "xAbXaxAbXaxAbXaxAbX"
+        ],
+        "removed": "axAbX",
+        "signed_donor": "b"
+      },
+      {
+        "last_equality": "AAXAxAXAxAXAxAAXAxAXAxAXAxAXAx",
+        "remaining_pair": [
+          "b",
+          "xaXaxaXaxaXaxaX"
+        ],
+        "removed": "axaaXaxaXaxaXaxaX",
+        "signed_donor": "xAXAxAXAxAXAxAX"
+      },
+      {
+        "last_equality": "AAAAAAAAXAxAAAAAAXAx",
+        "remaining_pair": [
+          "b",
+          "xAAAAAAAAXA"
+        ],
+        "removed": "axaaaaaaX",
+        "signed_donor": "xAAAAAAAAXA"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "b",
+          "yaYAyaYAAyaYA"
+        ],
+        "removed": "ayAYaayAY",
+        "signed_donor": "ayAYaayAYayAY"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XAxaXAxaXAxaXAxaB",
+          "a"
+        ],
+        "removed": "bAXaxAXaxAXax",
+        "signed_donor": "bAXaxAXaxAXaxAXax"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "YAyaYAyaYAyaYAyaB",
+          "a"
+        ],
+        "removed": "bAYayAYayAYay",
+        "signed_donor": "bAYayAYayAYayAYay"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "a",
+          "xAXaxAXaxAXaxAXaB"
+        ],
+        "removed": "bAxaXAxaXAxaX",
+        "signed_donor": "bAxaXAxaXAxaXAxaX"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "a",
+          "yAYayAYayAYayAYaB"
+        ],
+        "removed": "bAyaYAyaYAyaY",
+        "signed_donor": "bAyaYAyaYAyaYAyaY"
+      },
+      {
+        "last_equality": "ABxabX",
+        "remaining_pair": [
+          "XABxbXABxbXABxbXABx",
+          "a"
+        ],
+        "removed": "bXABx",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AByabY",
+        "remaining_pair": [
+          "YABybYABybYABybYABy",
+          "a"
+        ],
+        "removed": "bYABy",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "YayAYayAYayAYayB",
+          "a"
+        ],
+        "removed": "bYAyaYAyaYAy",
+        "signed_donor": "bYAyaYAyaYAyaYAy"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "YAyaYAyaYAyaYAyB",
+          "a"
+        ],
+        "removed": "bYayAYayAYay",
+        "signed_donor": "bYayAYayAYayAYay"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XaxAXaxAXaxAXaxAB",
+          "a"
+        ],
+        "removed": "baXAxaXAxaXAx",
+        "signed_donor": "baXAxaXAxaXAxaXAx"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "YayAYayAYayAYayAB",
+          "a"
+        ],
+        "removed": "baYAyaYAyaYAy",
+        "signed_donor": "baYAyaYAyaYAyaYAy"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "a",
+          "xaXAxaXAxaXAxaXAB"
+        ],
+        "removed": "baxAXaxAXaxAX",
+        "signed_donor": "baxAXaxAXaxAXaxAX"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "a",
+          "yaYAyaYAyaYAyaYAB"
+        ],
+        "removed": "bayAYayAYayAY",
+        "signed_donor": "bayAYayAYayAYayAY"
+      },
+      {
+        "last_equality": "ABXabx",
+        "remaining_pair": [
+          "a",
+          "xABXbxABXbxABXbxABX"
+        ],
+        "removed": "bxABX",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "ABYaby",
+        "remaining_pair": [
+          "a",
+          "yABYbyABYbyABYbyABY"
+        ],
+        "removed": "byABY",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "a",
+          "yaYAyaYAyaYAyaYB"
+        ],
+        "removed": "byAYayAYayAY",
+        "signed_donor": "byAYayAYayAYayAY"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "a",
+          "yAYayAYayAYayAYB"
+        ],
+        "removed": "byaYAyaYAyaY",
+        "signed_donor": "byaYAyaYAyaYAyaY"
+      },
+      {
+        "last_equality": "AAAAxaaaXAAxaaaX",
+        "remaining_pair": [
+          "AAAAxaaaX",
+          "b"
+        ],
+        "removed": "xAAAXaa",
+        "signed_donor": "AAAAxaaaX"
+      },
+      {
+        "last_equality": "AAAAxaaaXAAxaaaX",
+        "remaining_pair": [
+          "AAxaaaXAA",
+          "b"
+        ],
+        "removed": "xAAAXaa",
+        "signed_donor": "AAxaaaXAA"
+      },
+      {
+        "last_equality": "AAAAxaaaXAAxaaaX",
+        "remaining_pair": [
+          "B",
+          "aaxAAAXaa"
+        ],
+        "removed": "xAAAXaa",
+        "signed_donor": "AAxaaaXAA"
+      },
+      {
+        "last_equality": "AAAAxaaaXAAxaaaX",
+        "remaining_pair": [
+          "Xbx",
+          "aaxAAAXaa"
+        ],
+        "removed": "xAAAXaa",
+        "signed_donor": "AAxaaaXAA"
+      },
+      {
+        "last_equality": "AAAAxaaaXAAxaaaX",
+        "remaining_pair": [
+          "Yby",
+          "aaxAAAXaa"
+        ],
+        "removed": "xAAAXaa",
+        "signed_donor": "AAxaaaXAA"
+      },
+      {
+        "last_equality": "AAAAxaaaXAAxaaaX",
+        "remaining_pair": [
+          "aaxAAAXaa",
+          "bA"
+        ],
+        "removed": "xAAAXaa",
+        "signed_donor": "AAxaaaXAA"
+      },
+      {
+        "last_equality": "AAAAxaaaXAAxaaaX",
+        "remaining_pair": [
+          "aaxAAAXaa",
+          "bAAxaaaXAA"
+        ],
+        "removed": "xAAAXaa",
+        "signed_donor": "AAxaaaXAA"
+      },
+      {
+        "last_equality": "AAAAxaaaXAAxaaaX",
+        "remaining_pair": [
+          "aaxAAAXaa",
+          "ba"
+        ],
+        "removed": "xAAAXaa",
+        "signed_donor": "AAxaaaXAA"
+      },
+      {
+        "last_equality": "AAAAxaaaXAAxaaaX",
+        "remaining_pair": [
+          "aaxAAAXaa",
+          "baaxAAAXaa"
+        ],
+        "removed": "xAAAXaa",
+        "signed_donor": "AAxaaaXAA"
+      },
+      {
+        "last_equality": "AAAAxaaaXAAxaaaX",
+        "remaining_pair": [
+          "aaxAAAXaa",
+          "xbX"
+        ],
+        "removed": "xAAAXaa",
+        "signed_donor": "AAxaaaXAA"
+      },
+      {
+        "last_equality": "AAAAxaaaXAAxaaaX",
+        "remaining_pair": [
+          "aaxAAAXaa",
+          "ybY"
+        ],
+        "removed": "xAAAXaa",
+        "signed_donor": "AAxaaaXAA"
+      },
+      {
+        "last_equality": "AAAXaaXaaxAAAXaaxx",
+        "remaining_pair": [
+          "XaaxAAAXaax",
+          "b"
+        ],
+        "removed": "xAAAXaa",
+        "signed_donor": "XAAxaaaXAAx"
+      },
+      {
+        "last_equality": "AAAXaaYaaxAAAXaayx",
+        "remaining_pair": [
+          "YaaxAAAXaay",
+          "b"
+        ],
+        "removed": "xAAAXaa",
+        "signed_donor": "YAAxaaaXAAy"
+      },
+      {
+        "last_equality": "AAAXAXaaxaax",
+        "remaining_pair": [
+          "b",
+          "xaaxAAAXaaX"
+        ],
+        "removed": "xAAAXaa",
+        "signed_donor": "xAAxaaaXAAX"
+      },
+      {
+        "last_equality": "AAAXaaYxAAAXaayaax",
+        "remaining_pair": [
+          "b",
+          "yaaxAAAXaaY"
+        ],
+        "removed": "xAAAXaa",
+        "signed_donor": "yAAxaaaXAAY"
+      },
+      {
+        "last_equality": "AAAxAxaaXaaX",
+        "remaining_pair": [
+          "b",
+          "xaaXAAAxaaX"
+        ],
+        "removed": "xAAAxaaXX",
+        "signed_donor": "xAAXaaaxAAX"
+      },
+      {
+        "last_equality": "AAXAXaxaXaxaxAAXAXaxax",
+        "remaining_pair": [
+          "XaxaxAAXAXaxa",
+          "b"
+        ],
+        "removed": "xAAXAXaxa",
+        "signed_donor": "AXAxaxaaXAXAx"
+      },
+      {
+        "last_equality": "AAXAxaxaXAAXAxaxaXaxaX",
+        "remaining_pair": [
+          "b",
+          "xaxaXAAXAxaxaXX"
+        ],
+        "removed": "xAAXAxaxaXX",
+        "signed_donor": "xxAXAXaxaaxAXAX"
+      },
+      {
+        "last_equality": "AAYAyXYayaYayaxAAYAyXYayax",
+        "remaining_pair": [
+          "YayaxAAYAyXYaya",
+          "b"
+        ],
+        "removed": "xAAYAyXYaya",
+        "signed_donor": "AYAyxYayaaXAYAy"
+      },
+      {
+        "last_equality": "AAxAXaXaxAAxAXaXaxaXax",
+        "remaining_pair": [
+          "b",
+          "xaXaxAAxAXaXa"
+        ],
+        "removed": "xAAxAXaXa",
+        "signed_donor": "AxAxaXaaXAxAX"
+      },
+      {
+        "last_equality": "AAyAYXyaYaxAAyAYXyaYayaYax",
+        "remaining_pair": [
+          "b",
+          "yaYaxAAyAYXyaYa"
+        ],
+        "removed": "xAAyAYXyaYa",
+        "signed_donor": "AyAYxyaYaaXAyAY"
+      },
+      {
+        "last_equality": "AAxaXAAxaXXaax",
+        "remaining_pair": [
+          "b",
+          "xAXaa"
+        ],
+        "removed": "xAXaaXAAx",
+        "signed_donor": "AAxaX"
+      },
+      {
+        "last_equality": "AAAXaaxAXaax",
+        "remaining_pair": [
+          "b",
+          "xAXaa"
+        ],
+        "removed": "xAXaaxAAX",
+        "signed_donor": "AAxaX"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "axAXaxAXbxaXAxaX",
+          "b"
+        ],
+        "removed": "xAXaxAXBxaXA",
+        "signed_donor": "xAXaxAXBxaXAxaXA"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XaxAXaxAxaXAxaX",
+          "b"
+        ],
+        "removed": "xAXaxAXaXAx",
+        "signed_donor": "xAXaxAXaXAxaXAx"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "axAXaxAXBxaXAxaX",
+          "b"
+        ],
+        "removed": "xAXaxAXbxaXA",
+        "signed_donor": "xAXaxAXbxaXAxaXA"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "b",
+          "xaxAXaxAXaXAxaX"
+        ],
+        "removed": "xAXaxAxaXAX",
+        "signed_donor": "xAXaxAxaXAxaXAX"
+      },
+      {
+        "last_equality": "AAxaXXaxaxAX",
+        "remaining_pair": [
+          "XaxaxAXaxaXAXAx",
+          "b"
+        ],
+        "removed": "xAXaxaXAXAx",
+        "signed_donor": "XaxaxAXAxaXAXAx"
+      },
+      {
+        "last_equality": "AAXaaxaxAX",
+        "remaining_pair": [
+          "b",
+          "xaxaXAXaxaxAXAX"
+        ],
+        "removed": "xAXaxaxAXAX",
+        "signed_donor": "xaxaXAXAxaxAXAX"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "YayAYayAxaYAyaX",
+          "b"
+        ],
+        "removed": "xAYayAXaYAy",
+        "signed_donor": "xAYayAXaYAyaYAy"
+      },
+      {
+        "last_equality": "AAyaXYayaxAY",
+        "remaining_pair": [
+          "YayaxAYayaXAYAy",
+          "b"
+        ],
+        "removed": "xAYayaXAYAy",
+        "signed_donor": "YayaxAYAyaXAYAy"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "b",
+          "xaXAxaXAxaxAXaX"
+        ],
+        "removed": "xAxaXAXaxAX",
+        "signed_donor": "xAxaXAXaxAXaxAX"
+      },
+      {
+        "last_equality": "AAXaaXaxAx",
+        "remaining_pair": [
+          "b",
+          "xaXaxAxaXaXAxAX"
+        ],
+        "removed": "xAxaXaXAxAX",
+        "signed_donor": "xaXaxAxAXaXAxAX"
+      },
+      {
+        "last_equality": "AAAxaaXAxaaX",
+        "remaining_pair": [
+          "b",
+          "xAxaaXX"
+        ],
+        "removed": "xAxaaXAAX",
+        "signed_donor": "xxAAXaX"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "b",
+          "yaYAyaYAxayAYaX"
+        ],
+        "removed": "xAyaYAXayAY",
+        "signed_donor": "xAyaYAXayAYayAY"
+      },
+      {
+        "last_equality": "AAYaXyaYaxAy",
+        "remaining_pair": [
+          "b",
+          "yaYaxAyaYaXAyAY"
+        ],
+        "removed": "xAyaYaXAyAY",
+        "signed_donor": "yaYaxAyAYaXAyAY"
+      },
+      {
+        "last_equality": "AAAAxYaaayXAAxYaaayX",
+        "remaining_pair": [
+          "aaxYAAAyXaa",
+          "b"
+        ],
+        "removed": "xYAAAyXaa",
+        "signed_donor": "AAxYaaayXAA"
+      },
+      {
+        "last_equality": "AAyyXYYaayyAYYaayyAxYY",
+        "remaining_pair": [
+          "aYYAAyy",
+          "b"
+        ],
+        "removed": "xYYaayyXaYYAAyy",
+        "signed_donor": "YYaayyA"
+      },
+      {
+        "last_equality": "AAyyXYYaayyAxYYaayyAYY",
+        "remaining_pair": [
+          "aYYAAyy",
+          "b"
+        ],
+        "removed": "xYYaayyaYYAAyyX",
+        "signed_donor": "YYaayyA"
+      },
+      {
+        "last_equality": "AAAAxYaaayXAAxYaaayX",
+        "remaining_pair": [
+          "aaaaxYAAAyX",
+          "b"
+        ],
+        "removed": "xYaaayXAA",
+        "signed_donor": "aaaaxYAAAyX"
+      },
+      {
+        "last_equality": "AAyXYaayyAYYaayyAYxY",
+        "remaining_pair": [
+          "b",
+          "yaYYAAy"
+        ],
+        "removed": "xYaayXyaYYAAy",
+        "signed_donor": "YaayyAY"
+      },
+      {
+        "last_equality": "AAyXYaayyAYxYaayyAYY",
+        "remaining_pair": [
+          "b",
+          "yaYYAAy"
+        ],
+        "removed": "xYaayyaYYAAyX",
+        "signed_donor": "YaayyAY"
+      },
+      {
+        "last_equality": "AAXXaaxxYayAAYay",
+        "remaining_pair": [
+          "XAAxxaaYAyX",
+          "b"
+        ],
+        "removed": "xYayAAX",
+        "signed_donor": "XAAxxaaYAyX"
+      },
+      {
+        "last_equality": "AAXaaxYayAAYay",
+        "remaining_pair": [
+          "aaxYayAAX",
+          "b"
+        ],
+        "removed": "xYayAAX",
+        "signed_donor": "xaaYAyXAA"
+      },
+      {
+        "last_equality": "AAYAyXXYayaxxYay",
+        "remaining_pair": [
+          "XAYAyxxYayaYAyX",
+          "b"
+        ],
+        "removed": "xYayAYAyX",
+        "signed_donor": "XAYAyxxYayaYAyX"
+      },
+      {
+        "last_equality": "AAYAyXYayaxYay",
+        "remaining_pair": [
+          "YayaxYayAYAyX",
+          "b"
+        ],
+        "removed": "xYayAYAyX",
+        "signed_donor": "xYayaYAyXAYAy"
+      },
+      {
+        "last_equality": "AAXaaxaXAAxxaX",
+        "remaining_pair": [
+          "XaaxaXAAx",
+          "b"
+        ],
+        "removed": "xaXAA",
+        "signed_donor": "XaaxAXAAx"
+      },
+      {
+        "last_equality": "AAYaaxaXAAyxaX",
+        "remaining_pair": [
+          "YaaxaXAAy",
+          "b"
+        ],
+        "removed": "xaXAA",
+        "signed_donor": "YaaxAXAAy"
+      },
+      {
+        "last_equality": "AAAXaaxAXaax",
+        "remaining_pair": [
+          "b",
+          "xaaaXAA"
+        ],
+        "removed": "xaXAA",
+        "signed_donor": "aaxAAAX"
+      },
+      {
+        "last_equality": "AAXaaxxaXAAxaX",
+        "remaining_pair": [
+          "XaaxxaXAA",
+          "b"
+        ],
+        "removed": "xaXAA",
+        "signed_donor": "aaxAXXAAx"
+      },
+      {
+        "last_equality": "AAXaaxaxAX",
+        "remaining_pair": [
+          "b",
+          "xaaxaXAAX"
+        ],
+        "removed": "xaXAA",
+        "signed_donor": "xaaxAXAAX"
+      },
+      {
+        "last_equality": "AAYaaxAXyaaxAX",
+        "remaining_pair": [
+          "b",
+          "yaaxaXAAY"
+        ],
+        "removed": "xaXAA",
+        "signed_donor": "yaaxAXAAY"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "b",
+          "xaXAxaXAAxaXA"
+        ],
+        "removed": "xaXAAxaXA",
+        "signed_donor": "xaXAxaXAAxaXA"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "b",
+          "xAXaxAXaxAXaxAX"
+        ],
+        "removed": "xaXAxaXAxaX",
+        "signed_donor": "xaXAxaXAxaXAxaX"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XaxAxaXaxAXaXAx",
+          "b"
+        ],
+        "removed": "xaXaxAXaXAx",
+        "signed_donor": "XaxAxaXaxAXaXAx"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "b",
+          "xaxAXaXaxAxaXAX"
+        ],
+        "removed": "xaXaxAxaXAX",
+        "signed_donor": "xaxAXaXaxAxaXAX"
+      },
+      {
+        "last_equality": "AXAxAXAxxaXaxaXAXAxxaXaxaX",
+        "remaining_pair": [
+          "XaxaXaxaxAXAxAX",
+          "b"
+        ],
+        "removed": "xaXaxaXAXAx",
+        "signed_donor": "XaxaXaxaxAXAxAX"
+      },
+      {
+        "last_equality": "AXAxAXXaxaxAXXaxax",
+        "remaining_pair": [
+          "b",
+          "xaxaXaxaXAXAxAX"
+        ],
+        "removed": "xaXaxaxAXAX",
+        "signed_donor": "xaxaXaxaXAXAxAX"
+      },
+      {
+        "last_equality": "AAyXXYaayxxaYAAyaY",
+        "remaining_pair": [
+          "XYAAyxxYaayAX",
+          "b"
+        ],
+        "removed": "xaYAAyX",
+        "signed_donor": "XYAAyxxYaayAX"
+      },
+      {
+        "last_equality": "AAyAXXaYayxxaY",
+        "remaining_pair": [
+          "XYAyAxxaYayAX",
+          "b"
+        ],
+        "removed": "xaYAyAX",
+        "signed_donor": "XYAyAxxaYayAX"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "YayAxaYayAXaYAy",
+          "b"
+        ],
+        "removed": "xaYayAXaYAy",
+        "signed_donor": "YayAxaYayAXaYAy"
+      },
+      {
+        "last_equality": "AXYayaYayaxAYAyAXYayaxAYAy",
+        "remaining_pair": [
+          "YayaYayaxAYAyAX",
+          "b"
+        ],
+        "removed": "xaYayaXAYAy",
+        "signed_donor": "YayaYayaxAYAyAX"
+      },
+      {
+        "last_equality": "AAAAXaaaxAAXaaax",
+        "remaining_pair": [
+          "b",
+          "xAAXaaaxAAX"
+        ],
+        "removed": "xaaXAAA",
+        "signed_donor": "xAAXaaaxAAX"
+      },
+      {
+        "last_equality": "AAXXAxaaXAxaax",
+        "remaining_pair": [
+          "XAxaa",
+          "b"
+        ],
+        "removed": "xaaXAAXax",
+        "signed_donor": "XAxaa"
+      },
+      {
+        "last_equality": "AAAXaaxAXaax",
+        "remaining_pair": [
+          "b",
+          "xAXaa"
+        ],
+        "removed": "xaaXAAxaX",
+        "signed_donor": "xAXaa"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XaxAxaaXAXaxA",
+          "b"
+        ],
+        "removed": "xaaXAXaxA",
+        "signed_donor": "XaxAxaaXAXaxA"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "b",
+          "xaxAXaaXAxaxAXX"
+        ],
+        "removed": "xaaXAxaxAXX",
+        "signed_donor": "xaxAXaaXAxaxAXX"
+      },
+      {
+        "last_equality": "AAXXaxxAAxaaXXXaxx",
+        "remaining_pair": [
+          "XXaxxAA",
+          "b"
+        ],
+        "removed": "xaaXXXaxxAA",
+        "signed_donor": "aaXXAxx"
+      },
+      {
+        "last_equality": "AAXYXaxxAAXyxaaXXaxx",
+        "remaining_pair": [
+          "YXaxxAAXy",
+          "b"
+        ],
+        "removed": "xaaXXaxxAAX",
+        "signed_donor": "YxaaXXAxy"
+      },
+      {
+        "last_equality": "AAXXXaxxAAxaaXXaxx",
+        "remaining_pair": [
+          "XXaxxAA",
+          "b"
+        ],
+        "removed": "xaaXXaxxAAX",
+        "signed_donor": "aaXXAxx"
+      },
+      {
+        "last_equality": "AAXaaXXaxxAAXaxx",
+        "remaining_pair": [
+          "axxAAXX",
+          "b"
+        ],
+        "removed": "xaaXXaxxAAX",
+        "signed_donor": "xxaaXXA"
+      },
+      {
+        "last_equality": "AAXYxaaXXaxxAAXyXaxx",
+        "remaining_pair": [
+          "b",
+          "yXaxxAAXY"
+        ],
+        "removed": "xaaXXaxxAAX",
+        "signed_donor": "yxaaXXAxY"
+      },
+      {
+        "last_equality": "AAXXaxxAAXyxaaXYXaxx",
+        "remaining_pair": [
+          "YXaxxAAXy",
+          "b"
+        ],
+        "removed": "xaaXYXaxxAAXy",
+        "signed_donor": "YxaaXXAxy"
+      },
+      {
+        "last_equality": "AAXaaYYAyyaaYYAyyx",
+        "remaining_pair": [
+          "YYayyAA",
+          "b"
+        ],
+        "removed": "xaaXYYayyAA",
+        "signed_donor": "aaYYAyy"
+      },
+      {
+        "last_equality": "AAXYAxaaXAxaaXyx",
+        "remaining_pair": [
+          "YAxaaXy",
+          "b"
+        ],
+        "removed": "xaaXYxAAXay",
+        "signed_donor": "YAxaaXy"
+      },
+      {
+        "last_equality": "AAAAAAAAAAAAAAxAAX",
+        "remaining_pair": [
+          "aaaaaaa",
+          "b"
+        ],
+        "removed": "xaaXaaaaaaa",
+        "signed_donor": "AAAAAAA"
+      },
+      {
+        "last_equality": "AAAAXaaaxAAXaaax",
+        "remaining_pair": [
+          "aaaxAAAAX",
+          "b"
+        ],
+        "removed": "xaaXaaaxAAAAX",
+        "signed_donor": "xaaaaXAAA"
+      },
+      {
+        "last_equality": "AAAAAAXAAAxAAAAXAAAx",
+        "remaining_pair": [
+          "aaaxaaaaX",
+          "b"
+        ],
+        "removed": "xaaXaaaxaaaaX",
+        "signed_donor": "xAAAAXAAA"
+      },
+      {
+        "last_equality": "AAXXaxxAAXaaXaxx",
+        "remaining_pair": [
+          "axxAAXX",
+          "b"
+        ],
+        "removed": "xaaXaxxAAXX",
+        "signed_donor": "xxaaXXA"
+      },
+      {
+        "last_equality": "AAXXaxxAAXYxaaXyXaxx",
+        "remaining_pair": [
+          "b",
+          "yXaxxAAXY"
+        ],
+        "removed": "xaaXyXaxxAAXY",
+        "signed_donor": "yxaaXXAxY"
+      },
+      {
+        "last_equality": "AAXaYxaaXyxAAXax",
+        "remaining_pair": [
+          "b",
+          "yAxaaXY"
+        ],
+        "removed": "xaaXyxAAXaY",
+        "signed_donor": "yAxaaXY"
+      },
+      {
+        "last_equality": "AAXaayyAYYaayyAYYx",
+        "remaining_pair": [
+          "b",
+          "yyaYYAA"
+        ],
+        "removed": "xaaXyyaYYAA",
+        "signed_donor": "aayyAYY"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "YayAxaaYAyXYayA",
+          "b"
+        ],
+        "removed": "xaaYAyXYayA",
+        "signed_donor": "YayAxaaYAyXYayA"
+      },
+      {
+        "last_equality": "AAXYYayyAAxaaYYayy",
+        "remaining_pair": [
+          "YYayyAA",
+          "b"
+        ],
+        "removed": "xaaYYayyAAX",
+        "signed_donor": "aaYYAyy"
+      },
+      {
+        "last_equality": "AAAAxxaaaXaX",
+        "remaining_pair": [
+          "XaaaaxAAA",
+          "b"
+        ],
+        "removed": "xaaaXAA",
+        "signed_donor": "XaaaaxAAA"
+      },
+      {
+        "last_equality": "AAAAyxaaaXAAYxaaaX",
+        "remaining_pair": [
+          "YaaaaxAAAXy",
+          "b"
+        ],
+        "removed": "xaaaXAA",
+        "signed_donor": "YaaaaxAAAXy"
+      },
+      {
+        "last_equality": "AAAAxaaaXAAxaaaX",
+        "remaining_pair": [
+          "B",
+          "aaaaxAAAX"
+        ],
+        "removed": "xaaaXAA",
+        "signed_donor": "aaaaxAAAX"
+      },
+      {
+        "last_equality": "AAAAxaaaXAAxaaaX",
+        "remaining_pair": [
+          "Xbx",
+          "aaaaxAAAX"
+        ],
+        "removed": "xaaaXAA",
+        "signed_donor": "aaaaxAAAX"
+      },
+      {
+        "last_equality": "AAAAxaaaXAAxaaaX",
+        "remaining_pair": [
+          "Yby",
+          "aaaaxAAAX"
+        ],
+        "removed": "xaaaXAA",
+        "signed_donor": "aaaaxAAAX"
+      },
+      {
+        "last_equality": "AAAAxaaaXAAxaaaX",
+        "remaining_pair": [
+          "aaaaxAAAX",
+          "bA"
+        ],
+        "removed": "xaaaXAA",
+        "signed_donor": "aaaaxAAAX"
+      },
+      {
+        "last_equality": "AAAAxaaaXAAxaaaX",
+        "remaining_pair": [
+          "aaaaxAAAX",
+          "ba"
+        ],
+        "removed": "xaaaXAA",
+        "signed_donor": "aaaaxAAAX"
+      },
+      {
+        "last_equality": "AAAAxaaaXAAxaaaX",
+        "remaining_pair": [
+          "aaaaxAAAX",
+          "baaaaxAAAX"
+        ],
+        "removed": "xaaaXAA",
+        "signed_donor": "aaaaxAAAX"
+      },
+      {
+        "last_equality": "AAAAxaaaXAAxaaaX",
+        "remaining_pair": [
+          "aaaaxAAAX",
+          "bxaaaXAAAA"
+        ],
+        "removed": "xaaaXAA",
+        "signed_donor": "aaaaxAAAX"
+      },
+      {
+        "last_equality": "AAAAxaaaXAAxaaaX",
+        "remaining_pair": [
+          "aaaaxAAAX",
+          "xbX"
+        ],
+        "removed": "xaaaXAA",
+        "signed_donor": "aaaaxAAAX"
+      },
+      {
+        "last_equality": "AAAAxaaaXAAxaaaX",
+        "remaining_pair": [
+          "aaaaxAAAX",
+          "ybY"
+        ],
+        "removed": "xaaaXAA",
+        "signed_donor": "aaaaxAAAX"
+      },
+      {
+        "last_equality": "AAAAxaaaXAAxaaaX",
+        "remaining_pair": [
+          "b",
+          "xaaaXAAAA"
+        ],
+        "removed": "xaaaXAA",
+        "signed_donor": "aaaaxAAAX"
+      },
+      {
+        "last_equality": "AAAAxaaaXAAxaaaX",
+        "remaining_pair": [
+          "AAxaaaXAA",
+          "b"
+        ],
+        "removed": "xaaaXAA",
+        "signed_donor": "aaxAAAXaa"
+      },
+      {
+        "last_equality": "AAAXXaaxax",
+        "remaining_pair": [
+          "b",
+          "xaaaaxAAAXX"
+        ],
+        "removed": "xaaaXAA",
+        "signed_donor": "xaaaaxAAAXX"
+      },
+      {
+        "last_equality": "AAAAYxaaaXAAyxaaaX",
+        "remaining_pair": [
+          "b",
+          "yaaaaxAAAXY"
+        ],
+        "removed": "xaaaXAA",
+        "signed_donor": "yaaaaxAAAXY"
+      },
+      {
+        "last_equality": "AAAAAAAAAxAAAAAAAX",
+        "remaining_pair": [
+          "AAAAAAAAA",
+          "b"
+        ],
+        "removed": "xaaaaaaaX",
+        "signed_donor": "AAAAAAAAA"
+      },
+      {
+        "last_equality": "AAAAAAAAAXAAAAAAAx",
+        "remaining_pair": [
+          "aaaaaaa",
+          "b"
+        ],
+        "removed": "xaaaaaaaaaX",
+        "signed_donor": "AAAAAAA"
+      },
+      {
+        "last_equality": "AAAxxaaXaX",
+        "remaining_pair": [
+          "b",
+          "xaaaaXAAA"
+        ],
+        "removed": "xaaaxAAXX",
+        "signed_donor": "xaaaaXAAA"
+      },
+      {
+        "last_equality": "AAAxaaXAxaaX",
+        "remaining_pair": [
+          "b",
+          "xAxaaXX"
+        ],
+        "removed": "xaaxAAXaX",
+        "signed_donor": "xAxaaXX"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "b",
+          "xaXAxaaxAXaXA"
+        ],
+        "removed": "xaaxAXaXA",
+        "signed_donor": "xaXAxaaxAXaXA"
+      },
+      {
+        "last_equality": "AAXaaxxAXXaaxxAX",
+        "remaining_pair": [
+          "b",
+          "xxaXXAA"
+        ],
+        "removed": "xaaxaXXAA",
+        "signed_donor": "aaxxAXX"
+      },
+      {
+        "last_equality": "AAXaaxxAXaaxxAXX",
+        "remaining_pair": [
+          "b",
+          "xxaXXAA"
+        ],
+        "removed": "xaaxxaXXAAX",
+        "signed_donor": "aaxxAXX"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "b",
+          "yaYAxaayAYXyaYA"
+        ],
+        "removed": "xaayAYXyaYA",
+        "signed_donor": "yaYAxaayAYXyaYA"
+      },
+      {
+        "last_equality": "AAXaayyAYYxaayyAYY",
+        "remaining_pair": [
+          "b",
+          "yyaYYAA"
+        ],
+        "removed": "xaayyaYYAAX",
+        "signed_donor": "aayyAYY"
+      },
+      {
+        "last_equality": "AAXaaXaxAx",
+        "remaining_pair": [
+          "b",
+          "xaaXaxAAX"
+        ],
+        "removed": "xaxAAXX",
+        "signed_donor": "xaaXAxAAX"
+      },
+      {
+        "last_equality": "AAAxaaXAxaaX",
+        "remaining_pair": [
+          "b",
+          "xaaaxAAXX"
+        ],
+        "removed": "xaxAAXX",
+        "signed_donor": "xxaaXAAAX"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "b",
+          "xaXAxaxaXAXaxAX"
+        ],
+        "removed": "xaxaXAXaxAX",
+        "signed_donor": "xaXAxaxaXAXaxAX"
+      },
+      {
+        "last_equality": "AXAxxaXaXAxxaXaXAx",
+        "remaining_pair": [
+          "b",
+          "xaXaxaXaxAxAXAX"
+        ],
+        "removed": "xaxaXaXAxAX",
+        "signed_donor": "xaXaxaXaxAxAXAX"
+      },
+      {
+        "last_equality": "AAYXXyaaYxxayAAYay",
+        "remaining_pair": [
+          "XyAAYxxyaaYAX",
+          "b"
+        ],
+        "removed": "xayAAYX",
+        "signed_donor": "XyAAYxxyaaYAX"
+      },
+      {
+        "last_equality": "AAYAXXayaYxxay",
+        "remaining_pair": [
+          "XyAYAxxayaYAX",
+          "b"
+        ],
+        "removed": "xayAYAX",
+        "signed_donor": "XyAYAxxayaYAX"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "b",
+          "yaYAxayaYAXayAY"
+        ],
+        "removed": "xayaYAXayAY",
+        "signed_donor": "yaYAxayaYAXayAY"
+      },
+      {
+        "last_equality": "AXyaYaxAyAYAXyaYayaYaxAyAY",
+        "remaining_pair": [
+          "b",
+          "yaYayaYaxAyAYAX"
+        ],
+        "removed": "xayaYaXAyAY",
+        "signed_donor": "yaYayaYaxAyAYAX"
+      },
+      {
+        "last_equality": "ABXabx",
+        "remaining_pair": [
+          "YaBAyAB",
+          "ab"
+        ],
+        "removed": "xbaX",
+        "signed_donor": "ab"
+      },
+      {
+        "last_equality": "ABXabx",
+        "remaining_pair": [
+          "YaabyAB",
+          "ab"
+        ],
+        "removed": "xbaX",
+        "signed_donor": "ab"
+      },
+      {
+        "last_equality": "ABXabx",
+        "remaining_pair": [
+          "YayBAAB",
+          "ab"
+        ],
+        "removed": "xbaX",
+        "signed_donor": "ab"
+      },
+      {
+        "last_equality": "ABXabx",
+        "remaining_pair": [
+          "YayabAB",
+          "ab"
+        ],
+        "removed": "xbaX",
+        "signed_donor": "ab"
+      },
+      {
+        "last_equality": "ABXabx",
+        "remaining_pair": [
+          "aBABAAB",
+          "ab"
+        ],
+        "removed": "xbaX",
+        "signed_donor": "ab"
+      },
+      {
+        "last_equality": "ABXabx",
+        "remaining_pair": [
+          "aababAB",
+          "ab"
+        ],
+        "removed": "xbaX",
+        "signed_donor": "ab"
+      },
+      {
+        "last_equality": "ABXabx",
+        "remaining_pair": [
+          "ab",
+          "yaBAYAB"
+        ],
+        "removed": "xbaX",
+        "signed_donor": "ab"
+      },
+      {
+        "last_equality": "ABXabx",
+        "remaining_pair": [
+          "ab",
+          "yaYBAAB"
+        ],
+        "removed": "xbaX",
+        "signed_donor": "ab"
+      },
+      {
+        "last_equality": "ABXabx",
+        "remaining_pair": [
+          "ab",
+          "yaYabAB"
+        ],
+        "removed": "xbaX",
+        "signed_donor": "ab"
+      },
+      {
+        "last_equality": "ABXabx",
+        "remaining_pair": [
+          "ab",
+          "yaabYAB"
+        ],
+        "removed": "xbaX",
+        "signed_donor": "ab"
+      },
+      {
+        "last_equality": "AAAAxxaaaXXAAxxaaaXX",
+        "remaining_pair": [
+          "aaxxAAAXXaa",
+          "b"
+        ],
+        "removed": "xxAAAXXaa",
+        "signed_donor": "AAxxaaaXXAA"
+      },
+      {
+        "last_equality": "AAXAxaaXXAxaax",
+        "remaining_pair": [
+          "AxaaX",
+          "b"
+        ],
+        "removed": "xxAAXAxaaXX",
+        "signed_donor": "xAAXa"
+      },
+      {
+        "last_equality": "AAXXAxaaXAxaax",
+        "remaining_pair": [
+          "AxaaX",
+          "b"
+        ],
+        "removed": "xxAAXXAxaaX",
+        "signed_donor": "xAAXa"
+      },
+      {
+        "last_equality": "AAAAXXaaaxxAAXXaaaxx",
+        "remaining_pair": [
+          "aaaxxAAXX",
+          "b"
+        ],
+        "removed": "xxAAXXaaaxxAAXX",
+        "signed_donor": "xxaaXXAAA"
+      },
+      {
+        "last_equality": "AXXaxx",
+        "remaining_pair": [
+          "a",
+          "bxAXAAxaX"
+        ],
+        "removed": "xxAXX",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AXXaxx",
+        "remaining_pair": [
+          "a",
+          "bxAXaaxaX"
+        ],
+        "removed": "xxAXX",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AXXaxx",
+        "remaining_pair": [
+          "a",
+          "bxaXAAxAX"
+        ],
+        "removed": "xxAXX",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AXXaxx",
+        "remaining_pair": [
+          "a",
+          "bxaXaaxAX"
+        ],
+        "removed": "xxAXX",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AAXXaaxxxaXAAxaX",
+        "remaining_pair": [
+          "XAAxxaaxAXX",
+          "b"
+        ],
+        "removed": "xxaXAAX",
+        "signed_donor": "XAAxxaaxAXX"
+      },
+      {
+        "last_equality": "AAXaaxxaXAAxaX",
+        "remaining_pair": [
+          "aaxxaXAAX",
+          "b"
+        ],
+        "removed": "xxaXAAX",
+        "signed_donor": "xaaxAXXAA"
+      },
+      {
+        "last_equality": "AAxAXXaXaxxxaX",
+        "remaining_pair": [
+          "XAxAxxaXaxAXX",
+          "b"
+        ],
+        "removed": "xxaXAxAXX",
+        "signed_donor": "XAxAxxaXaxAXX"
+      },
+      {
+        "last_equality": "AAxAXaXaxxaX",
+        "remaining_pair": [
+          "b",
+          "xaXaxxaXAxAXX"
+        ],
+        "removed": "xxaXAxAXX",
+        "signed_donor": "xxaXaxAXXAxAX"
+      },
+      {
+        "last_equality": "AXXaxx",
+        "remaining_pair": [
+          "a",
+          "bxAXAAxaX"
+        ],
+        "removed": "xxaXX",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AXXaxx",
+        "remaining_pair": [
+          "a",
+          "bxAXaaxaX"
+        ],
+        "removed": "xxaXX",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AXXaxx",
+        "remaining_pair": [
+          "a",
+          "bxaXAAxAX"
+        ],
+        "removed": "xxaXX",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AXXaxx",
+        "remaining_pair": [
+          "a",
+          "bxaXaaxAX"
+        ],
+        "removed": "xxaXX",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AAAxaaXAxaaX",
+        "remaining_pair": [
+          "b",
+          "xaaaxAAXX"
+        ],
+        "removed": "xxaaXAX",
+        "signed_donor": "xaaaxAAXX"
+      },
+      {
+        "last_equality": "AAAAxxaaaXXAAxxaaaXX",
+        "remaining_pair": [
+          "aaaaxxAAAXX",
+          "b"
+        ],
+        "removed": "xxaaaXXAA",
+        "signed_donor": "aaaaxxAAAXX"
+      },
+      {
+        "last_equality": "AAAAXXaaaxxAAXXaaaxx",
+        "remaining_pair": [
+          "aaaxxAAXX",
+          "b"
+        ],
+        "removed": "xxaaaaXXAAA",
+        "signed_donor": "aaaxxAAXX"
+      },
+      {
+        "last_equality": "AAXXaaxaxAAXax",
+        "remaining_pair": [
+          "b",
+          "xAAxxaaXAXX"
+        ],
+        "removed": "xxaxAAXXX",
+        "signed_donor": "xAAxxaaXAXX"
+      },
+      {
+        "last_equality": "AAXAXXaxaxax",
+        "remaining_pair": [
+          "b",
+          "xAXAxxaxaXAXX"
+        ],
+        "removed": "xxaxAXAXX",
+        "signed_donor": "xAXAxxaxaXAXX"
+      },
+      {
+        "last_equality": "AAXXaxxAAxaaXXXaxx",
+        "remaining_pair": [
+          "axxAAXX",
+          "b"
+        ],
+        "removed": "xxxaaXXXaxxAAXX",
+        "signed_donor": "xxaaXXA"
+      },
+      {
+        "last_equality": "AAXXXaxxAAxaaXXaxx",
+        "remaining_pair": [
+          "axxAAXX",
+          "b"
+        ],
+        "removed": "xxxaaXXaxxAAXXX",
+        "signed_donor": "xxaaXXA"
+      },
+      {
+        "last_equality": "AAAAxyaaaYXAAxyaaaYX",
+        "remaining_pair": [
+          "aaxyAAAYXaa",
+          "b"
+        ],
+        "removed": "xyAAAYXaa",
+        "signed_donor": "AAxyaaaYXAA"
+      },
+      {
+        "last_equality": "AAXXaaxxyaYAAyaY",
+        "remaining_pair": [
+          "XAAxxaayAYX",
+          "b"
+        ],
+        "removed": "xyaYAAX",
+        "signed_donor": "XAAxxaayAYX"
+      },
+      {
+        "last_equality": "AAXaaxyaYAAyaY",
+        "remaining_pair": [
+          "aaxyaYAAX",
+          "b"
+        ],
+        "removed": "xyaYAAX",
+        "signed_donor": "xaayAYXAA"
+      },
+      {
+        "last_equality": "AAyAYXXyaYaxxyaY",
+        "remaining_pair": [
+          "XAyAYxxyaYayAYX",
+          "b"
+        ],
+        "removed": "xyaYAyAYX",
+        "signed_donor": "XAyAYxxyaYayAYX"
+      },
+      {
+        "last_equality": "AAyAYXyaYaxyaY",
+        "remaining_pair": [
+          "b",
+          "yaYaxyaYAyAYX"
+        ],
+        "removed": "xyaYAyAYX",
+        "signed_donor": "xyaYayAYXAyAY"
+      },
+      {
+        "last_equality": "AAYXyaaYYAyyaaYYAyxy",
+        "remaining_pair": [
+          "YayyAAY",
+          "b"
+        ],
+        "removed": "xyaaYXYayyAAY",
+        "signed_donor": "yaaYYAy"
+      },
+      {
+        "last_equality": "AAYXYayyAAYxyaaYYayy",
+        "remaining_pair": [
+          "YayyAAY",
+          "b"
+        ],
+        "removed": "xyaaYYayyAAYX",
+        "signed_donor": "yaaYYAy"
+      },
+      {
+        "last_equality": "AAAAxyaaaYXAAxyaaaYX",
+        "remaining_pair": [
+          "aaaaxyAAAYX",
+          "b"
+        ],
+        "removed": "xyaaaYXAA",
+        "signed_donor": "aaaaxyAAAYX"
+      },
+      {
+        "last_equality": "AAYYXyyaaYYAyyaaYYAxyy",
+        "remaining_pair": [
+          "ayyAAYY",
+          "b"
+        ],
+        "removed": "xyyaaYYXayyAAYY",
+        "signed_donor": "yyaaYYA"
+      },
+      {
+        "last_equality": "AAYYXayyAAYYxyyaaYYayy",
+        "remaining_pair": [
+          "ayyAAYY",
+          "b"
+        ],
+        "removed": "xyyaaYYayyAAYYX",
+        "signed_donor": "yyaaYYA"
+      },
+      {
+        "last_equality": "AAAAyaaaYAAyaaaY",
+        "remaining_pair": [
+          "AAAAyaaaY",
+          "b"
+        ],
+        "removed": "yAAAYaa",
+        "signed_donor": "AAAAyaaaY"
+      },
+      {
+        "last_equality": "AAAAyaaaYAAyaaaY",
+        "remaining_pair": [
+          "AAyaaaYAA",
+          "b"
+        ],
+        "removed": "yAAAYaa",
+        "signed_donor": "AAyaaaYAA"
+      },
+      {
+        "last_equality": "AAAAyaaaYAAyaaaY",
+        "remaining_pair": [
+          "B",
+          "aayAAAYaa"
+        ],
+        "removed": "yAAAYaa",
+        "signed_donor": "AAyaaaYAA"
+      },
+      {
+        "last_equality": "AAAAyaaaYAAyaaaY",
+        "remaining_pair": [
+          "Xbx",
+          "aayAAAYaa"
+        ],
+        "removed": "yAAAYaa",
+        "signed_donor": "AAyaaaYAA"
+      },
+      {
+        "last_equality": "AAAAyaaaYAAyaaaY",
+        "remaining_pair": [
+          "Yby",
+          "aayAAAYaa"
+        ],
+        "removed": "yAAAYaa",
+        "signed_donor": "AAyaaaYAA"
+      },
+      {
+        "last_equality": "AAAAyaaaYAAyaaaY",
+        "remaining_pair": [
+          "aayAAAYaa",
+          "bA"
+        ],
+        "removed": "yAAAYaa",
+        "signed_donor": "AAyaaaYAA"
+      },
+      {
+        "last_equality": "AAAAyaaaYAAyaaaY",
+        "remaining_pair": [
+          "aayAAAYaa",
+          "bAAyaaaYAA"
+        ],
+        "removed": "yAAAYaa",
+        "signed_donor": "AAyaaaYAA"
+      },
+      {
+        "last_equality": "AAAAyaaaYAAyaaaY",
+        "remaining_pair": [
+          "aayAAAYaa",
+          "ba"
+        ],
+        "removed": "yAAAYaa",
+        "signed_donor": "AAyaaaYAA"
+      },
+      {
+        "last_equality": "AAAAyaaaYAAyaaaY",
+        "remaining_pair": [
+          "aayAAAYaa",
+          "baayAAAYaa"
+        ],
+        "removed": "yAAAYaa",
+        "signed_donor": "AAyaaaYAA"
+      },
+      {
+        "last_equality": "AAAAyaaaYAAyaaaY",
+        "remaining_pair": [
+          "aayAAAYaa",
+          "xbX"
+        ],
+        "removed": "yAAAYaa",
+        "signed_donor": "AAyaaaYAA"
+      },
+      {
+        "last_equality": "AAAAyaaaYAAyaaaY",
+        "remaining_pair": [
+          "aayAAAYaa",
+          "ybY"
+        ],
+        "removed": "yAAAYaa",
+        "signed_donor": "AAyaaaYAA"
+      },
+      {
+        "last_equality": "AAAYaaXaayAAAYaaxy",
+        "remaining_pair": [
+          "XaayAAAYaax",
+          "b"
+        ],
+        "removed": "yAAAYaa",
+        "signed_donor": "XAAyaaaYAAx"
+      },
+      {
+        "last_equality": "AAAYaaYaayAAAYaayy",
+        "remaining_pair": [
+          "YaayAAAYaay",
+          "b"
+        ],
+        "removed": "yAAAYaa",
+        "signed_donor": "YAAyaaaYAAy"
+      },
+      {
+        "last_equality": "AAAYaaXyAAAYaaxaay",
+        "remaining_pair": [
+          "b",
+          "xaayAAAYaaX"
+        ],
+        "removed": "yAAAYaa",
+        "signed_donor": "xAAyaaaYAAX"
+      },
+      {
+        "last_equality": "AAAYAYaayaay",
+        "remaining_pair": [
+          "b",
+          "yaayAAAYaaY"
+        ],
+        "removed": "yAAAYaa",
+        "signed_donor": "yAAyaaaYAAY"
+      },
+      {
+        "last_equality": "AAAyAyaaYaaY",
+        "remaining_pair": [
+          "b",
+          "yaaYAAAyaaY"
+        ],
+        "removed": "yAAAyaaYY",
+        "signed_donor": "yAAYaaayAAY"
+      },
+      {
+        "last_equality": "AAXAxYXaxaXaxayAAXAxYXaxay",
+        "remaining_pair": [
+          "XaxayAAXAxYXaxa",
+          "b"
+        ],
+        "removed": "yAAXAxYXaxa",
+        "signed_donor": "AXAxyXaxaaYAXAx"
+      },
+      {
+        "last_equality": "AAYAYayaYayayAAYAYayay",
+        "remaining_pair": [
+          "YayayAAYAYaya",
+          "b"
+        ],
+        "removed": "yAAYAYaya",
+        "signed_donor": "AYAyayaaYAYAy"
+      },
+      {
+        "last_equality": "AAYAyayaYAAYAyayaYayaY",
+        "remaining_pair": [
+          "b",
+          "yayaYAAYAyayaYY"
+        ],
+        "removed": "yAAYAyayaYY",
+        "signed_donor": "yyAYAYayaayAYAY"
+      },
+      {
+        "last_equality": "AAxAXYxaXaxaXayAAxAXYxaXay",
+        "remaining_pair": [
+          "b",
+          "xaXayAAxAXYxaXa"
+        ],
+        "removed": "yAAxAXYxaXa",
+        "signed_donor": "AxAXyxaXaaYAxAX"
+      },
+      {
+        "last_equality": "AAyAYaYayAAyAYaYayaYay",
+        "remaining_pair": [
+          "b",
+          "yaYayAAyAYaYa"
+        ],
+        "removed": "yAAyAYaYa",
+        "signed_donor": "AyAyaYaaYAyAY"
+      },
+      {
+        "last_equality": "AAxaXAAxaYXaaxyX",
+        "remaining_pair": [
+          "b",
+          "yAXaaxY"
+        ],
+        "removed": "yAXaaxYXAAx",
+        "signed_donor": "yXAAxaY"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XaxAXaxAyaXAxaY",
+          "b"
+        ],
+        "removed": "yAXaxAYaXAx",
+        "signed_donor": "yAXaxAYaXAxaXAx"
+      },
+      {
+        "last_equality": "AAxaYXaxayAX",
+        "remaining_pair": [
+          "XaxayAXaxaYAXAx",
+          "b"
+        ],
+        "removed": "yAXaxaYAXAx",
+        "signed_donor": "XaxayAXAxaYAXAx"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "ayAYayAYbyaYAyaY",
+          "b"
+        ],
+        "removed": "yAYayAYByaYA",
+        "signed_donor": "yAYayAYByaYAyaYA"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "YayAYayAyaYAyaY",
+          "b"
+        ],
+        "removed": "yAYayAYaYAy",
+        "signed_donor": "yAYayAYaYAyaYAy"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "ayAYayAYByaYAyaY",
+          "b"
+        ],
+        "removed": "yAYayAYbyaYA",
+        "signed_donor": "yAYayAYbyaYAyaYA"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "b",
+          "yayAYayAYaYAyaY"
+        ],
+        "removed": "yAYayAyaYAY",
+        "signed_donor": "yAYayAyaYAyaYAY"
+      },
+      {
+        "last_equality": "AAyaYYayayAY",
+        "remaining_pair": [
+          "YayayAYayaYAYAy",
+          "b"
+        ],
+        "removed": "yAYayaYAYAy",
+        "signed_donor": "YayayAYAyaYAYAy"
+      },
+      {
+        "last_equality": "AAYaayayAY",
+        "remaining_pair": [
+          "b",
+          "yayaYAYayayAYAY"
+        ],
+        "removed": "yAYayayAYAY",
+        "signed_donor": "yayaYAYAyayAYAY"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "b",
+          "xaXAxaXAyaxAXaY"
+        ],
+        "removed": "yAxaXAYaxAX",
+        "signed_donor": "yAxaXAYaxAXaxAX"
+      },
+      {
+        "last_equality": "AAXaYxaXayAx",
+        "remaining_pair": [
+          "b",
+          "xaXayAxaXaYAxAX"
+        ],
+        "removed": "yAxaXaYAxAX",
+        "signed_donor": "xaXayAxAXaYAxAX"
+      },
+      {
+        "last_equality": "AAXaYxaaXyxAAXax",
+        "remaining_pair": [
+          "b",
+          "yAxaaXY"
+        ],
+        "removed": "yAxaaXYxAAX",
+        "signed_donor": "yxAAXaY"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "b",
+          "yaYAyaYAyayAYaY"
+        ],
+        "removed": "yAyaYAYayAY",
+        "signed_donor": "yAyaYAYayAYayAY"
+      },
+      {
+        "last_equality": "AAYaaYayAy",
+        "remaining_pair": [
+          "b",
+          "yaYayAyaYaYAyAY"
+        ],
+        "removed": "yAyaYaYAyAY",
+        "signed_donor": "yaYayAyAYaYAyAY"
+      },
+      {
+        "last_equality": "AAAAyXaaaxYAAyXaaaxY",
+        "remaining_pair": [
+          "aayXAAAxYaa",
+          "b"
+        ],
+        "removed": "yXAAAxYaa",
+        "signed_donor": "AAyXaaaxYAA"
+      },
+      {
+        "last_equality": "AAAAyXaaaxYAAyXaaaxY",
+        "remaining_pair": [
+          "aaaayXAAAxY",
+          "b"
+        ],
+        "removed": "yXaaaxYAA",
+        "signed_donor": "aaaayXAAAxY"
+      },
+      {
+        "last_equality": "AAxYXaaxxAXXaaxxAXyX",
+        "remaining_pair": [
+          "b",
+          "xaXXAAx"
+        ],
+        "removed": "yXaaxYxaXXAAx",
+        "signed_donor": "XaaxxAX"
+      },
+      {
+        "last_equality": "AAxYXaaxxAXyXaaxxAXX",
+        "remaining_pair": [
+          "b",
+          "xaXXAAx"
+        ],
+        "removed": "yXaaxxaXXAAxY",
+        "signed_donor": "XaaxxAX"
+      },
+      {
+        "last_equality": "AAxYYXaaxyyaXAAxaX",
+        "remaining_pair": [
+          "YXAAxyyXaaxAY",
+          "b"
+        ],
+        "removed": "yaXAAxY",
+        "signed_donor": "YXAAxyyXaaxAY"
+      },
+      {
+        "last_equality": "AAxAYYaXaxyyaX",
+        "remaining_pair": [
+          "YXAxAyyaXaxAY",
+          "b"
+        ],
+        "removed": "yaXAxAY",
+        "signed_donor": "YXAxAyyaXaxAY"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XaxAyaXaxAYaXAx",
+          "b"
+        ],
+        "removed": "yaXaxAYaXAx",
+        "signed_donor": "XaxAyaXaxAYaXAx"
+      },
+      {
+        "last_equality": "AXAxAXAxyaXaxaYAXAxyaXaxaY",
+        "remaining_pair": [
+          "XaxaXaxayAXAxAY",
+          "b"
+        ],
+        "removed": "yaXaxaYAXAx",
+        "signed_donor": "XaxaXaxayAXAxAY"
+      },
+      {
+        "last_equality": "AAXaayaYAAxyaY",
+        "remaining_pair": [
+          "XaayaYAAx",
+          "b"
+        ],
+        "removed": "yaYAA",
+        "signed_donor": "XaayAYAAx"
+      },
+      {
+        "last_equality": "AAYaayaYAAyyaY",
+        "remaining_pair": [
+          "YaayaYAAy",
+          "b"
+        ],
+        "removed": "yaYAA",
+        "signed_donor": "YaayAYAAy"
+      },
+      {
+        "last_equality": "AAXaaxyaYAAyaY",
+        "remaining_pair": [
+          "XaaxyaYAA",
+          "b"
+        ],
+        "removed": "yaYAA",
+        "signed_donor": "aayAYXAAx"
+      },
+      {
+        "last_equality": "AAXaayAYaayAYx",
+        "remaining_pair": [
+          "b",
+          "xaaXyaYAA"
+        ],
+        "removed": "yaYAA",
+        "signed_donor": "aayAYxAAX"
+      },
+      {
+        "last_equality": "AAXaayAYxaayAY",
+        "remaining_pair": [
+          "b",
+          "xaayaYAAX"
+        ],
+        "removed": "yaYAA",
+        "signed_donor": "xaayAYAAX"
+      },
+      {
+        "last_equality": "AAYaayayAY",
+        "remaining_pair": [
+          "b",
+          "yaayaYAAY"
+        ],
+        "removed": "yaYAA",
+        "signed_donor": "yaayAYAAY"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "b",
+          "yaYAyaYAAyaYA"
+        ],
+        "removed": "yaYAAyaYA",
+        "signed_donor": "yaYAyaYAAyaYA"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "YayAyaYayAYaYAy",
+          "b"
+        ],
+        "removed": "yaYayAYaYAy",
+        "signed_donor": "YayAyaYayAYaYAy"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "b",
+          "yayAYaYayAyaYAY"
+        ],
+        "removed": "yaYayAyaYAY",
+        "signed_donor": "yayAYaYayAyaYAY"
+      },
+      {
+        "last_equality": "AYAyAYAyyaYayaYAYAyyaYayaY",
+        "remaining_pair": [
+          "YayaYayayAYAyAY",
+          "b"
+        ],
+        "removed": "yaYayaYAYAy",
+        "signed_donor": "YayaYayayAYAyAY"
+      },
+      {
+        "last_equality": "AYAyAYYayayAYYayay",
+        "remaining_pair": [
+          "b",
+          "yayaYayaYAYAyAY"
+        ],
+        "removed": "yaYayayAYAY",
+        "signed_donor": "yayaYayaYAYAyAY"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "XaxAyaaXAxYXaxA",
+          "b"
+        ],
+        "removed": "yaaXAxYXaxA",
+        "signed_donor": "XaxAyaaXAxYXaxA"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "YayAyaaYAYayA",
+          "b"
+        ],
+        "removed": "yaaYAYayA",
+        "signed_donor": "YayAyaaYAYayA"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "b",
+          "yayAYaaYAyayAYY"
+        ],
+        "removed": "yaaYAyayAYY",
+        "signed_donor": "yayAYaaYAyayAYY"
+      },
+      {
+        "last_equality": "AAAAxyaaaYAAXyaaaY",
+        "remaining_pair": [
+          "XaaaayAAAYx",
+          "b"
+        ],
+        "removed": "yaaaYAA",
+        "signed_donor": "XaaaayAAAYx"
+      },
+      {
+        "last_equality": "AAAAyyaaaYaY",
+        "remaining_pair": [
+          "YaaaayAAA",
+          "b"
+        ],
+        "removed": "yaaaYAA",
+        "signed_donor": "YaaaayAAA"
+      },
+      {
+        "last_equality": "AAAAyaaaYAAyaaaY",
+        "remaining_pair": [
+          "B",
+          "aaaayAAAY"
+        ],
+        "removed": "yaaaYAA",
+        "signed_donor": "aaaayAAAY"
+      },
+      {
+        "last_equality": "AAAAyaaaYAAyaaaY",
+        "remaining_pair": [
+          "Xbx",
+          "aaaayAAAY"
+        ],
+        "removed": "yaaaYAA",
+        "signed_donor": "aaaayAAAY"
+      },
+      {
+        "last_equality": "AAAAyaaaYAAyaaaY",
+        "remaining_pair": [
+          "Yby",
+          "aaaayAAAY"
+        ],
+        "removed": "yaaaYAA",
+        "signed_donor": "aaaayAAAY"
+      },
+      {
+        "last_equality": "AAAAyaaaYAAyaaaY",
+        "remaining_pair": [
+          "aaaayAAAY",
+          "bA"
+        ],
+        "removed": "yaaaYAA",
+        "signed_donor": "aaaayAAAY"
+      },
+      {
+        "last_equality": "AAAAyaaaYAAyaaaY",
+        "remaining_pair": [
+          "aaaayAAAY",
+          "ba"
+        ],
+        "removed": "yaaaYAA",
+        "signed_donor": "aaaayAAAY"
+      },
+      {
+        "last_equality": "AAAAyaaaYAAyaaaY",
+        "remaining_pair": [
+          "aaaayAAAY",
+          "baaaayAAAY"
+        ],
+        "removed": "yaaaYAA",
+        "signed_donor": "aaaayAAAY"
+      },
+      {
+        "last_equality": "AAAAyaaaYAAyaaaY",
+        "remaining_pair": [
+          "aaaayAAAY",
+          "byaaaYAAAA"
+        ],
+        "removed": "yaaaYAA",
+        "signed_donor": "aaaayAAAY"
+      },
+      {
+        "last_equality": "AAAAyaaaYAAyaaaY",
+        "remaining_pair": [
+          "aaaayAAAY",
+          "xbX"
+        ],
+        "removed": "yaaaYAA",
+        "signed_donor": "aaaayAAAY"
+      },
+      {
+        "last_equality": "AAAAyaaaYAAyaaaY",
+        "remaining_pair": [
+          "aaaayAAAY",
+          "ybY"
+        ],
+        "removed": "yaaaYAA",
+        "signed_donor": "aaaayAAAY"
+      },
+      {
+        "last_equality": "AAAAyaaaYAAyaaaY",
+        "remaining_pair": [
+          "b",
+          "yaaaYAAAA"
+        ],
+        "removed": "yaaaYAA",
+        "signed_donor": "aaaayAAAY"
+      },
+      {
+        "last_equality": "AAAAyaaaYAAyaaaY",
+        "remaining_pair": [
+          "AAyaaaYAA",
+          "b"
+        ],
+        "removed": "yaaaYAA",
+        "signed_donor": "aayAAAYaa"
+      },
+      {
+        "last_equality": "AAAAXyaaaYAAxyaaaY",
+        "remaining_pair": [
+          "b",
+          "xaaaayAAAYX"
+        ],
+        "removed": "yaaaYAA",
+        "signed_donor": "xaaaayAAAYX"
+      },
+      {
+        "last_equality": "AAAYYaayay",
+        "remaining_pair": [
+          "b",
+          "yaaaayAAAYY"
+        ],
+        "removed": "yaaaYAA",
+        "signed_donor": "yaaaayAAAYY"
+      },
+      {
+        "last_equality": "AAAyyaaYaY",
+        "remaining_pair": [
+          "b",
+          "yaaaaYAAA"
+        ],
+        "removed": "yaaayAAYY",
+        "signed_donor": "yaaaaYAAA"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "b",
+          "xaXAyaaxAXYxaXA"
+        ],
+        "removed": "yaaxAXYxaXA",
+        "signed_donor": "xaXAyaaxAXYxaXA"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "b",
+          "yaYAyaayAYaYA"
+        ],
+        "removed": "yaayAYaYA",
+        "signed_donor": "yaYAyaayAYaYA"
+      },
+      {
+        "last_equality": "AAXYYxaaXyyaxAAXax",
+        "remaining_pair": [
+          "YxAAXyyxaaXAY",
+          "b"
+        ],
+        "removed": "yaxAAXY",
+        "signed_donor": "YxAAXyyxaaXAY"
+      },
+      {
+        "last_equality": "AAXAYYaxaXyyax",
+        "remaining_pair": [
+          "YxAXAyyaxaXAY",
+          "b"
+        ],
+        "removed": "yaxAXAY",
+        "signed_donor": "YxAXAyyaxaXAY"
+      },
+      {
+        "last_equality": "AXax",
+        "remaining_pair": [
+          "b",
+          "xaXAyaxaXAYaxAX"
+        ],
+        "removed": "yaxaXAYaxAX",
+        "signed_donor": "xaXAyaxaXAYaxAX"
+      },
+      {
+        "last_equality": "AXAYxaXaxaXayAxAXAYxaXayAx",
+        "remaining_pair": [
+          "b",
+          "xaXaxaXayAxAXAY"
+        ],
+        "removed": "yaxaXaYAxAX",
+        "signed_donor": "xaXaxaXayAxAXAY"
+      },
+      {
+        "last_equality": "AAYaaYayAy",
+        "remaining_pair": [
+          "b",
+          "yaaYayAAY"
+        ],
+        "removed": "yayAAYY",
+        "signed_donor": "yaaYAyAAY"
+      },
+      {
+        "last_equality": "AYay",
+        "remaining_pair": [
+          "b",
+          "yaYAyayaYAYayAY"
+        ],
+        "removed": "yayaYAYayAY",
+        "signed_donor": "yaYAyayaYAYayAY"
+      },
+      {
+        "last_equality": "AYAyyaYaYAyyaYaYAy",
+        "remaining_pair": [
+          "b",
+          "yaYayaYayAyAYAY"
+        ],
+        "removed": "yayaYaYAyAY",
+        "signed_donor": "yaYayaYayAyAYAY"
+      },
+      {
+        "last_equality": "ABYaby",
+        "remaining_pair": [
+          "aBABAAB",
+          "ab"
+        ],
+        "removed": "ybaY",
+        "signed_donor": "ab"
+      },
+      {
+        "last_equality": "ABYaby",
+        "remaining_pair": [
+          "aababAB",
+          "ab"
+        ],
+        "removed": "ybaY",
+        "signed_donor": "ab"
+      },
+      {
+        "last_equality": "AAAAyxaaaXYAAyxaaaXY",
+        "remaining_pair": [
+          "aayxAAAXYaa",
+          "b"
+        ],
+        "removed": "yxAAAXYaa",
+        "signed_donor": "AAyxaaaXYAA"
+      },
+      {
+        "last_equality": "AAXYXaxxAAXyxaaXXaxx",
+        "remaining_pair": [
+          "XaxxAAX",
+          "b"
+        ],
+        "removed": "yxaaXXaxxAAXY",
+        "signed_donor": "xaaXXAx"
+      },
+      {
+        "last_equality": "AAXXaxxAAXyxaaXYXaxx",
+        "remaining_pair": [
+          "XaxxAAX",
+          "b"
+        ],
+        "removed": "yxaaXYXaxxAAX",
+        "signed_donor": "xaaXXAx"
+      },
+      {
+        "last_equality": "AAAAyxaaaXYAAyxaaaXY",
+        "remaining_pair": [
+          "aaaayxAAAXY",
+          "b"
+        ],
+        "removed": "yxaaaXYAA",
+        "signed_donor": "aaaayxAAAXY"
+      },
+      {
+        "last_equality": "AAAAyyaaaYYAAyyaaaYY",
+        "remaining_pair": [
+          "aayyAAAYYaa",
+          "b"
+        ],
+        "removed": "yyAAAYYaa",
+        "signed_donor": "AAyyaaaYYAA"
+      },
+      {
+        "last_equality": "AAAAYYaaayyAAYYaaayy",
+        "remaining_pair": [
+          "aaayyAAYY",
+          "b"
+        ],
+        "removed": "yyAAYYaaayyAAYY",
+        "signed_donor": "yyaaYYAAA"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbyAYAxyaY",
+          "a"
+        ],
+        "removed": "yyAYY",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbyAYaxyaY",
+          "a"
+        ],
+        "removed": "yyAYY",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbyAYxAyaY",
+          "a"
+        ],
+        "removed": "yyAYY",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbyAYxayaY",
+          "a"
+        ],
+        "removed": "yyAYY",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbyaYAxyAY",
+          "a"
+        ],
+        "removed": "yyAYY",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbyaYaxyAY",
+          "a"
+        ],
+        "removed": "yyAYY",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbyaYxAyAY",
+          "a"
+        ],
+        "removed": "yyAYY",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbyaYxayAY",
+          "a"
+        ],
+        "removed": "yyAYY",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "byAYAAyaY"
+        ],
+        "removed": "yyAYY",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "byAYaayaY"
+        ],
+        "removed": "yyAYY",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "byaYAAyAY"
+        ],
+        "removed": "yyAYY",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "byaYaayAY"
+        ],
+        "removed": "yyAYY",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbyAYAXyaY"
+        ],
+        "removed": "yyAYY",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbyAYXAyaY"
+        ],
+        "removed": "yyAYY",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbyAYXayaY"
+        ],
+        "removed": "yyAYY",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbyAYaXyaY"
+        ],
+        "removed": "yyAYY",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbyaYAXyAY"
+        ],
+        "removed": "yyAYY",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbyaYXAyAY"
+        ],
+        "removed": "yyAYY",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbyaYXayAY"
+        ],
+        "removed": "yyAYY",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbyaYaXyAY"
+        ],
+        "removed": "yyAYY",
+        "signed_donor": "A"
+      },
+      {
+        "last_equality": "AAxYYXaaxyyaXAAxaX",
+        "remaining_pair": [
+          "XAAxyyXaaxAYY",
+          "b"
+        ],
+        "removed": "yyaXAAxYY",
+        "signed_donor": "XAAxyyXaaxAYY"
+      },
+      {
+        "last_equality": "AAxAYYaXaxyyaX",
+        "remaining_pair": [
+          "XAxAyyaXaxAYY",
+          "b"
+        ],
+        "removed": "yyaXAxAYY",
+        "signed_donor": "XAxAyyaXaxAYY"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbyAYAxyaY",
+          "a"
+        ],
+        "removed": "yyaYY",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbyAYaxyaY",
+          "a"
+        ],
+        "removed": "yyaYY",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbyAYxAyaY",
+          "a"
+        ],
+        "removed": "yyaYY",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbyAYxayaY",
+          "a"
+        ],
+        "removed": "yyaYY",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbyaYAxyAY",
+          "a"
+        ],
+        "removed": "yyaYY",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbyaYaxyAY",
+          "a"
+        ],
+        "removed": "yyaYY",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbyaYxAyAY",
+          "a"
+        ],
+        "removed": "yyaYY",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "XbyaYxayAY",
+          "a"
+        ],
+        "removed": "yyaYY",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "byAYAAyaY"
+        ],
+        "removed": "yyaYY",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "byAYaayaY"
+        ],
+        "removed": "yyaYY",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "byaYAAyAY"
+        ],
+        "removed": "yyaYY",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "byaYaayAY"
+        ],
+        "removed": "yyaYY",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbyAYAXyaY"
+        ],
+        "removed": "yyaYY",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbyAYXAyaY"
+        ],
+        "removed": "yyaYY",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbyAYXayaY"
+        ],
+        "removed": "yyaYY",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbyAYaXyaY"
+        ],
+        "removed": "yyaYY",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbyaYAXyAY"
+        ],
+        "removed": "yyaYY",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbyaYXAyAY"
+        ],
+        "removed": "yyaYY",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbyaYXayAY"
+        ],
+        "removed": "yyaYY",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AYYayy",
+        "remaining_pair": [
+          "a",
+          "xbyaYaXyAY"
+        ],
+        "removed": "yyaYY",
+        "signed_donor": "a"
+      },
+      {
+        "last_equality": "AAAAyyaaaYYAAyyaaaYY",
+        "remaining_pair": [
+          "aaaayyAAAYY",
+          "b"
+        ],
+        "removed": "yyaaaYYAA",
+        "signed_donor": "aaaayyAAAYY"
+      },
+      {
+        "last_equality": "AAAAYYaaayyAAYYaaayy",
+        "remaining_pair": [
+          "aaayyAAYY",
+          "b"
+        ],
+        "removed": "yyaaaaYYAAA",
+        "signed_donor": "aaayyAAYY"
+      },
+      {
+        "last_equality": "AAXYYxaaXyyaxAAXax",
+        "remaining_pair": [
+          "b",
+          "xAAXyyxaaXAYY"
+        ],
+        "removed": "yyaxAAXYY",
+        "signed_donor": "xAAXyyxaaXAYY"
+      },
+      {
+        "last_equality": "AAXAYYaxaXyyax",
+        "remaining_pair": [
+          "b",
+          "xAXAyyaxaXAYY"
+        ],
+        "removed": "yyaxAXAYY",
+        "signed_donor": "xAXAyyaxaXAYY"
+      }
+    ]
+  },
+  "strict_saving_geodesic_windows": [
+    {
+      "entry_tick": 0,
+      "exit_geodesic_tick": 7,
+      "half_widths": [
+        19007,
+        38078
+      ],
+      "midpoints": 0
+    },
+    {
+      "entry_tick": 1,
+      "exit_geodesic_tick": 8,
+      "half_widths": [
+        54135,
+        38072
+      ],
+      "midpoints": 0
+    },
+    {
+      "entry_tick": 2,
+      "exit_geodesic_tick": 9,
+      "half_widths": [
+        55557,
+        38067
+      ],
+      "midpoints": 0
+    },
+    {
+      "entry_tick": 3,
+      "exit_geodesic_tick": 10,
+      "half_widths": [
+        55633,
+        72013
+      ],
+      "midpoints": 0
+    },
+    {
+      "entry_tick": 4,
+      "exit_geodesic_tick": 11,
+      "half_widths": [
+        38024,
+        90594
+      ],
+      "midpoints": 0
+    },
+    {
+      "entry_tick": 5,
+      "exit_geodesic_tick": 12,
+      "half_widths": [
+        38078,
+        104472
+      ],
+      "midpoints": 0
+    },
+    {
+      "entry_tick": 6,
+      "exit_geodesic_tick": 13,
+      "half_widths": [
+        38078,
+        89911
+      ],
+      "midpoints": 0
+    },
+    {
+      "entry_tick": 7,
+      "exit_geodesic_tick": 14,
+      "half_widths": [
+        38078,
+        69175
+      ],
+      "midpoints": 0
+    },
+    {
+      "entry_tick": 8,
+      "exit_geodesic_tick": 15,
+      "half_widths": [
+        38072,
+        44675
+      ],
+      "midpoints": 0
+    },
+    {
+      "entry_tick": 9,
+      "exit_geodesic_tick": 16,
+      "half_widths": [
+        38067,
+        31058
+      ],
+      "midpoints": 0
+    },
+    {
+      "entry_tick": 10,
+      "exit_geodesic_tick": 17,
+      "half_widths": [
+        72013,
+        7420
+      ],
+      "midpoints": 0
+    }
+  ]
+}

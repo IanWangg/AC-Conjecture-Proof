@@ -1,0 +1,733 @@
+{
+  "cap33_compaction": {
+    "cyclic_cap": 33,
+    "input_records": 4298727756,
+    "distinct_seeds": 1258633777,
+    "duplicate_records": 3040093979,
+    "shards": [
+      {
+        "index": 0,
+        "input_records": 5765374,
+        "seeds": 2440579
+      },
+      {
+        "index": 1,
+        "input_records": 16209398,
+        "seeds": 6042105
+      },
+      {
+        "index": 2,
+        "input_records": 97227655,
+        "seeds": 25877465
+      },
+      {
+        "index": 3,
+        "input_records": 34869350,
+        "seeds": 8017702
+      },
+      {
+        "index": 4,
+        "input_records": 55103388,
+        "seeds": 14247502
+      },
+      {
+        "index": 5,
+        "input_records": 18721572,
+        "seeds": 6204879
+      },
+      {
+        "index": 6,
+        "input_records": 50410275,
+        "seeds": 12736312
+      },
+      {
+        "index": 7,
+        "input_records": 17249755,
+        "seeds": 6189278
+      },
+      {
+        "index": 8,
+        "input_records": 15839906,
+        "seeds": 6211787
+      },
+      {
+        "index": 9,
+        "input_records": 31232824,
+        "seeds": 9070384
+      },
+      {
+        "index": 10,
+        "input_records": 12792077,
+        "seeds": 6388850
+      },
+      {
+        "index": 11,
+        "input_records": 4729396,
+        "seeds": 2234486
+      },
+      {
+        "index": 12,
+        "input_records": 47338973,
+        "seeds": 11476698
+      },
+      {
+        "index": 13,
+        "input_records": 4829805,
+        "seeds": 1933248
+      },
+      {
+        "index": 14,
+        "input_records": 1575751,
+        "seeds": 695285
+      },
+      {
+        "index": 15,
+        "input_records": 50623829,
+        "seeds": 11385559
+      },
+      {
+        "index": 16,
+        "input_records": 34640246,
+        "seeds": 9074847
+      },
+      {
+        "index": 17,
+        "input_records": 40329536,
+        "seeds": 13418776
+      },
+      {
+        "index": 18,
+        "input_records": 145553484,
+        "seeds": 40876422
+      },
+      {
+        "index": 19,
+        "input_records": 64779769,
+        "seeds": 14647784
+      },
+      {
+        "index": 20,
+        "input_records": 53802845,
+        "seeds": 17600151
+      },
+      {
+        "index": 21,
+        "input_records": 8481418,
+        "seeds": 3205941
+      },
+      {
+        "index": 22,
+        "input_records": 89145954,
+        "seeds": 19455913
+      },
+      {
+        "index": 23,
+        "input_records": 43068989,
+        "seeds": 14487132
+      },
+      {
+        "index": 24,
+        "input_records": 2774449,
+        "seeds": 1255324
+      },
+      {
+        "index": 25,
+        "input_records": 40581302,
+        "seeds": 11337709
+      },
+      {
+        "index": 26,
+        "input_records": 94252313,
+        "seeds": 24585058
+      },
+      {
+        "index": 27,
+        "input_records": 1980230,
+        "seeds": 774014
+      },
+      {
+        "index": 28,
+        "input_records": 65115211,
+        "seeds": 20573695
+      },
+      {
+        "index": 29,
+        "input_records": 21558761,
+        "seeds": 8163629
+      },
+      {
+        "index": 30,
+        "input_records": 13658225,
+        "seeds": 6364795
+      },
+      {
+        "index": 31,
+        "input_records": 5056090,
+        "seeds": 1820895
+      },
+      {
+        "index": 32,
+        "input_records": 30526241,
+        "seeds": 9044078
+      },
+      {
+        "index": 33,
+        "input_records": 10617994,
+        "seeds": 3335558
+      },
+      {
+        "index": 34,
+        "input_records": 13228895,
+        "seeds": 6765981
+      },
+      {
+        "index": 35,
+        "input_records": 4192769,
+        "seeds": 1591314
+      },
+      {
+        "index": 36,
+        "input_records": 36670676,
+        "seeds": 10341297
+      },
+      {
+        "index": 37,
+        "input_records": 24973842,
+        "seeds": 7563869
+      },
+      {
+        "index": 38,
+        "input_records": 23608740,
+        "seeds": 6208336
+      },
+      {
+        "index": 39,
+        "input_records": 4980778,
+        "seeds": 1647782
+      },
+      {
+        "index": 40,
+        "input_records": 6803081,
+        "seeds": 2711655
+      },
+      {
+        "index": 41,
+        "input_records": 12045241,
+        "seeds": 5037823
+      },
+      {
+        "index": 42,
+        "input_records": 54022864,
+        "seeds": 15623098
+      },
+      {
+        "index": 43,
+        "input_records": 6828059,
+        "seeds": 3167972
+      },
+      {
+        "index": 44,
+        "input_records": 31108968,
+        "seeds": 10116726
+      },
+      {
+        "index": 45,
+        "input_records": 6538962,
+        "seeds": 2611856
+      },
+      {
+        "index": 46,
+        "input_records": 19350185,
+        "seeds": 8228360
+      },
+      {
+        "index": 47,
+        "input_records": 37667596,
+        "seeds": 8818465
+      },
+      {
+        "index": 48,
+        "input_records": 62347271,
+        "seeds": 16539451
+      },
+      {
+        "index": 49,
+        "input_records": 12708353,
+        "seeds": 4068181
+      },
+      {
+        "index": 50,
+        "input_records": 79894768,
+        "seeds": 18365190
+      },
+      {
+        "index": 51,
+        "input_records": 38412776,
+        "seeds": 8309537
+      },
+      {
+        "index": 52,
+        "input_records": 77745771,
+        "seeds": 20859318
+      },
+      {
+        "index": 53,
+        "input_records": 29574667,
+        "seeds": 8135942
+      },
+      {
+        "index": 54,
+        "input_records": 4890479,
+        "seeds": 1993713
+      },
+      {
+        "index": 55,
+        "input_records": 19860815,
+        "seeds": 9393920
+      },
+      {
+        "index": 56,
+        "input_records": 14294683,
+        "seeds": 5445953
+      },
+      {
+        "index": 57,
+        "input_records": 56462653,
+        "seeds": 15201453
+      },
+      {
+        "index": 58,
+        "input_records": 119790460,
+        "seeds": 37022981
+      },
+      {
+        "index": 59,
+        "input_records": 11281258,
+        "seeds": 5290451
+      },
+      {
+        "index": 60,
+        "input_records": 14918329,
+        "seeds": 5890728
+      },
+      {
+        "index": 61,
+        "input_records": 9588039,
+        "seeds": 3966463
+      },
+      {
+        "index": 62,
+        "input_records": 35925134,
+        "seeds": 13646123
+      },
+      {
+        "index": 63,
+        "input_records": 79619038,
+        "seeds": 18297088
+      },
+      {
+        "index": 64,
+        "input_records": 4811794,
+        "seeds": 2264858
+      },
+      {
+        "index": 65,
+        "input_records": 9946578,
+        "seeds": 4107186
+      },
+      {
+        "index": 66,
+        "input_records": 141665796,
+        "seeds": 36561025
+      },
+      {
+        "index": 67,
+        "input_records": 57349287,
+        "seeds": 13126409
+      },
+      {
+        "index": 68,
+        "input_records": 61120176,
+        "seeds": 14802249
+      },
+      {
+        "index": 69,
+        "input_records": 22816084,
+        "seeds": 6594311
+      },
+      {
+        "index": 70,
+        "input_records": 66987333,
+        "seeds": 17526945
+      },
+      {
+        "index": 71,
+        "input_records": 27031344,
+        "seeds": 10255292
+      },
+      {
+        "index": 72,
+        "input_records": 9671935,
+        "seeds": 3960296
+      },
+      {
+        "index": 73,
+        "input_records": 43950901,
+        "seeds": 11804855
+      },
+      {
+        "index": 74,
+        "input_records": 17244975,
+        "seeds": 8519038
+      },
+      {
+        "index": 75,
+        "input_records": 8432411,
+        "seeds": 3967324
+      },
+      {
+        "index": 76,
+        "input_records": 65421193,
+        "seeds": 15818052
+      },
+      {
+        "index": 77,
+        "input_records": 2752533,
+        "seeds": 1230239
+      },
+      {
+        "index": 78,
+        "input_records": 2491925,
+        "seeds": 981483
+      },
+      {
+        "index": 79,
+        "input_records": 87436067,
+        "seeds": 19484034
+      },
+      {
+        "index": 80,
+        "input_records": 33549591,
+        "seeds": 10278007
+      },
+      {
+        "index": 81,
+        "input_records": 31563628,
+        "seeds": 10466361
+      },
+      {
+        "index": 82,
+        "input_records": 75515527,
+        "seeds": 20596809
+      },
+      {
+        "index": 83,
+        "input_records": 34512905,
+        "seeds": 7485403
+      },
+      {
+        "index": 84,
+        "input_records": 42774893,
+        "seeds": 14595076
+      },
+      {
+        "index": 85,
+        "input_records": 9921793,
+        "seeds": 4183054
+      },
+      {
+        "index": 86,
+        "input_records": 38800769,
+        "seeds": 9014882
+      },
+      {
+        "index": 87,
+        "input_records": 23959973,
+        "seeds": 9296672
+      },
+      {
+        "index": 88,
+        "input_records": 2848890,
+        "seeds": 1176587
+      },
+      {
+        "index": 89,
+        "input_records": 28536480,
+        "seeds": 9102159
+      },
+      {
+        "index": 90,
+        "input_records": 35952375,
+        "seeds": 9612808
+      },
+      {
+        "index": 91,
+        "input_records": 1041278,
+        "seeds": 469515
+      },
+      {
+        "index": 92,
+        "input_records": 30750229,
+        "seeds": 10364922
+      },
+      {
+        "index": 93,
+        "input_records": 10655193,
+        "seeds": 4525644
+      },
+      {
+        "index": 94,
+        "input_records": 13004855,
+        "seeds": 5728049
+      },
+      {
+        "index": 95,
+        "input_records": 3855352,
+        "seeds": 1555569
+      },
+      {
+        "index": 96,
+        "input_records": 45642156,
+        "seeds": 12979472
+      },
+      {
+        "index": 97,
+        "input_records": 16344834,
+        "seeds": 4501877
+      },
+      {
+        "index": 98,
+        "input_records": 29706783,
+        "seeds": 15140274
+      },
+      {
+        "index": 99,
+        "input_records": 6482112,
+        "seeds": 2445226
+      },
+      {
+        "index": 100,
+        "input_records": 72393570,
+        "seeds": 18971589
+      },
+      {
+        "index": 101,
+        "input_records": 48289195,
+        "seeds": 12274829
+      },
+      {
+        "index": 102,
+        "input_records": 41055140,
+        "seeds": 10301938
+      },
+      {
+        "index": 103,
+        "input_records": 5276234,
+        "seeds": 1922557
+      },
+      {
+        "index": 104,
+        "input_records": 14679349,
+        "seeds": 5055031
+      },
+      {
+        "index": 105,
+        "input_records": 10400605,
+        "seeds": 4358307
+      },
+      {
+        "index": 106,
+        "input_records": 104611112,
+        "seeds": 33257283
+      },
+      {
+        "index": 107,
+        "input_records": 23387040,
+        "seeds": 9499352
+      },
+      {
+        "index": 108,
+        "input_records": 68466027,
+        "seeds": 20039068
+      },
+      {
+        "index": 109,
+        "input_records": 9494091,
+        "seeds": 3954462
+      },
+      {
+        "index": 110,
+        "input_records": 27961204,
+        "seeds": 13218732
+      },
+      {
+        "index": 111,
+        "input_records": 68809182,
+        "seeds": 15849563
+      },
+      {
+        "index": 112,
+        "input_records": 35562597,
+        "seeds": 10708082
+      },
+      {
+        "index": 113,
+        "input_records": 13453721,
+        "seeds": 5482130
+      },
+      {
+        "index": 114,
+        "input_records": 61240223,
+        "seeds": 13466209
+      },
+      {
+        "index": 115,
+        "input_records": 24940696,
+        "seeds": 5876957
+      },
+      {
+        "index": 116,
+        "input_records": 53075223,
+        "seeds": 14368977
+      },
+      {
+        "index": 117,
+        "input_records": 21872243,
+        "seeds": 6434772
+      },
+      {
+        "index": 118,
+        "input_records": 4805323,
+        "seeds": 2039064
+      },
+      {
+        "index": 119,
+        "input_records": 14159543,
+        "seeds": 6409568
+      },
+      {
+        "index": 120,
+        "input_records": 6373529,
+        "seeds": 2515211
+      },
+      {
+        "index": 121,
+        "input_records": 40438536,
+        "seeds": 13452048
+      },
+      {
+        "index": 122,
+        "input_records": 88015735,
+        "seeds": 25886274
+      },
+      {
+        "index": 123,
+        "input_records": 10459037,
+        "seeds": 4532755
+      },
+      {
+        "index": 124,
+        "input_records": 16032734,
+        "seeds": 6375005
+      },
+      {
+        "index": 125,
+        "input_records": 5441227,
+        "seeds": 2139990
+      },
+      {
+        "index": 126,
+        "input_records": 25377601,
+        "seeds": 9338849
+      },
+      {
+        "index": 127,
+        "input_records": 58329556,
+        "seeds": 12348347
+      }
+    ]
+  },
+  "cap22_compaction_control": {
+    "cyclic_cap": 22,
+    "input_records": 26328,
+    "distinct_seeds": 13164,
+    "duplicate_records": 13164,
+    "shards": [
+      {
+        "index": 0,
+        "input_records": 1622,
+        "seeds": 811
+      },
+      {
+        "index": 1,
+        "input_records": 1406,
+        "seeds": 703
+      },
+      {
+        "index": 2,
+        "input_records": 7440,
+        "seeds": 3720
+      },
+      {
+        "index": 3,
+        "input_records": 2538,
+        "seeds": 1269
+      },
+      {
+        "index": 4,
+        "input_records": 3472,
+        "seeds": 1736
+      },
+      {
+        "index": 5,
+        "input_records": 1652,
+        "seeds": 826
+      },
+      {
+        "index": 6,
+        "input_records": 3098,
+        "seeds": 1549
+      },
+      {
+        "index": 7,
+        "input_records": 5100,
+        "seeds": 2550
+      }
+    ]
+  },
+  "cap22_flat_control": {
+    "cyclic_cap": 22,
+    "lower_orbits": 18118,
+    "boundary_records_read": 13164,
+    "unique_seed_orbits": 13164,
+    "expanded_orbits": 14245,
+    "outside_orbits": 14245,
+    "closure_reached_from_listed_seeds": true,
+    "primitive_found": false,
+    "candidate_products": 11215112,
+    "admitted_products": 384302,
+    "outside_histogram": {
+      "17": 3,
+      "18": 13,
+      "19": 62,
+      "20": 85,
+      "21": 425,
+      "22": 13657
+    }
+  },
+  "cap22_final_catalogue_byte_identical": true,
+  "small_table_fails_at_load_limit": true,
+  "legacy_cap22_catalogue_and_parent_ledger_byte_identical": true,
+  "duplicate_compact_seed_rejected": true,
+  "anchors_reused_from_input_seed_shards": true,
+  "flat22_seed_ledger_byte_identical_to_shard_concatenation": true,
+  "flat22_smallest_anchored_route_replay": {
+    "moves": 109,
+    "peak_total_length": 22,
+    "endpoint": [
+      "XXXXYxyxxY",
+      "XXyxYXY"
+    ],
+    "cyclic_peak": 22
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "floor": 12,
+  "cap": 32,
+  "word_width_cap": 21,
+  "roots": 12,
+  "eligible_target_rows": 4080631,
+  "target_orbits": 4080631,
+  "expanded": 120000,
+  "discovered": 1636286,
+  "without_singleton": 19,
+  "candidates": 249673200,
+  "positive_bridge_candidates": 9927456,
+  "admitted": 15694104,
+  "products_above_word_width": 284670,
+  "closed": false,
+  "join": false,
+  "reached_by_depth": [
+    12,
+    14396,
+    725926,
+    895952
+  ],
+  "expanded_by_depth": [
+    12,
+    14396,
+    105592
+  ],
+  "stabilized_projection_roots": [
+    [
+      "X",
+      "YYYZYzYZYzz",
+      "YYZYYzzYYZYz"
+    ],
+    [
+      "X",
+      "YYYZZYZZyzz",
+      "YYZZZZYzyyzz"
+    ],
+    [
+      "X",
+      "YYZYzzyyz",
+      "YZYzyZyzYZYzyz"
+    ],
+    [
+      "X",
+      "YYZYZyzyZZ",
+      "YYZyZYYZyzzyZ"
+    ],
+    [
+      "X",
+      "YYYZYzYZYzz",
+      "YYZYzyZyzyZYz"
+    ],
+    [
+      "X",
+      "YYZYZyyzYzyyz",
+      "YYZyZYYZyyz"
+    ],
+    [
+      "X",
+      "YYYZYYzYYZYzyz",
+      "YYYZYzYZYzz"
+    ],
+    [
+      "X",
+      "YYYZYzYZYzz",
+      "YYZYzzYZyzYZYz"
+    ],
+    [
+      "X",
+      "YYZYzYzyz",
+      "YYZYzzyZZyzyZYzz"
+    ],
+    [
+      "X",
+      "YYZYYzYZYYzz",
+      "YYzYZyzyZyzYZ"
+    ],
+    [
+      "X",
+      "YYZYZyZYzyyZ",
+      "YYZyZYZYzyyZZ"
+    ],
+    [
+      "X",
+      "YYZYZyZYzyyZ",
+      "YYZYZyyzYzyyz"
+    ]
+  ],
+  "roots_tsv_sha256": "b06253f63b5243308485c8af48978d3aad4fe42ffc38b3e7d4ce35948e736034",
+  "reached_tsv_sha256": "ce5ee436fc01d7e386a3b7316a3796d64e58083c690385bb2f97893f8b2af1ed",
+  "target_tsv_sha256": "703c7f47cf59d4d482b9a2ecde424cf1e49111e3ef887b4a561b578f53195ad9"
+}

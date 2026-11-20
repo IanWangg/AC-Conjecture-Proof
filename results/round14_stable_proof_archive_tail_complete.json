@@ -1,0 +1,52 @@
+{
+  "forward_pairs": 45511,
+  "archive_pairs": 23902,
+  "forward_sha256": "222e56f8becacb821565d617b44afcf761e1217afa3617625f0ba7dc83a05461",
+  "complete_archive_sha256": "c9dd0627965a6f1ffa899c4a465b95a788d739eedd49089d9b6c5681980ba2c4",
+  "shorter_archive_sha256": "83ad8f6515017281a422bb96377f6aae0eb683892b1420bbc61310960c0894e9",
+  "archive_energy_below20": {
+    "status": "NO_SUBGROUP_JOIN",
+    "forward_pairs": 45511,
+    "forward_distinct_words": 38333,
+    "forward_cap": 36,
+    "forward_minimum_coordinate": 5,
+    "reverse_pairs": 2476,
+    "reverse_rotation_pairs": 141986,
+    "reverse_distinct_rotated_cores": 62516,
+    "reverse_geodesic_bridges": 98813428,
+    "primitive_slopes_constructed": 465096865,
+    "coordinates_found_in_forward_catalogue": 121358472,
+    "basis_pair_lookups": 22695049,
+    "core_topologies": {
+      "barbell": 98813637,
+      "rose": 20539,
+      "theta": 41768
+    }
+  },
+  "archive_energy20_through56": {
+    "status": "NO_SUBGROUP_JOIN",
+    "forward_pairs": 45511,
+    "forward_distinct_words": 38333,
+    "forward_cap": 36,
+    "forward_minimum_coordinate": 5,
+    "reverse_pairs": 21426,
+    "reverse_rotation_pairs": 6088456,
+    "reverse_distinct_rotated_cores": 2614743,
+    "reverse_geodesic_bridges": 2114368,
+    "primitive_slopes_constructed": 14013871,
+    "coordinates_found_in_forward_catalogue": 2885220,
+    "basis_pair_lookups": 165706,
+    "core_topologies": {
+      "barbell": 2120259,
+      "rose": 841117,
+      "theta": 1767735
+    },
+    "forward_sha256": "222e56f8becacb821565d617b44afcf761e1217afa3617625f0ba7dc83a05461",
+    "reverse_sha256": "b794e02869a31805f7fad4431c17206efc20a3dab1602d48ba14a1a80010a3f4",
+    "reverse_energy_interval": [
+      20,
+      56
+    ]
+  },
+  "subgroup_join_found": false
+}

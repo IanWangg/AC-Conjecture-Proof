@@ -1,0 +1,1456 @@
+{
+  "contacts_sha256": "79e4eac6fca4681ded171c6f0f12b47b677d1bdea2d971b3fc922167d1cbf6d9",
+  "degree_cap": 10,
+  "contacts": 43,
+  "exactly_excluded": 40,
+  "records": [
+    {
+      "source_row": "xxxxxyXXy",
+      "frozen_donor": "XXXXXXXXXXXyxYYxxxxxxxYXXXXXYYY",
+      "tested_receivers": [
+        "XXXXXYYY"
+      ],
+      "witnesses": {
+        "XXXXXYYY": {
+          "x": [
+            1,
+            3,
+            4,
+            5,
+            2
+          ],
+          "y": [
+            2,
+            5,
+            1,
+            3,
+            4
+          ],
+          "receiver_type": [
+            1,
+            4
+          ],
+          "target_type": [
+            2,
+            3
+          ]
+        }
+      },
+      "unresolved": []
+    },
+    {
+      "source_row": "xxxxxyXXy",
+      "frozen_donor": "XXXXXXXXXXyxxYXYxxxxxxxxxyXY",
+      "tested_receivers": [
+        "XXyxY"
+      ],
+      "witnesses": {
+        "XXyxY": {
+          "x": [
+            2,
+            1,
+            4,
+            5,
+            3
+          ],
+          "y": [
+            1,
+            3,
+            2,
+            4,
+            5
+          ],
+          "receiver_type": [
+            1,
+            4
+          ],
+          "target_type": [
+            2,
+            3
+          ]
+        }
+      },
+      "unresolved": []
+    },
+    {
+      "source_row": "xxxxxyXXy",
+      "frozen_donor": "XXXXXXXXXyXXXXYYxxxxxxxxyXXyxxYxxxY",
+      "tested_receivers": [
+        "XXXXXXXXyxxYxxxY"
+      ],
+      "witnesses": {
+        "XXXXXXXXyxxYxxxY": {
+          "x": [
+            2,
+            1,
+            4,
+            5,
+            6,
+            7,
+            8,
+            3
+          ],
+          "y": [
+            3,
+            4,
+            2,
+            8,
+            6,
+            5,
+            1,
+            7
+          ],
+          "receiver_type": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "target_type": [
+            2,
+            6
+          ]
+        }
+      },
+      "unresolved": []
+    },
+    {
+      "source_row": "xxxxxyXXy",
+      "frozen_donor": "XXXXXXXXyxxxxxYXXYYxxxy",
+      "tested_receivers": [
+        "XXXXXyxYXXYYxxxy",
+        "XXXXYxxxy"
+      ],
+      "witnesses": {},
+      "unresolved": [
+        "XXXXXyxYXXYYxxxy",
+        "XXXXYxxxy"
+      ]
+    },
+    {
+      "source_row": "xxxxxyXXy",
+      "frozen_donor": "XXXXXXYYXXYxxxxxyxy",
+      "tested_receivers": [
+        "XXXXXYxxxxxyxy",
+        "XXXYY"
+      ],
+      "witnesses": {
+        "XXXXXYxxxxxyxy": {
+          "x": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            1
+          ],
+          "y": [
+            1,
+            4,
+            7,
+            5,
+            2,
+            3,
+            6
+          ],
+          "receiver_type": [
+            1,
+            1,
+            1,
+            2,
+            2
+          ],
+          "target_type": [
+            7
+          ]
+        },
+        "XXXYY": {
+          "x": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            1
+          ],
+          "y": [
+            1,
+            4,
+            7,
+            5,
+            2,
+            3,
+            6
+          ],
+          "receiver_type": [
+            1,
+            1,
+            1,
+            2,
+            2
+          ],
+          "target_type": [
+            7
+          ]
+        }
+      },
+      "unresolved": []
+    },
+    {
+      "source_row": "xxxxxyXXy",
+      "frozen_donor": "XXXXXXYxxxxyyxxyxxY",
+      "tested_receivers": [
+        "XXXXXYXXYY"
+      ],
+      "witnesses": {
+        "XXXXXYXXYY": {
+          "x": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            2
+          ],
+          "y": [
+            2,
+            3,
+            1,
+            6,
+            4,
+            5,
+            7
+          ],
+          "receiver_type": [
+            2,
+            5
+          ],
+          "target_type": [
+            1,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "unresolved": []
+    },
+    {
+      "source_row": "xxxxxyXXy",
+      "frozen_donor": "XXXXXYXXXYYXXYYXXYxY",
+      "tested_receivers": [
+        "XXXYY"
+      ],
+      "witnesses": {
+        "XXXYY": {
+          "x": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            3
+          ],
+          "y": [
+            3,
+            4,
+            1,
+            5,
+            2,
+            6
+          ],
+          "receiver_type": [
+            1,
+            1,
+            4
+          ],
+          "target_type": [
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "unresolved": []
+    },
+    {
+      "source_row": "xxxxxyXXy",
+      "frozen_donor": "XXXXXYxyxYYXXYYXXXY",
+      "tested_receivers": [
+        "XXXXXYxyxYYXyxxxyXYYXXXY",
+        "XXXYY"
+      ],
+      "witnesses": {
+        "XXXXXYxyxYYXyxxxyXYYXXXY": {
+          "x": [
+            1,
+            2,
+            4,
+            5,
+            3,
+            7,
+            8,
+            6
+          ],
+          "y": [
+            3,
+            4,
+            5,
+            2,
+            6,
+            7,
+            8,
+            1
+          ],
+          "receiver_type": [
+            2,
+            6
+          ],
+          "target_type": [
+            1,
+            1,
+            3,
+            3
+          ]
+        },
+        "XXXYY": {
+          "x": [
+            1,
+            2,
+            4,
+            5,
+            3,
+            7,
+            8,
+            6
+          ],
+          "y": [
+            3,
+            4,
+            5,
+            2,
+            6,
+            7,
+            8,
+            1
+          ],
+          "receiver_type": [
+            2,
+            6
+          ],
+          "target_type": [
+            1,
+            1,
+            3,
+            3
+          ]
+        }
+      },
+      "unresolved": []
+    },
+    {
+      "source_row": "xxxxxyXXy",
+      "frozen_donor": "XXXXXyxxYxYXYxxy",
+      "tested_receivers": [
+        "XXXYxxy"
+      ],
+      "witnesses": {},
+      "unresolved": [
+        "XXXYxxy"
+      ]
+    },
+    {
+      "source_row": "xxxxxyXXy",
+      "frozen_donor": "XXXXXyxxyxxYXyxxxxY",
+      "tested_receivers": [
+        "XXYYxy"
+      ],
+      "witnesses": {
+        "XXYYxy": {
+          "x": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            1
+          ],
+          "y": [
+            1,
+            6,
+            5,
+            8,
+            7,
+            4,
+            2,
+            3
+          ],
+          "receiver_type": [
+            8
+          ],
+          "target_type": [
+            1,
+            1,
+            6
+          ]
+        }
+      },
+      "unresolved": []
+    },
+    {
+      "source_row": "xxxxxyXXy",
+      "frozen_donor": "XXXXyXXyyxxxYYXXYxxxY",
+      "tested_receivers": [
+        "XXXXXYY",
+        "XXXXYYXXYxxxYXXXXy"
+      ],
+      "witnesses": {
+        "XXXXXYY": {
+          "x": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            1
+          ],
+          "y": [
+            1,
+            2,
+            8,
+            9,
+            4,
+            3,
+            7,
+            6,
+            5
+          ],
+          "receiver_type": [
+            1,
+            2,
+            6
+          ],
+          "target_type": [
+            1,
+            1,
+            1,
+            3,
+            3
+          ]
+        },
+        "XXXXYYXXYxxxYXXXXy": {
+          "x": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            1
+          ],
+          "y": [
+            1,
+            2,
+            8,
+            9,
+            4,
+            3,
+            7,
+            6,
+            5
+          ],
+          "receiver_type": [
+            1,
+            2,
+            6
+          ],
+          "target_type": [
+            1,
+            1,
+            1,
+            3,
+            3
+          ]
+        }
+      },
+      "unresolved": []
+    },
+    {
+      "source_row": "xxxxxyXXy",
+      "frozen_donor": "XXXXyxYYxxxyXXY",
+      "tested_receivers": [
+        "XXXXYXXXXyxYYxxyXYYxxxy",
+        "XXXXYYxxxyXXYXyXyxYYxxxyXXY",
+        "XXXXyxYYxxyXXYxxxxyXXY",
+        "XXXXyxYxYYxxyXXYxxxxyXXYXyXXY",
+        "XXXyyxYxyxxY"
+      ],
+      "witnesses": {
+        "XXXXYXXXXyxYYxxyXYYxxxy": {
+          "x": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            2
+          ],
+          "y": [
+            2,
+            6,
+            1,
+            5,
+            3,
+            7,
+            4
+          ],
+          "receiver_type": [
+            3,
+            4
+          ],
+          "target_type": [
+            2,
+            5
+          ]
+        },
+        "XXXXYYxxxyXXYXyXyxYYxxxyXXY": {
+          "x": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            2
+          ],
+          "y": [
+            2,
+            6,
+            1,
+            5,
+            3,
+            7,
+            4
+          ],
+          "receiver_type": [
+            3,
+            4
+          ],
+          "target_type": [
+            2,
+            5
+          ]
+        },
+        "XXXXyxYYxxyXXYxxxxyXXY": {
+          "x": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            2
+          ],
+          "y": [
+            2,
+            6,
+            1,
+            5,
+            3,
+            7,
+            4
+          ],
+          "receiver_type": [
+            3,
+            4
+          ],
+          "target_type": [
+            2,
+            5
+          ]
+        },
+        "XXXXyxYxYYxxyXXYxxxxyXXYXyXXY": {
+          "x": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            2
+          ],
+          "y": [
+            2,
+            6,
+            1,
+            5,
+            3,
+            7,
+            4
+          ],
+          "receiver_type": [
+            3,
+            4
+          ],
+          "target_type": [
+            2,
+            5
+          ]
+        },
+        "XXXyyxYxyxxY": {
+          "x": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            2
+          ],
+          "y": [
+            2,
+            6,
+            1,
+            5,
+            3,
+            7,
+            4
+          ],
+          "receiver_type": [
+            3,
+            4
+          ],
+          "target_type": [
+            2,
+            5
+          ]
+        }
+      },
+      "unresolved": []
+    },
+    {
+      "source_row": "xxxxxyXXy",
+      "frozen_donor": "XXXYXYXXXYxYXY",
+      "tested_receivers": [
+        "XXXXXXXYXYxxxyxxYXY",
+        "XXXXXXYxYXXyxxxyxyxxxyxxxxxyxyXXY",
+        "XXXXXYXXXYXYXXXYxYXXXYXYxxxyxxYXY",
+        "XXXXYXYXXXYXYXXXYXXYXYxxxyxxYXY",
+        "XXXXYXYxxxyxyxxxyxy",
+        "XXXXYxY",
+        "XXXYXXYXYYYXYXXXYXY",
+        "XXXYXXYXYYxxxyxyXXY",
+        "XXXYXXYXYxxxyxxYXYXyxyXXY",
+        "XXXYXXYXYxxxyxyxxxyxyxxyxyXXY",
+        "XXXYXYY"
+      ],
+      "witnesses": {
+        "XXXXXXXYXYxxxyxxYXY": {
+          "x": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            2
+          ],
+          "y": [
+            2,
+            7,
+            4,
+            9,
+            8,
+            3,
+            6,
+            5,
+            1
+          ],
+          "receiver_type": [
+            2,
+            7
+          ],
+          "target_type": [
+            1,
+            8
+          ]
+        },
+        "XXXXXXYxYXXyxxxyxyxxxyxxxxxyxyXXY": {
+          "x": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            2
+          ],
+          "y": [
+            2,
+            7,
+            4,
+            9,
+            8,
+            3,
+            6,
+            5,
+            1
+          ],
+          "receiver_type": [
+            2,
+            7
+          ],
+          "target_type": [
+            1,
+            8
+          ]
+        },
+        "XXXXXYXXXYXYXXXYxYXXXYXYxxxyxxYXY": {
+          "x": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            2
+          ],
+          "y": [
+            2,
+            7,
+            4,
+            9,
+            8,
+            3,
+            6,
+            5,
+            1
+          ],
+          "receiver_type": [
+            2,
+            7
+          ],
+          "target_type": [
+            1,
+            8
+          ]
+        },
+        "XXXXYXYXXXYXYXXXYXXYXYxxxyxxYXY": {
+          "x": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            2
+          ],
+          "y": [
+            2,
+            7,
+            4,
+            9,
+            8,
+            3,
+            6,
+            5,
+            1
+          ],
+          "receiver_type": [
+            2,
+            7
+          ],
+          "target_type": [
+            1,
+            8
+          ]
+        },
+        "XXXXYXYxxxyxyxxxyxy": {
+          "x": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            2
+          ],
+          "y": [
+            2,
+            7,
+            4,
+            9,
+            8,
+            3,
+            6,
+            5,
+            1
+          ],
+          "receiver_type": [
+            2,
+            7
+          ],
+          "target_type": [
+            1,
+            8
+          ]
+        },
+        "XXXXYxY": {
+          "x": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            2
+          ],
+          "y": [
+            2,
+            7,
+            4,
+            9,
+            8,
+            3,
+            6,
+            5,
+            1
+          ],
+          "receiver_type": [
+            2,
+            7
+          ],
+          "target_type": [
+            1,
+            8
+          ]
+        },
+        "XXXYXXYXYYYXYXXXYXY": {
+          "x": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            2
+          ],
+          "y": [
+            2,
+            7,
+            4,
+            9,
+            8,
+            3,
+            6,
+            5,
+            1
+          ],
+          "receiver_type": [
+            2,
+            7
+          ],
+          "target_type": [
+            1,
+            8
+          ]
+        },
+        "XXXYXXYXYYxxxyxyXXY": {
+          "x": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            2
+          ],
+          "y": [
+            2,
+            7,
+            4,
+            9,
+            8,
+            3,
+            6,
+            5,
+            1
+          ],
+          "receiver_type": [
+            2,
+            7
+          ],
+          "target_type": [
+            1,
+            8
+          ]
+        },
+        "XXXYXXYXYxxxyxxYXYXyxyXXY": {
+          "x": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            2
+          ],
+          "y": [
+            2,
+            7,
+            4,
+            9,
+            8,
+            3,
+            6,
+            5,
+            1
+          ],
+          "receiver_type": [
+            2,
+            7
+          ],
+          "target_type": [
+            1,
+            8
+          ]
+        },
+        "XXXYXXYXYxxxyxyxxxyxyxxyxyXXY": {
+          "x": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            2
+          ],
+          "y": [
+            2,
+            7,
+            4,
+            9,
+            8,
+            3,
+            6,
+            5,
+            1
+          ],
+          "receiver_type": [
+            2,
+            7
+          ],
+          "target_type": [
+            1,
+            8
+          ]
+        },
+        "XXXYXYY": {
+          "x": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            2
+          ],
+          "y": [
+            2,
+            7,
+            4,
+            9,
+            8,
+            3,
+            6,
+            5,
+            1
+          ],
+          "receiver_type": [
+            2,
+            7
+          ],
+          "target_type": [
+            1,
+            8
+          ]
+        }
+      },
+      "unresolved": []
+    },
+    {
+      "source_row": "xxxxxyXXy",
+      "frozen_donor": "XXXYXyxxyxxYXY",
+      "tested_receivers": [
+        "XXYXYxy"
+      ],
+      "witnesses": {
+        "XXYXYxy": {
+          "x": [
+            1,
+            3,
+            2,
+            5,
+            6,
+            4
+          ],
+          "y": [
+            2,
+            4,
+            5,
+            3,
+            6,
+            1
+          ],
+          "receiver_type": [
+            1,
+            2,
+            3
+          ],
+          "target_type": [
+            1,
+            1,
+            4
+          ]
+        }
+      },
+      "unresolved": []
+    },
+    {
+      "source_row": "xxxxxyXXy",
+      "frozen_donor": "XXXYxxYXXyXYXYxxyxxy",
+      "tested_receivers": [
+        "XXXXYxxYXXyXYXYxxyxxyXyxxxy",
+        "XXXYxxY"
+      ],
+      "witnesses": {
+        "XXXXYxxYXXyXYXYxxyxxyXyxxxy": {
+          "x": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            3
+          ],
+          "y": [
+            3,
+            5,
+            2,
+            4,
+            8,
+            9,
+            6,
+            1,
+            10,
+            7
+          ],
+          "receiver_type": [
+            1,
+            1,
+            1,
+            3,
+            4
+          ],
+          "target_type": [
+            1,
+            1,
+            8
+          ]
+        },
+        "XXXYxxY": {
+          "x": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            3
+          ],
+          "y": [
+            3,
+            5,
+            2,
+            4,
+            8,
+            9,
+            6,
+            1,
+            10,
+            7
+          ],
+          "receiver_type": [
+            1,
+            1,
+            1,
+            3,
+            4
+          ],
+          "target_type": [
+            1,
+            1,
+            8
+          ]
+        }
+      },
+      "unresolved": []
+    },
+    {
+      "source_row": "xxxxxyXXy",
+      "frozen_donor": "XXXYxxyXYXYxxy",
+      "tested_receivers": [
+        "XXXYxxy"
+      ],
+      "witnesses": {
+        "XXXYxxy": {
+          "x": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            3
+          ],
+          "y": [
+            3,
+            5,
+            1,
+            7,
+            2,
+            6,
+            4,
+            8
+          ],
+          "receiver_type": [
+            1,
+            1,
+            6
+          ],
+          "target_type": [
+            8
+          ]
+        }
+      },
+      "unresolved": []
+    },
+    {
+      "source_row": "xxxxxyXXy",
+      "frozen_donor": "XXXyxxYXYxxxyXyxYxyXXyXYxYxYXyXY",
+      "tested_receivers": [
+        "XXXyxxYXyXYxYxYXyXY"
+      ],
+      "witnesses": {
+        "XXXyxxYXyXYxYxYXyXY": {
+          "x": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            1
+          ],
+          "y": [
+            3,
+            6,
+            7,
+            2,
+            1,
+            5,
+            4
+          ],
+          "receiver_type": [
+            1,
+            3,
+            3
+          ],
+          "target_type": [
+            7
+          ]
+        }
+      },
+      "unresolved": []
+    },
+    {
+      "source_row": "xxxxxyXXy",
+      "frozen_donor": "XXXyxxYXyxxyxxY",
+      "tested_receivers": [
+        "XXXyxYXXYxyXYXyxxyxxY"
+      ],
+      "witnesses": {
+        "XXXyxYXXYxyXYXyxxyxxY": {
+          "x": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            3
+          ],
+          "y": [
+            3,
+            5,
+            6,
+            4,
+            8,
+            1,
+            7,
+            2
+          ],
+          "receiver_type": [
+            1,
+            1,
+            6
+          ],
+          "target_type": [
+            8
+          ]
+        }
+      },
+      "unresolved": []
+    },
+    {
+      "source_row": "xxxxxyXXy",
+      "frozen_donor": "XXXyxxyxxYXYxxy",
+      "tested_receivers": [
+        "XXXYY"
+      ],
+      "witnesses": {
+        "XXXYY": {
+          "x": [
+            1,
+            3,
+            4,
+            2,
+            6,
+            7,
+            8,
+            5
+          ],
+          "y": [
+            2,
+            4,
+            5,
+            8,
+            7,
+            1,
+            3,
+            6
+          ],
+          "receiver_type": [
+            2,
+            3,
+            3
+          ],
+          "target_type": [
+            8
+          ]
+        }
+      },
+      "unresolved": []
+    },
+    {
+      "source_row": "xxxxxyXXy",
+      "frozen_donor": "XXYXXyxyxYY",
+      "tested_receivers": [
+        "XXXXXYY",
+        "XXXYXYXY"
+      ],
+      "witnesses": {
+        "XXXXXYY": {
+          "x": [
+            1,
+            3,
+            2,
+            5,
+            6,
+            4
+          ],
+          "y": [
+            4,
+            1,
+            5,
+            6,
+            3,
+            2
+          ],
+          "receiver_type": [
+            1,
+            2,
+            3
+          ],
+          "target_type": [
+            6
+          ]
+        },
+        "XXXYXYXY": {
+          "x": [
+            1,
+            3,
+            2,
+            5,
+            6,
+            4
+          ],
+          "y": [
+            4,
+            1,
+            5,
+            6,
+            3,
+            2
+          ],
+          "receiver_type": [
+            1,
+            2,
+            3
+          ],
+          "target_type": [
+            1,
+            1,
+            4
+          ]
+        }
+      },
+      "unresolved": []
+    },
+    {
+      "source_row": "xxxxxyXXy",
+      "frozen_donor": "XXYxxYXXyxxYxxYXyXXYxyXXyxxYXXy",
+      "tested_receivers": [
+        "XXYxxYXy"
+      ],
+      "witnesses": {
+        "XXYxxYXy": {
+          "x": [
+            2,
+            3,
+            1,
+            5,
+            6,
+            7,
+            4
+          ],
+          "y": [
+            3,
+            4,
+            6,
+            1,
+            2,
+            7,
+            5
+          ],
+          "receiver_type": [
+            1,
+            6
+          ],
+          "target_type": [
+            2,
+            5
+          ]
+        }
+      },
+      "unresolved": []
+    },
+    {
+      "source_row": "xxxxyXXYY",
+      "frozen_donor": "XXYXXYxxyXXyxYxxy",
+      "tested_receivers": [
+        "XXYXXYXXYxxyXXyxYxxyxxyXY",
+        "XXYxxyXY"
+      ],
+      "witnesses": {
+        "XXYXXYXXYxxyXXyxYxxyxxyXY": {
+          "x": [
+            1,
+            3,
+            4,
+            2
+          ],
+          "y": [
+            2,
+            1,
+            3,
+            4
+          ],
+          "receiver_type": [
+            4
+          ],
+          "target_type": [
+            1,
+            1,
+            2
+          ]
+        },
+        "XXYxxyXY": {
+          "x": [
+            1,
+            3,
+            4,
+            2
+          ],
+          "y": [
+            2,
+            1,
+            3,
+            4
+          ],
+          "receiver_type": [
+            4
+          ],
+          "target_type": [
+            1,
+            1,
+            2
+          ]
+        }
+      },
+      "unresolved": []
+    }
+  ]
+}

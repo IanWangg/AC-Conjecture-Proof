@@ -1,0 +1,1126 @@
+{
+  "archive_sha256": "c9dd0627965a6f1ffa899c4a465b95a788d739eedd49089d9b6c5681980ba2c4",
+  "transformed_energy": 56,
+  "unmarked_shears_within_energy": 74111,
+  "novel_marked_donors": 421750,
+  "novel_ordered_marked_pairs": 1012360,
+  "trials": [
+    {
+      "source_fixed_donor": "xxxxxyXXy",
+      "source_receiver": "xxyxxyyXYXY",
+      "novel_exact_donors": [
+        "XXXXXXXXXXXyxYYxxxxxxxYXXXXXYYY",
+        "XXXXXXXXXXyxxYXYxxxxxxxxxyXY",
+        "XXXXXXXXXyXXXXYYxxxxxxxxyXXyxxYxxxY",
+        "XXXXXXXXyxxxxxYXXYYxxxy",
+        "XXXXXXYYXXYxxxxxyxy",
+        "XXXXXXYxxxxyyxxyxxY",
+        "XXXXXYXXXYYXXYYXXYxY",
+        "XXXXXYxyxYYXXYYXXXY",
+        "XXXXXyxxYxYXYxxy",
+        "XXXXXyxxyxxYXyxxxxY",
+        "XXXXyXXyyxxxYYXXYxxxY",
+        "XXXXyxYYxxxyXXY",
+        "XXXYXYXXXYxYXY",
+        "XXXYXyxxyxxYXY",
+        "XXXYxxYXXyXYXYxxyxxy",
+        "XXXYxxyXYXYxxy",
+        "XXXyxxYXYxxxyXyxYxyXXyXYxYxYXyXY",
+        "XXXyxxYXyxxyxxY",
+        "XXXyxxyxxYXYxxy",
+        "XXYXXyxyxYY",
+        "XXYxxYXXyxxYxxYXyXXYxyXXyxxYXXy"
+      ],
+      "forward_finite_completion": {
+        "graph_sizes": [
+          11,
+          192,
+          1828,
+          14798,
+          111169
+        ],
+        "allocation_stop": false,
+        "hits": [
+          [
+            "XXYXXyxyxYY",
+            0
+          ],
+          [
+            "XXXXXXYxxxxyyxxyxxY",
+            1
+          ],
+          [
+            "XXXXXYxyxYYXXYYXXXY",
+            1
+          ],
+          [
+            "XXXXXyxxyxxYXyxxxxY",
+            1
+          ],
+          [
+            "XXXXyxYYxxxyXXY",
+            1
+          ],
+          [
+            "XXXYXYXXXYxYXY",
+            1
+          ],
+          [
+            "XXXYXyxxyxxYXY",
+            1
+          ],
+          [
+            "XXXYxxYXXyXYXYxxyxxy",
+            1
+          ],
+          [
+            "XXXYxxyXYXYxxy",
+            1
+          ],
+          [
+            "XXXyxxYXyxxyxxY",
+            1
+          ],
+          [
+            "XXXyxxyxxYXYxxy",
+            1
+          ],
+          [
+            "XXXXXXXXXXXyxYYxxxxxxxYXXXXXYYY",
+            2
+          ],
+          [
+            "XXXXXXXXXXyxxYXYxxxxxxxxxyXY",
+            2
+          ],
+          [
+            "XXXXXXXXXyXXXXYYxxxxxxxxyXXyxxYxxxY",
+            2
+          ],
+          [
+            "XXXXXXXXyxxxxxYXXYYxxxy",
+            2
+          ],
+          [
+            "XXXXXXYYXXYxxxxxyxy",
+            2
+          ],
+          [
+            "XXXXXYXXXYYXXYYXXYxY",
+            2
+          ],
+          [
+            "XXXXXyxxYxYXYxxy",
+            2
+          ],
+          [
+            "XXXXyXXyyxxxYYXXYxxxY",
+            2
+          ],
+          [
+            "XXYxxYXXyxxYxxYXyXXYxyXXyxxYXXy",
+            2
+          ],
+          [
+            "XXXyxxYXYxxxyXyxYxyXXyXYxYxYXyXY",
+            4
+          ]
+        ]
+      },
+      "reverse": {
+        "charts": 41,
+        "word_checks": 41,
+        "allocation_stops": 38,
+        "last_completed_stage_histogram": {
+          "1": 4,
+          "2": 34,
+          "3": 3
+        },
+        "largest_graph": 318969,
+        "word_hits": 0
+      },
+      "contacts": [
+        {
+          "pair": [
+            "XXXXXYYY",
+            "XXXXXXXXXXXyxYYxxxxxxxYXXXXXYYY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n5row124_pureAC_moves.txt",
+              5489
+            ],
+            0,
+            5
+          ],
+          "graph_sizes": [
+            8,
+            2291
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXyxY",
+            "XXXXXXXXXXyxxYXYxxxxxxxxxyXY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n3row111_pureAC_moves.txt",
+              3972
+            ],
+            3,
+            1
+          ],
+          "graph_sizes": [
+            5,
+            1019,
+            130311
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXXXXXXyxxYxxxY",
+            "XXXXXXXXXyXXXXYYxxxxxxxxyXXyxxYxxxY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n7row6_pureAC_moves.txt",
+              54
+            ],
+            1,
+            7
+          ],
+          "graph_sizes": [
+            16,
+            4249
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXXXyxYXXYYxxxy",
+            "XXXXXXXXyxxxxxYXXYYxxxy"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n3row160_pureAC_moves.txt",
+              69
+            ],
+            1,
+            4
+          ],
+          "graph_sizes": [
+            16,
+            2080,
+            216613
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXXYxxxy",
+            "XXXXXXXXyxxxxxYXXYYxxxy"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n3row160_pureAC_moves.txt",
+              75
+            ],
+            1,
+            4
+          ],
+          "graph_sizes": [
+            9,
+            1023,
+            105435
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXXXYxxxxxyxy",
+            "XXXXXXYYXXYxxxxxyxy"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n3row111_pureAC_moves.txt",
+              3626
+            ],
+            1,
+            6
+          ],
+          "graph_sizes": [
+            14,
+            1205,
+            99871
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXYY",
+            "XXXXXXYYXXYxxxxxyxy"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n3row111_pureAC_moves.txt",
+              3682
+            ],
+            1,
+            6
+          ],
+          "graph_sizes": [
+            5,
+            537,
+            45373
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXXXYXXYY",
+            "XXXXXXYxxxxyyxxyxxY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n6row49_pureAC_moves.txt",
+              535
+            ],
+            0,
+            5
+          ],
+          "graph_sizes": [
+            10,
+            938,
+            75329
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXYY",
+            "XXXXXYXXXYYXXYYXXYxY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n3row135_pureAC_moves.txt",
+              1232
+            ],
+            1,
+            4
+          ],
+          "graph_sizes": [
+            5,
+            583,
+            59319
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXXXYxyxYYXyxxxyXYYXXXY",
+            "XXXXXYxyxYYXXYYXXXY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n3row135_pureAC_moves.txt",
+              1400
+            ],
+            1,
+            7
+          ],
+          "graph_sizes": [
+            24,
+            2435,
+            247595
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXYY",
+            "XXXXXYxyxYYXXYYXXXY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n3row135_pureAC_moves.txt",
+              1386
+            ],
+            1,
+            7
+          ],
+          "graph_sizes": [
+            5,
+            565,
+            57505
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXYxxy",
+            "XXXXXyxxYxYXYxxy"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n2row100_pureAC_moves.txt",
+              386
+            ],
+            1,
+            7
+          ],
+          "graph_sizes": [
+            7,
+            467,
+            28315
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXYYxy",
+            "XXXXXyxxyxxYXyxxxxY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n5row66_pureAC_moves.txt",
+              75
+            ],
+            1,
+            5
+          ],
+          "graph_sizes": [
+            6,
+            705,
+            57243
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXXXYY",
+            "XXXXyXXyyxxxYYXXYxxxY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n5row33_pureAC_moves.txt",
+              709
+            ],
+            0,
+            5
+          ],
+          "graph_sizes": [
+            7,
+            919,
+            115091
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXXYYXXYxxxYXXXXy",
+            "XXXXyXXyyxxxYYXXYxxxY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n5row33_pureAC_moves.txt",
+              703
+            ],
+            0,
+            5
+          ],
+          "graph_sizes": [
+            18,
+            2346,
+            293768
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXXYXXXXyxYYxxyXYYxxxy",
+            "XXXXyxYYxxxyXXY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n2row23_pureAC_moves.txt",
+              65
+            ],
+            0,
+            7
+          ],
+          "graph_sizes": [
+            23,
+            1424,
+            77602
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXXYYxxxyXXYXyXyxYYxxxyXXY",
+            "XXXXyxYYxxxyXXY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n2row23_pureAC_moves.txt",
+              18
+            ],
+            0,
+            7
+          ],
+          "graph_sizes": [
+            27,
+            1538,
+            83887
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXXyxYYxxyXXYxxxxyXXY",
+            "XXXXyxYYxxxyXXY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n2row23_pureAC_moves.txt",
+              126
+            ],
+            0,
+            7
+          ],
+          "graph_sizes": [
+            22,
+            1117,
+            60853
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXXyxYxYYxxyXXYxxxxyXXYXyXXY",
+            "XXXXyxYYxxxyXXY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n2row23_pureAC_moves.txt",
+              120
+            ],
+            0,
+            7
+          ],
+          "graph_sizes": [
+            29,
+            1574,
+            85841
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXyyxYxyxxY",
+            "XXXXyxYYxxxyXXY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n2row23_pureAC_moves.txt",
+              12
+            ],
+            0,
+            7
+          ],
+          "graph_sizes": [
+            12,
+            793,
+            43318
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXXXXXYXYxxxyxxYXY",
+            "XXXYXYXXXYxYXY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n5row133_pureAC_moves.txt",
+              854
+            ],
+            1,
+            7
+          ],
+          "graph_sizes": [
+            19,
+            705,
+            23340
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXXXXYxYXXyxxxyxyxxxyxxxxxyxyXXY",
+            "XXXYXYXXXYxYXY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n5row133_pureAC_moves.txt",
+              866
+            ],
+            1,
+            7
+          ],
+          "graph_sizes": [
+            33,
+            1102,
+            36447
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXXXYXXXYXYXXXYxYXXXYXYxxxyxxYXY",
+            "XXXYXYXXXYxYXY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n5row133_pureAC_moves.txt",
+              863
+            ],
+            1,
+            7
+          ],
+          "graph_sizes": [
+            33,
+            1103,
+            36465
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXXYXYXXXYXYXXXYXXYXYxxxyxxYXY",
+            "XXXYXYXXXYxYXY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n5row133_pureAC_moves.txt",
+              850
+            ],
+            1,
+            7
+          ],
+          "graph_sizes": [
+            31,
+            1172,
+            38906
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXXYXYxxxyxyxxxyxy",
+            "XXXYXYXXXYxYXY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n5row133_pureAC_moves.txt",
+              1053
+            ],
+            1,
+            7
+          ],
+          "graph_sizes": [
+            19,
+            744,
+            24758
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXXYxY",
+            "XXXYXYXXXYxYXY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n5row133_pureAC_moves.txt",
+              643
+            ],
+            1,
+            7
+          ],
+          "graph_sizes": [
+            7,
+            277,
+            9196,
+            303320
+          ],
+          "allocation_stop": false,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXYXXYXYYYXYXXXYXY",
+            "XXXYXYXXXYxYXY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n5row133_pureAC_moves.txt",
+              658
+            ],
+            1,
+            7
+          ],
+          "graph_sizes": [
+            19,
+            784,
+            26229
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXYXXYXYYxxxyxyXXY",
+            "XXXYXYXXXYxYXY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n5row133_pureAC_moves.txt",
+              707
+            ],
+            1,
+            7
+          ],
+          "graph_sizes": [
+            19,
+            745,
+            24811
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXYXXYXYxxxyxxYXYXyxyXXY",
+            "XXXYXYXXXYxYXY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n5row133_pureAC_moves.txt",
+              784
+            ],
+            1,
+            7
+          ],
+          "graph_sizes": [
+            25,
+            1025,
+            34186
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXYXXYXYxxxyxyxxxyxyxxyxyXXY",
+            "XXXYXYXXXYxYXY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n5row133_pureAC_moves.txt",
+              777
+            ],
+            1,
+            7
+          ],
+          "graph_sizes": [
+            29,
+            1143,
+            37988
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXYXYY",
+            "XXXYXYXXXYxYXY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n5row133_pureAC_moves.txt",
+              650
+            ],
+            1,
+            7
+          ],
+          "graph_sizes": [
+            7,
+            317,
+            10661
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXYXYxy",
+            "XXXYXyxxyxxYXY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n5row97_pureAC_moves.txt",
+              318
+            ],
+            1,
+            4
+          ],
+          "graph_sizes": [
+            7,
+            382,
+            17425
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXXYxxYXXyXYXYxxyxxyXyxxxy",
+            "XXXYxxYXXyXYXYxxyxxy"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n4row134_pureAC_moves.txt",
+              886
+            ],
+            0,
+            7
+          ],
+          "graph_sizes": [
+            27,
+            2873,
+            318969
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXYxxY",
+            "XXXYxxYXXyXYXYxxyxxy"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n4row134_pureAC_moves.txt",
+              882
+            ],
+            0,
+            7
+          ],
+          "graph_sizes": [
+            7,
+            809,
+            89801
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXYxxy",
+            "XXXYxxyXYXYxxy"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n2row20_pureAC_moves.txt",
+              7
+            ],
+            0,
+            4
+          ],
+          "graph_sizes": [
+            7,
+            291,
+            12179
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXyxxYXyXYxYxYXyXY",
+            "XXXyxxYXYxxxyXyxYxyXXyXYxYxYXyXY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n2row159_pureAC_moves.txt",
+              45
+            ],
+            1,
+            7
+          ],
+          "graph_sizes": [
+            19,
+            7081
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXyxYXXYxyXYXyxxyxxY",
+            "XXXyxxYXyxxyxxY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n2row70_pureAC_moves.txt",
+              13
+            ],
+            0,
+            7
+          ],
+          "graph_sizes": [
+            21,
+            1108,
+            53874
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXYY",
+            "XXXyxxyxxYXYxxy"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n3row63_pureAC_moves.txt",
+              2023
+            ],
+            1,
+            4
+          ],
+          "graph_sizes": [
+            5,
+            313,
+            16301
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXXXYY",
+            "XXYXXyxyxYY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n5row42_pureAC_moves.txt",
+              392
+            ],
+            0,
+            7
+          ],
+          "graph_sizes": [
+            7,
+            234,
+            6791,
+            195985
+          ],
+          "allocation_stop": false,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXXYXYXY",
+            "XXYXXyxyxYY"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n3row25_pureAC_moves.txt",
+              664
+            ],
+            2,
+            0
+          ],
+          "graph_sizes": [
+            8,
+            271,
+            7860,
+            226809
+          ],
+          "allocation_stop": false,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXYxxYXy",
+            "XXYxxYXXyxxYxxYXyXXYxyXXyxxYXXy"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n2row57_pureAC_moves.txt",
+              191
+            ],
+            1,
+            7
+          ],
+          "graph_sizes": [
+            8,
+            2395
+          ],
+          "allocation_stop": true,
+          "hits": []
+        }
+      ],
+      "verified_joins": []
+    },
+    {
+      "source_fixed_donor": "xxxxyXXYY",
+      "source_receiver": "xxyyxYYYxxY",
+      "novel_exact_donors": [
+        "XXYXXYxxyXXyxYxxy"
+      ],
+      "forward_finite_completion": {
+        "graph_sizes": [
+          11,
+          243,
+          3841
+        ],
+        "allocation_stop": false,
+        "hits": [
+          [
+            "XXYXXYxxyXXyxYxxy",
+            2
+          ]
+        ]
+      },
+      "reverse": {
+        "charts": 2,
+        "word_checks": 2,
+        "allocation_stops": 2,
+        "last_completed_stage_histogram": {
+          "2": 2
+        },
+        "largest_graph": 124511,
+        "word_hits": 0
+      },
+      "contacts": [
+        {
+          "pair": [
+            "XXYXXYXXYxxyXXyxYxxyxxyXY",
+            "XXYXXYxxyXXyxYxxy"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n4row56_pureAC_moves.txt",
+              15
+            ],
+            1,
+            5
+          ],
+          "graph_sizes": [
+            25,
+            1790,
+            124511
+          ],
+          "allocation_stop": true,
+          "hits": []
+        },
+        {
+          "pair": [
+            "XXYxxyXY",
+            "XXYXXYxxyXXyxYxxy"
+          ],
+          "word_checks": 1,
+          "source": [
+            [
+              "n4row56_pureAC_moves.txt",
+              12
+            ],
+            1,
+            5
+          ],
+          "graph_sizes": [
+            8,
+            634,
+            44125
+          ],
+          "allocation_stop": true,
+          "hits": []
+        }
+      ],
+      "verified_joins": []
+    }
+  ]
+}

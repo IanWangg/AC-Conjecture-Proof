@@ -1,0 +1,2656 @@
+{
+  "templates_surviving_exact_rank_three_degree_three": 202,
+  "templates_surviving_mixed_rank_three_degree_four": [
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbXAxxAXax",
+        "a"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbXAxxaXax",
+        "a"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbXaxxAXAx",
+        "a"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbXaxxaXAx",
+        "a"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbYAyAxYay",
+        "a"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbYAyaxYay",
+        "a"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbYAyxAYay",
+        "a"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbYAyxaYay",
+        "a"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbYayAxYAy",
+        "a"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbYayaxYAy",
+        "a"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbYayxAYAy",
+        "a"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbYayxaYAy",
+        "a"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbxAXAxxaX",
+        "a"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbxAXaxxaX",
+        "a"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbxaXAxxAX",
+        "a"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbxaXaxxAX",
+        "a"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbyAYAxyaY",
+        "a"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbyAYaxyaY",
+        "a"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbyAYxAyaY",
+        "a"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbyAYxayaY",
+        "a"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbyaYAxyAY",
+        "a"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbyaYaxyAY",
+        "a"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbyaYxAyAY",
+        "a"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbyaYxayAY",
+        "a"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbXAxAXXax"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbXAxaXXax"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbXaxAXXAx"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbXaxaXXAx"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbYAyAXYay"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbYAyXAYay"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbYAyXaYay"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbYAyaXYay"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbYayAXYAy"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbYayXAYAy"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbYayXaYAy"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbYayaXYAy"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbxAXXAxaX"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbxAXXaxaX"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbxaXXAxAX"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbxaXXaxAX"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbyAYAXyaY"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbyAYXAyaY"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbyAYXayaY"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbyAYaXyaY"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbyaYAXyAY"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbyaYXAyAY"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbyaYXayAY"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbyaYaXyAY"
+      ],
+      "removed": "A",
+      "signed_donor": "A"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XAAAxaa",
+        "b"
+      ],
+      "removed": "AAAAXaaax",
+      "signed_donor": "XAAAxaa"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "b",
+        "xAAAXaa"
+      ],
+      "removed": "AAAAxaaaX",
+      "signed_donor": "xAAAXaa"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "AXaax",
+        "b"
+      ],
+      "removed": "AAAXaax",
+      "signed_donor": "XAAxa"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "AxaaX",
+        "b"
+      ],
+      "removed": "AAAxaaX",
+      "signed_donor": "xAAXa"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XXAxaax",
+        "b"
+      ],
+      "removed": "AAXAxaa",
+      "signed_donor": "XAAXaxx"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "AxaaX",
+        "b"
+      ],
+      "removed": "AAXAxaa",
+      "signed_donor": "xAAXa"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XXAxaax",
+        "b"
+      ],
+      "removed": "AAXXAxaax",
+      "signed_donor": "XAAXaxx"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "AXaax",
+        "b"
+      ],
+      "removed": "AAxAXaa",
+      "signed_donor": "XAAxa"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "b",
+        "xxAXaaX"
+      ],
+      "removed": "AAxAXaa",
+      "signed_donor": "xAAxaXX"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "b",
+        "xxAXaaX"
+      ],
+      "removed": "AAxxAXaaX",
+      "signed_donor": "xAAxaXX"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XAXaaxx",
+        "b"
+      ],
+      "removed": "XAXaaxAAx",
+      "signed_donor": "XXAAxax"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XAxaa",
+        "b"
+      ],
+      "removed": "XAxaaxAAX",
+      "signed_donor": "AAXax"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "aaXXaxAAx",
+        "b"
+      ],
+      "removed": "XXaxAAx",
+      "signed_donor": "XaaXAxxAA"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XaxaXXaxAXAxx",
+        "b"
+      ],
+      "removed": "XXaxAXAxx",
+      "signed_donor": "XXaxaXAxxAXAx"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XAXaaxx",
+        "b"
+      ],
+      "removed": "XaaXAAxax",
+      "signed_donor": "XAXaaxx"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "b",
+        "xAXaa"
+      ],
+      "removed": "XaaxAAxaX",
+      "signed_donor": "xAXaa"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XaaaxAA",
+        "b"
+      ],
+      "removed": "XaxAA",
+      "signed_donor": "aaXAAAx"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "b",
+        "xaaXXaxAA"
+      ],
+      "removed": "XaxAA",
+      "signed_donor": "aaXAxxAAX"
+    },
+    {
+      "old_linear_parts": [
+        [
+          3,
+          1
+        ]
+      ],
+      "remaining_pair": [
+        "YaBAyAB",
+        "ab"
+      ],
+      "removed": "Xbax",
+      "signed_donor": "ab"
+    },
+    {
+      "old_linear_parts": [
+        [
+          3,
+          1
+        ]
+      ],
+      "remaining_pair": [
+        "YaabyAB",
+        "ab"
+      ],
+      "removed": "Xbax",
+      "signed_donor": "ab"
+    },
+    {
+      "old_linear_parts": [
+        [
+          3,
+          1
+        ]
+      ],
+      "remaining_pair": [
+        "YayBAAB",
+        "ab"
+      ],
+      "removed": "Xbax",
+      "signed_donor": "ab"
+    },
+    {
+      "old_linear_parts": [
+        [
+          3,
+          1
+        ]
+      ],
+      "remaining_pair": [
+        "YayabAB",
+        "ab"
+      ],
+      "removed": "Xbax",
+      "signed_donor": "ab"
+    },
+    {
+      "old_linear_parts": [
+        [
+          3,
+          1
+        ]
+      ],
+      "remaining_pair": [
+        "ab",
+        "yaBAYAB"
+      ],
+      "removed": "Xbax",
+      "signed_donor": "ab"
+    },
+    {
+      "old_linear_parts": [
+        [
+          3,
+          1
+        ]
+      ],
+      "remaining_pair": [
+        "ab",
+        "yaYBAAB"
+      ],
+      "removed": "Xbax",
+      "signed_donor": "ab"
+    },
+    {
+      "old_linear_parts": [
+        [
+          3,
+          1
+        ]
+      ],
+      "remaining_pair": [
+        "ab",
+        "yaYabAB"
+      ],
+      "removed": "Xbax",
+      "signed_donor": "ab"
+    },
+    {
+      "old_linear_parts": [
+        [
+          3,
+          1
+        ]
+      ],
+      "remaining_pair": [
+        "ab",
+        "yaabYAB"
+      ],
+      "removed": "Xbax",
+      "signed_donor": "ab"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbXAxxAXax",
+        "a"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbXAxxaXax",
+        "a"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbXaxxAXAx",
+        "a"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbXaxxaXAx",
+        "a"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbYAyAxYay",
+        "a"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbYAyaxYay",
+        "a"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbYAyxAYay",
+        "a"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbYAyxaYay",
+        "a"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbYayAxYAy",
+        "a"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbYayaxYAy",
+        "a"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbYayxAYAy",
+        "a"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbYayxaYAy",
+        "a"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbxAXAxxaX",
+        "a"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbxAXaxxaX",
+        "a"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbxaXAxxAX",
+        "a"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbxaXaxxAX",
+        "a"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbyAYAxyaY",
+        "a"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbyAYaxyaY",
+        "a"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbyAYxAyaY",
+        "a"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbyAYxayaY",
+        "a"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbyaYAxyAY",
+        "a"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbyaYaxyAY",
+        "a"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbyaYxAyAY",
+        "a"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XbyaYxayAY",
+        "a"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbXAxAXXax"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbXAxaXXax"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbXaxAXXAx"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbXaxaXXAx"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbYAyAXYay"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbYAyXAYay"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbYAyXaYay"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbYAyaXYay"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbYayAXYAy"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbYayXAYAy"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbYayXaYAy"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbYayaXYAy"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbxAXXAxaX"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbxAXXaxaX"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbxaXXAxAX"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbxaXXaxAX"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbyAYAXyaY"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbyAYXAyaY"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbyAYXayaY"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbyAYaXyaY"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbyaYAXyAY"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbyaYXAyAY"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbyaYXayAY"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "a",
+        "xbyaYaXyAY"
+      ],
+      "removed": "a",
+      "signed_donor": "a"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "aaaXAAx",
+        "b"
+      ],
+      "removed": "aXAAx",
+      "signed_donor": "XaaxAAA"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "b",
+        "xaXaaXAxA"
+      ],
+      "removed": "aXAxA",
+      "signed_donor": "aXaxAAxAX"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XAAAxaa",
+        "b"
+      ],
+      "removed": "aaXAAAxaa",
+      "signed_donor": "AAXaaax"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XaaaxAA",
+        "b"
+      ],
+      "removed": "aaXAx",
+      "signed_donor": "XaaaxAA"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "b",
+        "xaaXXaxAA"
+      ],
+      "removed": "aaXAx",
+      "signed_donor": "xaaXXaxAA"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "b",
+        "xAAAXaa"
+      ],
+      "removed": "aaxAAAXaa",
+      "signed_donor": "AAxaaaX"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XaaxxaXAA",
+        "b"
+      ],
+      "removed": "aaxAX",
+      "signed_donor": "XaaxxaXAA"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "b",
+        "xaaaXAA"
+      ],
+      "removed": "aaxAX",
+      "signed_donor": "xaaaXAA"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "aaaxAAX",
+        "b"
+      ],
+      "removed": "axAAX",
+      "signed_donor": "xaaXAAA"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XaxaaxAXA",
+        "b"
+      ],
+      "removed": "axAXA",
+      "signed_donor": "axaXAAXAx"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "b",
+        "xAXaa"
+      ],
+      "removed": "xAXaaXAAx",
+      "signed_donor": "AAxaX"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "b",
+        "xAxaaXX"
+      ],
+      "removed": "xAxaaXAAX",
+      "signed_donor": "xxAAXaX"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "b",
+        "xaaaXAA"
+      ],
+      "removed": "xaXAA",
+      "signed_donor": "aaxAAAX"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XaaxxaXAA",
+        "b"
+      ],
+      "removed": "xaXAA",
+      "signed_donor": "aaxAXXAAx"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "XAxaa",
+        "b"
+      ],
+      "removed": "xaaXAAXax",
+      "signed_donor": "XAxaa"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "b",
+        "xAxaaXX"
+      ],
+      "removed": "xaaxAAXaX",
+      "signed_donor": "xAxaaXX"
+    },
+    {
+      "old_linear_parts": [
+        [
+          3,
+          1
+        ]
+      ],
+      "remaining_pair": [
+        "YaBAyAB",
+        "ab"
+      ],
+      "removed": "xbaX",
+      "signed_donor": "ab"
+    },
+    {
+      "old_linear_parts": [
+        [
+          3,
+          1
+        ]
+      ],
+      "remaining_pair": [
+        "YaabyAB",
+        "ab"
+      ],
+      "removed": "xbaX",
+      "signed_donor": "ab"
+    },
+    {
+      "old_linear_parts": [
+        [
+          3,
+          1
+        ]
+      ],
+      "remaining_pair": [
+        "YayBAAB",
+        "ab"
+      ],
+      "removed": "xbaX",
+      "signed_donor": "ab"
+    },
+    {
+      "old_linear_parts": [
+        [
+          3,
+          1
+        ]
+      ],
+      "remaining_pair": [
+        "YayabAB",
+        "ab"
+      ],
+      "removed": "xbaX",
+      "signed_donor": "ab"
+    },
+    {
+      "old_linear_parts": [
+        [
+          3,
+          1
+        ]
+      ],
+      "remaining_pair": [
+        "ab",
+        "yaBAYAB"
+      ],
+      "removed": "xbaX",
+      "signed_donor": "ab"
+    },
+    {
+      "old_linear_parts": [
+        [
+          3,
+          1
+        ]
+      ],
+      "remaining_pair": [
+        "ab",
+        "yaYBAAB"
+      ],
+      "removed": "xbaX",
+      "signed_donor": "ab"
+    },
+    {
+      "old_linear_parts": [
+        [
+          3,
+          1
+        ]
+      ],
+      "remaining_pair": [
+        "ab",
+        "yaYabAB"
+      ],
+      "removed": "xbaX",
+      "signed_donor": "ab"
+    },
+    {
+      "old_linear_parts": [
+        [
+          3,
+          1
+        ]
+      ],
+      "remaining_pair": [
+        "ab",
+        "yaabYAB"
+      ],
+      "removed": "xbaX",
+      "signed_donor": "ab"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "aaxxaXAAX",
+        "b"
+      ],
+      "removed": "xxaXAAX",
+      "signed_donor": "xaaxAXXAA"
+    },
+    {
+      "old_linear_parts": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "remaining_pair": [
+        "b",
+        "xaXaxxaXAxAXX"
+      ],
+      "removed": "xxaXAxAXX",
+      "signed_donor": "xxaXaxAXXAxAX"
+    }
+  ],
+  "terminal_templates_traced": 852,
+  "trace_layers": [
+    {
+      "old_linear_parts": [
+        1,
+        2
+      ],
+      "symbolic_layer_widths": [
+        2,
+        41,
+        137,
+        267,
+        590,
+        624,
+        786
+      ],
+      "trace_count": 1270
+    },
+    {
+      "old_linear_parts": [
+        1,
+        3
+      ],
+      "symbolic_layer_widths": [
+        2,
+        40,
+        130,
+        263,
+        582,
+        616,
+        776
+      ],
+      "trace_count": 1260
+    },
+    {
+      "old_linear_parts": [
+        3,
+        1
+      ],
+      "symbolic_layer_widths": [
+        2,
+        38,
+        107,
+        182,
+        376,
+        368,
+        466
+      ],
+      "trace_count": 742
+    }
+  ]
+}

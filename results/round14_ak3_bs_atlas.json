@@ -1,0 +1,64 @@
+{
+  "atlas_max_cyclic_word_length": 31,
+  "atlas_word_length_histogram": {
+    "5": 1,
+    "6": 1,
+    "7": 1,
+    "8": 1,
+    "9": 2,
+    "10": 1,
+    "11": 3,
+    "12": 2,
+    "13": 3,
+    "14": 2,
+    "15": 5,
+    "16": 2,
+    "17": 6,
+    "18": 3,
+    "19": 4,
+    "20": 4,
+    "21": 8,
+    "22": 3,
+    "23": 9,
+    "24": 4,
+    "25": 6,
+    "26": 5,
+    "27": 11,
+    "28": 4,
+    "29": 10,
+    "30": 6,
+    "31": 9
+  },
+  "atlas_tsv_sha256": "70ca8ca036b37859fa2c23cd384340c40be9c6cf30979652fa65967052ddce12",
+  "complete_compacted_first_exit_scan": {
+    "atlas_classes": 116,
+    "atlas_marked_keys": 920,
+    "seed_records_checked": 1258633777,
+    "complete": true,
+    "hit": null
+  },
+  "native_positive_control": {
+    "atlas_classes": 116,
+    "atlas_marked_keys": 920,
+    "seed_records_checked": 1,
+    "complete": false,
+    "hit": {
+      "child": [
+        "xxyXY",
+        "xyXYY"
+      ],
+      "anchor": [
+        "xxyXY",
+        "xyXYY"
+      ]
+    }
+  },
+  "positive_control_strict_replay": {
+    "moves": 26,
+    "raw_peak": 12,
+    "target": [
+      "x",
+      "y"
+    ]
+  }
+}

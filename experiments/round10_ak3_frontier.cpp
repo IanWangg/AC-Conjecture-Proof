@@ -283,28 +283,103 @@ struct ExpansionWorker {
     std::unordered_map<Pair, uint32_t, Hash> discovered;
 };
 
+class OrbitMembership {
+    std::unordered_set<Pair, Hash> nodes;
+    std::vector<Pair> slots;
+    size_t used = 0;
+
+    size_t position(const Pair& state) const {
+        const size_t mask = slots.size() - 1;
+        // The original hash is used with prime-sized tables. Mix the entire key
+        // before masking, since adjacent packed words have correlated low bits.
+        Code hash = Hash{}(state);
+        hash = (hash ^ (hash >> 30)) * 0xbf58476d1ce4e5b9ULL;
+        hash = (hash ^ (hash >> 27)) * 0x94d049bb133111ebULL;
+        auto index = (hash ^ (hash >> 31)) & mask;
+        while (slots[index].first && slots[index] != state) index = (index + 1) & mask;
+        return index;
+    }
+
+public:
+    explicit OrbitMembership(unsigned capacity_bits) {
+        if (capacity_bits) slots.resize(size_t(1) << capacity_bits);
+    }
+
+    void reserve(size_t count) {
+        if (slots.empty()) nodes.reserve(count);
+    }
+
+    bool insert(const Pair& state) {
+        if (slots.empty()) return nodes.insert(state).second;
+        const auto index = position(state);
+        if (slots[index].first) return false;
+        if (used >= slots.size() * 4 / 5)
+            throw std::runtime_error("flat orbit catalogue reached its load limit");
+        slots[index] = state;
+        ++used;
+        return true;
+    }
+
+    bool count(const Pair& state) const {
+        return slots.empty() ? nodes.count(state) != 0 : slots[position(state)].first != 0;
+    }
+
+    size_t size() const { return slots.empty() ? nodes.size() : used; }
+};
+
 int expand(unsigned cap, unsigned workers, const std::string& source, const std::string& prefix,
-           uint64_t limit, int count, char** files) {
-    std::ifstream input(source);
-    if (!input) throw std::runtime_error("unable to open lower catalogue");
-    std::unordered_set<Pair, Hash> known;
-    known.reserve(std::filesystem::file_size(source) / cap);
-    std::string line;
-    while (std::getline(input, line)) if (!known.insert(read_pair(line, cap - 1)).second)
-        throw std::runtime_error("duplicate lower state");
-    if (input.bad() || known.empty()) throw std::runtime_error("empty or unreadable lower catalogue");
+           uint64_t limit, int count, char** files, unsigned known_bits = 0, unsigned outside_bits = 0) {
+    std::vector<std::string> sources;
+    if (known_bits && !source.empty() && source.front() == '@') {
+        std::ifstream manifest(source.substr(1));
+        for (std::string path; std::getline(manifest, path);) {
+            if (path.empty()) throw std::runtime_error("empty entry in lower catalogue manifest");
+            sources.push_back(std::move(path));
+        }
+        if (manifest.bad() || sources.empty()) throw std::runtime_error("invalid lower catalogue manifest");
+    } else {
+        sources.push_back(source);
+    }
+    OrbitMembership known(known_bits);
+    if (!known_bits) {
+        uint64_t bytes = 0;
+        for (const auto& path : sources) bytes += std::filesystem::file_size(path);
+        known.reserve(bytes / cap);
+    }
+    for (const auto& path : sources) {
+        std::ifstream input(path);
+        if (!input) throw std::runtime_error("unable to open lower catalogue");
+        for (std::string line; std::getline(input, line);)
+            if (!known.insert(read_pair(line, cap - 1))) throw std::runtime_error("duplicate lower state");
+        if (input.bad()) throw std::runtime_error("unreadable lower catalogue");
+    }
+    if (!known.size()) throw std::runtime_error("empty lower catalogue union");
+    if (known_bits) std::cerr << "loaded " << known.size() << " lower orbits\n";
     std::vector<Pair> states, anchors;
     std::vector<uint32_t> parents;
-    std::unordered_set<Pair, Hash> outside;
+    std::vector<uint64_t> seed_ends;
+    OrbitMembership outside(outside_bits);
+    if (outside_bits) {
+        uint64_t records = 0;
+        for (int i = 0; i < count; ++i) {
+            const auto bytes = std::filesystem::file_size(files[i]);
+            if (bytes % sizeof(Record)) throw std::runtime_error("truncated compact seed file");
+            records += bytes / sizeof(Record);
+            seed_ends.push_back(records);
+        }
+        if (records >= no_parent) throw std::runtime_error("compact seed count exceeds the ancestry index");
+        const auto reserve = std::min<uint64_t>(no_parent - 1, records + records / 16);
+        states.reserve(reserve);
+    }
     std::map<unsigned, uint64_t> histogram;
     PrimitiveScan primitiveness;
     uint32_t primitive_node = no_parent;
     auto add = [&](const Pair& state, uint32_t parent) {
-        if (!outside.insert(state).second) return false;
+        if (!outside.insert(state)) return false;
         if (states.size() == no_parent) throw std::runtime_error("frontier state index exhausted");
         const uint32_t index = states.size();
         states.push_back(state);
-        parents.push_back(parent);
+        if (parent != no_parent) parents.push_back(parent);
         ++histogram[energy(state)];
         if (primitive_node == no_parent && primitiveness.test(state)) primitive_node = index;
         return true;
@@ -318,12 +393,17 @@ int expand(unsigned cap, unsigned workers, const std::string& source, const std:
             const Pair child{raw[0], raw[1]}, parent{raw[2], raw[3]};
             if (!child.first || !child.second || energy(child) != cap || !known.count(parent))
                 throw std::runtime_error("boundary record is outside scope");
-            if (add(child, no_parent)) anchors.push_back(parent);
+            const bool inserted = add(child, no_parent);
+            if (outside_bits && !inserted) throw std::runtime_error("flat expansion needs distinct compact seeds");
+            if (!outside_bits && inserted) anchors.push_back(parent);
             ++total_seed_records;
         }
         if (!records.eof() || records.gcount()) throw std::runtime_error("truncated boundary file");
     }
     const auto seed_count = states.size();
+    if (outside_bits && seed_count != seed_ends.back())
+        throw std::runtime_error("compact seed counts disagree");
+    if (outside_bits) std::cerr << "loaded " << seed_count << " compact seeds\n";
     std::vector<ExpansionWorker> locals(workers);
     std::size_t at = 0;
     const auto& membership = outside;
@@ -338,6 +418,8 @@ int expand(unsigned cap, unsigned workers, const std::string& source, const std:
                     if (from >= end) return;
                     for (auto index = from; index < std::min(from + block, end); ++index) {
                         const auto [a, b] = states[index];
+                        if (cap - std::min(length(a), length(b)) > 31)
+                            throw std::runtime_error("outward product exceeds packed coordinate width");
                         local.menu.scan_pair(a, b, cap, [&](const auto& product, const auto& donor) {
                             const auto candidate = ak3_wide::least_image(product, donor);
                             if ((energy(candidate) < cap && known.count(candidate)) || membership.count(candidate)) return;
@@ -360,15 +442,27 @@ int expand(unsigned cap, unsigned workers, const std::string& source, const std:
         if (!(at % (window * 8)) || at == states.size() || at == limit)
             std::cerr << "outward rows " << at << ", discovered " << states.size() << '\n';
     }
+    auto seed_anchor = [&](uint32_t index) {
+        if (!outside_bits) return anchors.at(index);
+        const auto file = std::upper_bound(seed_ends.begin(), seed_ends.end(), index) - seed_ends.begin();
+        const auto base = file ? seed_ends[file - 1] : 0;
+        std::ifstream input(files[file], std::ios::binary);
+        input.seekg((index - base) * sizeof(Record));
+        Record record{};
+        if (!input.read(reinterpret_cast<char*>(record.data()), sizeof(Record))
+            || Pair{record[0], record[1]} != states[index])
+            throw std::runtime_error("could not retrieve compact seed anchor");
+        return Pair{record[2], record[3]};
+    };
     auto route = [&](uint32_t index, const std::string& name) {
         std::vector<Pair> steps;
         for (;;) {
             steps.push_back(states[index]);
-            if (parents[index] == no_parent) break;
-            index = parents[index];
+            if (index < seed_count) break;
+            index = parents.at(index - seed_count);
         }
         std::reverse(steps.begin(), steps.end());
-        write_anchored_route(prefix + name, cap, anchors.at(index), steps);
+        write_anchored_route(prefix + name, cap, seed_anchor(index), steps);
     };
     if (primitive_node != no_parent) route(primitive_node, ".primitive.route.json");
     if (!states.empty()) {
@@ -377,8 +471,19 @@ int expand(unsigned cap, unsigned workers, const std::string& source, const std:
     }
     std::ofstream ledger(prefix + ".outside.parents.bin", std::ios::binary);
     if (!ledger) throw std::runtime_error("unable to write expansion ledger");
-    for (std::size_t index = 0; index < states.size(); ++index)
-        write_edge(ledger, states[index], index < seed_count ? anchors[index] : states[parents[index]]);
+    if (outside_bits) {
+        for (int i = 0; i < count; ++i) {
+            if (seed_ends[i] == (i ? seed_ends[i - 1] : 0)) continue;
+            std::ifstream seeds(files[i], std::ios::binary);
+            ledger << seeds.rdbuf();
+            if (!seeds || !ledger) throw std::runtime_error("could not copy compact seed anchors");
+        }
+    } else {
+        for (std::size_t index = 0; index < seed_count; ++index)
+            write_edge(ledger, states[index], anchors[index]);
+    }
+    for (std::size_t index = seed_count; index < states.size(); ++index)
+        write_edge(ledger, states[index], states[parents.at(index - seed_count)]);
     ledger.close();
     std::sort(states.begin(), states.end(), wide_orbits::catalogue_order);
     std::ofstream output(prefix + ".outside.tsv");
@@ -412,7 +517,7 @@ int expand(unsigned cap, unsigned workers, const std::string& source, const std:
 int main(int argc, char** argv) {
     try {
         if (argc < 8)
-            throw std::runtime_error("usage: frontier seed cap workers lower.tsv prefix row-limit byte-offset [audit]; frontier expand cap workers lower.tsv prefix row-limit boundary.bin ...");
+            throw std::runtime_error("usage: frontier seed cap workers lower.tsv prefix row-limit byte-offset [audit]; frontier expand cap workers lower.tsv prefix row-limit boundary.bin ...; frontier expand-flat cap workers lower.tsv-or-@manifest prefix row-limit lower-bits outside-bits boundary.bin ...");
         const unsigned cap = std::stoul(argv[2]), workers = std::stoul(argv[3]);
         if (cap < 14 || cap > 33 || !workers) throw std::runtime_error("need cap 14–33 and at least one worker");
         const auto limit = std::stoull(argv[6]);
@@ -420,6 +525,13 @@ int main(int argc, char** argv) {
             return frontier::seeds(cap, workers, argv[4], argv[5], limit, std::stoull(argv[7]), argc == 9);
         if (std::string_view(argv[1]) == "expand" && cap <= 32)
             return frontier::expand(cap, workers, argv[4], argv[5], limit, argc - 7, argv + 7);
+        if (std::string_view(argv[1]) == "expand-flat" && argc >= 10) {
+            const unsigned known_bits = std::stoul(argv[7]), outside_bits = std::stoul(argv[8]);
+            if (!known_bits || !outside_bits || known_bits > 32 || outside_bits > 32)
+                throw std::runtime_error("flat catalogue capacity exponents must be 1–32");
+            return frontier::expand(cap, workers, argv[4], argv[5], limit, argc - 9, argv + 9,
+                                    known_bits, outside_bits);
+        }
         throw std::runtime_error("unrecognized frontier command");
     } catch (const std::exception& error) {
         std::cerr << error.what() << '\n';
