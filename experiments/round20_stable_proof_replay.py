@@ -11,7 +11,7 @@ from round09_stable_proof_lift_excursion import signed_rows
 from round15_stable_proof_splice import align, statistics
 
 
-def lift_route(start, route):
+def lift_route(start, route, *, require_isolated=True):
     states = {tuple(map(canonical, start)): []}
     assert tuple(sorted(next(iter(states)))) in signed_rows(route[0])
     for orbit in route[1:]:
@@ -31,13 +31,13 @@ def lift_route(start, route):
                     next_states[endpoint] = candidate
         assert next_states
         states = next_states
-    isolated = [
+    eligible = [
         (len(moves), rows, moves)
         for rows, moves in states.items()
-        if "Z" in rows and sum("z" in word.lower() for word in rows) == 1
+        if "Z" in rows and (not require_isolated or sum("z" in word.lower() for word in rows) == 1)
     ]
-    assert isolated
-    _, rows, moves = min(isolated, key=lambda entry: entry[:2])
+    assert eligible
+    _, rows, moves = min(eligible, key=lambda entry: entry[:2])
     return rows, moves
 
 

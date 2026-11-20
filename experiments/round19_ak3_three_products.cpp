@@ -2,6 +2,7 @@
 #define AC_ROUND18_TWO_PRODUCTS_LIBRARY
 #include "round18_ak3_two_products.cpp"
 
+#include <limits>
 #include <set>
 #include <unordered_set>
 
@@ -26,6 +27,12 @@ class Equation {
     std::map<std::pair<string,string>,Menu> cached_menus;
     size_t cached_products = 0;
     Counters& counts;
+    const size_t max_rejected;
+    const bool rooted_contractions;
+
+    void remember_negative(string key) {
+        if (rejected.size() < max_rejected) rejected.emplace(std::move(key));
+    }
 
     const Menu& menu(const string& a, const string& b) {
         auto [it,added] = cached_menus.try_emplace(std::pair{a,b});
@@ -47,7 +54,7 @@ class Equation {
             case 0: return "{\"kind\":\"empty\"}";
             case 1: return {};
             case 2:
-                return canonical(words[0]) == canonical(inverse(words[1]))
+                return (rooted_contractions ? words[0] : canonical(words[0])) == canonical(inverse(words[1]))
                      ? "{\"kind\":\"pair\"}" : "";
             case 3: {
                 const auto target = canonical(inverse(words[2]));
@@ -78,12 +85,18 @@ class Equation {
         }
     }
 
-    static std::map<string,Split> contact_menu(const string& a, const string& b) {
+    static std::map<string,Split> contact_menu(const string& a, const string& b,
+                                               std::optional<size_t> at_a = {},
+                                               std::optional<size_t> at_b = {}) {
         std::map<string,Split> out;
         const auto aa = a+a, bb = b+b;
-        for (size_t i=0; i<a.size(); ++i) {
+        const size_t a_cut = at_a ? (*at_a+1)%a.size() : 0;
+        const size_t b_cut = at_b.value_or(0);
+        const size_t a_end = at_a ? a_cut+1 : a.size();
+        const size_t b_end = at_b ? b_cut+1 : b.size();
+        for (size_t i=a_cut; i<a_end; ++i) {
             const auto left = string_view(aa).substr(i,a.size());
-            for (size_t j=0; j<b.size(); ++j) {
+            for (size_t j=b_cut; j<b_end; ++j) {
                 const auto right = string_view(bb).substr(j,b.size());
                 if (left.back() != invert(right.front())) continue;
                 const auto merged = canonical(product(left,right));
@@ -94,33 +107,111 @@ class Equation {
     }
 
 public:
-    explicit Equation(Counters& counts) : counts(counts) {}
+    explicit Equation(Counters& counts, size_t max_rejected = std::numeric_limits<size_t>::max(),
+                      bool rooted_contractions = false)
+        : counts(counts), max_rejected(max_rejected), rooted_contractions(rooted_contractions) {}
 
     string solve(const Words& words) {
+        if (!rooted_contractions) return solve_cycles(words);
+        auto cycles = words;
+        for (auto& word : cycles) word = canonical(word);
+        return solve_cycles(cycles);
+    }
+
+private:
+    string solve_cycles(const Words& words) {
+        // A rejected pair costs very little to recompute. Reserve the rooted
+        // rejection cache for states whose decision entails contractions.
+        if (rooted_contractions && words.size() <= 2) return terminal(words);
         auto sorted = words;
-        for (auto& word : sorted) word = canonical(word);
+        if (!rooted_contractions) for (auto& word : sorted) word = canonical(word);
         std::sort(sorted.begin(),sorted.end());
         string key;
         for (const auto& word : sorted) key += word + '\t';
         if (rejected.count(key)) { ++counts.memo_hits; return {}; }
-        if (words.size() <= 4) {
+        if (words.size() <= 4 && !rooted_contractions) {
             auto result = terminal(words);
-            if (result.empty()) rejected.emplace(std::move(key));
+            if (result.empty()) remember_negative(std::move(key));
             return result;
         }
 
+        size_t root = std::min_element(words.begin(), words.end(),
+            [](const string& a, const string& b) { return a.size() < b.size(); }) - words.begin();
+        std::optional<size_t> endpoint;
+        if (rooted_contractions) {
+            size_t least_partners = std::numeric_limits<size_t>::max();
+            constexpr string_view alphabet = "xXyY";
+            std::array<size_t,4> counts{};
+            for (const auto& word : words) for (const char letter : word) ++counts[alphabet.find(letter)];
+            for (size_t index=0; index<words.size(); ++index) {
+                const auto& word = words[index];
+                for (size_t position=0; position<word.size(); ++position) {
+                    const char inverse = invert(word[position]);
+                    const size_t total = counts[alphabet.find(inverse)];
+                    if (total >= least_partners || word.find(inverse) != string::npos) continue;
+                    least_partners = total;
+                    root = index;
+                    endpoint = position;
+                }
+            }
+            if (!endpoint) {
+                // Cutting along a self-arc would give a boundary segment
+                // whose exponent vector balances a subset of the other rows.
+                std::vector<std::pair<int,int>> vectors;
+                for (const auto& word : words) vectors.push_back(vector(word));
+                for (size_t index=0; index<words.size(); ++index) {
+                    std::vector<std::pair<int,int>> sums{{0,0}};
+                    for (size_t other=0; other<words.size(); ++other) if (other != index) {
+                        const auto [x,y] = vectors[other];
+                        const size_t size = sums.size();
+                        for (size_t i=0; i<size; ++i) sums.emplace_back(sums[i].first+x,sums[i].second+y);
+                        std::sort(sums.begin(),sums.end());
+                        sums.erase(std::unique(sums.begin(),sums.end()),sums.end());
+                    }
+                    const auto& word = words[index];
+                    for (size_t position=0; position<word.size(); ++position) {
+                        const char mate = invert(word[position]);
+                        const size_t partners = counts[alphabet.find(mate)]
+                            - std::count(word.begin(),word.end(),mate);
+                        if (partners >= least_partners) continue;
+                        int x = 0, y = 0;
+                        bool can_pair_on_boundary = false;
+                        for (size_t step=1; step<word.size(); ++step) {
+                            const char letter = word[(position+step)%word.size()];
+                            if (letter == mate && std::binary_search(sums.begin(),sums.end(),std::pair{-x,-y})) {
+                                can_pair_on_boundary = true;
+                                break;
+                            }
+                            x += (letter == 'x') - (letter == 'X');
+                            y += (letter == 'y') - (letter == 'Y');
+                        }
+                        if (!can_pair_on_boundary) {
+                            least_partners = partners;
+                            root = index;
+                            endpoint = position;
+                        }
+                    }
+                    if (least_partners == 0) break;
+                }
+            }
+        }
         std::set<std::pair<string,string>> tested_pairs;
         for (size_t i=0; i<words.size(); ++i) for (size_t j=i+1; j<words.size(); ++j) {
-            const auto first_class = canonical(words[i]), second_class = canonical(words[j]);
+            // Self-arcs at one boundary alone would be a noncrossing pairing
+            // on a disk, forcing an adjacent inverse pair on that boundary.
+            if (rooted_contractions && i != root && j != root) continue;
+            const auto first_class = rooted_contractions ? words[i] : canonical(words[i]);
+            const auto second_class = rooted_contractions ? words[j] : canonical(words[j]);
             const auto types = std::minmax(first_class,second_class);
             if (!tested_pairs.emplace(types.first,types.second).second) continue;
             auto rest = words;
             rest.erase(rest.begin()+j);
             rest.erase(rest.begin()+i);
-            for (const auto& [coefficient,witness] : contact_menu(words[i],words[j])) {
+            for (const auto& [coefficient,witness] : contact_menu(words[i],words[j],
+                    i == root ? endpoint : std::nullopt, j == root ? endpoint : std::nullopt)) {
                 ++counts.contractions;
                 if (!coefficient.empty()) rest.push_back(coefficient);
-                const auto child = solve(rest);
+                const auto child = solve_cycles(rest);
                 if (!child.empty())
                     return "{\"kind\":\"contract\",\"i\":" + std::to_string(i) + ",\"j\":"
                          + std::to_string(j) + ",\"merge\":" + triple(witness) + ",\"coefficient\":\""
@@ -128,7 +219,7 @@ public:
                 if (!coefficient.empty()) rest.pop_back();
             }
         }
-        rejected.emplace(std::move(key));
+        remember_negative(std::move(key));
         return {};
     }
 };

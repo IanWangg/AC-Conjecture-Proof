@@ -62,6 +62,7 @@ string random_cycle(std::mt19937& random, unsigned width) {
 }
 } // namespace
 
+#ifndef AC_ROUND19_PAIRING_LIBRARY
 int main() {
     std::mt19937 random(1905);
     std::cout << "[";
@@ -91,3 +92,4 @@ int main() {
     }
     std::cout << "]\n";
 }
+#endif

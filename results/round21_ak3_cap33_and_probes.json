@@ -1,0 +1,389 @@
+{
+  "cap33_additions_through_energy30": {
+    "source_sha256": "5b1e35a07c6490031ae498a762b229e8d2452c8f517dd0753de21384e5ca8709",
+    "arbitrary_tail_archive": {
+      "status": "NO_SUBGROUP_JOIN",
+      "forward_pairs": 718402,
+      "forward_distinct_words": 706244,
+      "forward_cap": 30,
+      "forward_minimum_coordinate": 6,
+      "reverse_pairs": 23902,
+      "reverse_rotation_pairs": 6230442,
+      "reverse_distinct_rotated_cores": 2675055,
+      "reverse_geodesic_bridges": 1409556,
+      "primitive_slopes_constructed": 10842566,
+      "coordinates_found_in_forward_catalogue": 2328582,
+      "basis_pair_lookups": 186971,
+      "core_topologies": {
+        "barbell": 1415640,
+        "rose": 861364,
+        "theta": 1807607
+      }
+    },
+    "simultaneous_ambient_archive": {
+      "archive_rows": 23902,
+      "archive_classes": 19771,
+      "forward_rows": 718402,
+      "forward_classes": 708820,
+      "matching_forward_rows": 0,
+      "first_join": null
+    },
+    "literal_planar_links": {
+      "source_sha256": "5b1e35a07c6490031ae498a762b229e8d2452c8f517dd0753de21384e5ca8709",
+      "rows": 718402,
+      "counts": {
+        "C4": 75,
+        "DIAMOND": 16302,
+        "K4": 702025,
+        "PARITY_OBSTRUCTION": 718402
+      },
+      "independently_verified_witness_equations": 1215264,
+      "exceptions": []
+    }
+  },
+  "cyclic_probes": {
+    "runs": [
+      {
+        "status": "HEURISTIC_RUN",
+        "ordinary_AC_goal_solved": false,
+        "primitive_coordinate_found": false,
+        "seed": 2101,
+        "attempts": 5931809,
+        "accepted_steps": 378804,
+        "stored_states": 350000,
+        "discarded_for_length": 5280827,
+        "minimum_coordinate_length": 6,
+        "minimum_cyclic_sum": 17,
+        "maximum_accepted_cyclic_sum": 46,
+        "heuristic_length_cap": 46,
+        "saved_path_edges": 175,
+        "saved_endpoint": [
+          "XXYXYXyyyxy",
+          "XXyyxY"
+        ],
+        "outside_literal_low30_rows": 349995
+      },
+      {
+        "status": "HEURISTIC_RUN",
+        "ordinary_AC_goal_solved": false,
+        "primitive_coordinate_found": false,
+        "seed": 2102,
+        "attempts": 5791940,
+        "accepted_steps": 374968,
+        "stored_states": 350000,
+        "discarded_for_length": 5140476,
+        "minimum_coordinate_length": 6,
+        "minimum_cyclic_sum": 17,
+        "maximum_accepted_cyclic_sum": 50,
+        "heuristic_length_cap": 50,
+        "saved_path_edges": 25,
+        "saved_endpoint": [
+          "XXyyxY",
+          "XXyXYXyyyXy"
+        ],
+        "outside_literal_low30_rows": 349997
+      },
+      {
+        "status": "HEURISTIC_RUN",
+        "ordinary_AC_goal_solved": false,
+        "primitive_coordinate_found": false,
+        "seed": 2103,
+        "attempts": 5724911,
+        "accepted_steps": 372339,
+        "stored_states": 350000,
+        "discarded_for_length": 5066623,
+        "minimum_coordinate_length": 6,
+        "minimum_cyclic_sum": 17,
+        "maximum_accepted_cyclic_sum": 54,
+        "heuristic_length_cap": 54,
+        "saved_path_edges": 400,
+        "saved_endpoint": [
+          "XXXyXyyyyXy",
+          "XXyyxY"
+        ],
+        "outside_literal_low30_rows": 349997
+      },
+      {
+        "status": "HEURISTIC_RUN",
+        "ordinary_AC_goal_solved": false,
+        "primitive_coordinate_found": false,
+        "seed": 2104,
+        "attempts": 5976114,
+        "accepted_steps": 378544,
+        "stored_states": 350000,
+        "discarded_for_length": 5327795,
+        "minimum_coordinate_length": 6,
+        "minimum_cyclic_sum": 17,
+        "maximum_accepted_cyclic_sum": 46,
+        "heuristic_length_cap": 46,
+        "saved_path_edges": 153,
+        "saved_endpoint": [
+          "XXXyXyyyyXy",
+          "XXyyxY"
+        ],
+        "outside_literal_low30_rows": 349994
+      },
+      {
+        "status": "HEURISTIC_RUN",
+        "ordinary_AC_goal_solved": false,
+        "primitive_coordinate_found": false,
+        "seed": 2105,
+        "attempts": 5812063,
+        "accepted_steps": 374930,
+        "stored_states": 350000,
+        "discarded_for_length": 5165197,
+        "minimum_coordinate_length": 6,
+        "minimum_cyclic_sum": 17,
+        "maximum_accepted_cyclic_sum": 50,
+        "heuristic_length_cap": 50,
+        "saved_path_edges": 296,
+        "saved_endpoint": [
+          "XXXyXyyyyXy",
+          "XXyyxY"
+        ],
+        "outside_literal_low30_rows": 349998
+      },
+      {
+        "status": "HEURISTIC_RUN",
+        "ordinary_AC_goal_solved": false,
+        "primitive_coordinate_found": false,
+        "seed": 2106,
+        "attempts": 5688582,
+        "accepted_steps": 372401,
+        "stored_states": 350000,
+        "discarded_for_length": 5033731,
+        "minimum_coordinate_length": 6,
+        "minimum_cyclic_sum": 17,
+        "maximum_accepted_cyclic_sum": 54,
+        "heuristic_length_cap": 54,
+        "saved_path_edges": 360,
+        "saved_endpoint": [
+          "XXYXYXyyyxy",
+          "XXyyxY"
+        ],
+        "outside_literal_low30_rows": 349999
+      },
+      {
+        "status": "HEURISTIC_RUN",
+        "ordinary_AC_goal_solved": false,
+        "primitive_coordinate_found": false,
+        "seed": 2107,
+        "attempts": 5987039,
+        "accepted_steps": 378948,
+        "stored_states": 350000,
+        "discarded_for_length": 5335216,
+        "minimum_coordinate_length": 6,
+        "minimum_cyclic_sum": 17,
+        "maximum_accepted_cyclic_sum": 46,
+        "heuristic_length_cap": 46,
+        "saved_path_edges": 73,
+        "saved_endpoint": [
+          "XYXYXyyyXyy",
+          "XXyyxY"
+        ],
+        "outside_literal_low30_rows": 349992
+      },
+      {
+        "status": "HEURISTIC_RUN",
+        "ordinary_AC_goal_solved": false,
+        "primitive_coordinate_found": false,
+        "seed": 2108,
+        "attempts": 5807953,
+        "accepted_steps": 374522,
+        "stored_states": 350000,
+        "discarded_for_length": 5160114,
+        "minimum_coordinate_length": 6,
+        "minimum_cyclic_sum": 17,
+        "maximum_accepted_cyclic_sum": 50,
+        "heuristic_length_cap": 50,
+        "saved_path_edges": 579,
+        "saved_endpoint": [
+          "XYXYXyyyXyy",
+          "XXyyxY"
+        ],
+        "outside_literal_low30_rows": 349999
+      },
+      {
+        "status": "HEURISTIC_RUN",
+        "ordinary_AC_goal_solved": false,
+        "primitive_coordinate_found": false,
+        "seed": 2109,
+        "attempts": 5694426,
+        "accepted_steps": 372211,
+        "stored_states": 350000,
+        "discarded_for_length": 5036988,
+        "minimum_coordinate_length": 6,
+        "minimum_cyclic_sum": 17,
+        "maximum_accepted_cyclic_sum": 54,
+        "heuristic_length_cap": 54,
+        "saved_path_edges": 4,
+        "saved_endpoint": [
+          "XYxyXyyXyXy",
+          "XXyyxY"
+        ],
+        "outside_literal_low30_rows": 349998
+      }
+    ],
+    "elite_two_products": {
+      "rows_checked": 524,
+      "complete": true,
+      "hit": null
+    },
+    "elite_primitive_subgroups": {
+      "status": "SELECTED_ENDPOINT_AUDIT",
+      "ordinary_AC_goal_solved": false,
+      "selected_pairs": 524,
+      "selected_pairs_processed": 524,
+      "distinct_based_graphs_decided": 523,
+      "primitive_subgroups_found": 0,
+      "incomplete_selected_decisions": 0,
+      "scope": "Selected heuristic endpoint subgroups only; no global obstruction"
+    },
+    "elite_partial_map_states": 46088
+  },
+  "subgroup_probes": {
+    "runs": [
+      {
+        "status": "HEURISTIC_H_SEARCH",
+        "ordinary_AC_goal_solved": false,
+        "hit": "",
+        "seed": 2121,
+        "attempts": 800000,
+        "admitted_boundary_graphs": 224747,
+        "stored_nodes": 54479,
+        "distinct_classified_graphs": 207401,
+        "known_catalogue_absence": 3910,
+        "DAG_absence": 203491,
+        "native_complete_absence": 0,
+        "native_incomplete": 0,
+        "native_pair_states": 0,
+        "known_trivial_H_union_keys": 22888,
+        "min_vertices": 13,
+        "maximum_boundary_cyclic_sum": 75,
+        "discarded_by_sampling_limits": 575253,
+        "saved_path_stages": 14
+      },
+      {
+        "status": "HEURISTIC_H_SEARCH",
+        "ordinary_AC_goal_solved": false,
+        "hit": "",
+        "seed": 2125,
+        "attempts": 800000,
+        "admitted_boundary_graphs": 218524,
+        "stored_nodes": 48203,
+        "distinct_classified_graphs": 202179,
+        "known_catalogue_absence": 3139,
+        "DAG_absence": 199040,
+        "native_complete_absence": 0,
+        "native_incomplete": 0,
+        "native_pair_states": 0,
+        "known_trivial_H_union_keys": 22888,
+        "min_vertices": 13,
+        "maximum_boundary_cyclic_sum": 79,
+        "discarded_by_sampling_limits": 581476,
+        "saved_path_stages": 26
+      },
+      {
+        "status": "HEURISTIC_H_SEARCH",
+        "ordinary_AC_goal_solved": false,
+        "hit": "",
+        "seed": 2129,
+        "attempts": 800000,
+        "admitted_boundary_graphs": 214852,
+        "stored_nodes": 48805,
+        "distinct_classified_graphs": 200622,
+        "known_catalogue_absence": 3594,
+        "DAG_absence": 197028,
+        "native_complete_absence": 0,
+        "native_incomplete": 0,
+        "native_pair_states": 0,
+        "known_trivial_H_union_keys": 22888,
+        "min_vertices": 13,
+        "maximum_boundary_cyclic_sum": 83,
+        "discarded_by_sampling_limits": 585148,
+        "saved_path_stages": 41
+      }
+    ],
+    "ambient_archive": {
+      "archive_rows": 23902,
+      "archive_classes": 19771,
+      "forward_rows": 65657,
+      "forward_classes": 65429,
+      "matching_forward_rows": 0,
+      "first_join": null
+    },
+    "two_products_at_shortest_5000_without_short_donor": {
+      "rows_checked": 5000,
+      "complete": true,
+      "hit": null
+    },
+    "signed_through33_without_short_donor": {
+      "orbits": 1151,
+      "row_sha256": "ad8332971a022b120f7bd2c3ac7169ee93b55708cd99cb0e5eaa3e89433e9839",
+      "found_in_old_cap32": 0,
+      "found_in_cap33_additions": 1151,
+      "new_outside_generated_cap33": 0
+    }
+  },
+  "independent_cap33_preallocation": {
+    "expected_orbits": 1858329806,
+    "packed_row_bytes": 16,
+    "flat_index_slots": 2147483648,
+    "bytes_per_index_slot": 4,
+    "bytes_per_component_parent": 4,
+    "cutoff_gib": 54,
+    "control": {
+      "status": "NEW_ORBITS_CLOSED_AND_ATTACHED",
+      "cyclic_cap": 22,
+      "signed_permutation_orbits": 32363,
+      "lower_orbits_assumed_connected": 18118,
+      "new_orbits_checked": 14245,
+      "first_exit_seeds_checked": 13164,
+      "old_orbits_boundary_checked": 18118,
+      "old_rotation_product_candidates": 13004928,
+      "old_first_exit_admitted_products": 197002,
+      "rotation_product_candidates": 11215112,
+      "admitted_neighbors": 384302
+    },
+    "row_overflow_rejected": "catalogue exceeds preallocated row count",
+    "row_underflow_rejected": "catalogue row count differs from preallocated count",
+    "stop": {
+      "reason": "research_paused_after_round21",
+      "last_logged_loaded_rows": 1680555831,
+      "sampled_peak_rss_kib": 35399648,
+      "complete": false
+    }
+  },
+  "ordinary_comparison_to_twenty_stable_ends": {
+    "targets": 20,
+    "local_moves": [
+      23,
+      29,
+      30,
+      35,
+      35,
+      37,
+      40,
+      41,
+      42,
+      43,
+      47,
+      49,
+      50,
+      52,
+      53,
+      62,
+      68,
+      74,
+      76,
+      92
+    ],
+    "local_cyclic_peak_histogram": {
+      "22": 11,
+      "28": 9
+    },
+    "full_cyclic_peak": 33,
+    "full_minimum_moves": 902,
+    "full_maximum_moves": 971
+  }
+}

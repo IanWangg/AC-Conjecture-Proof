@@ -1,0 +1,355 @@
+{
+  "AAB": {
+    "native_spheres": {
+      "rows": 1,
+      "sign_histories": 32,
+      "equations": 14,
+      "witnesses": 10
+    },
+    "strict_control": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "XyxYxYY",
+        "yXYxy"
+      ],
+      "target": [
+        "x",
+        "y"
+      ],
+      "moves": [
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        }
+      ]
+    },
+    "replay": {
+      "moves": 16,
+      "peak_total_length": 13,
+      "endpoint": [
+        "x",
+        "y"
+      ],
+      "cyclic_peak": 12,
+      "products": 4
+    }
+  },
+  "ABA": {
+    "native_spheres": {
+      "rows": 1,
+      "sign_histories": 32,
+      "equations": 20,
+      "witnesses": 12
+    },
+    "strict_control": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "YxyxY",
+        "yXYXyx"
+      ],
+      "target": [
+        "x",
+        "y"
+      ],
+      "moves": [
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        }
+      ]
+    },
+    "replay": {
+      "moves": 18,
+      "peak_total_length": 11,
+      "endpoint": [
+        "x",
+        "y"
+      ],
+      "cyclic_peak": 11,
+      "products": 4
+    }
+  },
+  "ABB": {
+    "native_spheres": {
+      "rows": 1,
+      "sign_histories": 32,
+      "equations": 16,
+      "witnesses": 8
+    },
+    "strict_control": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "yxYxy",
+        "yXyxYx"
+      ],
+      "target": [
+        "x",
+        "y"
+      ],
+      "moves": [
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "x"
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "x"
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "x"
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        }
+      ]
+    },
+    "replay": {
+      "moves": 20,
+      "peak_total_length": 11,
+      "endpoint": [
+        "x",
+        "y"
+      ],
+      "cyclic_peak": 11,
+      "products": 4
+    }
+  }
+}

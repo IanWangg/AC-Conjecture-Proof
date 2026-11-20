@@ -1,0 +1,251 @@
+{
+  "characteristic": 2,
+  "depth": 6,
+  "normalized_weight_one": [
+    -1,
+    1,
+    1
+  ],
+  "class_three_cases_tested": 4096,
+  "remaining_absolute_exponents": [
+    1,
+    2,
+    3,
+    6
+  ],
+  "weight_three_words": [
+    "uvUVuvuVUU",
+    "uvUvuVUV",
+    "uvUVwvuVUW",
+    "uwUWuwuWUU",
+    "uwUWvwuWUV",
+    "uwUwuWUW",
+    "vwVWvwvWVV",
+    "vwVwvWVW"
+  ],
+  "exponent_residue_rows": {
+    "2": [
+      {
+        "weight_two": [
+          0,
+          0,
+          0
+        ],
+        "conjugator_column_rank": 972,
+        "joint_column_rank": 988,
+        "weight_three_condition": {
+          "count": 0
+        }
+      },
+      {
+        "weight_two": [
+          0,
+          0,
+          1
+        ],
+        "conjugator_column_rank": 972,
+        "joint_column_rank": 988,
+        "weight_three_condition": {
+          "count": 0
+        }
+      },
+      {
+        "weight_two": [
+          0,
+          1,
+          0
+        ],
+        "conjugator_column_rank": 972,
+        "joint_column_rank": 988,
+        "weight_three_condition": {
+          "count": 0
+        }
+      },
+      {
+        "weight_two": [
+          0,
+          1,
+          1
+        ],
+        "conjugator_column_rank": 972,
+        "joint_column_rank": 988,
+        "weight_three_condition": {
+          "count": 0
+        }
+      },
+      {
+        "weight_two": [
+          1,
+          0,
+          0
+        ],
+        "conjugator_column_rank": 972,
+        "joint_column_rank": 988,
+        "weight_three_condition": {
+          "count": 0
+        }
+      },
+      {
+        "weight_two": [
+          1,
+          0,
+          1
+        ],
+        "conjugator_column_rank": 972,
+        "joint_column_rank": 988,
+        "weight_three_condition": {
+          "count": 128,
+          "weight_three_bitmask": 54,
+          "parity": 0
+        }
+      },
+      {
+        "weight_two": [
+          1,
+          1,
+          0
+        ],
+        "conjugator_column_rank": 972,
+        "joint_column_rank": 988,
+        "weight_three_condition": {
+          "count": 0
+        }
+      },
+      {
+        "weight_two": [
+          1,
+          1,
+          1
+        ],
+        "conjugator_column_rank": 972,
+        "joint_column_rank": 988,
+        "weight_three_condition": {
+          "count": 128,
+          "weight_three_bitmask": 54,
+          "parity": 0
+        }
+      }
+    ],
+    "6": [
+      {
+        "weight_two": [
+          0,
+          0,
+          0
+        ],
+        "conjugator_column_rank": 972,
+        "joint_column_rank": 988,
+        "weight_three_condition": {
+          "count": 0
+        }
+      },
+      {
+        "weight_two": [
+          0,
+          0,
+          1
+        ],
+        "conjugator_column_rank": 972,
+        "joint_column_rank": 988,
+        "weight_three_condition": {
+          "count": 0
+        }
+      },
+      {
+        "weight_two": [
+          0,
+          1,
+          0
+        ],
+        "conjugator_column_rank": 972,
+        "joint_column_rank": 988,
+        "weight_three_condition": {
+          "count": 0
+        }
+      },
+      {
+        "weight_two": [
+          0,
+          1,
+          1
+        ],
+        "conjugator_column_rank": 972,
+        "joint_column_rank": 988,
+        "weight_three_condition": {
+          "count": 0
+        }
+      },
+      {
+        "weight_two": [
+          1,
+          0,
+          0
+        ],
+        "conjugator_column_rank": 972,
+        "joint_column_rank": 988,
+        "weight_three_condition": {
+          "count": 0
+        }
+      },
+      {
+        "weight_two": [
+          1,
+          0,
+          1
+        ],
+        "conjugator_column_rank": 972,
+        "joint_column_rank": 988,
+        "weight_three_condition": {
+          "count": 128,
+          "weight_three_bitmask": 54,
+          "parity": 0
+        }
+      },
+      {
+        "weight_two": [
+          1,
+          1,
+          0
+        ],
+        "conjugator_column_rank": 972,
+        "joint_column_rank": 988,
+        "weight_three_condition": {
+          "count": 0
+        }
+      },
+      {
+        "weight_two": [
+          1,
+          1,
+          1
+        ],
+        "conjugator_column_rank": 972,
+        "joint_column_rank": 988,
+        "weight_three_condition": {
+          "count": 128,
+          "weight_three_bitmask": 54,
+          "parity": 0
+        }
+      }
+    ]
+  },
+  "positive_control": {
+    "v": "UvwuvUVvwVWuvUwVWvuVUwvWV",
+    "conjugator": "uwUW",
+    "exponent": 6,
+    "scan": {
+      "weight_two": [
+        1,
+        0,
+        1
+      ],
+      "conjugator_column_rank": 972,
+      "joint_column_rank": 988,
+      "weight_three_condition": {
+        "count": 128,
+        "weight_three_bitmask": 54,
+        "parity": 0
+      }
+    }
+  }
+}

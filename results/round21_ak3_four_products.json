@@ -1,0 +1,391 @@
+{
+  "source_sha256": "ebc69ce5a21625ec14a2f03fef0d96049ede23d5b7b9aca3fb9b9b944461077c",
+  "source_rows": 9,
+  "scope": "all three switched histories, arbitrary free conjugators",
+  "memo_limits": {
+    "AAB": 700000,
+    "ABA": 1200000,
+    "ABB": 700000
+  },
+  "independent_literal_ribbon_pairings": [
+    {
+      "boundaries": 7,
+      "positive": 3000,
+      "negative": 0,
+      "central_negative": true
+    },
+    {
+      "boundaries": 8,
+      "positive": 3000,
+      "negative": 0,
+      "central_negative": true
+    },
+    {
+      "boundaries": 9,
+      "positive": 3000,
+      "negative": 0,
+      "central_negative": true
+    }
+  ],
+  "independent_signed_history_census": {
+    "AAB": {
+      "rows": 9,
+      "sign_histories": 288,
+      "equations": 126,
+      "witnesses": 0
+    },
+    "ABA": {
+      "rows": 9,
+      "sign_histories": 288,
+      "equations": 180,
+      "witnesses": 0
+    },
+    "ABB": {
+      "rows": 9,
+      "sign_histories": 288,
+      "equations": 144,
+      "witnesses": 0
+    }
+  },
+  "production": {
+    "AAB": {
+      "mode": "AAB",
+      "rows": [
+        {
+          "source": [
+            "xxyXYY",
+            "xxxxYxYxYXY"
+          ],
+          "sign_histories": 32,
+          "equations": 14,
+          "contractions": 1212946,
+          "cached_negative": 328602,
+          "terminal": 679362,
+          "hits": []
+        },
+        {
+          "source": [
+            "xxyXYY",
+            "xxxxYxYYYxY"
+          ],
+          "sign_histories": 32,
+          "equations": 14,
+          "contractions": 3150146,
+          "cached_negative": 756611,
+          "terminal": 1924531,
+          "hits": []
+        },
+        {
+          "source": [
+            "xxyXYY",
+            "xxxyxYYXYXY"
+          ],
+          "sign_histories": 32,
+          "equations": 14,
+          "contractions": 133941,
+          "cached_negative": 5345,
+          "terminal": 82295,
+          "hits": []
+        },
+        {
+          "source": [
+            "xxyXYY",
+            "xxxYxxYXYXY"
+          ],
+          "sign_histories": 32,
+          "equations": 14,
+          "contractions": 1015998,
+          "cached_negative": 317994,
+          "terminal": 528922,
+          "hits": []
+        },
+        {
+          "source": [
+            "xxyXYY",
+            "xxxYxYYxYXY"
+          ],
+          "sign_histories": 32,
+          "equations": 14,
+          "contractions": 4024755,
+          "cached_negative": 945286,
+          "terminal": 2502223,
+          "hits": []
+        },
+        {
+          "source": [
+            "xxyXYY",
+            "xxyyXXYXYXy"
+          ],
+          "sign_histories": 32,
+          "equations": 14,
+          "contractions": 215953,
+          "cached_negative": 4234,
+          "terminal": 149268,
+          "hits": []
+        },
+        {
+          "source": [
+            "xxyXYY",
+            "xxYxYxYXyxY"
+          ],
+          "sign_histories": 32,
+          "equations": 14,
+          "contractions": 244421,
+          "cached_negative": 6842,
+          "terminal": 164057,
+          "hits": []
+        },
+        {
+          "source": [
+            "xxyXYY",
+            "xxYXYxYXyxy"
+          ],
+          "sign_histories": 32,
+          "equations": 14,
+          "contractions": 234366,
+          "cached_negative": 5113,
+          "terminal": 163556,
+          "hits": []
+        },
+        {
+          "source": [
+            "xxyXYY",
+            "xxYXYXyxYxY"
+          ],
+          "sign_histories": 32,
+          "equations": 14,
+          "contractions": 163197,
+          "cached_negative": 6343,
+          "terminal": 105145,
+          "hits": []
+        }
+      ]
+    },
+    "ABA": {
+      "mode": "ABA",
+      "rows": [
+        {
+          "source": [
+            "xxyXYY",
+            "xxxxYxYxYXY"
+          ],
+          "sign_histories": 32,
+          "equations": 20,
+          "contractions": 9957486,
+          "cached_negative": 636759,
+          "terminal": 6836525,
+          "hits": []
+        },
+        {
+          "source": [
+            "xxyXYY",
+            "xxxxYxYYYxY"
+          ],
+          "sign_histories": 32,
+          "equations": 20,
+          "contractions": 27459386,
+          "cached_negative": 1166284,
+          "terminal": 20280760,
+          "hits": []
+        },
+        {
+          "source": [
+            "xxyXYY",
+            "xxxyxYYXYXY"
+          ],
+          "sign_histories": 32,
+          "equations": 20,
+          "contractions": 3041504,
+          "cached_negative": 103536,
+          "terminal": 1997292,
+          "hits": []
+        },
+        {
+          "source": [
+            "xxyXYY",
+            "xxxYxxYXYXY"
+          ],
+          "sign_histories": 32,
+          "equations": 20,
+          "contractions": 7427531,
+          "cached_negative": 527525,
+          "terminal": 5034924,
+          "hits": []
+        },
+        {
+          "source": [
+            "xxyXYY",
+            "xxxYxYYxYXY"
+          ],
+          "sign_histories": 32,
+          "equations": 20,
+          "contractions": 31559663,
+          "cached_negative": 1972176,
+          "terminal": 22384921,
+          "hits": []
+        },
+        {
+          "source": [
+            "xxyXYY",
+            "xxyyXXYXYXy"
+          ],
+          "sign_histories": 32,
+          "equations": 20,
+          "contractions": 5589474,
+          "cached_negative": 82046,
+          "terminal": 4001076,
+          "hits": []
+        },
+        {
+          "source": [
+            "xxyXYY",
+            "xxYxYxYXyxY"
+          ],
+          "sign_histories": 32,
+          "equations": 20,
+          "contractions": 4052836,
+          "cached_negative": 118281,
+          "terminal": 2750666,
+          "hits": []
+        },
+        {
+          "source": [
+            "xxyXYY",
+            "xxYXYxYXyxy"
+          ],
+          "sign_histories": 32,
+          "equations": 20,
+          "contractions": 6135638,
+          "cached_negative": 99520,
+          "terminal": 4446027,
+          "hits": []
+        },
+        {
+          "source": [
+            "xxyXYY",
+            "xxYXYXyxYxY"
+          ],
+          "sign_histories": 32,
+          "equations": 20,
+          "contractions": 3417885,
+          "cached_negative": 114634,
+          "terminal": 2274893,
+          "hits": []
+        }
+      ]
+    },
+    "ABB": {
+      "mode": "ABB",
+      "rows": [
+        {
+          "source": [
+            "xxyXYY",
+            "xxxxYxYxYXY"
+          ],
+          "sign_histories": 32,
+          "equations": 16,
+          "contractions": 851208,
+          "cached_negative": 53593,
+          "terminal": 563008,
+          "hits": []
+        },
+        {
+          "source": [
+            "xxyXYY",
+            "xxxxYxYYYxY"
+          ],
+          "sign_histories": 32,
+          "equations": 16,
+          "contractions": 1911934,
+          "cached_negative": 85006,
+          "terminal": 1344062,
+          "hits": []
+        },
+        {
+          "source": [
+            "xxyXYY",
+            "xxxyxYYXYXY"
+          ],
+          "sign_histories": 32,
+          "equations": 16,
+          "contractions": 307010,
+          "cached_negative": 10827,
+          "terminal": 198936,
+          "hits": []
+        },
+        {
+          "source": [
+            "xxyXYY",
+            "xxxYxxYXYXY"
+          ],
+          "sign_histories": 32,
+          "equations": 16,
+          "contractions": 738687,
+          "cached_negative": 48732,
+          "terminal": 484995,
+          "hits": []
+        },
+        {
+          "source": [
+            "xxyXYY",
+            "xxxYxYYxYXY"
+          ],
+          "sign_histories": 32,
+          "equations": 16,
+          "contractions": 1973510,
+          "cached_negative": 125099,
+          "terminal": 1325746,
+          "hits": []
+        },
+        {
+          "source": [
+            "xxyXYY",
+            "xxyyXXYXYXy"
+          ],
+          "sign_histories": 32,
+          "equations": 16,
+          "contractions": 474408,
+          "cached_negative": 8024,
+          "terminal": 332023,
+          "hits": []
+        },
+        {
+          "source": [
+            "xxyXYY",
+            "xxYxYxYXyxY"
+          ],
+          "sign_histories": 32,
+          "equations": 16,
+          "contractions": 356935,
+          "cached_negative": 9662,
+          "terminal": 236786,
+          "hits": []
+        },
+        {
+          "source": [
+            "xxyXYY",
+            "xxYXYxYXyxy"
+          ],
+          "sign_histories": 32,
+          "equations": 16,
+          "contractions": 440913,
+          "cached_negative": 7700,
+          "terminal": 310198,
+          "hits": []
+        },
+        {
+          "source": [
+            "xxyXYY",
+            "xxYXYXyxYxY"
+          ],
+          "sign_histories": 32,
+          "equations": 16,
+          "contractions": 298807,
+          "cached_negative": 10124,
+          "terminal": 195630,
+          "hits": []
+        }
+      ]
+    }
+  }
+}

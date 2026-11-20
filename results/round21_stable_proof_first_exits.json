@@ -1,0 +1,457 @@
+{
+  "native": {
+    "38": {
+      "cap": 38,
+      "mixed": false,
+      "roots": 528,
+      "archive_keys": 22426,
+      "expanded": 15032,
+      "discovered": 18003,
+      "charted_expanded": 0,
+      "charted_discovered": 2971,
+      "projection_orbits": 20,
+      "isolated_projection_orbits": 11,
+      "candidates": 55023296,
+      "admitted": 901936,
+      "positive_bridges": 0,
+      "word_width_omissions": 0,
+      "excluded_short_donor_edges": 11008,
+      "closed": true,
+      "hit": null
+    },
+    "39": {
+      "cap": 39,
+      "mixed": false,
+      "roots": 528,
+      "archive_keys": 22426,
+      "expanded": 18272,
+      "discovered": 21387,
+      "charted_expanded": 0,
+      "charted_discovered": 3115,
+      "projection_orbits": 20,
+      "isolated_projection_orbits": 11,
+      "candidates": 67820928,
+      "admitted": 1072672,
+      "positive_bridges": 0,
+      "word_width_omissions": 0,
+      "excluded_short_donor_edges": 13472,
+      "closed": true,
+      "hit": null
+    }
+  },
+  "independent_chart_checks": {
+    "38": {
+      "chartless_energy_histogram": {
+        "33": 528,
+        "34": 48,
+        "35": 1296,
+        "36": 1008,
+        "37": 1968,
+        "38": 10184
+      },
+      "first_possible_positive_bridge_energy": 46,
+      "maximum_allowed_output_word_width": 16,
+      "projection_sha256": "62ff564cdddee8a641b1827b970a6a4131ca864979eb35507a23e550af1222dd",
+      "isolated_projection_sha256": "56336d504121a85719ba7799b5e7e3fb8c49a47620a1902ffcf0c7ad7ff99bef"
+    },
+    "39": {
+      "chartless_energy_histogram": {
+        "33": 528,
+        "34": 48,
+        "35": 1296,
+        "36": 1008,
+        "37": 1968,
+        "38": 10480,
+        "39": 2944
+      },
+      "first_possible_positive_bridge_energy": 46,
+      "maximum_allowed_output_word_width": 17,
+      "projection_sha256": "62ff564cdddee8a641b1827b970a6a4131ca864979eb35507a23e550af1222dd",
+      "isolated_projection_sha256": "56336d504121a85719ba7799b5e7e3fb8c49a47620a1902ffcf0c7ad7ff99bef"
+    }
+  },
+  "projection_orbits": 20,
+  "isolated_projection_orbits": 11,
+  "ordinary_comparison_orbits": 374,
+  "ordinary_cap22_independent_candidates": 265192,
+  "equals_energy_17_and_22_slices_of_ordinary_cap22": true,
+  "strict": [
+    {
+      "moves": 952,
+      "rank_peak": 3,
+      "raw_peak": 39,
+      "cyclic_peak": 38,
+      "final_words": [
+        "XXXXyXyyyXy",
+        "XXXXyxyXyXy"
+      ],
+      "sha256": "c73302a08a356611a94b3c4a7036340a65555bf7f3d5a9cb1c660c4cc0ffe769",
+      "signed_projection": [
+        "XXXXYXYXYxY",
+        "XXXXYXYYYXY"
+      ],
+      "isolated_first_chart": true,
+      "instructions_after_first_chart": 2,
+      "local_products": 4
+    },
+    {
+      "moves": 968,
+      "rank_peak": 3,
+      "raw_peak": 39,
+      "cyclic_peak": 38,
+      "final_words": [
+        "XXyXYxyXyXy",
+        "XXXXyxyXyXy"
+      ],
+      "sha256": "a6b675cc925c1cb2a45bdca2ad472bc25777de090178933b8381d27435d3e036",
+      "signed_projection": [
+        "XXXXYXYXYxY",
+        "XXYXYXYxyXY"
+      ],
+      "isolated_first_chart": true,
+      "instructions_after_first_chart": 2,
+      "local_products": 4
+    },
+    {
+      "moves": 994,
+      "rank_peak": 3,
+      "raw_peak": 39,
+      "cyclic_peak": 38,
+      "final_words": [
+        "XXXXyxyXyXy",
+        "XXyyxY"
+      ],
+      "sha256": "8454da1e9401bd51dfb7b6833563356dd066cfd7c151859ccb27169fb2743ad5",
+      "signed_projection": [
+        "XXXXYXYXYxY",
+        "XXyxYY"
+      ],
+      "isolated_first_chart": false,
+      "instructions_after_first_chart": 33,
+      "local_products": 4
+    },
+    {
+      "moves": 980,
+      "rank_peak": 3,
+      "raw_peak": 39,
+      "cyclic_peak": 38,
+      "final_words": [
+        "XXyXYXyyyXy",
+        "XXXXyXyyyXy"
+      ],
+      "sha256": "2d731110a371cb4e478d33f4dbfa59da15fbbe2a0ba5556525b9851cee3f62f3",
+      "signed_projection": [
+        "XXXXYXYYYXY",
+        "XXYXYYYXyXY"
+      ],
+      "isolated_first_chart": true,
+      "instructions_after_first_chart": 2,
+      "local_products": 5
+    },
+    {
+      "moves": 976,
+      "rank_peak": 3,
+      "raw_peak": 42,
+      "cyclic_peak": 38,
+      "final_words": [
+        "XXXXyXyyyXy",
+        "XXyyxY"
+      ],
+      "sha256": "d64398b5d24ee84d14cb7163ef5861ff45b07f79878f00fad9d50d217f96a5ed",
+      "signed_projection": [
+        "XXXXYXYYYXY",
+        "XXYYxy"
+      ],
+      "isolated_first_chart": false,
+      "instructions_after_first_chart": 31,
+      "local_products": 4
+    },
+    {
+      "moves": 963,
+      "rank_peak": 3,
+      "raw_peak": 44,
+      "cyclic_peak": 38,
+      "final_words": [
+        "XYXYXyyyXyy",
+        "XXyXYXyyyXy"
+      ],
+      "sha256": "d8b615e54bfaed24ed728071518911a8460b9faade27e5d5e59bee70062f863b",
+      "signed_projection": [
+        "XXXYXXYxYxY",
+        "XXXYXYYXYxY"
+      ],
+      "isolated_first_chart": true,
+      "instructions_after_first_chart": 2,
+      "local_products": 6
+    },
+    {
+      "moves": 962,
+      "rank_peak": 3,
+      "raw_peak": 40,
+      "cyclic_peak": 38,
+      "final_words": [
+        "XXYXYXyyyxy",
+        "XYXYXyyyXyy"
+      ],
+      "sha256": "8bff35ea1258e0c2b6f2c384ea9d5431a59e9caadd993622eb8b2571e73b16ea",
+      "signed_projection": [
+        "XXXYXXYxYxY",
+        "XXXyXYYxYxY"
+      ],
+      "isolated_first_chart": true,
+      "instructions_after_first_chart": 2,
+      "local_products": 7
+    },
+    {
+      "moves": 976,
+      "rank_peak": 3,
+      "raw_peak": 39,
+      "cyclic_peak": 38,
+      "final_words": [
+        "XYXYXyyyXyy",
+        "XYXYxyXyXyy"
+      ],
+      "sha256": "6fb64e2c258dcef49b20fe9adbb53683b547a6405177a6eef8246c7d88dd2625",
+      "signed_projection": [
+        "XXXYXXYxYxY",
+        "XXYxYxyXYXY"
+      ],
+      "isolated_first_chart": true,
+      "instructions_after_first_chart": 2,
+      "local_products": 6
+    },
+    {
+      "moves": 991,
+      "rank_peak": 3,
+      "raw_peak": 44,
+      "cyclic_peak": 38,
+      "final_words": [
+        "XYXYXyyyXyy",
+        "XXyyxY"
+      ],
+      "sha256": "e1b3d25713d351fa7738aa4c8ac55996cad5cb31a0b54e825b9169c7e52edf3f",
+      "signed_projection": [
+        "XXXYXXYxYxY",
+        "XXyxYY"
+      ],
+      "isolated_first_chart": false,
+      "instructions_after_first_chart": 31,
+      "local_products": 6
+    },
+    {
+      "moves": 998,
+      "rank_peak": 3,
+      "raw_peak": 44,
+      "cyclic_peak": 38,
+      "final_words": [
+        "XXyXYXyyyXy",
+        "XXyyxY"
+      ],
+      "sha256": "6d25b5d8c61e01b94b8ccc0a3801fba835c1b0be8f1205711daffe50e24d253e",
+      "signed_projection": [
+        "XXXYXYYXYxY",
+        "XXyxYY"
+      ],
+      "isolated_first_chart": false,
+      "instructions_after_first_chart": 31,
+      "local_products": 5
+    },
+    {
+      "moves": 965,
+      "rank_peak": 3,
+      "raw_peak": 39,
+      "cyclic_peak": 38,
+      "final_words": [
+        "XXyXYXyyyXy",
+        "XXyXYxyXyXy"
+      ],
+      "sha256": "46b7b9c23b37cfd11c6166c2689db1dbb7f95464215fcfc58ce464c75b24bf7b",
+      "signed_projection": [
+        "XXXYXYYXYxY",
+        "XYXYXYYXYxy"
+      ],
+      "isolated_first_chart": true,
+      "instructions_after_first_chart": 2,
+      "local_products": 5
+    },
+    {
+      "moves": 1014,
+      "rank_peak": 3,
+      "raw_peak": 39,
+      "cyclic_peak": 38,
+      "final_words": [
+        "XXYXYXyyyxy",
+        "XXyyxY"
+      ],
+      "sha256": "5d10a8e1ca6d98d65c8821c3d77680e4338220e9023775adcaa3a6e40f684474",
+      "signed_projection": [
+        "XXXYXyyxyxy",
+        "XXYxyy"
+      ],
+      "isolated_first_chart": false,
+      "instructions_after_first_chart": 33,
+      "local_products": 7
+    },
+    {
+      "moves": 983,
+      "rank_peak": 3,
+      "raw_peak": 39,
+      "cyclic_peak": 38,
+      "final_words": [
+        "XXYXYXyxxyy",
+        "XXYXYXyyyxy"
+      ],
+      "sha256": "d262393c2bc30383a8ef81680d5477ad0ab20eb2a4b5e914760f1651b4d05ed3",
+      "signed_projection": [
+        "XXXYXyyxyxy",
+        "XXyyxyxyXYY"
+      ],
+      "isolated_first_chart": true,
+      "instructions_after_first_chart": 2,
+      "local_products": 8
+    },
+    {
+      "moves": 983,
+      "rank_peak": 3,
+      "raw_peak": 39,
+      "cyclic_peak": 38,
+      "final_words": [
+        "XXYXYXyyyxy",
+        "XXYXYxyXyxy"
+      ],
+      "sha256": "eb6f657f78532a8f83d54047270497a6cdb7c7ce332fceef6282b1a2779ee78f",
+      "signed_projection": [
+        "XXXYXyyxyxy",
+        "XYXYYxyxYxy"
+      ],
+      "isolated_first_chart": true,
+      "instructions_after_first_chart": 2,
+      "local_products": 7
+    },
+    {
+      "moves": 986,
+      "rank_peak": 3,
+      "raw_peak": 44,
+      "cyclic_peak": 38,
+      "final_words": [
+        "XXyXYxyXyXy",
+        "XXyyxY"
+      ],
+      "sha256": "5bf381c26f896e4a6881a3be22d96c371851d38e17d43f9eebbf65c950e81d2c",
+      "signed_projection": [
+        "XXYXYXYxyXY",
+        "XXyxYY"
+      ],
+      "isolated_first_chart": false,
+      "instructions_after_first_chart": 31,
+      "local_products": 4
+    },
+    {
+      "moves": 951,
+      "rank_peak": 3,
+      "raw_peak": 44,
+      "cyclic_peak": 38,
+      "final_words": [
+        "XYXYxyXyXyy",
+        "XXyXYxyXyXy"
+      ],
+      "sha256": "177c30ca5e7a5ba7546cfccf1c573bc2c5abfa49a4346cbb7be648c9634c2cc7",
+      "signed_projection": [
+        "XXYXYXYxyXY",
+        "XYXYxyXyXYY"
+      ],
+      "isolated_first_chart": true,
+      "instructions_after_first_chart": 2,
+      "local_products": 5
+    },
+    {
+      "moves": 979,
+      "rank_peak": 3,
+      "raw_peak": 44,
+      "cyclic_peak": 38,
+      "final_words": [
+        "XYXYxyXyXyy",
+        "XXyyxY"
+      ],
+      "sha256": "94869b30312720cab958f5ba980cd042e02ddf60f5427743459f49a553c5b76c",
+      "signed_projection": [
+        "XXYXYXyxYxY",
+        "XXYYxy"
+      ],
+      "isolated_first_chart": false,
+      "instructions_after_first_chart": 31,
+      "local_products": 5
+    },
+    {
+      "moves": 950,
+      "rank_peak": 3,
+      "raw_peak": 40,
+      "cyclic_peak": 38,
+      "final_words": [
+        "XXYXYxyXyxy",
+        "XYXYxyXyXyy"
+      ],
+      "sha256": "35c737085db2fabfc2bf8eb51a9156ad6333d121937ebcb30cb5fe87d50b2d9c",
+      "signed_projection": [
+        "XXYXYXyxYxY",
+        "XYXyxYxYYXy"
+      ],
+      "isolated_first_chart": true,
+      "instructions_after_first_chart": 2,
+      "local_products": 6
+    },
+    {
+      "moves": 1022,
+      "rank_peak": 3,
+      "raw_peak": 39,
+      "cyclic_peak": 38,
+      "final_words": [
+        "XXYXYXyxxyy",
+        "XXyyxY"
+      ],
+      "sha256": "0e9935d7ed2faa3d354ca91785e43414ec7b43a527d6f2cea484419702eb4cac",
+      "signed_projection": [
+        "XXYXYXyxxyy",
+        "XXyyxY"
+      ],
+      "isolated_first_chart": false,
+      "instructions_after_first_chart": 27,
+      "local_products": 8
+    },
+    {
+      "moves": 1002,
+      "rank_peak": 3,
+      "raw_peak": 39,
+      "cyclic_peak": 38,
+      "final_words": [
+        "XXYXYxyXyxy",
+        "XXyyxY"
+      ],
+      "sha256": "2a06e107b0a45f2759afec84ef6e49fbaa92c5e5f5682a0a8c926f59aaa23183",
+      "signed_projection": [
+        "XXYXYxyXyxy",
+        "XXyyxY"
+      ],
+      "isolated_first_chart": false,
+      "instructions_after_first_chart": 33,
+      "local_products": 6
+    }
+  ],
+  "independent_rank_three_stack": {
+    "38": {
+      "cap": 38,
+      "roots": 528,
+      "closed_chartless": 15032,
+      "first_exits": 2971,
+      "stack_candidates": 55023296
+    },
+    "39": {
+      "cap": 39,
+      "roots": 528,
+      "closed_chartless": 18272,
+      "first_exits": 3115,
+      "stack_candidates": 67820928
+    }
+  },
+  "all_twenty_strict_ledgers_independently_replayed": true
+}

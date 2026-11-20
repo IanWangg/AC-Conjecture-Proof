@@ -1,0 +1,4425 @@
+{
+  "source": [
+    "xxxYYYY",
+    "xyxYXY"
+  ],
+  "coarse_counts": {
+    "final_envelope_proper": 312,
+    "prefinal_envelope_primitive_free": 292,
+    "prefinal_envelope_rose": 368,
+    "marked_source_incidence_exclusion": 16,
+    "binary_source_incidence_exclusion": 8,
+    "proper_prefinal_envelope_passes": 28
+  },
+  "excluded_after_gap_tests": [],
+  "surviving_schedule_count": 396,
+  "schedules_by_allowed_mask": {
+    "0111": 72,
+    "1011": 116,
+    "1101": 178,
+    "1111": 396
+  },
+  "minimum_nonempty_gaps": 3,
+  "proper_prefinal_binary_cases": [
+    {
+      "prefix": "Xyxx",
+      "vertices": 45,
+      "closed_map_pair_states": {
+        "xy": 83,
+        "xY": 190,
+        "Xy": 195,
+        "XY": 83
+      },
+      "pairs_of_source_parities": [
+        {
+          "source_row_parities": [
+            1,
+            2
+          ],
+          "subspace_size": 4096,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            1,
+            3
+          ],
+          "subspace_size": 4096,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            2,
+            1
+          ],
+          "subspace_size": 4096,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            2,
+            3
+          ],
+          "subspace_size": 4096,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            3,
+            1
+          ],
+          "subspace_size": 4096,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            3,
+            2
+          ],
+          "subspace_size": 4096,
+          "compatible_primitive_slope_parities": []
+        }
+      ]
+    },
+    {
+      "prefix": "XyxX",
+      "vertices": 45,
+      "closed_map_pair_states": {
+        "xy": 83,
+        "xY": 190,
+        "Xy": 195,
+        "XY": 83
+      },
+      "pairs_of_source_parities": [
+        {
+          "source_row_parities": [
+            1,
+            2
+          ],
+          "subspace_size": 4096,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            1,
+            3
+          ],
+          "subspace_size": 4096,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            2,
+            1
+          ],
+          "subspace_size": 4096,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            2,
+            3
+          ],
+          "subspace_size": 4096,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            3,
+            1
+          ],
+          "subspace_size": 4096,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            3,
+            2
+          ],
+          "subspace_size": 4096,
+          "compatible_primitive_slope_parities": []
+        }
+      ]
+    },
+    {
+      "prefix": "XyXx",
+      "vertices": 45,
+      "closed_map_pair_states": {
+        "xy": 83,
+        "xY": 190,
+        "Xy": 195,
+        "XY": 83
+      },
+      "pairs_of_source_parities": [
+        {
+          "source_row_parities": [
+            1,
+            2
+          ],
+          "subspace_size": 4096,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            1,
+            3
+          ],
+          "subspace_size": 4096,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            2,
+            1
+          ],
+          "subspace_size": 4096,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            2,
+            3
+          ],
+          "subspace_size": 4096,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            3,
+            1
+          ],
+          "subspace_size": 4096,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            3,
+            2
+          ],
+          "subspace_size": 4096,
+          "compatible_primitive_slope_parities": []
+        }
+      ]
+    },
+    {
+      "prefix": "XyXX",
+      "vertices": 45,
+      "closed_map_pair_states": {
+        "xy": 83,
+        "xY": 190,
+        "Xy": 195,
+        "XY": 83
+      },
+      "pairs_of_source_parities": [
+        {
+          "source_row_parities": [
+            1,
+            2
+          ],
+          "subspace_size": 4096,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            1,
+            3
+          ],
+          "subspace_size": 4096,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            2,
+            1
+          ],
+          "subspace_size": 4096,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            2,
+            3
+          ],
+          "subspace_size": 4096,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            3,
+            1
+          ],
+          "subspace_size": 4096,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            3,
+            2
+          ],
+          "subspace_size": 4096,
+          "compatible_primitive_slope_parities": []
+        }
+      ]
+    },
+    {
+      "prefix": "XYxx",
+      "vertices": 8,
+      "closed_map_pair_states": {
+        "xy": 390,
+        "xY": 307,
+        "Xy": 285,
+        "XY": 276
+      },
+      "pairs_of_source_parities": [
+        {
+          "source_row_parities": [
+            1,
+            2
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1,
+            3
+          ]
+        },
+        {
+          "source_row_parities": [
+            1,
+            3
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1,
+            2
+          ]
+        },
+        {
+          "source_row_parities": [
+            2,
+            1
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1,
+            2
+          ]
+        },
+        {
+          "source_row_parities": [
+            2,
+            3
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1,
+            2
+          ]
+        },
+        {
+          "source_row_parities": [
+            3,
+            1
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1
+          ]
+        },
+        {
+          "source_row_parities": [
+            3,
+            2
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "prefix": "XYxX",
+      "vertices": 8,
+      "closed_map_pair_states": {
+        "xy": 390,
+        "xY": 307,
+        "Xy": 285,
+        "XY": 276
+      },
+      "pairs_of_source_parities": [
+        {
+          "source_row_parities": [
+            1,
+            2
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1,
+            3
+          ]
+        },
+        {
+          "source_row_parities": [
+            1,
+            3
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1,
+            2
+          ]
+        },
+        {
+          "source_row_parities": [
+            2,
+            1
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1,
+            2
+          ]
+        },
+        {
+          "source_row_parities": [
+            2,
+            3
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1,
+            2
+          ]
+        },
+        {
+          "source_row_parities": [
+            3,
+            1
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1
+          ]
+        },
+        {
+          "source_row_parities": [
+            3,
+            2
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "prefix": "XYXx",
+      "vertices": 8,
+      "closed_map_pair_states": {
+        "xy": 390,
+        "xY": 307,
+        "Xy": 285,
+        "XY": 276
+      },
+      "pairs_of_source_parities": [
+        {
+          "source_row_parities": [
+            1,
+            2
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1,
+            3
+          ]
+        },
+        {
+          "source_row_parities": [
+            1,
+            3
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1,
+            2
+          ]
+        },
+        {
+          "source_row_parities": [
+            2,
+            1
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1,
+            2
+          ]
+        },
+        {
+          "source_row_parities": [
+            2,
+            3
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1,
+            2
+          ]
+        },
+        {
+          "source_row_parities": [
+            3,
+            1
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1
+          ]
+        },
+        {
+          "source_row_parities": [
+            3,
+            2
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "prefix": "XYXX",
+      "vertices": 8,
+      "closed_map_pair_states": {
+        "xy": 390,
+        "xY": 307,
+        "Xy": 285,
+        "XY": 276
+      },
+      "pairs_of_source_parities": [
+        {
+          "source_row_parities": [
+            1,
+            2
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1,
+            3
+          ]
+        },
+        {
+          "source_row_parities": [
+            1,
+            3
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1,
+            2
+          ]
+        },
+        {
+          "source_row_parities": [
+            2,
+            1
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1,
+            2
+          ]
+        },
+        {
+          "source_row_parities": [
+            2,
+            3
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1,
+            2
+          ]
+        },
+        {
+          "source_row_parities": [
+            3,
+            1
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1
+          ]
+        },
+        {
+          "source_row_parities": [
+            3,
+            2
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "prefix": "yYxy",
+      "vertices": 11,
+      "closed_map_pair_states": {
+        "xy": 511,
+        "xY": 381,
+        "Xy": 346,
+        "XY": 393
+      },
+      "pairs_of_source_parities": [
+        {
+          "source_row_parities": [
+            1,
+            2
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            1,
+            3
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": [
+            2
+          ]
+        },
+        {
+          "source_row_parities": [
+            2,
+            1
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "source_row_parities": [
+            2,
+            3
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": [
+            2
+          ]
+        },
+        {
+          "source_row_parities": [
+            3,
+            1
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "source_row_parities": [
+            3,
+            2
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": []
+        }
+      ]
+    },
+    {
+      "prefix": "yYxY",
+      "vertices": 11,
+      "closed_map_pair_states": {
+        "xy": 511,
+        "xY": 381,
+        "Xy": 346,
+        "XY": 393
+      },
+      "pairs_of_source_parities": [
+        {
+          "source_row_parities": [
+            1,
+            2
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            1,
+            3
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": [
+            2
+          ]
+        },
+        {
+          "source_row_parities": [
+            2,
+            1
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "source_row_parities": [
+            2,
+            3
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": [
+            2
+          ]
+        },
+        {
+          "source_row_parities": [
+            3,
+            1
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "source_row_parities": [
+            3,
+            2
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": []
+        }
+      ]
+    },
+    {
+      "prefix": "YXyy",
+      "vertices": 8,
+      "closed_map_pair_states": {
+        "xy": 348,
+        "xY": 301,
+        "Xy": 297,
+        "XY": 448
+      },
+      "pairs_of_source_parities": [
+        {
+          "source_row_parities": [
+            1,
+            2
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            1,
+            3
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "source_row_parities": [
+            2,
+            1
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1,
+            3
+          ]
+        },
+        {
+          "source_row_parities": [
+            2,
+            3
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            3
+          ]
+        },
+        {
+          "source_row_parities": [
+            3,
+            1
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1
+          ]
+        },
+        {
+          "source_row_parities": [
+            3,
+            2
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": []
+        }
+      ]
+    },
+    {
+      "prefix": "YXyY",
+      "vertices": 8,
+      "closed_map_pair_states": {
+        "xy": 348,
+        "xY": 301,
+        "Xy": 297,
+        "XY": 448
+      },
+      "pairs_of_source_parities": [
+        {
+          "source_row_parities": [
+            1,
+            2
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            1,
+            3
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "source_row_parities": [
+            2,
+            1
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1,
+            3
+          ]
+        },
+        {
+          "source_row_parities": [
+            2,
+            3
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            3
+          ]
+        },
+        {
+          "source_row_parities": [
+            3,
+            1
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1
+          ]
+        },
+        {
+          "source_row_parities": [
+            3,
+            2
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": []
+        }
+      ]
+    },
+    {
+      "prefix": "YXYx",
+      "vertices": 11,
+      "closed_map_pair_states": {
+        "xy": 511,
+        "xY": 381,
+        "Xy": 346,
+        "XY": 393
+      },
+      "pairs_of_source_parities": [
+        {
+          "source_row_parities": [
+            1,
+            2
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "source_row_parities": [
+            1,
+            3
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "source_row_parities": [
+            2,
+            1
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            2,
+            3
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            3,
+            1
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": [
+            2
+          ]
+        },
+        {
+          "source_row_parities": [
+            3,
+            2
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "prefix": "YXYX",
+      "vertices": 11,
+      "closed_map_pair_states": {
+        "xy": 511,
+        "xY": 381,
+        "Xy": 346,
+        "XY": 393
+      },
+      "pairs_of_source_parities": [
+        {
+          "source_row_parities": [
+            1,
+            2
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "source_row_parities": [
+            1,
+            3
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "source_row_parities": [
+            2,
+            1
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            2,
+            3
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            3,
+            1
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": [
+            2
+          ]
+        },
+        {
+          "source_row_parities": [
+            3,
+            2
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "prefix": "YXYy",
+      "vertices": 8,
+      "closed_map_pair_states": {
+        "xy": 348,
+        "xY": 301,
+        "Xy": 297,
+        "XY": 448
+      },
+      "pairs_of_source_parities": [
+        {
+          "source_row_parities": [
+            1,
+            2
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            1,
+            3
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "source_row_parities": [
+            2,
+            1
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1,
+            3
+          ]
+        },
+        {
+          "source_row_parities": [
+            2,
+            3
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            3
+          ]
+        },
+        {
+          "source_row_parities": [
+            3,
+            1
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1
+          ]
+        },
+        {
+          "source_row_parities": [
+            3,
+            2
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": []
+        }
+      ]
+    },
+    {
+      "prefix": "YXYY",
+      "vertices": 8,
+      "closed_map_pair_states": {
+        "xy": 348,
+        "xY": 301,
+        "Xy": 297,
+        "XY": 448
+      },
+      "pairs_of_source_parities": [
+        {
+          "source_row_parities": [
+            1,
+            2
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            1,
+            3
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "source_row_parities": [
+            2,
+            1
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1,
+            3
+          ]
+        },
+        {
+          "source_row_parities": [
+            2,
+            3
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            3
+          ]
+        },
+        {
+          "source_row_parities": [
+            3,
+            1
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": [
+            1
+          ]
+        },
+        {
+          "source_row_parities": [
+            3,
+            2
+          ],
+          "subspace_size": 16,
+          "compatible_primitive_slope_parities": []
+        }
+      ]
+    },
+    {
+      "prefix": "Yyxy",
+      "vertices": 11,
+      "closed_map_pair_states": {
+        "xy": 511,
+        "xY": 381,
+        "Xy": 346,
+        "XY": 393
+      },
+      "pairs_of_source_parities": [
+        {
+          "source_row_parities": [
+            1,
+            2
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "source_row_parities": [
+            1,
+            3
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "source_row_parities": [
+            2,
+            1
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            2,
+            3
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            3,
+            1
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": [
+            2
+          ]
+        },
+        {
+          "source_row_parities": [
+            3,
+            2
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "prefix": "YyxY",
+      "vertices": 11,
+      "closed_map_pair_states": {
+        "xy": 511,
+        "xY": 381,
+        "Xy": 346,
+        "XY": 393
+      },
+      "pairs_of_source_parities": [
+        {
+          "source_row_parities": [
+            1,
+            2
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "source_row_parities": [
+            1,
+            3
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "source_row_parities": [
+            2,
+            1
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            2,
+            3
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": []
+        },
+        {
+          "source_row_parities": [
+            3,
+            1
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": [
+            2
+          ]
+        },
+        {
+          "source_row_parities": [
+            3,
+            2
+          ],
+          "subspace_size": 64,
+          "compatible_primitive_slope_parities": [
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "surviving_schedules": [
+    {
+      "sequence": "xxxyx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxxyX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxxyy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxxyY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxxYx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxxYX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxxYy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxxYY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxXyx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxXyX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxXyy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxXyY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxXYx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxXYX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxXYy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxXYY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxyxx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxyxX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxyxy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxyxY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxyXx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxyXX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxyXy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxyXY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxyyx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxyyX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxyyy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxyyY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxyYx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxyYX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxyYy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxyYY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxYxx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxYxX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxYxy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxYxY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxYXx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxYXX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxYXy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxYXY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxYyx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxYyX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxYyy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxYyY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxYYx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxYYX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxYYy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xxYYY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xXxyx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xXxyX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xXxyy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xXxyY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xXxYx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xXxYX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xXxYy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xXxYY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xXyxx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xXyxX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xXyxy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xXyxY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xXyXx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xXyXX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xXyXy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xXyXY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xXYxx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xXYxX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xXYxy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xXYxY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xXYXx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xXYXX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xXYXy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xXYXY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyxyx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyxyX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyxyy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyxyY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyxYx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyxYX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyxYy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyxYY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyXyx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyXyX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyXyy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyXyY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyXYx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyXYX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyXYy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyXYY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyyxx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyyxX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyyxy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyyxY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyyXx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyyXX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyyXy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyyXY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyYxx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyYxX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyYxy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyYxY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyYXx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyYXX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyYXy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xyYXY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xYxyx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xYxyX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xYxyy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xYxyY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xYxYx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xYxYX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xYxYy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xYxYY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xYXyx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xYXyX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xYXyy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xYXyY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xYXYx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xYXYX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xYXYy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xYXYY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xYyxx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xYyxX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xYyxy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xYyxY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xYyXx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xYyXX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xYyXy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "xYyXY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "Xxxyx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XxxyX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "Xxxyy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XxxyY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XxxYx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XxxYX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XxxYy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XxxYY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "Xxyxx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XxyxX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "Xxyxy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XxyxY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XxyXx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XxyXX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XxyXy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XxyXY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XxYxx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XxYxX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XxYxy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XxYxY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XxYXx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XxYXX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XxYXy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XxYXY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XXXyx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XXXyX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XXXyy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XXXyY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XXXYx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XXXYX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XXXYy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XXXYY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XXyxx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XXyxX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XXyxy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XXyxY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XXyXx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XXyXX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XXyXy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XXyXY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "Xyxyx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XyxyX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "Xyxyy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XyxyY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XyxYx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XyxYX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XyxYy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XyxYY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "Xyyxx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XyyxX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "Xyyxy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XyyxY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XyyXx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XyyXX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XyyXy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XyyXY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XYxxy",
+      "status": "proper_prefinal_envelope_passes",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XYxxY",
+      "status": "proper_prefinal_envelope_passes",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XYxXy",
+      "status": "proper_prefinal_envelope_passes",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XYxXY",
+      "status": "proper_prefinal_envelope_passes",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XYxyx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XYxyX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XYxyy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XYxyY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XYxYx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XYxYX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XYxYy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XYxYY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XYXxy",
+      "status": "proper_prefinal_envelope_passes",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XYXxY",
+      "status": "proper_prefinal_envelope_passes",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XYXXy",
+      "status": "proper_prefinal_envelope_passes",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XYXXY",
+      "status": "proper_prefinal_envelope_passes",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XYXyx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XYXyX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XYXyy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XYXyY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XYXYx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XYXYX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XYXYy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "XYXYY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxxyx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxxyX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxxyy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxxyY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxxYx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxxYX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxxYy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxxYY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxXyx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxXyX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxXyy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxXyY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxXYx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxXYX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxXYy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxXYY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxyxx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxyxX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxyxy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxyxY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxyXx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxyXX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxyXy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxyXY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxYxx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxYxX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxYxy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxYxY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxYXx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxYXX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxYXy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yxYXY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXxyx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXxyX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXxyy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXxyY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXxYx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXxYX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXxYy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXxYY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXXyx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXXyX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXXyy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXXyY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXXYx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXXYX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXXYy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXXYY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXyxx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXyxX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXyxy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXyxY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXyXx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXyXX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXyXy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXyXY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXYxx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXYxX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXYxy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXYxY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXYXx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXYXX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXYXy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yXYXY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyxxx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyxxX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyxxy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyxxY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyxXx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyxXX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyxXy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyxXY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyxyx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyxyX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyxyy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyxyY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyxYx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyxYX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyxYy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyxYY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyXxx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyXxX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyXxy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyXxY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyXXx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyXXX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyXXy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyXXY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyXyx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyXyX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyXyy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyXyY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyXYx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyXYX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyXYy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyXYY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyyxx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyyxX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyyxy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyyxY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyyXx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyyXX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyyXy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyyXY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyYxx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyYxX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyYxy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyYxY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyYXx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyYXX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyYXy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yyYXY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yYxyx",
+      "status": "proper_prefinal_envelope_passes",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yYxyX",
+      "status": "proper_prefinal_envelope_passes",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yYxYx",
+      "status": "proper_prefinal_envelope_passes",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yYxYX",
+      "status": "proper_prefinal_envelope_passes",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yYXyx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yYXyX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yYXyy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yYXyY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yYXYx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yYXYX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yYXYy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yYXYY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yYyxx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yYyxX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yYyxy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yYyxY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yYyXx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yYyXX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yYyXy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "yYyXY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "Yxxyx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YxxyX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "Yxxyy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YxxyY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YxxYx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YxxYX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YxxYy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YxxYY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "Yxyxx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YxyxX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "Yxyxy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YxyxY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YxyXx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YxyXX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YxyXy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YxyXY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YXyxx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YXyxX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YXyxy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YXyxY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YXyXx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YXyXX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YXyXy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YXyXY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YXyyx",
+      "status": "proper_prefinal_envelope_passes",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YXyyX",
+      "status": "proper_prefinal_envelope_passes",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YXyYx",
+      "status": "proper_prefinal_envelope_passes",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YXyYX",
+      "status": "proper_prefinal_envelope_passes",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YXYxy",
+      "status": "proper_prefinal_envelope_passes",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YXYxY",
+      "status": "proper_prefinal_envelope_passes",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YXYXy",
+      "status": "proper_prefinal_envelope_passes",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YXYXY",
+      "status": "proper_prefinal_envelope_passes",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YXYyx",
+      "status": "proper_prefinal_envelope_passes",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YXYyX",
+      "status": "proper_prefinal_envelope_passes",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YXYYx",
+      "status": "proper_prefinal_envelope_passes",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YXYYX",
+      "status": "proper_prefinal_envelope_passes",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "Yyxyx",
+      "status": "proper_prefinal_envelope_passes",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YyxyX",
+      "status": "proper_prefinal_envelope_passes",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YyxYx",
+      "status": "proper_prefinal_envelope_passes",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YyxYX",
+      "status": "proper_prefinal_envelope_passes",
+      "receiver_assignments": {
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YyXyx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YyXyX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YyXyy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YyXyY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YyXYx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YyXYX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YyXYy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YyXYY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "Yyyxx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YyyxX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "Yyyxy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YyyxY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YyyXx",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YyyXX",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YyyXy",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    },
+    {
+      "sequence": "YyyXY",
+      "status": "prefinal_envelope_rose",
+      "receiver_assignments": {
+        "0111": 16,
+        "1011": 16,
+        "1101": 16,
+        "1111": 32
+      }
+    }
+  ]
+}
