@@ -1,0 +1,2680 @@
+{
+  "energy20_first_fringe": {
+    "pair": [
+      "xxxxxyXXy",
+      "xxyxxyyXYXY"
+    ],
+    "source_vertices": 17,
+    "source_map_pair_absence": {
+      "status": "PASS",
+      "complete_absence_certificate": true,
+      "vertices": 17,
+      "closed_map_pair_states_checked": 104,
+      "ordinary_AC_goal_solved": false
+    },
+    "principal_quotients": 10478,
+    "principal_quotients_by_rank": {
+      "2": 2,
+      "3": 61,
+      "4": 883,
+      "5": 3605,
+      "6": 4369,
+      "7": 1479,
+      "8": 79
+    },
+    "free_quotient_exclusions_by_rank": {
+      "3": 60,
+      "4": 882,
+      "5": 3605,
+      "6": 4369,
+      "7": 1479,
+      "8": 79
+    },
+    "free_quotient_exclusions": 10474,
+    "free_quotient_case_sha256": "5de2c1d2caab8506eb75767d4c8c97c2ece5fcee5b68cdabeb48579883c6a332",
+    "first_vertex_identifications_rank_three": 136,
+    "minimum_new_words_to_generate_ambient_with_pair": 2,
+    "exceptional": {
+      "six_vertex_affine": {
+        "graph": [
+          1,
+          -1,
+          1,
+          2,
+          2,
+          0,
+          -1,
+          0,
+          3,
+          1,
+          0,
+          -1,
+          4,
+          2,
+          -1,
+          -1,
+          5,
+          3,
+          -1,
+          5,
+          -1,
+          4,
+          4,
+          -1
+        ],
+        "chord_basis": [
+          "yX",
+          "xxy",
+          "YxxYXXXy"
+        ],
+        "source_in_chords": [
+          "bC",
+          "bbaBA"
+        ],
+        "tests": [
+          {
+            "alphabet": "xy",
+            "blocked": "x",
+            "cycles": [
+              {
+                "states": [
+                  1,
+                  2,
+                  5
+                ],
+                "ambient_cycle": "yxy",
+                "chord_word": "ab",
+                "dyadic_scale_exponent": 1,
+                "dyadic_translation": "2"
+              },
+              {
+                "states": [
+                  8,
+                  11
+                ],
+                "ambient_cycle": "xy",
+                "chord_word": "C",
+                "dyadic_scale_exponent": 0,
+                "dyadic_translation": "-1"
+              }
+            ]
+          },
+          {
+            "alphabet": "xy",
+            "blocked": "y",
+            "cycles": [
+              {
+                "states": [
+                  0,
+                  2,
+                  5
+                ],
+                "ambient_cycle": "xxy",
+                "chord_word": "b",
+                "dyadic_scale_exponent": 0,
+                "dyadic_translation": "1"
+              },
+              {
+                "states": [
+                  8,
+                  11
+                ],
+                "ambient_cycle": "xy",
+                "chord_word": "C",
+                "dyadic_scale_exponent": 0,
+                "dyadic_translation": "-1"
+              }
+            ]
+          },
+          {
+            "alphabet": "xY",
+            "blocked": "x",
+            "cycles": [
+              {
+                "states": [
+                  0,
+                  3
+                ],
+                "ambient_cycle": "xY",
+                "chord_word": "A",
+                "dyadic_scale_exponent": -1,
+                "dyadic_translation": "0"
+              }
+            ]
+          },
+          {
+            "alphabet": "xY",
+            "blocked": "Y",
+            "cycles": [
+              {
+                "states": [
+                  0,
+                  3
+                ],
+                "ambient_cycle": "xY",
+                "chord_word": "A",
+                "dyadic_scale_exponent": -1,
+                "dyadic_translation": "0"
+              }
+            ]
+          },
+          {
+            "alphabet": "Xy",
+            "blocked": "X",
+            "cycles": [
+              {
+                "states": [
+                  1,
+                  2
+                ],
+                "ambient_cycle": "yX",
+                "chord_word": "a",
+                "dyadic_scale_exponent": 1,
+                "dyadic_translation": "0"
+              }
+            ]
+          },
+          {
+            "alphabet": "Xy",
+            "blocked": "y",
+            "cycles": [
+              {
+                "states": [
+                  1,
+                  2
+                ],
+                "ambient_cycle": "yX",
+                "chord_word": "a",
+                "dyadic_scale_exponent": 1,
+                "dyadic_translation": "0"
+              }
+            ]
+          },
+          {
+            "alphabet": "XY",
+            "blocked": "X",
+            "cycles": [
+              {
+                "states": [
+                  1,
+                  4,
+                  3
+                ],
+                "ambient_cycle": "YXY",
+                "chord_word": "BA",
+                "dyadic_scale_exponent": -1,
+                "dyadic_translation": "-1"
+              },
+              {
+                "states": [
+                  9,
+                  10
+                ],
+                "ambient_cycle": "YX",
+                "chord_word": "c",
+                "dyadic_scale_exponent": 0,
+                "dyadic_translation": "1"
+              }
+            ]
+          },
+          {
+            "alphabet": "XY",
+            "blocked": "Y",
+            "cycles": [
+              {
+                "states": [
+                  1,
+                  4,
+                  2
+                ],
+                "ambient_cycle": "YXX",
+                "chord_word": "B",
+                "dyadic_scale_exponent": 0,
+                "dyadic_translation": "-1"
+              },
+              {
+                "states": [
+                  9,
+                  10
+                ],
+                "ambient_cycle": "YX",
+                "chord_word": "c",
+                "dyadic_scale_exponent": 0,
+                "dyadic_translation": "1"
+              }
+            ]
+          }
+        ]
+      },
+      "index_three_voltage": {
+        "graph": [
+          1,
+          1,
+          1,
+          2,
+          0,
+          0,
+          2,
+          0,
+          2,
+          2,
+          0,
+          1
+        ],
+        "chord_basis": [
+          "XX",
+          "yX",
+          "xyy",
+          "Yxy"
+        ],
+        "source_in_chords": [
+          "AAcDD",
+          "AbAcaBaB"
+        ],
+        "tests": [
+          {
+            "character": [
+              -1,
+              -2,
+              -2,
+              0
+            ],
+            "inequalities_checked": 9,
+            "alphabet": [
+              0,
+              2
+            ],
+            "forbidden_double": 0,
+            "status": "PASS",
+            "cyclic_components": [
+              {
+                "states": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ],
+                "strict_cycle_voltage_sign": -1,
+                "potential": [
+                  -2,
+                  -7,
+                  0,
+                  -3,
+                  0,
+                  -1
+                ]
+              }
+            ]
+          },
+          {
+            "character": [
+              -1,
+              0,
+              0,
+              1
+            ],
+            "inequalities_checked": 9,
+            "alphabet": [
+              0,
+              2
+            ],
+            "forbidden_double": 1,
+            "status": "PASS",
+            "cyclic_components": [
+              {
+                "states": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ],
+                "strict_cycle_voltage_sign": 1,
+                "potential": [
+                  -1,
+                  0,
+                  -2,
+                  -2,
+                  -3,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "character": [
+              -2,
+              -2,
+              -2,
+              1
+            ],
+            "inequalities_checked": 9,
+            "alphabet": [
+              0,
+              3
+            ],
+            "forbidden_double": 0,
+            "status": "PASS",
+            "cyclic_components": [
+              {
+                "states": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ],
+                "strict_cycle_voltage_sign": 1,
+                "potential": [
+                  0,
+                  0,
+                  0,
+                  -1,
+                  -1,
+                  -1
+                ]
+              }
+            ]
+          },
+          {
+            "character": [
+              -2,
+              -2,
+              -2,
+              1
+            ],
+            "inequalities_checked": 9,
+            "alphabet": [
+              0,
+              3
+            ],
+            "forbidden_double": 1,
+            "status": "PASS",
+            "cyclic_components": [
+              {
+                "states": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ],
+                "strict_cycle_voltage_sign": 1,
+                "potential": [
+                  0,
+                  0,
+                  -1,
+                  -1,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "character": [
+              -2,
+              -2,
+              -2,
+              1
+            ],
+            "inequalities_checked": 9,
+            "alphabet": [
+              1,
+              2
+            ],
+            "forbidden_double": 0,
+            "status": "PASS",
+            "cyclic_components": [
+              {
+                "states": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ],
+                "strict_cycle_voltage_sign": -1,
+                "potential": [
+                  -1,
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "character": [
+              -2,
+              -2,
+              -2,
+              1
+            ],
+            "inequalities_checked": 9,
+            "alphabet": [
+              1,
+              2
+            ],
+            "forbidden_double": 1,
+            "status": "PASS",
+            "cyclic_components": [
+              {
+                "states": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ],
+                "strict_cycle_voltage_sign": -1,
+                "potential": [
+                  -1,
+                  -1,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "character": [
+              -1,
+              -2,
+              -2,
+              0
+            ],
+            "inequalities_checked": 9,
+            "alphabet": [
+              1,
+              3
+            ],
+            "forbidden_double": 0,
+            "status": "PASS",
+            "cyclic_components": [
+              {
+                "states": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ],
+                "strict_cycle_voltage_sign": 1,
+                "potential": [
+                  0,
+                  -1,
+                  0,
+                  -7,
+                  -2,
+                  -3
+                ]
+              }
+            ]
+          },
+          {
+            "character": [
+              -1,
+              0,
+              0,
+              1
+            ],
+            "inequalities_checked": 9,
+            "alphabet": [
+              1,
+              3
+            ],
+            "forbidden_double": 1,
+            "status": "PASS",
+            "cyclic_components": [
+              {
+                "states": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ],
+                "strict_cycle_voltage_sign": -1,
+                "potential": [
+                  -2,
+                  -2,
+                  -1,
+                  0,
+                  -3,
+                  0
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "energy20_second_fringe": {
+    "pair": [
+      "xxxxyXXYY",
+      "xxyyxYYYxxY"
+    ],
+    "source_vertices": 16,
+    "source_map_pair_absence": {
+      "status": "PASS",
+      "complete_absence_certificate": true,
+      "vertices": 16,
+      "closed_map_pair_states_checked": 92,
+      "ordinary_AC_goal_solved": false
+    },
+    "principal_quotients": 7370,
+    "principal_quotients_by_rank": {
+      "2": 2,
+      "3": 56,
+      "4": 707,
+      "5": 2599,
+      "6": 2788,
+      "7": 1058,
+      "8": 160
+    },
+    "free_quotient_exclusions_by_rank": {
+      "3": 56,
+      "4": 707,
+      "5": 2599,
+      "6": 2788,
+      "7": 1058,
+      "8": 160
+    },
+    "free_quotient_exclusions": 7368,
+    "free_quotient_case_sha256": "33fa0c514144b3e145efa140e7b2074c2971ef1f2246d502de50db9347b58cc1",
+    "first_vertex_identifications_rank_three": 120,
+    "minimum_new_words_to_generate_ambient_with_pair": 2,
+    "exceptional": {}
+  },
+  "strict_energy20_entry": {
+    "path": "certificates/round11_ak3_cap32_minimum.json",
+    "moves": 687,
+    "peak_total_length": 47,
+    "endpoint": [
+      "xxxxxyXXy",
+      "xxyxxyyXYXY"
+    ]
+  },
+  "strict_energy20_reverse_replay": {
+    "moves": 781,
+    "peak_total_length": 47,
+    "endpoint": [
+      "xxxYYYY",
+      "xyxYXY"
+    ]
+  },
+  "strict_ak2_full": {
+    "path": "certificates/n_ak2_cyclic13.json",
+    "moves": 46,
+    "peak_total_length": 18,
+    "endpoint": [
+      "x",
+      "y"
+    ]
+  },
+  "relative_rose_cuts": {
+    "from_ak3": [
+      {
+        "growth": [
+          {
+            "instruction_interval": [
+              1,
+              10
+            ],
+            "conjugators_in_input_block": [
+              "YYYY",
+              "YXY"
+            ],
+            "relative_conjugator": "yyyXY",
+            "vertices": 7,
+            "rank": 3,
+            "cumulative_graph": [
+              1,
+              -1,
+              2,
+              -1,
+              3,
+              0,
+              3,
+              -1,
+              4,
+              -1,
+              5,
+              0,
+              6,
+              1,
+              -1,
+              1,
+              -1,
+              2,
+              6,
+              5,
+              -1,
+              -1,
+              4,
+              2,
+              -1,
+              3,
+              -1,
+              4
+            ],
+            "normalized_endpoint": [
+              "yyyyXXX",
+              "yyyXYxyxYYYY"
+            ]
+          },
+          {
+            "instruction_interval": [
+              12,
+              18
+            ],
+            "conjugators_in_input_block": [
+              "XYxyx",
+              ""
+            ],
+            "relative_conjugator": "yyyyXYXyxYYYY",
+            "vertices": 1,
+            "rank": 2,
+            "cumulative_graph": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "normalized_endpoint": [
+              "yyyyXYXyxYYYxxxYYYY",
+              "yyyyXYXXyxyXYxyxYYYY"
+            ]
+          }
+        ],
+        "last_proper_graph": [
+          1,
+          -1,
+          2,
+          -1,
+          3,
+          0,
+          3,
+          -1,
+          4,
+          -1,
+          5,
+          0,
+          6,
+          1,
+          -1,
+          1,
+          -1,
+          2,
+          6,
+          5,
+          -1,
+          -1,
+          4,
+          2,
+          -1,
+          3,
+          -1,
+          4
+        ],
+        "rose_fold_splits": [
+          {
+            "prefix": "yyyyXY",
+            "suffix": "XyxYYYY",
+            "vertices": [
+              1,
+              3
+            ]
+          },
+          {
+            "prefix": "yyyyXYX",
+            "suffix": "yxYYYY",
+            "vertices": [
+              0,
+              1
+            ]
+          },
+          {
+            "prefix": "yyyyXYXy",
+            "suffix": "xYYYY",
+            "vertices": [
+              2,
+              3
+            ]
+          },
+          {
+            "prefix": "yyyyXYXyx",
+            "suffix": "YYYY",
+            "vertices": [
+              4,
+              6
+            ]
+          },
+          {
+            "prefix": "yyyyXYXyxY",
+            "suffix": "YYY",
+            "vertices": [
+              5,
+              4
+            ]
+          },
+          {
+            "prefix": "yyyyXYXyxYY",
+            "suffix": "YY",
+            "vertices": [
+              2,
+              5
+            ]
+          },
+          {
+            "prefix": "yyyyXYXyxYYY",
+            "suffix": "Y",
+            "vertices": [
+              0,
+              2
+            ]
+          }
+        ],
+        "strict_gauged_prefix_replay": {
+          "moves": 22,
+          "peak_total_length": 39,
+          "endpoint": [
+            "yyyyXYXyxYYYxxxYYYY",
+            "yyyyXYXXyxyXYxyxYYYY"
+          ]
+        },
+        "strict_gauged_prefix": {
+          "format": "ordinary-ac-elementary-v1",
+          "start": [
+            "xxxYYYY",
+            "xyxYXY"
+          ],
+          "target": [
+            "yyyyXYXyxYYYxxxYYYY",
+            "yyyyXYXXyxyXYxyxYYYY"
+          ],
+          "moves": [
+            {
+              "op": "invert",
+              "i": 0
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "y"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "y"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "y"
+            },
+            {
+              "op": "multiply",
+              "i": 0,
+              "j": 1
+            },
+            {
+              "op": "invert",
+              "i": 0
+            },
+            {
+              "op": "invert",
+              "i": 1
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "y"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "y"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "y"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "y"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "y"
+            }
+          ]
+        }
+      },
+      {
+        "growth": [
+          {
+            "instruction_interval": [
+              1,
+              10
+            ],
+            "conjugators_in_input_block": [
+              "YYYY",
+              "YXY"
+            ],
+            "relative_conjugator": "yxYYY",
+            "vertices": 7,
+            "rank": 3,
+            "cumulative_graph": [
+              1,
+              -1,
+              2,
+              -1,
+              3,
+              0,
+              3,
+              -1,
+              4,
+              -1,
+              5,
+              0,
+              6,
+              1,
+              -1,
+              1,
+              -1,
+              2,
+              6,
+              5,
+              -1,
+              -1,
+              4,
+              2,
+              -1,
+              3,
+              -1,
+              4
+            ],
+            "normalized_endpoint": [
+              "yxyXXXyyyXY",
+              "xyxYXY"
+            ]
+          },
+          {
+            "instruction_interval": [
+              12,
+              18
+            ],
+            "conjugators_in_input_block": [
+              "XYxyx",
+              ""
+            ],
+            "relative_conjugator": "yxyXYxyxYXY",
+            "vertices": 1,
+            "rank": 2,
+            "cumulative_graph": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "normalized_endpoint": [
+              "yxYYxxYXyxYXY",
+              "yxyXYX"
+            ]
+          }
+        ],
+        "last_proper_graph": [
+          1,
+          -1,
+          2,
+          -1,
+          3,
+          0,
+          3,
+          -1,
+          4,
+          -1,
+          5,
+          0,
+          6,
+          1,
+          -1,
+          1,
+          -1,
+          2,
+          6,
+          5,
+          -1,
+          -1,
+          4,
+          2,
+          -1,
+          3,
+          -1,
+          4
+        ],
+        "rose_fold_splits": [
+          {
+            "prefix": "yx",
+            "suffix": "yXYxyxYXY",
+            "vertices": [
+              4,
+              5
+            ]
+          },
+          {
+            "prefix": "yxy",
+            "suffix": "XYxyxYXY",
+            "vertices": [
+              6,
+              4
+            ]
+          },
+          {
+            "prefix": "yxyX",
+            "suffix": "YxyxYXY",
+            "vertices": [
+              3,
+              2
+            ]
+          },
+          {
+            "prefix": "yxyXY",
+            "suffix": "xyxYXY",
+            "vertices": [
+              1,
+              0
+            ]
+          },
+          {
+            "prefix": "yxyXYx",
+            "suffix": "yxYXY",
+            "vertices": [
+              3,
+              1
+            ]
+          }
+        ],
+        "strict_gauged_prefix_replay": {
+          "moves": 20,
+          "peak_total_length": 23,
+          "endpoint": [
+            "yxYYxxYXyxYXY",
+            "yxyXYX"
+          ]
+        },
+        "strict_gauged_prefix": {
+          "format": "ordinary-ac-elementary-v1",
+          "start": [
+            "xxxYYYY",
+            "xyxYXY"
+          ],
+          "target": [
+            "yxYYxxYXyxYXY",
+            "yxyXYX"
+          ],
+          "moves": [
+            {
+              "op": "invert",
+              "i": 0
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "y"
+            },
+            {
+              "op": "multiply",
+              "i": 0,
+              "j": 1
+            },
+            {
+              "op": "invert",
+              "i": 0
+            },
+            {
+              "op": "invert",
+              "i": 1
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "y"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "y"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "y"
+            }
+          ]
+        }
+      }
+    ],
+    "from_energy20": [
+      {
+        "growth": [
+          {
+            "instruction_interval": [
+              1,
+              16
+            ],
+            "conjugators_in_input_block": [
+              "yXXy",
+              "yyXYXY"
+            ],
+            "relative_conjugator": "YxxyXYXY",
+            "vertices": 13,
+            "rank": 3,
+            "cumulative_graph": [
+              1,
+              -1,
+              2,
+              3,
+              4,
+              0,
+              -1,
+              -1,
+              5,
+              -1,
+              -1,
+              0,
+              6,
+              -1,
+              0,
+              -1,
+              7,
+              1,
+              7,
+              -1,
+              -1,
+              2,
+              8,
+              -1,
+              9,
+              3,
+              -1,
+              -1,
+              10,
+              4,
+              -1,
+              4,
+              11,
+              -1,
+              -1,
+              5,
+              -1,
+              6,
+              11,
+              12,
+              12,
+              7,
+              -1,
+              -1,
+              -1,
+              8,
+              -1,
+              9,
+              -1,
+              10,
+              9,
+              -1
+            ],
+            "normalized_endpoint": [
+              "xxxxxyXXy",
+              "YxxyXYXYxxyxxyXXy"
+            ]
+          },
+          {
+            "instruction_interval": [
+              28,
+              36
+            ],
+            "conjugators_in_input_block": [
+              "XXXXYY",
+              ""
+            ],
+            "relative_conjugator": "YxxyxxxxyXXy",
+            "vertices": 10,
+            "rank": 4,
+            "cumulative_graph": [
+              1,
+              -1,
+              2,
+              3,
+              4,
+              0,
+              -1,
+              5,
+              3,
+              -1,
+              -1,
+              0,
+              6,
+              2,
+              0,
+              -1,
+              7,
+              1,
+              7,
+              -1,
+              -1,
+              6,
+              1,
+              8,
+              5,
+              3,
+              -1,
+              -1,
+              9,
+              4,
+              -1,
+              4,
+              -1,
+              9,
+              5,
+              -1,
+              8,
+              7,
+              -1,
+              -1
+            ],
+            "normalized_endpoint": [
+              "YxxYXXYXXyxyxYXXy",
+              "YxxyXYxxYXXXXYXXy"
+            ]
+          },
+          {
+            "instruction_interval": [
+              38,
+              49
+            ],
+            "conjugators_in_input_block": [
+              "",
+              "yXXXYxxY"
+            ],
+            "relative_conjugator": "YxxyxxxxyXXXYxxYXXXXYXXy",
+            "vertices": 1,
+            "rank": 2,
+            "cumulative_graph": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "normalized_endpoint": [
+              "YxxyxxxxyXXXYxxyxxyXXy",
+              "YxxyxxxxyxxyXXyxxxYXXXXYXXy"
+            ]
+          }
+        ],
+        "last_proper_graph": [
+          1,
+          -1,
+          2,
+          3,
+          4,
+          0,
+          -1,
+          5,
+          3,
+          -1,
+          -1,
+          0,
+          6,
+          2,
+          0,
+          -1,
+          7,
+          1,
+          7,
+          -1,
+          -1,
+          6,
+          1,
+          8,
+          5,
+          3,
+          -1,
+          -1,
+          9,
+          4,
+          -1,
+          4,
+          -1,
+          9,
+          5,
+          -1,
+          8,
+          7,
+          -1,
+          -1
+        ],
+        "rose_fold_splits": [
+          {
+            "prefix": "Yxxyxx",
+            "suffix": "xxyXXXYxxYXXXXYXXy",
+            "vertices": [
+              7,
+              0
+            ]
+          },
+          {
+            "prefix": "Yxxyxxx",
+            "suffix": "xyXXXYxxYXXXXYXXy",
+            "vertices": [
+              9,
+              1
+            ]
+          },
+          {
+            "prefix": "Yxxyxxxx",
+            "suffix": "yXXXYxxYXXXXYXXy",
+            "vertices": [
+              8,
+              4
+            ]
+          },
+          {
+            "prefix": "Yxxyxxxxy",
+            "suffix": "XXXYxxYXXXXYXXy",
+            "vertices": [
+              5,
+              7
+            ]
+          },
+          {
+            "prefix": "YxxyxxxxyX",
+            "suffix": "XXYxxYXXXXYXXy",
+            "vertices": [
+              6,
+              4
+            ]
+          },
+          {
+            "prefix": "YxxyxxxxyXX",
+            "suffix": "XYxxYXXXXYXXy",
+            "vertices": [
+              3,
+              1
+            ]
+          },
+          {
+            "prefix": "YxxyxxxxyXXX",
+            "suffix": "YxxYXXXXYXXy",
+            "vertices": [
+              2,
+              0
+            ]
+          },
+          {
+            "prefix": "YxxyxxxxyXXXY",
+            "suffix": "xxYXXXXYXXy",
+            "vertices": [
+              0,
+              3
+            ]
+          },
+          {
+            "prefix": "YxxyxxxxyXXXYx",
+            "suffix": "xYXXXXYXXy",
+            "vertices": [
+              1,
+              6
+            ]
+          },
+          {
+            "prefix": "YxxyxxxxyXXXYxx",
+            "suffix": "YXXXXYXXy",
+            "vertices": [
+              4,
+              5
+            ]
+          }
+        ],
+        "strict_gauged_prefix_replay": {
+          "moves": 53,
+          "peak_total_length": 49,
+          "endpoint": [
+            "YxxyxxxxyXXXYxxyxxyXXy",
+            "YxxyxxxxyxxyXXyxxxYXXXXYXXy"
+          ]
+        },
+        "strict_gauged_prefix": {
+          "format": "ordinary-ac-elementary-v1",
+          "start": [
+            "xxxxxyXXy",
+            "xxyxxyyXYXY"
+          ],
+          "target": [
+            "YxxyxxxxyXXXYxxyxxyXXy",
+            "YxxyxxxxyxxyXXyxxxYXXXXYXXy"
+          ],
+          "moves": [
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "y"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "Y"
+            },
+            {
+              "op": "multiply",
+              "i": 0,
+              "j": 1
+            },
+            {
+              "op": "invert",
+              "i": 0
+            },
+            {
+              "op": "multiply",
+              "i": 1,
+              "j": 0
+            },
+            {
+              "op": "invert",
+              "i": 1
+            },
+            {
+              "op": "multiply",
+              "i": 0,
+              "j": 1
+            },
+            {
+              "op": "invert",
+              "i": 1
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "y"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "y"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "y"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "Y"
+            },
+            {
+              "op": "multiply",
+              "i": 0,
+              "j": 1
+            },
+            {
+              "op": "invert",
+              "i": 0
+            },
+            {
+              "op": "invert",
+              "i": 1
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "y"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "y"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "y"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "Y"
+            }
+          ]
+        }
+      },
+      {
+        "growth": [
+          {
+            "instruction_interval": [
+              1,
+              16
+            ],
+            "conjugators_in_input_block": [
+              "yXXy",
+              "yyXYXY"
+            ],
+            "relative_conjugator": "yxyxYXXy",
+            "vertices": 13,
+            "rank": 3,
+            "cumulative_graph": [
+              1,
+              -1,
+              2,
+              3,
+              4,
+              0,
+              -1,
+              -1,
+              5,
+              -1,
+              -1,
+              0,
+              6,
+              -1,
+              0,
+              -1,
+              7,
+              1,
+              7,
+              -1,
+              -1,
+              2,
+              8,
+              -1,
+              9,
+              3,
+              -1,
+              -1,
+              10,
+              4,
+              -1,
+              4,
+              11,
+              -1,
+              -1,
+              5,
+              -1,
+              6,
+              11,
+              12,
+              12,
+              7,
+              -1,
+              -1,
+              -1,
+              8,
+              -1,
+              9,
+              -1,
+              10,
+              9,
+              -1
+            ],
+            "normalized_endpoint": [
+              "yxyxYXXyxxxxxyyXYXY",
+              "xxyxxyyXYXY"
+            ]
+          },
+          {
+            "instruction_interval": [
+              28,
+              36
+            ],
+            "conjugators_in_input_block": [
+              "XXXXYY",
+              ""
+            ],
+            "relative_conjugator": "yxyxYYXXXXXYXY",
+            "vertices": 10,
+            "rank": 4,
+            "cumulative_graph": [
+              1,
+              -1,
+              2,
+              3,
+              4,
+              0,
+              -1,
+              5,
+              3,
+              -1,
+              -1,
+              0,
+              6,
+              2,
+              0,
+              -1,
+              7,
+              1,
+              7,
+              -1,
+              -1,
+              6,
+              1,
+              8,
+              5,
+              3,
+              -1,
+              -1,
+              9,
+              4,
+              -1,
+              4,
+              -1,
+              9,
+              5,
+              -1,
+              8,
+              7,
+              -1,
+              -1
+            ],
+            "normalized_endpoint": [
+              "yxyxYYXXXXYYXXYXXyxyxxxxxyyXYXY",
+              "yxyxYYXXXXXYxxyXYXY"
+            ]
+          },
+          {
+            "instruction_interval": [
+              38,
+              49
+            ],
+            "conjugators_in_input_block": [
+              "",
+              "yXXXYxxY"
+            ],
+            "relative_conjugator": "yxyxYXXyxxxyXYXY",
+            "vertices": 1,
+            "rank": 2,
+            "cumulative_graph": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "normalized_endpoint": [
+              "yxyxxxyyxxxxyXXXYxxyXYXY",
+              "yxyxYXXyxxxxxyyXYXY"
+            ]
+          }
+        ],
+        "last_proper_graph": [
+          1,
+          -1,
+          2,
+          3,
+          4,
+          0,
+          -1,
+          5,
+          3,
+          -1,
+          -1,
+          0,
+          6,
+          2,
+          0,
+          -1,
+          7,
+          1,
+          7,
+          -1,
+          -1,
+          6,
+          1,
+          8,
+          5,
+          3,
+          -1,
+          -1,
+          9,
+          4,
+          -1,
+          4,
+          -1,
+          9,
+          5,
+          -1,
+          8,
+          7,
+          -1,
+          -1
+        ],
+        "rose_fold_splits": [
+          {
+            "prefix": "yxy",
+            "suffix": "xYXXyxxxyXYXY",
+            "vertices": [
+              0,
+              4
+            ]
+          },
+          {
+            "prefix": "yxyx",
+            "suffix": "YXXyxxxyXYXY",
+            "vertices": [
+              1,
+              7
+            ]
+          },
+          {
+            "prefix": "yxyxY",
+            "suffix": "XXyxxxyXYXY",
+            "vertices": [
+              5,
+              4
+            ]
+          },
+          {
+            "prefix": "yxyxYX",
+            "suffix": "XyxxxyXYXY",
+            "vertices": [
+              6,
+              1
+            ]
+          },
+          {
+            "prefix": "yxyxYXX",
+            "suffix": "yxxxyXYXY",
+            "vertices": [
+              3,
+              0
+            ]
+          },
+          {
+            "prefix": "yxyxYXXy",
+            "suffix": "xxxyXYXY",
+            "vertices": [
+              0,
+              2
+            ]
+          },
+          {
+            "prefix": "yxyxYXXyx",
+            "suffix": "xxyXYXY",
+            "vertices": [
+              1,
+              3
+            ]
+          },
+          {
+            "prefix": "yxyxYXXyxx",
+            "suffix": "xyXYXY",
+            "vertices": [
+              4,
+              6
+            ]
+          },
+          {
+            "prefix": "yxyxYXXyxxx",
+            "suffix": "yXYXY",
+            "vertices": [
+              7,
+              5
+            ]
+          }
+        ],
+        "strict_gauged_prefix_replay": {
+          "moves": 47,
+          "peak_total_length": 50,
+          "endpoint": [
+            "yxyxxxyyxxxxyXXXYxxyXYXY",
+            "yxyxYXXyxxxxxyyXYXY"
+          ]
+        },
+        "strict_gauged_prefix": {
+          "format": "ordinary-ac-elementary-v1",
+          "start": [
+            "xxxxxyXXy",
+            "xxyxxyyXYXY"
+          ],
+          "target": [
+            "yxyxxxyyxxxxyXXXYxxyXYXY",
+            "yxyxYXXyxxxxxyyXYXY"
+          ],
+          "moves": [
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "y"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "y"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "y"
+            },
+            {
+              "op": "multiply",
+              "i": 0,
+              "j": 1
+            },
+            {
+              "op": "invert",
+              "i": 0
+            },
+            {
+              "op": "multiply",
+              "i": 1,
+              "j": 0
+            },
+            {
+              "op": "invert",
+              "i": 1
+            },
+            {
+              "op": "multiply",
+              "i": 0,
+              "j": 1
+            },
+            {
+              "op": "invert",
+              "i": 1
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "y"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "y"
+            },
+            {
+              "op": "multiply",
+              "i": 0,
+              "j": 1
+            },
+            {
+              "op": "invert",
+              "i": 0
+            },
+            {
+              "op": "invert",
+              "i": 1
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "y"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "y"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "y"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "y"
+            }
+          ]
+        }
+      }
+    ],
+    "from_ak2_exclusion_side": [
+      {
+        "growth": [
+          {
+            "instruction_interval": [
+              3,
+              9
+            ],
+            "conjugators_in_input_block": [
+              "YY",
+              "YXY"
+            ],
+            "relative_conjugator": "yXY",
+            "vertices": 6,
+            "rank": 3,
+            "cumulative_graph": [
+              1,
+              -1,
+              2,
+              3,
+              -1,
+              0,
+              4,
+              -1,
+              2,
+              2,
+              5,
+              0,
+              4,
+              -1,
+              0,
+              -1,
+              5,
+              3,
+              -1,
+              1,
+              -1,
+              4,
+              -1,
+              2
+            ],
+            "normalized_endpoint": [
+              "YxxYY",
+              "yyXYXyxY"
+            ]
+          },
+          {
+            "instruction_interval": [
+              11,
+              17
+            ],
+            "conjugators_in_input_block": [
+              "",
+              "YYxx"
+            ],
+            "relative_conjugator": "xxYY",
+            "vertices": 1,
+            "rank": 2,
+            "cumulative_graph": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "normalized_endpoint": [
+              "yyXXy",
+              "xYXyxYY"
+            ]
+          }
+        ],
+        "last_proper_graph": [
+          1,
+          -1,
+          2,
+          3,
+          -1,
+          0,
+          4,
+          -1,
+          2,
+          2,
+          5,
+          0,
+          4,
+          -1,
+          0,
+          -1,
+          5,
+          3,
+          -1,
+          1,
+          -1,
+          4,
+          -1,
+          2
+        ],
+        "rose_fold_splits": [
+          {
+            "prefix": "",
+            "suffix": "xxYY",
+            "vertices": [
+              0,
+              3
+            ]
+          },
+          {
+            "prefix": "x",
+            "suffix": "xYY",
+            "vertices": [
+              1,
+              4
+            ]
+          }
+        ],
+        "strict_gauged_prefix_replay": {
+          "moves": 11,
+          "peak_total_length": 18,
+          "endpoint": [
+            "yyXXy",
+            "xYXyxYY"
+          ]
+        },
+        "strict_gauged_prefix": {
+          "format": "ordinary-ac-elementary-v1",
+          "start": [
+            "yyXXy",
+            "xyxYXY"
+          ],
+          "target": [
+            "yyXXy",
+            "xYXyxYY"
+          ],
+          "moves": [
+            {
+              "op": "invert",
+              "i": 0
+            },
+            {
+              "op": "invert",
+              "i": 1
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "y"
+            },
+            {
+              "op": "multiply",
+              "i": 1,
+              "j": 0
+            },
+            {
+              "op": "invert",
+              "i": 0
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 1,
+              "g": "x"
+            }
+          ]
+        }
+      },
+      {
+        "growth": [
+          {
+            "instruction_interval": [
+              3,
+              9
+            ],
+            "conjugators_in_input_block": [
+              "YY",
+              "YXY"
+            ],
+            "relative_conjugator": "yxY",
+            "vertices": 6,
+            "rank": 3,
+            "cumulative_graph": [
+              1,
+              -1,
+              2,
+              3,
+              -1,
+              0,
+              4,
+              -1,
+              2,
+              2,
+              5,
+              0,
+              4,
+              -1,
+              0,
+              -1,
+              5,
+              3,
+              -1,
+              1,
+              -1,
+              4,
+              -1,
+              2
+            ],
+            "normalized_endpoint": [
+              "yxYYxxYXY",
+              "yxyXYX"
+            ]
+          },
+          {
+            "instruction_interval": [
+              11,
+              17
+            ],
+            "conjugators_in_input_block": [
+              "",
+              "YYxx"
+            ],
+            "relative_conjugator": "yxyXXyXY",
+            "vertices": 1,
+            "rank": 2,
+            "cumulative_graph": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "normalized_endpoint": [
+              "yxyXXyyXXyxxYXY",
+              "yxyXYXyxYYxxYXY"
+            ]
+          }
+        ],
+        "last_proper_graph": [
+          1,
+          -1,
+          2,
+          3,
+          -1,
+          0,
+          4,
+          -1,
+          2,
+          2,
+          5,
+          0,
+          4,
+          -1,
+          0,
+          -1,
+          5,
+          3,
+          -1,
+          1,
+          -1,
+          4,
+          -1,
+          2
+        ],
+        "rose_fold_splits": [
+          {
+            "prefix": "yxyX",
+            "suffix": "XyXY",
+            "vertices": [
+              4,
+              1
+            ]
+          },
+          {
+            "prefix": "yxyXX",
+            "suffix": "yXY",
+            "vertices": [
+              3,
+              0
+            ]
+          },
+          {
+            "prefix": "yxyXXy",
+            "suffix": "XY",
+            "vertices": [
+              0,
+              2
+            ]
+          }
+        ],
+        "strict_gauged_prefix_replay": {
+          "moves": 15,
+          "peak_total_length": 30,
+          "endpoint": [
+            "yxyXXyyXXyxxYXY",
+            "yxyXYXyxYYxxYXY"
+          ]
+        },
+        "strict_gauged_prefix": {
+          "format": "ordinary-ac-elementary-v1",
+          "start": [
+            "yyXXy",
+            "xyxYXY"
+          ],
+          "target": [
+            "yxyXXyyXXyxxYXY",
+            "yxyXYXyxYYxxYXY"
+          ],
+          "moves": [
+            {
+              "op": "invert",
+              "i": 0
+            },
+            {
+              "op": "invert",
+              "i": 1
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "y"
+            },
+            {
+              "op": "multiply",
+              "i": 1,
+              "j": 0
+            },
+            {
+              "op": "invert",
+              "i": 0
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "Y"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "y"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "X"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "y"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "x"
+            },
+            {
+              "op": "conjugate",
+              "i": 0,
+              "g": "y"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

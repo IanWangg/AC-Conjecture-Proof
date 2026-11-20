@@ -1,6 +1,8 @@
 // Use one verified primitive chart per row to look for a primitive quotient coordinate.
+#ifndef AC_ROUND09_PRIMITIVE_REUSE
 #define AC_ROUND06_SINGLETON_LIBRARY
 #include "round06_stable_proof_all_singleton.cpp"
+#endif
 
 #include <numeric>
 
@@ -237,6 +239,7 @@ int screen(const char* catalogue, unsigned energy_limit) {
 
 }
 
+#ifndef AC_ROUND09_PRIMITIVE_REUSE
 int main(int argc, char** argv) {
     try {
         if (argc == 4) return dump_chartless(argv[1], std::stoul(argv[2]), argv[3]);
@@ -248,3 +251,4 @@ int main(int argc, char** argv) {
         return 1;
     }
 }
+#endif

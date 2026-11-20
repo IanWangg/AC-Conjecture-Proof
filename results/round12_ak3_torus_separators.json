@@ -1,0 +1,401 @@
+[
+  [
+    "XXXXXXXYxxyXXXYxxxxYxxxxyxxYXXXy",
+    {
+      "XXXXyxxxY": {
+        "marking": {
+          "x": [
+            1,
+            2,
+            4,
+            5,
+            3,
+            7,
+            8,
+            6
+          ],
+          "y": [
+            3,
+            6,
+            4,
+            2,
+            8,
+            7,
+            1,
+            5
+          ]
+        },
+        "source_shape": [
+          2,
+          6
+        ],
+        "target_shape": [
+          1,
+          1,
+          3,
+          3
+        ]
+      }
+    },
+    []
+  ],
+  [
+    "XXXXXYxyxxxYXYXXXXXYxyxyXyxxxxY",
+    {
+      "XXXXXYxYXY": {
+        "marking": {
+          "x": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            1
+          ],
+          "y": [
+            1,
+            2,
+            4,
+            6,
+            7,
+            5,
+            3
+          ]
+        },
+        "source_shape": [
+          1,
+          1,
+          5
+        ],
+        "target_shape": [
+          2,
+          2,
+          3
+        ]
+      }
+    },
+    []
+  ],
+  [
+    "XXXXyXXYxxxyxYY",
+    {
+      "XXXXyXXYxxxyXXYxxxyxYY": {
+        "marking": {
+          "x": [
+            1,
+            2,
+            4,
+            5,
+            3,
+            7,
+            8,
+            6
+          ],
+          "y": [
+            3,
+            6,
+            5,
+            7,
+            2,
+            8,
+            4,
+            1
+          ]
+        },
+        "source_shape": [
+          2,
+          6
+        ],
+        "target_shape": [
+          1,
+          1,
+          3,
+          3
+        ]
+      },
+      "XXXyxxY": {
+        "marking": {
+          "x": [
+            1,
+            2,
+            4,
+            5,
+            3,
+            7,
+            8,
+            6
+          ],
+          "y": [
+            3,
+            6,
+            5,
+            7,
+            2,
+            8,
+            4,
+            1
+          ]
+        },
+        "source_shape": [
+          2,
+          6
+        ],
+        "target_shape": [
+          1,
+          1,
+          3,
+          3
+        ]
+      }
+    },
+    []
+  ],
+  [
+    "XXXYxxyXYYYxxYxxyXXXyy",
+    {
+      "XXXYxxyXYYYxxyy": {
+        "marking": {
+          "x": [
+            2,
+            3,
+            1,
+            5,
+            6,
+            7,
+            4
+          ],
+          "y": [
+            1,
+            4,
+            5,
+            3,
+            6,
+            7,
+            2
+          ]
+        },
+        "source_shape": [
+          2,
+          5
+        ],
+        "target_shape": [
+          1,
+          6
+        ]
+      }
+    },
+    []
+  ],
+  [
+    "XXXYxxyxxyxxYXy",
+    {
+      "XXXYxxy": {
+        "marking": {
+          "x": [
+            2,
+            3,
+            1,
+            5,
+            6,
+            7,
+            8,
+            4
+          ],
+          "y": [
+            4,
+            7,
+            5,
+            3,
+            1,
+            2,
+            8,
+            6
+          ]
+        },
+        "source_shape": [
+          1,
+          7
+        ],
+        "target_shape": [
+          2,
+          6
+        ]
+      }
+    },
+    []
+  ],
+  [
+    "XXXyxxYXyxxyxxY",
+    {
+      "XXYXXYxy": {
+        "marking": {
+          "x": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            3
+          ],
+          "y": [
+            3,
+            5,
+            6,
+            4,
+            8,
+            1,
+            7,
+            2
+          ]
+        },
+        "source_shape": [
+          1,
+          1,
+          6
+        ],
+        "target_shape": [
+          8
+        ]
+      },
+      "XXXyxxYxYXyxxyxyXXYXXYxyXXYxxyxxyxxY": {
+        "marking": {
+          "x": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            3
+          ],
+          "y": [
+            3,
+            5,
+            6,
+            4,
+            8,
+            1,
+            7,
+            2
+          ]
+        },
+        "source_shape": [
+          1,
+          1,
+          6
+        ],
+        "target_shape": [
+          8
+        ]
+      },
+      "XXXyxxYxYXyxxyyxxyxxY": {
+        "marking": {
+          "x": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            3
+          ],
+          "y": [
+            3,
+            5,
+            6,
+            4,
+            8,
+            1,
+            7,
+            2
+          ]
+        },
+        "source_shape": [
+          1,
+          1,
+          6
+        ],
+        "target_shape": [
+          8
+        ]
+      },
+      "XXXXyxxYXyxxyxxYXYXXYxy": {
+        "marking": {
+          "x": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            3
+          ],
+          "y": [
+            3,
+            5,
+            6,
+            4,
+            8,
+            1,
+            7,
+            2
+          ]
+        },
+        "source_shape": [
+          1,
+          1,
+          6
+        ],
+        "target_shape": [
+          8
+        ]
+      },
+      "XXXyxxY": {
+        "marking": {
+          "x": [
+            1,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            3
+          ],
+          "y": [
+            3,
+            5,
+            6,
+            4,
+            8,
+            1,
+            7,
+            2
+          ]
+        },
+        "source_shape": [
+          1,
+          1,
+          6
+        ],
+        "target_shape": [
+          8
+        ]
+      }
+    },
+    []
+  ],
+  [
+    "XXYYxyXXyyxYY",
+    {},
+    [
+      "XXYYxyy"
+    ]
+  ]
+]

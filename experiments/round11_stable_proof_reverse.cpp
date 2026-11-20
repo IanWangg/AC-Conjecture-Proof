@@ -157,6 +157,7 @@ int search(int floor, int cap, size_t budget, const std::string& roots, const st
 
 }
 
+#ifndef AC_ROUND11_REVERSE_LIBRARY
 int main(int argc, char** argv) {
     try {
         if (argc != 7) throw std::runtime_error("usage: reverse floor cap budget roots.tsv targets.tsv prefix");
@@ -166,3 +167,4 @@ int main(int argc, char** argv) {
         return 1;
     }
 }
+#endif

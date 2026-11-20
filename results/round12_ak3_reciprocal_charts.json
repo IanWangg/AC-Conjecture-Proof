@@ -1,0 +1,182 @@
+{
+  "20": {
+    "forward_energy": 20,
+    "reverse_energy": 56,
+    "requested_stages": 4,
+    "allocation_cap": 2200000,
+    "forward_pairs": 2,
+    "reverse_pairs": 23902,
+    "reverse_donors": 147060,
+    "canonical_forward_prefix_sha256": "c038999773b3d85f16c234c78148605c7ffcafdf21867f317e7992a31bfcb0ff",
+    "reverse_tsv_sha256": "c9dd0627965a6f1ffa899c4a465b95a788d739eedd49089d9b6c5681980ba2c4",
+    "positive_control": {
+      "reference_checks": 3,
+      "joins": [
+        {
+          "forward_pair": [
+            "XXYYxyyyxYY",
+            "XXXYYxyXyyxYYXYYxyyyxYY"
+          ],
+          "reverse_pair": [
+            "XXXYYxyyyxYYXYYxyXyyxYY",
+            "XXYYxyXyyxYY"
+          ],
+          "intermediate": [
+            "XXYYxyXyyxYY",
+            "XXXYYxyXyyxYYXYYxyyyxYY"
+          ],
+          "forward_stage": 1,
+          "reverse_stage": 1,
+          "strict_replay": {
+            "moves": 213,
+            "peak_total_length": 59,
+            "endpoint": [
+              "x",
+              "y"
+            ]
+          },
+          "cyclic_peak": 58
+        },
+        {
+          "forward_pair": [
+            "XXXYYxyXyyxYYXYYxyyyxYY",
+            "XXYYxyyyxYY"
+          ],
+          "reverse_pair": [
+            "XXXYYxyyyxYYXYYxyXyyxYY",
+            "XXYYxyXyyxYY"
+          ],
+          "intermediate": [
+            "XXYYxyXyyxYY",
+            "XXYYxyyyxYY"
+          ],
+          "forward_stage": 1,
+          "reverse_stage": 1,
+          "strict_replay": {
+            "moves": 245,
+            "peak_total_length": 60,
+            "endpoint": [
+              "x",
+              "y"
+            ]
+          },
+          "cyclic_peak": 35
+        }
+      ]
+    },
+    "forward": {
+      "charts": 4,
+      "word_checks": 68583,
+      "allocation_stops": 2,
+      "last_completed_stage_histogram": {
+        "3": 2,
+        "4": 2
+      },
+      "largest_graph": 871281,
+      "word_hits": 11
+    },
+    "reverse": {
+      "charts": 130,
+      "word_checks": 130,
+      "allocation_stops": 17,
+      "last_completed_stage_histogram": {
+        "2": 10,
+        "3": 7,
+        "4": 113
+      },
+      "largest_graph": 1577987,
+      "word_hits": 0
+    },
+    "joins": []
+  },
+  "22": {
+    "forward_energy": 22,
+    "reverse_energy": 56,
+    "requested_stages": 3,
+    "allocation_cap": 350000,
+    "forward_pairs": 28,
+    "reverse_pairs": 23902,
+    "reverse_donors": 147060,
+    "canonical_forward_prefix_sha256": "0eeffcac432a6750e7267caaa32b8476383d1f8afe7025fb5c0f044e881cad34",
+    "reverse_tsv_sha256": "c9dd0627965a6f1ffa899c4a465b95a788d739eedd49089d9b6c5681980ba2c4",
+    "positive_control": {
+      "reference_checks": 3,
+      "joins": [
+        {
+          "forward_pair": [
+            "XXYYxyyyxYY",
+            "XXXYYxyXyyxYYXYYxyyyxYY"
+          ],
+          "reverse_pair": [
+            "XXXYYxyyyxYYXYYxyXyyxYY",
+            "XXYYxyXyyxYY"
+          ],
+          "intermediate": [
+            "XXYYxyXyyxYY",
+            "XXXYYxyXyyxYYXYYxyyyxYY"
+          ],
+          "forward_stage": 1,
+          "reverse_stage": 1,
+          "strict_replay": {
+            "moves": 213,
+            "peak_total_length": 59,
+            "endpoint": [
+              "x",
+              "y"
+            ]
+          },
+          "cyclic_peak": 58
+        },
+        {
+          "forward_pair": [
+            "XXXYYxyXyyxYYXYYxyyyxYY",
+            "XXYYxyyyxYY"
+          ],
+          "reverse_pair": [
+            "XXXYYxyyyxYYXYYxyXyyxYY",
+            "XXYYxyXyyxYY"
+          ],
+          "intermediate": [
+            "XXYYxyXyyxYY",
+            "XXYYxyyyxYY"
+          ],
+          "forward_stage": 1,
+          "reverse_stage": 1,
+          "strict_replay": {
+            "moves": 245,
+            "peak_total_length": 60,
+            "endpoint": [
+              "x",
+              "y"
+            ]
+          },
+          "cyclic_peak": 35
+        }
+      ]
+    },
+    "forward": {
+      "charts": 56,
+      "word_checks": 1311147,
+      "allocation_stops": 14,
+      "last_completed_stage_histogram": {
+        "2": 14,
+        "3": 42
+      },
+      "largest_graph": 249613,
+      "word_hits": 1756
+    },
+    "reverse": {
+      "charts": 2525,
+      "word_checks": 3229,
+      "allocation_stops": 1906,
+      "last_completed_stage_histogram": {
+        "1": 453,
+        "2": 1453,
+        "3": 619
+      },
+      "largest_graph": 293185,
+      "word_hits": 0
+    },
+    "joins": []
+  }
+}

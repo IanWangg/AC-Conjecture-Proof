@@ -1,0 +1,20 @@
+{
+  "reference_boundary_audit": {
+    "cyclic_cap": 32,
+    "source_size": 8258753914,
+    "start_offset": 0,
+    "next_offset": 8258753914,
+    "source_rows_scanned": 254220523,
+    "source_reached_eof": true,
+    "source_boundary_independently_compared": true,
+    "recipient_parity_skips": 298716276,
+    "zero_bridge_rotation_checks": 60161897580,
+    "positive_bridge_rotation_checks": 228249632,
+    "admitted_candidates": 3509580702,
+    "boundary_records": 1073329989,
+    "primitive_boundary_records": 0
+  },
+  "generation_and_audit_binary_match": true,
+  "boundary_binary_size": 34346559648,
+  "comparison": "complete bytewise comparison"
+}

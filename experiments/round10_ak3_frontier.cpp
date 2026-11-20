@@ -18,7 +18,8 @@ constexpr std::size_t block = 512;
 
 Pair read_pair(const std::string& line, int cap) {
     const auto tab = line.find('\t');
-    if (tab == std::string::npos || !tab || tab + 1 == line.size() || line.size() > std::size_t(cap + 1))
+    if (tab == std::string::npos || !tab || tab > 31 || tab + 1 == line.size()
+        || line.size() - tab - 1 > 31 || line.size() > std::size_t(cap + 1))
         throw std::runtime_error("bad lower catalogue row");
     const auto a = word_code(line.substr(0, tab)), b = word_code(line.substr(tab + 1));
     if (a > b || length(a) + length(b) > unsigned(cap))
@@ -212,7 +213,10 @@ int seeds(unsigned cap, unsigned workers, const std::string& source, const std::
         rows.clear();
         std::string line;
         while (rows.size() < window && (!limit || processed + rows.size() < limit) && std::getline(input, line)) {
-            rows.push_back(read_pair(line, cap - 1));
+            const auto state = read_pair(line, cap - 1);
+            if (cap - std::min(length(state.first), length(state.second)) > 31)
+                throw std::runtime_error("boundary scan exceeds packed coordinate width");
+            rows.push_back(state);
             next_offset += line.size() + 1;
         }
         if (rows.empty()) break;
@@ -410,11 +414,11 @@ int main(int argc, char** argv) {
         if (argc < 8)
             throw std::runtime_error("usage: frontier seed cap workers lower.tsv prefix row-limit byte-offset [audit]; frontier expand cap workers lower.tsv prefix row-limit boundary.bin ...");
         const unsigned cap = std::stoul(argv[2]), workers = std::stoul(argv[3]);
-        if (cap < 14 || cap > 32 || !workers) throw std::runtime_error("need cap 14–32 and at least one worker");
+        if (cap < 14 || cap > 33 || !workers) throw std::runtime_error("need cap 14–33 and at least one worker");
         const auto limit = std::stoull(argv[6]);
         if (std::string_view(argv[1]) == "seed" && (argc == 8 || (argc == 9 && std::string_view(argv[8]) == "audit")))
             return frontier::seeds(cap, workers, argv[4], argv[5], limit, std::stoull(argv[7]), argc == 9);
-        if (std::string_view(argv[1]) == "expand")
+        if (std::string_view(argv[1]) == "expand" && cap <= 32)
             return frontier::expand(cap, workers, argv[4], argv[5], limit, argc - 7, argv + 7);
         throw std::runtime_error("unrecognized frontier command");
     } catch (const std::exception& error) {

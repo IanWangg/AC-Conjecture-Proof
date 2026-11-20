@@ -1,0 +1,262 @@
+{
+  "fixed_donor": "xxxxxyXXy",
+  "receiver": "xxyxxyyXYXY",
+  "receiver_signature": [
+    1,
+    [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        1
+      ]
+    ]
+  ],
+  "reverse_energy": 56,
+  "reverse_source_pairs": 23902,
+  "reverse_donors": 147060,
+  "weight_one_target_words": 12179,
+  "exact_conjugacy_hits": [
+    {
+      "donor_cyclic_key": "XXXXXXXYxxyXXXYxxxxYxxxxyxxYXXXy",
+      "orientation": 1,
+      "reverse_receivers": [
+        "XXXXyxxxY"
+      ]
+    },
+    {
+      "donor_cyclic_key": "XXXXXYxyxxxYXYXXXXXYxyxyXyxxxxY",
+      "orientation": -1,
+      "reverse_receivers": [
+        "XXXXXYxYXY"
+      ]
+    },
+    {
+      "donor_cyclic_key": "XXXXyXXYxxxyxYY",
+      "orientation": -1,
+      "reverse_receivers": [
+        "XXXXyXXYxxxyXXYxxxyxYY",
+        "XXXyxxY"
+      ]
+    },
+    {
+      "donor_cyclic_key": "XXXYxxyXYYYxxYxxyXXXyy",
+      "orientation": 1,
+      "reverse_receivers": [
+        "XXXYxxyXYYYxxyy"
+      ]
+    },
+    {
+      "donor_cyclic_key": "XXXYxxyxxyxxYXy",
+      "orientation": 1,
+      "reverse_receivers": [
+        "XXXYxxy"
+      ]
+    },
+    {
+      "donor_cyclic_key": "XXXyxxYXyxxyxxY",
+      "orientation": 1,
+      "reverse_receivers": [
+        "XXXXyxxYXyxxyxxYXYXXYxy",
+        "XXXyxxY",
+        "XXXyxxYxYXyxxyxyXXYXXYxyXXYxxyxxyxxY",
+        "XXXyxxYxYXyxxyyxxyxxY",
+        "XXYXXYxy"
+      ]
+    },
+    {
+      "donor_cyclic_key": "XXYYxyXXyyxYY",
+      "orientation": -1,
+      "reverse_receivers": [
+        "XXYYxyy"
+      ]
+    }
+  ],
+  "positive_signature_check": "xyxxyxxyyXYXYYXYxxxxxyXXyy",
+  "all_primitive_lengths": {
+    "receiver_cyclic_syllables": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "primitive_tails": [
+      {
+        "initial": "xxy",
+        "period": "xxyxy",
+        "orientation": 1,
+        "only_length_compatible_power": 2,
+        "syllables": [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "initial": "xy",
+        "period": "xxyxy",
+        "orientation": -1,
+        "only_length_compatible_power": 2,
+        "syllables": [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            4
+          ]
+        ]
+      }
+    ]
+  },
+  "reverse_tsv_sha256": "c9dd0627965a6f1ffa899c4a465b95a788d739eedd49089d9b6c5681980ba2c4",
+  "reciprocal_separators": {
+    "separated_contacts": 11,
+    "unresolved_contacts": [
+      [
+        "XXYYxyXXyyxYY",
+        "XXYYxyy"
+      ]
+    ]
+  }
+}

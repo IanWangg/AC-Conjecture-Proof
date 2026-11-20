@@ -1,0 +1,10 @@
+{
+  "input_sha256": "027faceb95eb5d956a04602f03821f10cfa3e575c018bac7b804cb33f6e59ed4",
+  "source_pairs": 248,
+  "strict_whitehead_shortenings": 109,
+  "distinct_whitehead_minimal_keys": 243,
+  "classification": {
+    "PARITY_OBSTRUCTION": 243
+  },
+  "remaining": []
+}

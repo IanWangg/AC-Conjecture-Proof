@@ -1,0 +1,1299 @@
+{
+  "fixed_donor": "xxxxyXXYY",
+  "receiver": "xxyyxYYYxxY",
+  "required_coefficient": "bAbAAbAbAA",
+  "reverse_source_pairs": 23902,
+  "reverse_donors": 147060,
+  "reverse_energy": 56,
+  "reverse_tsv_sha256": "c9dd0627965a6f1ffa899c4a465b95a788d739eedd49089d9b6c5681980ba2c4",
+  "counts": {
+    "wrong_homology_syllable_count": 21949,
+    "wrong_height": 123221,
+    "outside_fibonacci_orbit": 1758,
+    "wrong_free_word": 130,
+    "conjugate": 2
+  },
+  "exact_conjugacy_hits": [
+    {
+      "reverse_donor": "XXXXYYxxyyyXYYYYxxxxyy",
+      "reverse_receivers": [
+        "XXXXYYxxyyyXYYYYxyyxxYYxxyy",
+        "XXYYxyy"
+      ],
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aaaBaaBA",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXXXyxxyyxYxxYY",
+      "reverse_receivers": [
+        "XXXyXYY"
+      ],
+      "orientation": 1,
+      "fibonacci_index": 0,
+      "conjugator_power_of_x_squared": 3,
+      "normalized_fiber_coefficient": "ababaaBABA",
+      "required_fiber_coefficient": "ababaaBABA"
+    }
+  ],
+  "wrong_free_word_cases": [
+    {
+      "reverse_donor": "XXXXXXXXXXYxxxxyxxxxxyxxY",
+      "orientation": 1,
+      "fibonacci_index": -3,
+      "conjugator_power_of_x_squared": 0,
+      "normalized_fiber_coefficient": "bAAbAAbAbA",
+      "required_fiber_coefficient": "bAbAAbAbAA"
+    },
+    {
+      "reverse_donor": "XXXXXXXXXXyxxxxYxyxxxxxxYXXy",
+      "orientation": 1,
+      "fibonacci_index": -3,
+      "conjugator_power_of_x_squared": 0,
+      "normalized_fiber_coefficient": "AbbAAAbAAb",
+      "required_fiber_coefficient": "bAbAAbAbAA"
+    },
+    {
+      "reverse_donor": "XXXXXXXXYYxyyxxYxxxxy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aBaBaa",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXXXXXXXYxxxxxxxxYXXXyyy",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "aBAbAAbAba",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXXXXXXYxxyxxxxyXXYxxxxyXY",
+      "orientation": -1,
+      "fibonacci_index": -3,
+      "conjugator_power_of_x_squared": 0,
+      "normalized_fiber_coefficient": "abAbAAbAAbAA",
+      "required_fiber_coefficient": "bAbAAbAbAA"
+    },
+    {
+      "reverse_donor": "XXXXXXXXyXXXXXYxxxxxxxxYxxxxy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "AbaBaBaaBa",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXXXXXXXyXXXYxxxxxxxxYxxy",
+      "orientation": -1,
+      "fibonacci_index": -3,
+      "conjugator_power_of_x_squared": 0,
+      "normalized_fiber_coefficient": "AbAbaBAbAAbAbA",
+      "required_fiber_coefficient": "bAbAAbAbAA"
+    },
+    {
+      "reverse_donor": "XXXXXXXXyxxYxxYxxxyXXXXXXyxxYxxy",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "AbAAbAAbAbaBaBaa",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXXXXXXyxxYxxyXXXXXXyxxxYxxYxxy",
+      "orientation": -1,
+      "fibonacci_index": -3,
+      "conjugator_power_of_x_squared": 0,
+      "normalized_fiber_coefficient": "AbAbAbAAbAAbAbaBaB",
+      "required_fiber_coefficient": "bAbAAbAbAA"
+    },
+    {
+      "reverse_donor": "XXXXXXXXyxxxxYYxxxyyxxY",
+      "orientation": 1,
+      "fibonacci_index": -3,
+      "conjugator_power_of_x_squared": 0,
+      "normalized_fiber_coefficient": "AbAAbAbAbA",
+      "required_fiber_coefficient": "bAbAAbAbAA"
+    },
+    {
+      "reverse_donor": "XXXXXXXXyyxxxxYXXYYYxyyxxy",
+      "orientation": -1,
+      "fibonacci_index": -3,
+      "conjugator_power_of_x_squared": 0,
+      "normalized_fiber_coefficient": "AbAAbAAbbA",
+      "required_fiber_coefficient": "bAbAAbAbAA"
+    },
+    {
+      "reverse_donor": "XXXXXXXYxxxxxxy",
+      "orientation": -1,
+      "fibonacci_index": -3,
+      "conjugator_power_of_x_squared": 0,
+      "normalized_fiber_coefficient": "bAAbAAbAbA",
+      "required_fiber_coefficient": "bAbAAbAbAA"
+    },
+    {
+      "reverse_donor": "XXXXXXXYxyyxxYxxxxxyXXY",
+      "orientation": -1,
+      "fibonacci_index": -3,
+      "conjugator_power_of_x_squared": 0,
+      "normalized_fiber_coefficient": "bAAbAAbAbA",
+      "required_fiber_coefficient": "bAbAAbAbAA"
+    },
+    {
+      "reverse_donor": "XXXXXXXyxxxxYYXXyyy",
+      "orientation": -1,
+      "fibonacci_index": -3,
+      "conjugator_power_of_x_squared": 0,
+      "normalized_fiber_coefficient": "bAbAAAbAbA",
+      "required_fiber_coefficient": "bAbAAbAbAA"
+    },
+    {
+      "reverse_donor": "XXXXXXXyxxxxxxYXXyyxxY",
+      "orientation": 1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aBaBaa",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXXXXXXyxxyxxxxY",
+      "orientation": 1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aBaBaaBabA",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXXXXXXyyXXYxxxxYxxYxxxxYxxxxxxYxxYXXy",
+      "orientation": 1,
+      "fibonacci_index": 1,
+      "conjugator_power_of_x_squared": 4,
+      "normalized_fiber_coefficient": "aBAbaBabbbAA",
+      "required_fiber_coefficient": "ababbabbABBABA"
+    },
+    {
+      "reverse_donor": "XXXXXXXyyyXXYYxxxxy",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "bAbA",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXXXXXyyyxxxxYxxY",
+      "orientation": 1,
+      "fibonacci_index": 0,
+      "conjugator_power_of_x_squared": 3,
+      "normalized_fiber_coefficient": "aBaBabbA",
+      "required_fiber_coefficient": "ababaaBABA"
+    },
+    {
+      "reverse_donor": "XXXXXXYXXyxxxxxyxxYxxyXXY",
+      "orientation": -1,
+      "fibonacci_index": -4,
+      "conjugator_power_of_x_squared": -1,
+      "normalized_fiber_coefficient": "aBaBaaBaaBaBaaaB",
+      "required_fiber_coefficient": "aBaaBaaBaBaaBaaB"
+    },
+    {
+      "reverse_donor": "XXXXXXYXYYxxxxyxxxxy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aBaBaa",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXXXXXYXyxxYxxyxxxxyXXY",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "aBaBaabAAbAAbAbA",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXXXXYYxxxxYYxxxxyXyy",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "AbbA",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXXXXYYxxxxxyy",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "AbbA",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXXXXYYxxxxyyXXYxxxy",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "AbAb",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXXXXYYxxxyyXXYxxxxy",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "AbAb",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXXXXYxxYxYxxxxxxy",
+      "orientation": -1,
+      "fibonacci_index": -4,
+      "conjugator_power_of_x_squared": -1,
+      "normalized_fiber_coefficient": "aBaBaaBaBaaaBaBa",
+      "required_fiber_coefficient": "aBaaBaaBaBaaBaaB"
+    },
+    {
+      "reverse_donor": "XXXXXXYxxxxxxyXXYYxxxy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aBaBaa",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXXXXXYxxxxxy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aBaBaa",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXXXXXYxxxxyyXXXXYxxxy",
+      "orientation": -1,
+      "fibonacci_index": 0,
+      "conjugator_power_of_x_squared": 3,
+      "normalized_fiber_coefficient": "AbaBaa",
+      "required_fiber_coefficient": "ababaaBABA"
+    },
+    {
+      "reverse_donor": "XXXXXXYxxyxyxxYXXyxxxxY",
+      "orientation": 1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "aBaaBabAAbAbAAbA",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXXXXyXXXXyXXYxxxxxYxxxxYxxy",
+      "orientation": -1,
+      "fibonacci_index": -3,
+      "conjugator_power_of_x_squared": 0,
+      "normalized_fiber_coefficient": "AbAAbAbAAbaaBAbA",
+      "required_fiber_coefficient": "bAbAAbAbAA"
+    },
+    {
+      "reverse_donor": "XXXXXXyXXXXyXXyXYxxYxxyyxxYYxxy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "AbAbAAbaaBaBaBaaBaBa",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXXXXXyXXXyxxYYxxxxy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aBaaBa",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXXXXXyXXyXXYxxxxYYxYxxxxYxxxxy",
+      "orientation": -1,
+      "fibonacci_index": -4,
+      "conjugator_power_of_x_squared": -1,
+      "normalized_fiber_coefficient": "aBaBaBaaBaaBaaBa",
+      "required_fiber_coefficient": "aBaaBaaBaBaaBaaB"
+    },
+    {
+      "reverse_donor": "XXXXXXyXXyXXyXyXXyxxxxY",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aBaaBaaBaaBAbAbA",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXXXXXyXXyxxxxYXXyXXyXy",
+      "orientation": -1,
+      "fibonacci_index": 0,
+      "conjugator_power_of_x_squared": 3,
+      "normalized_fiber_coefficient": "bAbABaaBaa",
+      "required_fiber_coefficient": "ababaaBABA"
+    },
+    {
+      "reverse_donor": "XXXXXXyXyXXyXXYxxxxyXXy",
+      "orientation": -1,
+      "fibonacci_index": 1,
+      "conjugator_power_of_x_squared": 4,
+      "normalized_fiber_coefficient": "aBaabAbAbA",
+      "required_fiber_coefficient": "ababbabbABBABA"
+    },
+    {
+      "reverse_donor": "XXXXXXyXyy",
+      "orientation": -1,
+      "fibonacci_index": 0,
+      "conjugator_power_of_x_squared": 3,
+      "normalized_fiber_coefficient": "aBaabA",
+      "required_fiber_coefficient": "ababaaBABA"
+    },
+    {
+      "reverse_donor": "XXXXXXyxYYxxxxyXYxy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aBaBaa",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXXXXXyxYxxy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aBaaaB",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXXXXXyxxYYxxyyxxYxxYXyXXyXXXXy",
+      "orientation": -1,
+      "fibonacci_index": 0,
+      "conjugator_power_of_x_squared": 3,
+      "normalized_fiber_coefficient": "aBABaaabbA",
+      "required_fiber_coefficient": "ababaaBABA"
+    },
+    {
+      "reverse_donor": "XXXXXXyxxYxxxxYxxYxxxxYxxyxYXXyXXXXy",
+      "orientation": 1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "abaBAAAbAbaabABA",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXXXXXyxxYxy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aBaBaa",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXXXXXyxxxxYXXYXyxxxxyxxYXXYXXXyxxxy",
+      "orientation": 1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": null,
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXXXXXyxxxxYYxxyXXXy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aaBBaa",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXXXXXyxxxxYxxxYxxxxY",
+      "orientation": 1,
+      "fibonacci_index": 1,
+      "conjugator_power_of_x_squared": 4,
+      "normalized_fiber_coefficient": "aabAAb",
+      "required_fiber_coefficient": "ababbabbABBABA"
+    },
+    {
+      "reverse_donor": "XXXXXXyxxxxyxxxYYXXy",
+      "orientation": 1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "ababAAAA",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXXXXyxxxxyyxxYXY",
+      "orientation": 1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "abAAbA",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXXXXyxxyyxxxYYXXYxxYYXXyyxxy",
+      "orientation": 1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "ababAbaBAAbABA",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXXXXyyXy",
+      "orientation": -1,
+      "fibonacci_index": 0,
+      "conjugator_power_of_x_squared": 3,
+      "normalized_fiber_coefficient": "aa",
+      "required_fiber_coefficient": "ababaaBABA"
+    },
+    {
+      "reverse_donor": "XXXXXXyyyxxYxyxxYXXyxxYY",
+      "orientation": 1,
+      "fibonacci_index": 1,
+      "conjugator_power_of_x_squared": 4,
+      "normalized_fiber_coefficient": "aaabAAbA",
+      "required_fiber_coefficient": "ababbabbABBABA"
+    },
+    {
+      "reverse_donor": "XXXXXYYYxxyxxxxy",
+      "orientation": -1,
+      "fibonacci_index": -4,
+      "conjugator_power_of_x_squared": -1,
+      "normalized_fiber_coefficient": "aBaaBaaBaBaaBaBa",
+      "required_fiber_coefficient": "aBaaBaaBaBaaBaaB"
+    },
+    {
+      "reverse_donor": "XXXXXYxxyy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aaBaBa",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXXXXyXXXXYxxxxYxxxxxyXXyxxxYxxY",
+      "orientation": 1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": null,
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXXXyXXXXyXXYxxxxYXXyXXXXyxxxxYxxxxYxxy",
+      "orientation": -1,
+      "fibonacci_index": -3,
+      "conjugator_power_of_x_squared": 0,
+      "normalized_fiber_coefficient": "bAAAbaBAbAbAAb",
+      "required_fiber_coefficient": "bAbAAbAbAA"
+    },
+    {
+      "reverse_donor": "XXXXXyXXXyxYYxxxxy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aBaaBa",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXXXXyXXYxxyyxxxxY",
+      "orientation": 1,
+      "fibonacci_index": -3,
+      "conjugator_power_of_x_squared": 0,
+      "normalized_fiber_coefficient": "AbAAbAbAbA",
+      "required_fiber_coefficient": "bAbAAbAbAA"
+    },
+    {
+      "reverse_donor": "XXXXXyXXyyXXy",
+      "orientation": -1,
+      "fibonacci_index": 0,
+      "conjugator_power_of_x_squared": 3,
+      "normalized_fiber_coefficient": "baBa",
+      "required_fiber_coefficient": "ababaaBABA"
+    },
+    {
+      "reverse_donor": "XXXXXyxxYxxxxYXXyxxYxxxxY",
+      "orientation": 1,
+      "fibonacci_index": 1,
+      "conjugator_power_of_x_squared": 4,
+      "normalized_fiber_coefficient": "AbAbaBaabA",
+      "required_fiber_coefficient": "ababbabbABBABA"
+    },
+    {
+      "reverse_donor": "XXXXXyxxYxxxxYxxxxyXXXXyXXYxxxxYXXyXXXXy",
+      "orientation": -1,
+      "fibonacci_index": 0,
+      "conjugator_power_of_x_squared": 3,
+      "normalized_fiber_coefficient": "baBAbaBa",
+      "required_fiber_coefficient": "ababaaBABA"
+    },
+    {
+      "reverse_donor": "XXXXYXXXXYXXyxxxyxxxxYXXXXYxxyxxxxy",
+      "orientation": -1,
+      "fibonacci_index": -4,
+      "conjugator_power_of_x_squared": -1,
+      "normalized_fiber_coefficient": "aBaBaaBaBaaBaaBaBaaBaaBaBaaBaBabAbAAbAAbAAbAbA",
+      "required_fiber_coefficient": "aBaaBaaBaBaaBaaB"
+    },
+    {
+      "reverse_donor": "XXXXYXXXXyxxxxyxxYXXXXYxxxxyxxxyXXY",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aBaBaa",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXXXYYxxyxyyyxxYY",
+      "orientation": 1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "aBabAbAAbA",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXXYYxxyyyxyxxYY",
+      "orientation": 1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "aabAbAAA",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXXYxYxxxxyXXYxyXy",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "bAAb",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXXYxxxYXXyxxxYxxyXXyXXXYxxy",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": null,
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXXYxxxxYXXXyXXYxxxxyy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aBAbaBaaBa",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXXXYxxxxYXyXXyXXYxxxxYxxYxxxxyXXXXy",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "aBAbaaBAbAbAbA",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXXYxxxxyXXXYYxxyy",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "bbAA",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXXYxxxxyyXXYYYxxxy",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "AbAb",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXXYxxyXXyXXXYxxyyxxY",
+      "orientation": -1,
+      "fibonacci_index": -3,
+      "conjugator_power_of_x_squared": 0,
+      "normalized_fiber_coefficient": "bAbAAbAAbA",
+      "required_fiber_coefficient": "bAbAAbAbAA"
+    },
+    {
+      "reverse_donor": "XXXXYxxyXy",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "bAAb",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXXYxxyxxxyXXY",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "bAAb",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXXYxyXXYxxYYXXyxxyxxy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "AbaBaaBaBaaBaaBAbAbA",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXXXYxyy",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "AbbA",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXXyXXXYxxxxy",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "bAbA",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXXyXXYxxxy",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "AbAb",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXXyXXyxxYxxYxxYxy",
+      "orientation": 1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "BaBaaa",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXXXyXXyyXXXXyXYxxYxxYxxy",
+      "orientation": -1,
+      "fibonacci_index": 0,
+      "conjugator_power_of_x_squared": 3,
+      "normalized_fiber_coefficient": "bbAbaBaBaB",
+      "required_fiber_coefficient": "ababaaBABA"
+    },
+    {
+      "reverse_donor": "XXXXyXYYxxyy",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "bbAA",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXXyxxYxxYxxYXyXXXXyyXXy",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "AAAbab",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXXyxxxyxxYY",
+      "orientation": 1,
+      "fibonacci_index": 0,
+      "conjugator_power_of_x_squared": 3,
+      "normalized_fiber_coefficient": "aa",
+      "required_fiber_coefficient": "ababaaBABA"
+    },
+    {
+      "reverse_donor": "XXXXyxxxyxxYYxxxxYXXyyXXY",
+      "orientation": 1,
+      "fibonacci_index": 0,
+      "conjugator_power_of_x_squared": 3,
+      "normalized_fiber_coefficient": "aabbaBAB",
+      "required_fiber_coefficient": "ababaaBABA"
+    },
+    {
+      "reverse_donor": "XXXXyxxyxxYYYYxyy",
+      "orientation": 1,
+      "fibonacci_index": 0,
+      "conjugator_power_of_x_squared": 3,
+      "normalized_fiber_coefficient": "aBBaabbA",
+      "required_fiber_coefficient": "ababaaBABA"
+    },
+    {
+      "reverse_donor": "XXXXyxxyxxYxY",
+      "orientation": 1,
+      "fibonacci_index": 0,
+      "conjugator_power_of_x_squared": 3,
+      "normalized_fiber_coefficient": "aa",
+      "required_fiber_coefficient": "ababaaBABA"
+    },
+    {
+      "reverse_donor": "XXXXyxxyyyXXYxxYxyxxYYY",
+      "orientation": 1,
+      "fibonacci_index": 0,
+      "conjugator_power_of_x_squared": 3,
+      "normalized_fiber_coefficient": "abbaaBAB",
+      "required_fiber_coefficient": "ababaaBABA"
+    },
+    {
+      "reverse_donor": "XXXXyyXXyyyXXXY",
+      "orientation": -1,
+      "fibonacci_index": 2,
+      "conjugator_power_of_x_squared": 5,
+      "normalized_fiber_coefficient": "abab",
+      "required_fiber_coefficient": "ababbababbabaBABABBABA"
+    },
+    {
+      "reverse_donor": "XXXXyyxYYxxxyXXYXXXyxxxyXY",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "bAbA",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXXyyxxxYYXyxxxY",
+      "orientation": 1,
+      "fibonacci_index": 0,
+      "conjugator_power_of_x_squared": 3,
+      "normalized_fiber_coefficient": "aBab",
+      "required_fiber_coefficient": "ababaaBABA"
+    },
+    {
+      "reverse_donor": "XXXXyyxxxyyxyxxYYYXXXY",
+      "orientation": 1,
+      "fibonacci_index": 3,
+      "conjugator_power_of_x_squared": 6,
+      "normalized_fiber_coefficient": "ababbabbababABBABA",
+      "required_fiber_coefficient": "ababbababbabbababbabABBABBABABBABA"
+    },
+    {
+      "reverse_donor": "XXXXyyxyXyXXyxyyxxYXYYXY",
+      "orientation": 1,
+      "fibonacci_index": 0,
+      "conjugator_power_of_x_squared": 3,
+      "normalized_fiber_coefficient": "aBabbaBA",
+      "required_fiber_coefficient": "ababaaBABA"
+    },
+    {
+      "reverse_donor": "XXXXyyyxYXXYXXyy",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "abbbAABA",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXYXXYxxyxxyyxxY",
+      "orientation": 1,
+      "fibonacci_index": -4,
+      "conjugator_power_of_x_squared": -1,
+      "normalized_fiber_coefficient": "aBaaBaBaaBaaBaBa",
+      "required_fiber_coefficient": "aBaaBaaBaBaaBaaB"
+    },
+    {
+      "reverse_donor": "XXXYXXyxxy",
+      "orientation": -1,
+      "fibonacci_index": -3,
+      "conjugator_power_of_x_squared": 0,
+      "normalized_fiber_coefficient": "bAAbAbAAbA",
+      "required_fiber_coefficient": "bAbAAbAbAA"
+    },
+    {
+      "reverse_donor": "XXXYYXyXyxxYYXXyyXYXyyyy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": null,
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXXYYxxyxxyxxYXXyyXXY",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "baBaBaaB",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXXYYxxyyyXXYXXyxxYYxxy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "bABaaBaaaB",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXXYxxYYxxyxxyXXYXXyy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aaBaaBaaBAbA",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXXYxxYxxyXXy",
+      "orientation": -1,
+      "fibonacci_index": -3,
+      "conjugator_power_of_x_squared": 0,
+      "normalized_fiber_coefficient": "bAbAAbAAbA",
+      "required_fiber_coefficient": "bAbAAbAbAA"
+    },
+    {
+      "reverse_donor": "XXXYxxyXXYxxy",
+      "orientation": -1,
+      "fibonacci_index": -3,
+      "conjugator_power_of_x_squared": 0,
+      "normalized_fiber_coefficient": "bAAbAbAAbA",
+      "required_fiber_coefficient": "bAbAAbAbAA"
+    },
+    {
+      "reverse_donor": "XXXYxxyxyXXYYXyy",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "abAAbA",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXYxxyyxxyxxYXXY",
+      "orientation": 1,
+      "fibonacci_index": 0,
+      "conjugator_power_of_x_squared": 3,
+      "normalized_fiber_coefficient": "aBaabA",
+      "required_fiber_coefficient": "ababaaBABA"
+    },
+    {
+      "reverse_donor": "XXXyXXy",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "bAbA",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXyXyXXYYxxxy",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "bAbA",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXyxxyXXY",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "bAbA",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXyyXXYYxxy",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "bAbA",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXXyyxyXXYYxYXXyy",
+      "orientation": -1,
+      "fibonacci_index": 0,
+      "conjugator_power_of_x_squared": 3,
+      "normalized_fiber_coefficient": "aaBabA",
+      "required_fiber_coefficient": "ababaaBABA"
+    },
+    {
+      "reverse_donor": "XXYXXyxy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aBaaBa",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXYXXyyxxYxxYXXyyxyyxxYYXXYYxxy",
+      "orientation": 1,
+      "fibonacci_index": 1,
+      "conjugator_power_of_x_squared": 4,
+      "normalized_fiber_coefficient": "ababAAbaBA",
+      "required_fiber_coefficient": "ababbabbABBABA"
+    },
+    {
+      "reverse_donor": "XXYXYYxxyyy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aBaaaB",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXYXYxxyXXyy",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "aBabAbAAbA",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXYXyXXYxxyy",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "aBabAAbAbA",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXYXyxxyyXXYYxxyyyXXYxxYY",
+      "orientation": -1,
+      "fibonacci_index": 1,
+      "conjugator_power_of_x_squared": 4,
+      "normalized_fiber_coefficient": "aBaBAbabbAbA",
+      "required_fiber_coefficient": "ababbabbABBABA"
+    },
+    {
+      "reverse_donor": "XXYYXXyyXXyxxYxxYxyXXy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aBaBaBab",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXYYXXyyXYxxYxxyy",
+      "orientation": -1,
+      "fibonacci_index": -3,
+      "conjugator_power_of_x_squared": 0,
+      "normalized_fiber_coefficient": "bAbAAbAAbA",
+      "required_fiber_coefficient": "bAbAAbAbAA"
+    },
+    {
+      "reverse_donor": "XXYYXyyyyXYXy",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "abAbAA",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXYYYYXyyxxYXXyyxxYxxyXXyyxxY",
+      "orientation": 1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aBaaBa",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXYYYYxxyxyy",
+      "orientation": -1,
+      "fibonacci_index": -3,
+      "conjugator_power_of_x_squared": 0,
+      "normalized_fiber_coefficient": "AbAbAAbAbA",
+      "required_fiber_coefficient": "bAbAAbAbAA"
+    },
+    {
+      "reverse_donor": "XXYYYxxyyXXYYxxYXyXXyyxxy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aBaBaaBaaBaBabAAbAbA",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXYYYxxyyXy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aaBaBa",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXYYYxyyy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aBaBaa",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXYYxYxxyyXXy",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "abAAbA",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXYYxYxyyXy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aBaBaa",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXYYxxyXXyXy",
+      "orientation": -1,
+      "fibonacci_index": -1,
+      "conjugator_power_of_x_squared": 2,
+      "normalized_fiber_coefficient": "bAbA",
+      "required_fiber_coefficient": "abbAbABA"
+    },
+    {
+      "reverse_donor": "XXYxxYYXyxxyXXy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "BaaaBa",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXYxxYxyXXy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aBaBaa",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXYxxyXYYxxyXXy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aaBaaaBA",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXyXXyXXyXXyxYxxY",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aaaaaBBA",
+      "required_fiber_coefficient": "aaaBaaBA"
+    },
+    {
+      "reverse_donor": "XXyXXyXYYxxYxxy",
+      "orientation": -1,
+      "fibonacci_index": -2,
+      "conjugator_power_of_x_squared": 1,
+      "normalized_fiber_coefficient": "aaaaBaBA",
+      "required_fiber_coefficient": "aaaBaaBA"
+    }
+  ],
+  "positive_controls": [
+    "xxxyyxYYYxxYxxxyXXYY",
+    "yxxyyxYYYxxYYxxxxyXXYY",
+    "xyXXyxxyyxYYYxxYYxxYxxxyXXYY",
+    "XXYxyxxyyxYYYxxYYXyxxxxxxyXXYY"
+  ],
+  "reciprocal_checks": [
+    {
+      "donor": "XXXXYYxxyyyXYYYYxxxxyy",
+      "permutation_marking": {
+        "x": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          1
+        ],
+        "y": [
+          1,
+          9,
+          7,
+          2,
+          6,
+          5,
+          8,
+          4,
+          3
+        ]
+      },
+      "forward_replay": {
+        "moves": 86,
+        "peak_total_length": 48,
+        "endpoint": [
+          "xxxxyXXYY",
+          "XXXXYYxxyyyXYYYYxxxxyy"
+        ]
+      },
+      "source_donor_cycle_type": [
+        1,
+        2,
+        6
+      ],
+      "excluded_reciprocal_contacts": [
+        {
+          "receiver": "XXXXYYxxyyyXYYYYxyyxxYYxxyy",
+          "cycle_type": [
+            9
+          ],
+          "archive_source": [
+            "archive",
+            [
+              "n7row62_pureAC_moves.txt",
+              259
+            ],
+            2
+          ],
+          "ordinary_basis_suffix": {
+            "moves": 2765,
+            "peak_total_length": 257,
+            "endpoint": [
+              "x",
+              "y"
+            ]
+          }
+        },
+        {
+          "receiver": "XXYYxyy",
+          "cycle_type": [
+            9
+          ],
+          "archive_source": [
+            "archive",
+            [
+              "n7row62_pureAC_moves.txt",
+              248
+            ],
+            2
+          ],
+          "ordinary_basis_suffix": {
+            "moves": 2820,
+            "peak_total_length": 257,
+            "endpoint": [
+              "x",
+              "y"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "donor": "XXXXyxxyyxYxxYY",
+      "permutation_marking": {
+        "x": [
+          2,
+          3,
+          4,
+          5,
+          1,
+          7,
+          8,
+          9,
+          10,
+          6
+        ],
+        "y": [
+          2,
+          3,
+          6,
+          10,
+          7,
+          4,
+          1,
+          5,
+          8,
+          9
+        ]
+      },
+      "forward_replay": {
+        "moves": 60,
+        "peak_total_length": 33,
+        "endpoint": [
+          "xxxxyXXYY",
+          "XXXXyxxyyxYxxYY"
+        ]
+      },
+      "source_donor_cycle_type": [
+        1,
+        1,
+        8
+      ],
+      "excluded_reciprocal_contacts": [
+        {
+          "receiver": "XXXyXYY",
+          "cycle_type": [
+            10
+          ],
+          "archive_source": [
+            "archive",
+            [
+              "n5row164_pureAC_moves.txt",
+              1814
+            ],
+            0
+          ],
+          "ordinary_basis_suffix": {
+            "moves": 842,
+            "peak_total_length": 275,
+            "endpoint": [
+              "x",
+              "y"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "other_frozen_primitive_exclusion": {
+    "prime": 11,
+    "x": [
+      0,
+      10,
+      1,
+      1
+    ],
+    "y": [
+      0,
+      2,
+      5,
+      4
+    ],
+    "frozen_word": "xxyyxYYYxxY",
+    "frozen_image": [
+      10,
+      0,
+      0,
+      10
+    ],
+    "receiver": "xxxxyXXYY",
+    "receiver_image": [
+      8,
+      9,
+      4,
+      6
+    ],
+    "receiver_squared_trace": 9,
+    "tails": [
+      {
+        "initial": "xxY",
+        "period": "xxYxxYx",
+        "projective_order": 5,
+        "squared_trace_residues": [
+          1,
+          1,
+          5,
+          0,
+          5
+        ]
+      },
+      {
+        "initial": "xxxY",
+        "period": "xxxYxxY",
+        "projective_order": 5,
+        "squared_trace_residues": [
+          5,
+          0,
+          5,
+          1,
+          1
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,561 @@
+{
+  "source": [
+    "XXYYxyyyxYZY",
+    "XYYXyxy",
+    "XYYXyxyz"
+  ],
+  "source_projection": [
+    "XXXYxxyXyxxyxY",
+    "XXYxyxY"
+  ],
+  "source_minimum": [
+    "XXXyyxYXYxxy",
+    "XYXyy"
+  ],
+  "native_runs": {
+    "30": {
+      "floor": 3,
+      "cap": 30,
+      "root_pivots": 2,
+      "one_product_one_pivot": 4,
+      "chartless_seeds": 0,
+      "chartless_expanded": 0,
+      "chartless_discovered": 0,
+      "exit_orbits": 0,
+      "signed_projections": 0,
+      "candidates": 10160,
+      "positive_bridge_candidates": 0,
+      "admitted_products": 540,
+      "products_above_word_width": 0,
+      "closed": true,
+      "primitive_projection_hit": false
+    },
+    "31": {
+      "floor": 3,
+      "cap": 31,
+      "root_pivots": 2,
+      "one_product_one_pivot": 9,
+      "chartless_seeds": 1,
+      "chartless_expanded": 7,
+      "chartless_discovered": 7,
+      "exit_orbits": 9,
+      "signed_projections": 5,
+      "candidates": 39432,
+      "positive_bridge_candidates": 0,
+      "admitted_products": 1432,
+      "products_above_word_width": 0,
+      "closed": true,
+      "primitive_projection_hit": false
+    },
+    "32": {
+      "floor": 3,
+      "cap": 32,
+      "root_pivots": 2,
+      "one_product_one_pivot": 9,
+      "chartless_seeds": 1,
+      "chartless_expanded": 18,
+      "chartless_discovered": 18,
+      "exit_orbits": 23,
+      "signed_projections": 16,
+      "candidates": 68512,
+      "positive_bridge_candidates": 0,
+      "admitted_products": 2528,
+      "products_above_word_width": 0,
+      "closed": true,
+      "primitive_projection_hit": false
+    },
+    "33": {
+      "floor": 3,
+      "cap": 33,
+      "root_pivots": 2,
+      "one_product_one_pivot": 32,
+      "chartless_seeds": 2,
+      "chartless_expanded": 253,
+      "chartless_discovered": 253,
+      "exit_orbits": 205,
+      "signed_projections": 113,
+      "candidates": 771720,
+      "positive_bridge_candidates": 0,
+      "admitted_products": 15964,
+      "products_above_word_width": 0,
+      "closed": true,
+      "primitive_projection_hit": false
+    },
+    "34": {
+      "floor": 3,
+      "cap": 34,
+      "root_pivots": 2,
+      "one_product_one_pivot": 32,
+      "chartless_seeds": 2,
+      "chartless_expanded": 505,
+      "chartless_discovered": 505,
+      "exit_orbits": 466,
+      "signed_projections": 276,
+      "candidates": 1512072,
+      "positive_bridge_candidates": 0,
+      "admitted_products": 31564,
+      "products_above_word_width": 0,
+      "closed": true,
+      "primitive_projection_hit": false
+    },
+    "35": {
+      "floor": 3,
+      "cap": 35,
+      "root_pivots": 2,
+      "one_product_one_pivot": 118,
+      "chartless_seeds": 6,
+      "chartless_expanded": 120000,
+      "chartless_discovered": 2126151,
+      "exit_orbits": 173132,
+      "signed_projections": 81275,
+      "candidates": 304662808,
+      "positive_bridge_candidates": 430920,
+      "admitted_products": 19724264,
+      "products_above_word_width": 0,
+      "closed": false,
+      "primitive_projection_hit": false
+    },
+    "36": {
+      "floor": 3,
+      "cap": 36,
+      "root_pivots": 2,
+      "one_product_one_pivot": 621,
+      "chartless_seeds": 201,
+      "chartless_expanded": 120000,
+      "chartless_discovered": 4759668,
+      "exit_orbits": 199840,
+      "signed_projections": 96273,
+      "candidates": 307898592,
+      "positive_bridge_candidates": 2117640,
+      "admitted_products": 31175994,
+      "products_above_word_width": 0,
+      "closed": false,
+      "primitive_projection_hit": false
+    },
+    "37": {
+      "floor": 3,
+      "cap": 37,
+      "root_pivots": 2,
+      "one_product_one_pivot": 641,
+      "chartless_seeds": 224,
+      "chartless_expanded": 120000,
+      "chartless_discovered": 11266949,
+      "exit_orbits": 231218,
+      "signed_projections": 112452,
+      "candidates": 317673312,
+      "positive_bridge_candidates": 11824200,
+      "admitted_products": 58235216,
+      "products_above_word_width": 8978,
+      "closed": false,
+      "primitive_projection_hit": false
+    }
+  },
+  "independent_cap31_closure": {
+    "cap": 31,
+    "one_pivot_orbits": 9,
+    "chartless_seeds": 1,
+    "chartless_orbits": 7,
+    "charted_first_exits": 9,
+    "literal_menu_checks": 39432,
+    "marked_donor_changes_on_chartless_edges": 0
+  },
+  "selected_chart_switch": {
+    "route": [
+      [
+        "XXXYxZxyyxxY",
+        "XXYZxyxY",
+        "XXYxyxY"
+      ],
+      [
+        "XXYZxyxY",
+        "XXYxyxY",
+        "XYYXzXyxYZxy"
+      ],
+      [
+        "XXYxyxY",
+        "XYYXZXyxYzxy",
+        "XYxzxyXZyxZy"
+      ],
+      [
+        "XXYxyxY",
+        "XYxYXZXyxYz",
+        "XYxzxyXZyxZy"
+      ],
+      [
+        "X",
+        "XYZyZYxYzyZ",
+        "YYZyzyZ"
+      ]
+    ],
+    "rank_three_replay": {
+      "moves": 228,
+      "raw_peak": 43,
+      "cyclic_peak": 31,
+      "target": [
+        "XYxZyxYxyzy",
+        "XYYXyxy",
+        "Z"
+      ],
+      "first_pivotless_step": 183
+    },
+    "primitive_counts_at_orbit_boundaries": [
+      2,
+      1,
+      0,
+      0,
+      1
+    ],
+    "boundary_instructions": [
+      154,
+      175,
+      199,
+      220,
+      228
+    ],
+    "pivot_slot": 2,
+    "projected_pair": [
+      "XYXyxYYXy",
+      "XYYXyxy"
+    ],
+    "projection_chart": {
+      "chart": "literal",
+      "eliminated": "z",
+      "pivot": "Z"
+    },
+    "projection_minimum": [
+      "XXyxYYXyy",
+      "XYXyxy"
+    ],
+    "strict_stable_projection": {
+      "moves": 256,
+      "move_counts": {
+        "stabilize": 1,
+        "invert": 31,
+        "conjugate": 204,
+        "multiply": 19,
+        "destabilize": 1
+      },
+      "rank_peak": 3,
+      "raw_peak": 43,
+      "cyclic_peak": 31,
+      "initial_marking_moves": 1,
+      "end_transported_prefix": 229,
+      "prefix_moves": 228,
+      "pivot_slot": 2,
+      "descent": [],
+      "literal_source_letter": "z",
+      "old_generator_shear_factors": "commutator",
+      "basic_marking_factors": 0,
+      "marking": {
+        "x": "x",
+        "y": "y",
+        "z": "z"
+      },
+      "transformed_rank_three_words": [
+        "XYxZyxYxyzy",
+        "XYYXyxy",
+        "Z"
+      ],
+      "final_words": [
+        "XYXyxYYXy",
+        "XYYXyxy"
+      ],
+      "strict_ledger_sha256": "9a7e8a1f810cd3a26e913232543accca113973082d15f75c5848391b851f068b"
+    },
+    "in_ordinary_cap22": true,
+    "independent_strict_verified": true
+  },
+  "cap34_projection_checks": {
+    "known_trivial_archive_pairs": 22426,
+    "archive_sha256": "c9dd0627965a6f1ffa899c4a465b95a788d739eedd49089d9b6c5681980ba2c4",
+    "exact_archive_hits": [],
+    "distinct_minima_through32": 58,
+    "minimal_rank_two_signed_orbits": 276,
+    "classifications": {
+      "parity_obstructed": 276
+    },
+    "remaining": [],
+    "all_tail_basis_index_through32": {
+      "status": "NO_SUBGROUP_JOIN",
+      "forward_pairs": 58,
+      "forward_distinct_words": 64,
+      "forward_cap": 32,
+      "forward_minimum_coordinate": 5,
+      "reverse_pairs": 23902,
+      "reverse_rotation_pairs": 6230442,
+      "reverse_distinct_rotated_cores": 2675055,
+      "reverse_geodesic_bridges": 5089838,
+      "primitive_slopes_constructed": 29744173,
+      "coordinates_found_in_forward_catalogue": 5659996,
+      "basis_pair_lookups": 470319,
+      "core_topologies": {
+        "barbell": 5095922,
+        "rose": 861364,
+        "theta": 1807607
+      }
+    },
+    "ordinary_membership_through32": {
+      "projection_minima_tsv_sha256": "9ca6e21b5ec043b14740b4cdea915fe3e723e5fb4792dd44caa5771cd2787588",
+      "represented_in_cap31": 55,
+      "outside32_marked_minima": [
+        [
+          "xxyXy",
+          "xxyxyXYYXyyxYXXYYxYXYxyyXyy"
+        ],
+        [
+          "xxyXYXy",
+          "xxxYXXYxyyXyxxYXyxxyXXyXY"
+        ],
+        [
+          "xxyxYXyXYXyxY",
+          "xxyxYxyxYxyXYYXXyxY"
+        ]
+      ]
+    }
+  },
+  "chartless_donor_release": {
+    "original_donor": "XYYXyxy",
+    "cap34_chartless_orbits_with_donor": 505,
+    "partial_cap35_chartless_orbits_without_donor": 162182,
+    "selected_orbit_route": [
+      [
+        "XXXYxZxyyxxY",
+        "XXYZxyxY",
+        "XXYxyxY"
+      ],
+      [
+        "XXYZxyxY",
+        "XXYxyxY",
+        "XYYXzXyxYZxy"
+      ],
+      [
+        "XXYxyxY",
+        "XYYXZXyxYzxy",
+        "XYxzxyXZyxZy"
+      ],
+      [
+        "XYXZZXzxyZxz",
+        "XYXZxZXyZxz",
+        "XYXZxyZXyZxz"
+      ]
+    ],
+    "boundary_instructions": [
+      154,
+      175,
+      199,
+      223
+    ],
+    "primitive_counts": [
+      2,
+      1,
+      0,
+      0
+    ],
+    "strict_replay": {
+      "moves": 223,
+      "raw_peak": 43,
+      "cyclic_peak": 35,
+      "target": [
+        "XXYxyzXyxYZY",
+        "XYxZyxYxyzy",
+        "XYxZyxZYxyzy"
+      ],
+      "first_pivotless_step": 183
+    }
+  },
+  "geometric_control": {
+    "original_strict_suffix": {
+      "moves": 48,
+      "raw_peak": 38,
+      "cyclic_peak": 28,
+      "target": [
+        "x",
+        "y",
+        "z"
+      ],
+      "first_pivotless_step": 1
+    },
+    "one_product_replay": {
+      "moves": 23,
+      "raw_peak": 28,
+      "cyclic_peak": 28,
+      "target": [
+        "XXyyy",
+        "Xy",
+        "XXZyxzXZxZXYzyyy"
+      ],
+      "first_pivotless_step": 1
+    },
+    "orbit_route": [
+      [
+        "XXXXYYY",
+        "XXXYY",
+        "XXXYYZXyzYZyZYxz"
+      ],
+      [
+        "XXXYY",
+        "XXXYYZXyzYZyZYxz",
+        "XY"
+      ]
+    ],
+    "boundaries": [
+      18,
+      23
+    ],
+    "primitive_projections": [
+      {
+        "pair": [
+          "X",
+          "XXyXYxxyXyxY"
+        ],
+        "chart": "literal",
+        "eliminated": "x",
+        "pivot": "Xy"
+      },
+      {
+        "pair": [
+          "X",
+          "XXyXYxxyXyxY"
+        ],
+        "chart": "literal",
+        "eliminated": "y",
+        "pivot": "Xy"
+      }
+    ],
+    "strict_ledger": {
+      "format": "rank-three-ac-elementary-v1",
+      "start": [
+        "xxYYY",
+        "xxxYYYY",
+        "zxZXYzxxYYYZyxzX"
+      ],
+      "target": [
+        "XXyyy",
+        "Xy",
+        "XXZyxzXZxZXYzyyy"
+      ],
+      "maximum_cyclic_length": 28,
+      "moves": [
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "invert",
+          "i": 2
+        },
+        {
+          "op": "conjugate",
+          "i": 2,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 2,
+          "g": "z"
+        },
+        {
+          "op": "conjugate",
+          "i": 2,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 2,
+          "g": "y"
+        },
+        {
+          "op": "conjugate",
+          "i": 2,
+          "g": "Z"
+        },
+        {
+          "op": "conjugate",
+          "i": 2,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 2,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 2,
+          "g": "Y"
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "multiply",
+          "i": 1,
+          "j": 0
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "invert",
+          "i": 0
+        }
+      ]
+    }
+  },
+  "independent_cap34_closure": {
+    "cap": 34,
+    "one_pivot_orbits": 32,
+    "chartless_seeds": 2,
+    "chartless_orbits": 505,
+    "charted_first_exits": 466,
+    "literal_menu_checks": 1512072,
+    "marked_donor_changes_on_chartless_edges": 0
+  }
+}

@@ -1,0 +1,517 @@
+{
+  "rotation_menu_audit": {
+    "checked_distinct_pairs": 769,
+    "brute_negative_pairs": 674,
+    "witnessed_positive_pairs": 95,
+    "complete_consumption_examples": 55,
+    "ak2_positive_control": {
+      "source": [
+        "yyyXX",
+        "yxYXyyX"
+      ],
+      "receiver_index": 0,
+      "receiver_rotation": "XyyyX",
+      "donor_rotation": "xYXyyXy",
+      "primitive": "XyyXyyXy"
+    },
+    "boundary_record_positive_control": {
+      "anchor": [
+        "xxYYY",
+        "xyxYXY"
+      ],
+      "last_edge": {
+        "source": [
+          "yyyXX",
+          "yxYXyyX"
+        ],
+        "receiver_index": 0,
+        "receiver_rotation": "XyyyX",
+        "donor_rotation": "xYXyyXy",
+        "primitive": "XyyXyyXy"
+      }
+    },
+    "truncated_boundary_record_rejected": true
+  },
+  "generated_cap32_first_primitive_product": {
+    "older_cap31": {
+      "rows_checked": 254220523,
+      "complete": true,
+      "hit": null
+    },
+    "added_at_cap32": {
+      "rows_checked": 285484620,
+      "complete": true,
+      "hit": null
+    },
+    "total_source_orbits": 539705143,
+    "cap31_source_sha256": "d7ea4a350aa13662032bc4742febaa2252a3a815f9b4e774afaf972ef4c2ffb6",
+    "cap32_outside_source_sha256": "08f34a6ddf611d64f374e7976ec29c18f98b2ad39846380f8a3a93f623d9c634"
+  },
+  "two_product_probe": {
+    "forward_input_sha256": "8f8a65c94232069a2a347eaf04183094ed5609c5ac3c1def32cea0744bae96cc",
+    "cap33_short_boundary": {
+      "cyclic_cap": 33,
+      "source_size": 1825074,
+      "start_offset": 0,
+      "next_offset": 1825074,
+      "source_rows_scanned": 59515,
+      "source_reached_eof": true,
+      "source_boundary_independently_compared": true,
+      "recipient_parity_skips": 53204,
+      "zero_bridge_rotation_checks": 23566236,
+      "positive_bridge_rotation_checks": 35888,
+      "admitted_candidates": 407529,
+      "boundary_records": 130884,
+      "primitive_boundary_records": 0
+    },
+    "uncapped_final_product": {
+      "rows_checked": 130884,
+      "complete": true,
+      "hit": null
+    }
+  },
+  "second_energy20_ordinary_entry": {
+    "backwards_search": {
+      "cyclic_cap": 32,
+      "expanded_orbits": 74593,
+      "discovered_orbits": 81604,
+      "product_candidates": 124564520,
+      "admitted_product_candidates": 3604326,
+      "minimum_cyclic_energy": 17,
+      "minimum_cyclic_coordinate": 7,
+      "primitive_found": false,
+      "target_found": true,
+      "closed": false,
+      "orbit_histogram": {
+        "17": 1,
+        "19": 4,
+        "20": 13,
+        "21": 42,
+        "22": 55,
+        "23": 171,
+        "24": 166,
+        "25": 497,
+        "26": 611,
+        "27": 1871,
+        "28": 2605,
+        "29": 7057,
+        "30": 9520,
+        "31": 25538,
+        "32": 33453
+      }
+    },
+    "backward_orbit_route": [
+      [
+        "xxxxyXXYY",
+        "xxyyxYYYxxY"
+      ],
+      [
+        "xxxxyXXYY",
+        "xxyXXyXYYXXy"
+      ],
+      [
+        "xxxxyXXYY",
+        "xxyXXyXYYxxyXXY"
+      ],
+      [
+        "xxyxxYXXyxxyXY",
+        "xxyxYYXXyxxYXXy"
+      ],
+      [
+        "xxyxYYXXyxxYXXy",
+        "xxyxxyXYXXYxxyyXY"
+      ],
+      [
+        "xxxxyxxyXYYXXy",
+        "xxyxYYXXyxxYXXy"
+      ],
+      [
+        "xxxxyxxyXYYXXy",
+        "xxyxxyxxyXXYXXY"
+      ],
+      [
+        "xxyxxyxxyXXYXXY",
+        "xxyxxyXXYxxyxxyXY"
+      ],
+      [
+        "xxyxxyxxyXXYXXY",
+        "xxxxyXXYXYXXYXXy"
+      ],
+      [
+        "xxyXXYxxyXY",
+        "xxxxyXXYXXYXYXXy"
+      ],
+      [
+        "xxyXXYxxyXY",
+        "xxxxyXYXXYxxyxy"
+      ],
+      [
+        "xxyXXYxxyXY",
+        "xxxxyXYXYXXyxxxy"
+      ],
+      [
+        "xxyXXYxxyXY",
+        "xxxxyXYXXXYxxyxxy"
+      ],
+      [
+        "xxyXXYxxyXY",
+        "xxxyXYxxyXYXXYXXYXXy"
+      ],
+      [
+        "xxyXXYxxyXY",
+        "xxyxxyxxyXYXY"
+      ],
+      [
+        "xxyXXYxxyXY",
+        "xxyxxyyxYXXyxYXY"
+      ],
+      [
+        "xxyxxyyXYxY",
+        "xxyXXYxxyXY"
+      ],
+      [
+        "xxyXXYxxyXY",
+        "xxyxyXYxxYXXyxYY"
+      ],
+      [
+        "xxyXXYxxyXY",
+        "xxyxyXYxYxxyXYY"
+      ],
+      [
+        "xxyXXYxxyXY",
+        "xxxyXYxYxxyXXy"
+      ],
+      [
+        "xxyXXYxxyXY",
+        "xxyxyxYXXyxYxYXXY"
+      ],
+      [
+        "xxyXXYxxyXY",
+        "xxxyXYxYXXYxxy"
+      ],
+      [
+        "xxyXXYxxyXY",
+        "xxyxyxxYXYXXY"
+      ],
+      [
+        "xxyxxyXXYYXY",
+        "xxyxyxxYXXYXY"
+      ],
+      [
+        "xxyxyXyxY",
+        "xxyXyyXXYxxY"
+      ],
+      [
+        "xxyxyXyxY",
+        "xxyxyxYxxyXyyXY"
+      ],
+      [
+        "xxyxyXyxY",
+        "xxyxyxyxyxYxxyXy"
+      ],
+      [
+        "xxyxyxyxxyXXY",
+        "xxyXyxxYxyxyxyxy"
+      ],
+      [
+        "xxyxyxyxxyXXY",
+        "xxyXyxxYXyxxYXy"
+      ],
+      [
+        "xxyXyxxyXYxxyXY",
+        "xxyxyxyxyxyxxyXY"
+      ],
+      [
+        "xxyxyxyxyyxYXXY",
+        "xxyxyxyxyxyxxyXY"
+      ],
+      [
+        "xxyxyXYxy",
+        "xxyxyxyxyyxYXXY"
+      ],
+      [
+        "xxyxyXYxy",
+        "xxyxyxyXYYXYXYXYXy"
+      ],
+      [
+        "xxyxyXYxy",
+        "xyxyxyxyxyXYYXYXY"
+      ],
+      [
+        "xyxyxyxyXYXYXY",
+        "xxyXYXYXYXYXYxyxy"
+      ],
+      [
+        "xyxyxyxyXYXYXY",
+        "xxyxyxyXYXYXyxy"
+      ],
+      [
+        "xxyxyXY",
+        "xyxyxyxYXYXYXy"
+      ]
+    ],
+    "marked_cyclic_route": [
+      [
+        "XXXyyyy",
+        "XYXyxy"
+      ],
+      [
+        "XYXyxy",
+        "XYXyyyyXyxY"
+      ],
+      [
+        "XYXyyyyXyxY",
+        "XYxYYYxyy"
+      ],
+      [
+        "XYxYXyxYxy",
+        "XYxYYYxyy"
+      ],
+      [
+        "XYxYXyxYxy",
+        "XYxYYxyXy"
+      ],
+      [
+        "XYxYXYxyXyy",
+        "XYxYYxyXy"
+      ],
+      [
+        "XYxYXYxyXyy",
+        "XYxYXyXyxy"
+      ],
+      [
+        "XYYxYXyyXyy",
+        "XYxYXYxyXyy"
+      ],
+      [
+        "XXYxYXyXyy",
+        "XYYxYXyyXyy"
+      ],
+      [
+        "XXYxYXyXyy",
+        "XXyxYYxYXyy"
+      ],
+      [
+        "XXyXYxxYXyy",
+        "XXyxYYxYXyy"
+      ],
+      [
+        "XXYxyy",
+        "XXyXYxxYXyy"
+      ],
+      [
+        "XXXYxyxxYXyyXXy",
+        "XXYxyy"
+      ],
+      [
+        "XXYXyXYxyxxYXyy",
+        "XXYxyy"
+      ],
+      [
+        "XXXyXYxyxxY",
+        "XXYxyy"
+      ],
+      [
+        "XXXyXYxxy",
+        "XXYxyy"
+      ],
+      [
+        "XXYxyy",
+        "XXyxYxYxy"
+      ],
+      [
+        "XXyxYxYxy",
+        "XYYxyXyXy"
+      ],
+      [
+        "XYXyXYxyXy",
+        "XYYxyXyXy"
+      ],
+      [
+        "XYYxyXyXy",
+        "XYxYxyy"
+      ],
+      [
+        "XYxYxYxyXyXyXy",
+        "XYxYxyy"
+      ],
+      [
+        "XXyxYxYxYxy",
+        "XYxYxyy"
+      ],
+      [
+        "XXyXYxxy",
+        "XXyxYxYxYxy"
+      ],
+      [
+        "XXYxyXyXy",
+        "XXyxYxYxYxy"
+      ],
+      [
+        "XXXyXyXYxyXy",
+        "XXYxyXyXy"
+      ],
+      [
+        "XXYxyXyXy",
+        "XXyXyxY"
+      ],
+      [
+        "XXyXyxY",
+        "XYxYxYxyXyXyXy"
+      ],
+      [
+        "XYxYxYXyXyyXyXy",
+        "XYxYxYxyXyXyXy"
+      ],
+      [
+        "XYxYxYxYxYxyXyXyy",
+        "XYxYxYxyXyXyXy"
+      ],
+      [
+        "XXyXyxYXy",
+        "XYxYxYxYxYxyXyXyy"
+      ],
+      [
+        "XXyXyXyxYYxYxYxYxy",
+        "XXyXyxYXy"
+      ],
+      [
+        "XXyXyXyXyyXYxxY",
+        "XXyXyxYXy"
+      ],
+      [
+        "XXyXyXyXyXyXXyxY",
+        "XXyXyXyXyyXYxxY"
+      ],
+      [
+        "XXyXyXyXyXyXXyxY",
+        "XXyxYXXyxYXXyxy"
+      ],
+      [
+        "XXYxxyXXyXyXy",
+        "XXyxYXXyxYXXyxy"
+      ],
+      [
+        "XXYxxyXXyXyXy",
+        "XXyXyXyXyXYXXyxy"
+      ],
+      [
+        "XXyXyXyXyXYXXyxy",
+        "XXyXyxyXY"
+      ],
+      [
+        "XXyXyXYXXyxyyxY",
+        "XXyXyxyXY"
+      ],
+      [
+        "XXYXXyxyyxxY",
+        "XXyXyxyXY"
+      ],
+      [
+        "XXYXXyxyyxxY",
+        "XXYXYXXyxyxxy"
+      ],
+      [
+        "XXYXYXXyxyxxy",
+        "XXYxxyXXYxy"
+      ],
+      [
+        "XXXYxyXyxxyXXY",
+        "XXYxxyXXYxy"
+      ],
+      [
+        "XXYXYXyxxYXyXyxxy",
+        "XXYxxyXXYxy"
+      ],
+      [
+        "XXXyxxyXXYXYxy",
+        "XXYxxyXXYxy"
+      ],
+      [
+        "XXYXYxyXyXXYxyy",
+        "XXYxxyXXYxy"
+      ],
+      [
+        "XXYXYxyXXyxxYXyy",
+        "XXYxxyXXYxy"
+      ],
+      [
+        "XXYXYxyyXXy",
+        "XXYxxyXXYxy"
+      ],
+      [
+        "XXYxYXyxxYXyyXXy",
+        "XXYxxyXXYxy"
+      ],
+      [
+        "XXYxYxyXXyXXy",
+        "XXYxxyXXYxy"
+      ],
+      [
+        "XXXyxxYxxYxxYxyXXYxy",
+        "XXYxxyXXYxy"
+      ],
+      [
+        "XXXXyXXyXXYxxxYxy",
+        "XXYxxyXXYxy"
+      ],
+      [
+        "XXXXyXXXyxxYxYxy",
+        "XXYxxyXXYxy"
+      ],
+      [
+        "XXXXyXyXXYxxYxy",
+        "XXYxxyXXYxy"
+      ],
+      [
+        "XXXXyxxYxYxxYxxy",
+        "XXYxxyXXYxy"
+      ],
+      [
+        "XXXXyxxYxYxxYxxy",
+        "XXYxxYxxYxxyXXy"
+      ],
+      [
+        "XXYxxYxxYxxyXXy",
+        "XXYxxYxxyXYxxYxxy"
+      ],
+      [
+        "XXXXyXXyxYYxxy",
+        "XXYxxYxxYxxyXXy"
+      ],
+      [
+        "XXXXyXXyxYYxxy",
+        "XXYxxyXXyXYYxxy"
+      ],
+      [
+        "XXYxxyXXyXYYxxy",
+        "XXyXXyxYxxYXXyyxY"
+      ],
+      [
+        "XXYxxyXXyXYYxxy",
+        "XXYxxyXXyxYXXy"
+      ],
+      [
+        "XXXXyyxxY",
+        "XXYxxyXXyXYYxxy"
+      ],
+      [
+        "XXXXyyxxY",
+        "XXYxxyyxYxxY"
+      ],
+      [
+        "XXXXyyxxY",
+        "XXyXXyyyXYY"
+      ]
+    ],
+    "strict_replay": {
+      "moves": 1037,
+      "peak_total_length": 41,
+      "endpoint": [
+        "xxxxyXXYY",
+        "xxyyxYYYxxY"
+      ],
+      "cyclic_peak": 32
+    }
+  }
+}

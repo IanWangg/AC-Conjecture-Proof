@@ -1,0 +1,5299 @@
+[
+  {
+    "span": 2,
+    "formal_rank_three_radius_ball": 559,
+    "all_terminal_templates": 34,
+    "counts": {
+      "literal_replacement": 18,
+      "substitute_last_equality": 8,
+      "eliminate_single_occurrence": 8
+    },
+    "last_equality_classes": {
+      "BC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "C",
+          "B": "c"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 448,
+        "example_case": [
+          "b",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "Bc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "c",
+          "B": "C"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 259,
+        "example_case": [
+          "b",
+          "c",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "span": 3,
+    "formal_rank_three_radius_ball": 9990,
+    "all_terminal_templates": 1308,
+    "counts": {
+      "literal_replacement": 726,
+      "substitute_last_equality": 336,
+      "eliminate_single_occurrence": 246
+    },
+    "last_equality_classes": {
+      "AB": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "B",
+          "A": "b"
+        },
+        "covered_cases": 6,
+        "formal_vertices_through_last_target": 448,
+        "example_case": [
+          "A",
+          "b",
+          [
+            "aa",
+            "b",
+            "c"
+          ]
+        ]
+      },
+      "ABC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "BC",
+          "A": "cb"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 9549,
+        "example_case": [
+          "ba",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "ABc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "Bc",
+          "A": "Cb"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 9186,
+        "example_case": [
+          "b",
+          "cA",
+          [
+            "A",
+            "a",
+            "cA"
+          ]
+        ]
+      },
+      "AC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "C",
+          "A": "c"
+        },
+        "covered_cases": 6,
+        "formal_vertices_through_last_target": 448,
+        "example_case": [
+          "A",
+          "c",
+          [
+            "aa",
+            "b",
+            "c"
+          ]
+        ]
+      },
+      "ACB": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "CB",
+          "A": "bc"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 9549,
+        "example_case": [
+          "b",
+          "AC",
+          [
+            "A",
+            "a",
+            "ca"
+          ]
+        ]
+      },
+      "ACb": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "Cb",
+          "A": "Bc"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 9186,
+        "example_case": [
+          "b",
+          "ca",
+          [
+            "A",
+            "a",
+            "ca"
+          ]
+        ]
+      },
+      "Ab": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "b",
+          "A": "B"
+        },
+        "covered_cases": 6,
+        "formal_vertices_through_last_target": 259,
+        "example_case": [
+          "A",
+          "B",
+          [
+            "aa",
+            "b",
+            "c"
+          ]
+        ]
+      },
+      "Abc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "bc",
+          "A": "CB"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 9186,
+        "example_case": [
+          "b",
+          "aC",
+          [
+            "A",
+            "a",
+            "cA"
+          ]
+        ]
+      },
+      "Ac": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "c",
+          "A": "C"
+        },
+        "covered_cases": 6,
+        "formal_vertices_through_last_target": 259,
+        "example_case": [
+          "A",
+          "C",
+          [
+            "aa",
+            "b",
+            "c"
+          ]
+        ]
+      },
+      "Acb": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "cb",
+          "A": "BC"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 9186,
+        "example_case": [
+          "bA",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "B": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "",
+          "B": ""
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 260,
+        "example_case": [
+          "bC",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "BBC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "BB",
+          "C": "bb"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 8794,
+        "example_case": [
+          "b",
+          "BC",
+          [
+            "A",
+            "a",
+            "cb"
+          ]
+        ]
+      },
+      "BBc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "bb",
+          "C": "BB"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 8614,
+        "example_case": [
+          "b",
+          "cB",
+          [
+            "A",
+            "a",
+            "cB"
+          ]
+        ]
+      },
+      "BC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "C",
+          "B": "c"
+        },
+        "covered_cases": 50,
+        "formal_vertices_through_last_target": 7160,
+        "example_case": [
+          "B",
+          "c",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "BCC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "CC",
+          "B": "cc"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 8794,
+        "example_case": [
+          "bc",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "BXCx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "XCx",
+          "B": "Xcx"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 9528,
+        "example_case": [
+          "Xcx",
+          "B",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "BXcx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "Xcx",
+          "B": "XCx"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 9170,
+        "example_case": [
+          "Xcx",
+          "b",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "BYCy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "YCy",
+          "B": "Ycy"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 9528,
+        "example_case": [
+          "Ycy",
+          "B",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "BYcy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "Ycy",
+          "B": "YCy"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 9170,
+        "example_case": [
+          "Ycy",
+          "b",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "Bc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "c",
+          "B": "C"
+        },
+        "covered_cases": 44,
+        "formal_vertices_through_last_target": 3966,
+        "example_case": [
+          "B",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "Bcc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "cc",
+          "B": "CC"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 8614,
+        "example_case": [
+          "bC",
+          "c",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "BxCX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "xCX",
+          "B": "xcX"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 9528,
+        "example_case": [
+          "Xbx",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "BxcX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "xcX",
+          "B": "xCX"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 9170,
+        "example_case": [
+          "Xbx",
+          "c",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "ByCY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "yCY",
+          "B": "ycY"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 9528,
+        "example_case": [
+          "Yby",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "BycY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "ycY",
+          "B": "yCY"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 9170,
+        "example_case": [
+          "Yby",
+          "c",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "C": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "",
+          "C": ""
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 260,
+        "example_case": [
+          "b",
+          "bC",
+          [
+            "A",
+            "a",
+            "cB"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "span": 4,
+    "formal_rank_three_radius_ball": 170886,
+    "all_terminal_templates": 36762,
+    "counts": {
+      "literal_replacement": 20892,
+      "substitute_last_equality": 9464,
+      "eliminate_single_occurrence": 6384,
+      "impossible_order_five": 6,
+      "cyclic_power_substitution": 16
+    },
+    "last_equality_classes": {
+      "A": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "",
+          "A": ""
+        },
+        "covered_cases": 30,
+        "formal_vertices_through_last_target": 19,
+        "example_case": [
+          "AA",
+          "AAA",
+          [
+            "aaa",
+            "b",
+            "c"
+          ]
+        ]
+      },
+      "AAAAA": {
+        "method": "impossible_order_five",
+        "covered_cases": 6,
+        "example_case": [
+          "AA",
+          "aaa",
+          [
+            "aaa",
+            "b",
+            "c"
+          ]
+        ]
+      },
+      "AAAB": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "AAA",
+          "B": "aaa"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 9467,
+        "example_case": [
+          "A",
+          "baa",
+          [
+            "aa",
+            "baa",
+            "c"
+          ]
+        ]
+      },
+      "AAAC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "AAA",
+          "C": "aaa"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 9467,
+        "example_case": [
+          "A",
+          "caa",
+          [
+            "aa",
+            "b",
+            "caa"
+          ]
+        ]
+      },
+      "AAAb": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "aaa",
+          "B": "AAA"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 9459,
+        "example_case": [
+          "A",
+          "aaB",
+          [
+            "aa",
+            "bAA",
+            "c"
+          ]
+        ]
+      },
+      "AAAc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "aaa",
+          "C": "AAA"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 9459,
+        "example_case": [
+          "A",
+          "aaC",
+          [
+            "aa",
+            "b",
+            "cAA"
+          ]
+        ]
+      },
+      "AAB": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "AA",
+          "B": "aa"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 8794,
+        "example_case": [
+          "A",
+          "ba",
+          [
+            "aa",
+            "ba",
+            "c"
+          ]
+        ]
+      },
+      "AABC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "CAA",
+          "B": "aac"
+        },
+        "covered_cases": 10,
+        "formal_vertices_through_last_target": 167574,
+        "example_case": [
+          "baa",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "AABc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "cAA",
+          "B": "aaC"
+        },
+        "covered_cases": 24,
+        "formal_vertices_through_last_target": 167626,
+        "example_case": [
+          "b",
+          "cAA",
+          [
+            "A",
+            "a",
+            "cAA"
+          ]
+        ]
+      },
+      "AAC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "AA",
+          "C": "aa"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 8794,
+        "example_case": [
+          "A",
+          "ca",
+          [
+            "aa",
+            "b",
+            "ca"
+          ]
+        ]
+      },
+      "AACB": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "AAC",
+          "B": "caa"
+        },
+        "covered_cases": 10,
+        "formal_vertices_through_last_target": 167574,
+        "example_case": [
+          "b",
+          "AAC",
+          [
+            "A",
+            "a",
+            "caa"
+          ]
+        ]
+      },
+      "AACb": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "caa",
+          "B": "AAC"
+        },
+        "covered_cases": 24,
+        "formal_vertices_through_last_target": 167626,
+        "example_case": [
+          "b",
+          "caa",
+          [
+            "A",
+            "a",
+            "caa"
+          ]
+        ]
+      },
+      "AAXBx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "xAAX",
+          "B": "xaaX"
+        },
+        "covered_cases": 1,
+        "formal_vertices_through_last_target": 9886,
+        "example_case": [
+          "bxaX",
+          "xAX",
+          [
+            "A",
+            "c",
+            "xaX"
+          ]
+        ]
+      },
+      "AAXCx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "xAAX",
+          "C": "xaaX"
+        },
+        "covered_cases": 1,
+        "formal_vertices_through_last_target": 9886,
+        "example_case": [
+          "cxaX",
+          "xAX",
+          [
+            "A",
+            "b",
+            "xaX"
+          ]
+        ]
+      },
+      "AAYBy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "yAAY",
+          "B": "yaaY"
+        },
+        "covered_cases": 1,
+        "formal_vertices_through_last_target": 9886,
+        "example_case": [
+          "byaY",
+          "yAY",
+          [
+            "A",
+            "c",
+            "yaY"
+          ]
+        ]
+      },
+      "AAYCy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "yAAY",
+          "C": "yaaY"
+        },
+        "covered_cases": 1,
+        "formal_vertices_through_last_target": 9886,
+        "example_case": [
+          "cyaY",
+          "yAY",
+          [
+            "A",
+            "b",
+            "yaY"
+          ]
+        ]
+      },
+      "AAb": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "aa",
+          "B": "AA"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 505,
+        "example_case": [
+          "A",
+          "aB",
+          [
+            "aa",
+            "bA",
+            "c"
+          ]
+        ]
+      },
+      "AAbc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "aaC",
+          "B": "cAA"
+        },
+        "covered_cases": 10,
+        "formal_vertices_through_last_target": 166986,
+        "example_case": [
+          "b",
+          "aaC",
+          [
+            "A",
+            "a",
+            "cAA"
+          ]
+        ]
+      },
+      "AAc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "aa",
+          "C": "AA"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 505,
+        "example_case": [
+          "A",
+          "aC",
+          [
+            "aa",
+            "b",
+            "cA"
+          ]
+        ]
+      },
+      "AAcb": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "Caa",
+          "B": "AAc"
+        },
+        "covered_cases": 10,
+        "formal_vertices_through_last_target": 166986,
+        "example_case": [
+          "bAA",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "AAxBX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "XAAx",
+          "B": "Xaax"
+        },
+        "covered_cases": 1,
+        "formal_vertices_through_last_target": 9886,
+        "example_case": [
+          "bXax",
+          "XAx",
+          [
+            "A",
+            "Xax",
+            "c"
+          ]
+        ]
+      },
+      "AAxCX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "XAAx",
+          "C": "Xaax"
+        },
+        "covered_cases": 1,
+        "formal_vertices_through_last_target": 9886,
+        "example_case": [
+          "cXax",
+          "XAx",
+          [
+            "A",
+            "Xax",
+            "b"
+          ]
+        ]
+      },
+      "AAyBY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "YAAy",
+          "B": "Yaay"
+        },
+        "covered_cases": 1,
+        "formal_vertices_through_last_target": 9886,
+        "example_case": [
+          "bYay",
+          "YAy",
+          [
+            "A",
+            "Yay",
+            "c"
+          ]
+        ]
+      },
+      "AAyCY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "YAAy",
+          "C": "Yaay"
+        },
+        "covered_cases": 1,
+        "formal_vertices_through_last_target": 9886,
+        "example_case": [
+          "cYay",
+          "YAy",
+          [
+            "A",
+            "Yay",
+            "b"
+          ]
+        ]
+      },
+      "AB": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "B",
+          "A": "b"
+        },
+        "covered_cases": 243,
+        "formal_vertices_through_last_target": 7160,
+        "example_case": [
+          "A",
+          "AAB",
+          [
+            "aa",
+            "baa",
+            "c"
+          ]
+        ]
+      },
+      "ABABC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "ABAB",
+          "C": "baba"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 168529,
+        "example_case": [
+          "ba",
+          "ABC",
+          [
+            "A",
+            "a",
+            "cba"
+          ]
+        ]
+      },
+      "ABABc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "baba",
+          "C": "ABAB"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 168344,
+        "example_case": [
+          "ba",
+          "cAB",
+          [
+            "A",
+            "a",
+            "cAB"
+          ]
+        ]
+      },
+      "ABAC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "ACA",
+          "B": "aca"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 9902,
+        "example_case": [
+          "ba",
+          "AC",
+          [
+            "A",
+            "a",
+            "ca"
+          ]
+        ]
+      },
+      "ABB": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "BB",
+          "A": "bb"
+        },
+        "covered_cases": 6,
+        "formal_vertices_through_last_target": 146139,
+        "example_case": [
+          "AB",
+          "b",
+          [
+            "aa",
+            "b",
+            "c"
+          ]
+        ]
+      },
+      "ABBC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "BBC",
+          "A": "cbb"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 167574,
+        "example_case": [
+          "ba",
+          "BC",
+          [
+            "A",
+            "a",
+            "cb"
+          ]
+        ]
+      },
+      "ABBc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "BBc",
+          "A": "Cbb"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 166882,
+        "example_case": [
+          "b",
+          "cAB",
+          [
+            "A",
+            "a",
+            "cAB"
+          ]
+        ]
+      },
+      "ABC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "BC",
+          "A": "cb"
+        },
+        "covered_cases": 89,
+        "formal_vertices_through_last_target": 159501,
+        "example_case": [
+          "A",
+          "cb",
+          [
+            "aa",
+            "b",
+            "cb"
+          ]
+        ]
+      },
+      "ABCB": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "BCB",
+          "A": "bcb"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 168098,
+        "example_case": [
+          "b",
+          "ABC",
+          [
+            "A",
+            "a",
+            "cba"
+          ]
+        ]
+      },
+      "ABCC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "BCC",
+          "A": "ccb"
+        },
+        "covered_cases": 5,
+        "formal_vertices_through_last_target": 167574,
+        "example_case": [
+          "bac",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "ABCb": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "BCb",
+          "A": "Bcb"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 166905,
+        "example_case": [
+          "b",
+          "cba",
+          [
+            "A",
+            "a",
+            "cba"
+          ]
+        ]
+      },
+      "ABXCx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "BXCx",
+          "A": "Xcxb"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 169644,
+        "example_case": [
+          "Xcx",
+          "AB",
+          [
+            "A",
+            "a",
+            "ba"
+          ]
+        ]
+      },
+      "ABXcx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "BXcx",
+          "A": "XCxb"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 169109,
+        "example_case": [
+          "Xcx",
+          "ba",
+          [
+            "A",
+            "a",
+            "ba"
+          ]
+        ]
+      },
+      "ABYCy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "BYCy",
+          "A": "Ycyb"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 169644,
+        "example_case": [
+          "Ycy",
+          "AB",
+          [
+            "A",
+            "a",
+            "ba"
+          ]
+        ]
+      },
+      "ABYcy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "BYcy",
+          "A": "YCyb"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 169109,
+        "example_case": [
+          "Ycy",
+          "ba",
+          [
+            "A",
+            "a",
+            "ba"
+          ]
+        ]
+      },
+      "ABaC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "aCA",
+          "B": "acA"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 166905,
+        "example_case": [
+          "ba",
+          "aC",
+          [
+            "A",
+            "a",
+            "cA"
+          ]
+        ]
+      },
+      "ABc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "Bc",
+          "A": "Cb"
+        },
+        "covered_cases": 118,
+        "formal_vertices_through_last_target": 153534,
+        "example_case": [
+          "AB",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "ABcAc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "cAcA",
+          "B": "aCaC"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 167908,
+        "example_case": [
+          "baC",
+          "cA",
+          [
+            "A",
+            "a",
+            "cA"
+          ]
+        ]
+      },
+      "ABcB": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "BcB",
+          "A": "bCb"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 167392,
+        "example_case": [
+          "b",
+          "cBA",
+          [
+            "A",
+            "a",
+            "cBA"
+          ]
+        ]
+      },
+      "ABcb": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "Bcb",
+          "A": "BCb"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 166595,
+        "example_case": [
+          "b",
+          "cbA",
+          [
+            "A",
+            "a",
+            "cbA"
+          ]
+        ]
+      },
+      "ABcc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "Bcc",
+          "A": "CCb"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 166986,
+        "example_case": [
+          "baC",
+          "c",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "ABxCX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "BxCX",
+          "A": "xcXb"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 169644,
+        "example_case": [
+          "Xbax",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "ABxcX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "BxcX",
+          "A": "xCXb"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 169109,
+        "example_case": [
+          "Xbax",
+          "c",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "AByCY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "ByCY",
+          "A": "ycYb"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 169644,
+        "example_case": [
+          "Ybay",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "ABycY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "BycY",
+          "A": "yCYb"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 169109,
+        "example_case": [
+          "Ybay",
+          "c",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "AC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "C",
+          "A": "c"
+        },
+        "covered_cases": 243,
+        "formal_vertices_through_last_target": 7160,
+        "example_case": [
+          "A",
+          "AAC",
+          [
+            "aa",
+            "b",
+            "caa"
+          ]
+        ]
+      },
+      "ACACB": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "ACAC",
+          "B": "caca"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 168529,
+        "example_case": [
+          "bca",
+          "AC",
+          [
+            "A",
+            "a",
+            "ca"
+          ]
+        ]
+      },
+      "ACACb": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "caca",
+          "B": "ACAC"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 168344,
+        "example_case": [
+          "bAC",
+          "ca",
+          [
+            "A",
+            "a",
+            "ca"
+          ]
+        ]
+      },
+      "ACB": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "CB",
+          "A": "bc"
+        },
+        "covered_cases": 89,
+        "formal_vertices_through_last_target": 159501,
+        "example_case": [
+          "A",
+          "bc",
+          [
+            "aa",
+            "bc",
+            "c"
+          ]
+        ]
+      },
+      "ACBB": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "CBB",
+          "A": "bbc"
+        },
+        "covered_cases": 5,
+        "formal_vertices_through_last_target": 167574,
+        "example_case": [
+          "b",
+          "BAC",
+          [
+            "A",
+            "a",
+            "cab"
+          ]
+        ]
+      },
+      "ACBC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "CBC",
+          "A": "cbc"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 168098,
+        "example_case": [
+          "bca",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "ACBc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "CBc",
+          "A": "Cbc"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 166905,
+        "example_case": [
+          "bc",
+          "cA",
+          [
+            "A",
+            "a",
+            "cA"
+          ]
+        ]
+      },
+      "ACC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "CC",
+          "A": "cc"
+        },
+        "covered_cases": 6,
+        "formal_vertices_through_last_target": 146139,
+        "example_case": [
+          "AC",
+          "c",
+          [
+            "aa",
+            "b",
+            "c"
+          ]
+        ]
+      },
+      "ACCB": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "CCB",
+          "A": "bcc"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 167574,
+        "example_case": [
+          "bc",
+          "AC",
+          [
+            "A",
+            "a",
+            "ca"
+          ]
+        ]
+      },
+      "ACCb": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "CCb",
+          "A": "Bcc"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 166882,
+        "example_case": [
+          "bAC",
+          "c",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "ACXBx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "CXBx",
+          "A": "Xbxc"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 169644,
+        "example_case": [
+          "Xbx",
+          "AC",
+          [
+            "A",
+            "a",
+            "ca"
+          ]
+        ]
+      },
+      "ACXbx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "CXbx",
+          "A": "XBxc"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 169109,
+        "example_case": [
+          "Xbx",
+          "ca",
+          [
+            "A",
+            "a",
+            "ca"
+          ]
+        ]
+      },
+      "ACYBy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "CYBy",
+          "A": "Ybyc"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 169644,
+        "example_case": [
+          "Yby",
+          "AC",
+          [
+            "A",
+            "a",
+            "ca"
+          ]
+        ]
+      },
+      "ACYby": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "CYby",
+          "A": "YByc"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 169109,
+        "example_case": [
+          "Yby",
+          "ca",
+          [
+            "A",
+            "a",
+            "ca"
+          ]
+        ]
+      },
+      "ACaB": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "ACa",
+          "B": "Aca"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 166905,
+        "example_case": [
+          "bA",
+          "AC",
+          [
+            "A",
+            "a",
+            "ca"
+          ]
+        ]
+      },
+      "ACb": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "Cb",
+          "A": "Bc"
+        },
+        "covered_cases": 118,
+        "formal_vertices_through_last_target": 153534,
+        "example_case": [
+          "AC",
+          "B",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "ACbAb": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "bAbA",
+          "C": "aBaB"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 167908,
+        "example_case": [
+          "bA",
+          "caB",
+          [
+            "A",
+            "a",
+            "caB"
+          ]
+        ]
+      },
+      "ACbC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "CbC",
+          "A": "cBc"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 167392,
+        "example_case": [
+          "bC",
+          "ca",
+          [
+            "A",
+            "a",
+            "ca"
+          ]
+        ]
+      },
+      "ACbb": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "Cbb",
+          "A": "BBc"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 166986,
+        "example_case": [
+          "b",
+          "caB",
+          [
+            "A",
+            "a",
+            "caB"
+          ]
+        ]
+      },
+      "ACbc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "Cbc",
+          "A": "CBc"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 166595,
+        "example_case": [
+          "bc",
+          "ca",
+          [
+            "A",
+            "a",
+            "ca"
+          ]
+        ]
+      },
+      "ACxBX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "CxBX",
+          "A": "xbXc"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 169644,
+        "example_case": [
+          "Xcax",
+          "B",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "ACxbX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "CxbX",
+          "A": "xBXc"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 169109,
+        "example_case": [
+          "Xcax",
+          "b",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "ACyBY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "CyBY",
+          "A": "ybYc"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 169644,
+        "example_case": [
+          "Ycay",
+          "B",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "ACybY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "CybY",
+          "A": "yBYc"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 169109,
+        "example_case": [
+          "Ycay",
+          "b",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "AXBCx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "XBCx",
+          "A": "Xcbx"
+        },
+        "covered_cases": 6,
+        "formal_vertices_through_last_target": 169644,
+        "example_case": [
+          "bxaX",
+          "C",
+          [
+            "A",
+            "c",
+            "xaX"
+          ]
+        ]
+      },
+      "AXBcx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "XBcx",
+          "A": "XCbx"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 169698,
+        "example_case": [
+          "b",
+          "cxAX",
+          [
+            "A",
+            "cxAX",
+            "xaX"
+          ]
+        ]
+      },
+      "AXBx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "XBx",
+          "A": "Xbx"
+        },
+        "covered_cases": 26,
+        "formal_vertices_through_last_target": 159480,
+        "example_case": [
+          "A",
+          "Xbx",
+          [
+            "Xbx",
+            "aa",
+            "c"
+          ]
+        ]
+      },
+      "AXBxC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "XBxC",
+          "A": "cXbx"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 169644,
+        "example_case": [
+          "Xbxa",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "AXBxc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "XBxc",
+          "A": "CXbx"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 168675,
+        "example_case": [
+          "Xbx",
+          "cA",
+          [
+            "A",
+            "a",
+            "cA"
+          ]
+        ]
+      },
+      "AXCBx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "XCBx",
+          "A": "Xbcx"
+        },
+        "covered_cases": 6,
+        "formal_vertices_through_last_target": 169644,
+        "example_case": [
+          "b",
+          "xAXC",
+          [
+            "A",
+            "cxaX",
+            "xaX"
+          ]
+        ]
+      },
+      "AXCbx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "XCbx",
+          "A": "XBcx"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 169698,
+        "example_case": [
+          "b",
+          "cxaX",
+          [
+            "A",
+            "cxaX",
+            "xaX"
+          ]
+        ]
+      },
+      "AXCx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "XCx",
+          "A": "Xcx"
+        },
+        "covered_cases": 26,
+        "formal_vertices_through_last_target": 159480,
+        "example_case": [
+          "A",
+          "Xcx",
+          [
+            "Xcx",
+            "aa",
+            "b"
+          ]
+        ]
+      },
+      "AXCxB": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "XCxB",
+          "A": "bXcx"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 169644,
+        "example_case": [
+          "Xcxa",
+          "B",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "AXCxb": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "XCxb",
+          "A": "BXcx"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 168675,
+        "example_case": [
+          "Xcx",
+          "bA",
+          [
+            "A",
+            "a",
+            "bA"
+          ]
+        ]
+      },
+      "AXbcx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "Xbcx",
+          "A": "XCBx"
+        },
+        "covered_cases": 6,
+        "formal_vertices_through_last_target": 169109,
+        "example_case": [
+          "b",
+          "xaXC",
+          [
+            "A",
+            "cxAX",
+            "xaX"
+          ]
+        ]
+      },
+      "AXbx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "Xbx",
+          "A": "XBx"
+        },
+        "covered_cases": 24,
+        "formal_vertices_through_last_target": 153260,
+        "example_case": [
+          "A",
+          "XBx",
+          [
+            "Xbx",
+            "aa",
+            "c"
+          ]
+        ]
+      },
+      "AXbxc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "Xbxc",
+          "A": "CXBx"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 168675,
+        "example_case": [
+          "Xbx",
+          "aC",
+          [
+            "A",
+            "a",
+            "cA"
+          ]
+        ]
+      },
+      "AXcbx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "Xcbx",
+          "A": "XBCx"
+        },
+        "covered_cases": 6,
+        "formal_vertices_through_last_target": 169109,
+        "example_case": [
+          "bxAX",
+          "C",
+          [
+            "A",
+            "c",
+            "xaX"
+          ]
+        ]
+      },
+      "AXcx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "Xcx",
+          "A": "XCx"
+        },
+        "covered_cases": 24,
+        "formal_vertices_through_last_target": 153260,
+        "example_case": [
+          "A",
+          "XCx",
+          [
+            "Xcx",
+            "aa",
+            "b"
+          ]
+        ]
+      },
+      "AXcxb": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "Xcxb",
+          "A": "BXCx"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 168675,
+        "example_case": [
+          "Xcx",
+          "aB",
+          [
+            "A",
+            "a",
+            "bA"
+          ]
+        ]
+      },
+      "AYBCy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "YBCy",
+          "A": "Ycby"
+        },
+        "covered_cases": 6,
+        "formal_vertices_through_last_target": 169644,
+        "example_case": [
+          "byaY",
+          "C",
+          [
+            "A",
+            "c",
+            "yaY"
+          ]
+        ]
+      },
+      "AYBcy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "YBcy",
+          "A": "YCby"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 169698,
+        "example_case": [
+          "b",
+          "cyAY",
+          [
+            "A",
+            "cyAY",
+            "yaY"
+          ]
+        ]
+      },
+      "AYBy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "YBy",
+          "A": "Yby"
+        },
+        "covered_cases": 26,
+        "formal_vertices_through_last_target": 159480,
+        "example_case": [
+          "A",
+          "Yby",
+          [
+            "Yby",
+            "aa",
+            "c"
+          ]
+        ]
+      },
+      "AYByC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "YByC",
+          "A": "cYby"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 169644,
+        "example_case": [
+          "Ybya",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "AYByc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "YByc",
+          "A": "CYby"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 168675,
+        "example_case": [
+          "Yby",
+          "cA",
+          [
+            "A",
+            "a",
+            "cA"
+          ]
+        ]
+      },
+      "AYCBy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "YCBy",
+          "A": "Ybcy"
+        },
+        "covered_cases": 6,
+        "formal_vertices_through_last_target": 169644,
+        "example_case": [
+          "b",
+          "yAYC",
+          [
+            "A",
+            "cyaY",
+            "yaY"
+          ]
+        ]
+      },
+      "AYCby": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "YCby",
+          "A": "YBcy"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 169698,
+        "example_case": [
+          "b",
+          "cyaY",
+          [
+            "A",
+            "cyaY",
+            "yaY"
+          ]
+        ]
+      },
+      "AYCy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "YCy",
+          "A": "Ycy"
+        },
+        "covered_cases": 26,
+        "formal_vertices_through_last_target": 159480,
+        "example_case": [
+          "A",
+          "Ycy",
+          [
+            "Ycy",
+            "aa",
+            "b"
+          ]
+        ]
+      },
+      "AYCyB": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "YCyB",
+          "A": "bYcy"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 169644,
+        "example_case": [
+          "Ycya",
+          "B",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "AYCyb": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "YCyb",
+          "A": "BYcy"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 168675,
+        "example_case": [
+          "Ycy",
+          "bA",
+          [
+            "A",
+            "a",
+            "bA"
+          ]
+        ]
+      },
+      "AYbcy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "Ybcy",
+          "A": "YCBy"
+        },
+        "covered_cases": 6,
+        "formal_vertices_through_last_target": 169109,
+        "example_case": [
+          "b",
+          "yaYC",
+          [
+            "A",
+            "cyAY",
+            "yaY"
+          ]
+        ]
+      },
+      "AYby": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "Yby",
+          "A": "YBy"
+        },
+        "covered_cases": 24,
+        "formal_vertices_through_last_target": 153260,
+        "example_case": [
+          "A",
+          "YBy",
+          [
+            "Yby",
+            "aa",
+            "c"
+          ]
+        ]
+      },
+      "AYbyc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "Ybyc",
+          "A": "CYBy"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 168675,
+        "example_case": [
+          "Yby",
+          "aC",
+          [
+            "A",
+            "a",
+            "cA"
+          ]
+        ]
+      },
+      "AYcby": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "Ycby",
+          "A": "YBCy"
+        },
+        "covered_cases": 6,
+        "formal_vertices_through_last_target": 169109,
+        "example_case": [
+          "byAY",
+          "C",
+          [
+            "A",
+            "c",
+            "yaY"
+          ]
+        ]
+      },
+      "AYcy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "Ycy",
+          "A": "YCy"
+        },
+        "covered_cases": 24,
+        "formal_vertices_through_last_target": 153260,
+        "example_case": [
+          "A",
+          "YCy",
+          [
+            "Ycy",
+            "aa",
+            "b"
+          ]
+        ]
+      },
+      "AYcyb": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "Ycyb",
+          "A": "BYCy"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 168675,
+        "example_case": [
+          "Ycy",
+          "aB",
+          [
+            "A",
+            "a",
+            "bA"
+          ]
+        ]
+      },
+      "Ab": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "b",
+          "A": "B"
+        },
+        "covered_cases": 237,
+        "formal_vertices_through_last_target": 3966,
+        "example_case": [
+          "A",
+          "B",
+          [
+            "AA",
+            "b",
+            "c"
+          ]
+        ]
+      },
+      "AbAc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "aCa",
+          "B": "AcA"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 9864,
+        "example_case": [
+          "bA",
+          "aC",
+          [
+            "A",
+            "a",
+            "cA"
+          ]
+        ]
+      },
+      "AbAcb": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "aBaB",
+          "C": "bAbA"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 167908,
+        "example_case": [
+          "bA",
+          "aBC",
+          [
+            "A",
+            "a",
+            "cbA"
+          ]
+        ]
+      },
+      "AbC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "bC",
+          "A": "cB"
+        },
+        "covered_cases": 50,
+        "formal_vertices_through_last_target": 9186,
+        "example_case": [
+          "A",
+          "cB",
+          [
+            "aa",
+            "b",
+            "cB"
+          ]
+        ]
+      },
+      "AbCB": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "bCB",
+          "A": "bcB"
+        },
+        "covered_cases": 5,
+        "formal_vertices_through_last_target": 166905,
+        "example_case": [
+          "b",
+          "AbC",
+          [
+            "A",
+            "a",
+            "cBa"
+          ]
+        ]
+      },
+      "AbCb": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "bCb",
+          "A": "BcB"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 167415,
+        "example_case": [
+          "b",
+          "cBa",
+          [
+            "A",
+            "a",
+            "cBa"
+          ]
+        ]
+      },
+      "AbXcx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "bXcx",
+          "A": "XCxB"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 169698,
+        "example_case": [
+          "XcxA",
+          "B",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "AbYcy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "bYcy",
+          "A": "YCyB"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 169698,
+        "example_case": [
+          "YcyA",
+          "B",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "Abb": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "bb",
+          "A": "BB"
+        },
+        "covered_cases": 6,
+        "formal_vertices_through_last_target": 8614,
+        "example_case": [
+          "Ab",
+          "B",
+          [
+            "aa",
+            "b",
+            "c"
+          ]
+        ]
+      },
+      "Abbc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "bbc",
+          "A": "CBB"
+        },
+        "covered_cases": 5,
+        "formal_vertices_through_last_target": 166882,
+        "example_case": [
+          "b",
+          "BaC",
+          [
+            "A",
+            "a",
+            "cAb"
+          ]
+        ]
+      },
+      "Abc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "bc",
+          "A": "CB"
+        },
+        "covered_cases": 90,
+        "formal_vertices_through_last_target": 153534,
+        "example_case": [
+          "A",
+          "CB",
+          [
+            "aa",
+            "bc",
+            "c"
+          ]
+        ]
+      },
+      "AbcAc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "aCaC",
+          "B": "cAcA"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 167908,
+        "example_case": [
+          "bcA",
+          "aC",
+          [
+            "A",
+            "a",
+            "cA"
+          ]
+        ]
+      },
+      "AbcB": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "bcB",
+          "A": "bCB"
+        },
+        "covered_cases": 5,
+        "formal_vertices_through_last_target": 166595,
+        "example_case": [
+          "b",
+          "abC",
+          [
+            "A",
+            "a",
+            "cBA"
+          ]
+        ]
+      },
+      "Abcb": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "bcb",
+          "A": "BCB"
+        },
+        "covered_cases": 5,
+        "formal_vertices_through_last_target": 167392,
+        "example_case": [
+          "b",
+          "aBC",
+          [
+            "A",
+            "a",
+            "cbA"
+          ]
+        ]
+      },
+      "Abcc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "bcc",
+          "A": "CCB"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 167626,
+        "example_case": [
+          "bc",
+          "aC",
+          [
+            "A",
+            "a",
+            "cA"
+          ]
+        ]
+      },
+      "AbxcX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "bxcX",
+          "A": "xCXB"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 169698,
+        "example_case": [
+          "b",
+          "axCX",
+          [
+            "A",
+            "a",
+            "xcXA"
+          ]
+        ]
+      },
+      "AbycY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "bycY",
+          "A": "yCYB"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 169698,
+        "example_case": [
+          "b",
+          "ayCY",
+          [
+            "A",
+            "a",
+            "ycYA"
+          ]
+        ]
+      },
+      "Ac": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "c",
+          "A": "C"
+        },
+        "covered_cases": 237,
+        "formal_vertices_through_last_target": 3966,
+        "example_case": [
+          "A",
+          "C",
+          [
+            "AA",
+            "b",
+            "c"
+          ]
+        ]
+      },
+      "AcB": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "cB",
+          "A": "bC"
+        },
+        "covered_cases": 50,
+        "formal_vertices_through_last_target": 9186,
+        "example_case": [
+          "A",
+          "bC",
+          [
+            "aa",
+            "b",
+            "cB"
+          ]
+        ]
+      },
+      "AcBC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "cBC",
+          "A": "cbC"
+        },
+        "covered_cases": 5,
+        "formal_vertices_through_last_target": 166905,
+        "example_case": [
+          "bCa",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "AcBc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "cBc",
+          "A": "CbC"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 167415,
+        "example_case": [
+          "bC",
+          "cA",
+          [
+            "A",
+            "a",
+            "cA"
+          ]
+        ]
+      },
+      "AcXbx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "cXbx",
+          "A": "XBxC"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 169698,
+        "example_case": [
+          "XbxA",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "AcYby": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "cYby",
+          "A": "YByC"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 169698,
+        "example_case": [
+          "YbyA",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "Acb": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "cb",
+          "A": "BC"
+        },
+        "covered_cases": 90,
+        "formal_vertices_through_last_target": 153534,
+        "example_case": [
+          "A",
+          "BC",
+          [
+            "aa",
+            "b",
+            "cb"
+          ]
+        ]
+      },
+      "AcbC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "cbC",
+          "A": "cBC"
+        },
+        "covered_cases": 5,
+        "formal_vertices_through_last_target": 166595,
+        "example_case": [
+          "bCA",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "Acbb": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "cbb",
+          "A": "BBC"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 167626,
+        "example_case": [
+          "bA",
+          "BC",
+          [
+            "A",
+            "a",
+            "cb"
+          ]
+        ]
+      },
+      "Acbc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "cbc",
+          "A": "CBC"
+        },
+        "covered_cases": 5,
+        "formal_vertices_through_last_target": 167392,
+        "example_case": [
+          "bcA",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "Acc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "cc",
+          "A": "CC"
+        },
+        "covered_cases": 6,
+        "formal_vertices_through_last_target": 8614,
+        "example_case": [
+          "Ac",
+          "C",
+          [
+            "aa",
+            "b",
+            "c"
+          ]
+        ]
+      },
+      "Accb": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "ccb",
+          "A": "BCC"
+        },
+        "covered_cases": 5,
+        "formal_vertices_through_last_target": 166882,
+        "example_case": [
+          "bAc",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "AcxbX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "cxbX",
+          "A": "xBXC"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 169698,
+        "example_case": [
+          "c",
+          "axBX",
+          [
+            "A",
+            "a",
+            "xbXA"
+          ]
+        ]
+      },
+      "AcybY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "cybY",
+          "A": "yBYC"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 169698,
+        "example_case": [
+          "c",
+          "ayBY",
+          [
+            "A",
+            "a",
+            "ybYA"
+          ]
+        ]
+      },
+      "AxBCX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "xBCX",
+          "A": "xcbX"
+        },
+        "covered_cases": 6,
+        "formal_vertices_through_last_target": 169644,
+        "example_case": [
+          "bXax",
+          "C",
+          [
+            "A",
+            "Xax",
+            "c"
+          ]
+        ]
+      },
+      "AxBX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "xBX",
+          "A": "xbX"
+        },
+        "covered_cases": 26,
+        "formal_vertices_through_last_target": 159480,
+        "example_case": [
+          "A",
+          "xbX",
+          [
+            "aa",
+            "c",
+            "xbX"
+          ]
+        ]
+      },
+      "AxBXC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "xBXC",
+          "A": "cxbX"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 169644,
+        "example_case": [
+          "c",
+          "AxBX",
+          [
+            "A",
+            "a",
+            "xbXa"
+          ]
+        ]
+      },
+      "AxBXc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "xBXc",
+          "A": "CxbX"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 168675,
+        "example_case": [
+          "XcAx",
+          "b",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "AxBcX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "xBcX",
+          "A": "xCbX"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 169698,
+        "example_case": [
+          "b",
+          "cXAx",
+          [
+            "A",
+            "Xax",
+            "cXAx"
+          ]
+        ]
+      },
+      "AxCBX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "xCBX",
+          "A": "xbcX"
+        },
+        "covered_cases": 6,
+        "formal_vertices_through_last_target": 169644,
+        "example_case": [
+          "b",
+          "XAxC",
+          [
+            "A",
+            "Xax",
+            "cXax"
+          ]
+        ]
+      },
+      "AxCX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "xCX",
+          "A": "xcX"
+        },
+        "covered_cases": 26,
+        "formal_vertices_through_last_target": 159480,
+        "example_case": [
+          "A",
+          "xcX",
+          [
+            "aa",
+            "b",
+            "xcX"
+          ]
+        ]
+      },
+      "AxCXB": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "xCXB",
+          "A": "bxcX"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 169644,
+        "example_case": [
+          "b",
+          "AxCX",
+          [
+            "A",
+            "a",
+            "xcXa"
+          ]
+        ]
+      },
+      "AxCXb": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "xCXb",
+          "A": "BxcX"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 168675,
+        "example_case": [
+          "XbAx",
+          "c",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "AxCbX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "xCbX",
+          "A": "xBcX"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 169698,
+        "example_case": [
+          "b",
+          "cXax",
+          [
+            "A",
+            "Xax",
+            "cXax"
+          ]
+        ]
+      },
+      "AxbX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "xbX",
+          "A": "xBX"
+        },
+        "covered_cases": 24,
+        "formal_vertices_through_last_target": 153260,
+        "example_case": [
+          "A",
+          "xBX",
+          [
+            "aa",
+            "c",
+            "xbX"
+          ]
+        ]
+      },
+      "AxbXc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "xbXc",
+          "A": "CxBX"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 168675,
+        "example_case": [
+          "XcAx",
+          "B",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "AxbcX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "xbcX",
+          "A": "xCBX"
+        },
+        "covered_cases": 6,
+        "formal_vertices_through_last_target": 169109,
+        "example_case": [
+          "b",
+          "XaxC",
+          [
+            "A",
+            "Xax",
+            "cXAx"
+          ]
+        ]
+      },
+      "AxcX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "xcX",
+          "A": "xCX"
+        },
+        "covered_cases": 24,
+        "formal_vertices_through_last_target": 153260,
+        "example_case": [
+          "A",
+          "xCX",
+          [
+            "aa",
+            "b",
+            "xcX"
+          ]
+        ]
+      },
+      "AxcXb": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "xcXb",
+          "A": "BxCX"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 168675,
+        "example_case": [
+          "XbAx",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "AxcbX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "xcbX",
+          "A": "xBCX"
+        },
+        "covered_cases": 6,
+        "formal_vertices_through_last_target": 169109,
+        "example_case": [
+          "bXAx",
+          "C",
+          [
+            "A",
+            "Xax",
+            "c"
+          ]
+        ]
+      },
+      "AyBCY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "yBCY",
+          "A": "ycbY"
+        },
+        "covered_cases": 6,
+        "formal_vertices_through_last_target": 169644,
+        "example_case": [
+          "bYay",
+          "C",
+          [
+            "A",
+            "Yay",
+            "c"
+          ]
+        ]
+      },
+      "AyBY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "yBY",
+          "A": "ybY"
+        },
+        "covered_cases": 26,
+        "formal_vertices_through_last_target": 159480,
+        "example_case": [
+          "A",
+          "ybY",
+          [
+            "aa",
+            "c",
+            "ybY"
+          ]
+        ]
+      },
+      "AyBYC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "yBYC",
+          "A": "cybY"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 169644,
+        "example_case": [
+          "c",
+          "AyBY",
+          [
+            "A",
+            "a",
+            "ybYa"
+          ]
+        ]
+      },
+      "AyBYc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "yBYc",
+          "A": "CybY"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 168675,
+        "example_case": [
+          "YcAy",
+          "b",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "AyBcY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "yBcY",
+          "A": "yCbY"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 169698,
+        "example_case": [
+          "b",
+          "cYAy",
+          [
+            "A",
+            "Yay",
+            "cYAy"
+          ]
+        ]
+      },
+      "AyCBY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "yCBY",
+          "A": "ybcY"
+        },
+        "covered_cases": 6,
+        "formal_vertices_through_last_target": 169644,
+        "example_case": [
+          "b",
+          "YAyC",
+          [
+            "A",
+            "Yay",
+            "cYay"
+          ]
+        ]
+      },
+      "AyCY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "yCY",
+          "A": "ycY"
+        },
+        "covered_cases": 26,
+        "formal_vertices_through_last_target": 159480,
+        "example_case": [
+          "A",
+          "ycY",
+          [
+            "aa",
+            "b",
+            "ycY"
+          ]
+        ]
+      },
+      "AyCYB": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "yCYB",
+          "A": "bycY"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 169644,
+        "example_case": [
+          "b",
+          "AyCY",
+          [
+            "A",
+            "a",
+            "ycYa"
+          ]
+        ]
+      },
+      "AyCYb": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "yCYb",
+          "A": "BycY"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 168675,
+        "example_case": [
+          "YbAy",
+          "c",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "AyCbY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "yCbY",
+          "A": "yBcY"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 169698,
+        "example_case": [
+          "b",
+          "cYay",
+          [
+            "A",
+            "Yay",
+            "cYay"
+          ]
+        ]
+      },
+      "AybY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "ybY",
+          "A": "yBY"
+        },
+        "covered_cases": 24,
+        "formal_vertices_through_last_target": 153260,
+        "example_case": [
+          "A",
+          "yBY",
+          [
+            "aa",
+            "c",
+            "ybY"
+          ]
+        ]
+      },
+      "AybYc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "ybYc",
+          "A": "CyBY"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 168675,
+        "example_case": [
+          "YcAy",
+          "B",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "AybcY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "ybcY",
+          "A": "yCBY"
+        },
+        "covered_cases": 6,
+        "formal_vertices_through_last_target": 169109,
+        "example_case": [
+          "b",
+          "YayC",
+          [
+            "A",
+            "Yay",
+            "cYAy"
+          ]
+        ]
+      },
+      "AycY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "ycY",
+          "A": "yCY"
+        },
+        "covered_cases": 24,
+        "formal_vertices_through_last_target": 153260,
+        "example_case": [
+          "A",
+          "yCY",
+          [
+            "aa",
+            "b",
+            "ycY"
+          ]
+        ]
+      },
+      "AycYb": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "ycYb",
+          "A": "ByCY"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 168675,
+        "example_case": [
+          "YbAy",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "AycbY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "a": "ycbY",
+          "A": "yBCY"
+        },
+        "covered_cases": 6,
+        "formal_vertices_through_last_target": 169109,
+        "example_case": [
+          "bYAy",
+          "C",
+          [
+            "A",
+            "Yay",
+            "c"
+          ]
+        ]
+      },
+      "B": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "",
+          "B": ""
+        },
+        "covered_cases": 214,
+        "formal_vertices_through_last_target": 3358,
+        "example_case": [
+          "A",
+          "AB",
+          [
+            "aa",
+            "ba",
+            "c"
+          ]
+        ]
+      },
+      "BBBC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "BBB",
+          "C": "bbb"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 158915,
+        "example_case": [
+          "b",
+          "BBC",
+          [
+            "A",
+            "a",
+            "cbb"
+          ]
+        ]
+      },
+      "BBBc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "bbb",
+          "C": "BBB"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 158723,
+        "example_case": [
+          "b",
+          "cBB",
+          [
+            "A",
+            "a",
+            "cBB"
+          ]
+        ]
+      },
+      "BBC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "BB",
+          "C": "bb"
+        },
+        "covered_cases": 58,
+        "formal_vertices_through_last_target": 146139,
+        "example_case": [
+          "B",
+          "bc",
+          [
+            "A",
+            "a",
+            "bc"
+          ]
+        ]
+      },
+      "BBCBC": {
+        "method": "cyclic_power_substitution",
+        "substitution": {
+          "B": "TT",
+          "b": "tt",
+          "C": "ttt",
+          "c": "TTT"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 160025,
+        "example_case": [
+          "bcb",
+          "BC",
+          [
+            "A",
+            "a",
+            "cb"
+          ]
+        ]
+      },
+      "BBXCx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "xBBX",
+          "C": "xbbX"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 167979,
+        "example_case": [
+          "Xcxb",
+          "B",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "BBXcx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "xbbX",
+          "C": "xBBX"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 167621,
+        "example_case": [
+          "XcxB",
+          "b",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "BBYCy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "yBBY",
+          "C": "ybbY"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 167979,
+        "example_case": [
+          "Ycyb",
+          "B",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "BBYcy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "ybbY",
+          "C": "yBBY"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 167621,
+        "example_case": [
+          "YcyB",
+          "b",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "BBc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "bb",
+          "C": "BB"
+        },
+        "covered_cases": 52,
+        "formal_vertices_through_last_target": 143071,
+        "example_case": [
+          "B",
+          "bC",
+          [
+            "A",
+            "a",
+            "cB"
+          ]
+        ]
+      },
+      "BBcBc": {
+        "method": "cyclic_power_substitution",
+        "substitution": {
+          "B": "TT",
+          "b": "tt",
+          "c": "ttt",
+          "C": "TTT"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 159830,
+        "example_case": [
+          "bbC",
+          "cB",
+          [
+            "A",
+            "a",
+            "cB"
+          ]
+        ]
+      },
+      "BBxCX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "XBBx",
+          "C": "Xbbx"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 167979,
+        "example_case": [
+          "Xbx",
+          "XBxC",
+          [
+            "A",
+            "a",
+            "cXbx"
+          ]
+        ]
+      },
+      "BBxcX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "Xbbx",
+          "C": "XBBx"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 167621,
+        "example_case": [
+          "Xbx",
+          "cXBx",
+          [
+            "A",
+            "a",
+            "cXBx"
+          ]
+        ]
+      },
+      "BByCY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "YBBy",
+          "C": "Ybby"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 167979,
+        "example_case": [
+          "Yby",
+          "YByC",
+          [
+            "A",
+            "a",
+            "cYby"
+          ]
+        ]
+      },
+      "BBycY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "Ybby",
+          "C": "YBBy"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 167621,
+        "example_case": [
+          "Yby",
+          "cYBy",
+          [
+            "A",
+            "a",
+            "cYBy"
+          ]
+        ]
+      },
+      "BC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "C",
+          "B": "c"
+        },
+        "covered_cases": 656,
+        "formal_vertices_through_last_target": 113933,
+        "example_case": [
+          "B",
+          "c",
+          [
+            "A",
+            "A",
+            "c"
+          ]
+        ]
+      },
+      "BCBCC": {
+        "method": "cyclic_power_substitution",
+        "substitution": {
+          "C": "TT",
+          "c": "tt",
+          "B": "ttt",
+          "b": "TTT"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 160025,
+        "example_case": [
+          "bc",
+          "CBC",
+          [
+            "A",
+            "a",
+            "cbc"
+          ]
+        ]
+      },
+      "BCC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "CC",
+          "B": "cc"
+        },
+        "covered_cases": 58,
+        "formal_vertices_through_last_target": 146139,
+        "example_case": [
+          "BC",
+          "c",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "BCCC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "CCC",
+          "B": "ccc"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 158915,
+        "example_case": [
+          "bcc",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "BCXBx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "XBxB",
+          "C": "bXbx"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 168315,
+        "example_case": [
+          "Xbx",
+          "BC",
+          [
+            "A",
+            "a",
+            "cb"
+          ]
+        ]
+      },
+      "BCXbx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "XbxB",
+          "C": "bXBx"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 168073,
+        "example_case": [
+          "Xbx",
+          "cb",
+          [
+            "A",
+            "a",
+            "cb"
+          ]
+        ]
+      },
+      "BCYBy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "YByB",
+          "C": "bYby"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 168315,
+        "example_case": [
+          "Yby",
+          "BC",
+          [
+            "A",
+            "a",
+            "cb"
+          ]
+        ]
+      },
+      "BCYby": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "YbyB",
+          "C": "bYBy"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 168073,
+        "example_case": [
+          "Yby",
+          "cb",
+          [
+            "A",
+            "a",
+            "cb"
+          ]
+        ]
+      },
+      "BCxBX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "xBXB",
+          "C": "bxbX"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 168315,
+        "example_case": [
+          "Xcbx",
+          "B",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "BCxbX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "xbXB",
+          "C": "bxBX"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 168073,
+        "example_case": [
+          "Xcbx",
+          "b",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "BCyBY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "yBYB",
+          "C": "bybY"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 168315,
+        "example_case": [
+          "Ycby",
+          "B",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "BCybY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "ybYB",
+          "C": "byBY"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 168073,
+        "example_case": [
+          "Ycby",
+          "b",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "BXBxc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "Xbxb",
+          "C": "BXBx"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 167445,
+        "example_case": [
+          "Xbx",
+          "cB",
+          [
+            "A",
+            "a",
+            "cB"
+          ]
+        ]
+      },
+      "BXCCx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "XCCx",
+          "B": "Xccx"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 167979,
+        "example_case": [
+          "Xcx",
+          "XCxB",
+          [
+            "A",
+            "a",
+            "bXcx"
+          ]
+        ]
+      },
+      "BXCx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "XCx",
+          "B": "Xcx"
+        },
+        "covered_cases": 100,
+        "formal_vertices_through_last_target": 159480,
+        "example_case": [
+          "B",
+          "Xcx",
+          [
+            "A",
+            "Xcx",
+            "a"
+          ]
+        ]
+      },
+      "BXCxC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "XCxC",
+          "B": "cXcx"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 168315,
+        "example_case": [
+          "Xcx",
+          "CB",
+          [
+            "A",
+            "a",
+            "bc"
+          ]
+        ]
+      },
+      "BXCxc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "XCxc",
+          "B": "CXcx"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 157774,
+        "example_case": [
+          "Xcx",
+          "cB",
+          [
+            "A",
+            "a",
+            "bC"
+          ]
+        ]
+      },
+      "BXXCxx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "XXCxx",
+          "B": "XXcxx"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 169544,
+        "example_case": [
+          "XXcxx",
+          "B",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "BXXcxx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "XXcxx",
+          "B": "XXCxx"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 168923,
+        "example_case": [
+          "XXcxx",
+          "b",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "BXYCyx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "XYCyx",
+          "B": "XYcyx"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 169548,
+        "example_case": [
+          "XYcyx",
+          "B",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "BXYcyx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "XYcyx",
+          "B": "XYCyx"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 168931,
+        "example_case": [
+          "XYcyx",
+          "b",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "BXbCx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "xBXb",
+          "C": "BxbX"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 157774,
+        "example_case": [
+          "XcBx",
+          "B",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "BXbxc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "XBxb",
+          "C": "BXbx"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 157774,
+        "example_case": [
+          "Xbx",
+          "bC",
+          [
+            "A",
+            "a",
+            "cB"
+          ]
+        ]
+      },
+      "BXcBx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "xbXb",
+          "C": "BxBX"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 167445,
+        "example_case": [
+          "XcBx",
+          "b",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "BXccx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "Xccx",
+          "B": "XCCx"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 167621,
+        "example_case": [
+          "Xcx",
+          "bXCx",
+          [
+            "A",
+            "a",
+            "bXCx"
+          ]
+        ]
+      },
+      "BXcx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "Xcx",
+          "B": "XCx"
+        },
+        "covered_cases": 88,
+        "formal_vertices_through_last_target": 153260,
+        "example_case": [
+          "B",
+          "XCx",
+          [
+            "A",
+            "Xcx",
+            "a"
+          ]
+        ]
+      },
+      "BXcxC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "XcxC",
+          "B": "cXCx"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 168073,
+        "example_case": [
+          "Xcx",
+          "bc",
+          [
+            "A",
+            "a",
+            "bc"
+          ]
+        ]
+      },
+      "BXcxc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "Xcxc",
+          "B": "CXCx"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 167445,
+        "example_case": [
+          "Xcx",
+          "bC",
+          [
+            "A",
+            "a",
+            "bC"
+          ]
+        ]
+      },
+      "BXyCYx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "XyCYx",
+          "B": "XycYx"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 169548,
+        "example_case": [
+          "XycYx",
+          "B",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "BXycYx": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "XycYx",
+          "B": "XyCYx"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 168931,
+        "example_case": [
+          "XycYx",
+          "b",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "BYByc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "Ybyb",
+          "C": "BYBy"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 167445,
+        "example_case": [
+          "Yby",
+          "cB",
+          [
+            "A",
+            "a",
+            "cB"
+          ]
+        ]
+      },
+      "BYCCy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "YCCy",
+          "B": "Yccy"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 167979,
+        "example_case": [
+          "Ycy",
+          "YCyB",
+          [
+            "A",
+            "a",
+            "bYcy"
+          ]
+        ]
+      },
+      "BYCy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "YCy",
+          "B": "Ycy"
+        },
+        "covered_cases": 100,
+        "formal_vertices_through_last_target": 159480,
+        "example_case": [
+          "B",
+          "Ycy",
+          [
+            "A",
+            "Ycy",
+            "a"
+          ]
+        ]
+      },
+      "BYCyC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "YCyC",
+          "B": "cYcy"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 168315,
+        "example_case": [
+          "Ycy",
+          "CB",
+          [
+            "A",
+            "a",
+            "bc"
+          ]
+        ]
+      },
+      "BYCyc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "YCyc",
+          "B": "CYcy"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 157774,
+        "example_case": [
+          "Ycy",
+          "cB",
+          [
+            "A",
+            "a",
+            "bC"
+          ]
+        ]
+      },
+      "BYXCxy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "YXCxy",
+          "B": "YXcxy"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 169548,
+        "example_case": [
+          "Xcx",
+          "yBY",
+          [
+            "A",
+            "a",
+            "ybY"
+          ]
+        ]
+      },
+      "BYXcxy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "YXcxy",
+          "B": "YXCxy"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 168931,
+        "example_case": [
+          "Xcx",
+          "ybY",
+          [
+            "A",
+            "a",
+            "ybY"
+          ]
+        ]
+      },
+      "BYYCyy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "YYCyy",
+          "B": "YYcyy"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 169544,
+        "example_case": [
+          "YYcyy",
+          "B",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "BYYcyy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "YYcyy",
+          "B": "YYCyy"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 168923,
+        "example_case": [
+          "YYcyy",
+          "b",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "BYbCy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "yBYb",
+          "C": "BybY"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 157774,
+        "example_case": [
+          "YcBy",
+          "B",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "BYbyc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "YByb",
+          "C": "BYby"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 157774,
+        "example_case": [
+          "Yby",
+          "bC",
+          [
+            "A",
+            "a",
+            "cB"
+          ]
+        ]
+      },
+      "BYcBy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "ybYb",
+          "C": "ByBY"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 167445,
+        "example_case": [
+          "YcBy",
+          "b",
+          [
+            "A",
+            "a",
+            "b"
+          ]
+        ]
+      },
+      "BYccy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "Yccy",
+          "B": "YCCy"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 167621,
+        "example_case": [
+          "Ycy",
+          "bYCy",
+          [
+            "A",
+            "a",
+            "bYCy"
+          ]
+        ]
+      },
+      "BYcy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "Ycy",
+          "B": "YCy"
+        },
+        "covered_cases": 88,
+        "formal_vertices_through_last_target": 153260,
+        "example_case": [
+          "B",
+          "YCy",
+          [
+            "A",
+            "Ycy",
+            "a"
+          ]
+        ]
+      },
+      "BYcyC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "YcyC",
+          "B": "cYCy"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 168073,
+        "example_case": [
+          "Ycy",
+          "bc",
+          [
+            "A",
+            "a",
+            "bc"
+          ]
+        ]
+      },
+      "BYcyc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "Ycyc",
+          "B": "CYCy"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 167445,
+        "example_case": [
+          "Ycy",
+          "bC",
+          [
+            "A",
+            "a",
+            "bC"
+          ]
+        ]
+      },
+      "BYxCXy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "YxCXy",
+          "B": "YxcXy"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 169548,
+        "example_case": [
+          "XybYx",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "BYxcXy": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "YxcXy",
+          "B": "YxCXy"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 168931,
+        "example_case": [
+          "XybYx",
+          "c",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "Bc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "c",
+          "B": "C"
+        },
+        "covered_cases": 562,
+        "formal_vertices_through_last_target": 62258,
+        "example_case": [
+          "B",
+          "C",
+          [
+            "A",
+            "A",
+            "c"
+          ]
+        ]
+      },
+      "BcBcc": {
+        "method": "cyclic_power_substitution",
+        "substitution": {
+          "c": "TT",
+          "C": "tt",
+          "B": "ttt",
+          "b": "TTT"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 159830,
+        "example_case": [
+          "bC",
+          "ccB",
+          [
+            "A",
+            "a",
+            "ccB"
+          ]
+        ]
+      },
+      "Bcc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "cc",
+          "B": "CC"
+        },
+        "covered_cases": 52,
+        "formal_vertices_through_last_target": 143071,
+        "example_case": [
+          "Bc",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "Bccc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "ccc",
+          "B": "CCC"
+        },
+        "covered_cases": 4,
+        "formal_vertices_through_last_target": 158723,
+        "example_case": [
+          "bCC",
+          "c",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "BxCCX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "xCCX",
+          "B": "xccX"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 167979,
+        "example_case": [
+          "Xbxc",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "BxCX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "xCX",
+          "B": "xcX"
+        },
+        "covered_cases": 100,
+        "formal_vertices_through_last_target": 159480,
+        "example_case": [
+          "B",
+          "xcX",
+          [
+            "A",
+            "a",
+            "xcX"
+          ]
+        ]
+      },
+      "BxCXC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "xCXC",
+          "B": "cxcX"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 168315,
+        "example_case": [
+          "Xbcx",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "BxCXc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "xCXc",
+          "B": "CxcX"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 157774,
+        "example_case": [
+          "XbCx",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "BxYCyX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "xYCyX",
+          "B": "xYcyX"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 169548,
+        "example_case": [
+          "Xbx",
+          "YCy",
+          [
+            "A",
+            "Ycy",
+            "a"
+          ]
+        ]
+      },
+      "BxYcyX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "xYcyX",
+          "B": "xYCyX"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 168931,
+        "example_case": [
+          "Xbx",
+          "Ycy",
+          [
+            "A",
+            "Ycy",
+            "a"
+          ]
+        ]
+      },
+      "BxcX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "xcX",
+          "B": "xCX"
+        },
+        "covered_cases": 88,
+        "formal_vertices_through_last_target": 153260,
+        "example_case": [
+          "B",
+          "xCX",
+          [
+            "A",
+            "a",
+            "xcX"
+          ]
+        ]
+      },
+      "BxcXC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "xcXC",
+          "B": "cxCX"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 168073,
+        "example_case": [
+          "Xbcx",
+          "c",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "BxcXc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "xcXc",
+          "B": "CxCX"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 167445,
+        "example_case": [
+          "XbCx",
+          "c",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "BxccX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "xccX",
+          "B": "xCCX"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 167621,
+        "example_case": [
+          "XbxC",
+          "c",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "BxxCXX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "xxCXX",
+          "B": "xxcXX"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 169544,
+        "example_case": [
+          "XXbxx",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "BxxcXX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "xxcXX",
+          "B": "xxCXX"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 168923,
+        "example_case": [
+          "XXbxx",
+          "c",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "BxyCYX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "xyCYX",
+          "B": "xycYX"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 169548,
+        "example_case": [
+          "Xbx",
+          "yCY",
+          [
+            "A",
+            "a",
+            "ycY"
+          ]
+        ]
+      },
+      "BxycYX": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "xycYX",
+          "B": "xyCYX"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 168931,
+        "example_case": [
+          "Xbx",
+          "ycY",
+          [
+            "A",
+            "a",
+            "ycY"
+          ]
+        ]
+      },
+      "ByCCY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "yCCY",
+          "B": "yccY"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 167979,
+        "example_case": [
+          "Ybyc",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "ByCY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "yCY",
+          "B": "ycY"
+        },
+        "covered_cases": 100,
+        "formal_vertices_through_last_target": 159480,
+        "example_case": [
+          "B",
+          "ycY",
+          [
+            "A",
+            "a",
+            "ycY"
+          ]
+        ]
+      },
+      "ByCYC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "yCYC",
+          "B": "cycY"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 168315,
+        "example_case": [
+          "Ybcy",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "ByCYc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "yCYc",
+          "B": "CycY"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 157774,
+        "example_case": [
+          "YbCy",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "ByXCxY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "yXCxY",
+          "B": "yXcxY"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 169548,
+        "example_case": [
+          "Xcx",
+          "YBy",
+          [
+            "A",
+            "Yby",
+            "a"
+          ]
+        ]
+      },
+      "ByXcxY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "yXcxY",
+          "B": "yXCxY"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 168931,
+        "example_case": [
+          "Xcx",
+          "Yby",
+          [
+            "A",
+            "Yby",
+            "a"
+          ]
+        ]
+      },
+      "BycY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "ycY",
+          "B": "yCY"
+        },
+        "covered_cases": 88,
+        "formal_vertices_through_last_target": 153260,
+        "example_case": [
+          "B",
+          "yCY",
+          [
+            "A",
+            "a",
+            "ycY"
+          ]
+        ]
+      },
+      "BycYC": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "ycYC",
+          "B": "cyCY"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 168073,
+        "example_case": [
+          "Ybcy",
+          "c",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "BycYc": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "ycYc",
+          "B": "CyCY"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 167445,
+        "example_case": [
+          "YbCy",
+          "c",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "ByccY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "yccY",
+          "B": "yCCY"
+        },
+        "covered_cases": 8,
+        "formal_vertices_through_last_target": 167621,
+        "example_case": [
+          "YbyC",
+          "c",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "ByxCXY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "yxCXY",
+          "B": "yxcXY"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 169548,
+        "example_case": [
+          "XYbyx",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "ByxcXY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "yxcXY",
+          "B": "yxCXY"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 168931,
+        "example_case": [
+          "XYbyx",
+          "c",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "ByyCYY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "yyCYY",
+          "B": "yycYY"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 169544,
+        "example_case": [
+          "YYbyy",
+          "C",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "ByycYY": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "b": "yycYY",
+          "B": "yyCYY"
+        },
+        "covered_cases": 12,
+        "formal_vertices_through_last_target": 168923,
+        "example_case": [
+          "YYbyy",
+          "c",
+          [
+            "A",
+            "a",
+            "c"
+          ]
+        ]
+      },
+      "C": {
+        "method": "eliminate_single_occurrence",
+        "substitution": {
+          "c": "",
+          "C": ""
+        },
+        "covered_cases": 214,
+        "formal_vertices_through_last_target": 3358,
+        "example_case": [
+          "A",
+          "AC",
+          [
+            "aa",
+            "b",
+            "ca"
+          ]
+        ]
+      }
+    }
+  }
+]

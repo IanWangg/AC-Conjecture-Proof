@@ -1,0 +1,2154 @@
+{
+  "geodesic_search": {
+    "rank_two_projection_degree": 9,
+    "z_coefficient_modulus": 2,
+    "middle_budget": 18,
+    "compressed_budget": 17,
+    "geodesic_layer_widths": [
+      1,
+      3,
+      3,
+      3,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      5,
+      6,
+      5,
+      4,
+      3,
+      3,
+      1
+    ],
+    "active_windows": [
+      {
+        "excursion_instructions": 2,
+        "half_depths": [
+          1,
+          1
+        ],
+        "windows_with_degree_nine_midpoints": 9,
+        "windows": [
+          {
+            "entry_tick": 0,
+            "exit_geodesic_tick": 1,
+            "marked_half_widths": [
+              4,
+              12
+            ],
+            "degree_nine_midpoints": 1,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 1,
+            "exit_geodesic_tick": 2,
+            "marked_half_widths": [
+              12,
+              12
+            ],
+            "degree_nine_midpoints": 1,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 2,
+            "exit_geodesic_tick": 3,
+            "marked_half_widths": [
+              12,
+              12
+            ],
+            "degree_nine_midpoints": 1,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 3,
+            "exit_geodesic_tick": 4,
+            "marked_half_widths": [
+              12,
+              8
+            ],
+            "degree_nine_midpoints": 1,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 4,
+            "exit_geodesic_tick": 5,
+            "marked_half_widths": [
+              8,
+              8
+            ],
+            "degree_nine_midpoints": 1,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 5,
+            "exit_geodesic_tick": 6,
+            "marked_half_widths": [
+              8,
+              8
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 6,
+            "exit_geodesic_tick": 7,
+            "marked_half_widths": [
+              8,
+              8
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 7,
+            "exit_geodesic_tick": 8,
+            "marked_half_widths": [
+              8,
+              8
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 8,
+            "exit_geodesic_tick": 9,
+            "marked_half_widths": [
+              8,
+              8
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 9,
+            "exit_geodesic_tick": 10,
+            "marked_half_widths": [
+              8,
+              16
+            ],
+            "degree_nine_midpoints": 1,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 10,
+            "exit_geodesic_tick": 11,
+            "marked_half_widths": [
+              16,
+              20
+            ],
+            "degree_nine_midpoints": 2,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 11,
+            "exit_geodesic_tick": 12,
+            "marked_half_widths": [
+              20,
+              24
+            ],
+            "degree_nine_midpoints": 2,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 12,
+            "exit_geodesic_tick": 13,
+            "marked_half_widths": [
+              24,
+              20
+            ],
+            "degree_nine_midpoints": 2,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 13,
+            "exit_geodesic_tick": 14,
+            "marked_half_widths": [
+              20,
+              16
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 14,
+            "exit_geodesic_tick": 15,
+            "marked_half_widths": [
+              16,
+              12
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 15,
+            "exit_geodesic_tick": 16,
+            "marked_half_widths": [
+              12,
+              12
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 16,
+            "exit_geodesic_tick": 17,
+            "marked_half_widths": [
+              12,
+              4
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          }
+        ]
+      },
+      {
+        "excursion_instructions": 3,
+        "half_depths": [
+          1,
+          2
+        ],
+        "windows_with_degree_nine_midpoints": 6,
+        "windows": [
+          {
+            "entry_tick": 0,
+            "exit_geodesic_tick": 2,
+            "marked_half_widths": [
+              4,
+              296
+            ],
+            "degree_nine_midpoints": 1,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 1,
+            "exit_geodesic_tick": 3,
+            "marked_half_widths": [
+              12,
+              296
+            ],
+            "degree_nine_midpoints": 1,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 2,
+            "exit_geodesic_tick": 4,
+            "marked_half_widths": [
+              12,
+              200
+            ],
+            "degree_nine_midpoints": 1,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 3,
+            "exit_geodesic_tick": 5,
+            "marked_half_widths": [
+              12,
+              200
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 4,
+            "exit_geodesic_tick": 6,
+            "marked_half_widths": [
+              8,
+              200
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 5,
+            "exit_geodesic_tick": 7,
+            "marked_half_widths": [
+              8,
+              200
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 6,
+            "exit_geodesic_tick": 8,
+            "marked_half_widths": [
+              8,
+              200
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 7,
+            "exit_geodesic_tick": 9,
+            "marked_half_widths": [
+              8,
+              200
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 8,
+            "exit_geodesic_tick": 10,
+            "marked_half_widths": [
+              8,
+              392
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 9,
+            "exit_geodesic_tick": 11,
+            "marked_half_widths": [
+              8,
+              492
+            ],
+            "degree_nine_midpoints": 1,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 10,
+            "exit_geodesic_tick": 12,
+            "marked_half_widths": [
+              16,
+              582
+            ],
+            "degree_nine_midpoints": 2,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 11,
+            "exit_geodesic_tick": 13,
+            "marked_half_widths": [
+              20,
+              494
+            ],
+            "degree_nine_midpoints": 2,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 12,
+            "exit_geodesic_tick": 14,
+            "marked_half_widths": [
+              24,
+              394
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 13,
+            "exit_geodesic_tick": 15,
+            "marked_half_widths": [
+              20,
+              282
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 14,
+            "exit_geodesic_tick": 16,
+            "marked_half_widths": [
+              16,
+              254
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 15,
+            "exit_geodesic_tick": 17,
+            "marked_half_widths": [
+              12,
+              76
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          }
+        ]
+      },
+      {
+        "excursion_instructions": 4,
+        "half_depths": [
+          2,
+          2
+        ],
+        "windows_with_degree_nine_midpoints": 4,
+        "windows": [
+          {
+            "entry_tick": 0,
+            "exit_geodesic_tick": 3,
+            "marked_half_widths": [
+              100,
+              296
+            ],
+            "degree_nine_midpoints": 1,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 1,
+            "exit_geodesic_tick": 4,
+            "marked_half_widths": [
+              292,
+              200
+            ],
+            "degree_nine_midpoints": 1,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 2,
+            "exit_geodesic_tick": 5,
+            "marked_half_widths": [
+              296,
+              200
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 3,
+            "exit_geodesic_tick": 6,
+            "marked_half_widths": [
+              296,
+              200
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 4,
+            "exit_geodesic_tick": 7,
+            "marked_half_widths": [
+              200,
+              200
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 5,
+            "exit_geodesic_tick": 8,
+            "marked_half_widths": [
+              200,
+              200
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 6,
+            "exit_geodesic_tick": 9,
+            "marked_half_widths": [
+              200,
+              200
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 7,
+            "exit_geodesic_tick": 10,
+            "marked_half_widths": [
+              200,
+              392
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 8,
+            "exit_geodesic_tick": 11,
+            "marked_half_widths": [
+              200,
+              492
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 9,
+            "exit_geodesic_tick": 12,
+            "marked_half_widths": [
+              200,
+              582
+            ],
+            "degree_nine_midpoints": 1,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 10,
+            "exit_geodesic_tick": 13,
+            "marked_half_widths": [
+              392,
+              494
+            ],
+            "degree_nine_midpoints": 2,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 11,
+            "exit_geodesic_tick": 14,
+            "marked_half_widths": [
+              492,
+              394
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 12,
+            "exit_geodesic_tick": 15,
+            "marked_half_widths": [
+              582,
+              282
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 13,
+            "exit_geodesic_tick": 16,
+            "marked_half_widths": [
+              494,
+              254
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 14,
+            "exit_geodesic_tick": 17,
+            "marked_half_widths": [
+              394,
+              76
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          }
+        ]
+      },
+      {
+        "excursion_instructions": 5,
+        "half_depths": [
+          2,
+          3
+        ],
+        "windows_with_degree_nine_midpoints": 2,
+        "windows": [
+          {
+            "entry_tick": 0,
+            "exit_geodesic_tick": 4,
+            "marked_half_widths": [
+              100,
+              3656
+            ],
+            "degree_nine_midpoints": 1,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 1,
+            "exit_geodesic_tick": 5,
+            "marked_half_widths": [
+              292,
+              3656
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 2,
+            "exit_geodesic_tick": 6,
+            "marked_half_widths": [
+              296,
+              3656
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 3,
+            "exit_geodesic_tick": 7,
+            "marked_half_widths": [
+              296,
+              3656
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 4,
+            "exit_geodesic_tick": 8,
+            "marked_half_widths": [
+              200,
+              3656
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 5,
+            "exit_geodesic_tick": 9,
+            "marked_half_widths": [
+              200,
+              3656
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 6,
+            "exit_geodesic_tick": 10,
+            "marked_half_widths": [
+              200,
+              7084
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 7,
+            "exit_geodesic_tick": 11,
+            "marked_half_widths": [
+              200,
+              8870
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 8,
+            "exit_geodesic_tick": 12,
+            "marked_half_widths": [
+              200,
+              10383
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 9,
+            "exit_geodesic_tick": 13,
+            "marked_half_widths": [
+              200,
+              8859
+            ],
+            "degree_nine_midpoints": 1,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 10,
+            "exit_geodesic_tick": 14,
+            "marked_half_widths": [
+              392,
+              6977
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 11,
+            "exit_geodesic_tick": 15,
+            "marked_half_widths": [
+              492,
+              4781
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 12,
+            "exit_geodesic_tick": 16,
+            "marked_half_widths": [
+              582,
+              3822
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 13,
+            "exit_geodesic_tick": 17,
+            "marked_half_widths": [
+              494,
+              1032
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          }
+        ]
+      },
+      {
+        "excursion_instructions": 6,
+        "half_depths": [
+          3,
+          3
+        ],
+        "windows_with_degree_nine_midpoints": 0,
+        "windows": [
+          {
+            "entry_tick": 0,
+            "exit_geodesic_tick": 5,
+            "marked_half_widths": [
+              1828,
+              3656
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 1,
+            "exit_geodesic_tick": 6,
+            "marked_half_widths": [
+              5264,
+              3656
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 2,
+            "exit_geodesic_tick": 7,
+            "marked_half_widths": [
+              5372,
+              3656
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 3,
+            "exit_geodesic_tick": 8,
+            "marked_half_widths": [
+              5376,
+              3656
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 4,
+            "exit_geodesic_tick": 9,
+            "marked_half_widths": [
+              3656,
+              3656
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 5,
+            "exit_geodesic_tick": 10,
+            "marked_half_widths": [
+              3656,
+              7084
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 6,
+            "exit_geodesic_tick": 11,
+            "marked_half_widths": [
+              3656,
+              8870
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 7,
+            "exit_geodesic_tick": 12,
+            "marked_half_widths": [
+              3656,
+              10383
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 8,
+            "exit_geodesic_tick": 13,
+            "marked_half_widths": [
+              3656,
+              8859
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 9,
+            "exit_geodesic_tick": 14,
+            "marked_half_widths": [
+              3656,
+              6977
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 10,
+            "exit_geodesic_tick": 15,
+            "marked_half_widths": [
+              7084,
+              4781
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 11,
+            "exit_geodesic_tick": 16,
+            "marked_half_widths": [
+              8870,
+              3822
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          },
+          {
+            "entry_tick": 12,
+            "exit_geodesic_tick": 17,
+            "marked_half_widths": [
+              10383,
+              1032
+            ],
+            "degree_nine_midpoints": 0,
+            "marked_midpoints": 0
+          }
+        ]
+      }
+    ]
+  },
+  "unrestricted_interval_templates": [
+    {
+      "excursion_instructions": 4,
+      "formal_rank_two_radius": 3,
+      "formal_rank_two_ball": 1542,
+      "terminal_templates": 1296,
+      "counts": {
+        "literal_replacement": 1246,
+        "restated_last_equality": 50
+      },
+      "unresolved_templates": []
+    },
+    {
+      "excursion_instructions": 5,
+      "formal_rank_two_radius": 4,
+      "formal_rank_two_ball": 14284,
+      "terminal_templates": 19766,
+      "counts": {
+        "literal_replacement": 17446,
+        "restated_last_equality": 2117,
+        "abelianization_modulo_sixteen": 161,
+        "two_rewrites_per_row": 32,
+        "degree_three_obstruction": 10
+      },
+      "unresolved_templates": []
+    },
+    {
+      "excursion_instructions": 6,
+      "formal_rank_two_radius": 5,
+      "formal_rank_two_ball": 129940,
+      "terminal_templates": 313552,
+      "counts": {
+        "literal_replacement": 248278,
+        "restated_last_equality": 52301,
+        "abelianization_modulo_sixteen": 10396,
+        "two_rewrites_per_row": 2076,
+        "degree_three_obstruction": 365
+      },
+      "unresolved_templates": [
+        {
+          "removed": "Xax",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "bXAxA"
+          ],
+          "last_equality_class": ""
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "bXAxa"
+          ],
+          "last_equality_class": ""
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "bXaxA"
+          ],
+          "last_equality_class": ""
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "bXaxa"
+          ],
+          "last_equality_class": ""
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "bXAxA"
+          ],
+          "last_equality_class": "AxYayX"
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "bXAxa"
+          ],
+          "last_equality_class": "AxYayX"
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "bXaxA"
+          ],
+          "last_equality_class": "AxYayX"
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "bXaxa"
+          ],
+          "last_equality_class": "AxYayX"
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "bYAyA"
+          ],
+          "last_equality_class": "AxYayX"
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "bYAya"
+          ],
+          "last_equality_class": "AxYayX"
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "bYayA"
+          ],
+          "last_equality_class": "AxYayX"
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "bYaya"
+          ],
+          "last_equality_class": "AxYayX"
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "bXAxaXaxB",
+          "remaining_pair": [
+            "AXaxB",
+            "bXAxAXaxB"
+          ],
+          "last_equality_class": "AXaxBXaxbXAx"
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "bXaxaXAxB",
+          "remaining_pair": [
+            "AXAxB",
+            "bXaxAXAxB"
+          ],
+          "last_equality_class": "AXAxBXaxbXax"
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "bXAxA",
+            "xAX"
+          ],
+          "last_equality_class": "AXXaxx"
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "bXAxa",
+            "xAX"
+          ],
+          "last_equality_class": "AXXaxx"
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "bXaxA",
+            "xAX"
+          ],
+          "last_equality_class": "AXXaxx"
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "bXaxa",
+            "xAX"
+          ],
+          "last_equality_class": "AXXaxx"
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "bxAXA",
+            "xAX"
+          ],
+          "last_equality_class": "AXXaxx"
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "bxAXa",
+            "xAX"
+          ],
+          "last_equality_class": "AXXaxx"
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "bxaXA",
+            "xAX"
+          ],
+          "last_equality_class": "AXXaxx"
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "bxaXa",
+            "xAX"
+          ],
+          "last_equality_class": "AXXaxx"
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "bXAxA",
+            "yAY"
+          ],
+          "last_equality_class": "AYXaxy"
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "bXAxa",
+            "yAY"
+          ],
+          "last_equality_class": "AYXaxy"
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "bXaxA",
+            "yAY"
+          ],
+          "last_equality_class": "AYXaxy"
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "bXaxa",
+            "yAY"
+          ],
+          "last_equality_class": "AYXaxy"
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "byAYA",
+            "yAY"
+          ],
+          "last_equality_class": "AYXaxy"
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "byAYa",
+            "yAY"
+          ],
+          "last_equality_class": "AYXaxy"
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "byaYA",
+            "yAY"
+          ],
+          "last_equality_class": "AYXaxy"
+        },
+        {
+          "removed": "Xax",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "byaYa",
+            "yAY"
+          ],
+          "last_equality_class": "AYXaxy"
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "bXAxA"
+          ],
+          "last_equality_class": "AxYayX"
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "bXAxa"
+          ],
+          "last_equality_class": "AxYayX"
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "bXaxA"
+          ],
+          "last_equality_class": "AxYayX"
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "bXaxa"
+          ],
+          "last_equality_class": "AxYayX"
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "bYAyA"
+          ],
+          "last_equality_class": "AxYayX"
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "bYAya"
+          ],
+          "last_equality_class": "AxYayX"
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "bYayA"
+          ],
+          "last_equality_class": "AxYayX"
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "bYaya"
+          ],
+          "last_equality_class": "AxYayX"
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "bYAyA"
+          ],
+          "last_equality_class": ""
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "bYAya"
+          ],
+          "last_equality_class": ""
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "bYayA"
+          ],
+          "last_equality_class": ""
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "bYaya"
+          ],
+          "last_equality_class": ""
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "bYAyaYayB",
+          "remaining_pair": [
+            "AYayB",
+            "bYAyAYayB"
+          ],
+          "last_equality_class": "AYayBYaybYAy"
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "bYayaYAyB",
+          "remaining_pair": [
+            "AYAyB",
+            "bYayAYAyB"
+          ],
+          "last_equality_class": "AYAyBYaybYay"
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "bYAyA",
+            "xAX"
+          ],
+          "last_equality_class": "AXYayx"
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "bYAya",
+            "xAX"
+          ],
+          "last_equality_class": "AXYayx"
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "bYayA",
+            "xAX"
+          ],
+          "last_equality_class": "AXYayx"
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "bYaya",
+            "xAX"
+          ],
+          "last_equality_class": "AXYayx"
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "bxAXA",
+            "xAX"
+          ],
+          "last_equality_class": "AXYayx"
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "bxAXa",
+            "xAX"
+          ],
+          "last_equality_class": "AXYayx"
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "bxaXA",
+            "xAX"
+          ],
+          "last_equality_class": "AXYayx"
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "bxaXa",
+            "xAX"
+          ],
+          "last_equality_class": "AXYayx"
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "bYAyA",
+            "yAY"
+          ],
+          "last_equality_class": "AYYayy"
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "bYAya",
+            "yAY"
+          ],
+          "last_equality_class": "AYYayy"
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "bYayA",
+            "yAY"
+          ],
+          "last_equality_class": "AYYayy"
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "bYaya",
+            "yAY"
+          ],
+          "last_equality_class": "AYYayy"
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "byAYA",
+            "yAY"
+          ],
+          "last_equality_class": "AYYayy"
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "byAYa",
+            "yAY"
+          ],
+          "last_equality_class": "AYYayy"
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "byaYA",
+            "yAY"
+          ],
+          "last_equality_class": "AYYayy"
+        },
+        {
+          "removed": "Yay",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "byaYa",
+            "yAY"
+          ],
+          "last_equality_class": "AYYayy"
+        },
+        {
+          "removed": "bXAxAXaxB",
+          "signed_donor": "XAx",
+          "remaining_pair": [
+            "AXaxB",
+            "Xax"
+          ],
+          "last_equality_class": "AXaxBXaxbXAx"
+        },
+        {
+          "removed": "bXAxaXaxB",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "aXaxB"
+          ],
+          "last_equality_class": "AXaxBXaxbXAx"
+        },
+        {
+          "removed": "bXaxAXAxB",
+          "signed_donor": "XAx",
+          "remaining_pair": [
+            "AXAxB",
+            "Xax"
+          ],
+          "last_equality_class": "AXAxBXaxbXax"
+        },
+        {
+          "removed": "bXaxaXAxB",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "aXAxB"
+          ],
+          "last_equality_class": "AXAxBXaxbXax"
+        },
+        {
+          "removed": "bYAyAYayB",
+          "signed_donor": "YAy",
+          "remaining_pair": [
+            "AYayB",
+            "Yay"
+          ],
+          "last_equality_class": "AYayBYaybYAy"
+        },
+        {
+          "removed": "bYAyaYayB",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "aYayB"
+          ],
+          "last_equality_class": "AYayBYaybYAy"
+        },
+        {
+          "removed": "bYayAYAyB",
+          "signed_donor": "YAy",
+          "remaining_pair": [
+            "AYAyB",
+            "Yay"
+          ],
+          "last_equality_class": "AYAyBYaybYay"
+        },
+        {
+          "removed": "bYayaYAyB",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "aYAyB"
+          ],
+          "last_equality_class": "AYAyBYaybYay"
+        },
+        {
+          "removed": "bxAXAxaXB",
+          "signed_donor": "xAX",
+          "remaining_pair": [
+            "AxaXB",
+            "xaX"
+          ],
+          "last_equality_class": "AXAxaXBxaXbx"
+        },
+        {
+          "removed": "bxAXaxaXB",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "axaXB",
+            "xAX"
+          ],
+          "last_equality_class": "AXAxaXBxaXbx"
+        },
+        {
+          "removed": "bxaXAxAXB",
+          "signed_donor": "xAX",
+          "remaining_pair": [
+            "AxAXB",
+            "xaX"
+          ],
+          "last_equality_class": "AXBxAXbxaXax"
+        },
+        {
+          "removed": "bxaXaxAXB",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "axAXB",
+            "xAX"
+          ],
+          "last_equality_class": "AXBxAXbxaXax"
+        },
+        {
+          "removed": "byAYAyaYB",
+          "signed_donor": "yAY",
+          "remaining_pair": [
+            "AyaYB",
+            "yaY"
+          ],
+          "last_equality_class": "AYAyaYByaYby"
+        },
+        {
+          "removed": "byAYayaYB",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "ayaYB",
+            "yAY"
+          ],
+          "last_equality_class": "AYAyaYByaYby"
+        },
+        {
+          "removed": "byaYAyAYB",
+          "signed_donor": "yAY",
+          "remaining_pair": [
+            "AyAYB",
+            "yaY"
+          ],
+          "last_equality_class": "AYByAYbyaYay"
+        },
+        {
+          "removed": "byaYayAYB",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "ayAYB",
+            "yAY"
+          ],
+          "last_equality_class": "AYByAYbyaYay"
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "bXAxA"
+          ],
+          "last_equality_class": "AXXaxx"
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "bXAxa"
+          ],
+          "last_equality_class": "AXXaxx"
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "bXaxA"
+          ],
+          "last_equality_class": "AXXaxx"
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "bXaxa"
+          ],
+          "last_equality_class": "AXXaxx"
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "bxAXA"
+          ],
+          "last_equality_class": "AXXaxx"
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "bxAXa"
+          ],
+          "last_equality_class": "AXXaxx"
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "bxaXA"
+          ],
+          "last_equality_class": "AXXaxx"
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "bxaXa"
+          ],
+          "last_equality_class": "AXXaxx"
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "bYAyA"
+          ],
+          "last_equality_class": "AXYayx"
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "bYAya"
+          ],
+          "last_equality_class": "AXYayx"
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "bYayA"
+          ],
+          "last_equality_class": "AXYayx"
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "bYaya"
+          ],
+          "last_equality_class": "AXYayx"
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "bxAXA"
+          ],
+          "last_equality_class": "AXYayx"
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "bxAXa"
+          ],
+          "last_equality_class": "AXYayx"
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "bxaXA"
+          ],
+          "last_equality_class": "AXYayx"
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "bxaXa"
+          ],
+          "last_equality_class": "AXYayx"
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "bxAXaxaXB",
+          "remaining_pair": [
+            "AxaXB",
+            "bxAXAxaXB"
+          ],
+          "last_equality_class": "AXAxaXBxaXbx"
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "bxaXaxAXB",
+          "remaining_pair": [
+            "AxAXB",
+            "bxaXAxAXB"
+          ],
+          "last_equality_class": "AXBxAXbxaXax"
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "bxAXA",
+            "xAX"
+          ],
+          "last_equality_class": ""
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "bxAXa",
+            "xAX"
+          ],
+          "last_equality_class": ""
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "bxaXA",
+            "xAX"
+          ],
+          "last_equality_class": ""
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "bxaXa",
+            "xAX"
+          ],
+          "last_equality_class": ""
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "bxAXA",
+            "yAY"
+          ],
+          "last_equality_class": "AXyaYx"
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "bxAXa",
+            "yAY"
+          ],
+          "last_equality_class": "AXyaYx"
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "bxaXA",
+            "yAY"
+          ],
+          "last_equality_class": "AXyaYx"
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "bxaXa",
+            "yAY"
+          ],
+          "last_equality_class": "AXyaYx"
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "byAYA",
+            "yAY"
+          ],
+          "last_equality_class": "AXyaYx"
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "byAYa",
+            "yAY"
+          ],
+          "last_equality_class": "AXyaYx"
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "byaYA",
+            "yAY"
+          ],
+          "last_equality_class": "AXyaYx"
+        },
+        {
+          "removed": "xaX",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "byaYa",
+            "yAY"
+          ],
+          "last_equality_class": "AXyaYx"
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "bXAxA"
+          ],
+          "last_equality_class": "AYXaxy"
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "bXAxa"
+          ],
+          "last_equality_class": "AYXaxy"
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "bXaxA"
+          ],
+          "last_equality_class": "AYXaxy"
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "bXaxa"
+          ],
+          "last_equality_class": "AYXaxy"
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "byAYA"
+          ],
+          "last_equality_class": "AYXaxy"
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "byAYa"
+          ],
+          "last_equality_class": "AYXaxy"
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "byaYA"
+          ],
+          "last_equality_class": "AYXaxy"
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "Xax",
+          "remaining_pair": [
+            "XAx",
+            "byaYa"
+          ],
+          "last_equality_class": "AYXaxy"
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "bYAyA"
+          ],
+          "last_equality_class": "AYYayy"
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "bYAya"
+          ],
+          "last_equality_class": "AYYayy"
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "bYayA"
+          ],
+          "last_equality_class": "AYYayy"
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "bYaya"
+          ],
+          "last_equality_class": "AYYayy"
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "byAYA"
+          ],
+          "last_equality_class": "AYYayy"
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "byAYa"
+          ],
+          "last_equality_class": "AYYayy"
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "byaYA"
+          ],
+          "last_equality_class": "AYYayy"
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "Yay",
+          "remaining_pair": [
+            "YAy",
+            "byaYa"
+          ],
+          "last_equality_class": "AYYayy"
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "byAYayaYB",
+          "remaining_pair": [
+            "AyaYB",
+            "byAYAyaYB"
+          ],
+          "last_equality_class": "AYAyaYByaYby"
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "byaYayAYB",
+          "remaining_pair": [
+            "AyAYB",
+            "byaYAyAYB"
+          ],
+          "last_equality_class": "AYByAYbyaYay"
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "bxAXA",
+            "xAX"
+          ],
+          "last_equality_class": "AXyaYx"
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "bxAXa",
+            "xAX"
+          ],
+          "last_equality_class": "AXyaYx"
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "bxaXA",
+            "xAX"
+          ],
+          "last_equality_class": "AXyaYx"
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "bxaXa",
+            "xAX"
+          ],
+          "last_equality_class": "AXyaYx"
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "byAYA",
+            "xAX"
+          ],
+          "last_equality_class": "AXyaYx"
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "byAYa",
+            "xAX"
+          ],
+          "last_equality_class": "AXyaYx"
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "byaYA",
+            "xAX"
+          ],
+          "last_equality_class": "AXyaYx"
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "xaX",
+          "remaining_pair": [
+            "byaYa",
+            "xAX"
+          ],
+          "last_equality_class": "AXyaYx"
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "byAYA",
+            "yAY"
+          ],
+          "last_equality_class": ""
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "byAYa",
+            "yAY"
+          ],
+          "last_equality_class": ""
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "byaYA",
+            "yAY"
+          ],
+          "last_equality_class": ""
+        },
+        {
+          "removed": "yaY",
+          "signed_donor": "yaY",
+          "remaining_pair": [
+            "byaYa",
+            "yAY"
+          ],
+          "last_equality_class": ""
+        }
+      ]
+    }
+  ],
+  "isolated_interval_templates": [
+    {
+      "excursion_instructions": 4,
+      "formal_rank_two_radius": 3,
+      "formal_rank_two_ball": 1542,
+      "terminal_templates": 808,
+      "counts": {
+        "literal_replacement": 804,
+        "restated_last_equality": 4
+      },
+      "unresolved_templates": [],
+      "last_marked_layer_width": 930
+    },
+    {
+      "excursion_instructions": 5,
+      "formal_rank_two_radius": 4,
+      "formal_rank_two_ball": 14284,
+      "terminal_templates": 10512,
+      "counts": {
+        "literal_replacement": 10168,
+        "restated_last_equality": 297,
+        "degree_three_obstruction": 6,
+        "abelianization_modulo_sixteen": 41
+      },
+      "unresolved_templates": [],
+      "last_marked_layer_width": 15842
+    },
+    {
+      "excursion_instructions": 6,
+      "formal_rank_two_radius": 5,
+      "formal_rank_two_ball": 129940,
+      "terminal_templates": 152122,
+      "counts": {
+        "literal_replacement": 136122,
+        "restated_last_equality": 11917,
+        "abelianization_modulo_sixteen": 3464,
+        "two_rewrites_per_row": 456,
+        "degree_three_obstruction": 163
+      },
+      "unresolved_templates": [],
+      "last_marked_layer_width": 262805
+    }
+  ],
+  "three_six_instruction_intervals": {
+    "residual_templates": 136,
+    "one_interval_widths": [
+      32,
+      22
+    ],
+    "two_interval_widths": [
+      971,
+      616
+    ],
+    "midpoints": [
+      0,
+      0
+    ]
+  }
+}
