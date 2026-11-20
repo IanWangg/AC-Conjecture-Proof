@@ -1,0 +1,2552 @@
+{
+  "parameters": {
+    "workers": 5,
+    "stages": 4,
+    "allocation": 350000,
+    "horizon": 19,
+    "bases": 64,
+    "width": 20,
+    "alternations": 5,
+    "maximum": 34
+  },
+  "results": [
+    {
+      "seed": "AK3",
+      "rounds": [
+        {
+          "inputs": 2,
+          "vertices": 16792,
+          "return_states": 3116293,
+          "allocation_stops": 0,
+          "primitive_tails": 4,
+          "interior_slopes": 3,
+          "exact_primitive_hits": [],
+          "novel_states": 112
+        },
+        {
+          "inputs": 20,
+          "vertices": 1177931,
+          "return_states": 23954221,
+          "allocation_stops": 17,
+          "primitive_tails": 40,
+          "interior_slopes": 10,
+          "exact_primitive_hits": [],
+          "novel_states": 114
+        },
+        {
+          "inputs": 20,
+          "vertices": 857933,
+          "return_states": 23940459,
+          "allocation_stops": 18,
+          "primitive_tails": 40,
+          "interior_slopes": 25,
+          "exact_primitive_hits": [],
+          "novel_states": 157
+        },
+        {
+          "inputs": 20,
+          "vertices": 1336399,
+          "return_states": 28836535,
+          "allocation_stops": 15,
+          "primitive_tails": 40,
+          "interior_slopes": 4,
+          "exact_primitive_hits": [],
+          "novel_states": 212
+        },
+        {
+          "inputs": 20,
+          "vertices": 1565990,
+          "return_states": 30751768,
+          "allocation_stops": 15,
+          "primitive_tails": 40,
+          "interior_slopes": 22,
+          "exact_primitive_hits": [],
+          "novel_states": 192
+        }
+      ],
+      "start_pair": [
+        "xxxYYYY",
+        "xyxYXY"
+      ],
+      "smallest_reached_pair": {
+        "pair": [
+          "XXXXyyy",
+          "XYXyxy"
+        ],
+        "next_receiver": 0,
+        "route": [
+          [
+            0,
+            "XXXXyxxxY",
+            4
+          ],
+          [
+            1,
+            "XXXyXYxxxy",
+            4
+          ],
+          [
+            0,
+            "XXXXyyy",
+            3
+          ],
+          [
+            1,
+            "XYXyxy",
+            4
+          ]
+        ]
+      },
+      "visited_orbits": 619,
+      "orbits_outside_catalogue": 65,
+      "smallest_outside_catalogue": [
+        {
+          "pair": [
+            "XXXXXyxYXYxxyyy",
+            "XXyxYXYxxyyyxYYY"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              0,
+              "XXXXXyxYXYxxyyy",
+              4
+            ],
+            [
+              1,
+              "XXyxYXYxxyyyxYYY",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XYYYxYXyXyxyXyxy",
+            "XXXXYXyXyxyXyxy"
+          ],
+          "next_receiver": 1,
+          "route": [
+            [
+              0,
+              "XXXXyyy",
+              4
+            ],
+            [
+              1,
+              "XXXXYXyXyxyXyxy",
+              4
+            ],
+            [
+              0,
+              "XYYYxYXyXyxyXyxy",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXYYYXXyyyyXyxyXy",
+            "XXYYYxxyXyxyXy"
+          ],
+          "next_receiver": 1,
+          "route": [
+            [
+              0,
+              "XXXXyyy",
+              4
+            ],
+            [
+              1,
+              "XXYYYxxyXyxyXy",
+              4
+            ],
+            [
+              0,
+              "XXYYYXXyyyyXyxyXy",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXXXYXXXyyyyxYXyyy",
+            "XXXXYxyxYXyyy"
+          ],
+          "next_receiver": 1,
+          "route": [
+            [
+              0,
+              "XXXXyyy",
+              4
+            ],
+            [
+              1,
+              "XXXXYxyxYXyyy",
+              4
+            ],
+            [
+              0,
+              "XXXXYXXXyyyyxYXyyy",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXXXyXYxyxxxYYYxxy",
+            "XXXYXyxyXXyyy"
+          ],
+          "next_receiver": 1,
+          "route": [
+            [
+              1,
+              "XXyXYXyyyyy",
+              4
+            ],
+            [
+              0,
+              "XYXyxy",
+              3
+            ],
+            [
+              1,
+              "XXXYXyxyXXyyy",
+              4
+            ],
+            [
+              0,
+              "XXXXyXYxyxxxYYYxxy",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXXXyXyxyXXyyyXXXy",
+            "XXXYXyxyXXyyy"
+          ],
+          "next_receiver": 1,
+          "route": [
+            [
+              1,
+              "XXyXYXyyyyy",
+              4
+            ],
+            [
+              0,
+              "XYXyxy",
+              3
+            ],
+            [
+              1,
+              "XXXYXyxyXXyyy",
+              4
+            ],
+            [
+              0,
+              "XXXXyXyxyXXyyyXXXy",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXXXyxyxyXYxY",
+            "XXXXyxyxyxyXYxYXXY"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              0,
+              "XXXXyxyxyXYxY",
+              4
+            ],
+            [
+              1,
+              "XXXXyxyxyxyXYxYXXY",
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "seed": "W22",
+      "rounds": [
+        {
+          "inputs": 2,
+          "vertices": 158636,
+          "return_states": 4020184,
+          "allocation_stops": 1,
+          "primitive_tails": 4,
+          "interior_slopes": 0,
+          "exact_primitive_hits": [],
+          "novel_states": 2
+        },
+        {
+          "inputs": 2,
+          "vertices": 162628,
+          "return_states": 992223,
+          "allocation_stops": 2,
+          "primitive_tails": 4,
+          "interior_slopes": 0,
+          "exact_primitive_hits": [],
+          "novel_states": 0
+        }
+      ],
+      "start_pair": [
+        "XXyxYxyXYxyXYxY",
+        "XXyyxYY"
+      ],
+      "smallest_reached_pair": {
+        "pair": [
+          "XXYxxyyyXYxYxyXYxY",
+          "XXyyxYY"
+        ],
+        "next_receiver": 1,
+        "route": [
+          [
+            0,
+            "XXYxxyyyXYxYxyXYxY",
+            4
+          ]
+        ]
+      },
+      "visited_orbits": 2,
+      "orbits_outside_catalogue": 0,
+      "smallest_outside_catalogue": []
+    },
+    {
+      "seed": "W23",
+      "rounds": [
+        {
+          "inputs": 2,
+          "vertices": 96435,
+          "return_states": 2881809,
+          "allocation_stops": 2,
+          "primitive_tails": 4,
+          "interior_slopes": 2,
+          "exact_primitive_hits": [],
+          "novel_states": 9
+        },
+        {
+          "inputs": 9,
+          "vertices": 1042737,
+          "return_states": 4778414,
+          "allocation_stops": 9,
+          "primitive_tails": 18,
+          "interior_slopes": 8,
+          "exact_primitive_hits": [],
+          "novel_states": 1
+        },
+        {
+          "inputs": 1,
+          "vertices": 68062,
+          "return_states": 746661,
+          "allocation_stops": 1,
+          "primitive_tails": 2,
+          "interior_slopes": 1,
+          "exact_primitive_hits": [],
+          "novel_states": 1
+        },
+        {
+          "inputs": 1,
+          "vertices": 15887,
+          "return_states": 974216,
+          "allocation_stops": 1,
+          "primitive_tails": 2,
+          "interior_slopes": 1,
+          "exact_primitive_hits": [],
+          "novel_states": 7
+        },
+        {
+          "inputs": 7,
+          "vertices": 879748,
+          "return_states": 3836153,
+          "allocation_stops": 7,
+          "primitive_tails": 14,
+          "interior_slopes": 0,
+          "exact_primitive_hits": [],
+          "novel_states": 3
+        }
+      ],
+      "start_pair": [
+        "XXXYxyxyXYY",
+        "XYXYYXyXYYXy"
+      ],
+      "smallest_reached_pair": {
+        "pair": [
+          "XYYYXyxYXyxy",
+          "XYXYYXYXyxy"
+        ],
+        "next_receiver": 0,
+        "route": [
+          [
+            0,
+            "XYXYXYYXyyxYYXyxy",
+            3
+          ],
+          [
+            1,
+            "XYXYYXyyxYXYxyy",
+            2
+          ],
+          [
+            0,
+            "XYYYXyxYXyxy",
+            2
+          ],
+          [
+            1,
+            "XYXYYXYXyxy",
+            2
+          ]
+        ]
+      },
+      "visited_orbits": 21,
+      "orbits_outside_catalogue": 11,
+      "smallest_outside_catalogue": [
+        {
+          "pair": [
+            "XXYYXyyxYxYYxyXXy",
+            "XYXYYXyXYYXy"
+          ],
+          "next_receiver": 1,
+          "route": [
+            [
+              0,
+              "XXYYXyyxYxYYxyXXy",
+              3
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXyyxYYXYxYXyyXYY",
+            "XYXYYXyXYYXy"
+          ],
+          "next_receiver": 1,
+          "route": [
+            [
+              0,
+              "XXyyxYYXYxYXyyXYY",
+              3
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXYxyxyXYYYxxyyxyxy",
+            "XYXYYXyXYYXy"
+          ],
+          "next_receiver": 1,
+          "route": [
+            [
+              0,
+              "XXYxyxyXYYYxxyyxyxy",
+              3
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXYxyxyXYYxyyxyxyxY",
+            "XYXYYXyXYYXy"
+          ],
+          "next_receiver": 1,
+          "route": [
+            [
+              0,
+              "XXYxyxyXYYxyyxyxyxY",
+              3
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XYXYYxYxyXyxyyXYYXy",
+            "XYXYYXyXYYXy"
+          ],
+          "next_receiver": 1,
+          "route": [
+            [
+              0,
+              "XYXYYxYxyXyxyyXYYXy",
+              3
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XYYYXyxYXyxy",
+            "XXXYYYXyxYXyxxyyXYY"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              0,
+              "XYXYXYYXyyxYYXyxy",
+              3
+            ],
+            [
+              1,
+              "XYXYYXyyxYXYxyy",
+              2
+            ],
+            [
+              0,
+              "XYYYXyxYXyxy",
+              2
+            ],
+            [
+              1,
+              "XXXYYYXyxYXyxxyyXYY",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XYYYXyxYXyxy",
+            "XXYYXYXyxyyXYYYXyxY"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              0,
+              "XYXYXYYXyyxYYXyxy",
+              3
+            ],
+            [
+              1,
+              "XYXYYXyyxYXYxyy",
+              2
+            ],
+            [
+              0,
+              "XYYYXyxYXyxy",
+              2
+            ],
+            [
+              1,
+              "XXYYXYXyxyyXYYYXyxY",
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "seed": "chamber18",
+      "rounds": [
+        {
+          "inputs": 2,
+          "vertices": 86727,
+          "return_states": 3070397,
+          "allocation_stops": 2,
+          "primitive_tails": 4,
+          "interior_slopes": 1,
+          "exact_primitive_hits": [],
+          "novel_states": 7
+        },
+        {
+          "inputs": 7,
+          "vertices": 497779,
+          "return_states": 3384536,
+          "allocation_stops": 7,
+          "primitive_tails": 14,
+          "interior_slopes": 7,
+          "exact_primitive_hits": [],
+          "novel_states": 2
+        },
+        {
+          "inputs": 2,
+          "vertices": 81729,
+          "return_states": 1212485,
+          "allocation_stops": 2,
+          "primitive_tails": 4,
+          "interior_slopes": 0,
+          "exact_primitive_hits": [],
+          "novel_states": 10
+        },
+        {
+          "inputs": 10,
+          "vertices": 924909,
+          "return_states": 9656853,
+          "allocation_stops": 10,
+          "primitive_tails": 20,
+          "interior_slopes": 0,
+          "exact_primitive_hits": [],
+          "novel_states": 15
+        },
+        {
+          "inputs": 15,
+          "vertices": 1316119,
+          "return_states": 9838690,
+          "allocation_stops": 15,
+          "primitive_tails": 30,
+          "interior_slopes": 6,
+          "exact_primitive_hits": [],
+          "novel_states": 9
+        }
+      ],
+      "start_pair": [
+        "XYXYxyXyy",
+        "XYYXyyyXy"
+      ],
+      "smallest_reached_pair": {
+        "pair": [
+          "XYYXyyyXy",
+          "XYXYxyXyy"
+        ],
+        "next_receiver": 1,
+        "route": [
+          [
+            1,
+            "XYXYxYYxyXYxyXyyy",
+            3
+          ],
+          [
+            0,
+            "XYxYXyxYXyyy",
+            2
+          ],
+          [
+            1,
+            "XYXYxyXyy",
+            2
+          ],
+          [
+            0,
+            "XYYXyyyXy",
+            3
+          ]
+        ]
+      },
+      "visited_orbits": 37,
+      "orbits_outside_catalogue": 7,
+      "smallest_outside_catalogue": [
+        {
+          "pair": [
+            "XXYYXyyyyXyyXY",
+            "XXYXyyXYXyyyXyyXY"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              1,
+              "XYXYxYYxyXYxyXyyy",
+              3
+            ],
+            [
+              0,
+              "XYxYXyxYXyyy",
+              2
+            ],
+            [
+              1,
+              "XYXYxyXyy",
+              2
+            ],
+            [
+              0,
+              "XXYYXyyyyXyyXY",
+              3
+            ],
+            [
+              1,
+              "XXYXyyXYXyyyXyyXY",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XYXyyyXyyxYYxY",
+            "XYYxYYYYxyXyyyXyy"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              1,
+              "XYXyyyXyyxYYxY",
+              3
+            ],
+            [
+              0,
+              "XYYxYYYYxyXyyyXyy",
+              2
+            ],
+            [
+              1,
+              "XYXYxyXyy",
+              2
+            ],
+            [
+              0,
+              "XYXyyyXyyxYYxY",
+              3
+            ],
+            [
+              1,
+              "XYYxYYYYxyXyyyXyy",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XYYxYYYYxyXyyyXyy",
+            "XYXyyyXyyxYYxY"
+          ],
+          "next_receiver": 1,
+          "route": [
+            [
+              1,
+              "XYXyyyXyyxYYxY",
+              3
+            ],
+            [
+              0,
+              "XYYxYYYYxyXyyyXyy",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XYxYXyxYXyyy",
+            "XXYxYXyXyyyXyxYYYxy"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              1,
+              "XYXYxYYxyXYxyXyyy",
+              3
+            ],
+            [
+              0,
+              "XYxYXyxYXyyy",
+              2
+            ],
+            [
+              1,
+              "XXYxYXyXyyyXyxYYYxy",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XYxYXyxYXyyy",
+            "XYXYxYxyXYxyXyxYXyy"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              1,
+              "XYXYxYYxyXYxyXyyy",
+              3
+            ],
+            [
+              0,
+              "XYxYXyxYXyyy",
+              2
+            ],
+            [
+              1,
+              "XYXYxYxyXYxyXyxYXyy",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XYxYXyxYXyyy",
+            "XYYXYxyXyyyXyxYYYxy"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              1,
+              "XYXYxYYxyXYxyXyyy",
+              3
+            ],
+            [
+              0,
+              "XYxYXyxYXyyy",
+              2
+            ],
+            [
+              1,
+              "XYYXYxyXyyyXyxYYYxy",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XYxYXyxYXyyy",
+            "XYYXyXyyyXYxYXyxyXy"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              1,
+              "XYXYxYYxyXYxyXyyy",
+              3
+            ],
+            [
+              0,
+              "XYxYXyxYXyyy",
+              2
+            ],
+            [
+              1,
+              "XYYXyXyyyXYxYXyxyXy",
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "seed": "entry0",
+      "rounds": [
+        {
+          "inputs": 2,
+          "vertices": 40453,
+          "return_states": 1624328,
+          "allocation_stops": 2,
+          "primitive_tails": 4,
+          "interior_slopes": 1,
+          "exact_primitive_hits": [],
+          "novel_states": 4
+        },
+        {
+          "inputs": 4,
+          "vertices": 394360,
+          "return_states": 2409618,
+          "allocation_stops": 4,
+          "primitive_tails": 8,
+          "interior_slopes": 2,
+          "exact_primitive_hits": [],
+          "novel_states": 3
+        },
+        {
+          "inputs": 3,
+          "vertices": 259771,
+          "return_states": 1885223,
+          "allocation_stops": 3,
+          "primitive_tails": 6,
+          "interior_slopes": 0,
+          "exact_primitive_hits": [],
+          "novel_states": 0
+        }
+      ],
+      "start_pair": [
+        "XXYXyxYxyXYxy",
+        "XYXyXYXyyxYxy"
+      ],
+      "smallest_reached_pair": {
+        "pair": [
+          "XXYXYxyxYxxy",
+          "XXYXyxYxyXYxy"
+        ],
+        "next_receiver": 0,
+        "route": [
+          [
+            0,
+            "XXYXYxyxYxxy",
+            2
+          ],
+          [
+            1,
+            "XXYXyxYxyXYxy",
+            2
+          ]
+        ]
+      },
+      "visited_orbits": 7,
+      "orbits_outside_catalogue": 7,
+      "smallest_outside_catalogue": [
+        {
+          "pair": [
+            "XXYXYxyxYxxy",
+            "XXYXyxYxyXYxy"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              0,
+              "XXYXYxyxYxxy",
+              2
+            ],
+            [
+              1,
+              "XXYXyxYxyXYxy",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXYXYxyxYxxy",
+            "XYXyXYXyyxYxy"
+          ],
+          "next_receiver": 1,
+          "route": [
+            [
+              0,
+              "XXYXYxyxYxxy",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXYXYxyxYxxy",
+            "XXXYXyxYxyyxxYXXy"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              0,
+              "XXYXYxyxYxxy",
+              2
+            ],
+            [
+              1,
+              "XXXYXyxYxyyxxYXXy",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXXXYXYxYxyyyxYxy",
+            "XYXyXYXyyxYxy"
+          ],
+          "next_receiver": 1,
+          "route": [
+            [
+              0,
+              "XXXXYXYxYxyyyxYxy",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXYXyxYxyXYxy",
+            "XXYXyyxYxyxYXyxYXy"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              1,
+              "XXYXyyxYxyxYXyxYXy",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXYXYxyxYxxy",
+            "XXyXYXyyXYXyyxYxyxY"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              0,
+              "XXYXYxyxYxxy",
+              2
+            ],
+            [
+              1,
+              "XXyXYXyyXYXyyxYxyxY",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXYXyxYxyXYxy",
+            "XXYXXYxyxxYXyxxYxxy"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              1,
+              "XXYXXYxyxxYXyxxYxxy",
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "seed": "entry1",
+      "rounds": [
+        {
+          "inputs": 2,
+          "vertices": 89908,
+          "return_states": 1587208,
+          "allocation_stops": 2,
+          "primitive_tails": 4,
+          "interior_slopes": 1,
+          "exact_primitive_hits": [],
+          "novel_states": 1
+        },
+        {
+          "inputs": 1,
+          "vertices": 16243,
+          "return_states": 683901,
+          "allocation_stops": 1,
+          "primitive_tails": 2,
+          "interior_slopes": 0,
+          "exact_primitive_hits": [],
+          "novel_states": 1
+        },
+        {
+          "inputs": 1,
+          "vertices": 57236,
+          "return_states": 703337,
+          "allocation_stops": 1,
+          "primitive_tails": 2,
+          "interior_slopes": 0,
+          "exact_primitive_hits": [],
+          "novel_states": 0
+        }
+      ],
+      "start_pair": [
+        "XYXyXyxYYxy",
+        "XXXYXyyxYYxyXYYxy"
+      ],
+      "smallest_reached_pair": {
+        "pair": [
+          "XYXyXyxYYxy",
+          "XXXYXyxYxYxy"
+        ],
+        "next_receiver": 0,
+        "route": [
+          [
+            1,
+            "XXXYXyxYxYxy",
+            2
+          ]
+        ]
+      },
+      "visited_orbits": 2,
+      "orbits_outside_catalogue": 2,
+      "smallest_outside_catalogue": [
+        {
+          "pair": [
+            "XYXyXyxYYxy",
+            "XXXYXyxYxYxy"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              1,
+              "XXXYXyxYxYxy",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXYXyyXYxxYxYxy",
+            "XXXYXyxYxYxy"
+          ],
+          "next_receiver": 1,
+          "route": [
+            [
+              1,
+              "XXXYXyxYxYxy",
+              2
+            ],
+            [
+              0,
+              "XXYXyyXYxxYxYxy",
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "seed": "entry2",
+      "rounds": [
+        {
+          "inputs": 2,
+          "vertices": 99946,
+          "return_states": 1635935,
+          "allocation_stops": 2,
+          "primitive_tails": 4,
+          "interior_slopes": 0,
+          "exact_primitive_hits": [],
+          "novel_states": 3
+        },
+        {
+          "inputs": 3,
+          "vertices": 240056,
+          "return_states": 1589019,
+          "allocation_stops": 3,
+          "primitive_tails": 6,
+          "interior_slopes": 0,
+          "exact_primitive_hits": [],
+          "novel_states": 2
+        },
+        {
+          "inputs": 2,
+          "vertices": 209825,
+          "return_states": 1160883,
+          "allocation_stops": 2,
+          "primitive_tails": 4,
+          "interior_slopes": 0,
+          "exact_primitive_hits": [],
+          "novel_states": 2
+        },
+        {
+          "inputs": 2,
+          "vertices": 77667,
+          "return_states": 1529238,
+          "allocation_stops": 2,
+          "primitive_tails": 4,
+          "interior_slopes": 0,
+          "exact_primitive_hits": [],
+          "novel_states": 0
+        }
+      ],
+      "start_pair": [
+        "XXYXyxYxyXYxy",
+        "XXXYXyxxYXyyxYxy"
+      ],
+      "smallest_reached_pair": {
+        "pair": [
+          "XXYXXYxyxYxxy",
+          "XXYXyxYxyXYxy"
+        ],
+        "next_receiver": 0,
+        "route": [
+          [
+            1,
+            "XYXYxyxYxyxYXy",
+            2
+          ],
+          [
+            0,
+            "XXYXXYxyxYxxy",
+            2
+          ],
+          [
+            1,
+            "XXYXyxYxyXYxy",
+            2
+          ]
+        ]
+      },
+      "visited_orbits": 7,
+      "orbits_outside_catalogue": 7,
+      "smallest_outside_catalogue": [
+        {
+          "pair": [
+            "XXYXXYxyxYxxy",
+            "XXYXyxYxyXYxy"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              1,
+              "XYXYxyxYxyxYXy",
+              2
+            ],
+            [
+              0,
+              "XXYXXYxyxYxxy",
+              2
+            ],
+            [
+              1,
+              "XXYXyxYxyXYxy",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXYXXYxyxYxxy",
+            "XYXYxyxYxyxYXy"
+          ],
+          "next_receiver": 1,
+          "route": [
+            [
+              1,
+              "XYXYxyxYxyxYXy",
+              2
+            ],
+            [
+              0,
+              "XXYXXYxyxYxxy",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXYXyxYxyXYxy",
+            "XYXYxyxYxyxYXy"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              1,
+              "XYXYxyxYxyxYXy",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXYXXYxyxYxxy",
+            "XXYXYxyXYxyXYxxy"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              1,
+              "XYXYxyxYxyxYXy",
+              2
+            ],
+            [
+              0,
+              "XXYXXYxyxYxxy",
+              2
+            ],
+            [
+              1,
+              "XXYXYxyXYxyXYxxy",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXYXyxYxyXYxy",
+            "XXyxYXyyxYxyxYXyxY"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              1,
+              "XXyxYXyyxYxyxYXyxY",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XYXyxYXyxYXyyxYxy",
+            "XXXYXyxxYXyyxYxy"
+          ],
+          "next_receiver": 1,
+          "route": [
+            [
+              0,
+              "XYXyxYXyxYXyyxYxy",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXyXYYxyXYxyyxYxyXY",
+            "XYXYxyxYxyxYXy"
+          ],
+          "next_receiver": 1,
+          "route": [
+            [
+              1,
+              "XYXYxyxYxyxYXy",
+              2
+            ],
+            [
+              0,
+              "XXyXYYxyXYxyyxYxyXY",
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "seed": "entry3",
+      "rounds": [
+        {
+          "inputs": 2,
+          "vertices": 63143,
+          "return_states": 1337070,
+          "allocation_stops": 2,
+          "primitive_tails": 4,
+          "interior_slopes": 0,
+          "exact_primitive_hits": [],
+          "novel_states": 3
+        },
+        {
+          "inputs": 3,
+          "vertices": 264535,
+          "return_states": 1625579,
+          "allocation_stops": 3,
+          "primitive_tails": 6,
+          "interior_slopes": 0,
+          "exact_primitive_hits": [],
+          "novel_states": 1
+        },
+        {
+          "inputs": 1,
+          "vertices": 29429,
+          "return_states": 965847,
+          "allocation_stops": 1,
+          "primitive_tails": 2,
+          "interior_slopes": 0,
+          "exact_primitive_hits": [],
+          "novel_states": 1
+        },
+        {
+          "inputs": 1,
+          "vertices": 38920,
+          "return_states": 456951,
+          "allocation_stops": 1,
+          "primitive_tails": 2,
+          "interior_slopes": 0,
+          "exact_primitive_hits": [],
+          "novel_states": 1
+        },
+        {
+          "inputs": 1,
+          "vertices": 96805,
+          "return_states": 407266,
+          "allocation_stops": 1,
+          "primitive_tails": 2,
+          "interior_slopes": 0,
+          "exact_primitive_hits": [],
+          "novel_states": 1
+        }
+      ],
+      "start_pair": [
+        "XXYxyXYxyxYXy",
+        "XXyXYXyxYxyxYxy"
+      ],
+      "smallest_reached_pair": {
+        "pair": [
+          "XXYxyXYxyxYXy",
+          "XXXyXXYxxyxYxy"
+        ],
+        "next_receiver": 0,
+        "route": [
+          [
+            1,
+            "XXXyXXYxxyxYxy",
+            2
+          ]
+        ]
+      },
+      "visited_orbits": 5,
+      "orbits_outside_catalogue": 5,
+      "smallest_outside_catalogue": [
+        {
+          "pair": [
+            "XXYxyXYxyxYXy",
+            "XXXyXXYxxyxYxy"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              1,
+              "XXXyXXYxxyxYxy",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXyXYXyxYxyxYxy",
+            "XXYxyXYxyxYXy"
+          ],
+          "next_receiver": 1,
+          "route": [
+            [
+              0,
+              "XYXyxYxyXYxyXYxyXy",
+              2
+            ],
+            [
+              1,
+              "XXYxyXYxyxYXy",
+              2
+            ],
+            [
+              0,
+              "XXyXYXyxYxyxYxy",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXYxyXYxyxYXy",
+            "XXXyxxYxxyyXYXyxxY"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              1,
+              "XXXyxxYxxyyXYXyxxY",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXYxyXYxyxYXy",
+            "XYXyxYxyXYxyXYxyXy"
+          ],
+          "next_receiver": 1,
+          "route": [
+            [
+              0,
+              "XYXyxYxyXYxyXYxyXy",
+              2
+            ],
+            [
+              1,
+              "XXYxyXYxyxYXy",
+              2
+            ],
+            [
+              0,
+              "XXyXYXyxYxyxYxy",
+              2
+            ],
+            [
+              1,
+              "XYXyxYxyXYxyXYxyXy",
+              2
+            ],
+            [
+              0,
+              "XXYxyXYxyxYXy",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XYXyxYxyXYxyXYxyXy",
+            "XXYxyXYxyxYXy"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              0,
+              "XYXyxYxyXYxyXYxyXy",
+              2
+            ],
+            [
+              1,
+              "XXYxyXYxyxYXy",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XXyXYXyxYxyxYxy",
+            "XYXyxYxyXYxyXYxyXy"
+          ],
+          "next_receiver": 0,
+          "route": [
+            [
+              0,
+              "XYXyxYxyXYxyXYxyXy",
+              2
+            ],
+            [
+              1,
+              "XXYxyXYxyxYXy",
+              2
+            ],
+            [
+              0,
+              "XXyXYXyxYxyxYxy",
+              2
+            ],
+            [
+              1,
+              "XYXyxYxyXYxyXYxyXy",
+              2
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "XYXyxYxyXYxyXYxyXy",
+            "XXyXYXyxYxyxYxy"
+          ],
+          "next_receiver": 1,
+          "route": [
+            [
+              0,
+              "XYXyxYxyXYxyXYxyXy",
+              2
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "positive_control": {
+    "graph_sizes": [
+      6,
+      1
+    ],
+    "source_count": 13,
+    "expression_length": 4,
+    "power": 1,
+    "factors": [
+      [
+        "x",
+        -1
+      ],
+      [
+        "xyxYXY",
+        1
+      ],
+      [
+        "xyxYXYx",
+        1
+      ]
+    ],
+    "base_path": "",
+    "moves": 41,
+    "peak_total_length": 24,
+    "endpoint": [
+      "x",
+      "y"
+    ]
+  },
+  "distinct_reached_orbits": 699,
+  "strict_certificates": {
+    "AK3": {
+      "file": "round08_ak3_acm_ak3.json",
+      "route": [
+        [
+          0,
+          "XXXXXyxYXYxxyyy",
+          4
+        ],
+        [
+          1,
+          "XXyxYXYxxyyyxYYY",
+          2
+        ]
+      ],
+      "cyclic_peak": 31,
+      "replay": {
+        "moves": 208,
+        "peak_total_length": 49,
+        "endpoint": [
+          "XXXXXyxYXYxxyyy",
+          "XXyxYXYxxyyyxYYY"
+        ]
+      },
+      "suffix_receipts": [
+        {
+          "graph_sizes": [
+            7,
+            49,
+            217
+          ],
+          "source_count": 349,
+          "expression_length": 9,
+          "power": 1,
+          "factors": [
+            [
+              "xxxxyXYX",
+              -1
+            ],
+            [
+              "xxxYY",
+              -1
+            ],
+            [
+              "xxxYYY",
+              -1
+            ],
+            [
+              "xxxYYYY",
+              -1
+            ],
+            [
+              "xxxYYYYxyyxYXY",
+              1
+            ],
+            [
+              "xxxYYYYx",
+              -1
+            ],
+            [
+              "xxxYYYYxx",
+              -1
+            ],
+            [
+              "xxxYYYYxxx",
+              -1
+            ]
+          ],
+          "base_path": "xxxxyx",
+          "moves": 166,
+          "peak_total_length": 49,
+          "endpoint": [
+            "XXXXXyxYXYxxyyy",
+            "xyxYXY"
+          ]
+        },
+        {
+          "graph_sizes": [
+            6,
+            423
+          ],
+          "source_count": 108,
+          "expression_length": 3,
+          "power": 1,
+          "factors": [
+            [
+              "yxYXYxxyyy",
+              1
+            ],
+            [
+              "xxxxxx",
+              -1
+            ]
+          ],
+          "base_path": "xx",
+          "moves": 42,
+          "peak_total_length": 31,
+          "endpoint": [
+            "XXXXXyxYXYxxyyy",
+            "XXyxYXYxxyyyxYYY"
+          ]
+        }
+      ]
+    },
+    "W23": {
+      "file": "round08_ak3_acm_w23.json",
+      "route": [
+        [
+          0,
+          "XXYYXyyxYxYYxyXXy",
+          3
+        ]
+      ],
+      "cyclic_peak": 41,
+      "replay": {
+        "moves": 1226,
+        "peak_total_length": 73,
+        "endpoint": [
+          "XXYYXyyxYxYYxyXXy",
+          "XYXYYXyXYYXy"
+        ]
+      },
+      "suffix_receipts": [
+        {
+          "graph_sizes": [
+            11,
+            274,
+            4862
+          ],
+          "source_count": 3535,
+          "expression_length": 9,
+          "power": 1,
+          "factors": [
+            [
+              "XXXyyyx",
+              1
+            ],
+            [
+              "XXXyyyxYxyyxyx",
+              -1
+            ],
+            [
+              "XXXYxyyyxYxyyxyx",
+              1
+            ],
+            [
+              "XXXYxyxyyxYxyyxyx",
+              1
+            ],
+            [
+              "XXXYxyxyyx",
+              -1
+            ],
+            [
+              "XXXYxyxyXYYXyyxyx",
+              -1
+            ],
+            [
+              "XXXYxyxyXYYXXyyxyx",
+              -1
+            ],
+            [
+              "XXXYxyxyXYYXXXyyx",
+              1
+            ]
+          ],
+          "base_path": "XXXyyx",
+          "moves": 270,
+          "peak_total_length": 73,
+          "endpoint": [
+            "XXYYXyyxYxYYxyXXy",
+            "XYXYYXyXYYXy"
+          ]
+        }
+      ]
+    },
+    "chamber18": {
+      "file": "round08_ak3_acm_chamber18.json",
+      "route": [
+        [
+          1,
+          "XYXYxYYxyXYxyXyyy",
+          3
+        ],
+        [
+          0,
+          "XYxYXyxYXyyy",
+          2
+        ],
+        [
+          1,
+          "XYXYxyXyy",
+          2
+        ],
+        [
+          0,
+          "XXYYXyyyyXyyXY",
+          3
+        ],
+        [
+          1,
+          "XXYXyyXYXyyyXyyXY",
+          2
+        ]
+      ],
+      "cyclic_peak": 31,
+      "replay": {
+        "moves": 1003,
+        "peak_total_length": 54,
+        "endpoint": [
+          "XXYYXyyyyXyyXY",
+          "XXYXyyXYXyyyXyyXY"
+        ]
+      },
+      "suffix_receipts": [
+        {
+          "graph_sizes": [
+            9,
+            183
+          ],
+          "source_count": 97,
+          "expression_length": 3,
+          "power": -1,
+          "factors": [
+            [
+              "y",
+              1
+            ],
+            [
+              "YxYYYxyyx",
+              1
+            ]
+          ],
+          "base_path": "y",
+          "moves": 32,
+          "peak_total_length": 37,
+          "endpoint": [
+            "XYXYxyXyy",
+            "XYXYxYYxyXYxyXyyy"
+          ]
+        },
+        {
+          "graph_sizes": [
+            9,
+            822
+          ],
+          "source_count": 173,
+          "expression_length": 2,
+          "power": 1,
+          "factors": [
+            [
+              "",
+              -1
+            ]
+          ],
+          "base_path": "YYx",
+          "moves": 6,
+          "peak_total_length": 33,
+          "endpoint": [
+            "XYxYXyxYXyyy",
+            "XYXYxYYxyXYxyXyyy"
+          ]
+        },
+        {
+          "graph_sizes": [
+            17,
+            599
+          ],
+          "source_count": 229,
+          "expression_length": 2,
+          "power": 1,
+          "factors": [
+            [
+              "XYXYxYYxyXYxyXyx",
+              1
+            ]
+          ],
+          "base_path": "",
+          "moves": 37,
+          "peak_total_length": 39,
+          "endpoint": [
+            "XYxYXyxYXyyy",
+            "XYXYxyXyy"
+          ]
+        },
+        {
+          "graph_sizes": [
+            12,
+            249
+          ],
+          "source_count": 126,
+          "expression_length": 3,
+          "power": 1,
+          "factors": [
+            [
+              "Xy",
+              1
+            ],
+            [
+              "XYxYXyxYXyyyyXyy",
+              1
+            ]
+          ],
+          "base_path": "Xyx",
+          "moves": 49,
+          "peak_total_length": 54,
+          "endpoint": [
+            "XXYYXyyyyXyyXY",
+            "XYXYxyXyy"
+          ]
+        },
+        {
+          "graph_sizes": [
+            9,
+            539
+          ],
+          "source_count": 141,
+          "expression_length": 2,
+          "power": 1,
+          "factors": [
+            [
+              "XYXyyyXyyXY",
+              1
+            ]
+          ],
+          "base_path": "YYxyxx",
+          "moves": 33,
+          "peak_total_length": 37,
+          "endpoint": [
+            "XXYYXyyyyXyyXY",
+            "XXYXyyXYXyyyXyyXY"
+          ]
+        }
+      ]
+    },
+    "entry0": {
+      "file": "round08_ak3_acm_entry0.json",
+      "route": [
+        [
+          0,
+          "XXYXYxyxYxxy",
+          2
+        ],
+        [
+          1,
+          "XXYXyxYxyXYxy",
+          2
+        ]
+      ],
+      "cyclic_peak": 31,
+      "replay": {
+        "moves": 575,
+        "peak_total_length": 39,
+        "endpoint": [
+          "XXYXYxyxYxxy",
+          "XXYXyxYxyXYxy"
+        ]
+      },
+      "suffix_receipts": [
+        {
+          "graph_sizes": [
+            13,
+            540
+          ],
+          "source_count": 197,
+          "expression_length": 2,
+          "power": 1,
+          "factors": [
+            [
+              "XXYXyxYxy",
+              -1
+            ]
+          ],
+          "base_path": "",
+          "moves": 21,
+          "peak_total_length": 34,
+          "endpoint": [
+            "XXYXYxyxYxxy",
+            "XYXyXYXyyxYxy"
+          ]
+        },
+        {
+          "graph_sizes": [
+            13,
+            567
+          ],
+          "source_count": 185,
+          "expression_length": 2,
+          "power": 1,
+          "factors": [
+            [
+              "XYxy",
+              1
+            ]
+          ],
+          "base_path": "XYxy",
+          "moves": 17,
+          "peak_total_length": 29,
+          "endpoint": [
+            "XXYXYxyxYxxy",
+            "XXYXyxYxyXYxy"
+          ]
+        }
+      ]
+    },
+    "entry1": {
+      "file": "round08_ak3_acm_entry1.json",
+      "route": [
+        [
+          1,
+          "XXXYXyxYxYxy",
+          2
+        ]
+      ],
+      "cyclic_peak": 31,
+      "replay": {
+        "moves": 499,
+        "peak_total_length": 41,
+        "endpoint": [
+          "XYXyXyxYYxy",
+          "XXXYXyxYxYxy"
+        ]
+      },
+      "suffix_receipts": [
+        {
+          "graph_sizes": [
+            17,
+            562
+          ],
+          "source_count": 215,
+          "expression_length": 2,
+          "power": 1,
+          "factors": [
+            [
+              "XXXYXyyxYYxy",
+              -1
+            ]
+          ],
+          "base_path": "",
+          "moves": 27,
+          "peak_total_length": 40,
+          "endpoint": [
+            "XYXyXyxYYxy",
+            "XXXYXyxYxYxy"
+          ]
+        }
+      ]
+    },
+    "entry2": {
+      "file": "round08_ak3_acm_entry2.json",
+      "route": [
+        [
+          1,
+          "XYXYxyxYxyxYXy",
+          2
+        ],
+        [
+          0,
+          "XXYXXYxyxYxxy",
+          2
+        ],
+        [
+          1,
+          "XXYXyxYxyXYxy",
+          2
+        ]
+      ],
+      "cyclic_peak": 31,
+      "replay": {
+        "moves": 673,
+        "peak_total_length": 48,
+        "endpoint": [
+          "XXYXXYxyxYxxy",
+          "XXYXyxYxyXYxy"
+        ]
+      },
+      "suffix_receipts": [
+        {
+          "graph_sizes": [
+            16,
+            695
+          ],
+          "source_count": 234,
+          "expression_length": 3,
+          "power": -1,
+          "factors": [
+            [
+              "YXyXYYxyXYxy",
+              -1
+            ],
+            [
+              "YXyXYYxyXXYxyxx",
+              1
+            ]
+          ],
+          "base_path": "YXy",
+          "moves": 66,
+          "peak_total_length": 48,
+          "endpoint": [
+            "XXYXyxYxyXYxy",
+            "XYXYxyxYxyxYXy"
+          ]
+        },
+        {
+          "graph_sizes": [
+            13,
+            609
+          ],
+          "source_count": 209,
+          "expression_length": 2,
+          "power": 1,
+          "factors": [
+            [
+              "XXYXyx",
+              1
+            ]
+          ],
+          "base_path": "",
+          "moves": 17,
+          "peak_total_length": 35,
+          "endpoint": [
+            "XXYXXYxyxYxxy",
+            "XYXYxyxYxyxYXy"
+          ]
+        },
+        {
+          "graph_sizes": [
+            14,
+            707
+          ],
+          "source_count": 206,
+          "expression_length": 2,
+          "power": -1,
+          "factors": [
+            [
+              "YxyXYXyXYXyxxyxx",
+              1
+            ]
+          ],
+          "base_path": "XYxyxx",
+          "moves": 44,
+          "peak_total_length": 37,
+          "endpoint": [
+            "XXYXXYxyxYxxy",
+            "XXYXyxYxyXYxy"
+          ]
+        }
+      ]
+    },
+    "entry3": {
+      "file": "round08_ak3_acm_entry3.json",
+      "route": [
+        [
+          1,
+          "XXXyXXYxxyxYxy",
+          2
+        ]
+      ],
+      "cyclic_peak": 37,
+      "replay": {
+        "moves": 571,
+        "peak_total_length": 52,
+        "endpoint": [
+          "XXYxyXYxyxYXy",
+          "XXXyXXYxxyxYxy"
+        ]
+      },
+      "suffix_receipts": [
+        {
+          "graph_sizes": [
+            15,
+            658
+          ],
+          "source_count": 223,
+          "expression_length": 2,
+          "power": 1,
+          "factors": [
+            [
+              "XXyXYXyxYXyxx",
+              1
+            ]
+          ],
+          "base_path": "",
+          "moves": 31,
+          "peak_total_length": 32,
+          "endpoint": [
+            "XXYxyXYxyxYXy",
+            "XXXyXXYxxyxYxy"
+          ]
+        }
+      ]
+    }
+  },
+  "orbits_outside_catalogue": [
+    [
+      "xxxxxxyXyyxyy",
+      "xxxYYXYxyyxxyXyyxyy"
+    ],
+    [
+      "xxxxxxyyxyxyXyy",
+      "xxxxxYxYXyyyxyxyXyy"
+    ],
+    [
+      "xxxxxxyyxyxyXyy",
+      "xxxxxxyyxyxxyXyyy"
+    ],
+    [
+      "xxxxxyXYxYXXyyy",
+      "xxxxxyXXYxYYXXyyy"
+    ],
+    [
+      "xxxxxyXYxYXXyyy",
+      "xxxxxyXYxYXyXyxyy"
+    ],
+    [
+      "xxxxxyXYxYXXyyy",
+      "xxyXyxYXXyyyxYYY"
+    ],
+    [
+      "xxxxxyyxxxyXyyy",
+      "xxxxxyyxxxyyXyxyy"
+    ],
+    [
+      "xxxxxyyxxxyXyyy",
+      "xxxxyyxxxyXyyyyXYxY"
+    ],
+    [
+      "xxxxyXXYXyXYXY",
+      "xxxxxyxxYXXXXyxyxyy"
+    ],
+    [
+      "xxxxyXXYXyXYXY",
+      "xxxxyXXYxxyyyxyXYXY"
+    ],
+    [
+      "xxxxyXXYxyXyXY",
+      "xxxxxyyxYXyxxYXXXXy"
+    ],
+    [
+      "xxxxyXXYxyXyXY",
+      "xxxyyyXXXyxYxYXyxxY"
+    ],
+    [
+      "xxxxyXXyxYXYY",
+      "xxxxyXXyxYXYxyxYXYY"
+    ],
+    [
+      "xxxxyXXyxYXYY",
+      "xxxxyXXyxYYXyxyXXYY"
+    ],
+    [
+      "xxxxyXXyxYXYY",
+      "xxxxyXXyxYxYXYxyXYY"
+    ],
+    [
+      "xxxxyXXyxYXYY",
+      "xxxxyXYxyxYXXyxYXYY"
+    ],
+    [
+      "xxxxyXXyxYXYY",
+      "xxxxyyXXXYxxyxYXYY"
+    ],
+    [
+      "xxxxyXYXyxYYY",
+      "xxxxyXYXyxyXYXyxYYY"
+    ],
+    [
+      "xxxxyXYXyxYYY",
+      "xxxxyxxxYYYYXyxYYY"
+    ],
+    [
+      "xxxxyXyxYXYXY",
+      "xxxxxyXyxYXYXYYXYxy"
+    ],
+    [
+      "xxxxyXyxYXYXY",
+      "xxxxyXyXYxyxYxYXYXY"
+    ],
+    [
+      "xxxxyXyxYXYXY",
+      "xxxxyXyxYXYXYXYXyxy"
+    ],
+    [
+      "xxxxyXyxYXYXY",
+      "xxxxyXyyXYXyxxYXYXY"
+    ],
+    [
+      "xxxxyXyxYXYXY",
+      "xxxxyxxyXyxYXYXYXY"
+    ],
+    [
+      "xxxxyxYxYXYxYXY",
+      "xxxxyxxyXyXYxYYYYXY"
+    ],
+    [
+      "xxxxyxYxYXYxYXY",
+      "xyXyxyXyXYxYYYXy"
+    ],
+    [
+      "xxxxyxYxyXyyy",
+      "xxxxYxyXyxyxYxyXyyy"
+    ],
+    [
+      "xxxxyxxyXyyXXy",
+      "xxxxyxxyXyXXYXyxYXy"
+    ],
+    [
+      "xxxxyxxyXyyXXy",
+      "xxxyxxyXyyXyxxyXy"
+    ],
+    [
+      "xxxxyxxyXyyxy",
+      "xxxxyxxyXXYxYXyyyxy"
+    ],
+    [
+      "xxxxyxxyXyyxy",
+      "xxxxyxxyXYxyXyxyyxy"
+    ],
+    [
+      "xxxxyxxyXyyxy",
+      "xxxxyxxyXyyxYXyXYxy"
+    ],
+    [
+      "xxxxyyXYxYXyy",
+      "xxxxyyXYXXXYYYYXyy"
+    ],
+    [
+      "xxxxyyXYxYXyy",
+      "xxxxyyXYxYXyyxyXyxY"
+    ],
+    [
+      "xxxxyyXyxxyyy",
+      "xxxxyxYxyXyyXyxxyyy"
+    ],
+    [
+      "xxxxyyXyxxyyy",
+      "xxxxyyXyxxyXYxYXyyy"
+    ],
+    [
+      "xxxxyyXyxxyyy",
+      "xxxxyyXyxyXyxYxxyyy"
+    ],
+    [
+      "xxxxyyXyxxyyy",
+      "xxyyyxYYYXYxYXyyXy"
+    ],
+    [
+      "xxxyXXyyXXYXy",
+      "xxxYXyxyXyXXyyXXYXy"
+    ],
+    [
+      "xxxyXXyyXXYXy",
+      "xxxYxxYXXyXyyXXYXy"
+    ],
+    [
+      "xxxyXXyyXXYXy",
+      "xxxxYXYxyyXXyyXXYXy"
+    ],
+    [
+      "xxxyXXyyXXYXy",
+      "xxxxYYxxYXXXYXyxYY"
+    ],
+    [
+      "xxxyXYXXyxYY",
+      "xxxyXYXyxYYYXYxyxYY"
+    ],
+    [
+      "xxxyXYXXyxYY",
+      "xxxyXYxyXYxYYYxYxYY"
+    ],
+    [
+      "xxxyXYxyXXYY",
+      "xxxxxyXYxyXXYYxYYYY"
+    ],
+    [
+      "xxxyXYxyXXYY",
+      "xxxyXXyyyyXXYxyXXYY"
+    ],
+    [
+      "xxxyXYxyXXYY",
+      "xxxyXYxyXXyyXYxyXXY"
+    ],
+    [
+      "xxxyXYxyXXYY",
+      "xxxyyyyXXXyXYxyXXYY"
+    ],
+    [
+      "xxxyXYxyXYXy",
+      "xxxyXYxyXYYXXyxxyyy"
+    ],
+    [
+      "xxxyXYxyXYXy",
+      "xxxyXYxyyxxyxyXYXXy"
+    ],
+    [
+      "xxxyXYxyXYXy",
+      "xxxyxYXyXXyxYXXXYxy"
+    ],
+    [
+      "xxxyXYxyXYXy",
+      "xxxyxxyxyyxYXyXXYXy"
+    ],
+    [
+      "xxxyXYxyXYXy",
+      "xxxyxyXXyxyxYxyXYXy"
+    ],
+    [
+      "xxxyXYxyXYXy",
+      "xxxyxyXYXyyxYXXXYxy"
+    ],
+    [
+      "xxxyXYxyXYXy",
+      "xxxyyXXyxyxxYxyXYXy"
+    ],
+    [
+      "xxxyXYxyXYXy",
+      "xxyXYxyXYXyXXYXYxxY"
+    ],
+    [
+      "xxxyXYxyXYXy",
+      "xxyXYxyxYXyxYXYXyXy"
+    ],
+    [
+      "xxxyXYxyXyXY",
+      "xxxyyyXyxYxYXyxYXXy"
+    ],
+    [
+      "xxxyXYxyXyXY",
+      "xxxyyyxxyXYxyXyXYxy"
+    ],
+    [
+      "xxxyXyXXyXYY",
+      "xxYxYXYYYxYxxYXyyxY"
+    ],
+    [
+      "xxxyXyXXyXYY",
+      "xxxYXyyxYxxYxYXXYYY"
+    ],
+    [
+      "xxxyXyXXyXYY",
+      "xxxYxxyXyXXyXYYxYYY"
+    ],
+    [
+      "xxxyXyXYXyXY",
+      "xxxyxYxyxYxYXXXYYYY"
+    ],
+    [
+      "xxxyxYXXyxYYXyXY",
+      "xyxYXyxYXyxYYXyXY"
+    ],
+    [
+      "xxxyxYXYxxYYY",
+      "xxxxYxYXYxxYYYxxxY"
+    ],
+    [
+      "xxxyxYXYxxYYY",
+      "xxxxYxyXYXXXyyyXXY"
+    ],
+    [
+      "xxxyxYXyXyXY",
+      "xxyxYYxyXXyXyXY"
+    ],
+    [
+      "xxxyxYYxYXYxYXY",
+      "xyxyXyxyXyyXYXYYYY"
+    ],
+    [
+      "xxxyxxYXXYXyXy",
+      "xxxxyxxYXXYXXXYXy"
+    ],
+    [
+      "xxxyxyXXYXYY",
+      "xxxyxYxyxxYXYXXYXYY"
+    ],
+    [
+      "xxxyxyXXYXYY",
+      "xxxyxxYYYYxxyXXYXYY"
+    ],
+    [
+      "xxxyxyXXYXYY",
+      "xxxyxyyXXYXyyyXYXYY"
+    ],
+    [
+      "xxxyxyyXyxxyy",
+      "xxxyxYXyXYxyyXyxxyy"
+    ],
+    [
+      "xxxyxyyXyxxyy",
+      "xxxyxyyXyxxYxyXyxyy"
+    ],
+    [
+      "xxxyyXyXYXyXYY",
+      "xxxxYxyxYxYYXXXYY"
+    ],
+    [
+      "xxxyyXyXYXyXYY",
+      "xxxyxYxyxYxYYXXXYYY"
+    ],
+    [
+      "xxxyyxYYxyXyy",
+      "xxxyyxYYxyXyxYxyXyy"
+    ],
+    [
+      "xxxyyxYYxyXyy",
+      "xyXyyXYxyXYYxyyxYY"
+    ],
+    [
+      "xxxyyxyxYxyXXyy",
+      "xxxxxYXyXYXYYXXXyy"
+    ],
+    [
+      "xxyXYxYXYXy",
+      "xyxyXYYYxYXy"
+    ],
+    [
+      "xxyXyxyXyxYXY",
+      "xxxYXYXyXyyyyxYXY"
+    ],
+    [
+      "xxyxYXyXYxyXY",
+      "xxYXyxYYXyXYXyxYXy"
+    ],
+    [
+      "xxyxYXyXYxyXY",
+      "xxxYXXyxYxyyXXYXXy"
+    ],
+    [
+      "xxyxYXyXYxyXY",
+      "xxxyXYXyXXYxxy"
+    ],
+    [
+      "xxyxYXyXYxyXY",
+      "xxyXYXyXYXyxYxy"
+    ],
+    [
+      "xxyxYXyXYxyXY",
+      "xxyxYYXyXYXyxYXyxY"
+    ],
+    [
+      "xxyxYXyXYxyXY",
+      "xxyxxyXYXXyxYXXyXXY"
+    ],
+    [
+      "xxyxYXyXYxyXY",
+      "xyxyXYXyXYXyxY"
+    ],
+    [
+      "xxyxYXyXYxyXY",
+      "xyxyXYxyXYxyXYXyxY"
+    ],
+    [
+      "xxyxYxyXYXyXYXy",
+      "xyxYxyXYXyxYXyxYXy"
+    ],
+    [
+      "xxyxxyXYXyXXY",
+      "xxyxYXyXYxyXY"
+    ],
+    [
+      "xxyxxyXYXyXXY",
+      "xxyxyXYxyXYxyXXY"
+    ],
+    [
+      "xxyxxyXYXyXXY",
+      "xyxyXYXyXYXyxY"
+    ],
+    [
+      "xxyxyXXYxyxYXXy",
+      "xxyxyxyXYXyxxYXXy"
+    ],
+    [
+      "xxyxyXYXyXXY",
+      "xxYxyxYYxyxYYXyXYXy"
+    ],
+    [
+      "xxyxyXYXyXXY",
+      "xxxyxYXyXYYXXyxxY"
+    ],
+    [
+      "xxyxyXYXyXXY",
+      "xxyxYXyXYxyXY"
+    ],
+    [
+      "xxyxyXYXyXXY",
+      "xyxYxyxYYXyXY"
+    ],
+    [
+      "xxyxyXyxxyXy",
+      "xxxyXYXYxyyXYXYXXYY"
+    ],
+    [
+      "xxyxyXyxxyXy",
+      "xxyXXyxYxyxxYXXyy"
+    ],
+    [
+      "xxyxyXyxxyXy",
+      "xxyXyXXyxYYxYYXXY"
+    ],
+    [
+      "xxyxyXyxxyXy",
+      "xxyxyXyxxyXXYXyXYxY"
+    ],
+    [
+      "xxyxyXyxxyXy",
+      "xxyxyxyXYYXyxyxYXXy"
+    ],
+    [
+      "xyxyXyxYXYxYXY",
+      "xxyXyxYXYYxYXXyxYXy"
+    ]
+  ]
+}

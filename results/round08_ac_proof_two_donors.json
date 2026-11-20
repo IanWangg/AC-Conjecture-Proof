@@ -1,0 +1,2623 @@
+{
+  "rank_two_compatibility": [
+    {
+      "p": "x",
+      "q": "xyxyxyxyy",
+      "q_free_basis_partner": "xy",
+      "abelianization": [
+        4,
+        5
+      ],
+      "pushout_order": 5,
+      "right_native_generator_image_mod_order": 4,
+      "common_lift_and_complement": "xy"
+    },
+    {
+      "p": "x",
+      "q": "xyyxyyy",
+      "q_free_basis_partner": "xyy",
+      "abelianization": [
+        2,
+        5
+      ],
+      "pushout_order": 5,
+      "right_native_generator_image_mod_order": 3,
+      "common_lift_and_complement": null
+    }
+  ],
+  "rank_two_waypoints": {
+    "W23": {
+      "AK3_minima": [
+        7,
+        5
+      ],
+      "waypoint_minima": [
+        10,
+        11
+      ]
+    },
+    "cap31_1": {
+      "AK3_minima": [
+        7,
+        5
+      ],
+      "waypoint_minima": [
+        13,
+        13
+      ]
+    },
+    "cap31_2": {
+      "AK3_minima": [
+        7,
+        5
+      ],
+      "waypoint_minima": [
+        17,
+        10
+      ]
+    },
+    "cap31_3": {
+      "AK3_minima": [
+        7,
+        5
+      ],
+      "waypoint_minima": [
+        16,
+        13
+      ]
+    }
+  },
+  "splices": {
+    "torus_knot": {
+      "seed_certificate": null,
+      "rank_two_seed": [
+        "xxYYY",
+        "xY"
+      ],
+      "quotient_relator_whitehead": {
+        "word": "XXyyy",
+        "length": 5,
+        "descent": [],
+        "minimum_cuts": {
+          "x": 2,
+          "X": 2,
+          "y": 3,
+          "Y": 3,
+          "z": 0,
+          "Z": 0
+        },
+        "degrees": {
+          "x": 2,
+          "X": 2,
+          "y": 3,
+          "Y": 3,
+          "z": 0,
+          "Z": 0
+        }
+      },
+      "common_lifts": [
+        "x",
+        "y",
+        "za"
+      ],
+      "deleted_slots": [
+        0,
+        1
+      ],
+      "chart_substitutions": [
+        {
+          "a": ""
+        },
+        {
+          "z": "",
+          "a": "z"
+        }
+      ],
+      "prepared_donors": [
+        [
+          "z",
+          "xxYYY"
+        ],
+        [
+          "zyyyXX",
+          "xxYYY"
+        ]
+      ],
+      "donor_whitehead": [
+        [
+          {
+            "word": "XZZxzXyyy",
+            "length": 9,
+            "descent": [
+              {
+                "multiplier": "X",
+                "cut": "XYyz",
+                "result": [
+                  "XZZxzXyyy"
+                ]
+              }
+            ],
+            "minimum_cuts": {
+              "x": 3,
+              "X": 3,
+              "y": 3,
+              "Y": 3,
+              "z": 3,
+              "Z": 3
+            },
+            "degrees": {
+              "x": 3,
+              "X": 3,
+              "y": 3,
+              "Y": 3,
+              "z": 3,
+              "Z": 3
+            }
+          },
+          {
+            "word": "XXyyyXZZxzXyyyXZZxzXyyy",
+            "length": 23,
+            "descent": [
+              {
+                "multiplier": "X",
+                "cut": "XYyz",
+                "result": [
+                  "XXyyyXZZxzXyyyXZZxzXyyy"
+                ]
+              }
+            ],
+            "minimum_cuts": {
+              "x": 8,
+              "X": 8,
+              "y": 9,
+              "Y": 9,
+              "z": 6,
+              "Z": 6
+            },
+            "degrees": {
+              "x": 8,
+              "X": 8,
+              "y": 9,
+              "Y": 9,
+              "z": 6,
+              "Z": 6
+            }
+          }
+        ],
+        [
+          {
+            "word": "XXZZYxxYYYZyzzyyyXXyyy",
+            "length": 22,
+            "descent": [],
+            "minimum_cuts": {
+              "x": 6,
+              "X": 6,
+              "y": 11,
+              "Y": 11,
+              "z": 5,
+              "Z": 5
+            },
+            "degrees": {
+              "x": 6,
+              "X": 6,
+              "y": 11,
+              "Y": 11,
+              "z": 5,
+              "Z": 5
+            }
+          },
+          {
+            "word": "XXZZYxxYYYZyzzyyyXXyyyXXZZYxxYYYZyzzyyyXXyyyXXZZYxxYYYZyzzyyyXXyyyXXyyy",
+            "length": 71,
+            "descent": [],
+            "minimum_cuts": {
+              "x": 20,
+              "X": 20,
+              "y": 36,
+              "Y": 36,
+              "z": 15,
+              "Z": 15
+            },
+            "degrees": {
+              "x": 20,
+              "X": 20,
+              "y": 36,
+              "Y": 36,
+              "z": 15,
+              "Z": 15
+            }
+          }
+        ]
+      ],
+      "padded": {
+        "start": [
+          "a",
+          "zxzxxYYYZX",
+          "xzxxYYYZXzxzxxYYYZXzxzxxYYYZX",
+          "xY"
+        ],
+        "target": [
+          "ayyyXXyaaxxYYYxxYYYAAY",
+          "z",
+          "yaaxxYYYAAYayyyXXyaaxxYYYxxYYYAAYayyyXXyaaxxYYYxxYYYAAYayyyXXyaaxxYYYxxYYYAAY",
+          "yxYazXayyyXXyaaxxYYYxxYYYAAYxZAY"
+        ],
+        "steps": 30,
+        "max_raw": 136,
+        "max_cyclic": 124,
+        "product_receivers": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "moves": [
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 1
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 1
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "invert",
+            "i": 2
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 2
+          },
+          {
+            "op": "invert",
+            "i": 2
+          },
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "Z"
+          },
+          {
+            "op": "invert",
+            "i": 2
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 2
+          },
+          {
+            "op": "invert",
+            "i": 2
+          },
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "a"
+          },
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "a"
+          },
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "y"
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 2
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 2
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 0
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 0
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 0
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "z"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "a"
+          },
+          {
+            "op": "multiply",
+            "i": 3,
+            "j": 0
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "A"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "Z"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "x"
+          },
+          {
+            "op": "conjugate",
+            "i": 3,
+            "g": "y"
+          }
+        ]
+      },
+      "ordinary": {
+        "start": [
+          "zxzxxYYYZX",
+          "xzxxYYYZXzxzxxYYYZXzxzxxYYYZX",
+          "xY"
+        ],
+        "target": [
+          "zyyyXXyzzxxYYYxxYYYZZY",
+          "yzzxxYYYZZYzyyyXXyzzxxYYYxxYYYZZYzyyyXXyzzxxYYYxxYYYZZYzyyyXXyzzxxYYYxxYYYZZY",
+          "yxYzXzyyyXXyzzxxYYYxxYYYZZYxZY"
+        ],
+        "steps": 30,
+        "max_raw": 135,
+        "max_cyclic": 121,
+        "product_receivers": [
+          0,
+          1,
+          2
+        ],
+        "moves": [
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "y"
+          },
+          {
+            "op": "invert",
+            "i": 0
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 0
+          },
+          {
+            "op": "invert",
+            "i": 0
+          },
+          {
+            "op": "invert",
+            "i": 0
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 0
+          },
+          {
+            "op": "invert",
+            "i": 0
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 1
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "Z"
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 1
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "z"
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "z"
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "y"
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 1
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 1
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 0
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 0
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 0
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "z"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "y"
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 0
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "Y"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "Z"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "x"
+          }
+        ]
+      }
+    },
+    "W23": {
+      "seed_certificate": "round07_ak3_marked_waypoint30.json",
+      "rank_two_seed": [
+        "XXXYxyxyXYY",
+        "XYXYYXyXYYXy"
+      ],
+      "quotient_relator_whitehead": {
+        "word": "XXYxyyXYxY",
+        "length": 10,
+        "descent": [
+          {
+            "multiplier": "X",
+            "cut": "XZy",
+            "result": [
+              "XXYxyyXYxY"
+            ]
+          }
+        ],
+        "minimum_cuts": {
+          "x": 5,
+          "X": 5,
+          "y": 5,
+          "Y": 5,
+          "z": 0,
+          "Z": 0
+        },
+        "degrees": {
+          "x": 5,
+          "X": 5,
+          "y": 5,
+          "Y": 5,
+          "z": 0,
+          "Z": 0
+        }
+      },
+      "common_lifts": [
+        "x",
+        "y",
+        "za"
+      ],
+      "deleted_slots": [
+        0,
+        1
+      ],
+      "chart_substitutions": [
+        {
+          "a": ""
+        },
+        {
+          "z": "",
+          "a": "z"
+        }
+      ],
+      "prepared_donors": [
+        [
+          "z",
+          "XXXYxyxyXYY"
+        ],
+        [
+          "zyyxYXYXyxxx",
+          "XXXYxyxyXYY"
+        ]
+      ],
+      "donor_whitehead": [
+        [
+          {
+            "word": "XXYxyyXYxYZXzz",
+            "length": 14,
+            "descent": [
+              {
+                "multiplier": "X",
+                "cut": "XZyz",
+                "result": [
+                  "XXYxyyXYxYZXzxz"
+                ]
+              },
+              {
+                "multiplier": "X",
+                "cut": "Xz",
+                "result": [
+                  "XXYxyyXYxYZXzz"
+                ]
+              }
+            ],
+            "minimum_cuts": {
+              "x": 6,
+              "X": 6,
+              "y": 5,
+              "Y": 5,
+              "z": 3,
+              "Z": 3
+            },
+            "degrees": {
+              "x": 6,
+              "X": 6,
+              "y": 5,
+              "Y": 5,
+              "z": 3,
+              "Z": 3
+            }
+          },
+          {
+            "word": "XXYxyyXYxYXXYxyyXYxYZXzzXXYxyyXYxYZXzz",
+            "length": 38,
+            "descent": [
+              {
+                "multiplier": "X",
+                "cut": "XZyz",
+                "result": [
+                  "XXYxyyXYxYXXYxyyXYxYZXzxzXXYxyyXYxYZXzxz"
+                ]
+              },
+              {
+                "multiplier": "X",
+                "cut": "Xz",
+                "result": [
+                  "XXYxyyXYxYXXYxyyXYxYZXzzXXYxyyXYxYZXzz"
+                ]
+              }
+            ],
+            "minimum_cuts": {
+              "x": 17,
+              "X": 17,
+              "y": 15,
+              "Y": 15,
+              "z": 6,
+              "Z": 6
+            },
+            "degrees": {
+              "x": 17,
+              "X": 17,
+              "y": 15,
+              "Y": 15,
+              "z": 6,
+              "Z": 6
+            }
+          }
+        ],
+        [
+          {
+            "word": "XXYxyyXYxYXXYxyyXYxYZZxYzyXyxYYXyxxyXzz",
+            "length": 39,
+            "descent": [
+              {
+                "multiplier": "X",
+                "cut": "XZyz",
+                "result": [
+                  "XXYxyyXYxYXXYxyyXYxYZZxYzyXyxYYXyxxyXzz"
+                ]
+              }
+            ],
+            "minimum_cuts": {
+              "x": 17,
+              "X": 17,
+              "y": 17,
+              "Y": 17,
+              "z": 5,
+              "Z": 5
+            },
+            "degrees": {
+              "x": 17,
+              "X": 17,
+              "y": 17,
+              "Y": 17,
+              "z": 5,
+              "Z": 5
+            }
+          },
+          {
+            "word": "XXYxyyXYxYXXYxyyXYxYXXYxyyXYxYZZxYzyXyxYYXyxxyXzzXXYxyyXYxYXXYxyyXYxYZZxYzyXyxYYXyxxyXzzXXYxyyXYxYXXYxyyXYxYZZxYzyXyxYYXyxxyXzz",
+            "length": 127,
+            "descent": [
+              {
+                "multiplier": "X",
+                "cut": "XZyz",
+                "result": [
+                  "XXYxyyXYxYXXYxyyXYxYXXYxyyXYxYZZxYzyXyxYYXyxxyXzzXXYxyyXYxYXXYxyyXYxYZZxYzyXyxYYXyxxyXzzXXYxyyXYxYXXYxyyXYxYZZxYzyXyxYYXyxxyXzz"
+                ]
+              }
+            ],
+            "minimum_cuts": {
+              "x": 56,
+              "X": 56,
+              "y": 56,
+              "Y": 56,
+              "z": 15,
+              "Z": 15
+            },
+            "degrees": {
+              "x": 56,
+              "X": 56,
+              "y": 56,
+              "Y": 56,
+              "z": 15,
+              "Z": 15
+            }
+          }
+        ]
+      ],
+      "padded": {
+        "start": [
+          "a",
+          "zxzXXXYxyxyXYYZX",
+          "xzXXXYxyxyXYYZXzxzXXXYxyxyXYYZXzxzXXXYxyxyXYYZX",
+          "XYXYYXyXYYXy"
+        ],
+        "target": [
+          "ayyxYXYXyxxxyaaXXXYxyxyXYYXXXYxyxyXYYAAY",
+          "z",
+          "yaaXXXYxyxyXYYAAYayyxYXYXyxxxyaaXXXYxyxyXYYXXXYxyxyXYYAAYayyxYXYXyxxxyaaXXXYxyxyXYYXXXYxyxyXYYAAYayyxYXYXyxxxyaaXXXYxyxyXYYXXXYxyxyXYYAAY",
+          "yXYXYYXyXYYXyazXayyxYXYXyxxxyaaXXXYxyxyXYYXXXYxyxyXYYAAYxZAY"
+        ],
+        "steps": 30,
+        "max_raw": 242,
+        "max_cyclic": 230,
+        "product_receivers": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "moves": [
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 1
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 1
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "invert",
+            "i": 2
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 2
+          },
+          {
+            "op": "invert",
+            "i": 2
+          },
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "Z"
+          },
+          {
+            "op": "invert",
+            "i": 2
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 2
+          },
+          {
+            "op": "invert",
+            "i": 2
+          },
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "a"
+          },
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "a"
+          },
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "y"
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 2
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 2
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 0
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 0
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 0
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "z"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "a"
+          },
+          {
+            "op": "multiply",
+            "i": 3,
+            "j": 0
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "A"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "Z"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "x"
+          },
+          {
+            "op": "conjugate",
+            "i": 3,
+            "g": "y"
+          }
+        ]
+      },
+      "ordinary": {
+        "start": [
+          "zxzXXXYxyxyXYYZX",
+          "xzXXXYxyxyXYYZXzxzXXXYxyxyXYYZXzxzXXXYxyxyXYYZX",
+          "XYXYYXyXYYXy"
+        ],
+        "target": [
+          "zyyxYXYXyxxxyzzXXXYxyxyXYYXXXYxyxyXYYZZY",
+          "yzzXXXYxyxyXYYZZYzyyxYXYXyxxxyzzXXXYxyxyXYYXXXYxyxyXYYZZYzyyxYXYXyxxxyzzXXXYxyxyXYYXXXYxyxyXYYZZYzyyxYXYXyxxxyzzXXXYxyxyXYYXXXYxyxyXYYZZY",
+          "yXYXYYXyXYYXyzXzyyxYXYXyxxxyzzXXXYxyxyXYYXXXYxyxyXYYZZYxZY"
+        ],
+        "steps": 30,
+        "max_raw": 241,
+        "max_cyclic": 227,
+        "product_receivers": [
+          0,
+          1,
+          2
+        ],
+        "moves": [
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "y"
+          },
+          {
+            "op": "invert",
+            "i": 0
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 0
+          },
+          {
+            "op": "invert",
+            "i": 0
+          },
+          {
+            "op": "invert",
+            "i": 0
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 0
+          },
+          {
+            "op": "invert",
+            "i": 0
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 1
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "Z"
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 1
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "z"
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "z"
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "y"
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 1
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 1
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 0
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 0
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 0
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "z"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "y"
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 0
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "Y"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "Z"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "x"
+          }
+        ]
+      }
+    },
+    "cap31_1": {
+      "seed_certificate": "round07_stable_proof_entry0.json",
+      "rank_two_seed": [
+        "XXYXyxYxyXYxy",
+        "XYXyXYXyyxYxy"
+      ],
+      "quotient_relator_whitehead": {
+        "word": "XXYXyxYxyXYxy",
+        "length": 13,
+        "descent": [],
+        "minimum_cuts": {
+          "x": 7,
+          "X": 7,
+          "y": 6,
+          "Y": 6,
+          "z": 0,
+          "Z": 0
+        },
+        "degrees": {
+          "x": 7,
+          "X": 7,
+          "y": 6,
+          "Y": 6,
+          "z": 0,
+          "Z": 0
+        }
+      },
+      "common_lifts": [
+        "x",
+        "y",
+        "za"
+      ],
+      "deleted_slots": [
+        0,
+        1
+      ],
+      "chart_substitutions": [
+        {
+          "a": ""
+        },
+        {
+          "z": "",
+          "a": "z"
+        }
+      ],
+      "prepared_donors": [
+        [
+          "z",
+          "XXYXyxYxyXYxy"
+        ],
+        [
+          "zYXyxYXyXYxyxx",
+          "XXYXyxYxyXYxy"
+        ]
+      ],
+      "donor_whitehead": [
+        [
+          {
+            "word": "XXYXyxYxyXYxyZXzz",
+            "length": 17,
+            "descent": [
+              {
+                "multiplier": "X",
+                "cut": "Xyz",
+                "result": [
+                  "XXYXyxYxyXYxyZXzz"
+                ]
+              }
+            ],
+            "minimum_cuts": {
+              "x": 8,
+              "X": 8,
+              "y": 6,
+              "Y": 6,
+              "z": 3,
+              "Z": 3
+            },
+            "degrees": {
+              "x": 8,
+              "X": 8,
+              "y": 6,
+              "Y": 6,
+              "z": 3,
+              "Z": 3
+            }
+          },
+          {
+            "word": "XXYXyxYxyXYxyXXYXyxYxyXYxyZXzzXXYXyxYxyXYxyZXzz",
+            "length": 47,
+            "descent": [
+              {
+                "multiplier": "X",
+                "cut": "Xyz",
+                "result": [
+                  "XXYXyxYxyXYxyXXYXyxYxyXYxyZXzzXXYXyxYxyXYxyZXzz"
+                ]
+              }
+            ],
+            "minimum_cuts": {
+              "x": 23,
+              "X": 23,
+              "y": 18,
+              "Y": 18,
+              "z": 6,
+              "Z": 6
+            },
+            "degrees": {
+              "x": 23,
+              "X": 23,
+              "y": 18,
+              "Y": 18,
+              "z": 6,
+              "Z": 6
+            }
+          }
+        ],
+        [
+          {
+            "word": "XXYXyxYxyXYxZZYzXyxYXyXYxyxxzzyXXYXyxYxyXYxy",
+            "length": 44,
+            "descent": [
+              {
+                "multiplier": "Y",
+                "cut": "YZz",
+                "result": [
+                  "XXYXyxYxyXYxZZYzXyxYXyXYxyxxzzyXXYXyxYxyXYxy"
+                ]
+              }
+            ],
+            "minimum_cuts": {
+              "x": 21,
+              "X": 21,
+              "y": 18,
+              "Y": 18,
+              "z": 5,
+              "Z": 5
+            },
+            "degrees": {
+              "x": 21,
+              "X": 21,
+              "y": 18,
+              "Y": 18,
+              "z": 5,
+              "Z": 5
+            }
+          },
+          {
+            "word": "XXYXyxYxyXYxZZYzXyxYXyXYxyxxzzyXXYXyxYxyXYxyXXYXyxYxyXYxZZYzXyxYXyXYxyxxzzyXXYXyxYxyXYxyXXYXyxYxyXYxZZYzXyxYXyXYxyxxzzyXXYXyxYxyXYxyXXYXyxYxyXYxy",
+            "length": 145,
+            "descent": [
+              {
+                "multiplier": "Y",
+                "cut": "YZz",
+                "result": [
+                  "XXYXyxYxyXYxZZYzXyxYXyXYxyxxzzyXXYXyxYxyXYxyXXYXyxYxyXYxZZYzXyxYXyXYxyxxzzyXXYXyxYxyXYxyXXYXyxYxyXYxZZYzXyxYXyXYxyxxzzyXXYXyxYxyXYxyXXYXyxYxyXYxy"
+                ]
+              }
+            ],
+            "minimum_cuts": {
+              "x": 70,
+              "X": 70,
+              "y": 60,
+              "Y": 60,
+              "z": 15,
+              "Z": 15
+            },
+            "degrees": {
+              "x": 70,
+              "X": 70,
+              "y": 60,
+              "Y": 60,
+              "z": 15,
+              "Z": 15
+            }
+          }
+        ]
+      ],
+      "padded": {
+        "start": [
+          "a",
+          "zxzXXYXyxYxyXYxyZX",
+          "xzXXYXyxYxyXYxyZXzxzXXYXyxYxyXYxyZXzxzXXYXyxYxyXYxyZX",
+          "XYXyXYXyyxYxy"
+        ],
+        "target": [
+          "aYXyxYXyXYxyxxyaaXXYXyxYxyXYxyXXYXyxYxyXYxyAAY",
+          "z",
+          "yaaXXYXyxYxyXYxyAAYaYXyxYXyXYxyxxyaaXXYXyxYxyXYxyXXYXyxYxyXYxyAAYaYXyxYXyXYxyxxyaaXXYXyxYxyXYxyXXYXyxYxyXYxyAAYaYXyxYXyXYxyxxyaaXXYXyxYxyXYxyXXYXyxYxyXYxyAAY",
+          "yXYXyXYXyyxYxyazXaYXyxYXyXYxyxxyaaXXYXyxYxyXYxyXXYXyxYxyXYxyAAYxZAY"
+        ],
+        "steps": 30,
+        "max_raw": 275,
+        "max_cyclic": 263,
+        "product_receivers": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "moves": [
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 1
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 1
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "invert",
+            "i": 2
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 2
+          },
+          {
+            "op": "invert",
+            "i": 2
+          },
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "Z"
+          },
+          {
+            "op": "invert",
+            "i": 2
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 2
+          },
+          {
+            "op": "invert",
+            "i": 2
+          },
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "a"
+          },
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "a"
+          },
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "y"
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 2
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 2
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 0
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 0
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 0
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "z"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "a"
+          },
+          {
+            "op": "multiply",
+            "i": 3,
+            "j": 0
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "A"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "Z"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "x"
+          },
+          {
+            "op": "conjugate",
+            "i": 3,
+            "g": "y"
+          }
+        ]
+      },
+      "ordinary": {
+        "start": [
+          "zxzXXYXyxYxyXYxyZX",
+          "xzXXYXyxYxyXYxyZXzxzXXYXyxYxyXYxyZXzxzXXYXyxYxyXYxyZX",
+          "XYXyXYXyyxYxy"
+        ],
+        "target": [
+          "zYXyxYXyXYxyxxyzzXXYXyxYxyXYxyXXYXyxYxyXYxyZZY",
+          "yzzXXYXyxYxyXYxyZZYzYXyxYXyXYxyxxyzzXXYXyxYxyXYxyXXYXyxYxyXYxyZZYzYXyxYXyXYxyxxyzzXXYXyxYxyXYxyXXYXyxYxyXYxyZZYzYXyxYXyXYxyxxyzzXXYXyxYxyXYxyXXYXyxYxyXYxyZZY",
+          "yXYXyXYXyyxYxyzXzYXyxYXyXYxyxxyzzXXYXyxYxyXYxyXXYXyxYxyXYxyZZYxZY"
+        ],
+        "steps": 30,
+        "max_raw": 274,
+        "max_cyclic": 260,
+        "product_receivers": [
+          0,
+          1,
+          2
+        ],
+        "moves": [
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "y"
+          },
+          {
+            "op": "invert",
+            "i": 0
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 0
+          },
+          {
+            "op": "invert",
+            "i": 0
+          },
+          {
+            "op": "invert",
+            "i": 0
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 0
+          },
+          {
+            "op": "invert",
+            "i": 0
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 1
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "Z"
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 1
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "z"
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "z"
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "y"
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 1
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 1
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 0
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 0
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 0
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "z"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "y"
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 0
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "Y"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "Z"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "x"
+          }
+        ]
+      }
+    },
+    "cap31_2": {
+      "seed_certificate": "round07_stable_proof_entry1.json",
+      "rank_two_seed": [
+        "XXXYXyyxYYxyXYYxy",
+        "XYXyXyxYYxy"
+      ],
+      "quotient_relator_whitehead": {
+        "word": "XXXYXyyxYYxyXYYxy",
+        "length": 17,
+        "descent": [],
+        "minimum_cuts": {
+          "x": 8,
+          "X": 8,
+          "y": 9,
+          "Y": 9,
+          "z": 0,
+          "Z": 0
+        },
+        "degrees": {
+          "x": 8,
+          "X": 8,
+          "y": 9,
+          "Y": 9,
+          "z": 0,
+          "Z": 0
+        }
+      },
+      "common_lifts": [
+        "x",
+        "y",
+        "za"
+      ],
+      "deleted_slots": [
+        0,
+        1
+      ],
+      "chart_substitutions": [
+        {
+          "a": ""
+        },
+        {
+          "z": "",
+          "a": "z"
+        }
+      ],
+      "prepared_donors": [
+        [
+          "z",
+          "XXXYXyyxYYxyXYYxy"
+        ],
+        [
+          "zYXyyxYXyyXYYxyxxx",
+          "XXXYXyyxYYxyXYYxy"
+        ]
+      ],
+      "donor_whitehead": [
+        [
+          {
+            "word": "XXXYXyyxYYxyXYYxyZXzz",
+            "length": 21,
+            "descent": [
+              {
+                "multiplier": "X",
+                "cut": "Xz",
+                "result": [
+                  "XXXYXyyxYYxyXYYxyZXzz"
+                ]
+              }
+            ],
+            "minimum_cuts": {
+              "x": 9,
+              "X": 9,
+              "y": 9,
+              "Y": 9,
+              "z": 3,
+              "Z": 3
+            },
+            "degrees": {
+              "x": 9,
+              "X": 9,
+              "y": 9,
+              "Y": 9,
+              "z": 3,
+              "Z": 3
+            }
+          },
+          {
+            "word": "XXXYXyyxYYxyXYYxyXXXYXyyxYYxyXYYxyZXzzXXXYXyyxYYxyXYYxyZXzz",
+            "length": 59,
+            "descent": [
+              {
+                "multiplier": "X",
+                "cut": "Xz",
+                "result": [
+                  "XXXYXyyxYYxyXYYxyXXXYXyyxYYxyXYYxyZXzzXXXYXyyxYYxyXYYxyZXzz"
+                ]
+              }
+            ],
+            "minimum_cuts": {
+              "x": 26,
+              "X": 26,
+              "y": 27,
+              "Y": 27,
+              "z": 6,
+              "Z": 6
+            },
+            "degrees": {
+              "x": 26,
+              "X": 26,
+              "y": 27,
+              "Y": 27,
+              "z": 6,
+              "Z": 6
+            }
+          }
+        ],
+        [
+          {
+            "word": "XXXYXyyxYYxyXYYxZZYzXyyxYXyyXYYxyxxxzzyXXXYXyyxYYxyXYYxy",
+            "length": 56,
+            "descent": [
+              {
+                "multiplier": "Y",
+                "cut": "YZz",
+                "result": [
+                  "XXXYXyyxYYxyXYYxZZYzXyyxYXyyXYYxyxxxzzyXXXYXyyxYYxyXYYxy"
+                ]
+              }
+            ],
+            "minimum_cuts": {
+              "x": 24,
+              "X": 24,
+              "y": 27,
+              "Y": 27,
+              "z": 5,
+              "Z": 5
+            },
+            "degrees": {
+              "x": 24,
+              "X": 24,
+              "y": 27,
+              "Y": 27,
+              "z": 5,
+              "Z": 5
+            }
+          },
+          {
+            "word": "XXXYXyyxYYxyXYYxZZYzXyyxYXyyXYYxyxxxzzyXXXYXyyxYYxyXYYxyXXXYXyyxYYxyXYYxZZYzXyyxYXyyXYYxyxxxzzyXXXYXyyxYYxyXYYxyXXXYXyyxYYxyXYYxZZYzXyyxYXyyXYYxyxxxzzyXXXYXyyxYYxyXYYxyXXXYXyyxYYxyXYYxy",
+            "length": 185,
+            "descent": [
+              {
+                "multiplier": "Y",
+                "cut": "YZz",
+                "result": [
+                  "XXXYXyyxYYxyXYYxZZYzXyyxYXyyXYYxyxxxzzyXXXYXyyxYYxyXYYxyXXXYXyyxYYxyXYYxZZYzXyyxYXyyXYYxyxxxzzyXXXYXyyxYYxyXYYxyXXXYXyyxYYxyXYYxZZYzXyyxYXyyXYYxyxxxzzyXXXYXyyxYYxyXYYxyXXXYXyyxYYxyXYYxy"
+                ]
+              }
+            ],
+            "minimum_cuts": {
+              "x": 80,
+              "X": 80,
+              "y": 90,
+              "Y": 90,
+              "z": 15,
+              "Z": 15
+            },
+            "degrees": {
+              "x": 80,
+              "X": 80,
+              "y": 90,
+              "Y": 90,
+              "z": 15,
+              "Z": 15
+            }
+          }
+        ]
+      ],
+      "padded": {
+        "start": [
+          "a",
+          "zxzXXXYXyyxYYxyXYYxyZX",
+          "xzXXXYXyyxYYxyXYYxyZXzxzXXXYXyyxYYxyXYYxyZXzxzXXXYXyyxYYxyXYYxyZX",
+          "XYXyXyxYYxy"
+        ],
+        "target": [
+          "aYXyyxYXyyXYYxyxxxyaaXXXYXyyxYYxyXYYxyXXXYXyyxYYxyXYYxyAAY",
+          "z",
+          "yaaXXXYXyyxYYxyXYYxyAAYaYXyyxYXyyXYYxyxxxyaaXXXYXyyxYYxyXYYxyXXXYXyyxYYxyXYYxyAAYaYXyyxYXyyXYYxyxxxyaaXXXYXyyxYYxyXYYxyXXXYXyyxYYxyXYYxyAAYaYXyyxYXyyXYYxyxxxyaaXXXYXyyxYYxyXYYxyXXXYXyyxYYxyXYYxyAAY",
+          "yXYXyXyxYYxyazXaYXyyxYXyyXYYxyxxxyaaXXXYXyyxYYxyXYYxyXXXYXyyxYYxyXYYxyAAYxZAY"
+        ],
+        "steps": 30,
+        "max_raw": 337,
+        "max_cyclic": 325,
+        "product_receivers": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "moves": [
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 1
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 1
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "invert",
+            "i": 2
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 2
+          },
+          {
+            "op": "invert",
+            "i": 2
+          },
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "Z"
+          },
+          {
+            "op": "invert",
+            "i": 2
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 2
+          },
+          {
+            "op": "invert",
+            "i": 2
+          },
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "a"
+          },
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "a"
+          },
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "y"
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 2
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 2
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 0
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 0
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 0
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "z"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "a"
+          },
+          {
+            "op": "multiply",
+            "i": 3,
+            "j": 0
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "A"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "Z"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "x"
+          },
+          {
+            "op": "conjugate",
+            "i": 3,
+            "g": "y"
+          }
+        ]
+      },
+      "ordinary": {
+        "start": [
+          "zxzXXXYXyyxYYxyXYYxyZX",
+          "xzXXXYXyyxYYxyXYYxyZXzxzXXXYXyyxYYxyXYYxyZXzxzXXXYXyyxYYxyXYYxyZX",
+          "XYXyXyxYYxy"
+        ],
+        "target": [
+          "zYXyyxYXyyXYYxyxxxyzzXXXYXyyxYYxyXYYxyXXXYXyyxYYxyXYYxyZZY",
+          "yzzXXXYXyyxYYxyXYYxyZZYzYXyyxYXyyXYYxyxxxyzzXXXYXyyxYYxyXYYxyXXXYXyyxYYxyXYYxyZZYzYXyyxYXyyXYYxyxxxyzzXXXYXyyxYYxyXYYxyXXXYXyyxYYxyXYYxyZZYzYXyyxYXyyXYYxyxxxyzzXXXYXyyxYYxyXYYxyXXXYXyyxYYxyXYYxyZZY",
+          "yXYXyXyxYYxyzXzYXyyxYXyyXYYxyxxxyzzXXXYXyyxYYxyXYYxyXXXYXyyxYYxyXYYxyZZYxZY"
+        ],
+        "steps": 30,
+        "max_raw": 336,
+        "max_cyclic": 322,
+        "product_receivers": [
+          0,
+          1,
+          2
+        ],
+        "moves": [
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "y"
+          },
+          {
+            "op": "invert",
+            "i": 0
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 0
+          },
+          {
+            "op": "invert",
+            "i": 0
+          },
+          {
+            "op": "invert",
+            "i": 0
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 0
+          },
+          {
+            "op": "invert",
+            "i": 0
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 1
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "Z"
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 1
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "z"
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "z"
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "y"
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 1
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 1
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 0
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 0
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 0
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "z"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "y"
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 0
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "Y"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "Z"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "x"
+          }
+        ]
+      }
+    },
+    "cap31_3": {
+      "seed_certificate": "round07_stable_proof_entry2.json",
+      "rank_two_seed": [
+        "XXXYXyxxYXyyxYxy",
+        "XXYXyxYxyXYxy"
+      ],
+      "quotient_relator_whitehead": {
+        "word": "XXXYXyxxYXyyxYxy",
+        "length": 16,
+        "descent": [],
+        "minimum_cuts": {
+          "x": 9,
+          "X": 9,
+          "y": 7,
+          "Y": 7,
+          "z": 0,
+          "Z": 0
+        },
+        "degrees": {
+          "x": 9,
+          "X": 9,
+          "y": 7,
+          "Y": 7,
+          "z": 0,
+          "Z": 0
+        }
+      },
+      "common_lifts": [
+        "x",
+        "y",
+        "za"
+      ],
+      "deleted_slots": [
+        0,
+        1
+      ],
+      "chart_substitutions": [
+        {
+          "a": ""
+        },
+        {
+          "z": "",
+          "a": "z"
+        }
+      ],
+      "prepared_donors": [
+        [
+          "z",
+          "XXXYXyxxYXyyxYxy"
+        ],
+        [
+          "zYXyXYYxyXXYxyxxx",
+          "XXXYXyxxYXyyxYxy"
+        ]
+      ],
+      "donor_whitehead": [
+        [
+          {
+            "word": "XXXYXyxxYXyyxYxyZXzz",
+            "length": 20,
+            "descent": [
+              {
+                "multiplier": "X",
+                "cut": "Xz",
+                "result": [
+                  "XXXYXyxxYXyyxYxyZXzz"
+                ]
+              }
+            ],
+            "minimum_cuts": {
+              "x": 10,
+              "X": 10,
+              "y": 7,
+              "Y": 7,
+              "z": 3,
+              "Z": 3
+            },
+            "degrees": {
+              "x": 10,
+              "X": 10,
+              "y": 7,
+              "Y": 7,
+              "z": 3,
+              "Z": 3
+            }
+          },
+          {
+            "word": "XXXYXyxxYXyyxYxyXXXYXyxxYXyyxYxyZXzzXXXYXyxxYXyyxYxyZXzz",
+            "length": 56,
+            "descent": [
+              {
+                "multiplier": "X",
+                "cut": "Xz",
+                "result": [
+                  "XXXYXyxxYXyyxYxyXXXYXyxxYXyyxYxyZXzzXXXYXyxxYXyyxYxyZXzz"
+                ]
+              }
+            ],
+            "minimum_cuts": {
+              "x": 29,
+              "X": 29,
+              "y": 21,
+              "Y": 21,
+              "z": 6,
+              "Z": 6
+            },
+            "degrees": {
+              "x": 29,
+              "X": 29,
+              "y": 21,
+              "Y": 21,
+              "z": 6,
+              "Z": 6
+            }
+          }
+        ],
+        [
+          {
+            "word": "XXXYXyxxYXyyxYxZZYzXyXYYxyXXYxyxxxzzyXXXYXyxxYXyyxYxy",
+            "length": 53,
+            "descent": [
+              {
+                "multiplier": "Y",
+                "cut": "YZz",
+                "result": [
+                  "XXXYXyxxYXyyxYxZZYzXyXYYxyXXYxyxxxzzyXXXYXyxxYXyyxYxy"
+                ]
+              }
+            ],
+            "minimum_cuts": {
+              "x": 27,
+              "X": 27,
+              "y": 21,
+              "Y": 21,
+              "z": 5,
+              "Z": 5
+            },
+            "degrees": {
+              "x": 27,
+              "X": 27,
+              "y": 21,
+              "Y": 21,
+              "z": 5,
+              "Z": 5
+            }
+          },
+          {
+            "word": "XXXYXyxxYXyyxYxZZYzXyXYYxyXXYxyxxxzzyXXXYXyxxYXyyxYxyXXXYXyxxYXyyxYxZZYzXyXYYxyXXYxyxxxzzyXXXYXyxxYXyyxYxyXXXYXyxxYXyyxYxZZYzXyXYYxyXXYxyxxxzzyXXXYXyxxYXyyxYxyXXXYXyxxYXyyxYxy",
+            "length": 175,
+            "descent": [
+              {
+                "multiplier": "Y",
+                "cut": "YZz",
+                "result": [
+                  "XXXYXyxxYXyyxYxZZYzXyXYYxyXXYxyxxxzzyXXXYXyxxYXyyxYxyXXXYXyxxYXyyxYxZZYzXyXYYxyXXYxyxxxzzyXXXYXyxxYXyyxYxyXXXYXyxxYXyyxYxZZYzXyXYYxyXXYxyxxxzzyXXXYXyxxYXyyxYxyXXXYXyxxYXyyxYxy"
+                ]
+              }
+            ],
+            "minimum_cuts": {
+              "x": 90,
+              "X": 90,
+              "y": 70,
+              "Y": 70,
+              "z": 15,
+              "Z": 15
+            },
+            "degrees": {
+              "x": 90,
+              "X": 90,
+              "y": 70,
+              "Y": 70,
+              "z": 15,
+              "Z": 15
+            }
+          }
+        ]
+      ],
+      "padded": {
+        "start": [
+          "a",
+          "zxzXXXYXyxxYXyyxYxyZX",
+          "xzXXXYXyxxYXyyxYxyZXzxzXXXYXyxxYXyyxYxyZXzxzXXXYXyxxYXyyxYxyZX",
+          "XXYXyxYxyXYxy"
+        ],
+        "target": [
+          "aYXyXYYxyXXYxyxxxyaaXXXYXyxxYXyyxYxyXXXYXyxxYXyyxYxyAAY",
+          "z",
+          "yaaXXXYXyxxYXyyxYxyAAYaYXyXYYxyXXYxyxxxyaaXXXYXyxxYXyyxYxyXXXYXyxxYXyyxYxyAAYaYXyXYYxyXXYxyxxxyaaXXXYXyxxYXyyxYxyXXXYXyxxYXyyxYxyAAYaYXyXYYxyXXYxyxxxyaaXXXYXyxxYXyyxYxyXXXYXyxxYXyyxYxyAAY",
+          "yXXYXyxYxyXYxyazXaYXyXYYxyXXYxyxxxyaaXXXYXyxxYXyyxYxyXXXYXyxxYXyyxYxyAAYxZAY"
+        ],
+        "steps": 30,
+        "max_raw": 323,
+        "max_cyclic": 311,
+        "product_receivers": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "moves": [
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 1
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 1
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "invert",
+            "i": 2
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 2
+          },
+          {
+            "op": "invert",
+            "i": 2
+          },
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "Z"
+          },
+          {
+            "op": "invert",
+            "i": 2
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 2
+          },
+          {
+            "op": "invert",
+            "i": 2
+          },
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "a"
+          },
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "a"
+          },
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "y"
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 2
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 2
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 0
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 0
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 0
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "z"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "a"
+          },
+          {
+            "op": "multiply",
+            "i": 3,
+            "j": 0
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "A"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "Z"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "x"
+          },
+          {
+            "op": "conjugate",
+            "i": 3,
+            "g": "y"
+          }
+        ]
+      },
+      "ordinary": {
+        "start": [
+          "zxzXXXYXyxxYXyyxYxyZX",
+          "xzXXXYXyxxYXyyxYxyZXzxzXXXYXyxxYXyyxYxyZXzxzXXXYXyxxYXyyxYxyZX",
+          "XXYXyxYxyXYxy"
+        ],
+        "target": [
+          "zYXyXYYxyXXYxyxxxyzzXXXYXyxxYXyyxYxyXXXYXyxxYXyyxYxyZZY",
+          "yzzXXXYXyxxYXyyxYxyZZYzYXyXYYxyXXYxyxxxyzzXXXYXyxxYXyyxYxyXXXYXyxxYXyyxYxyZZYzYXyXYYxyXXYxyxxxyzzXXXYXyxxYXyyxYxyXXXYXyxxYXyyxYxyZZYzYXyXYYxyXXYxyxxxyzzXXXYXyxxYXyyxYxyXXXYXyxxYXyyxYxyZZY",
+          "yXXYXyxYxyXYxyzXzYXyXYYxyXXYxyxxxyzzXXXYXyxxYXyyxYxyXXXYXyxxYXyyxYxyZZYxZY"
+        ],
+        "steps": 30,
+        "max_raw": 322,
+        "max_cyclic": 308,
+        "product_receivers": [
+          0,
+          1,
+          2
+        ],
+        "moves": [
+          {
+            "op": "conjugate",
+            "i": 2,
+            "g": "y"
+          },
+          {
+            "op": "invert",
+            "i": 0
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 0
+          },
+          {
+            "op": "invert",
+            "i": 0
+          },
+          {
+            "op": "invert",
+            "i": 0
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 0
+          },
+          {
+            "op": "invert",
+            "i": 0
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 1
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "Z"
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 1
+          },
+          {
+            "op": "invert",
+            "i": 1
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "z"
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "z"
+          },
+          {
+            "op": "conjugate",
+            "i": 1,
+            "g": "y"
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 1
+          },
+          {
+            "op": "multiply",
+            "i": 0,
+            "j": 1
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 0
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 0
+          },
+          {
+            "op": "multiply",
+            "i": 1,
+            "j": 0
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "X"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "z"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "y"
+          },
+          {
+            "op": "multiply",
+            "i": 2,
+            "j": 0
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "Y"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "Z"
+          },
+          {
+            "op": "conjugate",
+            "i": 0,
+            "g": "x"
+          }
+        ]
+      }
+    }
+  }
+}

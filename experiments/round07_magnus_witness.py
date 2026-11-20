@@ -114,7 +114,10 @@ def main():
     left, actual_midpoint = path(group, start, midpoints, record["radii"][0])
     right, endpoint = path(group, actual_midpoint, targets, record["radii"][1])
     moves = left + right
-    assert len(moves) == record["distance"]
+    if record.get("distance") is not None:
+        assert len(moves) == record["distance"]
+    else:
+        assert record["path_within_budget"] and len(moves) <= sum(record["radii"])
     marking = independently_replay(degree, moves)
     assert tuple(group.generators["xy".index(letter)] for letter in marking) == endpoint
     print(json.dumps({

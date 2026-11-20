@@ -1,0 +1,88 @@
+{
+  "ambient_group": "A5 times BS(1,2) times Z",
+  "abelian_kernel": "dyadic translation group",
+  "initial_tuple_images": [
+    {
+      "permutation": [
+        2,
+        3,
+        1,
+        4,
+        5
+      ],
+      "exponent": 1,
+      "translation": "2",
+      "z": 0
+    },
+    {
+      "permutation": [
+        2,
+        3,
+        4,
+        5,
+        1
+      ],
+      "exponent": 0,
+      "translation": "0",
+      "z": 0
+    },
+    {
+      "permutation": [
+        2,
+        4,
+        3,
+        1,
+        5
+      ],
+      "exponent": 0,
+      "translation": "0",
+      "z": 1
+    }
+  ],
+  "outlier_fixed_at": 8,
+  "first_row_fixed_at": 66,
+  "final_tuple_images": [
+    {
+      "permutation": [
+        2,
+        3,
+        1,
+        4,
+        5
+      ],
+      "exponent": 1,
+      "translation": "0",
+      "z": 0
+    },
+    {
+      "permutation": [
+        2,
+        3,
+        4,
+        5,
+        1
+      ],
+      "exponent": 0,
+      "translation": "1",
+      "z": 0
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "exponent": 0,
+      "translation": "0",
+      "z": 1
+    }
+  ],
+  "strict_moves": 128,
+  "free_endpoint_lengths": [
+    88,
+    90,
+    1
+  ]
+}

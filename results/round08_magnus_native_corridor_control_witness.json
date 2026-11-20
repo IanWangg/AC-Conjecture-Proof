@@ -1,0 +1,77 @@
+{
+  "degree": 6,
+  "moves": [
+    {
+      "op": "multiply",
+      "i": 0,
+      "j": 1,
+      "sign": -1
+    },
+    {
+      "op": "multiply",
+      "i": 0,
+      "j": 1,
+      "sign": -1
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "X"
+    },
+    {
+      "op": "multiply",
+      "i": 0,
+      "j": 1,
+      "sign": -1
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "X"
+    },
+    {
+      "op": "multiply",
+      "i": 0,
+      "j": 1,
+      "sign": -1
+    },
+    {
+      "op": "invert",
+      "i": 0
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "X"
+    },
+    {
+      "op": "multiply",
+      "i": 0,
+      "j": 1,
+      "sign": -1
+    },
+    {
+      "op": "multiply",
+      "i": 1,
+      "j": 0,
+      "sign": 1
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "Y"
+    },
+    {
+      "op": "conjugate",
+      "i": 0,
+      "g": "X"
+    }
+  ],
+  "length": 12,
+  "target_order": [
+    "y",
+    "x"
+  ],
+  "start_to_midpoint_length": 6,
+  "independent_monomial_replay": true
+}

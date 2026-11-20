@@ -1,0 +1,10 @@
+{
+  "input_states": 7667,
+  "signed_source_orbits": 7667,
+  "product_candidates": 11823912,
+  "positive_bridge_candidates": 1598304,
+  "admitted_candidates": 2101552,
+  "neighbor_orbits": 409123,
+  "neighbors_with_literal_singleton": 0,
+  "histogram": {"15":98,"16":5,"17":1638,"18":196,"19":10223,"20":881,"21":55407,"22":5864,"23":300981,"24":33830}
+}

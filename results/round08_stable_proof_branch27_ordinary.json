@@ -1,0 +1,9 @@
+{
+  "moves": 310,
+  "peak_total_length": 36,
+  "endpoint": [
+    "XXYYxxyxyy",
+    "XXXYYXXXYYXXXYYYY"
+  ],
+  "cyclic_peak": 36
+}

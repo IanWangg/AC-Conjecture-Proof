@@ -1,0 +1,1077 @@
+{
+  "three_row_states_without_primitive": 1237,
+  "distinct_two_row_blocks": 2210,
+  "fox_exclusions": 2180,
+  "blocks_surviving_fox": [
+    {
+      "pair": [
+        "XXXYYxy",
+        "XYxzXZy"
+      ],
+      "source": [
+        "XXXYYxy",
+        "XYxzXZy",
+        "XYzxYXyzxZ"
+      ],
+      "weights": [
+        0,
+        0,
+        -1
+      ],
+      "omitted_column": 2,
+      "determinant": [
+        [
+          -1,
+          -1
+        ]
+      ],
+      "exposure": null,
+      "hnn_witness": {
+        "base_relator": "XXXYYxy",
+        "rotated_extension_relator": "zXZyXYx",
+        "associated_words": [
+          "X",
+          "XyxY"
+        ],
+        "base_abelian_weights": [
+          -1,
+          2
+        ],
+        "associated_heights": [
+          1,
+          0
+        ],
+        "zero_height_word": "XyxY",
+        "generator_images": {
+          "x": [
+            1,
+            3,
+            2
+          ],
+          "y": [
+            2,
+            3,
+            1
+          ]
+        },
+        "zero_height_image": [
+          2,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "pair": [
+        "XXXYZXzxY",
+        "XXyxYY"
+      ],
+      "source": [
+        "XXXYZXzxY",
+        "XXZXzxZYY",
+        "XXyxYY"
+      ],
+      "weights": [
+        0,
+        0,
+        1
+      ],
+      "omitted_column": 2,
+      "determinant": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "exposure": null,
+      "hnn_witness": {
+        "base_relator": "XXyxYY",
+        "rotated_extension_relator": "zxYXXXYZX",
+        "associated_words": [
+          "xYXXXY",
+          "x"
+        ],
+        "base_abelian_weights": [
+          -1,
+          1
+        ],
+        "associated_heights": [
+          0,
+          -1
+        ],
+        "zero_height_word": "xYXXXY",
+        "generator_images": {
+          "x": [
+            1,
+            3,
+            4,
+            2
+          ],
+          "y": [
+            2,
+            3,
+            1,
+            4
+          ]
+        },
+        "zero_height_image": [
+          3,
+          4,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "pair": [
+        "XXXYxyy",
+        "XYxzXZy"
+      ],
+      "source": [
+        "XXXYxyy",
+        "XYxzXZy",
+        "XZXZyyXz"
+      ],
+      "weights": [
+        0,
+        0,
+        1
+      ],
+      "omitted_column": 2,
+      "determinant": [
+        [
+          1,
+          1
+        ]
+      ],
+      "exposure": null,
+      "hnn_witness": {
+        "base_relator": "XXXYxyy",
+        "rotated_extension_relator": "zXZyXYx",
+        "associated_words": [
+          "X",
+          "XyxY"
+        ],
+        "base_abelian_weights": [
+          1,
+          2
+        ],
+        "associated_heights": [
+          -1,
+          0
+        ],
+        "zero_height_word": "XyxY",
+        "generator_images": {
+          "x": [
+            1,
+            3,
+            2
+          ],
+          "y": [
+            2,
+            3,
+            1
+          ]
+        },
+        "zero_height_image": [
+          2,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "pair": [
+        "XXXZxxZxz",
+        "XYYZxzXyy"
+      ],
+      "source": [
+        "XXXZxxZxz",
+        "XXyxYY",
+        "XYYZxzXyy"
+      ],
+      "weights": [
+        0,
+        1,
+        0
+      ],
+      "omitted_column": 1,
+      "determinant": [
+        [
+          0,
+          -1
+        ]
+      ],
+      "exposure": {
+        "recipient": "XXXZxxZxz",
+        "donor": "XzyyxYYxZ",
+        "bridge": "Z",
+        "new_pivot": "XXZxxyyxYY",
+        "eliminated": "z",
+        "projected_row": "XXXyyXYYxxyyXYYxyyxYY",
+        "projected_row_primitive": false
+      }
+    },
+    {
+      "pair": [
+        "XXXyXYxxZxz",
+        "XyZYZxz"
+      ],
+      "source": [
+        "XXXyXYxxZxz",
+        "XXyxYY",
+        "XyZYZxz"
+      ],
+      "weights": [
+        0,
+        -1,
+        0
+      ],
+      "omitted_column": 1,
+      "determinant": [
+        [
+          -2,
+          1
+        ]
+      ],
+      "exposure": {
+        "recipient": "XXXyXYxxZxz",
+        "donor": "XzyzYxZ",
+        "bridge": "Z",
+        "new_pivot": "XXyXYxxyzY",
+        "eliminated": "z",
+        "projected_row": "XXXyXYxxYXXyXYxxyxYXXyxYxxy",
+        "projected_row_primitive": false
+      }
+    },
+    {
+      "pair": [
+        "XXYZYxYzyZY",
+        "XYxYzyZ"
+      ],
+      "source": [
+        "XXYZYxYzyZY",
+        "XYxYXy",
+        "XYxYzyZ"
+      ],
+      "weights": [
+        -1,
+        0,
+        1
+      ],
+      "omitted_column": 0,
+      "determinant": [
+        [
+          1,
+          -1
+        ]
+      ],
+      "exposure": {
+        "recipient": "XXYZYxYzyZY",
+        "donor": "zYZyXyx",
+        "bridge": "y",
+        "new_pivot": "XXYZxY",
+        "eliminated": "z",
+        "projected_row": "XXYxYxYXXyxxy",
+        "projected_row_primitive": false
+      }
+    },
+    {
+      "pair": [
+        "XXYZxzxyZ",
+        "XYYZxzXyy"
+      ],
+      "source": [
+        "XXYZxzxyZ",
+        "XXyxYY",
+        "XYYZxzXyy"
+      ],
+      "weights": [
+        0,
+        1,
+        0
+      ],
+      "omitted_column": 1,
+      "determinant": [
+        [
+          0,
+          -1
+        ]
+      ],
+      "exposure": {
+        "recipient": "XYZxzxyZX",
+        "donor": "yxYYxZXzy",
+        "bridge": "X",
+        "new_pivot": "XXyxYYxxyZ",
+        "eliminated": "z",
+        "projected_row": "XXyyXYXyxYYxxyyyxYYxY",
+        "projected_row_primitive": false
+      }
+    },
+    {
+      "pair": [
+        "XXYzyZYxZy",
+        "XYxyzyZ"
+      ],
+      "source": [
+        "XXYzyZYxZy",
+        "XYXYxyy",
+        "XYxyzyZ"
+      ],
+      "weights": [
+        1,
+        0,
+        -1
+      ],
+      "omitted_column": 0,
+      "determinant": [
+        [
+          0,
+          1
+        ]
+      ],
+      "exposure": {
+        "recipient": "YZyxxYzXyz",
+        "donor": "XYxyzyZ",
+        "bridge": "Z",
+        "new_pivot": "XXYYXyxYxZy",
+        "eliminated": "z",
+        "projected_row": "XXYYXyxYxYXyXYxyyxxYYXyxy",
+        "projected_row_primitive": false
+      }
+    },
+    {
+      "pair": [
+        "XXZxYXyzxZ",
+        "XYzxZXy"
+      ],
+      "source": [
+        "XXXYYxy",
+        "XXZxYXyzxZ",
+        "XYzxZXy"
+      ],
+      "weights": [
+        0,
+        1,
+        0
+      ],
+      "omitted_column": 1,
+      "determinant": [
+        [
+          0,
+          -1
+        ]
+      ],
+      "exposure": {
+        "recipient": "XXZxYXyzxZ",
+        "donor": "XZyxYxz",
+        "bridge": "z",
+        "new_pivot": "XYYxyXzxy",
+        "eliminated": "z",
+        "projected_row": "XXyXYxYXyyxYxyXYYxy",
+        "projected_row_primitive": false
+      }
+    },
+    {
+      "pair": [
+        "XXZxyzYY",
+        "XYZYXzYZy"
+      ],
+      "source": [
+        "XXXXYYY",
+        "XXZxyzYY",
+        "XYZYXzYZy"
+      ],
+      "weights": [
+        1,
+        -1,
+        0
+      ],
+      "omitted_column": 0,
+      "determinant": [
+        [
+          1,
+          1
+        ]
+      ],
+      "exposure": {
+        "recipient": "XZxyzYYX",
+        "donor": "YZyXYZYXz",
+        "bridge": "X",
+        "new_pivot": "XXYZyXYYY",
+        "eliminated": "z",
+        "projected_row": "XXYYYXXyxxyyyxYxyyXYYY",
+        "projected_row_primitive": false
+      }
+    },
+    {
+      "pair": [
+        "XXyZxYZxz",
+        "XYYZxzXyy"
+      ],
+      "source": [
+        "XXyZxYZxz",
+        "XXyxYY",
+        "XYYZxzXyy"
+      ],
+      "weights": [
+        0,
+        1,
+        0
+      ],
+      "omitted_column": 1,
+      "determinant": [
+        [
+          1,
+          -1
+        ]
+      ],
+      "exposure": {
+        "recipient": "XXyZxYZxz",
+        "donor": "XzyyxYYxZ",
+        "bridge": "Z",
+        "new_pivot": "XYXzYxyy",
+        "eliminated": "z",
+        "projected_row": "XYXyxYYXyyyxYYxYxyy",
+        "projected_row_primitive": false
+      }
+    },
+    {
+      "pair": [
+        "XXyxYxY",
+        "XYZXzxy"
+      ],
+      "source": [
+        "XXYXZxzXYZ",
+        "XXyxYxY",
+        "XYZXzxy"
+      ],
+      "weights": [
+        0,
+        0,
+        -1
+      ],
+      "omitted_column": 2,
+      "determinant": [
+        [
+          1,
+          -1
+        ]
+      ],
+      "exposure": {
+        "recipient": "XYxxyXy",
+        "donor": "XZxzyxY",
+        "bridge": "Y",
+        "new_pivot": "XXZXzxxY",
+        "eliminated": "y",
+        "projected_row": "XXYXyxYxyxYxy",
+        "projected_row_primitive": false
+      }
+    },
+    {
+      "pair": [
+        "XXyxYxY",
+        "XYxZXzy"
+      ],
+      "source": [
+        "XXyxYxY",
+        "XXzxyXZYYZ",
+        "XYxZXzy"
+      ],
+      "weights": [
+        0,
+        0,
+        -1
+      ],
+      "omitted_column": 2,
+      "determinant": [
+        [
+          1,
+          -1
+        ]
+      ],
+      "exposure": {
+        "recipient": "XXyxYxY",
+        "donor": "ZXzyXYx",
+        "bridge": "X",
+        "new_pivot": "XZXzxY",
+        "eliminated": "y",
+        "projected_row": "XXYXyxYxyxYxy",
+        "projected_row_primitive": false
+      }
+    },
+    {
+      "pair": [
+        "XXzyZYYZYxY",
+        "XYxYzyZ"
+      ],
+      "source": [
+        "XXzyZYYZYxY",
+        "XYxYXy",
+        "XYxYzyZ"
+      ],
+      "weights": [
+        -1,
+        0,
+        1
+      ],
+      "omitted_column": 0,
+      "determinant": [
+        [
+          1,
+          -1
+        ]
+      ],
+      "exposure": {
+        "recipient": "XzyZYYZYxYX",
+        "donor": "yXyxzYZ",
+        "bridge": "X",
+        "new_pivot": "XXyXyxYYZYxY",
+        "eliminated": "z",
+        "projected_row": "XXyXyxYXYxYxxyXyyXyxYxY",
+        "projected_row_primitive": false
+      }
+    },
+    {
+      "pair": [
+        "XXzzYYxyZ",
+        "XyXzzYxYY"
+      ],
+      "source": [
+        "XXyxYY",
+        "XXzzYYxyZ",
+        "XyXzzYxYY"
+      ],
+      "weights": [
+        0,
+        1,
+        1
+      ],
+      "omitted_column": 1,
+      "determinant": [
+        [
+          3,
+          -1
+        ]
+      ],
+      "exposure": {
+        "recipient": "XXzzYYxyZ",
+        "donor": "YxyyXyZZx",
+        "bridge": "X",
+        "new_pivot": "XYxyZXYxyy",
+        "eliminated": "z",
+        "projected_row": "XXYxyyXYxyXYxyyXYxxYYXy",
+        "projected_row_primitive": false
+      }
+    },
+    {
+      "pair": [
+        "XYXYxyy",
+        "XYxyzyZ"
+      ],
+      "source": [
+        "XXYzyZYxZy",
+        "XYXYxyy",
+        "XYxyzyZ"
+      ],
+      "weights": [
+        0,
+        0,
+        -1
+      ],
+      "omitted_column": 2,
+      "determinant": [
+        [
+          -1,
+          -1
+        ]
+      ],
+      "exposure": {
+        "recipient": "XYXYxyy",
+        "donor": "YXyxzYZ",
+        "bridge": "Y",
+        "new_pivot": "XYzYZy",
+        "eliminated": "x",
+        "projected_row": "XXyxYxyXYxyXY",
+        "projected_row_primitive": false
+      }
+    },
+    {
+      "pair": [
+        "XYXzyzYxy",
+        "XyZYZxz"
+      ],
+      "source": [
+        "XXyxYY",
+        "XYXzyzYxy",
+        "XyZYZxz"
+      ],
+      "weights": [
+        0,
+        -1,
+        0
+      ],
+      "omitted_column": 1,
+      "determinant": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "exposure": {
+        "recipient": "XYXzyzYxy",
+        "donor": "XyZYZxz",
+        "bridge": "Y",
+        "new_pivot": "XYzy",
+        "eliminated": "x",
+        "projected_row": "XXyxYXYxyxy",
+        "projected_row_primitive": false
+      }
+    },
+    {
+      "pair": [
+        "XYYYZXzXy",
+        "XYxYXy"
+      ],
+      "source": [
+        "XXYZxzYXZ",
+        "XYYYZXzXy",
+        "XYxYXy"
+      ],
+      "weights": [
+        0,
+        0,
+        1
+      ],
+      "omitted_column": 2,
+      "determinant": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "exposure": null,
+      "hnn_witness": {
+        "base_relator": "XYxYXy",
+        "rotated_extension_relator": "zXyXYYYZX",
+        "associated_words": [
+          "XyXYYY",
+          "x"
+        ],
+        "base_abelian_weights": [
+          -1,
+          1
+        ],
+        "associated_heights": [
+          0,
+          -1
+        ],
+        "zero_height_word": "XyXYYY",
+        "generator_images": {
+          "x": [
+            1,
+            3,
+            2
+          ],
+          "y": [
+            2,
+            1,
+            3
+          ]
+        },
+        "zero_height_image": [
+          2,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "pair": [
+        "XYYZXZYxy",
+        "XYYZxYZXZ"
+      ],
+      "source": [
+        "XYYZXZYxy",
+        "XYYZxYZXZ",
+        "XYxYXy"
+      ],
+      "weights": [
+        0,
+        -1,
+        1
+      ],
+      "omitted_column": 1,
+      "determinant": [
+        [
+          1,
+          1
+        ]
+      ],
+      "exposure": {
+        "recipient": "XZYxyXYYZ",
+        "donor": "xzyXzyyxz",
+        "bridge": "X",
+        "new_pivot": "XYXzyyxYxy",
+        "eliminated": "z",
+        "projected_row": "XXyxyxYXyXYYxxyxY",
+        "projected_row_primitive": false
+      }
+    },
+    {
+      "pair": [
+        "XYYZXZYxy",
+        "XYYxZYZXZ"
+      ],
+      "source": [
+        "XYYZXZYxy",
+        "XYYxZYZXZ",
+        "XYxYXy"
+      ],
+      "weights": [
+        0,
+        -1,
+        1
+      ],
+      "omitted_column": 1,
+      "determinant": [
+        [
+          3,
+          1
+        ]
+      ],
+      "exposure": {
+        "recipient": "XZYxyXYYZ",
+        "donor": "xzyzXyyxz",
+        "bridge": "X",
+        "new_pivot": "XYYxZyxYXy",
+        "eliminated": "z",
+        "projected_row": "XXyyxYxyXYYxyXYYXyyxYxyXY",
+        "projected_row_primitive": false
+      }
+    },
+    {
+      "pair": [
+        "XYYZXZYxy",
+        "XYxZYYZXZ"
+      ],
+      "source": [
+        "XYYZXZYxy",
+        "XYxYXy",
+        "XYxZYYZXZ"
+      ],
+      "weights": [
+        0,
+        -1,
+        1
+      ],
+      "omitted_column": 1,
+      "determinant": [
+        [
+          0,
+          1
+        ]
+      ],
+      "exposure": {
+        "recipient": "XYYZXZYxy",
+        "donor": "zXyxzxzyy",
+        "bridge": "X",
+        "new_pivot": "XYxZxYXy",
+        "eliminated": "z",
+        "projected_row": "XXXyxYxyXYxyXYYXyxYxy",
+        "projected_row_primitive": false
+      }
+    },
+    {
+      "pair": [
+        "XYYZxzXyy",
+        "XyZYZxz"
+      ],
+      "source": [
+        "XXyxYY",
+        "XYYZxzXyy",
+        "XyZYZxz"
+      ],
+      "weights": [
+        0,
+        -1,
+        0
+      ],
+      "omitted_column": 1,
+      "determinant": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "exposure": {
+        "recipient": "XYYZxzXyy",
+        "donor": "YxZXzyz",
+        "bridge": "Y",
+        "new_pivot": "XYzy",
+        "eliminated": "x",
+        "projected_row": "XXyxYXYxyxy",
+        "projected_row_primitive": false
+      }
+    },
+    {
+      "pair": [
+        "XYZXzxy",
+        "XYxYXy"
+      ],
+      "source": [
+        "XXYZxzYXZ",
+        "XYZXzxy",
+        "XYxYXy"
+      ],
+      "weights": [
+        0,
+        0,
+        1
+      ],
+      "omitted_column": 2,
+      "determinant": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "exposure": {
+        "recipient": "XYZXzxy",
+        "donor": "YxyXyx",
+        "bridge": "",
+        "new_pivot": "XXZxzxY",
+        "eliminated": "y",
+        "projected_row": "XXYxyxYXyxYxy",
+        "projected_row_primitive": false
+      }
+    },
+    {
+      "pair": [
+        "XYZYxYXzyZY",
+        "XYxYzyZ"
+      ],
+      "source": [
+        "XYZYxYXzyZY",
+        "XYxYXy",
+        "XYxYzyZ"
+      ],
+      "weights": [
+        -1,
+        0,
+        1
+      ],
+      "omitted_column": 0,
+      "determinant": [
+        [
+          0,
+          -1
+        ]
+      ],
+      "exposure": {
+        "recipient": "XYZYxYXzyZY",
+        "donor": "zYZyXyx",
+        "bridge": "y",
+        "new_pivot": "XYZYxYXyXyxY",
+        "eliminated": "z",
+        "projected_row": "XYxYYxYXyXyxYXyxyXYxYxyXy",
+        "projected_row_primitive": false
+      }
+    },
+    {
+      "pair": [
+        "XYZxZYYZy",
+        "XYxyXZxZY"
+      ],
+      "source": [
+        "XYZxZYYZy",
+        "XYxYXy",
+        "XYxyXZxZY"
+      ],
+      "weights": [
+        1,
+        0,
+        0
+      ],
+      "omitted_column": 0,
+      "determinant": [
+        [
+          0,
+          1
+        ]
+      ],
+      "exposure": {
+        "recipient": "XzyxYzyyz",
+        "donor": "YXYxyXZxZ",
+        "bridge": "Z",
+        "new_pivot": "XYxYXyxYZy",
+        "eliminated": "z",
+        "projected_row": "XYxYXyxYXyXYxYXyxYxYXyxyy",
+        "projected_row_primitive": false
+      }
+    },
+    {
+      "pair": [
+        "XYZyzxy",
+        "XYxYXy"
+      ],
+      "source": [
+        "XXYZYzyZYY",
+        "XYZyzxy",
+        "XYxYXy"
+      ],
+      "weights": [
+        0,
+        0,
+        1
+      ],
+      "omitted_column": 2,
+      "determinant": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "exposure": {
+        "recipient": "XYZyzxy",
+        "donor": "XyXYxY",
+        "bridge": "Y",
+        "new_pivot": "XYYZyzy",
+        "eliminated": "x",
+        "projected_row": "XXYxyxYXyxYxy",
+        "projected_row_primitive": false
+      }
+    },
+    {
+      "pair": [
+        "XYxYXy",
+        "XYxZXzy"
+      ],
+      "source": [
+        "XXXXYYZXzxZ",
+        "XYxYXy",
+        "XYxZXzy"
+      ],
+      "weights": [
+        0,
+        0,
+        -1
+      ],
+      "omitted_column": 2,
+      "determinant": [
+        [
+          1,
+          -1
+        ]
+      ],
+      "exposure": {
+        "recipient": "XYxYXy",
+        "donor": "YZxzXyx",
+        "bridge": "",
+        "new_pivot": "XZxzY",
+        "eliminated": "y",
+        "projected_row": "XXYxyxYXyxYxy",
+        "projected_row_primitive": false
+      }
+    },
+    {
+      "pair": [
+        "XYxYXy",
+        "XYxzYZy"
+      ],
+      "source": [
+        "XXYYYZyzYZ",
+        "XYxYXy",
+        "XYxzYZy"
+      ],
+      "weights": [
+        0,
+        0,
+        1
+      ],
+      "omitted_column": 2,
+      "determinant": [
+        [
+          1,
+          1
+        ]
+      ],
+      "exposure": {
+        "recipient": "XYxYXy",
+        "donor": "YzyZXyx",
+        "bridge": "",
+        "new_pivot": "XzyZY",
+        "eliminated": "x",
+        "projected_row": "XXyxYxyXYxyxY",
+        "projected_row_primitive": false
+      }
+    },
+    {
+      "pair": [
+        "XYxYXy",
+        "XyzYZxY"
+      ],
+      "source": [
+        "XXzYZYYYZy",
+        "XYxYXy",
+        "XyzYZxY"
+      ],
+      "weights": [
+        0,
+        0,
+        1
+      ],
+      "omitted_column": 2,
+      "determinant": [
+        [
+          1,
+          1
+        ]
+      ],
+      "exposure": {
+        "recipient": "XYxYXy",
+        "donor": "YxyXzyZ",
+        "bridge": "",
+        "new_pivot": "XYzyZ",
+        "eliminated": "x",
+        "projected_row": "XXyxYxyXYxyxY",
+        "projected_row_primitive": false
+      }
+    },
+    {
+      "pair": [
+        "XYxyyZxZy",
+        "XyyZxZxzY"
+      ],
+      "source": [
+        "XXyxYY",
+        "XYxyyZxZy",
+        "XyyZxZxzY"
+      ],
+      "weights": [
+        0,
+        -1,
+        -1
+      ],
+      "omitted_column": 1,
+      "determinant": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "exposure": {
+        "recipient": "XYxyyZxZy",
+        "donor": "zXzYYxyZX",
+        "bridge": "Y",
+        "new_pivot": "XXyxYxzY",
+        "eliminated": "z",
+        "projected_row": "XXyXYxxYXyxYXyXYxxy",
+        "projected_row_primitive": false
+      }
+    }
+  ],
+  "pivot_exclusions": 26,
+  "hnn_exclusions": 4,
+  "total_noncyclic_blocks": 2210
+}

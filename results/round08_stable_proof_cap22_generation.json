@@ -1,0 +1,13 @@
+{
+  "cap": 22,
+  "literal_seeds": 48096,
+  "seed_orbits": 3008,
+  "state_orbits": 246052265,
+  "minimum_row_length": 2,
+  "candidates": 267125415576,
+  "nonempty_bridge_candidates": 97463328,
+  "admitted": 10490694648,
+  "reentry_projections": 432,
+  "projections_outside_invariant": 0,
+  "orbit_histogram": {"13": 2, "14": 87, "15": 1915, "16": 9947, "17": 95783, "18": 343997, "19": 2673350, "20": 8233891, "21": 61106569, "22": 173586724}
+}

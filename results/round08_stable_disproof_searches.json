@@ -1,0 +1,2524 @@
+{
+  "stable_budget": 18,
+  "rank_two_magnus_erasures": [
+    {
+      "degree": 8,
+      "spare_rows": 2,
+      "limit": 14,
+      "ordered": false,
+      "distance": null,
+      "radii": [
+        7,
+        7
+      ],
+      "visited": [
+        14451772,
+        63023240
+      ],
+      "distinct_elements": 11801436,
+      "midpoint_hex": [],
+      "final_boundary_candidates": 496487707
+    },
+    {
+      "degree": 7,
+      "spare_rows": 3,
+      "limit": 12,
+      "ordered": false,
+      "distance": null,
+      "radii": [
+        6,
+        6
+      ],
+      "visited": [
+        870642,
+        4414593
+      ],
+      "distinct_elements": 911753,
+      "midpoint_hex": [],
+      "final_boundary_candidates": 34208217
+    },
+    {
+      "degree": 6,
+      "spare_rows": 4,
+      "limit": 10,
+      "ordered": false,
+      "distance": null,
+      "radii": [
+        5,
+        5
+      ],
+      "visited": [
+        54033,
+        297310
+      ],
+      "distinct_elements": 80071,
+      "midpoint_hex": [],
+      "final_boundary_candidates": 2250080
+    }
+  ],
+  "tight_crossing_parity": [
+    {
+      "padding": 5,
+      "degree_four_vertex": null,
+      "labeled_graphs": 70,
+      "marked_representatives": 2,
+      "prefix_matrices": 35142,
+      "inverse_suffix_matrices": 177128,
+      "matching_matrix_pairs": 0,
+      "graphs": [
+        {
+          "edges": [
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              5
+            ]
+          ],
+          "prefix_matrices": 17586,
+          "inverse_suffix_matrices": 88488,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "prefix_matrices": 17556,
+          "inverse_suffix_matrices": 88640,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        }
+      ]
+    },
+    {
+      "padding": 6,
+      "degree_four_vertex": 0,
+      "labeled_graphs": 2070,
+      "marked_representatives": 7,
+      "prefix_matrices": 1913066,
+      "inverse_suffix_matrices": 9936534,
+      "matching_matrix_pairs": 0,
+      "graphs": [
+        {
+          "edges": [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              0,
+              6
+            ]
+          ],
+          "prefix_matrices": 237388,
+          "inverse_suffix_matrices": 1167852,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "prefix_matrices": 238356,
+          "inverse_suffix_matrices": 1175820,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "prefix_matrices": 300708,
+          "inverse_suffix_matrices": 1612090,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              0,
+              6
+            ]
+          ],
+          "prefix_matrices": 237402,
+          "inverse_suffix_matrices": 1169560,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ]
+          ],
+          "prefix_matrices": 299652,
+          "inverse_suffix_matrices": 1602698,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ]
+          ],
+          "prefix_matrices": 300878,
+          "inverse_suffix_matrices": 1616002,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "prefix_matrices": 298682,
+          "inverse_suffix_matrices": 1592512,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        }
+      ]
+    },
+    {
+      "padding": 6,
+      "degree_four_vertex": 1,
+      "labeled_graphs": 2070,
+      "marked_representatives": 25,
+      "prefix_matrices": 5184448,
+      "inverse_suffix_matrices": 26009722,
+      "matching_matrix_pairs": 0,
+      "graphs": [
+        {
+          "edges": [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              6
+            ]
+          ],
+          "prefix_matrices": 192138,
+          "inverse_suffix_matrices": 924440,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              6
+            ]
+          ],
+          "prefix_matrices": 194490,
+          "inverse_suffix_matrices": 939772,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "prefix_matrices": 194882,
+          "inverse_suffix_matrices": 942668,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "prefix_matrices": 223318,
+          "inverse_suffix_matrices": 1165816,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              1,
+              6
+            ]
+          ],
+          "prefix_matrices": 192640,
+          "inverse_suffix_matrices": 929116,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              1,
+              6
+            ]
+          ],
+          "prefix_matrices": 191692,
+          "inverse_suffix_matrices": 923218,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              1,
+              5
+            ]
+          ],
+          "prefix_matrices": 193672,
+          "inverse_suffix_matrices": 935260,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ]
+          ],
+          "prefix_matrices": 222536,
+          "inverse_suffix_matrices": 1162294,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              1,
+              6
+            ]
+          ],
+          "prefix_matrices": 194084,
+          "inverse_suffix_matrices": 937274,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ]
+          ],
+          "prefix_matrices": 221884,
+          "inverse_suffix_matrices": 1155682,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              1,
+              6
+            ]
+          ],
+          "prefix_matrices": 197738,
+          "inverse_suffix_matrices": 955276,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ]
+          ],
+          "prefix_matrices": 229618,
+          "inverse_suffix_matrices": 1202138,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              1,
+              6
+            ]
+          ],
+          "prefix_matrices": 198160,
+          "inverse_suffix_matrices": 958628,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              1,
+              6
+            ]
+          ],
+          "prefix_matrices": 197680,
+          "inverse_suffix_matrices": 954774,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ]
+          ],
+          "prefix_matrices": 229742,
+          "inverse_suffix_matrices": 1205894,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ]
+          ],
+          "prefix_matrices": 230092,
+          "inverse_suffix_matrices": 1206520,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "prefix_matrices": 183232,
+          "inverse_suffix_matrices": 883086,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "prefix_matrices": 220988,
+          "inverse_suffix_matrices": 1147102,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              1,
+              6
+            ]
+          ],
+          "prefix_matrices": 197258,
+          "inverse_suffix_matrices": 951572,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "prefix_matrices": 228804,
+          "inverse_suffix_matrices": 1196174,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "prefix_matrices": 228080,
+          "inverse_suffix_matrices": 1189570,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "prefix_matrices": 229102,
+          "inverse_suffix_matrices": 1199230,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "prefix_matrices": 228156,
+          "inverse_suffix_matrices": 1191974,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "prefix_matrices": 182080,
+          "inverse_suffix_matrices": 875342,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "prefix_matrices": 182382,
+          "inverse_suffix_matrices": 876902,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        }
+      ]
+    },
+    {
+      "padding": 7,
+      "degree_four_vertex": null,
+      "labeled_graphs": 16800,
+      "marked_representatives": 8,
+      "prefix_matrices": 12199560,
+      "inverse_suffix_matrices": 12199560,
+      "matching_matrix_pairs": 0,
+      "graphs": [
+        {
+          "edges": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "prefix_matrices": 1525946,
+          "inverse_suffix_matrices": 1525946,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "prefix_matrices": 1526546,
+          "inverse_suffix_matrices": 1526546,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "prefix_matrices": 1526712,
+          "inverse_suffix_matrices": 1526712,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "prefix_matrices": 1536160,
+          "inverse_suffix_matrices": 1536160,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "prefix_matrices": 1517234,
+          "inverse_suffix_matrices": 1517234,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "prefix_matrices": 1519062,
+          "inverse_suffix_matrices": 1519062,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "prefix_matrices": 1528836,
+          "inverse_suffix_matrices": 1528836,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        },
+        {
+          "edges": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "prefix_matrices": 1519064,
+          "inverse_suffix_matrices": 1519064,
+          "matching_matrix_pairs": 0,
+          "witness": []
+        }
+      ]
+    }
+  ],
+  "signed_integral_abelianization": [
+    {
+      "padding": 1,
+      "products": 3,
+      "prefix_states": 12,
+      "inverse_suffix_states": 110,
+      "matching_state_pairs": 0,
+      "witness": null
+    },
+    {
+      "padding": 1,
+      "products": 4,
+      "prefix_states": 110,
+      "inverse_suffix_states": 110,
+      "matching_state_pairs": 0,
+      "witness": null
+    },
+    {
+      "padding": 1,
+      "products": 5,
+      "prefix_states": 110,
+      "inverse_suffix_states": 906,
+      "matching_state_pairs": 0,
+      "witness": null
+    },
+    {
+      "padding": 1,
+      "products": 6,
+      "prefix_states": 906,
+      "inverse_suffix_states": 906,
+      "matching_state_pairs": 0,
+      "witness": null
+    },
+    {
+      "padding": 1,
+      "products": 7,
+      "prefix_states": 906,
+      "inverse_suffix_states": 6035,
+      "matching_state_pairs": 65,
+      "witness": {
+        "moves": [
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            1,
+            2,
+            -1
+          ],
+          [
+            0,
+            2,
+            -1
+          ],
+          [
+            1,
+            0,
+            -1
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ],
+        "endpoint": [
+          [
+            1,
+            -3,
+            0
+          ],
+          [
+            -1,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "cut_crossings": [
+          3
+        ]
+      }
+    },
+    {
+      "padding": 2,
+      "products": 5,
+      "prefix_states": 412,
+      "inverse_suffix_states": 6340,
+      "matching_state_pairs": 0,
+      "witness": null
+    },
+    {
+      "padding": 2,
+      "products": 6,
+      "prefix_states": 6340,
+      "inverse_suffix_states": 6340,
+      "matching_state_pairs": 0,
+      "witness": null
+    },
+    {
+      "padding": 2,
+      "products": 7,
+      "prefix_states": 6340,
+      "inverse_suffix_states": 88154,
+      "matching_state_pairs": 0,
+      "witness": null
+    },
+    {
+      "padding": 2,
+      "products": 8,
+      "prefix_states": 88154,
+      "inverse_suffix_states": 88154,
+      "matching_state_pairs": 0,
+      "witness": null
+    },
+    {
+      "padding": 2,
+      "products": 9,
+      "prefix_states": 88154,
+      "inverse_suffix_states": 1059547,
+      "matching_state_pairs": 505,
+      "witness": {
+        "moves": [
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            1,
+            0,
+            -1
+          ],
+          [
+            0,
+            2,
+            -1
+          ],
+          [
+            2,
+            3,
+            -1
+          ],
+          [
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ],
+        "endpoint": [
+          [
+            1,
+            -3,
+            0,
+            0
+          ],
+          [
+            -1,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "cut_crossings": [
+          4,
+          3,
+          3
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "minimum_required_ordinary_cyclic_peak": 31,
+  "generation": {
+    "status": "PASS",
+    "cyclic_cap": 30,
+    "signed_permutation_orbits": 73876424,
+    "primitive_coordinate_orbits": 0,
+    "w23_found": true,
+    "minimum_coordinate": 5,
+    "rotation_product_candidates": 78886780816,
+    "admitted_neighbors": 4543003748,
+    "orbit_histogram": {
+      "13": 2,
+      "14": 5,
+      "15": 72,
+      "16": 82,
+      "17": 454,
+      "18": 508,
+      "19": 2682,
+      "20": 2949,
+      "21": 15765,
+      "22": 17525,
+      "23": 94060,
+      "24": 111580,
+      "25": 584939,
+      "26": 746474,
+      "27": 3802553,
+      "28": 5243862,
+      "29": 25587729,
+      "30": 37665183
+    }
+  },
+  "independent_closure": {
+    "status": "CLOSED_AND_CONNECTED",
+    "cyclic_cap": 30,
+    "signed_permutation_orbits": 73876424,
+    "rotation_product_candidates": 78886780816,
+    "admitted_neighbors": 4543003748
+  },
+  "independent_primitive_screen": {
+    "rows": 73876424,
+    "single_sign_candidates": 18450241,
+    "primitive_coordinates": [],
+    "tsv_sha256": "6a8ec12b10c6229e555b42da880eb4eea140ee3a096ec334bf895825b109b6c5"
+  }
+}

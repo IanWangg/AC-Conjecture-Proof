@@ -1,0 +1,34 @@
+{
+  "cap35_signed_orbits": 185,
+  "cap35_product_candidates": 357840,
+  "cap35_admitted_candidates": 8088,
+  "cap35_minimum_energy": 27,
+  "cap35_no_primitive": true,
+  "cap36_exact_anchor_route": [
+    [
+      "xxyxyyXXYY",
+      "xxxxyyyxxyyyxxyyy"
+    ],
+    [
+      "xxxxyyyxxyyyxxyyy",
+      "xxyxxyxyyxxyyyxxyyy"
+    ],
+    [
+      "xxyxYXXy",
+      "xxyxxyxyyxxyyyxxyyy"
+    ],
+    [
+      "xxyxYXXy",
+      "xxyxyxyyxxyyyxxyy"
+    ],
+    [
+      "xxyxYXXy",
+      "xxyxxyyxyyxxyyy"
+    ],
+    [
+      "xxyxYXXy",
+      "xxyxyyxyyxxyy"
+    ]
+  ],
+  "sharp_ordinary_entry_peak": 36
+}

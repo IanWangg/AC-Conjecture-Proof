@@ -1,0 +1,71 @@
+{
+  "stable_instruction_budget": 18,
+  "maximum_padding_to_check": 3,
+  "minimum_free_ordinary_distance_lower_bound": 19,
+  "minimum_free_stable_distance_lower_bound": 19,
+  "unpadded": {
+    "spare_rows": 0,
+    "limit": 18,
+    "ordered": false,
+    "distance": null,
+    "radii": [
+      9,
+      9
+    ],
+    "visited": [
+      838216495,
+      191373223
+    ],
+    "distinct_words": 438373498
+  },
+  "retracted_middle_sections": [
+    {
+      "spare_rows": 1,
+      "limit": 16,
+      "ordered": false,
+      "distance": null,
+      "radii": [
+        8,
+        8
+      ],
+      "visited": [
+        136739554,
+        416079086
+      ],
+      "distinct_words": 176682795,
+      "final_boundary_candidates": 3365404011
+    },
+    {
+      "spare_rows": 2,
+      "limit": 14,
+      "ordered": false,
+      "distance": null,
+      "radii": [
+        7,
+        7
+      ],
+      "visited": [
+        14691033,
+        63089488
+      ],
+      "distinct_words": 12603357,
+      "final_boundary_candidates": 505191962
+    },
+    {
+      "spare_rows": 3,
+      "limit": 12,
+      "ordered": false,
+      "distance": null,
+      "radii": [
+        6,
+        6
+      ],
+      "visited": [
+        891942,
+        4458757
+      ],
+      "distinct_words": 1016856,
+      "final_boundary_candidates": 35037249
+    }
+  ]
+}

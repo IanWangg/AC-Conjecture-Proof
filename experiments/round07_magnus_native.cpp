@@ -10,6 +10,8 @@ using free_distance::missing;
 
 template <unsigned Degree>
 class Elements {
+    template <unsigned>
+    friend class Elements;
     static constexpr std::size_t words = ((std::size_t(1) << (Degree + 1)) + 62) / 64;
     using Polynomial = std::array<uint64_t, words>;
     struct Hash {
@@ -28,8 +30,14 @@ class Elements {
         Id inverse = missing;
         std::array<Id, 4> conjugates{missing, missing, missing, missing};
     };
+    struct CachedProduct {
+        uint64_t key = std::numeric_limits<uint64_t>::max();
+        Id value = missing;
+    };
+    static constexpr std::size_t product_cache_size = std::size_t(1) << 20;
     std::unordered_map<Polynomial, Id, Hash> index;
     std::vector<Entry> entries;
+    std::vector<CachedProduct> product_cache{product_cache_size};
     std::array<Id, 4> generators{};
     Id one;
 
@@ -118,6 +126,16 @@ public:
 
     std::size_t size() const { return entries.size(); }
 
+    template <unsigned TargetDegree>
+    Id project(Id id, Elements<TargetDegree>& target) const {
+        static_assert(TargetDegree < Degree);
+        constexpr unsigned width = (1U << (TargetDegree + 1)) - 1;
+        typename Elements<TargetDegree>::Polynomial projected{};
+        std::copy_n(entries[id].value.begin(), projected.size(), projected.begin());
+        projected.back() &= (uint64_t(1) << (width % 64)) - 1;
+        return target.identify(projected);
+    }
+
     std::string describe(Id id) const {
         std::ostringstream result;
         result << std::hex << std::setfill('0');
@@ -142,7 +160,15 @@ public:
     }
 
     Id product(Id left, Id right) {
-        return identify(multiply(entries[left].value, entries[right].value));
+        if (left == one) return right;
+        if (right == one) return left;
+        const uint64_t key = (uint64_t(left) << 32) | right;
+        uint64_t hash = key ^ (key >> 23);
+        hash *= 0x9e3779b185ebca87ULL;
+        auto& slot = product_cache[(hash ^ (hash >> 31)) & (product_cache_size - 1)];
+        if (slot.key == key) return slot.value;
+        slot = {key, identify(multiply(entries[left].value, entries[right].value))};
+        return slot.value;
     }
 
     Id conjugate(Id id, std::size_t letter) {
@@ -156,9 +182,9 @@ public:
 };
 
 template <unsigned Degree, std::size_t Rows>
-void run(int limit, bool ordered) {
+void run(int limit, bool ordered, bool boundary_only) {
     const std::array<std::string, Rows> start{"xxxYYYY", "xyxYXY"}, target{"x", "y"};
-    const auto result = free_distance::search<Rows, Elements<Degree>>(start, target, limit, ordered);
+    const auto result = free_distance::search<Rows, Elements<Degree>>(start, target, limit, ordered, boundary_only);
     std::cout << "{\"degree\":" << Degree << ",\"spare_rows\":" << Rows - 2
               << ",\"limit\":" << limit << ",\"ordered\":" << (ordered ? "true" : "false")
               << ",\"distance\":" << (result.distance < 0 ? "null" : std::to_string(result.distance))
@@ -169,36 +195,46 @@ void run(int limit, bool ordered) {
         if (i) std::cout << ',';
         std::cout << '"' << result.midpoint[i] << '"';
     }
-    std::cout << "]}\n";
+    std::cout << ']';
+    if (boundary_only) std::cout << ",\"final_boundary_candidates\":" << result.final_boundary_candidates;
+    std::cout << "}\n";
 }
 
 template <unsigned Degree>
-void dispatch(int padding, int limit, bool ordered) {
+void dispatch(int padding, int limit, bool ordered, bool boundary_only) {
     switch (padding) {
-    case 0: run<Degree, 2>(limit, ordered); break;
-    case 1: run<Degree, 3>(limit, ordered); break;
-    case 2: run<Degree, 4>(limit, ordered); break;
-    case 3: run<Degree, 5>(limit, ordered); break;
-    case 4: run<Degree, 6>(limit, ordered); break;
+    case 0: run<Degree, 2>(limit, ordered, boundary_only); break;
+    case 1: run<Degree, 3>(limit, ordered, boundary_only); break;
+    case 2: run<Degree, 4>(limit, ordered, boundary_only); break;
+    case 3: run<Degree, 5>(limit, ordered, boundary_only); break;
+    case 4: run<Degree, 6>(limit, ordered, boundary_only); break;
     default: throw std::runtime_error("spare row count outside 0–4");
     }
 }
 }
 
+#ifndef AC_ROUND08_MAGNUS_NATIVE_LIBRARY
 int main(int argc, char** argv) {
     try {
-        if (argc != 4 && (argc != 5 || std::string_view(argv[4]) != "--ordered"))
-            throw std::runtime_error("usage: magnus degree spare_rows limit [--ordered]");
+        if (argc < 4 || argc > 6)
+            throw std::runtime_error("usage: magnus degree spare_rows limit [--ordered] [--boundary-only]");
         const int degree = std::stoi(argv[1]), padding = std::stoi(argv[2]), limit = std::stoi(argv[3]);
         if (limit < 0) throw std::runtime_error("negative search limit");
+        bool ordered = false, boundary_only = false;
+        for (int i = 4; i < argc; ++i) {
+            const std::string_view option(argv[i]);
+            if (option == "--ordered" && !ordered) ordered = true;
+            else if (option == "--boundary-only" && !boundary_only) boundary_only = true;
+            else throw std::runtime_error("unexpected search option");
+        }
         switch (degree) {
-        case 4: magnus_native::dispatch<4>(padding, limit, argc == 5); break;
-        case 5: magnus_native::dispatch<5>(padding, limit, argc == 5); break;
-        case 6: magnus_native::dispatch<6>(padding, limit, argc == 5); break;
-        case 7: magnus_native::dispatch<7>(padding, limit, argc == 5); break;
-        case 8: magnus_native::dispatch<8>(padding, limit, argc == 5); break;
-        case 9: magnus_native::dispatch<9>(padding, limit, argc == 5); break;
-        case 10: magnus_native::dispatch<10>(padding, limit, argc == 5); break;
+        case 4: magnus_native::dispatch<4>(padding, limit, ordered, boundary_only); break;
+        case 5: magnus_native::dispatch<5>(padding, limit, ordered, boundary_only); break;
+        case 6: magnus_native::dispatch<6>(padding, limit, ordered, boundary_only); break;
+        case 7: magnus_native::dispatch<7>(padding, limit, ordered, boundary_only); break;
+        case 8: magnus_native::dispatch<8>(padding, limit, ordered, boundary_only); break;
+        case 9: magnus_native::dispatch<9>(padding, limit, ordered, boundary_only); break;
+        case 10: magnus_native::dispatch<10>(padding, limit, ordered, boundary_only); break;
         default: throw std::runtime_error("degree outside 4–10");
         }
     } catch (const std::exception& error) {
@@ -206,3 +242,4 @@ int main(int argc, char** argv) {
         return 1;
     }
 }
+#endif

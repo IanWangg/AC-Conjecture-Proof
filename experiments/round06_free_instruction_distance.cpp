@@ -100,6 +100,33 @@ struct Report {
     uint64_t final_boundary_candidates = 0;
 };
 
+template <std::size_t Rows, class Elements, class Visit>
+bool visit_neighbors(Elements& words, const State<Rows>& state, bool ordered, Visit&& visit) {
+    State<Rows> inverses{};
+    for (std::size_t i = 0; i < Rows; ++i) inverses[i] = words.inverse(state[i]);
+    for (std::size_t i = 0; i < Rows; ++i) {
+        auto replace = [&](Id value) {
+            if (value == state[i]) return false;
+            auto next = state;
+            next[i] = value;
+            return visit(next);
+        };
+        if (replace(inverses[i])) return true;
+        for (std::size_t letter = 0; letter < letters.size(); ++letter)
+            if (replace(words.conjugate(state[i], letter))) return true;
+        for (std::size_t j = 0; j < Rows; ++j) if (j != i) {
+            if (replace(words.product(state[i], state[j])) || replace(words.product(state[i], inverses[j])))
+                return true;
+        }
+        if (ordered) for (std::size_t j = i + 1; j < Rows; ++j) {
+            auto next = state;
+            std::swap(next[i], next[j]);
+            if (visit(next)) return true;
+        }
+    }
+    return false;
+}
+
 template <std::size_t Rows, class Elements = WordTable>
 Report search(const std::array<std::string, Rows>& first, const std::array<std::string, Rows>& last,
               int limit, bool ordered, bool boundary_only = false) {
@@ -134,30 +161,10 @@ Report search(const std::array<std::string, Rows>& first, const std::array<std::
         };
         ++result.radii[side];
         for (const auto& state : frontier[side]) {
-            State<Rows> inverses{};
-            for (std::size_t i = 0; i < Rows; ++i) inverses[i] = words.inverse(state[i]);
-            for (std::size_t i = 0; i < Rows && result.distance < 0; ++i) {
-                auto replace = [&](Id value) {
-                    if (value == state[i]) return false;
-                    auto next = state;
-                    next[i] = value;
-                    return admit(next);
-                };
-                bool met = replace(inverses[i]);
-                for (std::size_t letter = 0; letter < letters.size() && !met; ++letter)
-                    met = replace(words.conjugate(state[i], letter));
-                for (std::size_t j = 0; j < Rows && !met; ++j) if (j != i) {
-                    met = replace(words.product(state[i], state[j]))
-                          || replace(words.product(state[i], inverses[j]));
-                }
-                if (ordered) for (std::size_t j = i + 1; j < Rows && !met; ++j) {
-                    auto next = state;
-                    std::swap(next[i], next[j]);
-                    met = admit(next);
-                }
-                if (met) result.distance = depth;
+            if (visit_neighbors(words, state, ordered, admit)) {
+                result.distance = depth;
+                break;
             }
-            if (result.distance >= 0) break;
         }
         result.visited[side] = own.size();
         if (result.distance >= 0 || following.empty()) break;
@@ -179,6 +186,14 @@ void run(int limit, bool ordered, bool boundary_only) {
               << result.visited[1] << "],\"distinct_words\":" << result.words;
     if (boundary_only)
         std::cout << ",\"final_boundary_candidates\":" << result.final_boundary_candidates;
+    if (!result.midpoint.empty()) {
+        std::cout << ",\"midpoint_words\":[";
+        for (std::size_t index = 0; index < result.midpoint.size(); ++index) {
+            if (index) std::cout << ',';
+            std::cout << '"' << result.midpoint[index] << '"';
+        }
+        std::cout << ']';
+    }
     std::cout << "}\n";
 }
 

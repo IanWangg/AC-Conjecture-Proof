@@ -1,0 +1,10 @@
+{
+  "returned_pairs": 432,
+  "return_sha256": "785ee4da9044feb892ea90d4b3090faac441e843f03cbfecd1d9482aae829567",
+  "c22_sha256": "cd9ba5781a1efcb1bf1b8a72c9a392b79de1cd915da6a520b8f33a4390787fa3",
+  "explicit_c29_through_energy22_sha256": "2cb18495b22ad58278bcc1e3c9bbd27c724bdf77361ce293577c4cca0940d558",
+  "weighted_first_exit_ordered_pairs": 476,
+  "returns_outside_c22": [],
+  "returns_outside_c29_through_energy22": [],
+  "independent_closure_audit_complete": false
+}

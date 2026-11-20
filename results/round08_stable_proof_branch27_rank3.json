@@ -1,0 +1,78 @@
+{
+  "rank_three_replay": {
+    "moves": 323,
+    "raw_peak": 31,
+    "cyclic_peak": 24,
+    "target": [
+      "XXZxZ",
+      "XYYYXzXz",
+      "XYxyyZxZxyz"
+    ],
+    "first_pivotless_step": 307
+  },
+  "intrinsic_chart": {
+    "rank_three_rows": [
+      "XXZxZ",
+      "XYYYXzXz",
+      "XYxyyZxZxyz"
+    ],
+    "predecessor": [
+      "XXXXYYY",
+      "XXZxZ",
+      "XYxyyZxZxyz"
+    ],
+    "projected_pair": [
+      "XXXYYXXXYYXXXYYYY",
+      "XXYYxxyxyy"
+    ],
+    "chart": "intrinsic",
+    "original_pivot": "XYYYXzXz",
+    "eliminated": "z",
+    "pivot": "Z",
+    "whitehead_descent": [
+      {
+        "multiplier": "X",
+        "cut": "XYZy",
+        "result": [
+          "XYYYzz"
+        ]
+      },
+      {
+        "multiplier": "Y",
+        "cut": "Yx",
+        "result": [
+          "XYYzz"
+        ]
+      },
+      {
+        "multiplier": "Y",
+        "cut": "Yx",
+        "result": [
+          "XYzz"
+        ]
+      },
+      {
+        "multiplier": "X",
+        "cut": "XZyz",
+        "result": [
+          "Yzz"
+        ]
+      },
+      {
+        "multiplier": "Z",
+        "cut": "XYZ",
+        "result": [
+          "Yz"
+        ]
+      },
+      {
+        "multiplier": "Y",
+        "cut": "XYZ",
+        "result": [
+          "Z"
+        ]
+      }
+    ]
+  },
+  "maximum_rank_of_stable_connection": 4
+}
