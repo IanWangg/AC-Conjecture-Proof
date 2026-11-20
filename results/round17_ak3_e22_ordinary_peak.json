@@ -1,0 +1,374 @@
+{
+  "closed_reverse_components": {
+    "34": {
+      "reverse": {
+        "cap": 34,
+        "indexed_seeds": 1258633777,
+        "expanded": 66819,
+        "discovered": 66819,
+        "candidates": 119647008,
+        "admitted": 3510226,
+        "closed": true,
+        "seed_anchor": null,
+        "ak3_orbit_met": false,
+        "primitive": false,
+        "route": []
+      },
+      "independent": {
+        "status": "CLOSED_AND_CONNECTED",
+        "cyclic_cap": 34,
+        "signed_permutation_orbits": 66819,
+        "rotation_product_candidates": 119647008,
+        "admitted_neighbors": 3510226
+      }
+    },
+    "35": {
+      "reverse": {
+        "cap": 35,
+        "indexed_seeds": 1258633777,
+        "expanded": 147862,
+        "discovered": 147862,
+        "candidates": 279534568,
+        "admitted": 8075870,
+        "closed": true,
+        "seed_anchor": null,
+        "ak3_orbit_met": false,
+        "primitive": false,
+        "route": []
+      },
+      "independent": {
+        "status": "CLOSED_AND_CONNECTED",
+        "cyclic_cap": 35,
+        "signed_permutation_orbits": 147862,
+        "rotation_product_candidates": 279534568,
+        "admitted_neighbors": 8075870
+      }
+    },
+    "36": {
+      "reverse": {
+        "cap": 36,
+        "indexed_seeds": 1258633777,
+        "expanded": 265026,
+        "discovered": 265026,
+        "candidates": 514401544,
+        "admitted": 14820320,
+        "closed": true,
+        "seed_anchor": null,
+        "ak3_orbit_met": false,
+        "primitive": false,
+        "route": []
+      },
+      "independent": {
+        "status": "CLOSED_AND_CONNECTED",
+        "cyclic_cap": 36,
+        "signed_permutation_orbits": 265026,
+        "rotation_product_candidates": 514401544,
+        "admitted_neighbors": 14820320
+      }
+    }
+  },
+  "cap36_tsv_sha256": "b8b293242276f2ddd229a7f4f04719b5facca31c61afa5195242259eccc798b7",
+  "cap36_signed_membership": {
+    "ak3": false,
+    "e22": true,
+    "e24": true
+  },
+  "cap36_distinct_primitive_free_coordinates": 260392,
+  "cap36_energy_histogram": {
+    "20": 5,
+    "21": 11,
+    "22": 4,
+    "23": 40,
+    "24": 42,
+    "25": 98,
+    "26": 105,
+    "27": 420,
+    "28": 469,
+    "29": 1470,
+    "30": 1823,
+    "31": 5458,
+    "32": 7310,
+    "33": 20775,
+    "34": 29234,
+    "35": 81133,
+    "36": 116629
+  },
+  "cap37_reverse_seed_meeting": {
+    "cap": 37,
+    "indexed_seeds": 1258633777,
+    "expanded": 601198,
+    "discovered": 1141922,
+    "candidates": 1223481136,
+    "admitted": 39954292,
+    "closed": false,
+    "seed_anchor": [
+      "xxxyxxyXYxy",
+      "xxxxyxxyxxyXXYxxy"
+    ],
+    "ak3_orbit_met": false,
+    "primitive": false,
+    "route": [
+      [
+        "xxxyxYxYY",
+        "xxyxYYXyyxYY"
+      ],
+      [
+        "xxxyxYxYY",
+        "xyxYYYxyyXY"
+      ],
+      [
+        "xxxyXXYxyXy",
+        "xxYXyxxYXyyyXy"
+      ],
+      [
+        "xxxyxYYXyxYYXy",
+        "xxyxYYXyXyxYYXy"
+      ],
+      [
+        "xxyXyxYXXyyXY",
+        "xxyXyXYxxyXYYXY"
+      ],
+      [
+        "xxyXyxYXXyyXY",
+        "xxyXXYxxyXYYYY"
+      ],
+      [
+        "xxxxyXYYxyyXYY",
+        "xxxxxyXYYxxyXYY"
+      ],
+      [
+        "xxyXXyxxyXY",
+        "xxyXXYxxyyyyXY"
+      ],
+      [
+        "xxxyyXXYY",
+        "xyXYYxyyxYY"
+      ],
+      [
+        "xxxyyXXYY",
+        "xxyyXYXyyXYY"
+      ],
+      [
+        "xxxyyXXYY",
+        "xyxYYxyyXYY"
+      ],
+      [
+        "xxyXXyxyXXY",
+        "xxyXXyxYYXXy"
+      ],
+      [
+        "xxyxYYXyxYY",
+        "xxyyXYYXyyXY"
+      ],
+      [
+        "xxyxYYXyxYY",
+        "xxYXyyXYxyxYY"
+      ],
+      [
+        "xxyxYYXyxYY",
+        "xxxYXyyXYXyyXY"
+      ],
+      [
+        "xxxyXYYXyXYYXy",
+        "xxxyXXYxyyxYYXy"
+      ],
+      [
+        "xxxyXXYxyyxYYXy",
+        "xxxyXXXYYXyxxxYXy"
+      ],
+      [
+        "xxxyXXXyxYXXXyxYY",
+        "xxxYxyXYxxxYXXyyXY"
+      ],
+      [
+        "xxxyxYXXXYxyyxYXy",
+        "xxxyxYXyxxxyXXYYXy"
+      ],
+      [
+        "xxxyxxYXyxxxyXYXy",
+        "xxxyxYXXXYxyyxYXy"
+      ],
+      [
+        "xxxyxxyxYXyxxy",
+        "xxxyxxYXyxxxyXYXy"
+      ],
+      [
+        "xxxyxxyxYXyxxy",
+        "xxxyxxyXYXXXYxyxYXy"
+      ],
+      [
+        "xxxyxxyxYXyxxy",
+        "xxxyxyxxxyxYXXYXy"
+      ],
+      [
+        "xxxyxxyxYXyxxy",
+        "xxxyxyxYXXXYXXYXYXy"
+      ],
+      [
+        "xxxyxxyxYXyxxy",
+        "xxxyxYXXXYxyxyxxyxxyxxy"
+      ],
+      [
+        "xxxyxxyxYXyxxy",
+        "xxxyXYXXYXyxxyxYXXYXYXy"
+      ],
+      [
+        "xxxyxxyxYXyxxy",
+        "xxyxxyxxyxxyxYXXYXYXy"
+      ],
+      [
+        "xxxyxxyxYXyxxy",
+        "xxyxxyxxyXYXXYXXYxy"
+      ],
+      [
+        "xxxyxxyxxyXYxyxxy",
+        "xxyxxyxxyXYXXYXXYxy"
+      ],
+      [
+        "xxyxxyxyxxyxYXXYxy",
+        "xxyxxyxxyXYXXYXXYxy"
+      ],
+      [
+        "xxxyxxyXYxy",
+        "xxyxxyxxyxYXXYXXYXy"
+      ],
+      [
+        "xxxyxxyXYxy",
+        "xxxxyxxyxxyXYXXYXXXYxy"
+      ]
+    ]
+  },
+  "seed_anchor_cap31_tsv_line": 10653722,
+  "strict_replays": [
+    {
+      "moves": 1345,
+      "peak_total_length": 51,
+      "endpoint": [
+        "XXYYYxYXY",
+        "XXYYxYXXyxxY"
+      ],
+      "cyclic_peak": 37
+    },
+    {
+      "moves": 1385,
+      "peak_total_length": 51,
+      "endpoint": [
+        "XXYxYXXYxxy",
+        "XXYXYxxyXyxxy"
+      ],
+      "cyclic_peak": 37
+    }
+  ],
+  "cap36_unbounded_one_product": {
+    "rows_checked": 265026,
+    "complete": true,
+    "hit": null
+  },
+  "discovered_at_cap37_unbounded_one_product": {
+    "rows_checked": 1141922,
+    "complete": true,
+    "hit": null
+  },
+  "archive_tail_joins": {
+    "34": {
+      "status": "NO_SUBGROUP_JOIN",
+      "forward_pairs": 66819,
+      "forward_distinct_words": 59554,
+      "forward_cap": 34,
+      "forward_minimum_coordinate": 9,
+      "reverse_pairs": 23902,
+      "reverse_rotation_pairs": 6230442,
+      "reverse_distinct_rotated_cores": 2675055,
+      "reverse_geodesic_bridges": 233236,
+      "primitive_slopes_constructed": 7608730,
+      "coordinates_found_in_forward_catalogue": 26725,
+      "basis_pair_lookups": 89,
+      "core_topologies": {
+        "barbell": 239320,
+        "rose": 861364,
+        "theta": 1807607
+      }
+    },
+    "36": {
+      "status": "NO_SUBGROUP_JOIN",
+      "forward_pairs": 265026,
+      "forward_distinct_words": 242734,
+      "forward_cap": 36,
+      "forward_minimum_coordinate": 9,
+      "reverse_pairs": 23902,
+      "reverse_rotation_pairs": 6230442,
+      "reverse_distinct_rotated_cores": 2675055,
+      "reverse_geodesic_bridges": 394270,
+      "primitive_slopes_constructed": 10807989,
+      "coordinates_found_in_forward_catalogue": 74832,
+      "basis_pair_lookups": 159,
+      "core_topologies": {
+        "barbell": 400354,
+        "rose": 861364,
+        "theta": 1807607
+      }
+    },
+    "37_discovered_through_contact": {
+      "status": "NO_SUBGROUP_JOIN",
+      "forward_pairs": 1141922,
+      "forward_distinct_words": 1071873,
+      "forward_cap": 37,
+      "forward_minimum_coordinate": 7,
+      "reverse_pairs": 23902,
+      "reverse_rotation_pairs": 6230442,
+      "reverse_distinct_rotated_cores": 2675055,
+      "reverse_geodesic_bridges": 6067636,
+      "primitive_slopes_constructed": 36686102,
+      "coordinates_found_in_forward_catalogue": 5779890,
+      "basis_pair_lookups": 457,
+      "core_topologies": {
+        "barbell": 6073720,
+        "rose": 861364,
+        "theta": 1807607
+      }
+    }
+  },
+  "cap37_first_exit_from_closed_cap36": {
+    "cyclic_cap": 37,
+    "source_size": 9780319,
+    "start_offset": 0,
+    "next_offset": 9780319,
+    "source_rows_scanned": 265026,
+    "source_reached_eof": true,
+    "source_boundary_independently_compared": true,
+    "recipient_parity_skips": 109405,
+    "zero_bridge_rotation_checks": 204350190,
+    "positive_bridge_rotation_checks": 477864,
+    "admitted_candidates": 2593104,
+    "boundary_records": 447640,
+    "primitive_boundary_records": 0
+  },
+  "cap37_first_exit_unbounded_second_product": {
+    "rows_checked": 447640,
+    "complete": true,
+    "hit": null
+  },
+  "simultaneous_ambient_equivalence": {
+    "36": {
+      "archive_rows": 23902,
+      "archive_classes": 19771,
+      "forward_rows": 265026,
+      "forward_classes": 235852,
+      "matching_forward_rows": 0,
+      "first_join": null
+    },
+    "37_discovered_through_contact": {
+      "archive_rows": 23902,
+      "archive_classes": 19771,
+      "forward_rows": 1141922,
+      "forward_classes": 1064425,
+      "matching_forward_rows": 0,
+      "first_join": null
+    }
+  },
+  "ambient_positive_control": {
+    "compositions": 24,
+    "elementary_markings_per_case": 7,
+    "all_matched": true
+  }
+}

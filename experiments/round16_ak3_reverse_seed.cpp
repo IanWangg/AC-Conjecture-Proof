@@ -45,7 +45,7 @@ struct Shard {
     }
 };
 
-constexpr unsigned cap = 33;
+constexpr unsigned seed_energy = 33;
 constexpr size_t shard_count = 128;
 
 struct Worker {
@@ -59,8 +59,8 @@ void write_pair(const Pair& p) {
 }
 
 int search(const Pair& root, const std::string& shards, uint32_t budget, unsigned workers,
-           const char* catalogue) {
-    if (energy(root) > cap || !workers || !budget)
+           const char* catalogue, unsigned cap) {
+    if (cap < seed_energy || cap > 62 || energy(root) > cap || !workers || !budget)
         throw std::runtime_error("invalid reverse search parameters");
     std::array<Shard, shard_count> index;
     uint64_t indexed = 0;
@@ -72,10 +72,16 @@ int search(const Pair& root, const std::string& shards, uint32_t budget, unsigne
     std::vector<uint32_t> parents{no_parent};
     std::unordered_set<Pair, Hash> visited{root};
     std::vector<Worker> pool(workers);
+    const auto ak3 = wide_orbits::key("xxxYYYY", "xyxYXY");
     const Record* hit = nullptr;
+    bool ak3_met = false;
     uint32_t found = no_parent, primitive = no_parent, expanded = 0;
     const auto classify = [&](const Pair& key, uint32_t at) {
-        if (energy(key) == cap) {
+        if (key == ak3 && at != 0) {
+            found = at;
+            ak3_met = true;
+        }
+        if (energy(key) == seed_energy) {
             hit = index[Hash{}(key) & (index.size()-1)].find(key);
             if (hit) found = at;
         }
@@ -89,12 +95,14 @@ int search(const Pair& root, const std::string& shards, uint32_t budget, unsigne
         std::vector<std::future<void>> tasks;
         for (auto& worker : pool) {
             worker.out.clear();
-            tasks.push_back(std::async(std::launch::async, [&worker, &nodes, &visited, &cursor, end] {
+            tasks.push_back(std::async(std::launch::async, [&worker, &nodes, &visited, &cursor, end, cap] {
                 for (;;) {
                     const auto at = cursor++;
                     if (at >= end) break;
                     worker.local.clear();
                     const auto [a,b] = nodes[at];
+                    if (cap - std::min(orbit_search::length(a), orbit_search::length(b)) > 31)
+                        throw std::runtime_error("reverse product exceeds packed coordinate width");
                     worker.menu.scan_pair(a, b, cap, [&](const auto& r, const auto& d) {
                         const auto key = ak3_wide::least_image(r,d);
                         if (!visited.count(key) && worker.local.insert(key).second)
@@ -135,10 +143,11 @@ int search(const Pair& root, const std::string& shards, uint32_t budget, unsigne
     std::cout << "{\"cap\":" << cap << ",\"indexed_seeds\":" << indexed
               << ",\"expanded\":" << expanded << ",\"discovered\":" << nodes.size()
               << ",\"candidates\":" << candidates << ",\"admitted\":" << admitted
-              << ",\"closed\":" << (expanded == nodes.size() && !hit && primitive == no_parent ? "true" : "false")
+              << ",\"closed\":" << (expanded == nodes.size() && found == no_parent && primitive == no_parent ? "true" : "false")
               << ",\"seed_anchor\":";
     if (hit) write_pair(Pair{(*hit)[2], (*hit)[3]});
     else std::cout << "null";
+    if (cap != seed_energy) std::cout << ",\"ak3_orbit_met\":" << (ak3_met ? "true" : "false");
     std::cout << ",\"primitive\":" << (primitive != no_parent ? "true" : "false") << ",\"route\":[";
     std::vector<Pair> route;
     for (auto at = found != no_parent ? found : primitive; at != no_parent; at = parents[at])
@@ -154,11 +163,17 @@ int search(const Pair& root, const std::string& shards, uint32_t budget, unsigne
 
 int main(int argc, char** argv) {
     try {
-        if (argc != 6 && argc != 7)
-            throw std::runtime_error("usage: reverse-seed row0 row1 shard-dir expansion-budget workers [catalogue.tsv]");
+        if (argc < 6 || argc > 8)
+            throw std::runtime_error("usage: reverse-seed row0 row1 shard-dir expansion-budget workers [catalogue.tsv [cap]]");
+        for (int i : {1, 2}) {
+            const std::string row(argv[i]);
+            if (row.empty() || row.size() > 31 || cyclic(row) != row)
+                throw std::runtime_error("need nonempty cyclically reduced coordinates of width at most 31");
+        }
         round01::check_product();
         return search(wide_orbits::key(argv[1], argv[2]), argv[3],
-                      std::stoul(argv[4]), std::stoul(argv[5]), argc == 7 ? argv[6] : nullptr);
+                      std::stoul(argv[4]), std::stoul(argv[5]), argc >= 7 ? argv[6] : nullptr,
+                      argc == 8 ? std::stoul(argv[7]) : seed_energy);
     } catch (const std::exception& error) {
         std::cerr << error.what() << '\n';
         return 1;

@@ -48,6 +48,19 @@ struct Tables {
     std::array<std::vector<Rule>, 2> rules;
 };
 
+struct StructuredCut {
+    unsigned short_rule;
+    unsigned active_width;
+    unsigned short_idle;
+};
+
+unsigned small_number(std::string_view argument) {
+    std::size_t used = 0;
+    const auto value = std::stoul(std::string(argument), &used);
+    if (used != argument.size() || value > 18) throw std::runtime_error("invalid structured cut argument");
+    return static_cast<unsigned>(value);
+}
+
 Tables read(std::istream& stream, bool two_sevens) {
     Tables input;
     unsigned span;
@@ -232,18 +245,18 @@ class Search {
     }
 
     struct IdleBoundaries {
-        std::vector<Set> plain, via_six;
+        std::vector<Set> plain, via_short;
     };
 
-    IdleBoundaries boundaries(State endpoint, unsigned plain_idle, unsigned short_idle) {
-        IdleBoundaries result{std::vector<Set>(plain_idle + 1), std::vector<Set>(short_idle + 1)};
+    IdleBoundaries boundaries(State endpoint, unsigned maximum_idle, StructuredCut cut) {
+        IdleBoundaries result{std::vector<Set>(maximum_idle + 1), std::vector<Set>(cut.short_idle + 1)};
         result.plain[0].insert(endpoint);
-        for (unsigned i = 1; i <= plain_idle; ++i)
+        for (unsigned i = 1; i <= maximum_idle; ++i)
             for (const State state : result.plain[i - 1]) idle(state, [&](State child) { result.plain[i].insert(child); });
-        for (unsigned i = 0; i <= short_idle; ++i) {
-            auto accept = [&](State child) { result.via_six[i].insert(child); };
-            if (i > 0) for (const State state : result.via_six[i - 1]) idle(state, accept);
-            for (const State state : result.plain[i]) excursion(state, 0, false, accept);
+        for (unsigned i = 0; i <= cut.short_idle; ++i) {
+            auto accept = [&](State child) { result.via_short[i].insert(child); };
+            if (i > 0) for (const State state : result.via_short[i - 1]) idle(state, accept);
+            for (const State state : result.plain[i]) excursion(state, cut.short_rule, false, accept);
         }
         return result;
     }
@@ -331,19 +344,19 @@ public:
                   << "],\"elements\":" << high.size() << "}\n";
     }
 
-    void run_six_eight(unsigned short_idle) {
-        if (short_idle > 4) throw std::runtime_error("the four idle instructions must be split between the two sides");
-        const unsigned plain_idle = 4 - short_idle;
-        const unsigned short_depth = 5 - short_idle, plain_depth = 8 - short_depth;
+    void run_structured(StructuredCut cut) {
+        const unsigned idle_budget = 18 - (6 + cut.short_rule) - cut.active_width;
+        if (cut.short_idle > idle_budget) throw std::runtime_error("invalid split of the remaining idle instructions");
+        const unsigned plain_idle = idle_budget - cut.short_idle;
+        const unsigned short_depth = 5 - cut.short_rule - cut.short_idle, plain_depth = cut.active_width - short_depth;
         const State start = pack(high.intern("xxxYYYY"), 0, high.intern("xyxYXY"), 0);
         const State goal = pack(high_letters[0], 0, high_letters[2], 0);
-        const unsigned maximum_idle = std::max(short_idle, plain_idle);
-        const std::array<IdleBoundaries, 2> endpoints{boundaries(start, maximum_idle, short_idle),
-                                                     boundaries(goal, maximum_idle, short_idle)};
-        std::cout << "{\"degree\":" << Degree << ",\"short_idle\":" << short_idle << ",\"active_depths\":[" << short_depth
+        const unsigned maximum_idle = std::max(cut.short_idle, plain_idle);
+        const std::array<IdleBoundaries, 2> endpoints{boundaries(start, maximum_idle, cut), boundaries(goal, maximum_idle, cut)};
+        std::cout << "{\"degree\":" << Degree << ",\"short_idle\":" << cut.short_idle << ",\"active_depths\":[" << short_depth
                   << ',' << plain_depth << "],\"orientations\":[";
         for (unsigned side = 0; side < 2; ++side) {
-            const Set& short_boundary = endpoints[side].via_six[short_idle];
+            const Set& short_boundary = endpoints[side].via_short[cut.short_idle];
             const Set& plain_boundary = endpoints[side ^ 1].plain[plain_idle];
             const auto left = active_layer(short_boundary, short_depth);
             const auto almost_right = active_layer(plain_boundary, plain_depth - 1);
@@ -363,26 +376,34 @@ public:
 };
 
 template <unsigned Degree>
-void run(Tables tables, bool two_sevens, std::optional<unsigned> short_idle) {
+void run(Tables tables, bool two_sevens, std::optional<StructuredCut> cut) {
     Search<Degree> search(std::move(tables), two_sevens);
-    if (short_idle) search.run_six_eight(*short_idle);
+    if (cut) search.run_structured(*cut);
     else search.run();
 }
 }
 
 int main(int argc, char** argv) {
-    const bool two_sevens = argc == 3 && std::string_view(argv[2]) == "--two-sevens";
-    const bool six_eight = argc == 4 && std::string_view(argv[2]) == "--six-eight";
-    if (argc != 2 && !two_sevens && !six_eight)
-        throw std::runtime_error("expected a Magnus degree and optional --two-sevens or --six-eight IDLE_STEPS");
-    const std::optional<unsigned> short_idle = six_eight ? std::optional<unsigned>(std::stoul(argv[3])) : std::nullopt;
-    auto tables = mixed_widths::read(std::cin, two_sevens);
+    const std::string_view mode = argc > 2 ? argv[2] : "";
+    const bool two_sevens = argc == 3 && mode == "--two-sevens";
+    std::optional<mixed_widths::StructuredCut> cut;
+    if (argc == 4 && mode == "--six-eight") {
+        cut = mixed_widths::StructuredCut{0, 8, mixed_widths::small_number(argv[3])};
+    } else if (argc == 6 && mode == "--structured") {
+        const unsigned shorter = mixed_widths::small_number(argv[3]), wider = mixed_widths::small_number(argv[4]);
+        if ((shorter != 6 && shorter != 7) || wider < 8 || shorter + wider > 18)
+            throw std::runtime_error("structured cut requires a short width of six or seven and a wider interval within budget");
+        cut = mixed_widths::StructuredCut{shorter - 6, wider, mixed_widths::small_number(argv[5])};
+    }
+    if (argc != 2 && !two_sevens && !cut)
+        throw std::runtime_error("expected degree with optional --two-sevens, --six-eight IDLE or --structured SHORT WIDE IDLE");
+    auto tables = mixed_widths::read(std::cin, two_sevens || (cut && cut->short_rule == 1));
     switch (std::stoi(argv[1])) {
-    case 5: mixed_widths::run<5>(std::move(tables), two_sevens, short_idle); break;
-    case 6: mixed_widths::run<6>(std::move(tables), two_sevens, short_idle); break;
-    case 7: mixed_widths::run<7>(std::move(tables), two_sevens, short_idle); break;
-    case 8: mixed_widths::run<8>(std::move(tables), two_sevens, short_idle); break;
-    case 9: mixed_widths::run<9>(std::move(tables), two_sevens, short_idle); break;
+    case 5: mixed_widths::run<5>(std::move(tables), two_sevens, cut); break;
+    case 6: mixed_widths::run<6>(std::move(tables), two_sevens, cut); break;
+    case 7: mixed_widths::run<7>(std::move(tables), two_sevens, cut); break;
+    case 8: mixed_widths::run<8>(std::move(tables), two_sevens, cut); break;
+    case 9: mixed_widths::run<9>(std::move(tables), two_sevens, cut); break;
     default: throw std::runtime_error("degree must be between five and nine");
     }
 }

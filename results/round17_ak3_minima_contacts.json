@@ -1,0 +1,1054 @@
+{
+  "forward_energy": 20,
+  "reverse_energy": 56,
+  "requested_stages": 4,
+  "allocation_cap": 900000,
+  "forward_pairs": 5,
+  "reverse_pairs": 23902,
+  "reverse_donors": 147060,
+  "canonical_forward_prefix_sha256": "fe3c8428f1c1dfbacfd8c9e58db61c9f3bc2051e53bed6e3583dfe149cc148ba",
+  "reverse_tsv_sha256": "c9dd0627965a6f1ffa899c4a465b95a788d739eedd49089d9b6c5681980ba2c4",
+  "positive_control": {
+    "reference_checks": 3,
+    "joins": [
+      {
+        "forward_pair": [
+          "XXYYxyyyxYY",
+          "XXXYYxyXyyxYYXYYxyyyxYY"
+        ],
+        "reverse_pair": [
+          "XXXYYxyyyxYYXYYxyXyyxYY",
+          "XXYYxyXyyxYY"
+        ],
+        "intermediate": [
+          "XXYYxyXyyxYY",
+          "XXXYYxyXyyxYYXYYxyyyxYY"
+        ],
+        "forward_stage": 1,
+        "reverse_stage": 1,
+        "strict_replay": {
+          "moves": 213,
+          "peak_total_length": 59,
+          "endpoint": [
+            "x",
+            "y"
+          ]
+        },
+        "cyclic_peak": 58
+      },
+      {
+        "forward_pair": [
+          "XXXYYxyXyyxYYXYYxyyyxYY",
+          "XXYYxyyyxYY"
+        ],
+        "reverse_pair": [
+          "XXXYYxyyyxYYXYYxyXyyxYY",
+          "XXYYxyXyyxYY"
+        ],
+        "intermediate": [
+          "XXYYxyXyyxYY",
+          "XXYYxyyyxYY"
+        ],
+        "forward_stage": 1,
+        "reverse_stage": 1,
+        "strict_replay": {
+          "moves": 245,
+          "peak_total_length": 60,
+          "endpoint": [
+            "x",
+            "y"
+          ]
+        },
+        "cyclic_peak": 35
+      }
+    ]
+  },
+  "forward": {
+    "charts": 10,
+    "word_checks": 242847,
+    "allocation_stops": 10,
+    "last_completed_stage_histogram": {
+      "3": 10
+    },
+    "largest_graph": 170430,
+    "word_hits": 7
+  },
+  "reverse": {
+    "charts": 14,
+    "word_checks": 22,
+    "allocation_stops": 12,
+    "last_completed_stage_histogram": {
+      "2": 3,
+      "3": 9,
+      "4": 2
+    },
+    "largest_graph": 358313,
+    "word_hits": 0
+  },
+  "forward_receipts": [
+    {
+      "pair": [
+        "XXXyyXyXY",
+        "XYXyxYYXyyy"
+      ],
+      "word_checks": 23839,
+      "graph_sizes": [
+        9,
+        292,
+        7107,
+        170430
+      ],
+      "allocation_stop": true,
+      "hits": [
+        [
+          "XXXXYxyyXyyXY",
+          1
+        ]
+      ]
+    },
+    {
+      "pair": [
+        "XXXyyXyXY",
+        "XYXyyxYYXyy"
+      ],
+      "word_checks": 23839,
+      "graph_sizes": [
+        9,
+        273,
+        6195,
+        138819
+      ],
+      "allocation_stop": true,
+      "hits": []
+    },
+    {
+      "pair": [
+        "XXXyyxxYY",
+        "XYXyyxYYXyy"
+      ],
+      "word_checks": 23839,
+      "graph_sizes": [
+        9,
+        273,
+        6195,
+        138819
+      ],
+      "allocation_stop": true,
+      "hits": [
+        [
+          "XXXyyxxYY",
+          0
+        ],
+        [
+          "XXYXyyxYYYxxyyXy",
+          1
+        ],
+        [
+          "XXyXyyxYxYY",
+          1
+        ]
+      ]
+    },
+    {
+      "pair": [
+        "XXXyyxxYY",
+        "XYYXyyxYXyy"
+      ],
+      "word_checks": 23839,
+      "graph_sizes": [
+        9,
+        273,
+        6195,
+        138819
+      ],
+      "allocation_stop": true,
+      "hits": [
+        [
+          "XXXyyxxYY",
+          0
+        ]
+      ]
+    },
+    {
+      "pair": [
+        "XXYYXXyXY",
+        "XYYXyXYYxyy"
+      ],
+      "word_checks": 23839,
+      "graph_sizes": [
+        9,
+        273,
+        6195,
+        138819
+      ],
+      "allocation_stop": true,
+      "hits": []
+    },
+    {
+      "pair": [
+        "XYXyxYYXyyy",
+        "XXXyyXyXY"
+      ],
+      "word_checks": 8726,
+      "graph_sizes": [
+        11,
+        255,
+        4601,
+        81761
+      ],
+      "allocation_stop": true,
+      "hits": []
+    },
+    {
+      "pair": [
+        "XYXyyxYYXyy",
+        "XXXyyXyXY"
+      ],
+      "word_checks": 8726,
+      "graph_sizes": [
+        11,
+        255,
+        4601,
+        81761
+      ],
+      "allocation_stop": true,
+      "hits": []
+    },
+    {
+      "pair": [
+        "XYXyyxYYXyy",
+        "XXXyyxxYY"
+      ],
+      "word_checks": 48737,
+      "graph_sizes": [
+        11,
+        255,
+        4627,
+        82218
+      ],
+      "allocation_stop": true,
+      "hits": [
+        [
+          "XXYXYYxyyyyxxYYYYxyy",
+          1
+        ]
+      ]
+    },
+    {
+      "pair": [
+        "XYYXyXYYxyy",
+        "XXYYXXyXY"
+      ],
+      "word_checks": 8726,
+      "graph_sizes": [
+        11,
+        244,
+        4153,
+        69614
+      ],
+      "allocation_stop": true,
+      "hits": []
+    },
+    {
+      "pair": [
+        "XYYXyyxYXyy",
+        "XXXyyxxYY"
+      ],
+      "word_checks": 48737,
+      "graph_sizes": [
+        11,
+        255,
+        4628,
+        82235
+      ],
+      "allocation_stop": true,
+      "hits": [
+        [
+          "XXYXYYxyyyyxxYYYYxyy",
+          1
+        ]
+      ]
+    }
+  ],
+  "reverse_receipts": [
+    {
+      "pair": [
+        "XXXYXyy",
+        "XXXyyxxYY"
+      ],
+      "word_checks": 2,
+      "graph_sizes": [
+        7,
+        155,
+        2769,
+        48922
+      ],
+      "allocation_stop": true,
+      "hits": []
+    },
+    {
+      "pair": [
+        "XXXYYXy",
+        "XXXyyxxYY"
+      ],
+      "word_checks": 2,
+      "graph_sizes": [
+        7,
+        155,
+        2769,
+        48922
+      ],
+      "allocation_stop": true,
+      "hits": []
+    },
+    {
+      "pair": [
+        "XXXYYxy",
+        "XXXyyxxYY"
+      ],
+      "word_checks": 2,
+      "graph_sizes": [
+        7,
+        154,
+        2750,
+        48595
+      ],
+      "allocation_stop": true,
+      "hits": []
+    },
+    {
+      "pair": [
+        "XXXYxyy",
+        "XXXXYxyyXyyXY"
+      ],
+      "word_checks": 1,
+      "graph_sizes": [
+        7,
+        363,
+        16649
+      ],
+      "allocation_stop": true,
+      "hits": []
+    },
+    {
+      "pair": [
+        "XXXYxyy",
+        "XXXyyxxYY"
+      ],
+      "word_checks": 2,
+      "graph_sizes": [
+        7,
+        154,
+        2750,
+        48595
+      ],
+      "allocation_stop": true,
+      "hits": []
+    },
+    {
+      "pair": [
+        "XXY",
+        "XXXyyxxYY"
+      ],
+      "word_checks": 2,
+      "graph_sizes": [
+        3,
+        65,
+        1153,
+        20317,
+        358313
+      ],
+      "allocation_stop": false,
+      "hits": []
+    },
+    {
+      "pair": [
+        "XXYXYYxyyyyyy",
+        "XXYXYYxyyyyxxYYYYxyy"
+      ],
+      "word_checks": 1,
+      "graph_sizes": [
+        13,
+        1526,
+        169837
+      ],
+      "allocation_stop": true,
+      "hits": []
+    },
+    {
+      "pair": [
+        "XXYxxyy",
+        "XXyXyyxYxYY"
+      ],
+      "word_checks": 1,
+      "graph_sizes": [
+        7,
+        245,
+        7083,
+        203051
+      ],
+      "allocation_stop": true,
+      "hits": []
+    },
+    {
+      "pair": [
+        "XXy",
+        "XXXyyxxYY"
+      ],
+      "word_checks": 2,
+      "graph_sizes": [
+        3,
+        65,
+        1153,
+        20317,
+        358313
+      ],
+      "allocation_stop": false,
+      "hits": []
+    },
+    {
+      "pair": [
+        "XXyXYY",
+        "XXXyyxxYY"
+      ],
+      "word_checks": 2,
+      "graph_sizes": [
+        6,
+        135,
+        2427,
+        42971
+      ],
+      "allocation_stop": true,
+      "hits": []
+    },
+    {
+      "pair": [
+        "XXyyXY",
+        "XXXyyxxYY"
+      ],
+      "word_checks": 2,
+      "graph_sizes": [
+        6,
+        135,
+        2427,
+        42971
+      ],
+      "allocation_stop": true,
+      "hits": []
+    },
+    {
+      "pair": [
+        "XXyyxYY",
+        "XXYXyyxYYYxxyyXy"
+      ],
+      "word_checks": 1,
+      "graph_sizes": [
+        7,
+        597,
+        46273
+      ],
+      "allocation_stop": true,
+      "hits": []
+    },
+    {
+      "pair": [
+        "XXyyyxYY",
+        "XXyXyyxYxYY"
+      ],
+      "word_checks": 1,
+      "graph_sizes": [
+        8,
+        269,
+        7735,
+        221591
+      ],
+      "allocation_stop": true,
+      "hits": []
+    },
+    {
+      "pair": [
+        "XYYxyyy",
+        "XXyXyyxYxYY"
+      ],
+      "word_checks": 1,
+      "graph_sizes": [
+        7,
+        231,
+        6625,
+        189729
+      ],
+      "allocation_stop": true,
+      "hits": []
+    }
+  ],
+  "joins": [],
+  "exact_last_block": {
+    "archive_rows": 23902,
+    "permutation_charts": [
+      {
+        "source_row": "XXXYXyy",
+        "frozen_donor": "XXXyyxxYY",
+        "tested_receivers": [
+          "XYXyyxYYXyy",
+          "XYYXyyxYXyy"
+        ],
+        "witnesses": {},
+        "unresolved": [
+          "XYXyyxYYXyy",
+          "XYYXyyxYXyy"
+        ]
+      },
+      {
+        "source_row": "XXXYYXy",
+        "frozen_donor": "XXXyyxxYY",
+        "tested_receivers": [
+          "XYXyyxYYXyy",
+          "XYYXyyxYXyy"
+        ],
+        "witnesses": {},
+        "unresolved": [
+          "XYXyyxYYXyy",
+          "XYYXyyxYXyy"
+        ]
+      },
+      {
+        "source_row": "XXXYYxy",
+        "frozen_donor": "XXXyyxxYY",
+        "tested_receivers": [
+          "XYXyyxYYXyy",
+          "XYYXyyxYXyy"
+        ],
+        "witnesses": {},
+        "unresolved": [
+          "XYXyyxYYXyy",
+          "XYYXyyxYXyy"
+        ]
+      },
+      {
+        "source_row": "XXXYxyy",
+        "frozen_donor": "XXXXYxyyXyyXY",
+        "tested_receivers": [
+          "XYXyxYYXyyy"
+        ],
+        "witnesses": {
+          "XYXyxYYXyyy": {
+            "x": [
+              1,
+              3,
+              2,
+              5,
+              4
+            ],
+            "y": [
+              2,
+              4,
+              1,
+              3,
+              5
+            ],
+            "receiver_type": [
+              2,
+              3
+            ],
+            "target_type": [
+              1,
+              4
+            ]
+          }
+        },
+        "unresolved": []
+      },
+      {
+        "source_row": "XXXYxyy",
+        "frozen_donor": "XXXyyxxYY",
+        "tested_receivers": [
+          "XYXyyxYYXyy",
+          "XYYXyyxYXyy"
+        ],
+        "witnesses": {},
+        "unresolved": [
+          "XYXyyxYYXyy",
+          "XYYXyyxYXyy"
+        ]
+      },
+      {
+        "source_row": "XXY",
+        "frozen_donor": "XXXyyxxYY",
+        "tested_receivers": [
+          "XYXyyxYYXyy",
+          "XYYXyyxYXyy"
+        ],
+        "witnesses": {},
+        "unresolved": [
+          "XYXyyxYYXyy",
+          "XYYXyyxYXyy"
+        ]
+      },
+      {
+        "source_row": "XXYXYYxyyyyyy",
+        "frozen_donor": "XXYXYYxyyyyxxYYYYxyy",
+        "tested_receivers": [
+          "XXXyyxxYY"
+        ],
+        "witnesses": {
+          "XXXyyxxYY": {
+            "x": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              1
+            ],
+            "y": [
+              2,
+              6,
+              4,
+              8,
+              9,
+              1,
+              5,
+              3,
+              7
+            ],
+            "receiver_type": [
+              9
+            ],
+            "target_type": [
+              3,
+              3,
+              3
+            ]
+          }
+        },
+        "unresolved": []
+      },
+      {
+        "source_row": "XXYxxyy",
+        "frozen_donor": "XXyXyyxYxYY",
+        "tested_receivers": [
+          "XYXyyxYYXyy"
+        ],
+        "witnesses": {
+          "XYXyyxYYXyy": {
+            "x": [
+              1,
+              3,
+              2,
+              5,
+              6,
+              7,
+              4
+            ],
+            "y": [
+              2,
+              4,
+              7,
+              5,
+              6,
+              3,
+              1
+            ],
+            "receiver_type": [
+              1,
+              2,
+              4
+            ],
+            "target_type": [
+              1,
+              1,
+              5
+            ]
+          }
+        },
+        "unresolved": []
+      },
+      {
+        "source_row": "XXy",
+        "frozen_donor": "XXXyyxxYY",
+        "tested_receivers": [
+          "XYXyyxYYXyy",
+          "XYYXyyxYXyy"
+        ],
+        "witnesses": {},
+        "unresolved": [
+          "XYXyyxYYXyy",
+          "XYYXyyxYXyy"
+        ]
+      },
+      {
+        "source_row": "XXyXYY",
+        "frozen_donor": "XXXyyxxYY",
+        "tested_receivers": [
+          "XYXyyxYYXyy",
+          "XYYXyyxYXyy"
+        ],
+        "witnesses": {},
+        "unresolved": [
+          "XYXyyxYYXyy",
+          "XYYXyyxYXyy"
+        ]
+      },
+      {
+        "source_row": "XXyyXY",
+        "frozen_donor": "XXXyyxxYY",
+        "tested_receivers": [
+          "XYXyyxYYXyy",
+          "XYYXyyxYXyy"
+        ],
+        "witnesses": {},
+        "unresolved": [
+          "XYXyyxYYXyy",
+          "XYYXyyxYXyy"
+        ]
+      },
+      {
+        "source_row": "XXyyxYY",
+        "frozen_donor": "XXYXyyxYYYxxyyXy",
+        "tested_receivers": [
+          "XYXyyxYYXyy"
+        ],
+        "witnesses": {
+          "XYXyyxYYXyy": {
+            "x": [
+              2,
+              1,
+              4,
+              5,
+              3
+            ],
+            "y": [
+              2,
+              3,
+              4,
+              1,
+              5
+            ],
+            "receiver_type": [
+              1,
+              4
+            ],
+            "target_type": [
+              2,
+              3
+            ]
+          }
+        },
+        "unresolved": []
+      },
+      {
+        "source_row": "XXyyyxYY",
+        "frozen_donor": "XXyXyyxYxYY",
+        "tested_receivers": [
+          "XYXyyxYYXyy"
+        ],
+        "witnesses": {
+          "XYXyyxYYXyy": {
+            "x": [
+              1,
+              3,
+              2,
+              5,
+              6,
+              7,
+              4
+            ],
+            "y": [
+              2,
+              4,
+              7,
+              3,
+              5,
+              6,
+              1
+            ],
+            "receiver_type": [
+              1,
+              1,
+              5
+            ],
+            "target_type": [
+              2,
+              2,
+              3
+            ]
+          }
+        },
+        "unresolved": []
+      },
+      {
+        "source_row": "XYYxyyy",
+        "frozen_donor": "XXyXyyxYxYY",
+        "tested_receivers": [
+          "XYXyyxYYXyy"
+        ],
+        "witnesses": {
+          "XYXyyxYYXyy": {
+            "x": [
+              1,
+              3,
+              2,
+              5,
+              6,
+              7,
+              4
+            ],
+            "y": [
+              2,
+              4,
+              7,
+              3,
+              5,
+              6,
+              1
+            ],
+            "receiver_type": [
+              1,
+              1,
+              5
+            ],
+            "target_type": [
+              2,
+              2,
+              3
+            ]
+          }
+        },
+        "unresolved": []
+      }
+    ],
+    "permutation_contacts": 6,
+    "affine_contacts": [
+      {
+        "archived": "XXXYXyy",
+        "reached": "XYXyyxYYXyy",
+        "donor": "XXXyyxxYY",
+        "archived_affine": {
+          "adjusted_translation": "-11/3",
+          "valuation_sum": -1
+        },
+        "reached_affine": {
+          "adjusted_translation": "-4/3",
+          "valuation_sum": 1
+        }
+      },
+      {
+        "archived": "XXXYXyy",
+        "reached": "XYYXyyxYXyy",
+        "donor": "XXXyyxxYY",
+        "archived_affine": {
+          "adjusted_translation": "-11/3",
+          "valuation_sum": -1
+        },
+        "reached_affine": {
+          "adjusted_translation": "-4/3",
+          "valuation_sum": 1
+        }
+      },
+      {
+        "archived": "XXXYYXy",
+        "reached": "XYXyyxYYXyy",
+        "donor": "XXXyyxxYY",
+        "archived_affine": {
+          "adjusted_translation": "11/3",
+          "valuation_sum": -1
+        },
+        "reached_affine": {
+          "adjusted_translation": "-4/3",
+          "valuation_sum": 1
+        }
+      },
+      {
+        "archived": "XXXYYXy",
+        "reached": "XYYXyyxYXyy",
+        "donor": "XXXyyxxYY",
+        "archived_affine": {
+          "adjusted_translation": "11/3",
+          "valuation_sum": -1
+        },
+        "reached_affine": {
+          "adjusted_translation": "-4/3",
+          "valuation_sum": 1
+        }
+      },
+      {
+        "archived": "XXXYYxy",
+        "reached": "XYXyyxYYXyy",
+        "donor": "XXXyyxxYY",
+        "archived_affine": {
+          "adjusted_translation": "7/3",
+          "valuation_sum": -1
+        },
+        "reached_affine": {
+          "adjusted_translation": "-4/3",
+          "valuation_sum": 1
+        }
+      },
+      {
+        "archived": "XXXYYxy",
+        "reached": "XYYXyyxYXyy",
+        "donor": "XXXyyxxYY",
+        "archived_affine": {
+          "adjusted_translation": "7/3",
+          "valuation_sum": -1
+        },
+        "reached_affine": {
+          "adjusted_translation": "-4/3",
+          "valuation_sum": 1
+        }
+      },
+      {
+        "archived": "XXXYxyy",
+        "reached": "XYXyyxYYXyy",
+        "donor": "XXXyyxxYY",
+        "archived_affine": {
+          "adjusted_translation": "-7/3",
+          "valuation_sum": -1
+        },
+        "reached_affine": {
+          "adjusted_translation": "-4/3",
+          "valuation_sum": 1
+        }
+      },
+      {
+        "archived": "XXXYxyy",
+        "reached": "XYYXyyxYXyy",
+        "donor": "XXXyyxxYY",
+        "archived_affine": {
+          "adjusted_translation": "-7/3",
+          "valuation_sum": -1
+        },
+        "reached_affine": {
+          "adjusted_translation": "-4/3",
+          "valuation_sum": 1
+        }
+      },
+      {
+        "archived": "XXyXYY",
+        "reached": "XYXyyxYYXyy",
+        "donor": "XXXyyxxYY",
+        "archived_affine": {
+          "adjusted_translation": "7/3",
+          "valuation_sum": -1
+        },
+        "reached_affine": {
+          "adjusted_translation": "-4/3",
+          "valuation_sum": 1
+        }
+      },
+      {
+        "archived": "XXyXYY",
+        "reached": "XYYXyyxYXyy",
+        "donor": "XXXyyxxYY",
+        "archived_affine": {
+          "adjusted_translation": "7/3",
+          "valuation_sum": -1
+        },
+        "reached_affine": {
+          "adjusted_translation": "-4/3",
+          "valuation_sum": 1
+        }
+      },
+      {
+        "archived": "XXyyXY",
+        "reached": "XYXyyxYYXyy",
+        "donor": "XXXyyxxYY",
+        "archived_affine": {
+          "adjusted_translation": "-7/3",
+          "valuation_sum": -1
+        },
+        "reached_affine": {
+          "adjusted_translation": "-4/3",
+          "valuation_sum": 1
+        }
+      },
+      {
+        "archived": "XXyyXY",
+        "reached": "XYYXyyxYXyy",
+        "donor": "XXXyyxxYY",
+        "archived_affine": {
+          "adjusted_translation": "-7/3",
+          "valuation_sum": -1
+        },
+        "reached_affine": {
+          "adjusted_translation": "-4/3",
+          "valuation_sum": 1
+        }
+      }
+    ],
+    "hnn_contacts": [
+      {
+        "archived": "XXY",
+        "reached": "XYXyyxYYXyy",
+        "donor": "XXXyyxxYY",
+        "archived_affine": {
+          "adjusted_translation": "2",
+          "valuation_sum": 1
+        },
+        "reached_affine": {
+          "adjusted_translation": "-4/3",
+          "valuation_sum": 1
+        },
+        "archived_primitive_exponent": 2
+      },
+      {
+        "archived": "XXY",
+        "reached": "XYYXyyxYXyy",
+        "donor": "XXXyyxxYY",
+        "archived_affine": {
+          "adjusted_translation": "2",
+          "valuation_sum": 1
+        },
+        "reached_affine": {
+          "adjusted_translation": "-4/3",
+          "valuation_sum": 1
+        },
+        "archived_primitive_exponent": 2
+      },
+      {
+        "archived": "XXy",
+        "reached": "XYXyyxYYXyy",
+        "donor": "XXXyyxxYY",
+        "archived_affine": {
+          "adjusted_translation": "-2",
+          "valuation_sum": 1
+        },
+        "reached_affine": {
+          "adjusted_translation": "-4/3",
+          "valuation_sum": 1
+        },
+        "archived_primitive_exponent": -2
+      },
+      {
+        "archived": "XXy",
+        "reached": "XYYXyyxYXyy",
+        "donor": "XXXyyxxYY",
+        "archived_affine": {
+          "adjusted_translation": "-2",
+          "valuation_sum": 1
+        },
+        "reached_affine": {
+          "adjusted_translation": "-4/3",
+          "valuation_sum": 1
+        },
+        "archived_primitive_exponent": -2
+      }
+    ],
+    "total": 22
+  },
+  "additional_frozen_exclusions": [
+    {
+      "donor": "xxxyyXXYY",
+      "receiver": "xyxYYxyyXYY",
+      "primitive_class": null
+    },
+    {
+      "donor": "xxxyyXXYY",
+      "receiver": "xyXYYxyyxYY",
+      "primitive_class": null
+    }
+  ]
+}

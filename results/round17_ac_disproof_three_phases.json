@@ -1,0 +1,6613 @@
+{
+  "energy24": [
+    {
+      "source": [
+        "XXYxYXXYxxy",
+        "XXYXYxxyXyxxy"
+      ],
+      "second_power": 1,
+      "powers": [
+        0,
+        1,
+        2
+      ],
+      "source_vertex_pairs": 136,
+      "distinct_core_pairs": 68,
+      "proper_cumulative": 51804,
+      "character_rank_7": 12836,
+      "broad_inequalities": 169290,
+      "balanced_gap_inequalities": 11560,
+      "primitive_free_core": 5952,
+      "partial_map_pair_states": 749976,
+      "character_rank_5": 138,
+      "cases": [
+        {
+          "source_pairs": [
+            [
+              0,
+              1,
+              "x"
+            ],
+            [
+              1,
+              3,
+              "x"
+            ]
+          ],
+          "vertices_before_last_fold": 45,
+          "proper_cumulative": 543,
+          "character_rank_7": 289,
+          "broad_inequalities": 3068,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 158,
+          "partial_map_pair_states": 18136
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              2,
+              "y"
+            ],
+            [
+              1,
+              4,
+              "y"
+            ],
+            [
+              3,
+              6,
+              "y"
+            ],
+            [
+              5,
+              10,
+              "y"
+            ],
+            [
+              7,
+              14,
+              "y"
+            ],
+            [
+              9,
+              12,
+              "YXXyyxyxx"
+            ],
+            [
+              11,
+              16,
+              "y"
+            ],
+            [
+              13,
+              15,
+              "YXXyyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 35,
+          "character_rank_7": 233,
+          "broad_inequalities": 3638,
+          "balanced_gap_inequalities": 338,
+          "proper_cumulative": 291,
+          "primitive_free_core": 71,
+          "partial_map_pair_states": 9262
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              3,
+              "xx"
+            ],
+            [
+              2,
+              5,
+              "xx"
+            ],
+            [
+              4,
+              8,
+              "xx"
+            ]
+          ],
+          "vertices_before_last_fold": 45,
+          "proper_cumulative": 555,
+          "character_rank_7": 310,
+          "broad_inequalities": 3530,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 125,
+          "partial_map_pair_states": 17684
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              4,
+              "xy"
+            ],
+            [
+              1,
+              6,
+              "xy"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "character_rank_7": 179,
+          "broad_inequalities": 3420,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 711,
+          "primitive_free_core": 143,
+          "partial_map_pair_states": 17488,
+          "character_rank_5": 48
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              5,
+              "yxx"
+            ],
+            [
+              1,
+              8,
+              "yxx"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "character_rank_7": 216,
+          "broad_inequalities": 2528,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 85,
+          "partial_map_pair_states": 11316,
+          "proper_cumulative": 780
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              6,
+              "xxy"
+            ],
+            [
+              2,
+              10,
+              "xxy"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "character_rank_7": 171,
+          "broad_inequalities": 2796,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 139,
+          "partial_map_pair_states": 22000,
+          "proper_cumulative": 771
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              7,
+              "Xyxx"
+            ],
+            [
+              1,
+              5,
+              "Xyxx"
+            ],
+            [
+              2,
+              11,
+              "Xyxx"
+            ],
+            [
+              3,
+              8,
+              "Xyxx"
+            ],
+            [
+              4,
+              13,
+              "YXXYxxy"
+            ],
+            [
+              5,
+              12,
+              "Xyxx"
+            ],
+            [
+              6,
+              9,
+              "YXXYxxy"
+            ],
+            [
+              7,
+              15,
+              "Xyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 31,
+          "character_rank_7": 300,
+          "broad_inequalities": 3800,
+          "balanced_gap_inequalities": 2728,
+          "primitive_free_core": 82,
+          "partial_map_pair_states": 11540,
+          "proper_cumulative": 83
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              8,
+              "xyxx"
+            ],
+            [
+              2,
+              12,
+              "xyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "character_rank_7": 203,
+          "broad_inequalities": 2792,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 113,
+          "partial_map_pair_states": 15688,
+          "proper_cumulative": 765
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              9,
+              "Yxxy"
+            ],
+            [
+              2,
+              6,
+              "Yxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "character_rank_7": 302,
+          "broad_inequalities": 3848,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 62,
+          "partial_map_pair_states": 10026,
+          "proper_cumulative": 717
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              10,
+              "yxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 49,
+          "proper_cumulative": 936,
+          "character_rank_7": 115,
+          "broad_inequalities": 2074,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 125,
+          "partial_map_pair_states": 14540
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              11,
+              "yXyxx"
+            ],
+            [
+              1,
+              13,
+              "XXYxxy"
+            ],
+            [
+              3,
+              9,
+              "XXYxxy"
+            ],
+            [
+              5,
+              6,
+              "XXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 41,
+          "character_rank_7": 287,
+          "broad_inequalities": 2902,
+          "balanced_gap_inequalities": 640,
+          "primitive_free_core": 137,
+          "partial_map_pair_states": 16308,
+          "proper_cumulative": 396
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              12,
+              "yxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 49,
+          "character_rank_7": 238,
+          "broad_inequalities": 3456,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 179,
+          "partial_map_pair_states": 23764,
+          "proper_cumulative": 759
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              13,
+              "XYxxy"
+            ],
+            [
+              1,
+              9,
+              "XYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "character_rank_7": 92,
+          "broad_inequalities": 1216,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 894,
+          "primitive_free_core": 95,
+          "partial_map_pair_states": 9244
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              14,
+              "Xyxxy"
+            ],
+            [
+              1,
+              10,
+              "Xyxxy"
+            ],
+            [
+              2,
+              16,
+              "Xyxxy"
+            ],
+            [
+              4,
+              15,
+              "YXXyxyxx"
+            ],
+            [
+              6,
+              12,
+              "YXXyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 35,
+          "proper_cumulative": 291,
+          "character_rank_7": 238,
+          "broad_inequalities": 3834,
+          "balanced_gap_inequalities": 390,
+          "primitive_free_core": 66,
+          "partial_map_pair_states": 8580
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              15,
+              "Xyxyxx"
+            ],
+            [
+              1,
+              12,
+              "Xyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "character_rank_7": 126,
+          "broad_inequalities": 1940,
+          "balanced_gap_inequalities": 836,
+          "proper_cumulative": 828,
+          "primitive_free_core": 127,
+          "partial_map_pair_states": 15964
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              16,
+              "yXyxxy"
+            ],
+            [
+              1,
+              15,
+              "XXyxyxx"
+            ],
+            [
+              3,
+              12,
+              "XXyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 45,
+          "character_rank_7": 209,
+          "broad_inequalities": 2994,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 130,
+          "partial_map_pair_states": 14300,
+          "proper_cumulative": 651
+        },
+        {
+          "source_pairs": [
+            [
+              1,
+              2,
+              "Xy"
+            ],
+            [
+              3,
+              4,
+              "Xy"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "character_rank_7": 224,
+          "broad_inequalities": 2828,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 119,
+          "partial_map_pair_states": 13266,
+          "proper_cumulative": 738
+        },
+        {
+          "source_pairs": [
+            [
+              1,
+              7,
+              "XXyxx"
+            ],
+            [
+              3,
+              5,
+              "XXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "character_rank_7": 261,
+          "broad_inequalities": 2822,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 130,
+          "partial_map_pair_states": 15438,
+          "proper_cumulative": 690
+        },
+        {
+          "source_pairs": [
+            [
+              1,
+              11,
+              "XyXyxx"
+            ],
+            [
+              3,
+              13,
+              "XXXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "character_rank_7": 166,
+          "broad_inequalities": 1948,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 810,
+          "primitive_free_core": 105,
+          "partial_map_pair_states": 10640
+        },
+        {
+          "source_pairs": [
+            [
+              1,
+              14,
+              "XXyxxy"
+            ],
+            [
+              3,
+              10,
+              "XXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "proper_cumulative": 919,
+          "character_rank_7": 108,
+          "broad_inequalities": 2096,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 54,
+          "partial_map_pair_states": 6064
+        },
+        {
+          "source_pairs": [
+            [
+              1,
+              16,
+              "XyXyxxy"
+            ],
+            [
+              3,
+              15,
+              "XXXyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "character_rank_7": 108,
+          "broad_inequalities": 1686,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 825,
+          "primitive_free_core": 148,
+          "partial_map_pair_states": 15740
+        },
+        {
+          "source_pairs": [
+            [
+              2,
+              3,
+              "Yxx"
+            ]
+          ],
+          "vertices_before_last_fold": 49,
+          "character_rank_7": 93,
+          "broad_inequalities": 902,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 66,
+          "partial_map_pair_states": 10232,
+          "proper_cumulative": 1017
+        },
+        {
+          "source_pairs": [
+            [
+              2,
+              4,
+              "Yxy"
+            ],
+            [
+              4,
+              6,
+              "Yxy"
+            ]
+          ],
+          "vertices_before_last_fold": 46,
+          "character_rank_7": 288,
+          "broad_inequalities": 3204,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 97,
+          "partial_map_pair_states": 12036,
+          "proper_cumulative": 650
+        },
+        {
+          "source_pairs": [
+            [
+              2,
+              7,
+              "YXyxx"
+            ],
+            [
+              4,
+              5,
+              "YXyxx"
+            ],
+            [
+              6,
+              8,
+              "YXyxx"
+            ],
+            [
+              10,
+              12,
+              "YXyxx"
+            ],
+            [
+              14,
+              15,
+              "YXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 41,
+          "character_rank_7": 166,
+          "broad_inequalities": 2258,
+          "balanced_gap_inequalities": 640,
+          "primitive_free_core": 172,
+          "partial_map_pair_states": 19106,
+          "proper_cumulative": 440,
+          "character_rank_5": 42
+        },
+        {
+          "source_pairs": [
+            [
+              2,
+              8,
+              "Yxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 49,
+          "character_rank_7": 77,
+          "broad_inequalities": 644,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 97,
+          "partial_map_pair_states": 11608,
+          "proper_cumulative": 1002
+        },
+        {
+          "source_pairs": [
+            [
+              2,
+              9,
+              "YYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 49,
+          "proper_cumulative": 951,
+          "character_rank_7": 151,
+          "broad_inequalities": 2808,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 74,
+          "partial_map_pair_states": 10312
+        },
+        {
+          "source_pairs": [
+            [
+              2,
+              13,
+              "YXYxxy"
+            ],
+            [
+              4,
+              9,
+              "YXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "proper_cumulative": 858,
+          "character_rank_7": 180,
+          "broad_inequalities": 1898,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 43,
+          "partial_map_pair_states": 5708
+        },
+        {
+          "source_pairs": [
+            [
+              2,
+              14,
+              "YXyxxy"
+            ],
+            [
+              4,
+              10,
+              "YXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "proper_cumulative": 747,
+          "character_rank_7": 246,
+          "broad_inequalities": 2660,
+          "balanced_gap_inequalities": 340,
+          "primitive_free_core": 88,
+          "partial_map_pair_states": 9272
+        },
+        {
+          "source_pairs": [
+            [
+              2,
+              15,
+              "YXyxyxx"
+            ],
+            [
+              4,
+              12,
+              "YXyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "proper_cumulative": 943,
+          "character_rank_7": 93,
+          "broad_inequalities": 2040,
+          "balanced_gap_inequalities": 390,
+          "primitive_free_core": 45,
+          "partial_map_pair_states": 4356
+        },
+        {
+          "source_pairs": [
+            [
+              3,
+              7,
+              "XXXyxx"
+            ],
+            [
+              5,
+              11,
+              "XXXyxx"
+            ],
+            [
+              8,
+              13,
+              "XXYXXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 45,
+          "character_rank_7": 213,
+          "broad_inequalities": 2346,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 675,
+          "primitive_free_core": 102,
+          "partial_map_pair_states": 14716
+        },
+        {
+          "source_pairs": [
+            [
+              3,
+              11,
+              "XXyXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 49,
+          "character_rank_7": 151,
+          "broad_inequalities": 1452,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 960,
+          "primitive_free_core": 65,
+          "partial_map_pair_states": 8692
+        },
+        {
+          "source_pairs": [
+            [
+              3,
+              14,
+              "XXXyxxy"
+            ],
+            [
+              5,
+              16,
+              "XXXyxxy"
+            ],
+            [
+              8,
+              15,
+              "XXYXXyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 45,
+          "proper_cumulative": 751,
+          "character_rank_7": 143,
+          "broad_inequalities": 1902,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 96,
+          "partial_map_pair_states": 12316
+        },
+        {
+          "source_pairs": [
+            [
+              3,
+              16,
+              "XXyXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 49,
+          "character_rank_7": 27,
+          "broad_inequalities": 138,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1074,
+          "primitive_free_core": 75,
+          "partial_map_pair_states": 9056
+        },
+        {
+          "source_pairs": [
+            [
+              4,
+              7,
+              "YXXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 41,
+          "character_rank_7": 287,
+          "broad_inequalities": 2902,
+          "balanced_gap_inequalities": 640,
+          "primitive_free_core": 137,
+          "partial_map_pair_states": 16308,
+          "proper_cumulative": 396
+        },
+        {
+          "source_pairs": [
+            [
+              4,
+              11,
+              "YXyXyxx"
+            ],
+            [
+              6,
+              13,
+              "YXXXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "proper_cumulative": 813,
+          "character_rank_7": 207,
+          "broad_inequalities": 2346,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 61,
+          "partial_map_pair_states": 6760
+        },
+        {
+          "source_pairs": [
+            [
+              4,
+              14,
+              "YXXyxxy"
+            ],
+            [
+              6,
+              10,
+              "YXXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 31,
+          "character_rank_7": 300,
+          "broad_inequalities": 3800,
+          "balanced_gap_inequalities": 2728,
+          "proper_cumulative": 83,
+          "primitive_free_core": 82,
+          "partial_map_pair_states": 11540
+        },
+        {
+          "source_pairs": [
+            [
+              4,
+              16,
+              "YXyXyxxy"
+            ],
+            [
+              6,
+              15,
+              "YXXXyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "proper_cumulative": 883,
+          "character_rank_7": 99,
+          "broad_inequalities": 1340,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 99,
+          "partial_map_pair_states": 10400
+        },
+        {
+          "source_pairs": [
+            [
+              5,
+              7,
+              "XXYXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 46,
+          "character_rank_7": 304,
+          "broad_inequalities": 3252,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 665,
+          "primitive_free_core": 66,
+          "partial_map_pair_states": 8652
+        },
+        {
+          "source_pairs": [
+            [
+              5,
+              8,
+              "XXYxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 46,
+          "character_rank_7": 304,
+          "broad_inequalities": 3252,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 665,
+          "primitive_free_core": 66,
+          "partial_map_pair_states": 8652
+        },
+        {
+          "source_pairs": [
+            [
+              5,
+              9,
+              "XXYYxxy"
+            ],
+            [
+              7,
+              13,
+              "XXYYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "proper_cumulative": 732,
+          "character_rank_7": 167,
+          "broad_inequalities": 3242,
+          "balanced_gap_inequalities": 0,
+          "character_rank_5": 48,
+          "primitive_free_core": 134,
+          "partial_map_pair_states": 16796
+        },
+        {
+          "source_pairs": [
+            [
+              5,
+              13,
+              "XXYXYxxy"
+            ],
+            [
+              7,
+              11,
+              "XXYxyXyxx"
+            ],
+            [
+              8,
+              9,
+              "XXYXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 35,
+          "proper_cumulative": 291,
+          "character_rank_7": 238,
+          "broad_inequalities": 3834,
+          "balanced_gap_inequalities": 390,
+          "primitive_free_core": 66,
+          "partial_map_pair_states": 8580
+        },
+        {
+          "source_pairs": [
+            [
+              5,
+              14,
+              "XXYXyxxy"
+            ],
+            [
+              8,
+              10,
+              "XXYXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "proper_cumulative": 934,
+          "character_rank_7": 99,
+          "broad_inequalities": 1758,
+          "balanced_gap_inequalities": 364,
+          "primitive_free_core": 48,
+          "partial_map_pair_states": 4664
+        },
+        {
+          "source_pairs": [
+            [
+              5,
+              15,
+              "XXYXyxyxx"
+            ],
+            [
+              7,
+              16,
+              "XXYxyXyxxy"
+            ],
+            [
+              8,
+              12,
+              "XXYXyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 45,
+          "proper_cumulative": 639,
+          "character_rank_7": 255,
+          "broad_inequalities": 2696,
+          "balanced_gap_inequalities": 300,
+          "primitive_free_core": 96,
+          "partial_map_pair_states": 10732
+        },
+        {
+          "source_pairs": [
+            [
+              6,
+              7,
+              "YXXXyxx"
+            ],
+            [
+              10,
+              11,
+              "YXXXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "proper_cumulative": 813,
+          "character_rank_7": 145,
+          "broad_inequalities": 2344,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 123,
+          "partial_map_pair_states": 16096
+        },
+        {
+          "source_pairs": [
+            [
+              6,
+              11,
+              "YXXyXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "proper_cumulative": 714,
+          "character_rank_7": 247,
+          "broad_inequalities": 3230,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 120,
+          "partial_map_pair_states": 21636
+        },
+        {
+          "source_pairs": [
+            [
+              6,
+              14,
+              "YXXXyxxy"
+            ],
+            [
+              10,
+              16,
+              "YXXXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "proper_cumulative": 819,
+          "character_rank_7": 187,
+          "broad_inequalities": 2142,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 75,
+          "partial_map_pair_states": 10444
+        },
+        {
+          "source_pairs": [
+            [
+              6,
+              16,
+              "YXXyXyxxy"
+            ],
+            [
+              9,
+              14,
+              "YXXyXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "proper_cumulative": 960,
+          "character_rank_7": 121,
+          "broad_inequalities": 2008,
+          "balanced_gap_inequalities": 0
+        },
+        {
+          "source_pairs": [
+            [
+              7,
+              8,
+              "XXYxxyxx"
+            ],
+            [
+              11,
+              12,
+              "XXYxxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "character_rank_7": 324,
+          "broad_inequalities": 3562,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 714,
+          "primitive_free_core": 43,
+          "partial_map_pair_states": 6688
+        },
+        {
+          "source_pairs": [
+            [
+              7,
+              9,
+              "XXYxYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "proper_cumulative": 714,
+          "character_rank_7": 247,
+          "broad_inequalities": 3230,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 120,
+          "partial_map_pair_states": 21636
+        },
+        {
+          "source_pairs": [
+            [
+              7,
+              10,
+              "XXYxyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 49,
+          "proper_cumulative": 981,
+          "character_rank_7": 102,
+          "broad_inequalities": 2134,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 93,
+          "partial_map_pair_states": 11228
+        },
+        {
+          "source_pairs": [
+            [
+              7,
+              12,
+              "XXYxyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 49,
+          "proper_cumulative": 930,
+          "character_rank_7": 170,
+          "broad_inequalities": 2314,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 76,
+          "partial_map_pair_states": 11372
+        },
+        {
+          "source_pairs": [
+            [
+              8,
+              11,
+              "XXYXyXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 49,
+          "proper_cumulative": 1017,
+          "character_rank_7": 98,
+          "broad_inequalities": 988,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 61,
+          "partial_map_pair_states": 8946
+        },
+        {
+          "source_pairs": [
+            [
+              8,
+              14,
+              "XXYXXyxxy"
+            ],
+            [
+              12,
+              16,
+              "XXYXXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "character_rank_7": 230,
+          "broad_inequalities": 2994,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 783,
+          "primitive_free_core": 68,
+          "partial_map_pair_states": 9310
+        },
+        {
+          "source_pairs": [
+            [
+              8,
+              16,
+              "XXYXyXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 49,
+          "proper_cumulative": 1062,
+          "character_rank_7": 78,
+          "broad_inequalities": 584,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 36,
+          "partial_map_pair_states": 5300
+        },
+        {
+          "source_pairs": [
+            [
+              9,
+              10,
+              "YXXyyxxy"
+            ],
+            [
+              13,
+              14,
+              "YXXyyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "proper_cumulative": 970,
+          "character_rank_7": 59,
+          "broad_inequalities": 1252,
+          "balanced_gap_inequalities": 836,
+          "primitive_free_core": 52,
+          "partial_map_pair_states": 6636
+        },
+        {
+          "source_pairs": [
+            [
+              9,
+              11,
+              "YXXyyXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 49,
+          "proper_cumulative": 855,
+          "character_rank_7": 284,
+          "broad_inequalities": 3808,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 37,
+          "partial_map_pair_states": 6308
+        },
+        {
+          "source_pairs": [
+            [
+              9,
+              13,
+              "YXXyXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "proper_cumulative": 784,
+          "character_rank_7": 238,
+          "broad_inequalities": 2900,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 59,
+          "partial_map_pair_states": 7478
+        },
+        {
+          "source_pairs": [
+            [
+              9,
+              15,
+              "YXXyXyxyxx"
+            ],
+            [
+              13,
+              16,
+              "YXXyxyXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "proper_cumulative": 943,
+          "character_rank_7": 72,
+          "broad_inequalities": 1372,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 66,
+          "partial_map_pair_states": 7396
+        },
+        {
+          "source_pairs": [
+            [
+              9,
+              16,
+              "YXXyyXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 49,
+          "proper_cumulative": 1062,
+          "character_rank_7": 114,
+          "broad_inequalities": 1988,
+          "balanced_gap_inequalities": 0
+        },
+        {
+          "source_pairs": [
+            [
+              10,
+              13,
+              "YXXYXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "proper_cumulative": 766,
+          "character_rank_7": 212,
+          "broad_inequalities": 3124,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 103,
+          "partial_map_pair_states": 10800
+        },
+        {
+          "source_pairs": [
+            [
+              10,
+              14,
+              "YXXYXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 49,
+          "proper_cumulative": 996,
+          "character_rank_7": 180,
+          "broad_inequalities": 2156,
+          "balanced_gap_inequalities": 0
+        },
+        {
+          "source_pairs": [
+            [
+              10,
+              15,
+              "YXXYXyxyxx"
+            ],
+            [
+              14,
+              16,
+              "YXXYxyXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "proper_cumulative": 693,
+          "character_rank_7": 251,
+          "broad_inequalities": 2592,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 137,
+          "partial_map_pair_states": 14534
+        },
+        {
+          "source_pairs": [
+            [
+              11,
+              13,
+              "XXYxYXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "proper_cumulative": 784,
+          "character_rank_7": 238,
+          "broad_inequalities": 2900,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 59,
+          "partial_map_pair_states": 7478
+        },
+        {
+          "source_pairs": [
+            [
+              11,
+              14,
+              "XXYxYXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "proper_cumulative": 766,
+          "character_rank_7": 212,
+          "broad_inequalities": 3124,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 103,
+          "partial_map_pair_states": 10800
+        },
+        {
+          "source_pairs": [
+            [
+              11,
+              15,
+              "XXYxYXyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "proper_cumulative": 919,
+          "character_rank_7": 108,
+          "broad_inequalities": 2280,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 54,
+          "partial_map_pair_states": 5752
+        },
+        {
+          "source_pairs": [
+            [
+              12,
+              13,
+              "XXYXYXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 47,
+          "proper_cumulative": 919,
+          "character_rank_7": 108,
+          "broad_inequalities": 2280,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 54,
+          "partial_map_pair_states": 5752
+        },
+        {
+          "source_pairs": [
+            [
+              12,
+              14,
+              "XXYXYXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 49,
+          "proper_cumulative": 951,
+          "character_rank_7": 140,
+          "broad_inequalities": 1822,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 85,
+          "partial_map_pair_states": 9874
+        },
+        {
+          "source_pairs": [
+            [
+              12,
+              15,
+              "XXYXYXyxyxx"
+            ],
+            [
+              15,
+              16,
+              "XXYXYxyXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 46,
+          "character_rank_7": 208,
+          "broad_inequalities": 2272,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 767,
+          "primitive_free_core": 60,
+          "partial_map_pair_states": 7030
+        }
+      ],
+      "case_digest": "609029636afc115a78c3b42cac2ae9c1b23709c8a4791202943987c14a5d4535",
+      "rank_drop_example": {
+        "representative": "xy",
+        "third_relative_word": "XYx",
+        "enlarged_core": [
+          1,
+          2,
+          -1,
+          3,
+          -1,
+          0,
+          4,
+          -1,
+          0,
+          5,
+          2,
+          2,
+          -1,
+          4,
+          0,
+          -1,
+          3,
+          6,
+          7,
+          1,
+          2,
+          -1,
+          -1,
+          8,
+          4,
+          9,
+          9,
+          10,
+          -1,
+          8,
+          -1,
+          4,
+          7,
+          11,
+          5,
+          -1,
+          6,
+          -1,
+          -1,
+          6,
+          12,
+          -1,
+          6,
+          -1,
+          8,
+          -1,
+          -1,
+          13,
+          -1,
+          10,
+          -1,
+          14,
+          15,
+          -1,
+          11,
+          -1,
+          -1,
+          15,
+          12,
+          -1,
+          14,
+          13,
+          -1,
+          -1
+        ],
+        "ambient_primitive_loop": {
+          "alphabet": "xy",
+          "positive_basis_program": "",
+          "component": 1,
+          "loop_vertex": 2,
+          "word_length": 1,
+          "base_to_loop_path": "X",
+          "cyclic_primitive_word": "y",
+          "based_primitive_word": "Xyx"
+        },
+        "coordinate_rows": [
+          [
+            0,
+            -1,
+            -1,
+            -1,
+            0
+          ],
+          [
+            0,
+            -1,
+            0,
+            0,
+            -1
+          ],
+          [
+            -1,
+            0,
+            -1,
+            0,
+            0
+          ],
+          [
+            1,
+            -1,
+            -2,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1,
+            -1,
+            0
+          ],
+          [
+            0,
+            -1,
+            0,
+            0,
+            -1
+          ]
+        ],
+        "third_relative_coordinates": [
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "character": [
+          -1,
+          -3,
+          1,
+          2,
+          3
+        ],
+        "broad_inequalities": 28,
+        "refined": [],
+        "broad_tests": [
+          {
+            "alphabet": [
+              0,
+              2
+            ],
+            "forbidden_double": 0,
+            "status": "PASS",
+            "cyclic_components": [
+              {
+                "states": [
+                  13,
+                  18
+                ],
+                "strict_cycle_voltage_sign": 1,
+                "potential": [
+                  -1,
+                  0
+                ]
+              },
+              {
+                "states": [
+                  5
+                ],
+                "strict_cycle_voltage_sign": -1,
+                "potential": [
+                  0
+                ]
+              },
+              {
+                "states": [
+                  0,
+                  3,
+                  7,
+                  8
+                ],
+                "strict_cycle_voltage_sign": 1,
+                "potential": [
+                  -1,
+                  -2,
+                  0,
+                  -3
+                ]
+              }
+            ]
+          },
+          {
+            "alphabet": [
+              0,
+              2
+            ],
+            "forbidden_double": 1,
+            "status": "PASS",
+            "cyclic_components": [
+              {
+                "states": [
+                  13,
+                  18
+                ],
+                "strict_cycle_voltage_sign": 1,
+                "potential": [
+                  -1,
+                  0
+                ]
+              },
+              {
+                "states": [
+                  0,
+                  3,
+                  7,
+                  8
+                ],
+                "strict_cycle_voltage_sign": 1,
+                "potential": [
+                  -1,
+                  -2,
+                  0,
+                  -3
+                ]
+              }
+            ]
+          },
+          {
+            "alphabet": [
+              0,
+              3
+            ],
+            "forbidden_double": 0,
+            "status": "PASS",
+            "cyclic_components": [
+              {
+                "states": [
+                  5
+                ],
+                "strict_cycle_voltage_sign": 1,
+                "potential": [
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "alphabet": [
+              0,
+              3
+            ],
+            "forbidden_double": 1,
+            "status": "PASS",
+            "cyclic_components": []
+          },
+          {
+            "alphabet": [
+              1,
+              2
+            ],
+            "forbidden_double": 0,
+            "status": "PASS",
+            "cyclic_components": [
+              {
+                "states": [
+                  5
+                ],
+                "strict_cycle_voltage_sign": -1,
+                "potential": [
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "alphabet": [
+              1,
+              2
+            ],
+            "forbidden_double": 1,
+            "status": "PASS",
+            "cyclic_components": []
+          },
+          {
+            "alphabet": [
+              1,
+              3
+            ],
+            "forbidden_double": 0,
+            "status": "PASS",
+            "cyclic_components": [
+              {
+                "states": [
+                  12,
+                  19
+                ],
+                "strict_cycle_voltage_sign": -1,
+                "potential": [
+                  0,
+                  -1
+                ]
+              },
+              {
+                "states": [
+                  1,
+                  2,
+                  6,
+                  9
+                ],
+                "strict_cycle_voltage_sign": -1,
+                "potential": [
+                  -2,
+                  -1,
+                  -3,
+                  0
+                ]
+              },
+              {
+                "states": [
+                  5
+                ],
+                "strict_cycle_voltage_sign": 1,
+                "potential": [
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "alphabet": [
+              1,
+              3
+            ],
+            "forbidden_double": 1,
+            "status": "PASS",
+            "cyclic_components": [
+              {
+                "states": [
+                  1,
+                  2,
+                  6,
+                  9
+                ],
+                "strict_cycle_voltage_sign": -1,
+                "potential": [
+                  -2,
+                  -1,
+                  -3,
+                  0
+                ]
+              },
+              {
+                "states": [
+                  12,
+                  19
+                ],
+                "strict_cycle_voltage_sign": -1,
+                "potential": [
+                  0,
+                  -1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source": [
+        "XXYxYXXYxxy",
+        "XXYXYxxyXyxxy"
+      ],
+      "second_power": 2,
+      "powers": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "source_vertex_pairs": 136,
+      "distinct_core_pairs": 68,
+      "proper_cumulative": 91042,
+      "character_rank_9": 19927,
+      "broad_inequalities": 268864,
+      "balanced_gap_inequalities": 18768,
+      "primitive_free_core": 11734,
+      "partial_map_pair_states": 1608156,
+      "character_rank_5": 192,
+      "character_rank_7": 156,
+      "cases": [
+        {
+          "source_pairs": [
+            [
+              0,
+              1,
+              "x"
+            ],
+            [
+              1,
+              3,
+              "x"
+            ]
+          ],
+          "vertices_before_last_fold": 58,
+          "proper_cumulative": 929,
+          "character_rank_9": 457,
+          "broad_inequalities": 4924,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 267,
+          "partial_map_pair_states": 34484
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              2,
+              "y"
+            ],
+            [
+              1,
+              4,
+              "y"
+            ],
+            [
+              3,
+              6,
+              "y"
+            ],
+            [
+              5,
+              10,
+              "y"
+            ],
+            [
+              7,
+              14,
+              "y"
+            ],
+            [
+              9,
+              12,
+              "YXXyyxyxx"
+            ],
+            [
+              11,
+              16,
+              "y"
+            ],
+            [
+              13,
+              15,
+              "YXXyyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 44,
+          "character_rank_9": 358,
+          "broad_inequalities": 6060,
+          "balanced_gap_inequalities": 676,
+          "proper_cumulative": 466,
+          "primitive_free_core": 122,
+          "partial_map_pair_states": 17768
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              3,
+              "xx"
+            ],
+            [
+              2,
+              5,
+              "xx"
+            ],
+            [
+              4,
+              8,
+              "xx"
+            ]
+          ],
+          "vertices_before_last_fold": 59,
+          "proper_cumulative": 972,
+          "character_rank_9": 504,
+          "broad_inequalities": 5894,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 235,
+          "partial_map_pair_states": 38120
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              4,
+              "xy"
+            ],
+            [
+              1,
+              6,
+              "xy"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "character_rank_9": 279,
+          "broad_inequalities": 5160,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1258,
+          "primitive_free_core": 287,
+          "partial_map_pair_states": 37256,
+          "character_rank_5": 67
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              5,
+              "yxx"
+            ],
+            [
+              1,
+              8,
+              "yxx"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "character_rank_9": 347,
+          "broad_inequalities": 4226,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 170,
+          "partial_map_pair_states": 24770,
+          "proper_cumulative": 1374
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              6,
+              "xxy"
+            ],
+            [
+              2,
+              10,
+              "xxy"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "character_rank_9": 260,
+          "broad_inequalities": 4416,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 273,
+          "partial_map_pair_states": 47004,
+          "proper_cumulative": 1358
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              7,
+              "Xyxx"
+            ],
+            [
+              1,
+              5,
+              "Xyxx"
+            ],
+            [
+              2,
+              11,
+              "Xyxx"
+            ],
+            [
+              3,
+              8,
+              "Xyxx"
+            ],
+            [
+              4,
+              13,
+              "YXXYxxy"
+            ],
+            [
+              5,
+              12,
+              "Xyxx"
+            ],
+            [
+              6,
+              9,
+              "YXXYxxy"
+            ],
+            [
+              7,
+              15,
+              "Xyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 38,
+          "character_rank_9": 407,
+          "broad_inequalities": 6576,
+          "balanced_gap_inequalities": 4178,
+          "character_rank_7": 45,
+          "proper_cumulative": 131,
+          "primitive_free_core": 120,
+          "partial_map_pair_states": 19312
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              8,
+              "xyxx"
+            ],
+            [
+              2,
+              12,
+              "xyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "character_rank_9": 304,
+          "broad_inequalities": 4292,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 241,
+          "partial_map_pair_states": 35388,
+          "proper_cumulative": 1346
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              9,
+              "Yxxy"
+            ],
+            [
+              2,
+              6,
+              "Yxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "character_rank_9": 509,
+          "broad_inequalities": 6594,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 116,
+          "partial_map_pair_states": 22684,
+          "proper_cumulative": 1266
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              10,
+              "yxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 65,
+          "proper_cumulative": 1660,
+          "character_rank_9": 159,
+          "broad_inequalities": 2908,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 261,
+          "partial_map_pair_states": 31852
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              11,
+              "yXyxx"
+            ],
+            [
+              1,
+              13,
+              "XXYxxy"
+            ],
+            [
+              3,
+              9,
+              "XXYxxy"
+            ],
+            [
+              5,
+              6,
+              "XXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 53,
+          "character_rank_9": 426,
+          "broad_inequalities": 4292,
+          "balanced_gap_inequalities": 960,
+          "primitive_free_core": 268,
+          "partial_map_pair_states": 32936,
+          "proper_cumulative": 684
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              12,
+              "yxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 65,
+          "character_rank_9": 373,
+          "broad_inequalities": 5924,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 355,
+          "partial_map_pair_states": 50144,
+          "proper_cumulative": 1352
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              13,
+              "XYxxy"
+            ],
+            [
+              1,
+              9,
+              "XYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "character_rank_9": 126,
+          "broad_inequalities": 1644,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1570,
+          "primitive_free_core": 195,
+          "partial_map_pair_states": 18996
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              14,
+              "Xyxxy"
+            ],
+            [
+              1,
+              10,
+              "Xyxxy"
+            ],
+            [
+              2,
+              16,
+              "Xyxxy"
+            ],
+            [
+              4,
+              15,
+              "YXXyxyxx"
+            ],
+            [
+              6,
+              12,
+              "YXXyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 44,
+          "proper_cumulative": 466,
+          "character_rank_9": 372,
+          "broad_inequalities": 6622,
+          "balanced_gap_inequalities": 780,
+          "primitive_free_core": 108,
+          "partial_map_pair_states": 15636
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              15,
+              "Xyxyxx"
+            ],
+            [
+              1,
+              12,
+              "Xyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "character_rank_9": 150,
+          "broad_inequalities": 3016,
+          "balanced_gap_inequalities": 1254,
+          "proper_cumulative": 1458,
+          "character_rank_7": 33,
+          "primitive_free_core": 250,
+          "partial_map_pair_states": 34900
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              16,
+              "yXyxxy"
+            ],
+            [
+              1,
+              15,
+              "XXyxyxx"
+            ],
+            [
+              3,
+              12,
+              "XXyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 59,
+          "character_rank_9": 322,
+          "broad_inequalities": 4730,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 253,
+          "partial_map_pair_states": 30120,
+          "proper_cumulative": 1136
+        },
+        {
+          "source_pairs": [
+            [
+              1,
+              2,
+              "Xy"
+            ],
+            [
+              3,
+              4,
+              "Xy"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "character_rank_9": 346,
+          "broad_inequalities": 4350,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 243,
+          "partial_map_pair_states": 29478,
+          "proper_cumulative": 1302
+        },
+        {
+          "source_pairs": [
+            [
+              1,
+              7,
+              "XXyxx"
+            ],
+            [
+              3,
+              5,
+              "XXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "character_rank_9": 410,
+          "broad_inequalities": 4332,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 259,
+          "partial_map_pair_states": 34894,
+          "proper_cumulative": 1222
+        },
+        {
+          "source_pairs": [
+            [
+              1,
+              11,
+              "XyXyxx"
+            ],
+            [
+              3,
+              13,
+              "XXXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "character_rank_9": 232,
+          "broad_inequalities": 2676,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1426,
+          "primitive_free_core": 233,
+          "partial_map_pair_states": 24640
+        },
+        {
+          "source_pairs": [
+            [
+              1,
+              14,
+              "XXyxxy"
+            ],
+            [
+              3,
+              10,
+              "XXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "proper_cumulative": 1611,
+          "character_rank_9": 156,
+          "broad_inequalities": 2992,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 124,
+          "partial_map_pair_states": 15120
+        },
+        {
+          "source_pairs": [
+            [
+              1,
+              16,
+              "XyXyxxy"
+            ],
+            [
+              3,
+              15,
+              "XXXyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "character_rank_9": 148,
+          "broad_inequalities": 2328,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1450,
+          "primitive_free_core": 293,
+          "partial_map_pair_states": 32448
+        },
+        {
+          "source_pairs": [
+            [
+              2,
+              3,
+              "Yxx"
+            ]
+          ],
+          "vertices_before_last_fold": 65,
+          "character_rank_9": 147,
+          "broad_inequalities": 1530,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 129,
+          "partial_map_pair_states": 21432,
+          "proper_cumulative": 1804
+        },
+        {
+          "source_pairs": [
+            [
+              2,
+              4,
+              "Yxy"
+            ],
+            [
+              4,
+              6,
+              "Yxy"
+            ]
+          ],
+          "vertices_before_last_fold": 60,
+          "character_rank_9": 465,
+          "broad_inequalities": 5198,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 171,
+          "partial_map_pair_states": 25234,
+          "proper_cumulative": 1134
+        },
+        {
+          "source_pairs": [
+            [
+              2,
+              7,
+              "YXyxx"
+            ],
+            [
+              4,
+              5,
+              "YXyxx"
+            ],
+            [
+              6,
+              8,
+              "YXyxx"
+            ],
+            [
+              10,
+              12,
+              "YXyxx"
+            ],
+            [
+              14,
+              15,
+              "YXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 53,
+          "character_rank_9": 239,
+          "broad_inequalities": 3200,
+          "balanced_gap_inequalities": 960,
+          "primitive_free_core": 331,
+          "partial_map_pair_states": 39924,
+          "proper_cumulative": 750,
+          "character_rank_5": 58
+        },
+        {
+          "source_pairs": [
+            [
+              2,
+              8,
+              "Yxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 65,
+          "character_rank_9": 106,
+          "broad_inequalities": 892,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 198,
+          "partial_map_pair_states": 24156,
+          "proper_cumulative": 1776
+        },
+        {
+          "source_pairs": [
+            [
+              2,
+              9,
+              "YYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 65,
+          "proper_cumulative": 1688,
+          "character_rank_9": 238,
+          "broad_inequalities": 4382,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 154,
+          "partial_map_pair_states": 23760
+        },
+        {
+          "source_pairs": [
+            [
+              2,
+              13,
+              "YXYxxy"
+            ],
+            [
+              4,
+              9,
+              "YXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "proper_cumulative": 1510,
+          "character_rank_9": 294,
+          "broad_inequalities": 3086,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 87,
+          "partial_map_pair_states": 12420
+        },
+        {
+          "source_pairs": [
+            [
+              2,
+              14,
+              "YXyxxy"
+            ],
+            [
+              4,
+              10,
+              "YXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "proper_cumulative": 1318,
+          "character_rank_9": 387,
+          "broad_inequalities": 4046,
+          "balanced_gap_inequalities": 680,
+          "primitive_free_core": 186,
+          "partial_map_pair_states": 21524
+        },
+        {
+          "source_pairs": [
+            [
+              2,
+              15,
+              "YXyxyxx"
+            ],
+            [
+              4,
+              12,
+              "YXyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "proper_cumulative": 1655,
+          "character_rank_9": 132,
+          "broad_inequalities": 2898,
+          "balanced_gap_inequalities": 780,
+          "primitive_free_core": 104,
+          "partial_map_pair_states": 10728
+        },
+        {
+          "source_pairs": [
+            [
+              3,
+              7,
+              "XXXyxx"
+            ],
+            [
+              5,
+              11,
+              "XXXyxx"
+            ],
+            [
+              8,
+              13,
+              "XXYXXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 59,
+          "character_rank_9": 336,
+          "broad_inequalities": 3680,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1180,
+          "primitive_free_core": 195,
+          "partial_map_pair_states": 30908
+        },
+        {
+          "source_pairs": [
+            [
+              3,
+              11,
+              "XXyXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 65,
+          "character_rank_9": 252,
+          "broad_inequalities": 2672,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1704,
+          "primitive_free_core": 124,
+          "partial_map_pair_states": 18100
+        },
+        {
+          "source_pairs": [
+            [
+              3,
+              14,
+              "XXXyxxy"
+            ],
+            [
+              5,
+              16,
+              "XXXyxxy"
+            ],
+            [
+              8,
+              15,
+              "XXYXXyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 59,
+          "proper_cumulative": 1305,
+          "character_rank_9": 219,
+          "broad_inequalities": 2852,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 187,
+          "partial_map_pair_states": 25770
+        },
+        {
+          "source_pairs": [
+            [
+              3,
+              16,
+              "XXyXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 65,
+          "character_rank_9": 37,
+          "broad_inequalities": 190,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1904,
+          "primitive_free_core": 139,
+          "partial_map_pair_states": 17080
+        },
+        {
+          "source_pairs": [
+            [
+              4,
+              7,
+              "YXXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 53,
+          "character_rank_9": 426,
+          "broad_inequalities": 4292,
+          "balanced_gap_inequalities": 960,
+          "primitive_free_core": 268,
+          "partial_map_pair_states": 32936,
+          "proper_cumulative": 684
+        },
+        {
+          "source_pairs": [
+            [
+              4,
+              11,
+              "YXyXyxx"
+            ],
+            [
+              6,
+              13,
+              "YXXXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "proper_cumulative": 1434,
+          "character_rank_9": 329,
+          "broad_inequalities": 3730,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 128,
+          "partial_map_pair_states": 15192
+        },
+        {
+          "source_pairs": [
+            [
+              4,
+              14,
+              "YXXyxxy"
+            ],
+            [
+              6,
+              10,
+              "YXXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 38,
+          "character_rank_9": 407,
+          "broad_inequalities": 6576,
+          "balanced_gap_inequalities": 4178,
+          "character_rank_7": 45,
+          "proper_cumulative": 131,
+          "primitive_free_core": 120,
+          "partial_map_pair_states": 19312
+        },
+        {
+          "source_pairs": [
+            [
+              4,
+              16,
+              "YXyXyxxy"
+            ],
+            [
+              6,
+              15,
+              "YXXXyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "proper_cumulative": 1551,
+          "character_rank_9": 137,
+          "broad_inequalities": 1820,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 203,
+          "partial_map_pair_states": 21848
+        },
+        {
+          "source_pairs": [
+            [
+              5,
+              7,
+              "XXYXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 60,
+          "character_rank_9": 490,
+          "broad_inequalities": 5248,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1158,
+          "primitive_free_core": 122,
+          "partial_map_pair_states": 17998
+        },
+        {
+          "source_pairs": [
+            [
+              5,
+              8,
+              "XXYxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 60,
+          "character_rank_9": 490,
+          "broad_inequalities": 5248,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1158,
+          "primitive_free_core": 122,
+          "partial_map_pair_states": 17998
+        },
+        {
+          "source_pairs": [
+            [
+              5,
+              9,
+              "XXYYxxy"
+            ],
+            [
+              7,
+              13,
+              "XXYYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "proper_cumulative": 1294,
+          "character_rank_9": 263,
+          "broad_inequalities": 4912,
+          "balanced_gap_inequalities": 0,
+          "character_rank_5": 67,
+          "primitive_free_core": 267,
+          "partial_map_pair_states": 35860
+        },
+        {
+          "source_pairs": [
+            [
+              5,
+              13,
+              "XXYXYxxy"
+            ],
+            [
+              7,
+              11,
+              "XXYxyXyxx"
+            ],
+            [
+              8,
+              9,
+              "XXYXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 44,
+          "proper_cumulative": 466,
+          "character_rank_9": 372,
+          "broad_inequalities": 6622,
+          "balanced_gap_inequalities": 780,
+          "primitive_free_core": 108,
+          "partial_map_pair_states": 15636
+        },
+        {
+          "source_pairs": [
+            [
+              5,
+              14,
+              "XXYXyxxy"
+            ],
+            [
+              8,
+              10,
+              "XXYXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "proper_cumulative": 1639,
+          "character_rank_9": 141,
+          "broad_inequalities": 2542,
+          "balanced_gap_inequalities": 728,
+          "primitive_free_core": 111,
+          "partial_map_pair_states": 11940
+        },
+        {
+          "source_pairs": [
+            [
+              5,
+              15,
+              "XXYXyxyxx"
+            ],
+            [
+              7,
+              16,
+              "XXYxyXyxxy"
+            ],
+            [
+              8,
+              12,
+              "XXYXyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 59,
+          "proper_cumulative": 1120,
+          "character_rank_9": 394,
+          "broad_inequalities": 3970,
+          "balanced_gap_inequalities": 600,
+          "primitive_free_core": 197,
+          "partial_map_pair_states": 23896
+        },
+        {
+          "source_pairs": [
+            [
+              6,
+              7,
+              "YXXXyxx"
+            ],
+            [
+              10,
+              11,
+              "YXXXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "proper_cumulative": 1430,
+          "character_rank_9": 204,
+          "broad_inequalities": 3320,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 257,
+          "partial_map_pair_states": 35792
+        },
+        {
+          "source_pairs": [
+            [
+              6,
+              11,
+              "YXXyXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "proper_cumulative": 1262,
+          "character_rank_9": 384,
+          "broad_inequalities": 5056,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 245,
+          "partial_map_pair_states": 48924
+        },
+        {
+          "source_pairs": [
+            [
+              6,
+              14,
+              "YXXXyxxy"
+            ],
+            [
+              10,
+              16,
+              "YXXXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "proper_cumulative": 1442,
+          "character_rank_9": 307,
+          "broad_inequalities": 3594,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 142,
+          "partial_map_pair_states": 21986
+        },
+        {
+          "source_pairs": [
+            [
+              6,
+              16,
+              "YXXyXyxxy"
+            ],
+            [
+              9,
+              14,
+              "YXXyXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "proper_cumulative": 1682,
+          "character_rank_9": 209,
+          "broad_inequalities": 3470,
+          "balanced_gap_inequalities": 0
+        },
+        {
+          "source_pairs": [
+            [
+              7,
+              8,
+              "XXYxxyxx"
+            ],
+            [
+              11,
+              12,
+              "XXYxxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "character_rank_9": 548,
+          "broad_inequalities": 6216,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1258,
+          "primitive_free_core": 85,
+          "partial_map_pair_states": 16076
+        },
+        {
+          "source_pairs": [
+            [
+              7,
+              9,
+              "XXYxYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "proper_cumulative": 1262,
+          "character_rank_9": 384,
+          "broad_inequalities": 5056,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 245,
+          "partial_map_pair_states": 48924
+        },
+        {
+          "source_pairs": [
+            [
+              7,
+              10,
+              "XXYxyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 65,
+          "proper_cumulative": 1740,
+          "character_rank_9": 142,
+          "broad_inequalities": 3054,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 198,
+          "partial_map_pair_states": 25168
+        },
+        {
+          "source_pairs": [
+            [
+              7,
+              12,
+              "XXYxyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 65,
+          "proper_cumulative": 1652,
+          "character_rank_9": 283,
+          "broad_inequalities": 3914,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 145,
+          "partial_map_pair_states": 23810
+        },
+        {
+          "source_pairs": [
+            [
+              8,
+              11,
+              "XXYXyXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 65,
+          "proper_cumulative": 1804,
+          "character_rank_9": 157,
+          "broad_inequalities": 1698,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 119,
+          "partial_map_pair_states": 18744
+        },
+        {
+          "source_pairs": [
+            [
+              8,
+              14,
+              "XXYXXyxxy"
+            ],
+            [
+              12,
+              16,
+              "XXYXXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "character_rank_9": 391,
+          "broad_inequalities": 5124,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1378,
+          "primitive_free_core": 122,
+          "partial_map_pair_states": 19458
+        },
+        {
+          "source_pairs": [
+            [
+              8,
+              16,
+              "XXYXyXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 65,
+          "proper_cumulative": 1884,
+          "character_rank_9": 127,
+          "broad_inequalities": 1114,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 69,
+          "partial_map_pair_states": 10876
+        },
+        {
+          "source_pairs": [
+            [
+              9,
+              10,
+              "YXXyyxxy"
+            ],
+            [
+              13,
+              14,
+              "YXXyyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "proper_cumulative": 1699,
+          "character_rank_9": 48,
+          "broad_inequalities": 1802,
+          "balanced_gap_inequalities": 1254,
+          "character_rank_7": 33,
+          "primitive_free_core": 111,
+          "partial_map_pair_states": 16820
+        },
+        {
+          "source_pairs": [
+            [
+              9,
+              11,
+              "YXXyyXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 65,
+          "proper_cumulative": 1520,
+          "character_rank_9": 485,
+          "broad_inequalities": 6500,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 75,
+          "partial_map_pair_states": 15244
+        },
+        {
+          "source_pairs": [
+            [
+              9,
+              13,
+              "YXXyXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "proper_cumulative": 1387,
+          "character_rank_9": 398,
+          "broad_inequalities": 4802,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 106,
+          "partial_map_pair_states": 16082
+        },
+        {
+          "source_pairs": [
+            [
+              9,
+              15,
+              "YXXyXyxyxx"
+            ],
+            [
+              13,
+              16,
+              "YXXyxyXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "proper_cumulative": 1651,
+          "character_rank_9": 100,
+          "broad_inequalities": 1898,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 140,
+          "partial_map_pair_states": 16588
+        },
+        {
+          "source_pairs": [
+            [
+              9,
+              16,
+              "YXXyyXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 65,
+          "proper_cumulative": 1880,
+          "character_rank_9": 200,
+          "broad_inequalities": 3632,
+          "balanced_gap_inequalities": 0
+        },
+        {
+          "source_pairs": [
+            [
+              10,
+              13,
+              "YXXYXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "proper_cumulative": 1347,
+          "character_rank_9": 328,
+          "broad_inequalities": 4912,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 216,
+          "partial_map_pair_states": 24972
+        },
+        {
+          "source_pairs": [
+            [
+              10,
+              14,
+              "YXXYXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 65,
+          "proper_cumulative": 1768,
+          "character_rank_9": 312,
+          "broad_inequalities": 3534,
+          "balanced_gap_inequalities": 0
+        },
+        {
+          "source_pairs": [
+            [
+              10,
+              15,
+              "YXXYXyxyxx"
+            ],
+            [
+              14,
+              16,
+              "YXXYxyXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "proper_cumulative": 1226,
+          "character_rank_9": 373,
+          "broad_inequalities": 3754,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 292,
+          "partial_map_pair_states": 33214
+        },
+        {
+          "source_pairs": [
+            [
+              11,
+              13,
+              "XXYxYXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "proper_cumulative": 1387,
+          "character_rank_9": 398,
+          "broad_inequalities": 4802,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 106,
+          "partial_map_pair_states": 16082
+        },
+        {
+          "source_pairs": [
+            [
+              11,
+              14,
+              "XXYxYXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "proper_cumulative": 1347,
+          "character_rank_9": 328,
+          "broad_inequalities": 4912,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 216,
+          "partial_map_pair_states": 24972
+        },
+        {
+          "source_pairs": [
+            [
+              11,
+              15,
+              "XXYxYXyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "proper_cumulative": 1611,
+          "character_rank_9": 156,
+          "broad_inequalities": 3272,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 124,
+          "partial_map_pair_states": 14048
+        },
+        {
+          "source_pairs": [
+            [
+              12,
+              13,
+              "XXYXYXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "proper_cumulative": 1611,
+          "character_rank_9": 156,
+          "broad_inequalities": 3272,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 124,
+          "partial_map_pair_states": 14048
+        },
+        {
+          "source_pairs": [
+            [
+              12,
+              14,
+              "XXYXYXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 65,
+          "proper_cumulative": 1688,
+          "character_rank_9": 218,
+          "broad_inequalities": 2878,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 174,
+          "partial_map_pair_states": 21964
+        },
+        {
+          "source_pairs": [
+            [
+              12,
+              15,
+              "XXYXYXyxyxx"
+            ],
+            [
+              15,
+              16,
+              "XXYXYxyXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 60,
+          "character_rank_9": 345,
+          "broad_inequalities": 3736,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1326,
+          "primitive_free_core": 99,
+          "partial_map_pair_states": 12762
+        }
+      ],
+      "case_digest": "7e77da0008cc86bf1d48fb85164284339f4bca958b32585016e22cfc06325673",
+      "rank_drop_example": {
+        "representative": "xy",
+        "third_relative_word": "XYx",
+        "enlarged_core": [
+          1,
+          2,
+          -1,
+          3,
+          -1,
+          0,
+          4,
+          -1,
+          0,
+          5,
+          2,
+          2,
+          -1,
+          4,
+          0,
+          -1,
+          3,
+          6,
+          7,
+          1,
+          2,
+          -1,
+          -1,
+          8,
+          4,
+          9,
+          9,
+          10,
+          -1,
+          8,
+          -1,
+          4,
+          7,
+          11,
+          5,
+          -1,
+          6,
+          -1,
+          -1,
+          6,
+          12,
+          -1,
+          6,
+          -1,
+          8,
+          -1,
+          -1,
+          13,
+          -1,
+          10,
+          -1,
+          14,
+          15,
+          -1,
+          11,
+          -1,
+          -1,
+          15,
+          12,
+          -1,
+          14,
+          13,
+          -1,
+          -1
+        ],
+        "ambient_primitive_loop": {
+          "alphabet": "xy",
+          "positive_basis_program": "",
+          "component": 1,
+          "loop_vertex": 2,
+          "word_length": 1,
+          "base_to_loop_path": "X",
+          "cyclic_primitive_word": "y",
+          "based_primitive_word": "Xyx"
+        },
+        "coordinate_rows": [
+          [
+            0,
+            -1,
+            -1,
+            -1,
+            0
+          ],
+          [
+            0,
+            -1,
+            0,
+            0,
+            -1
+          ],
+          [
+            -1,
+            0,
+            -1,
+            0,
+            0
+          ],
+          [
+            1,
+            -1,
+            -2,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1,
+            -1,
+            0
+          ],
+          [
+            0,
+            -1,
+            0,
+            0,
+            -1
+          ],
+          [
+            -1,
+            0,
+            -1,
+            0,
+            0
+          ],
+          [
+            1,
+            -1,
+            -2,
+            0,
+            0
+          ]
+        ],
+        "third_relative_coordinates": [
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "character": [
+          -1,
+          -3,
+          1,
+          2,
+          3
+        ],
+        "broad_inequalities": 28,
+        "refined": [],
+        "broad_tests": [
+          {
+            "alphabet": [
+              0,
+              2
+            ],
+            "forbidden_double": 0,
+            "status": "PASS",
+            "cyclic_components": [
+              {
+                "states": [
+                  13,
+                  18
+                ],
+                "strict_cycle_voltage_sign": 1,
+                "potential": [
+                  -1,
+                  0
+                ]
+              },
+              {
+                "states": [
+                  5
+                ],
+                "strict_cycle_voltage_sign": -1,
+                "potential": [
+                  0
+                ]
+              },
+              {
+                "states": [
+                  0,
+                  3,
+                  7,
+                  8
+                ],
+                "strict_cycle_voltage_sign": 1,
+                "potential": [
+                  -1,
+                  -2,
+                  0,
+                  -3
+                ]
+              }
+            ]
+          },
+          {
+            "alphabet": [
+              0,
+              2
+            ],
+            "forbidden_double": 1,
+            "status": "PASS",
+            "cyclic_components": [
+              {
+                "states": [
+                  13,
+                  18
+                ],
+                "strict_cycle_voltage_sign": 1,
+                "potential": [
+                  -1,
+                  0
+                ]
+              },
+              {
+                "states": [
+                  0,
+                  3,
+                  7,
+                  8
+                ],
+                "strict_cycle_voltage_sign": 1,
+                "potential": [
+                  -1,
+                  -2,
+                  0,
+                  -3
+                ]
+              }
+            ]
+          },
+          {
+            "alphabet": [
+              0,
+              3
+            ],
+            "forbidden_double": 0,
+            "status": "PASS",
+            "cyclic_components": [
+              {
+                "states": [
+                  5
+                ],
+                "strict_cycle_voltage_sign": 1,
+                "potential": [
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "alphabet": [
+              0,
+              3
+            ],
+            "forbidden_double": 1,
+            "status": "PASS",
+            "cyclic_components": []
+          },
+          {
+            "alphabet": [
+              1,
+              2
+            ],
+            "forbidden_double": 0,
+            "status": "PASS",
+            "cyclic_components": [
+              {
+                "states": [
+                  5
+                ],
+                "strict_cycle_voltage_sign": -1,
+                "potential": [
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "alphabet": [
+              1,
+              2
+            ],
+            "forbidden_double": 1,
+            "status": "PASS",
+            "cyclic_components": []
+          },
+          {
+            "alphabet": [
+              1,
+              3
+            ],
+            "forbidden_double": 0,
+            "status": "PASS",
+            "cyclic_components": [
+              {
+                "states": [
+                  12,
+                  19
+                ],
+                "strict_cycle_voltage_sign": -1,
+                "potential": [
+                  0,
+                  -1
+                ]
+              },
+              {
+                "states": [
+                  1,
+                  2,
+                  6,
+                  9
+                ],
+                "strict_cycle_voltage_sign": -1,
+                "potential": [
+                  -2,
+                  -1,
+                  -3,
+                  0
+                ]
+              },
+              {
+                "states": [
+                  5
+                ],
+                "strict_cycle_voltage_sign": 1,
+                "potential": [
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "alphabet": [
+              1,
+              3
+            ],
+            "forbidden_double": 1,
+            "status": "PASS",
+            "cyclic_components": [
+              {
+                "states": [
+                  1,
+                  2,
+                  6,
+                  9
+                ],
+                "strict_cycle_voltage_sign": -1,
+                "potential": [
+                  -2,
+                  -1,
+                  -3,
+                  0
+                ]
+              },
+              {
+                "states": [
+                  12,
+                  19
+                ],
+                "strict_cycle_voltage_sign": -1,
+                "potential": [
+                  0,
+                  -1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source": [
+        "XXYxYXXYxxy",
+        "XXYXYxxyXyxxy"
+      ],
+      "second_power": 3,
+      "powers": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "source_vertex_pairs": 136,
+      "distinct_core_pairs": 84,
+      "proper_cumulative": 127721,
+      "character_rank_9": 24566,
+      "broad_inequalities": 313514,
+      "balanced_gap_inequalities": 4600,
+      "primitive_free_core": 25843,
+      "partial_map_pair_states": 3260178,
+      "character_rank_5": 278,
+      "cases": [
+        {
+          "source_pairs": [
+            [
+              0,
+              1,
+              "x"
+            ],
+            [
+              1,
+              3,
+              "x"
+            ]
+          ],
+          "vertices_before_last_fold": 61,
+          "proper_cumulative": 999,
+          "character_rank_9": 504,
+          "broad_inequalities": 5030,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 327,
+          "partial_map_pair_states": 44810
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              2,
+              "y"
+            ],
+            [
+              1,
+              4,
+              "y"
+            ],
+            [
+              3,
+              6,
+              "y"
+            ],
+            [
+              5,
+              10,
+              "y"
+            ],
+            [
+              7,
+              14,
+              "y"
+            ],
+            [
+              11,
+              16,
+              "y"
+            ]
+          ],
+          "vertices_before_last_fold": 52,
+          "character_rank_9": 326,
+          "broad_inequalities": 4340,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 654,
+          "primitive_free_core": 346,
+          "partial_map_pair_states": 46700
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              3,
+              "xx"
+            ],
+            [
+              2,
+              5,
+              "xx"
+            ],
+            [
+              4,
+              8,
+              "xx"
+            ]
+          ],
+          "vertices_before_last_fold": 63,
+          "proper_cumulative": 1073,
+          "character_rank_9": 568,
+          "broad_inequalities": 6950,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 312,
+          "partial_map_pair_states": 55992
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              4,
+              "xy"
+            ],
+            [
+              1,
+              6,
+              "xy"
+            ]
+          ],
+          "vertices_before_last_fold": 65,
+          "character_rank_9": 309,
+          "broad_inequalities": 5206,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1336,
+          "primitive_free_core": 374,
+          "partial_map_pair_states": 46792,
+          "character_rank_5": 61
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              5,
+              "yxx"
+            ],
+            [
+              1,
+              8,
+              "yxx"
+            ]
+          ],
+          "vertices_before_last_fold": 65,
+          "character_rank_9": 372,
+          "broad_inequalities": 4992,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 224,
+          "partial_map_pair_states": 33754,
+          "proper_cumulative": 1484
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              6,
+              "xxy"
+            ],
+            [
+              2,
+              10,
+              "xxy"
+            ]
+          ],
+          "vertices_before_last_fold": 65,
+          "character_rank_9": 278,
+          "broad_inequalities": 4170,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 342,
+          "partial_map_pair_states": 58910,
+          "proper_cumulative": 1460
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              7,
+              "Xyxx"
+            ],
+            [
+              1,
+              5,
+              "Xyxx"
+            ],
+            [
+              2,
+              11,
+              "Xyxx"
+            ],
+            [
+              3,
+              8,
+              "Xyxx"
+            ],
+            [
+              5,
+              12,
+              "Xyxx"
+            ],
+            [
+              7,
+              15,
+              "Xyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 46,
+          "character_rank_9": 447,
+          "broad_inequalities": 5724,
+          "balanced_gap_inequalities": 500,
+          "primitive_free_core": 374,
+          "partial_map_pair_states": 53978,
+          "proper_cumulative": 194,
+          "character_rank_5": 20
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              8,
+              "xyxx"
+            ],
+            [
+              2,
+              12,
+              "xyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 67,
+          "character_rank_9": 311,
+          "broad_inequalities": 4542,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 369,
+          "partial_map_pair_states": 54676,
+          "proper_cumulative": 1531
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              9,
+              "Yxxy"
+            ],
+            [
+              2,
+              6,
+              "Yxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 65,
+          "character_rank_9": 580,
+          "broad_inequalities": 7566,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 150,
+          "partial_map_pair_states": 33260,
+          "proper_cumulative": 1350
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              10,
+              "yxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 69,
+          "proper_cumulative": 1858,
+          "character_rank_9": 154,
+          "broad_inequalities": 2580,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 334,
+          "partial_map_pair_states": 38996
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              11,
+              "yXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 58,
+          "character_rank_9": 416,
+          "broad_inequalities": 4200,
+          "balanced_gap_inequalities": 640,
+          "primitive_free_core": 464,
+          "partial_map_pair_states": 53968,
+          "proper_cumulative": 773
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              12,
+              "yxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 70,
+          "character_rank_9": 414,
+          "broad_inequalities": 7186,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 475,
+          "partial_map_pair_states": 67400,
+          "proper_cumulative": 1526
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              13,
+              "XYxxy"
+            ],
+            [
+              1,
+              9,
+              "XYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 67,
+          "character_rank_9": 131,
+          "broad_inequalities": 1660,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1796,
+          "primitive_free_core": 284,
+          "partial_map_pair_states": 26760
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              14,
+              "Xyxxy"
+            ],
+            [
+              1,
+              10,
+              "Xyxxy"
+            ],
+            [
+              2,
+              16,
+              "Xyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 52,
+          "proper_cumulative": 654,
+          "character_rank_9": 348,
+          "broad_inequalities": 4986,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 324,
+          "partial_map_pair_states": 39396
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              15,
+              "Xyxyxx"
+            ],
+            [
+              1,
+              12,
+              "Xyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 67,
+          "character_rank_9": 185,
+          "broad_inequalities": 3114,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1669,
+          "character_rank_5": 22,
+          "primitive_free_core": 335,
+          "partial_map_pair_states": 49384
+        },
+        {
+          "source_pairs": [
+            [
+              0,
+              16,
+              "yXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 67,
+          "character_rank_9": 267,
+          "broad_inequalities": 3512,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 481,
+          "partial_map_pair_states": 49244,
+          "proper_cumulative": 1463
+        },
+        {
+          "source_pairs": [
+            [
+              1,
+              2,
+              "Xy"
+            ],
+            [
+              3,
+              4,
+              "Xy"
+            ]
+          ],
+          "vertices_before_last_fold": 65,
+          "character_rank_9": 345,
+          "broad_inequalities": 4262,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 339,
+          "partial_map_pair_states": 43140,
+          "proper_cumulative": 1396
+        },
+        {
+          "source_pairs": [
+            [
+              1,
+              7,
+              "XXyxx"
+            ],
+            [
+              3,
+              5,
+              "XXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 64,
+          "character_rank_9": 427,
+          "broad_inequalities": 4442,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 321,
+          "partial_map_pair_states": 46770,
+          "proper_cumulative": 1268
+        },
+        {
+          "source_pairs": [
+            [
+              1,
+              11,
+              "XyXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 66,
+          "character_rank_9": 223,
+          "broad_inequalities": 2608,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1577,
+          "primitive_free_core": 345,
+          "partial_map_pair_states": 34452
+        },
+        {
+          "source_pairs": [
+            [
+              1,
+              13,
+              "XXYxxy"
+            ],
+            [
+              3,
+              9,
+              "XXYxxy"
+            ],
+            [
+              5,
+              6,
+              "XXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 59,
+          "character_rank_9": 424,
+          "broad_inequalities": 4258,
+          "balanced_gap_inequalities": 640,
+          "primitive_free_core": 488,
+          "partial_map_pair_states": 56008,
+          "proper_cumulative": 799
+        },
+        {
+          "source_pairs": [
+            [
+              1,
+              14,
+              "XXyxxy"
+            ],
+            [
+              3,
+              10,
+              "XXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 68,
+          "proper_cumulative": 1937,
+          "character_rank_9": 139,
+          "broad_inequalities": 2584,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 202,
+          "partial_map_pair_states": 22660
+        },
+        {
+          "source_pairs": [
+            [
+              1,
+              15,
+              "XXyxyxx"
+            ],
+            [
+              3,
+              12,
+              "XXyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 64,
+          "character_rank_9": 362,
+          "broad_inequalities": 5422,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 344,
+          "partial_map_pair_states": 40848,
+          "proper_cumulative": 1310
+        },
+        {
+          "source_pairs": [
+            [
+              1,
+              16,
+              "XyXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 70,
+          "character_rank_9": 146,
+          "broad_inequalities": 2176,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1851,
+          "primitive_free_core": 418,
+          "partial_map_pair_states": 43176
+        },
+        {
+          "source_pairs": [
+            [
+              2,
+              3,
+              "Yxx"
+            ]
+          ],
+          "vertices_before_last_fold": 68,
+          "character_rank_9": 165,
+          "broad_inequalities": 1880,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 164,
+          "partial_map_pair_states": 26664,
+          "proper_cumulative": 1949
+        },
+        {
+          "source_pairs": [
+            [
+              2,
+              4,
+              "Yxy"
+            ],
+            [
+              4,
+              6,
+              "Yxy"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "character_rank_9": 507,
+          "broad_inequalities": 5406,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 202,
+          "partial_map_pair_states": 32584,
+          "proper_cumulative": 1182
+        },
+        {
+          "source_pairs": [
+            [
+              2,
+              7,
+              "YXyxx"
+            ],
+            [
+              4,
+              5,
+              "YXyxx"
+            ],
+            [
+              6,
+              8,
+              "YXyxx"
+            ],
+            [
+              10,
+              12,
+              "YXyxx"
+            ],
+            [
+              14,
+              15,
+              "YXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 61,
+          "character_rank_9": 215,
+          "broad_inequalities": 2910,
+          "balanced_gap_inequalities": 640,
+          "primitive_free_core": 588,
+          "partial_map_pair_states": 59972,
+          "proper_cumulative": 975,
+          "character_rank_5": 52
+        },
+        {
+          "source_pairs": [
+            [
+              2,
+              8,
+              "Yxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 70,
+          "character_rank_9": 107,
+          "broad_inequalities": 856,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 272,
+          "partial_map_pair_states": 31412,
+          "proper_cumulative": 2036
+        },
+        {
+          "source_pairs": [
+            [
+              2,
+              9,
+              "YYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 68,
+          "proper_cumulative": 1821,
+          "character_rank_9": 226,
+          "broad_inequalities": 3928,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 231,
+          "partial_map_pair_states": 36314
+        },
+        {
+          "source_pairs": [
+            [
+              2,
+              13,
+              "YXYxxy"
+            ],
+            [
+              4,
+              9,
+              "YXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 65,
+          "proper_cumulative": 1620,
+          "character_rank_9": 335,
+          "broad_inequalities": 3748,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 125,
+          "partial_map_pair_states": 18524
+        },
+        {
+          "source_pairs": [
+            [
+              2,
+              14,
+              "YXyxxy"
+            ],
+            [
+              4,
+              10,
+              "YXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 65,
+          "proper_cumulative": 1408,
+          "character_rank_9": 410,
+          "broad_inequalities": 4716,
+          "balanced_gap_inequalities": 280,
+          "primitive_free_core": 262,
+          "partial_map_pair_states": 31928
+        },
+        {
+          "source_pairs": [
+            [
+              2,
+              15,
+              "YXyxyxx"
+            ],
+            [
+              4,
+              12,
+              "YXyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 69,
+          "proper_cumulative": 2050,
+          "character_rank_9": 114,
+          "broad_inequalities": 2412,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 182,
+          "partial_map_pair_states": 18164
+        },
+        {
+          "source_pairs": [
+            [
+              3,
+              7,
+              "XXXyxx"
+            ],
+            [
+              5,
+              11,
+              "XXXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "character_rank_9": 363,
+          "broad_inequalities": 4154,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1271,
+          "primitive_free_core": 257,
+          "partial_map_pair_states": 41192
+        },
+        {
+          "source_pairs": [
+            [
+              3,
+              11,
+              "XXyXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 68,
+          "character_rank_9": 275,
+          "broad_inequalities": 3388,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1846,
+          "primitive_free_core": 157,
+          "partial_map_pair_states": 23464
+        },
+        {
+          "source_pairs": [
+            [
+              3,
+              13,
+              "XXXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 69,
+          "character_rank_9": 226,
+          "broad_inequalities": 2584,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1749,
+          "primitive_free_core": 371,
+          "partial_map_pair_states": 37332
+        },
+        {
+          "source_pairs": [
+            [
+              3,
+              14,
+              "XXXyxxy"
+            ],
+            [
+              5,
+              16,
+              "XXXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 68,
+          "proper_cumulative": 1734,
+          "character_rank_9": 178,
+          "broad_inequalities": 2344,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 366,
+          "partial_map_pair_states": 40408
+        },
+        {
+          "source_pairs": [
+            [
+              3,
+              15,
+              "XXXyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 67,
+          "character_rank_9": 151,
+          "broad_inequalities": 2240,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1662,
+          "primitive_free_core": 398,
+          "partial_map_pair_states": 41700
+        },
+        {
+          "source_pairs": [
+            [
+              3,
+              16,
+              "XXyXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 73,
+          "character_rank_9": 37,
+          "broad_inequalities": 186,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 2399,
+          "primitive_free_core": 192,
+          "partial_map_pair_states": 22708
+        },
+        {
+          "source_pairs": [
+            [
+              4,
+              7,
+              "YXXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 59,
+          "character_rank_9": 424,
+          "broad_inequalities": 4258,
+          "balanced_gap_inequalities": 640,
+          "primitive_free_core": 488,
+          "partial_map_pair_states": 56008,
+          "proper_cumulative": 799
+        },
+        {
+          "source_pairs": [
+            [
+              4,
+              11,
+              "YXyXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 70,
+          "proper_cumulative": 1809,
+          "character_rank_9": 250,
+          "broad_inequalities": 2738,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 356,
+          "partial_map_pair_states": 36088
+        },
+        {
+          "source_pairs": [
+            [
+              4,
+              13,
+              "YXXYxxy"
+            ],
+            [
+              6,
+              9,
+              "YXXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 46,
+          "character_rank_9": 439,
+          "broad_inequalities": 4996,
+          "balanced_gap_inequalities": 500,
+          "primitive_free_core": 382,
+          "partial_map_pair_states": 59144,
+          "proper_cumulative": 194,
+          "character_rank_5": 20
+        },
+        {
+          "source_pairs": [
+            [
+              4,
+              14,
+              "YXXyxxy"
+            ],
+            [
+              6,
+              10,
+              "YXXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 46,
+          "character_rank_9": 439,
+          "broad_inequalities": 4996,
+          "balanced_gap_inequalities": 500,
+          "proper_cumulative": 194,
+          "primitive_free_core": 382,
+          "partial_map_pair_states": 59144,
+          "character_rank_5": 20
+        },
+        {
+          "source_pairs": [
+            [
+              4,
+              15,
+              "YXXyxyxx"
+            ],
+            [
+              6,
+              12,
+              "YXXyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 53,
+          "proper_cumulative": 682,
+          "character_rank_9": 345,
+          "broad_inequalities": 4978,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 351,
+          "partial_map_pair_states": 41200
+        },
+        {
+          "source_pairs": [
+            [
+              4,
+              16,
+              "YXyXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 66,
+          "proper_cumulative": 1729,
+          "character_rank_9": 137,
+          "broad_inequalities": 1832,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 279,
+          "partial_map_pair_states": 28160
+        },
+        {
+          "source_pairs": [
+            [
+              5,
+              7,
+              "XXYXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "character_rank_9": 539,
+          "broad_inequalities": 5502,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1210,
+          "primitive_free_core": 142,
+          "partial_map_pair_states": 23144
+        },
+        {
+          "source_pairs": [
+            [
+              5,
+              8,
+              "XXYxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "character_rank_9": 539,
+          "broad_inequalities": 5502,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1210,
+          "primitive_free_core": 142,
+          "partial_map_pair_states": 23144
+        },
+        {
+          "source_pairs": [
+            [
+              5,
+              9,
+              "XXYYxxy"
+            ],
+            [
+              7,
+              13,
+              "XXYYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 70,
+          "proper_cumulative": 1630,
+          "character_rank_9": 220,
+          "broad_inequalities": 4024,
+          "balanced_gap_inequalities": 0,
+          "character_rank_5": 61,
+          "primitive_free_core": 504,
+          "partial_map_pair_states": 57688
+        },
+        {
+          "source_pairs": [
+            [
+              5,
+              13,
+              "XXYXYxxy"
+            ],
+            [
+              8,
+              9,
+              "XXYXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 53,
+          "proper_cumulative": 682,
+          "character_rank_9": 345,
+          "broad_inequalities": 4978,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 351,
+          "partial_map_pair_states": 41200
+        },
+        {
+          "source_pairs": [
+            [
+              5,
+              14,
+              "XXYXyxxy"
+            ],
+            [
+              8,
+              10,
+              "XXYXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 70,
+          "proper_cumulative": 2091,
+          "character_rank_9": 137,
+          "broad_inequalities": 2266,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 187,
+          "partial_map_pair_states": 19132
+        },
+        {
+          "source_pairs": [
+            [
+              5,
+              15,
+              "XXYXyxyxx"
+            ],
+            [
+              8,
+              12,
+              "XXYXyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "proper_cumulative": 1199,
+          "character_rank_9": 418,
+          "broad_inequalities": 4334,
+          "balanced_gap_inequalities": 260,
+          "primitive_free_core": 274,
+          "partial_map_pair_states": 34764
+        },
+        {
+          "source_pairs": [
+            [
+              6,
+              7,
+              "YXXXyxx"
+            ],
+            [
+              10,
+              11,
+              "YXXXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 70,
+          "proper_cumulative": 1801,
+          "character_rank_9": 206,
+          "broad_inequalities": 2990,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 408,
+          "partial_map_pair_states": 50252
+        },
+        {
+          "source_pairs": [
+            [
+              6,
+              11,
+              "YXXyXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 70,
+          "proper_cumulative": 1597,
+          "character_rank_9": 297,
+          "broad_inequalities": 3772,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 521,
+          "partial_map_pair_states": 84546
+        },
+        {
+          "source_pairs": [
+            [
+              6,
+              13,
+              "YXXXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 65,
+          "proper_cumulative": 1536,
+          "character_rank_9": 362,
+          "broad_inequalities": 4242,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 182,
+          "partial_map_pair_states": 22724
+        },
+        {
+          "source_pairs": [
+            [
+              6,
+              14,
+              "YXXXyxxy"
+            ],
+            [
+              10,
+              16,
+              "YXXXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 64,
+          "proper_cumulative": 1516,
+          "character_rank_9": 323,
+          "broad_inequalities": 3864,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 177,
+          "partial_map_pair_states": 28426
+        },
+        {
+          "source_pairs": [
+            [
+              6,
+              15,
+              "YXXXyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 71,
+          "proper_cumulative": 2046,
+          "character_rank_9": 130,
+          "broad_inequalities": 1784,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 309,
+          "partial_map_pair_states": 31064
+        },
+        {
+          "source_pairs": [
+            [
+              6,
+              16,
+              "YXXyXyxxy"
+            ],
+            [
+              9,
+              14,
+              "YXXyXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 65,
+          "proper_cumulative": 1842,
+          "character_rank_9": 238,
+          "broad_inequalities": 4170,
+          "balanced_gap_inequalities": 0
+        },
+        {
+          "source_pairs": [
+            [
+              7,
+              8,
+              "XXYxxyxx"
+            ],
+            [
+              11,
+              12,
+              "XXYxxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 65,
+          "character_rank_9": 629,
+          "broad_inequalities": 7736,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1346,
+          "primitive_free_core": 105,
+          "partial_map_pair_states": 23010
+        },
+        {
+          "source_pairs": [
+            [
+              7,
+              9,
+              "XXYxYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 70,
+          "proper_cumulative": 1597,
+          "character_rank_9": 297,
+          "broad_inequalities": 3772,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 521,
+          "partial_map_pair_states": 84546
+        },
+        {
+          "source_pairs": [
+            [
+              7,
+              10,
+              "XXYxyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 73,
+          "proper_cumulative": 2188,
+          "character_rank_9": 146,
+          "broad_inequalities": 2568,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 294,
+          "partial_map_pair_states": 33404
+        },
+        {
+          "source_pairs": [
+            [
+              7,
+              11,
+              "XXYxyXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 52,
+          "proper_cumulative": 654,
+          "character_rank_9": 344,
+          "broad_inequalities": 4538,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 328,
+          "partial_map_pair_states": 44404
+        },
+        {
+          "source_pairs": [
+            [
+              7,
+              12,
+              "XXYxyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 68,
+          "proper_cumulative": 1777,
+          "character_rank_9": 316,
+          "broad_inequalities": 4752,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 185,
+          "partial_map_pair_states": 30674
+        },
+        {
+          "source_pairs": [
+            [
+              7,
+              16,
+              "XXYxyXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 70,
+          "proper_cumulative": 1561,
+          "character_rank_9": 325,
+          "broad_inequalities": 3604,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 529,
+          "partial_map_pair_states": 52004
+        },
+        {
+          "source_pairs": [
+            [
+              8,
+              11,
+              "XXYXyXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 68,
+          "proper_cumulative": 1945,
+          "character_rank_9": 181,
+          "broad_inequalities": 2140,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 152,
+          "partial_map_pair_states": 24544
+        },
+        {
+          "source_pairs": [
+            [
+              8,
+              13,
+              "XXYXXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 68,
+          "character_rank_9": 278,
+          "broad_inequalities": 2978,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1527,
+          "primitive_free_core": 473,
+          "partial_map_pair_states": 62934
+        },
+        {
+          "source_pairs": [
+            [
+              8,
+              14,
+              "XXYXXyxxy"
+            ],
+            [
+              12,
+              16,
+              "XXYXXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 72,
+          "character_rank_9": 279,
+          "broad_inequalities": 3512,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1841,
+          "primitive_free_core": 436,
+          "partial_map_pair_states": 53324
+        },
+        {
+          "source_pairs": [
+            [
+              8,
+              15,
+              "XXYXXyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 63,
+          "proper_cumulative": 1461,
+          "character_rank_9": 222,
+          "broad_inequalities": 2870,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 270,
+          "partial_map_pair_states": 37284
+        },
+        {
+          "source_pairs": [
+            [
+              8,
+              16,
+              "XXYXyXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 75,
+          "proper_cumulative": 2526,
+          "character_rank_9": 89,
+          "broad_inequalities": 574,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 160,
+          "partial_map_pair_states": 20164
+        },
+        {
+          "source_pairs": [
+            [
+              9,
+              10,
+              "YXXyyxxy"
+            ],
+            [
+              13,
+              14,
+              "YXXyyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 65,
+          "proper_cumulative": 1864,
+          "character_rank_9": 54,
+          "broad_inequalities": 1028,
+          "balanced_gap_inequalities": 0,
+          "character_rank_5": 22,
+          "primitive_free_core": 140,
+          "partial_map_pair_states": 23472
+        },
+        {
+          "source_pairs": [
+            [
+              9,
+              11,
+              "YXXyyXyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 74,
+          "proper_cumulative": 1931,
+          "character_rank_9": 348,
+          "broad_inequalities": 4374,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 422,
+          "partial_map_pair_states": 60632
+        },
+        {
+          "source_pairs": [
+            [
+              9,
+              12,
+              "YXXyyxyxx"
+            ],
+            [
+              13,
+              15,
+              "YXXyyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 60,
+          "character_rank_9": 331,
+          "broad_inequalities": 4456,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 816,
+          "primitive_free_core": 623,
+          "partial_map_pair_states": 69540
+        },
+        {
+          "source_pairs": [
+            [
+              9,
+              13,
+              "YXXyXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 63,
+          "proper_cumulative": 1413,
+          "character_rank_9": 424,
+          "broad_inequalities": 4788,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 116,
+          "partial_map_pair_states": 19768
+        },
+        {
+          "source_pairs": [
+            [
+              9,
+              15,
+              "YXXyXyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 73,
+          "proper_cumulative": 2309,
+          "character_rank_9": 98,
+          "broad_inequalities": 1776,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 221,
+          "partial_map_pair_states": 24296
+        },
+        {
+          "source_pairs": [
+            [
+              9,
+              16,
+              "YXXyyXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 69,
+          "proper_cumulative": 2109,
+          "character_rank_9": 237,
+          "broad_inequalities": 4752,
+          "balanced_gap_inequalities": 0
+        },
+        {
+          "source_pairs": [
+            [
+              10,
+              13,
+              "YXXYXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 66,
+          "proper_cumulative": 1500,
+          "character_rank_9": 356,
+          "broad_inequalities": 5430,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 289,
+          "partial_map_pair_states": 33080
+        },
+        {
+          "source_pairs": [
+            [
+              10,
+              14,
+              "YXXYXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 66,
+          "proper_cumulative": 1809,
+          "character_rank_9": 336,
+          "broad_inequalities": 3638,
+          "balanced_gap_inequalities": 0
+        },
+        {
+          "source_pairs": [
+            [
+              10,
+              15,
+              "YXXYXyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 73,
+          "proper_cumulative": 1691,
+          "character_rank_9": 342,
+          "broad_inequalities": 3460,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 595,
+          "partial_map_pair_states": 55308
+        },
+        {
+          "source_pairs": [
+            [
+              11,
+              13,
+              "XXYxYXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 72,
+          "proper_cumulative": 1804,
+          "character_rank_9": 302,
+          "broad_inequalities": 3282,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 450,
+          "partial_map_pair_states": 50972
+        },
+        {
+          "source_pairs": [
+            [
+              11,
+              14,
+              "XXYxYXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 72,
+          "proper_cumulative": 1811,
+          "character_rank_9": 289,
+          "broad_inequalities": 3894,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 456,
+          "partial_map_pair_states": 44244
+        },
+        {
+          "source_pairs": [
+            [
+              11,
+              15,
+              "XXYxYXyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 67,
+          "proper_cumulative": 1879,
+          "character_rank_9": 135,
+          "broad_inequalities": 2748,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 197,
+          "partial_map_pair_states": 20944
+        },
+        {
+          "source_pairs": [
+            [
+              12,
+              13,
+              "XXYXYXYxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 73,
+          "proper_cumulative": 2234,
+          "character_rank_9": 153,
+          "broad_inequalities": 3068,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 241,
+          "partial_map_pair_states": 26036
+        },
+        {
+          "source_pairs": [
+            [
+              12,
+              14,
+              "XXYXYXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 75,
+          "proper_cumulative": 2249,
+          "character_rank_9": 171,
+          "broad_inequalities": 2160,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 355,
+          "partial_map_pair_states": 38402
+        },
+        {
+          "source_pairs": [
+            [
+              12,
+              15,
+              "XXYXYXyxyxx"
+            ]
+          ],
+          "vertices_before_last_fold": 62,
+          "character_rank_9": 370,
+          "broad_inequalities": 3878,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1398,
+          "primitive_free_core": 123,
+          "partial_map_pair_states": 17110
+        },
+        {
+          "source_pairs": [
+            [
+              13,
+              16,
+              "YXXyxyXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 67,
+          "proper_cumulative": 1913,
+          "character_rank_9": 97,
+          "broad_inequalities": 1770,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 201,
+          "partial_map_pair_states": 21600
+        },
+        {
+          "source_pairs": [
+            [
+              14,
+              16,
+              "YXXYxyXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 64,
+          "proper_cumulative": 1276,
+          "character_rank_9": 376,
+          "broad_inequalities": 3864,
+          "balanced_gap_inequalities": 0,
+          "primitive_free_core": 364,
+          "partial_map_pair_states": 43070
+        },
+        {
+          "source_pairs": [
+            [
+              15,
+              16,
+              "XXYXYxyXyxxy"
+            ]
+          ],
+          "vertices_before_last_fold": 72,
+          "character_rank_9": 268,
+          "broad_inequalities": 2616,
+          "balanced_gap_inequalities": 0,
+          "proper_cumulative": 1865,
+          "primitive_free_core": 423,
+          "partial_map_pair_states": 46144
+        }
+      ],
+      "case_digest": "b76d1264180881d36340a1135a11d461e05659edfc2ffe094a7bb184f5f8795e",
+      "rank_drop_example": {
+        "representative": "xy",
+        "third_relative_word": "XYx",
+        "enlarged_core": [
+          1,
+          2,
+          -1,
+          3,
+          -1,
+          0,
+          4,
+          -1,
+          0,
+          5,
+          2,
+          2,
+          -1,
+          4,
+          0,
+          -1,
+          3,
+          6,
+          7,
+          1,
+          2,
+          -1,
+          -1,
+          8,
+          4,
+          9,
+          9,
+          10,
+          -1,
+          8,
+          -1,
+          4,
+          7,
+          11,
+          5,
+          -1,
+          6,
+          -1,
+          -1,
+          6,
+          12,
+          -1,
+          6,
+          -1,
+          8,
+          -1,
+          -1,
+          13,
+          -1,
+          10,
+          -1,
+          14,
+          15,
+          -1,
+          11,
+          -1,
+          -1,
+          15,
+          12,
+          -1,
+          14,
+          13,
+          -1,
+          -1
+        ],
+        "ambient_primitive_loop": {
+          "alphabet": "xy",
+          "positive_basis_program": "",
+          "component": 1,
+          "loop_vertex": 2,
+          "word_length": 1,
+          "base_to_loop_path": "X",
+          "cyclic_primitive_word": "y",
+          "based_primitive_word": "Xyx"
+        },
+        "coordinate_rows": [
+          [
+            0,
+            -1,
+            -1,
+            -1,
+            0
+          ],
+          [
+            0,
+            -1,
+            0,
+            0,
+            -1
+          ],
+          [
+            -1,
+            0,
+            -1,
+            0,
+            0
+          ],
+          [
+            1,
+            -1,
+            -2,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            -1,
+            0,
+            0
+          ],
+          [
+            1,
+            -1,
+            -2,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            -1,
+            -1,
+            0
+          ],
+          [
+            0,
+            -1,
+            0,
+            0,
+            -1
+          ]
+        ],
+        "third_relative_coordinates": [
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "character": [
+          -1,
+          -3,
+          1,
+          2,
+          3
+        ],
+        "broad_inequalities": 28,
+        "refined": [],
+        "broad_tests": [
+          {
+            "alphabet": [
+              0,
+              2
+            ],
+            "forbidden_double": 0,
+            "status": "PASS",
+            "cyclic_components": [
+              {
+                "states": [
+                  13,
+                  18
+                ],
+                "strict_cycle_voltage_sign": 1,
+                "potential": [
+                  -1,
+                  0
+                ]
+              },
+              {
+                "states": [
+                  5
+                ],
+                "strict_cycle_voltage_sign": -1,
+                "potential": [
+                  0
+                ]
+              },
+              {
+                "states": [
+                  0,
+                  3,
+                  7,
+                  8
+                ],
+                "strict_cycle_voltage_sign": 1,
+                "potential": [
+                  -1,
+                  -2,
+                  0,
+                  -3
+                ]
+              }
+            ]
+          },
+          {
+            "alphabet": [
+              0,
+              2
+            ],
+            "forbidden_double": 1,
+            "status": "PASS",
+            "cyclic_components": [
+              {
+                "states": [
+                  13,
+                  18
+                ],
+                "strict_cycle_voltage_sign": 1,
+                "potential": [
+                  -1,
+                  0
+                ]
+              },
+              {
+                "states": [
+                  0,
+                  3,
+                  7,
+                  8
+                ],
+                "strict_cycle_voltage_sign": 1,
+                "potential": [
+                  -1,
+                  -2,
+                  0,
+                  -3
+                ]
+              }
+            ]
+          },
+          {
+            "alphabet": [
+              0,
+              3
+            ],
+            "forbidden_double": 0,
+            "status": "PASS",
+            "cyclic_components": [
+              {
+                "states": [
+                  5
+                ],
+                "strict_cycle_voltage_sign": 1,
+                "potential": [
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "alphabet": [
+              0,
+              3
+            ],
+            "forbidden_double": 1,
+            "status": "PASS",
+            "cyclic_components": []
+          },
+          {
+            "alphabet": [
+              1,
+              2
+            ],
+            "forbidden_double": 0,
+            "status": "PASS",
+            "cyclic_components": [
+              {
+                "states": [
+                  5
+                ],
+                "strict_cycle_voltage_sign": -1,
+                "potential": [
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "alphabet": [
+              1,
+              2
+            ],
+            "forbidden_double": 1,
+            "status": "PASS",
+            "cyclic_components": []
+          },
+          {
+            "alphabet": [
+              1,
+              3
+            ],
+            "forbidden_double": 0,
+            "status": "PASS",
+            "cyclic_components": [
+              {
+                "states": [
+                  12,
+                  19
+                ],
+                "strict_cycle_voltage_sign": -1,
+                "potential": [
+                  0,
+                  -1
+                ]
+              },
+              {
+                "states": [
+                  1,
+                  2,
+                  6,
+                  9
+                ],
+                "strict_cycle_voltage_sign": -1,
+                "potential": [
+                  -2,
+                  -1,
+                  -3,
+                  0
+                ]
+              },
+              {
+                "states": [
+                  5
+                ],
+                "strict_cycle_voltage_sign": 1,
+                "potential": [
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "alphabet": [
+              1,
+              3
+            ],
+            "forbidden_double": 1,
+            "status": "PASS",
+            "cyclic_components": [
+              {
+                "states": [
+                  1,
+                  2,
+                  6,
+                  9
+                ],
+                "strict_cycle_voltage_sign": -1,
+                "potential": [
+                  -2,
+                  -1,
+                  -3,
+                  0
+                ]
+              },
+              {
+                "states": [
+                  12,
+                  19
+                ],
+                "strict_cycle_voltage_sign": -1,
+                "potential": [
+                  0,
+                  -1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "source_image_controls": [
+    {
+      "relative_words": [
+        "xY",
+        "xY",
+        "y"
+      ],
+      "enlarged_graph": [
+        1,
+        2,
+        0,
+        0,
+        -1,
+        0,
+        -1,
+        3,
+        0,
+        4,
+        -1,
+        -1,
+        5,
+        6,
+        1,
+        7,
+        2,
+        -1,
+        8,
+        9,
+        -1,
+        3,
+        -1,
+        10,
+        3,
+        11,
+        -1,
+        -1,
+        -1,
+        12,
+        3,
+        -1,
+        13,
+        -1,
+        14,
+        4,
+        15,
+        14,
+        4,
+        -1,
+        -1,
+        16,
+        5,
+        17,
+        6,
+        -1,
+        -1,
+        18,
+        7,
+        19,
+        -1,
+        -1,
+        20,
+        8,
+        -1,
+        -1,
+        9,
+        -1,
+        -1,
+        8,
+        -1,
+        9,
+        -1,
+        20,
+        10,
+        21,
+        -1,
+        -1,
+        -1,
+        22,
+        10,
+        -1,
+        23,
+        24,
+        11,
+        -1,
+        12,
+        -1,
+        25,
+        26,
+        -1,
+        13,
+        15,
+        -1,
+        16,
+        -1,
+        -1,
+        27,
+        17,
+        28,
+        -1,
+        -1,
+        -1,
+        18,
+        -1,
+        29,
+        18,
+        -1,
+        -1,
+        30,
+        31,
+        -1,
+        -1,
+        19,
+        32,
+        -1,
+        19,
+        -1,
+        33,
+        34,
+        21,
+        -1,
+        22,
+        -1,
+        35,
+        36,
+        -1,
+        31,
+        23,
+        -1,
+        37,
+        -1,
+        24,
+        -1,
+        29,
+        25,
+        -1,
+        -1,
+        -1,
+        26,
+        -1,
+        38,
+        -1,
+        27,
+        -1,
+        39,
+        27,
+        -1,
+        -1,
+        40,
+        41,
+        -1,
+        -1,
+        28,
+        42,
+        -1,
+        28,
+        -1,
+        38,
+        30,
+        -1,
+        -1,
+        -1,
+        37,
+        32,
+        -1,
+        -1,
+        41,
+        33,
+        -1,
+        43,
+        -1,
+        34,
+        -1,
+        39,
+        35,
+        -1,
+        -1,
+        -1,
+        36,
+        -1,
+        44,
+        44,
+        40,
+        -1,
+        -1,
+        -1,
+        43,
+        42,
+        -1
+      ],
+      "rank": 7,
+      "source_images": [
+        {
+          "conjugator": "",
+          "vertices": [
+            0,
+            2,
+            4,
+            8,
+            9,
+            13,
+            14,
+            15,
+            20
+          ],
+          "rank": 3
+        },
+        {
+          "conjugator": "xY",
+          "vertices": [
+            3,
+            6,
+            7,
+            11,
+            12,
+            18,
+            19,
+            23,
+            24,
+            25,
+            26,
+            29,
+            30,
+            31,
+            32,
+            37,
+            38
+          ],
+          "rank": 2
+        },
+        {
+          "conjugator": "xYxY",
+          "vertices": [
+            10,
+            16,
+            17,
+            21,
+            22,
+            27,
+            28,
+            33,
+            34,
+            35,
+            36,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44
+          ],
+          "rank": 2
+        }
+      ],
+      "contacts": []
+    },
+    {
+      "relative_words": [
+        "xY",
+        "XY",
+        "y"
+      ],
+      "enlarged_graph": [
+        1,
+        2,
+        0,
+        0,
+        -1,
+        0,
+        -1,
+        3,
+        0,
+        4,
+        -1,
+        5,
+        -1,
+        6,
+        1,
+        7,
+        2,
+        -1,
+        8,
+        9,
+        10,
+        11,
+        2,
+        12,
+        3,
+        13,
+        -1,
+        -1,
+        -1,
+        14,
+        3,
+        -1,
+        15,
+        -1,
+        16,
+        4,
+        17,
+        16,
+        4,
+        -1,
+        -1,
+        5,
+        -1,
+        18,
+        5,
+        19,
+        -1,
+        -1,
+        -1,
+        20,
+        5,
+        -1,
+        6,
+        -1,
+        -1,
+        21,
+        7,
+        22,
+        -1,
+        -1,
+        23,
+        8,
+        -1,
+        -1,
+        9,
+        -1,
+        -1,
+        8,
+        -1,
+        9,
+        -1,
+        23,
+        -1,
+        24,
+        10,
+        25,
+        11,
+        -1,
+        -1,
+        26,
+        12,
+        27,
+        -1,
+        -1,
+        28,
+        29,
+        13,
+        -1,
+        14,
+        -1,
+        30,
+        31,
+        -1,
+        15,
+        17,
+        -1,
+        18,
+        32,
+        -1,
+        -1,
+        -1,
+        33,
+        18,
+        -1,
+        34,
+        35,
+        19,
+        -1,
+        20,
+        -1,
+        36,
+        37,
+        -1,
+        21,
+        -1,
+        38,
+        21,
+        -1,
+        -1,
+        39,
+        40,
+        -1,
+        -1,
+        22,
+        41,
+        -1,
+        22,
+        -1,
+        24,
+        -1,
+        -1,
+        42,
+        25,
+        43,
+        -1,
+        -1,
+        -1,
+        26,
+        -1,
+        44,
+        26,
+        -1,
+        -1,
+        45,
+        46,
+        -1,
+        -1,
+        27,
+        47,
+        -1,
+        27,
+        -1,
+        -1,
+        40,
+        28,
+        -1,
+        48,
+        -1,
+        29,
+        -1,
+        38,
+        30,
+        -1,
+        -1,
+        -1,
+        31,
+        -1,
+        49,
+        50,
+        51,
+        32,
+        -1,
+        33,
+        -1,
+        52,
+        53,
+        -1,
+        46,
+        34,
+        -1,
+        54,
+        -1,
+        35,
+        -1,
+        44,
+        36,
+        -1,
+        -1,
+        -1,
+        37,
+        -1,
+        55,
+        49,
+        39,
+        -1,
+        -1,
+        -1,
+        48,
+        41,
+        -1,
+        -1,
+        42,
+        -1,
+        56,
+        42,
+        -1,
+        -1,
+        57,
+        58,
+        -1,
+        -1,
+        43,
+        59,
+        -1,
+        43,
+        -1,
+        55,
+        45,
+        -1,
+        -1,
+        -1,
+        54,
+        47,
+        -1,
+        -1,
+        58,
+        50,
+        -1,
+        60,
+        -1,
+        51,
+        -1,
+        56,
+        52,
+        -1,
+        -1,
+        -1,
+        53,
+        -1,
+        61,
+        61,
+        57,
+        -1,
+        -1,
+        -1,
+        60,
+        59,
+        -1
+      ],
+      "rank": 9,
+      "source_images": [
+        {
+          "conjugator": "",
+          "vertices": [
+            0,
+            2,
+            4,
+            8,
+            9,
+            15,
+            16,
+            17,
+            23
+          ],
+          "rank": 3
+        },
+        {
+          "conjugator": "xY",
+          "vertices": [
+            3,
+            6,
+            7,
+            13,
+            14,
+            21,
+            22,
+            28,
+            29,
+            30,
+            31,
+            38,
+            39,
+            40,
+            41,
+            48,
+            49
+          ],
+          "rank": 2
+        },
+        {
+          "conjugator": "XY",
+          "vertices": [
+            5,
+            11,
+            12,
+            19,
+            20,
+            26,
+            27,
+            34,
+            35,
+            36,
+            37,
+            44,
+            45,
+            46,
+            47,
+            54,
+            55
+          ],
+          "rank": 2
+        },
+        {
+          "conjugator": "XYxY",
+          "vertices": [
+            18,
+            24,
+            25,
+            32,
+            33,
+            42,
+            43,
+            50,
+            51,
+            52,
+            53,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61
+          ],
+          "rank": 2
+        }
+      ],
+      "contacts": []
+    },
+    {
+      "relative_words": [
+        "xY",
+        "xxx",
+        "y"
+      ],
+      "enlarged_graph": [
+        1,
+        2,
+        0,
+        0,
+        3,
+        0,
+        -1,
+        4,
+        0,
+        5,
+        -1,
+        -1,
+        6,
+        1,
+        -1,
+        -1,
+        7,
+        8,
+        1,
+        9,
+        2,
+        -1,
+        10,
+        11,
+        12,
+        3,
+        -1,
+        13,
+        -1,
+        4,
+        -1,
+        14,
+        4,
+        15,
+        -1,
+        16,
+        -1,
+        17,
+        4,
+        -1,
+        18,
+        -1,
+        19,
+        5,
+        20,
+        19,
+        5,
+        -1,
+        -1,
+        6,
+        -1,
+        21,
+        -1,
+        22,
+        6,
+        -1,
+        -1,
+        23,
+        7,
+        -1,
+        8,
+        -1,
+        -1,
+        24,
+        25,
+        -1,
+        8,
+        -1,
+        9,
+        26,
+        -1,
+        -1,
+        27,
+        10,
+        -1,
+        -1,
+        11,
+        -1,
+        -1,
+        10,
+        -1,
+        11,
+        -1,
+        27,
+        -1,
+        28,
+        12,
+        29,
+        13,
+        30,
+        -1,
+        -1,
+        14,
+        31,
+        -1,
+        -1,
+        32,
+        33,
+        15,
+        -1,
+        34,
+        16,
+        -1,
+        -1,
+        17,
+        -1,
+        35,
+        36,
+        -1,
+        18,
+        20,
+        -1,
+        21,
+        37,
+        -1,
+        -1,
+        -1,
+        38,
+        21,
+        -1,
+        22,
+        -1,
+        31,
+        39,
+        23,
+        -1,
+        -1,
+        30,
+        -1,
+        24,
+        -1,
+        40,
+        24,
+        -1,
+        -1,
+        41,
+        -1,
+        25,
+        42,
+        -1,
+        43,
+        -1,
+        -1,
+        26,
+        44,
+        -1,
+        26,
+        -1,
+        28,
+        -1,
+        -1,
+        45,
+        29,
+        46,
+        -1,
+        -1,
+        42,
+        -1,
+        30,
+        -1,
+        -1,
+        43,
+        32,
+        -1,
+        47,
+        -1,
+        33,
+        -1,
+        -1,
+        39,
+        -1,
+        34,
+        40,
+        35,
+        -1,
+        -1,
+        -1,
+        36,
+        -1,
+        48,
+        49,
+        50,
+        37,
+        -1,
+        38,
+        -1,
+        51,
+        52,
+        48,
+        41,
+        -1,
+        -1,
+        -1,
+        47,
+        44,
+        -1,
+        -1,
+        45,
+        -1,
+        53,
+        45,
+        -1,
+        -1,
+        54,
+        55,
+        -1,
+        -1,
+        46,
+        56,
+        -1,
+        46,
+        -1,
+        -1,
+        55,
+        49,
+        -1,
+        57,
+        -1,
+        50,
+        -1,
+        53,
+        51,
+        -1,
+        -1,
+        -1,
+        52,
+        -1,
+        58,
+        58,
+        54,
+        -1,
+        -1,
+        -1,
+        57,
+        56,
+        -1
+      ],
+      "rank": 9,
+      "source_images": [
+        {
+          "conjugator": "",
+          "vertices": [
+            0,
+            2,
+            5,
+            10,
+            11,
+            18,
+            19,
+            20,
+            27
+          ],
+          "rank": 3
+        },
+        {
+          "conjugator": "xY",
+          "vertices": [
+            4,
+            8,
+            9,
+            15,
+            17,
+            24,
+            26,
+            32,
+            33,
+            35,
+            36,
+            40,
+            41,
+            43,
+            44,
+            47,
+            48
+          ],
+          "rank": 2
+        },
+        {
+          "conjugator": "xxx",
+          "vertices": [
+            1,
+            3,
+            4,
+            6,
+            7,
+            8,
+            13,
+            14,
+            16,
+            22,
+            23,
+            25,
+            30,
+            31,
+            34,
+            39,
+            42
+          ],
+          "rank": 2
+        },
+        {
+          "conjugator": "xxxxY",
+          "vertices": [
+            21,
+            28,
+            29,
+            37,
+            38,
+            45,
+            46,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58
+          ],
+          "rank": 2
+        }
+      ],
+      "contacts": [
+        [
+          1,
+          2,
+          [
+            4,
+            8
+          ]
+        ]
+      ]
+    }
+  ],
+  "literal_AK3_envelope_escape": {
+    "source": [
+      "xxxYYYY",
+      "xyxYXY"
+    ],
+    "first": "x",
+    "second": "x",
+    "third": "Y",
+    "six_generators": [
+      "xxxYYYY",
+      "xyxYXY",
+      "xxxxYYYYX",
+      "xxyxYXYX",
+      "xxxxxYYYYXX",
+      "xxxyxYXYXX"
+    ],
+    "enlarged_graph": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -22,7 +22,7 @@ A separate search also fills the last missing cap-34 cut in the original Round 1
 
 ## A shorter external projection
 
-Destabilizing at the first isolated pivot instead gives the energy-22 pair `(XXYYYxYXY, XXYYxYXXyxxY)` in **1,306** strict moves with maximum rank three, cyclic peak 33 and raw peak 41. A 40-move strict ordinary path from this pair to the energy-24 pair has raw peak 29. The energy-22 pair is therefore also absent from ordinary cap 32. The arbitrary-tail single-product test finds no primitive exposure from this energy-22 pair. [Stable ledger](../certificates/round16_stable_proof_cap33_e22.jsonl), [ordinary comparison path](../certificates/round16_stable_proof_e22_to_e24.json), [primitive-product check](../results/round16_stable_proof_pivot.json).
+Destabilizing at the first isolated pivot gives the energy-21 pair `(XXYYYxYXY, XXYYxYXXyxxY)` in **1,306** strict moves with maximum rank three, cyclic peak 33 and raw peak 41. The historical label E22 counts the isolated auxiliary letter in the preceding rank-three triple. A 40-move strict ordinary path from this pair to the energy-24 pair has raw peak 29, so the shorter pair is also absent from ordinary cap 32. The arbitrary-tail single-product test finds no primitive exposure from it. [Stable ledger](../certificates/round16_stable_proof_cap33_e22.jsonl), [ordinary comparison path](../certificates/round16_stable_proof_e22_to_e24.json), [primitive-product check](../results/round16_stable_proof_pivot.json).
 
 An independent reverse closure at ordinary cap 33 contains both E22 and E24 and excludes AK(3). Together with the stable ledgers, this establishes a strict cyclic peak gap at both exact markings. [Ordinary reverse closure and comparison](round-16-cyclic-peak-gap.md).
 

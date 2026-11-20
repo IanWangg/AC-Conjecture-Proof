@@ -7,7 +7,7 @@ E22 = (XXYYYxYXY, XXYYxYXXyxxY)
 E24 = (XXYxYXXYxxy, XXYXYxxyXyxxy)
 ~~~
 
-Each has a strict stable path from AK(3) of cyclic peak **33** and maximum rank **3**. Every ordinary path from AK(3) to either pair must have cyclic peak at least **34**. The inequality compares paths from the same marked source to the same marked endpoint. It gives a finite peak separation. Unbounded ordinary reachability of these endpoints remains open. [E22 stable ledger](../certificates/round16_stable_proof_cap33_e22.jsonl), [E24 stable ledger](../certificates/round16_stable_proof_cap33_external.jsonl).
+E22 has cyclic energy 21 after deletion of the isolated auxiliary letter. Its historical label counts that letter. Each marked pair has a strict stable path from AK(3) of cyclic peak **33** and maximum rank **3**. The Round 16 ordinary lower bound is **34**, giving a strict peak separation for these endpoints. Round 17 establishes the exact ordinary peak. [E22 stable ledger](../certificates/round16_stable_proof_cap33_e22.jsonl), [E24 stable ledger](../certificates/round16_stable_proof_cap33_external.jsonl), [exact ordinary result](round-17-cyclic-peak-gap.md).
 
 ## Ordinary lower bound
 

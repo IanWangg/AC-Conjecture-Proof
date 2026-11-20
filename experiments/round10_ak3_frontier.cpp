@@ -519,10 +519,11 @@ int main(int argc, char** argv) {
         if (argc < 8)
             throw std::runtime_error("usage: frontier seed cap workers lower.tsv prefix row-limit byte-offset [audit]; frontier expand cap workers lower.tsv prefix row-limit boundary.bin ...; frontier expand-flat cap workers lower.tsv-or-@manifest prefix row-limit lower-bits outside-bits boundary.bin ...");
         const unsigned cap = std::stoul(argv[2]), workers = std::stoul(argv[3]);
-        if (cap < 14 || cap > 33 || !workers) throw std::runtime_error("need cap 14–33 and at least one worker");
+        if (cap < 14 || cap > 62 || !workers) throw std::runtime_error("need cap 14–62 and at least one worker");
         const auto limit = std::stoull(argv[6]);
         if (std::string_view(argv[1]) == "seed" && (argc == 8 || (argc == 9 && std::string_view(argv[8]) == "audit")))
             return frontier::seeds(cap, workers, argv[4], argv[5], limit, std::stoull(argv[7]), argc == 9);
+        if (cap > 33) throw std::runtime_error("expansion needs cap at most 33");
         if (std::string_view(argv[1]) == "expand" && cap <= 32)
             return frontier::expand(cap, workers, argv[4], argv[5], limit, argc - 7, argv + 7);
         if (std::string_view(argv[1]) == "expand-flat" && argc >= 10) {

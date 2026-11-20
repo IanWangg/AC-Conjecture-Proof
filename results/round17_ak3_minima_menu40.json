@@ -1,0 +1,39 @@
+{
+  "cap": 40,
+  "first": {
+    "charts": 10,
+    "candidate_products": 2558160,
+    "admitted_products": 2558160,
+    "length_excluded_charts": 0,
+    "marked_outputs": 160380
+  },
+  "first_independent_rotation_checks": 1279080,
+  "second_alternating": {
+    "charts": 160372,
+    "candidate_products": 22293344,
+    "admitted_products": 9005240,
+    "length_excluded_charts": 151436,
+    "marked_outputs": 45713
+  },
+  "distinct_first": 160372,
+  "distinct_second": 45705,
+  "distinct_union": 206077,
+  "union_sha256": "98061474cfdb90610fc4f7e4a064c19cc9eba5f5f37cebf23dad0a671b0400a0",
+  "primitive_product": {
+    "rows_checked": 206077,
+    "complete": true,
+    "hit": null
+  },
+  "quotient_donor_occurrences": {
+    "torus": 0,
+    "consecutive_bs": 0,
+    "root_adjoined_bs": 49890
+  },
+  "root_adjoined_occurrences_by_type": [
+    [
+      2,
+      2,
+      49890
+    ]
+  ]
+}

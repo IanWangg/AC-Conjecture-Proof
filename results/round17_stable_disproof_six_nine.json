@@ -1,0 +1,114 @@
+{
+  "degree_six_splits": [
+    {
+      "active_depths": [
+        5,
+        4
+      ],
+      "degree": 6,
+      "orientations": [
+        {
+          "active_layer": 15740246,
+          "edges": 19963328,
+          "meetings": 0,
+          "penultimate_layer": 712976,
+          "plain_boundary": 630,
+          "short_boundary": 32
+        },
+        {
+          "active_layer": 8664644,
+          "edges": 62693064,
+          "meetings": 0,
+          "penultimate_layer": 2239038,
+          "plain_boundary": 1519,
+          "short_boundary": 22
+        }
+      ],
+      "short_idle": 0
+    },
+    {
+      "active_depths": [
+        4,
+        5
+      ],
+      "degree": 6,
+      "orientations": [
+        {
+          "active_layer": 23596034,
+          "edges": 33647516,
+          "meetings": 0,
+          "penultimate_layer": 1201697,
+          "plain_boundary": 88,
+          "short_boundary": 852
+        },
+        {
+          "active_layer": 11455689,
+          "edges": 105371672,
+          "meetings": 0,
+          "penultimate_layer": 3763274,
+          "plain_boundary": 159,
+          "short_boundary": 491
+        }
+      ],
+      "short_idle": 1
+    },
+    {
+      "active_depths": [
+        3,
+        6
+      ],
+      "degree": 6,
+      "orientations": [
+        {
+          "active_layer": 23242650,
+          "edges": 50885184,
+          "meetings": 0,
+          "penultimate_layer": 1817328,
+          "plain_boundary": 11,
+          "short_boundary": 14297
+        },
+        {
+          "active_layer": 10227080,
+          "edges": 166550496,
+          "meetings": 0,
+          "penultimate_layer": 5948232,
+          "plain_boundary": 15,
+          "short_boundary": 7241
+        }
+      ],
+      "short_idle": 2
+    },
+    {
+      "active_depths": [
+        2,
+        7
+      ],
+      "degree": 6,
+      "orientations": [
+        {
+          "active_layer": 18067021,
+          "edges": 58515744,
+          "meetings": 0,
+          "penultimate_layer": 2089848,
+          "plain_boundary": 1,
+          "short_boundary": 195246
+        },
+        {
+          "active_layer": 7266141,
+          "edges": 216693792,
+          "meetings": 0,
+          "penultimate_layer": 7739064,
+          "plain_boundary": 1,
+          "short_boundary": 85635
+        }
+      ],
+      "short_idle": 3
+    }
+  ],
+  "idle_instructions": 3,
+  "interval_lengths": [
+    6,
+    9
+  ],
+  "middle_budget": 18
+}
