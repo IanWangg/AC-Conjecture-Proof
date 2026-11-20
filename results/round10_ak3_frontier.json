@@ -1,0 +1,449 @@
+{
+  "controls": {
+    "21": {
+      "exact_set_comparison": "PASS",
+      "split_resume_comparison": true,
+      "full_orbits": 18118,
+      "new_orbits": 13098,
+      "outside_catalogue_sha256": "95257181d68f97f9a0083c58c7ef3412c8618a8a6923fc2651c956d2a7746286",
+      "parent_records_structurally_verified": 13098,
+      "sample_parent_edges_strictly_replayed": 24,
+      "seed": {
+        "cyclic_cap": 21,
+        "source_size": 105907,
+        "start_offset": 0,
+        "next_offset": 105907,
+        "source_rows_scanned": 5020,
+        "source_reached_eof": true,
+        "source_boundary_independently_compared": true,
+        "recipient_parity_skips": 2395,
+        "zero_bridge_rotation_checks": 1255218,
+        "positive_bridge_rotation_checks": 1032,
+        "admitted_candidates": 63017,
+        "boundary_records": 10796,
+        "primitive_boundary_records": 0
+      },
+      "expansion": {
+        "cyclic_cap": 21,
+        "lower_orbits": 5020,
+        "boundary_records_read": 10796,
+        "unique_seed_orbits": 10796,
+        "expanded_orbits": 13098,
+        "outside_orbits": 13098,
+        "closure_reached_from_listed_seeds": true,
+        "primitive_found": false,
+        "candidate_products": 9736584,
+        "admitted_products": 394168,
+        "outside_histogram": {
+          "15": 4,
+          "16": 2,
+          "17": 33,
+          "18": 33,
+          "19": 259,
+          "20": 224,
+          "21": 12543
+        }
+      },
+      "minimum_energy_anchored_route": {
+        "cyclic_cap": 21,
+        "lower_anchor": [
+          "xxyxYXYXy",
+          "xxyXYxyxYxy"
+        ],
+        "orbit_route": [
+          [
+            "xxyxYXYXy",
+            "xxyXYxyxYxy"
+          ],
+          [
+            "xxyxYXYXy",
+            "xxxyxYxyxYXy"
+          ],
+          [
+            "xxyxYXYXy",
+            "xxxyxYXYxyy"
+          ],
+          [
+            "xxyxYY",
+            "xxYXyXyxY"
+          ],
+          [
+            "xxyxYY",
+            "xxxYxyXXY"
+          ]
+        ]
+      },
+      "minimum_energy_anchored_route_replay": {
+        "moves": 65,
+        "peak_total_length": 23,
+        "endpoint": [
+          "XXXYXyxxY",
+          "XXyXYY"
+        ],
+        "cyclic_peak": 21
+      }
+    },
+    "22": {
+      "exact_set_comparison": "PASS",
+      "split_resume_comparison": false,
+      "full_orbits": 32363,
+      "new_orbits": 14245,
+      "outside_catalogue_sha256": "9d4f4136b114fe7ef171f463cb3d89ceda347cafc4082f2c83139bf01cde66b2",
+      "parent_records_structurally_verified": 14245,
+      "sample_parent_edges_strictly_replayed": 24,
+      "seed": {
+        "cyclic_cap": 22,
+        "source_size": 406154,
+        "start_offset": 0,
+        "next_offset": 406154,
+        "source_rows_scanned": 18118,
+        "source_reached_eof": true,
+        "source_boundary_independently_compared": true,
+        "recipient_parity_skips": 21002,
+        "zero_bridge_rotation_checks": 2760592,
+        "positive_bridge_rotation_checks": 2672,
+        "admitted_candidates": 98501,
+        "boundary_records": 13164,
+        "primitive_boundary_records": 0
+      },
+      "expansion": {
+        "cyclic_cap": 22,
+        "lower_orbits": 18118,
+        "boundary_records_read": 13164,
+        "unique_seed_orbits": 13164,
+        "expanded_orbits": 14245,
+        "outside_orbits": 14245,
+        "closure_reached_from_listed_seeds": true,
+        "primitive_found": false,
+        "candidate_products": 11215112,
+        "admitted_products": 384302,
+        "outside_histogram": {
+          "17": 3,
+          "18": 13,
+          "19": 62,
+          "20": 85,
+          "21": 425,
+          "22": 13657
+        }
+      },
+      "minimum_energy_anchored_route": {
+        "cyclic_cap": 22,
+        "lower_anchor": [
+          "xyxYXyxYXY",
+          "xxxyXYXXYxy"
+        ],
+        "orbit_route": [
+          [
+            "xyxYXyxYXY",
+            "xxxyXYXXYxy"
+          ],
+          [
+            "xxxyxYXXYXy",
+            "xxyxYXyXYXy"
+          ],
+          [
+            "xyxyXYxYXY",
+            "xyXYYYXYxyy"
+          ],
+          [
+            "xxxyxYXXYXy",
+            "xxyXYxyXYXy"
+          ],
+          [
+            "xxxxyXXYXy",
+            "xxxyXYXXYxy"
+          ],
+          [
+            "xxyxyXY",
+            "xxxxyXXYXy"
+          ]
+        ]
+      },
+      "minimum_energy_anchored_route_replay": {
+        "moves": 109,
+        "peak_total_length": 22,
+        "endpoint": [
+          "XXXXYxyxxY",
+          "XXyxYXY"
+        ],
+        "cyclic_peak": 22
+      }
+    },
+    "23": {
+      "exact_set_comparison": "PASS",
+      "split_resume_comparison": false,
+      "full_orbits": 111671,
+      "new_orbits": 79308,
+      "outside_catalogue_sha256": "26e486872bbfa05216322c0a9a571caa16a396d7a8425df0ae64c33a6c476707",
+      "parent_records_structurally_verified": 79308,
+      "sample_parent_edges_strictly_replayed": 24,
+      "seed": {
+        "cyclic_cap": 23,
+        "source_size": 747186,
+        "start_offset": 0,
+        "next_offset": 747186,
+        "source_rows_scanned": 32363,
+        "source_reached_eof": true,
+        "source_boundary_independently_compared": true,
+        "recipient_parity_skips": 15724,
+        "zero_bridge_rotation_checks": 9240398,
+        "positive_bridge_rotation_checks": 25336,
+        "admitted_candidates": 451643,
+        "boundary_records": 72863,
+        "primitive_boundary_records": 0
+      },
+      "expansion": {
+        "cyclic_cap": 23,
+        "lower_orbits": 32363,
+        "boundary_records_read": 72863,
+        "unique_seed_orbits": 72863,
+        "expanded_orbits": 79308,
+        "outside_orbits": 79308,
+        "closure_reached_from_listed_seeds": true,
+        "primitive_found": false,
+        "candidate_products": 66703312,
+        "admitted_products": 2585416,
+        "outside_histogram": {
+          "15": 1,
+          "16": 3,
+          "17": 9,
+          "18": 12,
+          "19": 74,
+          "20": 111,
+          "21": 483,
+          "22": 774,
+          "23": 77841
+        }
+      },
+      "minimum_energy_anchored_route": {
+        "cyclic_cap": 23,
+        "lower_anchor": [
+          "xxxyxYXXy",
+          "xxyxxyxxYXy"
+        ],
+        "orbit_route": [
+          [
+            "xxxyxYXXy",
+            "xxyxxyxxYXy"
+          ],
+          [
+            "xxyxxyxxyXY",
+            "xxyxxyXYXyxY"
+          ],
+          [
+            "xxxyXYY",
+            "xxyXYxxYxxY"
+          ],
+          [
+            "xxxyXYY",
+            "xxYxxYXy"
+          ]
+        ]
+      },
+      "minimum_energy_anchored_route_replay": {
+        "moves": 45,
+        "peak_total_length": 23,
+        "endpoint": [
+          "XXXYYxy",
+          "XXYXXyxY"
+        ],
+        "cyclic_peak": 23
+      }
+    }
+  },
+  "positive_primitive_control": {
+    "boundary": {
+      "cyclic_cap": 14,
+      "source_size": 15,
+      "start_offset": 0,
+      "next_offset": 15,
+      "source_rows_scanned": 1,
+      "source_reached_eof": true,
+      "source_boundary_independently_compared": true,
+      "recipient_parity_skips": 1,
+      "zero_bridge_rotation_checks": 84,
+      "positive_bridge_rotation_checks": 0,
+      "admitted_candidates": 4,
+      "boundary_records": 1,
+      "primitive_boundary_records": 1
+    },
+    "route": {
+      "cyclic_cap": 14,
+      "lower_anchor": [
+        "xxyxYY",
+        "xxyXYxY"
+      ],
+      "orbit_route": [
+        [
+          "xxyxYY",
+          "xxyXYxY"
+        ],
+        [
+          "xxxyxxy",
+          "xxyxyXY"
+        ]
+      ]
+    },
+    "strict_replay": {
+      "moves": 22,
+      "peak_total_length": 14,
+      "endpoint": [
+        "XXXyXXy",
+        "XXyXyxY"
+      ],
+      "cyclic_peak": 14
+    },
+    "primitive_words": [
+      "XXXyXXy"
+    ],
+    "certificate": {
+      "format": "ordinary-ac-elementary-v1",
+      "start": [
+        "xxyxYY",
+        "xxyXYxY"
+      ],
+      "target": [
+        "XXXyXXy",
+        "XXyXyxY"
+      ],
+      "moves": [
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 1,
+          "g": "y"
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "X"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "y"
+        },
+        {
+          "op": "invert",
+          "i": 1
+        },
+        {
+          "op": "multiply",
+          "i": 0,
+          "j": 1
+        },
+        {
+          "op": "invert",
+          "i": 0
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "x"
+        },
+        {
+          "op": "conjugate",
+          "i": 0,
+          "g": "Y"
+        },
+        {
+          "op": "invert",
+          "i": 1
+        }
+      ]
+    }
+  },
+  "cap32_complete_boundary_generation": {
+    "cyclic_cap": 32,
+    "source_size": 8258753914,
+    "start_offset": 0,
+    "next_offset": 8258753914,
+    "source_rows_scanned": 254220523,
+    "source_reached_eof": true,
+    "source_boundary_independently_compared": false,
+    "recipient_parity_skips": 298716276,
+    "zero_bridge_rotation_checks": 60161897580,
+    "positive_bridge_rotation_checks": 228249632,
+    "admitted_candidates": 3509580702,
+    "boundary_records": 1073329989,
+    "primitive_boundary_records": 0
+  },
+  "cap32_reference_boundary_sample": {
+    "cyclic_cap": 32,
+    "source_size": 532952,
+    "start_offset": 0,
+    "next_offset": 532952,
+    "source_rows_scanned": 16384,
+    "source_reached_eof": true,
+    "source_boundary_independently_compared": true,
+    "recipient_parity_skips": 19150,
+    "zero_bridge_rotation_checks": 3907680,
+    "positive_bridge_rotation_checks": 14112,
+    "admitted_candidates": 225165,
+    "boundary_records": 83718,
+    "primitive_boundary_records": 0,
+    "sampling": "Next complete row after each of 16384 distinct byte offsets chosen by Python random.Random(3132).sample(range(source_size - 100), 16384), with repeated rows discarded.",
+    "sha256": "557e22e5200adfb49f8082ba6c829b1c29f509f9dd3b2348a58ba51ff28d3493"
+  }
+}

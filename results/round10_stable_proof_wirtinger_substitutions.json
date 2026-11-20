@@ -1,0 +1,20 @@
+{
+  "nonprimitive_images_of_self_exponent_one": 80,
+  "cases": {
+    "AK3": {
+      "distinct_ordered_cyclic_image_pairs": 48,
+      "zero_bridge_rotation_products_tested": 59776,
+      "positive": []
+    },
+    "published_length25": {
+      "distinct_ordered_cyclic_image_pairs": 48,
+      "zero_bridge_rotation_products_tested": 212608,
+      "positive": []
+    },
+    "wrong_W_chart": {
+      "distinct_ordered_cyclic_image_pairs": 48,
+      "zero_bridge_rotation_products_tested": 160832,
+      "positive": []
+    }
+  }
+}

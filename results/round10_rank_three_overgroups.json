@@ -1,0 +1,333 @@
+{
+  "AK3": {
+    "rows": [
+      "xxxYYYY",
+      "xyxYXY"
+    ],
+    "principal_quotients_by_rank": {
+      "2": 2,
+      "3": 21,
+      "4": 47,
+      "5": 12
+    },
+    "independent_vertex_pair_checks": 1625,
+    "rank_three_single_identification_audit": {
+      "status": "PASS",
+      "ordinary_AC_goal_solved": false,
+      "original_graph_vertices": 10,
+      "vertex_identifications_independently_refolded": 45,
+      "rank_three_cases": 45,
+      "character_values_on_p_b_t": [
+        0,
+        0,
+        1
+      ],
+      "signed_double_free_graphs_independently_reconstructed": 360,
+      "cyclic_components_independently_recognized": 302,
+      "integer_potential_inequalities_checked": 822,
+      "constructor_or_Bellman_Ford_solver_imported": false,
+      "scope": "Finite certificate audit for the unbounded restricted kernel theorem; no global AC invariant"
+    },
+    "rank_three_single_identification_distinct_cores": 20,
+    "rank_three_additional_cores": [
+      {
+        "graph": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          -1,
+          0,
+          0,
+          -1,
+          1,
+          2,
+          2
+        ],
+        "basis": [
+          "x",
+          "YY",
+          "yxyXY"
+        ],
+        "row_coordinates": [
+          [
+            3,
+            2,
+            0
+          ],
+          [
+            1,
+            0,
+            -1
+          ]
+        ],
+        "character": [
+          -2,
+          3,
+          -2
+        ],
+        "edge_voltages": [
+          -2,
+          2,
+          0,
+          3,
+          0,
+          0,
+          -3,
+          0,
+          0,
+          0,
+          -2,
+          2
+        ],
+        "inequalities": 24,
+        "cyclic_components": 12,
+        "certificate": {
+          "status": "PASS",
+          "checks": [
+            {
+              "alphabet": [
+                0,
+                2
+              ],
+              "forbidden_double": 0,
+              "status": "PASS",
+              "cyclic_components": [
+                {
+                  "states": [
+                    0,
+                    1,
+                    3
+                  ],
+                  "strict_cycle_voltage_sign": -1,
+                  "potential": [
+                    0,
+                    0,
+                    -1
+                  ]
+                },
+                {
+                  "states": [
+                    5
+                  ],
+                  "strict_cycle_voltage_sign": -1,
+                  "potential": [
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "alphabet": [
+                0,
+                2
+              ],
+              "forbidden_double": 1,
+              "status": "PASS",
+              "cyclic_components": [
+                {
+                  "states": [
+                    0
+                  ],
+                  "strict_cycle_voltage_sign": -1,
+                  "potential": [
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "alphabet": [
+                0,
+                3
+              ],
+              "forbidden_double": 0,
+              "status": "PASS",
+              "cyclic_components": [
+                {
+                  "states": [
+                    0,
+                    1,
+                    3
+                  ],
+                  "strict_cycle_voltage_sign": 1,
+                  "potential": [
+                    -1,
+                    -8,
+                    0
+                  ]
+                },
+                {
+                  "states": [
+                    5
+                  ],
+                  "strict_cycle_voltage_sign": 1,
+                  "potential": [
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "alphabet": [
+                0,
+                3
+              ],
+              "forbidden_double": 1,
+              "status": "PASS",
+              "cyclic_components": [
+                {
+                  "states": [
+                    0
+                  ],
+                  "strict_cycle_voltage_sign": -1,
+                  "potential": [
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "alphabet": [
+                1,
+                2
+              ],
+              "forbidden_double": 0,
+              "status": "PASS",
+              "cyclic_components": [
+                {
+                  "states": [
+                    5
+                  ],
+                  "strict_cycle_voltage_sign": -1,
+                  "potential": [
+                    0
+                  ]
+                },
+                {
+                  "states": [
+                    0,
+                    1,
+                    3
+                  ],
+                  "strict_cycle_voltage_sign": -1,
+                  "potential": [
+                    0,
+                    -7,
+                    -8
+                  ]
+                }
+              ]
+            },
+            {
+              "alphabet": [
+                1,
+                2
+              ],
+              "forbidden_double": 1,
+              "status": "PASS",
+              "cyclic_components": [
+                {
+                  "states": [
+                    0
+                  ],
+                  "strict_cycle_voltage_sign": 1,
+                  "potential": [
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "alphabet": [
+                1,
+                3
+              ],
+              "forbidden_double": 0,
+              "status": "PASS",
+              "cyclic_components": [
+                {
+                  "states": [
+                    5
+                  ],
+                  "strict_cycle_voltage_sign": 1,
+                  "potential": [
+                    0
+                  ]
+                },
+                {
+                  "states": [
+                    0,
+                    1,
+                    3
+                  ],
+                  "strict_cycle_voltage_sign": 1,
+                  "potential": [
+                    -1,
+                    -1,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "alphabet": [
+                1,
+                3
+              ],
+              "forbidden_double": 1,
+              "status": "PASS",
+              "cyclic_components": [
+                {
+                  "states": [
+                    0
+                  ],
+                  "strict_cycle_voltage_sign": 1,
+                  "potential": [
+                    0
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "energy17": {
+    "rows": [
+      "xxyXYXy",
+      "xxYXYxYYXY"
+    ],
+    "principal_quotients_by_rank": {
+      "2": 2,
+      "3": 42,
+      "4": 365,
+      "5": 745,
+      "6": 505,
+      "7": 158,
+      "8": 22
+    },
+    "independent_vertex_pair_checks": 72097,
+    "rank_three_single_identification_audit": {
+      "status": "PASS",
+      "ordinary_AC_goal_solved": false,
+      "original_graph_vertices": 14,
+      "vertex_identifications_independently_refolded": 91,
+      "rank_three_cases": 91,
+      "character_values_on_p_b_t": [
+        0,
+        0,
+        1
+      ],
+      "signed_double_free_graphs_independently_reconstructed": 728,
+      "cyclic_components_independently_recognized": 342,
+      "integer_potential_inequalities_checked": 636,
+      "constructor_or_Bellman_Ford_solver_imported": false,
+      "scope": "Finite certificate audit for the unbounded restricted kernel theorem; no global AC invariant"
+    },
+    "rank_three_single_identification_distinct_cores": 42,
+    "rank_three_additional_cores": []
+  }
+}

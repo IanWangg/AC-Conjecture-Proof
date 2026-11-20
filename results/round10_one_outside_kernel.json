@@ -1,0 +1,41 @@
+{
+  "old_ak3_certificate": {
+    "status": "PASS",
+    "ordinary_AC_goal_solved": false,
+    "original_graph_vertices": 10,
+    "vertex_identifications_independently_refolded": 45,
+    "rank_three_cases": 45,
+    "character_values_on_p_b_t": [
+      0,
+      0,
+      1
+    ],
+    "signed_double_free_graphs_independently_reconstructed": 360,
+    "cyclic_components_independently_recognized": 302,
+    "integer_potential_inequalities_checked": 822,
+    "constructor_or_Bellman_Ford_solver_imported": false,
+    "scope": "Finite certificate audit for the unbounded restricted kernel theorem; no global AC invariant"
+  },
+  "energy17_certificate": {
+    "status": "PASS",
+    "ordinary_AC_goal_solved": false,
+    "original_graph_vertices": 14,
+    "vertex_identifications_independently_refolded": 91,
+    "rank_three_cases": 91,
+    "character_values_on_p_b_t": [
+      0,
+      0,
+      1
+    ],
+    "signed_double_free_graphs_independently_reconstructed": 728,
+    "cyclic_components_independently_recognized": 342,
+    "integer_potential_inequalities_checked": 636,
+    "constructor_or_Bellman_Ford_solver_imported": false,
+    "scope": "Finite certificate audit for the unbounded restricted kernel theorem; no global AC invariant"
+  },
+  "base_core_primitive_map_states": {
+    "ak3": 72,
+    "energy17": 64
+  },
+  "energy17_certificate_sha256": "c3dbfe53244f51af3889d5b2070cfadc2ae02e04cabf26312f4eae4bdc746db8"
+}

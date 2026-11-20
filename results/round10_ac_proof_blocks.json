@@ -1,0 +1,897 @@
+{
+  "wirtinger_unbounded_primitive_exclusions": [
+    {
+      "donor": "XXYYxyyyxYY",
+      "source": "XXYxyXyxYY",
+      "primitive_family": [
+        "X",
+        "y"
+      ],
+      "group": "SL2",
+      "group_parameter": 7,
+      "marking": {
+        "x": [
+          0,
+          1,
+          6,
+          3
+        ],
+        "y": [
+          0,
+          1,
+          6,
+          6
+        ]
+      },
+      "source_invariant": 6,
+      "power_period": 3,
+      "primitive_residue_invariants": [
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "donor": "XXYxyXyxYY",
+      "source": "XXYYxyyyxYY",
+      "primitive_family": [
+        "x",
+        "xy"
+      ],
+      "group": "symmetric",
+      "group_parameter": 8,
+      "marking": {
+        "x": [
+          1,
+          3,
+          2,
+          5,
+          4,
+          7,
+          8,
+          6
+        ],
+        "y": [
+          6,
+          1,
+          4,
+          8,
+          3,
+          5,
+          7,
+          2
+        ]
+      },
+      "source_invariant": [
+        1,
+        1,
+        1,
+        5
+      ],
+      "power_period": 6,
+      "primitive_residue_invariants": [
+        [
+          1,
+          2,
+          2,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          7
+        ]
+      ]
+    }
+  ],
+  "marked_endpoint_comparisons": {
+    "wirtinger": {
+      "start": [
+        "XXYYxyyyxYY",
+        "XXYxyXyxYY"
+      ],
+      "target": [
+        "XXYYxyyyxYY",
+        "XXYYxyXyyxYY"
+      ],
+      "two_blocks": [
+        {
+          "receiving_order": [
+            0,
+            1
+          ],
+          "target_assignment": [
+            0,
+            1
+          ],
+          "abelian_quotient_absolute_determinants": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "first_decisive_quotient_check": 1,
+          "separator": {
+            "donors_killed": [
+              "XXYYxyyyxYY"
+            ],
+            "source": "XXYxyXyxYY",
+            "target": "XXYYxyXyyxYY",
+            "degree": 5,
+            "marking": {
+              "x": [
+                1,
+                2,
+                4,
+                5,
+                3
+              ],
+              "y": [
+                3,
+                4,
+                2,
+                5,
+                1
+              ]
+            },
+            "source_cycle_type": [
+              5
+            ],
+            "target_cycle_type": [
+              1,
+              1,
+              3
+            ]
+          }
+        },
+        {
+          "receiving_order": [
+            0,
+            1
+          ],
+          "target_assignment": [
+            1,
+            0
+          ],
+          "abelian_quotient_absolute_determinants": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "receiving_order": [
+            1,
+            0
+          ],
+          "target_assignment": [
+            0,
+            1
+          ],
+          "abelian_quotient_absolute_determinants": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "first_decisive_quotient_check": 0,
+          "separator": {
+            "donors_killed": [
+              "XXYYxyyyxYY"
+            ],
+            "source": "XXYxyXyxYY",
+            "target": "XXYYxyXyyxYY",
+            "degree": 5,
+            "marking": {
+              "x": [
+                1,
+                2,
+                4,
+                5,
+                3
+              ],
+              "y": [
+                3,
+                4,
+                2,
+                5,
+                1
+              ]
+            },
+            "source_cycle_type": [
+              5
+            ],
+            "target_cycle_type": [
+              1,
+              1,
+              3
+            ]
+          }
+        },
+        {
+          "receiving_order": [
+            1,
+            0
+          ],
+          "target_assignment": [
+            1,
+            0
+          ],
+          "abelian_quotient_absolute_determinants": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ],
+      "three_blocks": [
+        {
+          "receiving_order": [
+            0,
+            1,
+            0
+          ],
+          "target_assignment": [
+            0,
+            1
+          ],
+          "outer_quotient_abelian_index": 0,
+          "permitted_relative_signs_in_abelianization": [
+            1
+          ],
+          "status": "unresolved"
+        },
+        {
+          "receiving_order": [
+            0,
+            1,
+            0
+          ],
+          "target_assignment": [
+            1,
+            0
+          ],
+          "outer_quotient_abelian_index": 1,
+          "permitted_relative_signs_in_abelianization": [
+            1,
+            -1
+          ],
+          "status": "unresolved"
+        },
+        {
+          "receiving_order": [
+            1,
+            0,
+            1
+          ],
+          "target_assignment": [
+            0,
+            1
+          ],
+          "outer_quotient_abelian_index": 0,
+          "permitted_relative_signs_in_abelianization": [
+            1
+          ],
+          "separator": {
+            "donors_killed": [
+              "XXYYxyyyxYY"
+            ],
+            "source": "XXYxyXyxYY",
+            "target": "XXYYxyXyyxYY",
+            "degree": 5,
+            "marking": {
+              "x": [
+                1,
+                2,
+                4,
+                5,
+                3
+              ],
+              "y": [
+                3,
+                4,
+                2,
+                5,
+                1
+              ]
+            },
+            "source_cycle_type": [
+              5
+            ],
+            "target_cycle_type": [
+              1,
+              1,
+              3
+            ]
+          },
+          "status": "excluded_in_finite_common_quotient"
+        },
+        {
+          "receiving_order": [
+            1,
+            0,
+            1
+          ],
+          "target_assignment": [
+            1,
+            0
+          ],
+          "outer_quotient_abelian_index": 1,
+          "permitted_relative_signs_in_abelianization": [
+            1,
+            -1
+          ],
+          "status": "unresolved"
+        }
+      ]
+    },
+    "e20_vertex": {
+      "start": [
+        "XYYXy",
+        "XYXyxYXYxYXyxy"
+      ],
+      "target": [
+        "XXyXYYxyXYY",
+        "XXYxyyxYXyXYY"
+      ],
+      "two_blocks": [
+        {
+          "receiving_order": [
+            0,
+            1
+          ],
+          "target_assignment": [
+            0,
+            1
+          ],
+          "abelian_quotient_absolute_determinants": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "first_decisive_quotient_check": 1,
+          "separator": {
+            "donors_killed": [
+              "XXyXYYxyXYY"
+            ],
+            "source": "XYXyxYXYxYXyxy",
+            "target": "XXYxyyxYXyXYY",
+            "degree": 4,
+            "marking": {
+              "x": [
+                1,
+                3,
+                4,
+                2
+              ],
+              "y": [
+                2,
+                3,
+                4,
+                1
+              ]
+            },
+            "source_cycle_type": [
+              4
+            ],
+            "target_cycle_type": [
+              1,
+              1,
+              2
+            ]
+          }
+        },
+        {
+          "receiving_order": [
+            0,
+            1
+          ],
+          "target_assignment": [
+            1,
+            0
+          ],
+          "abelian_quotient_absolute_determinants": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "first_decisive_quotient_check": 1,
+          "separator": {
+            "donors_killed": [
+              "XXYxyyxYXyXYY"
+            ],
+            "source": "XYXyxYXYxYXyxy",
+            "target": "XXyXYYxyXYY",
+            "degree": 7,
+            "marking": {
+              "x": [
+                1,
+                3,
+                4,
+                5,
+                6,
+                7,
+                2
+              ],
+              "y": [
+                2,
+                4,
+                7,
+                1,
+                5,
+                3,
+                6
+              ]
+            },
+            "source_cycle_type": [
+              1,
+              6
+            ],
+            "target_cycle_type": [
+              3,
+              4
+            ]
+          }
+        },
+        {
+          "receiving_order": [
+            1,
+            0
+          ],
+          "target_assignment": [
+            0,
+            1
+          ],
+          "abelian_quotient_absolute_determinants": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "receiving_order": [
+            1,
+            0
+          ],
+          "target_assignment": [
+            1,
+            0
+          ],
+          "abelian_quotient_absolute_determinants": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "first_decisive_quotient_check": 0,
+          "separator": {
+            "donors_killed": [
+              "XYYXy"
+            ],
+            "source": "XYXyxYXYxYXyxy",
+            "target": "XXyXYYxyXYY",
+            "degree": 5,
+            "marking": {
+              "x": [
+                2,
+                3,
+                4,
+                5,
+                1
+              ],
+              "y": [
+                1,
+                3,
+                5,
+                4,
+                2
+              ]
+            },
+            "source_cycle_type": [
+              1,
+              1,
+              3
+            ],
+            "target_cycle_type": [
+              5
+            ]
+          }
+        }
+      ],
+      "three_blocks": [
+        {
+          "receiving_order": [
+            0,
+            1,
+            0
+          ],
+          "target_assignment": [
+            0,
+            1
+          ],
+          "outer_quotient_abelian_index": 1,
+          "permitted_relative_signs_in_abelianization": [
+            1,
+            -1
+          ],
+          "status": "unresolved"
+        },
+        {
+          "receiving_order": [
+            0,
+            1,
+            0
+          ],
+          "target_assignment": [
+            1,
+            0
+          ],
+          "outer_quotient_abelian_index": 1,
+          "permitted_relative_signs_in_abelianization": [
+            1,
+            -1
+          ],
+          "status": "unresolved"
+        },
+        {
+          "receiving_order": [
+            1,
+            0,
+            1
+          ],
+          "target_assignment": [
+            0,
+            1
+          ],
+          "outer_quotient_abelian_index": 1,
+          "permitted_relative_signs_in_abelianization": [
+            1,
+            -1
+          ],
+          "status": "unresolved"
+        },
+        {
+          "receiving_order": [
+            1,
+            0,
+            1
+          ],
+          "target_assignment": [
+            1,
+            0
+          ],
+          "outer_quotient_abelian_index": 0,
+          "permitted_relative_signs_in_abelianization": [
+            1
+          ],
+          "status": "unresolved"
+        }
+      ]
+    },
+    "e20_product": {
+      "start": [
+        "XXyxYxyxY",
+        "XYXyxYXyXYxyxy"
+      ],
+      "target": [
+        "XXyXYYxyXYY",
+        "XXYxyyxYXyXYY"
+      ],
+      "two_blocks": [
+        {
+          "receiving_order": [
+            0,
+            1
+          ],
+          "target_assignment": [
+            0,
+            1
+          ],
+          "abelian_quotient_absolute_determinants": [
+            [
+              1,
+              5
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        {
+          "receiving_order": [
+            0,
+            1
+          ],
+          "target_assignment": [
+            1,
+            0
+          ],
+          "abelian_quotient_absolute_determinants": [
+            [
+              1,
+              3
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        {
+          "receiving_order": [
+            1,
+            0
+          ],
+          "target_assignment": [
+            0,
+            1
+          ],
+          "abelian_quotient_absolute_determinants": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "first_decisive_quotient_check": 0,
+          "separator": {
+            "donors_killed": [
+              "XXyxYxyxY"
+            ],
+            "source": "XYXyxYXyXYxyxy",
+            "target": "XXYxyyxYXyXYY",
+            "degree": 4,
+            "marking": {
+              "x": [
+                1,
+                3,
+                4,
+                2
+              ],
+              "y": [
+                2,
+                3,
+                4,
+                1
+              ]
+            },
+            "source_cycle_type": [
+              4
+            ],
+            "target_cycle_type": [
+              1,
+              1,
+              2
+            ]
+          }
+        },
+        {
+          "receiving_order": [
+            1,
+            0
+          ],
+          "target_assignment": [
+            1,
+            0
+          ],
+          "abelian_quotient_absolute_determinants": [
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        }
+      ],
+      "three_blocks": [
+        {
+          "receiving_order": [
+            0,
+            1,
+            0
+          ],
+          "target_assignment": [
+            0,
+            1
+          ],
+          "outer_quotient_abelian_index": 3,
+          "permitted_relative_signs_in_abelianization": [
+            1
+          ],
+          "status": "unresolved"
+        },
+        {
+          "receiving_order": [
+            0,
+            1,
+            0
+          ],
+          "target_assignment": [
+            1,
+            0
+          ],
+          "outer_quotient_abelian_index": 5,
+          "permitted_relative_signs_in_abelianization": [],
+          "status": "excluded_in_abelianized_common_quotient"
+        },
+        {
+          "receiving_order": [
+            1,
+            0,
+            1
+          ],
+          "target_assignment": [
+            0,
+            1
+          ],
+          "outer_quotient_abelian_index": 2,
+          "permitted_relative_signs_in_abelianization": [
+            1,
+            -1
+          ],
+          "separator": {
+            "donors_killed": [
+              "XXyxYxyxY",
+              "XXyXYYxyXYY"
+            ],
+            "source": "XYXyxYXyXYxyxy",
+            "target": "XXYxyyxYXyXYY",
+            "degree": 4,
+            "marking": {
+              "x": [
+                1,
+                3,
+                4,
+                2
+              ],
+              "y": [
+                2,
+                3,
+                4,
+                1
+              ]
+            },
+            "source_cycle_type": [
+              4
+            ],
+            "target_cycle_type": [
+              1,
+              1,
+              2
+            ]
+          },
+          "status": "excluded_in_finite_common_quotient"
+        },
+        {
+          "receiving_order": [
+            1,
+            0,
+            1
+          ],
+          "target_assignment": [
+            1,
+            0
+          ],
+          "outer_quotient_abelian_index": 1,
+          "permitted_relative_signs_in_abelianization": [
+            1,
+            -1
+          ],
+          "status": "unresolved"
+        }
+      ]
+    }
+  },
+  "three_block_positive_control": {
+    "start": [
+      "XYYXy",
+      "XYXyxYXYxYXyxy"
+    ],
+    "endpoint": [
+      "XYYXyXYXyxYXYxYXyxyXYXyxYXYxYXyxyXYXyxYXYxYXyxyXYYXyXYXyxYXYxYXyxyXYXyxYXYxYXyxyXYYXyXYXyxYXYxYXyxyXYXyxYXYxYXyxyXYXyxYXYxYXyxyXYYXyXYXyxYXYxYXyxyXYXyxYXYxYXyxyXYYXyXYXyxYXYxYXyxyXYXyxYXYxYXyxy",
+      "XYXyxYXYxYXyxyXYYXyXYXyxYXYxYXyxyXYXyxYXYxYXyxyXYYXyXYXyxYXYxYXyxyXYXyxYXYxYXyxy"
+    ],
+    "endpoint_coefficients_in_starting_rows": [
+      [
+        5,
+        12
+      ],
+      [
+        2,
+        5
+      ]
+    ],
+    "moves": [
+      {
+        "op": "multiply",
+        "i": 0,
+        "j": 1
+      },
+      {
+        "op": "multiply",
+        "i": 0,
+        "j": 1
+      },
+      {
+        "op": "multiply",
+        "i": 1,
+        "j": 0
+      },
+      {
+        "op": "multiply",
+        "i": 1,
+        "j": 0
+      },
+      {
+        "op": "multiply",
+        "i": 0,
+        "j": 1
+      },
+      {
+        "op": "multiply",
+        "i": 0,
+        "j": 1
+      }
+    ],
+    "minimum_receiving_blocks": 3
+  }
+}

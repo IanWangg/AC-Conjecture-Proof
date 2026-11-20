@@ -1,0 +1,589 @@
+{
+  "published_macros": 53,
+  "rank_two_replay": {
+    "moves": 67,
+    "peak_total_length": 25,
+    "endpoint": [
+      "xxxYYYY",
+      "xyxYXY"
+    ]
+  },
+  "rank_three_replay": {
+    "moves": 295,
+    "raw_peak": 54,
+    "cyclic_peak": 30,
+    "target": [
+      "XzYXyxzXYxyZ",
+      "YxYXyxZXYxyxzX",
+      "Xyz"
+    ],
+    "first_pivotless_step": null
+  },
+  "wrong_elimination_reconstruction": {
+    "eliminations": [
+      {
+        "relator": "b",
+        "generator": "n",
+        "image": "b"
+      },
+      {
+        "relator": "k",
+        "generator": "k",
+        "image": "i"
+      },
+      {
+        "relator": "i",
+        "generator": "i",
+        "image": "h"
+      },
+      {
+        "relator": "m",
+        "generator": "m",
+        "image": "elE"
+      },
+      {
+        "relator": "h",
+        "generator": "h",
+        "image": "agA"
+      },
+      {
+        "relator": "d",
+        "generator": "d",
+        "image": "Fcf"
+      },
+      {
+        "relator": "c",
+        "generator": "c",
+        "image": "Aba"
+      },
+      {
+        "relator": "f",
+        "generator": "f",
+        "image": "Geg"
+      },
+      {
+        "relator": "j",
+        "generator": "j",
+        "image": "bagAB"
+      },
+      {
+        "relator": "n",
+        "generator": "b",
+        "image": "aelEA"
+      },
+      {
+        "relator": "a",
+        "generator": "a",
+        "image": "elEgelEGeLE"
+      }
+    ],
+    "rank_three_rows": [
+      "XzYXyxzXYxyZ",
+      "YYXyxZXYxyxzXYxy",
+      "Xyz"
+    ]
+  },
+  "frozen_repair": {
+    "eliminations": [
+      {
+        "relator": "w",
+        "generator": "e",
+        "image": "gl"
+      },
+      {
+        "relator": "c",
+        "generator": "c",
+        "image": "Aba"
+      },
+      {
+        "relator": "h",
+        "generator": "h",
+        "image": "agA"
+      },
+      {
+        "relator": "i",
+        "generator": "i",
+        "image": "KagAk"
+      },
+      {
+        "relator": "b",
+        "generator": "b",
+        "image": "Jaj"
+      },
+      {
+        "relator": "f",
+        "generator": "f",
+        "image": "lg"
+      },
+      {
+        "relator": "n",
+        "generator": "m",
+        "image": "Ana"
+      },
+      {
+        "relator": "k",
+        "generator": "k",
+        "image": "JAjaj"
+      },
+      {
+        "relator": "a",
+        "generator": "n",
+        "image": "Jaj"
+      },
+      {
+        "relator": "e",
+        "generator": "d",
+        "image": "Lgll"
+      },
+      {
+        "relator": "j",
+        "generator": "g",
+        "image": "AJAjaja"
+      }
+    ],
+    "fixed_rows": [
+      "ZZXYXYxyxzXYXYxyxZXYxyxzXYXyxyx",
+      "XYXYxyxZZXYXYxyxzzXYXyxyxZXYXyxyxzz"
+    ],
+    "wrong_and_corrected_row": [
+      "XYXXyxyxzXYXYxyx",
+      "XYXyxZXYXyxyxzXYXYxyxz"
+    ],
+    "generator_images_s5": {
+      "x": [
+        5,
+        4,
+        2,
+        1,
+        3
+      ],
+      "y": [
+        2,
+        3,
+        4,
+        5,
+        1
+      ],
+      "z": [
+        2,
+        4,
+        1,
+        5,
+        3
+      ]
+    },
+    "target_images_s5": [
+      [
+        2,
+        4,
+        1,
+        5,
+        3
+      ],
+      [
+        3,
+        2,
+        4,
+        1,
+        5
+      ]
+    ],
+    "target_cycle_types": [
+      [
+        5
+      ],
+      [
+        1,
+        1,
+        3
+      ]
+    ],
+    "fox_weights": [
+      -1,
+      -1,
+      0
+    ],
+    "fox_omitted_column": 0,
+    "fox_determinant": [
+      [
+        5,
+        -2
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        7,
+        -2
+      ]
+    ],
+    "fixed_joint_minimum": [
+      "X",
+      "YYZZyzzzyZZ"
+    ],
+    "fixed_whitehead_descent": [
+      {
+        "multiplier": "X",
+        "cut": "XZyz",
+        "result": [
+          "XyyZYXyyzzYYxyZYXyzY",
+          "XyyZYXyyzzYYxyZZYYxyzzY"
+        ]
+      },
+      {
+        "multiplier": "Y",
+        "cut": "YZz",
+        "result": [
+          "XyZXyzzYxZXz",
+          "XyZXyzzYxZZYxzz"
+        ]
+      },
+      {
+        "multiplier": "X",
+        "cut": "XYZz",
+        "result": [
+          "XzyZyzzYZ",
+          "YZZYzzyZyzz"
+        ]
+      },
+      {
+        "multiplier": "Z",
+        "cut": "YZy",
+        "result": [
+          "XyZyzzY",
+          "YZZYzzyZyzz"
+        ]
+      },
+      {
+        "multiplier": "Y",
+        "cut": "YZz",
+        "result": [
+          "XZyzz",
+          "YZZYzzyZyzz"
+        ]
+      },
+      {
+        "multiplier": "Z",
+        "cut": "XZx",
+        "result": [
+          "Xyz",
+          "YZZYzzyZyzz"
+        ]
+      },
+      {
+        "multiplier": "Y",
+        "cut": "XYZz",
+        "result": [
+          "Xz",
+          "YZZYzzyZyzz"
+        ]
+      },
+      {
+        "multiplier": "Z",
+        "cut": "XYZ",
+        "result": [
+          "X",
+          "YYZZyzzzyZZ"
+        ]
+      }
+    ],
+    "wrong_and_corrected_rank_two_pairs": [
+      [
+        "XXYYxyyyxYY",
+        "XXYxyXyxYY"
+      ],
+      [
+        "XXYYxyXyyxYY",
+        "XXYYxyyyxYY"
+      ]
+    ],
+    "wrong_pair_ordinary_replay": {
+      "moves": 105,
+      "peak_total_length": 22,
+      "endpoint": [
+        "XXYYxyyyxYY",
+        "XXYxyXyxYY"
+      ],
+      "cyclic_peak": 21
+    },
+    "correct_pair_ordinary_replay": {
+      "moves": 73,
+      "peak_total_length": 30,
+      "endpoint": [
+        "x",
+        "y"
+      ],
+      "cyclic_peak": 23
+    }
+  },
+  "frozen_extra_relator": {
+    "generator_images_s5": {
+      "x": [
+        5,
+        2,
+        3,
+        1,
+        4
+      ],
+      "y": [
+        1,
+        2,
+        5,
+        3,
+        4
+      ],
+      "z": [
+        1,
+        5,
+        2,
+        4,
+        3
+      ]
+    },
+    "extra_relator_image_s5": [
+      4,
+      5,
+      2,
+      3,
+      1
+    ],
+    "generator_images_s6": {
+      "x": [
+        6,
+        5,
+        4,
+        3,
+        1,
+        2
+      ],
+      "y": [
+        2,
+        1,
+        4,
+        5,
+        6,
+        3
+      ],
+      "z": [
+        5,
+        4,
+        1,
+        2,
+        6,
+        3
+      ]
+    },
+    "extra_relator_image_s6": [
+      1,
+      2,
+      6,
+      5,
+      4,
+      3
+    ],
+    "literal_unit_height_cyclic_words": 1317,
+    "passing_initial_cycle_type": 605,
+    "second_fixed_row_whitehead_descent": [
+      {
+        "multiplier": "X",
+        "cut": "XZz",
+        "result": [
+          "XyZYXyzYxy"
+        ]
+      },
+      {
+        "multiplier": "Y",
+        "cut": "YZz",
+        "result": [
+          "XZXzxy"
+        ]
+      },
+      {
+        "multiplier": "X",
+        "cut": "XYy",
+        "result": [
+          "XzyZ"
+        ]
+      },
+      {
+        "multiplier": "Z",
+        "cut": "YZy",
+        "result": [
+          "Xy"
+        ]
+      },
+      {
+        "multiplier": "X",
+        "cut": "XY",
+        "result": [
+          "Y"
+        ]
+      }
+    ],
+    "surviving_fixed_relator": "XYXyxYXYxyXYXyxyXYxyxYXyxy",
+    "baseline_extra_relator": "XXyxYXYxyxY",
+    "candidates": [
+      {
+        "word": "XXyxzXY",
+        "literal_charts": [
+          {
+            "eliminated": "z",
+            "pair": [
+              "XXyXYXXyxYxxyxY",
+              "Xy"
+            ]
+          }
+        ],
+        "projected_word": "XXy",
+        "image_s6": [
+          6,
+          2,
+          1,
+          5,
+          3,
+          4
+        ],
+        "separating_witness": {
+          "prime": 5,
+          "marking": {
+            "x": [
+              0,
+              4,
+              1,
+              1
+            ],
+            "y": [
+              0,
+              1,
+              4,
+              1
+            ]
+          },
+          "source_trace": 3,
+          "target_trace": 2
+        }
+      },
+      {
+        "word": "XYxYYxz",
+        "literal_charts": [
+          {
+            "eliminated": "z",
+            "pair": [
+              "XYxYYXyyXyxYXyyyy",
+              "Xy"
+            ]
+          }
+        ],
+        "projected_word": "XXy",
+        "image_s6": [
+          2,
+          6,
+          1,
+          4,
+          3,
+          5
+        ],
+        "separating_witness": {
+          "prime": 5,
+          "marking": {
+            "x": [
+              0,
+              4,
+              1,
+              1
+            ],
+            "y": [
+              0,
+              1,
+              4,
+              1
+            ]
+          },
+          "source_trace": 3,
+          "target_trace": 2
+        }
+      },
+      {
+        "word": "XYxyz",
+        "literal_charts": [
+          {
+            "eliminated": "z",
+            "pair": [
+              "X",
+              "XYXyxy"
+            ]
+          }
+        ],
+        "projected_word": "XXYxyxY",
+        "image_s6": [
+          5,
+          6,
+          3,
+          2,
+          4,
+          1
+        ],
+        "separating_witness": {
+          "prime": 11,
+          "marking": {
+            "x": [
+              0,
+              10,
+              1,
+              2
+            ],
+            "y": [
+              0,
+              7,
+              3,
+              2
+            ]
+          },
+          "source_trace": 6,
+          "target_trace": 4
+        }
+      },
+      {
+        "word": "XyXzY",
+        "literal_charts": [
+          {
+            "eliminated": "z",
+            "pair": [
+              "X",
+              "XXYXyxxYxyXYxyXyxYXy"
+            ]
+          }
+        ],
+        "projected_word": "XXYXyxyXYxyxYXyXYxy",
+        "image_s6": [
+          3,
+          5,
+          2,
+          1,
+          4,
+          6
+        ],
+        "separating_witness": {
+          "prime": 11,
+          "marking": {
+            "x": [
+              0,
+              10,
+              1,
+              2
+            ],
+            "y": [
+              0,
+              7,
+              3,
+              2
+            ]
+          },
+          "source_trace": 6,
+          "target_trace": 4
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,399 @@
+{
+  "boundary": {
+    "cyclic_cap": 32,
+    "source_size": 19,
+    "start_offset": 0,
+    "next_offset": 19,
+    "source_rows_scanned": 1,
+    "source_reached_eof": true,
+    "source_boundary_independently_compared": true,
+    "recipient_parity_skips": 1,
+    "zero_bridge_rotation_checks": 0,
+    "positive_bridge_rotation_checks": 15120,
+    "admitted_candidates": 3780,
+    "boundary_records": 3780,
+    "primitive_boundary_records": 0
+  },
+  "expansion": {
+    "cyclic_cap": 32,
+    "lower_orbits": 135156,
+    "boundary_records_read": 3780,
+    "unique_seed_orbits": 3780,
+    "expanded_orbits": 600000,
+    "outside_orbits": 777475,
+    "closure_reached_from_listed_seeds": false,
+    "primitive_found": false,
+    "candidate_products": 812787144,
+    "admitted_products": 36176946,
+    "outside_histogram": {
+      "24": 579,
+      "25": 1628,
+      "26": 3126,
+      "27": 8313,
+      "28": 16095,
+      "29": 43752,
+      "30": 81569,
+      "31": 224679,
+      "32": 397734
+    }
+  },
+  "exact_membership_and_replay": {
+    "cap31_membership_bound": 32,
+    "cap31_rows_compared": 254220523,
+    "reached_rows_through_bound": 777475,
+    "present_in_cap31": 379674,
+    "absent_from_cap31_by_energy": {
+      "31": 67,
+      "32": 397734
+    },
+    "absent_from_cap31_at_energy_at_most_31": [
+      [
+        "xxyXYXy",
+        "xxxxYXYXXXYXXyxyxxYxYYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxYXYXXXYXXyyxxYxxYXYY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxYXYXXXYXXyyxyxxxYYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxYXYYxYxxyxyXXXYXXXYY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxYXYxYYxxyxyXXXYXXXYY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxYXYxYYxxyxyXXYXXXYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxYXYxYxxyxyyXXYXXXYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxxYXYXXXYXXyyxxYxYYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxxYXYxYYxxyyXXYXXXYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxxyxxYxyXXYXXXYXYYYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxxyxyXXXYXXXYYxYYxYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxxyxyXXXYXXXYYxYxYYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxxyxyXXYXXXYXYXXyxyyy"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxxyxyXXYXXXYXYxYYxYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxxyxyXXYXXXYXYxYxYYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxxyyXXYXXXYXYxxYYxYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxxyyXXYXXXYXYxxYxYYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxyxxYXYXXXYXXXyXyyxyy"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxyxxYXYXXXYXXXyyXyxyy"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxyxxYxyXXYXXXYXYxYXYY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxyxyXXXYXXXYYxYxxYXYY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxyxyXXYXXXYXYxYxxYXYY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxyxyXyxyXyxyXXYXXXYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxyxyxxYXYXXXYXXyxYYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxyxyxyXXXYXXXYYxYxYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxyxyxyXXXYXXXYYxxYYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxyxyxyXXYXXXYXYxYxYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxyxyxyXXYXXXYXYxxYYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxyxyxyXXyXYYXXXYXXyxy"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxyxyyXXYXXXYXYxxYxYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxyxyyXXYXXXYXYxxxYYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxyyXXYXXXYXYxxYxxYXYY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxxyyxyxyXXYXXXYXYxxYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxYXYXXXyXyxyXXyXyxy"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxYXYXXyXXyxyXyXXyxy"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxYXYXXyXXyxyyXXXyxy"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxYXYXYXXXyyxyXXXyxy"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxYXYXYXXyXyxyXXXyxy"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxYXYXYXYYxYXYYXXyxy"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxYXYXYXYxYYXYYXXyxy"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxYXYYXXXYXXyyxyXyyy"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxYXYYXXXYXXyyxyyXyy"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxYXYYXYYxYXYXYXXyxy"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxYXYYXYxYYXYXYXXyxy"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxYXyXXyxyxyXXYXXXYY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxYXyXyxyXXyXXYXXyxy"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxYYXXXyXyxyXXyXXyxy"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxYYXXyXXyxyXyXXXyxy"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxYYXYXYYxYXYYXXXyxy"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxYYXYXYxYYXYYXXXyxy"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxYYYXYYxYXYXYXXXyxy"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxYYYXYxYYXYXYXXXyxy"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxYYYxYXYYXyXXYXXyxy"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxYYxYYXYYXyXXYXXyxy"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxYxxYXYYxyXXYXXXYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxYxyXXYXXXYXYxYXYxY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxxyxxYXYXYXXXYXYYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxxyyXXXyxyXyXXYXYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxxyyXXXyxyyXXXYXYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxxyyXXXyyxyXXyXXYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxxyyXXYXXyXXyxyXyXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxxyyXXYXYXYYxYXYYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxxyyXXYXYXYxYYXYYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxxyyXXYYXYYxYXYXYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxxyyXXYYXYxYYXYXYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxxyyXXyXyxyXXyXXYXY"
+      ],
+      [
+        "xxyXYXy",
+        "xxxyxxxyyXyXXyxyXyXXXYXY"
+      ]
+    ],
+    "minimal_energy_reached_outside_cap31": 31,
+    "primitive_coordinates_among_candidates_outside_cap31": 0,
+    "chosen_anchor_route": {
+      "cyclic_cap": 32,
+      "lower_anchor": [
+        "xxyXYXy",
+        "xxYXYxYYXY"
+      ],
+      "orbit_route": [
+        [
+          "xxyXYXy",
+          "xxYXYxYYXY"
+        ],
+        [
+          "xxyXYXy",
+          "xxxYXYXXYxyxxyXXYXYxxYXYY"
+        ],
+        [
+          "xxyXYXy",
+          "xxxYXYXXYxxyXYXYxxYXYY"
+        ],
+        [
+          "xxyXYXy",
+          "xxxYXYXXYYYxxYXYY"
+        ],
+        [
+          "xxyXYXy",
+          "xxxyxyXXXyyxyXXyyXXYxy"
+        ],
+        [
+          "xxyXYXy",
+          "xxxyxxYXXYXyyXXyxyyXXXyxy"
+        ],
+        [
+          "xxyXYXy",
+          "xxxyxxYXYXXyXXyxyyXXXyxy"
+        ]
+      ]
+    },
+    "strict_replay": {
+      "moves": 875,
+      "peak_total_length": 41,
+      "endpoint": [
+        "XXYxyxY",
+        "XXXYXYxxxYYXYxxYxxyxyXXY"
+      ],
+      "cyclic_peak": 32
+    },
+    "entry_moves": 702,
+    "suffix_moves": 173
+  },
+  "geometry": {
+    "input_sha256": "b73cc7bdba7f28dd0c5eecf3038746ba1e38250f19ff02286f1200f206a85f17",
+    "source_pairs": 67,
+    "strict_whitehead_shortenings": 46,
+    "distinct_whitehead_minimal_keys": 67,
+    "classification": {
+      "PARITY_OBSTRUCTION": 67
+    },
+    "remaining": []
+  },
+  "reverse_archive": {
+    "status": "NO_SUBGROUP_JOIN",
+    "forward_pairs": 67,
+    "forward_distinct_words": 68,
+    "forward_cap": 31,
+    "forward_minimum_coordinate": 7,
+    "reverse_pairs": 23902,
+    "reverse_rotation_pairs": 6230442,
+    "reverse_distinct_rotated_cores": 2675055,
+    "reverse_geodesic_bridges": 182072,
+    "primitive_slopes_constructed": 5486578,
+    "coordinates_found_in_forward_catalogue": 156028,
+    "basis_pair_lookups": 0,
+    "core_topologies": {
+      "barbell": 188156,
+      "rose": 861364,
+      "theta": 1807607
+    }
+  }
+}

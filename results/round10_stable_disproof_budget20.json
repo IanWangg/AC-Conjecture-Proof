@@ -1,0 +1,338 @@
+{
+  "degree_nine_neighborhood_tests": [
+    {
+      "low_degree": 9,
+      "high_degree": 10,
+      "radius_from_any_degree_nine_geodesic": 0,
+      "original_geodesic_vertices": 53,
+      "low_neighborhood_vertices": 53,
+      "instruction_budget": 20,
+      "low_midpoints": 10,
+      "low_corridor_widths": [
+        [
+          1,
+          4,
+          7,
+          10,
+          11,
+          10,
+          9,
+          8,
+          8,
+          8,
+          10
+        ],
+        [
+          1,
+          4,
+          7,
+          11,
+          15,
+          18,
+          20,
+          20,
+          17,
+          13,
+          10
+        ]
+      ],
+      "high_corridor_widths_before_final_trim": [
+        [
+          1,
+          4,
+          7,
+          10,
+          11,
+          10,
+          9,
+          8,
+          8,
+          8,
+          10
+        ],
+        [
+          1,
+          4,
+          7,
+          11,
+          15,
+          18,
+          20,
+          20,
+          17,
+          13,
+          10
+        ]
+      ],
+      "high_midpoints": 0,
+      "exact_move_witness": [],
+      "replayed_basis_order": null
+    },
+    {
+      "low_degree": 9,
+      "high_degree": 10,
+      "radius_from_any_degree_nine_geodesic": 2,
+      "original_geodesic_vertices": 53,
+      "low_neighborhood_vertices": 5966,
+      "instruction_budget": 20,
+      "low_midpoints": 67,
+      "low_corridor_widths": [
+        [
+          1,
+          15,
+          55,
+          84,
+          85,
+          79,
+          71,
+          63,
+          59,
+          63,
+          67
+        ],
+        [
+          1,
+          11,
+          67,
+          109,
+          177,
+          171,
+          203,
+          205,
+          164,
+          100,
+          67
+        ]
+      ],
+      "high_corridor_widths_before_final_trim": [
+        [
+          1,
+          15,
+          55,
+          84,
+          85,
+          80,
+          74,
+          66,
+          61,
+          65,
+          69
+        ],
+        [
+          1,
+          11,
+          67,
+          109,
+          177,
+          171,
+          203,
+          205,
+          164,
+          100,
+          69
+        ]
+      ],
+      "high_midpoints": 0,
+      "exact_move_witness": [],
+      "replayed_basis_order": null
+    },
+    {
+      "low_degree": 9,
+      "high_degree": 10,
+      "radius_from_any_degree_nine_geodesic": 3,
+      "original_geodesic_vertices": 53,
+      "low_neighborhood_vertices": 54307,
+      "instruction_budget": 20,
+      "low_midpoints": 70,
+      "low_corridor_widths": [
+        [
+          1,
+          15,
+          56,
+          87,
+          89,
+          82,
+          72,
+          63,
+          59,
+          63,
+          70
+        ],
+        [
+          1,
+          11,
+          71,
+          142,
+          211,
+          249,
+          252,
+          247,
+          183,
+          105,
+          70
+        ]
+      ],
+      "high_corridor_widths_before_final_trim": [
+        [
+          1,
+          15,
+          56,
+          87,
+          89,
+          85,
+          78,
+          67,
+          61,
+          65,
+          72
+        ],
+        [
+          1,
+          11,
+          71,
+          142,
+          211,
+          249,
+          252,
+          247,
+          183,
+          105,
+          72
+        ]
+      ],
+      "high_midpoints": 0,
+      "exact_move_witness": [],
+      "replayed_basis_order": null
+    },
+    {
+      "low_degree": 9,
+      "high_degree": 10,
+      "radius_from_any_degree_nine_geodesic": 4,
+      "original_geodesic_vertices": 53,
+      "low_neighborhood_vertices": 487205,
+      "instruction_budget": 20,
+      "low_midpoints": 101,
+      "low_corridor_widths": [
+        [
+          1,
+          15,
+          56,
+          90,
+          102,
+          96,
+          87,
+          82,
+          69,
+          70,
+          101
+        ],
+        [
+          1,
+          11,
+          71,
+          142,
+          215,
+          270,
+          279,
+          254,
+          202,
+          134,
+          101
+        ]
+      ],
+      "high_corridor_widths_before_final_trim": [
+        [
+          1,
+          15,
+          56,
+          90,
+          102,
+          99,
+          93,
+          86,
+          71,
+          74,
+          103
+        ],
+        [
+          1,
+          11,
+          71,
+          142,
+          215,
+          270,
+          279,
+          254,
+          202,
+          134,
+          103
+        ]
+      ],
+      "high_midpoints": 0,
+      "exact_move_witness": [],
+      "replayed_basis_order": null
+    }
+  ],
+  "stable_budget20_erasures": [
+    {
+      "degree": 7,
+      "spare_rows": 4,
+      "limit": 12,
+      "ordered": false,
+      "distance": null,
+      "radii": [
+        6,
+        6
+      ],
+      "visited": [
+        872891,
+        4468794
+      ],
+      "distinct_elements": 911753,
+      "midpoint_hex": [],
+      "final_boundary_candidates": 39672547
+    },
+    {
+      "degree": 6,
+      "spare_rows": 5,
+      "limit": 10,
+      "ordered": false,
+      "distance": null,
+      "radii": [
+        5,
+        5
+      ],
+      "visited": [
+        54033,
+        297366
+      ],
+      "distinct_elements": 80071,
+      "midpoint_hex": [],
+      "final_boundary_candidates": 2550224
+    }
+  ],
+  "degree_seven_three_padding_idle_midpoint": {
+    "degree": 7,
+    "spare_rows": 3,
+    "limit": 14,
+    "ordered": false,
+    "distance": 14,
+    "radii": [
+      7,
+      7
+    ],
+    "visited": [
+      15337233,
+      73462687
+    ],
+    "distinct_elements": 9589480,
+    "midpoint_hex": [
+      "0000000000000000000000000000000000000000000000000000000000000001",
+      "0000000000000000000000000000000000000000000000000000000000000001",
+      "0000000000000000000000000000000000000000000000000000000000000001",
+      "000000000000000000000000000040000000000000004000000040004000008b",
+      "0000800080000000000080008000000000008000800080008000a0002060e67d"
+    ],
+    "final_boundary_candidates": 592894777
+  }
+}

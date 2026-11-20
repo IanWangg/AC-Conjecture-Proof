@@ -1,0 +1,143 @@
+{
+  "parameters": {
+    "stages": 5,
+    "allocation": 350000,
+    "horizon": 22,
+    "bases": 96,
+    "width": 36,
+    "alternations": 8,
+    "maximum": 34
+  },
+  "search": {
+    "seed": "E17",
+    "rounds": [
+      {
+        "inputs": 2,
+        "vertices": 122004,
+        "return_states": 20830055,
+        "allocation_stops": 2,
+        "primitive_tails": 4,
+        "interior_slopes": 4,
+        "exact_primitive_hits": [],
+        "novel_states": 54
+      },
+      {
+        "inputs": 36,
+        "vertices": 4449736,
+        "return_states": 76871500,
+        "allocation_stops": 36,
+        "primitive_tails": 72,
+        "interior_slopes": 4,
+        "exact_primitive_hits": [],
+        "novel_states": 17
+      },
+      {
+        "inputs": 17,
+        "vertices": 2280127,
+        "return_states": 30669396,
+        "allocation_stops": 17,
+        "primitive_tails": 34,
+        "interior_slopes": 2,
+        "exact_primitive_hits": [],
+        "novel_states": 8
+      },
+      {
+        "inputs": 8,
+        "vertices": 593668,
+        "return_states": 71114879,
+        "allocation_stops": 8,
+        "primitive_tails": 16,
+        "interior_slopes": 17,
+        "exact_primitive_hits": [],
+        "novel_states": 144
+      },
+      {
+        "inputs": 36,
+        "vertices": 1969472,
+        "return_states": 123047666,
+        "allocation_stops": 36,
+        "primitive_tails": 72,
+        "interior_slopes": 1,
+        "exact_primitive_hits": [],
+        "novel_states": 170
+      },
+      {
+        "inputs": 36,
+        "vertices": 2160264,
+        "return_states": 98189542,
+        "allocation_stops": 36,
+        "primitive_tails": 72,
+        "interior_slopes": 47,
+        "exact_primitive_hits": [],
+        "novel_states": 160
+      },
+      {
+        "inputs": 36,
+        "vertices": 3940871,
+        "return_states": 139026675,
+        "allocation_stops": 36,
+        "primitive_tails": 72,
+        "interior_slopes": 53,
+        "exact_primitive_hits": [],
+        "novel_states": 154
+      },
+      {
+        "inputs": 36,
+        "vertices": 2382181,
+        "return_states": 113801292,
+        "allocation_stops": 36,
+        "primitive_tails": 72,
+        "interior_slopes": 5,
+        "exact_primitive_hits": [],
+        "novel_states": 92
+      }
+    ]
+  },
+  "literal_endpoints": 799,
+  "signed_orbits": 752,
+  "orbits_absent_from_cap31": 236,
+  "primitive_endpoints_found": 0,
+  "selected_certificate_endpoint": {
+    "pair": [
+      "XXYxxYYXYxxYY",
+      "XXYxxYxyyXyxyyyXXy"
+    ],
+    "next_receiver": 0,
+    "route": [
+      [
+        1,
+        "XXXXyyxxxYxyyyXY",
+        4
+      ],
+      [
+        0,
+        "XXXYYxxYxyxxYYYXy",
+        2
+      ],
+      [
+        1,
+        "XXYxyxY",
+        2
+      ],
+      [
+        0,
+        "XXYxxYYXYxxYY",
+        4
+      ],
+      [
+        1,
+        "XXYxxYxyyXyxyyyXXy",
+        2
+      ]
+    ]
+  },
+  "strict_replay": {
+    "moves": 1588,
+    "peak_total_length": 73,
+    "endpoint": [
+      "XXYxxYYXYxxYY",
+      "XXYxxYxyyXyxyyyXXy"
+    ],
+    "cyclic_peak": 39
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "search": {
+    "status": "NO_SUBGROUP_JOIN",
+    "forward_pairs": 129792,
+    "forward_distinct_words": 112160,
+    "forward_cap": 28,
+    "forward_minimum_coordinate": 5,
+    "reverse_pairs": 23902,
+    "reverse_rotation_pairs": 6230442,
+    "reverse_distinct_rotated_cores": 2675055,
+    "reverse_geodesic_bridges": 1354902,
+    "primitive_slopes_constructed": 10412149,
+    "coordinates_found_in_forward_catalogue": 2752728,
+    "basis_pair_lookups": 494634,
+    "core_topologies": {
+      "barbell": 1360986,
+      "rose": 861364,
+      "theta": 1807607
+    }
+  },
+  "rank_three_frontier_sha256": "7e00ac74ea6f7664f5ec04faee63a2d0fbe24ec1263da23ba64b7e7d2abf662d",
+  "forward_minima_tsv_sha256": "c4203b72c15a5ed127c3ad6a38fa5989d7f1c08cf3f2d0410498d2e6f921d358",
+  "reverse_archive_tsv_sha256": "c9dd0627965a6f1ffa899c4a465b95a788d739eedd49089d9b6c5681980ba2c4",
+  "reverse_download_sha256": {
+    "ak3_certificates.zip": "033980a92bf824d4947a8ca390b5a61b8ce16f92b76ae7a3dffc3a004d3d25f9",
+    "640_simplification_paths.zip": "c795b469b8fcd51fa846fe8a3a01d547dd5d86e085319ec658cbbba6a5b1d493"
+  }
+}

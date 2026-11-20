@@ -1,0 +1,121 @@
+{
+  "ordinary_cap31_closure": {
+    "status": "CLOSED_AND_CONNECTED",
+    "cyclic_cap": 31,
+    "signed_permutation_orbits": 254220523,
+    "rotation_product_candidates": 288686428968,
+    "admitted_neighbors": 16488539344
+  },
+  "ordinary_cap31_catalogue_sha256": "d7ea4a350aa13662032bc4742febaa2252a3a815f9b4e774afaf972ef4c2ffb6",
+  "stable_cap22_closure": {
+    "cap": 22,
+    "literal_seeds": 48096,
+    "seed_orbits": 3008,
+    "state_orbits": 246052265,
+    "candidates": 267125415576,
+    "nonempty_bridge_candidates": 97463328,
+    "admitted": 10490694648,
+    "reentry_projections": 432
+  },
+  "stable_enclosure_and_seed_preparation": {
+    "seed_preparation": {
+      "rank_two_invariant_sha256": "cd9ba5781a1efcb1bf1b8a72c9a392b79de1cd915da6a520b8f33a4390787fa3",
+      "signed_rank_two_seed_images_verified": true,
+      "seeds": [
+        {
+          "cap": 20,
+          "ordered_boundary_pairs": 20,
+          "same_boundary_in_C21": true,
+          "considered_rank_three_source_lifts": 244,
+          "literal_seeds": 224,
+          "seed_sha256": "a8f7fdc01075fcefb4c8c12fd00f583ad8e74441b07595da8e76c9d42a8df7e2"
+        },
+        {
+          "cap": 21,
+          "ordered_boundary_pairs": 68,
+          "same_boundary_in_C21": true,
+          "considered_rank_three_source_lifts": 5852,
+          "literal_seeds": 4208,
+          "seed_sha256": "52795a5172ecf57736410b05ef9ea8054e2c45c7c5fc43bcafc4663c66e85536"
+        },
+        {
+          "cap": 22,
+          "ordered_boundary_pairs": 476,
+          "same_boundary_in_C21": true,
+          "considered_rank_three_source_lifts": 78316,
+          "literal_seeds": 48096,
+          "seed_sha256": "cf8d840882c91f9791ce18071dd56ef46d450f80819d000ff062d1ae01cdeb6e"
+        }
+      ]
+    },
+    "enclosures": [
+      {
+        "cap": 20,
+        "literal_seeds": 224,
+        "seed_orbits": 14,
+        "state_orbits": 14,
+        "minimum_row_length": 5,
+        "candidates": 14736,
+        "nonempty_bridge_candidates": 0,
+        "admitted": 372,
+        "reentry_projections": 20,
+        "projections_outside_invariant": 0,
+        "orbit_histogram": {
+          "20": 14
+        },
+        "independent_closure_and_reentry_audit": true,
+        "missing_projections": [],
+        "return_sha256": "4bfd83f884e5e3f9698e83dcfaec2e3e22dc22647c9ae4068a0ec23aaa18ce49",
+        "catalogue_sha256": "4373a1d0f22d74d9d0b55b85e0cf5c7950b47caa4c117612a22e2e440dc814e5"
+      },
+      {
+        "cap": 21,
+        "literal_seeds": 4208,
+        "seed_orbits": 264,
+        "state_orbits": 264,
+        "minimum_row_length": 5,
+        "candidates": 301312,
+        "nonempty_bridge_candidates": 0,
+        "admitted": 7436,
+        "reentry_projections": 56,
+        "projections_outside_invariant": 0,
+        "orbit_histogram": {
+          "20": 14,
+          "21": 250
+        },
+        "independent_closure_and_reentry_audit": true,
+        "missing_projections": [],
+        "return_sha256": "820ea8dfd6e8f23dd5a478790f809d5ddcd0e4a02def9d9457deba3ee37d9b74",
+        "catalogue_sha256": "3113be4f1e6e5a5683639008d478e5817a863b73557aaa5681ae04f394f66c8b"
+      },
+      {
+        "cap": 22,
+        "literal_seeds": 48096,
+        "seed_orbits": 3008,
+        "state_orbits": 246052265,
+        "minimum_row_length": 2,
+        "candidates": 267125415576,
+        "nonempty_bridge_candidates": 97463328,
+        "admitted": 10490694648,
+        "reentry_projections": 432,
+        "projections_outside_invariant": 0,
+        "orbit_histogram": {
+          "13": 2,
+          "14": 87,
+          "15": 1915,
+          "16": 9947,
+          "17": 95783,
+          "18": 343997,
+          "19": 2673350,
+          "20": 8233891,
+          "21": 61106569,
+          "22": 173586724
+        },
+        "independent_closure_and_reentry_audit": true,
+        "missing_projections": [],
+        "return_sha256": "785ee4da9044feb892ea90d4b3090faac441e843f03cbfecd1d9482aae829567",
+        "catalogue_sha256": "df8dd8caab22a398b1e20a2a2d0ba75fb6b9b614f73f8af88b8a66410b9d8561"
+      }
+    ]
+  }
+}

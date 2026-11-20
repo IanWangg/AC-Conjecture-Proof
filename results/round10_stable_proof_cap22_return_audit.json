@@ -1,0 +1,37 @@
+{
+  "controls_and_full": [
+    {
+      "states": 14,
+      "abelian_pair_occurrences": 20,
+      "uncached_pairs": 13,
+      "rotation_tests": 58,
+      "singleton_pair_occurrences": 14,
+      "distinct_signed_cyclic_reentries": 20,
+      "cap": 20,
+      "return_sha256": "4bfd83f884e5e3f9698e83dcfaec2e3e22dc22647c9ae4068a0ec23aaa18ce49",
+      "byte_equal": true
+    },
+    {
+      "states": 264,
+      "abelian_pair_occurrences": 339,
+      "uncached_pairs": 74,
+      "rotation_tests": 2823,
+      "singleton_pair_occurrences": 264,
+      "distinct_signed_cyclic_reentries": 56,
+      "cap": 21,
+      "return_sha256": "820ea8dfd6e8f23dd5a478790f809d5ddcd0e4a02def9d9457deba3ee37d9b74",
+      "byte_equal": true
+    },
+    {
+      "states": 246052265,
+      "abelian_pair_occurrences": 132882153,
+      "uncached_pairs": 44839173,
+      "rotation_tests": 2970917363,
+      "singleton_pair_occurrences": 3008,
+      "distinct_signed_cyclic_reentries": 432,
+      "cap": 22,
+      "return_sha256": "785ee4da9044feb892ea90d4b3090faac441e843f03cbfecd1d9482aae829567",
+      "byte_equal": true
+    }
+  ]
+}

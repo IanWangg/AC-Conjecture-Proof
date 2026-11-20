@@ -1,0 +1,156 @@
+{
+  "research_x_double_identifications": {
+    "counts": {
+      "STRICT_CYCLE_FAMILY_FEASIBLE/excluded": 259,
+      "STRICT_CYCLE_FAMILY_INFEASIBLE/excluded": 111,
+      "excluded": 370,
+      "old_abelian_primitive_rejected": 58,
+      "rank_2": 551,
+      "rank_3": 94,
+      "rank_4": 370
+    },
+    "distinct_rank_four_graphs": 47,
+    "first_rejected_abelian_witness": {
+      "second_index": 76,
+      "status": "excluded",
+      "prior_status": "STRICT_CYCLE_FAMILY_INFEASIBLE",
+      "inverse_marking": [
+        "C",
+        "d",
+        "aCDCD",
+        "bCCdcdcA"
+      ],
+      "witnesses": [],
+      "old_abelian_primitive_free_image": "ddCDcDCDcd"
+    },
+    "case_digest_sha256": "216f4e21d861d40f1c5fbeb3a61f774225e50c9568894868f5c556284f5e4941",
+    "first_not_covered_graphs": []
+  },
+  "ak3": {
+    "base": [
+      "xxxYYYY",
+      "xyxYXY"
+    ],
+    "principal_quotients_by_rank": {
+      "2": 2,
+      "3": 21,
+      "4": 47,
+      "5": 12
+    },
+    "source_primitive_map_pairs_checked": 72,
+    "counts": {
+      "rank_3_excluded": 20,
+      "rank_3_not_covered": 1,
+      "rank_4_excluded": 47,
+      "rank_5_excluded": 12
+    },
+    "case_digest_sha256": "146f49a777079e101292e51e80d22fcdc897e96615073391e7bf79b0eb3f430f",
+    "first_not_covered_graphs": [
+      [
+        0,
+        0,
+        1,
+        1,
+        2,
+        -1,
+        0,
+        0,
+        -1,
+        1,
+        2,
+        2
+      ]
+    ]
+  },
+  "energy17": {
+    "base": [
+      "xxyXYXy",
+      "xxYXYxYYXY"
+    ],
+    "principal_quotients_by_rank": {
+      "2": 2,
+      "3": 42,
+      "4": 365,
+      "5": 745,
+      "6": 505,
+      "7": 158,
+      "8": 22
+    },
+    "source_primitive_map_pairs_checked": 64,
+    "counts": {
+      "rank_3_excluded": 42,
+      "rank_4_excluded": 365,
+      "rank_5_excluded": 745,
+      "rank_6_excluded": 505,
+      "rank_7_excluded": 158,
+      "rank_8_excluded": 22
+    },
+    "case_digest_sha256": "32044c89e8c97978ff90907a42dc5a5266d3db5f0f53d6e6fc910fdcc134fa37",
+    "first_not_covered_graphs": []
+  },
+  "exceptional_ak3_rank_three_voltage_replay": {
+    "graph": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      -1,
+      0,
+      0,
+      -1,
+      1,
+      2,
+      2
+    ],
+    "inequalities_independently_checked": 24,
+    "marked_source_rows_in_chord_basis": [
+      "aaabb",
+      "aC"
+    ]
+  },
+  "nested_bridges": {
+    "2": {
+      "bridges": 1,
+      "vertex_identifications_independently_refolded": 351,
+      "signed_double_free_graphs_independently_reconstructed": 2808,
+      "cyclic_components_independently_recognized": 694,
+      "integer_potential_inequalities_checked": 1922
+    },
+    "3": {
+      "bridges": 2,
+      "vertex_identifications_independently_refolded": 756,
+      "signed_double_free_graphs_independently_reconstructed": 6048,
+      "cyclic_components_independently_recognized": 1418,
+      "integer_potential_inequalities_checked": 4088
+    },
+    "4": {
+      "bridges": 7,
+      "vertex_identifications_independently_refolded": 2842,
+      "signed_double_free_graphs_independently_reconstructed": 22736,
+      "cyclic_components_independently_recognized": 4912,
+      "integer_potential_inequalities_checked": 14550
+    },
+    "5": {
+      "bridges": 20,
+      "vertex_identifications_independently_refolded": 8700,
+      "signed_double_free_graphs_independently_reconstructed": 69600,
+      "cyclic_components_independently_recognized": 14152,
+      "integer_potential_inequalities_checked": 42476
+    },
+    "6": {
+      "bridges": 61,
+      "vertex_identifications_independently_refolded": 28365,
+      "signed_double_free_graphs_independently_reconstructed": 226920,
+      "cyclic_components_independently_recognized": 43536,
+      "integer_potential_inequalities_checked": 131376
+    }
+  },
+  "positive_control": {
+    "known_primitive_kernel_witnesses_replayed": 3,
+    "source": [
+      "xxYYY",
+      "xyxYXY"
+    ]
+  }
+}
